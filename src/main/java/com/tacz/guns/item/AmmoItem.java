@@ -35,6 +35,12 @@ public class AmmoItem extends Item implements AmmoItemDataAccessor {
         super(new Properties());
     }
 
+    /** Native ammunition is retired; external IAmmo implementations keep their own policy. */
+    @Override
+    public boolean isAmmoOfGun(ItemStack gun, ItemStack ammo) {
+        return false;
+    }
+
     @Override
     public void verifyComponentsAfterLoad(@NotNull ItemStack stack) {
         TimelessAPI.getCommonAmmoIndex(this.getAmmoId(stack)).map(CommonAmmoIndex::getStackSize).ifPresent(maxStackSize ->

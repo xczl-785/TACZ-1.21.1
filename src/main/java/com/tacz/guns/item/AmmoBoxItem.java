@@ -90,6 +90,12 @@ public class AmmoBoxItem extends Item implements AmmoBoxItemDataAccessor {
         return iAmmoBox.getAmmoLevel(stack);
     }
 
+    /** Native ammunition is retired; external IAmmo implementations keep their own policy. */
+    @Override
+    public boolean isAmmoBoxOfGun(ItemStack gun, ItemStack ammo) {
+        return false;
+    }
+
     @Override
     public boolean overrideOtherStackedOnMe(ItemStack stack, ItemStack pOther, Slot slot, ClickAction action, Player player, SlotAccess access) {
         return super.overrideOtherStackedOnMe(stack, pOther, slot, action, player, access);

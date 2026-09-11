@@ -8,8 +8,6 @@ import com.tacz.guns.api.item.builder.AmmoItemBuilder;
 import com.tacz.guns.api.item.builder.AttachmentItemBuilder;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.api.item.gun.AbstractGunItem;
-import com.tacz.guns.item.AmmoBoxItem;
-import com.tacz.guns.item.AmmoItem;
 import com.tacz.guns.item.AttachmentItem;
 import com.tacz.guns.item.GunSmithTableItem;
 import net.minecraft.core.registries.Registries;
@@ -31,13 +29,14 @@ public class ModCreativeTabs {
                 output.accept(ModItems.TARGET.get());
                 output.accept(ModItems.STATUE.get());
                 output.accept(ModItems.TARGET_MINECART.get());
-                AmmoBoxItem.fillItemCategory(output);
+                // Native ammo boxes are retired along with native ammunition.
             }).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> AMMO_TAB = TABS.register("ammo", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tab.tacz.ammo")).withTabsBefore(OTHER_TAB.getId())
             .icon(() -> AmmoItemBuilder.create().setId(DefaultAssets.DEFAULT_AMMO_ID).build())
-            .displayItems((parameters, output) -> output.acceptAll(AmmoItem.fillItemCategory())).build());
+            // Keep the registered tab ID for ordering, but do not expose native ammunition.
+            .displayItems((parameters, output) -> {}).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> ATTACHMENT_SCOPE_TAB = TABS.register("scope", () -> CreativeModeTab.builder()
             .title(Component.translatable("tacz.type.scope.name")).withTabsBefore(AMMO_TAB.getId())
@@ -96,7 +95,7 @@ public class ModCreativeTabs {
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> GUN_RPG_TAB = TABS.register("rpg", () -> CreativeModeTab.builder()
             .title(Component.translatable("tacz.type.rpg.name")).withTabsBefore(GUN_SMG_TAB.getId())
-            .icon(() -> GunItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "rpg7")).build(null))
+            .icon(() -> GunItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "glock_17")).build(null))
             .displayItems((parameters, output) -> output.acceptAll(AbstractGunItem.fillItemCategory(GunTabType.RPG))).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> GUN_MG_TAB = TABS.register("mg", () -> CreativeModeTab.builder()

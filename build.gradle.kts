@@ -155,6 +155,8 @@ tasks.withType<JavaCompile> {
 }
 
 tasks.processResources {
+    // Preserve sources for upstream sync, but do not ship retired native ammo-box recipes.
+    exclude("data/tacz/recipe/iron_ammo_box.json", "data/tacz/recipe/gold_ammo_box.json", "data/tacz/recipe/diamond_ammo_box.json")
     val properties = mapOf(
         "id" to id,
         "version" to project.version,
