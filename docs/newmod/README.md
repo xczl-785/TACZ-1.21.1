@@ -34,7 +34,7 @@
 
 本地独立仓库 `TACZ-1.21.1`，分支 `dev`；origin `xczl-785/TACZ-1.21.1`，upstream `MUKSC/TACZ-1.21.1`。本次开始基线 `01e24c1e4ea4ba63428f0e564ce5af3d47f3969d`；上游参考 `ff715d80176f9ca61f5b2e6f029864f5adf209c2`。
 
-NewMod 当前运行锁指向B2源码提交`a920e6ce`。工作区配套资料（独立克隆本 fork 时可能不可用）：
+NewMod 当前运行锁指向额外清理源码提交`20de7921`（B2来源为a920e6ce）。工作区配套资料（独立克隆本 fork 时可能不可用）：
 
 - [运行锁](../../../source/mods/tacz_adapter/dependency-lock.json)与[运行接入记录](../../../source/mods/tacz_adapter/docs/self-built-runtime.md)。
 - [许可证核对](../../../docs/进行中/TaCZ改造许可证核对.md)：代码 GPLv3，资源 CC BY-NC-ND 4.0；本地推进不等于许可公开修改资源。
