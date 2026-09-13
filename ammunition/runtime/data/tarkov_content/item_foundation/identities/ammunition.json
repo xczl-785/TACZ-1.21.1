@@ -1,0 +1,521 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tarkov_content:ammo_54527a984bdc2d4e668b4567",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_54527ac44bdc2d36668b4567",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_560d5e524bdc2d25448b4571",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5656d7c34bdc2d9d198b4587",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_56d59d3ad2720bdb418b4577",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_58820d1224597753c90aeb13",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_58864a4f2459770fcc257101",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_58dd3ad986f77403051cba8f",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_59e0d99486f7744a32234762",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_59e4cf5286f7741778269d8a",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_59e4d24686f7741776641ac7",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_59e4d3d286f774176a36250a",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_59e68f6f86f7746c9f75e846",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_59e6906286f7746c9f75e847",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_59e690b686f7746c9f75e848",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_59e6918f86f7746c9f75e849",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_59e6920f86f77411d82aa167",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_59e6927d86f77411da468256",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5a3c16fe86f77452b62de32a",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5a6086ea4f39f99cd479502f",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5a608bf24f39f98ffc77720e",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5c0d56a986f774449d5de529",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5c0d591486f7744c505b416f",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5c0d5ae286f7741e46554302",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5c3df7d588a4501f290594e5",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5c925fa22e221601da359b7b",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5cc80f38e4a949001152b560",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5cc80f53e4a949000e1ea4f8",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5cc80f67e4a949035e43bbba",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5cc80f79e4a949033c7343b2",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5cc80f8fe4a949033b0224a2",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5cc86832d7f00c000d3a6e6c",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5cc86840d7f00c002412c56c",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e6772a4b936088465b17c",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e67fba4b9361bc73bc779",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e6806a4b936088465b17e",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e6869a4b9361c140bcfde",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e6891a4b9361bd473feea",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e689ca4b9361bc8618956",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e68a8a4b9360b6c0d54e2",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e68b3a4b9361bca7e50b5",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e68c4a4b9361b93413f79",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e68d1a4b93622fe60e845",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e68dea4b9361bcc29e659",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e68e6a4b9361c140bcfe0",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5d6e6911a4b9361bd5780d52",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5e023e53d4353e3302577c4c",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5e023e6e34d52a55c3304f71",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5e023e88277cce2b522ff2b1",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5e81f423763d9f754677bf2e",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5ea2a8e200685063ec28c05a",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5efb0c1bd79ff02a1f5e68d9",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5efb0cabfb3e451d70735af5",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5efb0d4f4bc50b58e81710f3",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5efb0da7a29a85116f6ea05f",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5efb0e16aeb21837e749c7ff",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5efb0fc6aeb21837e749c801",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5fc275cf85fd526b824a571a",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5fc382a9d724d907e2077dab",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5fc382b6d6fa9c00c571bbc3",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_5fc382c1016cce60e8341b20",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_60194943740c5d77f6705eea",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_601949593ae8f707c4608daa",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_601aa3d2b2bcb34913271e6d",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_62330b3ed4dc74626d570b95",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_62330bfadc5883093563729b",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_62330c18744e5e31df12f516",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_62330c40bdd19b369e1e53d1",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_64b7af434b75259c590fa893",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_64b7af5a8532cf95ee0a0dbd",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_64b7af734b75259c590fa895",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_64b7bbb74b75259c590fa897",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_64b8ee384b75259c590fa89b",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_668fe62ac62660a5d8071446",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_66a0d1c87d0d369e270bb9de",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_66a0d1e0ed648d72fe064d06",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_66a0d1f88486c69fce00fdf6",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_6768c25aa7b238f14a08d3f6",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_67d41936f378a36c4706eeb9",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_67dc212493ce32834b0fa446",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_67dc255ee3028a8b120efc48",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_67dc2648ba5b79876906a166",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_6a07208057b2695f9d001e63",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_6a42661705016139300b2085",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_6a42662fcb506840dd053827",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    },
+    {
+      "item": "tarkov_content:ammo_6a426637ddc63098d100ae67",
+      "tags": [
+        "item_foundation:type/ammunition/round"
+      ]
+    }
+  ]
+}

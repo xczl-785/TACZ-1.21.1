@@ -13,7 +13,7 @@ def build():
  base='src/main/resources/'
  for r in source:
   path='ammo_'+r['id'];ident='tarkov_content:'+path
-  catalog.append(dict(id=ident,sourceId=r['id'],category='ammunition',caliber=r['project_caliber'],fleshDamage=r['Damage'],penetrationPower=r['PenetrationPower'],armorDamage=r['ArmorDamage'],stackMaxSize=r['StackMaxSize'],initialSpeed=r['InitialSpeed'],recoilModifier=r['ammoRec'],source=r))
+  catalog.append(dict(id=ident,sourceId=r['id'],category='ammunition',caliber=r['project_caliber'],fleshDamage=r['Damage'],penetrationPower=r['PenetrationPower'],armorDamage=r['ArmorDamage'],stackMaxSize=r['StackMaxSize'],initialSpeed=r['InitialSpeed'],recoilModifier=r['ammoRec'],projectileCount=max(1,r['ProjectileCount']),source=r))
   emit(base+'data/tarkov_content/item_foundation/items/'+path+'.json',dict(schema_version=3,item=ident,footprint=[r['Width'],r['Height']],weight_kg=r['Weight'],description={'translate':'item.tarkov_content.'+path+'.description'},category='tarkov_content:ammunition',container_areas=None,wearable_slots=[]))
   emit(base+'assets/tarkov_content/models/item/'+path+'.json',dict(parent='minecraft:item/generated',textures={'layer0':'tarkov_content:item/'+path}))
   image=INPUTS/'pixels'/f'{r["id"]}.png'
@@ -34,6 +34,13 @@ def build():
   langs['zh_cn']['inspection.tarkov_content.ammunition.'+key]=zh
   langs['en_us']['inspection.tarkov_content.ammunition.'+key]=en
  emit('scripts/ammunition/generated_lang.json',langs)
+ # Runtime packaging shares the same generated source; no second hand-edited catalog.
+ runtime=INPUTS.parent/'runtime'
+ for path,data in list(files.items()):
+  rel=path.relative_to(ROOT)
+  if rel.parts[:3]==('src','main','resources'):files[runtime/Path(*rel.parts[3:])]=data
+ for lang,translations in langs.items():files[runtime/f'assets/tarkov_content/lang/{lang}.json']=(json.dumps(translations,ensure_ascii=False,indent=2)+'\n').encode()
+ files[runtime/'data/tarkov_content/item_foundation/identities/ammunition.json']=(json.dumps({'schema_version':1,'items':[{'item':e['id'],'tags':['item_foundation:type/ammunition/round']} for e in catalog]},ensure_ascii=False,indent=2)+'\n').encode()
  return files
 if __name__=='__main__':
  p=argparse.ArgumentParser();p.add_argument('--check',action='store_true');args=p.parse_args()

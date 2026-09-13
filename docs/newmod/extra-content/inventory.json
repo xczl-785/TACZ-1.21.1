@@ -1,0 +1,1824 @@
+{
+  "date": "2026-09-13",
+  "registries": {
+    "ModItems": {
+      "path": "src/main/java/com/tacz/guns/init/ModItems.java",
+      "registered_names": [
+        "modern_kinetic_gun",
+        "ammo",
+        "attachment",
+        "gun_smith_table",
+        "workbench_a",
+        "workbench_b",
+        "workbench_c",
+        "target",
+        "statue",
+        "ammo_box",
+        "target_minecart"
+      ]
+    },
+    "ModBlocks": {
+      "path": "src/main/java/com/tacz/guns/init/ModBlocks.java",
+      "registered_names": [
+        "gun_smith_table",
+        "workbench_a",
+        "workbench_b",
+        "workbench_c",
+        "target",
+        "statue",
+        "gun_smith_table",
+        "target",
+        "statue"
+      ]
+    },
+    "ModEntities": {
+      "path": "src/main/java/com/tacz/guns/init/ModEntities.java",
+      "registered_names": [
+        "bullet",
+        "target_minecart"
+      ]
+    },
+    "ModParticles": {
+      "path": "src/main/java/com/tacz/guns/init/ModParticles.java",
+      "registered_names": [
+        "bullet_hole"
+      ]
+    },
+    "ModPainting": {
+      "path": "src/main/java/com/tacz/guns/init/ModPainting.java",
+      "registered_names": [
+        "blood_strike_1"
+      ]
+    }
+  },
+  "non_default_gunpack_or_block_assets": [
+    {
+      "path": "src/main/resources/icon.png",
+      "bytes": 147615
+    },
+    {
+      "path": "src/main/resources/kubejs.classfilter.txt",
+      "bytes": 14
+    },
+    {
+      "path": "src/main/resources/tacz.mixins.json",
+      "bytes": 754
+    },
+    {
+      "path": "src/main/resources/tacz.compat.acceleratedrendering.mixins.json",
+      "bytes": 311
+    },
+    {
+      "path": "src/main/resources/logo.png",
+      "bytes": 13235
+    },
+    {
+      "path": "src/main/resources/kubejs.plugins.txt",
+      "bytes": 48
+    },
+    {
+      "path": "src/main/resources/shouldersurfing_plugin.json",
+      "bytes": 81
+    },
+    {
+      "path": "src/main/resources/pack.mcmeta",
+      "bytes": 90
+    },
+    {
+      "path": "src/main/resources/META-INF/neoforge.mods.toml",
+      "bytes": 614
+    },
+    {
+      "path": "src/main/resources/META-INF/accesstransformer.cfg",
+      "bytes": 800
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds.json",
+      "bytes": 618
+    },
+    {
+      "path": "src/main/resources/assets/tacz/particles/bullet_hole.json",
+      "bytes": 2
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/id_id.json",
+      "bytes": 24373
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/tr_tr.json",
+      "bytes": 25956
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ko_kr.json",
+      "bytes": 26050
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/es_es.json",
+      "bytes": 25373
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ja_jp.json",
+      "bytes": 27821
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/zh_cn.json",
+      "bytes": 23413
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/it_it.json",
+      "bytes": 26151
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/th_th.json",
+      "bytes": 36308
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/tr-TR.json",
+      "bytes": 12597
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/eu_es.json",
+      "bytes": 24618
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/en_us.json",
+      "bytes": 23885
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/vi_vn.json",
+      "bytes": 25870
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ru_ru.json",
+      "bytes": 33232
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/da_dk.json",
+      "bytes": 23759
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ca_es.json",
+      "bytes": 25670
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/de_de.json",
+      "bytes": 25190
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/pt_br.json",
+      "bytes": 25105
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/zh_tw.json",
+      "bytes": 23281
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/fr_fr.json",
+      "bytes": 25759
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/uk_ua.json",
+      "bytes": 30864
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/pl_pl.json",
+      "bytes": 25563
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/statue.json",
+      "bytes": 74
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/target.json",
+      "bytes": 74
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/workbench_c.json",
+      "bytes": 83
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/gun_smith_table.json",
+      "bytes": 83
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/workbench_b.json",
+      "bytes": 83
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/workbench_a.json",
+      "bytes": 83
+    },
+    {
+      "path": "src/main/resources/assets/tacz/animations/rifle_default.animation.json",
+      "bytes": 58884
+    },
+    {
+      "path": "src/main/resources/assets/tacz/animations/pistol_default.animation.json",
+      "bytes": 38840
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/blocks/ammo_workbench.json",
+      "bytes": 962
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/blocks/gun_smith_table.json",
+      "bytes": 1092
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/blocks/attachment_workbench.json",
+      "bytes": 974
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/block/ammo_workbench.json",
+      "bytes": 28788
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/block/gun_smith_table.json",
+      "bytes": 31183
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/block/attachment_workbench.json",
+      "bytes": 24845
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/ammo_workbench_n.png",
+      "bytes": 2729
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/gun_smith_table_s.png",
+      "bytes": 2212
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/gun_smith_table.png",
+      "bytes": 4221
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/attachment_workbench_s.png",
+      "bytes": 1694
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/attachment_workbench.png",
+      "bytes": 3433
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/attachment_workbench_n.png",
+      "bytes": 1394
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/gun_smith_table_n.png",
+      "bytes": 2175
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/ammo_workbench.png",
+      "bytes": 5171
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/ammo_workbench_s.png",
+      "bytes": 1915
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/blocks/ammo_workbench.json",
+      "bytes": 1809
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/blocks/gun_smith_table.json",
+      "bytes": 2329
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/blocks/attachment_workbench.json",
+      "bytes": 1693
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/blocks/ammo_workbench.json",
+      "bytes": 629
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/blocks/gun_smith_table.json",
+      "bytes": 890
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/blocks/attachment_workbench.json",
+      "bytes": 653
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/gun/empty.ogg",
+      "bytes": 2683
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_3.ogg",
+      "bytes": 13353
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_2.ogg",
+      "bytes": 14977
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_1.ogg",
+      "bytes": 16384
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_5.ogg",
+      "bytes": 12556
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_4.ogg",
+      "bytes": 20158
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_6.ogg",
+      "bytes": 15421
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_7.ogg",
+      "bytes": 13895
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/bedrock/statue.json",
+      "bytes": 26706
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/bedrock/target.json",
+      "bytes": 12209
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/bedrock/basic_bullet.json",
+      "bytes": 1213
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/bedrock/target_minecart.json",
+      "bytes": 22133
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/bedrock/gun_smith_table.json",
+      "bytes": 31183
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/statue.json",
+      "bytes": 86
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/target.json",
+      "bytes": 86
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box.json",
+      "bytes": 1201
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/attachment.json",
+      "bytes": 545
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/workbench_c.json",
+      "bytes": 31
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/target_minecart.json",
+      "bytes": 95
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/gun_smith_table.json",
+      "bytes": 32
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/modern_kinetic_gun.json",
+      "bytes": 56
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/workbench_b.json",
+      "bytes": 31
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/workbench_a.json",
+      "bytes": 31
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/m67.json",
+      "bytes": 56
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo.json",
+      "bytes": 246
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/block/statue.json",
+      "bytes": 63
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/block/target.json",
+      "bytes": 68
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/block/gun_smith_table.json",
+      "bytes": 68
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/creative_ammo_box_open.json",
+      "bytes": 12626
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/iron_ammo_box_close.json",
+      "bytes": 11783
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/all_type_creative_ammo_box.json",
+      "bytes": 12860
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/creative_ammo_box_close.json",
+      "bytes": 12615
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/diamond_ammo_box_close.json",
+      "bytes": 11789
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/gold_ammo_box_close.json",
+      "bytes": 11783
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/iron_ammo_box_open.json",
+      "bytes": 11794
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/gold_ammo_box_open.json",
+      "bytes": 11794
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/diamond_ammo_box_open.json",
+      "bytes": 11800
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/basic_bullet.png",
+      "bytes": 89
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/beam_s.png",
+      "bytes": 89
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/beam.png",
+      "bytes": 90
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/empty.png",
+      "bytes": 194
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/target_minecart_n.png",
+      "bytes": 1003
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/target_minecart_s.png",
+      "bytes": 959
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/basic_bullet_s.png",
+      "bytes": 100
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/target_minecart.png",
+      "bytes": 2081
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/painting/blood_strike_1.png",
+      "bytes": 1459
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box_n.png",
+      "bytes": 1058
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box.png",
+      "bytes": 1493
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/target.png",
+      "bytes": 254
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/statue.png",
+      "bytes": 431
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/target_minecart.png",
+      "bytes": 264
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box_s.png",
+      "bytes": 1062
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/gui/gun_smith_table_side.png",
+      "bytes": 2665
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/gui/gun_smith_table.png",
+      "bytes": 4060
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/gui/refit_slot_icons.png",
+      "bytes": 3010
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/gui/refit_unload.png",
+      "bytes": 7231
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/gui/refit_slot.png",
+      "bytes": 110
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/gui/refit_turn_page.png",
+      "bytes": 1551
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/statue_n.png",
+      "bytes": 1845
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/gun_smith_table_s.png",
+      "bytes": 2212
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/gun_smith_table.png",
+      "bytes": 4221
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/target_n.png",
+      "bytes": 619
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/target.png",
+      "bytes": 1431
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/statue_s.png",
+      "bytes": 3911
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/statue.png",
+      "bytes": 2950
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/target_s.png",
+      "bytes": 410
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/gun_smith_table_n.png",
+      "bytes": 2175
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/hud/fire_mode_burst.png",
+      "bytes": 1072
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/hud/fire_mode_auto.png",
+      "bytes": 2379
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/hud/heat_base.png",
+      "bytes": 200
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/hud/fire_mode_semi.png",
+      "bytes": 791
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/hud/heat_bar.png",
+      "bytes": 163
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_iron.png",
+      "bytes": 136
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_gold.png",
+      "bytes": 135
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_diamond_s.png",
+      "bytes": 1421
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_gold_n.png",
+      "bytes": 1424
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_unitary_ring_s.png",
+      "bytes": 148
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_unitary_ring.png",
+      "bytes": 157
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_iron_s.png",
+      "bytes": 1424
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_universal_ring_n.png",
+      "bytes": 1476
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_universal_ring_s.png",
+      "bytes": 129
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_iron_n.png",
+      "bytes": 1424
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_universal_ring.png",
+      "bytes": 167
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_diamond.png",
+      "bytes": 136
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_diamond_n.png",
+      "bytes": 1424
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_gold_s.png",
+      "bytes": 1424
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_unitary_ring_n.png",
+      "bytes": 1487
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/hit/hit_marker.png",
+      "bytes": 2090
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/dot_1.png",
+      "bytes": 471
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/circle_1.png",
+      "bytes": 1929
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/circle_3.png",
+      "bytes": 2258
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/circle_2.png",
+      "bytes": 1760
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/empty.png",
+      "bytes": 371
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/line_1.png",
+      "bytes": 632
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/line_3.png",
+      "bytes": 540
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/line_2.png",
+      "bytes": 526
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/square_2.png",
+      "bytes": 891
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/trident_1.png",
+      "bytes": 1053
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/square_3.png",
+      "bytes": 888
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/square_1.png",
+      "bytes": 1003
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/trident_2.png",
+      "bytes": 1011
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/square_4.png",
+      "bytes": 805
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/square_5.png",
+      "bytes": 1294
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/square_6.png",
+      "bytes": 1234
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/cross_5.png",
+      "bytes": 659
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/cross_4.png",
+      "bytes": 593
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/cross_6.png",
+      "bytes": 601
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/cross_3.png",
+      "bytes": 625
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/cross_2.png",
+      "bytes": 682
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/crosshair/normal/cross_1.png",
+      "bytes": 724
+    },
+    {
+      "path": "src/main/resources/data/tacz/painting_variant/blood_strike_1.json",
+      "bytes": 68
+    },
+    {
+      "path": "src/main/resources/data/tacz/damage_type/bullet_void_ignore_armor.json",
+      "bytes": 77
+    },
+    {
+      "path": "src/main/resources/data/tacz/damage_type/bullet_ignore_armor.json",
+      "bytes": 77
+    },
+    {
+      "path": "src/main/resources/data/tacz/damage_type/bullet.json",
+      "bytes": 77
+    },
+    {
+      "path": "src/main/resources/data/tacz/damage_type/bullet_void.json",
+      "bytes": 77
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/statue.json",
+      "bytes": 331
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/target.json",
+      "bytes": 301
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/ammo_workbench.json",
+      "bytes": 382
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/gunpowder.json",
+      "bytes": 413
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/target_minecart.json",
+      "bytes": 244
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/gun_smith_table.json",
+      "bytes": 310
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/attachment_workbench.json",
+      "bytes": 461
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/diamond_ammo_box.json",
+      "bytes": 322
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/gold_ammo_box.json",
+      "bytes": 321
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/iron_ammo_box.json",
+      "bytes": 321
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_modifiers/loot_table_injector.json",
+      "bytes": 61
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/statue.json",
+      "bytes": 567
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/target.json",
+      "bytes": 721
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/workbench_c.json",
+      "bytes": 941
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/gun_smith_table.json",
+      "bytes": 584
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/workbench_b.json",
+      "bytes": 940
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/workbench_a.json",
+      "bytes": 862
+    },
+    {
+      "path": "src/main/resources/data/tacz/tags/damage_type/bullets.json",
+      "bytes": 152
+    },
+    {
+      "path": "src/main/resources/data/tacz/tags/entity_type/use_void_damage_on.json",
+      "bytes": 41
+    },
+    {
+      "path": "src/main/resources/data/tacz/tags/entity_type/use_magic_damage_on.json",
+      "bytes": 66
+    },
+    {
+      "path": "src/main/resources/data/tacz/tags/entity_type/pretend_melee_damage_on.json",
+      "bytes": 41
+    },
+    {
+      "path": "src/main/resources/data/tacz/tags/block/bullet_ignore.json",
+      "bytes": 147
+    },
+    {
+      "path": "src/main/resources/data/tacz/tags/block/interact_key/whitelist.json",
+      "bytes": 919
+    },
+    {
+      "path": "src/main/resources/data/tacz/tags/block/interact_key/blacklist.json",
+      "bytes": 38
+    },
+    {
+      "path": "src/main/resources/data/tacz/tags/entity_type/interact_key/whitelist.json",
+      "bytes": 366
+    },
+    {
+      "path": "src/main/resources/data/tacz/tags/entity_type/interact_key/blacklist.json",
+      "bytes": 38
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/misc/blood_strike_1.json",
+      "bytes": 622
+    },
+    {
+      "path": "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
+      "bytes": 47
+    },
+    {
+      "path": "src/main/resources/data/minecraft/tags/damage_type/bypasses_invulnerability.json",
+      "bytes": 101
+    },
+    {
+      "path": "src/main/resources/data/minecraft/tags/damage_type/bypasses_armor.json",
+      "bytes": 109
+    },
+    {
+      "path": "src/main/resources/data/minecraft/tags/item/dyeable.json",
+      "bytes": 61
+    },
+    {
+      "path": "src/main/resources/data/neoforge/loot_modifiers/global_loot_modifiers.json",
+      "bytes": 74
+    }
+  ],
+  "preserved_effects": [
+    {
+      "path": "assets/tacz/display/ammo/12g_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/22wmr_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/308_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/30_06_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/338_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/357mag_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/40mm_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/45_70_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/45acp_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/46x30_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/500mag_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/50ae_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/50bmg_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/545x39_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/556x45_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/57x28_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/58x42_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/68x51fury_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/762x25_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/762x39_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/762x54_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/792x57_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/9mm_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/display/ammo/rpg_rocket_display.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/12g.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/308.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/30_06.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/338.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/357mag.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/40mm_grenade.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/45acp.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/46x30.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/50ae.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/50bmg.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/556x45.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/57x28.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/58x42.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/68x51fury.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/762x25.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/762x39.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/762x54.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/geo_models/ammo/9mm.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/12g.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/20x82.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/22wmr.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/308.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/30_06.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/338.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/357mag.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/40mm.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/45_70.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/45acp.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/46x30.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/500mag.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/50ae.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/50bmg.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/545x39.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/556x45.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/57x28.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/58x42.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/68x51fury.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/762x25.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/762x39.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/762x54.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/792x57.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/9mm.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/font.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/slot/rpg_rocket.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/12g.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/12g_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/12g_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/308.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/308_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/308_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/30_06.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/30_06_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/338.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/338_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/338_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/357mag.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/357mag_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/40mm.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/40mm_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/40mm_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/45acp.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/45acp_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/45acp_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/46x30.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/46x30_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/50ae.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/50ae_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/50ae_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/50bmg.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/50bmg_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/556x45.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/556x45_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/57x28.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/57x28_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/58x42.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/58x42_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/68x51fury.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/68x51fury_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/762x25.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/762x25_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/762x39.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/762x39_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/762x39_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/762x54.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/762x54_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/9mm.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/9mm_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/ammo/uv/9mm_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/flash/common_muzzle_flash.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/12g_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/12g_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/12g_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/22wmr_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/308_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/308_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/308_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/30_06_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/30_06_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/30_06_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/357mag_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/40mm_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/40mm_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/40mm_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/45acp_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/45acp_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/45acp_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/46x30_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/46x30_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/46x30_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/500mag_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/50ae_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/50ae_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/50ae_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/50bmg_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/50bmg_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/50bmg_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/545x39_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/545x39_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/545x39_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/556x45_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/556x45_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/556x45_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/57x28_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/58x42_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/58x42_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/58x42_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/762x25_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/762x25_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/762x25_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/762x39_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/762x39_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/762x39_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/762x54_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/762x54_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/762x54_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/9mm_shell.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/9mm_shell_n.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "assets/tacz/textures/shell/9mm_shell_s.png",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/12g.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/22wmr.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/308.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/30_06.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/338.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/357mag.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/40mm.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/45_70.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/45acp.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/46x30.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/500mag.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/50ae.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/50bmg.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/545x39.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/556x45.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/57x28.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/58x42.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/68x51fury.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/762x25.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/762x39.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/762x54.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/792x57.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/9mm.json",
+      "exists": true,
+      "unchanged": true
+    },
+    {
+      "path": "data/tacz/index/ammo/rpg_rocket.json",
+      "exists": true,
+      "unchanged": true
+    }
+  ]
+}

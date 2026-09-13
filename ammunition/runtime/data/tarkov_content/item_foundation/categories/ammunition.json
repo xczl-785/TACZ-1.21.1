@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "name": {
+    "translate": "category.tarkov_content.ammunition",
+    "fallback": "子弹"
+  }
+}

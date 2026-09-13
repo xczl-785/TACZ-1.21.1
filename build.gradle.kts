@@ -202,3 +202,5 @@ publishMods {
         tagName = "neoforge-${project.version}"
     }
 }
+// 2026-09-13: canonical EFT ammunition payload; IDs retained for existing saves.
+sourceSets.main { resources.srcDir("ammunition/runtime") }
