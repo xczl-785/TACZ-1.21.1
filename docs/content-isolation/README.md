@@ -1,11 +1,13 @@
+> 此页为初始隔离历史。2026-09-13已执行15枪清理，当前结果见[清理记录](../newmod/cleanup/README.md)。NewMod运行锁暂仍是旧隔离Jar。
+
 # TaCZ 内容隔离分支
 
-2026-09-12，依据 NewMod 已确认的 selection.json：保留45枪，排除9枪，原生弹药全部弃用。此目录保存选择快照、原始资源哈希与可复现盘点；不改变 NewMod 主工程或其锁定 Jar。本分支尚未合并、推送或切换实际运行依赖。
+2026-09-12，依据 NewMod 已确认的 selection.json：保留45枪，排除9枪，原生弹药全部弃用。此目录保存选择快照、原始资源哈希与可复现盘点；本节记录初始隔离成果。2026-09-13核对：该成果已位于当前dev提交01e24c1e，NewMod运行锁也已接入；最新任务见[改造入口](../newmod/README.md)。
 
 ## 分支范围
 
 - 基线 ff715d80176f9ca61f5b2e6f029864f5adf209c2，分支 codex/content-isolation。
-- 工作目录 `/Users/zhengpanpan/Downloads/tempProgram/NewMod-worktrees/tacz-content-isolation`；原仓库仍在 dev。
+- 历史实施目录为 `/Users/zhengpanpan/Downloads/tempProgram/NewMod-worktrees/tacz-content-isolation`；当前维护目录为 NewMod 下的 `TACZ-1.21.1`，分支 dev。
 - 默认枪包54枪与已确认ID一致。**源码有24种原弹药**，比此前发布Jar盘点多46x30、545x39、68x51fury、762x25、762x54；“全部弃用”一并覆盖24种。
 
 ## 已隔离

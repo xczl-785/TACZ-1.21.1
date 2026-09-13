@@ -1,0 +1,8 @@
+{
+  "date": "2026-09-13",
+  "plan_sha256": "33b8b73af22ac7ecd409c7a9f2e2833b4e9f50e708aa412f11dae43b201cf6ff",
+  "deleted": 1497,
+  "modified": 36,
+  "validation": "passed; see verification.json; workstation exceptions deferred",
+  "workstation_changes_reverted": true
+}

@@ -3,6 +3,8 @@
 import hashlib,json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
+if (ROOT/'docs/newmod/cleanup/applied.json').exists():
+    raise SystemExit('Historical isolation inventory is frozen; use tools/verify_cleanup.py')
 PACK=ROOT/'src/main/resources/assets/tacz/custom/tacz_default_gun'
 OUT=ROOT/'docs/content-isolation'
 s=json.loads((OUT/'selection.json').read_text())

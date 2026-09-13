@@ -1,0 +1,10 @@
+{
+  "date": "2026-09-13",
+  "build": "passed",
+  "build_log": "/tmp/tacz-cleanup15-build.log",
+  "jar": "build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.cleanup15.jar",
+  "jar_sha512": "a2a2057a75f7ab5763804a446adf1aa5ca17470bc201da147f79cc777d00499de8f5ff9ebe5b747751868920e88159ea9eb25744f8e2506b57ef55b7acdfeb31",
+  "verification": "PASS: 15 guns, 85 consumed attachments, 1497 deletions, 235 Java policy cases; recorded workstation icon exceptions",
+  "runtime_switch": false,
+  "owner_live_acceptance": false
+}

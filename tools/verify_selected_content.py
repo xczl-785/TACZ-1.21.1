@@ -3,6 +3,10 @@
 import json,subprocess,tempfile
 from pathlib import Path
 R=Path(__file__).resolve().parents[1]
+if (R/'docs/newmod/cleanup/applied.json').exists():
+    import sys
+    subprocess.run([sys.executable,str(R/'tools/verify_cleanup.py')],check=True)
+    raise SystemExit(0)
 s=json.loads((R/'docs/content-isolation/selection.json').read_text())
 i=json.loads((R/'docs/content-isolation/inventory.json').read_text())
 blocked={r['path'].removeprefix('data/tacz/') for r in i['recipes'] if r['isolate']}

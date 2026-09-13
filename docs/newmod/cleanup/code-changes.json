@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-13",
+  "files": [
+    {
+      "path": "src/main/java/com/tacz/guns/resource/SelectedContentPolicy.java",
+      "before_sha256": "e8106ecb7624f8f7aa3c08eea46cd97759e0c624b006133bc3422ed939f3f49f",
+      "after_sha256": "8dea267eb3a09f118b87c01947bef23fa16c790d4fc1ced8981650416fefda30"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModCreativeTabs.java",
+      "before_sha256": "d9e53cdfd0e2d3ded97177c38fed35ff6be8a50c584db55f4cac4beb9388954d",
+      "after_sha256": "c7ac0bfae7c2fb47f530fd33d7a3e8ccefed8d9c73fee6a0157294ea878b31d4"
+    },
+    {
+      "path": "tools/audit_selected_content.py",
+      "before_sha256": "cfc0776a57ef916aeb22ded8df1435cd55b361dbcd30aeff1a79345843b11de5",
+      "after_sha256": "a6e28b1d1e81bcb4d33822c8d3df06969341d59e1b9918d77ea37a119f2a048d"
+    },
+    {
+      "path": "tools/verify_selected_content.py",
+      "before_sha256": "d5b6d4e4b2e6ae3379c7b0e6ffbccbc97e7c95b58ec44f4d561588e96209b7c4",
+      "after_sha256": "e3fe60489ad40e9d000834e76b0a156a407a024be5426be359789e43838b1b2e"
+    }
+  ]
+}

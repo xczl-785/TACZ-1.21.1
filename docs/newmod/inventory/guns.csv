@@ -1,0 +1,55 @@
+TaCZ ID,名称,原ammo_id,旧选择,本次建议,EFT候选ID,EFT候选名称,理由,单枪引用文件数_非删除许可,共享引用文件数
+tacz:aa12,AA12 Shotgun,tacz:12g,retain,candidate,66ffa9b66e19cc902401c5e8,MPS Auto Assault-12 Gen 1 12ga automatic shotgun,AA-12已存在；TaCZ代际需确认,19,11
+tacz:ai_awp,Accuracy International AWM,tacz:338,retain,candidate,627e14b21713922ded6f2c15,Accuracy International AXMC .338 LM bolt-action sniper rifle,AWM/AWP与AXMC不是同一型号,21,6
+tacz:ak47,AKM,tacz:762x39,retain,candidate,59d6088586f774275f37482f,Kalashnikov AKM 7.62x39 assault rifle,AK47与AKM不能自动等同,16,30
+tacz:aug,AUG,tacz:556x45,retain,candidate,62e7c4fba689e8c9c50dfc38,Steyr AUG A1 5.56x45 assault rifle,AUG需核对A1/A3外观与配置,22,11
+tacz:b93r,B93R,tacz:9mm,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,16,11
+tacz:cz75,CZ 75,tacz:9mm,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,13,10
+tacz:db_long,DB-4 Ursus,tacz:12g,retain,candidate,5580223e4bdc2d1c128b457f,MP-43-1C 12ga double-barrel shotgun,通用双管名不能证明MP-43型号,11,17
+tacz:db_short,DB-2 Durin,tacz:12g,retain,candidate,64748cb8de82c85eaf0a273a,MP-43 12ga sawed-off double-barrel shotgun,短双管需核对是否对应MP-43,19,15
+tacz:deagle,Deagle 50,tacz:50ae,retain,candidate,668fe5a998b5ad715703ddd6,Magnum Research Desert Eagle Mk XIX .50 AE pistol,.50AE一致，需核对Mk XIX/L5/L6,9,18
+tacz:deagle_golden,Golden Deagle 357,tacz:357mag,retain,candidate,669fa409933e898cce0c2166,Magnum Research Desert Eagle L5 .357 pistol,.357一致，金色外观不证明L5型号,9,18
+tacz:fn_evolys,FN EVOLYS Machine Gun,tacz:308,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,16,16
+tacz:fn_fal,FN FAL Battle Rifle,tacz:308,retain,candidate,5b0bbe4e5acfc40dc528a72d,DS Arms SA58 7.62x51 assault rifle,FN FAL与DS Arms SA58同系但非同款,16,19
+tacz:g36k,G36K,tacz:556x45,retain,candidate,623063e994fc3f7b302a9696,HK G36 5.56x45 assault rifle,G36K需核对G36短型组件配置,16,17
+tacz:glock_17,Glock 17,tacz:9mm,retain,retain,5a7ae0c351dfba0017554310,Glock 17 9x19 pistol,名称和口径对应,15,11
+tacz:hk416d,HK-416A5,tacz:556x45,retain,candidate,5bb2475ed4351e00853264e3,HK 416A5 5.56x45 assault rifle,416D与416A5代际不同,16,12
+tacz:hk_g3,HK G3 Battle rifle,tacz:308,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,16,17
+tacz:hk_mk23,MK23 Offensive Pistol,tacz:45acp,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,17,10
+tacz:hk_mp5a5,HK-MP5A5,tacz:9mm,retain,candidate,5926bb2186f7744b1c6c6e60,HK MP5 9x19 submachine gun (Navy 3 Round Burst),需核对MP5枪托与点射/全自动配置,16,12
+tacz:kar98,Mauser Kar98k Rifle,tacz:792x57,exclude,exclude,,,既有隔离项，保留原排除决定,18,3
+tacz:lonetrail,.30-06 Lonetrail Hand Cannon,tacz:30_06,exclude,exclude,,,既有隔离项，保留原排除决定,13,9
+tacz:m1014,M1014 Battle Shotgun,tacz:12g,retain,candidate,6259b864ebedf17603599e88,Benelli M3 Super 90 12ga dual-mode shotgun,M1014与M3 Super90不能自动等同,17,12
+tacz:m107,M107 Sniper Rifle,tacz:50bmg,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,16,11
+tacz:m16a1,M16A1 Service Rifle,tacz:556x45,retain,retain,68a639748e1fe612970728e9,Colt M16A1 5.56x45 assault rifle,快照已含M16A1，不按旧印象删除,19,11
+tacz:m16a4,M16A4 Service Rifle,tacz:556x45,retain,candidate,68a6399922b1e0bd360afe56,Colt M16A2 5.56x45 assault rifle,快照有M16A2，不是M16A4,29,9
+tacz:m1911,M1911,tacz:45acp,retain,candidate,5e81c3cbac2bb513793cdc75,Colt M1911A1 .45 ACP pistol,需核对M1911/A1具体型,15,10
+tacz:m249,M249 Machine Gun,tacz:556x45,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,16,11
+tacz:m320,M320 Grenade Launcher,tacz:40mm,exclude,exclude,,,既有隔离项，保留原排除决定,23,3
+tacz:m4a1,M4A1 Carbine,tacz:556x45,retain,retain,5447a9cd4bdc2dbd208b4567,Colt M4A1 5.56x45 assault rifle,名称和口径对应,16,12
+tacz:m700,M700 Sniper Rifle,tacz:30_06,exclude,exclude,5bfea6e90db834001b7347f3,Remington Model 700 7.62x51 bolt-action sniper rifle,既有排除；TaCZ为.30-06，EFT为7.62x51，不因同名恢复,15,12
+tacz:m870,M870,tacz:12g,retain,retain,5a7828548dc32e5a9c28b516,Remington Model 870 12ga pump-action shotgun,名称和口径对应,14,15
+tacz:m95,M95 .50 Cal Antimaterial,tacz:50bmg,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,13,12
+tacz:m9a4,M9A4,tacz:9mm,retain,candidate,5cadc190ae921500103bb3b6,Beretta M9A3 9x19 pistol,M9A4与M9A3不同；现有桥覆盖不等于筛选通过,15,11
+tacz:minigun,M134 Minigun,tacz:308,exclude,exclude,,,既有隔离项，保留原排除决定,14,17
+tacz:mk14,MK14 EBR,tacz:308,retain,candidate,5aafa857e5b5b00018480968,Springfield Armory M1A 7.62x51 rifle,Mk14与M1A不自动等同,19,16
+tacz:p320,P320,tacz:45acp,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,15,10
+tacz:p90,P90 PDW,tacz:57x28,retain,retain,5cc82d76e24e8d00134b4b83,FN P90 5.7x28 submachine gun,名称和口径对应,29,4
+tacz:qbz_191,QBZ-191 Assault Rifle,tacz:58x42,retain,retain,69f9ebbcaae020b0db02f65d,Norinco QBZ-191 5.8x42 assault rifle,公开快照已有QBZ191/5.8x42,16,17
+tacz:qbz_95,"QBZ-95 ""Longbow""",tacz:58x42,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,15,16
+tacz:rhino357,.357 Rhino Revolver,tacz:357mag,retain,candidate,61a4c8884f95bc3b2c5dc96f,Chiappa Rhino 50DS .357 revolver,.357对应；需核对50DS而非其他枪管型,10,16
+tacz:rpg7,RPG-7,tacz:rpg_rocket,exclude,exclude,,,既有隔离项，保留原排除决定,18,4
+tacz:rpk,RPK,tacz:762x39,retain,candidate,5beed0f50db834001c062b12,RPK-16 5.45x39 light machine gun,TaCZ7.62x39 RPK与EFT5.45 RPK16不同,19,19
+tacz:scar_h,SCAR-H Battle Rifle,tacz:308,retain,retain,6183afd850224f204c1da514,FN SCAR-H 7.62x51 assault rifle,名称和口径对应；颜色另核,14,26
+tacz:scar_l,SCAR-L Assault Rifle,tacz:556x45,retain,retain,6184055050224f204c1da540,FN SCAR-L 5.56x45 assault rifle,名称和口径对应；颜色另核,14,17
+tacz:sks_tactical,Sks Tactical Rifle,tacz:762x39,retain,candidate,574d967124597745970e7c94,TOZ Simonov SKS 7.62x39 carbine,SKS改装配置需映射，不直接等同基础枪,14,19
+tacz:spas_12,SPAS-12 Multi-purpose Shotgun,tacz:12g,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,14,15
+tacz:spr15hb,"SPR-15 HB ""Sagittarius""",tacz:556x45,retain,candidate,5d43021ca4b9362eab4b5e25,Lone Star TX-15 DML 5.56x45 carbine,SPR15与TX15为候选近似，不能自动等同,16,10
+tacz:springfield1873,Springfield 1873 Trapdoor Rifle,tacz:45_70,exclude,exclude,,,既有隔离项，保留原排除决定,16,3
+tacz:taurus500,"Taurus ""Raging Hunter"" Hand Cannon",tacz:500mag,exclude,exclude,,,既有隔离项，保留原排除决定,18,3
+tacz:taurus943,.22 Modle 943 Revolver,tacz:22wmr,exclude,exclude,,,既有隔离项，保留原排除决定,16,7
+tacz:timeless50,§6Timeless .50 Z-Type,tacz:50ae,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,16,11
+tacz:type_81,Type 81-1 Service Rifle,tacz:762x39,retain,not_found,,,177条本地来源并集中未找到同款；不是对最新线上版本的断言,15,20
+tacz:ump45,UMP45 SMG,tacz:45acp,retain,retain,5fc3e272f8b6a877a729eac5,HK UMP .45 ACP submachine gun,名称和口径对应,19,11
+tacz:uzi,UZI,tacz:9mm,retain,retain,66992b349950f5f4cd06029f,IWI UZI 9x19 submachine gun,快照有原型UZI，不限于UZI PRO,19,11
+tacz:vector45,Vector SMG,tacz:45acp,retain,candidate,5fb64bc92b1b027b1f50bcf2,TDI KRISS Vector Gen.2 .45 ACP submachine gun,.45一致；需核对Gen2配置,14,12

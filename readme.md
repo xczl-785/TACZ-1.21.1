@@ -1,3 +1,5 @@
+> NewMod fork 改造：先读 [工程入口](docs/newmod/README.md)、[改动记录](docs/newmod/改动记录.md)。原项目说明与许可保留如下。
+
 ## Unofficial TaCZ 1.21.1 NeoForge Port
 [![Modrinth](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/modrinth_vector.svg)](https://modrinth.com/mod/tacz-1.21.1)
 [![CurseForge](https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/curseforge_vector.svg)](https://www.curseforge.com/minecraft/mc-mods/tacz-1-21-1)
