@@ -14,17 +14,28 @@ import java.util.function.Consumer;
 public class InventoryAttachmentSlot extends Button implements IStackTooltip {
     private final int slotIndex;
     private final Inventory inventory;
+    private final java.util.function.Supplier<ItemStack> stack;
 
     public InventoryAttachmentSlot(int pX, int pY, int slotIndex, Inventory inventory, Button.OnPress onPress) {
         super(pX, pY, 18, 18, Component.empty(), onPress, DEFAULT_NARRATION);
         this.slotIndex = slotIndex;
         this.inventory = inventory;
+        this.stack = () -> inventory.getItem(slotIndex);
+    }
+
+    /** Snapshot entry from an external inventory owner; no fake vanilla slot is allocated. */
+    public InventoryAttachmentSlot(int x, int y, ItemStack item, Button.OnPress onPress) {
+        super(x, y, 18, 18, Component.empty(), onPress, DEFAULT_NARRATION);
+        this.slotIndex = -1;
+        this.inventory = null;
+        var copy = item.copy();
+        this.stack = copy::copy;
     }
 
     @Override
     public void renderTooltip(Consumer<ItemStack> consumer) {
-        if (this.isHoveredOrFocused() && 0 <= this.slotIndex && this.slotIndex < this.inventory.getContainerSize()) {
-            ItemStack item = this.inventory.getItem(slotIndex);
+        if (this.isHoveredOrFocused()) {
+            ItemStack item = stack.get();
             consumer.accept(item);
         }
     }
@@ -40,7 +51,7 @@ public class InventoryAttachmentSlot extends Button implements IStackTooltip {
         } else {
             graphics.blit(GunRefitScreen.SLOT_TEXTURE, x + 1, y + 1, 1, 1, width - 2, height - 2, 18, 18);
         }
-        graphics.renderItem(inventory.getItem(slotIndex), x + 1, y + 1);
+        graphics.renderItem(stack.get(), x + 1, y + 1);
 
         RenderSystem.enableDepthTest();
         RenderSystem.disableBlend();

@@ -42,6 +42,8 @@ public class ClientMessageUnloadAttachment implements CustomPacketPayload {
     public static void handle(ClientMessageUnloadAttachment message, IPayloadContext context) {
         context.enqueueWork(() -> {
             ServerPlayer player = (ServerPlayer) context.player();
+            // An external inventory owner must settle the complete exchange through its own protocol.
+            if (com.tacz.guns.api.RefitInventoryExtension.get(player) != null) return;
             Inventory inventory = player.getInventory();
             ItemStack gunItem = inventory.getItem(message.gunSlotIndex);
             IGun iGun = IGun.getIGunOrNull(gunItem);

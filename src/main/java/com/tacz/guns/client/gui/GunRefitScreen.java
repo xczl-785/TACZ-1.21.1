@@ -28,6 +28,7 @@ import net.neoforged.neoforge.network.PacketDistributor;
 import org.jetbrains.annotations.NotNull;
 
 public class GunRefitScreen extends Screen {
+    private boolean inventoryOwnerOpened;
     public static final ResourceLocation SLOT_TEXTURE = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "textures/gui/refit_slot.png");
     public static final ResourceLocation TURN_PAGE_TEXTURE = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "textures/gui/refit_turn_page.png");
     public static final ResourceLocation UNLOAD_TEXTURE = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "textures/gui/refit_unload.png");
@@ -139,8 +140,14 @@ public class GunRefitScreen extends Screen {
         int count = 0;
         int currentY = startY;
         Inventory inventory = player.getInventory();
-        for (int i = 0; i < inventory.getContainerSize(); i++) {
-            ItemStack inventoryItem = inventory.getItem(i);
+        var owner = com.tacz.guns.api.RefitInventoryExtension.get(player);
+        if (owner != null && !inventoryOwnerOpened) {
+            inventoryOwnerOpened = true;
+            owner.opened(player);
+        }
+        var choices = owner == null ? java.util.List.<com.tacz.guns.api.RefitInventoryExtension.Choice>of() : owner.choices(player);
+        for (int i = 0; i < (owner == null ? inventory.getContainerSize() : choices.size()); i++) {
+            ItemStack inventoryItem = owner == null ? inventory.getItem(i) : choices.get(i).stack();
             IAttachment attachment = IAttachment.getIAttachmentOrNull(inventoryItem);
             IGun iGun = IGun.getIGunOrNull(player.getMainHandItem());
             if (attachment != null && iGun != null && attachment.getType(inventoryItem) == RefitTransform.getCurrentTransformType()) {
@@ -154,12 +161,18 @@ public class GunRefitScreen extends Screen {
                 if (count > pageStart + INVENTORY_ATTACHMENT_SLOT_COUNT) {
                     continue;
                 }
-                InventoryAttachmentSlot button = new InventoryAttachmentSlot(startX, currentY, i, inventory, b -> {
+                InventoryAttachmentSlot button;
+                if (owner != null) {
+                    var choice = choices.get(i);
+                    button = new InventoryAttachmentSlot(startX, currentY, choice.stack(), b -> owner.install(player, choice.id()));
+                } else {
+                button = new InventoryAttachmentSlot(startX, currentY, i, inventory, b -> {
                     int slotIndex = ((InventoryAttachmentSlot) b).getSlotIndex();
                     SoundPlayManager.playerRefitSound(inventory.getItem(slotIndex), player, SoundManager.INSTALL_SOUND);
                     ClientMessageRefitGun message = new ClientMessageRefitGun(slotIndex, inventory.selected, RefitTransform.getCurrentTransformType());
                     PacketDistributor.sendToServer(message);
                 });
+                }
                 this.addRenderableWidget(button);
                 currentY = currentY + SLOT_SIZE;
             }
@@ -239,6 +252,11 @@ public class GunRefitScreen extends Screen {
                 RefitUnloadButton unloadButton = new RefitUnloadButton(startX + 5, startY + SLOT_SIZE + 2, b -> {
                     ItemStack attachmentItem = button.getAttachmentItem();
                     if (!attachmentItem.isEmpty()) {
+                        var owner = com.tacz.guns.api.RefitInventoryExtension.get(player);
+                        if (owner != null) {
+                            owner.unload(player, RefitTransform.getCurrentTransformType());
+                            return;
+                        }
                         int freeSlot = inventory.getFreeSlot();
                         if (freeSlot != -1) {
                             SoundPlayManager.playerRefitSound(attachmentItem, player, SoundManager.UNINSTALL_SOUND);

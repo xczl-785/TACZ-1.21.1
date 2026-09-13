@@ -46,6 +46,8 @@ public class ClientMessageRefitGun implements CustomPacketPayload {
     public static void handle(ClientMessageRefitGun message, IPayloadContext context) {
         context.enqueueWork(() -> {
             ServerPlayer player = (ServerPlayer) context.player();
+            // An external inventory owner must settle the complete exchange through its own protocol.
+            if (com.tacz.guns.api.RefitInventoryExtension.get(player) != null) return;
             Inventory inventory = player.getInventory();
             ItemStack attachmentItem = inventory.getItem(message.attachmentSlotIndex);
             ItemStack gunItem = inventory.getItem(message.gunSlotIndex);
