@@ -1,0 +1,15 @@
+{
+  "schema_version": 3,
+  "item": "tarkov_content:ammo_5efb0cabfb3e451d70735af5",
+  "footprint": [
+    1,
+    1
+  ],
+  "weight_kg": 0.015,
+  "description": {
+    "translate": "item.tarkov_content.ammo_5efb0cabfb3e451d70735af5.description"
+  },
+  "category": "tarkov_content:ammunition",
+  "container_areas": null,
+  "wearable_slots": []
+}
