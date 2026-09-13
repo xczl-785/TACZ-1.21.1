@@ -8,7 +8,15 @@ plan=json.loads((R/'docs/newmod/cleanup/plan.json').read_text());selection=json.
 assert sorted('tacz:'+p.stem for p in (P/'data/tacz/index/guns').glob('*.json'))==selection['retain_ids']
 assert read(P/'data/tacz/data/guns/m700_data.json')['ammo']=='tacz:308'
 for row in plan['deleted']:assert not (P/row['path']).exists(),row['path']
-for row in plan['modified']:assert hashlib.sha256((P/row['path']).read_bytes()).hexdigest()==row['after_sha256'],row['path']
+follow_path=R/'docs/newmod/extra-content/removal.json'
+follow={r['path']:r for r in json.loads(follow_path.read_text())['files']} if follow_path.exists() else {}
+for row in plan['modified']:
+ current=P/row['path'];later=follow.get(str(current.relative_to(R)))
+ if later:
+  assert later['before_sha256']==row['after_sha256'],row['path']
+  if later['action']=='delete':assert not current.exists(),row['path'];continue
+ expected=later['after_sha256'] if later else row['after_sha256']
+ assert hashlib.sha256(current.read_bytes()).hexdigest()==expected,row['path']
 lookup=collections.defaultdict(set)
 old=json.loads((R/'docs/newmod/inventory/resources.json').read_text())
 for row in old:
@@ -58,4 +66,4 @@ if len(sys.argv)>1:
   names=set(z.namelist());prefix='assets/tacz/custom/tacz_default_gun/'
   assert all(prefix+r['path'] not in names for r in plan['deleted'])
   assert sum(x.startswith(prefix+'data/tacz/index/guns/') and x.endswith('.json') for x in names)==15
-print(f'PASS: 15 guns, {len(available)} consumed attachments, {len(plan["deleted"])} deletions, hashes, explicit references checked except recorded deferred workstation icons, {len(checks)} Java policy cases')
+print(f'PASS: 15 guns, {len(available)} consumed attachments, {len(plan["deleted"])} deletions, hashes, explicit references checked (historical workstation exception applies only before its removal), {len(checks)} Java policy cases')

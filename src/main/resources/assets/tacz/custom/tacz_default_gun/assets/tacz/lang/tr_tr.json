@@ -168,12 +168,6 @@
   "tacz.attachment.stock_moe.name": "Magpul MOE Dipçik",
   "tacz.attachment.stock_ripstock.name": "CMMG RipStock Dipçik",
   "tacz.attachment.stock_m4ss.name": "M4SS Dipçik",
-  "tacz.block.gun_smith_table.name": "TaCZ Silah Ustası Masası",
-  "tacz.block.ammo_workbench.name": "TaCZ Mühimmat Montaj Masası",
-  "tacz.block.attachment_workbench.name": "TaCZ Eklenti Masası",
-  "tacz.block.gun_smith_table.desc": "Her şeyin başladığı yer",
-  "tacz.block.ammo_workbench.desc": "Barut Parıltısı",
-  "tacz.block.attachment_workbench.desc": "Zambakları yaldızlamak",
   "config.tacz.client.render.enable_tooltip_id": "Eşya ipucunda id'leri göster",
   "config.tacz.client.render.enable_tooltip_id.desc": "Gelişmiş eşya ipucu aktif iken silah/mühimmat/eklenti id'lerini eşya ipucunda göster."
 }

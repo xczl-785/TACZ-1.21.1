@@ -40,8 +40,6 @@ public class NetworkHandler {
         registrar.playToServer(ClientMessagePlayerCrawl.TYPE, ClientMessagePlayerCrawl.STREAM_CODEC, ClientMessagePlayerCrawl::handle);
         registrar.playToServer(ClientMessagePlayerDrawGun.TYPE, ClientMessagePlayerDrawGun.STREAM_CODEC, ClientMessagePlayerDrawGun::handle);
         registrar.playToClient(ServerMessageSound.TYPE, ServerMessageSound.STREAM_CODEC, ServerMessageSound::handle);
-        registrar.playToServer(ClientMessageCraft.TYPE, ClientMessageCraft.STREAM_CODEC, ClientMessageCraft::handle);
-        registrar.playToClient(ServerMessageCraft.TYPE, ServerMessageCraft.STREAM_CODEC, ServerMessageCraft::handle);
         registrar.playToServer(ClientMessagePlayerZoom.TYPE, ClientMessagePlayerZoom.STREAM_CODEC, ClientMessagePlayerZoom::handle);
         registrar.playToServer(ClientMessageRefitGun.TYPE, ClientMessageRefitGun.STREAM_CODEC, ClientMessageRefitGun::handle);
         registrar.playToClient(ServerMessageRefreshRefitScreen.TYPE, ServerMessageRefreshRefitScreen.STREAM_CODEC, ServerMessageRefreshRefitScreen::handle);

@@ -25,7 +25,7 @@ public class TooltipEvent {
                 event.getToolTip().add(formatTooltip(AmmoItemDataAccessor.AMMO_ID_TAG, item.getAmmoId(event.getItemStack())));
             } else if (event.getItemStack().getItem() instanceof AttachmentItemDataAccessor item) {
                 event.getToolTip().add(formatTooltip(AttachmentItemDataAccessor.ATTACHMENT_ID_TAG, item.getAttachmentId(event.getItemStack())));
-            } else if (event.getItemStack().getItem() instanceof BlockItemDataAccessor item && !ModItems.GUN_SMITH_TABLE.get().equals(item)) {
+            } else if (event.getItemStack().getItem() instanceof BlockItemDataAccessor item) {
                 event.getToolTip().add(formatTooltip(BlockItemDataAccessor.BLOCK_ID, item.getBlockId(event.getItemStack())));
             }
         }

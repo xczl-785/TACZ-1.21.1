@@ -11,9 +11,7 @@ import com.tacz.guns.client.input.*;
 import com.tacz.guns.client.renderer.item.AmmoItemRenderer;
 import com.tacz.guns.client.renderer.item.AttachmentItemRenderer;
 import com.tacz.guns.client.renderer.item.GunItemRendererWrapper;
-import com.tacz.guns.client.renderer.item.GunSmithTableItemRenderer;
 import com.tacz.guns.client.resource.ClientAssetsManager;
-import com.tacz.guns.client.tooltip.ClientAmmoBoxTooltip;
 import com.tacz.guns.client.tooltip.ClientAttachmentItemTooltip;
 import com.tacz.guns.client.tooltip.ClientBlockItemTooltip;
 import com.tacz.guns.client.tooltip.ClientGunTooltip;
@@ -22,11 +20,9 @@ import com.tacz.guns.compat.controllable.ControllableCompat;
 import com.tacz.guns.compat.playeranimator.PlayerAnimatorCompat;
 import com.tacz.guns.compat.shouldersurfing.ShoulderSurfingCompat;
 import com.tacz.guns.init.ModItems;
-import com.tacz.guns.inventory.tooltip.AmmoBoxTooltip;
 import com.tacz.guns.inventory.tooltip.AttachmentItemTooltip;
 import com.tacz.guns.inventory.tooltip.BlockItemTooltip;
 import com.tacz.guns.inventory.tooltip.GunTooltip;
-import com.tacz.guns.item.AmmoBoxItem;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
@@ -63,7 +59,6 @@ public class ClientSetupEvent {
     public static void onClientSetup(RegisterClientTooltipComponentFactoriesEvent event) {
         // 注册文本提示
         event.register(GunTooltip.class, ClientGunTooltip::new);
-        event.register(AmmoBoxTooltip.class, ClientAmmoBoxTooltip::new);
         event.register(AttachmentItemTooltip.class, ClientAttachmentItemTooltip::new);
         event.register(BlockItemTooltip.class, ClientBlockItemTooltip::new);
     }
@@ -74,11 +69,9 @@ public class ClientSetupEvent {
         event.enqueueWork(ThirdPersonManager::registerDefault);
 
         // 注册颜色
-        event.enqueueWork(() -> Minecraft.getInstance().getItemColors().register(AmmoBoxItem::getColor, ModItems.AMMO_BOX.get()));
 
         // 注册变种
         // noinspection deprecation
-        event.enqueueWork(() -> ItemProperties.register(ModItems.AMMO_BOX.get(), AmmoBoxItem.PROPERTY_NAME, AmmoBoxItem::getStatue));
 
         // 初始化自己的枪包下载器
 //        event.enqueueWork(ClientGunPackDownloadManager::init);
@@ -100,7 +93,6 @@ public class ClientSetupEvent {
         GunItemRendererWrapper.INSTANCE = new GunItemRendererWrapper();
         AmmoItemRenderer.INSTANCE = new AmmoItemRenderer(minecraft.getBlockEntityRenderDispatcher(), minecraft.getEntityModels());
         AttachmentItemRenderer.INSTANCE = new AttachmentItemRenderer(minecraft.getBlockEntityRenderDispatcher(), minecraft.getEntityModels());
-        GunSmithTableItemRenderer.INSTANCE = new GunSmithTableItemRenderer(minecraft.getBlockEntityRenderDispatcher(), minecraft.getEntityModels());
     }
 
     @SubscribeEvent

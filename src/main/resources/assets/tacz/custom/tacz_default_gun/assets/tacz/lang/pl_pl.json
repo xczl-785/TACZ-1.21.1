@@ -168,12 +168,6 @@
   "tacz.attachment.stock_moe.name": "Kolba Magpul MOE",
   "tacz.attachment.stock_ripstock.name": "Kolba CMMG RipStock",
   "tacz.attachment.stock_m4ss.name": "Kolba M4SS",
-  "tacz.block.gun_smith_table.name": "Stół Rusznikarski TaCZ",
-  "tacz.block.ammo_workbench.name": "Stół składania amunicji TaCZ",
-  "tacz.block.attachment_workbench.name": "Stół dodatków TaCZ",
-  "tacz.block.gun_smith_table.desc": "Gdzie się wszystko zaczyna",
-  "tacz.block.ammo_workbench.desc": "Brokat Prochu Strzeleckiego",
-  "tacz.block.attachment_workbench.desc": "Co za dużo, to nie zdrowo",
   "config.tacz.client.render.enable_tooltip_id": "Wyswietl ID w podpowiedziach",
   "config.tacz.client.render.enable_tooltip_id.desc": "Wyświetl ID broni/amunicji/wyposażenia w podpowiedziach kiedy zaawansowane informacje są włączone."
 }

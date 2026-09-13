@@ -49,11 +49,9 @@ public class GunMod {
         ModRecipe.RECIPE_SERIALIZERS.register(bus);
         ModRecipe.RECIPE_TYPES.register(bus);
         ModLootModifiers.LOOT_MODIFIER_SERIALIZERS.register(bus);
-        ModContainer.CONTAINER_TYPE.register(bus);
         ModSounds.SOUNDS.register(bus);
         ModParticles.PARTICLE_TYPES.register(bus);
         ModAttributes.ATTRIBUTES.register(bus);
-        ModPainting.PAINTINGS.register(bus);
 
         registerDefaultExtraGunPack();
         AttachmentPropertyManager.registerModifier();

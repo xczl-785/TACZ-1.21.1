@@ -3,7 +3,6 @@ package com.tacz.guns.client.gui.overlay;
 import com.tacz.guns.api.item.IAmmo;
 import com.tacz.guns.api.item.IAttachment;
 import com.tacz.guns.api.item.IGun;
-import com.tacz.guns.block.AbstractGunSmithTableBlock;
 import com.tacz.guns.client.input.InteractKey;
 import com.tacz.guns.config.client.RenderConfig;
 import com.tacz.guns.config.util.InteractKeyConfigRead;
@@ -57,12 +56,8 @@ public class InteractKeyTextOverlay implements LayeredDraw.Layer {
         BlockState block = player.level().getBlockState(blockPos);
         if (InteractKeyConfigRead.canInteractBlock(block)) {
             boolean mainHandHoldGun = IGun.mainHandHoldGun(player);
-            boolean hasGunSmithTableFilterItem = hasGunSmithTableFilterItem(block, player);
-            boolean willFilterByHand = RenderConfig.AUTO_SELECT_GUN_SMITH_TABLE_FILTER.get() && hasGunSmithTableFilterItem;
             if (mainHandHoldGun) {
-                renderText(graphics, width, height, mc.font, InteractKey.INTERACT_KEY.getTranslatedKeyMessage().getString(), willFilterByHand);
-            } else if (hasGunSmithTableFilterItem) {
-                renderText(graphics, width, height, mc.font, mc.options.keyUse.getTranslatedKeyMessage().getString(), willFilterByHand);
+                renderText(graphics, width, height, mc.font, InteractKey.INTERACT_KEY.getTranslatedKeyMessage().getString());
             }
         }
     }
@@ -73,25 +68,14 @@ public class InteractKeyTextOverlay implements LayeredDraw.Layer {
         }
         Entity entity = entityHitResult.getEntity();
         if (InteractKeyConfigRead.canInteractEntity(entity)) {
-            renderText(graphics, width, height, mc.font, InteractKey.INTERACT_KEY.getTranslatedKeyMessage().getString(), false);
+            renderText(graphics, width, height, mc.font, InteractKey.INTERACT_KEY.getTranslatedKeyMessage().getString());
         }
     }
 
-    private static boolean hasGunSmithTableFilterItem(BlockState block, LocalPlayer player) {
-        if (!(block.getBlock() instanceof AbstractGunSmithTableBlock)) {
-            return false;
-        }
-        ItemStack stack = player.getMainHandItem();
-        Item item = stack.getItem();
-        return item instanceof IGun || item instanceof IAttachment || item instanceof IAmmo;
-    }
 
-    private static void renderText(GuiGraphics graphics, int width, int height, Font font, String keyName, boolean willFilterByHand) {
+    private static void renderText(GuiGraphics graphics, int width, int height, Font font, String keyName) {
         Component title = Component.translatable("gui.tacz.interact_key.text.desc", StringUtils.capitalize(keyName));
         graphics.drawString(font, title, (int) ((width - font.width(title)) / 2.0f), (int) (height / 2.0f - 25), ChatFormatting.YELLOW.getColor(), false);
-        if (willFilterByHand) {
-            Component filter = Component.translatable("gui.tacz.interact_key.text.gun_smith_table_filter");
-            graphics.drawString(font, filter, (int) ((width - font.width(filter)) / 2.0f), (int) (height / 2.0f - 14), ChatFormatting.GRAY.getColor(), false);
-        }
+
     }
 }

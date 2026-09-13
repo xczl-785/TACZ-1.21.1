@@ -1,0 +1,2911 @@
+{
+  "date": "2026-09-13",
+  "baseline_commit": "83b03fcd",
+  "removed_item_ids": [
+    "tacz:gun_smith_table",
+    "tacz:workbench_a",
+    "tacz:workbench_b",
+    "tacz:workbench_c",
+    "tacz:ammo_box"
+  ],
+  "removed_block_ids": [
+    "tacz:gun_smith_table",
+    "tacz:workbench_a",
+    "tacz:workbench_b",
+    "tacz:workbench_c"
+  ],
+  "removed_painting_ids": [
+    "tacz:blood_strike_1"
+  ],
+  "retained_items": [
+    "tacz:target",
+    "tacz:target_minecart",
+    "tacz:statue"
+  ],
+  "statue_reason": "gun display stand; accepts/stores one gun, empty-hand retrieves, removal drops it; no firing or supply responsibility",
+  "files": [
+    {
+      "path": "src/main/java/com/tacz/guns/GunMod.java",
+      "action": "modify",
+      "before_sha256": "167b93168a6cef96ec0c005035472f03488e52f8bf32d14e6cd0368631118ab0",
+      "after_sha256": "0c086e72690240b6ba2bebc66ac2dcab45645b93b12227c179e9e9d998b0b180",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/block/AbstractGunSmithTableBlock.java",
+      "action": "delete",
+      "before_sha256": "28b2706b5e897ea6fab97689483e1c85fca7bd0bac8f3c87f780dbf75ecc87c6",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/block/GunSmithTableBlockA.java",
+      "action": "delete",
+      "before_sha256": "e033f21978bf6e96fedc04d160a35e18b204287ce26fe0d888acf6d1c6e553a3",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/block/GunSmithTableBlockB.java",
+      "action": "delete",
+      "before_sha256": "cd67f4b4e94d39137a8f74b3ab05f28d08912584cd2445ef5a966d44349eb3d9",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/block/GunSmithTableBlockC.java",
+      "action": "delete",
+      "before_sha256": "8ede866fa0bf451a5981c366aa8a237cdf011b2d5afa9e5856f72684378c4c51",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/block/entity/GunSmithTableBlockEntity.java",
+      "action": "delete",
+      "before_sha256": "5580248c0e080a996daee865700cea6a24acff22d5d9d688bde505af47e2df71",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/event/PreventsHotbarEvent.java",
+      "action": "modify",
+      "before_sha256": "c980ffdde757e5c901a3cc12113178190d6bd115f86a23c1a88770ec73736bff",
+      "after_sha256": "8bc34d3917bb7adecd5df389b94fadc3b10c8cff6da1a2e1db0ef7475b0caa97",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/event/TooltipEvent.java",
+      "action": "modify",
+      "before_sha256": "6c9cd1171c169c5edfa1f241c97a26928e3448b12f4c8a903c31e214c2d285d3",
+      "after_sha256": "29134292f80d200f8c49bb01ce8c7cf9a587dbd2cac2d20b3aabb74d2affd288",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gui/GunSmithTableScreen.java",
+      "action": "delete",
+      "before_sha256": "33756ab4051b4c38ee0ef9a922a25c10246e8797fc7da13d9cf007651d74b04e",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gui/components/GunPackList.java",
+      "action": "delete",
+      "before_sha256": "ccee1c29ac72a45e3db37cdb02828d171f499b589a04de976686e896b1ab49fa",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gui/overlay/InteractKeyTextOverlay.java",
+      "action": "modify",
+      "before_sha256": "f0de7ccdae40d483cdfaa66af25e6c85c3b3ca5a18d5515294bc8d47ad123a50",
+      "after_sha256": "4392ff39bed5b9181ccbaac5e16d2d548c8f6266c8704baee0a181efa6787f3c",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/init/ClientSetupEvent.java",
+      "action": "modify",
+      "before_sha256": "e0586fcb939f5ab393c6004e45bee5bd48e57ff516ca6778dd7f8ddd5ef0a688",
+      "after_sha256": "c9cc148df6fad1cb9ce82d186989d87adf7ca6b5c40cdd7560dd7b8ccba36b49",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/init/ModContainerScreen.java",
+      "action": "delete",
+      "before_sha256": "e7b4b4b174d0fc7cb15aed221a903ef56cc7f7775cddc780d4653a3d617d7181",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/init/ModEntitiesRender.java",
+      "action": "modify",
+      "before_sha256": "b5da7c924bf370a079e01c3bfc35676399d9d0c73f7f2c3a393ecb1c1902a2c4",
+      "after_sha256": "363719b28cd9d5e6b9eb7009055a938f7c72e016dd30b62a066e7c094493c7d5",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/renderer/block/GunSmithTableRenderer.java",
+      "action": "delete",
+      "before_sha256": "e906b4d1abdd741443a9bd5f5b52f28b434b231960eb655d33251a148728cdf8",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/renderer/item/GunSmithTableItemRenderer.java",
+      "action": "delete",
+      "before_sha256": "63cc8315d33b0e91aacd041dd1dd9d4c2694ad408023d8d18f60197d0e22f4f7",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/resource/InternalAssetLoader.java",
+      "action": "modify",
+      "before_sha256": "d85d7ce078dde5c8faffadbeb15ba39baf32842330e3c11f2746d4d9e73df971",
+      "after_sha256": "1e1fc54b30088d89e3a497b601ae1a8c0aec4602f73a23201cf425d01d632257",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/tooltip/ClientAmmoBoxTooltip.java",
+      "action": "delete",
+      "before_sha256": "ffca4cd4c2211cc8475f9e8ce3fa700a9ebab8f7cc041d844f52e7c4c2fe0568",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/compat/cloth/client/RenderClothConfig.java",
+      "action": "modify",
+      "before_sha256": "2d59e143fb2482fe364e86835e20c5c8d7f08b2ca3dcedccfa5626ca775ba839",
+      "after_sha256": "f993b68c76a092f646feee6f43774eee6531cec984073c7df7f66c977f1a68b4",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/compat/jei/GunModPlugin.java",
+      "action": "modify",
+      "before_sha256": "1f721dffb7b0519f4a502f9a265c2420275a606b0d284f45dc9cc4b84916730b",
+      "after_sha256": "e37eedb940176c80636db8a0850bb0683a3bcb2cbcb2713d376f259c873e76f7",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/compat/jei/category/GunSmithTableCategory.java",
+      "action": "delete",
+      "before_sha256": "747639e401bc186ed28b8da52b5879957a55dff69465d70ad7ac8c67a5bf2e43",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModBlocks.java",
+      "action": "modify",
+      "before_sha256": "768de96f83ce76707e20ea26ddfb3a27dbf5589b1905e717ff3cb65e327b22c1",
+      "after_sha256": "46e2e0b812d5272a322b389aa3d1e19b150044d468375f9ea42e75293dc35504",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModContainer.java",
+      "action": "delete",
+      "before_sha256": "556801e270e46459f399e399b4d827505c19917dfc1b9d9c8eda8778e1eafed1",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModCreativeTabs.java",
+      "action": "modify",
+      "before_sha256": "c7ac0bfae7c2fb47f530fd33d7a3e8ccefed8d9c73fee6a0157294ea878b31d4",
+      "after_sha256": "dc5ec53f0f8fd51b9941c1a587822e53a5ccae91bfb9481036c6656b0adad2e2",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModItems.java",
+      "action": "modify",
+      "before_sha256": "3589dcdb6d5e8bc2444efe5f65077c8a378bbec1c27e5b56e21034f4102810bb",
+      "after_sha256": "d7360b64721d7aaedbe9654177047577b0b13f98b0fefc1555227217cf5c834b",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModPainting.java",
+      "action": "delete",
+      "before_sha256": "1d8b548c92f8bd4d07eaa11101afe3910cff90caae92c32aa6371d9c111be05c",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/inventory/GunSmithTableMenu.java",
+      "action": "delete",
+      "before_sha256": "275a857e9b3cde2643267a3056033c382e6e4c7dcd2c200fa49308e4a2c7951c",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/inventory/tooltip/AmmoBoxTooltip.java",
+      "action": "delete",
+      "before_sha256": "2000214e6e9839773ab7e4109b9e6cc85590243c256e228d7784f93b44f72398",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/item/AmmoBoxItem.java",
+      "action": "delete",
+      "before_sha256": "fea86cd562b09924d9dafd9f5458b0771c485ebe8a9fe5b144f506c1f57e7d32",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/item/DefaultTableItem.java",
+      "action": "delete",
+      "before_sha256": "f0d5d81d335d28aa5ef182979f4457b5d37e9ed561e2dda6f1246b6f7a5d1e73",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/item/GunSmithTableItem.java",
+      "action": "delete",
+      "before_sha256": "5a4bf3989baed0290cc27fce2df458d212635cbf80cae35c3fc783bf88854989",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/network/NetworkHandler.java",
+      "action": "modify",
+      "before_sha256": "fd79d9aa1449ed62ba1d2c152ea427faecf7f4081768caf2e2d33eee66563622",
+      "after_sha256": "415b7c4db4f759e2edd9265b2fcf01bbfefad00ce3439fe8e3de8d80d4aae119",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/network/message/ClientMessageCraft.java",
+      "action": "delete",
+      "before_sha256": "dacd90f9c9a307c2d2792fa2780c7bcdd8777808a59bd94a78baaa3d85bc7716",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/network/message/ServerMessageCraft.java",
+      "action": "delete",
+      "before_sha256": "43f73b7d8dd7fa7d5c36bd112fd0387aca1a18abe7d965ee86ff8efb328b7cd5",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/SelectedContentPolicy.java",
+      "action": "modify",
+      "before_sha256": "8dea267eb3a09f118b87c01947bef23fa16c790d4fc1ced8981650416fefda30",
+      "after_sha256": "479283f9b32812b10adb658a35eee8215bc7a3e9624b1ed6ba2049812a6888d1",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/pojo/data/block/TabConfig.java",
+      "action": "modify",
+      "before_sha256": "38b59ca90c237b45e969a475729234b9df83ed792604f596a32de942277f7ab0",
+      "after_sha256": "2ea8f8d8fd9c2d073120d335be944d7cc0e5a6b6ac90d36de86ecd118f29011a",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/gun_smith_table.json",
+      "action": "delete",
+      "before_sha256": "a9ec293465529c2df1360bce9059e7d5c62048449c04a7595586be6a7adbe7c2",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/workbench_a.json",
+      "action": "delete",
+      "before_sha256": "a9ec293465529c2df1360bce9059e7d5c62048449c04a7595586be6a7adbe7c2",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/workbench_b.json",
+      "action": "delete",
+      "before_sha256": "a9ec293465529c2df1360bce9059e7d5c62048449c04a7595586be6a7adbe7c2",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/workbench_c.json",
+      "action": "delete",
+      "before_sha256": "a9ec293465529c2df1360bce9059e7d5c62048449c04a7595586be6a7adbe7c2",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/blocks/ammo_workbench.json",
+      "action": "delete",
+      "before_sha256": "a2f0223e9d52b2698e54ef8e9f4bdebcbe5e5975b8e5783a909f73e1625dcc5e",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/blocks/attachment_workbench.json",
+      "action": "delete",
+      "before_sha256": "7cad752b0c1307fc793bf8444c948c31d48b28e67b2ed69f1744c4f618a80628",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/blocks/gun_smith_table.json",
+      "action": "delete",
+      "before_sha256": "408833b3b91db03ccdb67b6f6f4557b9bf0807bc2ddd31c38e064895150dc247",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/block/ammo_workbench.json",
+      "action": "delete",
+      "before_sha256": "7e23aba96fcdd86ecf62c39f9dfe73eff28ff168b83a75d72794623d8cec06ad",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/block/attachment_workbench.json",
+      "action": "delete",
+      "before_sha256": "3ff48a7bd761d1c6d4e1ac4a5cdbfed7cb82e592885ea35e6c963f3c4bfaa291",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/block/gun_smith_table.json",
+      "action": "delete",
+      "before_sha256": "4c6dd082cc46d0b7b9fc11986419a55e2c3a24daad6a3927cab66c70d626572e",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/ca_es.json",
+      "action": "modify",
+      "before_sha256": "e9b2b55e4e99e3e029eb1898fb8fd35eaea583a23d5d427861b4bc51c729dc14",
+      "after_sha256": "0189e517f3624380eabab543cb550230bd41e82c5e0abe960fc0aacd39b07bd9",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/da_dk.json",
+      "action": "modify",
+      "before_sha256": "5096e2d4262a6de155c005d068658169f79e80998ce7478b577ce695ef92fe33",
+      "after_sha256": "e4b67c1f5ee3f7dd53553782ed19cd052ca7cb0c8865d6792de6cfc7ef63de24",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/de_de.json",
+      "action": "modify",
+      "before_sha256": "c8d3d9908f7fbad3678fb8d8dba566f668d970a751457af50ca697075608043b",
+      "after_sha256": "a71a395060d8c933f03680a0f2bf5409a6df79be5b62fdcab4fc28f5c895fd48",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/en_us.json",
+      "action": "modify",
+      "before_sha256": "23d5b8bbb53ed25f54c7a7e617d507d0a51769ba3c1587d6a66539376584422e",
+      "after_sha256": "a643b4d6e8e0314fdce31b8dbdc74eeca7403debdb52bfd1d0bcdbe3e52e3fa9",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/es_es.json",
+      "action": "modify",
+      "before_sha256": "c209c79afaf7f4306c0f04b72201ec75802d4e19d702336d512bbeb10fa3e278",
+      "after_sha256": "71fe3d9ed69a47343471429f5657cfb6edb10570a316b40270a45dc99a30edaf",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/eu_es.json",
+      "action": "modify",
+      "before_sha256": "9aea573ec58766bed3752cd18dae6560ef2972631296324062f7040f4748ca38",
+      "after_sha256": "dcf73e0981565edf3278d54cd79ba31bc0955f576cc39b73bb2806efa928744f",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/fr_fr.json",
+      "action": "modify",
+      "before_sha256": "bb64d4910e4929fb8eaf3928ad2d3ae6242eb7104b782ef39c0460d8aaefff25",
+      "after_sha256": "88d9a50424a87d8944791a575ca3445d52abd4284df8e0465b27c92aa1accf7a",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/id_id.json",
+      "action": "modify",
+      "before_sha256": "9082673aeec35b1b4f0f6ea0a1abd547b495e7ed579be631f6258dcccda8cb24",
+      "after_sha256": "8352b2644e0a6daa311930b92d1b7b348808f88da1a310a0952fa44caab4ac04",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/it_it.json",
+      "action": "modify",
+      "before_sha256": "697d940f207b90afef7787fd2d74e6d52c7862ee3382729b78ea0b5063500514",
+      "after_sha256": "0eea4632d35a70057638ae69324ba844e794ed58c59db64a0f732f4ea394ce53",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/ja_jp.json",
+      "action": "modify",
+      "before_sha256": "55634d2eec7ccb57cd3d86ea9bc574a84df553a667bba9e5036062da5a77320d",
+      "after_sha256": "98af50d702f29eb137947e334d31e787b22793a37bee945ff92f58f693cd09a5",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/ko_kr.json",
+      "action": "modify",
+      "before_sha256": "91a677790b738f12854d92a01fb0e7f75d144b5d288387ddb6ffbcf6122c556a",
+      "after_sha256": "b44afc3b4e0deac2fda247dbf35294d42e57c2a87439a939e115ae2870325348",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/pl_pl.json",
+      "action": "modify",
+      "before_sha256": "66ceefdc9185e6354d5f852df4f9d5c4f71b33d375aa990af0940e99b9ff9f39",
+      "after_sha256": "9efdc007ab401dda95892a0e285d4b36e6107f96d4d7347ea4147fd79eab21c2",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/pt_br.json",
+      "action": "modify",
+      "before_sha256": "ebba7fc24e870a8aa6937546b9d18db5666eb0e1228d8bb6cb0d029401a34e32",
+      "after_sha256": "dd24e8c3cdf8f6c03bd200faa863c98e0ae32d23358143be9a52199bceefc2b3",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/ru_ru.json",
+      "action": "modify",
+      "before_sha256": "bc282eadbe4a81ec7e084835c72a1ca2139e89df7d026d7431b298ed1656c93e",
+      "after_sha256": "1ec699572b8287023094d36dc29ca5680a7e6bc8202c96dd186b4ca0c5edca1b",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/th_th.json",
+      "action": "modify",
+      "before_sha256": "4923ce0c9bc48eff7b18da80bfd906f4b831e33945ba502431cae13f3c1a9711",
+      "after_sha256": "8cf0fb9d4fff356277384c4a471830206deffe9e6a5907b552691b2dd9381964",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/tr_tr.json",
+      "action": "modify",
+      "before_sha256": "6fb7f2d285d0a38f412f28b169c2ddb57212883f76729c8e57104f5aa1415c50",
+      "after_sha256": "fa618fd81b269fcf1a8dfae25ba9dbc6863fe498634958f6b59628f40ded90a6",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/uk_ua.json",
+      "action": "modify",
+      "before_sha256": "cdcaaddf0197362811adaa028383634f27b93997a0d8a6b279192f53c1bf98ef",
+      "after_sha256": "0699c3c97d43ff811b4c22fcec9c6c706e55699d2571eda4a031bfb38ac8f410",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/vi_vn.json",
+      "action": "modify",
+      "before_sha256": "95d2bf962a24aadf223ce30d9d1828a1405af847181db5831c69fad0eb39725b",
+      "after_sha256": "48b5b87ccb06ae7a1a9456bea76e3177b597016ae6046e6bd31a7b8a6c9240b8",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/zh_cn.json",
+      "action": "modify",
+      "before_sha256": "f51291da769b45f0def6d5ffba39d4033349cc31d6c28cabed7b495dedff574a",
+      "after_sha256": "91f7468e75e69902aafd682aeaaca227b7e5a99af2179ad375278c697b675aec",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/lang/zh_tw.json",
+      "action": "modify",
+      "before_sha256": "5d2d323e4d54ded117d02323a4967b05637c32528e526e52e7743d210293175d",
+      "after_sha256": "949c4104b8fe9e09a3c6c89f55d239980c9bb22ca74705c1e944d44b34bc9501",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/ammo_workbench.png",
+      "action": "delete",
+      "before_sha256": "955cc724bfe51456de0a1532873d4a56be8aef1b2a4f21960e6b902a104c7b2d",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/ammo_workbench_n.png",
+      "action": "delete",
+      "before_sha256": "09ae5a58ab756fd2e171871877cd1b613e0b46d1685582eb65eb2aab194287ee",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/ammo_workbench_s.png",
+      "action": "delete",
+      "before_sha256": "434514cf9b94165e478d4794a68ef75d34f678a28f64f7c7c03b27accbcce7e9",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/attachment_workbench.png",
+      "action": "delete",
+      "before_sha256": "bcc07c48817a2efdfcd2eeeec73da40b4f0e50fd35690ed7cb700efcb2c4bdcf",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/attachment_workbench_n.png",
+      "action": "delete",
+      "before_sha256": "4d1163821e45619d03323b316354f3f26ec898e0fd5af06091a9bf042544775f",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/attachment_workbench_s.png",
+      "action": "delete",
+      "before_sha256": "2b91bd898ff308e1b647cef216ea7ac164448e4c190386c16ae24f9acdb031f5",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/gun_smith_table.png",
+      "action": "delete",
+      "before_sha256": "378a05a114f879d1a45272f62bbb48ca339166fa53bf7f27311e3b6a5627d261",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/gun_smith_table_n.png",
+      "action": "delete",
+      "before_sha256": "c09a3ce5191523cc8e75c97afbe2f49d2d1d32ec2c1685b96fe6b2a986e842e7",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/block/uv/gun_smith_table_s.png",
+      "action": "delete",
+      "before_sha256": "6a2076e41c3c55eb083fc392b81a422ed5f055698e4afec885d7f7fad2162444",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/blocks/ammo_workbench.json",
+      "action": "delete",
+      "before_sha256": "8aa17c8fde95e7f8a7c6f16f283b867f664e171c818fa0bc3b598a4d73286b94",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/blocks/attachment_workbench.json",
+      "action": "delete",
+      "before_sha256": "c0f626249ffd22e35fd20052124ac1ad845920d7d8badbf903b43268bd370b24",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/blocks/gun_smith_table.json",
+      "action": "delete",
+      "before_sha256": "9550a757b0220e437b0575d34010fe1fc57497fceefd56ea0b25243febc2cde4",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/blocks/ammo_workbench.json",
+      "action": "delete",
+      "before_sha256": "dc40832dfa30c2b3c29f2cab9337902ba547e67f50e7bce25e7745f7c724ea33",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/blocks/attachment_workbench.json",
+      "action": "delete",
+      "before_sha256": "2eaa143f9edab3419687d9ebd07531748cdb2a8a680892e5d9664db7bf5952d6",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/blocks/gun_smith_table.json",
+      "action": "delete",
+      "before_sha256": "19abc59e802b7435c86e15e4af90ec4c9827a992dd78a88cd90a0bf1307da202",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/12g.json",
+      "action": "delete",
+      "before_sha256": "da2db1f6794c2b6f63febef06a4d0fa16d9e8cc39ab683eaded66bb24df5a524",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/22wmr.json",
+      "action": "delete",
+      "before_sha256": "b9d9d165b482cb01a00093df2f6b6d38439d13c7000b52c462a7c7aea8d85957",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/308.json",
+      "action": "delete",
+      "before_sha256": "bfb998e8b914639632ef0ed0a6626fcf5b189f5cb266dc7b27657829c62530f5",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/30_06.json",
+      "action": "delete",
+      "before_sha256": "a2369c072d0609bb84b83104fec88075dd64fc2f7fa81aacfb8a120df673dad6",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/338.json",
+      "action": "delete",
+      "before_sha256": "06b604876ac89a261a8757645d2cdee02389ae2ede0b0bdc3fa4522809ca8a2b",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/357mag.json",
+      "action": "delete",
+      "before_sha256": "4211864af33505e32350875a8a950d82a519d99a81b09e88082ff95abbd8b5fc",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/40mm.json",
+      "action": "delete",
+      "before_sha256": "8aeae8fc8010e7c6290da47f175f5c24ec3779e56c9a8b43d0d0ffa71a22f8c8",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/45_70.json",
+      "action": "delete",
+      "before_sha256": "78f8051430cb1c2795d7ad0ff7f167e141b487f26b395bea8e18b13216d689fc",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/45acp.json",
+      "action": "delete",
+      "before_sha256": "5c6ac1f96928c8ade5ff00242a7d8fc3638ff2a5c854d3558a91b0cfb710d192",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/46x30.json",
+      "action": "delete",
+      "before_sha256": "6f747aaffd4799493c208842a371528adc8c62afb406dc5277e3b1e13c90b80d",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/500mag.json",
+      "action": "delete",
+      "before_sha256": "4ab43de67385f3697ebaa34331667820576e5346e8a3d399bb8aaf92c4157f1b",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/50ae.json",
+      "action": "delete",
+      "before_sha256": "b58221cd2cdd1d934d70e7879771972748316137488564945f5eb677793e25bc",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/50bmg.json",
+      "action": "delete",
+      "before_sha256": "dca68450e5bcaffb667b874a1cac014bff2ce3a117700a8d29a1b3ce44092533",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/545x39.json",
+      "action": "delete",
+      "before_sha256": "355bdc65799db5b885269268a5603599fdd265071e70212c95fb20bdec7269a5",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/556x45.json",
+      "action": "delete",
+      "before_sha256": "5e6e45fca5cb6fcc4bec167fdf516838b7853cbed076fe63a9ebd126c12a874d",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/57x28.json",
+      "action": "delete",
+      "before_sha256": "0e335c0a7d35fdd48c19f5706f15c739f02d16155d310e52a799a0b45db381e5",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/58x42.json",
+      "action": "delete",
+      "before_sha256": "a3f019f5d9709e119cf0c9df803e92b1cc7d2ae3db3fdd8cdde90e0df91ac75a",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/68x51fury.json",
+      "action": "delete",
+      "before_sha256": "df21670b62999dc5f39890c317571b84679e43ade49369d998c6f3895b82e45f",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/762x25.json",
+      "action": "delete",
+      "before_sha256": "bf7f97b9ea69662bc6618e2cf1e997f171402b75d9dfd55c4b289719f37024ef",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/762x39.json",
+      "action": "delete",
+      "before_sha256": "793de6c32f7c1c4ab2b13d761d60d80741efe1ee96e07f70e949bfbac72d3de2",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/762x54.json",
+      "action": "delete",
+      "before_sha256": "76bd4ae8f1194c7ba2ce424544ebd6d35281fa85508a4b99ce97eeff47c569d8",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/792x57.json",
+      "action": "delete",
+      "before_sha256": "e2e5ef331071d43dd8ecf475a64ae7d1871974b219f909782e2562bd981d25db",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/9mm.json",
+      "action": "delete",
+      "before_sha256": "f696d2b976ad7d0019b306be30ba0eb487faa442467fadf8054c9e8b6f0de714",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/ammo/rpg_rocket.json",
+      "action": "delete",
+      "before_sha256": "93deceb108228aca074c24783af94ff9f26e308924847a35e7276a57dc71c0db",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/ammo_mod_fmj.json",
+      "action": "delete",
+      "before_sha256": "7b43e7fff22f1ccc2341a21751c5104595e5870c28ca32cc7b000a255c274900",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/ammo_mod_he.json",
+      "action": "delete",
+      "before_sha256": "fff908bd0c400c139c97be63e318798816632ebccb7f1263d2d19817a46c2c03",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/ammo_mod_hp.json",
+      "action": "delete",
+      "before_sha256": "afa18513806247c54b2b8da99d714461ee3be2db1bf45bf594f5f2ee17beac25",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/ammo_mod_i.json",
+      "action": "delete",
+      "before_sha256": "1605623589420ec27665278613c3ed50cc6d3b9bb0add11673ad326287f05035",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/ammo_mod_slug.json",
+      "action": "delete",
+      "before_sha256": "e8cf24e801c95bf4c35c972f196b115962a0dd9837b25def308fcb7cf31183bd",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/bayonet_m9.json",
+      "action": "delete",
+      "before_sha256": "a78c66b5b0673415afd00d3ad2ee4e1f672191a52b15e37927225626ec030a71",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/extended_mag_1.json",
+      "action": "delete",
+      "before_sha256": "223f90fe06fab2ce95985c43c41820115598352f64d80c69df66082728be7e31",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/extended_mag_2.json",
+      "action": "delete",
+      "before_sha256": "7aa4707de89448535637ffb2dfa3e4986af96845858af8931fb9ea17e7f13cdd",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/extended_mag_3.json",
+      "action": "delete",
+      "before_sha256": "88bb1994a7b14dc826d24e2fe3bdc4a9b4841f812b6b6b250e21c3080b93d39b",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_cobra.json",
+      "action": "delete",
+      "before_sha256": "f6df5af553e7c6fa4944efb6c59089c51f177b1bddcf38db7f582af1242ab210",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_magpul_afg_2.json",
+      "action": "delete",
+      "before_sha256": "1c54f7606979de2e5cd1b8a241ce1865a2a7e99ec4357e3adeadee1bcb58dd99",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_osovets_black.json",
+      "action": "delete",
+      "before_sha256": "e74fd23075106fb22ff3aa60e3022874dab65f7da13c84e8a3f678ce56e467f9",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_rk0.json",
+      "action": "delete",
+      "before_sha256": "725c8bcb8dae17e967e0861e773998fedcc757f11a7c635a680e6ad0d85aed95",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_rk1_b25u.json",
+      "action": "delete",
+      "before_sha256": "8fd2123776e96ec7f78b77e7696f08dde299b6572d8af1983259ea61db44cff9",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_rk6.json",
+      "action": "delete",
+      "before_sha256": "5e5d4ba9c9c47b7c87fa644144313462a26ec67c8420e54db142d3cd7ed4db6e",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_se_5.json",
+      "action": "delete",
+      "before_sha256": "8bbc2f4cd59e1061238b5e4f86795a58ab0e6e269509a098ec7946b27e2180b5",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_td.json",
+      "action": "delete",
+      "before_sha256": "af934e4869840526b3d50a4ca2fcf95dc56af5009be8c680217f631ad7841b58",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_vertical_military.json",
+      "action": "delete",
+      "before_sha256": "29cc132a9f57fa10c44164caec0b7a18b9297d6b7b22fe2d34c3f6b938708f7d",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_vertical_ranger.json",
+      "action": "delete",
+      "before_sha256": "f9c36e9ce669e75d24b8e9bbea283ee9b8580eb46ddd6d8da7bdd5dc50e4aea6",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/grip_vertical_talon.json",
+      "action": "delete",
+      "before_sha256": "32c0b4f7c5e535b363cdb9ca993fe261f2e8bc01d91fcc073b5015902978f4c6",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/laser_compact.json",
+      "action": "delete",
+      "before_sha256": "cd078f95d67f102674c4ae6ff4218fc530b8eb2d1c939ac7c722907a58bb7908",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/laser_lopro.json",
+      "action": "delete",
+      "before_sha256": "09313d6fbe4d9c4834b6c0e39ca105f637fabb5334daed7430855707bc822920",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/laser_nightstick.json",
+      "action": "delete",
+      "before_sha256": "b9fd3742fef693bf00aad358d579e0c52c6896d9bf0bc6ac3d55954f44a66344",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/light_extended_mag_1.json",
+      "action": "delete",
+      "before_sha256": "f57bb6359dd4453aad172af2884b6339b0de2c13d43e8e7bd1b6fb54c5d0b2b5",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/light_extended_mag_2.json",
+      "action": "delete",
+      "before_sha256": "e6d45c10047f6c49a818a76400fd42b9d0e6b16796b62395efd3fd129a1cf152",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/light_extended_mag_3.json",
+      "action": "delete",
+      "before_sha256": "541a74bf3fe39e779ad8a77a6beaae94e9fe55eb646f6a83d0e211b4f285e3cd",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_brake_cthulhu.json",
+      "action": "delete",
+      "before_sha256": "86be3763c1bfd53bbd5f3259405c5e30f33e3a0be1e8e64345b830d48b5dd692",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_brake_cyclone_d2.json",
+      "action": "delete",
+      "before_sha256": "75b041429c4b67de5c80695d4ebcb782e35d8075a557d3c5e7b6eb65b241c8a4",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_brake_mastiff_sg.json",
+      "action": "delete",
+      "before_sha256": "41546269c52cf2982677e6cd029ae6fd26d812c379eb7bde8095cd164f888632",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_brake_pioneer.json",
+      "action": "delete",
+      "before_sha256": "b172975db74113a874ae64731a99926a4e95f51c189cef156b899927d7c8e613",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_brake_trex.json",
+      "action": "delete",
+      "before_sha256": "528fd34ca4313f87a3c793680a6c67616fcaf0add33533ce32066f871f080c63",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_choke_sg.json",
+      "action": "delete",
+      "before_sha256": "f469901ea29c07efe6aab01b76f1b7d467b81decd1fa8a2b26f20017f7c9fe97",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_compensator_trident.json",
+      "action": "delete",
+      "before_sha256": "aae4dd00d6d5f9abecefe5ae344dd3174b4a1cec505e1dcb7a847ddc73f058cf",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_silencer_knight_qd.json",
+      "action": "delete",
+      "before_sha256": "f4ca77df27ada8cbe1cc4ea000aef4ad0a167b9245dbae4484fbec818d0347d1",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_silencer_mirage.json",
+      "action": "delete",
+      "before_sha256": "4ccdda3bec0d554df3e6643579686bc3ee39cc15e5c567345e158f9da6774b80",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_silencer_phantom_s1.json",
+      "action": "delete",
+      "before_sha256": "cc431b1f1fb66e4dcb108e2d9270d5c732e63af1d0fe52602a962115954fbf78",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_silencer_ptilopsis.json",
+      "action": "delete",
+      "before_sha256": "9ecbeaab11bbd6004491d884e0e244a21421651036f930298341c39f6be6db69",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_silencer_sg.json",
+      "action": "delete",
+      "before_sha256": "3e53cd578ec6bfce89113c6144a9e9062ae249bded988692df7e41d80454bb6a",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_silencer_ursus.json",
+      "action": "delete",
+      "before_sha256": "acfa42f468033c48195d35f4b749c4b91b29a1e0f4bff5e0d6f42c7be8d3368b",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/muzzle_silencer_wraith.json",
+      "action": "delete",
+      "before_sha256": "2b4e91520e344825ac6f97fbf2a437132bc8427c756dbb0b5e3537e1c4b14771",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/scope_acog_ta31.json",
+      "action": "delete",
+      "before_sha256": "afdec705fc0bbc891a39ba747284f71905aa3b6312dfab1c69f6ffcfb827febe",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/scope_contender.json",
+      "action": "delete",
+      "before_sha256": "c7ba2952b4248283682973777c566abd0b053710d2f3d7578fc962dfcd95ea83",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/scope_elcan_4x.json",
+      "action": "delete",
+      "before_sha256": "11274e531af819db916940b77d9294f50dbb04a355de06ad882229978538fa90",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/scope_hamr.json",
+      "action": "delete",
+      "before_sha256": "6eccbabe1303d12c6f23c0c601093d4830219c64907db658b8b523ab48de5392",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/scope_lpvo_1_6.json",
+      "action": "delete",
+      "before_sha256": "d913d602192a1817c0489d99bec3ba7b4429b975a601ee59b913c54dd145f094",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/scope_mk5hd.json",
+      "action": "delete",
+      "before_sha256": "a2baa19a68ef698c1f1962a618748a4257b074dbeb125fc77a32a7d0fe8198c3",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/scope_qmk152.json",
+      "action": "delete",
+      "before_sha256": "54d0dec250a7487efa74eaec0876084140238a6008c2ec79c5604dd6327c480a",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/scope_retro_2x.json",
+      "action": "delete",
+      "before_sha256": "a238c0f88d3c2ec21b309c3fb6032ed63aeee99bce55e304ff124da7652c303f",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/scope_standard_8x.json",
+      "action": "delete",
+      "before_sha256": "e3d71b27b7bf9ff7be6020f75ce8e98ecbed95367a1e650f46473018bb88239b",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/scope_vudu.json",
+      "action": "delete",
+      "before_sha256": "a5c901fce0e8f31212b16cda9a947460d05db919fca3bc83d5d109b68ee2a9b2",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/shotgun_extended_mag_1.json",
+      "action": "delete",
+      "before_sha256": "3768c55f85cc1a43386f7540fae71bcf0eca5489ee46e96280a0cb2d1691b23b",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/shotgun_extended_mag_2.json",
+      "action": "delete",
+      "before_sha256": "437a7ce32d31d06f44a0887296740985ba317f5645454432844c3460481c6c6a",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/shotgun_extended_mag_3.json",
+      "action": "delete",
+      "before_sha256": "9f9abeaaa29f80f8c40b0195bdbc13fb6148c604e1e8c126a47fa211bad7310c",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_552.json",
+      "action": "delete",
+      "before_sha256": "312575f7c75d975f2a836c3ea35ed9f8c44dfc5ffa223abb512ba7db5cc78bb0",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_acro_pistol.json",
+      "action": "delete",
+      "before_sha256": "7e32ac71f9f94dc41d496f86b66483d24c9aa867e0d8106010d0cb40016ef78f",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_acro_rifle.json",
+      "action": "delete",
+      "before_sha256": "4ba52374c19f6535164d1d8d80cb952c2650c4ae57f1fa3fcbd3daed77774835",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_coyote.json",
+      "action": "delete",
+      "before_sha256": "e818481d0e4699f34b303d2b6c00270b9012e90de9e601598d15b4ac21da22ce",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_deltapoint_pistol.json",
+      "action": "delete",
+      "before_sha256": "8d4eb0787866d3a07ac5a46eef28f8c9be427fb447d46d051062dd701d2eb10d",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_deltapoint_rifle.json",
+      "action": "delete",
+      "before_sha256": "ae6e8572d773bb6fabda27ed0588224b051f79e06d871c0f46892298da13de33",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_exp3.json",
+      "action": "delete",
+      "before_sha256": "65b57093cbc7c0c4dccda9e56e641e528f253ad0fd20f828174474bc108b8886",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_fastfire_pistol.json",
+      "action": "delete",
+      "before_sha256": "b777a11317889230767ee0d343b73e49938c1ecce9c9605da55500471a944db9",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_fastfire_rifle.json",
+      "action": "delete",
+      "before_sha256": "3d338af08155c804da1b1c5cacfa54f8da74e789ef65adaa99f4103960ea2bc1",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_okp7.json",
+      "action": "delete",
+      "before_sha256": "d108bb2e5c7a7e4b1004a1c8277b85f638cf0b7b3e45d3372b8375304ae8112d",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_pk06_pistol.json",
+      "action": "delete",
+      "before_sha256": "de1fddbc6652c631cdf51ca27caac61f441cc8589839d926cbb00593df754271",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_pk06_rifle.json",
+      "action": "delete",
+      "before_sha256": "8d686dd3169ecd827e9e2b2ab653de324354a093945e312e82f715ffd93af25b",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_rmr_dot.json",
+      "action": "delete",
+      "before_sha256": "f8031dcafe3a228d64f72efc2194abf0bb0de55e8696cd3857206c9f18dde438",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_sro_dot.json",
+      "action": "delete",
+      "before_sha256": "0503b59513e31b33223adc8f8faa1d41d062c873bbaaab97cc35182e92eb6f8e",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_srs_02.json",
+      "action": "delete",
+      "before_sha256": "9b90f14a0bd41637082bb2be48bf573c30578500224b9c7ae8c915fbacdd4865",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_t2.json",
+      "action": "delete",
+      "before_sha256": "b5304877670834c2f9ccb94618da9c9f6a8c198d3b7f1fe2adf10dfd32481fb9",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sight_uh1.json",
+      "action": "delete",
+      "before_sha256": "1e4cbe568af35280b422de9539f550c73578853196ae59a38ea6900e78f32d54",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sniper_extended_mag_1.json",
+      "action": "delete",
+      "before_sha256": "22b7da3ec985fcbbaafa64256822a19b3e229e4163934f7c71ddd95fd35926c5",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sniper_extended_mag_2.json",
+      "action": "delete",
+      "before_sha256": "9bb7e16abc5f1b19e7397357d858f9b15e78d13c1d35178715cb7a551ac6ffbb",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/sniper_extended_mag_3.json",
+      "action": "delete",
+      "before_sha256": "e9fe0f6a2f1beea5d8bc6e270730d8af277a26e158e323b00e0d9a872b6349e0",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/stock_ak12.json",
+      "action": "delete",
+      "before_sha256": "816c68ebace7e9fbd79f99bb94c400d5b4be6bc85673cb47b3ac7b7bab40e165",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/stock_carbon_bone_c5.json",
+      "action": "delete",
+      "before_sha256": "ed706128cb1e5a304a409167b240043f91344641554a62dfecfd27b2237e85f6",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/stock_hk_slim_line.json",
+      "action": "delete",
+      "before_sha256": "28ca8eeecd4b5ab20f8bea75a3ac326733739e6977c350f2c6e72bfb31f6b3d5",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/stock_m4ss.json",
+      "action": "delete",
+      "before_sha256": "94ade22b554e39c14491d504654917740bde5caaaa8cfd66e7ca8cd7c9f3a2c1",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/stock_militech_b5.json",
+      "action": "delete",
+      "before_sha256": "0d9baa77095184bce89f6f4ff008c9f573af7feda09aec5b36393f5ea35ec8e2",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/stock_moe.json",
+      "action": "delete",
+      "before_sha256": "810c551781ab96ba93620fafd3add05554eb15059603ab2a549c568bc54663d6",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/stock_ripstock.json",
+      "action": "delete",
+      "before_sha256": "c30615e61f0de8487ed311c9e56b5c3256b67323c8fe5bbbcce11f52b63e3d82",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/stock_sba3.json",
+      "action": "delete",
+      "before_sha256": "14671cf29ab2286a824012046a98ac610fd64e263176e6102f007ba03d0d8a87",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/attachments/stock_tactical_ar.json",
+      "action": "delete",
+      "before_sha256": "67d8085a1cf6baf23e1ffdf83461339f48b01a9b37d49881c8f6e31c1cdf0809",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/aa12.json",
+      "action": "delete",
+      "before_sha256": "3b696fe268943e052820a2bbf2b6641c78e6d8147ef462d978aa8f1ab59d9e75",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/ai_awp.json",
+      "action": "delete",
+      "before_sha256": "36075184a84803e3157b6734921b09eebd0511f03ed328f1d2ea52824faf98ce",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/glock_17.json",
+      "action": "delete",
+      "before_sha256": "e4e20e085685160d9f2050b51a5da73f620244aa4647243be25fd3a7fb14c7d4",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/m16a1.json",
+      "action": "delete",
+      "before_sha256": "6f8d7e032338091c3608b5e571d18df8927b04b01f62fbd705b5d044140a0e3c",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/m4a1.json",
+      "action": "delete",
+      "before_sha256": "1acdc77142634f260c41570f928a8a161923fe273793eb624727a1918256bbcf",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/m700.json",
+      "action": "delete",
+      "before_sha256": "34e519fadc0b3e592a45dacdcc84f2121cd3aa895e6dce1fecd9de87e10791a4",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/m870.json",
+      "action": "delete",
+      "before_sha256": "58fa77e53f89309525e5eea0c1a3edf6c6bab0da088c16ea5b9dbd86fbcd817e",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/mk14.json",
+      "action": "delete",
+      "before_sha256": "b58db0f84b9a17d784095180f16e0a886573d90cda2f420ff40eee18376a4ccf",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/p90.json",
+      "action": "delete",
+      "before_sha256": "db5a75708f895e99f1856483c65c0dadc0d45b78807e3c514b7ee839e0104271",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/qbz_191.json",
+      "action": "delete",
+      "before_sha256": "317a829dc8383dfe61604222b8b7db3bb8e097342048674e25a4f25bf5125548",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/scar_h.json",
+      "action": "delete",
+      "before_sha256": "f18db88e91d3ad34c4d07f87d36089596dbea3ef7d0b3739fd5af461c4e10ebb",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/scar_l.json",
+      "action": "delete",
+      "before_sha256": "d1923b870e8ece07c1853ecc19d368b494f4a3a5e296323d136298091c12e16f",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/sks_tactical.json",
+      "action": "delete",
+      "before_sha256": "bb573c0e6d4286ef18014ff7a926dc31728cdd8bd5cb04426546d89f31908828",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/ump45.json",
+      "action": "delete",
+      "before_sha256": "621ce7f48997369ecbe4253ca2ed98591372d7d6e44c945271a56b710d5cb318",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/recipe/gun/uzi.json",
+      "action": "delete",
+      "before_sha256": "8e3dc729fecd9d1d8de1b93c12e3c01f42b0d6f3d831ca5df38d28c3157c54cc",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ca_es.json",
+      "action": "modify",
+      "before_sha256": "3f38ebbedbe035b726a0a27c869919f8b906e76d7a1dbb44f0723f9461b8e59f",
+      "after_sha256": "7f32eef9c10dffe69afd35adb70b7034309d047164c90efcd5ee459e3ea0283b",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/da_dk.json",
+      "action": "modify",
+      "before_sha256": "e629d8fe5cf5cf4315c546afe841771cb294d4d8c9e43ab8dcdb5841660256e5",
+      "after_sha256": "c636f15af6dfb755b9b0100efb80ca89a470c946467dc35f1301a8cab0dc69e4",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/de_de.json",
+      "action": "modify",
+      "before_sha256": "ab0a09ba7b52750a819d01488660f374c58f3eeb1c26a0b8e8a0aa54dd118e10",
+      "after_sha256": "b6f26bd49e3d138f97598ea142b21bdaadf6392c973e1bb3dd159bc0d6b91df2",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/en_us.json",
+      "action": "modify",
+      "before_sha256": "b694ebfc998401b1e966666e4367f47093bc024115cc2bd77841dcbf21328b57",
+      "after_sha256": "6b9a975544a0a3be06b21d4f79d9968abae48cf7c5b4ae31caefe0262bb98417",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/es_es.json",
+      "action": "modify",
+      "before_sha256": "2e0a5cf75a14a4e3fc557407ff6dc6aeb96b0c0b7b67433a0e09daf3bdf4157d",
+      "after_sha256": "faf46840d7f2d8a99d1d78f55056ef2d7dbdff6f5ed7470803826c5376c10d00",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/eu_es.json",
+      "action": "modify",
+      "before_sha256": "803e55e888b1d5633497ce177e4e6951065bd2692440fd989a03232f15276674",
+      "after_sha256": "118b51893cef47408da8e48a8c2a50c2c25cd09eca8d497f3c8c6b3b73b691b5",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/fr_fr.json",
+      "action": "modify",
+      "before_sha256": "d6a10f9cb0a5125037931e1593add566378267c1962ca47bc7f44477e2df4803",
+      "after_sha256": "a895eefbb5916da3edada0929b5e9e969703ff3df22680d3d2c3c61fec227126",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/id_id.json",
+      "action": "modify",
+      "before_sha256": "43a8e028db01b80460f1feac707f9e8d65fac23a7c1966e3aae12cf283b77d61",
+      "after_sha256": "0b1a5d1e927153ccd9d3dd471dbcc62076c45e711af0b51bce9fe58a0a758c0d",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/it_it.json",
+      "action": "modify",
+      "before_sha256": "df5c2a8eb945e1d73a9d3620590f404bac6988673fbc16068bfdef897f2fcf99",
+      "after_sha256": "fadfa748e860dee03a41d3b217bcf39e2f15e973182aa1d1b9752ca73e34e930",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ja_jp.json",
+      "action": "modify",
+      "before_sha256": "82df49673e930afc49fe2166bee9eb3b91e1cf41fe41a646a3430fd89ed440b7",
+      "after_sha256": "2486dbbbae61f45322a8b59ec1b09f8845fe113476349b14dc092815ff85537b",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ko_kr.json",
+      "action": "modify",
+      "before_sha256": "e1beb38c4f8e92008336f162d01531d348dd84969bfba227cc7539ff736b6161",
+      "after_sha256": "8b503a433fd27c8b607ce6b87e92a85ee53150b9cd6fcb081388d50c9bc2e6b6",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/pl_pl.json",
+      "action": "modify",
+      "before_sha256": "7775a4196218520754e3a76f472a159e8f93cf9b70f295291e1ec57e426be4c6",
+      "after_sha256": "d323fc83483fb5ba968823250d92e76656b37891b3f26f1d1bf8b15c5d7a0162",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/pt_br.json",
+      "action": "modify",
+      "before_sha256": "b18d65658e275094a3184f84a5bf667e5da272e73c6c5096b31f4aff59c5e412",
+      "after_sha256": "3678eb3d7fe95cfc2c6291da2f3df5e369265716171f0bf7572bd33d155faa33",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ru_ru.json",
+      "action": "modify",
+      "before_sha256": "c41edb2d57392a4f753b0ee4c823a4df49972759aabc910fa59b1b70fb419d50",
+      "after_sha256": "2b6bced30ea0489414b42f037b9c461943cb0a3332d2112dcdd17727b37dc931",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/th_th.json",
+      "action": "modify",
+      "before_sha256": "3caebcd275324aad58ff81f2b1e009b8155444996504f1009288f9a5e07b5413",
+      "after_sha256": "499453c41ebc893bc52469bed51ad520cd24ac0352e4bbbd5eef3b6d15d0cdec",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/tr-TR.json",
+      "action": "modify",
+      "before_sha256": "8e7820b8508664a766ff1cebe0a809ab31d5de31dd81abb6de1d543b89544f42",
+      "after_sha256": "c273bc735aab41d216c68743e68eb23c0fc5711fae28efb1ab7c9130fbe8bfe9",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/tr_tr.json",
+      "action": "modify",
+      "before_sha256": "a2641a18498702095cdec9ea353297fb7522179ee3a7888dfe231d7097e14a3a",
+      "after_sha256": "333941d21362d60f8ee5bb71fee452eefedbf6515fb415aa651fdb8d513e964a",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/uk_ua.json",
+      "action": "modify",
+      "before_sha256": "7500a2eb6029d105d26a3139f73848b917e5995a33e034d9e16bccc13dd55b1d",
+      "after_sha256": "a1616623c85283a13d6eea289b9d06e62b6555b6a9dca463ecacc1c1ad58eaa3",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/vi_vn.json",
+      "action": "modify",
+      "before_sha256": "4bee5c7e205e1d3fc031f1eeb738ec821432dc33373789e3c22d29eb91fc96d9",
+      "after_sha256": "95c5ae261313b75e35629f002f256825410e3ea078abf6929d75dbebec130e47",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/zh_cn.json",
+      "action": "modify",
+      "before_sha256": "9b48e4597b9f72ed1173f7c3a5866e6f168bf2bb205acaafc00da4ab65ced1f6",
+      "after_sha256": "c6c7eff19bc0f1cfc1af768bdb911163d1fd83c8f59d59d2dcc078298cc97b31",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/zh_tw.json",
+      "action": "modify",
+      "before_sha256": "5f5a1ebb6835a845296cc29ac47761e7fe40ae690fad121f15eb7560e2f9623f",
+      "after_sha256": "3c37374f2077c31375789abd149feae5c7fa24f6c928fe9daf7a0eec8086b470",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/bedrock/gun_smith_table.json",
+      "action": "delete",
+      "before_sha256": "380bdf52c035e955bc1a7e309abfc6fc2698180f6c2e8346f144c110745d4b8e",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/block/gun_smith_table.json",
+      "action": "delete",
+      "before_sha256": "d53a018f22937faa93d8810cbc784069589949cffa2859076fe0a92d95bb465c",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box.json",
+      "action": "delete",
+      "before_sha256": "8af243c6884768b728480252bb1cee28e63a9a72bd5f33b137c049f25c3daf4a",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/all_type_creative_ammo_box.json",
+      "action": "delete",
+      "before_sha256": "18d42605309f6111cf2110109687560d99f410b33784a0a6912d102c1af573d8",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/creative_ammo_box_close.json",
+      "action": "delete",
+      "before_sha256": "ecd2bf3e8bb0e6617f1899cebabf47e1bec3415391dc30010297215653a18e41",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/creative_ammo_box_open.json",
+      "action": "delete",
+      "before_sha256": "0df5aa5bc1e597c4f883c6b2b9e7e39dfc5d434bd29bb419bb122d7ce1e32ed7",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/diamond_ammo_box_close.json",
+      "action": "delete",
+      "before_sha256": "b511c4949f5531cc946aa1a459b671954e3440757f4fb4eb0d30ee0555d2f050",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/diamond_ammo_box_open.json",
+      "action": "delete",
+      "before_sha256": "9e963cc51bf36c59a3bf099e9daa8ed1138791ca31ca912a6b9e87d760144ae2",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/gold_ammo_box_close.json",
+      "action": "delete",
+      "before_sha256": "85ea978dab3ee24d8445ea4a5592d4436ce45f836a4a3d003f651a75e48e2b39",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/gold_ammo_box_open.json",
+      "action": "delete",
+      "before_sha256": "d3924d4f409c1cdf735cc95220a8831bdbd7cd412bbb8ff29a257fd8e84c0c47",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/iron_ammo_box_close.json",
+      "action": "delete",
+      "before_sha256": "a5eb0e2764b3aeec0d3531e2fdd8904210d3174113425bd340cfa3dd4eb027f5",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo_box/iron_ammo_box_open.json",
+      "action": "delete",
+      "before_sha256": "93bd62e808cd2686dd5ae67ee7f14285bbd4dbfa462481fc5e181eb4dd721f6c",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/gun_smith_table.json",
+      "action": "delete",
+      "before_sha256": "4d014df35c0e09ed61227e1a2e66d8cb43968bb9e68e166ed994619c00fd2486",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/workbench_a.json",
+      "action": "delete",
+      "before_sha256": "397b9d4c362fdd66a634a77b8ed54874d154761ae925b9da41d68d1e4cfac149",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/workbench_b.json",
+      "action": "delete",
+      "before_sha256": "397b9d4c362fdd66a634a77b8ed54874d154761ae925b9da41d68d1e4cfac149",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/workbench_c.json",
+      "action": "delete",
+      "before_sha256": "397b9d4c362fdd66a634a77b8ed54874d154761ae925b9da41d68d1e4cfac149",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/gun_smith_table.png",
+      "action": "delete",
+      "before_sha256": "378a05a114f879d1a45272f62bbb48ca339166fa53bf7f27311e3b6a5627d261",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/gun_smith_table_n.png",
+      "action": "delete",
+      "before_sha256": "c09a3ce5191523cc8e75c97afbe2f49d2d1d32ec2c1685b96fe6b2a986e842e7",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/gun_smith_table_s.png",
+      "action": "delete",
+      "before_sha256": "6a2076e41c3c55eb083fc392b81a422ed5f055698e4afec885d7f7fad2162444",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/gui/gun_smith_table.png",
+      "action": "delete",
+      "before_sha256": "786d128daf3b6d092fb592cb0557e62a6cf252d6a4a41524d2be4a0af5599d47",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/gui/gun_smith_table_side.png",
+      "action": "delete",
+      "before_sha256": "117644132cb753de145b4e7060cb7091cd2f7d0f71b4941ba09ba36a862b6a23",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box.png",
+      "action": "delete",
+      "before_sha256": "5f97c2a956f5ce1d62bdb94e5ecc7a49e9a22e13d6fda0c14d8d757aa9c0e689",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_unitary_ring.png",
+      "action": "delete",
+      "before_sha256": "c2c9d27a958e984c0c90eaaa3d736f7a1206c33ea3c310c955addb657791d8bf",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_unitary_ring_n.png",
+      "action": "delete",
+      "before_sha256": "aa0cc8d9d60c53c02bb7048081039a1c949544e6642ba4f6ce9bd842ec35160f",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_unitary_ring_s.png",
+      "action": "delete",
+      "before_sha256": "da0ebd1063bdf3bb374b21d65b1111d8f68be34406bbed2abb1801cb0ace24cc",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_universal_ring.png",
+      "action": "delete",
+      "before_sha256": "6900047d284961df80bb3fe43de1b9a9ba2a12713970b2976560ae31db205829",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_universal_ring_n.png",
+      "action": "delete",
+      "before_sha256": "79319ab7b5b758202bac8adc662d93c3719092a568d9809e675b25692219d3e2",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/creative_universal_ring_s.png",
+      "action": "delete",
+      "before_sha256": "f3d09ef8a2878b6960be48f913d1324763a23f2cb88e84efc1af9fe3aa0d4a62",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_diamond.png",
+      "action": "delete",
+      "before_sha256": "bd136c4df7775b9c7474d7427770ed94ffdde9152ffd67012fd6e0a941911406",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_diamond_n.png",
+      "action": "delete",
+      "before_sha256": "05130ede06a605648249d264eaaa0d3476616404de7bbd065edab089955bfcd7",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_diamond_s.png",
+      "action": "delete",
+      "before_sha256": "6e2a9faef0bdd437085dd2c7e52d74aaa9e9d5be0520e2e9cacfdf69b4e73866",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_gold.png",
+      "action": "delete",
+      "before_sha256": "c5044d9d28315c7b0c71b7579b5f26c74c7f0e55dd0f20017d08c6663258cba2",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_gold_n.png",
+      "action": "delete",
+      "before_sha256": "3f7c47d4bd4ebfd00d459f2f307c70a1515f11b8eb7fb3cb3c479a7c28e60145",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_gold_s.png",
+      "action": "delete",
+      "before_sha256": "4a942183f4f749f1f55c906febe297dfaecbc4ff7c6b38e572cfcbb157c1e4dc",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_iron.png",
+      "action": "delete",
+      "before_sha256": "007d78d36789c744b42aa7e38c4039c52224824f9e8550e679f16b217c33376a",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_iron_n.png",
+      "action": "delete",
+      "before_sha256": "d9d11055b31dcfce0556d83e95091f901c36c99613ee723020f2c72ae3b0c563",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box/upgrade_ring_iron_s.png",
+      "action": "delete",
+      "before_sha256": "b40650eb21599bc6abcc164e582e6ef2ee1b59204c2da34961052aa41127c3a0",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box_n.png",
+      "action": "delete",
+      "before_sha256": "e2b3eab488beec33f0f5345bbcfc2f1900aac9a4e320986b157f8f29d33d31db",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/ammo_box_s.png",
+      "action": "delete",
+      "before_sha256": "3855bd35d8ac1b9289ac384307eb2ce95ee8dbda7f32d268ce2cee1c78106566",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/painting/blood_strike_1.png",
+      "action": "delete",
+      "before_sha256": "01621cf1c2c098c8677fa8f415c50a0270f1c3beba56bfc83b0edec527426f1f",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/minecraft/tags/item/dyeable.json",
+      "action": "delete",
+      "before_sha256": "ccf5d7ecfa20e684180680abbb675f934b6e81bc47767fce671f4b0a292872f0",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/minecraft/tags/painting_variant/placeable.json",
+      "action": "delete",
+      "before_sha256": "dd8924d6408a4fe5cb15f461f95519ea456246a530e9e9f112664b74406ae54f",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/gun_smith_table.json",
+      "action": "delete",
+      "before_sha256": "1838a02feb0b018b3f2156e2d9e4b6a24cead34134a351afeba7c0f271f78174",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/workbench_a.json",
+      "action": "delete",
+      "before_sha256": "f09e56a7cf7bf045b2d87d27dee7200ebc922982961bbbc2e045d087a23ca699",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/workbench_b.json",
+      "action": "delete",
+      "before_sha256": "e1af79148100e246c0ee6eb3f703b6b3d0cf5b58d1e8f5416948b61623099c59",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/workbench_c.json",
+      "action": "delete",
+      "before_sha256": "8cf58d1020b1d4edf03f050fe0603c1c50019c6b9a414b31c6228d34d7a76f89",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/painting_variant/blood_strike_1.json",
+      "action": "delete",
+      "before_sha256": "26d74a217c1c7fb0dd6b95adab32dd85934d8068c6c1a1e464417d0c0de552b6",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/ammo_workbench.json",
+      "action": "delete",
+      "before_sha256": "6fe646c86afba00e627e81435a1cd003ed43b0a3bb8838e9b0274160b1d4b0db",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/attachment_workbench.json",
+      "action": "delete",
+      "before_sha256": "5d8ef0af77c6f8d512d253d5c1cfc454bb83a1611eefca82ff24dd9056432ec6",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/diamond_ammo_box.json",
+      "action": "delete",
+      "before_sha256": "0fae13bf548348cc898b756961ae3a319fc6a43f5eb920eac46eff5c77892c9d",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/gold_ammo_box.json",
+      "action": "delete",
+      "before_sha256": "44a6a3ff50a056d11f0179fec5e42c29f27e0ff76ca5465195b99f16af7c0f46",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/gun_smith_table.json",
+      "action": "delete",
+      "before_sha256": "ee3f3b76d17ab8517bda50202a74f48524cee26a975cb440e62cd2b547507d74",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/iron_ammo_box.json",
+      "action": "delete",
+      "before_sha256": "7fbbd85ca3bd888bc506d28430c0c7bf86d2928332de818316fe304f9016e07e",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/misc/blood_strike_1.json",
+      "action": "delete",
+      "before_sha256": "d199df971d69246a7460cbefc43c95fd999b72a2299dfb65fe8525cc950bc272",
+      "after_sha256": null,
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    },
+    {
+      "path": "src/main/resources/data/tacz/tags/block/interact_key/whitelist.json",
+      "action": "modify",
+      "before_sha256": "f3013dec79407e396c1d57fdccc310dd521c118363eee12cece0d63901bcc089",
+      "after_sha256": "ae774b1507f9a6fbe5787977a2dda24cd47e0752f236d10c5d68e536fd07f1da",
+      "reason": "remove_workstation_ammo_box_painting_or_exclusive_crafting_resources"
+    }
+  ],
+  "protected": [
+    {
+      "path": "src/main/java/com/tacz/guns/api/entity/ITargetEntity.java",
+      "sha256": "daa52a70ccd026684be2063219313147b7258d3951154a7ec7688032da7b6a89"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/block/StatueBlock.java",
+      "sha256": "bd91f4970c7e59262268d53b93251b98f14ad0c29908fa95261fcd0f929bb99a"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/block/TargetBlock.java",
+      "sha256": "792aa9be2a000a73c44a6ecd6373e59436e301725321c75cfab513a0756cdcc1"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/block/entity/StatueBlockEntity.java",
+      "sha256": "ace7fa3a7218b273dc270250ae156fe22174851cdfdd5fb6313c0f2f4eba2f17"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/block/entity/TargetBlockEntity.java",
+      "sha256": "6593d78274a033216d6f62137b057c0f773e6a6b30c2049d849fb18ddd4c6eec"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/model/functional/ShellRender.java",
+      "sha256": "00884f9d18dfdecd86c4d0675dd6f0c2c14880932f20b6c8e578569a13924444"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/renderer/block/StatueRenderer.java",
+      "sha256": "aa92ae5af1136ccf1775eba75705c15da0d2b8ebdda81898582e020a42b51df4"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/renderer/block/TargetRenderer.java",
+      "sha256": "5bc0ad37c923a645c6e4e1afeaf51deaa13645a275053baed68a06a6e1536ef4"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/renderer/entity/TargetMinecartRenderer.java",
+      "sha256": "9f8248c8e6eca39f02d93b3fb23576fa555a146405fc537f61e98830f286ad7b"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/resource/pojo/animation/gltf/AnimationChannelTarget.java",
+      "sha256": "87e6ae7ac46633ec7a8445624e35a35ae2147bb99f067b1f4ab79bd862bbabc8"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/entity/EntityKineticBullet.java",
+      "sha256": "ee12146e3ecdec1e03d1c44c692985150d1b2715ab5d62297747276da6adcff3"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/entity/TargetMinecart.java",
+      "sha256": "c44fa929c4adbf7ebd4f29363d7749353fc6d36ffcdee638297e4de6d3a24cc3"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/item/TargetMinecartItem.java",
+      "sha256": "a6e2bbc62a9322828e8e01bab35212f4390304bda311de36e53d5828b67819c8"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/statue.json",
+      "sha256": "56289f31c58d3ac6bb1bbf13b58acc334cca0e8b19262f00e472ef3b37ba908d"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/blockstates/target.json",
+      "sha256": "eb037b764a6bb42658f06f0d0d8e04ebfc0ac2a29510c35588da08bb1f4831af"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/12g_display.json",
+      "sha256": "89b8efce09a5913f19fc54051ed7215e70589694bf625e648473ec84944ce6b4"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/22wmr_display.json",
+      "sha256": "901c348cb1c6d3f500c14fec026244b3dc0a4ffd020617ec718c7a7fa3ab99fd"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/308_display.json",
+      "sha256": "1f87984cb5c304b4903967ebdd8e72360862831f1dc50685b134cd993c336d7f"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/30_06_display.json",
+      "sha256": "e764e1334d187465323a4a619cec2d7a6898925e713dc815d9836bc13ffb5577"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/338_display.json",
+      "sha256": "ccfd64731fb2afbbb344a639b5aed3c1770ba0231abe53999cb60bbd4e719cb3"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/357mag_display.json",
+      "sha256": "e3dcee35282324d913861a80f66410d71c0318eea2393008132a062ae8d834fd"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/40mm_display.json",
+      "sha256": "10152dbc43dd82f6ff52705760fadf7e0c70090a39fcaf41391928c5373f65c7"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/45_70_display.json",
+      "sha256": "cd25838cc2f5a47d74b6d12f5d34ceba3b2f7bb4291e6f8327476a6d4c57fc84"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/45acp_display.json",
+      "sha256": "240b352e64573fb6006cb8e3f6bf0a07da62614f41484869e2b66e1b80fb6cb6"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/46x30_display.json",
+      "sha256": "1ae62afe53026dd355b777afd0397b97027d896885259c8449f101778f5d1023"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/500mag_display.json",
+      "sha256": "4fcdc6d8d2ce350c715999790d3331ae6fdcdef9889cfc6b1d278742dfdf9d20"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/50ae_display.json",
+      "sha256": "9f49252321f35b41350237c0d7a89f41bdf3cb649936b1b3be0d95d304fbf2bc"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/50bmg_display.json",
+      "sha256": "f0604749a73dec4cdbbe06996ed0531a593d8ed8a22f33c0090b4c44446a19c9"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/545x39_display.json",
+      "sha256": "9c00f1e6c321a38104d79725af8e81481efccef57cabb80fde909c8561b6b4ea"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/556x45_display.json",
+      "sha256": "206bc564250d0d4e10ca03efe5f31dad675621816d0bf16406e46584a608dd77"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/57x28_display.json",
+      "sha256": "810babf3305b28cde8b142a0e7113183266bf83cd0094e12a92fdeddb7378fa1"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/58x42_display.json",
+      "sha256": "36303e7ed121d222d732a0d4aa939ff5e386641491df9ffe9ba774c7b3a77eed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/68x51fury_display.json",
+      "sha256": "360411cafb0628345def3afbb3c291496764ae1e5b7c5f047b5b49101cf592ec"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/762x25_display.json",
+      "sha256": "a56d3d1c658ebdb18197aab10714b2ae6dd1e62ef034dd56f77364ba034df4a8"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/762x39_display.json",
+      "sha256": "3eb5d9afa753b71807a8c09b94d4a82a185cf3d2812a42b41b8484351f19e7bc"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/762x54_display.json",
+      "sha256": "44d113164e07bc9f7028eca5d142d89e9649d458c1b110a6420c65ff1e8a7164"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/792x57_display.json",
+      "sha256": "1b2773238b1761a3d5785f8108f07e70b47d61b464162d299ac3d4aa803a1f21"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/9mm_display.json",
+      "sha256": "358ca891d2cc55cc5b3e8cc386c09e02057de7675c609590cc174669623ecb02"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/rpg_rocket_display.json",
+      "sha256": "3e86ccd046566ed53f0273fa3a159f7505a10b78c6627fe8d85605895230df8b"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/12g.json",
+      "sha256": "5d66d1a380324043c46a4dfc9eb76a45ccad0d2ed23f41b27070b691d2f8986f"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/308.json",
+      "sha256": "7ceeeeea50d661cb759ab8f6588881e5ddcc650ddd05cd475990d0ec6bc0ef38"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/30_06.json",
+      "sha256": "ba704d3914c61fbd1a2329ad00fcb6e015cbb6e2eee417f0bb4c80a943e4b054"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/338.json",
+      "sha256": "6281a9875fec869e1f577b6468fbec5ae8bc1d1c3706a7d1159d1fd0323a1d07"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/357mag.json",
+      "sha256": "1fd1d545a9db928c7564bd9c9e8ca9608567083725cd8a10d399b4bd5f9749ba"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/40mm_grenade.json",
+      "sha256": "b1a9f69e4e6239adaa8a68b9f88c886de980a92ce2408f5e1c2f99087137e583"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/45acp.json",
+      "sha256": "358add543be37af5c1dfc15c8efd24c860681bd0fcfa9efe098f0a846abfa752"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/46x30.json",
+      "sha256": "2d39f00b12abd58f9ed89b8ececdb98d05624e12b39e21af7b1c4f09fbe34e2d"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/50ae.json",
+      "sha256": "d828fee61211883de1c2ccdda2533f05990c72cea139ee95c16fb46f875dbfc0"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/50bmg.json",
+      "sha256": "f2778fc986734ef6628eafa25e371989cabfe0b7f639ad609ed8a3186658790e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/556x45.json",
+      "sha256": "25ba96c3d891474b09b86f58ca49be61dc8fcb55d68d786a6ca0270acf40ae48"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/57x28.json",
+      "sha256": "f5030f274836d90cd4f7155b3de781618566d161225572d85e623c994db2b160"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/58x42.json",
+      "sha256": "539dc7100bb209c0617cf27f34595f07937091ddd2dc2d784bff7e1fd65a82d8"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/68x51fury.json",
+      "sha256": "06594862f02c094cc355af508f39dff304e4b2f9b110527e3dacb8dc1196e8c4"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/762x25.json",
+      "sha256": "11fd3ea358c08b2c729824420ba2938506175e7a5ac417a8b0e9aa91fdae4b16"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/762x39.json",
+      "sha256": "a31577fc723cf5169c32d0192b119e317fa2d175057702211931c609b1d07561"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/762x54.json",
+      "sha256": "b21cc7a1ab7de72fe4800bbc8a8a6eeb4466290c529e7fcceda2d8235e9fb06e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/9mm.json",
+      "sha256": "8779669997b8e3c1dd93de9484dc3a76ca7f54ba24e77968a759ea06132acfb5"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/12g.png",
+      "sha256": "68bb887e61312ddd1e31d4995c99cd6faab8d501a28c2f56b2ce4bd1a2399a26"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/20x82.png",
+      "sha256": "8cebaf0ed70a406854dd4a4a8bd2880f8b24200ab140ad0b31f3f21632023b37"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/22wmr.png",
+      "sha256": "510c8771eca0530b0a387702f7c1d56ce879dc2063ee4097fb9665560f7761c2"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/308.png",
+      "sha256": "e5af261b2a5fd7becdbf4377ae4f03285d567953beb11574bf4556f3dcb63c79"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/30_06.png",
+      "sha256": "cddbbc2db95bb27cce8f2f500d0c649d427f08d3ae969606a81463b29c71cfbb"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/338.png",
+      "sha256": "4b46e7b9aebc5f2168f3af47b0e81291f33747a25587f2b8eb6b2049da8c54f0"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/357mag.png",
+      "sha256": "cc7777ccc45fc3ed541abf2658f57667e79c9864ca079ce0b777276035e1ff02"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/40mm.png",
+      "sha256": "34e42a484a099ff5079cc3d3be9bb5dcb46a46b908f5bb4925d375e12bb7324d"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/45_70.png",
+      "sha256": "b28d1ce4577283e0e59e38b68efe9186da122cb2407242e251e193490503f42e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/45acp.png",
+      "sha256": "229fedb20833a0999d577cdb6af6a0b2e873e6cd5ccba8271421587125323063"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/46x30.png",
+      "sha256": "2bbeadad99c154c0fb4c7d2f92d061db10fd6ffc8389ce9faab2e26c18acd92e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/500mag.png",
+      "sha256": "5d67385eb4e7fb3c29bb92b2d883c5d85a17b6f96a857622fdf1417c6a0a9310"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/50ae.png",
+      "sha256": "3d4ad16c9bd3b74fbb69acf8c1b4d80b81bf15e1d2c7951a19acc533d227e053"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/50bmg.png",
+      "sha256": "401cce2a4d9ff9abbd349c08d48ac798e8296da985e7b1ec6a5f53051210071f"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/545x39.png",
+      "sha256": "7630221e221e1de8d7d09a2f4cdb9547ed857340a3cdf4d36662b60f52529937"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/556x45.png",
+      "sha256": "e689bc548f19e1f948724bc25a3128dd956654773e60eb730fdd29efb1ad668c"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/57x28.png",
+      "sha256": "4123cb0d0f4737286aaaa03ee46e7a7ec7cd1f6c2c1dc0f627fb00996405ecf5"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/58x42.png",
+      "sha256": "69ddee43809ac146abc3e067b0289e2bffcf1d86bf6a6189c83117da68259e60"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/68x51fury.png",
+      "sha256": "d024f02844ff533e8d900b54652841fe57d0fb4bf6f7354c87fdb8fdcd4d29a5"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/762x25.png",
+      "sha256": "f2bfd586b36bd772a7a7f39a4ec720b3d40de0757eda005bafd607c2b0ba8cb2"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/762x39.png",
+      "sha256": "2c6b1928211008796afdf847a80bd2fc48f21393c9aff8b32cf12339d9866895"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/762x54.png",
+      "sha256": "74cad449900f311e5c9630d6a2e147fb53499eb12511e5a0af127e477bf3dde2"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/792x57.png",
+      "sha256": "aacbe1680486e72de2cb9d486cc9381bd2989b9b441f13f51256a00aed1b1b24"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/9mm.png",
+      "sha256": "ff944f2134d5a2b73bc31da546051b73f50841c1000b58ddd7ccbd2079d21abf"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/font.png",
+      "sha256": "64dbce5f960ea304f6883014ab5878eba7de486e9d25035b1036c0d854bd9614"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/rpg_rocket.png",
+      "sha256": "7367992b43033664d71d961d2bb3f015e8f8cc7b21f87b5971304d9290b8a518"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/12g.png",
+      "sha256": "360b2acf859d33c72dbdf18c20c0d9c8c39084e9e90ef75a1348047907a8776a"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/12g_n.png",
+      "sha256": "24dae24f25b65cf5f8e5bb4f5f012ecaba65d918e5cfdee9dcb291ec4872ac80"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/12g_s.png",
+      "sha256": "094277e930cc905688f0d9ba0a4402d7029503d105d5e581c0c81af61596f4bf"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/308.png",
+      "sha256": "62af30a73fa5843c4879e0c626d4a2c625471b037ef96ed92bce90d89d7ff9d3"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/308_n.png",
+      "sha256": "6a47ac2744de22a2ffccbeaffe47deac9309d416951f0f3be50998d9b4f000ec"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/308_s.png",
+      "sha256": "473c77e908f043782f8beb1aa1fc088808a365cc339bb9985ea6919e4e55669e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/30_06.png",
+      "sha256": "06a904aa3344a9a2ac3cca09a56567ac0e49a25655a7b2729f29eb42bbd19045"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/30_06_s.png",
+      "sha256": "eeb28a6d313e184fe07401522986f3a87417f86e2497979549755f010fec36a3"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/338.png",
+      "sha256": "eddf0e8da4df5385975c57a52fbd1b22f95e3b02109d90d04fc5f86f0e77ff63"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/338_n.png",
+      "sha256": "866f0bcb2946c627c5107314968181e7ae6cb77305d2ffeaec65ad0480434154"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/338_s.png",
+      "sha256": "578d8d36e1fd4d1099887bba3cc51207843d20a1a78b15151238c53b4e6ae043"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/357mag.png",
+      "sha256": "318a4b3a4eb3361b1e1aa7d33f58126739ea65fc3feb562ed847ef97b4071c37"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/357mag_s.png",
+      "sha256": "e9a027baaaa1c75830c218f8d31b543481c1a993829d0c5e008256276b204b25"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/40mm.png",
+      "sha256": "a9a972ea9f50f3c9fbb97e48cd68ba0e608a56e193b79d224c027cd0b6ac0baa"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/40mm_n.png",
+      "sha256": "bd61ab0fcc38012f5b446738e099bce1802952956e772b5203d541bb621d389d"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/40mm_s.png",
+      "sha256": "43639880b80d23e0ffaabffe1600364d1ef3d05bc7029f6fbe539ec011875769"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/45acp.png",
+      "sha256": "208a4a51e3dad6f120539310a7f1f5bf515cbe30f7185b35edb6fd1da97aeebd"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/45acp_n.png",
+      "sha256": "817e7ba03eea806b7d6bb923c97c127ec7cdfeabbb8d041f285fbd1719b305c1"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/45acp_s.png",
+      "sha256": "d0bc5e6f2a58a57a8ac317145ca4b4da0568ce0afbd8e335dbcd0c55fb69530c"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/46x30.png",
+      "sha256": "87cceb15e833e806952fa2677f4344b448ee591e8d5716227c6ff8149e960143"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/46x30_s.png",
+      "sha256": "7661b8349f635623f61902156c309fd14ec08309bc28441ca5e9c8575932faca"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50ae.png",
+      "sha256": "7b955f696dedef4b8b7cb92a558773d8018b83a3c1d2a6866684ade1ee6a988c"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50ae_n.png",
+      "sha256": "350692f0b60f51c410338579f642f3d0faf3911b5e62143d9a38fce4e5004f75"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50ae_s.png",
+      "sha256": "4f17fd177276769b55e4426130813421fb620b0e9b13daf9d36197c63e01bf53"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50bmg.png",
+      "sha256": "a25e58a5c005345fac23da7bf7a847afd644aef5ee29e98fd970db184685c331"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50bmg_s.png",
+      "sha256": "be96d2bb2b3160aea88dc6452cc425c77f7e6e7974c7e45e61b7409c1ce95025"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/556x45.png",
+      "sha256": "0d2e2aad954c7b988e0f5cf5d8c966ff157ce919201b6baf6ce5cbc9dbec5ef2"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/556x45_s.png",
+      "sha256": "9d027ca7bf803996b94b91995f01713d69b0962222a7434c3e0768b892e5b3d1"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/57x28.png",
+      "sha256": "013d1e5261071c4ebf429157c233a747a815c88e49e5474d50b1499877436da2"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/57x28_s.png",
+      "sha256": "1c2fb3a03d3842dd527bad1ba6c26afccd75e554ceb33229ca0989e374fd42cc"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/58x42.png",
+      "sha256": "cf33b267df12ab9e3050fc74eb9e8d19ca38cc3cdfc06d30edce0035bc1fbb19"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/58x42_s.png",
+      "sha256": "7e4a4f0a5422ecf2881cd1a557471334dad4d83c7b66c0f108e9d39266ba70a1"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/68x51fury.png",
+      "sha256": "cdf99925880a6eec5b80892d93210c3d0f0bd62e7ef60a205d6a073b264e3ee9"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/68x51fury_s.png",
+      "sha256": "ce3a9f542d084314dccbc1240d64d2a138178c66532856045f3c7d828fc07a7b"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x25.png",
+      "sha256": "658f3a7dd7c153aba3423d31b75a1ccbc858939406b3a6832e0a7824a82e5026"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x25_s.png",
+      "sha256": "e9065be815da437a20c1d2caae1d3da99d8dcb98db199fe434ea997c82973441"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x39.png",
+      "sha256": "2a84c4a9047093591ddff2a26730b0faacbccf5e393ee8e1c5e366bab84a5f7a"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x39_n.png",
+      "sha256": "beda963a815bcad9016773401e47a88ec45f01947b129e27d1ffc294dfaa6ccc"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x39_s.png",
+      "sha256": "42fa2e01945196a893a006cd962c4f7515883d7eccc846448046a5f25ce6fa33"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x54.png",
+      "sha256": "75cd84ea13ef06de8a241f29c09df04d667d73f72e54947ffbcca85afd0deca6"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x54_s.png",
+      "sha256": "582fea340c47acd928051b0fd3362c802fdc69fb3d42f56aa5cfcaba5bbf5737"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/9mm.png",
+      "sha256": "67875185e4cb5c7a2c53373018299d71b049bcd21550cd8ed737adc34336f1c1"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/9mm_n.png",
+      "sha256": "189635e2438218eaafb329493e75890601f2096a7121112ceed7021105529698"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/9mm_s.png",
+      "sha256": "616032d71ace444c49416f347d5956757411aebf6263af14fc93b499fc97e1ad"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/flash/common_muzzle_flash.png",
+      "sha256": "a603e906347ababe5489de4066ed48ae09e353b4b0e1f592df04598998d0b92e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/12g_shell.png",
+      "sha256": "d1c0233dc97342ec13cc1ce1602eb6b0d154fef9332467e4efae42e88669e91f"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/12g_shell_n.png",
+      "sha256": "9ebea9f8a58e6640b5701d34315cc8956f5ccf7ed1fea1a703b2d29c0349d689"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/12g_shell_s.png",
+      "sha256": "3e0542840b5924f7dfcd6dc790daf556e4ee6484073b916de698533ea35e24fc"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/22wmr_shell.png",
+      "sha256": "a1481049718229ca75f2e17c91d12a63b33f3ca0306aa552f3b92f10f14468cf"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/308_shell.png",
+      "sha256": "6b5a24279e3330135dc595d7375f08ff23ddffbf6c380f5dc5a3362653b34554"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/308_shell_n.png",
+      "sha256": "76c2d15a3e4391cfdb5d1e4f16d3b9369f9640d215281126fd132d597ade0b65"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/308_shell_s.png",
+      "sha256": "f41ae612c9ea99d7458f1f778e18f1a33ee4d0cdc3adc1040f8874a217b272c4"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/30_06_shell.png",
+      "sha256": "6b5a24279e3330135dc595d7375f08ff23ddffbf6c380f5dc5a3362653b34554"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/30_06_shell_n.png",
+      "sha256": "76c2d15a3e4391cfdb5d1e4f16d3b9369f9640d215281126fd132d597ade0b65"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/30_06_shell_s.png",
+      "sha256": "24fdc55d02ab08860c0e09ddfbe829b37332bb9c2c17c764aee1a3e5c6038704"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/357mag_shell.png",
+      "sha256": "c0f9a2f843dd893e36d26dba69c396fd6972431cd29deab977e70df96c2885ad"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/40mm_shell.png",
+      "sha256": "d11b9711fee89b3bdecaddcafb8c38c0620ae30f72c10648ede7c11a2560654e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/40mm_shell_n.png",
+      "sha256": "08a29013d71c90b5f47291a1f733a2de56a9c9996e9237943251ef95fdc58319"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/40mm_shell_s.png",
+      "sha256": "512ff784d63f64f637f6f6c1094e716ad07f38a22fb0f0c44c32005a03673ea7"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/45acp_shell.png",
+      "sha256": "e051b230b7c757504f294de9cfc636bbd0a820c3ff53438fdec7bccba06b3b8b"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/45acp_shell_n.png",
+      "sha256": "92a2c77ef0b81dd7a0867c6b532957b99cd297baa347028f9403ad5113b94765"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/45acp_shell_s.png",
+      "sha256": "3810673be85e47a4de0cd83753236f2d2bc4cb8391f20f8724b5701aa4f31d4a"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/46x30_shell.png",
+      "sha256": "979f826ab59049b8b852e359d920aaa0746b9ac315055588a965a467a6aa31dd"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/46x30_shell_n.png",
+      "sha256": "59a482070fc75646af968ff74c86d61696f33a95a93dc667de50fa8250f44cab"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/46x30_shell_s.png",
+      "sha256": "e0058eb7cf356215b42700f2a9fe272aa95306b4fb794139254475baf9e5c0c2"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/500mag_shell.png",
+      "sha256": "aaf2d1514db5229f7eee92bde6cc119d376e61529a0c20f06d2a895a5c51277e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/50ae_shell.png",
+      "sha256": "b29695c08c93a7bd7fcc46fa86bea80527fc0aa71351f46fc5acc163b78c68c8"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/50ae_shell_n.png",
+      "sha256": "48521372fd6cfe9949b324c453b774239f6a00f7820caff0d7a42f2d89b211dc"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/50ae_shell_s.png",
+      "sha256": "3387b6dc7f035307be34519a119a54317807899fb9dd15e4b66b2414d95e333c"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/50bmg_shell.png",
+      "sha256": "2e87432a24edcdb605a6c2477dce906b959423d4996c99bf40bc6c35d9d6df5d"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/50bmg_shell_n.png",
+      "sha256": "e255f302e1766c3146274ad81444eec572f1f2698447234bc03550dd764b58a7"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/50bmg_shell_s.png",
+      "sha256": "f8e6d91f8b7b040fd9bfa45941b91558376d6ed11b2c5388df81392d0327b294"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/545x39_shell.png",
+      "sha256": "eb79bf9f84fcb0908e712d3a42bf7a242ed0e085d9d79949c8ab2872aaead772"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/545x39_shell_n.png",
+      "sha256": "16eb5e2ff88e97c3e2732d3f490f7e6cc9417b242a0d814e292078fb75079db0"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/545x39_shell_s.png",
+      "sha256": "372d807f6ea78aa35163cc652e97c87d610ba44ffbaba49056c01c7899f854f8"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/556x45_shell.png",
+      "sha256": "30043d2e68c37eeb1b32fdafd5b6a33ddffad5c15af2b991c5fab6edb5063f7a"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/556x45_shell_n.png",
+      "sha256": "76c2d15a3e4391cfdb5d1e4f16d3b9369f9640d215281126fd132d597ade0b65"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/556x45_shell_s.png",
+      "sha256": "f41ae612c9ea99d7458f1f778e18f1a33ee4d0cdc3adc1040f8874a217b272c4"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/57x28_shell.png",
+      "sha256": "dcce3273f2453593cb0221a04b1316f481daa7d46bedeb2c3d819d9a2b362f70"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/58x42_shell.png",
+      "sha256": "e36e66ecc2eafb670d1f09efc0beeb0c93e6c962256d55b9d293ad3a51978795"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/58x42_shell_n.png",
+      "sha256": "949a8ef1fac8629e58c5d3787d90e819657b11665527381ec4f173f465a41172"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/58x42_shell_s.png",
+      "sha256": "14758444e3ce5dff06c3b315922cca54bdbad47c3c6ef79c02107041de35c1f9"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/762x25_shell.png",
+      "sha256": "76a00a9d05927cd9dba243e924a82550cc27375acecc0d4035133812eef3a630"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/762x25_shell_n.png",
+      "sha256": "7e6c8a839329337e517dae2550dfe92ea6c63172291b52bb4a7bd6fc97f0e7f9"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/762x25_shell_s.png",
+      "sha256": "6898261f0787112cd99511c42f3117dda3436b0fcdf515b8250294de84761457"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/762x39_shell.png",
+      "sha256": "4cb6a009abbae8a0c7a55eb0c60f97ba9a6dbade081c167a66f15e4ee5b2e474"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/762x39_shell_n.png",
+      "sha256": "3fba2aa10f193db8f746c084ac26973d08fc1f3bbe683b20f5e962ecd32cdd85"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/762x39_shell_s.png",
+      "sha256": "f113481e59ab6ec2b3e396b6755651b2428b3a0df27de289c830f009d95362a5"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/762x54_shell.png",
+      "sha256": "2d73b23d2ce636414808884606aba976772c6562d47a8ee38e280c4895de8af3"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/762x54_shell_n.png",
+      "sha256": "d667c1bc96cc277ce7bbfde78b5da3439b6c77498ffd4bbdb28ad2374e27d7d6"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/762x54_shell_s.png",
+      "sha256": "ada61d24ca5cdc700023c8a263b7a01a467fd2a8a43a956d26aea19981320d45"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/9mm_shell.png",
+      "sha256": "8bfae1e519d964e26cd6b0e6c1de278d61a3da7ea8095b37654236366af72cfc"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/9mm_shell_n.png",
+      "sha256": "92a2c77ef0b81dd7a0867c6b532957b99cd297baa347028f9403ad5113b94765"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/shell/9mm_shell_s.png",
+      "sha256": "3810673be85e47a4de0cd83753236f2d2bc4cb8391f20f8724b5701aa4f31d4a"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/12g.json",
+      "sha256": "1a85c0dd6d43022b12a9c9c2aa0c8395c6c90e6b34054fedb85e470b66d60b9f"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/22wmr.json",
+      "sha256": "cfde56335793b526d07c581f229cf732cb956a68aed9fa9ea66616422b33f3e3"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/308.json",
+      "sha256": "ddad6cd0f941731ec918bc2280af1b67346ff9838f2557633a1dabe0be197927"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/30_06.json",
+      "sha256": "1635d0967bd7955bf03ffcefc4dec5bf4cf0b1b503c2560e32efbe66710e0653"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/338.json",
+      "sha256": "4c94e7c3a9f3ad5ca9358696794f795d24d3c8dec539e4d1ac26a6eca3fafffd"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/357mag.json",
+      "sha256": "926c754eedaf20c105e3196d4833c8291ef19d1a16411f736e57c1c8bb3cd40e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/40mm.json",
+      "sha256": "c9bbb62c53c25c6ab15d5fb07768b6c7cffa2ec46e2d58590e4759d79aa6d7f4"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/45_70.json",
+      "sha256": "fa723ad6608935798fd35a9a39befede3e8d00266e1a4c7a368029398669229b"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/45acp.json",
+      "sha256": "752c487ac341e6d60a3b6c418a9fdf26c58cd6f2c1a3874b0132bf4160f9c8a1"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/46x30.json",
+      "sha256": "b7c9bfbe79af61ecbbf6f6ab92239006b8e679e494bf24904299dc7156555d63"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/500mag.json",
+      "sha256": "bba481f7094e086d90335f9a3f0dd0e5f742b0ee2107aa4b84f56308c8ee3106"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/50ae.json",
+      "sha256": "d7e3c7474866fafddccc7bc60302dcf0a4b2aab5f182614ece01cdd786a4fe3e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/50bmg.json",
+      "sha256": "2f756d2f6339c1ad668fe7e450788af38a30cd83d2c604cc8dcf98cde1343829"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/545x39.json",
+      "sha256": "c8597522112e5e8caed3a342b771d34d5086d11ab6525639eefcaa5daad0538a"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/556x45.json",
+      "sha256": "2d98a70ce2156b985b09b59b418834109a9c592a6772fc534634d433747bd697"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/57x28.json",
+      "sha256": "a86cea79b6e56d6961e4b1fb4edf5db6be15507eca6825aab44494f738248d7b"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/58x42.json",
+      "sha256": "9a0b1db03d17e909fb7960bdc25e32b013efedfbd57f3d3e0f8cf35e92a1b67a"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/68x51fury.json",
+      "sha256": "33839d1c4bad47f0a2c2f21cfe9d5f6cfeade0e39d544a9c04316da2ceab7c8a"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/762x25.json",
+      "sha256": "5d24a4cb4f5a79e859ea53c9a454295d29764f2b4bd6b6864cec5790a8d29482"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/762x39.json",
+      "sha256": "c121ec3158e39130060c1b7230f21d08c26dce6e8ab28ffb090e09959c1c3164"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/762x54.json",
+      "sha256": "f0447cab68581996c3c4f7b6edd15fe375bead52c228f9d36824b8436977fa2b"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/792x57.json",
+      "sha256": "f7660028220793971164f2dbb1eb71bf63b67d8bb795c8c3c122a82dbb84b00f"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/9mm.json",
+      "sha256": "c2895026b453bafe4284e06667256a5912ef88feec8e2de9629a8871f48833a0"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/rpg_rocket.json",
+      "sha256": "9b98209426bda24702bc66f4174a12fd89ff46325aab064baf6c998486d623f4"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/bedrock/statue.json",
+      "sha256": "739bb03b36a172c08294539efde661006e955993c2188d34640f85b6130222e6"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/bedrock/target.json",
+      "sha256": "a3272fdff3cdb555c1e547fff871c42f49f95457eaed3b55985ef32426b3a9e1"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/bedrock/target_minecart.json",
+      "sha256": "915fb1b2943c13341aa55a72302d9f91e36303746710c52bc9f03f9e2da3c48e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/block/statue.json",
+      "sha256": "8f56f4d896567931fe08e90c60a4575844992b760133c67461358ca326157317"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/block/target.json",
+      "sha256": "d53a018f22937faa93d8810cbc784069589949cffa2859076fe0a92d95bb465c"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/statue.json",
+      "sha256": "7277fc4af4c4df3a9d189e26ed191631cbc13867bd27edfce8d1de3667783ba6"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/target.json",
+      "sha256": "e4377b0751f71b0a698f6d263e52c3ccf6ce86b63e13d4cc1ee84fb77ad9a4ac"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/target_minecart.json",
+      "sha256": "6a1a19a5523d4cdaf286d77b3c05c8dc4491071032ffcbf0083eaefc5311123e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_1.ogg",
+      "sha256": "22e96c195040d8a4ba9a62270ca47d743a365ba1f594f6b2d3960c9a076c2a65"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_2.ogg",
+      "sha256": "6f7944cc15775380d35aefccb5c5597215644756d40177fdea6df6c4b7965e9e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_3.ogg",
+      "sha256": "5ef766fe3783706153d60e9c0c882ffdb4691937f481cdee8c7f61e4755990c4"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_4.ogg",
+      "sha256": "077a9dbef5c6a8fe8317c7b284b0b2d073d582e63ad2e133821589aa8bb9380d"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_5.ogg",
+      "sha256": "25c5d6847182eddd6a9601a766b2f384b83711af1302ead49667df9d1d0222a3"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_6.ogg",
+      "sha256": "ca826f0ff6128ac1cd3506cdd5bb85cb890efda5ca478c060b6b3f31722abc84"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/sounds/block/target_block_hit/target_block_hit_7.ogg",
+      "sha256": "7547c62d449f0f3eee0ddce5b9b6b802affe517ad14c4317a00509fb173d3882"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/statue.png",
+      "sha256": "4e47592f7570755667fed897809b3aa850acd39a3bbadcbcb2bb8f0b94e8f0de"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/statue_n.png",
+      "sha256": "d06e843a8ded5ab8e8bef4f8b790071ac8893c37ca13c197c0202dd85be0a55f"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/statue_s.png",
+      "sha256": "53bf15d3347715d41ec7f2b0f765078383ccf7a17f4b2887005c15d10c08548a"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/target.png",
+      "sha256": "eef874b9139a8afdc5a6699c7cc2e2fa2b92c7a6cf549efd663f64af9d75f4ea"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/target_n.png",
+      "sha256": "5ddcbb35779f35ec6e78bd30b54a55b05eaeaca741b320918c8ee6438ddf743b"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/block/target_s.png",
+      "sha256": "7e371811005b8613d92804de07064d250fdb66b080ced9bd762ed2f9626de2f8"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/target_minecart.png",
+      "sha256": "f811e299afb3d1d4d92288bd7b84e505805f1027f044073fc2a9043a02949309"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/target_minecart_n.png",
+      "sha256": "f4728f969dfd0e1aeba125960f3720d3743f5d225d8e2ea67e99bc8373afc239"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/entity/target_minecart_s.png",
+      "sha256": "eab88ac17f3d4cbcc734316303c822970f3d1b1b856d02253ea6a4dca48ba3ce"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/statue.png",
+      "sha256": "7836c5f2b226b49cefadcd6ca67b6fd33d70b529356d45c19b0531a76b88882b"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/target.png",
+      "sha256": "b751ac905a5f6a2fab6b92e157a0a77d45fbe1747a0418d48ed6e6d71189ed93"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/textures/item/target_minecart.png",
+      "sha256": "786c9666a0618841a79deaf4aacd5855c31f2279b6b1d4c72bd36f3dc5688056"
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/statue.json",
+      "sha256": "024e699a7d3fb8bd4441d4d8807c0cea5358472c4fa9bcbd58de27bc50212731"
+    },
+    {
+      "path": "src/main/resources/data/tacz/loot_table/blocks/target.json",
+      "sha256": "14a167ca6ff0ac3d78d02fc93c822b2d69771e253893ea7c97601b857be6b9b9"
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/statue.json",
+      "sha256": "71a0e06b2187cbaa42bf6ec47c5ad3d445ec15a0d4c3d1c3c478a5728843cb95"
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/target.json",
+      "sha256": "c9f70e8959069d3ad7feb2e36350aa1620fa35384a8eaf6a0d4ff9f92023ddc1"
+    },
+    {
+      "path": "src/main/resources/data/tacz/recipe/target_minecart.json",
+      "sha256": "55264d1f2bc80404af132324134e5281f78318c0cf7de5434845d642f53fdf90"
+    }
+  ],
+  "effects_count": 186,
+  "retained_code_boundary": "IAmmoBox and legacy recipe/data schema remain API/parser contracts only; no ammo_box item, workstation block/menu/craft packet/renderer or bundled table recipe remains.",
+  "saved_world_policy": "No world rewriting. Removed registry IDs are not mapped to replacements. Old removed blocks/items disappear on later load; users must not expect contents/refund migration."
+}

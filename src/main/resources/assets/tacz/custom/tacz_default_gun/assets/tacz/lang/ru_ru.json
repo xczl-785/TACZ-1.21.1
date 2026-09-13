@@ -168,12 +168,6 @@
   "tacz.attachment.stock_moe.name": "Приклад Magpul MOE",
   "tacz.attachment.stock_ripstock.name": "Складной приклад CMMG",
   "tacz.attachment.stock_m4ss.name": "Приклад M4SS",
-  "tacz.block.gun_smith_table.name": "Оружейный верстак TaCZ",
-  "tacz.block.ammo_workbench.name": "Верстак для сборки боеприпасов TaCZ",
-  "tacz.block.attachment_workbench.name": "Верстак для сборки обвесов TaCZ",
-  "tacz.block.gun_smith_table.desc": "Там, где всё началось",
-  "tacz.block.ammo_workbench.desc": "Блеск пороха",
-  "tacz.block.attachment_workbench.desc": "Излишняя роскошь",
   "config.tacz.client.render.enable_tooltip_id": "Отображать ID в подсказках предметов",
   "config.tacz.client.render.enable_tooltip_id.desc": "При включённых расширенных подсказках показывает ID оружия/патронов/обвеса."
 }

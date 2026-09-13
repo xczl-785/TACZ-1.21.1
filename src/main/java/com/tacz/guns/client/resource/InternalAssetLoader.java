@@ -39,8 +39,6 @@ public class InternalAssetLoader {
     public static final ResourceLocation STATUE_MODEL_LOCATION = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "models/bedrock/statue.json");
     public static final ResourceLocation STATUE_TEXTURE_LOCATION = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "textures/block/statue.png");
     // 改装台
-    public static final ResourceLocation SMITH_TABLE_MODEL_LOCATION = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "models/bedrock/gun_smith_table.json");
-    public static final ResourceLocation SMITH_TABLE_TEXTURE_LOCATION = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "textures/block/gun_smith_table.png");
     // 默认动画
     private static final ResourceLocation DEFAULT_PISTOL_ANIMATIONS_LOC = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "animations/pistol_default.animation.json");
     private static final ResourceLocation DEFAULT_RIFLE_ANIMATIONS_LOC = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "animations/rifle_default.animation.json");
@@ -58,7 +56,6 @@ public class InternalAssetLoader {
 
         // 加载代码直接调用的基岩版模型
         BEDROCK_MODELS.clear();
-        loadBedrockModels(InternalAssetLoader.SMITH_TABLE_MODEL_LOCATION);
         loadBedrockModels(InternalAssetLoader.TARGET_MODEL_LOCATION);
         loadBedrockModels(InternalAssetLoader.TARGET_MINECART_MODEL_LOCATION);
         loadBedrockModels(InternalAssetLoader.DEFAULT_BULLET_MODEL);

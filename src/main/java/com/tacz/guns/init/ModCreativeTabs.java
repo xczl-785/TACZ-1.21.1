@@ -9,7 +9,6 @@ import com.tacz.guns.api.item.builder.AttachmentItemBuilder;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.api.item.gun.AbstractGunItem;
 import com.tacz.guns.item.AttachmentItem;
-import com.tacz.guns.item.GunSmithTableItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -23,13 +22,11 @@ public class ModCreativeTabs {
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> OTHER_TAB = TABS.register("other", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tab.tacz.other"))
-            .icon(() -> ModItems.GUN_SMITH_TABLE.get().getDefaultInstance())
+            .icon(() -> ModItems.TARGET.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
-                output.acceptAll(GunSmithTableItem.fillItemCategory());
                 output.accept(ModItems.TARGET.get());
                 output.accept(ModItems.STATUE.get());
                 output.accept(ModItems.TARGET_MINECART.get());
-                // Native ammo boxes are retired along with native ammunition.
             }).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> AMMO_TAB = TABS.register("ammo", () -> CreativeModeTab.builder()

@@ -63,6 +63,9 @@ public final class SelectedContentPolicy {
 
     public static boolean excludesResource(String namespace, String path) {
         if (!"tacz".equals(namespace)) return false;
+        // 2026-09-13: retired workstation definitions must not return via an old exported pack.
+        if ((path.startsWith("index/blocks/") || path.startsWith("data/blocks/") || path.startsWith("display/blocks/"))
+                && (path.endsWith("/gun_smith_table.json") || path.endsWith("/ammo_workbench.json") || path.endsWith("/attachment_workbench.json"))) return true;
         // Include upstream additions: all native ammunition recipes are retired.
         if (path.startsWith("recipe/ammo/") && path.endsWith(".json")) return true;
         for (String gun : EXCLUDED_GUNS) {
