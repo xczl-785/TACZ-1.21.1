@@ -1,6 +1,1 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tacz_assembly:item/buffer"
-  }
-}
+{"parent":"minecraft:item/generated","textures":{"layer0":"tacz_assembly:item/buffer"}}

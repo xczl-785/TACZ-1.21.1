@@ -1,6 +1,1 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tacz_assembly:item/handguard_tactical"
-  }
-}
+{"parent":"minecraft:item/generated","textures":{"layer0":"tacz_assembly:item/handguard_tactical"}}

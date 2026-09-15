@@ -24,6 +24,19 @@ class NativeAssemblyStateTest {
         AssemblyDefinitions.replace(definitions);
     }
     private static AssembledWeapon weapon(){return AssembledWeapons.byId(net.minecraft.resources.ResourceLocation.parse("tacz_assembly:m4a1"));}
+    @Test void standardWorkbenchLoadsTexturedPartsAndLocalMounts(){
+        var models=NativeAssemblyView.geometry(weapon());
+        var materials=NativeAssemblyView.materials(weapon(),models);
+        assertEquals(67,models.size());
+        for(var entry:models.entrySet()){
+            assertEquals(new dev.weaponmodels.ModelGeometry.Point(0,0,0),entry.getValue().attachmentOrigin());
+            for(var mesh:entry.getValue().meshes())for(var triangle:mesh.triangles())
+                assertFalse(materials.resolve(entry.getKey(),triangle.region()).texture().isEmpty());
+        }
+        var muzzle=dev.weaponmodels.ModelGeometry.origin(weapon().PRESET,models,List.of("upper","barrel_mount","barrel","muzzle")).orElseThrow();
+        var buffer=dev.weaponmodels.ModelGeometry.origin(weapon().PRESET,models,List.of("buffer")).orElseThrow();
+        assertTrue(muzzle.z()>buffer.z(),"Radian workbench art frame points toward +Z");
+    }
     @Test void presetIsOnePhysicalTreeAndCanDetachMagazine(){
         var gun=weapon().preset();assertEquals(14,AssemblyTrees.flatten(gun).size());AssemblyTrees.validate(gun,AssembledWeapon.identity(gun));
         var before=gun.copy();var result=AssemblyGunExchange.plan(gun,ItemStack.EMPTY,List.of("magazine")).orElseThrow();

@@ -10,6 +10,28 @@ def validate(resources=DEFAULT):
  assert not {'tacz:ammo_mod_fmj','tacz:ammo_mod_hp','tacz:ammo_mod_i'}&external.keys()
  assert set(mapping)==set(catalog)=={m['definitionId'] for m in read(base/'preview.json')['models']}
  assert set(external.values())<=catalog.keys()
+ # Standard component contract: local geometry, textured UVs, and translated physical mount labels.
+ preview=read(base/'preview.json');assert preview['schemaVersion']==3
+ models={m['definitionId']:m for m in preview['models']}
+ library=read(base/'library.json')['materials'];bindings=read(base/'materials.json')['parts']
+ for d,m in models.items():
+  assert m['attachmentOrigin']==[0,0,0]
+  assert set(m['slots'])=={s['id'] for s in catalog[d]['slots']}
+  assert m['meshes'] and all(mesh['triangles'] for mesh in m['meshes'])
+  for mesh in m['meshes']:
+   for triangle in mesh['triangles']:
+    assert len(triangle['uv'])==3 and all(len(uv)==2 for uv in triangle['uv'])
+    assert triangle['region']==mesh['name']
+  texture=library[bindings[d]['defaultMaterial']]['texture']
+  assert (out/'assets'/texture.replace(':','/')).is_file()
+ # Radian's art frame points along +Z, independent of the native held rig frame.
+ assert models['lower_receiver']['slots']['magazine'][2]>models['lower_receiver']['slots']['buffer'][2]
+ assert models['barrel']['slots']['muzzle'][2]>0
+ for locale in ['zh_cn','en_us']:
+  lang=read(a/f'lang/{locale}.json')
+  for m in models.values():
+   for slot in m['slots']:assert 'weapon_assembly_ui.slot.'+slot in lang
+
  assert read(out/'data/tacz_assembly/data/guns/m4a1.json')==read(SRC/'data/tacz/data/guns/m4a1_data.json')
  native=read(SRC/'assets/tacz/display/guns/m4a1_display.json');display=read(a/'display/guns/m4a1.json')
  for k,v in native.items():

@@ -1,0 +1,483 @@
+{
+  "models": 68,
+  "method": "Blockbench Codecs.project.load then compile in temporary independent tabs; exact per-mesh vertex coordinates and per-face vertex order/UV compared; original project restored without saving",
+  "originalProject": "200f6fd1-4fdf-54ee-fb8d-f3f25213bfff",
+  "rows": [
+    {
+      "path": "source-pack/components/barrel/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 242,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/barrel_mount_collar/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 216,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/bolt/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 312,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/buffer/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 66,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/charging_mechanism/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 134,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/front_sight/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 190,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/gas_block_and_tube/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 314,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/handguard_default/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 756,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/handguard_tactical/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 2614,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/lower_receiver/model.bbmodel",
+      "pass": true,
+      "meshes": 4,
+      "faces": 602,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/magazine_standard/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 324,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/muzzle_default/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 254,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/pistol_grip/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 106,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/rear_sight/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 398,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_bayonet_m9/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 504,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_extended_mag_1/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 356,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_extended_mag_2/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 356,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_extended_mag_3/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 76,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_cobra/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 226,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_cqr/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 364,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_magpul_afg_2/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 202,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_osovets_black/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 246,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_rk0/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 390,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_rk1_b25u/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 376,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_rk6/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 246,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_se_5/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 162,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_td/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 264,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_vertical_military/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 360,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_vertical_ranger/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 636,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_grip_vertical_talon/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 124,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_laser_compact/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 498,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_laser_lopro/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 804,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_laser_nightstick/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 546,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_laser_peq15/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 376,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_muzzle_brake_cthulhu/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 608,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_muzzle_brake_cyclone_d2/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 192,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_muzzle_brake_pioneer/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 382,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_muzzle_brake_trex/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 456,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_muzzle_compensator_trident/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 260,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_muzzle_silencer_knight_qd/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 344,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_muzzle_silencer_phantom_s1/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 144,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_muzzle_silencer_ursus/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 288,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_scope_acog_ta31/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 1140,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_scope_elcan_4x/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 1442,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_scope_hamr/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 2552,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_scope_qmk152/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 2816,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_552/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 750,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_acro_rifle/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 644,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_coyote/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 576,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_deltapoint_rifle/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 408,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_exp3/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 876,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_fastfire_rifle/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 416,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_okp7/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 520,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_pk06_rifle/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 506,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_srs_02/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 944,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_t2/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 820,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_sight_uh1/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 1284,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_stock_ak12/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 1192,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_stock_carbon_bone_c5/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 340,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_stock_hk_slim_line/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 844,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_stock_m4ss/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 564,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_stock_militech_b5/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 442,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_stock_moe/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 298,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_stock_ripstock/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 248,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_stock_sba3/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 642,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/tacz_stock_tactical_ar/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 532,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/upper_receiver/model.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 620,
+      "textures": 1
+    },
+    {
+      "path": "source-pack/components/front_sight/model-folded.bbmodel",
+      "pass": true,
+      "meshes": 1,
+      "faces": 220,
+      "textures": 1
+    }
+  ]
+}

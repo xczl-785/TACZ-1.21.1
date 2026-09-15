@@ -1,6 +1,1 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tacz_assembly:item/front_sight"
-  }
-}
+{"parent":"minecraft:item/generated","textures":{"layer0":"tacz_assembly:item/front_sight"}}

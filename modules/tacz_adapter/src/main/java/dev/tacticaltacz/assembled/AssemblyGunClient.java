@@ -23,14 +23,9 @@ public final class AssemblyGunClient {
     private static int ticks;
     @SubscribeEvent public static void opening(ScreenEvent.Opening event){
         var mc=Minecraft.getInstance();
-        if(event.getNewScreen() instanceof com.tacz.guns.client.gui.GunRefitScreen&&mc.player!=null&&AssembledWeapons.isGun(mc.player.getMainHandItem())&&!AssembledWeapons.from(mc.player.getMainHandItem()).nativeRig){
+        if(event.getNewScreen() instanceof com.tacz.guns.client.gui.GunRefitScreen&&mc.player!=null&&AssembledWeapons.isGun(mc.player.getMainHandItem())){
             event.setCanceled(true);open();
         }
-    }
-    @SubscribeEvent public static void refitControls(ScreenEvent.Init.Post event){
-        var mc=Minecraft.getInstance();var weapon=mc.player==null?null:AssembledWeapons.from(mc.player.getMainHandItem());
-        if(event.getScreen() instanceof com.tacz.guns.client.gui.GunRefitScreen&&weapon!=null&&weapon.nativeRig)
-            event.addListener(net.minecraft.client.gui.components.Button.builder(Component.translatable("tacz_assembly.workbench"),button->open()).bounds(8,8,120,20).build());
     }
     @SubscribeEvent public static void restrictions(ScreenEvent.Render.Post event){
         var mc=Minecraft.getInstance();var weapon=mc.player==null?null:AssembledWeapons.from(mc.player.getMainHandItem());
@@ -56,7 +51,7 @@ public final class AssemblyGunClient {
             if(opening){
                 var model=com.tacz.guns.api.TimelessAPI.getClientGunIndex(weapon.GUN).orElseThrow().getDefaultDisplay().getGunModel();
                 var geometry=model instanceof AssemblyGunModel assembled?assembled.geometry():NativeAssemblyView.geometry(weapon);
-                var materials=model instanceof AssemblyGunModel assembled?assembled.materials():dev.weaponmodels.AssemblyMaterials.white();
+                var materials=model instanceof AssemblyGunModel assembled?assembled.materials():NativeAssemblyView.materials(weapon,geometry);
                 screen=new WorkbenchScreen(host,geometry,materials,id->weapon.nativeRig?weapon.createPart(id).getHoverName().getString():Component.translatable("item."+weapon.ITEMS.get(id).replace(':','.')).getString(),id->{if(weapon.nativeRig)return net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(weapon.GUN.getNamespace(),"textures/item/"+id+".png");var item=net.minecraft.resources.ResourceLocation.parse(weapon.ITEMS.get(id));return item.withPath("textures/item/"+item.getPath()+".png");},view.held().getHoverName().getString()+" · "+Component.translatable("tactical_tacz_adapter.assembly_workbench.title").getString());
                 opening=false;mc.setScreen(screen);
             }

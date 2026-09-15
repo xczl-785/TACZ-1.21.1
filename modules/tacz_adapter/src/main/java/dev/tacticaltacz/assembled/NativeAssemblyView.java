@@ -1,6 +1,7 @@
 package dev.tacticaltacz.assembled;
 
 import dev.weaponmodels.ModelGeometry;
+import dev.weaponmodels.AssemblyMaterials;
 import java.io.StringReader;
 import java.util.Map;
 
@@ -8,6 +9,11 @@ import java.util.Map;
 public final class NativeAssemblyView {
     public static Map<String,ModelGeometry> geometry(AssembledWeapon weapon){
         return ModelGeometry.load(new StringReader(AssembledWeapon.resource("data/"+weapon.GUN.getNamespace()+"/"+weapon.resourceDirectory+"/preview.json")));
+    }
+    public static AssemblyMaterials materials(AssembledWeapon weapon,Map<String,ModelGeometry> geometry){
+        var base="data/"+weapon.GUN.getNamespace()+"/"+weapon.resourceDirectory+"/";
+        return AssemblyMaterials.load(new StringReader(AssembledWeapon.resource(base+"library.json")),
+            new StringReader(AssembledWeapon.resource(base+"materials.json")),geometry);
     }
     private NativeAssemblyView(){}
 }

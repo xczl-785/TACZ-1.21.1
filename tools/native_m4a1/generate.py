@@ -139,61 +139,14 @@ write(OUT/f'assets/{NS}/geo_models/gun/lod/m4a1.json',low)
 p=OUT/f'assets/{NS}/textures/gun/lod/m4a1.png';p.parent.mkdir(parents=True,exist_ok=True);atlas.save(p)
 write(BASE/'batches.json',manifest)
 write(BASE/'geometry-evidence.json',{'nativeRigBones':len(hb),'highCubes':sum(len(b.get('cubes',[])) for b in highbones),'lowCubes':sum(len(b.get('cubes',[])) for b in lowbones),'reusedLowCubes':reused,'maximumNeutralMatrixError':max(errors),'derivedRegions':derived,'lodPolicy':'47 isolated old cubes rebound; mixed regions replaced by largest native surfaces per original bone, at most two; no baked stock; physical attachment uses native renderer','sourceHashes':audit['sourceHashes'],'textureAtlas':{'high':[0,0,texhi.width,texhi.height],'oldLow':[0,texhi.height,texlo.width,texlo.height]},'limits':['No game, animation playback or FPS measurement; LOD surface reduction requires owner visual acceptance']})
-# Item entry resources retain native gun slot art until individual production icons are generated.
-for name,id in mapping.items():
- if id.startswith('tacz:'):continue
- write(OUT/f'assets/{NS}/models/item/{id.split(":")[1]}.json',{'parent':'minecraft:item/generated','textures':{'layer0':'tacz:gun/slot/m4a1'}})
 for locale in ['en_us','zh_cn']:
- labels={f'item.{NS}.{id.split(":")[1]}':('Native M4A1 · '+name.replace('_',' ')) for name,id in mapping.items() if not id.startswith('tacz:')}
+ labels={f'item.{NS}.{id.split(":")[1]}':name.replace('_',' ').capitalize() for name,id in mapping.items() if not id.startswith('tacz:')}
  labels[f'gun.{NS}.m4a1']='M4A1 · Native Assembly' if locale=='en_us' else 'M4A1 · 原生实体组装'
  write(OUT/f'assets/{NS}/lang/{locale}.json',labels)
 print('Generated native M4A1:',len(nodes),'default physical nodes;',len(attachments),'native candidates;',reused,'rebound LOD cubes; error',max(errors))
-# The workbench uses neutral-pose native triangles, separate from the animated held model.
-from PIL import ImageDraw
-faces=[[0,1,3,2],[4,6,7,5],[0,4,5,1],[2,3,7,6],[0,2,6,4],[1,5,7,3]]
-geometry=collections.defaultdict(list)
-def vertices(b,c,lookup,extra=np.eye(4)):
- pivot=np.array(c.get('pivot',b['pivot']));m=extra@matrix(b['name'],lookup)@trans(S*(pivot-np.array(b['pivot'])))@rot(c.get('rotation',[0,0,0]));origin=np.array(c['origin']);size=np.array(c['size']);inflate=c.get('inflate',0)
- return np.array([(m@np.append(S*(origin+size*np.array([x,y,z])+inflate*(2*np.array([x,y,z])-1)-pivot),1))[:3]*S for x in [0,1] for y in [0,1] for z in [0,1]])
-for b in hb:
- if not b.get('cubes'):continue
- o=owner(b['name'])
- if o.startswith('presentation_') or o=='dormant_oem_stock_geometry' or variant(b['name'])=='folded':continue
- for c in b['cubes']:geometry[o].append(vertices(b,c,by))
-for a in attachments:
- d=external[a['id']]
- if d in geometry:continue
- model=a['display'].get('model')
- if not model:continue
- namespace,path=model.split(':');p=SRC/f'assets/{namespace}/geo_models/{path}.json'
- if not p.exists():raise FileNotFoundError(p)
- item=read(p);bones=item['minecraft:geometry'][0]['bones'];lookup={b['name']:b for b in bones}
- anchor={'scope':'scope_pos','stock':'stock_pos','grip':'grip_pos','laser':'laser_pos','muzzle':'muzzle_pos'}[a['type']]
- for b in bones:
-  for c in b.get('cubes',[]):geometry[d].append(vertices(b,c,lookup,matrix(anchor,by)))
-models=[]
-for d in mapping:
- verts=geometry[d];triangles=[]
- for v in verts:
-  v=np.array([[-p[2]*.4,p[1]*.4,p[0]*.4] for p in v])
-  for face in faces:
-   for indices in [[face[0],face[1],face[2]],[face[0],face[2],face[3]]]:triangles.append({'vertices':v[indices].tolist()})
- models.append({'definitionId':d,'attachmentOrigin':[0,0,0],'slots':{s:[0,0,0] for s in slots.get(d,{})},'boxes':[],'meshes':[{'name':'native','triangles':triangles}]})
- # Distinct geometry thumbnail; source model, no editor or game required.
- image=Image.new('RGBA',(128,128));draw=ImageDraw.Draw(image)
- if verts:
-  allv=np.concatenate(verts);camera=np.array([[.25,0,-1],[.1,-1,0],[1,.1,.25]]);pts=allv@camera.T;center=(pts.min(axis=0)+pts.max(axis=0))/2;span=np.ptp(pts,axis=0);scale=min(110/max(span[0],.1),110/max(span[1],.1));polys=[]
-  for v in verts:
-   v=v@camera.T-center
-   for face in faces:polys.append((v[face,2].mean(),[(64+p[0]*scale,64+p[1]*scale) for p in v[face]]))
-  for _,poly in sorted(polys,key=lambda x:x[0]):draw.polygon(poly,fill='#6b7780',outline='#283039')
- p=OUT/f'assets/{NS}/textures/item/{d}.png';p.parent.mkdir(parents=True,exist_ok=True);image.save(p)
- if not mapping[d].startswith('tacz:'):
-  write(OUT/f'assets/{NS}/models/item/{mapping[d].split(":")[1]}.json',{'parent':'minecraft:item/generated','textures':{'layer0':f'{NS}:item/{d}'}})
-write(BASE/'preview.json',{'schemaVersion':2,'models':models})
 labels={'lower_receiver':'下机匣','upper_receiver':'上机匣','barrel_mount_collar':'枪管连接环','barrel':'枪管','gas_block_and_tube':'导气总成','front_sight':'前瞄具','rear_sight':'后瞄具','bolt':'枪机总成','charging_mechanism':'拉机柄','handguard_default':'标准护木','handguard_tactical':'导轨护木','pistol_grip':'手枪握把','buffer':'缓冲管','magazine_standard':'标准30发弹匣','muzzle_default':'默认枪口装置'}
 p=OUT/f'assets/{NS}/lang/zh_cn.json';data=read(p)
-for d,label in labels.items():data['item.'+mapping[d].replace(':','.')]='M4A1 · '+label
+for d,label in labels.items():data['item.'+mapping[d].replace(':','.')]=label
 # Root name describes the gun, even though its physical root is the lower receiver.
 data[f'item.{NS}.m4a1']='M4A1 · 原生实体组装';data['tacz_assembly.workbench']='打开组装工作台';write(p,data)
 p=OUT/f'assets/{NS}/lang/en_us.json';data=read(p);data['tacz_assembly.workbench']='Assembly workbench';write(p,data)
@@ -208,16 +161,9 @@ write(OUT/f'data/{NS}/assembly/m4a1.json',{'schemaVersion':1,'items':[{'itemId':
 
 for locale,text in [('zh_cn','FMJ/HP/I 效果附件不兼容；前握把和激光需要导轨护木；M9 需要默认枪口装置。'),('en_us','FMJ/HP/I effect attachments are incompatible. Grips/lasers need the rail handguard; M9 needs the default muzzle.')]:
  p=OUT/f'assets/{NS}/lang/{locale}.json';data=read(p);data['tacz_assembly.restrictions']=text;write(p,data)
-# Workbench anchors are mount points; meshes remain in the common native neutral frame.
-anchor_bones={'lower_receiver':None,'upper_receiver':'upper2','barrel_mount_collar':'bone38','barrel':'group2','gas_block_and_tube':'fore_sight3','front_sight':'fore_sights','rear_sight':'rear_sight','bolt':'m4a1_bolt','charging_mechanism':'m4a1_pull','handguard_default':'handguard_default','handguard_tactical':'handguard_default','pistol_grip':'grip2','buffer':'octagon2','magazine_standard':'magazine','muzzle_default':'muzzle_pos'}
-for a in attachments:anchor_bones[external[a['id']]]={'scope':'scope_pos','stock':'stock_pos','grip':'grip_pos','laser':'laser_pos','muzzle':'muzzle_pos','extended_mag':'magazine'}[a['type']]
-anchors={}
-for definition,name in anchor_bones.items():
- p=matrix(name,by)[:3,3]*S if name else np.array([0,0,0]);anchors[definition]=[-float(p[2])*.4,float(p[1])*.4,float(p[0])*.4]
-for model in models:
- d=model['definitionId'];model['attachmentOrigin']=anchors[d];model['slots']={slot:anchors[allowed[0]] for slot,allowed in slots.get(d,{}).items()}
- for slot,allowed in slots.get(d,{}).items():assert all(anchors[child]==anchors[allowed[0]] for child in allowed),(d,slot)
-(BASE/'preview.json').write_text(json.dumps({'schemaVersion':2,'models':models},separators=(',',':'))+'\n')
-
 for locale,text in [('zh_cn','使用原生枪械属性；此处不换算为塔科夫后坐力数值。'),('en_us','Native gun properties apply; no conversion to Tarkov recoil units.')]:
  p=OUT/f'assets/{NS}/lang/{locale}.json';data=read(p);data['tacz_assembly.native_stats']=text;write(p,data)
+
+# Standard editable components share the Radian workbench and icon producer.
+from build_workbench import build as build_workbench
+build_workbench()

@@ -1,6 +1,1 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tacz_assembly:item/gas_block_and_tube"
-  }
-}
+{"parent":"minecraft:item/generated","textures":{"layer0":"tacz_assembly:item/gas_block_and_tube"}}

@@ -1,6 +1,1 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tacz_assembly:item/barrel_mount_collar"
-  }
-}
+{"parent":"minecraft:item/generated","textures":{"layer0":"tacz_assembly:item/barrel_mount_collar"}}
