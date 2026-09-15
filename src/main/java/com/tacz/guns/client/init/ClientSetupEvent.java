@@ -8,7 +8,6 @@ import com.tacz.guns.client.gui.overlay.HeatBarOverlay;
 import com.tacz.guns.client.gui.overlay.InteractKeyTextOverlay;
 import com.tacz.guns.client.gui.overlay.KillAmountOverlay;
 import com.tacz.guns.client.input.*;
-import com.tacz.guns.client.renderer.item.AmmoItemRenderer;
 import com.tacz.guns.client.renderer.item.AttachmentItemRenderer;
 import com.tacz.guns.client.renderer.item.GunItemRendererWrapper;
 import com.tacz.guns.client.resource.ClientAssetsManager;
@@ -91,7 +90,6 @@ public class ClientSetupEvent {
         Minecraft minecraft = Minecraft.getInstance();
         RenderSystem.recordRenderCall(() -> minecraft.getMainRenderTarget().enableStencil());
         GunItemRendererWrapper.INSTANCE = new GunItemRendererWrapper();
-        AmmoItemRenderer.INSTANCE = new AmmoItemRenderer(minecraft.getBlockEntityRenderDispatcher(), minecraft.getEntityModels());
         AttachmentItemRenderer.INSTANCE = new AttachmentItemRenderer(minecraft.getBlockEntityRenderDispatcher(), minecraft.getEntityModels());
     }
 

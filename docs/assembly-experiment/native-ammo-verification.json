@@ -1,0 +1,52 @@
+{
+  "date": "2026-09-15",
+  "baseline_commit": "2c45c076",
+  "build": {
+    "command": "JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home bash gradlew build",
+    "result": "BUILD SUCCESSFUL in 10s",
+    "tasks": "6 actionable tasks: 4 executed, 2 up-to-date",
+    "note": "compileJava executed after final source changes; Gradle test NO-SOURCE; focused policy probe runs separately"
+  },
+  "checks": [
+    {
+      "name": "refund_policy",
+      "command": "JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home python3 tools/test_temporary_ammo_refund.py",
+      "exit_code": 0,
+      "output": "PASS: fixed M855, unknown caliber refusal, 1505 quantity/stack cases, invalid inputs, 12 catalog mappings"
+    },
+    {
+      "name": "ammunition_generator",
+      "command": "python3 tools/generate_newmod_ammunition.py --check",
+      "exit_code": 0,
+      "output": "Ammunition resources OK"
+    },
+    {
+      "name": "retirement_and_jar",
+      "command": "PYTHONDONTWRITEBYTECODE=1 python3 tools/verify_ammunition_chain.py --jar build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar",
+      "exit_code": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"tarkov_rounds\": 86,\n  \"guns\": 15,\n  \"caliber_effect_indices\": 24,\n  \"production_changes\": 160,\n  \"deleted_files\": 92,\n  \"jar_resources_compared\": 1986,\n  \"gun_models_animations_refit_unchanged\": true,\n  \"client_acceptance\": \"owner_pending\"\n}"
+    },
+    {
+      "name": "gun_references_and_policy",
+      "command": "PATH=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home/bin:$PATH python3 tools/verify_cleanup.py build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar",
+      "exit_code": 0,
+      "output": "PASS: 15 guns, 85 consumed attachments, 1497 deletions, hashes, explicit references checked (historical workstation exception applies only before its removal), 232 Java policy cases"
+    },
+    {
+      "name": "historical_protection_and_jar",
+      "command": "python3 tools/verify_extra_content.py build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar",
+      "exit_code": 0,
+      "output": "EXTRA_CONTENT PASS: 233 historical protection entries reconciled through exact successor hashes; earlier deletions remain absent"
+    }
+  ],
+  "temporary_contract": "Fixed Tarkov variant per caliber on the default refund path; installed adapter may cancel that path and refund the exact variant",
+  "standalone_loading_required": false,
+  "world_opened": false,
+  "newmod_lock_updated": false,
+  "client_acceptance": "owner_pending",
+  "artifact": {
+    "path": "build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar",
+    "sha256": "26460158920c9e1ab5d869a5d08f315813b74ef805297f72f65770b75f9fa7c6",
+    "size_bytes": 25609426
+  }
+}

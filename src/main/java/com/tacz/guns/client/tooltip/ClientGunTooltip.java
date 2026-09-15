@@ -3,7 +3,6 @@ package com.tacz.guns.client.tooltip;
 import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.attachment.AttachmentType;
-import com.tacz.guns.api.item.builder.AmmoItemBuilder;
 import com.tacz.guns.client.input.RefitKey;
 import com.tacz.guns.client.resource.ClientAssetsManager;
 import com.tacz.guns.client.resource.GunDisplayInstance;
@@ -23,7 +22,6 @@ import com.tacz.guns.util.AttachmentDataUtils;
 import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
-import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.inventory.tooltip.ClientTooltipComponent;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.network.chat.Component;
@@ -51,7 +49,7 @@ public class ClientGunTooltip implements ClientTooltipComponent {
     private final IGun iGun;
     private final CommonGunIndex gunIndex;
     private final @Nullable GunDisplayInstance display;
-    private final ItemStack ammo;
+    private final ResourceLocation ammoId;
     private @Nullable List<FormattedCharSequence> desc;
     private Component ammoName;
     private MutableComponent ammoCountText;
@@ -72,7 +70,7 @@ public class ClientGunTooltip implements ClientTooltipComponent {
         ResourceLocation ammoId = tooltip.getAmmoId();
         this.gunIndex = tooltip.getGunIndex();
         this.display = TimelessAPI.getGunDisplay(gun).orElse(null);
-        this.ammo = AmmoItemBuilder.create().setId(ammoId).build();
+        this.ammoId = ammoId;
         this.maxWidth = 0;
         this.getText();
     }
@@ -128,8 +126,11 @@ public class ClientGunTooltip implements ClientTooltipComponent {
 
 
         if (shouldShow(GunTooltipPart.AMMO_INFO)) {
-            this.ammoName = ammo.getHoverName();
-            this.maxWidth = Math.max(font.width(this.ammoName) + 22, this.maxWidth);
+            // This is a caliber label, not a claim about the loaded Tarkov variant.
+            this.ammoName = TimelessAPI.getClientAmmoIndex(ammoId)
+                    .<Component>map(index -> Component.translatable(index.getName()))
+                    .orElseGet(() -> Component.literal(ammoId.toString()));
+            this.maxWidth = Math.max(font.width(this.ammoName), this.maxWidth);
 
             int barrelBulletAmount = (iGun.hasBulletInBarrel(gun) && gunIndex.getGunData().getBolt() != Bolt.OPEN_BOLT) ? 1 : 0;
             int maxAmmoCount = AttachmentDataUtils.getAmmoCountWithAttachment(gun, gunIndex.getGunData()) + barrelBulletAmount;
@@ -154,7 +155,7 @@ public class ClientGunTooltip implements ClientTooltipComponent {
             if (iGun.useInventoryAmmo(gun)) {
                 this.ammoCountText = Component.translatable("tooltip.tacz.gun.inventory_mode").withStyle(ChatFormatting.YELLOW);
             }
-            this.maxWidth = Math.max(font.width(this.ammoCountText) + 22, this.maxWidth);
+            this.maxWidth = Math.max(font.width(this.ammoCountText), this.maxWidth);
         }
 
 
@@ -251,10 +252,10 @@ public class ClientGunTooltip implements ClientTooltipComponent {
             yOffset += 4;
 
             // 弹药名
-            font.drawInBatch(this.ammoName, pX + 20, yOffset, 0xffaa00, false, matrix4f, bufferSource, Font.DisplayMode.NORMAL, 0, 0xF000F0);
+            font.drawInBatch(this.ammoName, pX, yOffset, 0xffaa00, false, matrix4f, bufferSource, Font.DisplayMode.NORMAL, 0, 0xF000F0);
 
             // 弹药数
-            font.drawInBatch(this.ammoCountText, pX + 20, yOffset + 10, 0x777777, false, matrix4f, bufferSource, Font.DisplayMode.NORMAL, 0, 0xF000F0);
+            font.drawInBatch(this.ammoCountText, pX, yOffset + 10, 0x777777, false, matrix4f, bufferSource, Font.DisplayMode.NORMAL, 0, 0xF000F0);
 
             yOffset += 20;
         }
@@ -310,21 +311,6 @@ public class ClientGunTooltip implements ClientTooltipComponent {
                 yOffset += 4;
                 font.drawInBatch(this.packInfo, pX, yOffset, 0xffffff, false, matrix4f, bufferSource, Font.DisplayMode.NORMAL, 0, 0xF000F0);
             }
-        }
-    }
-
-    @Override
-    public void renderImage(Font pFont, int pX, int pY, GuiGraphics guiGraphics) {
-        IGun iGun = IGun.getIGunOrNull(this.gun);
-        if (iGun == null) {
-            return;
-        }
-        if (shouldShow(GunTooltipPart.AMMO_INFO)) {
-            int yOffset = pY;
-            if (shouldShow(GunTooltipPart.DESCRIPTION) && this.desc != null) {
-                yOffset += this.desc.size() * 10 + 2;
-            }
-            guiGraphics.renderItem(ammo, pX, yOffset + 4);
         }
     }
 

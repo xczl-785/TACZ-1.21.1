@@ -1,7 +1,4 @@
 {
   "name": "tacz.ammo.50bmg.name",
-  "display": "tacz:50bmg_display",
-  "stack_size": 30,
-  "sort": 21
+  "display": "tacz:50bmg_display"
 }
-    

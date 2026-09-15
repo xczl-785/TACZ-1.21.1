@@ -14,17 +14,13 @@ import com.tacz.guns.config.client.ResourceConfig;
 import com.tacz.guns.resource.pojo.AmmoIndexPOJO;
 import com.tacz.guns.util.ColorHex;
 import net.minecraft.client.Minecraft;
-import net.minecraft.client.renderer.texture.MissingTextureAtlasSprite;
 import net.minecraft.commands.arguments.ParticleArgument;
-import net.minecraft.core.HolderLookup;
-import net.minecraft.data.registries.VanillaRegistries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import org.apache.commons.lang3.StringUtils;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-import java.util.Objects;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.CompletionException;
 
@@ -32,17 +28,12 @@ public class ClientAmmoIndex {
     private final Object modelLoadLock = new Object();
     private String name;
     private AmmoDisplay display;
-    private @Nullable BedrockAmmoModel ammoModel;
-    private @Nullable ResourceLocation modelTextureLocation;
-    private ResourceLocation slotTextureLocation;
     private @Nullable BedrockAmmoModel ammoEntityModel;
     private @Nullable ResourceLocation ammoEntityTextureLocation;
     private @Nullable BedrockAmmoModel shellModel;
     private @Nullable ResourceLocation shellTextureLocation;
-    private int stackSize;
     private @Nullable AmmoParticle particle;
     private float[] tracerColor = new float[]{1f, 1f, 1f};
-    private AmmoTransform transform;
     private @Nullable String tooltipKey;
     private volatile boolean modelsLoaded = false;
     private volatile boolean modelsLoadFailed = false;
@@ -56,11 +47,8 @@ public class ClientAmmoIndex {
         checkIndex(clientPojo, index);
         AmmoDisplay display = checkDisplay(clientPojo, index);
         checkName(clientPojo, index);
-        checkSlotTexture(display, index);
-        checkStackSize(clientPojo, index);
         checkParticle(display, index);
         checkTracerColor(display, index);
-        checkTransform(display, index);
         if (!ResourceConfig.ENABLE_LAZY_CLIENT_ASSET_LOAD.get()) {
             index.ensureModelsLoaded();
         }
@@ -139,7 +127,6 @@ public class ClientAmmoIndex {
             if (modelsLoaded) {
                 return;
             }
-            checkTextureAndModel(display, this);
             checkAmmoEntity(display, this);
             checkShell(display, this);
             modelsLoaded = true;
@@ -156,33 +143,8 @@ public class ClientAmmoIndex {
             }
         }
         if (shouldLog) {
-            GunMod.LOGGER.warn("Failed to load ammo models {}", display.getModelLocation(), throwable);
+            GunMod.LOGGER.warn("Failed to load ammo models {}", name, throwable);
         }
-    }
-
-    private static void checkTextureAndModel(AmmoDisplay display, ClientAmmoIndex index) {
-        // 检查模型
-        ResourceLocation modelLocation = display.getModelLocation();
-        if (modelLocation == null) {
-            return;
-        }
-        BedrockModelPOJO modelPOJO = ClientAssetsManager.INSTANCE.getBedrockModelPOJO(modelLocation);
-        Preconditions.checkArgument(modelPOJO != null, "there is no corresponding model file");
-        // 检查材质
-        index.modelTextureLocation = display.getModelTexture();
-        // 先判断是不是 1.10.0 版本基岩版模型文件
-        if (BedrockVersion.isLegacyVersion(modelPOJO) && modelPOJO.getGeometryModelLegacy() != null) {
-            index.ammoModel = new BedrockAmmoModel(modelPOJO, BedrockVersion.LEGACY);
-        }
-        // 判定是不是 1.12.0 版本基岩版模型文件
-        if (BedrockVersion.isNewVersion(modelPOJO) && modelPOJO.getGeometryModelNew() != null) {
-            index.ammoModel = new BedrockAmmoModel(modelPOJO, BedrockVersion.NEW);
-        }
-    }
-
-    private static void checkSlotTexture(AmmoDisplay display, ClientAmmoIndex index) {
-        // 加载 GUI 内枪械图标
-        index.slotTextureLocation = Objects.requireNonNullElseGet(display.getSlotTextureLocation(), MissingTextureAtlasSprite::getLocation);
     }
 
     private static void checkAmmoEntity(AmmoDisplay display, ClientAmmoIndex index) {
@@ -249,19 +211,6 @@ public class ClientAmmoIndex {
         }
     }
 
-    private static void checkTransform(AmmoDisplay display, ClientAmmoIndex index) {
-        AmmoTransform readTransform = display.getTransform();
-        if (readTransform == null || readTransform.getScale() == null) {
-            index.transform = AmmoTransform.getDefault();
-        } else {
-            index.transform = display.getTransform();
-        }
-    }
-
-    private static void checkStackSize(AmmoIndexPOJO clientPojo, ClientAmmoIndex index) {
-        index.stackSize = Math.max(clientPojo.getStackSize(), 1);
-    }
-
     public String getName() {
         return name;
     }
@@ -269,26 +218,6 @@ public class ClientAmmoIndex {
     @Nullable
     public String getTooltipKey() {
         return tooltipKey;
-    }
-
-    @Nullable
-    public BedrockAmmoModel getAmmoModel() {
-        ensureModelsLoaded();
-        return ammoModel;
-    }
-
-    @Nullable
-    public ResourceLocation getModelTextureLocation() {
-        ensureModelsLoaded();
-        return modelTextureLocation;
-    }
-
-    public ResourceLocation getSlotTextureLocation() {
-        return slotTextureLocation;
-    }
-
-    public int getStackSize() {
-        return stackSize;
     }
 
     @Nullable
@@ -324,7 +253,4 @@ public class ClientAmmoIndex {
         return tracerColor;
     }
 
-    public AmmoTransform getTransform() {
-        return transform;
-    }
 }

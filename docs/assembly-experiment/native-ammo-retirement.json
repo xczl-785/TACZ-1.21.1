@@ -1,0 +1,1288 @@
+{
+  "date": "2026-09-15",
+  "baseline_commit": "2c45c076",
+  "old_item_id": "tacz:ammo",
+  "new_item_ids": "See temporary-refund-mapping.json; no save migration is performed",
+  "files": [
+    {
+      "path": "src/main/java/com/tacz/guns/ammunition/TemporaryAmmoRefund.java",
+      "action": "add",
+      "before_sha256": null,
+      "after_sha256": "241fc0f8be37e2a6c6840bd2482d6ae8c8dabbf3f1795b9222c80b2ea7364802",
+      "source": "user-authorized temporary refund boundary",
+      "reason": "Temporary fixed Tarkov variant per caliber; no native item fallback"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/ammunition/TemporaryAmmoRefundPolicy.java",
+      "action": "add",
+      "before_sha256": null,
+      "after_sha256": "ee055e12be497f1d860ac1e2c0d3b3c39dedf84829583b0d08dcc948a00c38de",
+      "source": "user-authorized temporary refund boundary",
+      "reason": "Temporary fixed Tarkov variant per caliber; no native item fallback"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/api/DefaultAssets.java",
+      "action": "modify",
+      "before_sha256": "7aba559bf0ea0fc29658d19acb0abff47428985f121d5df57c6514911ff26b88",
+      "after_sha256": "bbb5fa23d1e05954087a833e89016611b3d9d003d28050a9670991799e2196ee",
+      "source": "2c45c076:src/main/java/com/tacz/guns/api/DefaultAssets.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/api/item/builder/AmmoItemBuilder.java",
+      "action": "delete",
+      "before_sha256": "f8cd3ec234488447b71185a61edbfdb4ca243075489def2b45adcdef520b74c4",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/java/com/tacz/guns/api/item/builder/AmmoItemBuilder.java",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/api/item/gun/AbstractGunItem.java",
+      "action": "modify",
+      "before_sha256": "dd08371a5c156e4c6712e75554df567b8b41664dcc57348244cf216fa3738f31",
+      "after_sha256": "b7dd407d5528aa8bc0679b01ba51bc1b9f4b7cb2997281786f32d35871322c61",
+      "source": "2c45c076:src/main/java/com/tacz/guns/api/item/gun/AbstractGunItem.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/api/item/nbt/AmmoItemDataAccessor.java",
+      "action": "delete",
+      "before_sha256": "5c28d4179230493ae77fd107a8bfaadfb3e70f145a8c0c25093d794fb547c18b",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/java/com/tacz/guns/api/item/nbt/AmmoItemDataAccessor.java",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/event/TooltipEvent.java",
+      "action": "modify",
+      "before_sha256": "29134292f80d200f8c49bb01ce8c7cf9a587dbd2cac2d20b3aabb74d2affd288",
+      "after_sha256": "a2efdfd8536db505bd8d8fa3ca079dd75f59442ba03a40fa4837f3305be35c63",
+      "source": "2c45c076:src/main/java/com/tacz/guns/client/event/TooltipEvent.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/init/ClientSetupEvent.java",
+      "action": "modify",
+      "before_sha256": "c9cc148df6fad1cb9ce82d186989d87adf7ca6b5c40cdd7560dd7b8ccba36b49",
+      "after_sha256": "7f02a6fc458006956bcd42ae174cb2050175e27c3101d78fabc9c073671e1790",
+      "source": "2c45c076:src/main/java/com/tacz/guns/client/init/ClientSetupEvent.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/renderer/item/AmmoItemRenderer.java",
+      "action": "delete",
+      "before_sha256": "9f7cb36d19fc67ef5b4729019c7a896d44b39a42835c9fb19254e486d033a2a9",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/java/com/tacz/guns/client/renderer/item/AmmoItemRenderer.java",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/resource/index/ClientAmmoIndex.java",
+      "action": "modify",
+      "before_sha256": "0f977954d34c43d385dc27da916df230231a4671c0c8c4011d1fb4b6cddb9b51",
+      "after_sha256": "ea9d3ed6f557aa5c5c1e22cf4df1276451002919662b6b796739fae58cb3ca7d",
+      "source": "2c45c076:src/main/java/com/tacz/guns/client/resource/index/ClientAmmoIndex.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/resource/pojo/TransformScale.java",
+      "action": "modify",
+      "before_sha256": "ede4735656437ecefc87b0225a494e76053bcd3a06e43be24dcdc3447bee3e35",
+      "after_sha256": "60ff01f5323ded83199d02a01b14af4198f6ea9d949123d3a307d46bcadbb354",
+      "source": "2c45c076:src/main/java/com/tacz/guns/client/resource/pojo/TransformScale.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/resource/pojo/display/ammo/AmmoDisplay.java",
+      "action": "modify",
+      "before_sha256": "ade2a42eae274e7dc98409c96cf15207e8597b346b8a0673a5c61536f3333b1d",
+      "after_sha256": "27f97ea82b1e26ff1a2cb0d4acf0b3f5198a8d6be73b12a399b6a8e5c431e777",
+      "source": "2c45c076:src/main/java/com/tacz/guns/client/resource/pojo/display/ammo/AmmoDisplay.java",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/resource/pojo/display/ammo/AmmoTransform.java",
+      "action": "delete",
+      "before_sha256": "35c7b834d17c2edc8dd6c92c69ca7f67a8f233c7734be1a71a37039dea00e5c1",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/java/com/tacz/guns/client/resource/pojo/display/ammo/AmmoTransform.java",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/tooltip/ClientGunTooltip.java",
+      "action": "modify",
+      "before_sha256": "cc03b94cec601d2e79c98539c458ec195d8eca507bc08321cfcc3c9b5f5bec9f",
+      "after_sha256": "bca759b91765a221dc8b633ce660b287cc022101020cee2d7bbc748919cf2c51",
+      "source": "2c45c076:src/main/java/com/tacz/guns/client/tooltip/ClientGunTooltip.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/compat/jei/GunModPlugin.java",
+      "action": "modify",
+      "before_sha256": "e37eedb940176c80636db8a0850bb0683a3bcb2cbcb2713d376f259c873e76f7",
+      "after_sha256": "5bf8cb9da1d8082042cb624144e1ae9b67e3bc1a546bf216f57fee4255cd545c",
+      "source": "2c45c076:src/main/java/com/tacz/guns/compat/jei/GunModPlugin.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/compat/jei/GunModSubtype.java",
+      "action": "modify",
+      "before_sha256": "2603736570fb45f2665f048c6eae7bd0fa0c5eabfa171b0aadf84f366f4d43d9",
+      "after_sha256": "9c0fa7c1e4f7258eb19e93bfb941dafa9c96c05740ca2a1424780e69f4d61baa",
+      "source": "2c45c076:src/main/java/com/tacz/guns/compat/jei/GunModSubtype.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/result/GunSmithTableResult.java",
+      "action": "modify",
+      "before_sha256": "c76f4705612c855e621f235da6ca39113ae6b37fe96749a8fc17516111205527",
+      "after_sha256": "71d02e683ee64ef9c9a7da935e0a1814a95ecc999285e089ec2227471a58ca72",
+      "source": "2c45c076:src/main/java/com/tacz/guns/crafting/result/GunSmithTableResult.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/result/RawGunTableResult.java",
+      "action": "modify",
+      "before_sha256": "8aa13ceee503148887fa38e92da5192be3c4f8afd8e6462b42c0be417dbfcdcf",
+      "after_sha256": "7610c93f6031e5e9b33cc4f0f2c592bb1d5deb6e5e17d6fc428d2abfd924f4ae",
+      "source": "2c45c076:src/main/java/com/tacz/guns/crafting/result/RawGunTableResult.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModCreativeTabs.java",
+      "action": "modify",
+      "before_sha256": "dc5ec53f0f8fd51b9941c1a587822e53a5ccae91bfb9481036c6656b0adad2e2",
+      "after_sha256": "e7b9e53bbd8d381eb6765d595fac5b6d6f7c244cf54e68ca3af0929233187059",
+      "source": "2c45c076:src/main/java/com/tacz/guns/init/ModCreativeTabs.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModItems.java",
+      "action": "modify",
+      "before_sha256": "d7360b64721d7aaedbe9654177047577b0b13f98b0fefc1555227217cf5c834b",
+      "after_sha256": "b031b8d85b965f037cf5bcd6bedc6a998e2b5e1dbe0dac4c7bc9a78d04b365c7",
+      "source": "2c45c076:src/main/java/com/tacz/guns/init/ModItems.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/item/AmmoItem.java",
+      "action": "delete",
+      "before_sha256": "f7d8afd50d51d49c9c70e221f3cb18ea96fc703ad607a54a15913162b7ef9ec9",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/java/com/tacz/guns/item/AmmoItem.java",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/index/CommonAmmoIndex.java",
+      "action": "modify",
+      "before_sha256": "492eb8090e4e8c8ed57635586da516b52ec83aee882f72ace164e32b9545757e",
+      "after_sha256": "2b56d879e66394e8ce7d19774e3b4b4509cc7856a9ca5e7b872e9f3bee14f3e7",
+      "source": "2c45c076:src/main/java/com/tacz/guns/resource/index/CommonAmmoIndex.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/pojo/AmmoIndexPOJO.java",
+      "action": "modify",
+      "before_sha256": "09918bb9455f5e9991d3d2d1dd82486f628f15984ca91b2bedc66a0c0e45e504",
+      "after_sha256": "04ad17eb45ac6bd348009a7771dfee173e0b4b53ffd3394e5abf7d85518710c8",
+      "source": "2c45c076:src/main/java/com/tacz/guns/resource/pojo/AmmoIndexPOJO.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/pojo/data/block/TabConfig.java",
+      "action": "modify",
+      "before_sha256": "2ea8f8d8fd9c2d073120d335be944d7cc0e5a6b6ac90d36de86ecd118f29011a",
+      "after_sha256": "677623450584feb6298ddf53de50e562349d387028ceeba7583227b0de1e6a5b",
+      "source": "2c45c076:src/main/java/com/tacz/guns/resource/pojo/data/block/TabConfig.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/serialize/GunSmithTableResultSerializer.java",
+      "action": "modify",
+      "before_sha256": "623f017ff5058d975e778cb974de1d49e9069591f3d9b404aa8e186a827a1b86",
+      "after_sha256": "8d15c30a7886c685ee42a1c33e8331f324a8a063c8e945a1255867fd119c56f9",
+      "source": "2c45c076:src/main/java/com/tacz/guns/resource/serialize/GunSmithTableResultSerializer.java",
+      "reason": "Remove native item consumer or replace refund with explicitly temporary fixed Tarkov variant"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/12g_display.json",
+      "action": "modify",
+      "before_sha256": "89b8efce09a5913f19fc54051ed7215e70589694bf625e648473ec84944ce6b4",
+      "after_sha256": "3d17f80fe1fe65764c801038dd2cf398ca57bc20cf2e951c3688da73c095ed94",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/12g_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/22wmr_display.json",
+      "action": "modify",
+      "before_sha256": "901c348cb1c6d3f500c14fec026244b3dc0a4ffd020617ec718c7a7fa3ab99fd",
+      "after_sha256": "439d8bc88fcff10285d49464ecec0cadf3e6d29c25408bac316b436be725b238",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/22wmr_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/308_display.json",
+      "action": "modify",
+      "before_sha256": "1f87984cb5c304b4903967ebdd8e72360862831f1dc50685b134cd993c336d7f",
+      "after_sha256": "ddcf41bceab4922b7f72a8cac47189a54a3935658e11296beb2dc95e3bef87f3",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/308_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/30_06_display.json",
+      "action": "modify",
+      "before_sha256": "e764e1334d187465323a4a619cec2d7a6898925e713dc815d9836bc13ffb5577",
+      "after_sha256": "6e43abfff94a84857fbd53cae029e16175324b87b9cc911332b0acb30fe6b449",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/30_06_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/338_display.json",
+      "action": "modify",
+      "before_sha256": "ccfd64731fb2afbbb344a639b5aed3c1770ba0231abe53999cb60bbd4e719cb3",
+      "after_sha256": "78b4d5441666edece95be298cba799b696fbf6e1166eace9314987eccfb9297b",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/338_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/357mag_display.json",
+      "action": "modify",
+      "before_sha256": "e3dcee35282324d913861a80f66410d71c0318eea2393008132a062ae8d834fd",
+      "after_sha256": "2d8ad5419a911f99d6011cf2dae5a70be4398b0251c2ee2b08f46dfbd423703a",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/357mag_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/40mm_display.json",
+      "action": "modify",
+      "before_sha256": "10152dbc43dd82f6ff52705760fadf7e0c70090a39fcaf41391928c5373f65c7",
+      "after_sha256": "2f156451126aeb20756d34652afd886984b3b088a47925196ec3ff00ef7e4cf1",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/40mm_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/45_70_display.json",
+      "action": "modify",
+      "before_sha256": "cd25838cc2f5a47d74b6d12f5d34ceba3b2f7bb4291e6f8327476a6d4c57fc84",
+      "after_sha256": "14489f9d00517f5a3a7f3d5078494fc0ef49de84ee17b319afd2baedfef34ce1",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/45_70_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/45acp_display.json",
+      "action": "modify",
+      "before_sha256": "240b352e64573fb6006cb8e3f6bf0a07da62614f41484869e2b66e1b80fb6cb6",
+      "after_sha256": "b3cd8db52cb2213d1d2bc3c94bf15aae76fb4087cd3a18ca0b846ab1acf026f1",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/45acp_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/46x30_display.json",
+      "action": "modify",
+      "before_sha256": "1ae62afe53026dd355b777afd0397b97027d896885259c8449f101778f5d1023",
+      "after_sha256": "8a56ff29afc19ccb944859482869d504de2aacd141de710eeb3a0d8bc9c97d80",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/46x30_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/500mag_display.json",
+      "action": "modify",
+      "before_sha256": "4fcdc6d8d2ce350c715999790d3331ae6fdcdef9889cfc6b1d278742dfdf9d20",
+      "after_sha256": "cd531aaec0120199b03674cd9c057c99b236929cef5d67d1192c5c173eea8dc1",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/500mag_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/50ae_display.json",
+      "action": "modify",
+      "before_sha256": "9f49252321f35b41350237c0d7a89f41bdf3cb649936b1b3be0d95d304fbf2bc",
+      "after_sha256": "14489f9d00517f5a3a7f3d5078494fc0ef49de84ee17b319afd2baedfef34ce1",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/50ae_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/50bmg_display.json",
+      "action": "modify",
+      "before_sha256": "f0604749a73dec4cdbbe06996ed0531a593d8ed8a22f33c0090b4c44446a19c9",
+      "after_sha256": "5548e2266d7a6286e872fda8be570bdd17032eac9886d989937b39aac8ac51bb",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/50bmg_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/545x39_display.json",
+      "action": "modify",
+      "before_sha256": "9c00f1e6c321a38104d79725af8e81481efccef57cabb80fde909c8561b6b4ea",
+      "after_sha256": "71836281e6c243bb2940efa5a0233204a04638859b05b44c622333c2d2598f09",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/545x39_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/556x45_display.json",
+      "action": "modify",
+      "before_sha256": "206bc564250d0d4e10ca03efe5f31dad675621816d0bf16406e46584a608dd77",
+      "after_sha256": "489553985cb0a9d395aa52e10d4fe044ae6f77e2823e737ec9055abef3593f12",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/556x45_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/57x28_display.json",
+      "action": "modify",
+      "before_sha256": "810babf3305b28cde8b142a0e7113183266bf83cd0094e12a92fdeddb7378fa1",
+      "after_sha256": "34043bd8bf2293718f6a026388498b50f068e38000a2cbadb2539716186a86d8",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/57x28_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/58x42_display.json",
+      "action": "modify",
+      "before_sha256": "36303e7ed121d222d732a0d4aa939ff5e386641491df9ffe9ba774c7b3a77eed",
+      "after_sha256": "9efdf6daa3ca435ef2cb1f68d9bb965b01048ed603cd5d5c3069638d41322db0",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/58x42_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/68x51fury_display.json",
+      "action": "modify",
+      "before_sha256": "360411cafb0628345def3afbb3c291496764ae1e5b7c5f047b5b49101cf592ec",
+      "after_sha256": "2e6991aef4132c2cd377447af9f2f8aad82459557de5ba8c0e2833004dc2b91b",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/68x51fury_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/762x25_display.json",
+      "action": "modify",
+      "before_sha256": "a56d3d1c658ebdb18197aab10714b2ae6dd1e62ef034dd56f77364ba034df4a8",
+      "after_sha256": "e92c5dd675973d2a2dc09cdf4730f045418c7ddb0a8b0dbdb40ebbffd82f1881",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/762x25_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/762x39_display.json",
+      "action": "modify",
+      "before_sha256": "3eb5d9afa753b71807a8c09b94d4a82a185cf3d2812a42b41b8484351f19e7bc",
+      "after_sha256": "4928908afe84bc5b83603974a6e520cb56e1aa05870cae4295fa0238fb03e96e",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/762x39_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/762x54_display.json",
+      "action": "modify",
+      "before_sha256": "44d113164e07bc9f7028eca5d142d89e9649d458c1b110a6420c65ff1e8a7164",
+      "after_sha256": "37e020b1ba263e4557b44e787f2250c57617f9dd0df20bcf3d4fca2f7d3ef681",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/762x54_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/792x57_display.json",
+      "action": "modify",
+      "before_sha256": "1b2773238b1761a3d5785f8108f07e70b47d61b464162d299ac3d4aa803a1f21",
+      "after_sha256": "6e43abfff94a84857fbd53cae029e16175324b87b9cc911332b0acb30fe6b449",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/792x57_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/9mm_display.json",
+      "action": "modify",
+      "before_sha256": "358ca891d2cc55cc5b3e8cc386c09e02057de7675c609590cc174669623ecb02",
+      "after_sha256": "5041d50608e17e9d49696c25000b204ab7964b67d66aee493cb1ac9dcdff1b17",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/9mm_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/rpg_rocket_display.json",
+      "action": "modify",
+      "before_sha256": "3e86ccd046566ed53f0273fa3a159f7505a10b78c6627fe8d85605895230df8b",
+      "after_sha256": "af16498daaa960dba3ab25e42074676cbdb1e18a8badc376a43b6b2fd4de0091",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/ammo/rpg_rocket_display.json",
+      "reason": "Keep shell/entity/particle/tracer fields; remove native item model/texture/slot/transform"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/12g.json",
+      "action": "delete",
+      "before_sha256": "5d66d1a380324043c46a4dfc9eb76a45ccad0d2ed23f41b27070b691d2f8986f",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/12g.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/308.json",
+      "action": "delete",
+      "before_sha256": "7ceeeeea50d661cb759ab8f6588881e5ddcc650ddd05cd475990d0ec6bc0ef38",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/308.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/30_06.json",
+      "action": "delete",
+      "before_sha256": "ba704d3914c61fbd1a2329ad00fcb6e015cbb6e2eee417f0bb4c80a943e4b054",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/30_06.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/338.json",
+      "action": "delete",
+      "before_sha256": "6281a9875fec869e1f577b6468fbec5ae8bc1d1c3706a7d1159d1fd0323a1d07",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/338.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/357mag.json",
+      "action": "delete",
+      "before_sha256": "1fd1d545a9db928c7564bd9c9e8ca9608567083725cd8a10d399b4bd5f9749ba",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/357mag.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/40mm_grenade.json",
+      "action": "delete",
+      "before_sha256": "b1a9f69e4e6239adaa8a68b9f88c886de980a92ce2408f5e1c2f99087137e583",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/40mm_grenade.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/45acp.json",
+      "action": "delete",
+      "before_sha256": "358add543be37af5c1dfc15c8efd24c860681bd0fcfa9efe098f0a846abfa752",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/45acp.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/46x30.json",
+      "action": "delete",
+      "before_sha256": "2d39f00b12abd58f9ed89b8ececdb98d05624e12b39e21af7b1c4f09fbe34e2d",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/46x30.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/50ae.json",
+      "action": "delete",
+      "before_sha256": "d828fee61211883de1c2ccdda2533f05990c72cea139ee95c16fb46f875dbfc0",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/50ae.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/50bmg.json",
+      "action": "delete",
+      "before_sha256": "f2778fc986734ef6628eafa25e371989cabfe0b7f639ad609ed8a3186658790e",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/50bmg.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/556x45.json",
+      "action": "delete",
+      "before_sha256": "25ba96c3d891474b09b86f58ca49be61dc8fcb55d68d786a6ca0270acf40ae48",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/556x45.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/57x28.json",
+      "action": "delete",
+      "before_sha256": "f5030f274836d90cd4f7155b3de781618566d161225572d85e623c994db2b160",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/57x28.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/58x42.json",
+      "action": "delete",
+      "before_sha256": "539dc7100bb209c0617cf27f34595f07937091ddd2dc2d784bff7e1fd65a82d8",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/58x42.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/68x51fury.json",
+      "action": "delete",
+      "before_sha256": "06594862f02c094cc355af508f39dff304e4b2f9b110527e3dacb8dc1196e8c4",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/68x51fury.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/762x25.json",
+      "action": "delete",
+      "before_sha256": "11fd3ea358c08b2c729824420ba2938506175e7a5ac417a8b0e9aa91fdae4b16",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/762x25.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/762x39.json",
+      "action": "delete",
+      "before_sha256": "a31577fc723cf5169c32d0192b119e317fa2d175057702211931c609b1d07561",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/762x39.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/762x54.json",
+      "action": "delete",
+      "before_sha256": "b21cc7a1ab7de72fe4800bbc8a8a6eeb4466290c529e7fcceda2d8235e9fb06e",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/762x54.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/9mm.json",
+      "action": "delete",
+      "before_sha256": "8779669997b8e3c1dd93de9484dc3a76ca7f54ba24e77968a759ea06132acfb5",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/ammo/9mm.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/12g.png",
+      "action": "delete",
+      "before_sha256": "68bb887e61312ddd1e31d4995c99cd6faab8d501a28c2f56b2ce4bd1a2399a26",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/12g.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/22wmr.png",
+      "action": "delete",
+      "before_sha256": "510c8771eca0530b0a387702f7c1d56ce879dc2063ee4097fb9665560f7761c2",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/22wmr.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/308.png",
+      "action": "delete",
+      "before_sha256": "e5af261b2a5fd7becdbf4377ae4f03285d567953beb11574bf4556f3dcb63c79",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/308.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/30_06.png",
+      "action": "delete",
+      "before_sha256": "cddbbc2db95bb27cce8f2f500d0c649d427f08d3ae969606a81463b29c71cfbb",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/30_06.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/338.png",
+      "action": "delete",
+      "before_sha256": "4b46e7b9aebc5f2168f3af47b0e81291f33747a25587f2b8eb6b2049da8c54f0",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/338.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/357mag.png",
+      "action": "delete",
+      "before_sha256": "cc7777ccc45fc3ed541abf2658f57667e79c9864ca079ce0b777276035e1ff02",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/357mag.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/40mm.png",
+      "action": "delete",
+      "before_sha256": "34e42a484a099ff5079cc3d3be9bb5dcb46a46b908f5bb4925d375e12bb7324d",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/40mm.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/45_70.png",
+      "action": "delete",
+      "before_sha256": "b28d1ce4577283e0e59e38b68efe9186da122cb2407242e251e193490503f42e",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/45_70.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/45acp.png",
+      "action": "delete",
+      "before_sha256": "229fedb20833a0999d577cdb6af6a0b2e873e6cd5ccba8271421587125323063",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/45acp.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/46x30.png",
+      "action": "delete",
+      "before_sha256": "2bbeadad99c154c0fb4c7d2f92d061db10fd6ffc8389ce9faab2e26c18acd92e",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/46x30.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/500mag.png",
+      "action": "delete",
+      "before_sha256": "5d67385eb4e7fb3c29bb92b2d883c5d85a17b6f96a857622fdf1417c6a0a9310",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/500mag.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/50ae.png",
+      "action": "delete",
+      "before_sha256": "3d4ad16c9bd3b74fbb69acf8c1b4d80b81bf15e1d2c7951a19acc533d227e053",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/50ae.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/50bmg.png",
+      "action": "delete",
+      "before_sha256": "401cce2a4d9ff9abbd349c08d48ac798e8296da985e7b1ec6a5f53051210071f",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/50bmg.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/545x39.png",
+      "action": "delete",
+      "before_sha256": "7630221e221e1de8d7d09a2f4cdb9547ed857340a3cdf4d36662b60f52529937",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/545x39.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/556x45.png",
+      "action": "delete",
+      "before_sha256": "e689bc548f19e1f948724bc25a3128dd956654773e60eb730fdd29efb1ad668c",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/556x45.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/57x28.png",
+      "action": "delete",
+      "before_sha256": "4123cb0d0f4737286aaaa03ee46e7a7ec7cd1f6c2c1dc0f627fb00996405ecf5",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/57x28.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/58x42.png",
+      "action": "delete",
+      "before_sha256": "69ddee43809ac146abc3e067b0289e2bffcf1d86bf6a6189c83117da68259e60",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/58x42.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/68x51fury.png",
+      "action": "delete",
+      "before_sha256": "d024f02844ff533e8d900b54652841fe57d0fb4bf6f7354c87fdb8fdcd4d29a5",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/68x51fury.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/762x25.png",
+      "action": "delete",
+      "before_sha256": "f2bfd586b36bd772a7a7f39a4ec720b3d40de0757eda005bafd607c2b0ba8cb2",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/762x25.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/762x39.png",
+      "action": "delete",
+      "before_sha256": "2c6b1928211008796afdf847a80bd2fc48f21393c9aff8b32cf12339d9866895",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/762x39.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/762x54.png",
+      "action": "delete",
+      "before_sha256": "74cad449900f311e5c9630d6a2e147fb53499eb12511e5a0af127e477bf3dde2",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/762x54.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/792x57.png",
+      "action": "delete",
+      "before_sha256": "aacbe1680486e72de2cb9d486cc9381bd2989b9b441f13f51256a00aed1b1b24",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/792x57.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/9mm.png",
+      "action": "delete",
+      "before_sha256": "ff944f2134d5a2b73bc31da546051b73f50841c1000b58ddd7ccbd2079d21abf",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/9mm.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/rpg_rocket.png",
+      "action": "delete",
+      "before_sha256": "7367992b43033664d71d961d2bb3f015e8f8cc7b21f87b5971304d9290b8a518",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/slot/rpg_rocket.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/12g.png",
+      "action": "delete",
+      "before_sha256": "360b2acf859d33c72dbdf18c20c0d9c8c39084e9e90ef75a1348047907a8776a",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/12g.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/12g_n.png",
+      "action": "delete",
+      "before_sha256": "24dae24f25b65cf5f8e5bb4f5f012ecaba65d918e5cfdee9dcb291ec4872ac80",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/12g_n.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/12g_s.png",
+      "action": "delete",
+      "before_sha256": "094277e930cc905688f0d9ba0a4402d7029503d105d5e581c0c81af61596f4bf",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/12g_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/308.png",
+      "action": "delete",
+      "before_sha256": "62af30a73fa5843c4879e0c626d4a2c625471b037ef96ed92bce90d89d7ff9d3",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/308.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/308_n.png",
+      "action": "delete",
+      "before_sha256": "6a47ac2744de22a2ffccbeaffe47deac9309d416951f0f3be50998d9b4f000ec",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/308_n.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/308_s.png",
+      "action": "delete",
+      "before_sha256": "473c77e908f043782f8beb1aa1fc088808a365cc339bb9985ea6919e4e55669e",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/308_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/30_06.png",
+      "action": "delete",
+      "before_sha256": "06a904aa3344a9a2ac3cca09a56567ac0e49a25655a7b2729f29eb42bbd19045",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/30_06.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/30_06_s.png",
+      "action": "delete",
+      "before_sha256": "eeb28a6d313e184fe07401522986f3a87417f86e2497979549755f010fec36a3",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/30_06_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/338.png",
+      "action": "delete",
+      "before_sha256": "eddf0e8da4df5385975c57a52fbd1b22f95e3b02109d90d04fc5f86f0e77ff63",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/338.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/338_n.png",
+      "action": "delete",
+      "before_sha256": "866f0bcb2946c627c5107314968181e7ae6cb77305d2ffeaec65ad0480434154",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/338_n.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/338_s.png",
+      "action": "delete",
+      "before_sha256": "578d8d36e1fd4d1099887bba3cc51207843d20a1a78b15151238c53b4e6ae043",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/338_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/357mag.png",
+      "action": "delete",
+      "before_sha256": "318a4b3a4eb3361b1e1aa7d33f58126739ea65fc3feb562ed847ef97b4071c37",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/357mag.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/357mag_s.png",
+      "action": "delete",
+      "before_sha256": "e9a027baaaa1c75830c218f8d31b543481c1a993829d0c5e008256276b204b25",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/357mag_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/40mm.png",
+      "action": "delete",
+      "before_sha256": "a9a972ea9f50f3c9fbb97e48cd68ba0e608a56e193b79d224c027cd0b6ac0baa",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/40mm.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/40mm_n.png",
+      "action": "delete",
+      "before_sha256": "bd61ab0fcc38012f5b446738e099bce1802952956e772b5203d541bb621d389d",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/40mm_n.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/40mm_s.png",
+      "action": "delete",
+      "before_sha256": "43639880b80d23e0ffaabffe1600364d1ef3d05bc7029f6fbe539ec011875769",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/40mm_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/45acp.png",
+      "action": "delete",
+      "before_sha256": "208a4a51e3dad6f120539310a7f1f5bf515cbe30f7185b35edb6fd1da97aeebd",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/45acp.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/45acp_n.png",
+      "action": "delete",
+      "before_sha256": "817e7ba03eea806b7d6bb923c97c127ec7cdfeabbb8d041f285fbd1719b305c1",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/45acp_n.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/45acp_s.png",
+      "action": "delete",
+      "before_sha256": "d0bc5e6f2a58a57a8ac317145ca4b4da0568ce0afbd8e335dbcd0c55fb69530c",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/45acp_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/46x30.png",
+      "action": "delete",
+      "before_sha256": "87cceb15e833e806952fa2677f4344b448ee591e8d5716227c6ff8149e960143",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/46x30.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/46x30_s.png",
+      "action": "delete",
+      "before_sha256": "7661b8349f635623f61902156c309fd14ec08309bc28441ca5e9c8575932faca",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/46x30_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50ae.png",
+      "action": "delete",
+      "before_sha256": "7b955f696dedef4b8b7cb92a558773d8018b83a3c1d2a6866684ade1ee6a988c",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50ae.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50ae_n.png",
+      "action": "delete",
+      "before_sha256": "350692f0b60f51c410338579f642f3d0faf3911b5e62143d9a38fce4e5004f75",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50ae_n.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50ae_s.png",
+      "action": "delete",
+      "before_sha256": "4f17fd177276769b55e4426130813421fb620b0e9b13daf9d36197c63e01bf53",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50ae_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50bmg.png",
+      "action": "delete",
+      "before_sha256": "a25e58a5c005345fac23da7bf7a847afd644aef5ee29e98fd970db184685c331",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50bmg.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50bmg_s.png",
+      "action": "delete",
+      "before_sha256": "be96d2bb2b3160aea88dc6452cc425c77f7e6e7974c7e45e61b7409c1ce95025",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/50bmg_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/556x45.png",
+      "action": "delete",
+      "before_sha256": "0d2e2aad954c7b988e0f5cf5d8c966ff157ce919201b6baf6ce5cbc9dbec5ef2",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/556x45.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/556x45_s.png",
+      "action": "delete",
+      "before_sha256": "9d027ca7bf803996b94b91995f01713d69b0962222a7434c3e0768b892e5b3d1",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/556x45_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/57x28.png",
+      "action": "delete",
+      "before_sha256": "013d1e5261071c4ebf429157c233a747a815c88e49e5474d50b1499877436da2",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/57x28.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/57x28_s.png",
+      "action": "delete",
+      "before_sha256": "1c2fb3a03d3842dd527bad1ba6c26afccd75e554ceb33229ca0989e374fd42cc",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/57x28_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/58x42.png",
+      "action": "delete",
+      "before_sha256": "cf33b267df12ab9e3050fc74eb9e8d19ca38cc3cdfc06d30edce0035bc1fbb19",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/58x42.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/58x42_s.png",
+      "action": "delete",
+      "before_sha256": "7e4a4f0a5422ecf2881cd1a557471334dad4d83c7b66c0f108e9d39266ba70a1",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/58x42_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/68x51fury.png",
+      "action": "delete",
+      "before_sha256": "cdf99925880a6eec5b80892d93210c3d0f0bd62e7ef60a205d6a073b264e3ee9",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/68x51fury.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/68x51fury_s.png",
+      "action": "delete",
+      "before_sha256": "ce3a9f542d084314dccbc1240d64d2a138178c66532856045f3c7d828fc07a7b",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/68x51fury_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x25.png",
+      "action": "delete",
+      "before_sha256": "658f3a7dd7c153aba3423d31b75a1ccbc858939406b3a6832e0a7824a82e5026",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x25.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x25_s.png",
+      "action": "delete",
+      "before_sha256": "e9065be815da437a20c1d2caae1d3da99d8dcb98db199fe434ea997c82973441",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x25_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x39.png",
+      "action": "delete",
+      "before_sha256": "2a84c4a9047093591ddff2a26730b0faacbccf5e393ee8e1c5e366bab84a5f7a",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x39.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x39_n.png",
+      "action": "delete",
+      "before_sha256": "beda963a815bcad9016773401e47a88ec45f01947b129e27d1ffc294dfaa6ccc",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x39_n.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x39_s.png",
+      "action": "delete",
+      "before_sha256": "42fa2e01945196a893a006cd962c4f7515883d7eccc846448046a5f25ce6fa33",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x39_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x54.png",
+      "action": "delete",
+      "before_sha256": "75cd84ea13ef06de8a241f29c09df04d667d73f72e54947ffbcca85afd0deca6",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x54.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x54_s.png",
+      "action": "delete",
+      "before_sha256": "582fea340c47acd928051b0fd3362c802fdc69fb3d42f56aa5cfcaba5bbf5737",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/762x54_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/9mm.png",
+      "action": "delete",
+      "before_sha256": "67875185e4cb5c7a2c53373018299d71b049bcd21550cd8ed737adc34336f1c1",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/9mm.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/9mm_n.png",
+      "action": "delete",
+      "before_sha256": "189635e2438218eaafb329493e75890601f2096a7121112ceed7021105529698",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/9mm_n.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/9mm_s.png",
+      "action": "delete",
+      "before_sha256": "616032d71ace444c49416f347d5956757411aebf6263af14fc93b499fc97e1ad",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/ammo/uv/9mm_s.png",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/12g.json",
+      "action": "modify",
+      "before_sha256": "1a85c0dd6d43022b12a9c9c2aa0c8395c6c90e6b34054fedb85e470b66d60b9f",
+      "after_sha256": "671ab140ccddf818c59b5b03c8f94a0d4ac2c778c2d12e6459359bd0060b5bc2",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/12g.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/22wmr.json",
+      "action": "modify",
+      "before_sha256": "cfde56335793b526d07c581f229cf732cb956a68aed9fa9ea66616422b33f3e3",
+      "after_sha256": "073d9e4c264171ff584142479468c88b06736720b4d250504223ebd994f593c8",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/22wmr.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/308.json",
+      "action": "modify",
+      "before_sha256": "ddad6cd0f941731ec918bc2280af1b67346ff9838f2557633a1dabe0be197927",
+      "after_sha256": "2371f4ccd9c4450004cbdf7d2607430b0a04d1a05b7e90586686c0d10e43dfa0",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/308.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/30_06.json",
+      "action": "modify",
+      "before_sha256": "1635d0967bd7955bf03ffcefc4dec5bf4cf0b1b503c2560e32efbe66710e0653",
+      "after_sha256": "68ea61157c104a1e8228c564414574f7d09c09eb451f42a2ad5a4d9e68fe3bcf",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/30_06.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/338.json",
+      "action": "modify",
+      "before_sha256": "4c94e7c3a9f3ad5ca9358696794f795d24d3c8dec539e4d1ac26a6eca3fafffd",
+      "after_sha256": "eaaf226858ed976fe67f1aa1e6d3716cd423f6cdfb73e53e3b89b571797ad2ab",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/338.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/357mag.json",
+      "action": "modify",
+      "before_sha256": "926c754eedaf20c105e3196d4833c8291ef19d1a16411f736e57c1c8bb3cd40e",
+      "after_sha256": "66566ca0f9443e0bc7a7ce3881c3cd2feee3854c8e52b34e5f3e20083f54a60c",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/357mag.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/40mm.json",
+      "action": "modify",
+      "before_sha256": "c9bbb62c53c25c6ab15d5fb07768b6c7cffa2ec46e2d58590e4759d79aa6d7f4",
+      "after_sha256": "3f47d6a67f5376d14898ae67a33cddcb033216f8b4ed0434073627a8446ee1cf",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/40mm.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/45_70.json",
+      "action": "modify",
+      "before_sha256": "fa723ad6608935798fd35a9a39befede3e8d00266e1a4c7a368029398669229b",
+      "after_sha256": "9a1f7ad1ab63d2da834d2d3510857dcc27e45f408930c060c66a3460b6455e8d",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/45_70.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/45acp.json",
+      "action": "modify",
+      "before_sha256": "752c487ac341e6d60a3b6c418a9fdf26c58cd6f2c1a3874b0132bf4160f9c8a1",
+      "after_sha256": "7b40dbf71df27a1cce98f38f0316a0c6cb33fa2e41c199c421b6468f85e19f11",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/45acp.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/46x30.json",
+      "action": "modify",
+      "before_sha256": "b7c9bfbe79af61ecbbf6f6ab92239006b8e679e494bf24904299dc7156555d63",
+      "after_sha256": "85fed228699908612aca7d425bc485bfd09fd672c4bd890b026d100da7345908",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/46x30.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/500mag.json",
+      "action": "modify",
+      "before_sha256": "bba481f7094e086d90335f9a3f0dd0e5f742b0ee2107aa4b84f56308c8ee3106",
+      "after_sha256": "d0535eb23aae643a13dd04c7c838c7dd1dac29ccb28eb2ddd09a350cf0a12351",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/500mag.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/50ae.json",
+      "action": "modify",
+      "before_sha256": "d7e3c7474866fafddccc7bc60302dcf0a4b2aab5f182614ece01cdd786a4fe3e",
+      "after_sha256": "8f57ca77f406b39921aa2b938b58de91a9fca90a60e1490d4ef5083300241d01",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/50ae.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/50bmg.json",
+      "action": "modify",
+      "before_sha256": "2f756d2f6339c1ad668fe7e450788af38a30cd83d2c604cc8dcf98cde1343829",
+      "after_sha256": "58c8855b291e87a2f46ea5eb22930931f48706e4543d65ad9f2a25ae4c9b0e54",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/50bmg.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/545x39.json",
+      "action": "modify",
+      "before_sha256": "c8597522112e5e8caed3a342b771d34d5086d11ab6525639eefcaa5daad0538a",
+      "after_sha256": "dfa5a4b33bd13928610d2b8874dd8c92551ec7fe46fbf328c1e9cf4ce5d0aa30",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/545x39.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/556x45.json",
+      "action": "modify",
+      "before_sha256": "2d98a70ce2156b985b09b59b418834109a9c592a6772fc534634d433747bd697",
+      "after_sha256": "f672eeacf2f06f99e4ac7877676127a86807ccdc398f22a0cfd61fe584f5daeb",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/556x45.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/57x28.json",
+      "action": "modify",
+      "before_sha256": "a86cea79b6e56d6961e4b1fb4edf5db6be15507eca6825aab44494f738248d7b",
+      "after_sha256": "de04fec34ae4cf3b4b1318a07401f7c702d237f8fe7d95d681bfc15cabac577a",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/57x28.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/58x42.json",
+      "action": "modify",
+      "before_sha256": "9a0b1db03d17e909fb7960bdc25e32b013efedfbd57f3d3e0f8cf35e92a1b67a",
+      "after_sha256": "29de925ed0564b45f5dc707f1f281bb2eb8a54ba33f8dbb5edbedc3d4d4c6e08",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/58x42.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/68x51fury.json",
+      "action": "modify",
+      "before_sha256": "33839d1c4bad47f0a2c2f21cfe9d5f6cfeade0e39d544a9c04316da2ceab7c8a",
+      "after_sha256": "72b2f9daa18c6e1b0b9123be7cfd8e511e58fc4f7c983bd03e4832a20c35d6aa",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/68x51fury.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/762x25.json",
+      "action": "modify",
+      "before_sha256": "5d24a4cb4f5a79e859ea53c9a454295d29764f2b4bd6b6864cec5790a8d29482",
+      "after_sha256": "cce3bfc95ffcf31e26c77af3f79ddeae967705e475549ae7223e8b57a194ed06",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/762x25.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/762x39.json",
+      "action": "modify",
+      "before_sha256": "c121ec3158e39130060c1b7230f21d08c26dce6e8ab28ffb090e09959c1c3164",
+      "after_sha256": "cb128a9513f0df7aae6c54f69f3f618d52fa83ce5c7882d9d3b4712e9195b9dd",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/762x39.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/762x54.json",
+      "action": "modify",
+      "before_sha256": "f0447cab68581996c3c4f7b6edd15fe375bead52c228f9d36824b8436977fa2b",
+      "after_sha256": "e7f431897c4404793a460a75c6a80865d7ce23cac2d85b4d3d5497f1dd073bd8",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/762x54.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/792x57.json",
+      "action": "modify",
+      "before_sha256": "f7660028220793971164f2dbb1eb71bf63b67d8bb795c8c3c122a82dbb84b00f",
+      "after_sha256": "140e2602ddcc489dc232d3fba051c22a070aacea2c106113d140b8d00fbac0d2",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/792x57.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/9mm.json",
+      "action": "modify",
+      "before_sha256": "c2895026b453bafe4284e06667256a5912ef88feec8e2de9629a8871f48833a0",
+      "after_sha256": "502d009a4211a2b2c28d3c286c379a58b2a17670c8c1fc6d90620a62f08cef57",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/9mm.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/rpg_rocket.json",
+      "action": "modify",
+      "before_sha256": "9b98209426bda24702bc66f4174a12fd89ff46325aab064baf6c998486d623f4",
+      "after_sha256": "fff53d2225d36de2feff908ce5824db659f1c7b1ef61eac69ef6b04d12fe2663",
+      "source": "2c45c076:src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/rpg_rocket.json",
+      "reason": "Keep caliber/display identity; remove native item stack/sort metadata"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/models/item/ammo.json",
+      "action": "delete",
+      "before_sha256": "f92e2d8236db69bb5e7c890e9b7536b92cec16ea498d2a5d0b8fbc1e6ca38da1",
+      "after_sha256": null,
+      "source": "2c45c076:src/main/resources/assets/tacz/models/item/ammo.json",
+      "reason": "Retired native ammunition item class or item-only model/texture; remaining consumers removed"
+    }
+  ]
+}

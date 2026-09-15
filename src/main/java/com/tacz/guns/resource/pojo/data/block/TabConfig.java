@@ -4,7 +4,6 @@ import com.google.gson.*;
 import com.mojang.serialization.JsonOps;
 import com.tacz.guns.GunMod;
 import com.tacz.guns.api.DefaultAssets;
-import com.tacz.guns.api.item.builder.AmmoItemBuilder;
 import com.tacz.guns.api.item.builder.AttachmentItemBuilder;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.init.ModItems;
@@ -18,7 +17,6 @@ import java.lang.reflect.Type;
 import java.util.List;
 
 public record TabConfig(ResourceLocation id, String name, ItemStack icon) {
-    public static final ResourceLocation TAB_AMMO = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "ammo");
 
     public static final ResourceLocation TAB_PISTOL = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "pistol");
     public static final ResourceLocation TAB_SNIPER = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "sniper");

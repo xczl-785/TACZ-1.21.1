@@ -1,0 +1,90 @@
+{
+  "status": "TEMPORARY; fixed representative, not actual loaded variant",
+  "replacement_condition": "Replace when loaded ammunition identity and exact refunds are integrated in this environment",
+  "mappings": [
+    {
+      "native_caliber_id": "tacz:12g",
+      "caliber": "12/70",
+      "source_id": "560d5e524bdc2d25448b4571",
+      "item_id": "tarkov_content:ammo_560d5e524bdc2d25448b4571",
+      "name": "12/70 7mm buckshot"
+    },
+    {
+      "native_caliber_id": "tacz:338",
+      "caliber": "338lapua",
+      "source_id": "5fc275cf85fd526b824a571a",
+      "item_id": "tarkov_content:ammo_5fc275cf85fd526b824a571a",
+      "name": ".338 Lapua Magnum FMJ"
+    },
+    {
+      "native_caliber_id": "tacz:357mag",
+      "caliber": "357mag",
+      "source_id": "62330b3ed4dc74626d570b95",
+      "item_id": "tarkov_content:ammo_62330b3ed4dc74626d570b95",
+      "name": ".357 Magnum FMJ"
+    },
+    {
+      "native_caliber_id": "tacz:45acp",
+      "caliber": "45acp",
+      "source_id": "5e81f423763d9f754677bf2e",
+      "item_id": "tarkov_content:ammo_5e81f423763d9f754677bf2e",
+      "name": ".45 ACP Match FMJ"
+    },
+    {
+      "native_caliber_id": "tacz:50ae",
+      "caliber": "50ae",
+      "source_id": "668fe62ac62660a5d8071446",
+      "item_id": "tarkov_content:ammo_668fe62ac62660a5d8071446",
+      "name": ".50 AE FMJ"
+    },
+    {
+      "native_caliber_id": "tacz:50bmg",
+      "caliber": "50bmg",
+      "source_id": "67dc255ee3028a8b120efc48",
+      "item_id": "tarkov_content:ammo_67dc255ee3028a8b120efc48",
+      "name": ".50 BMG M33"
+    },
+    {
+      "native_caliber_id": "tacz:556x45",
+      "caliber": "556x45",
+      "source_id": "54527a984bdc2d4e668b4567",
+      "item_id": "tarkov_content:ammo_54527a984bdc2d4e668b4567",
+      "name": "5.56x45mm M855"
+    },
+    {
+      "native_caliber_id": "tacz:57x28",
+      "caliber": "57x28",
+      "source_id": "5cc80f38e4a949001152b560",
+      "item_id": "tarkov_content:ammo_5cc80f38e4a949001152b560",
+      "name": "5.7x28mm SS190"
+    },
+    {
+      "native_caliber_id": "tacz:58x42",
+      "caliber": "58x42",
+      "source_id": "6a07208057b2695f9d001e63",
+      "item_id": "tarkov_content:ammo_6a07208057b2695f9d001e63",
+      "name": "5.8x42mm DBP191"
+    },
+    {
+      "native_caliber_id": "tacz:762x39",
+      "caliber": "762x39",
+      "source_id": "5656d7c34bdc2d9d198b4587",
+      "item_id": "tarkov_content:ammo_5656d7c34bdc2d9d198b4587",
+      "name": "7.62x39mm PS gzh"
+    },
+    {
+      "native_caliber_id": "tacz:308",
+      "caliber": "762x51",
+      "source_id": "58dd3ad986f77403051cba8f",
+      "item_id": "tarkov_content:ammo_58dd3ad986f77403051cba8f",
+      "name": "7.62x51mm M80"
+    },
+    {
+      "native_caliber_id": "tacz:9mm",
+      "caliber": "9x19",
+      "source_id": "56d59d3ad2720bdb418b4577",
+      "item_id": "tarkov_content:ammo_56d59d3ad2720bdb418b4577",
+      "name": "9x19mm Pst gzh"
+    }
+  ]
+}

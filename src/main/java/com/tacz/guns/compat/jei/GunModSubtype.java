@@ -1,6 +1,5 @@
 package com.tacz.guns.compat.jei;
 
-import com.tacz.guns.api.item.IAmmo;
 import com.tacz.guns.api.item.IAmmoBox;
 import com.tacz.guns.api.item.IAttachment;
 import com.tacz.guns.api.item.IGun;
@@ -11,23 +10,6 @@ import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
 public class GunModSubtype {
-    public static ISubtypeInterpreter<ItemStack> getAmmoSubtype() {
-        return new ISubtypeInterpreter<>() {
-            @Override
-            public @Nullable Object getSubtypeData(ItemStack stack, UidContext uidContext) {
-                return getLegacyStringSubtypeInfo(stack, uidContext);
-            }
-
-            @Override
-            public String getLegacyStringSubtypeInfo(ItemStack stack, UidContext uidContext) {
-                if (stack.getItem() instanceof IAmmo iAmmo) {
-                    return iAmmo.getAmmoId(stack).toString();
-                }
-                return "";
-            }
-        };
-    }
-
     public static ISubtypeInterpreter<ItemStack> getGunSubtype() {
         return new ISubtypeInterpreter<>() {
             @Override

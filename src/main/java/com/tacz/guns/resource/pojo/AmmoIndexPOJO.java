@@ -12,15 +12,11 @@ public class AmmoIndexPOJO {
     @SerializedName("display")
     private ResourceLocation display;
 
-    @SerializedName("stack_size")
-    private int stackSize;
 
     @SerializedName("tooltip")
     @Nullable
     private String tooltip;
 
-    @SerializedName("sort")
-    private int sort;
 
     public String getName() {
         return name;
@@ -30,16 +26,10 @@ public class AmmoIndexPOJO {
         return display;
     }
 
-    public int getStackSize() {
-        return stackSize;
-    }
 
     @Nullable
     public String getTooltip() {
         return tooltip;
     }
 
-    public int getSort() {
-        return sort;
-    }
 }

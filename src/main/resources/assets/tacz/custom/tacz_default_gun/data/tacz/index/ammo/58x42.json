@@ -1,7 +1,4 @@
 {
   "name": "tacz.ammo.58x42.name",
-  "display": "tacz:58x42_display",
-  "stack_size": 60,
-  "sort": 9
+  "display": "tacz:58x42_display"
 }
-    

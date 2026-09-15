@@ -9,6 +9,7 @@ import hashlib
 import json
 import re
 import subprocess
+import sys
 import zipfile
 from pathlib import Path
 
@@ -135,6 +136,15 @@ def run():
     parser.add_argument('--write-plan', action='store_true')
     parser.add_argument('--jar', type=Path)
     args = parser.parse_args()
+    # The item-retirement batch supersedes this frozen first-pass inventory.
+    # Its verifier still compares all 86 rounds, guns and effect fields against it.
+    successor = ROOT / 'docs/assembly-experiment/native-ammo-retirement.json'
+    if successor.exists() and not args.write_plan:
+        command = [sys.executable, str(ROOT / 'tools/verify_native_ammo_retirement.py')]
+        if args.jar:
+            command += ['--jar', str(args.jar)]
+        subprocess.run(command, check=True)
+        return
     verify_no_inbound_deletions()
     live = snapshot()
     if args.write_plan:

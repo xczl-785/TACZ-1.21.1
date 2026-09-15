@@ -1,10 +1,9 @@
 package com.tacz.guns.init;
 
 import com.tacz.guns.GunMod;
-import com.tacz.guns.api.DefaultAssets;
 import com.tacz.guns.api.item.GunTabType;
 import com.tacz.guns.api.item.attachment.AttachmentType;
-import com.tacz.guns.api.item.builder.AmmoItemBuilder;
+import com.tacz.guns.ammunition.AmmunitionRegistry;
 import com.tacz.guns.api.item.builder.AttachmentItemBuilder;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.api.item.gun.AbstractGunItem;
@@ -31,9 +30,9 @@ public class ModCreativeTabs {
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> AMMO_TAB = TABS.register("ammo", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.tab.tacz.ammo")).withTabsBefore(OTHER_TAB.getId())
-            .icon(() -> AmmoItemBuilder.create().setId(DefaultAssets.DEFAULT_AMMO_ID).build())
-            // Keep the registered tab ID for ordering, but do not expose native ammunition.
-            .displayItems((parameters, output) -> {}).build());
+            .icon(() -> AmmunitionRegistry.AMMUNITION.get("54527a984bdc2d4e668b4567").get().getDefaultInstance())
+            .displayItems((parameters, output) -> AmmunitionRegistry.AMMUNITION.values()
+                    .forEach(round -> output.accept(round.get()))).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> ATTACHMENT_SCOPE_TAB = TABS.register("scope", () -> CreativeModeTab.builder()
             .title(Component.translatable("tacz.type.scope.name")).withTabsBefore(AMMO_TAB.getId())

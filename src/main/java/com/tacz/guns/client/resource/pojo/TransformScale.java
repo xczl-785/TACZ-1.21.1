@@ -16,14 +16,6 @@ public class TransformScale {
     @Nullable
     private Vector3f fixed;
 
-    public static TransformScale getAmmoDefault() {
-        TransformScale transformScale = new TransformScale();
-        transformScale.thirdPerson = new Vector3f(0.75f, 0.75f, 0.75f);
-        transformScale.ground = new Vector3f(0.75f, 0.75f, 0.75f);
-        transformScale.fixed = new Vector3f(1.5f, 1.5f, 1.5f);
-        return transformScale;
-    }
-
     public static TransformScale getGunDefault() {
         TransformScale transformScale = new TransformScale();
         transformScale.thirdPerson = new Vector3f(0.6f, 0.6f, 0.6f);

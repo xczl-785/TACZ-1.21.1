@@ -5,7 +5,7 @@ import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.entity.ReloadState;
 import com.tacz.guns.api.item.*;
 import com.tacz.guns.api.item.attachment.AttachmentType;
-import com.tacz.guns.api.item.builder.AmmoItemBuilder;
+import com.tacz.guns.ammunition.TemporaryAmmoRefund;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.client.renderer.item.GunItemRendererWrapper;
 import com.tacz.guns.client.resource.index.ClientGunIndex;
@@ -167,6 +167,7 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
      */
     @Override
     public void dropAllAmmo(Player player, ItemStack gunItem) {
+        if (player.level().isClientSide) return;
         // 背包直读时不调用退弹
         if (useInventoryAmmo(gunItem)) {
             return;
@@ -201,17 +202,11 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
                 setCurrentAmmoCount(gunItem, 0);
                 return;
             }
-            TimelessAPI.getCommonAmmoIndex(ammoId).ifPresent(ammoIndex -> {
-                int stackSize = ammoIndex.getStackSize();
-                int tmpAmmoCount = ammoCount;
-                int roundCount = tmpAmmoCount / (stackSize + 1);
-                for (int i = 0; i <= roundCount; i++) {
-                    int count = Math.min(tmpAmmoCount, stackSize);
-                    ItemStack ammoItem = AmmoItemBuilder.create().setId(ammoId).setCount(count).build();
-                    ItemHandlerHelper.giveItemToPlayer(player, ammoItem);
-                    tmpAmmoCount -= stackSize;
-                }
+            // TEMPORARY: fixed Tarkov variant per caliber; no native tacz:ammo fallback.
+            // Resolve the entire refund before clearing anything. Unknown calibers retain ammo.
+            TemporaryAmmoRefund.plan(ammoId, ammoCount).ifPresent(refund -> {
                 setCurrentAmmoCount(gunItem, 0);
+                refund.forEach(stack -> ItemHandlerHelper.giveItemToPlayer(player, stack));
             });
         });
     }

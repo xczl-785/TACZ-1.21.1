@@ -20,7 +20,6 @@ public class ModItems {
 
 //    public static RegistryObject<ThrowableItem> M67 = ITEMS.register("m67", ThrowableItem::new);
 
-    public static DeferredItem<Item> AMMO = ITEMS.register("ammo", AmmoItem::new);
     public static DeferredItem<AttachmentItem> ATTACHMENT = ITEMS.register("attachment", AttachmentItem::new);
 
 

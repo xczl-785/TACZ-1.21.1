@@ -42,7 +42,7 @@ public class GunSmithTableResultSerializer implements JsonDeserializer<GunSmithT
 
             GunSmithTableResult result;
             switch (typeName) {
-                case GunSmithTableResult.GUN, GunSmithTableResult.AMMO, GunSmithTableResult.ATTACHMENT -> {
+                case GunSmithTableResult.GUN, GunSmithTableResult.ATTACHMENT -> {
                     RawGunTableResult raw = new RawGunTableResult(typeName, getId(jsonObject), count);
                     if (extraTag != null) {
                         raw.setNbt(extraTag);

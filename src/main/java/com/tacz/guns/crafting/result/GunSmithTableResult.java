@@ -44,7 +44,6 @@ public class GunSmithTableResult {
             GunSmithTableResult result;
             switch (typeName) {
                 case GunSmithTableResult.GUN,
-                     GunSmithTableResult.AMMO,
                      GunSmithTableResult.ATTACHMENT -> {
                     ResourceLocation id = ResourceLocation.CODEC.fieldOf("id").decode(ops, map).getOrThrow();
                     RawGunTableResult raw = new RawGunTableResult(typeName, id, count);
@@ -75,7 +74,6 @@ public class GunSmithTableResult {
     }
 
     public static final String GUN = "gun";
-    public static final String AMMO = "ammo";
     public static final String ATTACHMENT = "attachment";
     public static final String CUSTOM = "custom";
 

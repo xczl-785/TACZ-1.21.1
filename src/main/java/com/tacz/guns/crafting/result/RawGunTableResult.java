@@ -3,7 +3,6 @@ package com.tacz.guns.crafting.result;
 import com.tacz.guns.GunMod;
 import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.item.attachment.AttachmentType;
-import com.tacz.guns.api.item.builder.AmmoItemBuilder;
 import com.tacz.guns.api.item.builder.AttachmentItemBuilder;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.resource.pojo.data.block.TabConfig;
@@ -52,7 +51,6 @@ public class RawGunTableResult {
     public static GunSmithTableResult init(HolderLookup.Provider provider, RawGunTableResult raw) {
         GunSmithTableResult result = switch (raw.type) {
             case GunSmithTableResult.GUN -> raw.getGunStack(provider);
-            case GunSmithTableResult.AMMO -> raw.getAmmoStack();
             case GunSmithTableResult.ATTACHMENT -> raw.getAttachmentStack();
             default -> new GunSmithTableResult(ItemStack.EMPTY, TabConfig.TAB_EMPTY);
         };
@@ -95,10 +93,6 @@ public class RawGunTableResult {
             ResourceLocation group = ResourceLocation.tryParse(raw);
             return new GunSmithTableResult(itemStack, group);
         }).orElse(new GunSmithTableResult(ItemStack.EMPTY, TabConfig.TAB_EMPTY));
-    }
-
-    private GunSmithTableResult getAmmoStack() {
-        return new GunSmithTableResult(AmmoItemBuilder.create().setCount(count).setId(id).build(), TabConfig.TAB_AMMO);
     }
 
     private GunSmithTableResult getAttachmentStack() {
