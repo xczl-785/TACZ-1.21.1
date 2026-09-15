@@ -66,3 +66,7 @@
 ## 主控复核返修：默认配置缓存
 
 首轮主控未通过：最初证据命令使用 `--no-configuration-cache`，新宿主在默认缓存下的执行闭包引用 `rootProject`，导致校验失败。已将候选文件与版本/哈希在配置期捕获，执行期只读取值；保留仓库默认缓存策略。相邻 verifyRuntime 使用预先捕获的文件集合和源 Mod ID，不调用 Project。开发 `verifyRuntime + prepareClientRun + verifyModuleBoundaries`、正式 `verifyRuntime + prepareProductionClientRun` 各在默认配置下首次保存、再次复用通过，四份日志已归档。仅 NewMod 宿主修复，实验室源码和两个固定 Jar 未变；没有启动游戏。
+
+## 主控最终工程复核
+
+2026-09-15：配置缓存返修 e45dd1f 后，主控独立重跑默认开发 verifyRuntime/prepareClientRun/verifyModuleBoundaries、正式 verifyRuntime/prepareProductionClientRun，各首次存储与再次复用均通过。开发948类、正式907类唯一归属及双包哈希检查通过。此前已独立复核4项方法体/事件顺序对照、公共模块与firearms无源码差异、初始化和旧注入迁移边界。其余测试依据实施归档证据，未全部重复执行。第二项工程复核通过；第一、二项仍待用户联合实机验收，未启动游戏，不进入第三项。
