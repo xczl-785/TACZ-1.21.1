@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "rear_sight",
+  "model_identifier": "rear_sight",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "rear_sight_0",
+      "uuid": "dc22c9c8-1bfd-5754-9eb6-9d9ff35d2b7b",
+      "type": "cube",
+      "from": [
+        -0.8,
+        0,
+        -0.2
+      ],
+      "to": [
+        -0.3,
+        0.5,
+        0.2
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "rear_sight_1",
+      "uuid": "0a65aa40-ba62-5bd4-a554-41560b7ec808",
+      "type": "cube",
+      "from": [
+        0.3,
+        0,
+        -0.2
+      ],
+      "to": [
+        0.8,
+        0.5,
+        0.2
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 4,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    }
+  ],
+  "outliner": [
+    {
+      "name": "rear_sight",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "400aeceb-e6d4-5529-b4ac-98a982405116",
+      "children": [
+        "dc22c9c8-1bfd-5754-9eb6-9d9ff35d2b7b",
+        "0a65aa40-ba62-5bd4-a554-41560b7ec808"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "rear_sight.png",
+      "id": "0",
+      "uuid": "d417ecd8-5f50-54d1-8076-f76c85bac862",
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "mode": "bitmap",
+      "saved": false,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAFklEQVR4nGOYuPIZSYhhVMOohuGrAQDe0CAfOFoSzwAAAABJRU5ErkJggg=="
+    }
+  ]
+}

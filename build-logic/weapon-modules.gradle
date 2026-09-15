@@ -1,0 +1,96 @@
+// Internal source modules share the TaCZ artifact; no extra Mod entrypoints or nested Mod Jars.
+def weaponModules = ['weapon_assembly', 'weapon_models', 'weapon_runtime', 'weapon_assembly_ui']
+weaponModules.each { name ->
+    sourceSets.main.java.srcDir("modules/${name}/src/main/java")
+    sourceSets.main.resources.srcDir("modules/${name}/src/main/resources")
+}
+def publicLock = new groovy.json.JsonSlurper().parse(file('modules/public-dependency-lock.json'))
+def foundationArtifact = file(publicLock.artifact)
+repositories { maven { url = 'https://maven.firstdark.dev/snapshots' } }
+configurations { weaponTestLibraries }
+dependencies {
+    weaponTestLibraries platform('org.junit:junit-bom:5.11.4')
+    weaponTestLibraries 'org.junit.jupiter:junit-jupiter'
+    weaponTestLibraries 'org.junit.platform:junit-platform-launcher'
+    weaponTestLibraries 'com.google.code.gson:gson:2.10.1'
+    weaponTestLibraries 'org.joml:joml:1.10.5'
+    weaponTestLibraries 'org.apiguardian:apiguardian-api:1.1.2'
+    implementation files(foundationArtifact)
+    implementation "com.lowdragmc.ldlib2:ldlib2-neoforge-1.21.1:${publicLock.ldlib2}:all"
+    testImplementation platform('org.junit:junit-bom:5.11.4')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+tasks.register('verifyPublicDependency') {
+    inputs.file(foundationArtifact)
+    inputs.file('modules/public-dependency-lock.json')
+    def expected = publicLock.sha512
+    doLast {
+        assert java.security.MessageDigest.getInstance('SHA-512').digest(foundationArtifact.bytes).encodeHex().toString() == expected
+    }
+}
+tasks.named('compileJava') { dependsOn 'verifyPublicDependency' }
+weaponModules.each { name ->
+    def tests = sourceSets.create("${name}Test") {
+        java.srcDir("modules/${name}/src/test/java")
+        resources.srcDir("modules/${name}/src/test/resources")
+        compileClasspath = sourceSets.main.output + configurations.weaponTestLibraries
+        runtimeClasspath = output + sourceSets.main.output + configurations.weaponTestLibraries
+    }
+    if (name == 'weapon_assembly') tasks.named(tests.processResourcesTaskName, ProcessResources) {
+        from('modules/weapon_assembly/model-fixtures') {
+            include 'catalog.json', 'scenarios.json', 'scenes/*.json'
+            into 'model-fixtures'
+        }
+    }
+    def verify = tasks.register("${name}Test", Test) {
+        testClassesDirs = tests.output.classesDirs
+        classpath = tests.runtimeClasspath
+        useJUnitPlatform()
+        workingDir file("modules/${name}")
+        inputs.files(fileTree("modules/${name}/src/test/fixtures"), fileTree("modules/${name}/src/development/resources"), fileTree('modules/weapon_assembly/model-fixtures'))
+    }
+    tasks.named('check') { dependsOn verify }
+}
+tasks.register('compilePureJava', JavaCompile) {
+    source = fileTree('modules/weapon_assembly/src/main/java/dev/weaponassembly/api') { include '**/*.java' }
+    classpath = files()
+    destinationDirectory = layout.buildDirectory.dir('verification/pure-java')
+    javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(21) }
+    options.release = 21
+}
+sourceSets {
+    uiDevelopment {
+        java.srcDir('modules/weapon_assembly_ui/src/development/java')
+        resources.srcDir('modules/weapon_assembly_ui/src/development/resources')
+        compileClasspath += main.output + main.compileClasspath
+        runtimeClasspath += main.output + main.runtimeClasspath
+    }
+}
+tasks.named('processUiDevelopmentResources', ProcessResources) {
+    from('modules/weapon_assembly/model-fixtures') {
+        include 'catalog.json', 'manifest.json', 'scenes/*.json'
+        into 'assembly-fixtures'
+    }
+}
+// Local source runs include the opt-in client demo. Player Jar and NewMod daily runtime exclude it.
+neoForge {
+    mods {
+        tacz { sourceSet sourceSets.uiDevelopment }
+    }
+    runs {
+        configureEach { loadedMods = [mods.tacz] }
+        assemblyClient {
+            client()
+            loadedMods = [mods.tacz]
+            gameDirectory = file('run/weapon-assembly-client')
+            systemProperty 'weaponassembly.demo', 'true'
+            programArguments.addAll('--width', '1600', '--height', '1000')
+        }
+    }
+}
+tasks.register('verifyWeaponModules', Exec) {
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', 'tools/verify_weapon_modules.py'
+}
+tasks.named('check') { dependsOn 'compilePureJava', 'uiDevelopmentClasses', 'verifyWeaponModules' }

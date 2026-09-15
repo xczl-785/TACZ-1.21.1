@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "magazine",
+  "model_identifier": "magazine",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "magazine_0",
+      "uuid": "e015885a-11b3-5c08-a29e-57923f9f18b2",
+      "type": "cube",
+      "from": [
+        -0.75,
+        -4,
+        -0.8
+      ],
+      "to": [
+        0.75,
+        0,
+        0.8
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    }
+  ],
+  "outliner": [
+    {
+      "name": "magazine",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "4c12b531-c49d-55ef-99f0-f3649b36c230",
+      "children": [
+        "e015885a-11b3-5c08-a29e-57923f9f18b2"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "magazine.png",
+      "id": "0",
+      "uuid": "97807495-4639-5e41-b342-6991560bff2b",
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "mode": "bitmap",
+      "saved": false,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAFklEQVR4nGNI3zaXJMQwqmFUw/DVAADErLoQN6X2tgAAAABJRU5ErkJggg=="
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "73246702-49e9-5d74-aa24-62e4c402e2e8",
+      "definitionId": "5a7ae0c351dfba0017554310"
+    },
+    {
+      "instanceId": "c642f128-609c-51e6-a4fb-4939b0fdb8c1",
+      "definitionId": "615d8dbd290d254f5e6b2ed6",
+      "parentId": "73246702-49e9-5d74-aa24-62e4c402e2e8",
+      "slot": "mod_reciever"
+    },
+    {
+      "instanceId": "3ae349a4-3520-56da-9685-933b5620e4f3",
+      "definitionId": "615d8da4d3a39d50044c10e8",
+      "parentId": "c642f128-609c-51e6-a4fb-4939b0fdb8c1",
+      "slot": "mod_mount"
+    },
+    {
+      "instanceId": "eaadd5a7-7d25-51d4-bd9d-1ced593f489c",
+      "definitionId": "616442e4faa1272e43152193",
+      "parentId": "3ae349a4-3520-56da-9685-933b5620e4f3",
+      "slot": "mod_scope"
+    }
+  ]
+}

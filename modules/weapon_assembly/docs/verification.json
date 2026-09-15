@@ -1,0 +1,62 @@
+{
+  "verifiedAt": "2026-09-13T12:26:02.096056+00:00",
+  "scope": "Pure algorithm and build verification, no UI or real inventory/shooting integration",
+  "commands": [
+    {
+      "command": "./gradlew :weapon_assembly:build verifyModuleBoundaries verifyDistribution --no-configuration-cache",
+      "result": "passed"
+    },
+    {
+      "command": "./gradlew build --no-configuration-cache",
+      "result": "passed",
+      "tasks": 127,
+      "executed": 12,
+      "fromCache": 1,
+      "upToDate": 114
+    }
+  ],
+  "testSuites": [
+    {
+      "name": "dev.weaponassembly.AssemblyEngineTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "dev.weaponassembly.AssemblyJsonTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "dev.weaponassembly.AssemblyRulesTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "dev.weaponassembly.WeaponStatsTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "tests": 17,
+  "randomizedExchangeSteps": 200,
+  "artifact": {
+    "path": "build/libs/weapon_assembly-0.0.0-dev.jar",
+    "bytes": 42756,
+    "sha256": "3c9b6b2473e0ad6f7c3fea66351470e863b07ec852c2bcee66392705cd471632"
+  },
+  "notVerified": [
+    "Minecraft runtime loading",
+    "UI/model interactions",
+    "real inventory commit",
+    "actual shooting",
+    "multiplayer/persistence recovery"
+  ]
+}

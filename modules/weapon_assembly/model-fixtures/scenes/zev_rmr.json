@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "9979ef85-fb7f-5ed2-8f19-e1cace3fdf1b",
+      "definitionId": "5a7ae0c351dfba0017554310"
+    },
+    {
+      "instanceId": "cfc88c55-11ff-5e87-a872-e4c268b8fb29",
+      "definitionId": "5a6b5f868dc32e000a311389",
+      "parentId": "9979ef85-fb7f-5ed2-8f19-e1cace3fdf1b",
+      "slot": "mod_barrel"
+    },
+    {
+      "instanceId": "35998f12-7654-5779-8f23-1b5520484948",
+      "definitionId": "5a71e22f8dc32e00094b97f4",
+      "parentId": "9979ef85-fb7f-5ed2-8f19-e1cace3fdf1b",
+      "slot": "mod_reciever"
+    },
+    {
+      "instanceId": "9226598e-a989-5269-bdae-2beeb3b1a3b8",
+      "definitionId": "5a32aa8bc4a2826c6e06d737",
+      "parentId": "35998f12-7654-5779-8f23-1b5520484948",
+      "slot": "mod_scope"
+    },
+    {
+      "instanceId": "981fca1f-650e-5a7c-a1de-2b676ec5f010",
+      "definitionId": "5a7ad2e851dfba0016153692",
+      "parentId": "9979ef85-fb7f-5ed2-8f19-e1cace3fdf1b",
+      "slot": "mod_magazine"
+    },
+    {
+      "instanceId": "a0a9b828-ee80-583c-9d3f-6a0a18e2b52b",
+      "definitionId": "5a71e0048dc32e000c52ecc8",
+      "parentId": "35998f12-7654-5779-8f23-1b5520484948",
+      "slot": "mod_sight_front"
+    },
+    {
+      "instanceId": "7c1418f4-5534-5aee-bf85-2da5cdd04adf",
+      "definitionId": "5a71e0fb8dc32e00094b97f2",
+      "parentId": "35998f12-7654-5779-8f23-1b5520484948",
+      "slot": "mod_sight_rear"
+    }
+  ]
+}

@@ -9,6 +9,8 @@ import zipfile
 from pathlib import Path
 from verify_ammunition_chain import ROOT, PACK, read_json, snapshot, sha
 
+from weapon_migration import source_rows, successor_hash
+
 LEDGER = ROOT/'docs/assembly-experiment/native-ammo-retirement.json'
 
 
@@ -22,7 +24,8 @@ def main():
     actual = subprocess.check_output(['git', 'diff', '--name-status', base, '--', 'src'], cwd=ROOT, text=True).splitlines()
     actual_paths = {line.split('\t')[1] for line in actual}
     actual_paths.update(subprocess.check_output(['git','ls-files','--others','--exclude-standard','--','src'],cwd=ROOT,text=True).splitlines())
-    assert actual_paths == set(rows), ('Unexpected production diff', actual_paths ^ set(rows))
+    expected_paths = set(rows) | set(source_rows())
+    assert actual_paths == expected_paths, ('Unexpected production diff', actual_paths ^ expected_paths)
     # Nothing in the canonical 86-round data/generation pipeline may change.
     ammo_changes = subprocess.check_output(['git','diff','--name-only',base,'--','ammunition'],cwd=ROOT,text=True).splitlines()
     assert set(ammo_changes) <= {'ammunition/README.md'}, ammo_changes
@@ -34,7 +37,7 @@ def main():
         if row['action'] == 'delete':
             assert not (ROOT/path).exists(), path
         else:
-            assert sha(path) == row['after_sha256'], path
+            assert sha(path) == successor_hash(path, row['after_sha256']), path
         # A ledger cannot authorize unrelated gun/refit/animation edits.
         if path.startswith('src/main/resources/'):
             assert ('/display/ammo/' in path or '/index/ammo/' in path or

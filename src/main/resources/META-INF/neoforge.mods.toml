@@ -17,16 +17,30 @@ config = "tacz.mixins.json"
 [[mixins]]
 config = "tacz.compat.acceleratedrendering.mixins.json"
 
-[[dependencies."{id}"]]
+[[dependencies."${id}"]]
 modId = "neoforge"
 type = "REQUIRED"
 versionRange = "${loader_version}"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies."{id}"]]
+[[dependencies."${id}"]]
 modId = "minecraft"
 type = "REQUIRED"
 versionRange = "${minecraft_version}"
 ordering = "NONE"
+side = "BOTH"
+
+[[dependencies."${id}"]]
+modId = "item_foundation"
+type = "required"
+versionRange = "[0.0.0-dev]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${id}"]]
+modId = "ldlib2"
+type = "required"
+versionRange = "[2.2.37,)"
+ordering = "AFTER"
 side = "BOTH"

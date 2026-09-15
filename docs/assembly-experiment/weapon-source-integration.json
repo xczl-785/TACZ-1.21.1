@@ -1,0 +1,16 @@
+{
+  "baseline": "5fc2f4af74359bf73e65db6dbc5a2191943bed43",
+  "reason": "Single TaCZ registration owner and external foundation/LDLib dependency metadata",
+  "files": [
+    {
+      "path": "src/main/java/com/tacz/guns/GunMod.java",
+      "before_sha256": "0c086e72690240b6ba2bebc66ac2dcab45645b93b12227c179e9e9d998b0b180",
+      "after_sha256": "e1b517a285d783157af280528aacf1f3da563c3edb58b31000851c18b17bf16e"
+    },
+    {
+      "path": "src/main/resources/META-INF/neoforge.mods.toml",
+      "before_sha256": "9bf668b773e73c5ebfcbf154489940cd7ac9aeb73e42c86ebde8db71f44877e8",
+      "after_sha256": "5879886c8fc56677f555902b1e4da2edade6c48a75565a8a48f1edfe55ab473b"
+    }
+  ]
+}

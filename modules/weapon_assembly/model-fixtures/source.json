@@ -1,0 +1,20 @@
+{
+  "source": "EFTForge/docs/data/cache/items.json",
+  "sha256": "32aeed172f61cb1329474b31b3b29876caba4943a35638763ec432b4f28712e4",
+  "ids": {
+    "frame": "5a7ae0c351dfba0017554310",
+    "zev_slide": "5a71e22f8dc32e00094b97f4",
+    "mos_slide": "615d8dbd290d254f5e6b2ed6",
+    "barrel": "5a6b5f868dc32e000a311389",
+    "rmr": "5a32aa8bc4a2826c6e06d737",
+    "aam_mount": "615d8da4d3a39d50044c10e8",
+    "acro": "616442e4faa1272e43152193",
+    "tiger_mount": "5a7ad55551dfba0015068f42",
+    "rmr_mount": "5a33b2c9c4a282000c5a9511",
+    "aimtech_mount": "5a7ad4af51dfba0013379717",
+    "magazine": "5a7ad2e851dfba0016153692",
+    "front_sight": "5a71e0048dc32e000c52ecc8",
+    "rear_sight": "5a71e0fb8dc32e00094b97f2"
+  },
+  "scope": "All source slots/required flags retained; allowedItems and conflictingItems intersect selected IDs. Geometry/anchors authored for testing, not source measurements."
+}

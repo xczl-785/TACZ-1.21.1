@@ -1,0 +1,230 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "aimtech_mount",
+  "model_identifier": "aimtech_mount",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "aimtech_mount_0",
+      "uuid": "fb0df889-a102-520a-8663-66815027ad88",
+      "type": "cube",
+      "from": [
+        1.1,
+        0,
+        -2
+      ],
+      "to": [
+        1.5,
+        3,
+        2
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "aimtech_mount_1",
+      "uuid": "3e3c8457-f7d7-5c7c-9ce0-5b2f9258c3e0",
+      "type": "cube",
+      "from": [
+        -1.5,
+        2.7,
+        -2
+      ],
+      "to": [
+        1.5,
+        3,
+        2
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "mod_scope",
+      "uuid": "12ee27cb-55a3-5a4d-8c83-bad829b68e0b",
+      "type": "locator",
+      "position": [
+        0,
+        3,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "ignore_inherited_scale": false
+    }
+  ],
+  "outliner": [
+    {
+      "name": "aimtech_mount",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "95b16c03-5793-5182-9685-c142093db03e",
+      "children": [
+        "fb0df889-a102-520a-8663-66815027ad88",
+        "3e3c8457-f7d7-5c7c-9ce0-5b2f9258c3e0",
+        "12ee27cb-55a3-5a4d-8c83-bad829b68e0b"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "aimtech_mount.png",
+      "id": "0",
+      "uuid": "1dd35af1-eeec-5faf-996f-e599a9ee51f3",
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "mode": "bitmap",
+      "saved": false,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAFklEQVR4nGN4Oi+aJMQwqmFUw/DVAACn9N4QmjkiIQAAAABJRU5ErkJggg=="
+    }
+  ]
+}

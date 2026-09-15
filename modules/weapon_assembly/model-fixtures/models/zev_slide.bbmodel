@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "zev_slide",
+  "model_identifier": "zev_slide",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "zev_slide_0",
+      "uuid": "77c87521-260b-5ffa-9121-c7c41566a707",
+      "type": "cube",
+      "from": [
+        -1,
+        0,
+        -3
+      ],
+      "to": [
+        1,
+        1,
+        5
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 1,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "mod_scope",
+      "uuid": "2f134df0-2784-5498-bdca-31b799ca0c4b",
+      "type": "locator",
+      "position": [
+        0,
+        1,
+        -1.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "ignore_inherited_scale": false
+    },
+    {
+      "name": "mod_sight_front",
+      "uuid": "b869c83e-ee42-5b34-a399-5ad43b0e191b",
+      "type": "locator",
+      "position": [
+        0,
+        1,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "ignore_inherited_scale": false
+    },
+    {
+      "name": "mod_sight_rear",
+      "uuid": "d28bb8e3-bb62-54bb-91d3-c827e056b7a8",
+      "type": "locator",
+      "position": [
+        0,
+        1,
+        -2.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "ignore_inherited_scale": false
+    }
+  ],
+  "outliner": [
+    {
+      "name": "zev_slide",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "c546d6dc-3934-5e07-8fa7-eb15bc7fc420",
+      "children": [
+        "77c87521-260b-5ffa-9121-c7c41566a707",
+        "2f134df0-2784-5498-bdca-31b799ca0c4b",
+        "b869c83e-ee42-5b34-a399-5ad43b0e191b",
+        "d28bb8e3-bb62-54bb-91d3-c827e056b7a8"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "zev_slide.png",
+      "id": "0",
+      "uuid": "df588c99-7d1c-561a-a125-1ff4a0376cbe",
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "mode": "bitmap",
+      "saved": false,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAFklEQVR4nGN4Oi+aJMQwqmFUw/DVAACn9N4QmjkiIQAAAABJRU5ErkJggg=="
+    }
+  ]
+}

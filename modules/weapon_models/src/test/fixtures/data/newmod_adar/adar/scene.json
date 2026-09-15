@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "b3c249b1-c394-511e-8d70-f1b806a4d197",
+      "definitionId": "5c07c60e0db834002330051f"
+    },
+    {
+      "instanceId": "e72ab905-d391-5d08-ad17-2c91ef668e1c",
+      "definitionId": "5c0e2ff6d174af02a1659d4a",
+      "parentId": "b3c249b1-c394-511e-8d70-f1b806a4d197",
+      "slot": "mod_pistol_grip"
+    },
+    {
+      "instanceId": "a5bb6a77-c445-57c8-a721-5547a8253d6a",
+      "definitionId": "5aaa5e60e5b5b000140293d6",
+      "parentId": "b3c249b1-c394-511e-8d70-f1b806a4d197",
+      "slot": "mod_magazine"
+    },
+    {
+      "instanceId": "19099602-2117-5662-9d9a-0c31dd8673e8",
+      "definitionId": "5c0e2f26d174af02a9625114",
+      "parentId": "b3c249b1-c394-511e-8d70-f1b806a4d197",
+      "slot": "mod_reciever"
+    },
+    {
+      "instanceId": "1fc98eac-11c4-581e-a4be-3bbf20c9fc69",
+      "definitionId": "5c0e2f94d174af029f650d56",
+      "parentId": "19099602-2117-5662-9d9a-0c31dd8673e8",
+      "slot": "mod_barrel"
+    },
+    {
+      "instanceId": "fd20547b-418e-55f8-9cb1-8abd335289d1",
+      "definitionId": "5c0fafb6d174af02a96260ba",
+      "parentId": "1fc98eac-11c4-581e-a4be-3bbf20c9fc69",
+      "slot": "mod_muzzle"
+    },
+    {
+      "instanceId": "5197339c-8357-5cbe-b19b-88c08c24a8ff",
+      "definitionId": "5ae30e795acfc408fb139a0b",
+      "parentId": "1fc98eac-11c4-581e-a4be-3bbf20c9fc69",
+      "slot": "mod_gas_block"
+    },
+    {
+      "instanceId": "d34a1f75-5649-5176-a7e7-a7a31e9a249c",
+      "definitionId": "5c0e2f5cd174af02a012cfc9",
+      "parentId": "19099602-2117-5662-9d9a-0c31dd8673e8",
+      "slot": "mod_handguard"
+    },
+    {
+      "instanceId": "4fa818fb-069c-52c6-89f4-8ba95e392f2a",
+      "definitionId": "5c0faeddd174af02a962601f",
+      "parentId": "b3c249b1-c394-511e-8d70-f1b806a4d197",
+      "slot": "mod_stock"
+    },
+    {
+      "instanceId": "943340ea-29fb-5d3f-af70-c9bd338a4859",
+      "definitionId": "5c0faf68d174af02a96260b8",
+      "parentId": "b3c249b1-c394-511e-8d70-f1b806a4d197",
+      "slot": "mod_charge"
+    },
+    {
+      "instanceId": "b0a015f3-61dd-54f2-8317-ba9d4259cc37",
+      "definitionId": "558022b54bdc2dac148b458d",
+      "parentId": "19099602-2117-5662-9d9a-0c31dd8673e8",
+      "slot": "mod_scope"
+    }
+  ]
+}

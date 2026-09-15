@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "aam_mount",
+  "model_identifier": "aam_mount",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "aam_mount_0",
+      "uuid": "4da967c7-1199-5449-b9b2-649492b9a0ee",
+      "type": "cube",
+      "from": [
+        -1,
+        0,
+        -1
+      ],
+      "to": [
+        1,
+        0.35,
+        1
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 5,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "mod_scope",
+      "uuid": "98e4054e-69a4-5403-8abd-705c2e7deb34",
+      "type": "locator",
+      "position": [
+        0,
+        0.35,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "ignore_inherited_scale": false
+    }
+  ],
+  "outliner": [
+    {
+      "name": "aam_mount",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "c94737b2-e284-51e0-afcc-8ea7eadcbeaf",
+      "children": [
+        "4da967c7-1199-5449-b9b2-649492b9a0ee",
+        "98e4054e-69a4-5403-8abd-705c2e7deb34"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "aam_mount.png",
+      "id": "0",
+      "uuid": "f7e855b3-d06f-5dfe-8465-ba80253b5173",
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "mode": "bitmap",
+      "saved": false,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAFklEQVR4nGM4PP0ySYhhVMOohuGrAQANCy0fqvlc8gAAAABJRU5ErkJggg=="
+    }
+  ]
+}

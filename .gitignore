@@ -54,3 +54,6 @@ forge*changelog.txt
 /.narrafork/project.db
 /.narrafork/project.db-shm
 /.narrafork/project.db-wal
+# Internal module regression suites are source, not the upstream scratch test folder.
+!modules/*/src/test/
+!modules/*/src/test/**

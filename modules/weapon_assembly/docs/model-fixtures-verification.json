@@ -1,0 +1,99 @@
+{
+  "verifiedAt": "2026-09-13T12:44:56.052602+00:00",
+  "baseImplementationCommit": "22b0011",
+  "models": 13,
+  "scenarios": 6,
+  "tests": 25,
+  "testSuites": [
+    {
+      "name": "dev.weaponassembly.AssemblyEngineTest",
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "dev.weaponassembly.AssemblyJsonTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "dev.weaponassembly.AssemblyModelFixturesTest",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "dev.weaponassembly.AssemblyRulesTest",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    {
+      "name": "dev.weaponassembly.WeaponStatsTest",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  ],
+  "checks": {
+    "modelFiles": "python3 model-fixtures/verify.py: PASS",
+    "javaAndDistribution": "./gradlew :weapon_assembly:build verifyModuleBoundaries verifyDistribution --no-configuration-cache: PASS",
+    "visual": "overview.png inspected; diagram geometry only"
+  },
+  "files": {
+    "model-fixtures/README.md": "bda3ac422bf87a9afca4ab73473df964a2558d0938180d48843dc51ca987a691",
+    "model-fixtures/catalog.json": "fa10206609ff371e136ca729a1fba8af72f06fd2d68b45a76b1cb883a42b757b",
+    "model-fixtures/generate.py": "1179c1b2d42c3f297f85e098101cfef92efdfa7b8deb6dcc947d5bc11f77fed1",
+    "model-fixtures/manifest.json": "6deb194a50ff50fbe560e360d6a14e1761fdcdfbac49344c789addb0a4a9e4c2",
+    "model-fixtures/models/aam_mount.bbmodel": "c9fd16caeac95f7a62a8d8056fad9ddf581643b69b226ff71884382fcf9afb31",
+    "model-fixtures/models/aam_mount.obj": "4b18bdb378989fb2aa47a4e45df564f6730758f5d707d8b3a09fda0e7d8b60ee",
+    "model-fixtures/models/acro.bbmodel": "b85919479fb23cad9117f8ea53711837e2948c290dbaed3c5412130943d4e4ac",
+    "model-fixtures/models/acro.obj": "34ce7195de0fac8e2c205926e4fdfabe3ffc4416e2abc7131ff025edd542de0a",
+    "model-fixtures/models/aimtech_mount.bbmodel": "3050cf87df96f6702d6b6c1ee3cf2e76c1c4eb6986e3be09ce7d47359ad4a060",
+    "model-fixtures/models/aimtech_mount.obj": "4295a149fdd34542f081849e6f5a48e0727beca9263e9a1da98f7d99f76e8bc0",
+    "model-fixtures/models/barrel.bbmodel": "b6704f45215d61dd43447cf0411cf2e7c39dac5619eb841a0fee943329cfa913",
+    "model-fixtures/models/barrel.obj": "1086c2b5081653f05ffa51039114cc1f71f2b00f06cf033c8a23d847cd0e4c45",
+    "model-fixtures/models/frame.bbmodel": "46cf66ee9f8b803ed2b18a97a64e6b89a9b85bc1e0dac258dd2cf597e9726c23",
+    "model-fixtures/models/frame.obj": "0f019eae83f70da08007cab2e26ba0b7342c657c715da4a6191e6afd5dbdfed8",
+    "model-fixtures/models/front_sight.bbmodel": "652489be0e1199e7e0417c8d863a90cb6900083c59df753ea95014472cca336b",
+    "model-fixtures/models/front_sight.obj": "4092cf61e15eb6472af61dcd99fdbf2a1e1318f506ea3b493b865f0ab2f6f76e",
+    "model-fixtures/models/magazine.bbmodel": "a7bca62c30f87b1680e7acbe66ca918862872b8d5f36b5212f74bf81bef88e52",
+    "model-fixtures/models/magazine.obj": "5841deaf97d77a01a11d1781c0f1481b179bb9774d1bcdfa9fcc0d599962041f",
+    "model-fixtures/models/mos_slide.bbmodel": "48c5686fe78f3b6db4286924c275ef094c0952d93616b6f9619ba9b18972d825",
+    "model-fixtures/models/mos_slide.obj": "2a74af34844f4c6d2d134e59f02885c95a04d34a599f3921a1ea15e293ed2dcf",
+    "model-fixtures/models/rear_sight.bbmodel": "d83c9ed0e794763546c21819d32760f77ef044960c905316d7c41f9bfddca7c5",
+    "model-fixtures/models/rear_sight.obj": "2714195e20a96da6df7d9bad84e1341be471f591dad5cf813d6255a2891f03c3",
+    "model-fixtures/models/rmr.bbmodel": "881827705823f2b4c53c4fa1b959a7beb82c55084730bcf9bc826f44983bbc00",
+    "model-fixtures/models/rmr.obj": "32a5f3f5a072f02b1af19ea560f6607068edb10f300b81156903aef4d274219b",
+    "model-fixtures/models/rmr_mount.bbmodel": "5cacdaab991bc01127e3e605e85552ab456cd16c608cb7b587b8ee4b810b2af6",
+    "model-fixtures/models/rmr_mount.obj": "14630721e20fd66518a9a430af928429ce78904f5c7b1e1dcbddb0edaa370482",
+    "model-fixtures/models/tiger_mount.bbmodel": "e0e06f8197078172c69ae9a415a3fd7b5593f8b36d715130b04c940a5dac03ea",
+    "model-fixtures/models/tiger_mount.obj": "e9492b72612e04edd84dfbe9e712c7b659cf3b7c6a9e7356a2dcc1a9fadaf395",
+    "model-fixtures/models/zev_slide.bbmodel": "f145ec0024a733d736095ad619627ce2f64d423c0f43c74d5fbd7c8705edc6bd",
+    "model-fixtures/models/zev_slide.obj": "30f6ee72b7afb744a6398bcdb6a0017ebfbd002ef682ac6afd299c3f264a24cd",
+    "model-fixtures/overview.png": "ac487ee11ce414a628ab43ff499c49cb0f52720500d06690290fc8359dfa68e2",
+    "model-fixtures/preview.html": "20d52c743687f51957093a4a4f60525a04de02d75f46c051d9ff2751e696579a",
+    "model-fixtures/render_overview.py": "f249c9f114226bc43e049e34a44620ae43c9495e472bd1f143b488581514001a",
+    "model-fixtures/scenarios.json": "0e8bfa67da36eefd18631f710de653b5f762cfcebfe291c923bfc27da46dff50",
+    "model-fixtures/scenes/dual_rmr.json": "58fb2f526f9d7a9a63c18f0df801288c0fde95861ebbfb907ba6c27b2cc2bcb2",
+    "model-fixtures/scenes/missing_barrel.json": "071f48d82919e56cf0ac5a16abfe27bff8c050f708e2874400a2813cfc3620ef",
+    "model-fixtures/scenes/mos_acro.json": "30e5b15dd7204ea9b61be4e05baf6d729f1380447015423d82e7f47cba48eda4",
+    "model-fixtures/scenes/mount_conflict.json": "83bcaa650cc84860299329bfe4180110703c59ca4011ee7f37a261df38374221",
+    "model-fixtures/scenes/wrong_optic.json": "4496893437f2b5450e0d23f6d8aba2885fd5373e398bdce715bf64b34af16cbc",
+    "model-fixtures/scenes/zev_rmr.json": "9996ef87283c47db021916ba065762201437bd40089cea6e9d8b60c94347ef4a",
+    "model-fixtures/source.json": "8cff67af3685368d9c19bae44844554954c4328dc7bf482511d2eba961e36b63",
+    "model-fixtures/verify.py": "a33e64570d16f1c646af00789f217661bf56d6fb527683fb1d5538f45a7bb7cf"
+  },
+  "notVerified": [
+    "Blockbench GUI import",
+    "Minecraft model loader",
+    "UI interaction",
+    "live inventory and shooting integration"
+  ]
+}

@@ -2,6 +2,7 @@
 """Verify historical protection through exact, source-backed successor ledgers."""
 import hashlib,json,sys,zipfile
 from pathlib import Path
+from weapon_migration import successor_hash
 R=Path(__file__).resolve().parents[1]
 d=json.loads((R/'docs/newmod/extra-content/removal.json').read_text())
 first=R/'docs/assembly-experiment/ammunition-cleanup.json'
@@ -19,8 +20,8 @@ def current_hash(path, original):
  if path in retirement:
   row=retirement[path]
   assert row['before_sha256']==original,path
-  return row['after_sha256']
- return original
+  return successor_hash(path, row['after_sha256'])
+ return successor_hash(path, original)
 
 def verify_file(path, expected, jar=None):
  if expected is None:

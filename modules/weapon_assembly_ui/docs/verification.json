@@ -1,0 +1,106 @@
+{
+  "date": "2026-09-13",
+  "scope": "Engineering startup and covered operations only; owner retains formal acceptance",
+  "tests": [
+    {
+      "name": "dev.weaponassembly.AssemblyEngineTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-13T12:44:04.689Z"
+    },
+    {
+      "name": "dev.weaponassembly.AssemblyJsonTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-13T12:44:04.717Z"
+    },
+    {
+      "name": "dev.weaponassembly.AssemblyModelFixturesTest",
+      "tests": "8",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-13T12:44:04.876Z"
+    },
+    {
+      "name": "dev.weaponassembly.AssemblyRulesTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-13T12:44:04.911Z"
+    },
+    {
+      "name": "dev.weaponassembly.WeaponStatsTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-13T12:44:04.937Z"
+    },
+    {
+      "name": "dev.weaponassemblyui.client.ModelGeometryTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-13T13:15:17.169Z"
+    },
+    {
+      "name": "dev.weaponassemblyui.session.AssemblySessionTest",
+      "tests": "6",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0",
+      "timestamp": "2026-09-13T13:15:17.192Z"
+    }
+  ],
+  "runtime": [
+    "no world",
+    "viewport layout",
+    "projected label opens chooser",
+    "focus previews candidate",
+    "preview does not commit",
+    "install retains replaced part",
+    "required barrel can be detached",
+    "undo restores barrel",
+    "reset restores entire session",
+    "recursive optic slot visible",
+    "camera drag changes projection without dismissing chooser",
+    "Esc closes chooser",
+    "resize clears uncommitted preview",
+    "resized GUI controls",
+    "PASS: isolated native UI audit"
+  ],
+  "artifacts": {
+    "source/mods/weapon_assembly_ui/build/libs/weapon_assembly_ui-0.0.0-dev.jar": {
+      "sha256": "a99e37e8dfd9f942727cfdf5bd9c4f89b48475cd2142fe6fdaaa5c5c2c847188",
+      "bytes": 44592
+    },
+    "source/runs/weapon-assembly-audit/screenshots/01-workbench.png": {
+      "sha256": "79c376e61139c73eb6683dcaf2c8a32e17d91ba3df1ac4977c3fd1b08d6b0717",
+      "bytes": 310701
+    },
+    "source/runs/weapon-assembly-audit/screenshots/02-preview.png": {
+      "sha256": "918947ca29cfc83e9b14e24a525d148cfaef4c60fb29d448bd534de12b70612f",
+      "bytes": 345902
+    },
+    "source/runs/weapon-assembly-audit/screenshots/03-incomplete.png": {
+      "sha256": "b20693646f3f585ae9bca4fa2a3de735a25354d2cdad4713fecaa181217521ef",
+      "bytes": 331972
+    },
+    "source/runs/weapon-assembly-audit/screenshots/04-subslots.png": {
+      "sha256": "c996ab99261a8e4d2ed0a147b78b0fc521c6a6e68d15f8d6ca72e3637b6d344e",
+      "bytes": 306233
+    },
+    "source/runs/weapon-assembly-audit/screenshots/05-gui-scale.png": {
+      "sha256": "7bf353302a75eb95eb7353c4b69f9359542874dc090de19bd77d8b8aaa86898e",
+      "bytes": 297895
+    }
+  },
+  "review": "Independent read-only review found resize preview persistence; fixed with clearPreview on rebuild and passing runtime regression. No other concrete blocker reported."
+}

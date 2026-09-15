@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "front_sight",
+  "model_identifier": "front_sight",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "front_sight_0",
+      "uuid": "22645a2a-e523-5469-8954-64f292118f1e",
+      "type": "cube",
+      "from": [
+        -0.2,
+        0,
+        -0.2
+      ],
+      "to": [
+        0.2,
+        0.5,
+        0.2
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    }
+  ],
+  "outliner": [
+    {
+      "name": "front_sight",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "aff939e2-7683-50f1-ac66-1ff656d7adda",
+      "children": [
+        "22645a2a-e523-5469-8954-64f292118f1e"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "front_sight.png",
+      "id": "0",
+      "uuid": "30b35d4e-48fb-57d0-80fe-0455f13e62f4",
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "mode": "bitmap",
+      "saved": false,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAFklEQVR4nGO4m59BEmIY1TCqYfhqAAA/NLQQ9QNThwAAAABJRU5ErkJggg=="
+    }
+  ]
+}

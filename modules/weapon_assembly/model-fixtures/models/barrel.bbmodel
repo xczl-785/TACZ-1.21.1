@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "barrel",
+  "model_identifier": "barrel",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "barrel_0",
+      "uuid": "aeaf239b-1b0d-52a7-8d1c-a4e1aaecb65d",
+      "type": "cube",
+      "from": [
+        -0.4,
+        -0.4,
+        0
+      ],
+      "to": [
+        0.4,
+        0.4,
+        8
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 3,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    }
+  ],
+  "outliner": [
+    {
+      "name": "barrel",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "9d0368e5-866d-5d60-9f53-6376879800b7",
+      "children": [
+        "aeaf239b-1b0d-52a7-8d1c-a4e1aaecb65d"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "barrel.png",
+      "id": "0",
+      "uuid": "6e79fcdb-c4d6-50fe-999c-232a22ffa664",
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "mode": "bitmap",
+      "saved": false,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAFklEQVR4nGO4m59BEmIY1TCqYfhqAAA/NLQQ9QNThwAAAABJRU5ErkJggg=="
+    }
+  ]
+}

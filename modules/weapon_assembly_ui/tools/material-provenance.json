@@ -1,0 +1,15 @@
+{
+  "origin": "Original mathematical patterns authored for NewMod. No source images, Tarkov textures, or source UVs consumed.",
+  "generator": "generate_materials.py",
+  "seed": 20260913,
+  "size": [
+    128,
+    128
+  ],
+  "sha256": {
+    "wood.png": "2fb0dafe9e7b1d9e2e1840f097663a66b3dfb2af446dd657b6a420bc20d953fe",
+    "metal.png": "426b07275eda86cbf2c471512d9ffbd767fefb637a7e15cc7391bd521334750b",
+    "polymer.png": "4ad2a5fdc3d210b796a015992977341750c04ed3fd32c14aec458822e1450686",
+    "rubber.png": "8d88f614a53c18cd143cbd7521402f54bd8a35f5dbfb5deb64767321670e6348"
+  }
+}

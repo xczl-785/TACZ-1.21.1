@@ -142,6 +142,7 @@ dependencies {
     compileOnly(libs.curse.maven.controllable)
     implementation(libs.dev.latvian.mods.kubejs.neoforge)
     compileOnly(libs.dev.latvian.mods.rhino)
+    runtimeOnly(libs.dev.latvian.mods.rhino)
 }
 
 java {
@@ -204,3 +205,6 @@ publishMods {
 }
 // 2026-09-13: canonical EFT ammunition payload; IDs retained for existing saves.
 sourceSets.main { resources.srcDir("ammunition/runtime") }
+
+// Four portable weapon responsibilities, compiled into this single Mod.
+apply(from = "build-logic/weapon-modules.gradle")

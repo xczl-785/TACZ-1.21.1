@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "3f9140ae-8a25-5e8d-844e-a8915d06c111",
+      "definitionId": "5a7ae0c351dfba0017554310"
+    },
+    {
+      "instanceId": "8cf78fe4-10ab-56c6-8850-88210adbab27",
+      "definitionId": "5a6b5f868dc32e000a311389",
+      "parentId": "3f9140ae-8a25-5e8d-844e-a8915d06c111",
+      "slot": "mod_barrel"
+    },
+    {
+      "instanceId": "b5b9b5c3-fa46-5978-a04d-cffce1cecaa2",
+      "definitionId": "5a71e22f8dc32e00094b97f4",
+      "parentId": "3f9140ae-8a25-5e8d-844e-a8915d06c111",
+      "slot": "mod_reciever"
+    },
+    {
+      "instanceId": "5c197eb7-7782-567e-b803-f1e4503a358c",
+      "definitionId": "5a7ad55551dfba0015068f42",
+      "parentId": "3f9140ae-8a25-5e8d-844e-a8915d06c111",
+      "slot": "mod_mount"
+    },
+    {
+      "instanceId": "d794823a-b4a5-5994-a8d1-37c9178f2823",
+      "definitionId": "5a7ad4af51dfba0013379717",
+      "parentId": "3f9140ae-8a25-5e8d-844e-a8915d06c111",
+      "slot": "mod_tactical"
+    }
+  ]
+}

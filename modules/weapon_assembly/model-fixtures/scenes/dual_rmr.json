@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "8034ae10-b23e-5844-9ce3-b96b2c63aef0",
+      "definitionId": "5a7ae0c351dfba0017554310"
+    },
+    {
+      "instanceId": "08cff945-967e-5f8c-82e8-d186829dd5c4",
+      "definitionId": "5a6b5f868dc32e000a311389",
+      "parentId": "8034ae10-b23e-5844-9ce3-b96b2c63aef0",
+      "slot": "mod_barrel"
+    },
+    {
+      "instanceId": "2460d6ae-da3c-5177-afb7-ce97dad2a7bf",
+      "definitionId": "5a71e22f8dc32e00094b97f4",
+      "parentId": "8034ae10-b23e-5844-9ce3-b96b2c63aef0",
+      "slot": "mod_reciever"
+    },
+    {
+      "instanceId": "d10a423f-ef1e-5f7f-8830-0d619e107090",
+      "definitionId": "5a32aa8bc4a2826c6e06d737",
+      "parentId": "2460d6ae-da3c-5177-afb7-ce97dad2a7bf",
+      "slot": "mod_scope"
+    },
+    {
+      "instanceId": "7977b39f-a46b-5b55-a712-963f265824fa",
+      "definitionId": "5a7ad55551dfba0015068f42",
+      "parentId": "8034ae10-b23e-5844-9ce3-b96b2c63aef0",
+      "slot": "mod_mount"
+    },
+    {
+      "instanceId": "9ec13fd8-5e29-5658-a031-c747df7a80ac",
+      "definitionId": "5a33b2c9c4a282000c5a9511",
+      "parentId": "7977b39f-a46b-5b55-a712-963f265824fa",
+      "slot": "mod_scope"
+    },
+    {
+      "instanceId": "3564147e-ad5f-5603-8554-b00b4a48ebfc",
+      "definitionId": "5a32aa8bc4a2826c6e06d737",
+      "parentId": "9ec13fd8-5e29-5658-a031-c747df7a80ac",
+      "slot": "mod_scope"
+    }
+  ]
+}

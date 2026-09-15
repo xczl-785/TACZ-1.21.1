@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "mos_slide",
+  "model_identifier": "mos_slide",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "mos_slide_0",
+      "uuid": "413d3d2f-20ee-59c0-b3ec-5bb8f7b7726f",
+      "type": "cube",
+      "from": [
+        -1,
+        0,
+        -3
+      ],
+      "to": [
+        1,
+        1.2,
+        5
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 2,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "mod_mount",
+      "uuid": "043090db-f90b-5acb-8f3b-f0f5239416d5",
+      "type": "locator",
+      "position": [
+        0,
+        1.2,
+        -1.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "ignore_inherited_scale": false
+    },
+    {
+      "name": "mod_sight_front",
+      "uuid": "6c0e4750-4e2b-55c6-bbf3-435a7f0c2c46",
+      "type": "locator",
+      "position": [
+        0,
+        1.2,
+        4.5
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "ignore_inherited_scale": false
+    },
+    {
+      "name": "mod_sight_rear",
+      "uuid": "57ecb79f-bbca-58e3-a234-8628da664444",
+      "type": "locator",
+      "position": [
+        0,
+        1.2,
+        -2.7
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "ignore_inherited_scale": false
+    }
+  ],
+  "outliner": [
+    {
+      "name": "mos_slide",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "c7b249ab-6968-5b40-b7a7-5cca0af9d67b",
+      "children": [
+        "413d3d2f-20ee-59c0-b3ec-5bb8f7b7726f",
+        "043090db-f90b-5acb-8f3b-f0f5239416d5",
+        "6c0e4750-4e2b-55c6-bbf3-435a7f0c2c46",
+        "57ecb79f-bbca-58e3-a234-8628da664444"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "mos_slide.png",
+      "id": "0",
+      "uuid": "0ad74de0-a4c2-552c-91bd-e3dbcac2021a",
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "mode": "bitmap",
+      "saved": false,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAFklEQVR4nGNI3zaXJMQwqmFUw/DVAADErLoQN6X2tgAAAABJRU5ErkJggg=="
+    }
+  ]
+}

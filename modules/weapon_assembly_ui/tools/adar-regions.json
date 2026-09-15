@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "description": "Only split material regions; no vertex changes. Source names resolve through each component merge-map.json.",
+  "parts": {
+    "5c0e2ff6d174af02a1659d4a": {"body":{"后端垫":"butt_pad"}},
+    "5aaa5e60e5b5b000140293d6": {"body":{"独立外扩底板":"floorplate"}},
+    "5c0e2f5cd174af02a012cfc9": {"body":{"后端接圈":"rear_collar", "前端收口":"front_collar"}},
+    "558022b54bdc2dac148b458d": {"body":{"底部座体":"mount_base", "下方夹持边":"mount_base", "内镜框":"inner_frame"}}
+  }
+}

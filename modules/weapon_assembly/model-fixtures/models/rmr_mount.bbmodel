@@ -1,0 +1,147 @@
+{
+  "meta": {
+    "format_version": "4.10",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "rmr_mount",
+  "model_identifier": "rmr_mount",
+  "visible_box": [
+    1,
+    1,
+    0
+  ],
+  "resolution": {
+    "width": 16,
+    "height": 16
+  },
+  "elements": [
+    {
+      "name": "rmr_mount_0",
+      "uuid": "14d043a5-7301-5ff1-bad1-15117d5d52d3",
+      "type": "cube",
+      "from": [
+        -1,
+        0,
+        -1
+      ],
+      "to": [
+        1,
+        0.4,
+        1
+      ],
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "color": 0,
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": 0
+        }
+      }
+    },
+    {
+      "name": "mod_scope",
+      "uuid": "4e0f829a-4a48-56b8-8fd4-91c63ed45c1c",
+      "type": "locator",
+      "position": [
+        0,
+        0.4,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "ignore_inherited_scale": false
+    }
+  ],
+  "outliner": [
+    {
+      "name": "rmr_mount",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "uuid": "2c20d033-e25d-5c0c-bd94-67eec957e361",
+      "children": [
+        "14d043a5-7301-5ff1-bad1-15117d5d52d3",
+        "4e0f829a-4a48-56b8-8fd4-91c63ed45c1c"
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "rmr_mount.png",
+      "id": "0",
+      "uuid": "58a85c47-9f49-5093-a36c-70ae8e830b94",
+      "width": 16,
+      "height": 16,
+      "uv_width": 16,
+      "uv_height": 16,
+      "mode": "bitmap",
+      "saved": false,
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAAFklEQVR4nGNIq51OEmIY1TCqYfhqAADD7noQJzjaDQAAAABJRU5ErkJggg=="
+    }
+  ]
+}

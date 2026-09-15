@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "scenarios": [
+    {
+      "id": "zev_rmr",
+      "snapshot": "scenes/zev_rmr.json",
+      "expectValid": true,
+      "expectComplete": true,
+      "expectedErrorCodes": [],
+      "placements": [
+        {
+          "model": "frame",
+          "instanceId": "9979ef85-fb7f-5ed2-8f19-e1cace3fdf1b",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": []
+        },
+        {
+          "model": "barrel",
+          "instanceId": "cfc88c55-11ff-5e87-a872-e4c268b8fb29",
+          "position": [
+            0,
+            0.5,
+            -3
+          ],
+          "path": [
+            "mod_barrel"
+          ]
+        },
+        {
+          "model": "zev_slide",
+          "instanceId": "35998f12-7654-5779-8f23-1b5520484948",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": [
+            "mod_reciever"
+          ]
+        },
+        {
+          "model": "rmr",
+          "instanceId": "9226598e-a989-5269-bdae-2beeb3b1a3b8",
+          "position": [
+            0,
+            1,
+            -1.8
+          ],
+          "path": [
+            "mod_reciever",
+            "mod_scope"
+          ]
+        },
+        {
+          "model": "magazine",
+          "instanceId": "981fca1f-650e-5a7c-a1de-2b676ec5f010",
+          "position": [
+            0,
+            -2,
+            -1.8
+          ],
+          "path": [
+            "mod_magazine"
+          ]
+        },
+        {
+          "model": "front_sight",
+          "instanceId": "a0a9b828-ee80-583c-9d3f-6a0a18e2b52b",
+          "position": [
+            0,
+            1,
+            4.5
+          ],
+          "path": [
+            "mod_reciever",
+            "mod_sight_front"
+          ]
+        },
+        {
+          "model": "rear_sight",
+          "instanceId": "7c1418f4-5534-5aee-bf85-2da5cdd04adf",
+          "position": [
+            0,
+            1,
+            -2.7
+          ],
+          "path": [
+            "mod_reciever",
+            "mod_sight_rear"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mos_acro",
+      "snapshot": "scenes/mos_acro.json",
+      "expectValid": true,
+      "expectComplete": true,
+      "expectedErrorCodes": [],
+      "placements": [
+        {
+          "model": "frame",
+          "instanceId": "adc62759-0595-50f4-97ce-9e3b92b163f6",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": []
+        },
+        {
+          "model": "barrel",
+          "instanceId": "8e899ef9-8109-5c11-b5f2-8b9409a8bc1e",
+          "position": [
+            0,
+            0.5,
+            -3
+          ],
+          "path": [
+            "mod_barrel"
+          ]
+        },
+        {
+          "model": "mos_slide",
+          "instanceId": "707c6264-4db5-568a-914d-78106a640e83",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": [
+            "mod_reciever"
+          ]
+        },
+        {
+          "model": "aam_mount",
+          "instanceId": "731e4e6b-b401-59c8-8aa9-c3a94821eded",
+          "position": [
+            0,
+            1.2,
+            -1.8
+          ],
+          "path": [
+            "mod_reciever",
+            "mod_mount"
+          ]
+        },
+        {
+          "model": "acro",
+          "instanceId": "677cbf93-21b2-5a9f-a533-0651655e2d97",
+          "position": [
+            0,
+            1.5499999999999998,
+            -1.8
+          ],
+          "path": [
+            "mod_reciever",
+            "mod_mount",
+            "mod_scope"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dual_rmr",
+      "snapshot": "scenes/dual_rmr.json",
+      "expectValid": true,
+      "expectComplete": true,
+      "expectedErrorCodes": [],
+      "placements": [
+        {
+          "model": "frame",
+          "instanceId": "8034ae10-b23e-5844-9ce3-b96b2c63aef0",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": []
+        },
+        {
+          "model": "barrel",
+          "instanceId": "08cff945-967e-5f8c-82e8-d186829dd5c4",
+          "position": [
+            0,
+            0.5,
+            -3
+          ],
+          "path": [
+            "mod_barrel"
+          ]
+        },
+        {
+          "model": "zev_slide",
+          "instanceId": "2460d6ae-da3c-5177-afb7-ce97dad2a7bf",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": [
+            "mod_reciever"
+          ]
+        },
+        {
+          "model": "rmr",
+          "instanceId": "d10a423f-ef1e-5f7f-8830-0d619e107090",
+          "position": [
+            0,
+            1,
+            -1.8
+          ],
+          "path": [
+            "mod_reciever",
+            "mod_scope"
+          ]
+        },
+        {
+          "model": "tiger_mount",
+          "instanceId": "7977b39f-a46b-5b55-a712-963f265824fa",
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "path": [
+            "mod_mount"
+          ]
+        },
+        {
+          "model": "rmr_mount",
+          "instanceId": "9ec13fd8-5e29-5658-a031-c747df7a80ac",
+          "position": [
+            0,
+            2.5,
+            0
+          ],
+          "path": [
+            "mod_mount",
+            "mod_scope"
+          ]
+        },
+        {
+          "model": "rmr",
+          "instanceId": "3564147e-ad5f-5603-8554-b00b4a48ebfc",
+          "position": [
+            0,
+            2.9,
+            0
+          ],
+          "path": [
+            "mod_mount",
+            "mod_scope",
+            "mod_scope"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mount_conflict",
+      "snapshot": "scenes/mount_conflict.json",
+      "expectValid": false,
+      "expectComplete": false,
+      "expectedErrorCodes": [
+        "PART_CONFLICT"
+      ],
+      "placements": [
+        {
+          "model": "frame",
+          "instanceId": "3f9140ae-8a25-5e8d-844e-a8915d06c111",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": []
+        },
+        {
+          "model": "barrel",
+          "instanceId": "8cf78fe4-10ab-56c6-8850-88210adbab27",
+          "position": [
+            0,
+            0.5,
+            -3
+          ],
+          "path": [
+            "mod_barrel"
+          ]
+        },
+        {
+          "model": "zev_slide",
+          "instanceId": "b5b9b5c3-fa46-5978-a04d-cffce1cecaa2",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": [
+            "mod_reciever"
+          ]
+        },
+        {
+          "model": "tiger_mount",
+          "instanceId": "5c197eb7-7782-567e-b803-f1e4503a358c",
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "path": [
+            "mod_mount"
+          ]
+        },
+        {
+          "model": "aimtech_mount",
+          "instanceId": "d794823a-b4a5-5994-a8d1-37c9178f2823",
+          "position": [
+            0,
+            -0.5,
+            0
+          ],
+          "path": [
+            "mod_tactical"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "missing_barrel",
+      "snapshot": "scenes/missing_barrel.json",
+      "expectValid": true,
+      "expectComplete": false,
+      "expectedErrorCodes": [],
+      "placements": [
+        {
+          "model": "frame",
+          "instanceId": "73246702-49e9-5d74-aa24-62e4c402e2e8",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": []
+        },
+        {
+          "model": "mos_slide",
+          "instanceId": "c642f128-609c-51e6-a4fb-4939b0fdb8c1",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": [
+            "mod_reciever"
+          ]
+        },
+        {
+          "model": "aam_mount",
+          "instanceId": "3ae349a4-3520-56da-9685-933b5620e4f3",
+          "position": [
+            0,
+            1.2,
+            -1.8
+          ],
+          "path": [
+            "mod_reciever",
+            "mod_mount"
+          ]
+        },
+        {
+          "model": "acro",
+          "instanceId": "eaadd5a7-7d25-51d4-bd9d-1ced593f489c",
+          "position": [
+            0,
+            1.5499999999999998,
+            -1.8
+          ],
+          "path": [
+            "mod_reciever",
+            "mod_mount",
+            "mod_scope"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wrong_optic",
+      "snapshot": "scenes/wrong_optic.json",
+      "expectValid": false,
+      "expectComplete": false,
+      "expectedErrorCodes": [
+        "INCOMPATIBLE"
+      ],
+      "placements": [
+        {
+          "model": "frame",
+          "instanceId": "b3ba03f1-86e7-5755-8039-c4b9762c2712",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": []
+        },
+        {
+          "model": "barrel",
+          "instanceId": "758656fc-bbdb-51a9-8cd7-01e41ccbd6e5",
+          "position": [
+            0,
+            0.5,
+            -3
+          ],
+          "path": [
+            "mod_barrel"
+          ]
+        },
+        {
+          "model": "mos_slide",
+          "instanceId": "b329682b-9efc-51ec-a7e4-9a00b8b51e0d",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "path": [
+            "mod_reciever"
+          ]
+        },
+        {
+          "model": "aam_mount",
+          "instanceId": "7800668c-cec1-584d-8395-a085a72cfe70",
+          "position": [
+            0,
+            1.2,
+            -1.8
+          ],
+          "path": [
+            "mod_reciever",
+            "mod_mount"
+          ]
+        },
+        {
+          "model": "rmr",
+          "instanceId": "b93fdd5d-f649-530c-9e27-b56a958e616c",
+          "position": [
+            0,
+            1.5499999999999998,
+            -1.8
+          ],
+          "path": [
+            "mod_reciever",
+            "mod_mount",
+            "mod_scope"
+          ]
+        }
+      ]
+    }
+  ]
+}

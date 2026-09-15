@@ -1,0 +1,1053 @@
+{
+  "date": "2026-09-15",
+  "newmod_baseline": "94c31d5921a1a94edc79212e50bf397f53737dd0",
+  "tacz_baseline": "5fc2f4af74359bf73e65db6dbc5a2191943bed43",
+  "files": [
+    {
+      "old": "source/mods/weapon_assembly/README.md",
+      "new": "modules/weapon_assembly/README.md",
+      "before_sha256": "d77bb2a673225b355f19d92fa5259c226b39f9a25b967a960d9170390e2d2206",
+      "after_sha256": "d77bb2a673225b355f19d92fa5259c226b39f9a25b967a960d9170390e2d2206",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/build.gradle",
+      "new": "modules/weapon_assembly/build.gradle",
+      "before_sha256": "d113a82f0a3d91df709eb441539636bd38fe4b557383dd92e95c8c9e397a263a",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_assembly/docs/fixture-source.json",
+      "new": "modules/weapon_assembly/docs/fixture-source.json",
+      "before_sha256": "0ee9428b2811d795c9877d841f6593e3518fbf3fb4c88809a83cb0cf14e3a0a2",
+      "after_sha256": "0ee9428b2811d795c9877d841f6593e3518fbf3fb4c88809a83cb0cf14e3a0a2",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/docs/gunsmith原型梳理.md",
+      "new": "modules/weapon_assembly/docs/gunsmith原型梳理.md",
+      "before_sha256": "d3b80c89ab41646590d968d2d828b64c39abe338e3b5748e0c8aa3f4ec219506",
+      "after_sha256": "d3b80c89ab41646590d968d2d828b64c39abe338e3b5748e0c8aa3f4ec219506",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/docs/model-fixtures-verification.json",
+      "new": "modules/weapon_assembly/docs/model-fixtures-verification.json",
+      "before_sha256": "662e5cc1fdc97cc285290eb17336ab4f3cb3b270e744d016b1630c5b9e2d7ac4",
+      "after_sha256": "662e5cc1fdc97cc285290eb17336ab4f3cb3b270e744d016b1630c5b9e2d7ac4",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/docs/verification.json",
+      "new": "modules/weapon_assembly/docs/verification.json",
+      "before_sha256": "b6fbb069bc235475f6d4aec069209e97e3ea0870f716e7f835a7f78398606e14",
+      "after_sha256": "b6fbb069bc235475f6d4aec069209e97e3ea0870f716e7f835a7f78398606e14",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/docs/测试策略.md",
+      "new": "modules/weapon_assembly/docs/测试策略.md",
+      "before_sha256": "6e9c8e7f9d20beea3f2b4d74fa29eb5872920b65e911d8a90405f10504e9d779",
+      "after_sha256": "6e9c8e7f9d20beea3f2b4d74fa29eb5872920b65e911d8a90405f10504e9d779",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/docs/界面接入方案.md",
+      "new": "modules/weapon_assembly/docs/界面接入方案.md",
+      "before_sha256": "bc8044361a9bb9ffee1fa14e9817961ef4509f4b50add5b16f2ec756d4db145b",
+      "after_sha256": "bc8044361a9bb9ffee1fa14e9817961ef4509f4b50add5b16f2ec756d4db145b",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/docs/算法合同.md",
+      "new": "modules/weapon_assembly/docs/算法合同.md",
+      "before_sha256": "62754599f2bbcdecbc12d47288c9920a96501f579d492c4e2db6b3a6406ebfe4",
+      "after_sha256": "62754599f2bbcdecbc12d47288c9920a96501f579d492c4e2db6b3a6406ebfe4",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/docs/验证记录.md",
+      "new": "modules/weapon_assembly/docs/验证记录.md",
+      "before_sha256": "54d1929de86ca848423607456464080f474e04ac53c555da079cdcaa77f3e531",
+      "after_sha256": "54d1929de86ca848423607456464080f474e04ac53c555da079cdcaa77f3e531",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/README.md",
+      "new": "modules/weapon_assembly/model-fixtures/README.md",
+      "before_sha256": "bda3ac422bf87a9afca4ab73473df964a2558d0938180d48843dc51ca987a691",
+      "after_sha256": "bda3ac422bf87a9afca4ab73473df964a2558d0938180d48843dc51ca987a691",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/catalog.json",
+      "new": "modules/weapon_assembly/model-fixtures/catalog.json",
+      "before_sha256": "fa10206609ff371e136ca729a1fba8af72f06fd2d68b45a76b1cb883a42b757b",
+      "after_sha256": "fa10206609ff371e136ca729a1fba8af72f06fd2d68b45a76b1cb883a42b757b",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/generate.py",
+      "new": "modules/weapon_assembly/model-fixtures/generate.py",
+      "before_sha256": "1179c1b2d42c3f297f85e098101cfef92efdfa7b8deb6dcc947d5bc11f77fed1",
+      "after_sha256": "1179c1b2d42c3f297f85e098101cfef92efdfa7b8deb6dcc947d5bc11f77fed1",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/manifest.json",
+      "new": "modules/weapon_assembly/model-fixtures/manifest.json",
+      "before_sha256": "6deb194a50ff50fbe560e360d6a14e1761fdcdfbac49344c789addb0a4a9e4c2",
+      "after_sha256": "6deb194a50ff50fbe560e360d6a14e1761fdcdfbac49344c789addb0a4a9e4c2",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/aam_mount.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/aam_mount.bbmodel",
+      "before_sha256": "c9fd16caeac95f7a62a8d8056fad9ddf581643b69b226ff71884382fcf9afb31",
+      "after_sha256": "c9fd16caeac95f7a62a8d8056fad9ddf581643b69b226ff71884382fcf9afb31",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/aam_mount.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/aam_mount.obj",
+      "before_sha256": "4b18bdb378989fb2aa47a4e45df564f6730758f5d707d8b3a09fda0e7d8b60ee",
+      "after_sha256": "4b18bdb378989fb2aa47a4e45df564f6730758f5d707d8b3a09fda0e7d8b60ee",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/acro.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/acro.bbmodel",
+      "before_sha256": "b85919479fb23cad9117f8ea53711837e2948c290dbaed3c5412130943d4e4ac",
+      "after_sha256": "b85919479fb23cad9117f8ea53711837e2948c290dbaed3c5412130943d4e4ac",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/acro.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/acro.obj",
+      "before_sha256": "34ce7195de0fac8e2c205926e4fdfabe3ffc4416e2abc7131ff025edd542de0a",
+      "after_sha256": "34ce7195de0fac8e2c205926e4fdfabe3ffc4416e2abc7131ff025edd542de0a",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/aimtech_mount.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/aimtech_mount.bbmodel",
+      "before_sha256": "3050cf87df96f6702d6b6c1ee3cf2e76c1c4eb6986e3be09ce7d47359ad4a060",
+      "after_sha256": "3050cf87df96f6702d6b6c1ee3cf2e76c1c4eb6986e3be09ce7d47359ad4a060",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/aimtech_mount.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/aimtech_mount.obj",
+      "before_sha256": "4295a149fdd34542f081849e6f5a48e0727beca9263e9a1da98f7d99f76e8bc0",
+      "after_sha256": "4295a149fdd34542f081849e6f5a48e0727beca9263e9a1da98f7d99f76e8bc0",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/barrel.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/barrel.bbmodel",
+      "before_sha256": "b6704f45215d61dd43447cf0411cf2e7c39dac5619eb841a0fee943329cfa913",
+      "after_sha256": "b6704f45215d61dd43447cf0411cf2e7c39dac5619eb841a0fee943329cfa913",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/barrel.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/barrel.obj",
+      "before_sha256": "1086c2b5081653f05ffa51039114cc1f71f2b00f06cf033c8a23d847cd0e4c45",
+      "after_sha256": "1086c2b5081653f05ffa51039114cc1f71f2b00f06cf033c8a23d847cd0e4c45",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/frame.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/frame.bbmodel",
+      "before_sha256": "46cf66ee9f8b803ed2b18a97a64e6b89a9b85bc1e0dac258dd2cf597e9726c23",
+      "after_sha256": "46cf66ee9f8b803ed2b18a97a64e6b89a9b85bc1e0dac258dd2cf597e9726c23",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/frame.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/frame.obj",
+      "before_sha256": "0f019eae83f70da08007cab2e26ba0b7342c657c715da4a6191e6afd5dbdfed8",
+      "after_sha256": "0f019eae83f70da08007cab2e26ba0b7342c657c715da4a6191e6afd5dbdfed8",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/front_sight.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/front_sight.bbmodel",
+      "before_sha256": "652489be0e1199e7e0417c8d863a90cb6900083c59df753ea95014472cca336b",
+      "after_sha256": "652489be0e1199e7e0417c8d863a90cb6900083c59df753ea95014472cca336b",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/front_sight.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/front_sight.obj",
+      "before_sha256": "4092cf61e15eb6472af61dcd99fdbf2a1e1318f506ea3b493b865f0ab2f6f76e",
+      "after_sha256": "4092cf61e15eb6472af61dcd99fdbf2a1e1318f506ea3b493b865f0ab2f6f76e",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/magazine.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/magazine.bbmodel",
+      "before_sha256": "a7bca62c30f87b1680e7acbe66ca918862872b8d5f36b5212f74bf81bef88e52",
+      "after_sha256": "a7bca62c30f87b1680e7acbe66ca918862872b8d5f36b5212f74bf81bef88e52",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/magazine.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/magazine.obj",
+      "before_sha256": "5841deaf97d77a01a11d1781c0f1481b179bb9774d1bcdfa9fcc0d599962041f",
+      "after_sha256": "5841deaf97d77a01a11d1781c0f1481b179bb9774d1bcdfa9fcc0d599962041f",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/mos_slide.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/mos_slide.bbmodel",
+      "before_sha256": "48c5686fe78f3b6db4286924c275ef094c0952d93616b6f9619ba9b18972d825",
+      "after_sha256": "48c5686fe78f3b6db4286924c275ef094c0952d93616b6f9619ba9b18972d825",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/mos_slide.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/mos_slide.obj",
+      "before_sha256": "2a74af34844f4c6d2d134e59f02885c95a04d34a599f3921a1ea15e293ed2dcf",
+      "after_sha256": "2a74af34844f4c6d2d134e59f02885c95a04d34a599f3921a1ea15e293ed2dcf",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/rear_sight.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/rear_sight.bbmodel",
+      "before_sha256": "d83c9ed0e794763546c21819d32760f77ef044960c905316d7c41f9bfddca7c5",
+      "after_sha256": "d83c9ed0e794763546c21819d32760f77ef044960c905316d7c41f9bfddca7c5",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/rear_sight.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/rear_sight.obj",
+      "before_sha256": "2714195e20a96da6df7d9bad84e1341be471f591dad5cf813d6255a2891f03c3",
+      "after_sha256": "2714195e20a96da6df7d9bad84e1341be471f591dad5cf813d6255a2891f03c3",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/rmr.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/rmr.bbmodel",
+      "before_sha256": "881827705823f2b4c53c4fa1b959a7beb82c55084730bcf9bc826f44983bbc00",
+      "after_sha256": "881827705823f2b4c53c4fa1b959a7beb82c55084730bcf9bc826f44983bbc00",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/rmr.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/rmr.obj",
+      "before_sha256": "32a5f3f5a072f02b1af19ea560f6607068edb10f300b81156903aef4d274219b",
+      "after_sha256": "32a5f3f5a072f02b1af19ea560f6607068edb10f300b81156903aef4d274219b",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/rmr_mount.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/rmr_mount.bbmodel",
+      "before_sha256": "5cacdaab991bc01127e3e605e85552ab456cd16c608cb7b587b8ee4b810b2af6",
+      "after_sha256": "5cacdaab991bc01127e3e605e85552ab456cd16c608cb7b587b8ee4b810b2af6",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/rmr_mount.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/rmr_mount.obj",
+      "before_sha256": "14630721e20fd66518a9a430af928429ce78904f5c7b1e1dcbddb0edaa370482",
+      "after_sha256": "14630721e20fd66518a9a430af928429ce78904f5c7b1e1dcbddb0edaa370482",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/tiger_mount.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/tiger_mount.bbmodel",
+      "before_sha256": "e0e06f8197078172c69ae9a415a3fd7b5593f8b36d715130b04c940a5dac03ea",
+      "after_sha256": "e0e06f8197078172c69ae9a415a3fd7b5593f8b36d715130b04c940a5dac03ea",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/tiger_mount.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/tiger_mount.obj",
+      "before_sha256": "e9492b72612e04edd84dfbe9e712c7b659cf3b7c6a9e7356a2dcc1a9fadaf395",
+      "after_sha256": "e9492b72612e04edd84dfbe9e712c7b659cf3b7c6a9e7356a2dcc1a9fadaf395",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/zev_slide.bbmodel",
+      "new": "modules/weapon_assembly/model-fixtures/models/zev_slide.bbmodel",
+      "before_sha256": "f145ec0024a733d736095ad619627ce2f64d423c0f43c74d5fbd7c8705edc6bd",
+      "after_sha256": "f145ec0024a733d736095ad619627ce2f64d423c0f43c74d5fbd7c8705edc6bd",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/models/zev_slide.obj",
+      "new": "modules/weapon_assembly/model-fixtures/models/zev_slide.obj",
+      "before_sha256": "30f6ee72b7afb744a6398bcdb6a0017ebfbd002ef682ac6afd299c3f264a24cd",
+      "after_sha256": "30f6ee72b7afb744a6398bcdb6a0017ebfbd002ef682ac6afd299c3f264a24cd",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/overview.png",
+      "new": "modules/weapon_assembly/model-fixtures/overview.png",
+      "before_sha256": "ac487ee11ce414a628ab43ff499c49cb0f52720500d06690290fc8359dfa68e2",
+      "after_sha256": "ac487ee11ce414a628ab43ff499c49cb0f52720500d06690290fc8359dfa68e2",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/preview.html",
+      "new": "modules/weapon_assembly/model-fixtures/preview.html",
+      "before_sha256": "20d52c743687f51957093a4a4f60525a04de02d75f46c051d9ff2751e696579a",
+      "after_sha256": "20d52c743687f51957093a4a4f60525a04de02d75f46c051d9ff2751e696579a",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/render_overview.py",
+      "new": "modules/weapon_assembly/model-fixtures/render_overview.py",
+      "before_sha256": "f249c9f114226bc43e049e34a44620ae43c9495e472bd1f143b488581514001a",
+      "after_sha256": "f249c9f114226bc43e049e34a44620ae43c9495e472bd1f143b488581514001a",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/scenarios.json",
+      "new": "modules/weapon_assembly/model-fixtures/scenarios.json",
+      "before_sha256": "0e8bfa67da36eefd18631f710de653b5f762cfcebfe291c923bfc27da46dff50",
+      "after_sha256": "0e8bfa67da36eefd18631f710de653b5f762cfcebfe291c923bfc27da46dff50",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/scenes/dual_rmr.json",
+      "new": "modules/weapon_assembly/model-fixtures/scenes/dual_rmr.json",
+      "before_sha256": "58fb2f526f9d7a9a63c18f0df801288c0fde95861ebbfb907ba6c27b2cc2bcb2",
+      "after_sha256": "58fb2f526f9d7a9a63c18f0df801288c0fde95861ebbfb907ba6c27b2cc2bcb2",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/scenes/missing_barrel.json",
+      "new": "modules/weapon_assembly/model-fixtures/scenes/missing_barrel.json",
+      "before_sha256": "071f48d82919e56cf0ac5a16abfe27bff8c050f708e2874400a2813cfc3620ef",
+      "after_sha256": "071f48d82919e56cf0ac5a16abfe27bff8c050f708e2874400a2813cfc3620ef",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/scenes/mos_acro.json",
+      "new": "modules/weapon_assembly/model-fixtures/scenes/mos_acro.json",
+      "before_sha256": "30e5b15dd7204ea9b61be4e05baf6d729f1380447015423d82e7f47cba48eda4",
+      "after_sha256": "30e5b15dd7204ea9b61be4e05baf6d729f1380447015423d82e7f47cba48eda4",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/scenes/mount_conflict.json",
+      "new": "modules/weapon_assembly/model-fixtures/scenes/mount_conflict.json",
+      "before_sha256": "83bcaa650cc84860299329bfe4180110703c59ca4011ee7f37a261df38374221",
+      "after_sha256": "83bcaa650cc84860299329bfe4180110703c59ca4011ee7f37a261df38374221",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/scenes/wrong_optic.json",
+      "new": "modules/weapon_assembly/model-fixtures/scenes/wrong_optic.json",
+      "before_sha256": "4496893437f2b5450e0d23f6d8aba2885fd5373e398bdce715bf64b34af16cbc",
+      "after_sha256": "4496893437f2b5450e0d23f6d8aba2885fd5373e398bdce715bf64b34af16cbc",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/scenes/zev_rmr.json",
+      "new": "modules/weapon_assembly/model-fixtures/scenes/zev_rmr.json",
+      "before_sha256": "9996ef87283c47db021916ba065762201437bd40089cea6e9d8b60c94347ef4a",
+      "after_sha256": "9996ef87283c47db021916ba065762201437bd40089cea6e9d8b60c94347ef4a",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/source.json",
+      "new": "modules/weapon_assembly/model-fixtures/source.json",
+      "before_sha256": "8cff67af3685368d9c19bae44844554954c4328dc7bf482511d2eba961e36b63",
+      "after_sha256": "8cff67af3685368d9c19bae44844554954c4328dc7bf482511d2eba961e36b63",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/model-fixtures/verify.py",
+      "new": "modules/weapon_assembly/model-fixtures/verify.py",
+      "before_sha256": "a33e64570d16f1c646af00789f217661bf56d6fb527683fb1d5538f45a7bb7cf",
+      "after_sha256": "a33e64570d16f1c646af00789f217661bf56d6fb527683fb1d5538f45a7bb7cf",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/main/java/dev/weaponassembly/WeaponAssembly.java",
+      "new": "modules/weapon_assembly/src/main/java/dev/weaponassembly/WeaponAssembly.java",
+      "before_sha256": "69eac01e4f179d70ba0cfccea37b5d4a76caa98ce09a1b5b5d171de64eb62f54",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/main/java/dev/weaponassembly/api/AssemblyCatalog.java",
+      "new": "modules/weapon_assembly/src/main/java/dev/weaponassembly/api/AssemblyCatalog.java",
+      "before_sha256": "5b707370fbbf0135652fc83723a9e18517169e20174e8f780cebb886f72b56be",
+      "after_sha256": "5b707370fbbf0135652fc83723a9e18517169e20174e8f780cebb886f72b56be",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/main/java/dev/weaponassembly/api/AssemblyEngine.java",
+      "new": "modules/weapon_assembly/src/main/java/dev/weaponassembly/api/AssemblyEngine.java",
+      "before_sha256": "fdf46bb369c1bfb0660a0d09f715bda7a6b19b540fd47392e268ca706158a853",
+      "after_sha256": "fdf46bb369c1bfb0660a0d09f715bda7a6b19b540fd47392e268ca706158a853",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/main/java/dev/weaponassembly/api/AssemblyNode.java",
+      "new": "modules/weapon_assembly/src/main/java/dev/weaponassembly/api/AssemblyNode.java",
+      "before_sha256": "eb0ef9655593f6207d5d162b92a467109046c9ef6ea97c1a25e4354ff8d77987",
+      "after_sha256": "eb0ef9655593f6207d5d162b92a467109046c9ef6ea97c1a25e4354ff8d77987",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/main/java/dev/weaponassembly/api/FiringReadiness.java",
+      "new": "modules/weapon_assembly/src/main/java/dev/weaponassembly/api/FiringReadiness.java",
+      "before_sha256": "b1f195cdd3ee0b6cd4497ac4986871d4d162fb254af26ca27498b66d31cda24d",
+      "after_sha256": "b1f195cdd3ee0b6cd4497ac4986871d4d162fb254af26ca27498b66d31cda24d",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/main/java/dev/weaponassembly/api/PartDefinition.java",
+      "new": "modules/weapon_assembly/src/main/java/dev/weaponassembly/api/PartDefinition.java",
+      "before_sha256": "f4a6f18fd179b5a4841438422a97606f4770c4792f370ce1c6d88eb70ebb8f47",
+      "after_sha256": "f4a6f18fd179b5a4841438422a97606f4770c4792f370ce1c6d88eb70ebb8f47",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/main/java/dev/weaponassembly/api/WeaponStats.java",
+      "new": "modules/weapon_assembly/src/main/java/dev/weaponassembly/api/WeaponStats.java",
+      "before_sha256": "0d30d85649ef9b59726d9ee3e0867b230c9197f89fd9d8da3882767facc4f00a",
+      "after_sha256": "0d30d85649ef9b59726d9ee3e0867b230c9197f89fd9d8da3882767facc4f00a",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/main/java/dev/weaponassembly/io/AssemblyJson.java",
+      "new": "modules/weapon_assembly/src/main/java/dev/weaponassembly/io/AssemblyJson.java",
+      "before_sha256": "62ee14a8cbc0e80594eef95506099d597ef6663b2f1330bfb6d9bf60b9748da8",
+      "after_sha256": "62ee14a8cbc0e80594eef95506099d597ef6663b2f1330bfb6d9bf60b9748da8",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/main/resources/META-INF/licenses/EFTForge-MIT.txt",
+      "new": "modules/weapon_assembly/src/main/resources/META-INF/licenses/EFTForge-MIT.txt",
+      "before_sha256": "21da31390b4eb87bea6606535f0c048d0db3be4e9835a0369260bfe0cc9f6d08",
+      "after_sha256": "21da31390b4eb87bea6606535f0c048d0db3be4e9835a0369260bfe0cc9f6d08",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/main/resources/META-INF/neoforge.mods.toml",
+      "new": "modules/weapon_assembly/src/main/resources/META-INF/neoforge.mods.toml",
+      "before_sha256": "545fba3ab4afac35906f37172120894bc56a025adb7867f371a02f7f285b20ed",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/test/java/dev/weaponassembly/AssemblyEngineTest.java",
+      "new": "modules/weapon_assembly/src/test/java/dev/weaponassembly/AssemblyEngineTest.java",
+      "before_sha256": "21d3059746a0c63fb7f90d92a1e25609fd658a7b17c628672bc6eda4b2bcf58f",
+      "after_sha256": "21d3059746a0c63fb7f90d92a1e25609fd658a7b17c628672bc6eda4b2bcf58f",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/test/java/dev/weaponassembly/AssemblyJsonTest.java",
+      "new": "modules/weapon_assembly/src/test/java/dev/weaponassembly/AssemblyJsonTest.java",
+      "before_sha256": "60de8eda740c908e91881948079d4b0240f512aa78c1afb01bb2b0f91f6b1afa",
+      "after_sha256": "60de8eda740c908e91881948079d4b0240f512aa78c1afb01bb2b0f91f6b1afa",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/test/java/dev/weaponassembly/AssemblyModelFixturesTest.java",
+      "new": "modules/weapon_assembly/src/test/java/dev/weaponassembly/AssemblyModelFixturesTest.java",
+      "before_sha256": "d1fecdba1ed4ca482df938e48f6c8ece3b568d4dd316c75e4d3f987ac13f543f",
+      "after_sha256": "d1fecdba1ed4ca482df938e48f6c8ece3b568d4dd316c75e4d3f987ac13f543f",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/test/java/dev/weaponassembly/AssemblyRulesTest.java",
+      "new": "modules/weapon_assembly/src/test/java/dev/weaponassembly/AssemblyRulesTest.java",
+      "before_sha256": "145ff00a3ecb3888d2afc0d07df7321ad706d016f914c5115444600ef85f0f61",
+      "after_sha256": "145ff00a3ecb3888d2afc0d07df7321ad706d016f914c5115444600ef85f0f61",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/test/java/dev/weaponassembly/FiringReadinessTest.java",
+      "new": "modules/weapon_assembly/src/test/java/dev/weaponassembly/FiringReadinessTest.java",
+      "before_sha256": "59c9b52bc6ae5e1c304bfbd7c0e538f1f4d1a7db823c3a653791ad9f809e83b4",
+      "after_sha256": "59c9b52bc6ae5e1c304bfbd7c0e538f1f4d1a7db823c3a653791ad9f809e83b4",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/test/java/dev/weaponassembly/WeaponStatsTest.java",
+      "new": "modules/weapon_assembly/src/test/java/dev/weaponassembly/WeaponStatsTest.java",
+      "before_sha256": "de1147a6858ef2c89c6305a32624521104db43fa40188c9f129c0b862423215e",
+      "after_sha256": "de1147a6858ef2c89c6305a32624521104db43fa40188c9f129c0b862423215e",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/src/test/resources/glock-optics.json",
+      "new": "modules/weapon_assembly/src/test/resources/glock-optics.json",
+      "before_sha256": "83fbc9e10269a540a5ee48d307f963913ffb686a78af5d6abbb735b40b27a616",
+      "after_sha256": "83fbc9e10269a540a5ee48d307f963913ffb686a78af5d6abbb735b40b27a616",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly/tools/generate_reference_fixture.py",
+      "new": "modules/weapon_assembly/tools/generate_reference_fixture.py",
+      "before_sha256": "1c35324d50e64a7328fb7541b3651edf5d479ebd0cd3f69479a9754f3d17e16d",
+      "after_sha256": "1c35324d50e64a7328fb7541b3651edf5d479ebd0cd3f69479a9754f3d17e16d",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_models/build.gradle",
+      "new": "modules/weapon_models/build.gradle",
+      "before_sha256": "79eeee4ff1b1d7d200e2968d6e1ba7b550826051b0d90758caf49d152632412f",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_models/src/main/java/dev/weaponmodels/AssemblyMaterials.java",
+      "new": "modules/weapon_models/src/main/java/dev/weaponmodels/AssemblyMaterials.java",
+      "before_sha256": "1ccf42872b116f6c29898dacf38b2739b8d0d09c2e7a11fb8fe0b5aaf826de5e",
+      "after_sha256": "1ccf42872b116f6c29898dacf38b2739b8d0d09c2e7a11fb8fe0b5aaf826de5e",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_models/src/main/java/dev/weaponmodels/HandPlacement.java",
+      "new": "modules/weapon_models/src/main/java/dev/weaponmodels/HandPlacement.java",
+      "before_sha256": "f85df7afaca185df2e3969ddfcd4d49169a38dca0dd96f3abfb09823c6ba1799",
+      "after_sha256": "f85df7afaca185df2e3969ddfcd4d49169a38dca0dd96f3abfb09823c6ba1799",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_models/src/main/java/dev/weaponmodels/ModelGeometry.java",
+      "new": "modules/weapon_models/src/main/java/dev/weaponmodels/ModelGeometry.java",
+      "before_sha256": "002cf37813b692fccc38070c0d65469cb6b08fca781ef092bc9170968c7bb60c",
+      "after_sha256": "002cf37813b692fccc38070c0d65469cb6b08fca781ef092bc9170968c7bb60c",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_models/src/main/java/dev/weaponmodels/RecoilResponse.java",
+      "new": "modules/weapon_models/src/main/java/dev/weaponmodels/RecoilResponse.java",
+      "before_sha256": "7eb729fadacdabc2478b6a9a67a38892e6fbf726450f88f30c10bfad109a017c",
+      "after_sha256": "7eb729fadacdabc2478b6a9a67a38892e6fbf726450f88f30c10bfad109a017c",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_models/src/main/java/dev/weaponmodels/ShotSpring.java",
+      "new": "modules/weapon_models/src/main/java/dev/weaponmodels/ShotSpring.java",
+      "before_sha256": "5fb791c087f372eccbb0816a9d7cc371522bcce87106377d8502ddd9e685a36e",
+      "after_sha256": "5fb791c087f372eccbb0816a9d7cc371522bcce87106377d8502ddd9e685a36e",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_models/src/main/java/dev/weaponmodels/WeaponModels.java",
+      "new": "modules/weapon_models/src/main/java/dev/weaponmodels/WeaponModels.java",
+      "before_sha256": "0eb5f663c3e72b75d15867c33f9d30c42f84cc8373e3902d028307108d90be63",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_models/src/main/java/dev/weaponmodels/WeaponPresentation.java",
+      "new": "modules/weapon_models/src/main/java/dev/weaponmodels/WeaponPresentation.java",
+      "before_sha256": "5edfd0c74c3bf26cb19eefdc1715c2c39cad0dd72cc6ae5f26ba9114bc50686f",
+      "after_sha256": "5edfd0c74c3bf26cb19eefdc1715c2c39cad0dd72cc6ae5f26ba9114bc50686f",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_models/src/main/resources/META-INF/neoforge.mods.toml",
+      "new": "modules/weapon_models/src/main/resources/META-INF/neoforge.mods.toml",
+      "before_sha256": "a1f771fdd57af2f19d37edc68e043b640c99caf3c5e4de98bd6d5518e343b210",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_models/src/test/java/dev/weaponmodels/WeaponPresentationTest.java",
+      "new": "modules/weapon_models/src/test/java/dev/weaponmodels/WeaponPresentationTest.java",
+      "before_sha256": "6f28b8e67786e65dc0f7634ee96edb06eb1675c13774e250fcfede0485212bf0",
+      "after_sha256": "f679ff3a6877cc3f855542f7b097417bd415b45381403757fa9af3a7d248a77e",
+      "action": "move_and_adjust",
+      "reason": "Adapt registration or development/test source location to internal ownership"
+    },
+    {
+      "old": "source/mods/weapon_runtime/README.md",
+      "new": "modules/weapon_runtime/README.md",
+      "before_sha256": "6819d7914993167887c4ccd025352f24adb00d03b14b62475afa99fc98f87dca",
+      "after_sha256": "6819d7914993167887c4ccd025352f24adb00d03b14b62475afa99fc98f87dca",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_runtime/build.gradle",
+      "new": "modules/weapon_runtime/build.gradle",
+      "before_sha256": "cc407de25ffebe31013e04bc6f13a1c84122a9e4fe6a277ac51acd21f39b3f21",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_runtime/src/main/java/dev/weaponruntime/WeaponCapabilities.java",
+      "new": "modules/weapon_runtime/src/main/java/dev/weaponruntime/WeaponCapabilities.java",
+      "before_sha256": "ca0c63445bf12af2e51396a188d7ea911451263fa7ac23b1987c60b5d144c136",
+      "after_sha256": "ca0c63445bf12af2e51396a188d7ea911451263fa7ac23b1987c60b5d144c136",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_runtime/src/main/java/dev/weaponruntime/WeaponRuntime.java",
+      "new": "modules/weapon_runtime/src/main/java/dev/weaponruntime/WeaponRuntime.java",
+      "before_sha256": "3f8b3f07eafd59f67ec313c30dc3c917cac93a02760053f5fd870fc67fee916c",
+      "after_sha256": "edc5e32f5b9b09045514ddfc91694923a50da43a9705f75d9c5178ce28d6ca9a",
+      "action": "move_and_adjust",
+      "reason": "Adapt registration or development/test source location to internal ownership"
+    },
+    {
+      "old": "source/mods/weapon_runtime/src/main/resources/META-INF/neoforge.mods.toml",
+      "new": "modules/weapon_runtime/src/main/resources/META-INF/neoforge.mods.toml",
+      "before_sha256": "1cc230f57bb4095977c0f9550e50d9b37b81ae46ad0e61ff36c1f58734344c2c",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/README.md",
+      "new": "modules/weapon_assembly_ui/README.md",
+      "before_sha256": "438515728d113c93593e780a9fb2ebe868f2e67230875b6e1a9f6ad5f8f60f03",
+      "after_sha256": "438515728d113c93593e780a9fb2ebe868f2e67230875b6e1a9f6ad5f8f60f03",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/build.gradle",
+      "new": "modules/weapon_assembly_ui/build.gradle",
+      "before_sha256": "91feaa9449081ab6c6821684787c482fb52e45a2a8c0ea80889ebe5fbfc5cb61",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/docs/verification.json",
+      "new": "modules/weapon_assembly_ui/docs/verification.json",
+      "before_sha256": "dde349d02be97562cd2f42aa60f30ad1e78c356700665f4cc959d6d6665f359c",
+      "after_sha256": "dde349d02be97562cd2f42aa60f30ad1e78c356700665f4cc959d6d6665f359c",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/material-authoring/ADAR-original-materials.bbmodel",
+      "new": "modules/weapon_assembly_ui/material-authoring/ADAR-original-materials.bbmodel",
+      "before_sha256": "506d781bd488be7d54224aa709992e149567235cf25cf703980ebf6c67a92641",
+      "after_sha256": "506d781bd488be7d54224aa709992e149567235cf25cf703980ebf6c67a92641",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/development/java/dev/weaponassemblyui/development/WorkbenchDemo.java",
+      "new": "modules/weapon_assembly_ui/src/development/java/dev/weaponassemblyui/development/WorkbenchDemo.java",
+      "before_sha256": "395672e02ae3257a61dbd4e1d67b2e186158d0b9dd5c880f3c8d616acc43f502",
+      "after_sha256": "94b088f603f1ee8b8f8dd73a4fb41d1d5bf4955a09f394ba6b01565604511068",
+      "action": "move_and_adjust",
+      "reason": "Adapt registration or development/test source location to internal ownership"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/development/resources/assembly-adar/catalog.json",
+      "new": "modules/weapon_assembly_ui/src/development/resources/assembly-adar/catalog.json",
+      "before_sha256": "0c4670d420b9cd03130afbd90f71558ac4dda1843e5986606a45fe73acc4da02",
+      "after_sha256": "0c4670d420b9cd03130afbd90f71558ac4dda1843e5986606a45fe73acc4da02",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/development/resources/assembly-adar/import-report.json",
+      "new": "modules/weapon_assembly_ui/src/development/resources/assembly-adar/import-report.json",
+      "before_sha256": "d14cb01db284d878f35fccf5fca9c657ef8291b03f67bffa4bb76a3dc01afbda",
+      "after_sha256": "d14cb01db284d878f35fccf5fca9c657ef8291b03f67bffa4bb76a3dc01afbda",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/development/resources/assembly-adar/manifest.json",
+      "new": "modules/weapon_assembly_ui/src/development/resources/assembly-adar/manifest.json",
+      "before_sha256": "39917881330e3cf5a96ae91c3a87ee059004f2e18aa9bcc918098c3fdcc7dbb1",
+      "after_sha256": "39917881330e3cf5a96ae91c3a87ee059004f2e18aa9bcc918098c3fdcc7dbb1",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/development/resources/assembly-adar/scene.json",
+      "new": "modules/weapon_assembly_ui/src/development/resources/assembly-adar/scene.json",
+      "before_sha256": "06ab6c3a84c9711fe5f3267bf9a528aee5768a4102b216418125afba192c8b19",
+      "after_sha256": "06ab6c3a84c9711fe5f3267bf9a528aee5768a4102b216418125afba192c8b19",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/materials/adar.json",
+      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/materials/adar.json",
+      "before_sha256": "43902b0f9067d1e6da26029db59b4a783f8e572658ebbb073353395766f5c2c8",
+      "after_sha256": "43902b0f9067d1e6da26029db59b4a783f8e572658ebbb073353395766f5c2c8",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/WeaponAssemblyUi.java",
+      "new": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/WeaponAssemblyUi.java",
+      "before_sha256": "f111f6fb151432832e8bbed51023bd595bca0b664092b48f1c60d1a3889811de",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/AssemblyMeshRenderTypes.java",
+      "new": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/AssemblyMeshRenderTypes.java",
+      "before_sha256": "7e0d1c27e1abf5aa6ce405700e93758f1d767d32aaa4756e717487ba535fdf73",
+      "after_sha256": "7e0d1c27e1abf5aa6ce405700e93758f1d767d32aaa4756e717487ba535fdf73",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/AssemblyViewport.java",
+      "new": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/AssemblyViewport.java",
+      "before_sha256": "71a48df41cfe010c9cecd4afaa04e27a2b605ad6e449e50cad469a1c428b41f2",
+      "after_sha256": "71a48df41cfe010c9cecd4afaa04e27a2b605ad6e449e50cad469a1c428b41f2",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/AttachmentCard.java",
+      "new": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/AttachmentCard.java",
+      "before_sha256": "9c5e4f69fa1b273c897e79371f707c5b01ced7f8c07f5e5a479db175b0c7a8e2",
+      "after_sha256": "9c5e4f69fa1b273c897e79371f707c5b01ced7f8c07f5e5a479db175b0c7a8e2",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/SlotLayout.java",
+      "new": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/SlotLayout.java",
+      "before_sha256": "321f0a7a0434c832e21f99e4522b5ef844109d76866f2da42cbda7e898f25c02",
+      "after_sha256": "321f0a7a0434c832e21f99e4522b5ef844109d76866f2da42cbda7e898f25c02",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/WorkbenchCamera.java",
+      "new": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/WorkbenchCamera.java",
+      "before_sha256": "bdb70b084601cbb97e791418f5af506256ed6cab5db739e366aa9c5ba2f43a6e",
+      "after_sha256": "bdb70b084601cbb97e791418f5af506256ed6cab5db739e366aa9c5ba2f43a6e",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/WorkbenchScreen.java",
+      "new": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/WorkbenchScreen.java",
+      "before_sha256": "566c86e77fa02f9892aff68fc92704733e2729adaf4b329af604746a95b73da6",
+      "after_sha256": "566c86e77fa02f9892aff68fc92704733e2729adaf4b329af604746a95b73da6",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/WorkbenchTimings.java",
+      "new": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/WorkbenchTimings.java",
+      "before_sha256": "4baeac275a6a23928421529b6af30a0ee05ed41a717ee1efc76f1ae717f3c4d6",
+      "after_sha256": "4baeac275a6a23928421529b6af30a0ee05ed41a717ee1efc76f1ae717f3c4d6",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/session/AssemblySession.java",
+      "new": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/session/AssemblySession.java",
+      "before_sha256": "a3121b7b8a2cf823dda8b8c63f1990538b4556c6b74319f624466fab3d9b222c",
+      "after_sha256": "a3121b7b8a2cf823dda8b8c63f1990538b4556c6b74319f624466fab3d9b222c",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/session/WorkbenchAccess.java",
+      "new": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/session/WorkbenchAccess.java",
+      "before_sha256": "37217cc4c5a8b4e0e142a9168c3d849d5ff1c87f7b2a499113c252c6e03a89a8",
+      "after_sha256": "37217cc4c5a8b4e0e142a9168c3d849d5ff1c87f7b2a499113c252c6e03a89a8",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/resources/META-INF/neoforge.mods.toml",
+      "new": "modules/weapon_assembly_ui/src/main/resources/META-INF/neoforge.mods.toml",
+      "before_sha256": "6c80ec6a12e2b14e7aee647cde3d95b598c22b11366cb3097e7e25a43a784fa1",
+      "after_sha256": null,
+      "action": "retire",
+      "reason": "Replace independent Gradle/Mod registration with single TaCZ owner"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/lang/en_us.json",
+      "new": "modules/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/lang/en_us.json",
+      "before_sha256": "11b66866cd458825a36bf28c1effe30dd34e27e13dee0e05907309c01c87002e",
+      "after_sha256": "11b66866cd458825a36bf28c1effe30dd34e27e13dee0e05907309c01c87002e",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/lang/zh_cn.json",
+      "new": "modules/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/lang/zh_cn.json",
+      "before_sha256": "391bf1799c72aa386bf823d8fc3acdeb5f21ff794c9f4e6d2b28a3d91e83f638",
+      "after_sha256": "391bf1799c72aa386bf823d8fc3acdeb5f21ff794c9f4e6d2b28a3d91e83f638",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/materials/basic.json",
+      "new": "modules/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/materials/basic.json",
+      "before_sha256": "5f35fc6ec13e0feeccb26a235b2e7d4a1a3ffa7043be80db2f80cd32693e1484",
+      "after_sha256": "5f35fc6ec13e0feeccb26a235b2e7d4a1a3ffa7043be80db2f80cd32693e1484",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/textures/materials/metal.png",
+      "new": "modules/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/textures/materials/metal.png",
+      "before_sha256": "426b07275eda86cbf2c471512d9ffbd767fefb637a7e15cc7391bd521334750b",
+      "after_sha256": "426b07275eda86cbf2c471512d9ffbd767fefb637a7e15cc7391bd521334750b",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/textures/materials/polymer.png",
+      "new": "modules/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/textures/materials/polymer.png",
+      "before_sha256": "4ad2a5fdc3d210b796a015992977341750c04ed3fd32c14aec458822e1450686",
+      "after_sha256": "4ad2a5fdc3d210b796a015992977341750c04ed3fd32c14aec458822e1450686",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/textures/materials/rubber.png",
+      "new": "modules/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/textures/materials/rubber.png",
+      "before_sha256": "8d88f614a53c18cd143cbd7521402f54bd8a35f5dbfb5deb64767321670e6348",
+      "after_sha256": "8d88f614a53c18cd143cbd7521402f54bd8a35f5dbfb5deb64767321670e6348",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/textures/materials/wood.png",
+      "new": "modules/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/textures/materials/wood.png",
+      "before_sha256": "2fb0dafe9e7b1d9e2e1840f097663a66b3dfb2af446dd657b6a420bc20d953fe",
+      "after_sha256": "2fb0dafe9e7b1d9e2e1840f097663a66b3dfb2af446dd657b6a420bc20d953fe",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/AdarModelTest.java",
+      "new": "modules/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/AdarModelTest.java",
+      "before_sha256": "e0873b1bebd01bc35fdf4e54066e8145154651eb74ba32ace77e673cdf879c18",
+      "after_sha256": "e0873b1bebd01bc35fdf4e54066e8145154651eb74ba32ace77e673cdf879c18",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/AssemblyMaterialsTest.java",
+      "new": "modules/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/AssemblyMaterialsTest.java",
+      "before_sha256": "f095db8b7f16be73c98d96aa2ffb5851bd152a15e1c04134330bf3393d756821",
+      "after_sha256": "f095db8b7f16be73c98d96aa2ffb5851bd152a15e1c04134330bf3393d756821",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/ModelGeometryTest.java",
+      "new": "modules/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/ModelGeometryTest.java",
+      "before_sha256": "76295fcace89c807c044c5b7422b386293b33aafa644d2bf9f7e22d1a30fc0fa",
+      "after_sha256": "76295fcace89c807c044c5b7422b386293b33aafa644d2bf9f7e22d1a30fc0fa",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/SlotLayoutTest.java",
+      "new": "modules/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/SlotLayoutTest.java",
+      "before_sha256": "0cac3e387a748a1609ab2a756568b41173c643c2666d0393b6db895af1ee093e",
+      "after_sha256": "0cac3e387a748a1609ab2a756568b41173c643c2666d0393b6db895af1ee093e",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/StableSlotLayoutTest.java",
+      "new": "modules/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/StableSlotLayoutTest.java",
+      "before_sha256": "f83c2392871183210e4ca76a4cbb4014e70b38afd5751addacdb05c5d24cc2b1",
+      "after_sha256": "f83c2392871183210e4ca76a4cbb4014e70b38afd5751addacdb05c5d24cc2b1",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/WorkbenchCameraTest.java",
+      "new": "modules/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/WorkbenchCameraTest.java",
+      "before_sha256": "1e491971261889b83da5354980c07f1e4aa9ec6e56b5ab12b45e9615698220fe",
+      "after_sha256": "1e491971261889b83da5354980c07f1e4aa9ec6e56b5ab12b45e9615698220fe",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/session/AssemblySessionTest.java",
+      "new": "modules/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/session/AssemblySessionTest.java",
+      "before_sha256": "c2c2ab4135b120747f05ff9889fd74d64ad9db2197a0f840c79fa4a71ce49f69",
+      "after_sha256": "c2c2ab4135b120747f05ff9889fd74d64ad9db2197a0f840c79fa4a71ce49f69",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/src/test/resources/layout-mount-samples.json",
+      "new": "modules/weapon_assembly_ui/src/test/resources/layout-mount-samples.json",
+      "before_sha256": "47a61534ba7c4c1ffbb31f0690fd71af1ea561a53d3bfd3d9891bcd8daacc490",
+      "after_sha256": "47a61534ba7c4c1ffbb31f0690fd71af1ea561a53d3bfd3d9891bcd8daacc490",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/tools/.gitignore",
+      "new": "modules/weapon_assembly_ui/tools/.gitignore",
+      "before_sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "after_sha256": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/tools/adar-regions.json",
+      "new": "modules/weapon_assembly_ui/tools/adar-regions.json",
+      "before_sha256": "59adc3377aaa0d29f13de8d01a03b0d40d57b7dcdd28ad68b4213cbb2e13d479",
+      "after_sha256": "59adc3377aaa0d29f13de8d01a03b0d40d57b7dcdd28ad68b4213cbb2e13d479",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/tools/export_material_project.py",
+      "new": "modules/weapon_assembly_ui/tools/export_material_project.py",
+      "before_sha256": "2892e75918fc63267f87853d0b3dabbb4646dc5b7b2b99293c5fdf358dcdb0f4",
+      "after_sha256": "2892e75918fc63267f87853d0b3dabbb4646dc5b7b2b99293c5fdf358dcdb0f4",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/tools/generate_materials.py",
+      "new": "modules/weapon_assembly_ui/tools/generate_materials.py",
+      "before_sha256": "a6072b259307b3506e5588a611745be87f0f0d132d50032632e6a54e275defc4",
+      "after_sha256": "a6072b259307b3506e5588a611745be87f0f0d132d50032632e6a54e275defc4",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/tools/import_adar.py",
+      "new": "modules/weapon_assembly_ui/tools/import_adar.py",
+      "before_sha256": "af74abc54ed1a89541b1c9b1bd16af60c2f00275d9260a2303f8bef391247764",
+      "after_sha256": "51b3d49cc85aad5305d8a30245fa3b22043c30394a4de3bec548a7216b84f85c",
+      "action": "move_and_adjust",
+      "reason": "Adapt registration or development/test source location to internal ownership"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/tools/import_material_project.py",
+      "new": "modules/weapon_assembly_ui/tools/import_material_project.py",
+      "before_sha256": "d78e785b8f39e28a60fda3c99ca020123ff7cd7ef7ac4ee250bd3d275f59ed8d",
+      "after_sha256": "d78e785b8f39e28a60fda3c99ca020123ff7cd7ef7ac4ee250bd3d275f59ed8d",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/tools/material-provenance.json",
+      "new": "modules/weapon_assembly_ui/tools/material-provenance.json",
+      "before_sha256": "ed098f6d74b9fd42c57e59341b6458cc6ff4679b79bcae928d0ac97aebf2e612",
+      "after_sha256": "ed098f6d74b9fd42c57e59341b6458cc6ff4679b79bcae928d0ac97aebf2e612",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/tools/test_material_pipeline.py",
+      "new": "modules/weapon_assembly_ui/tools/test_material_pipeline.py",
+      "before_sha256": "54790c081be73585d81a5187120619dfe00e9cb25334ff8dcca92aa0d67ab32f",
+      "after_sha256": "54790c081be73585d81a5187120619dfe00e9cb25334ff8dcca92aa0d67ab32f",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    },
+    {
+      "old": "source/mods/weapon_assembly_ui/材质使用说明.md",
+      "new": "modules/weapon_assembly_ui/材质使用说明.md",
+      "before_sha256": "d9d75ca26a89330ebf4056c17c16de620bd6c741bcde61ffe5762c324ee96f3a",
+      "after_sha256": "d9d75ca26a89330ebf4056c17c16de620bd6c741bcde61ffe5762c324ee96f3a",
+      "action": "move",
+      "reason": "Preserve source, resource identity, tests and attribution"
+    }
+  ],
+  "retained_ids": [
+    "weapon_runtime:profile",
+    "all existing weapon_assembly_ui resource identifiers"
+  ],
+  "runtime_owner": "tacz",
+  "three_gun_production_owner": "NewMod:tactical_tacz_adapter"
+}
