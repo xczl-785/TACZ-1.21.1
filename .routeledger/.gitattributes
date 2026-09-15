@@ -1,0 +1,8 @@
+*.json text eol=lf
+**/*.json text eol=lf
+events/** linguist-generated=true
+ordinary_write_receipts/** linguist-generated=true
+approval_artifacts/** linguist-generated=true
+pending_operations/** linguist-generated=true
+operations/** linguist-generated=true
+audit_packs/** linguist-generated=true
