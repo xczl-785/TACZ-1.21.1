@@ -33,7 +33,7 @@
 | 原弹药、资源与清理校验 | 86 弹、15 枪、24 口径效果索引、85 配件保护通过；固定退弹政策测试通过 |
 | 客户端与服务端实机 | **未启动，未验收** |
 
-最终版本、源码提交、SHA-512 与 NewMod 接入对应关系以[运行证据](weapon-integration-evidence.json)及 NewMod `source/mods/tacz_adapter/dependency-lock.json` 为准。
+最终源码提交 `3b276985` → 制品 `1.1.8-hotfix-r6-newmod.3b276985` → NewMod 接入提交 `3ef90e9`。SHA-512 与完整对应关系以[运行证据](weapon-integration-evidence.json)及 NewMod `source/mods/tacz_adapter/dependency-lock.json` 为准。
 
 构建中既有 NeoForge 过时 API 警告不影响通过。初次迁入测试因意外继承宿主可选集成依赖而离线解析失败，已将算法测试类路径独立并通过最终验证；未改业务逻辑规避失败。补查材质工具时发现原白模路径失效，已增加显式输入路径配置，并在实际归档原件上通过三项测试；未复制或修改模型。上游 `.gitignore` 的全局 test 规则也已对内部模块测试目录解除，全部测试与夹具已纳入 Git。
 

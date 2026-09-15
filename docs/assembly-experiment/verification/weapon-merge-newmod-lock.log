@@ -1,0 +1,53 @@
+> Task :tarkov_content:createMinecraftArtifacts UP-TO-DATE
+> Task :character:createMinecraftArtifacts UP-TO-DATE
+> Task :tactical:createMinecraftArtifacts UP-TO-DATE
+> Task :tacz_adapter:createMinecraftArtifacts UP-TO-DATE
+> Task :foundation:createMinecraftArtifacts UP-TO-DATE
+> Task :tactical:generateModMetadata UP-TO-DATE
+> Task :character:processResources UP-TO-DATE
+> Task :character:jarJar NO-SOURCE
+> Task :combat:createMinecraftArtifacts UP-TO-DATE
+> Task :tactical:processResources UP-TO-DATE
+> Task :tactical:jarJar NO-SOURCE
+> Task :combat:processResources UP-TO-DATE
+> Task :combat:jarJar NO-SOURCE
+> Task :tarkov_content:processResources UP-TO-DATE
+> Task :tarkov_content:jarJar NO-SOURCE
+> Task :foundation:compileJava UP-TO-DATE
+> Task :foundation:generateModMetadata UP-TO-DATE
+> Task :foundation:processResources UP-TO-DATE
+> Task :foundation:classes UP-TO-DATE
+> Task :foundation:jarJar NO-SOURCE
+> Task :foundation:jar UP-TO-DATE
+> Task :tactical:compileJava UP-TO-DATE
+> Task :tarkov_content:compileJava UP-TO-DATE
+> Task :tarkov_content:classes UP-TO-DATE
+> Task :tactical:classes UP-TO-DATE
+> Task :tactical:jar UP-TO-DATE
+> Task :tarkov_content:jar UP-TO-DATE
+> Task :character:compileJava UP-TO-DATE
+> Task :character:classes UP-TO-DATE
+> Task :character:jar UP-TO-DATE
+> Task :combat:compileJava UP-TO-DATE
+> Task :combat:classes UP-TO-DATE
+> Task :combat:jar UP-TO-DATE
+> Task :tacz_adapter:verifyTaczDependency
+> Task :tacz_adapter:compileJava UP-TO-DATE
+
+> Task :tacz_adapter:verifyConfiguredWeapons
+Configured weapons: 3; physical items: 37; names, preset, material and registration resources valid
+
+> Task :tacz_adapter:processResources UP-TO-DATE
+> Task :tacz_adapter:classes UP-TO-DATE
+> Task :tacz_adapter:jarJar NO-SOURCE
+> Task :tacz_adapter:jar UP-TO-DATE
+
+> Task :tacz_adapter:verifyWeaponRuntime
+WEAPON_RUNTIME PASS: 72 classes have one TaCZ owner; no four legacy Mod IDs
+
+> Task :tacz_adapter:downloadAssets UP-TO-DATE
+> Task :tacz_adapter:writeClientLegacyClasspath UP-TO-DATE
+> Task :tacz_adapter:prepareClientRun UP-TO-DATE
+
+BUILD SUCCESSFUL in 1s
+32 actionable tasks: 3 executed, 29 up-to-date

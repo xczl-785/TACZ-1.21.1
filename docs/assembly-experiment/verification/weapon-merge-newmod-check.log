@@ -1,0 +1,128 @@
+> Task :tactical:createMinecraftArtifacts UP-TO-DATE
+> Task :character:createMinecraftArtifacts UP-TO-DATE
+> Task :combat:createMinecraftArtifacts UP-TO-DATE
+> Task :tarkov_content:createMinecraftArtifacts UP-TO-DATE
+> Task :vanilla_tactical_adapter:createMinecraftArtifacts UP-TO-DATE
+> Task :raid_gameplay:createMinecraftArtifacts UP-TO-DATE
+> Task :foundation:createMinecraftArtifacts UP-TO-DATE
+> Task :firearms:createMinecraftArtifacts UP-TO-DATE
+> Task :character:processResources UP-TO-DATE
+> Task :tactical:generateModMetadata UP-TO-DATE
+> Task :tacz_adapter:createMinecraftArtifacts UP-TO-DATE
+> Task :examples:createMinecraftArtifacts UP-TO-DATE
+> Task :raid_gameplay:processResources UP-TO-DATE
+> Task :combat:processResources UP-TO-DATE
+> Task :raid_gameplay:processDevelopmentResources UP-TO-DATE
+> Task :character:jarJar NO-SOURCE
+> Task :combat:processDevelopmentResources UP-TO-DATE
+> Task :raid_gameplay:jarJar NO-SOURCE
+> Task :examples:processResources UP-TO-DATE
+> Task :combat:jarJar NO-SOURCE
+> Task :examples:processDevelopmentResources UP-TO-DATE
+> Task :tactical:processResources UP-TO-DATE
+> Task :examples:jarJar NO-SOURCE
+> Task :vanilla_tactical_adapter:processResources UP-TO-DATE
+> Task :vanilla_tactical_adapter:jarJar NO-SOURCE
+> Task :tactical:processDevelopmentResources UP-TO-DATE
+> Task :tactical:jarJar NO-SOURCE
+> Task :tarkov_content:processResources UP-TO-DATE
+> Task :tarkov_content:processDevelopmentResources UP-TO-DATE
+> Task :tarkov_content:jarJar NO-SOURCE
+> Task :foundation:compileJava UP-TO-DATE
+> Task :foundation:generateModMetadata UP-TO-DATE
+> Task :foundation:processResources UP-TO-DATE
+> Task :foundation:classes UP-TO-DATE
+> Task :foundation:jarJar NO-SOURCE
+> Task :foundation:jar UP-TO-DATE
+> Task :tactical:compileJava UP-TO-DATE
+> Task :tactical:classes UP-TO-DATE
+> Task :examples:compileJava UP-TO-DATE
+> Task :examples:classes UP-TO-DATE
+> Task :tarkov_content:compileJava UP-TO-DATE
+> Task :tarkov_content:classes UP-TO-DATE
+> Task :tactical:jar UP-TO-DATE
+> Task :examples:compileDevelopmentJava UP-TO-DATE
+> Task :examples:developmentClasses UP-TO-DATE
+> Task :vanilla_tactical_adapter:compileJava UP-TO-DATE
+> Task :vanilla_tactical_adapter:classes UP-TO-DATE
+> Task :raid_gameplay:compileJava UP-TO-DATE
+> Task :raid_gameplay:classes UP-TO-DATE
+> Task :examples:jar UP-TO-DATE
+> Task :vanilla_tactical_adapter:jar UP-TO-DATE
+> Task :raid_gameplay:jar UP-TO-DATE
+> Task :tarkov_content:compileDevelopmentJava UP-TO-DATE
+> Task :tarkov_content:developmentClasses UP-TO-DATE
+> Task :tarkov_content:jar UP-TO-DATE
+> Task :character:compileJava UP-TO-DATE
+> Task :character:classes UP-TO-DATE
+> Task :character:jar UP-TO-DATE
+> Task :tactical:compileDevelopmentJava UP-TO-DATE
+> Task :tactical:developmentClasses UP-TO-DATE
+> Task :combat:compileJava UP-TO-DATE
+> Task :combat:classes UP-TO-DATE
+> Task :raid_gameplay:compileDevelopmentJava UP-TO-DATE
+> Task :raid_gameplay:developmentClasses UP-TO-DATE
+> Task :combat:compileDevelopmentJava UP-TO-DATE
+> Task :combat:developmentClasses UP-TO-DATE
+> Task :combat:jar UP-TO-DATE
+> Task :tacz_adapter:verifyTaczDependency
+
+> Task :verifyLocalization
+Localization: 19 language pairs, 1528 English entries, 0 errors
+
+> Task :testLocalizationChecks
+....
+----------------------------------------------------------------------
+Ran 4 tests in 0.009s
+
+OK
+
+> Task :tacz_adapter:compileJava UP-TO-DATE
+> Task :firearms:verifyIndependence
+> Task :firearms:compileJava UP-TO-DATE
+> Task :firearms:processResources UP-TO-DATE
+> Task :firearms:classes UP-TO-DATE
+> Task :firearms:jarJar NO-SOURCE
+> Task :firearms:jar UP-TO-DATE
+> Task :firearms:verifyArtifact
+
+> Task :verifyDevelopmentCommands
+Development command catalog: 14 registrars verified
+
+> Task :verifyModuleBoundaries
+
+> Task :tacz_adapter:verifyConfiguredWeapons
+Configured weapons: 3; physical items: 37; names, preset, material and registration resources valid
+
+> Task :tacz_adapter:processResources
+> Task :tacz_adapter:classes
+> Task :tacz_adapter:jarJar NO-SOURCE
+> Task :tacz_adapter:jar
+> Task :tacz_adapter:compileDevelopmentJava UP-TO-DATE
+> Task :tacz_adapter:processDevelopmentResources UP-TO-DATE
+> Task :tacz_adapter:developmentClasses UP-TO-DATE
+> Task :tacz_adapter:compileTestJava UP-TO-DATE
+> Task :tacz_adapter:downloadAssets UP-TO-DATE
+> Task :tacz_adapter:writeNeoForgeTestClasspath UP-TO-DATE
+> Task :verifyDistribution
+> Task :tacz_adapter:prepareNeoForgeTestFiles UP-TO-DATE
+> Task :tacz_adapter:processTestResources NO-SOURCE
+> Task :tacz_adapter:testClasses UP-TO-DATE
+> Task :tacz_adapter:test
+
+> Task :tacz_adapter:verifyAdarIconRenderer
+............
+----------------------------------------------------------------------
+Ran 12 tests in 1.337s
+
+OK
+
+> Task :tacz_adapter:verifyWeaponRuntime
+WEAPON_RUNTIME PASS: 72 classes have one TaCZ owner; no four legacy Mod IDs
+
+> Task :tacz_adapter:check
+> Task :tacz_adapter:writeClientLegacyClasspath UP-TO-DATE
+> Task :tacz_adapter:prepareClientRun UP-TO-DATE
+
+BUILD SUCCESSFUL in 10s
+72 actionable tasks: 14 executed, 58 up-to-date

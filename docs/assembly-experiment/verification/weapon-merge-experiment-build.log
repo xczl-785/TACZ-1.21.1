@@ -1,0 +1,47 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :verifyPublicDependency
+> Task :compileJava UP-TO-DATE
+> Task :processResources
+> Task :classes
+> Task :jarJar UP-TO-DATE
+> Task :jar
+> Task :sourcesJar
+> Task :assemble
+> Task :compilePureJava UP-TO-DATE
+> Task :compileTestJava NO-SOURCE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :test NO-SOURCE
+> Task :compileUiDevelopmentJava UP-TO-DATE
+> Task :processUiDevelopmentResources UP-TO-DATE
+> Task :uiDevelopmentClasses UP-TO-DATE
+
+> Task :verifyWeaponModules
+WEAPON_MODULES PASS: 24 production sources, four internal boundaries, persistent profile identity, unchanged resources
+
+> Task :compileWeapon_assemblyTestJava UP-TO-DATE
+> Task :processWeapon_assemblyTestResources UP-TO-DATE
+> Task :weapon_assemblyTestClasses UP-TO-DATE
+> Task :weapon_assemblyTest
+> Task :compileWeapon_assembly_uiTestJava UP-TO-DATE
+> Task :processWeapon_assembly_uiTestResources UP-TO-DATE
+> Task :weapon_assembly_uiTestClasses UP-TO-DATE
+> Task :weapon_assembly_uiTest
+> Task :compileWeapon_modelsTestJava UP-TO-DATE
+> Task :processWeapon_modelsTestResources NO-SOURCE
+> Task :weapon_modelsTestClasses UP-TO-DATE
+> Task :weapon_modelsTest
+> Task :compileWeapon_runtimeTestJava NO-SOURCE
+> Task :processWeapon_runtimeTestResources NO-SOURCE
+> Task :weapon_runtimeTestClasses UP-TO-DATE
+> Task :weapon_runtimeTest NO-SOURCE
+> Task :check
+> Task :build
+> Task :downloadAssets UP-TO-DATE
+> Task :writeAssemblyClientLegacyClasspath UP-TO-DATE
+> Task :prepareAssemblyClientRun UP-TO-DATE
+
+BUILD SUCCESSFUL in 11s
+22 actionable tasks: 8 executed, 14 up-to-date

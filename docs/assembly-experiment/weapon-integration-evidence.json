@@ -1,0 +1,68 @@
+{
+  "date": "2026-09-15",
+  "status": "第一项工程完成，待主控复核与用户验收",
+  "source_commit": "3b276985ba1f8bc10ccec0602d99d03c288bb730",
+  "version": "1.1.8-hotfix-r6-newmod.3b276985",
+  "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.3b276985.jar",
+  "sha512": "21c368498ff5572caf8807626b9b943a5208e57ae230c0029d7870c2553f035f9b7b90087bd5809168ebbc99d7c9c6b868cbcb266930126376572d5d6f445618",
+  "newmod_baseline": "94c31d5921a1a94edc79212e50bf397f53737dd0",
+  "experiment_baseline": "5fc2f4af74359bf73e65db6dbc5a2191943bed43",
+  "integration_commit": "3ef90e9f79c3544b5c2b5b5a8b863df66797c11f",
+  "public_dependency": "item_foundation remains external; compiled against locked NewMod 94c31d59 artifact",
+  "java_tests": {
+    "assembly": 27,
+    "models": 9,
+    "ui": 33,
+    "adapter": 2,
+    "failures": 0,
+    "errors": 0
+  },
+  "python_tests": {
+    "adapter_pipeline": 12,
+    "material_roundtrip": 3,
+    "failures": 0
+  },
+  "final_experiment_build": "build prepareAssemblyClientRun --offline -Pmod_version=1.1.8-hotfix-r6-newmod.3b276985; BUILD SUCCESSFUL in 11s; 22 tasks",
+  "final_newmod_command": "JAVA_HOME=<JDK21> PYTHONDONTWRITEBYTECODE=1 ./source/gradlew -p source :tacz_adapter:check :tacz_adapter:developmentClasses :tacz_adapter:prepareClientRun verifyModuleBoundaries verifyDistribution verifyLocalization testLocalizationChecks verifyDevelopmentCommands --offline --no-configuration-cache --console=plain",
+  "final_newmod_result": "BUILD SUCCESSFUL in 10s; 72 tasks; 14 executed, 58 up-to-date",
+  "preservation": {
+    "rounds": 86,
+    "guns": 15,
+    "attachments": 85,
+    "caliber_effect_indices": 24,
+    "original_jar_resources_compared": 1986,
+    "weapon_runtime_classes_single_owner": 72,
+    "profile_id": "weapon_runtime:profile",
+    "firearms_and_public_modules_changed": false,
+    "adapter_production_java_or_three_gun_content_changed": false
+  },
+  "previous_tacz": {
+    "project": "xczl-785/TACZ-1.21.1",
+    "version": "1.1.8-hotfix-r6-newmod.69b1a3af",
+    "source_commit": "69b1a3afc601c58a9711a08a7d11fb76629ced8d",
+    "source_branch": "experiment/standalone",
+    "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.69b1a3af.jar",
+    "sha512": "dcc5d84fccfe929fa4ed7897aee63fb3540ba15f82a42ccf757fcb86703c78b3502664e7268bf9bb3d271e030fe7d8b83e2520d06ddf623edd330fe4669366d2",
+    "build_command": "bash gradlew build --offline -Pmod_version=1.1.8-hotfix-r6-newmod.69b1a3af",
+    "verification": "2026-09-15: experiment build and resource/Jar verification passed; NewMod verifyTaczDependency, main/development compilation, resource processing and prepareClientRun passed; runtimeClasspath resolves exactly this TaCZ artifact; no game launched; owner acceptance pending",
+    "source_checkout": "../TACZ-1.21.1-experiments"
+  },
+  "game_launched": false,
+  "worlds_modified": false,
+  "acceptance": "owner_pending",
+  "rollback": "Revert this complete NewMod integration commit to restore all four source modules, run declarations and old dependency lock; switching Jar alone is insufficient",
+  "source_branch": "experiment/standalone",
+  "newmod_branch": "codex/item-framework-packaging",
+  "daily_drop_in_mod_jars": 0,
+  "committed_migrated_files_and_fixtures": 141,
+  "temporary_refund_policy_cases": 1505,
+  "selected_content_policy_cases": 232,
+  "historical_resource_protection_entries": 233,
+  "material_test_command": "ADAR_MODEL_PACK='/Volumes/新加盘/BlockBenchAndTa rkov/blockbench-tarkov-test/assets/history/像素资产/production-components/adar-20260913' PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s modules/weapon_assembly_ui/tools -p 'test_*.py'",
+  "source_artifact_sha512_verified": true,
+  "final_logs": {
+    "experiment-build": "docs/assembly-experiment/verification/weapon-merge-experiment-build.log",
+    "newmod-check": "docs/assembly-experiment/verification/weapon-merge-newmod-check.log",
+    "newmod-lock": "docs/assembly-experiment/verification/weapon-merge-newmod-lock.log"
+  }
+}
