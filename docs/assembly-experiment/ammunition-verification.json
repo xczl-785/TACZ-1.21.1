@@ -1,0 +1,45 @@
+{
+  "date": "2026-09-15",
+  "baseline_commit": "61ef39152c1cf7658a1f499c546c939455a2b284",
+  "build": {
+    "command": "JAVA_HOME=/opt/homebrew/opt/openjdk@21/libexec/openjdk.jdk/Contents/Home bash gradlew build --rerun-tasks --no-build-cache",
+    "result": "BUILD SUCCESSFUL in 10s",
+    "tasks": "6 actionable tasks: 6 executed",
+    "tests": "test NO-SOURCE; no unit test suite claimed"
+  },
+  "checks": [
+    {
+      "check": "ammunition_chain_and_jar",
+      "exit_code": 0,
+      "output": "{\n  \"result\": \"PASS\",\n  \"tarkov_rounds\": 86,\n  \"tarkov_calibers\": 12,\n  \"guns\": 15,\n  \"gun_calibers\": 9,\n  \"native_indices\": 24,\n  \"deleted_orphan_images\": 2,\n  \"jar_resources_compared\": 2073,\n  \"runtime_code_unchanged\": true,\n  \"client_acceptance\": \"owner_pending\"\n}"
+    },
+    {
+      "check": "retained_guns_and_policy",
+      "exit_code": 0,
+      "output": "PASS: 15 guns, 85 consumed attachments, 1497 deletions, hashes, explicit references checked (historical workstation exception applies only before its removal), 232 Java policy cases"
+    },
+    {
+      "check": "historical_protection_and_jar",
+      "exit_code": 0,
+      "output": "EXTRA_CONTENT PASS: 221 deleted files; 231 historic protected files unchanged; 2 orphan images retired by successor ledger"
+    },
+    {
+      "check": "ammunition_generator",
+      "exit_code": 0,
+      "output": "Ammunition resources OK"
+    }
+  ],
+  "standalone_reload": {
+    "evidence": "source and javap of freshly compiled classes",
+    "tarkov_ammo_implements_i_ammo": false,
+    "native_ammo_match_bytecode": "iconst_0; ireturn",
+    "survival_physical_reload": "not connected without adapter; unchanged by cleanup"
+  },
+  "client_acceptance": "owner_pending",
+  "game_launched": false,
+  "artifact": {
+    "path": "build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar",
+    "sha256": "4248c1b0ced5f527179d82255137cf932f4c8b6d83af9ea449ee7b92d8b82cfb",
+    "size_bytes": 25818544
+  }
+}
