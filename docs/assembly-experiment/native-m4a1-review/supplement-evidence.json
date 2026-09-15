@@ -1,0 +1,846 @@
+{
+  "date": "2026-09-16",
+  "baseline": "19f2533af95090875fab40a3f54c474731d7567b",
+  "effects": {
+    "ammo_mod_fmj": {
+      "data": {
+        "weight": 0.6,
+        "ads": {
+          "addend": 0.02
+        },
+        "pierce": {
+          "function": "if (x > 2) then y = x + 2 else y = x end"
+        },
+        "armor_ignore": {
+          "function": "if (x > 0.5) then y = x*1.5 else y = x*1.75 end"
+        },
+        "damage": {
+          "multiplier": 0.9
+        },
+        "ammo_speed": {
+          "multiplier": 1.1
+        },
+        "extended_mag_level": 3
+      },
+      "display": {
+        "slot": "tacz:attachment/slot/ammo_mod_fmj",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      },
+      "m4a1Capacity": 60,
+      "isolatedNativeCacheExample": {
+        "weight": 4.1,
+        "ads": 0.18,
+        "damageAtNearRange": 5.85,
+        "armorIgnore": 0.35,
+        "pierceAfterClamp": 1
+      },
+      "validM855Snapshot": {
+        "id": "tarkov_content:ammo_54527a984bdc2d4e668b4567",
+        "fleshDamage": 54,
+        "penetrationPower": 31,
+        "armorDamage": 37,
+        "initialSpeed": 922,
+        "projectileCount": 1
+      }
+    },
+    "ammo_mod_hp": {
+      "data": {
+        "weight": 0.6,
+        "ads": {
+          "addend": 0.02
+        },
+        "armor_ignore": {
+          "multiplier": 0.5
+        },
+        "damage": {
+          "multiplier": 1.3
+        },
+        "ammo_speed": {
+          "multiplier": 0.9
+        },
+        "pierce": {
+          "multiplier": 0
+        },
+        "extended_mag_level": 3
+      },
+      "display": {
+        "slot": "tacz:attachment/slot/ammo_mod_hp",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      },
+      "m4a1Capacity": 60,
+      "isolatedNativeCacheExample": {
+        "weight": 4.1,
+        "ads": 0.18,
+        "damageAtNearRange": 8.45,
+        "armorIgnore": 0.1,
+        "pierceAfterClamp": 1
+      },
+      "validM855Snapshot": {
+        "id": "tarkov_content:ammo_54527a984bdc2d4e668b4567",
+        "fleshDamage": 54,
+        "penetrationPower": 31,
+        "armorDamage": 37,
+        "initialSpeed": 922,
+        "projectileCount": 1
+      }
+    },
+    "ammo_mod_i": {
+      "data": {
+        "weight": 0.6,
+        "ads": {
+          "addend": 0.02
+        },
+        "ignite": {
+          "entity": true
+        },
+        "armor_ignore": {
+          "multiplier": 0.8
+        },
+        "damage": {
+          "multiplier": 1.1
+        },
+        "ammo_speed": {
+          "multiplier": 1.0
+        },
+        "extended_mag_level": 3
+      },
+      "display": {
+        "slot": "tacz:attachment/slot/ammo_mod_i",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      },
+      "m4a1Capacity": 60,
+      "isolatedNativeCacheExample": {
+        "weight": 4.1,
+        "ads": 0.18,
+        "damageAtNearRange": 7.15,
+        "armorIgnore": 0.16000000000000003,
+        "pierceAfterClamp": 1
+      },
+      "validM855Snapshot": {
+        "id": "tarkov_content:ammo_54527a984bdc2d4e668b4567",
+        "fleshDamage": 54,
+        "penetrationPower": 31,
+        "armorDamage": 37,
+        "initialSpeed": 922,
+        "projectileCount": 1
+      }
+    }
+  },
+  "lod": {
+    "highBones": 140,
+    "lowBones": 28,
+    "lowCubes": 75,
+    "dispositions": {
+      "replace_in_derived_lod": 28,
+      "candidate_reuse_after_binding": 47
+    },
+    "cubeLedger": [
+      {
+        "bone": "ld_handguard",
+        "cubeIndex": 0,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "5 mix collar/handguard and lack two explicit types",
+        "cubeSha256": "f71b39721fd217ec15ec0b67dedc04a02fddf17865028e499b0b67b170566264"
+      },
+      {
+        "bone": "ld_handguard",
+        "cubeIndex": 1,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "5 mix collar/handguard and lack two explicit types",
+        "cubeSha256": "fe26b94759fe2c2e3bec6dc5901f47a43f2294135bb41e49ea4069d4def83d92"
+      },
+      {
+        "bone": "ld_handguard",
+        "cubeIndex": 2,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "5 mix collar/handguard and lack two explicit types",
+        "cubeSha256": "d1c3ea7bcdea3201ed75390fcd65d78be8ffce57ae63d3d1d0e15323e517b1cc"
+      },
+      {
+        "bone": "ld_handguard",
+        "cubeIndex": 3,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "5 mix collar/handguard and lack two explicit types",
+        "cubeSha256": "b2a3f238e196e45d6d9946b693c5ba3ed4e1fd7238da04eb43b2af602cd32b1a"
+      },
+      {
+        "bone": "ld_handguard",
+        "cubeIndex": 4,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "5 mix collar/handguard and lack two explicit types",
+        "cubeSha256": "0a1b2b29c7a08521c6f2dbe75bf408781861a617dff7fff08a1a714d9b5014d0"
+      },
+      {
+        "bone": "ld_foresight",
+        "cubeIndex": 0,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 mix gas block and upright front sight; no folded variant",
+        "cubeSha256": "a22264a6ecd5568edb6a9fbeda2c0ac0dd010cbe44b39ca1731ad77f0fe40714"
+      },
+      {
+        "bone": "ld_foresight",
+        "cubeIndex": 1,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 mix gas block and upright front sight; no folded variant",
+        "cubeSha256": "a43bc347bbf490dfb6a973f1a716a4ebfb8234bec9782b8290a1ef2eb142e691"
+      },
+      {
+        "bone": "ld_foresight",
+        "cubeIndex": 2,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 mix gas block and upright front sight; no folded variant",
+        "cubeSha256": "ac43129648d2c12c535ac5bcdfbda5c26869d62148cffc529656e7c5f8adbc7b"
+      },
+      {
+        "bone": "ld_foresight",
+        "cubeIndex": 3,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 mix gas block and upright front sight; no folded variant",
+        "cubeSha256": "191b730005bac77fd50297666bedb38f5be65f1b64962072fada8ead991d9ab7"
+      },
+      {
+        "bone": "ld_foresight",
+        "cubeIndex": 4,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 mix gas block and upright front sight; no folded variant",
+        "cubeSha256": "033d9aca99ebd989ea65956a5c0b42315fa24c5dcfc00f4809f800e20eed23b9"
+      },
+      {
+        "bone": "ld_foresight",
+        "cubeIndex": 5,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 mix gas block and upright front sight; no folded variant",
+        "cubeSha256": "ce23517db8a03d634a129bd8547a6a578b8a878639881e2a42a0282f373b3193"
+      },
+      {
+        "bone": "ld_foresight",
+        "cubeIndex": 6,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 mix gas block and upright front sight; no folded variant",
+        "cubeSha256": "48b5d468d47e240db5520ee87808064419c4d5f5bac8d1a74d7791754fa01b7d"
+      },
+      {
+        "bone": "ld_foresight",
+        "cubeIndex": 7,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 mix gas block and upright front sight; no folded variant",
+        "cubeSha256": "d7350d48b5faf90a3c298f0cf58c9ca0ec9b174691f24672738fd3ca6ce5f732"
+      },
+      {
+        "bone": "ld_foresight",
+        "cubeIndex": 8,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 mix gas block and upright front sight; no folded variant",
+        "cubeSha256": "de66ee3e8e1bcec0672b926348c358f1d6635e8c5ebaccd7b2c9dbbd17283379"
+      },
+      {
+        "bone": "ld_foresight",
+        "cubeIndex": 9,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 mix gas block and upright front sight; no folded variant",
+        "cubeSha256": "75a1ab1a30ae52914803a145a3334f5d9bda30bc83392c5a57da13bf8a849a73"
+      },
+      {
+        "bone": "ld_barrel",
+        "cubeIndex": 0,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "3 include long cube crossing barrel/muzzle; regenerate separated surfaces",
+        "cubeSha256": "1d34a5743c2fc3e30740a933f57f26cff800e8aad8f869163b2ae20f8a6edb8a"
+      },
+      {
+        "bone": "ld_barrel",
+        "cubeIndex": 1,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "3 include long cube crossing barrel/muzzle; regenerate separated surfaces",
+        "cubeSha256": "96674e78ed5b97617143197128a1ffcee1d01a4d53b07d03e519816f3b4e8966"
+      },
+      {
+        "bone": "ld_barrel",
+        "cubeIndex": 2,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "3 include long cube crossing barrel/muzzle; regenerate separated surfaces",
+        "cubeSha256": "9388ca47f5ea3cd7178a450067f0ec9cea1c5ec0b3aecbdeff5dc8da1eea4732"
+      },
+      {
+        "bone": "ld_buffer",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "buffer",
+        "reason": null,
+        "cubeSha256": "cef44f5c37e20151c948450f513870437eeddbf955235356c8a6cb8552a346e8"
+      },
+      {
+        "bone": "ld_buffer",
+        "cubeIndex": 1,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "buffer",
+        "reason": null,
+        "cubeSha256": "044824cdef919f066e138e8d46618808fc26298f6fedff4189d00628fd1e5de9"
+      },
+      {
+        "bone": "ld_buffer",
+        "cubeIndex": 2,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "buffer",
+        "reason": null,
+        "cubeSha256": "7d42e07fc1693e991a207c1052fbf61bb391b08b7c838b06a515d3e628af1905"
+      },
+      {
+        "bone": "ld_buffer",
+        "cubeIndex": 3,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "buffer",
+        "reason": null,
+        "cubeSha256": "695445ec7830834545eda33dbeb23c7452d38700d11a6d52ca105978fae3f726"
+      },
+      {
+        "bone": "ld_buffer",
+        "cubeIndex": 4,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "buffer",
+        "reason": null,
+        "cubeSha256": "3066845f77cd97d727506a2d3837aa3e73ab2617a53593c95aff2ae01a41c489"
+      },
+      {
+        "bone": "ld_buffer",
+        "cubeIndex": 5,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "buffer",
+        "reason": null,
+        "cubeSha256": "981f03e5dbbd1f5908ac0576ea86416a70edac691222b5067b6cef49a9121a2e"
+      },
+      {
+        "bone": "sight",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "rear_sight",
+        "reason": null,
+        "cubeSha256": "e22a0c0d3275c777faeef54d3dfc385ca2f70d76bef293ee87fbca6ae8e5ca26"
+      },
+      {
+        "bone": "sight",
+        "cubeIndex": 1,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "rear_sight",
+        "reason": null,
+        "cubeSha256": "ebbff8f11ad4692e8da0b6b6eca6e759de0c29b7399d3ecee2bd3c7c98c08f91"
+      },
+      {
+        "bone": "sight",
+        "cubeIndex": 2,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "rear_sight",
+        "reason": null,
+        "cubeSha256": "4e88d051713aa72006e19eebbb12e84cd89696ea93574a5dc4ff40a2586d6b42"
+      },
+      {
+        "bone": "sight",
+        "cubeIndex": 3,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "rear_sight",
+        "reason": null,
+        "cubeSha256": "85f67230017d2e44dd4a09849408c9259b6f1f7164519e323f30f90e5b675003"
+      },
+      {
+        "bone": "sight",
+        "cubeIndex": 4,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "rear_sight",
+        "reason": null,
+        "cubeSha256": "99ca45e410b3a04106217589d3207a43f6142195cf8c06129058a7b997773dd7"
+      },
+      {
+        "bone": "sight",
+        "cubeIndex": 5,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "rear_sight",
+        "reason": null,
+        "cubeSha256": "6332faf021411dc5db46e7a68e509c54ce2e814a581ad0ebeda666a098dc28ca"
+      },
+      {
+        "bone": "sight",
+        "cubeIndex": 6,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "rear_sight",
+        "reason": null,
+        "cubeSha256": "893acb6295b9bb6b3aa573401d007c786afd442ec6fe9ef8611fb89e7bb80847"
+      },
+      {
+        "bone": "ld_grip",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "pistol_grip",
+        "reason": null,
+        "cubeSha256": "4fdc66991d4394b47ae0d12e991430d5b7f4d7062c41ea2f163fc56e29e36c29"
+      },
+      {
+        "bone": "ld_grip",
+        "cubeIndex": 1,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "pistol_grip",
+        "reason": null,
+        "cubeSha256": "a611d590dc9bed1d29d35cd2fdd1f4c378b631e75230783bf65aa0540f5a73cd"
+      },
+      {
+        "bone": "ld_grip",
+        "cubeIndex": 2,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "pistol_grip",
+        "reason": null,
+        "cubeSha256": "4bef9bd74f7e3a364ca7a6be108fbd0f3e613aed3e538b892633e6495a0aa5a7"
+      },
+      {
+        "bone": "ld_grip",
+        "cubeIndex": 3,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "pistol_grip",
+        "reason": null,
+        "cubeSha256": "28ccf5acec538f4bcc98f2b5a03adab559ae9193d1cbddf09625a281b595e779"
+      },
+      {
+        "bone": "ld_trigger",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "4f5b6b2099d61978b4807ee03234ac4e0d21f9529a6178a91853970170c0f2b3"
+      },
+      {
+        "bone": "ld_upper",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "upper_receiver",
+        "reason": null,
+        "cubeSha256": "9912bd32ff06ebeeaa27a8a06f56d0ad7fa589d58c88e0eab3001311c074afa8"
+      },
+      {
+        "bone": "ld_upper",
+        "cubeIndex": 1,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "upper_receiver",
+        "reason": null,
+        "cubeSha256": "7b4c830992d39733f0fcd5b1d609a04127083d3109f55abaf011babba2b6bf58"
+      },
+      {
+        "bone": "ld_upper",
+        "cubeIndex": 2,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "upper_receiver",
+        "reason": null,
+        "cubeSha256": "1b0e809cfbc89191f59b7d005f508a96bc38c7b39b8760dda8ebc52594e7e886"
+      },
+      {
+        "bone": "ld_upper",
+        "cubeIndex": 3,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "upper_receiver",
+        "reason": null,
+        "cubeSha256": "c550b7f9b5838d17dee797f298e37a7bbce922fe1d0e4138299c906b38b44bed"
+      },
+      {
+        "bone": "ld_upper",
+        "cubeIndex": 4,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "upper_receiver",
+        "reason": null,
+        "cubeSha256": "1d15ef00e58872bd4875923f7c24ab7e867196b05428b65be42d1c24d2df872a"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "c32f0b0eaacb1fbbbed359de65c2eafa8e227d3c9e9cea317754484f401bb969"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 1,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "abdfbf109b5583246b67e46136a6107aa14df7f5a556ea8b943e721fb7f2fed5"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 2,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "73e4d99bf70fc32974efab0479ed963797f994d99e0d470c6ae476ab1340eaef"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 3,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "258abccab777f271de7f7ae02e9207c5955cf0fd6001678b2e3f2b0e5f32b65b"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 4,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "0eadef49a4f6d385fc38592cd028cbc8766b6696e7d451b7da1adbe4decee427"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 5,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "9e453b1693fe2b26e56c296438d8db794c28cf01a2c68cebc983aa9f4af36111"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 6,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "7538680a37d66a9735021a4bb9389f4e636009449f97ce8799a7aac6a3f9340a"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 7,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "9b224d6d0fb9882973c7ba9ef6b6aa07250d18ac96a88bd7654185a3ce57adc7"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 8,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "c8510505fa4968c0a58fcc4029591c4d320bed751a576f8789c14f9c3a9eff4d"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 9,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "a5d6d769ae7e1b1926c5a1d39204154f5f282342fb115c44f12ec6da8e59e4f5"
+      },
+      {
+        "bone": "ld_magwell",
+        "cubeIndex": 10,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "850dcd429b63202603d708968ac845d41fe374149f6e81989327003cecd31966"
+      },
+      {
+        "bone": "ld_lower",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "2b7d87333ac5f3d2614fc616c9f3a41c83bfb4d8b88f30973fff6e8a39ed7963"
+      },
+      {
+        "bone": "ld_lower",
+        "cubeIndex": 1,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "44ed011a095c2225be2a8a79399058ada6398c3df1b4d419abe099f96f91346b"
+      },
+      {
+        "bone": "ld_lower",
+        "cubeIndex": 2,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "576de7679bcf80544a91f5061ad86db685ca27c44cd61892ea11921da08cfc56"
+      },
+      {
+        "bone": "ld_toprails",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "upper_receiver",
+        "reason": null,
+        "cubeSha256": "ec7b37ba3e9a958162485e0a7bdf66e04852e272bc28e68ef1cec6e645da9b17"
+      },
+      {
+        "bone": "ld_toprails",
+        "cubeIndex": 1,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "upper_receiver",
+        "reason": null,
+        "cubeSha256": "f34380e8d59f7428d951616639008f637d408d5d124dd9b37fe924996521eed1"
+      },
+      {
+        "bone": "ld_portgroup",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "upper_receiver",
+        "reason": null,
+        "cubeSha256": "5fe9f4020ca140765b3bfc728f5291573d74d23d184d0ce65c7a932c0e9a4881"
+      },
+      {
+        "bone": "ld_portgroup",
+        "cubeIndex": 1,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "upper_receiver",
+        "reason": null,
+        "cubeSha256": "05380c95dac93e356a3130ceb13d407cdf7b1dc7ca261395b7b293f80177fb8b"
+      },
+      {
+        "bone": "ld_pull",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "charging_mechanism",
+        "reason": null,
+        "cubeSha256": "505902b1754c39008edee26cbe531a84c8ad7cd054c04be458f15686668087e0"
+      },
+      {
+        "bone": "ld_switch",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "7ad4a7f1eb4603898234a311e01533107c7e25aed801b0e9f3134659c108b2b8"
+      },
+      {
+        "bone": "ld_switch",
+        "cubeIndex": 1,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "lower_receiver",
+        "reason": null,
+        "cubeSha256": "837c21949964f0346f8d097f8c9ca180acf927d530404efd281d39e5de745c04"
+      },
+      {
+        "bone": "ld_mag",
+        "cubeIndex": 0,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "magazine_standard",
+        "reason": null,
+        "cubeSha256": "8f806fec2ffc74d92f050c4b91a95d7cf4ebc58acd9b4657f50bcdbc7919a1fd"
+      },
+      {
+        "bone": "ld_mag",
+        "cubeIndex": 1,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "magazine_standard",
+        "reason": null,
+        "cubeSha256": "28c6bd4fc8d9cb55152ae010552132c3e1f1cd6a47f8181172df5cfb4824a4ba"
+      },
+      {
+        "bone": "ld_mag",
+        "cubeIndex": 2,
+        "disposition": "candidate_reuse_after_binding",
+        "owner": "magazine_standard",
+        "reason": null,
+        "cubeSha256": "2eba4baa2566c0a60b62ff956f7794f2b25e1b6f4f014e87f3b55eb85d7ffe2c"
+      },
+      {
+        "bone": "ld_stock",
+        "cubeIndex": 0,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 baked unrelated stock; use actual installed native attachment representation",
+        "cubeSha256": "abcb96b751b79d75cb58f5cbbbdfd09ca396809460b684d5212e98f6a72fa9b2"
+      },
+      {
+        "bone": "ld_stock",
+        "cubeIndex": 1,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 baked unrelated stock; use actual installed native attachment representation",
+        "cubeSha256": "532cad38de5cbdedf200f6d744fca9fb5fc2f584b81ccfb171485712a752878a"
+      },
+      {
+        "bone": "ld_stock",
+        "cubeIndex": 2,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 baked unrelated stock; use actual installed native attachment representation",
+        "cubeSha256": "842a1868703a5379766ef16137edd349e5ab843d46aa00ae5d879447755aa608"
+      },
+      {
+        "bone": "ld_stock",
+        "cubeIndex": 3,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 baked unrelated stock; use actual installed native attachment representation",
+        "cubeSha256": "d479fab9790d707d1eac9e14a8e74c6e3b83ed7684494a1a5804ed9262d0614d"
+      },
+      {
+        "bone": "ld_stock",
+        "cubeIndex": 4,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 baked unrelated stock; use actual installed native attachment representation",
+        "cubeSha256": "52115ba1dde1194f6e825c2b050bd253e6cd4329cec4ad180ef20423c67bf29f"
+      },
+      {
+        "bone": "ld_stock",
+        "cubeIndex": 5,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 baked unrelated stock; use actual installed native attachment representation",
+        "cubeSha256": "4ee01306776e56abfc327434f3b18bb4e44ccecdd9c7f4f9e3801b58d59f4db4"
+      },
+      {
+        "bone": "ld_stock",
+        "cubeIndex": 6,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 baked unrelated stock; use actual installed native attachment representation",
+        "cubeSha256": "af63ba61c6d265ec9ea9ce709fcce246aee3884fd8880029d79c4377a14f2701"
+      },
+      {
+        "bone": "ld_stock",
+        "cubeIndex": 7,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 baked unrelated stock; use actual installed native attachment representation",
+        "cubeSha256": "705e493c2a23cd7e5886c8a7ced5211dea630c2a7ad0fe6680aa803b4981a5b3"
+      },
+      {
+        "bone": "ld_stock",
+        "cubeIndex": 8,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 baked unrelated stock; use actual installed native attachment representation",
+        "cubeSha256": "e4deced60432e8440888395a64ef53d9770835532d6e6aa204c1b8f7ec68c428"
+      },
+      {
+        "bone": "ld_stock",
+        "cubeIndex": 9,
+        "disposition": "replace_in_derived_lod",
+        "owner": null,
+        "reason": "10 baked unrelated stock; use actual installed native attachment representation",
+        "cubeSha256": "6e7e7d7c6f1ed422f080cc6c9510503587d1ac3aa721cffdb66a3acac21bd5f5"
+      }
+    ],
+    "missingFunctionalNodes": [
+      "root",
+      "muzzle_pos",
+      "stock_pos",
+      "grip_pos",
+      "magazine",
+      "additional_magazine",
+      "sight_folded",
+      "handguard_default",
+      "handguard_tactical",
+      "iron_view"
+    ],
+    "animationTargetsAbsent": [
+      "additional_magazine",
+      "bolt_release",
+      "bullet",
+      "bullet_in_barrel",
+      "bullet_in_mag",
+      "camera",
+      "constraint",
+      "gun_and_righthand",
+      "lefthand",
+      "m4a1_bolt",
+      "m4a1_pull",
+      "mag_and_bullet",
+      "mag_and_lefthand",
+      "mag_release",
+      "righthand",
+      "root",
+      "selector"
+    ],
+    "sourceBoneCounts": {
+      "lod_m4": 0,
+      "ld_handguard": 5,
+      "ld_gunbody": 0,
+      "ld_foresight": 10,
+      "ld_barrel": 3,
+      "ld_buffer": 6,
+      "sight": 7,
+      "ld_grip": 4,
+      "ld_trigger": 1,
+      "ld_body": 0,
+      "ld_upper": 5,
+      "ld_magwell": 11,
+      "ld_lower": 3,
+      "ld_toprails": 2,
+      "ld_portgroup": 2,
+      "ld_pull": 1,
+      "ld_switch": 2,
+      "ld_mag": 3,
+      "ld_stock": 10,
+      "positioning2": 0,
+      "scope_pos": 0,
+      "positioning": 0,
+      "thirdperson_hand": 0,
+      "ground": 0,
+      "fixed": 0,
+      "shell": 0,
+      "muzzle_flash": 0,
+      "laser_pos": 0
+    }
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m4a1_data.json": "63ed01a30d31afb941309f38dfe9ae01c0eebd451da13573a20fbe41bcf826c9",
+    "ammunition/generated/src/main/resources/data/tarkov_content/catalog/ammunition.json": "0a08f6f585877d23303133e7f471328b4fbc59f66aa50103a509814bbb51baf3",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/ammo_mod_fmj_data.json": "f8cc04662d501128d3e23bb5517860b1f10b0bdcc2e4b35599bd27c30371a696",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/ammo_mod_fmj_display.json": "d4d93f4baee0085c354340a344a2d184a35e96b18b1d3a5d7fec8fb60b09801f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/ammo_mod_hp_data.json": "a1185962b153a57495cf3d15150a4649b41b1a2e2f6314864c63ba952df178db",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/ammo_mod_hp_display.json": "1d27280bc55b8bcb4b7850f5b4f0161af3a12036aadd5f7087daa074a886a8df",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/ammo_mod_i_data.json": "b9fe10ad19d965a908fabc4b0f3b81fe2837e8feb584cf5b0b055f054b8fe657",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/ammo_mod_i_display.json": "fa4f6bb632f1a22b509d230749ada30a0f477aacba5cd29c7dda843c4fe36279",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/lod/m4a1.json": "4ad521aa66cc068ee1aba1b6b6209b6b13c225dc88c3b9ccdad89940ad89c45e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/m4a1.animation.json": "ce4ee6dcdf16bbc8ce2ce9c3bdc4d56c7cc025040675a4688da74621190924f2",
+    "src/main/java/com/tacz/guns/item/ModernKineticGunScriptAPI.java": "5c55de1cd620fb693c463eb29425031d9c28dd0a180bb6dbf3c386bcb263fce4",
+    "src/main/java/com/tacz/guns/entity/EntityKineticBullet.java": "046e5f3cdebf18815074d867ea90d51e67e635251b54e45b7c19820073f6d75e",
+    "src/main/java/com/tacz/guns/util/AttachmentDataUtils.java": "16b0dcccc0b8b5ce4059088cf5f58542c3c7da86ea81439febe8ba321664ab31",
+    "src/main/java/com/tacz/guns/resource/modifier/AttachmentPropertyManager.java": "a28a64e3a466ec3715bd0ed58403fc2b2c1ffb61a27d2b720483d125b4461ae7",
+    "src/main/java/com/tacz/guns/resource/modifier/custom/WeightModifier.java": "94c1fa4676bafdd9abbc76758f52ff7066b9cb73769dcc75ad1af351ffdcc7c7",
+    "src/main/java/com/tacz/guns/resource/modifier/custom/AdsModifier.java": "a040d4bc7da357902acf233224f8c34bd48f17abf0e16d97f16d96a6e873c23b",
+    "src/main/java/com/tacz/guns/resource/modifier/custom/PierceModifier.java": "38538fa9640428e55e07dda030545ada36309b4044174f2da704e8b68bdb16d1",
+    "src/main/java/com/tacz/guns/resource/modifier/custom/DamageModifier.java": "25ce539163644011ff0eacfdbb9dcb927f358c4197a7bdb52556748445cdef20",
+    "src/main/java/com/tacz/guns/resource/modifier/custom/IgniteModifier.java": "25f4f571083f8804abedad08d76073bfc35e8528561e083be8ab60da80909f47",
+    "src/main/java/com/tacz/guns/client/model/BedrockGunModel.java": "dc226fe069c64d004c03adee7d6aeaa2ff7d386f7cfd489b52d202f05fd322e6",
+    "src/main/java/com/tacz/guns/client/model/bedrock/BedrockPart.java": "d6aa6d8f8a4bc2adbcdbbc2a227640af0dd329567568dabac40f22d509c4897b",
+    "src/main/java/com/tacz/guns/client/model/functional/AttachmentRender.java": "dd10579fed857cebbd990904019e2cbafdb578800ad6b207c7b2a5d45dbbac77",
+    "src/main/java/com/tacz/guns/client/renderer/item/GunItemRendererWrapper.java": "0c3268f5718e223b14d9b20bb3c50904aacc9b58e141be4d838e3ed9f819c1e4",
+    "src/main/java/com/tacz/guns/mixin/client/ar/BedrockPartMixin.java": "0c21a8b910d494746fb80088853f7fdbfd78171683e35484cf17ee777df903cc",
+    "src/main/java/com/tacz/guns/compat/ar/ARCompat.java": "d2582a1535a9ed02836ddf1263437e65cd550c2486e9c7c6eefc96ae9f5daf74",
+    "modules/tacz_adapter/src/main/java/dev/tacticaltacz/AmmoBridge.java": "9956d750553c0f61019cb942f557ebff47ea3f1b93f37b74a97e359b7a1c1964",
+    "modules/tacz_adapter/src/main/java/dev/tacticaltacz/TacticalTaczAdapter.java": "7be14277bbc071965695a6c0db83a02f5d385e80f95f177cab705a3dad250c1a"
+  },
+  "combatSourceHash": "a2f8979a99e5a73d188a7b77174105dc30a4cc9cd4bc712b740a3e71140f4571",
+  "limits": [
+    "Candidate reuse is semantic partition evidence, not converted or runtime-validated LOD",
+    "Cache calculations assume no other modifiers, damage base multiplier 1, near-range native base 6.5",
+    "No production source/model/assets changed; no game or editor launched"
+  ]
+}
