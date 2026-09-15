@@ -1,0 +1,57 @@
+{
+  "version": "1.1.8-hotfix-r6-newmod.e3504041",
+  "source_commit": "e3504041712124ccccf9daf8fc1e74c251c07ee6",
+  "newmod_commit": "aff72b2f9caaa9fd42f2fba4b43c73611014d5f2",
+  "dependency_lock": {
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.249",
+    "java": 21,
+    "tacz": {
+      "version": "1.1.8-hotfix-r6-newmod.e3504041",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.e3504041.jar",
+      "sha512": "4b05a091e859e1d6fd1b264ef3b40894d72428ad7c1bed8b59a45a391c18f6700a204e382e1f408612543e9e9b0316fd092d3e22dec8c3e22ca9937b99fb116e",
+      "source_commit": "e3504041712124ccccf9daf8fc1e74c251c07ee6"
+    },
+    "upstream_release": {
+      "project": "MUKSC/TACZ-1.21.1",
+      "unofficial_port": true,
+      "version": "1.1.8-hotfix-r6",
+      "modrinth_project_id": "OypNE65K",
+      "modrinth_version_id": "wPvGWIj9",
+      "maven": "maven.modrinth:OypNE65K:wPvGWIj9",
+      "url": "https://cdn.modrinth.com/data/OypNE65K/versions/wPvGWIj9/tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar",
+      "sha512": "ce14e985ce16d0517e7b1d41969a244818f46c1e4ae93842c3149963990aa488692c5372ecc4b71fe560a99794a3f865244dbef5b182beec4411148b4f83c53c",
+      "source_commit_reference": "ff715d80176f9ca61f5b2e6f029864f5adf209c2",
+      "verification": "Release source matches normalized EntityKineticBullet and ModernKineticGunScriptAPI source at this commit."
+    },
+    "development": {
+      "version": "1.1.8-hotfix-r6-newmod.e3504041",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.e3504041-development.jar",
+      "sha512": "452d954a841f5a5b60e658ae40d4032be2accb0b45119acbfef01f1db695638aab6c3258cdb2270d782877f1e46b67d5a5b54b2d662b6a7db4c3ffb0461fdd18",
+      "source_commit": "e3504041712124ccccf9daf8fc1e74c251c07ee6"
+    },
+    "rollback": {
+      "newmod_commit": "e45dd1f896adb4342781c88716c690d34a850372",
+      "experiment_commit": "2de081b3d16c6517a2db3da7ff2ce2886223fdfe",
+      "tacz": {
+        "version": "1.1.8-hotfix-r6-newmod.556149d3",
+        "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.556149d3.jar",
+        "sha512": "097a360ca271109c31edd435cf66036300492c9675745cec60248a8c23f8712a6cf14dcb93ee8e8d2066ee214b8145ff0e7d537217d8e014dc6e6eaa21c5182d",
+        "source_commit": "556149d37403fcf5a401a792380f3e94281f83ec"
+      },
+      "development": {
+        "version": "1.1.8-hotfix-r6-newmod.556149d3",
+        "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.556149d3-development.jar",
+        "sha512": "207e6c74b6ea4c8ca24a045b11a59145688c1f8b0b4ae0e47a9c3114493058138837d4afbabb0619c0a9f5d49e13701fba8bb63bb7279a0291a0d1fdf1470601",
+        "source_commit": "556149d37403fcf5a401a792380f3e94281f83ec"
+      },
+      "scope": "Restore the accepted source/runtime/lock combination; preserve owner worlds"
+    }
+  },
+  "experiment_build": "BUILD SUCCESSFUL; build compilePureJava prepareAssemblyClientRun --offline",
+  "junit_tests_passed": 82,
+  "python_weapon_pipeline_tests_passed": 12,
+  "newmod_additional_verification": "skipped at owner request",
+  "client_acceptance": "owner_pending",
+  "game_started": false
+}

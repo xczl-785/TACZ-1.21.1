@@ -44,3 +44,11 @@
 原模型/纹理/动作来自仓库原生 TaCZ M4A1，既有署名与许可证保留；派生资产仅纳入本地实验交付。逐路径前后哈希见 `../native-m4a1-integration.json`，历史迁移清单未重写。
 
 回退基线：实验室 `2de081b3d16c6517a2db3da7ff2ce2886223fdfe`，NewMod `e45dd1f896adb4342781c88716c690d34a850372`，已接受制品 `1.1.8-hotfix-r6-newmod.556149d3`。恢复对应源码、制品和锁的完整组合；不要只换 Jar。旧制品保留，世界由所有者管理。
+
+## 验收包接入记录
+
+- 制品版本：`1.1.8-hotfix-r6-newmod.e3504041`。
+- 实验室源码提交：`e3504041712124ccccf9daf8fc1e74c251c07ee6`。
+- 主线接入提交：`aff72b2f9caaa9fd42f2fba4b43c73611014d5f2`，运行包、开发包及版本锁已同步。
+- 实验室编译打包通过；按所有者最新要求不追加主线复查，不启动游戏。实机验收待所有者进行。
+- 制品锁及交付状态见 [delivery.json](evidence/delivery.json)，构建记录见 [experiment-build.log](evidence/experiment-build.log)。
