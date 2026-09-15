@@ -1,0 +1,446 @@
+{
+  "date": "2026-09-15",
+  "scope": "Inventory only; ammunition and runtime unchanged",
+  "main_head": "84e477455f47b5e900a66d2d20357adbfec5296a",
+  "experiment_head": "115966b8d36f8f2c9ab339533888fb1656030c2b",
+  "adapter_java_count": 36,
+  "mixin_count": 12,
+  "files": [
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/AmmoBridge.java",
+      "sha256": "9956d750553c0f61019cb942f557ebff47ea3f1b93f37b74a97e359b7a1c1964",
+      "external_packages": [
+        "com.tacz.guns.ammunition.",
+        "com.tacz.guns.ammunition.TarkovAmmoItem",
+        "com.tacz.guns.api.item.IGun",
+        "dev.tacticalcombat.api.BallisticProfile",
+        "dev.tacticalinventory.api.TacticalAmmunition",
+        "dev.tacticaltacz"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/AmmunitionInspection.java",
+      "sha256": "cb9f221b2f6c1f4711a0f30513609d995bc8b429223c2afa8e69f2a1e7e206c8",
+      "external_packages": [
+        "com.tacz.guns.ammunition.",
+        "dev.itemfoundation.api.inspection.InspectionSection",
+        "dev.itemfoundation.api.inspection.InspectionSection.",
+        "dev.tacticaltacz"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/AssemblyFireGate.java",
+      "sha256": "2e10527f0039e7bb81eeb9f50e04194b68a20fba7fb64246a968b530697371ea",
+      "external_packages": [
+        "com.tacz.guns.api.event.common.GunFireEvent",
+        "com.tacz.guns.api.item.IGun",
+        "dev.tacticaltacz",
+        "dev.tacticaltacz.assembled.AssembledWeapons.byId",
+        "dev.tacticaltacz.assembled.AssembledWeapons.from",
+        "dev.weaponruntime.WeaponCapabilities",
+        "dev.weaponruntime.WeaponRuntime.PROFILE.get"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/ClientAimResource.java",
+      "sha256": "d66541e975f016348a4198b92dd1132d1dbee336318c4e3b3c3f85f519b6f4ef",
+      "external_packages": [
+        "com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator.fromLocalPlayer",
+        "dev.tacticalinventory.api.ClientCharacterDisplay.resources",
+        "dev.tacticaltacz"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/ContinuationState.java",
+      "sha256": "54c100b00e04921a89263074cfe9e6b1339d8afb7d7e8a5ff3b7b0242a3972ac",
+      "external_packages": [
+        "com.tacz.guns.resource.pojo.data.gun.ExtraDamage.DistanceDamagePair",
+        "dev.tacticaltacz"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/GunAdoption.java",
+      "sha256": "079e7753d972338c46ee798a523045a8237c27e1dda26ad6071be9b4a41828ca",
+      "external_packages": [
+        "com.tacz.guns.api.item.IGun",
+        "dev.tacticaltacz",
+        "dev.tacticaltacz.assembled.AssembledWeapons.all"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/ImpactCarrier.java",
+      "sha256": "4a4e291bcd5c646bac2cfffc642c9408b2f6cd4c49b8a8c857e13a2ea95cfe06",
+      "external_packages": [
+        "dev.tacticalcombat.api.BallisticProfile",
+        "dev.tacticalcombat.api.BulletImpactEvent",
+        "dev.tacticalcombat.api.ProjectileContinuation",
+        "dev.tacticaltacz"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/PistolAdoption.java",
+      "sha256": "c8373bcc93031f8ab15902a7084638decebd9c29b9f6323a966025d83cb0c848",
+      "external_packages": [
+        "com.tacz.guns.api.item.IGun",
+        "dev.itemfoundation.api.equipment.WearableQualifications.register",
+        "dev.itemfoundation.api.identity.ItemIdentities.server",
+        "dev.tacticaltacz"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/TacticalTaczAdapter.java",
+      "sha256": "03983b3663bae5af8a53696fa38fabf119527c7d6eb12a2b2b998e318e659afa",
+      "external_packages": [
+        "com.tacz.guns.api.entity.IGunOperator.fromLivingEntity",
+        "com.tacz.guns.api.event.common.EntityHurtByGunEvent",
+        "com.tacz.guns.api.item.IGun.getIGunOrNull",
+        "com.tacz.guns.entity.EntityKineticBullet",
+        "dev.itemfoundation.api.inspection.InspectionProviders.register",
+        "dev.tacticalcharacter.resource.PlayerResources.canAim",
+        "dev.tacticalcharacter.resource.ResourceActionEvent",
+        "dev.tacticalcombat.api.PlayerGunPoseEvent",
+        "dev.tacticaltacz",
+        "dev.tacticaltacz.assembled.AssemblyGunProtocol",
+        "dev.tacticaltacz.refit.RefitBridge.register",
+        "dev.tacticaltacz.refit.RefitProtocol"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssembledWeapon.java",
+      "sha256": "4a4c92185fc49a4faa01bdabe487f049db620c35e918de3c54f01b75632a1345",
+      "external_packages": [
+        "com.tacz.guns.api.item.IGun",
+        "com.tacz.guns.api.item.gun.FireMode",
+        "dev.itemfoundation.api.assembly.",
+        "dev.tacticaltacz.assembled",
+        "dev.weaponassembly.api.",
+        "dev.weaponassembly.io.AssemblyJson",
+        "dev.weaponruntime.WeaponRuntime"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssembledWeapons.java",
+      "sha256": "1148d7a0a0f1526ed3595d67abcfc38810f56b5afa11badd74ec4cbc384595c5",
+      "external_packages": [
+        "com.tacz.guns.api.item.gun.GunItemManager.registerGunItem",
+        "dev.itemfoundation.api.equipment.WearableQualifications.register",
+        "dev.itemfoundation.api.identity.ItemIdentities.server",
+        "dev.tacticaltacz.assembled",
+        "dev.weaponruntime.WeaponCapabilities"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunClient.java",
+      "sha256": "e720966c422e96fab5e8479f7c0a74f1b181708b05b9be77d2ddbd3cea8ae2b4",
+      "external_packages": [
+        "com.tacz.guns.api.TimelessAPI.getClientGunIndex",
+        "com.tacz.guns.client.gui.GunRefitScreen",
+        "dev.tacticaltacz.assembled",
+        "dev.weaponassembly.api.",
+        "dev.weaponassemblyui.client.WorkbenchScreen",
+        "dev.weaponassemblyui.session."
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunClientRegistration.java",
+      "sha256": "d235ac644e33f6cee025c7aff041f39de2df671f125f4cf114088a2da15a0d6b",
+      "external_packages": [
+        "com.tacz.guns.api.client.other.GunModelTypeManager.registerModelType",
+        "dev.tacticaltacz.assembled"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunExchange.java",
+      "sha256": "7b3b79a3ffc8b87e5655776553dbbb05a6d451d7e3b011c73357dad8a8fcf2cb",
+      "external_packages": [
+        "com.tacz.guns.api.entity.IGunOperator",
+        "com.tacz.guns.api.item.IGun",
+        "dev.itemfoundation.api.assembly.",
+        "dev.tacticalinventory.api.TacticalHeldExchange",
+        "dev.tacticaltacz.AmmoBridge",
+        "dev.tacticaltacz.assembled"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunItem.java",
+      "sha256": "de633b344e0f3bdbfaac575b77c6f09f43478be6d97c78df13de4e9d1b09ea28",
+      "external_packages": [
+        "com.tacz.guns.item.ModernKineticGunItem",
+        "dev.tacticaltacz.assembled"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunModel.java",
+      "sha256": "78cf610ca2bb06d4fd15160ca81e701a2301b86fb6ad06e59d361c2d7b15ca46",
+      "external_packages": [
+        "com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator.fromLocalPlayer",
+        "com.tacz.guns.client.model.BedrockGunModel",
+        "com.tacz.guns.client.resource.pojo.model.",
+        "dev.itemfoundation.api.assembly.AssemblyState.Installed",
+        "dev.itemfoundation.api.assembly.AssemblyTrees",
+        "dev.tacticaltacz.assembled",
+        "dev.weaponassembly.api.AssemblyNode",
+        "dev.weaponmodels."
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunProtocol.java",
+      "sha256": "eb0bf63df6cc37778fe326be8b8790b34a412a7aab14f73d294afb790d9ecdc8",
+      "external_packages": [
+        "com.tacz.guns.api.RefitInventoryExtension.Choice",
+        "dev.tacticaltacz.assembled"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunWorkbench.java",
+      "sha256": "76da6a9b7820295b83abe63dc9caf38e9819012d47bd17144b59664e7acf4db1",
+      "external_packages": [
+        "com.tacz.guns.api.RefitInventoryExtension.Choice",
+        "com.tacz.guns.resource.modifier.AttachmentPropertyManager",
+        "dev.tacticalinventory.api.TacticalHeldExchange",
+        "dev.tacticaltacz.assembled"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyPresentation.java",
+      "sha256": "e7fe4711658726dbb6acf4331c83f9094ce4342e5496bec66ec6dca0199ee31a",
+      "external_packages": [
+        "com.tacz.guns.client.model.bedrock.BedrockPart",
+        "dev.itemfoundation.api.assembly.AssemblyTrees",
+        "dev.tacticaltacz.assembled",
+        "dev.weaponassembly.api.AssemblyEngine",
+        "dev.weaponmodels.",
+        "dev.weaponmodels.WeaponPresentation."
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyPresentationClient.java",
+      "sha256": "b2312bb80c558806ef1e5f2757c4c5c72bca799502c9fe9eeb9ad4e22301f5dd",
+      "external_packages": [
+        "com.tacz.guns.api.TimelessAPI",
+        "com.tacz.guns.api.event.common.GunFireEvent",
+        "dev.tacticaltacz.assembled"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/WeaponHandling.java",
+      "sha256": "0ab7b7b629ec5fa7493e5f7670e1b4ff37ad88825b603b80cc961866e7ae41f5",
+      "external_packages": [
+        "dev.tacticaltacz.assembled",
+        "dev.weaponassembly.api.AssemblyNode",
+        "dev.weaponmodels.RecoilResponse",
+        "dev.weaponmodels.WeaponPresentation.Vec"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AimResourceMixin.java",
+      "sha256": "1c7521fd994086dbfd13a95f1feedca77efd4b27cf3682795119640c7d8a7cfc",
+      "external_packages": [
+        "com.tacz.guns.entity.shooter.LivingEntityAim.class",
+        "dev.tacticalcharacter.resource.PlayerResources.canAim",
+        "dev.tacticaltacz.GunAdoption.contains",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AmmoHudMixin.java",
+      "sha256": "10efa016ff774eb22f18e2d2f5992cad0a2e0ac6b034bc0724e832d29884e8c1",
+      "external_packages": [
+        "com.tacz.guns.client.gui.overlay.GunHudOverlay",
+        "dev.tacticalinventory.api.TacticalAmmunition",
+        "dev.tacticaltacz.AmmoBridge",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AssemblyCameraMixin.java",
+      "sha256": "4127cdcbe99bc91ebcefd50c6ef2974f228654fda2a2823ffc81368311643f61",
+      "external_packages": [
+        "com.tacz.guns.api.client.other.KeepingItemRenderer.getRenderer",
+        "com.tacz.guns.api.item.IGun",
+        "com.tacz.guns.client.event.CameraSetupEvent.class",
+        "dev.tacticaltacz.assembled.AssemblyPresentationClient",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AssemblyPresentationMixin.java",
+      "sha256": "c802b193f56d9d48e8aebdcb9988906012bdd182eb69791dab489ffe2620b131",
+      "external_packages": [
+        "com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator.fromLocalPlayer",
+        "com.tacz.guns.client.event.FirstPersonRenderGunEvent.class",
+        "com.tacz.guns.client.model.BedrockGunModel",
+        "dev.tacticaltacz.assembled.AssemblyGunModel",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AssemblyShootMixin.java",
+      "sha256": "542820018a368f09bf2ba74e305fae6f57e991e4d2f7659b728a02f787e2b5c2",
+      "external_packages": [
+        "com.tacz.guns.api.entity.ShootResult",
+        "com.tacz.guns.entity.shooter.LivingEntityShoot.class",
+        "com.tacz.guns.entity.shooter.ShooterDataHolder",
+        "dev.tacticaltacz.AssemblyFireGate.blocked",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/BulletMixin.java",
+      "sha256": "4e571bdfc141ad6739be7cf895a28f4f5401c96bdfe5454bd9b430bc17e692bc",
+      "external_packages": [
+        "com.tacz.guns.api.entity.ITargetEntity",
+        "com.tacz.guns.entity.EntityKineticBullet",
+        "com.tacz.guns.entity.EntityKineticBullet.MaybeMultipartEntity",
+        "com.tacz.guns.resource.pojo.data.gun.",
+        "com.tacz.guns.resource.pojo.data.gun.ExtraDamage.DistanceDamagePair",
+        "com.tacz.guns.util.TacHitResult",
+        "dev.tacticalcombat.api.",
+        "dev.tacticaltacz.",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ClientAimResourceMixin.java",
+      "sha256": "6158eb50eae23edd719d29be60aec54997ecea5acb4bb26de0f7d8895eb0fa41",
+      "external_packages": [
+        "com.tacz.guns.client.gameplay.LocalPlayerAim.class",
+        "dev.tacticalinventory.api.ClientCharacterDisplay.resources",
+        "dev.tacticaltacz.GunAdoption.contains",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ClientAssemblyShootMixin.java",
+      "sha256": "44f5435d18544959cdc399f9d5c69b99b7d514ff5c535e3ed50a51f2fa88a167",
+      "external_packages": [
+        "com.tacz.guns.api.entity.ShootResult",
+        "com.tacz.guns.client.gameplay.LocalPlayerShoot.class",
+        "dev.tacticaltacz.AssemblyFireGate.blocked",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ContentAmmoMixin.java",
+      "sha256": "b2741ddc4f55ead8a4fe6f3a1744a03aa6b256fafe084928041fee26867fbebb",
+      "external_packages": [
+        "com.tacz.guns.ammunition.",
+        "com.tacz.guns.ammunition.TarkovAmmoItem",
+        "com.tacz.guns.api.item.IAmmo",
+        "dev.tacticaltacz.AmmoBridge",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ReloadMixin.java",
+      "sha256": "517456055cc71ac55fe7aacaef427f7e34fa1ec5d8333d8f040a37478038c035",
+      "external_packages": [
+        "com.tacz.guns.api.TimelessAPI",
+        "com.tacz.guns.api.item.IGun",
+        "com.tacz.guns.api.item.gun.AbstractGunItem",
+        "com.tacz.guns.util.AttachmentDataUtils",
+        "dev.tacticalinventory.api.TacticalContent.tryGrant",
+        "dev.tacticaltacz.AmmoBridge",
+        "dev.tacticaltacz.assembled.AssembledWeapons.from",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ScriptAmmoMixin.java",
+      "sha256": "1821a02282b694cf385530191c9c48c3784c5a961bf9f097b13ebd8c2b84149f",
+      "external_packages": [
+        "com.tacz.guns.api.GunProperties.AMMO_SPEED",
+        "com.tacz.guns.api.GunProperties.RuntimeOnly.BULLET_AMOUNT",
+        "com.tacz.guns.api.GunProperty",
+        "com.tacz.guns.item.ModernKineticGunScriptAPI",
+        "dev.tacticaltacz.AmmoBridge",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/TargetGeometryMixin.java",
+      "sha256": "941812c1151553f30dea300769c8eadc52f2169243534169396d54e4b0e9431c",
+      "external_packages": [
+        "com.tacz.guns.entity.EntityKineticBullet",
+        "com.tacz.guns.util.EntityUtil",
+        "dev.tacticalcombat.api.BulletTraceEvent",
+        "dev.tacticaltacz.ImpactCarrier",
+        "dev.tacticaltacz.mixin"
+      ],
+      "mixin": true
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/refit/RefitBridge.java",
+      "sha256": "a86c2932dcf643cf183334f7e90f8b56138529f8fb82eac2990759ef39b0aa55",
+      "external_packages": [
+        "com.tacz.guns.api.RefitInventoryExtension",
+        "com.tacz.guns.api.entity.IGunOperator",
+        "com.tacz.guns.api.item.",
+        "com.tacz.guns.api.item.attachment.AttachmentType",
+        "com.tacz.guns.resource.modifier.AttachmentPropertyManager",
+        "dev.tacticalinventory.api.TacticalHeldExchange",
+        "dev.tacticaltacz.",
+        "dev.tacticaltacz.assembled.AssembledWeapons.isGun",
+        "dev.tacticaltacz.refit"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/refit/RefitClient.java",
+      "sha256": "00b5a9479513f362479858a7732379e354faa014bfaf1475ffc8784c5fb8f498",
+      "external_packages": [
+        "com.tacz.guns.api.RefitInventoryExtension.Choice",
+        "com.tacz.guns.api.item.IGun.getIGunOrNull",
+        "com.tacz.guns.api.item.attachment.AttachmentType",
+        "com.tacz.guns.client.gui.GunRefitScreen",
+        "com.tacz.guns.client.sound.SoundPlayManager.playerRefitSound",
+        "com.tacz.guns.resource.modifier.AttachmentPropertyManager",
+        "com.tacz.guns.sound.SoundManager.INSTALL_SOUND",
+        "com.tacz.guns.sound.SoundManager.UNINSTALL_SOUND",
+        "dev.tacticaltacz.refit"
+      ],
+      "mixin": false
+    },
+    {
+      "path": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/refit/RefitProtocol.java",
+      "sha256": "dad91990b95d17dd2eb5945cd2b409fc32581046b970188edc4500a5c1cc0555",
+      "external_packages": [
+        "com.tacz.guns.api.RefitInventoryExtension.Choice",
+        "dev.tacticaltacz.refit"
+      ],
+      "mixin": false
+    }
+  ]
+}
