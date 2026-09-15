@@ -1,0 +1,74 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :verifyGameplayDependencies
+> Task :verifyPublicDependency
+> Task :compileJava UP-TO-DATE
+
+> Task :verifyConfiguredWeapons
+Native M4A1 contract PASS: 15 default nodes, 52 attachments, 140 preserved rig nodes; high/low 938 135
+Configured weapons: 4; physical items: 52; names, preset, material and registration resources valid
+
+> Task :processResources
+> Task :classes
+> Task :compileAdapterDevelopmentJava UP-TO-DATE
+> Task :processAdapterDevelopmentResources UP-TO-DATE
+> Task :adapterDevelopmentClasses UP-TO-DATE
+> Task :jarJar UP-TO-DATE
+> Task :jar
+> Task :mergeDevelopmentLanguages
+> Task :developmentJar
+> Task :sourcesJar
+> Task :assemble
+> Task :compileAdapterTestJava UP-TO-DATE
+> Task :processAdapterTestResources NO-SOURCE
+> Task :adapterTestClasses UP-TO-DATE
+> Task :adapterTest
+> Task :compilePureJava UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :compileUiDevelopmentJava UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :writeNeoForgeTestClasspath UP-TO-DATE
+> Task :prepareNeoForgeTestFiles UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :processUiDevelopmentResources UP-TO-DATE
+> Task :uiDevelopmentClasses UP-TO-DATE
+> Task :test
+
+> Task :verifyAdapterIntegration
+ADAPTER_INTEGRATION PASS: 386 paths, 12 injections retired; unchanged gun content and public ownership; 20 bootstrap/subscriber source edits
+
+> Task :verifyWeaponModules
+WEAPON_MODULES PASS: 24 production sources, four internal boundaries, persistent profile identity, unchanged resources
+
+> Task :verifyWeaponPipeline
+............
+----------------------------------------------------------------------
+Ran 12 tests in 1.325s
+
+OK
+
+> Task :compileWeapon_assemblyTestJava UP-TO-DATE
+> Task :processWeapon_assemblyTestResources UP-TO-DATE
+> Task :weapon_assemblyTestClasses UP-TO-DATE
+> Task :weapon_assemblyTest
+> Task :compileWeapon_assembly_uiTestJava UP-TO-DATE
+> Task :processWeapon_assembly_uiTestResources UP-TO-DATE
+> Task :weapon_assembly_uiTestClasses UP-TO-DATE
+> Task :weapon_assembly_uiTest
+> Task :compileWeapon_modelsTestJava UP-TO-DATE
+> Task :processWeapon_modelsTestResources NO-SOURCE
+> Task :weapon_modelsTestClasses UP-TO-DATE
+> Task :weapon_modelsTest
+> Task :compileWeapon_runtimeTestJava NO-SOURCE
+> Task :processWeapon_runtimeTestResources NO-SOURCE
+> Task :weapon_runtimeTestClasses UP-TO-DATE
+> Task :weapon_runtimeTest NO-SOURCE
+> Task :check
+> Task :build
+> Task :writeAssemblyClientLegacyClasspath UP-TO-DATE
+> Task :prepareAssemblyClientRun UP-TO-DATE
+
+BUILD SUCCESSFUL in 25s
+36 actionable tasks: 16 executed, 20 up-to-date

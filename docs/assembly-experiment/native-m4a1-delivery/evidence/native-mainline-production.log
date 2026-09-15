@@ -1,0 +1,45 @@
+Calculating task graph as configuration cache cannot be reused because JVM has changed.
+> Task :foundation:jarJar NO-SOURCE
+> Task :character:processResources UP-TO-DATE
+> Task :foundation:generateModMetadata UP-TO-DATE
+> Task :character:jarJar NO-SOURCE
+> Task :tactical:generateModMetadata UP-TO-DATE
+> Task :combat:jarJar NO-SOURCE
+> Task :combat:processResources UP-TO-DATE
+> Task :tactical:jarJar NO-SOURCE
+> Task :foundation:processResources UP-TO-DATE
+> Task :tactical:processResources UP-TO-DATE
+> Task :tarkov_content:jarJar NO-SOURCE
+> Task :tarkov_content:processResources UP-TO-DATE
+> Task :foundation:createMinecraftArtifacts UP-TO-DATE
+> Task :character:createMinecraftArtifacts UP-TO-DATE
+> Task :tactical:createMinecraftArtifacts UP-TO-DATE
+> Task :combat:createMinecraftArtifacts UP-TO-DATE
+> Task :tarkov_content:createMinecraftArtifacts UP-TO-DATE
+> Task :tacz_runtime:createMinecraftArtifacts UP-TO-DATE
+> Task :tacz_runtime:downloadAssets UP-TO-DATE
+> Task :foundation:compileJava UP-TO-DATE
+> Task :foundation:classes UP-TO-DATE
+> Task :tacz_runtime:writeProductionClientLegacyClasspath UP-TO-DATE
+> Task :tarkov_content:compileJava UP-TO-DATE
+> Task :foundation:jar UP-TO-DATE
+> Task :tarkov_content:classes UP-TO-DATE
+> Task :tactical:compileJava UP-TO-DATE
+> Task :tactical:classes UP-TO-DATE
+> Task :tactical:jar UP-TO-DATE
+> Task :tarkov_content:jar UP-TO-DATE
+> Task :character:compileJava UP-TO-DATE
+> Task :character:classes UP-TO-DATE
+> Task :character:jar UP-TO-DATE
+> Task :combat:compileJava UP-TO-DATE
+> Task :combat:classes UP-TO-DATE
+> Task :combat:jar UP-TO-DATE
+> Task :tacz_runtime:verifyTaczDependency
+> Task :tacz_runtime:prepareProductionClientRun
+
+> Task :tacz_runtime:verifyRuntime
+TACZ_RUNTIME PASS: 913 engine/integration/weapon classes, one artifact, no adapter or weapon Mods; development=false
+
+BUILD SUCCESSFUL in 702ms
+28 actionable tasks: 3 executed, 25 up-to-date
+Configuration cache entry stored.

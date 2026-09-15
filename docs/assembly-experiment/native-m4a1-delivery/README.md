@@ -73,3 +73,7 @@
 - 主线接入提交：`aff72b2f9caaa9fd42f2fba4b43c73611014d5f2`，运行包、开发包及版本锁已同步。
 - 实验室编译打包通过；按所有者最新要求不追加主线复查，不启动游戏。实机验收待所有者进行。
 - 制品锁及交付状态见 [delivery.json](evidence/delivery.json)，构建记录见 [experiment-build.log](evidence/experiment-build.log)。
+
+## 本轮最终制品
+
+版本 `1.1.8-hotfix-r6-newmod.d59a0fcd`，源码 `d59a0fcd884dacc6553fdb8af70e24988d35f74c`，NewMod 接入 `fe848b41280273c40c61a5ae1bdeddf5cf87b172`。83 个 Java 测试通过；开发/正式运行唯一性、运行准备及配置缓存存储/复用通过，锁变化自动使缓存失效。本轮未启动游戏。详见 [本轮交付证据](evidence/workbench-delivery.json)。

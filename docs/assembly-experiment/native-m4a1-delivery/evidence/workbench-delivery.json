@@ -1,0 +1,71 @@
+{
+  "version": "1.1.8-hotfix-r6-newmod.d59a0fcd",
+  "sourceCommit": "d59a0fcd884dacc6553fdb8af70e24988d35f74c",
+  "newmodCommit": "fe848b41280273c40c61a5ae1bdeddf5cf87b172",
+  "savedBeforeWork": {
+    "experiment": "69e6fc3c",
+    "newmod": "ddefd4b"
+  },
+  "dependencyLock": {
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.249",
+    "java": 21,
+    "tacz": {
+      "version": "1.1.8-hotfix-r6-newmod.d59a0fcd",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.d59a0fcd.jar",
+      "sha512": "82c15390ac4797ed31dfecd886bebd8983d030156f1c29113592bde5b991e0ced25a8bb83b0cb3031954ce77f1554415af522665db3df291ba33fe5398f8f2bc",
+      "source_commit": "d59a0fcd884dacc6553fdb8af70e24988d35f74c"
+    },
+    "upstream_release": {
+      "project": "MUKSC/TACZ-1.21.1",
+      "unofficial_port": true,
+      "version": "1.1.8-hotfix-r6",
+      "modrinth_project_id": "OypNE65K",
+      "modrinth_version_id": "wPvGWIj9",
+      "maven": "maven.modrinth:OypNE65K:wPvGWIj9",
+      "url": "https://cdn.modrinth.com/data/OypNE65K/versions/wPvGWIj9/tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar",
+      "sha512": "ce14e985ce16d0517e7b1d41969a244818f46c1e4ae93842c3149963990aa488692c5372ecc4b71fe560a99794a3f865244dbef5b182beec4411148b4f83c53c",
+      "source_commit_reference": "ff715d80176f9ca61f5b2e6f029864f5adf209c2",
+      "verification": "Release source matches normalized EntityKineticBullet and ModernKineticGunScriptAPI source at this commit."
+    },
+    "development": {
+      "version": "1.1.8-hotfix-r6-newmod.d59a0fcd",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.d59a0fcd-development.jar",
+      "sha512": "73ac068c4bbe2ad82c2575ff9d69463bdbb37a82ac357de6c8949a178572efaa56b4f979617d8cfa51c4c77f7bb770d13920f6f50701949aae34d21c6824dfb2",
+      "source_commit": "d59a0fcd884dacc6553fdb8af70e24988d35f74c"
+    },
+    "rollback": {
+      "newmod_commit": "ddefd4b",
+      "experiment_commit": "69e6fc3c",
+      "tacz": {
+        "version": "1.1.8-hotfix-r6-newmod.e3504041",
+        "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.e3504041.jar",
+        "sha512": "4b05a091e859e1d6fd1b264ef3b40894d72428ad7c1bed8b59a45a391c18f6700a204e382e1f408612543e9e9b0316fd092d3e22dec8c3e22ca9937b99fb116e",
+        "source_commit": "e3504041712124ccccf9daf8fc1e74c251c07ee6"
+      },
+      "development": {
+        "version": "1.1.8-hotfix-r6-newmod.e3504041",
+        "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.e3504041-development.jar",
+        "sha512": "452d954a841f5a5b60e658ae40d4032be2accb0b45119acbfef01f1db695638aab6c3258cdb2270d782877f1e46b67d5a5b54b2d662b6a7db4c3ffb0461fdd18",
+        "source_commit": "e3504041712124ccccf9daf8fc1e74c251c07ee6"
+      },
+      "scope": "Accepted native M4A1 before workbench presentation revision; preserve worlds"
+    }
+  },
+  "javaTests": {
+    "tests": 83,
+    "failures": 0,
+    "errors": 0
+  },
+  "blockbenchRoundtrips": 68,
+  "newmodDevelopmentAndProduction": "runtime uniqueness + preparation + configuration cache storage/reuse passed",
+  "gameStartedThisRevision": false,
+  "clientAcceptance": "owner pending",
+  "logs": [
+    "native-workbench-final-build",
+    "native-mainline-development",
+    "native-mainline-development-reuse",
+    "native-mainline-production",
+    "native-mainline-production-reuse"
+  ]
+}
