@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "0d8b58f1-60b0-5303-96bf-4b34a1577215",
+      "definitionId": "lower_receiver"
+    },
+    {
+      "instanceId": "4fab7f72-ca95-54af-a795-1c962809c334",
+      "definitionId": "upper_receiver",
+      "parentId": "0d8b58f1-60b0-5303-96bf-4b34a1577215",
+      "slot": "upper"
+    },
+    {
+      "instanceId": "7a871cef-06d1-5a19-b243-9a3328596d15",
+      "definitionId": "barrel_mount_collar",
+      "parentId": "4fab7f72-ca95-54af-a795-1c962809c334",
+      "slot": "barrel_mount"
+    },
+    {
+      "instanceId": "0cdaf8b0-f0d9-57cd-bf0f-37d08a848e3c",
+      "definitionId": "barrel",
+      "parentId": "7a871cef-06d1-5a19-b243-9a3328596d15",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "d693c9b5-5da2-55c9-8c8f-ab73e533191d",
+      "definitionId": "gas_block_and_tube",
+      "parentId": "0cdaf8b0-f0d9-57cd-bf0f-37d08a848e3c",
+      "slot": "gas"
+    },
+    {
+      "instanceId": "6fbac395-d659-5f3e-9af2-9232f126b917",
+      "definitionId": "front_sight",
+      "parentId": "d693c9b5-5da2-55c9-8c8f-ab73e533191d",
+      "slot": "front_sight"
+    },
+    {
+      "instanceId": "fa40955d-6322-56b0-8e75-5619ec474c89",
+      "definitionId": "muzzle_default",
+      "parentId": "0cdaf8b0-f0d9-57cd-bf0f-37d08a848e3c",
+      "slot": "muzzle"
+    },
+    {
+      "instanceId": "6595cfcc-6cd7-5930-9bbb-deb4b174ad98",
+      "definitionId": "handguard_default",
+      "parentId": "7a871cef-06d1-5a19-b243-9a3328596d15",
+      "slot": "handguard"
+    },
+    {
+      "instanceId": "82532cfe-fc66-5834-9376-9466012dc4c3",
+      "definitionId": "bolt",
+      "parentId": "4fab7f72-ca95-54af-a795-1c962809c334",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "838e3d2e-8b2d-54c0-9a2a-1e0911cf7ef7",
+      "definitionId": "charging_mechanism",
+      "parentId": "4fab7f72-ca95-54af-a795-1c962809c334",
+      "slot": "charging_handle"
+    },
+    {
+      "instanceId": "b4999128-13b8-5c7d-8180-f99ffd694b4c",
+      "definitionId": "rear_sight",
+      "parentId": "4fab7f72-ca95-54af-a795-1c962809c334",
+      "slot": "rear_sight"
+    },
+    {
+      "instanceId": "ccc68bde-610b-5bef-a281-84ef4f4b122b",
+      "definitionId": "pistol_grip",
+      "parentId": "0d8b58f1-60b0-5303-96bf-4b34a1577215",
+      "slot": "pistol_grip"
+    },
+    {
+      "instanceId": "de57c93e-82fc-5b88-b18a-c30ab71a273b",
+      "definitionId": "buffer",
+      "parentId": "0d8b58f1-60b0-5303-96bf-4b34a1577215",
+      "slot": "buffer"
+    },
+    {
+      "instanceId": "cf20ed57-7fd4-59ff-8818-6b8aea03bd0b",
+      "definitionId": "tacz_stock_tactical_ar",
+      "parentId": "de57c93e-82fc-5b88-b18a-c30ab71a273b",
+      "slot": "stock"
+    },
+    {
+      "instanceId": "12c6ac6c-6e01-5683-b17f-9f1cd36b445e",
+      "definitionId": "magazine_standard",
+      "parentId": "0d8b58f1-60b0-5303-96bf-4b34a1577215",
+      "slot": "magazine"
+    }
+  ]
+}

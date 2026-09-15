@@ -372,7 +372,8 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
                         .setHeatData(gunData.hasHeatData())
                         .setAmmoInBarrel(true)
                         .build(null);
-                stacks.add(itemStack);
+                var assembled = dev.tacticaltacz.assembled.AssembledWeapons.byId(entry.getKey());
+                stacks.add(assembled != null && assembled.nativeRig ? assembled.preset() : itemStack);
             }
         });
         return stacks;

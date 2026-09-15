@@ -3,6 +3,7 @@
 import argparse,hashlib,json,re,zipfile
 from pathlib import Path
 from weapon_migration import source_rows
+from native_m4a1_migration import native_successor
 R=Path(__file__).resolve().parents[1]
 MODULES=['weapon_assembly','weapon_models','weapon_runtime','weapon_assembly_ui']
 def verify(jar=None, newmod=None):
@@ -32,7 +33,7 @@ def verify(jar=None, newmod=None):
         if row.get('action')=='retire':
             assert not target.exists(),row['new']
         elif 'after_sha256' in row:
-            assert hashlib.sha256(target.read_bytes()).hexdigest()==row['after_sha256'],row['new']
+            assert hashlib.sha256(target.read_bytes()).hexdigest()==native_successor(row['new'],row['after_sha256']),row['new']
         if '/src/main/resources/' in row['new'] and not row['new'].endswith('neoforge.mods.toml'):
             assert hashlib.sha256((R/row['new']).read_bytes()).hexdigest()==row['before_sha256'],row['new']
     fixture_sources=json.loads((R/'modules/fixture-sources.json').read_text())

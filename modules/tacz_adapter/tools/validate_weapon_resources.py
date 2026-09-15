@@ -51,6 +51,16 @@ def validate(resources=RESOURCES):
             occupied = {n['slot'] for n in nodes if n.get('parentId') == node['instanceId']}
             if not {s['id'] for s in catalog[node['definitionId']]['slots'] if s['required']}.issubset(occupied):
                 raise ValueError('Preset lacks required components')
+        if weapon.get('nativeRig'):
+            assert gun == 'tacz_assembly:m4a1', 'Unreviewed native assembly'
+            import runpy
+            runpy.run_path(str(MODULE.parents[1]/'tools/native_m4a1/validate.py'))['validate'](RESOURCES)
+            external=read(data/directory/'native_attachments.json')
+            for item in mapping.values():
+                if item not in external:
+                    assert item not in seen_items
+                    seen_items.add(item)
+            continue
         geometry = {m['definitionId']: m for m in read(assets/directory/'manifest.json')['models']}
         from validate_presentation import validate as validate_presentation
         validate_presentation(weapon,assets,data,geometry)

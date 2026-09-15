@@ -1,0 +1,21 @@
+{
+  "item.tacz_assembly.m4a1": "Native M4A1 · lower receiver",
+  "item.tacz_assembly.m4a1_upper_receiver": "Native M4A1 · upper receiver",
+  "item.tacz_assembly.m4a1_barrel_mount_collar": "Native M4A1 · barrel mount collar",
+  "item.tacz_assembly.m4a1_barrel": "Native M4A1 · barrel",
+  "item.tacz_assembly.m4a1_gas_block_and_tube": "Native M4A1 · gas block and tube",
+  "item.tacz_assembly.m4a1_front_sight": "Native M4A1 · front sight",
+  "item.tacz_assembly.m4a1_rear_sight": "Native M4A1 · rear sight",
+  "item.tacz_assembly.m4a1_bolt": "Native M4A1 · bolt",
+  "item.tacz_assembly.m4a1_charging_mechanism": "Native M4A1 · charging mechanism",
+  "item.tacz_assembly.m4a1_handguard_default": "Native M4A1 · handguard default",
+  "item.tacz_assembly.m4a1_handguard_tactical": "Native M4A1 · handguard tactical",
+  "item.tacz_assembly.m4a1_pistol_grip": "Native M4A1 · pistol grip",
+  "item.tacz_assembly.m4a1_buffer": "Native M4A1 · buffer",
+  "item.tacz_assembly.m4a1_magazine_standard": "Native M4A1 · magazine standard",
+  "item.tacz_assembly.m4a1_muzzle_default": "Native M4A1 · muzzle default",
+  "gun.tacz_assembly.m4a1": "M4A1 · Native Assembly",
+  "tacz_assembly.workbench": "Assembly workbench",
+  "tacz_assembly.restrictions": "FMJ/HP/I effect attachments are incompatible. Grips/lasers need the rail handguard; M9 needs the default muzzle.",
+  "tacz_assembly.native_stats": "Native gun properties apply; no conversion to Tarkov recoil units."
+}

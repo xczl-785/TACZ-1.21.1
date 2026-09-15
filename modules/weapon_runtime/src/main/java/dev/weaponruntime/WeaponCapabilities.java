@@ -6,8 +6,9 @@ import net.minecraft.world.item.ItemStack;
 import java.util.*;
 /** Platform-independent weapon capability rules over the existing physical assembly component. */
 public final class WeaponCapabilities {
-    public record Profile(String platformWeaponId,AssemblyCatalog catalog,String rootDefinition,Map<String,String> itemDefinitions,List<List<String>> criticalPaths) {
-        public Profile { Objects.requireNonNull(platformWeaponId);catalog.require(rootDefinition);itemDefinitions=Map.copyOf(itemDefinitions);criticalPaths=criticalPaths.stream().map(List::copyOf).toList(); }
+    public record Profile(String platformWeaponId,AssemblyCatalog catalog,String rootDefinition,Map<String,String> itemDefinitions,List<List<String>> criticalPaths,java.util.function.Function<ItemStack,String> definitionResolver) {
+        public Profile(String id,AssemblyCatalog catalog,String root,Map<String,String> definitions,List<List<String>> paths){this(id,catalog,root,definitions,paths,s->definitions.get(BuiltInRegistries.ITEM.getKey(s.getItem()).toString()));}
+        public Profile { Objects.requireNonNull(platformWeaponId);Objects.requireNonNull(definitionResolver);catalog.require(rootDefinition);itemDefinitions=Map.copyOf(itemDefinitions);criticalPaths=criticalPaths.stream().map(List::copyOf).toList(); }
     }
     public record Readiness(boolean managed,boolean ready,String reason) {}
     private static final Map<String,Profile> PROFILES=new HashMap<>();
@@ -33,7 +34,7 @@ public final class WeaponCapabilities {
         var children=new TreeMap<String,AssemblyNode>();
         for(var installed:AssemblyTrees.state(stack).installed()) {
 
-            var part=installed.stack();var childId=p.itemDefinitions.get(BuiltInRegistries.ITEM.getKey(part.getItem()).toString());
+            var part=installed.stack();var childId=p.definitionResolver.apply(part);
             if(childId==null)throw new IllegalArgumentException("Unknown physical attachment");
             children.put(installed.slotId(),project(part,p,childId,installed.instanceId(),depth+1));
         }

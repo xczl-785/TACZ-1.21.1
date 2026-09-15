@@ -105,10 +105,13 @@ public final class GunItemBuilder {
             return ItemStack.EMPTY;
         }
 
-        ItemStack gun = new ItemStack(gunItemRegistryObject.get(), this.count);
+        ItemStack gun = gunItemRegistryObject.get() instanceof dev.tacticaltacz.assembled.AssemblyGunItem assembled && assembled.weapon().nativeRig
+                ? assembled.weapon().preset() : new ItemStack(gunItemRegistryObject.get(), this.count);
+        gun.setCount(this.count);
         if (gun.getItem() instanceof IGun iGun) {
             iGun.setGunId(gun, this.gunId);
-            iGun.setFireMode(gun, this.fireMode);
+            if (!(gun.getItem() instanceof dev.tacticaltacz.assembled.AssemblyGunItem assembled) || !assembled.weapon().nativeRig || this.fireMode != FireMode.UNKNOWN)
+                iGun.setFireMode(gun, this.fireMode);
             iGun.setCurrentAmmoCount(gun, this.ammoCount);
             iGun.setBulletInBarrel(gun, this.bulletInBarrel);
             this.attachments.forEach((type, id) -> {

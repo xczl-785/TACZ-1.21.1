@@ -23,8 +23,21 @@ public final class AssemblyGunClient {
     private static int ticks;
     @SubscribeEvent public static void opening(ScreenEvent.Opening event){
         var mc=Minecraft.getInstance();
-        if(event.getNewScreen() instanceof com.tacz.guns.client.gui.GunRefitScreen&&mc.player!=null&&AssembledWeapons.isGun(mc.player.getMainHandItem())){
+        if(event.getNewScreen() instanceof com.tacz.guns.client.gui.GunRefitScreen&&mc.player!=null&&AssembledWeapons.isGun(mc.player.getMainHandItem())&&!AssembledWeapons.from(mc.player.getMainHandItem()).nativeRig){
             event.setCanceled(true);open();
+        }
+    }
+    @SubscribeEvent public static void refitControls(ScreenEvent.Init.Post event){
+        var mc=Minecraft.getInstance();var weapon=mc.player==null?null:AssembledWeapons.from(mc.player.getMainHandItem());
+        if(event.getScreen() instanceof com.tacz.guns.client.gui.GunRefitScreen&&weapon!=null&&weapon.nativeRig)
+            event.addListener(net.minecraft.client.gui.components.Button.builder(Component.translatable("tacz_assembly.workbench"),button->open()).bounds(8,8,120,20).build());
+    }
+    @SubscribeEvent public static void restrictions(ScreenEvent.Render.Post event){
+        var mc=Minecraft.getInstance();var weapon=mc.player==null?null:AssembledWeapons.from(mc.player.getMainHandItem());
+        if(weapon!=null&&weapon.nativeRig&&(event.getScreen() instanceof com.tacz.guns.client.gui.GunRefitScreen||event.getScreen()==screen)){
+            var lines=mc.font.split(Component.translatable("tacz_assembly.restrictions"),Math.max(100,event.getScreen().width-16));
+            int y=event.getScreen().height-4-lines.size()*10;
+            for(var line:lines){event.getGuiGraphics().drawString(mc.font,line,8,y,0xffcccccc,true);y+=10;}
         }
     }
     public static void open(){opening=true;screen=null;send(0,"",List.of());}
@@ -39,10 +52,12 @@ public final class AssemblyGunClient {
         var weapon=AssembledWeapons.from(view.held());
         try{
             if(host==null||opening||!weapon.isGun(quoted)){opening=true;host=new Host();}host.accept(view);quoted=view.held();
+            if(weapon.nativeRig&&view.result().equals("committed"))com.tacz.guns.resource.modifier.AttachmentPropertyManager.postChangeEvent(mc.player,mc.player.getMainHandItem());
             if(opening){
                 var model=com.tacz.guns.api.TimelessAPI.getClientGunIndex(weapon.GUN).orElseThrow().getDefaultDisplay().getGunModel();
-                if(!(model instanceof AssemblyGunModel assembled))throw new IllegalStateException("Assembly model type unavailable");
-                screen=new WorkbenchScreen(host,assembled.geometry(),assembled.materials(),id->Component.translatable("item."+weapon.ITEMS.get(id).replace(':','.')).getString(),id->{var item=net.minecraft.resources.ResourceLocation.parse(weapon.ITEMS.get(id));return item.withPath("textures/item/"+item.getPath()+".png");},view.held().getHoverName().getString()+" · "+Component.translatable("tactical_tacz_adapter.assembly_workbench.title").getString());
+                var geometry=model instanceof AssemblyGunModel assembled?assembled.geometry():NativeAssemblyView.geometry(weapon);
+                var materials=model instanceof AssemblyGunModel assembled?assembled.materials():dev.weaponmodels.AssemblyMaterials.white();
+                screen=new WorkbenchScreen(host,geometry,materials,id->weapon.nativeRig?weapon.createPart(id).getHoverName().getString():Component.translatable("item."+weapon.ITEMS.get(id).replace(':','.')).getString(),id->{if(weapon.nativeRig)return net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(weapon.GUN.getNamespace(),"textures/item/"+id+".png");var item=net.minecraft.resources.ResourceLocation.parse(weapon.ITEMS.get(id));return item.withPath("textures/item/"+item.getPath()+".png");},view.held().getHoverName().getString()+" · "+Component.translatable("tactical_tacz_adapter.assembly_workbench.title").getString());
                 opening=false;mc.setScreen(screen);
             }
             if(!view.result().isEmpty())mc.player.displayClientMessage(Component.translatable("tactical_tacz_adapter.assembly_workbench."+view.result()),true);
@@ -55,9 +70,10 @@ public final class AssemblyGunClient {
     }
     private static final class Host implements WorkbenchAccess {
         private AssemblySession view;
+        private boolean nativeRig;
         private Map<UUID,String> sources=Map.of();
         void accept(AssemblyGunProtocol.View response){
-            var weapon=AssembledWeapons.from(response.held());
+            var weapon=AssembledWeapons.from(response.held());nativeRig=weapon.nativeRig;
             var selected=view==null?List.<String>of():view.selectedPath();var stock=new ArrayList<AssemblyNode>();var ids=new HashMap<UUID,String>();
             for(var choice:response.choices()){var node=weapon.project(choice.stack());stock.add(node);ids.put(node.instanceId(),choice.id());}
             view=new AssemblySession(weapon.CATALOG,weapon.project(response.held()),stock,new WeaponStats.Context(0,0));sources=Map.copyOf(ids);
@@ -71,6 +87,7 @@ public final class AssemblyGunClient {
         public Optional<AssemblySession.Preview> preview(){return view.preview();}
         public List<AssemblyEngine.Issue> feedback(){return view.feedback();}
         public WeaponStats.Values stats(){return view.stats();}
+        public Optional<String> statsExplanation(){return nativeRig?Optional.of(Component.translatable("tacz_assembly.native_stats").getString()):Optional.empty();}
         public AssemblyEngine.Validation validation(){return view.validation();}
         public boolean busy(){return pending;}
         public boolean canUndo(){return false;}

@@ -40,7 +40,8 @@ public final class RefitClient {
         if(!soundItem.isEmpty()&&(view.result().equals("installed")||view.result().equals("unloaded")))
             com.tacz.guns.client.sound.SoundPlayManager.playerRefitSound(soundItem,mc.player,view.result().equals("installed")?com.tacz.guns.sound.SoundManager.INSTALL_SOUND:com.tacz.guns.sound.SoundManager.UNINSTALL_SOUND);
         soundItem=net.minecraft.world.item.ItemStack.EMPTY;
-        AttachmentPropertyManager.postChangeEvent(mc.player,mc.player.getMainHandItem());
+        var assembled=dev.tacticaltacz.assembled.AssembledWeapons.from(view.held());
+        if(assembled==null||!assembled.nativeRig||view.result().equals("installed")||view.result().equals("unloaded"))AttachmentPropertyManager.postChangeEvent(mc.player,mc.player.getMainHandItem());
         owner.init();
     }
 }

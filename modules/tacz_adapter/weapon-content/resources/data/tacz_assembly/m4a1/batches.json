@@ -1,0 +1,647 @@
+{
+  "assembly_mag_standard": {
+    "definition": "magazine_standard",
+    "variant": "always",
+    "sourceBone": "mag_standard"
+  },
+  "assembly_mag_extended_1": {
+    "definition": "tacz_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "mag_extended_1"
+  },
+  "assembly_mag_extended_2": {
+    "definition": "tacz_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "mag_extended_2"
+  },
+  "assembly_extend_magazine": {
+    "definition": "tacz_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "extend_magazine"
+  },
+  "assembly_gun_body": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "gun_body"
+  },
+  "assembly_bolt": {
+    "definition": "bolt",
+    "variant": "always",
+    "sourceBone": "bolt"
+  },
+  "assembly_group26": {
+    "definition": "bolt",
+    "variant": "always",
+    "sourceBone": "group26"
+  },
+  "assembly_pull": {
+    "definition": "charging_mechanism",
+    "variant": "always",
+    "sourceBone": "pull"
+  },
+  "assembly_octagon2": {
+    "definition": "buffer",
+    "variant": "always",
+    "sourceBone": "octagon2"
+  },
+  "assembly_octagon3": {
+    "definition": "buffer",
+    "variant": "always",
+    "sourceBone": "octagon3"
+  },
+  "assembly_group2": {
+    "definition": "barrel",
+    "variant": "always",
+    "sourceBone": "group2"
+  },
+  "assembly_octagon4": {
+    "definition": "barrel",
+    "variant": "always",
+    "sourceBone": "octagon4"
+  },
+  "assembly_octagon5": {
+    "definition": "barrel",
+    "variant": "always",
+    "sourceBone": "octagon5"
+  },
+  "assembly_octagon7": {
+    "definition": "barrel",
+    "variant": "always",
+    "sourceBone": "octagon7"
+  },
+  "assembly_sight2": {
+    "definition": "gas_block_and_tube",
+    "variant": "always",
+    "sourceBone": "sight2"
+  },
+  "assembly_fore_sight3": {
+    "definition": "gas_block_and_tube",
+    "variant": "always",
+    "sourceBone": "fore_sight3"
+  },
+  "assembly_upper2": {
+    "definition": "upper_receiver",
+    "variant": "always",
+    "sourceBone": "upper2"
+  },
+  "assembly_lower2": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "lower2"
+  },
+  "assembly_cap2": {
+    "definition": "upper_receiver",
+    "variant": "always",
+    "sourceBone": "cap2"
+  },
+  "assembly_deco2": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "deco2"
+  },
+  "assembly_bolt_release": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "bolt_release"
+  },
+  "assembly_mag_release": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "mag_release"
+  },
+  "assembly_group35": {
+    "definition": "upper_receiver",
+    "variant": "always",
+    "sourceBone": "group35"
+  },
+  "assembly_group34": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "group34"
+  },
+  "assembly_group31": {
+    "definition": "upper_receiver",
+    "variant": "always",
+    "sourceBone": "group31"
+  },
+  "assembly_body_rail": {
+    "definition": "upper_receiver",
+    "variant": "always",
+    "sourceBone": "body_rail"
+  },
+  "assembly_grip2": {
+    "definition": "pistol_grip",
+    "variant": "always",
+    "sourceBone": "grip2"
+  },
+  "assembly_bone38": {
+    "definition": "barrel_mount_collar",
+    "variant": "always",
+    "sourceBone": "bone38"
+  },
+  "assembly_bone61": {
+    "definition": "barrel_mount_collar",
+    "variant": "always",
+    "sourceBone": "bone61"
+  },
+  "assembly_bone62": {
+    "definition": "barrel_mount_collar",
+    "variant": "always",
+    "sourceBone": "bone62"
+  },
+  "assembly_bone70": {
+    "definition": "barrel_mount_collar",
+    "variant": "always",
+    "sourceBone": "bone70"
+  },
+  "assembly_selector": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "selector"
+  },
+  "assembly_octagon42": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "octagon42"
+  },
+  "assembly_bone3": {
+    "definition": "rear_sight",
+    "variant": "always",
+    "sourceBone": "bone3"
+  },
+  "assembly_octagon26": {
+    "definition": "rear_sight",
+    "variant": "always",
+    "sourceBone": "octagon26"
+  },
+  "assembly_octagon33": {
+    "definition": "rear_sight",
+    "variant": "always",
+    "sourceBone": "octagon33"
+  },
+  "assembly_group16": {
+    "definition": "rear_sight",
+    "variant": "always",
+    "sourceBone": "group16"
+  },
+  "assembly_octagon34": {
+    "definition": "rear_sight",
+    "variant": "always",
+    "sourceBone": "octagon34"
+  },
+  "assembly_fore_sights": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "fore_sights"
+  },
+  "assembly_fore_sight": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "fore_sight"
+  },
+  "assembly_bone": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "bone"
+  },
+  "assembly_bone2": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "bone2"
+  },
+  "assembly_sight_illuminated": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_bone9": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "bone9"
+  },
+  "assembly_bone4": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "bone4"
+  },
+  "assembly_fore_sights2": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "fore_sights2"
+  },
+  "assembly_fore_sight2": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "fore_sight2"
+  },
+  "assembly_bone15": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "bone15"
+  },
+  "assembly_bone16": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "bone16"
+  },
+  "assembly_sight_illuminated2": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "sight_illuminated2"
+  },
+  "assembly_bone19": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "bone19"
+  },
+  "assembly_bone20": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "bone20"
+  },
+  "assembly_muzzle_default": {
+    "definition": "muzzle_default",
+    "variant": "always",
+    "sourceBone": "muzzle_default"
+  },
+  "assembly_octagon6": {
+    "definition": "muzzle_default",
+    "variant": "always",
+    "sourceBone": "octagon6"
+  },
+  "assembly_octagon8": {
+    "definition": "muzzle_default",
+    "variant": "always",
+    "sourceBone": "octagon8"
+  },
+  "assembly_rail2": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail2"
+  },
+  "assembly_rail3": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail3"
+  },
+  "assembly_rail4": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail4"
+  },
+  "assembly_rail": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail"
+  },
+  "assembly_hexadecagon": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "hexadecagon"
+  },
+  "assembly_group9": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group9"
+  },
+  "assembly_group12": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group12"
+  },
+  "assembly_group10": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group10"
+  },
+  "assembly_group11": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group11"
+  },
+  "assembly_group17": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group17"
+  },
+  "assembly_rings2": {
+    "definition": "handguard_default",
+    "variant": "always",
+    "sourceBone": "rings2"
+  },
+  "assembly_holes3": {
+    "definition": "handguard_default",
+    "variant": "always",
+    "sourceBone": "holes3"
+  },
+  "assembly_holes2": {
+    "definition": "handguard_default",
+    "variant": "always",
+    "sourceBone": "holes2"
+  },
+  "assembly_bone7": {
+    "definition": "handguard_default",
+    "variant": "always",
+    "sourceBone": "bone7"
+  },
+  "assembly_octagon37": {
+    "definition": "handguard_default",
+    "variant": "always",
+    "sourceBone": "octagon37"
+  },
+  "assembly_lod_ld_upper": {
+    "definition": "upper_receiver",
+    "variant": "always",
+    "sourceBone": "ld_upper"
+  },
+  "assembly_lod_ld_toprails": {
+    "definition": "upper_receiver",
+    "variant": "always",
+    "sourceBone": "ld_toprails"
+  },
+  "assembly_lod_ld_portgroup": {
+    "definition": "upper_receiver",
+    "variant": "always",
+    "sourceBone": "ld_portgroup"
+  },
+  "assembly_lod_ld_magwell": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "ld_magwell"
+  },
+  "assembly_lod_ld_lower": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "ld_lower"
+  },
+  "assembly_lod_ld_switch": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "ld_switch"
+  },
+  "assembly_lod_ld_trigger": {
+    "definition": "lower_receiver",
+    "variant": "always",
+    "sourceBone": "ld_trigger"
+  },
+  "assembly_lod_ld_grip": {
+    "definition": "pistol_grip",
+    "variant": "always",
+    "sourceBone": "ld_grip"
+  },
+  "assembly_lod_ld_buffer": {
+    "definition": "buffer",
+    "variant": "always",
+    "sourceBone": "ld_buffer"
+  },
+  "assembly_lod_sight": {
+    "definition": "rear_sight",
+    "variant": "always",
+    "sourceBone": "sight"
+  },
+  "assembly_lod_ld_pull": {
+    "definition": "charging_mechanism",
+    "variant": "always",
+    "sourceBone": "ld_pull"
+  },
+  "assembly_lod_ld_mag": {
+    "definition": "magazine_standard",
+    "variant": "always",
+    "sourceBone": "ld_mag"
+  },
+  "assembly_lod_derived_mag_extended_1": {
+    "definition": "tacz_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "mag_extended_1"
+  },
+  "assembly_lod_derived_mag_extended_2": {
+    "definition": "tacz_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "mag_extended_2"
+  },
+  "assembly_lod_derived_extend_magazine": {
+    "definition": "tacz_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "extend_magazine"
+  },
+  "assembly_lod_derived_bolt": {
+    "definition": "bolt",
+    "variant": "always",
+    "sourceBone": "bolt"
+  },
+  "assembly_lod_derived_group26": {
+    "definition": "bolt",
+    "variant": "always",
+    "sourceBone": "group26"
+  },
+  "assembly_lod_derived_group2": {
+    "definition": "barrel",
+    "variant": "always",
+    "sourceBone": "group2"
+  },
+  "assembly_lod_derived_octagon4": {
+    "definition": "barrel",
+    "variant": "always",
+    "sourceBone": "octagon4"
+  },
+  "assembly_lod_derived_octagon5": {
+    "definition": "barrel",
+    "variant": "always",
+    "sourceBone": "octagon5"
+  },
+  "assembly_lod_derived_octagon7": {
+    "definition": "barrel",
+    "variant": "always",
+    "sourceBone": "octagon7"
+  },
+  "assembly_lod_derived_sight2": {
+    "definition": "gas_block_and_tube",
+    "variant": "always",
+    "sourceBone": "sight2"
+  },
+  "assembly_lod_derived_fore_sight3": {
+    "definition": "gas_block_and_tube",
+    "variant": "always",
+    "sourceBone": "fore_sight3"
+  },
+  "assembly_lod_derived_bone38": {
+    "definition": "barrel_mount_collar",
+    "variant": "always",
+    "sourceBone": "bone38"
+  },
+  "assembly_lod_derived_bone61": {
+    "definition": "barrel_mount_collar",
+    "variant": "always",
+    "sourceBone": "bone61"
+  },
+  "assembly_lod_derived_bone62": {
+    "definition": "barrel_mount_collar",
+    "variant": "always",
+    "sourceBone": "bone62"
+  },
+  "assembly_lod_derived_bone70": {
+    "definition": "barrel_mount_collar",
+    "variant": "always",
+    "sourceBone": "bone70"
+  },
+  "assembly_lod_derived_fore_sights": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "fore_sights"
+  },
+  "assembly_lod_derived_fore_sight": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "fore_sight"
+  },
+  "assembly_lod_derived_bone": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "bone"
+  },
+  "assembly_lod_derived_bone2": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "bone2"
+  },
+  "assembly_lod_derived_sight_illuminated": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_lod_derived_bone9": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "bone9"
+  },
+  "assembly_lod_derived_bone4": {
+    "definition": "front_sight",
+    "variant": "upright",
+    "sourceBone": "bone4"
+  },
+  "assembly_lod_derived_fore_sights2": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "fore_sights2"
+  },
+  "assembly_lod_derived_fore_sight2": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "fore_sight2"
+  },
+  "assembly_lod_derived_bone15": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "bone15"
+  },
+  "assembly_lod_derived_bone16": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "bone16"
+  },
+  "assembly_lod_derived_sight_illuminated2": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "sight_illuminated2"
+  },
+  "assembly_lod_derived_bone19": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "bone19"
+  },
+  "assembly_lod_derived_bone20": {
+    "definition": "front_sight",
+    "variant": "folded",
+    "sourceBone": "bone20"
+  },
+  "assembly_lod_derived_muzzle_default": {
+    "definition": "muzzle_default",
+    "variant": "always",
+    "sourceBone": "muzzle_default"
+  },
+  "assembly_lod_derived_octagon6": {
+    "definition": "muzzle_default",
+    "variant": "always",
+    "sourceBone": "octagon6"
+  },
+  "assembly_lod_derived_octagon8": {
+    "definition": "muzzle_default",
+    "variant": "always",
+    "sourceBone": "octagon8"
+  },
+  "assembly_lod_derived_rail2": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail2"
+  },
+  "assembly_lod_derived_rail3": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail3"
+  },
+  "assembly_lod_derived_rail4": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail4"
+  },
+  "assembly_lod_derived_rail": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail"
+  },
+  "assembly_lod_derived_hexadecagon": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "hexadecagon"
+  },
+  "assembly_lod_derived_group9": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group9"
+  },
+  "assembly_lod_derived_group12": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group12"
+  },
+  "assembly_lod_derived_group10": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group10"
+  },
+  "assembly_lod_derived_group11": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group11"
+  },
+  "assembly_lod_derived_group17": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group17"
+  },
+  "assembly_lod_derived_rings2": {
+    "definition": "handguard_default",
+    "variant": "always",
+    "sourceBone": "rings2"
+  },
+  "assembly_lod_derived_holes3": {
+    "definition": "handguard_default",
+    "variant": "always",
+    "sourceBone": "holes3"
+  },
+  "assembly_lod_derived_holes2": {
+    "definition": "handguard_default",
+    "variant": "always",
+    "sourceBone": "holes2"
+  },
+  "assembly_lod_derived_bone7": {
+    "definition": "handguard_default",
+    "variant": "always",
+    "sourceBone": "bone7"
+  },
+  "assembly_lod_derived_octagon37": {
+    "definition": "handguard_default",
+    "variant": "always",
+    "sourceBone": "octagon37"
+  }
+}

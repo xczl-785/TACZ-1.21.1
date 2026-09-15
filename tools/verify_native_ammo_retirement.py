@@ -11,6 +11,7 @@ from verify_ammunition_chain import ROOT, PACK, read_json, snapshot, sha
 
 from weapon_migration import source_rows, successor_hash
 from adapter_migration import adapter_rows
+from native_m4a1_migration import native_rows
 
 LEDGER = ROOT/'docs/assembly-experiment/native-ammo-retirement.json'
 
@@ -25,7 +26,7 @@ def main():
     actual = subprocess.check_output(['git', 'diff', '--name-status', base, '--', 'src'], cwd=ROOT, text=True).splitlines()
     actual_paths = {line.split('\t')[1] for line in actual}
     actual_paths.update(subprocess.check_output(['git','ls-files','--others','--exclude-standard','--','src'],cwd=ROOT,text=True).splitlines())
-    expected_paths = set(rows) | set(source_rows()) | set(adapter_rows())
+    expected_paths = set(rows) | set(source_rows()) | set(adapter_rows()) | {p for p in native_rows() if p.startswith("src/")}
     assert actual_paths == expected_paths, ('Unexpected production diff', actual_paths ^ expected_paths)
     # Nothing in the canonical 86-round data/generation pipeline may change.
     ammo_changes = subprocess.check_output(['git','diff','--name-only',base,'--','ammunition'],cwd=ROOT,text=True).splitlines()

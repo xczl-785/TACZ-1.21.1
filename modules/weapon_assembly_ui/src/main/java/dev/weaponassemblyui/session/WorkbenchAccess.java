@@ -13,6 +13,8 @@ public interface WorkbenchAccess {
     Optional<AssemblySession.Preview> preview();
     List<AssemblyEngine.Issue> feedback();
     WeaponStats.Values stats();
+    /** Explain when the host uses a different stat system instead of showing fabricated zero values. */
+    default Optional<String> statsExplanation(){return Optional.empty();}
     AssemblyEngine.Validation validation();
     boolean canUndo();
     boolean canReset();

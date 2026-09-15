@@ -14,7 +14,7 @@ public final class AssemblyGunExchange {
     public static boolean ready(ServerPlayer p){
         if(!AssembledWeapons.isGun(p.getMainHandItem()))return false;
         var op=IGunOperator.fromLivingEntity(p);
-        return !p.isUsingItem()&&!op.getSynIsBolting()&&op.getSynReloadState().getCountDown()<0&&op.getSynShootCoolDown()<=0&&op.getSynDrawCoolDown()<=0;
+        return !((IGun)p.getMainHandItem().getItem()).hasAttachmentLock(p.getMainHandItem())&&!p.isUsingItem()&&!op.getSynIsBolting()&&op.getSynReloadState().getCountDown()<0&&op.getSynShootCoolDown()<=0&&op.getSynDrawCoolDown()<=0;
     }
     public static Optional<TacticalHeldExchange.Change> plan(ItemStack held,ItemStack payment,List<String> path){
         if(!AssembledWeapons.isGun(held)||path.isEmpty()||path.size()>AssemblyTrees.MAX_DEPTH)return Optional.empty();

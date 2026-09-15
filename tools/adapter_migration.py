@@ -2,6 +2,7 @@
 import hashlib,json,subprocess
 from functools import lru_cache
 from pathlib import Path
+from native_m4a1_migration import native_successor
 ROOT=Path(__file__).resolve().parents[1]
 ALLOWED={
  'GunMod.java','AbstractGunItem.java','TarkovAmmoItem.java','ModernKineticGunScriptAPI.java',
@@ -16,12 +17,12 @@ def adapter_rows():
  for p,r in rows.items():
   old=subprocess.check_output(['git','show',data['baseline']+':'+p],cwd=ROOT)
   assert hashlib.sha256(old).hexdigest()==r['before_sha256'],p
-  assert hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==r['after_sha256'],p
+  assert hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==native_successor(p,r['after_sha256']),p
  return rows
 
 def adapter_successor(path,expected):
  row=adapter_rows().get(path)
  if row:
   assert row['before_sha256']==expected,(path,'second-stage predecessor mismatch')
-  return row['after_sha256']
- return expected
+  return native_successor(path,row['after_sha256'])
+ return native_successor(path,expected)

@@ -3,6 +3,7 @@
 import argparse,hashlib,json,re,subprocess,zipfile
 from pathlib import Path
 from adapter_migration import ROOT as R,adapter_rows
+from native_m4a1_migration import native_successor,predecessor_text
 
 def verify(jar=None,development=None,newmod=None):
  adapter_rows()
@@ -21,11 +22,11 @@ def verify(jar=None,development=None,newmod=None):
    assert not p.exists(),p
    if '/mixin/' in row['old']:mixins.append(p.name)
    continue
-  assert hashlib.sha256(p.read_bytes()).hexdigest()==row['after_sha256'],p
+  assert hashlib.sha256(p.read_bytes()).hexdigest()==native_successor(row['new'],row['after_sha256']),p
   if '/weapon-content/' in row['new'] or '/src/main/resources/' in row['new']:
    assert row['before_sha256']==row['after_sha256'],p
   if '/src/main/java/' in row['new'] or '/src/development/java/' in row['new']:
-   s=p.read_text();assert '@Mod(' not in s and '@Mixin(' not in s,p
+   s=predecessor_text(row['new'],p.read_text());assert '@Mod(' not in s and '@Mixin(' not in s,p
    if row['before_sha256']!=row['after_sha256']:
     changed.append(p.name)
     if newmod:

@@ -20,7 +20,7 @@ public final class AssembledWeapons {
         for(var path:index.getAsJsonArray("weapons")){
             var weapon=new AssembledWeapon(path.getAsString());
             if(guns.put(weapon.GUN,weapon)!=null||!modelTypes.add(weapon.modelType)||!itemTypes.add(weapon.itemType))throw new IllegalArgumentException("Duplicate gun/model/item type");
-            for(var id:weapon.ITEMS.values())if(!items.add(id))throw new IllegalArgumentException("Duplicate registered item: "+id);
+            for(var id:weapon.ITEMS.values())if(!weapon.nativeAttachments.containsKey(id)&&!items.add(id))throw new IllegalArgumentException("Duplicate registered item: "+id);
         }
         WEAPONS=Collections.unmodifiableMap(guns);
     }
@@ -32,12 +32,12 @@ public final class AssembledWeapons {
         for(var weapon:all()){
             h.register(weapon.GUN,new AssemblyGunItem(weapon));
             com.tacz.guns.api.item.gun.GunItemManager.registerGunItem(weapon.itemType,net.neoforged.neoforge.registries.DeferredItem.<AssemblyGunItem>createItem(weapon.GUN));
-            weapon.ITEMS.forEach((definition,id)->{if(!definition.equals(weapon.ROOT))h.register(ResourceLocation.parse(id),new Item(new Item.Properties().stacksTo(1)));});
+            weapon.ITEMS.forEach((definition,id)->{if(!definition.equals(weapon.ROOT)&&!weapon.nativeAttachments.containsKey(id))h.register(ResourceLocation.parse(id),new Item(new Item.Properties().stacksTo(1)));});
         }
     });}
     @SubscribeEvent public static void setup(net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent event){event.enqueueWork(()->{
         for(var weapon:all()){
-            WeaponCapabilities.register(weapon.PROFILE,new WeaponCapabilities.Profile(weapon.PROFILE,weapon.CATALOG,weapon.ROOT,weapon.DEFINITIONS,weapon.requiredPaths));
+            WeaponCapabilities.register(weapon.PROFILE,new WeaponCapabilities.Profile(weapon.PROFILE,weapon.CATALOG,weapon.ROOT,weapon.DEFINITIONS,weapon.requiredPaths,weapon::definition));
             var item=BuiltInRegistries.ITEM.get(weapon.GUN);var provider=ResourceLocation.fromNamespaceAndPath(weapon.GUN.getNamespace(),weapon.GUN.getPath()+"_firearm");
             dev.itemfoundation.api.identity.ItemIdentities.server().register(item,provider,s->Set.of(ResourceLocation.parse("item_foundation:type/weapon/firearm")));
             dev.itemfoundation.api.equipment.WearableQualifications.register(item,provider,Set.of("tactical_inventory:primary_weapon_1","tactical_inventory:primary_weapon_2"),s->Set.of("tactical_inventory:primary_weapon_1","tactical_inventory:primary_weapon_2"));

@@ -431,6 +431,7 @@ public class GunDisplayInstance {
     }
 
     private void checkLod(GunDisplay display) {
+        var constructor = GunModelTypeManager.getLodModelInstanceConstructor(display.getModelType());
         GunLod gunLod = display.getGunLod();
         if (gunLod != null) {
             ResourceLocation texture = gunLod.getModelTexture();
@@ -446,12 +447,12 @@ public class GunDisplayInstance {
             }
             // 先判断是不是 1.10.0 版本基岩版模型文件
             if (BedrockVersion.isLegacyVersion(modelPOJO) && modelPOJO.getGeometryModelLegacy() != null) {
-                BedrockGunModel model = new BedrockGunModel(modelPOJO, BedrockVersion.LEGACY);
+                BedrockGunModel model = constructor.apply(modelPOJO, BedrockVersion.LEGACY);
                 lodModel = Pair.of(model, texture);
             }
             // 判定是不是 1.12.0 版本基岩版模型文件
             if (BedrockVersion.isNewVersion(modelPOJO) && modelPOJO.getGeometryModelNew() != null) {
-                BedrockGunModel model = new BedrockGunModel(modelPOJO, BedrockVersion.NEW);
+                BedrockGunModel model = constructor.apply(modelPOJO, BedrockVersion.NEW);
                 lodModel = Pair.of(model, texture);
             }
         }

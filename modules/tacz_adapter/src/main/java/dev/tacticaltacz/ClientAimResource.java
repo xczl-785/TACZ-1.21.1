@@ -3,6 +3,6 @@ package dev.tacticaltacz;
 public final class ClientAimResource {
  @net.neoforged.bus.api.SubscribeEvent public static void tick(net.neoforged.neoforge.client.event.ClientTickEvent.Post e){
  var p=net.minecraft.client.Minecraft.getInstance().player;
- if(p!=null&&GunAdoption.contains(p.getMainHandItem())&&dev.tacticalinventory.api.ClientCharacterDisplay.resources().map(r->!r.canAim()).orElse(false))com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator.fromLocalPlayer(p).aim(false);
+ if(p!=null&&GunAdoption.contains(p.getMainHandItem())&&(dev.tacticalinventory.api.ClientCharacterDisplay.resources().map(r->!r.canAim()).orElse(false)||dev.tacticaltacz.assembled.NativeAttachmentProjection.blocksAim(p.getMainHandItem())))com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator.fromLocalPlayer(p).aim(false);
  }
 }

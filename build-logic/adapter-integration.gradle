@@ -80,3 +80,19 @@ tasks.register('verifyAdapterIntegration', Exec) {
     commandLine 'python3', 'tools/verify_adapter_integration.py'
 }
 tasks.named('check') { dependsOn 'verifyAdapterIntegration' }
+
+// Registry-backed JUnit only: loads Mod registrations, never creates a server or world.
+neoForge { unitTest { enable(); testedMod = mods.tacz } }
+sourceSets.test.java.srcDir('modules/tacz_adapter/src/minecraftTest/java')
+configurations.testImplementation.extendsFrom(configurations.weaponTestLibraries)
+tasks.named('test', Test) {
+    useJUnitPlatform()
+    workingDir projectDir
+}
+// Match the production Rhino version for KubeJS' transitive compile edge.
+dependencies { testImplementation(libs.dev.latvian.mods.rhino) }
+// Optional recipe/scripting UI is outside registry-backed assembly tests.
+configurations.testRuntimeClasspath {
+    exclude group: 'mezz.jei'
+    exclude group: 'dev.latvian.mods', module: 'kubejs-neoforge'
+}

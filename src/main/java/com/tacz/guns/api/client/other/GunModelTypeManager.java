@@ -11,6 +11,16 @@ import java.util.function.BiFunction;
 public class GunModelTypeManager {
     public static final Map<String, BiFunction<BedrockModelPOJO, BedrockVersion, ? extends BedrockGunModel>> GUN_MODEL_TYPE_MAP = new HashMap<>();
 
+    private static final Map<String, BiFunction<BedrockModelPOJO, BedrockVersion, ? extends BedrockGunModel>> LOD_MODEL_TYPES = new HashMap<>();
+
+    public static synchronized void registerLodModelType(String typeName, BiFunction<BedrockModelPOJO, BedrockVersion, ? extends BedrockGunModel> constructor) {
+        LOD_MODEL_TYPES.put(typeName, constructor);
+    }
+
+    public static synchronized BiFunction<BedrockModelPOJO, BedrockVersion, ? extends BedrockGunModel> getLodModelInstanceConstructor(String typeName) {
+        return LOD_MODEL_TYPES.getOrDefault(typeName, BedrockGunModel::new);
+    }
+
     //注册字符串对应的模型实例构造器到Map中
     //注意多线程安全
     public static synchronized void registerModelType(String typeName, BiFunction<BedrockModelPOJO, BedrockVersion, ? extends BedrockGunModel> constructor) {

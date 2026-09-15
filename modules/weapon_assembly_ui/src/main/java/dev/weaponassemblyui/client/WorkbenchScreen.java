@@ -161,8 +161,11 @@ public final class WorkbenchScreen extends ModularUIScreen {
     private void refreshReadout() {
         viewport.selection(hoveredPath!=null&&chooser==null?hoveredPath:host.selectedPath().isEmpty()?null:host.selectedPath(),host.preview().isPresent());
         var current=host.stats();var candidate=host.preview();
+        if(host.statsExplanation().isPresent()){stats.text(host.statsExplanation().orElseThrow());delta.text("");}
+        else {
         stats.text(tr("stats",String.format(Locale.ROOT,"%.2f",current.weightKg()),String.format(Locale.ROOT,"%.1f",current.ergonomics()),String.format(Locale.ROOT,"%.1f",current.recoilVertical())));
         delta.text(candidate.flatMap(AssemblySession.Preview::stats).map(v->tr("delta",signed(v.weightKg()-current.weightKg()),signed(v.ergonomics()-current.ergonomics()),signed(v.recoilVertical()-current.recoilVertical()))).orElse(""));
+        }
         previewNotice.text(candidate.map(p->tr(p.plan().success()?"preview":"preview_rejected")).orElse(""));
         var errors=candidate.filter(p->!p.plan().success()).map(p->p.plan().errors()).orElse(host.feedback());
         if(!errors.isEmpty())status.text(tr("rejected")+": "+issue(errors.getFirst()));

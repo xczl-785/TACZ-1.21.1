@@ -22,6 +22,7 @@ public class LocalPlayerAim {
     }
 
     public void aim(boolean isAim) {
+        if (isAim && dev.tacticaltacz.assembled.NativeAttachmentProjection.blocksAim(player.getMainHandItem())) return;
         if (isAim && dev.tacticaltacz.GunAdoption.contains(player.getMainHandItem()) && dev.tacticalinventory.api.ClientCharacterDisplay.resources().map(r -> !r.canAim()).orElse(false)) return;
 
         // 暂定为主手

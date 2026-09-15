@@ -33,6 +33,8 @@ public final class RefitBridge {
                 &&operator.getSynReloadState().getCountDown()<0&&operator.getSynShootCoolDown()<=0&&operator.getSynDrawCoolDown()<=0;
     }
     public static RefitProtocol.View handle(ServerPlayer player,RefitProtocol.Request request){
+        var assembled=dev.tacticaltacz.assembled.AssembledWeapons.from(player.getMainHandItem());
+        if(assembled!=null&&assembled.nativeRig)return dev.tacticaltacz.assembled.AssemblyGunWorkbench.handleRefit(player,request);
         String result="";
         if(request.action()!=0){
             var session=SESSIONS.get(player);

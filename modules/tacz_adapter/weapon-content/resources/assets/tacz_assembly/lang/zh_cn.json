@@ -1,0 +1,21 @@
+{
+  "item.tacz_assembly.m4a1": "M4A1 · 原生实体组装",
+  "item.tacz_assembly.m4a1_upper_receiver": "M4A1 · 上机匣",
+  "item.tacz_assembly.m4a1_barrel_mount_collar": "M4A1 · 枪管连接环",
+  "item.tacz_assembly.m4a1_barrel": "M4A1 · 枪管",
+  "item.tacz_assembly.m4a1_gas_block_and_tube": "M4A1 · 导气总成",
+  "item.tacz_assembly.m4a1_front_sight": "M4A1 · 前瞄具",
+  "item.tacz_assembly.m4a1_rear_sight": "M4A1 · 后瞄具",
+  "item.tacz_assembly.m4a1_bolt": "M4A1 · 枪机总成",
+  "item.tacz_assembly.m4a1_charging_mechanism": "M4A1 · 拉机柄",
+  "item.tacz_assembly.m4a1_handguard_default": "M4A1 · 标准护木",
+  "item.tacz_assembly.m4a1_handguard_tactical": "M4A1 · 导轨护木",
+  "item.tacz_assembly.m4a1_pistol_grip": "M4A1 · 手枪握把",
+  "item.tacz_assembly.m4a1_buffer": "M4A1 · 缓冲管",
+  "item.tacz_assembly.m4a1_magazine_standard": "M4A1 · 标准30发弹匣",
+  "item.tacz_assembly.m4a1_muzzle_default": "M4A1 · 默认枪口装置",
+  "gun.tacz_assembly.m4a1": "M4A1 · 原生实体组装",
+  "tacz_assembly.workbench": "打开组装工作台",
+  "tacz_assembly.restrictions": "FMJ/HP/I 效果附件不兼容；前握把和激光需要导轨护木；M9 需要默认枪口装置。",
+  "tacz_assembly.native_stats": "使用原生枪械属性；此处不换算为塔科夫后坐力数值。"
+}

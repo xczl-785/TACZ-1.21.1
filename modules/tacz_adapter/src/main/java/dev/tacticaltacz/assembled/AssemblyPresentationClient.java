@@ -23,7 +23,7 @@ public final class AssemblyPresentationClient {
     public static WeaponHandling.Factors factors(){
         var player=Minecraft.getInstance().player;if(player==null)return WeaponHandling.Factors.IDENTITY;
         var stack=player.getMainHandItem();if(!AssembledWeapons.isGun(stack))return WeaponHandling.Factors.IDENTITY;
-        var weapon=AssembledWeapons.from(stack);return weapon.handling.factors(weapon,stack);
+        var weapon=AssembledWeapons.from(stack);return weapon.nativeRig?WeaponHandling.Factors.IDENTITY:weapon.handling.factors(weapon,stack);
     }
     @SubscribeEvent public static void shot(GunFireEvent event){
         var player=Minecraft.getInstance().player;

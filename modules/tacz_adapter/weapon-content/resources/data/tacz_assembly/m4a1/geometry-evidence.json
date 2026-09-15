@@ -1,0 +1,494 @@
+{
+  "nativeRigBones": 140,
+  "highCubes": 938,
+  "lowCubes": 135,
+  "reusedLowCubes": 47,
+  "maximumNeutralMatrixError": 8.881784197001252e-16,
+  "derivedRegions": [
+    {
+      "bone": "mag_extended_1",
+      "definition": "tacz_extended_mag_1",
+      "retainedIndices": [
+        4,
+        16
+      ],
+      "inputCubes": 33,
+      "outputCubes": 2
+    },
+    {
+      "bone": "mag_extended_2",
+      "definition": "tacz_extended_mag_2",
+      "retainedIndices": [
+        4,
+        16
+      ],
+      "inputCubes": 33,
+      "outputCubes": 2
+    },
+    {
+      "bone": "extend_magazine",
+      "definition": "tacz_extended_mag_3",
+      "retainedIndices": [
+        0,
+        5
+      ],
+      "inputCubes": 9,
+      "outputCubes": 2
+    },
+    {
+      "bone": "bolt",
+      "definition": "bolt",
+      "retainedIndices": [
+        2,
+        5
+      ],
+      "inputCubes": 14,
+      "outputCubes": 2
+    },
+    {
+      "bone": "group26",
+      "definition": "bolt",
+      "retainedIndices": [
+        8,
+        9
+      ],
+      "inputCubes": 12,
+      "outputCubes": 2
+    },
+    {
+      "bone": "group2",
+      "definition": "barrel",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 8,
+      "outputCubes": 2
+    },
+    {
+      "bone": "octagon4",
+      "definition": "barrel",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 8,
+      "outputCubes": 2
+    },
+    {
+      "bone": "octagon5",
+      "definition": "barrel",
+      "retainedIndices": [
+        2,
+        3
+      ],
+      "inputCubes": 4,
+      "outputCubes": 2
+    },
+    {
+      "bone": "octagon7",
+      "definition": "barrel",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 12,
+      "outputCubes": 2
+    },
+    {
+      "bone": "sight2",
+      "definition": "gas_block_and_tube",
+      "retainedIndices": [
+        0
+      ],
+      "inputCubes": 1,
+      "outputCubes": 1
+    },
+    {
+      "bone": "fore_sight3",
+      "definition": "gas_block_and_tube",
+      "retainedIndices": [
+        22,
+        25
+      ],
+      "inputCubes": 35,
+      "outputCubes": 2
+    },
+    {
+      "bone": "bone38",
+      "definition": "barrel_mount_collar",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 10,
+      "outputCubes": 2
+    },
+    {
+      "bone": "bone61",
+      "definition": "barrel_mount_collar",
+      "retainedIndices": [
+        0
+      ],
+      "inputCubes": 1,
+      "outputCubes": 1
+    },
+    {
+      "bone": "bone62",
+      "definition": "barrel_mount_collar",
+      "retainedIndices": [
+        0
+      ],
+      "inputCubes": 1,
+      "outputCubes": 1
+    },
+    {
+      "bone": "bone70",
+      "definition": "barrel_mount_collar",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 6,
+      "outputCubes": 2
+    },
+    {
+      "bone": "fore_sights",
+      "definition": "front_sight",
+      "retainedIndices": [
+        0
+      ],
+      "inputCubes": 1,
+      "outputCubes": 1
+    },
+    {
+      "bone": "fore_sight",
+      "definition": "front_sight",
+      "retainedIndices": [
+        0,
+        6
+      ],
+      "inputCubes": 8,
+      "outputCubes": 2
+    },
+    {
+      "bone": "bone",
+      "definition": "front_sight",
+      "retainedIndices": [
+        2,
+        3
+      ],
+      "inputCubes": 4,
+      "outputCubes": 2
+    },
+    {
+      "bone": "bone2",
+      "definition": "front_sight",
+      "retainedIndices": [
+        2,
+        3
+      ],
+      "inputCubes": 4,
+      "outputCubes": 2
+    },
+    {
+      "bone": "sight_illuminated",
+      "definition": "front_sight",
+      "retainedIndices": [
+        0
+      ],
+      "inputCubes": 1,
+      "outputCubes": 1
+    },
+    {
+      "bone": "bone9",
+      "definition": "front_sight",
+      "retainedIndices": [
+        0
+      ],
+      "inputCubes": 1,
+      "outputCubes": 1
+    },
+    {
+      "bone": "bone4",
+      "definition": "front_sight",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 2,
+      "outputCubes": 2
+    },
+    {
+      "bone": "fore_sights2",
+      "definition": "front_sight",
+      "retainedIndices": [
+        0
+      ],
+      "inputCubes": 1,
+      "outputCubes": 1
+    },
+    {
+      "bone": "fore_sight2",
+      "definition": "front_sight",
+      "retainedIndices": [
+        0,
+        6
+      ],
+      "inputCubes": 8,
+      "outputCubes": 2
+    },
+    {
+      "bone": "bone15",
+      "definition": "front_sight",
+      "retainedIndices": [
+        2,
+        3
+      ],
+      "inputCubes": 4,
+      "outputCubes": 2
+    },
+    {
+      "bone": "bone16",
+      "definition": "front_sight",
+      "retainedIndices": [
+        2,
+        3
+      ],
+      "inputCubes": 4,
+      "outputCubes": 2
+    },
+    {
+      "bone": "sight_illuminated2",
+      "definition": "front_sight",
+      "retainedIndices": [
+        0
+      ],
+      "inputCubes": 1,
+      "outputCubes": 1
+    },
+    {
+      "bone": "bone19",
+      "definition": "front_sight",
+      "retainedIndices": [
+        0
+      ],
+      "inputCubes": 1,
+      "outputCubes": 1
+    },
+    {
+      "bone": "bone20",
+      "definition": "front_sight",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 2,
+      "outputCubes": 2
+    },
+    {
+      "bone": "muzzle_default",
+      "definition": "muzzle_default",
+      "retainedIndices": [
+        13,
+        15
+      ],
+      "inputCubes": 20,
+      "outputCubes": 2
+    },
+    {
+      "bone": "octagon6",
+      "definition": "muzzle_default",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 4,
+      "outputCubes": 2
+    },
+    {
+      "bone": "octagon8",
+      "definition": "muzzle_default",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 4,
+      "outputCubes": 2
+    },
+    {
+      "bone": "rail2",
+      "definition": "handguard_tactical",
+      "retainedIndices": [
+        0,
+        23
+      ],
+      "inputCubes": 25,
+      "outputCubes": 2
+    },
+    {
+      "bone": "rail3",
+      "definition": "handguard_tactical",
+      "retainedIndices": [
+        0,
+        23
+      ],
+      "inputCubes": 25,
+      "outputCubes": 2
+    },
+    {
+      "bone": "rail4",
+      "definition": "handguard_tactical",
+      "retainedIndices": [
+        0,
+        23
+      ],
+      "inputCubes": 25,
+      "outputCubes": 2
+    },
+    {
+      "bone": "rail",
+      "definition": "handguard_tactical",
+      "retainedIndices": [
+        0,
+        23
+      ],
+      "inputCubes": 25,
+      "outputCubes": 2
+    },
+    {
+      "bone": "hexadecagon",
+      "definition": "handguard_tactical",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 4,
+      "outputCubes": 2
+    },
+    {
+      "bone": "group9",
+      "definition": "handguard_tactical",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 2,
+      "outputCubes": 2
+    },
+    {
+      "bone": "group12",
+      "definition": "handguard_tactical",
+      "retainedIndices": [
+        45,
+        46
+      ],
+      "inputCubes": 47,
+      "outputCubes": 2
+    },
+    {
+      "bone": "group10",
+      "definition": "handguard_tactical",
+      "retainedIndices": [
+        45,
+        46
+      ],
+      "inputCubes": 47,
+      "outputCubes": 2
+    },
+    {
+      "bone": "group11",
+      "definition": "handguard_tactical",
+      "retainedIndices": [
+        45,
+        46
+      ],
+      "inputCubes": 47,
+      "outputCubes": 2
+    },
+    {
+      "bone": "group17",
+      "definition": "handguard_tactical",
+      "retainedIndices": [
+        45,
+        46
+      ],
+      "inputCubes": 47,
+      "outputCubes": 2
+    },
+    {
+      "bone": "rings2",
+      "definition": "handguard_default",
+      "retainedIndices": [
+        32,
+        33
+      ],
+      "inputCubes": 36,
+      "outputCubes": 2
+    },
+    {
+      "bone": "holes3",
+      "definition": "handguard_default",
+      "retainedIndices": [
+        7,
+        8
+      ],
+      "inputCubes": 10,
+      "outputCubes": 2
+    },
+    {
+      "bone": "holes2",
+      "definition": "handguard_default",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 3,
+      "outputCubes": 2
+    },
+    {
+      "bone": "bone7",
+      "definition": "handguard_default",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 24,
+      "outputCubes": 2
+    },
+    {
+      "bone": "octagon37",
+      "definition": "handguard_default",
+      "retainedIndices": [
+        0,
+        1
+      ],
+      "inputCubes": 4,
+      "outputCubes": 2
+    }
+  ],
+  "lodPolicy": "47 isolated old cubes rebound; mixed regions replaced by largest native surfaces per original bone, at most two; no baked stock; physical attachment uses native renderer",
+  "sourceHashes": {
+    "model": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+    "animation": "ce4ee6dcdf16bbc8ce2ce9c3bdc4d56c7cc025040675a4688da74621190924f2",
+    "texture": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+    "display": "79952eeb898bf98d7b29e5dc47e8ec9166e0295ffb6982dc7032370413437d3c"
+  },
+  "textureAtlas": {
+    "high": [
+      0,
+      0,
+      512,
+      512
+    ],
+    "oldLow": [
+      0,
+      512,
+      256,
+      256
+    ]
+  },
+  "limits": [
+    "No game, animation playback or FPS measurement; LOD surface reduction requires owner visual acceptance"
+  ]
+}

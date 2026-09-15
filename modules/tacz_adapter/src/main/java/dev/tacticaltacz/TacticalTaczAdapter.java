@@ -26,7 +26,7 @@ public final class TacticalTaczAdapter {
                 && GunAdoption.contains(event.player.getMainHandItem()))
                 event.aiming = dev.tacticalcharacter.resource.PlayerResources.canAim(event.player) && com.tacz.guns.api.entity.IGunOperator.fromLivingEntity(event.player).getSynAimingProgress() > 0;
         });
-        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.tick.PlayerTickEvent.Post e)->{if(e.getEntity() instanceof net.minecraft.server.level.ServerPlayer p && GunAdoption.contains(p.getMainHandItem())&&!dev.tacticalcharacter.resource.PlayerResources.canAim(p))com.tacz.guns.api.entity.IGunOperator.fromLivingEntity(p).aim(false);});
+        NeoForge.EVENT_BUS.addListener((net.neoforged.neoforge.event.tick.PlayerTickEvent.Post e)->{if(e.getEntity() instanceof net.minecraft.server.level.ServerPlayer p && GunAdoption.contains(p.getMainHandItem())&&(!dev.tacticalcharacter.resource.PlayerResources.canAim(p)||dev.tacticaltacz.assembled.NativeAttachmentProjection.blocksAim(p.getMainHandItem())))com.tacz.guns.api.entity.IGunOperator.fromLivingEntity(p).aim(false);});
     }
     private static void playerPose(dev.tacticalcombat.api.PlayerGunPoseEvent event) {
         var gun=com.tacz.guns.api.item.IGun.getIGunOrNull(event.player.getMainHandItem());
