@@ -1,0 +1,43 @@
+{
+  "filesCompared": 183,
+  "semanticDifferences": [
+    {
+      "path": "assets/newmod_adar/adar/library.json",
+      "kind": "value-changed"
+    },
+    {
+      "path": "assets/newmod_adar/textures/materials/metal.png",
+      "kind": "added"
+    },
+    {
+      "path": "assets/newmod_adar/textures/materials/polymer.png",
+      "kind": "added"
+    },
+    {
+      "path": "assets/newmod_adar/textures/materials/rubber.png",
+      "kind": "added"
+    },
+    {
+      "path": "assets/newmod_adar/textures/materials/wood.png",
+      "kind": "added"
+    }
+  ],
+  "encodingDifferences": [
+    {
+      "path": "assets/newmod_m4a1/display/guns/m4a1.json",
+      "kind": "serialization-only"
+    },
+    {
+      "path": "assets/newmod_radian/display/guns/radian.json",
+      "kind": "serialization-only"
+    },
+    {
+      "path": "data/newmod_m4a1/m4a1/weapon.json",
+      "kind": "serialization-only"
+    },
+    {
+      "path": "data/tactical_tacz_adapter/assembled_weapons.json",
+      "kind": "serialization-only"
+    }
+  ]
+}

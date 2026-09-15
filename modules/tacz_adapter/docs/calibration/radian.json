@@ -1,0 +1,70 @@
+{
+  "gun": "newmod_radian:radian",
+  "scope": "offline authoring, not game acceptance",
+  "markers": [
+    {
+      "path": "/mod_pistol_grip",
+      "definition": "55802f5d4bdc2dac148b458f",
+      "kind": "right",
+      "position": [
+        0.00137339,
+        -10.063552439999999,
+        -5.94158562
+      ]
+    },
+    {
+      "path": "/mod_reciever/mod_handguard",
+      "definition": "6895bd19d55f0ebf6a0c0306",
+      "kind": "left",
+      "position": [
+        0.01109562,
+        -2.58026209,
+        22.80295413
+      ]
+    },
+    {
+      "path": "/mod_reciever/mod_handguard/mod_sight_front",
+      "definition": "5bc09a30d4351e00367fb7c8",
+      "kind": "front",
+      "position": [
+        0.0044653800000000006,
+        5.6366976300000005,
+        42.652497600000004
+      ],
+      "id": "front",
+      "eye": [
+        0.0044653800000000006,
+        5.6366976300000005,
+        42.652497600000004
+      ],
+      "eyeDistance": 0,
+      "forward": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "path": "/mod_reciever/mod_sight_rear",
+      "definition": "5bc09a18d4351e003562b68e",
+      "kind": "rear",
+      "position": [
+        0.004369479999999999,
+        5.637057930000001,
+        -3.1252687100000003
+      ],
+      "id": "iron",
+      "eye": [
+        0.004369479999999999,
+        5.637057930000001,
+        -27.12526871
+      ],
+      "eyeDistance": 24,
+      "forward": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ]
+}

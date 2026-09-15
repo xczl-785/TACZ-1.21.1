@@ -1,0 +1,7 @@
+{
+  "schema_version": 3,
+  "item": "tactical_tacz_adapter:assembly_test_barrel",
+  "footprint": [1, 1],
+  "weight_kg": 0.18,
+  "category": "tactical_tacz_adapter:development"
+}

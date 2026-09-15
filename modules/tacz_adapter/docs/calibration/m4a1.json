@@ -1,0 +1,70 @@
+{
+  "gun": "newmod_m4a1:m4a1",
+  "scope": "offline authoring, not game acceptance",
+  "markers": [
+    {
+      "path": "/mod_pistol_grip",
+      "definition": "55d4b9964bdc2d1d4e8b456e",
+      "kind": "right",
+      "position": [
+        0.0014831000000882682,
+        -10.063842789504196,
+        -6.941410775619677
+      ]
+    },
+    {
+      "path": "/mod_reciever/mod_barrel/mod_gas_block",
+      "definition": "5ae30e795acfc408fb139a0b",
+      "kind": "front",
+      "position": [
+        -0.022972734118784754,
+        6.471334715129318,
+        33.22029884183459
+      ],
+      "id": "front",
+      "eye": [
+        -0.022972734118784754,
+        6.471334715129318,
+        33.22029884183459
+      ],
+      "eyeDistance": 0,
+      "forward": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "path": "/mod_reciever/mod_handguard/mod_handguard",
+      "definition": "637f57a68d137b27f70c4968",
+      "kind": "left",
+      "position": [
+        0.011177476388264442,
+        -3.239067418828771,
+        21.439812699736187
+      ]
+    },
+    {
+      "path": "/mod_reciever/mod_sight_rear",
+      "definition": "5ae30bad5acfc400185c2dc4",
+      "kind": "rear",
+      "position": [
+        0.004474855832549117,
+        6.454022583290389,
+        -4.197381605851052
+      ],
+      "id": "rear",
+      "eye": [
+        0.004474855832549117,
+        6.454022583290389,
+        -28.12510840585105
+      ],
+      "eyeDistance": 23.9277268,
+      "forward": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ]
+}

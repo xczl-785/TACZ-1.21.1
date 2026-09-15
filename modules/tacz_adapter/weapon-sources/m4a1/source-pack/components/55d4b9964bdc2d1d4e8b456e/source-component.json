@@ -1,0 +1,72 @@
+{
+  "item_id": "55d4b9964bdc2d1d4e8b456e",
+  "name_zh": "柯尔特A2 AR-15手枪式握把",
+  "name_en": "AR-15 Colt A2 pistol grip",
+  "source_version": "5.0",
+  "source_catalog_key": "55d4b9964bdc2d1d4e8b456e",
+  "source_snapshot": "source-index.json",
+  "source_root": "pistolgrip_ar15_colt_a2",
+  "local_to_source_baked": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "coordinate_space": "manuscript and product use component-local vertices; local_to_source_baked restores source BB coordinates; input remains source-baked",
+  "source_files_sha256": {
+    "component.bbmodel": "825b5680118e3f31267363ed8ce4fadcf80438a7917e451016deb9942c1ea153",
+    "bindings.json": "78b72d0778a1ca17ef4f26fc85354f335aa3cb1df0d532e172a9b86b31e96eb1",
+    "nodes.json": "7736e91f436a09f2d1eb36ee19c2afb74baa8ce29e5cee767f2f7699b66357e0",
+    "status.json": "8a8a39be96dcd89c88befe6abc5b63cd94494c1a6512ab96d371294cf729db9e"
+  },
+  "output_files_sha256": {
+    "manuscript_main": "4f4aff78c41b55f8fc4087c355d908cbde289316c0cdf6a79db90bcc56260582",
+    "product_model": "c1339a13da2efc1b2cab4168ceab1b763e4c2b3172138a7ecf4c1d18f02990e5"
+  },
+  "source_batch": "bulk-white-20260914",
+  "status": "awaiting-consumption",
+  "mod_status": "not-integrated",
+  "visual_validation": "not-validated",
+  "native_validation": "not-validated",
+  "material_status": "white-no-original-textures",
+  "source_evidence": "source-evidence.json",
+  "source_index_key": "55d4b9964bdc2d1d4e8b456e",
+  "validation": {
+    "manuscript_vertex_max_error": 0.0,
+    "product_vertex_max_error": 0.0,
+    "tolerance": 1e-07,
+    "stage_specific_note": "automated geometry preservation only; not Mod integration, native-load, visual, or user acceptance"
+  },
+  "asset_kind": "product",
+  "model": "model.bbmodel",
+  "source_copy": "../../原稿/55d4b9964bdc2d1d4e8b456e/input",
+  "source_copy_files": [
+    "component.bbmodel",
+    "bindings.json",
+    "nodes.json",
+    "status.json"
+  ],
+  "source_index": "../../../../../tarkov-resource-library/indexes/5.0/catalog.json",
+  "source_manuscript": "../../原稿/55d4b9964bdc2d1d4e8b456e",
+  "source_product": "."
+}

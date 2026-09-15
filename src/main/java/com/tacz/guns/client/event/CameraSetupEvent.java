@@ -1,4 +1,6 @@
 package com.tacz.guns.client.event;
+import dev.tacticaltacz.assembled.AssemblyPresentationClient;
+
 
 import com.github.exopandora.shouldersurfing.api.client.IShoulderSurfingCamera;
 import com.github.exopandora.shouldersurfing.api.client.ShoulderSurfing;
@@ -104,7 +106,7 @@ public class CameraSetupEvent {
                 event.setFOV(fov);
                 return;
             }
-            float zoom = iGun.getAimingZoom(stack);
+            float zoom = AssemblyPresentationClient.zoom(stack, iGun.getAimingZoom(stack));
             if (livingEntity instanceof LocalPlayer localPlayer) {
                 IClientPlayerGunOperator gunOperator = IClientPlayerGunOperator.fromLocalPlayer(localPlayer);
                 float aimingProgress = gunOperator.getClientAimingProgress((float) event.getPartialTick());
@@ -152,12 +154,12 @@ public class CameraSetupEvent {
             if (livingEntity instanceof LocalPlayer localPlayer) {
                 IClientPlayerGunOperator gunOperator = IClientPlayerGunOperator.fromLocalPlayer(localPlayer);
                 float aimingProgress = gunOperator.getClientAimingProgress((float) event.getPartialTick());
-                float fov = ITEM_MODEL_FOV_DYNAMICS.update(Mth.lerp(aimingProgress, (float) event.getFOV(), modifiedFov));
+                float fov = ITEM_MODEL_FOV_DYNAMICS.update(Mth.lerp(aimingProgress, (float) event.getFOV(), assemblyModelFov(modifiedFov)));
                 event.setFOV(fov);
             } else {
                 IGunOperator gunOperator = IGunOperator.fromLivingEntity(livingEntity);
                 float aimingProgress = gunOperator.getSynAimingProgress();
-                float fov = ITEM_MODEL_FOV_DYNAMICS.update(Mth.lerp(aimingProgress, (float) event.getFOV(), modifiedFov));
+                float fov = ITEM_MODEL_FOV_DYNAMICS.update(Mth.lerp(aimingProgress, (float) event.getFOV(), assemblyModelFov(modifiedFov)));
                 event.setFOV(fov);
             }
         }
@@ -191,14 +193,14 @@ public class CameraSetupEvent {
             IClientPlayerGunOperator clientPlayerGunOperator = IClientPlayerGunOperator.fromLocalPlayer(player);
             float partialTicks = Minecraft.getInstance().getTimer().getGameTimeDeltaPartialTick(false);
             float aimingProgress = clientPlayerGunOperator.getClientAimingProgress(partialTicks);
-            float zoom = iGun.getAimingZoom(mainHandItem);
+            float zoom = AssemblyPresentationClient.zoom(mainHandItem, iGun.getAimingZoom(mainHandItem));
             float aimingRecoilModifier = 1 - aimingProgress + aimingProgress / (float) Math.min(Math.sqrt(zoom), 1.5);
             // 如果是趴下，那么后坐力按 data 设计减少（默认为降低一半）
             if (!player.isSwimming() && player.getPose() == Pose.SWIMMING) {
                 aimingRecoilModifier = aimingRecoilModifier * gunData.getCrawlRecoilMultiplier();
             }
-            pitchSplineFunction = gunData.getRecoil().genPitchSplineFunction((float) attachmentRecoilModifier.left().eval(aimingRecoilModifier));
-            yawSplineFunction = gunData.getRecoil().genYawSplineFunction((float) attachmentRecoilModifier.right().eval(aimingRecoilModifier));
+            pitchSplineFunction = gunData.getRecoil().genPitchSplineFunction((float) attachmentRecoilModifier.left().eval(aimingRecoilModifier) * AssemblyPresentationClient.factors().pitch());
+            yawSplineFunction = gunData.getRecoil().genYawSplineFunction((float) attachmentRecoilModifier.right().eval(aimingRecoilModifier) * AssemblyPresentationClient.factors().yaw());
             shootTimeStamp = System.currentTimeMillis();
             xRotO = 0;
             yRotO = 0;
@@ -248,5 +250,9 @@ public class CameraSetupEvent {
             }
             event.setNewFovModifier(player.isSprinting() ? 1.15f * f : f);
         }
+    }
+    private static float assemblyModelFov(float original) {
+        var stack = com.tacz.guns.api.client.other.KeepingItemRenderer.getRenderer().getCurrentItem();
+        return AssemblyPresentationClient.model(stack).map(m -> m.presentation.aim(stack).map(a -> (float) a.modelFov()).orElse(original)).orElse(original);
     }
 }

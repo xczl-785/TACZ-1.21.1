@@ -1,0 +1,82 @@
+// TaCZ owns these capabilities; the old adapter package/IDs are retained for compatibility.
+sourceSets.main.java.srcDir('modules/tacz_adapter/src/main/java')
+sourceSets.main.resources.srcDirs('modules/tacz_adapter/src/main/resources', 'modules/tacz_adapter/weapon-content/resources')
+def external = new groovy.json.JsonSlurper().parse(file('modules/tacz_adapter/public-dependency-lock.json'))
+def mainArtifacts = external.artifacts.findAll { it.scope == 'main' }.collect { file(it.artifact) }
+def devArtifacts = external.artifacts.findAll { it.scope == 'development' }.collect { file(it.artifact) }
+dependencies { implementation files(mainArtifacts) }
+sourceSets {
+    adapterDevelopment {
+        java.srcDir('modules/tacz_adapter/src/development/java')
+        resources.srcDir('modules/tacz_adapter/src/development/resources')
+        compileClasspath = sourceSets.main.output + sourceSets.main.compileClasspath + files(devArtifacts)
+        runtimeClasspath = output + sourceSets.main.runtimeClasspath + files(devArtifacts)
+    }
+    adapterTest {
+        java.srcDir('modules/tacz_adapter/src/test/java')
+        resources.srcDir('modules/tacz_adapter/src/test/resources')
+        compileClasspath = sourceSets.main.output + sourceSets.main.compileClasspath + configurations.weaponTestLibraries
+        runtimeClasspath = output + sourceSets.main.output + sourceSets.main.compileClasspath + configurations.weaponTestLibraries
+    }
+}
+tasks.register('verifyGameplayDependencies') {
+    inputs.files(external.artifacts.collect { file(it.artifact) })
+    inputs.file('modules/tacz_adapter/public-dependency-lock.json')
+    doLast {
+        external.artifacts.each { row ->
+            assert java.security.MessageDigest.getInstance('SHA-512').digest(file(row.artifact).bytes).encodeHex().toString() == row.sha512
+        }
+    }
+}
+tasks.named('compileJava') { dependsOn 'verifyGameplayDependencies' }
+tasks.register('adapterTest', Test) {
+    testClassesDirs = sourceSets.adapterTest.output.classesDirs
+    classpath = sourceSets.adapterTest.runtimeClasspath
+    useJUnitPlatform()
+    workingDir file('modules/tacz_adapter')
+}
+// Opt-in owner acceptance artifact: one tacz Mod, plus development classes/resources.
+// It is separate from the player artifact; public development Mods remain NewMod source outputs.
+def mergedLanguages = tasks.register('mergeDevelopmentLanguages') {
+    dependsOn 'processResources', 'processAdapterDevelopmentResources'
+    inputs.dir(layout.buildDirectory.dir('resources/main'))
+    inputs.dir(layout.buildDirectory.dir('resources/adapterDevelopment'))
+    outputs.dir(layout.buildDirectory.dir('generated/acceptance-languages'))
+    doLast {
+        ['en_us', 'zh_cn'].each { locale ->
+            def relative = "assets/tactical_tacz_adapter/lang/${locale}.json"
+            def main = new groovy.json.JsonSlurper().parse(layout.buildDirectory.file("resources/main/${relative}").get().asFile)
+            def dev = new groovy.json.JsonSlurper().parse(layout.buildDirectory.file("resources/adapterDevelopment/${relative}").get().asFile)
+            dev.each { key, value -> assert !main.containsKey(key) || main[key] == value : "Conflicting development translation: ${key}" }
+            def output = layout.buildDirectory.file("generated/acceptance-languages/${relative}").get().asFile
+            output.parentFile.mkdirs()
+            output.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(main + dev)) + '\n'
+        }
+    }
+}
+tasks.register('developmentJar', Jar) {
+    dependsOn tasks.named('jar'), tasks.named('adapterDevelopmentClasses')
+    archiveClassifier = 'development'
+    from({ zipTree(tasks.named('jar', Jar).get().archiveFile.get().asFile) }) { exclude 'assets/tactical_tacz_adapter/lang/*.json' }
+    from(sourceSets.adapterDevelopment.output) { exclude 'assets/tactical_tacz_adapter/lang/*.json' }
+    from(mergedLanguages)
+    duplicatesStrategy = DuplicatesStrategy.FAIL
+}
+tasks.register('verifyConfiguredWeapons', Exec) {
+    workingDir file('modules/tacz_adapter/tools')
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', 'validate_weapon_resources.py'
+}
+tasks.register('verifyWeaponPipeline', Exec) {
+    workingDir file('modules/tacz_adapter/tools')
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', '-m', 'unittest', 'discover', '-p', 'test_*.py'
+}
+tasks.named('processResources') { dependsOn 'verifyConfiguredWeapons' }
+tasks.named('check') { dependsOn 'adapterTest', 'adapterDevelopmentClasses', 'verifyWeaponPipeline', 'verifyGameplayDependencies' }
+tasks.named('assemble') { dependsOn 'developmentJar' }
+tasks.register('verifyAdapterIntegration', Exec) {
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', 'tools/verify_adapter_integration.py'
+}
+tasks.named('check') { dependsOn 'verifyAdapterIntegration' }

@@ -27,6 +27,8 @@ public class LivingEntityAim {
     }
 
     public void aim(boolean isAim) {
+        if (isAim && shooter instanceof net.minecraft.server.level.ServerPlayer p && dev.tacticaltacz.GunAdoption.contains(p.getMainHandItem()) && !dev.tacticalcharacter.resource.PlayerResources.canAim(p)) return;
+
         data.isAiming = isAim;
     }
 

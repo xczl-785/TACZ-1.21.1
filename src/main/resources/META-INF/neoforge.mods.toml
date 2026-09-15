@@ -44,3 +44,24 @@ type = "required"
 versionRange = "[2.2.37,)"
 ordering = "AFTER"
 side = "BOTH"
+
+[[dependencies."${id}"]]
+modId = "tactical_inventory"
+type = "required"
+versionRange = "[0.0.0-dev]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${id}"]]
+modId = "tactical_character"
+type = "required"
+versionRange = "[0.0.0-dev]"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${id}"]]
+modId = "tactical_combat"
+type = "required"
+versionRange = "[0.0.0-dev]"
+ordering = "AFTER"
+side = "BOTH"

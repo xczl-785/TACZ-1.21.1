@@ -1,0 +1,6 @@
+{
+  "converter": "legacy-adar",
+  "models": 11,
+  "triangles": 7260,
+  "source": "source/mods/tacz_adapter/weapon-sources/adar"
+}

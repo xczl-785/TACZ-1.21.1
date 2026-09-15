@@ -56,6 +56,7 @@ public class GunMod {
 
         registerDefaultExtraGunPack();
         AttachmentPropertyManager.registerModifier();
+        dev.tacticaltacz.TacticalTaczAdapter.register(bus);
     }
 
     private static void registerDefaultExtraGunPack() {

@@ -1,0 +1,72 @@
+{
+  "item_id": "55d44fd14bdc2d962f8b456e",
+  "name_zh": " 柯尔特AR-15拉机柄",
+  "name_en": "AR-15 Colt charging handle",
+  "source_version": "5.0",
+  "source_catalog_key": "55d44fd14bdc2d962f8b456e",
+  "source_snapshot": "source-index.json",
+  "source_root": "charge_ar15_colt_charging_handle",
+  "local_to_source_baked": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "coordinate_space": "manuscript and product use component-local vertices; local_to_source_baked restores source BB coordinates; input remains source-baked",
+  "source_files_sha256": {
+    "component.bbmodel": "a5bb2cdce9a90c44e74c208e319c4bc76767017032994e4387030385a628eb06",
+    "bindings.json": "26d5c5eb14a3dc3b7bbbcd291fecb4f8ff8c2309867667b46c0ebed8ae667238",
+    "nodes.json": "d35a77ff233439ffdd22211d0cf3ba6aecde320480a2eb08055f0bbe42bd2121",
+    "status.json": "b26e652684effd7e3f022173f63ebe0a8abf7f0dc50fc326001c6ff3912d9273"
+  },
+  "output_files_sha256": {
+    "manuscript_main": "59722645c642af557a86b0c1bafec025a97629fee6b090122e53f356d523c4a8",
+    "product_model": "842fefbb420d8ac7b559b9c223638e9681486ab7014d5258264010d1274a4838"
+  },
+  "source_batch": "bulk-white-20260914",
+  "status": "awaiting-consumption",
+  "mod_status": "not-integrated",
+  "visual_validation": "not-validated",
+  "native_validation": "not-validated",
+  "material_status": "white-no-original-textures",
+  "source_evidence": "source-evidence.json",
+  "source_index_key": "55d44fd14bdc2d962f8b456e",
+  "validation": {
+    "manuscript_vertex_max_error": 0.0,
+    "product_vertex_max_error": 0.0,
+    "tolerance": 1e-07,
+    "stage_specific_note": "automated geometry preservation only; not Mod integration, native-load, visual, or user acceptance"
+  },
+  "asset_kind": "product",
+  "model": "model.bbmodel",
+  "source_copy": "../../原稿/55d44fd14bdc2d962f8b456e/input",
+  "source_copy_files": [
+    "component.bbmodel",
+    "bindings.json",
+    "nodes.json",
+    "status.json"
+  ],
+  "source_index": "../../../../../tarkov-resource-library/indexes/5.0/catalog.json",
+  "source_manuscript": "../../原稿/55d44fd14bdc2d962f8b456e",
+  "source_product": "."
+}

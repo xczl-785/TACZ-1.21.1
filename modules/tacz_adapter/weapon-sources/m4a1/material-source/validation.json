@@ -1,0 +1,88 @@
+{
+  "decoded_pngs": 6,
+  "profiles": 10,
+  "all_references_exist": true,
+  "pixel_edits": false,
+  "game_validated": false,
+  "tile_quality": "Inspect repeat preview and actual model; no guaranteed perfect seam",
+  "textures": [
+    {
+      "id": "coated_metal",
+      "path": "textures/coated_metal.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "8739c265f1fd486b608684d9861ae868ab4ff849c726bb6e0fed4efcb719669d",
+      "edge_mean_rgb_difference_0_255": {
+        "left_right": 1.22,
+        "top_bottom": 1.815
+      },
+      "seam_status": "generated with tile request; edge statistics are diagnostic, not a seamless certification",
+      "power_of_two": false
+    },
+    {
+      "id": "polymer",
+      "path": "textures/polymer.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "d07a6d6b95717ccf772b2ecbb7198efa2df9a0da694df70e86de3519844beb5c",
+      "edge_mean_rgb_difference_0_255": {
+        "left_right": 0.988,
+        "top_bottom": 1.577
+      },
+      "seam_status": "generated with tile request; edge statistics are diagnostic, not a seamless certification",
+      "power_of_two": false
+    },
+    {
+      "id": "rubber",
+      "path": "textures/rubber.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "78a2c8926ffbc9a54132a3e1506ef7427e65ff423b9649f881c702337f1dae4e",
+      "edge_mean_rgb_difference_0_255": {
+        "left_right": 0.915,
+        "top_bottom": 0.989
+      },
+      "seam_status": "generated with tile request; edge statistics are diagnostic, not a seamless certification",
+      "power_of_two": false
+    },
+    {
+      "id": "steel_dark",
+      "path": "textures/steel_dark.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "eb1fb84edf8673f8efda03600868d8cc16e000f2670288ec6f128d5eb25348c0",
+      "edge_mean_rgb_difference_0_255": {
+        "left_right": 1.747,
+        "top_bottom": 1.519
+      },
+      "seam_status": "generated with tile request; edge statistics are diagnostic, not a seamless certification",
+      "power_of_two": false
+    },
+    {
+      "id": "steel_light",
+      "path": "textures/steel_light.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "1a09e1e94e9282f7f166f4ea5268fb17e2039b5dfe89f7904373ef940891ad57",
+      "edge_mean_rgb_difference_0_255": {
+        "left_right": 2.112,
+        "top_bottom": 2.823
+      },
+      "seam_status": "generated with tile request; edge statistics are diagnostic, not a seamless certification",
+      "power_of_two": false
+    },
+    {
+      "id": "wood",
+      "path": "textures/wood.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "4db065d6c92d6322207c6eec3b2017fdb2115e1d474f1aa33cc3052bf9005159",
+      "edge_mean_rgb_difference_0_255": {
+        "left_right": 1.34,
+        "top_bottom": 1.246
+      },
+      "seam_status": "generated with tile request; edge statistics are diagnostic, not a seamless certification",
+      "power_of_two": false
+    }
+  ]
+}

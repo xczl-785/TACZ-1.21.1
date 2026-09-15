@@ -203,6 +203,11 @@ public class GunHudOverlay implements LayeredDraw.Layer {
     }
 
     private static void handleInventoryAmmo(ItemStack stack, Inventory inventory) {
+        if (dev.tacticaltacz.AmmoBridge.managed(stack)) {
+            cacheInventoryAmmoCount = dev.tacticaltacz.AmmoBridge.reserveCount(inventory.player, stack);
+            return;
+        }
+
         cacheInventoryAmmoCount = 0;
         for (int i = 0; i < inventory.getContainerSize(); i++) {
             ItemStack inventoryItem = inventory.getItem(i);

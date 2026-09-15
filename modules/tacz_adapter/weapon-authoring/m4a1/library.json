@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "materials": {
+    "coated_metal_black": {
+      "baseColor": "#FFFFFF",
+      "texture": "firearm_materials:textures/materials/coated_metal.png",
+      "textureScale": 1,
+      "roughness": 0.6,
+      "specular": 0.2
+    },
+    "steel_dark": {
+      "baseColor": "#FFFFFF",
+      "texture": "firearm_materials:textures/materials/steel_dark.png",
+      "textureScale": 1,
+      "roughness": 0.45,
+      "specular": 0.45
+    },
+    "steel_light": {
+      "baseColor": "#FFFFFF",
+      "texture": "firearm_materials:textures/materials/steel_light.png",
+      "textureScale": 1,
+      "roughness": 0.4,
+      "specular": 0.5
+    },
+    "polymer_black": {
+      "baseColor": "#505459",
+      "texture": "firearm_materials:textures/materials/polymer.png",
+      "textureScale": 1,
+      "roughness": 0.75,
+      "specular": 0.18
+    }
+  }
+}

@@ -39,7 +39,10 @@ def verify(jar=None, newmod=None):
     for row in fixture_sources['files']:
         assert hashlib.sha256((R/row['new']).read_bytes()).hexdigest()==row['sha256'],row['new']
         if newmod:
-            assert hashlib.sha256((newmod/row['old']).read_bytes()).hexdigest()==row['sha256'],row['old']
+            origin=newmod/row['old']
+            if not origin.exists() and row['old'].startswith('source/mods/tacz_adapter/'):
+                origin=R/row['old'].replace('source/mods/tacz_adapter/','modules/tacz_adapter/',1)
+            assert hashlib.sha256(origin.read_bytes()).hexdigest()==row['sha256'],row['old']
     if newmod:
         for row in ledger['files']:
             assert not (newmod/row['old']).exists(),row['old']
@@ -47,6 +50,7 @@ def verify(jar=None, newmod=None):
         import subprocess
         changed=subprocess.check_output(['git','diff','--name-only','-z',ledger['newmod_baseline'],'--','source/mods'],cwd=newmod).decode().rstrip('\0').split('\0')
         allowed={r['old'] for r in ledger['files']}
+        allowed.update(r['old'] for r in json.loads((R/'docs/assembly-experiment/adapter-migration.json').read_text())['files'])
         allowed.update(['source/mods/README.md','source/mods/tacz_adapter/README.md','source/mods/tacz_adapter/build.gradle',
             'source/mods/tacz_adapter/dependency-lock.json','source/mods/tacz_adapter/src/main/resources/META-INF/neoforge.mods.toml'])
         assert all(p in allowed or p.startswith('source/mods/tacz_adapter/docs/') for p in changed),changed
@@ -56,7 +60,7 @@ def verify(jar=None, newmod=None):
             meta=z.read('META-INF/neoforge.mods.toml').decode()
             assert len(re.findall(r'^\[\[mods\]\]',meta,re.M))==1 and 'modId = "tacz"' in meta
             assert not re.search(r'modId\s*=\s*"weapon_',meta)
-            assert not any(n.startswith(('dev/itemfoundation/','dev/tacticaltacz/','dev/tacticalinventory/','dev/tacticalcombat/')) for n in names)
+            assert not any(n.startswith(('dev/itemfoundation/','dev/tacticalinventory/','dev/tacticalcombat/')) for n in names)
             assert not any('/development/' in n or '/demo-parts/' in n or '/textures/adar/' in n or n.endswith('/materials/adar.json') or (n.startswith('dev/weapon') and n.endswith('Test.class')) or n.startswith(('assembly-fixtures/','assembly-adar/','model-fixtures/')) for n in names)
             for module in MODULES:
                 for p in (R/'modules'/module/'src/main/resources').rglob('*'):

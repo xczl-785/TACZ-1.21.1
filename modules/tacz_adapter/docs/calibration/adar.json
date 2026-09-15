@@ -1,0 +1,70 @@
+{
+  "gun": "newmod_adar:adar",
+  "scope": "offline authoring, not game acceptance",
+  "markers": [
+    {
+      "path": "/mod_pistol_grip",
+      "definition": "5c0e2ff6d174af02a1659d4a",
+      "kind": "right",
+      "position": [
+        0.0,
+        -7.0,
+        -10.0
+      ]
+    },
+    {
+      "path": "/mod_reciever/mod_barrel/mod_gas_block",
+      "definition": "5ae30e795acfc408fb139a0b",
+      "kind": "front",
+      "position": [
+        0.0,
+        5.7,
+        37.0
+      ],
+      "id": "front",
+      "eye": [
+        0.0,
+        5.7,
+        37.0
+      ],
+      "eyeDistance": 0,
+      "forward": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "path": "/mod_reciever/mod_handguard",
+      "definition": "5c0e2f5cd174af02a012cfc9",
+      "kind": "left",
+      "position": [
+        0.0,
+        -3.0,
+        22.0
+      ]
+    },
+    {
+      "path": "/mod_reciever/mod_scope",
+      "definition": "558022b54bdc2dac148b458d",
+      "kind": "optic",
+      "position": [
+        0.0,
+        6.7,
+        3.0
+      ],
+      "id": "holo",
+      "eye": [
+        0.0,
+        6.7,
+        -23.0
+      ],
+      "eyeDistance": 26,
+      "forward": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ]
+}

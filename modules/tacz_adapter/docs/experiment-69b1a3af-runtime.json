@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-15",
+  "source_checkout": "/Users/zhengpanpan/Downloads/tempProgram/TACZ-1.21.1-experiments",
+  "source_commit": "69b1a3afc601c58a9711a08a7d11fb76629ced8d",
+  "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.69b1a3af.jar",
+  "sha512": "dcc5d84fccfe929fa4ed7897aee63fb3540ba15f82a42ccf757fcb86703c78b3502664e7268bf9bb3d271e030fe7d8b83e2520d06ddf623edd330fe4669366d2",
+  "version": "1.1.8-hotfix-r6-newmod.69b1a3af",
+  "previous_artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.8497fd29.jar",
+  "previous_sha512": "a3bc0a777ee4b24a21d9764364c503c44857e455e269a03937744aeb6d940262c64fe98c4af7f5da54d6638e8289b759276c467f8590920f0214ea2086fc1a70",
+  "build": "Experiment build --offline with exact version: passed (6s)",
+  "integration_command": "./source/gradlew -p source :tacz_adapter:classes :tacz_adapter:developmentClasses :tacz_adapter:prepareClientRun --offline --console=plain",
+  "integration_result": "BUILD SUCCESSFUL in 12s; 37 tasks: 18 executed, 19 up-to-date",
+  "checks": [
+    "verifyTaczDependency passed",
+    "86 Tarkov rounds and 15 gun/effect references verified in exact versioned Jar",
+    "retired native AmmoItem.class absent; TemporaryAmmoRefund.class present",
+    "main and development source compiled against new Jar",
+    "adapter metadata includes precise version",
+    "runtimeClasspath resolves one TaCZ Jar: new version"
+  ],
+  "game_launched": false,
+  "save_modified": false,
+  "client_acceptance": "owner_pending",
+  "rollback": "Restore previous lock from Git; old Jar retained in vendor/tacz"
+}

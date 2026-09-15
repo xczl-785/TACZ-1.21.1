@@ -1,0 +1,17 @@
+{
+  "schema_version": 3,
+  "item": "tacz:modern_kinetic_gun",
+  "footprint": [
+    2,
+    1
+  ],
+  "weight_kg": null,
+  "display": {
+    "image": null
+  },
+  "container_areas": null,
+  "wearable_slots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ]
+}

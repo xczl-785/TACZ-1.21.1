@@ -1,0 +1,22 @@
+{
+  "filesCompared": 183,
+  "semanticDifferences": [],
+  "encodingDifferences": [
+    {
+      "path": "assets/newmod_m4a1/display/guns/m4a1.json",
+      "kind": "serialization-only"
+    },
+    {
+      "path": "assets/newmod_radian/display/guns/radian.json",
+      "kind": "serialization-only"
+    },
+    {
+      "path": "data/newmod_m4a1/m4a1/weapon.json",
+      "kind": "serialization-only"
+    },
+    {
+      "path": "data/tactical_tacz_adapter/assembled_weapons.json",
+      "kind": "serialization-only"
+    }
+  ]
+}

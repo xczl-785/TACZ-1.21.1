@@ -1,0 +1,2709 @@
+{
+  "newmod_baseline": "3ef90e9f79c3544b5c2b5b5a8b863df66797c11f",
+  "experiment_baseline": "588db63a22279cb1b766cc8bbf6092295f0f618b",
+  "date": "2026-09-15",
+  "files": [
+    {
+      "old": "source/mods/tacz_adapter/README.md",
+      "new": "modules/tacz_adapter/README.md",
+      "before_sha256": "2f2dd9ea1a1e4e951b79a3837f2cb2036c1c357ae499cc49fb7307f0b180bbc2",
+      "action": "integrate",
+      "after_sha256": "08014894d64c2c3ac8575a920d37a483167f4b7969dd4daa3f955690dac023b5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/build.gradle",
+      "new": "modules/tacz_adapter/build.gradle",
+      "before_sha256": "0b707e803e7c4c5f961d812d502f8ea43aa85dbfe726310b1e6a54babf090aeb",
+      "action": "retire",
+      "reason": "Single tacz entrypoint/build/lock; armor tag union in owned root resource"
+    },
+    {
+      "old": "source/mods/tacz_adapter/dependency-lock.json",
+      "new": "modules/tacz_adapter/dependency-lock.json",
+      "before_sha256": "a4e1986d6d56f329bae3899e9e920f62cbff95a28aea5c6ce5d2fa7f2f3b8130",
+      "action": "retire",
+      "reason": "Single tacz entrypoint/build/lock; armor tag union in owned root resource"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/README.md",
+      "new": "modules/tacz_adapter/docs/README.md",
+      "before_sha256": "67f3b7cb3ecc59949ba8fae55d0aa221a89272d3c8a6197b61e5549fa7636885",
+      "action": "integrate",
+      "after_sha256": "1518f73bb5c54c087fb1ae1132456f671c2d885434b764faa74a01900abb03fe"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/b2-verification.json",
+      "new": "modules/tacz_adapter/docs/b2-verification.json",
+      "before_sha256": "5f93e48183e63c6b759c65dd652f00c943ca50a877cd94ab575a46c215e72edc",
+      "action": "move",
+      "after_sha256": "5f93e48183e63c6b759c65dd652f00c943ca50a877cd94ab575a46c215e72edc"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/calibration/adar.html",
+      "new": "modules/tacz_adapter/docs/calibration/adar.html",
+      "before_sha256": "67cb1161d5f918d6f9b66a21d3919c611feee1ff9381c19badd879521aa76ed1",
+      "action": "move",
+      "after_sha256": "67cb1161d5f918d6f9b66a21d3919c611feee1ff9381c19badd879521aa76ed1"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/calibration/adar.json",
+      "new": "modules/tacz_adapter/docs/calibration/adar.json",
+      "before_sha256": "3ba85cf6328dec1b43351c24304fb606194863579d83c995a063ac651a146f73",
+      "action": "move",
+      "after_sha256": "3ba85cf6328dec1b43351c24304fb606194863579d83c995a063ac651a146f73"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/calibration/m4a1.html",
+      "new": "modules/tacz_adapter/docs/calibration/m4a1.html",
+      "before_sha256": "ea12ada0b02aa169d6dfa300c00423d1465d3bb606032e7a1f0abc630715c174",
+      "action": "move",
+      "after_sha256": "ea12ada0b02aa169d6dfa300c00423d1465d3bb606032e7a1f0abc630715c174"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/calibration/m4a1.json",
+      "new": "modules/tacz_adapter/docs/calibration/m4a1.json",
+      "before_sha256": "766a714ab30f3763a78e1db826116ef8592c00c4c9e0e924548c0f1da53d170e",
+      "action": "move",
+      "after_sha256": "766a714ab30f3763a78e1db826116ef8592c00c4c9e0e924548c0f1da53d170e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/calibration/radian.html",
+      "new": "modules/tacz_adapter/docs/calibration/radian.html",
+      "before_sha256": "f1adb17cfdab6d8a9187b566adda5da6a191885f630b3516b7c54bf59ca40ec8",
+      "action": "move",
+      "after_sha256": "f1adb17cfdab6d8a9187b566adda5da6a191885f630b3516b7c54bf59ca40ec8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/calibration/radian.json",
+      "new": "modules/tacz_adapter/docs/calibration/radian.json",
+      "before_sha256": "cd834e1f1804ffe748734f8215ab726b84e564406b995b05a9d3a87330b10ea2",
+      "action": "move",
+      "after_sha256": "cd834e1f1804ffe748734f8215ab726b84e564406b995b05a9d3a87330b10ea2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/devitems-catalog.md",
+      "new": "modules/tacz_adapter/docs/devitems-catalog.md",
+      "before_sha256": "9e66100c09a7456b33a9c294fce3b806817ae3db5af64ab3f59992f8f290fbd8",
+      "action": "move",
+      "after_sha256": "9e66100c09a7456b33a9c294fce3b806817ae3db5af64ab3f59992f8f290fbd8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/devitems-verification.json",
+      "new": "modules/tacz_adapter/docs/devitems-verification.json",
+      "before_sha256": "53964bcd298272ba82ea48d2ce82e6c281021ef03832fdbab5dbce4211523a20",
+      "action": "move",
+      "after_sha256": "53964bcd298272ba82ea48d2ce82e6c281021ef03832fdbab5dbce4211523a20"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/evidence/devitems-guns.png",
+      "new": "modules/tacz_adapter/docs/evidence/devitems-guns.png",
+      "before_sha256": "a45309a2b77c5498c07db67c78ccc382c588e714cd8a7fad8962f8bab5621395",
+      "action": "move",
+      "after_sha256": "a45309a2b77c5498c07db67c78ccc382c588e714cd8a7fad8962f8bab5621395"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/evidence/弹药桥接早期记录.md",
+      "new": "modules/tacz_adapter/docs/evidence/弹药桥接早期记录.md",
+      "before_sha256": "336902ce5b604d869821cf310dfcc6b9876ac7c138cbf18b35e680229cbe4b0c",
+      "action": "move",
+      "after_sha256": "336902ce5b604d869821cf310dfcc6b9876ac7c138cbf18b35e680229cbe4b0c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/experiment-69b1a3af-runtime.json",
+      "new": "modules/tacz_adapter/docs/experiment-69b1a3af-runtime.json",
+      "before_sha256": "9bd366a034bc8f3a02088e6f771ceea19bd141f9df519a1cebc57762ca008851",
+      "action": "move",
+      "after_sha256": "9bd366a034bc8f3a02088e6f771ceea19bd141f9df519a1cebc57762ca008851"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/extra-content-verification.json",
+      "new": "modules/tacz_adapter/docs/extra-content-verification.json",
+      "before_sha256": "60d5a49b6a7960f5200a0f4ada988a264d21d76071ede29d15f1a7a32d75efe6",
+      "action": "move",
+      "after_sha256": "60d5a49b6a7960f5200a0f4ada988a264d21d76071ede29d15f1a7a32d75efe6"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/presentation-verification.json",
+      "new": "modules/tacz_adapter/docs/presentation-verification.json",
+      "before_sha256": "b1efc272cbf91fbcad62428b515e570588642a92a7e4f666c9a4548e6497d5b0",
+      "action": "move",
+      "after_sha256": "b1efc272cbf91fbcad62428b515e570588642a92a7e4f666c9a4548e6497d5b0"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/refit-inventory.md",
+      "new": "modules/tacz_adapter/docs/refit-inventory.md",
+      "before_sha256": "311ba4afb972bfff97d55dad4674c3a19ff4d37e2a593b52754c5ab3e8dbd752",
+      "action": "move",
+      "after_sha256": "311ba4afb972bfff97d55dad4674c3a19ff4d37e2a593b52754c5ab3e8dbd752"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/refit-verification.json",
+      "new": "modules/tacz_adapter/docs/refit-verification.json",
+      "before_sha256": "8d3b40adaf1dca9cefb077fb822fe881d57421a5c3e5429a0baeb539dcf3b7b7",
+      "action": "move",
+      "after_sha256": "8d3b40adaf1dca9cefb077fb822fe881d57421a5c3e5429a0baeb539dcf3b7b7"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/self-built-runtime.md",
+      "new": "modules/tacz_adapter/docs/self-built-runtime.md",
+      "before_sha256": "27b3841751e776cbc3b4337144e7f1ee52e420ef2d45a344c16e313e2e5b3070",
+      "action": "integrate",
+      "after_sha256": "5a4b58f1a2d43464c659903a6d92cd25332ec61a27f43c4c6cd91b99a69f407e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/test-ammo-retirement.json",
+      "new": "modules/tacz_adapter/docs/test-ammo-retirement.json",
+      "before_sha256": "7b9d7a2ea2bd67e1bc6dbd7470d61de61d3388df7ffbc59befa73b240c8b07b5",
+      "action": "move",
+      "after_sha256": "7b9d7a2ea2bd67e1bc6dbd7470d61de61d3388df7ffbc59befa73b240c8b07b5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/test-ammo-retirement.md",
+      "new": "modules/tacz_adapter/docs/test-ammo-retirement.md",
+      "before_sha256": "51d5183c8e244adf01528627cfc6beb7bf1e4f14301c84596e38d7e2f09174b1",
+      "action": "move",
+      "after_sha256": "51d5183c8e244adf01528627cfc6beb7bf1e4f14301c84596e38d7e2f09174b1"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/weapon-merge-runtime.json",
+      "new": "modules/tacz_adapter/docs/weapon-merge-runtime.json",
+      "before_sha256": "35b796c6b8aeb1e26d168effcadc4b50ecaaebcb4b2374c864319090772c8982",
+      "action": "move",
+      "after_sha256": "35b796c6b8aeb1e26d168effcadc4b50ecaaebcb4b2374c864319090772c8982"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/三枪制作整理结果.md",
+      "new": "modules/tacz_adapter/docs/三枪制作整理结果.md",
+      "before_sha256": "15c303c60813c3a0e3b8092532b3874a53f32d235d701bf39446f68f29560b35",
+      "action": "move",
+      "after_sha256": "15c303c60813c3a0e3b8092532b3874a53f32d235d701bf39446f68f29560b35"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/三枪资源归属补充结果.md",
+      "new": "modules/tacz_adapter/docs/三枪资源归属补充结果.md",
+      "before_sha256": "762d872c3a99b48ff7f3b0d88e92bc49596137f184a1fe466b197d4f1dfa733f",
+      "action": "move",
+      "after_sha256": "762d872c3a99b48ff7f3b0d88e92bc49596137f184a1fe466b197d4f1dfa733f"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/握持瞄准与射击反馈方案.md",
+      "new": "modules/tacz_adapter/docs/握持瞄准与射击反馈方案.md",
+      "before_sha256": "b77f2f42a7f31553f431d36e152faaefe481816850a70d4c106c339e727b5525",
+      "action": "move",
+      "after_sha256": "b77f2f42a7f31553f431d36e152faaefe481816850a70d4c106c339e727b5525"
+    },
+    {
+      "old": "source/mods/tacz_adapter/docs/枪械导入流程.md",
+      "new": "modules/tacz_adapter/docs/枪械导入流程.md",
+      "before_sha256": "b0f90acfc6f3068c13b5e9c963d67420dd0f905a7737353b249dce9dd4876ad6",
+      "action": "integrate",
+      "after_sha256": "28554b2bf1b301a7e0bf6061ed10be15026e53ac0e8126ecf2c9a751f8669106"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/development/TaczDevelopmentCatalog.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/development/TaczDevelopmentCatalog.java",
+      "before_sha256": "5aa4c2a3948e45c664a20ac8c22aa3d52fef1b1bb562dba3a74f63bbc450ef50",
+      "action": "integrate",
+      "after_sha256": "9cd1baef77d6016ef909e5dbfab66fc6c7cf789ae61a7b080efd1ea95910bd56"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/development/VerificationRounds.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/development/VerificationRounds.java",
+      "before_sha256": "7fb0ef2df7f5c720ae2d84a948fbc94eb57951fd0a2b5692552506577d062b60",
+      "action": "move",
+      "after_sha256": "7fb0ef2df7f5c720ae2d84a948fbc94eb57951fd0a2b5692552506577d062b60"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AdapterVerification.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AdapterVerification.java",
+      "before_sha256": "bc71254673c99e3bf4caea294a9ff2cb2c66d0ebf277c71c184510f7eb7f0499",
+      "action": "integrate",
+      "after_sha256": "d0c822d559ab202dbda1d630ed544f81cd706c46bfdd87da0fceaf2fd997a54c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AdarClientAudit.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AdarClientAudit.java",
+      "before_sha256": "c9e8f695085b0792e32ae926d329dc84f57e15a6648821e44ce612f55bc8affa",
+      "action": "integrate",
+      "after_sha256": "f5270fcd37da87a9157d0f15c2dce0848a4dd727363de6eee42e37865d50cff2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AdarSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AdarSmoke.java",
+      "before_sha256": "d4527e22fd14f0cd9383bce4c0aa19499569b55749ea8ae3b99fd77596d20d6a",
+      "action": "move",
+      "after_sha256": "d4527e22fd14f0cd9383bce4c0aa19499569b55749ea8ae3b99fd77596d20d6a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ArmorFlowSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ArmorFlowSmoke.java",
+      "before_sha256": "78601d8aa8c64b96fba637e4b0c97cf61e5677453746c120136a4db8776e5a46",
+      "action": "move",
+      "after_sha256": "78601d8aa8c64b96fba637e4b0c97cf61e5677453746c120136a4db8776e5a46"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ArmorTargetGeometry.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ArmorTargetGeometry.java",
+      "before_sha256": "88ae30a1963a9699d4eabefcdc31e8fa2e3a466d22c7c07a1ddae9d9e36d37c4",
+      "action": "move",
+      "after_sha256": "88ae30a1963a9699d4eabefcdc31e8fa2e3a466d22c7c07a1ddae9d9e36d37c4"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ArmorVerification.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ArmorVerification.java",
+      "before_sha256": "34afbbc006ba973e96d055ff1dd1939ad86348279032d65a2f278cebcce970f3",
+      "action": "integrate",
+      "after_sha256": "334a7a301aae4f286bd6f833c1524a2565fe6412bc6f72db09470cb1fd183a2c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AssemblyCombatSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AssemblyCombatSmoke.java",
+      "before_sha256": "241e65a3718090e75841b0cc3a37b184f93aa720721c181311a2f75499f4908d",
+      "action": "move",
+      "after_sha256": "241e65a3718090e75841b0cc3a37b184f93aa720721c181311a2f75499f4908d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AssemblyDragClientSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AssemblyDragClientSmoke.java",
+      "before_sha256": "9c867d1f946765f5b9a1ec8196443f30b7950aca47fe62cf9054f564c0339dc1",
+      "action": "integrate",
+      "after_sha256": "8887fa6f06beb4bb546df6b56508c78cd4f122d95fa526009ef0286237851747"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AssemblyInventorySmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AssemblyInventorySmoke.java",
+      "before_sha256": "9ed2d8f1fc6e3208eca8dc7145d4152be282d1bbe851a020a7d16286ba60fb50",
+      "action": "move",
+      "after_sha256": "9ed2d8f1fc6e3208eca8dc7145d4152be282d1bbe851a020a7d16286ba60fb50"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AutomaticAmmoSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AutomaticAmmoSmoke.java",
+      "before_sha256": "717517f02dcaa10d3b4d792bba06d713bf0fd223cdfcf087cf5f1b702c438236",
+      "action": "move",
+      "after_sha256": "717517f02dcaa10d3b4d792bba06d713bf0fd223cdfcf087cf5f1b702c438236"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/BarrelFireCommands.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/BarrelFireCommands.java",
+      "before_sha256": "db403118f8bc11e7865dccfccfdf77e43b18e8292fbab612937ecc408a7e3d72",
+      "action": "integrate",
+      "after_sha256": "7b815910a965a2ac685049295bd7ebc596503470979c05213f2f957c201df95d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/BarrelFireFixture.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/BarrelFireFixture.java",
+      "before_sha256": "cd9f49514b0a6606a9c74884c77ac3facbb186206e3b4d8a1bf5958e956c5bef",
+      "action": "integrate",
+      "after_sha256": "cf2a5bbf0fcb9cfe586cb8ebc5179ed799949e20442d08ba91ad7b2f788393d2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/BarrelFireSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/BarrelFireSmoke.java",
+      "before_sha256": "25863f34246d15cafa35b2c6e60f0296e4d7382f4ce5c0b1de3d8b786e6bd010",
+      "action": "move",
+      "after_sha256": "25863f34246d15cafa35b2c6e60f0296e4d7382f4ce5c0b1de3d8b786e6bd010"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ClientLoadSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ClientLoadSmoke.java",
+      "before_sha256": "18838e77d3a5ae3f24cab42399fda6e546ee35625726e4c36e3c1e614288caab",
+      "action": "integrate",
+      "after_sha256": "594d6539d3f4438ac0f28e1d2f32d8e5a3b329f55136a5b81f111e2ec8e8c148"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/DevelopmentTaczCatalogSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/DevelopmentTaczCatalogSmoke.java",
+      "before_sha256": "5d41d65f7961062d21c6e2b830304ded169dde107a71f632b2eeb0c34e37654a",
+      "action": "move",
+      "after_sha256": "5d41d65f7961062d21c6e2b830304ded169dde107a71f632b2eeb0c34e37654a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/DevelopmentTargets.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/DevelopmentTargets.java",
+      "before_sha256": "efe21dbc98b5f5a2fdf96b1691d4195249a255f594e53b799dbbda0b5c2d248a",
+      "action": "integrate",
+      "after_sha256": "e8e004b90758b52db494c2ae98dce463273f5211d9ae763be6fd3503a2bbaa6a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/DevelopmentText.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/DevelopmentText.java",
+      "before_sha256": "a0b592b113f6a309755747bbc47377714adfe4083045e25783960b004baeea3e",
+      "action": "move",
+      "after_sha256": "a0b592b113f6a309755747bbc47377714adfe4083045e25783960b004baeea3e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/FaceEquipmentSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/FaceEquipmentSmoke.java",
+      "before_sha256": "3276933df77db26eac1445df34db07c38079d8dad91470ba6266a5eb46471f5a",
+      "action": "move",
+      "after_sha256": "3276933df77db26eac1445df34db07c38079d8dad91470ba6266a5eb46471f5a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/InspectionClientSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/InspectionClientSmoke.java",
+      "before_sha256": "e1d93d8cbcd701560e317a9c53b779628c4026b9576d9f2be7120e2d45102f47",
+      "action": "integrate",
+      "after_sha256": "8ca18f206af47206703a0ebf2fc9d3bd29926daf5bb986dd96be5d5d111bcff6"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/InspectionLanguageSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/InspectionLanguageSmoke.java",
+      "before_sha256": "866c32c7e01f288c05364f8be620b73dbacb3b6a7b6b660f5bbe119a9fc52a4e",
+      "action": "move",
+      "after_sha256": "866c32c7e01f288c05364f8be620b73dbacb3b6a7b6b660f5bbe119a9fc52a4e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/MedicalSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/MedicalSmoke.java",
+      "before_sha256": "8152f4004d2708e95dfef60de808edd77b3cd2793ec573f09415ae5120faf9b8",
+      "action": "move",
+      "after_sha256": "8152f4004d2708e95dfef60de808edd77b3cd2793ec573f09415ae5120faf9b8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/PlayerArmorCommands.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/PlayerArmorCommands.java",
+      "before_sha256": "8d810c30134f86bef2d6a2abcc4ed8192b2d826837045332636b9084923afa18",
+      "action": "integrate",
+      "after_sha256": "ba2f0f9f9bf8ee477578d52c6ba85d3a978ae953c76a4916e135a32b0f09632d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/PlayerArmorSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/PlayerArmorSmoke.java",
+      "before_sha256": "dffc5f805c288cc1507a77a9e04f19c94daba2713635fd9c7825f084f9c468d4",
+      "action": "integrate",
+      "after_sha256": "b5e397b9ebbce9bfa65006ab472b877bc53a48511f6ec86433b484dbdbb04478"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/RefitInventorySmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/RefitInventorySmoke.java",
+      "before_sha256": "4599dbfd277f4f72f00ba901bf83319aa064762094e53ce4e19384f22553736e",
+      "action": "move",
+      "after_sha256": "4599dbfd277f4f72f00ba901bf83319aa064762094e53ce4e19384f22553736e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ResourceSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ResourceSmoke.java",
+      "before_sha256": "402f4329f920da8e0351af361ce9b6bb01eabcc19f2e340c0a4cfa74eb4aa1b9",
+      "action": "move",
+      "after_sha256": "402f4329f920da8e0351af361ce9b6bb01eabcc19f2e340c0a4cfa74eb4aa1b9"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/RicochetSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/RicochetSmoke.java",
+      "before_sha256": "aa053bfa59e3ac0f42580e451f6db80587b4f6c199f19999c361291291654b5b",
+      "action": "move",
+      "after_sha256": "aa053bfa59e3ac0f42580e451f6db80587b4f6c199f19999c361291291654b5b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/RicochetTargetSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/RicochetTargetSmoke.java",
+      "before_sha256": "33345614d0e3fa6939170aa176e202af6f0b82b280332b5a1fc81cadc3465ee1",
+      "action": "move",
+      "after_sha256": "33345614d0e3fa6939170aa176e202af6f0b82b280332b5a1fc81cadc3465ee1"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/RicochetTargetVerification.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/RicochetTargetVerification.java",
+      "before_sha256": "61232f4d9f1854e7d20ac1f63fd29734a5fa5f5c58b464de679b98ea0019afb9",
+      "action": "integrate",
+      "after_sha256": "ac18164fa267a5075fee3eedea62026470dad6cb037d9d791a08bc42c9ea7f10"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/SurvivalSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/SurvivalSmoke.java",
+      "before_sha256": "ae1876c96913efaa36a46a33698bff929dccb9f3ad04efcea439267206d77227",
+      "action": "move",
+      "after_sha256": "ae1876c96913efaa36a46a33698bff929dccb9f3ad04efcea439267206d77227"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/UnregisteredAttachmentSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/UnregisteredAttachmentSmoke.java",
+      "before_sha256": "fce1bf6523dd6a25785787e7f458a687259cd5627a8243ea339691b24d82eb57",
+      "action": "move",
+      "after_sha256": "fce1bf6523dd6a25785787e7f458a687259cd5627a8243ea339691b24d82eb57"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/java/dev/tacticaltacz/verification/WaterIntakeSmoke.java",
+      "new": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/WaterIntakeSmoke.java",
+      "before_sha256": "1e887018d54eef75a1e49ed13dd841fb6c4b5c5b5eaa379f1803c4be34dc6f52",
+      "action": "move",
+      "after_sha256": "1e887018d54eef75a1e49ed13dd841fb6c4b5c5b5eaa379f1803c4be34dc6f52"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/resources/assembly-fire-test/catalog.json",
+      "new": "modules/tacz_adapter/src/development/resources/assembly-fire-test/catalog.json",
+      "before_sha256": "fa10206609ff371e136ca729a1fba8af72f06fd2d68b45a76b1cb883a42b757b",
+      "action": "move",
+      "after_sha256": "fa10206609ff371e136ca729a1fba8af72f06fd2d68b45a76b1cb883a42b757b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/resources/assets/tactical_tacz_adapter/lang/en_us.json",
+      "new": "modules/tacz_adapter/src/development/resources/assets/tactical_tacz_adapter/lang/en_us.json",
+      "before_sha256": "857e3025e84bf8ea7dc9780ceec89649c32114d12fd4c526b9c85f26b0190821",
+      "action": "move",
+      "after_sha256": "857e3025e84bf8ea7dc9780ceec89649c32114d12fd4c526b9c85f26b0190821"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/resources/assets/tactical_tacz_adapter/lang/zh_cn.json",
+      "new": "modules/tacz_adapter/src/development/resources/assets/tactical_tacz_adapter/lang/zh_cn.json",
+      "before_sha256": "c8b0331bea4b10cc405a236901907c4e6039afd57fb508054b5ca708a30c646f",
+      "action": "move",
+      "after_sha256": "c8b0331bea4b10cc405a236901907c4e6039afd57fb508054b5ca708a30c646f"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/resources/assets/tactical_tacz_adapter/models/item/assembly_test_barrel.json",
+      "new": "modules/tacz_adapter/src/development/resources/assets/tactical_tacz_adapter/models/item/assembly_test_barrel.json",
+      "before_sha256": "5785fe1b638804163f8309cd934fc07b90b9edecae6cfd99e18c6cab9bdf1208",
+      "action": "move",
+      "after_sha256": "5785fe1b638804163f8309cd934fc07b90b9edecae6cfd99e18c6cab9bdf1208"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/resources/assets/tactical_tacz_development/lang/en_us.json",
+      "new": "modules/tacz_adapter/src/development/resources/assets/tactical_tacz_development/lang/en_us.json",
+      "before_sha256": "a3dfd46df41a30914912b99f9babdbe138781fb8e1175ee5d7fd364e6b46f8e2",
+      "action": "move",
+      "after_sha256": "a3dfd46df41a30914912b99f9babdbe138781fb8e1175ee5d7fd364e6b46f8e2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/resources/assets/tactical_tacz_development/lang/zh_cn.json",
+      "new": "modules/tacz_adapter/src/development/resources/assets/tactical_tacz_development/lang/zh_cn.json",
+      "before_sha256": "53e4fb22943a316f56c013e5c056283a2b5d49bedbe238ff7da171ece569ee50",
+      "action": "move",
+      "after_sha256": "53e4fb22943a316f56c013e5c056283a2b5d49bedbe238ff7da171ece569ee50"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/development/resources/data/tactical_tacz_adapter/item_foundation/items/assembly_test_barrel.json",
+      "new": "modules/tacz_adapter/src/development/resources/data/tactical_tacz_adapter/item_foundation/items/assembly_test_barrel.json",
+      "before_sha256": "8fc3e5a7c2e826f4ea1bcd28ecf4d3667f0781334e00da88482b23b4064846c4",
+      "action": "move",
+      "after_sha256": "8fc3e5a7c2e826f4ea1bcd28ecf4d3667f0781334e00da88482b23b4064846c4"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/AmmoBridge.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/AmmoBridge.java",
+      "before_sha256": "9956d750553c0f61019cb942f557ebff47ea3f1b93f37b74a97e359b7a1c1964",
+      "action": "move",
+      "after_sha256": "9956d750553c0f61019cb942f557ebff47ea3f1b93f37b74a97e359b7a1c1964"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/AmmunitionInspection.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/AmmunitionInspection.java",
+      "before_sha256": "cb9f221b2f6c1f4711a0f30513609d995bc8b429223c2afa8e69f2a1e7e206c8",
+      "action": "move",
+      "after_sha256": "cb9f221b2f6c1f4711a0f30513609d995bc8b429223c2afa8e69f2a1e7e206c8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/AssemblyFireGate.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/AssemblyFireGate.java",
+      "before_sha256": "2e10527f0039e7bb81eeb9f50e04194b68a20fba7fb64246a968b530697371ea",
+      "action": "move",
+      "after_sha256": "2e10527f0039e7bb81eeb9f50e04194b68a20fba7fb64246a968b530697371ea"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/ClientAimResource.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/ClientAimResource.java",
+      "before_sha256": "d66541e975f016348a4198b92dd1132d1dbee336318c4e3b3c3f85f519b6f4ef",
+      "action": "integrate",
+      "after_sha256": "8d7e2440b29600a60f06dc8972ac171ee2f43f49e2a331bdfcb2a7d2a8644e90"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/ContinuationState.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/ContinuationState.java",
+      "before_sha256": "54c100b00e04921a89263074cfe9e6b1339d8afb7d7e8a5ff3b7b0242a3972ac",
+      "action": "move",
+      "after_sha256": "54c100b00e04921a89263074cfe9e6b1339d8afb7d7e8a5ff3b7b0242a3972ac"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/GunAdoption.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/GunAdoption.java",
+      "before_sha256": "079e7753d972338c46ee798a523045a8237c27e1dda26ad6071be9b4a41828ca",
+      "action": "move",
+      "after_sha256": "079e7753d972338c46ee798a523045a8237c27e1dda26ad6071be9b4a41828ca"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/ImpactCarrier.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/ImpactCarrier.java",
+      "before_sha256": "4a4e291bcd5c646bac2cfffc642c9408b2f6cd4c49b8a8c857e13a2ea95cfe06",
+      "action": "move",
+      "after_sha256": "4a4e291bcd5c646bac2cfffc642c9408b2f6cd4c49b8a8c857e13a2ea95cfe06"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/PistolAdoption.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/PistolAdoption.java",
+      "before_sha256": "c8373bcc93031f8ab15902a7084638decebd9c29b9f6323a966025d83cb0c848",
+      "action": "move",
+      "after_sha256": "c8373bcc93031f8ab15902a7084638decebd9c29b9f6323a966025d83cb0c848"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/TacticalTaczAdapter.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/TacticalTaczAdapter.java",
+      "before_sha256": "03983b3663bae5af8a53696fa38fabf119527c7d6eb12a2b2b998e318e659afa",
+      "action": "integrate",
+      "after_sha256": "7be14277bbc071965695a6c0db83a02f5d385e80f95f177cab705a3dad250c1a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssembledWeapon.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssembledWeapon.java",
+      "before_sha256": "4a4c92185fc49a4faa01bdabe487f049db620c35e918de3c54f01b75632a1345",
+      "action": "move",
+      "after_sha256": "4a4c92185fc49a4faa01bdabe487f049db620c35e918de3c54f01b75632a1345"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssembledWeapons.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssembledWeapons.java",
+      "before_sha256": "1148d7a0a0f1526ed3595d67abcfc38810f56b5afa11badd74ec4cbc384595c5",
+      "action": "integrate",
+      "after_sha256": "1c2bb34b2d4bece7719d934b2c0b9bd7f5ede75ab1c039733700934101c6ac47"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunClient.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunClient.java",
+      "before_sha256": "e720966c422e96fab5e8479f7c0a74f1b181708b05b9be77d2ddbd3cea8ae2b4",
+      "action": "integrate",
+      "after_sha256": "3d5266f5e67e54fd4ad67329f83f88a086b87680efc8d347152293e2b97b7bef"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunClientRegistration.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunClientRegistration.java",
+      "before_sha256": "d235ac644e33f6cee025c7aff041f39de2df671f125f4cf114088a2da15a0d6b",
+      "action": "integrate",
+      "after_sha256": "445397d5101fc9c32de37a3f7c6e3bbdf41136164801e17211ec9acd9d421197"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunExchange.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunExchange.java",
+      "before_sha256": "7b3b79a3ffc8b87e5655776553dbbb05a6d451d7e3b011c73357dad8a8fcf2cb",
+      "action": "move",
+      "after_sha256": "7b3b79a3ffc8b87e5655776553dbbb05a6d451d7e3b011c73357dad8a8fcf2cb"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunItem.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunItem.java",
+      "before_sha256": "de633b344e0f3bdbfaac575b77c6f09f43478be6d97c78df13de4e9d1b09ea28",
+      "action": "move",
+      "after_sha256": "de633b344e0f3bdbfaac575b77c6f09f43478be6d97c78df13de4e9d1b09ea28"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunModel.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunModel.java",
+      "before_sha256": "78cf610ca2bb06d4fd15160ca81e701a2301b86fb6ad06e59d361c2d7b15ca46",
+      "action": "move",
+      "after_sha256": "78cf610ca2bb06d4fd15160ca81e701a2301b86fb6ad06e59d361c2d7b15ca46"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunProtocol.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunProtocol.java",
+      "before_sha256": "eb0bf63df6cc37778fe326be8b8790b34a412a7aab14f73d294afb790d9ecdc8",
+      "action": "move",
+      "after_sha256": "eb0bf63df6cc37778fe326be8b8790b34a412a7aab14f73d294afb790d9ecdc8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunWorkbench.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunWorkbench.java",
+      "before_sha256": "76da6a9b7820295b83abe63dc9caf38e9819012d47bd17144b59664e7acf4db1",
+      "action": "move",
+      "after_sha256": "76da6a9b7820295b83abe63dc9caf38e9819012d47bd17144b59664e7acf4db1"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyPresentation.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyPresentation.java",
+      "before_sha256": "e7fe4711658726dbb6acf4331c83f9094ce4342e5496bec66ec6dca0199ee31a",
+      "action": "move",
+      "after_sha256": "e7fe4711658726dbb6acf4331c83f9094ce4342e5496bec66ec6dca0199ee31a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyPresentationClient.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyPresentationClient.java",
+      "before_sha256": "b2312bb80c558806ef1e5f2757c4c5c72bca799502c9fe9eeb9ad4e22301f5dd",
+      "action": "integrate",
+      "after_sha256": "7a601650d8e7580aaf8c535c080e2861a3791a4cb7f5c031f59fa7d1b989f23c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/WeaponHandling.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/WeaponHandling.java",
+      "before_sha256": "0ab7b7b629ec5fa7493e5f7670e1b4ff37ad88825b603b80cc961866e7ae41f5",
+      "action": "move",
+      "after_sha256": "0ab7b7b629ec5fa7493e5f7670e1b4ff37ad88825b603b80cc961866e7ae41f5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AimResourceMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AimResourceMixin.java",
+      "before_sha256": "1c7521fd994086dbfd13a95f1feedca77efd4b27cf3682795119640c7d8a7cfc",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AmmoHudMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AmmoHudMixin.java",
+      "before_sha256": "10efa016ff774eb22f18e2d2f5992cad0a2e0ac6b034bc0724e832d29884e8c1",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AssemblyCameraMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AssemblyCameraMixin.java",
+      "before_sha256": "4127cdcbe99bc91ebcefd50c6ef2974f228654fda2a2823ffc81368311643f61",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AssemblyPresentationMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AssemblyPresentationMixin.java",
+      "before_sha256": "c802b193f56d9d48e8aebdcb9988906012bdd182eb69791dab489ffe2620b131",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AssemblyShootMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/AssemblyShootMixin.java",
+      "before_sha256": "542820018a368f09bf2ba74e305fae6f57e991e4d2f7659b728a02f787e2b5c2",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/BulletMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/BulletMixin.java",
+      "before_sha256": "4e571bdfc141ad6739be7cf895a28f4f5401c96bdfe5454bd9b430bc17e692bc",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ClientAimResourceMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ClientAimResourceMixin.java",
+      "before_sha256": "6158eb50eae23edd719d29be60aec54997ecea5acb4bb26de0f7d8895eb0fa41",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ClientAssemblyShootMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ClientAssemblyShootMixin.java",
+      "before_sha256": "44f5435d18544959cdc399f9d5c69b99b7d514ff5c535e3ed50a51f2fa88a167",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ContentAmmoMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ContentAmmoMixin.java",
+      "before_sha256": "b2741ddc4f55ead8a4fe6f3a1744a03aa6b256fafe084928041fee26867fbebb",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ReloadMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ReloadMixin.java",
+      "before_sha256": "517456055cc71ac55fe7aacaef427f7e34fa1ec5d8333d8f040a37478038c035",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ScriptAmmoMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ScriptAmmoMixin.java",
+      "before_sha256": "1821a02282b694cf385530191c9c48c3784c5a961bf9f097b13ebd8c2b84149f",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/TargetGeometryMixin.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/TargetGeometryMixin.java",
+      "before_sha256": "941812c1151553f30dea300769c8eadc52f2169243534169396d54e4b0e9431c",
+      "action": "retire",
+      "reason": "Owned TaCZ direct call replaces injection"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/refit/RefitBridge.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/refit/RefitBridge.java",
+      "before_sha256": "a86c2932dcf643cf183334f7e90f8b56138529f8fb82eac2990759ef39b0aa55",
+      "action": "move",
+      "after_sha256": "a86c2932dcf643cf183334f7e90f8b56138529f8fb82eac2990759ef39b0aa55"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/refit/RefitClient.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/refit/RefitClient.java",
+      "before_sha256": "00b5a9479513f362479858a7732379e354faa014bfaf1475ffc8784c5fb8f498",
+      "action": "integrate",
+      "after_sha256": "f056bd054feb3da0dbcc9087bf2be5702793ccec972e307447f66401991bd75f"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/refit/RefitProtocol.java",
+      "new": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/refit/RefitProtocol.java",
+      "before_sha256": "dad91990b95d17dd2eb5945cd2b409fc32581046b970188edc4500a5c1cc0555",
+      "action": "move",
+      "after_sha256": "dad91990b95d17dd2eb5945cd2b409fc32581046b970188edc4500a5c1cc0555"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/META-INF/neoforge.mods.toml",
+      "new": "modules/tacz_adapter/src/main/resources/META-INF/neoforge.mods.toml",
+      "before_sha256": "2e988c477e842d18a4cc11f57c9dd89026cdf16598e291afbc3280daf0fad072",
+      "action": "retire",
+      "reason": "Single tacz entrypoint/build/lock; armor tag union in owned root resource"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/assets/tactical_tacz_adapter/lang/en_us.json",
+      "new": "modules/tacz_adapter/src/main/resources/assets/tactical_tacz_adapter/lang/en_us.json",
+      "before_sha256": "dd94fb1b63cb8b87661b81eaec24f1001c64fcd4e097df5aeb786df6f3dd2a90",
+      "action": "move",
+      "after_sha256": "dd94fb1b63cb8b87661b81eaec24f1001c64fcd4e097df5aeb786df6f3dd2a90"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/assets/tactical_tacz_adapter/lang/zh_cn.json",
+      "new": "modules/tacz_adapter/src/main/resources/assets/tactical_tacz_adapter/lang/zh_cn.json",
+      "before_sha256": "8f19ea1594b707941d2020677bae3bb1705f0a7634178dd001ee80dcf9e85b12",
+      "action": "move",
+      "after_sha256": "8f19ea1594b707941d2020677bae3bb1705f0a7634178dd001ee80dcf9e85b12"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/data/minecraft/tags/damage_type/bypasses_armor.json",
+      "new": "modules/tacz_adapter/src/main/resources/data/minecraft/tags/damage_type/bypasses_armor.json",
+      "before_sha256": "ac79b10917e57cf3f3c4221d3b71b8daa60efcc3df00d4fe16ed1e450277613d",
+      "action": "retire",
+      "reason": "Single tacz entrypoint/build/lock; armor tag union in owned root resource"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/data/minecraft/tags/damage_type/bypasses_cooldown.json",
+      "new": "modules/tacz_adapter/src/main/resources/data/minecraft/tags/damage_type/bypasses_cooldown.json",
+      "before_sha256": "ac79b10917e57cf3f3c4221d3b71b8daa60efcc3df00d4fe16ed1e450277613d",
+      "action": "move",
+      "after_sha256": "ac79b10917e57cf3f3c4221d3b71b8daa60efcc3df00d4fe16ed1e450277613d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/data/minecraft/tags/damage_type/bypasses_enchantments.json",
+      "new": "modules/tacz_adapter/src/main/resources/data/minecraft/tags/damage_type/bypasses_enchantments.json",
+      "before_sha256": "ac79b10917e57cf3f3c4221d3b71b8daa60efcc3df00d4fe16ed1e450277613d",
+      "action": "move",
+      "after_sha256": "ac79b10917e57cf3f3c4221d3b71b8daa60efcc3df00d4fe16ed1e450277613d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/data/minecraft/tags/damage_type/bypasses_resistance.json",
+      "new": "modules/tacz_adapter/src/main/resources/data/minecraft/tags/damage_type/bypasses_resistance.json",
+      "before_sha256": "ac79b10917e57cf3f3c4221d3b71b8daa60efcc3df00d4fe16ed1e450277613d",
+      "action": "move",
+      "after_sha256": "ac79b10917e57cf3f3c4221d3b71b8daa60efcc3df00d4fe16ed1e450277613d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/data/minecraft/tags/damage_type/bypasses_shield.json",
+      "new": "modules/tacz_adapter/src/main/resources/data/minecraft/tags/damage_type/bypasses_shield.json",
+      "before_sha256": "ac79b10917e57cf3f3c4221d3b71b8daa60efcc3df00d4fe16ed1e450277613d",
+      "action": "move",
+      "after_sha256": "ac79b10917e57cf3f3c4221d3b71b8daa60efcc3df00d4fe16ed1e450277613d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/data/tactical_tacz_adapter/damage_type/resolved_bullet.json",
+      "new": "modules/tacz_adapter/src/main/resources/data/tactical_tacz_adapter/damage_type/resolved_bullet.json",
+      "before_sha256": "09bebab2b40bc95dc9cd36d7397d1fc0bdf6eae33b8896da4c465e23f20b74aa",
+      "action": "move",
+      "after_sha256": "09bebab2b40bc95dc9cd36d7397d1fc0bdf6eae33b8896da4c465e23f20b74aa"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/data/tacz/item_foundation/items/modern_kinetic_gun.json",
+      "new": "modules/tacz_adapter/src/main/resources/data/tacz/item_foundation/items/modern_kinetic_gun.json",
+      "before_sha256": "86e8571e1d0b0298d1d9df7432a0a6c6d8a2ae81075b51dd6d3e344647582e29",
+      "action": "move",
+      "after_sha256": "86e8571e1d0b0298d1d9df7432a0a6c6d8a2ae81075b51dd6d3e344647582e29"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/main/resources/tactical_tacz_adapter.mixins.json",
+      "new": "modules/tacz_adapter/src/main/resources/tactical_tacz_adapter.mixins.json",
+      "before_sha256": "e33caea6cb0cf47a7a1d6ff24cd9040e4462452c72bb1abd6b333234ee9e4936",
+      "action": "retire",
+      "reason": "Single tacz entrypoint/build/lock; armor tag union in owned root resource"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/test/java/dev/tacticaltacz/AdoptedAmmunitionTest.java",
+      "new": "modules/tacz_adapter/src/test/java/dev/tacticaltacz/AdoptedAmmunitionTest.java",
+      "before_sha256": "bb7de10954fee10c23cb6f5167f63c8097de52e51e9039d7fc5b2b26e6d137ac",
+      "action": "move",
+      "after_sha256": "bb7de10954fee10c23cb6f5167f63c8097de52e51e9039d7fc5b2b26e6d137ac"
+    },
+    {
+      "old": "source/mods/tacz_adapter/src/test/java/dev/tacticaltacz/AmmoProfileContractTest.java",
+      "new": "modules/tacz_adapter/src/test/java/dev/tacticaltacz/AmmoProfileContractTest.java",
+      "before_sha256": "4a5b9be2c55ea75911e47402976dfd9522ddd8e68c030b88d72236f84bbc124b",
+      "action": "move",
+      "after_sha256": "4a5b9be2c55ea75911e47402976dfd9522ddd8e68c030b88d72236f84bbc124b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/.gitignore",
+      "new": "modules/tacz_adapter/tools/.gitignore",
+      "before_sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b",
+      "action": "move",
+      "after_sha256": "32dae3052f331ee34d628ef535709b301259a45df7c7522c4d35dcf49873f00b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/README.md",
+      "new": "modules/tacz_adapter/tools/README.md",
+      "before_sha256": "bd34c35310d7b6ce7ea845e0af03f2f0184b003e2caffe9b443fdfaa4826e32f",
+      "action": "move",
+      "after_sha256": "bd34c35310d7b6ce7ea845e0af03f2f0184b003e2caffe9b443fdfaa4826e32f"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/audit_weapon_references.py",
+      "new": "modules/tacz_adapter/tools/audit_weapon_references.py",
+      "before_sha256": "e545568934e3eb8588fa523188bbc9a918039d2e88939d160f8f73f421a7347d",
+      "action": "integrate",
+      "after_sha256": "4837cfe4080dc2309d1f05fdfb0f84db04835367ee5b16a8dff2ef4ca810074c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/build_adar.py",
+      "new": "modules/tacz_adapter/tools/build_adar.py",
+      "before_sha256": "370729a27a29a4dd20934b60ff04d95594481757e842e34b59e7c9cf8e7ccd39",
+      "action": "integrate",
+      "after_sha256": "e83e62e4c4b4944551b934bac33e295033c24e342380774b018cbf579befcf71"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/build_presentation.py",
+      "new": "modules/tacz_adapter/tools/build_presentation.py",
+      "before_sha256": "b468e16d42e4370c13542a5781357b3a6a8a9f0d25c4fe86f0ccccf3563c1eb7",
+      "action": "move",
+      "after_sha256": "b468e16d42e4370c13542a5781357b3a6a8a9f0d25c4fe86f0ccccf3563c1eb7"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/build_weapon.py",
+      "new": "modules/tacz_adapter/tools/build_weapon.py",
+      "before_sha256": "2371b2894d286d5821fb8726b1f748ee0e7c4805708b1bd332131577f7eb44d7",
+      "action": "integrate",
+      "after_sha256": "28cc917518f891c6ac5ab8d84cde5e591fac91f3421f848d7292d24c0ced38e5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/calibrate_weapon.py",
+      "new": "modules/tacz_adapter/tools/calibrate_weapon.py",
+      "before_sha256": "7cb384142bb37b0776a44968c61337b17b150356d26c2fa213dea478a311549f",
+      "action": "move",
+      "after_sha256": "7cb384142bb37b0776a44968c61337b17b150356d26c2fa213dea478a311549f"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/prepare_local_components.py",
+      "new": "modules/tacz_adapter/tools/prepare_local_components.py",
+      "before_sha256": "de20c98280d2992234352bcf1ddf9c9336e4c3c79181d3b3ffd96fc0401a17de",
+      "action": "move",
+      "after_sha256": "de20c98280d2992234352bcf1ddf9c9336e4c3c79181d3b3ffd96fc0401a17de"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/preview_weapon.py",
+      "new": "modules/tacz_adapter/tools/preview_weapon.py",
+      "before_sha256": "32ff93062e829b472bf30edbbac2323e48a012bd261f1008e9359c97af337713",
+      "action": "move",
+      "after_sha256": "32ff93062e829b472bf30edbbac2323e48a012bd261f1008e9359c97af337713"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/render_part_icon.py",
+      "new": "modules/tacz_adapter/tools/render_part_icon.py",
+      "before_sha256": "6f05a11b7cd8ad6c7e98b2d4dcb23c962792e520f8c934dee90d33a9ef54561b",
+      "action": "move",
+      "after_sha256": "6f05a11b7cd8ad6c7e98b2d4dcb23c962792e520f8c934dee90d33a9ef54561b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/test_local_components.py",
+      "new": "modules/tacz_adapter/tools/test_local_components.py",
+      "before_sha256": "6d6e9a9afdc79b7da58af09cba57d026ce2685f0b9e469d341f176a6d21b4d90",
+      "action": "integrate",
+      "after_sha256": "6cee262d11c54e9b67bbc0b1a2d7afcf7e6c4853a4a31e4a6e2908fc670bdf55"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/test_render_part_icon.py",
+      "new": "modules/tacz_adapter/tools/test_render_part_icon.py",
+      "before_sha256": "8710283f84d969c2c814157a1806dd65265d9f331ce3fd64e2b50c1f140e3b06",
+      "action": "move",
+      "after_sha256": "8710283f84d969c2c814157a1806dd65265d9f331ce3fd64e2b50c1f140e3b06"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/test_weapon_pipeline.py",
+      "new": "modules/tacz_adapter/tools/test_weapon_pipeline.py",
+      "before_sha256": "5910f8d264faf8c18847f0446db15ec25065b1c3b7d3f67d6907dc66fcda6e9d",
+      "action": "move",
+      "after_sha256": "5910f8d264faf8c18847f0446db15ec25065b1c3b7d3f67d6907dc66fcda6e9d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/validate_presentation.py",
+      "new": "modules/tacz_adapter/tools/validate_presentation.py",
+      "before_sha256": "9ceac117fd721e3e1bc17e83a11a39895a9b3ed3ad2c97be550128f84382af68",
+      "action": "move",
+      "after_sha256": "9ceac117fd721e3e1bc17e83a11a39895a9b3ed3ad2c97be550128f84382af68"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/validate_weapon_resources.py",
+      "new": "modules/tacz_adapter/tools/validate_weapon_resources.py",
+      "before_sha256": "8fb48d9861ff98d987a3127aa83602164675073e824e4eabbfbda2af69bda940",
+      "action": "integrate",
+      "after_sha256": "748215ce9b2929123ba4230c52192d722ff779ad82a897155c13686bd5b90df5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/tools/weapon_pipeline.py",
+      "new": "modules/tacz_adapter/tools/weapon_pipeline.py",
+      "before_sha256": "cc85eca7e504ee669a96332ac9143fb9b8146d076325eedb2782c47fabe1a892",
+      "action": "integrate",
+      "after_sha256": "6887a3c1996210024bd8ed973cc207025fc4c1d915f6b72555600a23426413f6"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/animations.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/animations.json",
+      "before_sha256": "9994f0596e131d38122633bb13bddbe72a9fa6524dc996f4b01c0732b5f55718",
+      "action": "move",
+      "after_sha256": "9994f0596e131d38122633bb13bddbe72a9fa6524dc996f4b01c0732b5f55718"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/display.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/display.json",
+      "before_sha256": "6a005669bc5ec64a98c42eaae90b27ea8bf9340cfdafaef5db34a5d5f1e4072b",
+      "action": "move",
+      "after_sha256": "6a005669bc5ec64a98c42eaae90b27ea8bf9340cfdafaef5db34a5d5f1e4072b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/execution.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/execution.json",
+      "before_sha256": "93374f14c73ffe94f945284ddf7b4bbccb3b9078eb32600cb41bf3278f785d4d",
+      "action": "move",
+      "after_sha256": "93374f14c73ffe94f945284ddf7b4bbccb3b9078eb32600cb41bf3278f785d4d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/handling.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/handling.json",
+      "before_sha256": "5b14c1a7c801a7519e704fac89a89a2617eff3f48b195e0b95895722c9ca8569",
+      "action": "move",
+      "after_sha256": "5b14c1a7c801a7519e704fac89a89a2617eff3f48b195e0b95895722c9ca8569"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/identities.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/identities.json",
+      "before_sha256": "0a1412eb2af23174f1de71911647971018ce54af5843b9ee26c4dccc1f62a0ae",
+      "action": "move",
+      "after_sha256": "0a1412eb2af23174f1de71911647971018ce54af5843b9ee26c4dccc1f62a0ae"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/import.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/import.json",
+      "before_sha256": "ab8db166703d003c5c4cbdd16e77a0a277bcecde9edfeeedfd660d6115219c26",
+      "action": "integrate",
+      "after_sha256": "ad13e50a2dd677b95d2460375329d5247384b168bb1ab67bdf624f3dec12575f"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/index.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/index.json",
+      "before_sha256": "e8c5d4c4f1626d4fa964be700370d577e6001c1a527a011e76d85ca9169c0db9",
+      "action": "move",
+      "after_sha256": "e8c5d4c4f1626d4fa964be700370d577e6001c1a527a011e76d85ca9169c0db9"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/lang/en_us.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/lang/en_us.json",
+      "before_sha256": "89a3cc34b6b0383779b5111abc4cffe8b17679688960857ed06a47d9fa498def",
+      "action": "move",
+      "after_sha256": "89a3cc34b6b0383779b5111abc4cffe8b17679688960857ed06a47d9fa498def"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/lang/zh_cn.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/lang/zh_cn.json",
+      "before_sha256": "b0482059ad5b54d530f60fbf2e05eb655e4036f0af90e6960920d9f4fad5c316",
+      "action": "move",
+      "after_sha256": "b0482059ad5b54d530f60fbf2e05eb655e4036f0af90e6960920d9f4fad5c316"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/library.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/library.json",
+      "before_sha256": "29b38be98464ac62e183df9c990f910007b0f5b4f063c38f0cb8b1923cbf93b2",
+      "action": "move",
+      "after_sha256": "29b38be98464ac62e183df9c990f910007b0f5b4f063c38f0cb8b1923cbf93b2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/markers.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/markers.json",
+      "before_sha256": "58fdf546e99b7e7aa1eac5b75321a32dadaf3ec7c68392a608c378411b9b96f5",
+      "action": "move",
+      "after_sha256": "58fdf546e99b7e7aa1eac5b75321a32dadaf3ec7c68392a608c378411b9b96f5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/materials.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/materials.json",
+      "before_sha256": "43902b0f9067d1e6da26029db59b4a783f8e572658ebbb073353395766f5c2c8",
+      "action": "move",
+      "after_sha256": "43902b0f9067d1e6da26029db59b4a783f8e572658ebbb073353395766f5c2c8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/names.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/names.json",
+      "before_sha256": "def64747f851d32746111ce4d61d756cc33436c45cce854c7b45caf524d05c91",
+      "action": "move",
+      "after_sha256": "def64747f851d32746111ce4d61d756cc33436c45cce854c7b45caf524d05c91"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/presentation.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/presentation.json",
+      "before_sha256": "4472c4feb1b68860f504b26bc5c139f3774270f74c60bb96d9774e7817b711dc",
+      "action": "move",
+      "after_sha256": "4472c4feb1b68860f504b26bc5c139f3774270f74c60bb96d9774e7817b711dc"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/rig.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/rig.json",
+      "before_sha256": "f935530bca2f5b96395935a0d18e89de13d1c3caa3a29450f9d59f34b3ec9c38",
+      "action": "move",
+      "after_sha256": "f935530bca2f5b96395935a0d18e89de13d1c3caa3a29450f9d59f34b3ec9c38"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/runtime.json",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/runtime.json",
+      "before_sha256": "4c29a82ec44d1966bf14718267a0132c7793e6b44ffeea2cba8478af3eb91d20",
+      "action": "move",
+      "after_sha256": "4c29a82ec44d1966bf14718267a0132c7793e6b44ffeea2cba8478af3eb91d20"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/adar/名称来源.md",
+      "new": "modules/tacz_adapter/weapon-authoring/adar/名称来源.md",
+      "before_sha256": "318dd30d95b7779f190afe80def998887859f88ed88d9fca697de61a1b9148cd",
+      "action": "move",
+      "after_sha256": "318dd30d95b7779f190afe80def998887859f88ed88d9fca697de61a1b9148cd"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/animations.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/animations.json",
+      "before_sha256": "91f7d1057031b415276f1ba62e7bb57139ce83cd8f0c4febc3c99b42a7357858",
+      "action": "move",
+      "after_sha256": "91f7d1057031b415276f1ba62e7bb57139ce83cd8f0c4febc3c99b42a7357858"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/display.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/display.json",
+      "before_sha256": "9e1c593b1723da699aa1e358d6c1ebbdafc40fa51c5a4b076abb4fdc4b2e0ec6",
+      "action": "move",
+      "after_sha256": "9e1c593b1723da699aa1e358d6c1ebbdafc40fa51c5a4b076abb4fdc4b2e0ec6"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/execution.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/execution.json",
+      "before_sha256": "2df8021f46fb64f82265a54524185f5a3ce1ad307b918022cedba117e02598fe",
+      "action": "move",
+      "after_sha256": "2df8021f46fb64f82265a54524185f5a3ce1ad307b918022cedba117e02598fe"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/handling.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/handling.json",
+      "before_sha256": "e0ef69e5f4cf0e80b9236a2903985a9bfa8c07eab63ba2f41c407a3a2b4f5267",
+      "action": "move",
+      "after_sha256": "e0ef69e5f4cf0e80b9236a2903985a9bfa8c07eab63ba2f41c407a3a2b4f5267"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/import.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/import.json",
+      "before_sha256": "89d787d5d53512b5f46feabb48697ffe04080adf19afd051b1b9da694a4f49ea",
+      "action": "integrate",
+      "after_sha256": "6af929034d2471a38467be35a6d876aae5b96d5c9840aa784a920ea80689ee22"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/library.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/library.json",
+      "before_sha256": "a430569c3506070f623fdfe260f2ec1b99952f262ca90faa58bc61cbf7be1c88",
+      "action": "move",
+      "after_sha256": "a430569c3506070f623fdfe260f2ec1b99952f262ca90faa58bc61cbf7be1c88"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/markers.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/markers.json",
+      "before_sha256": "2671713015acfb73f4bc3a59a9abd9bc2c280d98012724c7346563d0c10dbce2",
+      "action": "move",
+      "after_sha256": "2671713015acfb73f4bc3a59a9abd9bc2c280d98012724c7346563d0c10dbce2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/materials.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/materials.json",
+      "before_sha256": "1490de84fec7d00e1636015e8ac047d86ef6d42aeb91dfc0e439de8206175fb3",
+      "action": "move",
+      "after_sha256": "1490de84fec7d00e1636015e8ac047d86ef6d42aeb91dfc0e439de8206175fb3"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/placement.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/placement.json",
+      "before_sha256": "3842ec31776881673a89f7a86b0c58cdda7953883ae1e7ce5c5bbd114dc0dda3",
+      "action": "move",
+      "after_sha256": "3842ec31776881673a89f7a86b0c58cdda7953883ae1e7ce5c5bbd114dc0dda3"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/presentation.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/presentation.json",
+      "before_sha256": "04add1b2030edfda389673a3fc24cc98e38711334006643a385f77230fde748a",
+      "action": "move",
+      "after_sha256": "04add1b2030edfda389673a3fc24cc98e38711334006643a385f77230fde748a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/m4a1/runtime.json",
+      "new": "modules/tacz_adapter/weapon-authoring/m4a1/runtime.json",
+      "before_sha256": "9566e6e0b77e3409dda93f7d6e450ecaf8656d5dab1e57dd8e6250bd9158c253",
+      "action": "move",
+      "after_sha256": "9566e6e0b77e3409dda93f7d6e450ecaf8656d5dab1e57dd8e6250bd9158c253"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/radian/animations.json",
+      "new": "modules/tacz_adapter/weapon-authoring/radian/animations.json",
+      "before_sha256": "91f7d1057031b415276f1ba62e7bb57139ce83cd8f0c4febc3c99b42a7357858",
+      "action": "move",
+      "after_sha256": "91f7d1057031b415276f1ba62e7bb57139ce83cd8f0c4febc3c99b42a7357858"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/radian/display.json",
+      "new": "modules/tacz_adapter/weapon-authoring/radian/display.json",
+      "before_sha256": "9e1c593b1723da699aa1e358d6c1ebbdafc40fa51c5a4b076abb4fdc4b2e0ec6",
+      "action": "move",
+      "after_sha256": "9e1c593b1723da699aa1e358d6c1ebbdafc40fa51c5a4b076abb4fdc4b2e0ec6"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/radian/execution.json",
+      "new": "modules/tacz_adapter/weapon-authoring/radian/execution.json",
+      "before_sha256": "9c7b937b79ab740ecb246f595e7053a7605f78311e7b42688397568ece30ee48",
+      "action": "move",
+      "after_sha256": "9c7b937b79ab740ecb246f595e7053a7605f78311e7b42688397568ece30ee48"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/radian/handling.json",
+      "new": "modules/tacz_adapter/weapon-authoring/radian/handling.json",
+      "before_sha256": "0f07b17c63bacbe45bbf6f839644e53dbea647f68ffceb90a1af114bf7bbae6d",
+      "action": "move",
+      "after_sha256": "0f07b17c63bacbe45bbf6f839644e53dbea647f68ffceb90a1af114bf7bbae6d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/radian/import.json",
+      "new": "modules/tacz_adapter/weapon-authoring/radian/import.json",
+      "before_sha256": "5bd839d1186134f961f6dbb3f6f8f9b84cd36f05f079ff9456c35a5ef2cb41ba",
+      "action": "integrate",
+      "after_sha256": "7ada81f4a331d9e0713d908b4330de20ca227ceac91b68d0eaf727b3850b5454"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/radian/library.json",
+      "new": "modules/tacz_adapter/weapon-authoring/radian/library.json",
+      "before_sha256": "816379f8d9f37f2c564270ef4009892867e8297792e3d0b0b84e546d603fef21",
+      "action": "move",
+      "after_sha256": "816379f8d9f37f2c564270ef4009892867e8297792e3d0b0b84e546d603fef21"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/radian/markers.json",
+      "new": "modules/tacz_adapter/weapon-authoring/radian/markers.json",
+      "before_sha256": "5498d2b219ce988db19395df6e038fddcd13fc44c67892eb3ae663108dbe0707",
+      "action": "move",
+      "after_sha256": "5498d2b219ce988db19395df6e038fddcd13fc44c67892eb3ae663108dbe0707"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/radian/materials.json",
+      "new": "modules/tacz_adapter/weapon-authoring/radian/materials.json",
+      "before_sha256": "91332070b5275c8dd59235da7496230bf170a8ec9f074e1e34f83efc7b80dd98",
+      "action": "move",
+      "after_sha256": "91332070b5275c8dd59235da7496230bf170a8ec9f074e1e34f83efc7b80dd98"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/radian/presentation.json",
+      "new": "modules/tacz_adapter/weapon-authoring/radian/presentation.json",
+      "before_sha256": "04add1b2030edfda389673a3fc24cc98e38711334006643a385f77230fde748a",
+      "action": "move",
+      "after_sha256": "04add1b2030edfda389673a3fc24cc98e38711334006643a385f77230fde748a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-authoring/radian/runtime.json",
+      "new": "modules/tacz_adapter/weapon-authoring/radian/runtime.json",
+      "before_sha256": "fe2acb7f221e800d768b6624dd8b156d2f458a77594ca6d0c5a96dae37c4744a",
+      "action": "move",
+      "after_sha256": "fe2acb7f221e800d768b6624dd8b156d2f458a77594ca6d0c5a96dae37c4744a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/README.md",
+      "new": "modules/tacz_adapter/weapon-content/README.md",
+      "before_sha256": "1f1468997b4713dfb1cba77c82f8b8a3943093696eebe5b497a7eb956f5b7aea",
+      "action": "move",
+      "after_sha256": "1f1468997b4713dfb1cba77c82f8b8a3943093696eebe5b497a7eb956f5b7aea"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/firearm_materials/textures/materials/coated_metal.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/firearm_materials/textures/materials/coated_metal.png",
+      "before_sha256": "f79c9ade59279483c5f22453ab99124c3243d58ecdaed4f23731a9b3b1e99567",
+      "action": "move",
+      "after_sha256": "f79c9ade59279483c5f22453ab99124c3243d58ecdaed4f23731a9b3b1e99567"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/firearm_materials/textures/materials/polymer.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/firearm_materials/textures/materials/polymer.png",
+      "before_sha256": "6b13653b5583229c5ddd2b32dd142974317e061cc087b2d5ff51c5f81ccb6b82",
+      "action": "move",
+      "after_sha256": "6b13653b5583229c5ddd2b32dd142974317e061cc087b2d5ff51c5f81ccb6b82"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/firearm_materials/textures/materials/steel_dark.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/firearm_materials/textures/materials/steel_dark.png",
+      "before_sha256": "8265250a9c9444052ab1de32588fa2bc39936480904d75f98911b8693f8bc9dc",
+      "action": "move",
+      "after_sha256": "8265250a9c9444052ab1de32588fa2bc39936480904d75f98911b8693f8bc9dc"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/firearm_materials/textures/materials/steel_light.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/firearm_materials/textures/materials/steel_light.png",
+      "before_sha256": "0f584d9c4f29eafaad77a31dc7d57c419986e9660d611d9f180380c70e16fdca",
+      "action": "move",
+      "after_sha256": "0f584d9c4f29eafaad77a31dc7d57c419986e9660d611d9f180380c70e16fdca"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/library.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/library.json",
+      "before_sha256": "7911177eb01d7f683a3eea204c690a43e4166cad9beda60bda9df10ab62c1beb",
+      "action": "move",
+      "after_sha256": "7911177eb01d7f683a3eea204c690a43e4166cad9beda60bda9df10ab62c1beb"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/manifest.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/manifest.json",
+      "before_sha256": "5694a66f67481a7eef50359546761b36cb256a7ca0eaba6370a338c85e91254d",
+      "action": "move",
+      "after_sha256": "5694a66f67481a7eef50359546761b36cb256a7ca0eaba6370a338c85e91254d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/markers.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/markers.json",
+      "before_sha256": "de9b093033b6e9d717dc005f8623a00930426f70f3d4bb7d81dae383d85d2496",
+      "action": "move",
+      "after_sha256": "de9b093033b6e9d717dc005f8623a00930426f70f3d4bb7d81dae383d85d2496"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/materials.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/materials.json",
+      "before_sha256": "59c622f39fa30b7d40f0d3565ad1c84becd0ad2db98750eac4d13f010143932a",
+      "action": "move",
+      "after_sha256": "59c622f39fa30b7d40f0d3565ad1c84becd0ad2db98750eac4d13f010143932a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/animations/adar.animation.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/animations/adar.animation.json",
+      "before_sha256": "9994f0596e131d38122633bb13bddbe72a9fa6524dc996f4b01c0732b5f55718",
+      "action": "move",
+      "after_sha256": "9994f0596e131d38122633bb13bddbe72a9fa6524dc996f4b01c0732b5f55718"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/display/guns/adar.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/display/guns/adar.json",
+      "before_sha256": "6a005669bc5ec64a98c42eaae90b27ea8bf9340cfdafaef5db34a5d5f1e4072b",
+      "action": "move",
+      "after_sha256": "6a005669bc5ec64a98c42eaae90b27ea8bf9340cfdafaef5db34a5d5f1e4072b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/geo_models/gun/adar.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/geo_models/gun/adar.json",
+      "before_sha256": "f935530bca2f5b96395935a0d18e89de13d1c3caa3a29450f9d59f34b3ec9c38",
+      "action": "move",
+      "after_sha256": "f935530bca2f5b96395935a0d18e89de13d1c3caa3a29450f9d59f34b3ec9c38"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/lang/en_us.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/lang/en_us.json",
+      "before_sha256": "69b0ca47fb704b9f8017e5b7e2280bc670fb835603578d503edb0963cb3f290d",
+      "action": "move",
+      "after_sha256": "69b0ca47fb704b9f8017e5b7e2280bc670fb835603578d503edb0963cb3f290d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/lang/zh_cn.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/lang/zh_cn.json",
+      "before_sha256": "7994f50bb1bdc74a5a9057abfd8b56147fab2f4fd049868d56e2070cf4c5501d",
+      "action": "move",
+      "after_sha256": "7994f50bb1bdc74a5a9057abfd8b56147fab2f4fd049868d56e2070cf4c5501d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/adar.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/adar.json",
+      "before_sha256": "0225ee519c456314f796dce2d5eec489754e1e810e1ad61ca542317b2759a345",
+      "action": "move",
+      "after_sha256": "0225ee519c456314f796dce2d5eec489754e1e810e1ad61ca542317b2759a345"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_558022b54bdc2dac148b458d.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_558022b54bdc2dac148b458d.json",
+      "before_sha256": "3ef4667341df44a937a0772f94318a703eedbc2fc5180ac0879cccd3de23ea51",
+      "action": "move",
+      "after_sha256": "3ef4667341df44a937a0772f94318a703eedbc2fc5180ac0879cccd3de23ea51"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5aaa5e60e5b5b000140293d6.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5aaa5e60e5b5b000140293d6.json",
+      "before_sha256": "7ec7305dc9bd1eb75640c5470c04fd8895ae98b4d499c73313a34871426a7e50",
+      "action": "move",
+      "after_sha256": "7ec7305dc9bd1eb75640c5470c04fd8895ae98b4d499c73313a34871426a7e50"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5ae30e795acfc408fb139a0b.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5ae30e795acfc408fb139a0b.json",
+      "before_sha256": "26d6dce6b3e3de7f5f4e81dd12229f840b150fdef0167a90404b5d8a330bdab7",
+      "action": "move",
+      "after_sha256": "26d6dce6b3e3de7f5f4e81dd12229f840b150fdef0167a90404b5d8a330bdab7"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0e2f26d174af02a9625114.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0e2f26d174af02a9625114.json",
+      "before_sha256": "06ce4f9c6cb9aff3d22596b63eb780c8690b7280f2b9e3426a12d0f0b2d00206",
+      "action": "move",
+      "after_sha256": "06ce4f9c6cb9aff3d22596b63eb780c8690b7280f2b9e3426a12d0f0b2d00206"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0e2f5cd174af02a012cfc9.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0e2f5cd174af02a012cfc9.json",
+      "before_sha256": "10e72cc106709917196f44da310d0512e9e2171914b941fb20f9d21b22357874",
+      "action": "move",
+      "after_sha256": "10e72cc106709917196f44da310d0512e9e2171914b941fb20f9d21b22357874"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0e2f94d174af029f650d56.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0e2f94d174af029f650d56.json",
+      "before_sha256": "1973daaebc6aad6b7c5c34a3b14a17ed980785069f9e9c1b8ea57f823218c7f5",
+      "action": "move",
+      "after_sha256": "1973daaebc6aad6b7c5c34a3b14a17ed980785069f9e9c1b8ea57f823218c7f5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0e2ff6d174af02a1659d4a.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0e2ff6d174af02a1659d4a.json",
+      "before_sha256": "a60e4c85f35b11a4bdb43ee70bdf36662a978bec8d72dae99a8b0b002d01626b",
+      "action": "move",
+      "after_sha256": "a60e4c85f35b11a4bdb43ee70bdf36662a978bec8d72dae99a8b0b002d01626b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0faeddd174af02a962601f.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0faeddd174af02a962601f.json",
+      "before_sha256": "8842aa62b8ccfedc338ef68fec59a6956eaa6fa567c985068713eeafb0b810fc",
+      "action": "move",
+      "after_sha256": "8842aa62b8ccfedc338ef68fec59a6956eaa6fa567c985068713eeafb0b810fc"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0faf68d174af02a96260b8.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0faf68d174af02a96260b8.json",
+      "before_sha256": "9c38ffada7dd76809aaa0890705b171cb21f0073bfecaa19da725e40b76e65fb",
+      "action": "move",
+      "after_sha256": "9c38ffada7dd76809aaa0890705b171cb21f0073bfecaa19da725e40b76e65fb"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0fafb6d174af02a96260ba.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/models/item/part_5c0fafb6d174af02a96260ba.json",
+      "before_sha256": "7b44f2185c8ef9c0be9405fca5d86f3fb5aa4345d6627433742c01bc490fc3fd",
+      "action": "move",
+      "after_sha256": "7b44f2185c8ef9c0be9405fca5d86f3fb5aa4345d6627433742c01bc490fc3fd"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/gun/white.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/gun/white.png",
+      "before_sha256": "e56d54b889f8dae0b9bacf8e3cb38cbaa134cc92c7176b70c405fc4c10aed5ad",
+      "action": "move",
+      "after_sha256": "e56d54b889f8dae0b9bacf8e3cb38cbaa134cc92c7176b70c405fc4c10aed5ad"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/adar.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/adar.png",
+      "before_sha256": "c51540a69e9e70fbe72d564c4a76c28af1bb9cfde3a5bd4cfc21580bd5a50d4c",
+      "action": "move",
+      "after_sha256": "c51540a69e9e70fbe72d564c4a76c28af1bb9cfde3a5bd4cfc21580bd5a50d4c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_558022b54bdc2dac148b458d.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_558022b54bdc2dac148b458d.png",
+      "before_sha256": "0f3ee13abcc61c5bb0284aa76115ef3bebe6c25cf0ed61a3040df958750b4fb7",
+      "action": "move",
+      "after_sha256": "0f3ee13abcc61c5bb0284aa76115ef3bebe6c25cf0ed61a3040df958750b4fb7"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5aaa5e60e5b5b000140293d6.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5aaa5e60e5b5b000140293d6.png",
+      "before_sha256": "c79f99bba6dde7e86f270b39a16292d88a6c99479ccd6dd2b7e5d53a1f628731",
+      "action": "move",
+      "after_sha256": "c79f99bba6dde7e86f270b39a16292d88a6c99479ccd6dd2b7e5d53a1f628731"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5ae30e795acfc408fb139a0b.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5ae30e795acfc408fb139a0b.png",
+      "before_sha256": "3efbe3e67a011c1de1fd6c579aee0950189e4f992a46fccb970677007b852870",
+      "action": "move",
+      "after_sha256": "3efbe3e67a011c1de1fd6c579aee0950189e4f992a46fccb970677007b852870"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2f26d174af02a9625114.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2f26d174af02a9625114.png",
+      "before_sha256": "14969f5dc7b504d718404a0b97ce7868e0e42aebbd33cf10568c05bc6ef7aaa2",
+      "action": "move",
+      "after_sha256": "14969f5dc7b504d718404a0b97ce7868e0e42aebbd33cf10568c05bc6ef7aaa2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2f5cd174af02a012cfc9.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2f5cd174af02a012cfc9.png",
+      "before_sha256": "628ba2115995987b19a86a91bf8a7072eb4e42787a1ea9be7c7ba574da098f9e",
+      "action": "move",
+      "after_sha256": "628ba2115995987b19a86a91bf8a7072eb4e42787a1ea9be7c7ba574da098f9e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2f94d174af029f650d56.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2f94d174af029f650d56.png",
+      "before_sha256": "f02a1e0f0895f37a64ff3fd36eb1e5ef33aae8463044027a80778573fd5de3b9",
+      "action": "move",
+      "after_sha256": "f02a1e0f0895f37a64ff3fd36eb1e5ef33aae8463044027a80778573fd5de3b9"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2ff6d174af02a1659d4a.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2ff6d174af02a1659d4a.png",
+      "before_sha256": "daf9c8911c12ac2b6f8fd256f24d31ef6cbcc2a76b255894856065889aad7925",
+      "action": "move",
+      "after_sha256": "daf9c8911c12ac2b6f8fd256f24d31ef6cbcc2a76b255894856065889aad7925"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0faeddd174af02a962601f.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0faeddd174af02a962601f.png",
+      "before_sha256": "f33f74d5fb9a3043e585a56358ab1f982635621684133e86a1a61d2823bfd105",
+      "action": "move",
+      "after_sha256": "f33f74d5fb9a3043e585a56358ab1f982635621684133e86a1a61d2823bfd105"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0faf68d174af02a96260b8.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0faf68d174af02a96260b8.png",
+      "before_sha256": "a624b236acf929a759033eeca4bbf00f0164dd555fbcd1accb3d9826b476a61d",
+      "action": "move",
+      "after_sha256": "a624b236acf929a759033eeca4bbf00f0164dd555fbcd1accb3d9826b476a61d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0fafb6d174af02a96260ba.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0fafb6d174af02a96260ba.png",
+      "before_sha256": "bd76effa22cf0a78aa47e7963484656e1b4b831beea2fffb62663d6dce42d559",
+      "action": "move",
+      "after_sha256": "bd76effa22cf0a78aa47e7963484656e1b4b831beea2fffb62663d6dce42d559"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/materials/metal.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/materials/metal.png",
+      "before_sha256": "426b07275eda86cbf2c471512d9ffbd767fefb637a7e15cc7391bd521334750b",
+      "action": "move",
+      "after_sha256": "426b07275eda86cbf2c471512d9ffbd767fefb637a7e15cc7391bd521334750b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/materials/polymer.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/materials/polymer.png",
+      "before_sha256": "4ad2a5fdc3d210b796a015992977341750c04ed3fd32c14aec458822e1450686",
+      "action": "move",
+      "after_sha256": "4ad2a5fdc3d210b796a015992977341750c04ed3fd32c14aec458822e1450686"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/materials/rubber.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/materials/rubber.png",
+      "before_sha256": "8d88f614a53c18cd143cbd7521402f54bd8a35f5dbfb5deb64767321670e6348",
+      "action": "move",
+      "after_sha256": "8d88f614a53c18cd143cbd7521402f54bd8a35f5dbfb5deb64767321670e6348"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/materials/wood.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/materials/wood.png",
+      "before_sha256": "2fb0dafe9e7b1d9e2e1840f097663a66b3dfb2af446dd657b6a420bc20d953fe",
+      "action": "move",
+      "after_sha256": "2fb0dafe9e7b1d9e2e1840f097663a66b3dfb2af446dd657b6a420bc20d953fe"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/animations/m4a1.animation.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/animations/m4a1.animation.json",
+      "before_sha256": "9994f0596e131d38122633bb13bddbe72a9fa6524dc996f4b01c0732b5f55718",
+      "action": "move",
+      "after_sha256": "9994f0596e131d38122633bb13bddbe72a9fa6524dc996f4b01c0732b5f55718"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/display/guns/m4a1.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/display/guns/m4a1.json",
+      "before_sha256": "712dfd0b548aaef901eb78530d8b7ee0f5b38de64ed63b4f30933ec98f694ac0",
+      "action": "move",
+      "after_sha256": "712dfd0b548aaef901eb78530d8b7ee0f5b38de64ed63b4f30933ec98f694ac0"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/geo_models/gun/m4a1.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/geo_models/gun/m4a1.json",
+      "before_sha256": "5d4b807de338fc3d54511f0e0254725f233171e8cb686b82f143d766f0c6b70e",
+      "action": "move",
+      "after_sha256": "5d4b807de338fc3d54511f0e0254725f233171e8cb686b82f143d766f0c6b70e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/lang/en_us.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/lang/en_us.json",
+      "before_sha256": "1bf0f01eb9ffceee1c8e337ac0ea17644d607ca2d76d8d6a6dfe9e8a9af1ce94",
+      "action": "move",
+      "after_sha256": "1bf0f01eb9ffceee1c8e337ac0ea17644d607ca2d76d8d6a6dfe9e8a9af1ce94"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/lang/zh_cn.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/lang/zh_cn.json",
+      "before_sha256": "fdab7f89b8b11bbc1d100be9db1e9238c793d90344772e6047b1aeb72c007bb0",
+      "action": "move",
+      "after_sha256": "fdab7f89b8b11bbc1d100be9db1e9238c793d90344772e6047b1aeb72c007bb0"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/library.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/library.json",
+      "before_sha256": "ea351127b073c20d9d4f8f6d8248a39d85ea9549458a10f1190177841d24fb13",
+      "action": "move",
+      "after_sha256": "ea351127b073c20d9d4f8f6d8248a39d85ea9549458a10f1190177841d24fb13"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/manifest.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/manifest.json",
+      "before_sha256": "fd03eb234db0a46e95393906f2f031fb65447ee1abd4834e1b8f5a6f6c776ba6",
+      "action": "move",
+      "after_sha256": "fd03eb234db0a46e95393906f2f031fb65447ee1abd4834e1b8f5a6f6c776ba6"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/markers.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/markers.json",
+      "before_sha256": "e1f5d37ffb068d4afec0a73dd89d9109cfadca1dbdc98a9209a3c0857a75a3d6",
+      "action": "move",
+      "after_sha256": "e1f5d37ffb068d4afec0a73dd89d9109cfadca1dbdc98a9209a3c0857a75a3d6"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/materials.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/materials.json",
+      "before_sha256": "769d40c5ed38cbfe15bb48ef34315d45fb44410174da1602425e6f41863b08c5",
+      "action": "move",
+      "after_sha256": "769d40c5ed38cbfe15bb48ef34315d45fb44410174da1602425e6f41863b08c5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/m4a1.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/m4a1.json",
+      "before_sha256": "f727abf3d8ffdb49ba73b136933ead139fbf0eceb9c685610c952c17ed67db95",
+      "action": "move",
+      "after_sha256": "f727abf3d8ffdb49ba73b136933ead139fbf0eceb9c685610c952c17ed67db95"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_544a38634bdc2d58388b4568.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_544a38634bdc2d58388b4568.json",
+      "before_sha256": "2473dcb6e0df578ee40df3d9093ab87ac7e59e07e67ba1eac8a19673e010f8dd",
+      "action": "move",
+      "after_sha256": "2473dcb6e0df578ee40df3d9093ab87ac7e59e07e67ba1eac8a19673e010f8dd"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d355e64bdc2d962f8b4569.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d355e64bdc2d962f8b4569.json",
+      "before_sha256": "36ec68ba4e489e47720026ff54de69805eba4f71a5fc91d86f175e25c9f3db4d",
+      "action": "move",
+      "after_sha256": "36ec68ba4e489e47720026ff54de69805eba4f71a5fc91d86f175e25c9f3db4d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d3632e4bdc2d972f8b4569.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d3632e4bdc2d972f8b4569.json",
+      "before_sha256": "406cacb42842ba0633b0689493d88b262aebdcd73617ca5b2b8eec2630453cba",
+      "action": "move",
+      "after_sha256": "406cacb42842ba0633b0689493d88b262aebdcd73617ca5b2b8eec2630453cba"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d44fd14bdc2d962f8b456e.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d44fd14bdc2d962f8b456e.json",
+      "before_sha256": "cfd652ffd6064f648a1a1a0f1fc4b173cf8305be71783ac6729ac2d3914916c5",
+      "action": "move",
+      "after_sha256": "cfd652ffd6064f648a1a1a0f1fc4b173cf8305be71783ac6729ac2d3914916c5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d4887d4bdc2d962f8b4570.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d4887d4bdc2d962f8b4570.json",
+      "before_sha256": "54050385aeb18e050933966cce9896c38886aed9980389015e6e0870469f50cf",
+      "action": "move",
+      "after_sha256": "54050385aeb18e050933966cce9896c38886aed9980389015e6e0870469f50cf"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d4ae6c4bdc2d8b2f8b456e.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d4ae6c4bdc2d8b2f8b456e.json",
+      "before_sha256": "ee20a47d4f48873c97629db2059836684b43db803aa257cf60c81955bb4c55c8",
+      "action": "move",
+      "after_sha256": "ee20a47d4f48873c97629db2059836684b43db803aa257cf60c81955bb4c55c8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d4b9964bdc2d1d4e8b456e.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_55d4b9964bdc2d1d4e8b456e.json",
+      "before_sha256": "dcdbc93249e6096a18afdf8549ca447cf3e376bc12c33efe4e52b4a661f539f5",
+      "action": "move",
+      "after_sha256": "dcdbc93249e6096a18afdf8549ca447cf3e376bc12c33efe4e52b4a661f539f5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_5649be884bdc2d79388b4577.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_5649be884bdc2d79388b4577.json",
+      "before_sha256": "97a12d6b4684cc7557809860117bb437bae5b9bf44e534d89f6ce19a4b1a5405",
+      "action": "move",
+      "after_sha256": "97a12d6b4684cc7557809860117bb437bae5b9bf44e534d89f6ce19a4b1a5405"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_5ae30bad5acfc400185c2dc4.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_5ae30bad5acfc400185c2dc4.json",
+      "before_sha256": "bd8712539c96775c9989a432251a369e4e4284a90ccadd69a39c63db1afc3fa4",
+      "action": "move",
+      "after_sha256": "bd8712539c96775c9989a432251a369e4e4284a90ccadd69a39c63db1afc3fa4"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_5ae30db85acfc408fb139a05.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_5ae30db85acfc408fb139a05.json",
+      "before_sha256": "98ec8e999942a8efffe6cffa00e7df7d53df55731d78eb307b80188520e4e474",
+      "action": "move",
+      "after_sha256": "98ec8e999942a8efffe6cffa00e7df7d53df55731d78eb307b80188520e4e474"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_5ae30e795acfc408fb139a0b.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_5ae30e795acfc408fb139a0b.json",
+      "before_sha256": "6bf29275e9dcf8b9ae0fc308e9a6ac1fffa62be12370c834efe14017d8d21db6",
+      "action": "move",
+      "after_sha256": "6bf29275e9dcf8b9ae0fc308e9a6ac1fffa62be12370c834efe14017d8d21db6"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_637f57a68d137b27f70c4968.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/models/item/part_637f57a68d137b27f70c4968.json",
+      "before_sha256": "fc40b65e4589c171443b62dd795c9586dfee614eee96d4af86467244b27f02a5",
+      "action": "move",
+      "after_sha256": "fc40b65e4589c171443b62dd795c9586dfee614eee96d4af86467244b27f02a5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/gun/white.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/gun/white.png",
+      "before_sha256": "e56d54b889f8dae0b9bacf8e3cb38cbaa134cc92c7176b70c405fc4c10aed5ad",
+      "action": "move",
+      "after_sha256": "e56d54b889f8dae0b9bacf8e3cb38cbaa134cc92c7176b70c405fc4c10aed5ad"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/m4a1.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/m4a1.png",
+      "before_sha256": "9b80ce90cbeff6b631b84e219dae627dde2fa3e695c6e5b749b99aaf92a77174",
+      "action": "move",
+      "after_sha256": "9b80ce90cbeff6b631b84e219dae627dde2fa3e695c6e5b749b99aaf92a77174"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_544a38634bdc2d58388b4568.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_544a38634bdc2d58388b4568.png",
+      "before_sha256": "bd4c0395379b3a52d9ae12a73d943ef082fdc459d5815daf33e0f1e8253949a3",
+      "action": "move",
+      "after_sha256": "bd4c0395379b3a52d9ae12a73d943ef082fdc459d5815daf33e0f1e8253949a3"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d355e64bdc2d962f8b4569.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d355e64bdc2d962f8b4569.png",
+      "before_sha256": "ca88bc494700b4a2417118a8b4427ccdea4be497d1f236e8c6d278948146c456",
+      "action": "move",
+      "after_sha256": "ca88bc494700b4a2417118a8b4427ccdea4be497d1f236e8c6d278948146c456"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d3632e4bdc2d972f8b4569.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d3632e4bdc2d972f8b4569.png",
+      "before_sha256": "7dcfb21520bf5f8934c7af20b9066d5cd854c7eb69ecc1a4960e1edb207ff135",
+      "action": "move",
+      "after_sha256": "7dcfb21520bf5f8934c7af20b9066d5cd854c7eb69ecc1a4960e1edb207ff135"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d44fd14bdc2d962f8b456e.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d44fd14bdc2d962f8b456e.png",
+      "before_sha256": "96c91033e8dd99bbcbad67018e6303eb03ff417ce65581598193d71fa9be0825",
+      "action": "move",
+      "after_sha256": "96c91033e8dd99bbcbad67018e6303eb03ff417ce65581598193d71fa9be0825"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d4887d4bdc2d962f8b4570.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d4887d4bdc2d962f8b4570.png",
+      "before_sha256": "bf18eb7daf60f1b8f01cd1073c839933218db055e961b3cd276b46b792d96208",
+      "action": "move",
+      "after_sha256": "bf18eb7daf60f1b8f01cd1073c839933218db055e961b3cd276b46b792d96208"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d4ae6c4bdc2d8b2f8b456e.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d4ae6c4bdc2d8b2f8b456e.png",
+      "before_sha256": "1b995bea932d97d25bb43f21424fc544b5ef2981aba4165ce9bb8f43830f2c61",
+      "action": "move",
+      "after_sha256": "1b995bea932d97d25bb43f21424fc544b5ef2981aba4165ce9bb8f43830f2c61"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d4b9964bdc2d1d4e8b456e.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_55d4b9964bdc2d1d4e8b456e.png",
+      "before_sha256": "7a955c472a1612ecc7db631448210997a929a9194df0039a4da5656356d7b4f7",
+      "action": "move",
+      "after_sha256": "7a955c472a1612ecc7db631448210997a929a9194df0039a4da5656356d7b4f7"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_5649be884bdc2d79388b4577.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_5649be884bdc2d79388b4577.png",
+      "before_sha256": "9ce6a9eecfe608bbe4a69cb5bb79192ade232b2d6ea58c1452ed39f64ab3ec41",
+      "action": "move",
+      "after_sha256": "9ce6a9eecfe608bbe4a69cb5bb79192ade232b2d6ea58c1452ed39f64ab3ec41"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_5ae30bad5acfc400185c2dc4.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_5ae30bad5acfc400185c2dc4.png",
+      "before_sha256": "6c4c77bada8ca2894e00e6d4e66bdee209970c07a6cc504706a0fa372a448b5a",
+      "action": "move",
+      "after_sha256": "6c4c77bada8ca2894e00e6d4e66bdee209970c07a6cc504706a0fa372a448b5a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_5ae30db85acfc408fb139a05.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_5ae30db85acfc408fb139a05.png",
+      "before_sha256": "61c672499ab760104a634535cad2a125f38c623c5031f480547bdbebbb1f0890",
+      "action": "move",
+      "after_sha256": "61c672499ab760104a634535cad2a125f38c623c5031f480547bdbebbb1f0890"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_5ae30e795acfc408fb139a0b.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_5ae30e795acfc408fb139a0b.png",
+      "before_sha256": "0c6a5b0e4b80d59070a9391056aeb7d2cbc81e9f6c1989a53a5784d88ead3ecd",
+      "action": "move",
+      "after_sha256": "0c6a5b0e4b80d59070a9391056aeb7d2cbc81e9f6c1989a53a5784d88ead3ecd"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_637f57a68d137b27f70c4968.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/textures/item/part_637f57a68d137b27f70c4968.png",
+      "before_sha256": "143d95485af587bad225ead4d573eefd5402c25b84c2e60c15fb88434d1dbd1d",
+      "action": "move",
+      "after_sha256": "143d95485af587bad225ead4d573eefd5402c25b84c2e60c15fb88434d1dbd1d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/animations/radian.animation.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/animations/radian.animation.json",
+      "before_sha256": "9994f0596e131d38122633bb13bddbe72a9fa6524dc996f4b01c0732b5f55718",
+      "action": "move",
+      "after_sha256": "9994f0596e131d38122633bb13bddbe72a9fa6524dc996f4b01c0732b5f55718"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/display/guns/radian.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/display/guns/radian.json",
+      "before_sha256": "2a7dd0f67c56911f690a1771003cd51a3e9fa9ebf9392ef13f381a88898d8d40",
+      "action": "move",
+      "after_sha256": "2a7dd0f67c56911f690a1771003cd51a3e9fa9ebf9392ef13f381a88898d8d40"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/geo_models/gun/radian.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/geo_models/gun/radian.json",
+      "before_sha256": "e18886692b6adfb1bbce91e29979f07a50a802bb77290669080cae368a80638d",
+      "action": "move",
+      "after_sha256": "e18886692b6adfb1bbce91e29979f07a50a802bb77290669080cae368a80638d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/lang/en_us.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/lang/en_us.json",
+      "before_sha256": "d6b6ff2f46ca5545d9041deeabd97f8b35c34c7715fc3e0a15ef5c4af437dbd1",
+      "action": "move",
+      "after_sha256": "d6b6ff2f46ca5545d9041deeabd97f8b35c34c7715fc3e0a15ef5c4af437dbd1"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/lang/zh_cn.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/lang/zh_cn.json",
+      "before_sha256": "16d11df04565dc60099ec03bb358b9b423d7df31248db1d06d24e49894af7bb8",
+      "action": "move",
+      "after_sha256": "16d11df04565dc60099ec03bb358b9b423d7df31248db1d06d24e49894af7bb8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_55802f5d4bdc2dac148b458f.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_55802f5d4bdc2dac148b458f.json",
+      "before_sha256": "3afb5c5e84d6d4bf5303b2f3c85ac7acc8ed329fe69c5a291f544e792eb65e1d",
+      "action": "move",
+      "after_sha256": "3afb5c5e84d6d4bf5303b2f3c85ac7acc8ed329fe69c5a291f544e792eb65e1d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_56eabcd4d2720b66698b4574.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_56eabcd4d2720b66698b4574.json",
+      "before_sha256": "6c5653d332df948b24749239a52f0a7843292bf1acfeaa7d9ded148577472780",
+      "action": "move",
+      "after_sha256": "6c5653d332df948b24749239a52f0a7843292bf1acfeaa7d9ded148577472780"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_56eabf3bd2720b75698b4569.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_56eabf3bd2720b75698b4569.json",
+      "before_sha256": "458e0e9aeb99cdedff5263e8d8512bc2d622cdfac62b3959f5d5f7461b4f1667",
+      "action": "move",
+      "after_sha256": "458e0e9aeb99cdedff5263e8d8512bc2d622cdfac62b3959f5d5f7461b4f1667"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_5aaa5dfee5b5b000140293d3.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_5aaa5dfee5b5b000140293d3.json",
+      "before_sha256": "ae391d4dabe46052fe9dbe131872b1b0bf9919af73e5836d38b8a0c55ab7016c",
+      "action": "move",
+      "after_sha256": "ae391d4dabe46052fe9dbe131872b1b0bf9919af73e5836d38b8a0c55ab7016c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_5bc09a18d4351e003562b68e.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_5bc09a18d4351e003562b68e.json",
+      "before_sha256": "07518f708398a3532f14912e4e1226a8995b6a09279e4180dc2e9cf43cdd43f8",
+      "action": "move",
+      "after_sha256": "07518f708398a3532f14912e4e1226a8995b6a09279e4180dc2e9cf43cdd43f8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_5bc09a30d4351e00367fb7c8.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_5bc09a30d4351e00367fb7c8.json",
+      "before_sha256": "154692d057ff84dc78d457763c61887fa8c1aa8effefe5d8df66ac33138513f3",
+      "action": "move",
+      "after_sha256": "154692d057ff84dc78d457763c61887fa8c1aa8effefe5d8df66ac33138513f3"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_5c793fb92e221644f31bfb64.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_5c793fb92e221644f31bfb64.json",
+      "before_sha256": "91806b13adb23c8b17de7c69cbe8d9350e785908e08f5fb9d2562fec3fc9133b",
+      "action": "move",
+      "after_sha256": "91806b13adb23c8b17de7c69cbe8d9350e785908e08f5fb9d2562fec3fc9133b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_63d3d44a2a49307baf09386d.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_63d3d44a2a49307baf09386d.json",
+      "before_sha256": "fb254a5ce0a4d24c17797e6153f622316eed4a209ad22fbd1b406f736cd9e1a6",
+      "action": "move",
+      "after_sha256": "fb254a5ce0a4d24c17797e6153f622316eed4a209ad22fbd1b406f736cd9e1a6"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_6405ff6bd4578826ec3e377a.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_6405ff6bd4578826ec3e377a.json",
+      "before_sha256": "a10cf441d7b9b9b86df3513f58e05c634decf18374980732d8df47802b6bdf22",
+      "action": "move",
+      "after_sha256": "a10cf441d7b9b9b86df3513f58e05c634decf18374980732d8df47802b6bdf22"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_6895bd19d55f0ebf6a0c0306.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_6895bd19d55f0ebf6a0c0306.json",
+      "before_sha256": "935210a4d8df5db3a915804e4fe59c453544e74c4852eb4affe480877db89a5e",
+      "action": "move",
+      "after_sha256": "935210a4d8df5db3a915804e4fe59c453544e74c4852eb4affe480877db89a5e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_6895becad55f0ebf6a0c0311.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_6895becad55f0ebf6a0c0311.json",
+      "before_sha256": "1eb9a535f8fc83e4a4e3bdb5ab481d2fd00684d3fe2ab6f75a82bc50195c7206",
+      "action": "move",
+      "after_sha256": "1eb9a535f8fc83e4a4e3bdb5ab481d2fd00684d3fe2ab6f75a82bc50195c7206"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_6895bf08e2d16810ba0bf43e.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/part_6895bf08e2d16810ba0bf43e.json",
+      "before_sha256": "ee9a9c4cf591b2f51e9b89e240bdfb25d12662e4f3fef6d7a1f97b3cd2215cc0",
+      "action": "move",
+      "after_sha256": "ee9a9c4cf591b2f51e9b89e240bdfb25d12662e4f3fef6d7a1f97b3cd2215cc0"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/radian.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/models/item/radian.json",
+      "before_sha256": "f727abf3d8ffdb49ba73b136933ead139fbf0eceb9c685610c952c17ed67db95",
+      "action": "move",
+      "after_sha256": "f727abf3d8ffdb49ba73b136933ead139fbf0eceb9c685610c952c17ed67db95"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/library.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/library.json",
+      "before_sha256": "836b1360156dd393c1318df655504732aea94191e0f2d3fdf6d6fee61f9182c3",
+      "action": "move",
+      "after_sha256": "836b1360156dd393c1318df655504732aea94191e0f2d3fdf6d6fee61f9182c3"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/manifest.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/manifest.json",
+      "before_sha256": "d246134c67439b354de11e2bfbc15512dbe5071f310a21711308d8892901d78f",
+      "action": "move",
+      "after_sha256": "d246134c67439b354de11e2bfbc15512dbe5071f310a21711308d8892901d78f"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/markers.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/markers.json",
+      "before_sha256": "5e9de263103ef8c1b5d90af58667f5d6d677c74196ffd5c1fc0575297f809403",
+      "action": "move",
+      "after_sha256": "5e9de263103ef8c1b5d90af58667f5d6d677c74196ffd5c1fc0575297f809403"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/materials.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/materials.json",
+      "before_sha256": "f9c1698b8592f423958610c7759c62104e401d1d63247d13812d8822ee082764",
+      "action": "move",
+      "after_sha256": "f9c1698b8592f423958610c7759c62104e401d1d63247d13812d8822ee082764"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/gun/white.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/gun/white.png",
+      "before_sha256": "e56d54b889f8dae0b9bacf8e3cb38cbaa134cc92c7176b70c405fc4c10aed5ad",
+      "action": "move",
+      "after_sha256": "e56d54b889f8dae0b9bacf8e3cb38cbaa134cc92c7176b70c405fc4c10aed5ad"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_55802f5d4bdc2dac148b458f.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_55802f5d4bdc2dac148b458f.png",
+      "before_sha256": "9abbc7c6cfb15731fd66de4109950ecbf81814399e817a1100977edea70bb127",
+      "action": "move",
+      "after_sha256": "9abbc7c6cfb15731fd66de4109950ecbf81814399e817a1100977edea70bb127"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_56eabcd4d2720b66698b4574.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_56eabcd4d2720b66698b4574.png",
+      "before_sha256": "2b22da50a960f597b62defcc6b6f00a473e3b2b83de8113887a60b1b9da83f4b",
+      "action": "move",
+      "after_sha256": "2b22da50a960f597b62defcc6b6f00a473e3b2b83de8113887a60b1b9da83f4b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_56eabf3bd2720b75698b4569.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_56eabf3bd2720b75698b4569.png",
+      "before_sha256": "9eb2a8afb0ed3f280d7e3ea3b324dbdf4b9ca434b975e743ed63248bef5cc599",
+      "action": "move",
+      "after_sha256": "9eb2a8afb0ed3f280d7e3ea3b324dbdf4b9ca434b975e743ed63248bef5cc599"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_5aaa5dfee5b5b000140293d3.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_5aaa5dfee5b5b000140293d3.png",
+      "before_sha256": "919381dff55aef99e4dcd565963c2424ee1e9736d550abc9b7ba4c2017f54ede",
+      "action": "move",
+      "after_sha256": "919381dff55aef99e4dcd565963c2424ee1e9736d550abc9b7ba4c2017f54ede"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_5bc09a18d4351e003562b68e.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_5bc09a18d4351e003562b68e.png",
+      "before_sha256": "91db8c00484315bd1a3e86f4d14c9e968aa7d62970ff4c13fb8adfcee9601df5",
+      "action": "move",
+      "after_sha256": "91db8c00484315bd1a3e86f4d14c9e968aa7d62970ff4c13fb8adfcee9601df5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_5bc09a30d4351e00367fb7c8.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_5bc09a30d4351e00367fb7c8.png",
+      "before_sha256": "c818003f8689ae5d6922cedec2f88eeb5b87c4e142c84740d5cbaebb7e404aea",
+      "action": "move",
+      "after_sha256": "c818003f8689ae5d6922cedec2f88eeb5b87c4e142c84740d5cbaebb7e404aea"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_5c793fb92e221644f31bfb64.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_5c793fb92e221644f31bfb64.png",
+      "before_sha256": "bc64ab9f567f52f7a84e7667097e3f7414139c19f4960c641658a10a55443e82",
+      "action": "move",
+      "after_sha256": "bc64ab9f567f52f7a84e7667097e3f7414139c19f4960c641658a10a55443e82"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_63d3d44a2a49307baf09386d.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_63d3d44a2a49307baf09386d.png",
+      "before_sha256": "abe230ffc55de831a56e9ce6aeb09f9c9a97ad9fdffafe46ac2011551baed62d",
+      "action": "move",
+      "after_sha256": "abe230ffc55de831a56e9ce6aeb09f9c9a97ad9fdffafe46ac2011551baed62d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_6405ff6bd4578826ec3e377a.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_6405ff6bd4578826ec3e377a.png",
+      "before_sha256": "829fd9e4e34ca2b2c0f70722bc2eee07b60e896509e2ce517bc2ec1e485affaa",
+      "action": "move",
+      "after_sha256": "829fd9e4e34ca2b2c0f70722bc2eee07b60e896509e2ce517bc2ec1e485affaa"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_6895bd19d55f0ebf6a0c0306.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_6895bd19d55f0ebf6a0c0306.png",
+      "before_sha256": "17333d3793a5cd4ea0a3ae22379e3c3eef0035e47911833d1eee854efb537210",
+      "action": "move",
+      "after_sha256": "17333d3793a5cd4ea0a3ae22379e3c3eef0035e47911833d1eee854efb537210"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_6895becad55f0ebf6a0c0311.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_6895becad55f0ebf6a0c0311.png",
+      "before_sha256": "cf639598a1bc416ec19177f88e45e61bb38fb257dc7faa7bc1a47dc2ed370dc9",
+      "action": "move",
+      "after_sha256": "cf639598a1bc416ec19177f88e45e61bb38fb257dc7faa7bc1a47dc2ed370dc9"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_6895bf08e2d16810ba0bf43e.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/part_6895bf08e2d16810ba0bf43e.png",
+      "before_sha256": "6bf5c8585a408434696b62c16558bb92a1273acd718266ceaf5f676b4c90a104",
+      "action": "move",
+      "after_sha256": "6bf5c8585a408434696b62c16558bb92a1273acd718266ceaf5f676b4c90a104"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/radian.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/item/radian.png",
+      "before_sha256": "86fbe181af255fc56a47a8f49f7d28e4d9f943fab393c3286e8336a6db9dd224",
+      "action": "move",
+      "after_sha256": "86fbe181af255fc56a47a8f49f7d28e4d9f943fab393c3286e8336a6db9dd224"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/anodized_charcoal.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/anodized_charcoal.png",
+      "before_sha256": "6f93669b8b79d9bfbf34d0651eced26207d2b5c7df48c774025b3993068f893a",
+      "action": "move",
+      "after_sha256": "6f93669b8b79d9bfbf34d0651eced26207d2b5c7df48c774025b3993068f893a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/anodized_graphite.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/anodized_graphite.png",
+      "before_sha256": "6e254a14c7c213e37e598b656486eaa1dca1ce1949cb8846dcc9f02522849d4f",
+      "action": "move",
+      "after_sha256": "6e254a14c7c213e37e598b656486eaa1dca1ce1949cb8846dcc9f02522849d4f"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/machined_steel.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/machined_steel.png",
+      "before_sha256": "0859609eceed96b8b79e4ac5bc43dc97209a58f2e38284d27681f8cc0a675456",
+      "action": "move",
+      "after_sha256": "0859609eceed96b8b79e4ac5bc43dc97209a58f2e38284d27681f8cc0a675456"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/phosphate_steel.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/phosphate_steel.png",
+      "before_sha256": "98bd4530ead0590dd8c10cb20fe5f16c5d6f7687f26fd7491694a64be01a6332",
+      "action": "move",
+      "after_sha256": "98bd4530ead0590dd8c10cb20fe5f16c5d6f7687f26fd7491694a64be01a6332"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/polymer_black.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/polymer_black.png",
+      "before_sha256": "ca46a607ef4082bf7f00bb18e75fcffa8f375dd8942138ed21cfd60e6b512d3d",
+      "action": "move",
+      "after_sha256": "ca46a607ef4082bf7f00bb18e75fcffa8f375dd8942138ed21cfd60e6b512d3d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/rubber_black.png",
+      "new": "modules/tacz_adapter/weapon-content/resources/assets/newmod_radian/textures/materials/rubber_black.png",
+      "before_sha256": "277296b74a40576924e4727c44dadebb0f03496e02d6ba4f31d9fa2d9d215ebe",
+      "action": "move",
+      "after_sha256": "277296b74a40576924e4727c44dadebb0f03496e02d6ba4f31d9fa2d9d215ebe"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/catalog.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/catalog.json",
+      "before_sha256": "e4a8fa114c494a98b5d2acc2bbcbe0fcabda633a4969ab6442206a1328c1e690",
+      "action": "move",
+      "after_sha256": "e4a8fa114c494a98b5d2acc2bbcbe0fcabda633a4969ab6442206a1328c1e690"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/handling.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/handling.json",
+      "before_sha256": "a04a9db58ede1da4f4d7272ba1e7ee63bb4dde10fbb680452cb14b654294b953",
+      "action": "move",
+      "after_sha256": "a04a9db58ede1da4f4d7272ba1e7ee63bb4dde10fbb680452cb14b654294b953"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/mapping.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/mapping.json",
+      "before_sha256": "bfb993d530bb65432aca298eebef40002916f1a104ee75f97e6c6516a3c5b73f",
+      "action": "move",
+      "after_sha256": "bfb993d530bb65432aca298eebef40002916f1a104ee75f97e6c6516a3c5b73f"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/scene.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/scene.json",
+      "before_sha256": "8c3e0581219ec9bb2358455d8d381598a4a37b68a4679269a135e858622dc560",
+      "action": "move",
+      "after_sha256": "8c3e0581219ec9bb2358455d8d381598a4a37b68a4679269a135e858622dc560"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/weapon.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/weapon.json",
+      "before_sha256": "4c29a82ec44d1966bf14718267a0132c7793e6b44ffeea2cba8478af3eb91d20",
+      "action": "move",
+      "after_sha256": "4c29a82ec44d1966bf14718267a0132c7793e6b44ffeea2cba8478af3eb91d20"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/assembly/adar.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/assembly/adar.json",
+      "before_sha256": "b95bd169a26da161b0232ca693911e29e82e0c0a34e1a91a80276863429b7bbc",
+      "action": "move",
+      "after_sha256": "b95bd169a26da161b0232ca693911e29e82e0c0a34e1a91a80276863429b7bbc"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/data/guns/adar.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/data/guns/adar.json",
+      "before_sha256": "93374f14c73ffe94f945284ddf7b4bbccb3b9078eb32600cb41bf3278f785d4d",
+      "action": "move",
+      "after_sha256": "93374f14c73ffe94f945284ddf7b4bbccb3b9078eb32600cb41bf3278f785d4d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/index/guns/adar.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/index/guns/adar.json",
+      "before_sha256": "e8c5d4c4f1626d4fa964be700370d577e6001c1a527a011e76d85ca9169c0db9",
+      "action": "move",
+      "after_sha256": "e8c5d4c4f1626d4fa964be700370d577e6001c1a527a011e76d85ca9169c0db9"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/identities/adar.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/identities/adar.json",
+      "before_sha256": "0a1412eb2af23174f1de71911647971018ce54af5843b9ee26c4dccc1f62a0ae",
+      "action": "move",
+      "after_sha256": "0a1412eb2af23174f1de71911647971018ce54af5843b9ee26c4dccc1f62a0ae"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/adar.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/adar.json",
+      "before_sha256": "da6fb644ddaaa61761f3778734179985268a0eac72636a2e9533bff6d3eeb155",
+      "action": "move",
+      "after_sha256": "da6fb644ddaaa61761f3778734179985268a0eac72636a2e9533bff6d3eeb155"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_558022b54bdc2dac148b458d.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_558022b54bdc2dac148b458d.json",
+      "before_sha256": "75b25109efa617d305c7d78cdbd9bb277c2e0766043469133d94a5c254b3329c",
+      "action": "move",
+      "after_sha256": "75b25109efa617d305c7d78cdbd9bb277c2e0766043469133d94a5c254b3329c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5aaa5e60e5b5b000140293d6.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5aaa5e60e5b5b000140293d6.json",
+      "before_sha256": "f2efc933a7d9cbfaba6d96b06545edcfe6653e088a23ffcab0c67cc0300fa6fa",
+      "action": "move",
+      "after_sha256": "f2efc933a7d9cbfaba6d96b06545edcfe6653e088a23ffcab0c67cc0300fa6fa"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5ae30e795acfc408fb139a0b.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5ae30e795acfc408fb139a0b.json",
+      "before_sha256": "96602dd219fb3267c0bddc0179a442e83120a15d843b1e0cc2a444be445c5b5b",
+      "action": "move",
+      "after_sha256": "96602dd219fb3267c0bddc0179a442e83120a15d843b1e0cc2a444be445c5b5b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0e2f26d174af02a9625114.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0e2f26d174af02a9625114.json",
+      "before_sha256": "bed32759a070ba54c6836b11a4d9b2584ed93fc18f557be4b0e2d3e4a9b2a8e3",
+      "action": "move",
+      "after_sha256": "bed32759a070ba54c6836b11a4d9b2584ed93fc18f557be4b0e2d3e4a9b2a8e3"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0e2f5cd174af02a012cfc9.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0e2f5cd174af02a012cfc9.json",
+      "before_sha256": "502f38383ff6cf906f4e8dca96bcce5c6b3f0978e001c002ec5ff362da983634",
+      "action": "move",
+      "after_sha256": "502f38383ff6cf906f4e8dca96bcce5c6b3f0978e001c002ec5ff362da983634"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0e2f94d174af029f650d56.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0e2f94d174af029f650d56.json",
+      "before_sha256": "ef82bd6c5e39d6bab2e5103ff51e1ab6aad350f2b7a1035c579faae0c2f09ede",
+      "action": "move",
+      "after_sha256": "ef82bd6c5e39d6bab2e5103ff51e1ab6aad350f2b7a1035c579faae0c2f09ede"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0e2ff6d174af02a1659d4a.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0e2ff6d174af02a1659d4a.json",
+      "before_sha256": "6120846a2f99d9f5cae04974e2d1ee105dccbb0f36a46968104336ee34cf9c31",
+      "action": "move",
+      "after_sha256": "6120846a2f99d9f5cae04974e2d1ee105dccbb0f36a46968104336ee34cf9c31"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0faeddd174af02a962601f.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0faeddd174af02a962601f.json",
+      "before_sha256": "4e6c6b44cc6c3f6a65a96f87d76d24c452c2ad644ccbed17b24a6b1d2944ac8e",
+      "action": "move",
+      "after_sha256": "4e6c6b44cc6c3f6a65a96f87d76d24c452c2ad644ccbed17b24a6b1d2944ac8e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0faf68d174af02a96260b8.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0faf68d174af02a96260b8.json",
+      "before_sha256": "7f5fc24cee4baab138202982aa890ce975a4317ad90d99073e025c1694995268",
+      "action": "move",
+      "after_sha256": "7f5fc24cee4baab138202982aa890ce975a4317ad90d99073e025c1694995268"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0fafb6d174af02a96260ba.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_adar/item_foundation/items/part_5c0fafb6d174af02a96260ba.json",
+      "before_sha256": "10f554e183dbae1ade3e0a75c81a4fe83b9ba3879db053a6cc1d6b33d2e354c6",
+      "action": "move",
+      "after_sha256": "10f554e183dbae1ade3e0a75c81a4fe83b9ba3879db053a6cc1d6b33d2e354c6"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/assembly/m4a1.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/assembly/m4a1.json",
+      "before_sha256": "50d0f18cdf2d06ae57fb81ae6e3b8b764e2de914c6e58e6f0e183dc871a3bf0d",
+      "action": "move",
+      "after_sha256": "50d0f18cdf2d06ae57fb81ae6e3b8b764e2de914c6e58e6f0e183dc871a3bf0d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/data/guns/m4a1.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/data/guns/m4a1.json",
+      "before_sha256": "0d22e91ddc98e9b5aae165185ba54a507d6c862a384268e439f251a2b173094e",
+      "action": "move",
+      "after_sha256": "0d22e91ddc98e9b5aae165185ba54a507d6c862a384268e439f251a2b173094e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/index/guns/m4a1.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/index/guns/m4a1.json",
+      "before_sha256": "7ce16f7c8d6463e3f9d4fc14c09385d248c55928ad8157ea8da742a99e7262b7",
+      "action": "move",
+      "after_sha256": "7ce16f7c8d6463e3f9d4fc14c09385d248c55928ad8157ea8da742a99e7262b7"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/identities/m4a1.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/identities/m4a1.json",
+      "before_sha256": "c665981205fcec3db3bfa9ba5f1b5630b3de683ca94833773028008c0cd9652e",
+      "action": "move",
+      "after_sha256": "c665981205fcec3db3bfa9ba5f1b5630b3de683ca94833773028008c0cd9652e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/m4a1.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/m4a1.json",
+      "before_sha256": "104a72ea9904c1efd613e4100bf1789f7e410d23409dd5933d142322b06dc58d",
+      "action": "move",
+      "after_sha256": "104a72ea9904c1efd613e4100bf1789f7e410d23409dd5933d142322b06dc58d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_544a38634bdc2d58388b4568.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_544a38634bdc2d58388b4568.json",
+      "before_sha256": "5e2b81291799daef5b9edf5739b9f09ec25acd58c747ea80939f51b98e3d1af4",
+      "action": "move",
+      "after_sha256": "5e2b81291799daef5b9edf5739b9f09ec25acd58c747ea80939f51b98e3d1af4"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d355e64bdc2d962f8b4569.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d355e64bdc2d962f8b4569.json",
+      "before_sha256": "2df0eb09ab4033132c24651d09b477118c643c686b6eee4b50d1dc61f8a438c5",
+      "action": "move",
+      "after_sha256": "2df0eb09ab4033132c24651d09b477118c643c686b6eee4b50d1dc61f8a438c5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d3632e4bdc2d972f8b4569.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d3632e4bdc2d972f8b4569.json",
+      "before_sha256": "c9457da1c1fbbd0866af2cb03e75341f5493d769a768c69636c78a5a5984175b",
+      "action": "move",
+      "after_sha256": "c9457da1c1fbbd0866af2cb03e75341f5493d769a768c69636c78a5a5984175b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d44fd14bdc2d962f8b456e.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d44fd14bdc2d962f8b456e.json",
+      "before_sha256": "8d9451c8519673ca8d2e8a8f3af27b6a3d3bd87a8a41ef3930fd9bc74f14af74",
+      "action": "move",
+      "after_sha256": "8d9451c8519673ca8d2e8a8f3af27b6a3d3bd87a8a41ef3930fd9bc74f14af74"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d4887d4bdc2d962f8b4570.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d4887d4bdc2d962f8b4570.json",
+      "before_sha256": "3afc6ef40aa77107ea161ef0f8a43074e95150da2c235227b47a847fd95cab76",
+      "action": "move",
+      "after_sha256": "3afc6ef40aa77107ea161ef0f8a43074e95150da2c235227b47a847fd95cab76"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d4ae6c4bdc2d8b2f8b456e.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d4ae6c4bdc2d8b2f8b456e.json",
+      "before_sha256": "da2cdafeea4e29fc0e06e717591c9abec88d2d27f45d4edada5f62c55f1c45f4",
+      "action": "move",
+      "after_sha256": "da2cdafeea4e29fc0e06e717591c9abec88d2d27f45d4edada5f62c55f1c45f4"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d4b9964bdc2d1d4e8b456e.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_55d4b9964bdc2d1d4e8b456e.json",
+      "before_sha256": "bd73fc6497484ca83621f41b144a5e4998946b98f0793c0bd59a0e3c590f00fc",
+      "action": "move",
+      "after_sha256": "bd73fc6497484ca83621f41b144a5e4998946b98f0793c0bd59a0e3c590f00fc"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_5649be884bdc2d79388b4577.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_5649be884bdc2d79388b4577.json",
+      "before_sha256": "4d7f9abbca1cae8aadd6c2a2f8a8947afa7882502de66173279ad6ab48ba59a4",
+      "action": "move",
+      "after_sha256": "4d7f9abbca1cae8aadd6c2a2f8a8947afa7882502de66173279ad6ab48ba59a4"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_5ae30bad5acfc400185c2dc4.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_5ae30bad5acfc400185c2dc4.json",
+      "before_sha256": "fd48175e7725d63aa38d0260415f83ff9bb6e6744182ec10c6cc7aa02fafb9bc",
+      "action": "move",
+      "after_sha256": "fd48175e7725d63aa38d0260415f83ff9bb6e6744182ec10c6cc7aa02fafb9bc"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_5ae30db85acfc408fb139a05.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_5ae30db85acfc408fb139a05.json",
+      "before_sha256": "3f1b3bb2abee370b43c144ba6915640a38d217b9fcc6052c1ff5f952196a5d62",
+      "action": "move",
+      "after_sha256": "3f1b3bb2abee370b43c144ba6915640a38d217b9fcc6052c1ff5f952196a5d62"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_5ae30e795acfc408fb139a0b.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_5ae30e795acfc408fb139a0b.json",
+      "before_sha256": "75d324287839a24b6441c1235666e20791b93fc7f49d47f5773bd2ad7c558a37",
+      "action": "move",
+      "after_sha256": "75d324287839a24b6441c1235666e20791b93fc7f49d47f5773bd2ad7c558a37"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_637f57a68d137b27f70c4968.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/item_foundation/items/part_637f57a68d137b27f70c4968.json",
+      "before_sha256": "b281e0828f0093b48983b081ebf6c9a108629374c2c9c6315d1041644d843382",
+      "action": "move",
+      "after_sha256": "b281e0828f0093b48983b081ebf6c9a108629374c2c9c6315d1041644d843382"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/catalog.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/catalog.json",
+      "before_sha256": "59d1701cd54f0523e3343168890dae2460a373fc1676ebd2576ea6f0e678591a",
+      "action": "move",
+      "after_sha256": "59d1701cd54f0523e3343168890dae2460a373fc1676ebd2576ea6f0e678591a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/handling.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/handling.json",
+      "before_sha256": "2ecfbb283368f3c8684199b2878410b55ea1c6c328561447a056cc25a3d31f69",
+      "action": "move",
+      "after_sha256": "2ecfbb283368f3c8684199b2878410b55ea1c6c328561447a056cc25a3d31f69"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/mapping.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/mapping.json",
+      "before_sha256": "20f1f722859cd4123428ca8ea09c5d1bf7750e30e81d18afac46224f6261d5c2",
+      "action": "move",
+      "after_sha256": "20f1f722859cd4123428ca8ea09c5d1bf7750e30e81d18afac46224f6261d5c2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/scene.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/scene.json",
+      "before_sha256": "8ab68fb75d5f489436658fd0696e47e1861ac020f552270e2ea79cd4145d1f5d",
+      "action": "move",
+      "after_sha256": "8ab68fb75d5f489436658fd0696e47e1861ac020f552270e2ea79cd4145d1f5d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/weapon.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/weapon.json",
+      "before_sha256": "fad6ae2c4185f3e1a9a6abf7dd5d3c684f6fc4f962086e4c7a31f3958a546543",
+      "action": "move",
+      "after_sha256": "fad6ae2c4185f3e1a9a6abf7dd5d3c684f6fc4f962086e4c7a31f3958a546543"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/assembly/radian.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/assembly/radian.json",
+      "before_sha256": "e1dad638683d4d9aa1dbdfaec8ef0d71ffab8eac85f806758b652f5f634b5a1e",
+      "action": "move",
+      "after_sha256": "e1dad638683d4d9aa1dbdfaec8ef0d71ffab8eac85f806758b652f5f634b5a1e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/data/guns/radian.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/data/guns/radian.json",
+      "before_sha256": "df7575addf68b756f7e61fd52ea5d8e4272d1b1ef6e939d331ce783fd6f83166",
+      "action": "move",
+      "after_sha256": "df7575addf68b756f7e61fd52ea5d8e4272d1b1ef6e939d331ce783fd6f83166"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/index/guns/radian.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/index/guns/radian.json",
+      "before_sha256": "488b743c028a3f7d9a8879ec1b7fd73f0544d1450eded6c7d594a24621c1869c",
+      "action": "move",
+      "after_sha256": "488b743c028a3f7d9a8879ec1b7fd73f0544d1450eded6c7d594a24621c1869c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/identities/radian.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/identities/radian.json",
+      "before_sha256": "6b4e9d3fe38fdec76bda5353d97d5b4112bd33d70990cf92c796a465b2027fb5",
+      "action": "move",
+      "after_sha256": "6b4e9d3fe38fdec76bda5353d97d5b4112bd33d70990cf92c796a465b2027fb5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_55802f5d4bdc2dac148b458f.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_55802f5d4bdc2dac148b458f.json",
+      "before_sha256": "84f52394d02e476ed6b9ba3463da5f9b36b6e0e1264476091a722c6a2cd4d437",
+      "action": "move",
+      "after_sha256": "84f52394d02e476ed6b9ba3463da5f9b36b6e0e1264476091a722c6a2cd4d437"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_56eabcd4d2720b66698b4574.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_56eabcd4d2720b66698b4574.json",
+      "before_sha256": "dd1665cbadb2e8cb0a9d11781756099276b6d2aded1b432f7193e33361eabafa",
+      "action": "move",
+      "after_sha256": "dd1665cbadb2e8cb0a9d11781756099276b6d2aded1b432f7193e33361eabafa"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_56eabf3bd2720b75698b4569.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_56eabf3bd2720b75698b4569.json",
+      "before_sha256": "a64d36591ce3e484966712c71b5da89f165095a2a4740531a5f42cf11242374d",
+      "action": "move",
+      "after_sha256": "a64d36591ce3e484966712c71b5da89f165095a2a4740531a5f42cf11242374d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_5aaa5dfee5b5b000140293d3.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_5aaa5dfee5b5b000140293d3.json",
+      "before_sha256": "91f0d807c36ce7ffd37a691ab4d4f2840ee2ad14c3bea98239e5154c3dda7f88",
+      "action": "move",
+      "after_sha256": "91f0d807c36ce7ffd37a691ab4d4f2840ee2ad14c3bea98239e5154c3dda7f88"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_5bc09a18d4351e003562b68e.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_5bc09a18d4351e003562b68e.json",
+      "before_sha256": "826bdfe7ebe1262fd577727e371f930cef6825c4673a0e75e1c573e348243239",
+      "action": "move",
+      "after_sha256": "826bdfe7ebe1262fd577727e371f930cef6825c4673a0e75e1c573e348243239"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_5bc09a30d4351e00367fb7c8.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_5bc09a30d4351e00367fb7c8.json",
+      "before_sha256": "408edfcb1f4cd3cb58a0a89998f6ead64ec9112853a69db833ff6dfe8479b783",
+      "action": "move",
+      "after_sha256": "408edfcb1f4cd3cb58a0a89998f6ead64ec9112853a69db833ff6dfe8479b783"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_5c793fb92e221644f31bfb64.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_5c793fb92e221644f31bfb64.json",
+      "before_sha256": "e0dca46383f79325d9c28be3ad7e1d2ae4586e9d865011d8b6b33f63887ec823",
+      "action": "move",
+      "after_sha256": "e0dca46383f79325d9c28be3ad7e1d2ae4586e9d865011d8b6b33f63887ec823"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_63d3d44a2a49307baf09386d.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_63d3d44a2a49307baf09386d.json",
+      "before_sha256": "52e3ccad0b0f7c9a7f98d019474536d9238b8c1d8f7601ca93469766fd669427",
+      "action": "move",
+      "after_sha256": "52e3ccad0b0f7c9a7f98d019474536d9238b8c1d8f7601ca93469766fd669427"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_6405ff6bd4578826ec3e377a.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_6405ff6bd4578826ec3e377a.json",
+      "before_sha256": "84561ee77ed390d85c0de4e509ad3bc9dbe38c59635c6e937a8d1f9f741218f8",
+      "action": "move",
+      "after_sha256": "84561ee77ed390d85c0de4e509ad3bc9dbe38c59635c6e937a8d1f9f741218f8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_6895bd19d55f0ebf6a0c0306.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_6895bd19d55f0ebf6a0c0306.json",
+      "before_sha256": "1762aecc2cfb1d7a2c85a4d298b4c082f6bd4113ecc42a8c223d12a5d651d9d4",
+      "action": "move",
+      "after_sha256": "1762aecc2cfb1d7a2c85a4d298b4c082f6bd4113ecc42a8c223d12a5d651d9d4"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_6895becad55f0ebf6a0c0311.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_6895becad55f0ebf6a0c0311.json",
+      "before_sha256": "fd3f65714826f4a72e0d195ed13b1831a1938d38753e0a61ad92093e651de459",
+      "action": "move",
+      "after_sha256": "fd3f65714826f4a72e0d195ed13b1831a1938d38753e0a61ad92093e651de459"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_6895bf08e2d16810ba0bf43e.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/part_6895bf08e2d16810ba0bf43e.json",
+      "before_sha256": "2bd63ada913172221f2f4b4e0ba0f8de77ebba8c6c0d344a56151985e001701c",
+      "action": "move",
+      "after_sha256": "2bd63ada913172221f2f4b4e0ba0f8de77ebba8c6c0d344a56151985e001701c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/radian.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/item_foundation/items/radian.json",
+      "before_sha256": "73570e913e352ebb962b27f30c0c88d2f317b0d9be11918e11891ccacc698c10",
+      "action": "move",
+      "after_sha256": "73570e913e352ebb962b27f30c0c88d2f317b0d9be11918e11891ccacc698c10"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/catalog.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/catalog.json",
+      "before_sha256": "4790ded4b5bf10c86ca9196288be4fc575f63164d6b37c9d2f2dbab399022efb",
+      "action": "move",
+      "after_sha256": "4790ded4b5bf10c86ca9196288be4fc575f63164d6b37c9d2f2dbab399022efb"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/handling.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/handling.json",
+      "before_sha256": "15c1be7705d5737fb77aa80a50133785ff9f0118c19665e13921fca410ed47e5",
+      "action": "move",
+      "after_sha256": "15c1be7705d5737fb77aa80a50133785ff9f0118c19665e13921fca410ed47e5"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/mapping.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/mapping.json",
+      "before_sha256": "7ec8d769a581afcc08e168cc99a5387feff2057016d3c1ac37642938b8ba0960",
+      "action": "move",
+      "after_sha256": "7ec8d769a581afcc08e168cc99a5387feff2057016d3c1ac37642938b8ba0960"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/scene.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/scene.json",
+      "before_sha256": "71da4515f543338c092a5ecc060feeb2eec144bcbee442088f60ef99de40a86b",
+      "action": "move",
+      "after_sha256": "71da4515f543338c092a5ecc060feeb2eec144bcbee442088f60ef99de40a86b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/weapon.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/weapon.json",
+      "before_sha256": "fe2acb7f221e800d768b6624dd8b156d2f458a77594ca6d0c5a96dae37c4744a",
+      "action": "move",
+      "after_sha256": "fe2acb7f221e800d768b6624dd8b156d2f458a77594ca6d0c5a96dae37c4744a"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-content/resources/data/tactical_tacz_adapter/assembled_weapons.json",
+      "new": "modules/tacz_adapter/weapon-content/resources/data/tactical_tacz_adapter/assembled_weapons.json",
+      "before_sha256": "faaa833c50bc4d8f5bf4a1a32419cd643ef42d489e9470bebbc0392aac8cf991",
+      "action": "move",
+      "after_sha256": "faaa833c50bc4d8f5bf4a1a32419cd643ef42d489e9470bebbc0392aac8cf991"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/README.md",
+      "new": "modules/tacz_adapter/weapon-reports/README.md",
+      "before_sha256": "549ef1f897cc5aeb690c6e133f3fbc7909c0bcbec6399895f2bb4ff819c5e446",
+      "action": "move",
+      "after_sha256": "549ef1f897cc5aeb690c6e133f3fbc7909c0bcbec6399895f2bb4ff819c5e446"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/archive/m4a1/import-report.json",
+      "new": "modules/tacz_adapter/weapon-reports/archive/m4a1/import-report.json",
+      "before_sha256": "8fd37b2e24521c934bfff963d36425faa72aa6d7304c80458050661636fecbb2",
+      "action": "move",
+      "after_sha256": "8fd37b2e24521c934bfff963d36425faa72aa6d7304c80458050661636fecbb2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/archive/radian/import-report.json",
+      "new": "modules/tacz_adapter/weapon-reports/archive/radian/import-report.json",
+      "before_sha256": "36ed0325b03e54809b6a31f63d08e36c17f1bc0ee0fcef3f3ff9f56dda09b26e",
+      "action": "move",
+      "after_sha256": "36ed0325b03e54809b6a31f63d08e36c17f1bc0ee0fcef3f3ff9f56dda09b26e"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/refactor-20260915/adar/import-report.json",
+      "new": "modules/tacz_adapter/weapon-reports/refactor-20260915/adar/import-report.json",
+      "before_sha256": "da31ef95808c5d8d7176558d5fca1bf6dae009bdf6fe385b46f261f7ff26d400",
+      "action": "move",
+      "after_sha256": "da31ef95808c5d8d7176558d5fca1bf6dae009bdf6fe385b46f261f7ff26d400"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/refactor-20260915/adar/inputs.json",
+      "new": "modules/tacz_adapter/weapon-reports/refactor-20260915/adar/inputs.json",
+      "before_sha256": "9ab9d9baa8f6fca7ff5c0374c3596f6207dcda938faf3558d0ed6316aa7b2534",
+      "action": "move",
+      "after_sha256": "9ab9d9baa8f6fca7ff5c0374c3596f6207dcda938faf3558d0ed6316aa7b2534"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/refactor-20260915/comparison.json",
+      "new": "modules/tacz_adapter/weapon-reports/refactor-20260915/comparison.json",
+      "before_sha256": "1917c41a76b12e07007124e17b57db5194e78cae175465fcbffd6b28fc523cb7",
+      "action": "move",
+      "after_sha256": "1917c41a76b12e07007124e17b57db5194e78cae175465fcbffd6b28fc523cb7"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/refactor-20260915/m4a1/import-report.json",
+      "new": "modules/tacz_adapter/weapon-reports/refactor-20260915/m4a1/import-report.json",
+      "before_sha256": "8fd37b2e24521c934bfff963d36425faa72aa6d7304c80458050661636fecbb2",
+      "action": "move",
+      "after_sha256": "8fd37b2e24521c934bfff963d36425faa72aa6d7304c80458050661636fecbb2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/refactor-20260915/m4a1/inputs.json",
+      "new": "modules/tacz_adapter/weapon-reports/refactor-20260915/m4a1/inputs.json",
+      "before_sha256": "da72e32d880bac4c3c683f4da06e871f76f1b60cbedf58a8e4a36b125325e077",
+      "action": "move",
+      "after_sha256": "da72e32d880bac4c3c683f4da06e871f76f1b60cbedf58a8e4a36b125325e077"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/refactor-20260915/packaging.json",
+      "new": "modules/tacz_adapter/weapon-reports/refactor-20260915/packaging.json",
+      "before_sha256": "827ad352a16234eba9225d9239248898139ffd21d52b77484b0dfbe9464b105c",
+      "action": "move",
+      "after_sha256": "827ad352a16234eba9225d9239248898139ffd21d52b77484b0dfbe9464b105c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/refactor-20260915/radian/import-report.json",
+      "new": "modules/tacz_adapter/weapon-reports/refactor-20260915/radian/import-report.json",
+      "before_sha256": "6ffa54d69b12747c32e94ff29b7ab43864bc03aa60afd4eb5e305fc18a940d5d",
+      "action": "move",
+      "after_sha256": "6ffa54d69b12747c32e94ff29b7ab43864bc03aa60afd4eb5e305fc18a940d5d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/refactor-20260915/radian/inputs.json",
+      "new": "modules/tacz_adapter/weapon-reports/refactor-20260915/radian/inputs.json",
+      "before_sha256": "592e6cb8d2688edfe38da3d31e4190f75bb1e762956d0e61f0e25ccc8774bf5c",
+      "action": "move",
+      "after_sha256": "592e6cb8d2688edfe38da3d31e4190f75bb1e762956d0e61f0e25ccc8774bf5c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/adar/import-report.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/adar/import-report.json",
+      "before_sha256": "da31ef95808c5d8d7176558d5fca1bf6dae009bdf6fe385b46f261f7ff26d400",
+      "action": "move",
+      "after_sha256": "da31ef95808c5d8d7176558d5fca1bf6dae009bdf6fe385b46f261f7ff26d400"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/adar/inputs.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/adar/inputs.json",
+      "before_sha256": "fad397d4820ec44d47e3da0c38eba417ebaf338685e138050141dabdf9c0e82c",
+      "action": "move",
+      "after_sha256": "fad397d4820ec44d47e3da0c38eba417ebaf338685e138050141dabdf9c0e82c"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/comparison.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/comparison.json",
+      "before_sha256": "fa0e44bdbd8486c2f545c0946322b8d52f6619c716585efe77a7fc578e323d9d",
+      "action": "move",
+      "after_sha256": "fa0e44bdbd8486c2f545c0946322b8d52f6619c716585efe77a7fc578e323d9d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/m4a1/import-report.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/m4a1/import-report.json",
+      "before_sha256": "8fd37b2e24521c934bfff963d36425faa72aa6d7304c80458050661636fecbb2",
+      "action": "move",
+      "after_sha256": "8fd37b2e24521c934bfff963d36425faa72aa6d7304c80458050661636fecbb2"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/m4a1/inputs.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/m4a1/inputs.json",
+      "before_sha256": "d6e53f39436a377e779395d0ffbb2db8c4413cc37b5a0ab15f703eb0755bc6f7",
+      "action": "move",
+      "after_sha256": "d6e53f39436a377e779395d0ffbb2db8c4413cc37b5a0ab15f703eb0755bc6f7"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/material-migration.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/material-migration.json",
+      "before_sha256": "72f02eed7348d7a890bd57f3b8f52027127528c59b4fa0f9b8fbd9f2723f6e49",
+      "action": "move",
+      "after_sha256": "72f02eed7348d7a890bd57f3b8f52027127528c59b4fa0f9b8fbd9f2723f6e49"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/migration-comparison.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/migration-comparison.json",
+      "before_sha256": "837d9f7832e18d376daf89fe854cd0759e8c55f6b2f043c58cc9836b3f4aeec9",
+      "action": "move",
+      "after_sha256": "837d9f7832e18d376daf89fe854cd0759e8c55f6b2f043c58cc9836b3f4aeec9"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/packaging.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/packaging.json",
+      "before_sha256": "b25ac966c8c87950939e1636a4e202c6adfd0b57a4543ede575ed842512650c8",
+      "action": "move",
+      "after_sha256": "b25ac966c8c87950939e1636a4e202c6adfd0b57a4543ede575ed842512650c8"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/radian/import-report.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/radian/import-report.json",
+      "before_sha256": "6ffa54d69b12747c32e94ff29b7ab43864bc03aa60afd4eb5e305fc18a940d5d",
+      "action": "move",
+      "after_sha256": "6ffa54d69b12747c32e94ff29b7ab43864bc03aa60afd4eb5e305fc18a940d5d"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/radian/inputs.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/radian/inputs.json",
+      "before_sha256": "e43feb5704433f0d23173a5d7ee38afd1af33c08e16db58dd295cb04500a32ae",
+      "action": "move",
+      "after_sha256": "e43feb5704433f0d23173a5d7ee38afd1af33c08e16db58dd295cb04500a32ae"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-reports/resource-ownership-20260915/references.json",
+      "new": "modules/tacz_adapter/weapon-reports/resource-ownership-20260915/references.json",
+      "before_sha256": "e3527c9c86f59c68f26c359bfb3239c924eb3a01af4f54b64189cfdb3259aff7",
+      "action": "move",
+      "after_sha256": "e3527c9c86f59c68f26c359bfb3239c924eb3a01af4f54b64189cfdb3259aff7"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-sources/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/README.md",
+      "before_sha256": "7aae11ef26a443f69e0449f287f45d38aae5d1111562348c2836cb95f4566908",
+      "action": "move",
+      "after_sha256": "7aae11ef26a443f69e0449f287f45d38aae5d1111562348c2836cb95f4566908"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-sources/adar/assets/weapon_assembly_ui/textures/materials/metal.png",
+      "new": "modules/tacz_adapter/weapon-sources/adar/assets/weapon_assembly_ui/textures/materials/metal.png",
+      "before_sha256": "426b07275eda86cbf2c471512d9ffbd767fefb637a7e15cc7391bd521334750b",
+      "action": "move",
+      "after_sha256": "426b07275eda86cbf2c471512d9ffbd767fefb637a7e15cc7391bd521334750b"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-sources/adar/assets/weapon_assembly_ui/textures/materials/polymer.png",
+      "new": "modules/tacz_adapter/weapon-sources/adar/assets/weapon_assembly_ui/textures/materials/polymer.png",
+      "before_sha256": "4ad2a5fdc3d210b796a015992977341750c04ed3fd32c14aec458822e1450686",
+      "action": "move",
+      "after_sha256": "4ad2a5fdc3d210b796a015992977341750c04ed3fd32c14aec458822e1450686"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-sources/adar/assets/weapon_assembly_ui/textures/materials/rubber.png",
+      "new": "modules/tacz_adapter/weapon-sources/adar/assets/weapon_assembly_ui/textures/materials/rubber.png",
+      "before_sha256": "8d88f614a53c18cd143cbd7521402f54bd8a35f5dbfb5deb64767321670e6348",
+      "action": "move",
+      "after_sha256": "8d88f614a53c18cd143cbd7521402f54bd8a35f5dbfb5deb64767321670e6348"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-sources/adar/assets/weapon_assembly_ui/textures/materials/wood.png",
+      "new": "modules/tacz_adapter/weapon-sources/adar/assets/weapon_assembly_ui/textures/materials/wood.png",
+      "before_sha256": "2fb0dafe9e7b1d9e2e1840f097663a66b3dfb2af446dd657b6a420bc20d953fe",
+      "action": "move",
+      "after_sha256": "2fb0dafe9e7b1d9e2e1840f097663a66b3dfb2af446dd657b6a420bc20d953fe"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-sources/adar/catalog.json",
+      "new": "modules/tacz_adapter/weapon-sources/adar/catalog.json",
+      "before_sha256": "0c4670d420b9cd03130afbd90f71558ac4dda1843e5986606a45fe73acc4da02",
+      "action": "move",
+      "after_sha256": "0c4670d420b9cd03130afbd90f71558ac4dda1843e5986606a45fe73acc4da02"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-sources/adar/manifest.json",
+      "new": "modules/tacz_adapter/weapon-sources/adar/manifest.json",
+      "before_sha256": "39917881330e3cf5a96ae91c3a87ee059004f2e18aa9bcc918098c3fdcc7dbb1",
+      "action": "move",
+      "after_sha256": "39917881330e3cf5a96ae91c3a87ee059004f2e18aa9bcc918098c3fdcc7dbb1"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-sources/adar/provenance.json",
+      "new": "modules/tacz_adapter/weapon-sources/adar/provenance.json",
+      "before_sha256": "d4cc8758b41d4bd92b0bb10213a54de5586a25c3aa2d262939c291b93bf0b9f3",
+      "action": "move",
+      "after_sha256": "d4cc8758b41d4bd92b0bb10213a54de5586a25c3aa2d262939c291b93bf0b9f3"
+    },
+    {
+      "old": "source/mods/tacz_adapter/weapon-sources/adar/scene.json",
+      "new": "modules/tacz_adapter/weapon-sources/adar/scene.json",
+      "before_sha256": "06ab6c3a84c9711fe5f3267bf9a528aee5768a4102b216418125afba192c8b19",
+      "action": "move",
+      "after_sha256": "06ab6c3a84c9711fe5f3267bf9a528aee5768a4102b216418125afba192c8b19"
+    }
+  ]
+}

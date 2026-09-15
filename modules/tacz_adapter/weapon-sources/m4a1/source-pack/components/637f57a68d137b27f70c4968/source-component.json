@@ -1,0 +1,72 @@
+{
+  "item_id": "637f57a68d137b27f70c4968",
+  "name_zh": "柯尔特 M4 卡宾枪长度 AR-15 下护木",
+  "name_en": "AR-15 Colt M4 Carbine Length lower handguard",
+  "source_version": "5.0",
+  "source_catalog_key": "637f57a68d137b27f70c4968",
+  "source_snapshot": "source-index.json",
+  "source_root": "handguard_ar15_colt_m4_length_std_lower",
+  "local_to_source_baked": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "coordinate_space": "manuscript and product use component-local vertices; local_to_source_baked restores source BB coordinates; input remains source-baked",
+  "source_files_sha256": {
+    "component.bbmodel": "2365d2e05b83800533ba2a121b2d3cfaa9e5f922c3b958b85ae7b4ef67553710",
+    "bindings.json": "e9f58f13b1ddfe60c078f2bf3345d1c8abc4ac4322b005000f58f0fe4f5694d2",
+    "nodes.json": "77800314c57b74ddc191f33ce7ead9f38312e088e2537ba92057287705de2896",
+    "status.json": "b33f6e725f3afb27df500774105d2b8bc4dc24dc73cc1f2ee4ca3d3d032366fe"
+  },
+  "output_files_sha256": {
+    "manuscript_main": "8befc9c09777b85795cb0ec2760ad3efff8727ae916a38c17fbc42cf1b684281",
+    "product_model": "4039ccbf1399c14bb0e5bcd1f8f7a6c3088484948396d891838ff9a76ca33cb5"
+  },
+  "source_batch": "bulk-white-20260914",
+  "status": "awaiting-consumption",
+  "mod_status": "not-integrated",
+  "visual_validation": "not-validated",
+  "native_validation": "not-validated",
+  "material_status": "white-no-original-textures",
+  "source_evidence": "source-evidence.json",
+  "source_index_key": "637f57a68d137b27f70c4968",
+  "validation": {
+    "manuscript_vertex_max_error": 0.0,
+    "product_vertex_max_error": 0.0,
+    "tolerance": 1e-07,
+    "stage_specific_note": "automated geometry preservation only; not Mod integration, native-load, visual, or user acceptance"
+  },
+  "asset_kind": "product",
+  "model": "model.bbmodel",
+  "source_copy": "../../原稿/637f57a68d137b27f70c4968/input",
+  "source_copy_files": [
+    "component.bbmodel",
+    "bindings.json",
+    "nodes.json",
+    "status.json"
+  ],
+  "source_index": "../../../../../tarkov-resource-library/indexes/5.0/catalog.json",
+  "source_manuscript": "../../原稿/637f57a68d137b27f70c4968",
+  "source_product": "."
+}

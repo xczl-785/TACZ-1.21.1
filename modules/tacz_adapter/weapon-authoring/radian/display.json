@@ -1,0 +1,56 @@
+{
+  "use_default_animation": "rifle",
+  "third_person_animation": "default",
+  "iron_zoom": 1.2,
+  "transform": {
+    "scale": {
+      "thirdperson": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "ground": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "fixed": [
+        0.8,
+        0.8,
+        0.8
+      ]
+    }
+  },
+  "muzzle_flash": {
+    "texture": "tacz:flash/common_muzzle_flash",
+    "scale": 0.6
+  },
+  "shell": {
+    "initial_velocity": [
+      5,
+      2,
+      1
+    ],
+    "random_velocity": [
+      1,
+      1,
+      0.25
+    ],
+    "acceleration": [
+      0,
+      -10,
+      0
+    ],
+    "angular_velocity": [
+      360,
+      -1200,
+      90
+    ],
+    "living_time": 1
+  },
+  "sounds": {
+    "shoot": "tacz:m4a1/m4a1_shoot",
+    "shoot_3p": "tacz:m4a1/m4a1_shoot_3p",
+    "draw": "tacz:m4a1/m4a1_draw"
+  }
+}

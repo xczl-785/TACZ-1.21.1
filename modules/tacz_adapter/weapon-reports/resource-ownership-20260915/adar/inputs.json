@@ -1,0 +1,35 @@
+{
+  "source": "source/mods/tacz_adapter/weapon-sources/adar",
+  "sourceHashes": {
+    "assets/weapon_assembly_ui/textures/materials/metal.png": "426b07275eda86cbf2c471512d9ffbd767fefb637a7e15cc7391bd521334750b",
+    "assets/weapon_assembly_ui/textures/materials/polymer.png": "4ad2a5fdc3d210b796a015992977341750c04ed3fd32c14aec458822e1450686",
+    "assets/weapon_assembly_ui/textures/materials/rubber.png": "8d88f614a53c18cd143cbd7521402f54bd8a35f5dbfb5deb64767321670e6348",
+    "assets/weapon_assembly_ui/textures/materials/wood.png": "2fb0dafe9e7b1d9e2e1840f097663a66b3dfb2af446dd657b6a420bc20d953fe",
+    "catalog.json": "0c4670d420b9cd03130afbd90f71558ac4dda1843e5986606a45fe73acc4da02",
+    "manifest.json": "39917881330e3cf5a96ae91c3a87ee059004f2e18aa9bcc918098c3fdcc7dbb1",
+    "provenance.json": "d4cc8758b41d4bd92b0bb10213a54de5586a25c3aa2d262939c291b93bf0b9f3",
+    "scene.json": "06ab6c3a84c9711fe5f3267bf9a528aee5768a4102b216418125afba192c8b19"
+  },
+  "authoringHashes": {
+    "animations.json": "9994f0596e131d38122633bb13bddbe72a9fa6524dc996f4b01c0732b5f55718",
+    "display.json": "6a005669bc5ec64a98c42eaae90b27ea8bf9340cfdafaef5db34a5d5f1e4072b",
+    "execution.json": "93374f14c73ffe94f945284ddf7b4bbccb3b9078eb32600cb41bf3278f785d4d",
+    "handling.json": "5b14c1a7c801a7519e704fac89a89a2617eff3f48b195e0b95895722c9ca8569",
+    "identities.json": "0a1412eb2af23174f1de71911647971018ce54af5843b9ee26c4dccc1f62a0ae",
+    "import.json": "ab8db166703d003c5c4cbdd16e77a0a277bcecde9edfeeedfd660d6115219c26",
+    "index.json": "e8c5d4c4f1626d4fa964be700370d577e6001c1a527a011e76d85ca9169c0db9",
+    "lang/en_us.json": "89a3cc34b6b0383779b5111abc4cffe8b17679688960857ed06a47d9fa498def",
+    "lang/zh_cn.json": "b0482059ad5b54d530f60fbf2e05eb655e4036f0af90e6960920d9f4fad5c316",
+    "library.json": "29b38be98464ac62e183df9c990f910007b0f5b4f063c38f0cb8b1923cbf93b2",
+    "markers.json": "58fdf546e99b7e7aa1eac5b75321a32dadaf3ec7c68392a608c378411b9b96f5",
+    "materials.json": "43902b0f9067d1e6da26029db59b4a783f8e572658ebbb073353395766f5c2c8",
+    "names.json": "def64747f851d32746111ce4d61d756cc33436c45cce854c7b45caf524d05c91",
+    "presentation.json": "4472c4feb1b68860f504b26bc5c139f3774270f74c60bb96d9774e7817b711dc",
+    "rig.json": "f935530bca2f5b96395935a0d18e89de13d1c3caa3a29450f9d59f34b3ec9c38",
+    "runtime.json": "4c29a82ec44d1966bf14718267a0132c7793e6b44ffeea2cba8478af3eb91d20",
+    "名称来源.md": "318dd30d95b7779f190afe80def998887859f88ed88d9fca697de61a1b9148cd"
+  },
+  "externalInputHashes": {
+    "docs/参考资料/adar-20260913-data/items.raw.json": "c28d4b8d422a9e678e27c31ff1c10dc31cb4543cee8bb39ff0fe42d32c5e875f"
+  }
+}

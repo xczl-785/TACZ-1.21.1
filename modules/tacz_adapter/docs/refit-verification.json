@@ -1,0 +1,61 @@
+{
+  "date": "2026-09-13",
+  "baseline": "3921aaa",
+  "fork_source_commit": "8497fd29d9bc34d69ce3f692a18b804d0337a281",
+  "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.8497fd29.jar",
+  "artifact_sha512": "a3bc0a777ee4b24a21d9764364c503c44857e455e269a03937744aeb6d940262c64fe98c4af7f5da54d6638e8289b759276c467f8590920f0214ea2086fc1a70",
+  "verification": {
+    "command": "build :tacz_adapter:runClientSmoke --offline --console=plain",
+    "result": "passed",
+    "log_sha256": "175c99012ad66fca71f9b168a405cadb549c582609927035a6308eaa11a8a4d0",
+    "markers": [
+      "REFIT_INVENTORY_SMOKE PASS: scope install/unload, native compatibility, full-cell swap, rejection atomicity, replay/stale gun and inventory, 12 exact refund rounds/chamber, carried bag/rig/secure, one-item payment, lock/stash/legacy packet denial, wire and save",
+      "UNREGISTERED_ATTACHMENT_SMOKE PASS: 903 compartments, pocket/backpack/rig/secure/stash, special slots rejected, one-cell unknown weight, native component preservation",
+      "TACZ_ADAPTER_SMOKE PASS",
+      "DEVELOPMENT_ITEMS_CLIENT PASS: real screen opens despite takeover, search, pagination, selection, empty result, rendered frames"
+    ],
+    "unit_tests": {
+      "foundation": {
+        "tests": 235,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "tactical": {
+        "tests": 310,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "tacz_adapter": {
+        "tests": 2,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      }
+    }
+  },
+  "fork_checks": {
+    "build": "passed",
+    "cleanup": "15 guns / 85 attachments / 1497 deletions / 232 Java cases; passed",
+    "cleanup_log_sha256": "3c5c79491539080bb01409e866973a0396a5ba2798f1bebf3266c4614658ea65",
+    "extra_content": "221 deletions / 233 protected files / 186 effect files unchanged; passed"
+  },
+  "real_z_client_attempt": {
+    "result": "not_verified",
+    "stopped_at": "BackupConfirmScreen, phase 0; no player, no Z operations executed",
+    "log_sha256": "ef614251f9d81282f86706e1e9d5c32827f155de419f430ae5b785ccdd47e4ea",
+    "disposition": "owner explicitly takes real-client testing; unfinished optional click harness removed, not an acceptance gate"
+  },
+  "owner_acceptance": "pending; owner explicitly will test; shared pickup acceptance is a separate earlier batch",
+  "runtime_boundaries": [
+    "supported 15 guns, native compatibility retained",
+    "direct carried spaces only; no warehouse or nested contents",
+    "ordinary refunds, not pickup/equip",
+    "single-use session and full held/revision/lease revalidation",
+    "extended-mag count refunded in exact selected ammo, chamber preserved",
+    "no physical magazines/mixed loading/new item weights"
+  ],
+  "daily_world": "not modified",
+  "deferred_entry": "docs/进行中/文档治理待核对项.md"
+}

@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-15",
+  "scope": "assembled first-person authoring and runtime bridge",
+  "plan": "握持瞄准与射击反馈方案.md",
+  "automated": {
+    "tests": 9,
+    "failures": 0,
+    "errors": 0,
+    "testNames": [
+      "continuousRecoveryIsIndependentOfFrameRateAndBoundedUnderAutoFire()",
+      "palmStaysOnGripWithAnimatedRotationAndNonUniformArmScale()",
+      "invalidMarkersFailAtAuthoringBoundary()",
+      "duplicateDefinitionsRemainSeparateAndRemovalFallsBack()",
+      "eyeFollowsNestedMountAndKeepsEyeRelief()",
+      "attachmentAndTuningShareOneReferenceAndZeroMeansZero()",
+      "packagedPresetsResolveFromTheirRealGeometryAndRemovedSightsDisappear()",
+      "assembledTranslationsUseAttachmentOriginsExactlyOnce()",
+      "missingFrontSightDoesNotInventIronSight()"
+    ],
+    "buildCommand": "./source/gradlew -p source assemble :tacz_adapter:compileDevelopmentJava :weapon_models:test verifyModuleBoundaries verifyLocalization verifyDistribution",
+    "result": "BUILD SUCCESSFUL",
+    "resourceReplay": "8 files byte-identical",
+    "mixinCallsites": "Pinned Jar javap inspected; no runtime Mixin application claimed"
+  },
+  "clientAcceptance": "pending owner",
+  "minecraftClient": "not started",
+  "minecraftServer": "not started",
+  "artifact": {
+    "path": "source/mods/tacz_adapter/build/libs/tactical_tacz_adapter-0.0.0-dev.jar",
+    "sha256": "702798c171bf4b15276e6496dd2868fb4da967b09260741537fef389ed59f244"
+  },
+  "remaining": [
+    "owner first-person and shooting acceptance",
+    "full optic lens/eye box and ballistic zeroing",
+    "non-baked runtime rotated mounting contract",
+    "reload animation and icon work before small-batch adoption",
+    "large-batch adoption only after prior stages accepted"
+  ]
+}

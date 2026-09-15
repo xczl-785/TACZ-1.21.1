@@ -1,0 +1,14 @@
+{
+  "tool": "image_gen.imagegen",
+  "style": "Minecraft-compatible restrained stylized albedo; no photographic detail or coarse vanilla pixels",
+  "source_files": {
+    "coated_metal": "/Users/zhengpanpan/.codex/generated_images/01a09b99-bfb2-7ed0-bd3f-26bfe6ca597b/exec-4363f906-2878-4faf-93cc-bd3a3d5ebcdb.png",
+    "steel_dark": "/Users/zhengpanpan/.codex/generated_images/01a09b99-bfb2-7ed0-bd3f-26bfe6ca597b/exec-1d370ecc-df93-4ba8-8951-f9446077e3ca.png",
+    "steel_light": "/Users/zhengpanpan/.codex/generated_images/01a09b99-bfb2-7ed0-bd3f-26bfe6ca597b/exec-ee3572bd-d564-47e1-8d6c-d5f252699147.png",
+    "polymer": "/Users/zhengpanpan/.codex/generated_images/01a09b99-bfb2-7ed0-bd3f-26bfe6ca597b/exec-b2a60495-07d9-45e2-b527-7dec804f6394.png",
+    "rubber": "/Users/zhengpanpan/.codex/generated_images/01a09b99-bfb2-7ed0-bd3f-26bfe6ca597b/exec-5d793539-ec8e-425c-894e-6987a255b40c.png",
+    "wood": "/Users/zhengpanpan/.codex/generated_images/01a09b99-bfb2-7ed0-bd3f-26bfe6ca597b/exec-3628d7f3-2fa0-4c00-b3fe-f717d87becaf.png"
+  },
+  "processing": "Byte-for-byte copies, no resampling or seam correction",
+  "prompt_summary": "Single square flat base color texture, edge to edge, request seamless horizontal and vertical edges, no object/text/rust/photo noise/shadows/vignette. Coated charcoal metal; cool dark steel; light satin steel with subdued horizontal marks; neutral light tintable polymer; dark matte rubber without gym speckles; warm walnut with broad horizontal grain."
+}

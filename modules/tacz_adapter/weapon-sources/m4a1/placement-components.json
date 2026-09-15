@@ -1,0 +1,2932 @@
+{
+  "5447a9cd4bdc2dbd208b4567": {
+    "root": {
+      "file": "CAB-a3bfa411214f750980ba79c730198b58",
+      "id": 9166412737341226018,
+      "path": "weapon_colt_m4a1_556x45_model.generated",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3015807987802700834
+        },
+        "m_LocalRotation": {
+          "x": 2.1855694143368964e-08,
+          "y": 0.0,
+          "z": -0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.024170000106096268,
+          "y": 1.4717599153518677,
+          "z": 0.027879999950528145
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1701410020363074594
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -7152615043049128926
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7879070618486832162
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 3390200981559245858
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.024170000106096268
+        ],
+        [
+          0.0,
+          0.999999999999999,
+          -4.3711388286737916e-08,
+          1.4717599153518677
+        ],
+        [
+          0.0,
+          4.3711388286737916e-08,
+          0.999999999999999,
+          0.027879999950528145
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": 3015807987802700834,
+      "file": "CAB-a3bfa411214f750980ba79c730198b58",
+      "type": "GameObject",
+      "name": "weapon_colt_m4a1_556x45_model.generated",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 9166412737341226018
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -1496242743465018334
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -2477408201403007966
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -7747240159298388958
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "weapon_colt_m4a1_556x45_model.generated",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -6771861879571163344,
+          "file": "CAB-a3bfa411214f750980ba79c730198b58",
+          "type": "MonoScript",
+          "name": "TransformLinks",
+          "data": {
+            "m_Name": "TransformLinks",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 13,
+              "bytes[1]": 17,
+              "bytes[2]": 11,
+              "bytes[3]": 216,
+              "bytes[4]": 190,
+              "bytes[5]": 167,
+              "bytes[6]": 149,
+              "bytes[7]": 74,
+              "bytes[8]": 140,
+              "bytes[9]": 5,
+              "bytes[10]": 175,
+              "bytes[11]": 134,
+              "bytes[12]": 150,
+              "bytes[13]": 47,
+              "bytes[14]": 148,
+              "bytes[15]": 224
+            },
+            "m_ClassName": "TransformLinks",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": -7747240159298388958,
+          "file": "CAB-a3bfa411214f750980ba79c730198b58",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3015807987802700834
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -6771861879571163344
+            },
+            "m_Name": "",
+            "Transforms": [
+              {
+                "m_FileID": 0,
+                "m_PathID": 1701410020363074594
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -7152615043049128926
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 6767129124650417186
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -5894431356207104990
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -4220623390510941150
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 3390200981559245858
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 2785399969091943458
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 9019453162049567778
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 1963470906494024738
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -3143220551799604190
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 7730261236290878498
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -836947024724755422
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 7879070618486832162
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -7198251429984338910
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -3019408038106563550
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -2845570261229962206
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 992781867484052514
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -3839984308030079966
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -612928388977591262
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": -4746553837285475294
+              },
+              {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            ],
+            "Self": {
+              "m_FileID": 0,
+              "m_PathID": 9166412737341226018
+            },
+            "_cachedTransforms": [
+              {
+                "Position": {
+                  "x": 0.13266000151634216,
+                  "y": -0.057799987494945526,
+                  "z": -0.010449999012053013
+                },
+                "Rotation": {
+                  "x": -0.7071068286895752,
+                  "y": 3.2355469414824256e-08,
+                  "z": -3.235546586211058e-08,
+                  "w": 0.7071067094802856
+                },
+                "Transform": {
+                  "m_FileID": 0,
+                  "m_PathID": 3390200981559245858
+                }
+              },
+              {
+                "Position": {
+                  "x": -0.0,
+                  "y": 0.0,
+                  "z": 0.0
+                },
+                "Rotation": {
+                  "x": 0.0,
+                  "y": -0.0,
+                  "z": -0.0,
+                  "w": 1.0
+                },
+                "Transform": {
+                  "m_FileID": 0,
+                  "m_PathID": -4220623390510941150
+                }
+              },
+              {
+                "Position": {
+                  "x": -4.434585662238533e-06,
+                  "y": 1.7797946156861144e-06,
+                  "z": -3.814697265625e-06
+                },
+                "Rotation": {
+                  "x": 2.1855669274373213e-08,
+                  "y": -4.575753820290629e-08,
+                  "z": 1.0000612017579328e-15,
+                  "w": 1.0
+                },
+                "Transform": {
+                  "m_FileID": 0,
+                  "m_PathID": -7198251429984338910
+                }
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "0c57a5841c86e0d3c3b422c0": "86aadf7360d77077722146913026fdd626573e9a0a57463730dc1b43506248c0",
+      "184c1abe741dc357fdfb0857": "ba57d5343521347aa9a70f7658c7c35365257c22c654444b61857eee3399ceb3",
+      "4bc811bff64cd34c4da82df7": "13475f4afd3d0f1963bcd7846acbb2b7ed300c5f518062766bcdc3b1f388ff15",
+      "6b84c3bed780fdf99e1a67d7": "afc7087e17084a638578bffaaf47cb2a479244819ee1b7d8bc1e7bd1ef80aa2e",
+      "c62f5ab294f53240eadaed3f": "5faafbea7b63856065f4cc7365e686546f881e7f8bf0aa6c5864f49857d1084a",
+      "1c6c995f98a5da093e6e517e": "603e061d048b3a02187fd29d5cecf0433f3be40c50bf529e0b0c3bea645b5a72",
+      "df00eb6d4e28fa7c02d7b975": "db89abf14e15cebf8556fbc00a3ce9fb7aae4263e277043593a2734e20238931",
+      "a5155747bfe1c4eff6c69a0c": "85223ffecdb112f8ad88513f7445e7ca2c7680e79ef47e83a3c6ed37aee3abb8",
+      "e13589702fb7495a80ea5496": "2b8a6e8c37e4ce4d345a53d98ea12019330df5b1c5d2b2333eb4459e6bf64401",
+      "8c19d5a98b14901bf9655718": "58c4545d02384e324cbd9ee9ed15727de6c13f912ca0107f032716faf12dfe70",
+      "c6c08a66da54d8e924fa92f8": "9180e317029ddf08491dd4b4c7ba675218593cf0ad6c4eb99f27830f30bdcb55",
+      "b40b44052552fc2f8ef5cb32": "4f71ac057581bba125638b564dbe962b602e1d56d9cb20380461e12c244c9a13",
+      "b95d1fe96ed8d71ea23dcddb": "23bfc176d2eec70d041a059d8dd99cf98419f99d3622cca597c0476f9815ebe1",
+      "b24292f5aea4aa273c3441e1": "1e3c52e3f8ed92770674866cfd88161a153154faecb13e609d7a8b26dba0458e",
+      "a0aea463ab9034d14f74a3ff": "2546d75294dd2bc9ce62902cf19b5f8c55b1a0ac81828021428a638219006775",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "55d4b9964bdc2d1d4e8b456e": {
+    "root": {
+      "file": "CAB-3edb94a8c593f6bf702e4df8f946a37e",
+      "id": -7355262570867647644,
+      "path": "pistolgrip_ar15_colt_a2",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 3610696787152739172
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 4493854708497193828
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 3256408026178984804
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": 3610696787152739172,
+      "file": "CAB-3edb94a8c593f6bf702e4df8f946a37e",
+      "type": "GameObject",
+      "name": "pistolgrip_ar15_colt_a2",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -7355262570867647644
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 5405242897651800932
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 4036915721745734500
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "pistolgrip_ar15_colt_a2",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-3edb94a8c593f6bf702e4df8f946a37e",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": 4036915721745734500,
+          "file": "CAB-3edb94a8c593f6bf702e4df8f946a37e",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 3610696787152739172
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": 4.722177982330322e-05,
+              "y": -0.04978316277265549,
+              "z": -0.04448385536670685
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": -0.07100000232458115,
+                "y": 0.09700000286102295,
+                "z": -0.061000000685453415
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.0,
+                "y": 0.8433914184570312,
+                "z": 0.0,
+                "w": -0.537299633026123
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "39ba8d22b5f11e54fd223aa2": "a0c7ccb33812dd3016efcef0205c463b6c08cef8b79066c1f077b6779afd47b6",
+      "7529bc92d54354005fe9ab69": "989ff264a9b6e2e2885b69beca924a5409b0d036508bb1dcb798769bb369591b",
+      "edc3e1c55b2dafc0aa02319a": "89d389ec12965d8d5e4928b9e2ea84ab3647eb0b39088bfa802ae9738fe7836f",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "55d4887d4bdc2d962f8b4570": {
+    "root": {
+      "file": "CAB-61115c73f466cc5d3522e467eb28af3c",
+      "id": -3831725188387951048,
+      "path": "mag_stanag_colt_ar15_std_556x45_30",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": -1518477240741777864
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": -3318699850102264264
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 1552630621200068152
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -5794747272034832840
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 5815286497372352056
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 3454259066848030264
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": -1518477240741777864,
+      "file": "CAB-61115c73f466cc5d3522e467eb28af3c",
+      "type": "GameObject",
+      "name": "mag_stanag_colt_ar15_std_556x45_30",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -3831725188387951048
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 805642349716909624
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 7092352876343668280
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "mag_stanag_colt_ar15_std_556x45_30",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-61115c73f466cc5d3522e467eb28af3c",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": 7092352876343668280,
+          "file": "CAB-61115c73f466cc5d3522e467eb28af3c",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -1518477240741777864
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": -0.0001629013568162918,
+              "y": -0.09461677074432373,
+              "z": -0.01998467743396759
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": -0.021983999758958817,
+                "y": 0.10459999740123749,
+                "z": -0.025582000613212585
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.0,
+                "y": 0.8433914184570312,
+                "z": 0.0,
+                "w": -0.537299633026123
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "0e283c7e8230d929f2f522c5": "cf8783bb8d81aae2b460d16223d62253c3b1571b4b051c8d3593b8be2b466bc7",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "55d355e64bdc2d962f8b4569": {
+    "root": {
+      "file": "CAB-9f228027bfb8186e12291472631d296b",
+      "id": 2064666538727179799,
+      "path": "reciever_ar15_colt_m4a1_std",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": -1301576112102636009
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": -5165220658940213737
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -3758441345866660329
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": -1301576112102636009,
+      "file": "CAB-9f228027bfb8186e12291472631d296b",
+      "type": "GameObject",
+      "name": "reciever_ar15_colt_m4a1_std",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 2064666538727179799
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -8245369239415683561
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 3019842733117474327
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "reciever_ar15_colt_m4a1_std",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-9f228027bfb8186e12291472631d296b",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": 3019842733117474327,
+          "file": "CAB-9f228027bfb8186e12291472631d296b",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -1301576112102636009
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": 0.012250218540430069,
+              "y": 0.023907499387860298,
+              "z": -0.08673889935016632
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": -0.1446000039577484,
+                "y": -0.04919999837875366,
+                "z": -0.03880000114440918
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.0,
+                "y": 0.8433914184570312,
+                "z": 0.0,
+                "w": -0.537299633026123
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "06bfd79c90a0199c97db21da": "a787de5e59c4b8cce699b98a7f25c6497143cb72bf2ac4f089c141be1fc1487f",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "55d3632e4bdc2d972f8b4569": {
+    "root": {
+      "file": "CAB-3e2efd5ad5c30fda95444fd37bbdb54a",
+      "id": 1385085254057618800,
+      "path": "barrel_ar15_370mm",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 8863203473668271472
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": -485583699096933008
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -6211570104266298000
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -6344153411480097424
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -5653401067754328720
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7755011858082655600
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 1505123391462927728
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2672323002738765168
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": 8863203473668271472,
+      "file": "CAB-3e2efd5ad5c30fda95444fd37bbdb54a",
+      "type": "GameObject",
+      "name": "barrel_ar15_370mm",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 1385085254057618800
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -6540807659993666192
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 8981398426773253488
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "barrel_ar15_370mm",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-3e2efd5ad5c30fda95444fd37bbdb54a",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": 8981398426773253488,
+          "file": "CAB-3e2efd5ad5c30fda95444fd37bbdb54a",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 8863203473668271472
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": 6.05359673500061e-08,
+              "y": 0.0033659320324659348,
+              "z": 0.16391582787036896
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": -0.30748000741004944,
+                "y": -0.007000000216066837,
+                "z": 5.169900063606292e-08
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.0,
+                "y": 0.8433914184570312,
+                "z": 0.0,
+                "w": -0.537299633026123
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "fb30368f7b3664254c823ccb": "c24fc438deb4fca234e0989c843519d72ea561317d6e8e66eda9e957c52ae65a",
+      "6522441ee460e21e6e1b23ef": "969e34e39ef15189333c1acfc09e1e80a46038e7c406b1f911023ec3e42bae68",
+      "a0aea463ab9034d14f74a3ff": "2546d75294dd2bc9ce62902cf19b5f8c55b1a0ac81828021428a638219006775",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "544a38634bdc2d58388b4568": {
+    "root": {
+      "file": "CAB-4415f222ee9e322ec39272c38870bf1a",
+      "id": 6371538988330755345,
+      "path": "muzzle_ar15_colt_usgi_a2_556x45",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": -8332518201895312111
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 3239184534557992209
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 3102448034218550545
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -8820490028652190447
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -6283657264412121839
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2128030589989070097
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -5339970930918316783
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2108644289613702417
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -3281442753032051439
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -7262831026646506223
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -7304095811388660463
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": -8332518201895312111,
+      "file": "CAB-4415f222ee9e322ec39272c38870bf1a",
+      "type": "GameObject",
+      "name": "muzzle_ar15_colt_usgi_a2_556x45",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 6371538988330755345
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -1106833335583202031
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 6695230631462216977
+            }
+          }
+        ],
+        "m_Layer": 8,
+        "m_Name": "muzzle_ar15_colt_usgi_a2_556x45",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-4415f222ee9e322ec39272c38870bf1a",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": 6695230631462216977,
+          "file": "CAB-4415f222ee9e322ec39272c38870bf1a",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -8332518201895312111
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": -3.390014171600342e-07,
+              "y": 4.591420292854309e-07,
+              "z": 0.022127004340291023
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 2.0,
+              "y": 2.0,
+              "z": 2.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": -0.1580229550600052,
+                "y": 0.7950232625007629,
+                "z": -0.3238368630409241,
+                "w": -0.48795127868652344
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "e6ec7c5619bf9cd50f382151": "144c7814c50753ce59eef60767b473a08ba67e9a8816312548b08adb9e3012ab",
+      "a0aea463ab9034d14f74a3ff": "2546d75294dd2bc9ce62902cf19b5f8c55b1a0ac81828021428a638219006775",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "5ae30e795acfc408fb139a0b": {
+    "root": {
+      "file": "CAB-07906c10dd040df810d2aa50a8831adf",
+      "id": -7299837499288749139,
+      "path": "gas_block_ar15_colt_m4_front_sight_gas_block_std",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": -4220828718960510035
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": -2495232336272852051
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -6343016725410514003
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 1135474750632590253
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": -4220828718960510035,
+      "file": "CAB-07906c10dd040df810d2aa50a8831adf",
+      "type": "GameObject",
+      "name": "gas_block_ar15_colt_m4_front_sight_gas_block_std",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -7299837499288749139
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -7205321972962329683
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 9177178260436646829
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "gas_block_ar15_colt_m4_front_sight_gas_block_std",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-07906c10dd040df810d2aa50a8831adf",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": 9177178260436646829,
+          "file": "CAB-07906c10dd040df810d2aa50a8831adf",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -4220828718960510035
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": 4.460662603378296e-05,
+              "y": 0.018131915479898453,
+              "z": 0.020786525681614876
+            },
+            "pivotRotation": {
+              "x": 0.1530459225177765,
+              "y": 0.6903455257415771,
+              "z": -0.1530459225177765,
+              "w": 0.6903455257415771
+            },
+            "scale": {
+              "x": 2.0,
+              "y": 2.0,
+              "z": 2.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.0,
+                "y": 0.8433914184570312,
+                "z": 0.0,
+                "w": -0.537299633026123
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "03d53b50229e0432fc15c3a0": "2928b19537b1850d629082187e6b14591af149d6a972cc440f1737b3d25ee7fc",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "5ae30db85acfc408fb139a05": {
+    "root": {
+      "file": "CAB-ab49f915aa0c5647de4cf0caaf3fb6c9",
+      "id": 238804987716353828,
+      "path": "handguard_ar15_colt_m4_length_std",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": -4674599794457460956
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": -7600399901260005596
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -3458271823242215644
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 3716207966467899172
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -902708865907769564
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -6621896651322573020
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 1912551941612748580
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 4528051347572768548
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": -4674599794457460956,
+      "file": "CAB-ab49f915aa0c5647de4cf0caaf3fb6c9",
+      "type": "GameObject",
+      "name": "handguard_ar15_colt_m4_length_std",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 238804987716353828
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 5278593475192602404
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -1547195648499335388
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "handguard_ar15_colt_m4_length_std",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-ab49f915aa0c5647de4cf0caaf3fb6c9",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": -1547195648499335388,
+          "file": "CAB-ab49f915aa0c5647de4cf0caaf3fb6c9",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -4674599794457460956
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": -2.4219974875450134e-05,
+              "y": 0.0021338611841201782,
+              "z": 0.0950116440653801
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": 0.25999999046325684,
+                "y": 0.003946700133383274,
+                "z": 0.17000000178813934
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.0,
+                "y": 0.8433914184570312,
+                "z": 0.0,
+                "w": -0.537299633026123
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "4d6d7a484ac537d3898ceb97": "0cd0f16ddf2b2c764fd782757d59ec5d59026de2d78abff1bd666b56c5fdcccb",
+      "f046ad9fef65cd0358d864b4": "6714f179b66e5db7bd6ac28721c3e6238213db672623717c6fb18049f21ae7f7",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "637f57a68d137b27f70c4968": {
+    "root": {
+      "file": "CAB-a8a1596d2dfeecbc48d1a09eace65ea9",
+      "id": -5227815775374095474,
+      "path": "handguard_ar15_colt_m4_length_std_lower",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 1457987166469016462
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1842027591346080654
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -4326503999426999410
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -177797596359963762
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2261289292374264718
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": 1457987166469016462,
+      "file": "CAB-a8a1596d2dfeecbc48d1a09eace65ea9",
+      "type": "GameObject",
+      "name": "handguard_ar15_colt_m4_length_std_lower",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -5227815775374095474
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 8276777115465075598
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 5728397233947069326
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "handguard_ar15_colt_m4_length_std_lower",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-a8a1596d2dfeecbc48d1a09eace65ea9",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": 5728397233947069326,
+          "file": "CAB-a8a1596d2dfeecbc48d1a09eace65ea9",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 1457987166469016462
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": -2.4225562810897827e-05,
+              "y": -0.016628891229629517,
+              "z": 0.08546371012926102
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": 0.25999999046325684,
+                "y": 0.003946700133383274,
+                "z": 0.17000000178813934
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.0,
+                "y": 0.8433914184570312,
+                "z": 0.0,
+                "w": -0.537299633026123
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "362ddac6e8acadff82a55efb": "545c084d9716b8eeeea2ca3aed830de31a4f09be71e4ec3602ebb12b8605d0aa",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "5ae30bad5acfc400185c2dc4": {
+    "root": {
+      "file": "CAB-b4762be52f4de90bfb3594ef240afb3e",
+      "id": 7925830137286208089,
+      "path": "sight_rear_ar15_colt_carry_hande_std",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": -7712411727904200103
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 1223799034078210649
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 761699964020173401
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 4617332145573964377
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 8978639613961677401
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -2271139195979257255
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": -7712411727904200103,
+      "file": "CAB-b4762be52f4de90bfb3594ef240afb3e",
+      "type": "GameObject",
+      "name": "sight_rear_ar15_colt_carry_hande_std",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 7925830137286208089
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 1129021497042971225
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -3572047954654614951
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "sight_rear_ar15_colt_carry_hande_std",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-b4762be52f4de90bfb3594ef240afb3e",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": -3572047954654614951,
+          "file": "CAB-b4762be52f4de90bfb3594ef240afb3e",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -7712411727904200103
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": -0.004961356520652771,
+              "y": 0.01539823692291975,
+              "z": 0.03691694512963295
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 2.0,
+              "y": 2.0,
+              "z": 2.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.017797352746129036,
+                "y": 0.8103805184364319,
+                "z": -0.4217725992202759,
+                "w": -0.4062937796115875
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "02c99f2a9adf1dabd038177b": "1bd582827fa36d927676eca6beefea3a78ca0d436b63ef59f4845425dbd72181",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "5649be884bdc2d79388b4577": {
+    "root": {
+      "file": "CAB-71c23cc7fdf3e23293ad7320c09194c9",
+      "id": -3277877520830723607,
+      "path": "stock_ar15_colt_stock_tube_std",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 1338477065287469545
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": -5695189914847442455
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -4805739077287835159
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 4128925694199957993
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -7933600198362822167
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 9067791658745891305
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -6006182319533159959
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 2018449597732653545
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": 1338477065287469545,
+      "file": "CAB-71c23cc7fdf3e23293ad7320c09194c9",
+      "type": "GameObject",
+      "name": "stock_ar15_colt_stock_tube_std",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -3277877520830723607
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -8182675795896268311
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 8248610213302667753
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "stock_ar15_colt_stock_tube_std",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-71c23cc7fdf3e23293ad7320c09194c9",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": 8248610213302667753,
+          "file": "CAB-71c23cc7fdf3e23293ad7320c09194c9",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 1338477065287469545
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": -4.973262548446655e-07,
+              "y": -0.002615980803966522,
+              "z": -0.08482815325260162
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": -0.14399999380111694,
+                "y": 0.007000000216066837,
+                "z": -0.03799999877810478
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.0,
+                "y": 0.8433914184570312,
+                "z": 0.0,
+                "w": -0.537299633026123
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "601eda8c508e2472f41af528": "7d2d613127d79f8797995f89723d453bdf3ddc2a39ffb2e118917260b61f54ae",
+      "bd8001163826dbd3497962b4": "a0cc0bd03957873bf359c839283c7f105e2d2f5640a4b75bbde96ae831f09ab5",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "55d4ae6c4bdc2d8b2f8b456e": {
+    "root": {
+      "file": "CAB-e38d7828a63def675b4b7e4778dd999c",
+      "id": 8831501490816746699,
+      "path": "stock_ar15_high_standart_m4ss",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": -927820492593036085
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 5710017480691287243
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": 7540253162773808331
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": -927820492593036085,
+      "file": "CAB-e38d7828a63def675b4b7e4778dd999c",
+      "type": "GameObject",
+      "name": "stock_ar15_high_standart_m4ss",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 8831501490816746699
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -8231988146649430837
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 6304099539625903307
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "stock_ar15_high_standart_m4ss",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-e38d7828a63def675b4b7e4778dd999c",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": 6304099539625903307,
+          "file": "CAB-e38d7828a63def675b4b7e4778dd999c",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": -927820492593036085
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": -0.00016547366976737976,
+              "y": -0.022911183536052704,
+              "z": -0.028042614459991455
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": -0.026000000536441803,
+                "y": 0.024000000208616257,
+                "z": -0.13099999725818634
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.0,
+                "y": 0.8433914184570312,
+                "z": 0.0,
+                "w": -0.537299633026123
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "debc0d602c487e7e51a9a173": "b8c89ab0eb513eb7633cc443c96562f0269c4cd62c6b930981e40aaf2ccbc201",
+      "bd8001163826dbd3497962b4": "a0cc0bd03957873bf359c839283c7f105e2d2f5640a4b75bbde96ae831f09ab5",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  },
+  "55d44fd14bdc2d962f8b456e": {
+    "root": {
+      "file": "CAB-1db711d5fdf2ac9a49800a60f08b28d9",
+      "id": -4812378281377477088,
+      "path": "charge_ar15_colt_charging_handle",
+      "local": {
+        "m_GameObject": {
+          "m_FileID": 0,
+          "m_PathID": 4643892718703398432
+        },
+        "m_LocalRotation": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0,
+          "w": 1.0
+        },
+        "m_LocalPosition": {
+          "x": 0.0,
+          "y": 0.0,
+          "z": 0.0
+        },
+        "m_LocalScale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "m_Children": [
+          {
+            "m_FileID": 0,
+            "m_PathID": 3296016206927154720
+          },
+          {
+            "m_FileID": 0,
+            "m_PathID": -695035753572348384
+          }
+        ],
+        "m_Father": {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      },
+      "rootMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    "gameObject": {
+      "id": 4643892718703398432,
+      "file": "CAB-1db711d5fdf2ac9a49800a60f08b28d9",
+      "type": "GameObject",
+      "name": "charge_ar15_colt_charging_handle",
+      "data": {
+        "m_Component": [
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": -4812378281377477088
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 7246674554781093408
+            }
+          },
+          {
+            "component": {
+              "m_FileID": 0,
+              "m_PathID": 7855902050566983200
+            }
+          }
+        ],
+        "m_Layer": 0,
+        "m_Name": "charge_ar15_colt_charging_handle",
+        "m_Tag": 0,
+        "m_IsActive": true
+      }
+    },
+    "components": [
+      {
+        "script": {
+          "id": -4922001045810101060,
+          "file": "CAB-1db711d5fdf2ac9a49800a60f08b28d9",
+          "type": "MonoScript",
+          "name": "PreviewPivot",
+          "data": {
+            "m_Name": "PreviewPivot",
+            "m_ExecutionOrder": 0,
+            "m_PropertiesHash": {
+              "bytes[0]": 217,
+              "bytes[1]": 243,
+              "bytes[2]": 185,
+              "bytes[3]": 115,
+              "bytes[4]": 152,
+              "bytes[5]": 179,
+              "bytes[6]": 18,
+              "bytes[7]": 238,
+              "bytes[8]": 53,
+              "bytes[9]": 67,
+              "bytes[10]": 168,
+              "bytes[11]": 79,
+              "bytes[12]": 21,
+              "bytes[13]": 113,
+              "bytes[14]": 134,
+              "bytes[15]": 49
+            },
+            "m_ClassName": "PreviewPivot",
+            "m_Namespace": "",
+            "m_AssemblyName": "Assembly-CSharp"
+          }
+        },
+        "object": {
+          "id": 7855902050566983200,
+          "file": "CAB-1db711d5fdf2ac9a49800a60f08b28d9",
+          "type": "MonoBehaviour",
+          "name": "",
+          "data": {
+            "m_GameObject": {
+              "m_FileID": 0,
+              "m_PathID": 4643892718703398432
+            },
+            "m_Enabled": 1,
+            "m_Script": {
+              "m_FileID": 0,
+              "m_PathID": -4922001045810101060
+            },
+            "m_Name": "",
+            "pivotPosition": {
+              "x": -0.0005008801817893982,
+              "y": 1.0244548320770264e-08,
+              "z": 0.08504117280244827
+            },
+            "pivotRotation": {
+              "x": 0.0,
+              "y": 0.7071068286895752,
+              "z": 0.0,
+              "w": 0.7071068286895752
+            },
+            "scale": {
+              "x": 1.0,
+              "y": 1.0,
+              "z": 1.0
+            },
+            "SpawnPosition": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "Icon": {
+              "position": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+              },
+              "hasOffset": 0,
+              "rotation": {
+                "x": 0.03820839896798134,
+                "y": 0.8049585223197937,
+                "z": -0.45708441734313965,
+                "w": -0.3763718605041504
+              },
+              "boundsScale": 0.8999999761581421,
+              "perspective": 15.0,
+              "orthographic": 0,
+              "orthographicSize": 10.0,
+              "overrideIcon": {
+                "m_FileID": 0,
+                "m_PathID": 0
+              }
+            }
+          }
+        }
+      }
+    ],
+    "bundleObjectHashes": {
+      "c6ac8c7dc10894d0ec8fa42d": "21de2800ee75e68cd90ec8b355a7f0e52489060adf77a643d4eb40277003b242",
+      "9adb4643d6fb94093b85aa4b": "81aeb0552e54b6f2bb8e14dbd9e2657030d246e8078cb38ea9117a242649f8a5",
+      "e149662288983c96416aadf3": "664b47a12c1fa2c58b0e827dcf5fe6be34dcb8dbe2342759ae30b1320c77a37d",
+      "36883a3cc77f094d2072fef9": "0327067ceda871de023d2cfa4c2a11069fd0523932a88983ae8dce47153d81a8",
+      "5633ec1248b17cf4f30b1394": "d4c6829d286549e24048fe87f005a78506efa624da46357985b7d783a2b47b81",
+      "253e7f466432e582a596f405": "e9a559f9c4e5c9a6e1ee14b97a10ced57122f04d0b3c769e7650b2f72097506b",
+      "7356df972fea473c6f8892af": "76ff98a18b5559819b87e264e41c0b4d3f25378457516bad9d3e01b250fd1f3a"
+    }
+  }
+}

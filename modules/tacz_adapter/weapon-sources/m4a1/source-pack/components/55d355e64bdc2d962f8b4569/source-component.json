@@ -1,0 +1,72 @@
+{
+  "item_id": "55d355e64bdc2d962f8b4569",
+  "name_zh": "柯尔特M4A1 5.56x45突击步枪上机匣",
+  "name_en": "M4A1 5.56x45 upper receiver",
+  "source_version": "5.0",
+  "source_catalog_key": "55d355e64bdc2d962f8b4569",
+  "source_snapshot": "source-index.json",
+  "source_root": "reciever_ar15_colt_m4a1_std",
+  "local_to_source_baked": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "coordinate_space": "manuscript and product use component-local vertices; local_to_source_baked restores source BB coordinates; input remains source-baked",
+  "source_files_sha256": {
+    "component.bbmodel": "2714eae6c341523373f94d1cab8ec5a44c7ec7ca74ab16c1f72205fc08f9fb5c",
+    "bindings.json": "3818cfba876683687257628c92966a11646721100388b8017fe58a674a92bd8b",
+    "nodes.json": "c16124179d7e1a76a9712704786a9758cdc6d2b029ec46770ba2a98e5e5f2751",
+    "status.json": "41f0e041e0f1d33c1bedc500fab53c6936c312bc1b02da23f65c0639a1f0b4d3"
+  },
+  "output_files_sha256": {
+    "manuscript_main": "e524c712ae70f3059cdcb5dac4bde599052f9176e358c6449c15acb7ceab6a71",
+    "product_model": "96ff523afa03066d9a7d075abf8c93da4663257da0d668582771f0faffe0a9e9"
+  },
+  "source_batch": "bulk-white-20260914",
+  "status": "awaiting-consumption",
+  "mod_status": "not-integrated",
+  "visual_validation": "not-validated",
+  "native_validation": "not-validated",
+  "material_status": "white-no-original-textures",
+  "source_evidence": "source-evidence.json",
+  "source_index_key": "55d355e64bdc2d962f8b4569",
+  "validation": {
+    "manuscript_vertex_max_error": 0.0,
+    "product_vertex_max_error": 0.0,
+    "tolerance": 1e-07,
+    "stage_specific_note": "automated geometry preservation only; not Mod integration, native-load, visual, or user acceptance"
+  },
+  "asset_kind": "product",
+  "model": "model.bbmodel",
+  "source_copy": "../../原稿/55d355e64bdc2d962f8b4569/input",
+  "source_copy_files": [
+    "component.bbmodel",
+    "bindings.json",
+    "nodes.json",
+    "status.json"
+  ],
+  "source_index": "../../../../../tarkov-resource-library/indexes/5.0/catalog.json",
+  "source_manuscript": "../../原稿/55d355e64bdc2d962f8b4569",
+  "source_product": "."
+}

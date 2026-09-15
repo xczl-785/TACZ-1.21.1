@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "source": "modules/tacz_adapter/weapon-sources/radian",
+  "rootAnchor": [
+    -13.27,
+    -5.8,
+    30
+  ],
+  "uvResolution": [
+    1024,
+    1024
+  ],
+  "materialSeed": 14092026,
+  "capacity": 30,
+  "fireModes": [
+    "semi",
+    "auto"
+  ],
+  "rpm": 800,
+  "footprint": [
+    5,
+    2
+  ],
+  "boneParts": {
+    "magazine": [
+      "5aaa5dfee5b5b000140293d3"
+    ],
+    "charge": [
+      "6895bf08e2d16810ba0bf43e"
+    ]
+  },
+  "muzzlePosition": [
+    0,
+    8,
+    -20.3756
+  ],
+  "identityTags": {
+    "6895bb82c4519957df062f82": "weapon/firearm/assault_rifle",
+    "55802f5d4bdc2dac148b458f": "weapon_mod/pistol_grip",
+    "5aaa5dfee5b5b000140293d3": "weapon_mod/magazine",
+    "6895becad55f0ebf6a0c0311": "weapon_mod/receiver",
+    "63d3d44a2a49307baf09386d": "weapon_mod/barrel",
+    "6405ff6bd4578826ec3e377a": "weapon_mod/muzzle/brake",
+    "56eabcd4d2720b66698b4574": "weapon_mod/gas_block",
+    "6895bd19d55f0ebf6a0c0306": "weapon_mod/handguard",
+    "5bc09a30d4351e00367fb7c8": "weapon_mod/sight/iron",
+    "5bc09a18d4351e003562b68e": "weapon_mod/sight/iron",
+    "5c793fb92e221644f31bfb64": "weapon_mod/stock",
+    "56eabf3bd2720b75698b4569": "weapon_mod/stock",
+    "6895bf08e2d16810ba0bf43e": "weapon_mod/charging_handle"
+  },
+  "regionRules": {
+    "56eabf3bd2720b75698b4569": [
+      {
+        "name": "rubber_butt_pad",
+        "min": [
+          -100,
+          -100,
+          -100
+        ],
+        "max": [
+          100,
+          100,
+          3.9
+        ]
+      }
+    ],
+    "5aaa5dfee5b5b000140293d3": [
+      {
+        "name": "magazine_floorplate",
+        "min": [
+          -100,
+          -100,
+          -100
+        ],
+        "max": [
+          100,
+          -23,
+          100
+        ]
+      }
+    ]
+  },
+  "converter": "matrix-components"
+}

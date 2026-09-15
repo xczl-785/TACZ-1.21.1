@@ -1,0 +1,6 @@
+{
+  "newmod_adar.workbench.title": "Physical assembly",
+  "newmod_adar.workbench.unavailable": "Hold an idle ADAR with a valid inventory lease to modify it.",
+  "newmod_adar.workbench.committed": "Assembly updated.",
+  "newmod_adar.workbench.rejected": "Not committed: inventory, gun state or receiving space changed."
+}

@@ -22,6 +22,8 @@ public class LocalPlayerAim {
     }
 
     public void aim(boolean isAim) {
+        if (isAim && dev.tacticaltacz.GunAdoption.contains(player.getMainHandItem()) && dev.tacticalinventory.api.ClientCharacterDisplay.resources().map(r -> !r.canAim()).orElse(false)) return;
+
         // 暂定为主手
         ItemStack mainHandItem = player.getMainHandItem();
         if (!(mainHandItem.getItem() instanceof IGun iGun)) {

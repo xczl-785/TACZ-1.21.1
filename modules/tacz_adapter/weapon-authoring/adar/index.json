@@ -1,0 +1,8 @@
+{
+  "name": "gun.newmod_adar.adar",
+  "display": "newmod_adar:adar",
+  "data": "newmod_adar:adar",
+  "type": "rifle",
+  "item_type": "newmod_adar",
+  "sort": 100
+}

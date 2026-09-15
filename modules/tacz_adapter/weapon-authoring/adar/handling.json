@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "idleView": [
+    3.25,
+    12.5,
+    8.5
+  ],
+  "fallbackView": [
+    1.6,
+    11.5,
+    11
+  ],
+  "leftHand": {
+    "rotation": [
+      97,
+      -29,
+      -147
+    ],
+    "scale": [
+      1,
+      1.5,
+      1
+    ],
+    "palm": [
+      6,
+      10,
+      -2
+    ]
+  },
+  "rightHand": {
+    "rotation": [
+      96,
+      9,
+      -179
+    ],
+    "scale": [
+      1,
+      1.5,
+      1
+    ],
+    "palm": [
+      -6,
+      10,
+      -2
+    ]
+  },
+  "recoil": {
+    "referenceVertical": 79.68,
+    "referenceHorizontal": 228.416,
+    "pitchScale": 1,
+    "yawScale": 1,
+    "springFrequency": 18,
+    "maxDisplacement": 2,
+    "visualKick": 0.65,
+    "visualPitch": 1.2,
+    "adsMotion": 0.15
+  }
+}

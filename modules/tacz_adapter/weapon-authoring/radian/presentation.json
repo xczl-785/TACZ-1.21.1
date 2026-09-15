@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "idleView": [
+    3,
+    12,
+    7
+  ],
+  "aimView": [
+    0,
+    10.4,
+    3.0
+  ],
+  "aimModelFov": 55,
+  "leftHand": {
+    "pivot": [
+      -0.3,
+      6.8,
+      -8.2
+    ],
+    "rendererPivot": [
+      5.7,
+      -3.2,
+      -8.2
+    ],
+    "rotation": [
+      75,
+      30,
+      15
+    ]
+  },
+  "rightHand": {
+    "pivot": [
+      -5,
+      5,
+      13
+    ],
+    "rendererPivot": [
+      -5,
+      5,
+      13
+    ],
+    "rotation": [
+      90,
+      0,
+      0
+    ]
+  }
+}

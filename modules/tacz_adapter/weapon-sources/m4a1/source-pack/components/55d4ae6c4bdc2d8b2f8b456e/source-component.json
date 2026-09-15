@@ -1,0 +1,72 @@
+{
+  "item_id": "55d4ae6c4bdc2d8b2f8b456e",
+  "name_zh": "High Standard M4SS AR-15 枪托",
+  "name_en": "AR-15 High Standard M4SS Stock",
+  "source_version": "5.0",
+  "source_catalog_key": "55d4ae6c4bdc2d8b2f8b456e",
+  "source_snapshot": "source-index.json",
+  "source_root": "stock_ar15_high_standart_m4ss",
+  "local_to_source_baked": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "coordinate_space": "manuscript and product use component-local vertices; local_to_source_baked restores source BB coordinates; input remains source-baked",
+  "source_files_sha256": {
+    "component.bbmodel": "0961fd31e166640b0c41ab6fe5cd469ab3e74d689f159f8cf8c96cc5d7baca89",
+    "bindings.json": "f50e33d6700cec1589517d84181b94b5d4a606869d96b844a3ecf32f7ed114d5",
+    "nodes.json": "8c6616f7016af4cd13fb38dae2845fbe240b740c0be90d02d0580531cd81d14d",
+    "status.json": "3f39d4ebe8cfc11d95d140316b3ca3659425e8cdeafbcc1338838f3813faccba"
+  },
+  "output_files_sha256": {
+    "manuscript_main": "e76cf36d253cab264284df3746fecee1a1dee5983e65e5316b2b165e5872f5c0",
+    "product_model": "9d32813d04df18cd377f69914001e6a6ad479649ee875bf553c79803e61ef6c7"
+  },
+  "source_batch": "bulk-white-20260914",
+  "status": "awaiting-consumption",
+  "mod_status": "not-integrated",
+  "visual_validation": "not-validated",
+  "native_validation": "not-validated",
+  "material_status": "white-no-original-textures",
+  "source_evidence": "source-evidence.json",
+  "source_index_key": "55d4ae6c4bdc2d8b2f8b456e",
+  "validation": {
+    "manuscript_vertex_max_error": 0.0,
+    "product_vertex_max_error": 0.0,
+    "tolerance": 1e-07,
+    "stage_specific_note": "automated geometry preservation only; not Mod integration, native-load, visual, or user acceptance"
+  },
+  "asset_kind": "product",
+  "model": "model.bbmodel",
+  "source_copy": "../../原稿/55d4ae6c4bdc2d8b2f8b456e/input",
+  "source_copy_files": [
+    "component.bbmodel",
+    "bindings.json",
+    "nodes.json",
+    "status.json"
+  ],
+  "source_index": "../../../../../tarkov-resource-library/indexes/5.0/catalog.json",
+  "source_manuscript": "../../原稿/55d4ae6c4bdc2d8b2f8b456e",
+  "source_product": "."
+}

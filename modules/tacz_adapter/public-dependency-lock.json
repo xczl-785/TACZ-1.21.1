@@ -1,0 +1,43 @@
+{
+  "source_repository": "NewMod",
+  "source_commit": "3ef90e9f79c3544b5c2b5b5a8b863df66797c11f",
+  "scope": "External compilation dependencies, never bundled in TaCZ; development artifacts only support compilation of opt-in acceptance tools",
+  "artifacts": [
+    {
+      "module": "tactical",
+      "artifact": "vendor/newmod/tactical_inventory-3ef90e9.jar",
+      "sha512": "31f999b696775234ae07e2732747bff692a339b68d93e6e74d6331164272b7dcca514b437d699e3f8a8f7c392567983468f27aec7730b4c0b04b99afa9f228b6",
+      "scope": "main"
+    },
+    {
+      "module": "character",
+      "artifact": "vendor/newmod/tactical_character-3ef90e9.jar",
+      "sha512": "077338761db67fa9e607b7554e2e12e6c7cca03e7865e1b116691bb279ba62f45520fd51a396a0c5be0c819a69d06b5df5ceb53d6ad372785d2d20f9fb047cc5",
+      "scope": "main"
+    },
+    {
+      "module": "combat",
+      "artifact": "vendor/newmod/tactical_combat-3ef90e9.jar",
+      "sha512": "2fb2d92dd123ae28d8eae2ff1b9084617a6b84f100f7a8dd9fb08946dc4fe431c39e265f5ab2c3a69dba8a354a26441438188a11be5d65fbd9b0d7f24c6cd547",
+      "scope": "main"
+    },
+    {
+      "module": "tarkov_content",
+      "artifact": "vendor/newmod/tarkov_content-3ef90e9.jar",
+      "sha512": "f61ca330d8483ddc16047fb3bd0d35e912a834d365baf09f76a926d03dd98d3228081e78ec1d8b0f2ab98752946fc2ef6ffbaa11990430b9c212f5392e8948ec",
+      "scope": "development"
+    },
+    {
+      "module": "tactical development API",
+      "artifact": "vendor/newmod/tactical-development-3ef90e9.jar",
+      "sha512": "aec8ab11288bd08f11bde7fe9c6a9813a696f9487c76d37dbd53b61a2d7a345cae4a03b1cc63b43240720d53aafb3e805f3dfb52474d350ea1292a55a2c93d8f",
+      "scope": "development"
+    },
+    {
+      "module": "tarkov_content development API",
+      "artifact": "vendor/newmod/tarkov_content-development-3ef90e9.jar",
+      "sha512": "0f05cb6bdb578749d3001390f016173e21f2c60152d7349a4b6172e2cd738f1cf2df48db2122cddc012e7ebacd25e28320eb846a7418eb8c8ae1dc558938117c",
+      "scope": "development"
+    }
+  ]
+}

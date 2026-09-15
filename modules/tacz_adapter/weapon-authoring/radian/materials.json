@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "defaultMaterial": "anodized_graphite",
+  "parts": {
+    "6895bb82c4519957df062f82": {
+      "defaultMaterial": "anodized_graphite",
+      "regions": {
+        "radian_selector_ar15_radian_talon_fa_LOD0": "anodized_charcoal",
+        "radian_bolt_catch_001_LOD0": "anodized_charcoal",
+        "radian_hammer_LOD0": "machined_steel",
+        "radian_bolt_catch_000_LOD0": "anodized_charcoal",
+        "bolt_carrier_ar15_radian_enchanced_bcg_LOD0": "machined_steel",
+        "weapon_radian_model_1_fa_endplate_LOD0": "anodized_charcoal",
+        "radian_mag_release_LOD0": "anodized_charcoal",
+        "radian_trigger_LOD0": "machined_steel",
+        "radian_mag_release_button_LOD0": "anodized_charcoal",
+        "radian_internals_LOD0": "machined_steel"
+      }
+    },
+    "55802f5d4bdc2dac148b458f": {
+      "defaultMaterial": "polymer_black",
+      "regions": {}
+    },
+    "5aaa5dfee5b5b000140293d3": {
+      "defaultMaterial": "polymer_black",
+      "regions": {
+        "magazine_floorplate": "anodized_charcoal"
+      }
+    },
+    "6895becad55f0ebf6a0c0311": {
+      "defaultMaterial": "anodized_graphite",
+      "regions": {}
+    },
+    "63d3d44a2a49307baf09386d": {
+      "defaultMaterial": "phosphate_steel",
+      "regions": {}
+    },
+    "6405ff6bd4578826ec3e377a": {
+      "defaultMaterial": "machined_steel",
+      "regions": {}
+    },
+    "56eabcd4d2720b66698b4574": {
+      "defaultMaterial": "phosphate_steel",
+      "regions": {}
+    },
+    "6895bd19d55f0ebf6a0c0306": {
+      "defaultMaterial": "anodized_graphite",
+      "regions": {}
+    },
+    "5bc09a30d4351e00367fb7c8": {
+      "defaultMaterial": "polymer_black",
+      "regions": {}
+    },
+    "5bc09a18d4351e003562b68e": {
+      "defaultMaterial": "polymer_black",
+      "regions": {}
+    },
+    "5c793fb92e221644f31bfb64": {
+      "defaultMaterial": "anodized_charcoal",
+      "regions": {}
+    },
+    "56eabf3bd2720b75698b4569": {
+      "defaultMaterial": "polymer_black",
+      "regions": {
+        "rubber_butt_pad": "rubber_black"
+      }
+    },
+    "6895bf08e2d16810ba0bf43e": {
+      "defaultMaterial": "anodized_charcoal",
+      "regions": {}
+    }
+  }
+}

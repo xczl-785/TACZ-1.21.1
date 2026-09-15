@@ -1,0 +1,80 @@
+{
+  "baseline": "588db63a22279cb1b766cc8bbf6092295f0f618b",
+  "files": [
+    {
+      "path": "src/main/java/com/tacz/guns/GunMod.java",
+      "before_sha256": "e1b517a285d783157af280528aacf1f3da563c3edb58b31000851c18b17bf16e",
+      "after_sha256": "89cb1bcf37c9634ce816755bbaf8fa5d551f6f0220f2ef690f6403bf93382c79"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/ammunition/TarkovAmmoItem.java",
+      "before_sha256": "0dab77bcddab8bffdfb58f8a9ba68b88673917e297d1a91509a8a5e4c4e886b9",
+      "after_sha256": "14b98d931e7f189490728789d965f13e8f8885c6655a97e44e329cc99f30d836"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/api/item/gun/AbstractGunItem.java",
+      "before_sha256": "b7dd407d5528aa8bc0679b01ba51bc1b9f4b7cb2997281786f32d35871322c61",
+      "after_sha256": "bf1930094dde97aab4f789488f5e1cf09ede373e007166df8c6a46e20458657e"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/event/CameraSetupEvent.java",
+      "before_sha256": "884ce8e33cdf1e37e91160390a032b0749f983fc241d896a91e236343508a2c0",
+      "after_sha256": "2606127ae21d71aec1cce37ed16e99e51dbad2dc60fab4e9933666f184d00c13"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/event/FirstPersonRenderGunEvent.java",
+      "before_sha256": "c1527d1e68ebe0f0ee5887c1646224d9f9d7e13bf82b25ab9208ed03b5143398",
+      "after_sha256": "889d0f5f3400f5219a06a47c46e58a06b38c0cfbe98249e46eaf77c52df3fd4f"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gameplay/LocalPlayerAim.java",
+      "before_sha256": "9e12b1260e80b660933604544250beef097dfe187017757def48edc60e9b345a",
+      "after_sha256": "68af3a7fdd7d71fe4381e5996fbdd1471961e4165031d5766e8882336132b1bf"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gameplay/LocalPlayerShoot.java",
+      "before_sha256": "322b3c120b76e08ef15ae65c1db6c646e8256ad85d8c4a615c1a9af9bfd21671",
+      "after_sha256": "9b2815e700d3097f99c229738b8c444f6d9c93dbb68129e1b3074a12b310074e"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gui/overlay/GunHudOverlay.java",
+      "before_sha256": "74ec72564398e181b09e0f6fe558543ec01bf4cc6c839abd36c5e3fd4c1aafdd",
+      "after_sha256": "c52b35d025265f3bffec46f3f16312adae69832d73fc9214d3bcdd211bf96eda"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/entity/EntityKineticBullet.java",
+      "before_sha256": "ee12146e3ecdec1e03d1c44c692985150d1b2715ab5d62297747276da6adcff3",
+      "after_sha256": "046e5f3cdebf18815074d867ea90d51e67e635251b54e45b7c19820073f6d75e"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/entity/shooter/LivingEntityAim.java",
+      "before_sha256": "8be42f6c07838c5e4c605d836b5ae5915cd0f22565953121b61eadeaaa40ebc5",
+      "after_sha256": "7cf11a582d86c5371fbfcd1350fc35f70f0ed6e9f571796ee5ce24a139cec375"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/entity/shooter/LivingEntityShoot.java",
+      "before_sha256": "00a4bbf16e92824f29f505e0aa4e7434b9131caf716fa1fef426adb30cad6e37",
+      "after_sha256": "d9c2f7c015feb7a320d311b76af9e7438f1f533d19680b5c208c4a88ec692892"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/item/ModernKineticGunScriptAPI.java",
+      "before_sha256": "9898e0fd942bad136c2f69ba0b487731b6fe75070730a8d5891e2b315c44be3f",
+      "after_sha256": "5c55de1cd620fb693c463eb29425031d9c28dd0a180bb6dbf3c386bcb263fce4"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/util/EntityUtil.java",
+      "before_sha256": "6942754623b641d7e4b799081a0dbd5ab005e2394c708c254b58a91f3d1d5ec2",
+      "after_sha256": "8a65d35edb0878efd26d0a53c0f8e2dfcb188669428673c31880cda6428f5d2c"
+    },
+    {
+      "path": "src/main/resources/META-INF/neoforge.mods.toml",
+      "before_sha256": "5879886c8fc56677f555902b1e4da2edade6c48a75565a8a48f1edfe55ab473b",
+      "after_sha256": "56b364a26b7a85022ffe791a8659cd56a41b1d2ce839645e7b8a907685bac3fd"
+    },
+    {
+      "path": "src/main/resources/data/minecraft/tags/damage_type/bypasses_armor.json",
+      "before_sha256": "b98a4bb6085c9f291b94fa0fb6a6f93c6b6f0b76788c8db91d5abaa2aa3af56e",
+      "after_sha256": "0db5e9e56eba7211d4461a099e949b2907958dee1729b95a038b1b6fdac351ff"
+    }
+  ]
+}

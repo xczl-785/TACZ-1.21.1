@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "converter": "legacy-adar",
+  "source": "modules/tacz_adapter/weapon-sources/adar",
+  "items": "modules/tacz_adapter/weapon-sources/adar/items.raw.json",
+  "footprint": [
+    5,
+    2
+  ],
+  "textureCopies": {
+    "newmod_adar:textures/materials/rubber.png": {
+      "path": "assets/weapon_assembly_ui/textures/materials/rubber.png",
+      "sha256": "8d88f614a53c18cd143cbd7521402f54bd8a35f5dbfb5deb64767321670e6348"
+    },
+    "newmod_adar:textures/materials/metal.png": {
+      "path": "assets/weapon_assembly_ui/textures/materials/metal.png",
+      "sha256": "426b07275eda86cbf2c471512d9ffbd767fefb637a7e15cc7391bd521334750b"
+    },
+    "newmod_adar:textures/materials/polymer.png": {
+      "path": "assets/weapon_assembly_ui/textures/materials/polymer.png",
+      "sha256": "4ad2a5fdc3d210b796a015992977341750c04ed3fd32c14aec458822e1450686"
+    },
+    "newmod_adar:textures/materials/wood.png": {
+      "path": "assets/weapon_assembly_ui/textures/materials/wood.png",
+      "sha256": "2fb0dafe9e7b1d9e2e1840f097663a66b3dfb2af446dd657b6a420bc20d953fe"
+    }
+  }
+}

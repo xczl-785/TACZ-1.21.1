@@ -1,4 +1,6 @@
 package com.tacz.guns.client.event;
+import dev.tacticaltacz.assembled.AssemblyGunModel;
+
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
@@ -117,6 +119,8 @@ public class FirstPersonRenderGunEvent {
     }
 
     public static void applyFirstPersonGunTransform(LocalPlayer player, ItemStack gunItemStack, PoseStack poseStack, BedrockGunModel model, float partialTicks) {
+        if (model instanceof AssemblyGunModel gun) gun.preparePresentation(gunItemStack, com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator.fromLocalPlayer(player).getClientAimingProgress(partialTicks));
+
         // 配合运动曲线，计算改装枪口的打开进度
         float refitScreenOpeningProgress = REFIT_OPENING_DYNAMICS.update(RefitTransform.getOpeningProgress());
         // 配合运动曲线，计算瞄准进度
@@ -127,6 +131,7 @@ public class FirstPersonRenderGunEvent {
         applyFirstPersonPositioningTransform(poseStack, model, gunItemStack, aimingProgress, refitScreenOpeningProgress);
         // 应用动画约束变换
         applyAnimationConstraintTransform(poseStack, model, aimingProgress * (1 - refitScreenOpeningProgress));
+            if (model instanceof AssemblyGunModel gun) gun.presentation.applyShot(gun.getRootNode(), com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator.fromLocalPlayer(player).getClientAimingProgress(partialTicks));
     }
 
     private static void applyGunMovements(BedrockGunModel model, float aimingProgress, float partialTicks) {
@@ -236,6 +241,8 @@ public class FirstPersonRenderGunEvent {
     }
 
     private static void applyShootSwayAndRotation(BedrockGunModel model, float aimingProgress) {
+        if (model instanceof AssemblyGunModel) return;
+
         BedrockPart rootNode = model.getRootNode();
         if (rootNode != null) {
             float progress = 1 - (System.currentTimeMillis() - shootTimeStamp) / (SHOOT_ANIMATION_TIME * 1000);

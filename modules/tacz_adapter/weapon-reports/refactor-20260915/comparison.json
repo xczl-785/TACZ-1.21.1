@@ -1,0 +1,14 @@
+{
+  "filesCompared": 175,
+  "semanticDifferences": [],
+  "encodingDifferences": [
+    {
+      "path": "data/newmod_m4a1/m4a1/weapon.json",
+      "kind": "serialization-only"
+    },
+    {
+      "path": "data/tactical_tacz_adapter/assembled_weapons.json",
+      "kind": "serialization-only"
+    }
+  ]
+}

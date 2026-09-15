@@ -1,0 +1,1083 @@
+{
+  "resources": "/private/tmp/newmod-resource-ownership-final/resources",
+  "materialFiles": [
+    "assets/firearm_materials/textures/materials/coated_metal.png",
+    "assets/firearm_materials/textures/materials/polymer.png",
+    "assets/firearm_materials/textures/materials/steel_dark.png",
+    "assets/firearm_materials/textures/materials/steel_light.png",
+    "assets/newmod_adar/textures/materials/metal.png",
+    "assets/newmod_adar/textures/materials/polymer.png",
+    "assets/newmod_adar/textures/materials/rubber.png",
+    "assets/newmod_adar/textures/materials/wood.png",
+    "assets/newmod_radian/textures/materials/anodized_charcoal.png",
+    "assets/newmod_radian/textures/materials/anodized_graphite.png",
+    "assets/newmod_radian/textures/materials/machined_steel.png",
+    "assets/newmod_radian/textures/materials/phosphate_steel.png",
+    "assets/newmod_radian/textures/materials/polymer_black.png",
+    "assets/newmod_radian/textures/materials/rubber_black.png"
+  ],
+  "materialSha256": {
+    "assets/firearm_materials/textures/materials/coated_metal.png": "f79c9ade59279483c5f22453ab99124c3243d58ecdaed4f23731a9b3b1e99567",
+    "assets/firearm_materials/textures/materials/polymer.png": "6b13653b5583229c5ddd2b32dd142974317e061cc087b2d5ff51c5f81ccb6b82",
+    "assets/firearm_materials/textures/materials/steel_dark.png": "8265250a9c9444052ab1de32588fa2bc39936480904d75f98911b8693f8bc9dc",
+    "assets/firearm_materials/textures/materials/steel_light.png": "0f584d9c4f29eafaad77a31dc7d57c419986e9660d611d9f180380c70e16fdca",
+    "assets/newmod_adar/textures/materials/metal.png": "426b07275eda86cbf2c471512d9ffbd767fefb637a7e15cc7391bd521334750b",
+    "assets/newmod_adar/textures/materials/polymer.png": "4ad2a5fdc3d210b796a015992977341750c04ed3fd32c14aec458822e1450686",
+    "assets/newmod_adar/textures/materials/rubber.png": "8d88f614a53c18cd143cbd7521402f54bd8a35f5dbfb5deb64767321670e6348",
+    "assets/newmod_adar/textures/materials/wood.png": "2fb0dafe9e7b1d9e2e1840f097663a66b3dfb2af446dd657b6a420bc20d953fe",
+    "assets/newmod_radian/textures/materials/anodized_charcoal.png": "6f93669b8b79d9bfbf34d0651eced26207d2b5c7df48c774025b3993068f893a",
+    "assets/newmod_radian/textures/materials/anodized_graphite.png": "6e254a14c7c213e37e598b656486eaa1dca1ce1949cb8846dcc9f02522849d4f",
+    "assets/newmod_radian/textures/materials/machined_steel.png": "0859609eceed96b8b79e4ac5bc43dc97209a58f2e38284d27681f8cc0a675456",
+    "assets/newmod_radian/textures/materials/phosphate_steel.png": "98bd4530ead0590dd8c10cb20fe5f16c5d6f7687f26fd7491694a64be01a6332",
+    "assets/newmod_radian/textures/materials/polymer_black.png": "ca46a607ef4082bf7f00bb18e75fcffa8f375dd8942138ed21cfd60e6b512d3d",
+    "assets/newmod_radian/textures/materials/rubber_black.png": "277296b74a40576924e4727c44dadebb0f03496e02d6ba4f31d9fa2d9d215ebe"
+  },
+  "taCZArtifact": "/Users/zhengpanpan/Downloads/tempProgram/NewMod/source/vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.69b1a3af.jar",
+  "taCZSha512": "dcc5d84fccfe929fa4ed7897aee63fb3540ba15f82a42ccf757fcb86703c78b3502664e7268bf9bb3d271e030fe7d8b83e2520d06ddf623edd330fe4669366d2",
+  "dependencyLockSha256": "36f3ebdc3e58be941943c6711d929f9b152c02ab0a7a54c4c280276f5fad8b70",
+  "verifiedTaCZResources": [
+    "assets/tacz/animations/rifle_default.animation.json",
+    "assets/tacz/custom/tacz_default_gun/assets/tacz/tacz_sounds/m4a1/m4a1_draw.ogg",
+    "assets/tacz/custom/tacz_default_gun/assets/tacz/tacz_sounds/m4a1/m4a1_shoot.ogg",
+    "assets/tacz/custom/tacz_default_gun/assets/tacz/tacz_sounds/m4a1/m4a1_shoot_3p.ogg",
+    "assets/tacz/custom/tacz_default_gun/assets/tacz/textures/flash/common_muzzle_flash.png",
+    "assets/tacz/custom/tacz_default_gun/data/tacz/index/ammo/556x45.json"
+  ],
+  "references": [
+    {
+      "reference": "firearm_materials:textures/materials/coated_metal.png",
+      "owner": "weapon-content: shared material namespace",
+      "uses": [
+        "assets/newmod_m4a1/m4a1/library.json/materials/coated_metal_black/texture"
+      ]
+    },
+    {
+      "reference": "firearm_materials:textures/materials/polymer.png",
+      "owner": "weapon-content: shared material namespace",
+      "uses": [
+        "assets/newmod_m4a1/m4a1/library.json/materials/polymer_black/texture"
+      ]
+    },
+    {
+      "reference": "firearm_materials:textures/materials/steel_dark.png",
+      "owner": "weapon-content: shared material namespace",
+      "uses": [
+        "assets/newmod_m4a1/m4a1/library.json/materials/steel_dark/texture"
+      ]
+    },
+    {
+      "reference": "firearm_materials:textures/materials/steel_light.png",
+      "owner": "weapon-content: shared material namespace",
+      "uses": [
+        "assets/newmod_m4a1/m4a1/library.json/materials/steel_light/texture"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon/firearm/assault_rifle",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_adar/item_foundation/identities/adar.json/items/0/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/0/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/0/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/barrel",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_adar/item_foundation/identities/adar.json/items/4/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/4/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/4/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/charging_handle",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_adar/item_foundation/identities/adar.json/items/9/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/12/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/12/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/gas_block",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_adar/item_foundation/identities/adar.json/items/6/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/6/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/6/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/handguard",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_adar/item_foundation/identities/adar.json/items/7/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/7/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/8/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/7/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/magazine",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_adar/item_foundation/identities/adar.json/items/2/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/2/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/2/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/muzzle/brake",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_adar/item_foundation/identities/adar.json/items/5/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/5/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/5/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/pistol_grip",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/1/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/1/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/receiver",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_adar/item_foundation/identities/adar.json/items/3/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/3/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/3/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/sight/iron",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/9/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/8/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/9/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/sight/reflex",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_adar/item_foundation/identities/adar.json/items/10/tags/0"
+      ]
+    },
+    {
+      "reference": "item_foundation:type/weapon_mod/stock",
+      "owner": "foundation: item identity classification",
+      "uses": [
+        "data/newmod_adar/item_foundation/identities/adar.json/items/1/tags/0",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/8/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/10/tags/0",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/11/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/10/tags/0",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/11/tags/0"
+      ]
+    },
+    {
+      "reference": "minecraft:item/generated",
+      "owner": "Minecraft: built-in item model parent",
+      "uses": [
+        "assets/newmod_adar/models/item/part_558022b54bdc2dac148b458d.json/parent",
+        "assets/newmod_adar/models/item/part_5aaa5e60e5b5b000140293d6.json/parent",
+        "assets/newmod_adar/models/item/part_5ae30e795acfc408fb139a0b.json/parent",
+        "assets/newmod_adar/models/item/part_5c0e2f26d174af02a9625114.json/parent",
+        "assets/newmod_adar/models/item/part_5c0e2f5cd174af02a012cfc9.json/parent",
+        "assets/newmod_adar/models/item/part_5c0e2f94d174af029f650d56.json/parent",
+        "assets/newmod_adar/models/item/part_5c0e2ff6d174af02a1659d4a.json/parent",
+        "assets/newmod_adar/models/item/part_5c0faeddd174af02a962601f.json/parent",
+        "assets/newmod_adar/models/item/part_5c0faf68d174af02a96260b8.json/parent",
+        "assets/newmod_adar/models/item/part_5c0fafb6d174af02a96260ba.json/parent",
+        "assets/newmod_m4a1/models/item/part_544a38634bdc2d58388b4568.json/parent",
+        "assets/newmod_m4a1/models/item/part_55d355e64bdc2d962f8b4569.json/parent",
+        "assets/newmod_m4a1/models/item/part_55d3632e4bdc2d972f8b4569.json/parent",
+        "assets/newmod_m4a1/models/item/part_55d44fd14bdc2d962f8b456e.json/parent",
+        "assets/newmod_m4a1/models/item/part_55d4887d4bdc2d962f8b4570.json/parent",
+        "assets/newmod_m4a1/models/item/part_55d4ae6c4bdc2d8b2f8b456e.json/parent",
+        "assets/newmod_m4a1/models/item/part_55d4b9964bdc2d1d4e8b456e.json/parent",
+        "assets/newmod_m4a1/models/item/part_5649be884bdc2d79388b4577.json/parent",
+        "assets/newmod_m4a1/models/item/part_5ae30bad5acfc400185c2dc4.json/parent",
+        "assets/newmod_m4a1/models/item/part_5ae30db85acfc408fb139a05.json/parent",
+        "assets/newmod_m4a1/models/item/part_5ae30e795acfc408fb139a0b.json/parent",
+        "assets/newmod_m4a1/models/item/part_637f57a68d137b27f70c4968.json/parent",
+        "assets/newmod_radian/models/item/part_55802f5d4bdc2dac148b458f.json/parent",
+        "assets/newmod_radian/models/item/part_56eabcd4d2720b66698b4574.json/parent",
+        "assets/newmod_radian/models/item/part_56eabf3bd2720b75698b4569.json/parent",
+        "assets/newmod_radian/models/item/part_5aaa5dfee5b5b000140293d3.json/parent",
+        "assets/newmod_radian/models/item/part_5bc09a18d4351e003562b68e.json/parent",
+        "assets/newmod_radian/models/item/part_5bc09a30d4351e00367fb7c8.json/parent",
+        "assets/newmod_radian/models/item/part_5c793fb92e221644f31bfb64.json/parent",
+        "assets/newmod_radian/models/item/part_63d3d44a2a49307baf09386d.json/parent",
+        "assets/newmod_radian/models/item/part_6405ff6bd4578826ec3e377a.json/parent",
+        "assets/newmod_radian/models/item/part_6895bd19d55f0ebf6a0c0306.json/parent",
+        "assets/newmod_radian/models/item/part_6895becad55f0ebf6a0c0311.json/parent",
+        "assets/newmod_radian/models/item/part_6895bf08e2d16810ba0bf43e.json/parent"
+      ]
+    },
+    {
+      "reference": "newmod_adar:adar",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/display/guns/adar.json/animation",
+        "data/newmod_adar/adar/mapping.json/5c07c60e0db834002330051f",
+        "data/newmod_adar/adar/weapon.json/gunId",
+        "data/newmod_adar/assembly/adar.json/items/0/itemId",
+        "data/newmod_adar/index/guns/adar.json/display",
+        "data/newmod_adar/index/guns/adar.json/data",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/0/item",
+        "data/newmod_adar/item_foundation/items/adar.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:gun/adar",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/display/guns/adar.json/model"
+      ]
+    },
+    {
+      "reference": "newmod_adar:gun/white",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/display/guns/adar.json/texture"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/adar",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/display/guns/adar.json/slot",
+        "assets/newmod_adar/display/guns/adar.json/hud"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/part_558022b54bdc2dac148b458d",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/models/item/part_558022b54bdc2dac148b458d.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/part_5aaa5e60e5b5b000140293d6",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/models/item/part_5aaa5e60e5b5b000140293d6.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/part_5ae30e795acfc408fb139a0b",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/models/item/part_5ae30e795acfc408fb139a0b.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/part_5c0e2f26d174af02a9625114",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/models/item/part_5c0e2f26d174af02a9625114.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/part_5c0e2f5cd174af02a012cfc9",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/models/item/part_5c0e2f5cd174af02a012cfc9.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/part_5c0e2f94d174af029f650d56",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/models/item/part_5c0e2f94d174af029f650d56.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/part_5c0e2ff6d174af02a1659d4a",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/models/item/part_5c0e2ff6d174af02a1659d4a.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/part_5c0faeddd174af02a962601f",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/models/item/part_5c0faeddd174af02a962601f.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/part_5c0faf68d174af02a96260b8",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/models/item/part_5c0faf68d174af02a96260b8.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_adar:item/part_5c0fafb6d174af02a96260ba",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/models/item/part_5c0fafb6d174af02a96260ba.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_adar:part_558022b54bdc2dac148b458d",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_adar/adar/mapping.json/558022b54bdc2dac148b458d",
+        "data/newmod_adar/assembly/adar.json/items/3/slots/0/compatibleItems/0",
+        "data/newmod_adar/assembly/adar.json/items/10/itemId",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/10/item",
+        "data/newmod_adar/item_foundation/items/part_558022b54bdc2dac148b458d.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:part_5aaa5e60e5b5b000140293d6",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_adar/adar/mapping.json/5aaa5e60e5b5b000140293d6",
+        "data/newmod_adar/assembly/adar.json/items/0/slots/1/compatibleItems/0",
+        "data/newmod_adar/assembly/adar.json/items/2/itemId",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/2/item",
+        "data/newmod_adar/item_foundation/items/part_5aaa5e60e5b5b000140293d6.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:part_5ae30e795acfc408fb139a0b",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_adar/adar/mapping.json/5ae30e795acfc408fb139a0b",
+        "data/newmod_adar/assembly/adar.json/items/4/slots/1/compatibleItems/0",
+        "data/newmod_adar/assembly/adar.json/items/6/itemId",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/6/item",
+        "data/newmod_adar/item_foundation/items/part_5ae30e795acfc408fb139a0b.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:part_5c0e2f26d174af02a9625114",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_adar/adar/mapping.json/5c0e2f26d174af02a9625114",
+        "data/newmod_adar/assembly/adar.json/items/0/slots/2/compatibleItems/0",
+        "data/newmod_adar/assembly/adar.json/items/3/itemId",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/3/item",
+        "data/newmod_adar/item_foundation/items/part_5c0e2f26d174af02a9625114.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:part_5c0e2f5cd174af02a012cfc9",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_adar/adar/mapping.json/5c0e2f5cd174af02a012cfc9",
+        "data/newmod_adar/assembly/adar.json/items/3/slots/2/compatibleItems/0",
+        "data/newmod_adar/assembly/adar.json/items/7/itemId",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/7/item",
+        "data/newmod_adar/item_foundation/items/part_5c0e2f5cd174af02a012cfc9.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:part_5c0e2f94d174af029f650d56",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_adar/adar/mapping.json/5c0e2f94d174af029f650d56",
+        "data/newmod_adar/assembly/adar.json/items/3/slots/1/compatibleItems/0",
+        "data/newmod_adar/assembly/adar.json/items/4/itemId",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/4/item",
+        "data/newmod_adar/item_foundation/items/part_5c0e2f94d174af029f650d56.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:part_5c0e2ff6d174af02a1659d4a",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_adar/adar/mapping.json/5c0e2ff6d174af02a1659d4a",
+        "data/newmod_adar/assembly/adar.json/items/0/slots/0/compatibleItems/0",
+        "data/newmod_adar/assembly/adar.json/items/1/itemId",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/1/item",
+        "data/newmod_adar/item_foundation/items/part_5c0e2ff6d174af02a1659d4a.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:part_5c0faeddd174af02a962601f",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_adar/adar/mapping.json/5c0faeddd174af02a962601f",
+        "data/newmod_adar/assembly/adar.json/items/0/slots/3/compatibleItems/0",
+        "data/newmod_adar/assembly/adar.json/items/8/itemId",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/8/item",
+        "data/newmod_adar/item_foundation/items/part_5c0faeddd174af02a962601f.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:part_5c0faf68d174af02a96260b8",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_adar/adar/mapping.json/5c0faf68d174af02a96260b8",
+        "data/newmod_adar/assembly/adar.json/items/0/slots/4/compatibleItems/0",
+        "data/newmod_adar/assembly/adar.json/items/9/itemId",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/9/item",
+        "data/newmod_adar/item_foundation/items/part_5c0faf68d174af02a96260b8.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:part_5c0fafb6d174af02a96260ba",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_adar/adar/mapping.json/5c0fafb6d174af02a96260ba",
+        "data/newmod_adar/assembly/adar.json/items/4/slots/0/compatibleItems/0",
+        "data/newmod_adar/assembly/adar.json/items/5/itemId",
+        "data/newmod_adar/item_foundation/identities/adar.json/items/5/item",
+        "data/newmod_adar/item_foundation/items/part_5c0fafb6d174af02a96260ba.json/item"
+      ]
+    },
+    {
+      "reference": "newmod_adar:textures/materials/metal.png",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/adar/library.json/materials/metal_dark/texture",
+        "assets/newmod_adar/adar/library.json/materials/steel/texture",
+        "assets/newmod_adar/adar/library.json/materials/sand_metal/texture"
+      ]
+    },
+    {
+      "reference": "newmod_adar:textures/materials/polymer.png",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/adar/library.json/materials/polymer/texture"
+      ]
+    },
+    {
+      "reference": "newmod_adar:textures/materials/rubber.png",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/adar/library.json/materials/rubber/texture"
+      ]
+    },
+    {
+      "reference": "newmod_adar:textures/materials/wood.png",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_adar/adar/library.json/materials/walnut/texture"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:gun/m4a1",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/display/guns/m4a1.json/model"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:gun/white",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/display/guns/m4a1.json/texture"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/m4a1",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/display/guns/m4a1.json/slot",
+        "assets/newmod_m4a1/display/guns/m4a1.json/hud"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_544a38634bdc2d58388b4568",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_544a38634bdc2d58388b4568.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_55d355e64bdc2d962f8b4569",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_55d355e64bdc2d962f8b4569.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_55d3632e4bdc2d972f8b4569",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_55d3632e4bdc2d972f8b4569.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_55d44fd14bdc2d962f8b456e",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_55d44fd14bdc2d962f8b456e.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_55d4887d4bdc2d962f8b4570",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_55d4887d4bdc2d962f8b4570.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_55d4ae6c4bdc2d8b2f8b456e",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_55d4ae6c4bdc2d8b2f8b456e.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_55d4b9964bdc2d1d4e8b456e",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_55d4b9964bdc2d1d4e8b456e.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_5649be884bdc2d79388b4577",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_5649be884bdc2d79388b4577.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_5ae30bad5acfc400185c2dc4",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_5ae30bad5acfc400185c2dc4.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_5ae30db85acfc408fb139a05",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_5ae30db85acfc408fb139a05.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_5ae30e795acfc408fb139a0b",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_5ae30e795acfc408fb139a0b.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:item/part_637f57a68d137b27f70c4968",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/models/item/part_637f57a68d137b27f70c4968.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:m4a1",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_m4a1/display/guns/m4a1.json/animation",
+        "data/newmod_m4a1/assembly/m4a1.json/items/0/itemId",
+        "data/newmod_m4a1/index/guns/m4a1.json/display",
+        "data/newmod_m4a1/index/guns/m4a1.json/data",
+        "data/newmod_m4a1/index/guns/m4a1.json/item_type",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/0/item",
+        "data/newmod_m4a1/item_foundation/items/m4a1.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/5447a9cd4bdc2dbd208b4567",
+        "data/newmod_m4a1/m4a1/weapon.json/gunId"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_544a38634bdc2d58388b4568",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/4/slots/0/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/5/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/5/item",
+        "data/newmod_m4a1/item_foundation/items/part_544a38634bdc2d58388b4568.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/544a38634bdc2d58388b4568"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_55d355e64bdc2d962f8b4569",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/0/slots/2/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/3/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/3/item",
+        "data/newmod_m4a1/item_foundation/items/part_55d355e64bdc2d962f8b4569.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/55d355e64bdc2d962f8b4569"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_55d3632e4bdc2d972f8b4569",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/3/slots/0/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/4/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/4/item",
+        "data/newmod_m4a1/item_foundation/items/part_55d3632e4bdc2d972f8b4569.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/55d3632e4bdc2d972f8b4569"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_55d44fd14bdc2d962f8b456e",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/0/slots/4/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/12/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/12/item",
+        "data/newmod_m4a1/item_foundation/items/part_55d44fd14bdc2d962f8b456e.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/55d44fd14bdc2d962f8b456e"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_55d4887d4bdc2d962f8b4570",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/0/slots/1/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/2/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/2/item",
+        "data/newmod_m4a1/item_foundation/items/part_55d4887d4bdc2d962f8b4570.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/55d4887d4bdc2d962f8b4570"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_55d4ae6c4bdc2d8b2f8b456e",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/10/slots/0/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/11/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/11/item",
+        "data/newmod_m4a1/item_foundation/items/part_55d4ae6c4bdc2d8b2f8b456e.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/55d4ae6c4bdc2d8b2f8b456e"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_55d4b9964bdc2d1d4e8b456e",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/0/slots/0/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/1/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/1/item",
+        "data/newmod_m4a1/item_foundation/items/part_55d4b9964bdc2d1d4e8b456e.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/55d4b9964bdc2d1d4e8b456e"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_5649be884bdc2d79388b4577",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/0/slots/3/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/10/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/10/item",
+        "data/newmod_m4a1/item_foundation/items/part_5649be884bdc2d79388b4577.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/5649be884bdc2d79388b4577"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_5ae30bad5acfc400185c2dc4",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/3/slots/2/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/9/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/9/item",
+        "data/newmod_m4a1/item_foundation/items/part_5ae30bad5acfc400185c2dc4.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/5ae30bad5acfc400185c2dc4"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_5ae30db85acfc408fb139a05",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/3/slots/1/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/7/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/7/item",
+        "data/newmod_m4a1/item_foundation/items/part_5ae30db85acfc408fb139a05.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/5ae30db85acfc408fb139a05"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_5ae30e795acfc408fb139a0b",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/4/slots/1/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/6/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/6/item",
+        "data/newmod_m4a1/item_foundation/items/part_5ae30e795acfc408fb139a0b.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/5ae30e795acfc408fb139a0b"
+      ]
+    },
+    {
+      "reference": "newmod_m4a1:part_637f57a68d137b27f70c4968",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_m4a1/assembly/m4a1.json/items/7/slots/0/compatibleItems/0",
+        "data/newmod_m4a1/assembly/m4a1.json/items/8/itemId",
+        "data/newmod_m4a1/item_foundation/identities/m4a1.json/items/8/item",
+        "data/newmod_m4a1/item_foundation/items/part_637f57a68d137b27f70c4968.json/item",
+        "data/newmod_m4a1/m4a1/mapping.json/637f57a68d137b27f70c4968"
+      ]
+    },
+    {
+      "reference": "newmod_radian:gun/radian",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/display/guns/radian.json/model"
+      ]
+    },
+    {
+      "reference": "newmod_radian:gun/white",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/display/guns/radian.json/texture"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_55802f5d4bdc2dac148b458f",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_55802f5d4bdc2dac148b458f.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_56eabcd4d2720b66698b4574",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_56eabcd4d2720b66698b4574.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_56eabf3bd2720b75698b4569",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_56eabf3bd2720b75698b4569.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_5aaa5dfee5b5b000140293d3",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_5aaa5dfee5b5b000140293d3.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_5bc09a18d4351e003562b68e",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_5bc09a18d4351e003562b68e.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_5bc09a30d4351e00367fb7c8",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_5bc09a30d4351e00367fb7c8.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_5c793fb92e221644f31bfb64",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_5c793fb92e221644f31bfb64.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_63d3d44a2a49307baf09386d",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_63d3d44a2a49307baf09386d.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_6405ff6bd4578826ec3e377a",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_6405ff6bd4578826ec3e377a.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_6895bd19d55f0ebf6a0c0306",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_6895bd19d55f0ebf6a0c0306.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_6895becad55f0ebf6a0c0311",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_6895becad55f0ebf6a0c0311.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/part_6895bf08e2d16810ba0bf43e",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/models/item/part_6895bf08e2d16810ba0bf43e.json/textures/layer0"
+      ]
+    },
+    {
+      "reference": "newmod_radian:item/radian",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/display/guns/radian.json/slot",
+        "assets/newmod_radian/display/guns/radian.json/hud"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_55802f5d4bdc2dac148b458f",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/0/slots/0/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/1/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/1/item",
+        "data/newmod_radian/item_foundation/items/part_55802f5d4bdc2dac148b458f.json/item",
+        "data/newmod_radian/radian/mapping.json/55802f5d4bdc2dac148b458f"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_56eabcd4d2720b66698b4574",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/4/slots/1/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/6/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/6/item",
+        "data/newmod_radian/item_foundation/items/part_56eabcd4d2720b66698b4574.json/item",
+        "data/newmod_radian/radian/mapping.json/56eabcd4d2720b66698b4574"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_56eabf3bd2720b75698b4569",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/10/slots/0/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/11/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/11/item",
+        "data/newmod_radian/item_foundation/items/part_56eabf3bd2720b75698b4569.json/item",
+        "data/newmod_radian/radian/mapping.json/56eabf3bd2720b75698b4569"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_5aaa5dfee5b5b000140293d3",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/0/slots/1/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/2/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/2/item",
+        "data/newmod_radian/item_foundation/items/part_5aaa5dfee5b5b000140293d3.json/item",
+        "data/newmod_radian/radian/mapping.json/5aaa5dfee5b5b000140293d3"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_5bc09a18d4351e003562b68e",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/3/slots/2/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/9/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/9/item",
+        "data/newmod_radian/item_foundation/items/part_5bc09a18d4351e003562b68e.json/item",
+        "data/newmod_radian/radian/mapping.json/5bc09a18d4351e003562b68e"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_5bc09a30d4351e00367fb7c8",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/7/slots/0/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/8/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/8/item",
+        "data/newmod_radian/item_foundation/items/part_5bc09a30d4351e00367fb7c8.json/item",
+        "data/newmod_radian/radian/mapping.json/5bc09a30d4351e00367fb7c8"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_5c793fb92e221644f31bfb64",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/0/slots/3/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/10/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/10/item",
+        "data/newmod_radian/item_foundation/items/part_5c793fb92e221644f31bfb64.json/item",
+        "data/newmod_radian/radian/mapping.json/5c793fb92e221644f31bfb64"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_63d3d44a2a49307baf09386d",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/3/slots/0/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/4/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/4/item",
+        "data/newmod_radian/item_foundation/items/part_63d3d44a2a49307baf09386d.json/item",
+        "data/newmod_radian/radian/mapping.json/63d3d44a2a49307baf09386d"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_6405ff6bd4578826ec3e377a",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/4/slots/0/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/5/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/5/item",
+        "data/newmod_radian/item_foundation/items/part_6405ff6bd4578826ec3e377a.json/item",
+        "data/newmod_radian/radian/mapping.json/6405ff6bd4578826ec3e377a"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_6895bd19d55f0ebf6a0c0306",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/3/slots/1/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/7/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/7/item",
+        "data/newmod_radian/item_foundation/items/part_6895bd19d55f0ebf6a0c0306.json/item",
+        "data/newmod_radian/radian/mapping.json/6895bd19d55f0ebf6a0c0306"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_6895becad55f0ebf6a0c0311",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/0/slots/2/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/3/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/3/item",
+        "data/newmod_radian/item_foundation/items/part_6895becad55f0ebf6a0c0311.json/item",
+        "data/newmod_radian/radian/mapping.json/6895becad55f0ebf6a0c0311"
+      ]
+    },
+    {
+      "reference": "newmod_radian:part_6895bf08e2d16810ba0bf43e",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "data/newmod_radian/assembly/radian.json/items/0/slots/4/compatibleItems/0",
+        "data/newmod_radian/assembly/radian.json/items/12/itemId",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/12/item",
+        "data/newmod_radian/item_foundation/items/part_6895bf08e2d16810ba0bf43e.json/item",
+        "data/newmod_radian/radian/mapping.json/6895bf08e2d16810ba0bf43e"
+      ]
+    },
+    {
+      "reference": "newmod_radian:radian",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/display/guns/radian.json/animation",
+        "data/newmod_radian/assembly/radian.json/items/0/itemId",
+        "data/newmod_radian/index/guns/radian.json/display",
+        "data/newmod_radian/index/guns/radian.json/data",
+        "data/newmod_radian/index/guns/radian.json/item_type",
+        "data/newmod_radian/item_foundation/identities/radian.json/items/0/item",
+        "data/newmod_radian/item_foundation/items/radian.json/item",
+        "data/newmod_radian/radian/mapping.json/6895bb82c4519957df062f82",
+        "data/newmod_radian/radian/weapon.json/gunId"
+      ]
+    },
+    {
+      "reference": "newmod_radian:textures/materials/anodized_charcoal.png",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/radian/library.json/materials/anodized_charcoal/texture"
+      ]
+    },
+    {
+      "reference": "newmod_radian:textures/materials/anodized_graphite.png",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/radian/library.json/materials/anodized_graphite/texture"
+      ]
+    },
+    {
+      "reference": "newmod_radian:textures/materials/machined_steel.png",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/radian/library.json/materials/machined_steel/texture"
+      ]
+    },
+    {
+      "reference": "newmod_radian:textures/materials/phosphate_steel.png",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/radian/library.json/materials/phosphate_steel/texture"
+      ]
+    },
+    {
+      "reference": "newmod_radian:textures/materials/polymer_black.png",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/radian/library.json/materials/polymer_black/texture"
+      ]
+    },
+    {
+      "reference": "newmod_radian:textures/materials/rubber_black.png",
+      "owner": "weapon-content: gun identity or local asset",
+      "uses": [
+        "assets/newmod_radian/radian/library.json/materials/rubber_black/texture"
+      ]
+    },
+    {
+      "reference": "tactical_inventory:primary_weapon_1",
+      "owner": "tactical: equipment slot contract",
+      "uses": [
+        "data/newmod_adar/item_foundation/items/adar.json/wearable_slots/0",
+        "data/newmod_m4a1/item_foundation/items/m4a1.json/wearable_slots/0",
+        "data/newmod_radian/item_foundation/items/radian.json/wearable_slots/0"
+      ]
+    },
+    {
+      "reference": "tactical_inventory:primary_weapon_2",
+      "owner": "tactical: equipment slot contract",
+      "uses": [
+        "data/newmod_adar/item_foundation/items/adar.json/wearable_slots/1",
+        "data/newmod_m4a1/item_foundation/items/m4a1.json/wearable_slots/1",
+        "data/newmod_radian/item_foundation/items/radian.json/wearable_slots/1"
+      ]
+    },
+    {
+      "reference": "tacz:556x45",
+      "owner": "TaCZ: execution, sound or effect contract",
+      "uses": [
+        "data/newmod_adar/data/guns/adar.json/ammo",
+        "data/newmod_m4a1/data/guns/m4a1.json/ammo",
+        "data/newmod_radian/data/guns/radian.json/ammo"
+      ]
+    },
+    {
+      "reference": "tacz:flash/common_muzzle_flash",
+      "owner": "TaCZ: execution, sound or effect contract",
+      "uses": [
+        "assets/newmod_adar/display/guns/adar.json/muzzle_flash/texture",
+        "assets/newmod_m4a1/display/guns/m4a1.json/muzzle_flash/texture",
+        "assets/newmod_radian/display/guns/radian.json/muzzle_flash/texture"
+      ]
+    },
+    {
+      "reference": "tacz:m4a1/m4a1_draw",
+      "owner": "TaCZ: execution, sound or effect contract",
+      "uses": [
+        "assets/newmod_adar/display/guns/adar.json/sounds/draw",
+        "assets/newmod_m4a1/display/guns/m4a1.json/sounds/draw",
+        "assets/newmod_radian/display/guns/radian.json/sounds/draw"
+      ]
+    },
+    {
+      "reference": "tacz:m4a1/m4a1_shoot",
+      "owner": "TaCZ: execution, sound or effect contract",
+      "uses": [
+        "assets/newmod_adar/display/guns/adar.json/sounds/shoot",
+        "assets/newmod_m4a1/display/guns/m4a1.json/sounds/shoot",
+        "assets/newmod_radian/display/guns/radian.json/sounds/shoot"
+      ]
+    },
+    {
+      "reference": "tacz:m4a1/m4a1_shoot_3p",
+      "owner": "TaCZ: execution, sound or effect contract",
+      "uses": [
+        "assets/newmod_adar/display/guns/adar.json/sounds/shoot_3p",
+        "assets/newmod_m4a1/display/guns/m4a1.json/sounds/shoot_3p",
+        "assets/newmod_radian/display/guns/radian.json/sounds/shoot_3p"
+      ]
+    }
+  ],
+  "note": "Materials resolve only within this content root. UI Java dependency is independent; no game was launched."
+}

@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "newmod_adar:adar",
+      "tags": [
+        "item_foundation:type/weapon/firearm/assault_rifle"
+      ]
+    },
+    {
+      "item": "newmod_adar:part_5c0e2ff6d174af02a1659d4a",
+      "tags": [
+        "item_foundation:type/weapon_mod/stock"
+      ]
+    },
+    {
+      "item": "newmod_adar:part_5aaa5e60e5b5b000140293d6",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    },
+    {
+      "item": "newmod_adar:part_5c0e2f26d174af02a9625114",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "newmod_adar:part_5c0e2f94d174af029f650d56",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "newmod_adar:part_5c0fafb6d174af02a96260ba",
+      "tags": [
+        "item_foundation:type/weapon_mod/muzzle/brake"
+      ]
+    },
+    {
+      "item": "newmod_adar:part_5ae30e795acfc408fb139a0b",
+      "tags": [
+        "item_foundation:type/weapon_mod/gas_block"
+      ]
+    },
+    {
+      "item": "newmod_adar:part_5c0e2f5cd174af02a012cfc9",
+      "tags": [
+        "item_foundation:type/weapon_mod/handguard"
+      ]
+    },
+    {
+      "item": "newmod_adar:part_5c0faeddd174af02a962601f",
+      "tags": [
+        "item_foundation:type/weapon_mod/stock"
+      ]
+    },
+    {
+      "item": "newmod_adar:part_5c0faf68d174af02a96260b8",
+      "tags": [
+        "item_foundation:type/weapon_mod/charging_handle"
+      ]
+    },
+    {
+      "item": "newmod_adar:part_558022b54bdc2dac148b458d",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/reflex"
+      ]
+    }
+  ]
+}

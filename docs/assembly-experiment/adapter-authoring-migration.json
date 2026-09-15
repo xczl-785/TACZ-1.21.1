@@ -1,0 +1,1146 @@
+{
+  "newmod_baseline": "3ef90e9f79c3544b5c2b5b5a8b863df66797c11f",
+  "files": [
+    {
+      "old": "docs/参考资料/radian-20260914-data/.gitattributes",
+      "new": "modules/tacz_adapter/weapon-sources/radian/.gitattributes",
+      "sha256": "0ebca78bdad1787ed120c2224195f00e4c77f0111d081d0730a8b6ea809fb337",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/README.md",
+      "sha256": "340f3215984fcfd566410fbaf27243987b318115fa3fca9f17cfac5ff772e789",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/items.raw.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/items.raw.json",
+      "sha256": "f4eb11b901d0ee51fb97914d63815c0dcc5f7cffe947f5b5da839ebaa52ee18f",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/material-preview.png",
+      "new": "modules/tacz_adapter/weapon-sources/radian/material-preview.png",
+      "sha256": "ad91cf1c5de898ec8f90ebfe77aa99b0a203d01e5b9eebce5587810b886c3e9a",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/names.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/names.json",
+      "sha256": "fbd126174b253815e86d44be778fad333805a6d8ff8bf19f54f4d4211617e19a",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/preset.source.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/preset.source.json",
+      "sha256": "139bac5832ca10b525bef047ea4ce3530dd495e4d8d6e74cb9586443105eda8d",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/README.md",
+      "sha256": "f535c5e31ccda0ce247dcaa78d1548827c40fa5ee239e64f4b89793b566d371d",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/assemblies/radian-original-folded.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/assemblies/radian-original-folded.bbmodel",
+      "sha256": "3cc73af416c8056a09269ba3f05c44ea922b91b1554dfe09360072592e9cf196",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/assemblies/radian-original-unfolded.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/assemblies/radian-original-unfolded.bbmodel",
+      "sha256": "47173b238635162728eea875363db29a4643e127e6a6c93e669548eafb903765",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/assemblies/source-assembly-transforms.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/assemblies/source-assembly-transforms.json",
+      "sha256": "cf417bd01e550544550033eb808d73cdd329f1c57ba49eca6b33f7cf580e9150",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/55802f5d4bdc2dac148b458f/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/55802f5d4bdc2dac148b458f/README.md",
+      "sha256": "3739f53b2b3ac38b58ce97b6c04d27754abcb739cc00a1a9b5c2aac49e2faaac",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/55802f5d4bdc2dac148b458f/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/55802f5d4bdc2dac148b458f/component.json",
+      "sha256": "ad291246eed73df53e104496e4542df3e5a7b2e5fce4efe8d32b5a4ec9b2949d",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/55802f5d4bdc2dac148b458f/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/55802f5d4bdc2dac148b458f/model.bbmodel",
+      "sha256": "349698c8f95bb25672dc6610a88e77ffd227e9bc9097cf5bbcf759a1b07051f8",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/56eabcd4d2720b66698b4574/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/56eabcd4d2720b66698b4574/README.md",
+      "sha256": "c31fe975142bae07fd15528be3f384fd33e7cc6a4217e6f8a49b1a789d19a51e",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/56eabcd4d2720b66698b4574/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/56eabcd4d2720b66698b4574/component.json",
+      "sha256": "784d5c85641c799fb2669efde06ca6dcb2f713ba1512541d2086aea17be3e237",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/56eabcd4d2720b66698b4574/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/56eabcd4d2720b66698b4574/model.bbmodel",
+      "sha256": "9ca6d3e03533f2d266afebd20b1acb04f7c13226e505732429e3e4f541b50fa3",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/56eabf3bd2720b75698b4569/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/56eabf3bd2720b75698b4569/README.md",
+      "sha256": "437384c23d1722347194743b4b545a7d2328db7bf9112c12f706f32377be4aa3",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/56eabf3bd2720b75698b4569/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/56eabf3bd2720b75698b4569/component.json",
+      "sha256": "c5628a279799d20e2ff2326f985f75d3b0d5714150a5fd85b22e47c7fbd7859f",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/56eabf3bd2720b75698b4569/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/56eabf3bd2720b75698b4569/model.bbmodel",
+      "sha256": "b86ccf97ead455594f96533fadb713d50690f9743a919e5a79dbe4b1b2146407",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5aaa5dfee5b5b000140293d3/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5aaa5dfee5b5b000140293d3/README.md",
+      "sha256": "337afed83b76fa2332d0aab45e730347addf9f8c23d1a62ca967603e946af8a9",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5aaa5dfee5b5b000140293d3/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5aaa5dfee5b5b000140293d3/component.json",
+      "sha256": "9164681024cd14bea7dbe498f1cbebe68eab42f986f1823b3aab45a294b3c5ae",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5aaa5dfee5b5b000140293d3/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5aaa5dfee5b5b000140293d3/model.bbmodel",
+      "sha256": "3ba60278206d0fd08f22bacfb26296b6ee927f8fc2f7167e5e7b9aa72beac540",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5bc09a18d4351e003562b68e/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5bc09a18d4351e003562b68e/README.md",
+      "sha256": "c1efa531e867b69159b937874a6d0b683126277fee9b2e02b79e9aa545137dd3",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5bc09a18d4351e003562b68e/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5bc09a18d4351e003562b68e/component.json",
+      "sha256": "c3c13729ab295dc65e6cea57608f044301dcf9e659f7da4af9936f02957d8ac6",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5bc09a18d4351e003562b68e/model-folded.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5bc09a18d4351e003562b68e/model-folded.bbmodel",
+      "sha256": "225861fd161c05fd2e4feec2ed6568b90e07a72423923a2f404e103c395fdf41",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5bc09a18d4351e003562b68e/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5bc09a18d4351e003562b68e/model.bbmodel",
+      "sha256": "691df0fbb410fc39c3c8f604e25e3ba7b1f898c5a982b9f6cf08607f5ac8ccaf",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5bc09a30d4351e00367fb7c8/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5bc09a30d4351e00367fb7c8/README.md",
+      "sha256": "5cc25284d77f9a69b62e5c244863a67e0b9d90c3100ee012ccc8002493c5d84e",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5bc09a30d4351e00367fb7c8/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5bc09a30d4351e00367fb7c8/component.json",
+      "sha256": "3ac52effd9321b88c0cbda7e98e25bc61c7d0d2b2c19ee43d123f1a54b527b62",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5bc09a30d4351e00367fb7c8/model-folded.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5bc09a30d4351e00367fb7c8/model-folded.bbmodel",
+      "sha256": "389628c3e69af7eef5006889c20720752bd41d1746ff98f0fa6a6b493ab87ab7",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5bc09a30d4351e00367fb7c8/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5bc09a30d4351e00367fb7c8/model.bbmodel",
+      "sha256": "5d98207550ea9cbc0bdba3aba6ac472cfc68ea0b60fe8359d2ae3b07aae965ca",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5c793fb92e221644f31bfb64/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5c793fb92e221644f31bfb64/README.md",
+      "sha256": "14e8b553674ad4e84aa2684b3f52a579879fe5f43c310a0a422f075a60d31ae9",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5c793fb92e221644f31bfb64/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5c793fb92e221644f31bfb64/component.json",
+      "sha256": "6f40ffefce3f896a68beca6ee8c5ee289dbe1746629b6ddc13944d79315b8031",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/5c793fb92e221644f31bfb64/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/5c793fb92e221644f31bfb64/model.bbmodel",
+      "sha256": "33ed170dfdd576a5e4fd291f71c3166ec3ee5708f22c0b6054c42c4c3affe349",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/63d3d44a2a49307baf09386d/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/63d3d44a2a49307baf09386d/README.md",
+      "sha256": "9f4761fcc51cf3fdd5f2d4348b4894f5e3d4a23d74688d65e017e00ae17fbe3d",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/63d3d44a2a49307baf09386d/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/63d3d44a2a49307baf09386d/component.json",
+      "sha256": "68e49036c852427201be9df8bd19e66a6011503a65f1895694d88250af8d9ec8",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/63d3d44a2a49307baf09386d/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/63d3d44a2a49307baf09386d/model.bbmodel",
+      "sha256": "8f8ef604b0652aa8ad15a555cb40dd012fb327767f426fd0fece7477e7e8d0ec",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6405ff6bd4578826ec3e377a/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6405ff6bd4578826ec3e377a/README.md",
+      "sha256": "b7b600dfdbde5644eeeaa53171cd84457659d56a6aec90d4bbb7a24d90e56ad2",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6405ff6bd4578826ec3e377a/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6405ff6bd4578826ec3e377a/component.json",
+      "sha256": "da8874c1b4ea8cdf137bbc357eaf4954504b4523470aec83fc0b0d17455770ab",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6405ff6bd4578826ec3e377a/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6405ff6bd4578826ec3e377a/model.bbmodel",
+      "sha256": "05c1c959f7e6656efc8af9902190c83dea7caf1eb277897978e2569932968b87",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895bb82c4519957df062f82/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895bb82c4519957df062f82/README.md",
+      "sha256": "9ed40100d1744189f57fe2b9d5684c3a62787cafff72c5b5e04b39c77e89a6cc",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895bb82c4519957df062f82/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895bb82c4519957df062f82/component.json",
+      "sha256": "e78ae9db7a8c0ecc59014b31b632d55e79df66ce941ddd1633934a8aba38553b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895bb82c4519957df062f82/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895bb82c4519957df062f82/model.bbmodel",
+      "sha256": "22fc7146466604334186e27042ab876ec360144d863ac2860cc7ddd71db7439d",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895bd19d55f0ebf6a0c0306/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895bd19d55f0ebf6a0c0306/README.md",
+      "sha256": "e09a37c023f28cfee1775c5462da48262a2520d7fd94288805d8208b61c591c0",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895bd19d55f0ebf6a0c0306/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895bd19d55f0ebf6a0c0306/component.json",
+      "sha256": "d5de406eaafb6a9c496f41364e8ac02144be0655d3778bdcee59513d24dd23b0",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895bd19d55f0ebf6a0c0306/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895bd19d55f0ebf6a0c0306/model.bbmodel",
+      "sha256": "f535794ff147e584d453cb323d587d3d4e41cd579697b6fbb21b9666925b2738",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895becad55f0ebf6a0c0311/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895becad55f0ebf6a0c0311/README.md",
+      "sha256": "0a497ea16dd45319306eb4fa18bc85950bef4e4c7134beafd440b1c4a8190bd9",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895becad55f0ebf6a0c0311/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895becad55f0ebf6a0c0311/component.json",
+      "sha256": "eb0079daece52a31d99ab9e21ab90ee31d17ab8c03ff0dc980c693b5e8edc54a",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895becad55f0ebf6a0c0311/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895becad55f0ebf6a0c0311/model.bbmodel",
+      "sha256": "8483bac6e1920f3c3332194d524a2c5535b1ce8b4269b67266788bd829ee004c",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895bf08e2d16810ba0bf43e/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895bf08e2d16810ba0bf43e/README.md",
+      "sha256": "1e52ec99f568d6414a29e9a7d46df930eab38f3a98b268c57c107dfcd32c0c3b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895bf08e2d16810ba0bf43e/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895bf08e2d16810ba0bf43e/component.json",
+      "sha256": "300cf58e3790d00951e4a7a9c862e91de3f6301cbe0a6e8e1f3b883ec33c8ed1",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/components/6895bf08e2d16810ba0bf43e/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/components/6895bf08e2d16810ba0bf43e/model.bbmodel",
+      "sha256": "0f2ebf8bc0de602f0eb50a71d47897e06065fac333e788e2e35646ddc17fce8e",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/manifest.csv",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/manifest.csv",
+      "sha256": "412ea16a66a00472fdee740e9302aeba4c8d2cd9709d0eb7781866da96681f9f",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/manifest.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/manifest.json",
+      "sha256": "920a80b2e25ce54aa60ab4fdf1bfccd4e3465248df6609c71f26bd64617ff111",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/archive-sha256.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/archive-sha256.json",
+      "sha256": "8b6676fb382780dba3bfa69be6600ee59fedd0b3cdc993ae030f46936afa8e36",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/geometry-preservation.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/geometry-preservation.json",
+      "sha256": "050ef91f60a87dd64de0f2c2691d2357bcabbab62e0f1930f1ae0b478498d4e5",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-assembly-white.png",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-assembly-white.png",
+      "sha256": "6333b4202258e23ab6ec8888d4343b1377d3085384cd6b876ae23018d6bb5756",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/1-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/1-model-world.json",
+      "sha256": "351d75030d7a93e89c9cd47b6af47d49d39b779ffda65297d8bf06be4c243442",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/1-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/1-model.bbmodel",
+      "sha256": "f22c568f5b97dbb4f255a85fba5787e9d940d8e95505038bbc44664374fcd226",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/10-model-folded-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/10-model-folded-world.json",
+      "sha256": "961352bde28f56ba7eedb5af6f1f3bb15d111d721db87ee21420852a9a529acd",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/10-model-folded.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/10-model-folded.bbmodel",
+      "sha256": "f493ab17b2dfeaebc8d76c9ee28744aef0293b4b275f94cb8cfe639115cdd4d3",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/10-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/10-model-world.json",
+      "sha256": "82a8dfd2c036e46b26dd7837b21ac020faa660d0f023332f9c60370c4b28193c",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/10-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/10-model.bbmodel",
+      "sha256": "bbf946fa94d0a22dcd20f461c8313a0294a5ed49dddcaa034aec6f74ca61a7bf",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/11-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/11-model-world.json",
+      "sha256": "c07966a00809fe1c601f2ea90a6eee86178a9a19d6b44e16dd174d1edbe32dd5",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/11-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/11-model.bbmodel",
+      "sha256": "36f01545139a2a839adce43278f390832a9e02ceb9e0be5493dcc67e7511143f",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/12-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/12-model-world.json",
+      "sha256": "efe793a0b6d66d8fa750d3c60a2d6694ee30e1d97e3d29b71251076fdf600ba3",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/12-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/12-model.bbmodel",
+      "sha256": "92108b9ed80e4e068cc082f69e3d9c22531b9f4b588aed44bd6ee166a9844091",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/13-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/13-model-world.json",
+      "sha256": "a9ef18af5113d8191fd97156896808bdcdf1cfe38b3cb45b2f129838183deafa",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/13-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/13-model.bbmodel",
+      "sha256": "6d8e307eff1b591fd99e130b9d443467dae65da0e693bd06c27a706db031306c",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/2-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/2-model-world.json",
+      "sha256": "d7d5619c302864716cc02e69e0fa3a0827cbd7d4e382ac55d4bdfe790c9c9c09",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/2-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/2-model.bbmodel",
+      "sha256": "9a9d47b89d8f24e0ce2c814ec1eb74e9e0c93b8dfe0c4162698e13b87f3a7f09",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/3-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/3-model-world.json",
+      "sha256": "59c8d8b7c3267606340abaf09a160613d043a285b05b5f646b41a2a9bc879b7a",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/3-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/3-model.bbmodel",
+      "sha256": "61fd994e47d2f9bf948d1be900e6c68c440ceade1f8767075cf3c18744452a59",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/4-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/4-model-world.json",
+      "sha256": "bbd0b98eb140ca7fdb213f08465906a1412ba7c3b3afddddb4e8b22eac634cb2",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/4-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/4-model.bbmodel",
+      "sha256": "b931add6b2be101d65f37c336842fb0be4aec69ca10756ec52d96471268ed329",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/5-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/5-model-world.json",
+      "sha256": "82e9cce32bcee2b2d6d9e69b5e5e60c5364e7d461d6346e1ac482699efed8104",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/5-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/5-model.bbmodel",
+      "sha256": "2954113e8aeab630fabfe1c609cd7b2bfcc57973f69c72a6403042448b37469f",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/6-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/6-model-world.json",
+      "sha256": "e65c7d87c86fff2084c75eedfa27e3e2e981c639323066f73c90b0efef7be61a",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/6-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/6-model.bbmodel",
+      "sha256": "f0fabfa1f1a29851d76b4e0625790275f1a6070b6b6369b8dde31f417f0f56bc",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/7-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/7-model-world.json",
+      "sha256": "bca820f6554654aca294534eb6417b0383f34c1b9f6e5c8825f977c96bfe870c",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/7-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/7-model.bbmodel",
+      "sha256": "bd0e83bd01381230efc486d4c530de61539ba06fa6a272936961b603a4601759",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/8-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/8-model-world.json",
+      "sha256": "5691f9998e4803239312d41c45ef2c733d505c8301fb3015e2db6ca60b5b3c5b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/8-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/8-model.bbmodel",
+      "sha256": "3570d7dc3deb6c53b2dca4995b8acae79d670f8704ece6c9bd239cd8c68699c7",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/9-model-folded-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/9-model-folded-world.json",
+      "sha256": "05619cd722e093859b64efe81338f730efc6209b087a829ac674a8b4a70b3de5",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/9-model-folded.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/9-model-folded.bbmodel",
+      "sha256": "4723f31d4c9abb05dda9cd6b1d7eacbd63c1e3e053f999ff5aa3d43e8ae4e4e9",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/9-model-world.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/9-model-world.json",
+      "sha256": "348fef1206aa0fab5d5f0d334779faa378bc9e19deef056d7def79be497137f6",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-roundtrip/9-model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-roundtrip/9-model.bbmodel",
+      "sha256": "7e70d9b7c765f52aadbe8b424ce7bdaaf67e7bd32180f3ccd824187e2a950f93",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-tasks.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-tasks.json",
+      "sha256": "34a05aba740e800f0d1f49be0cba1ddf4d48bd1103b666a0f6ae017ef65713bb",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-validation.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-validation.json",
+      "sha256": "d20a4af3a42ff5e40faba9235bb8cdd58e7314427babaf68c6a72bddc99f373b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source-pack/reports/native-world-validation.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source-pack/reports/native-world-validation.json",
+      "sha256": "fbd0b4685549ac0005d4c05f127efb61abf8a5c23be96b63a186b06e0b8ae55e",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/radian-20260914-data/source.json",
+      "new": "modules/tacz_adapter/weapon-sources/radian/source.json",
+      "sha256": "5b48e7b9c4482a32f8f3dd067281df2349a9e6da4b0482e090b02a37191d9b74",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/README.md",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/README.md",
+      "sha256": "42c16c245f99d188ba9388d033ff48f51f006fb7bcf68020848e71ab4f4e8a50",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/assembly-transforms.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/assembly-transforms.json",
+      "sha256": "5c6d4c5804091370d769b09db349f0d1e671925558ea59e970acd0cc8d1d5552",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/consumption.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/consumption.json",
+      "sha256": "5d12ee39cfe5264c202072b50c4c6b39488b6a80ef5177e4e49d060b5358eb4a",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/items.raw.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/items.raw.json",
+      "sha256": "7ebdeb1753b9573e5bf0d435d4169e0bebb72b1729a669ca4660913d6b949916",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/items.spt.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/items.spt.json",
+      "sha256": "9db9ca55c5d1c177da9830b06dcff95598536ca89b1641b957f411a809a23ac2",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/material-preview.png",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/material-preview.png",
+      "sha256": "8b262e9745e3a5ac5626982ca464cb155cbd6861f9ea48d4d088b4b141a206d3",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/material-source/catalog.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/material-source/catalog.json",
+      "sha256": "646836d9d09d25cdc01465f5ff861c6af917c1f7945fd2481ef6e9f3b5ee2a63",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/material-source/coated_metal.png",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/material-source/coated_metal.png",
+      "sha256": "8739c265f1fd486b608684d9861ae868ab4ff849c726bb6e0fed4efcb719669d",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/material-source/generation.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/material-source/generation.json",
+      "sha256": "eb50415404861246e8d8ecacb1666008c269f15757939ced043111ed13eac905",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/material-source/polymer.png",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/material-source/polymer.png",
+      "sha256": "d07a6d6b95717ccf772b2ecbb7198efa2df9a0da694df70e86de3519844beb5c",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/material-source/steel_dark.png",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/material-source/steel_dark.png",
+      "sha256": "eb1fb84edf8673f8efda03600868d8cc16e000f2670288ec6f128d5eb25348c0",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/material-source/steel_light.png",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/material-source/steel_light.png",
+      "sha256": "1a09e1e94e9282f7f166f4ea5268fb17e2039b5dfe89f7904373ef940891ad57",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/material-source/validation.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/material-source/validation.json",
+      "sha256": "6f6838ca99c8354e0cd9e01c3fc34839b6108960297dc3f344e950e9e25ea55d",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/names.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/names.json",
+      "sha256": "1411517e6030b5596df1c68bc6d29b52cf8056a7611373149602f3e3f46da738",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/placement-components.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/placement-components.json",
+      "sha256": "ba96ed1418d794cca74b5526450d3e8db13d1f773b6161f23d16f459c2e6139a",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/preset.source.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/preset.source.json",
+      "sha256": "27ef3de126228fdf4ec13bb47ef483193d757d24d6ca1a23c5f8234481930a02",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/preset.spt.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/preset.spt.json",
+      "sha256": "e9658681a9ecbf23b061d451c53de222459cf8646563c1accf25cba54fb675d8",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-handoff.md",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-handoff.md",
+      "sha256": "5d202d191525aeff52a587b7360a5f2d190f020b75c7e578bf5d8c26bfd3cb21",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5447a9cd4bdc2dbd208b4567/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5447a9cd4bdc2dbd208b4567/bindings.json",
+      "sha256": "1111f575ccd1765a99ed2318e95e8986ae706d092f1dc6facd9881a3a41a561f",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5447a9cd4bdc2dbd208b4567/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5447a9cd4bdc2dbd208b4567/component.json",
+      "sha256": "2f785c61b3a56ef7aa55629569c0eca0d4c244973137e992fdee2a02de76a903",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5447a9cd4bdc2dbd208b4567/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5447a9cd4bdc2dbd208b4567/model.bbmodel",
+      "sha256": "a63e4c701827b886efe1dcc8b8df16cd6fa28bf7c4ceb86b7ab55a06b2706ae1",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5447a9cd4bdc2dbd208b4567/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5447a9cd4bdc2dbd208b4567/nodes.json",
+      "sha256": "fc46818a5923fed550c5f270aa78cd0a493b0c7f9a7b33d18ad01bbf6479340e",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5447a9cd4bdc2dbd208b4567/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5447a9cd4bdc2dbd208b4567/source-component.json",
+      "sha256": "09e47392a478df9c81d433ede844ead7dfb6681c2c966ad4b74c851a089e4035",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5447a9cd4bdc2dbd208b4567/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5447a9cd4bdc2dbd208b4567/source-evidence.json",
+      "sha256": "d1c6dc538ffb8711b0fb6acafd7bdfb99ad5e7802fe3902d681e5a05ff1ec620",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/544a38634bdc2d58388b4568/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/544a38634bdc2d58388b4568/bindings.json",
+      "sha256": "dd762d52c0c900c7de35494a347956a7e9c8d89b4e299f35de902bd6d2e2a2fd",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/544a38634bdc2d58388b4568/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/544a38634bdc2d58388b4568/component.json",
+      "sha256": "df4942253dfd5e349055197ea2f70eb40f5ff9118720a45b3a4344b5f6354e60",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/544a38634bdc2d58388b4568/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/544a38634bdc2d58388b4568/model.bbmodel",
+      "sha256": "95eef07948acddb8b4a91db4d26a49af895226b95cf4fa49a6c643449f538378",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/544a38634bdc2d58388b4568/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/544a38634bdc2d58388b4568/nodes.json",
+      "sha256": "8e13d6cdddf0ed04061f3bacb2ff546c2da6a06ce448a599f21bd2ca26365398",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/544a38634bdc2d58388b4568/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/544a38634bdc2d58388b4568/source-component.json",
+      "sha256": "e90bb1a24eb6378e1a98ba94c8736c32a2adf4ab6b5528d6e6f21821731b4f64",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/544a38634bdc2d58388b4568/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/544a38634bdc2d58388b4568/source-evidence.json",
+      "sha256": "87c0c1b3888f24952b7220b7242e05d743a93543d3e94467e9215cce4af3ceed",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d355e64bdc2d962f8b4569/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d355e64bdc2d962f8b4569/bindings.json",
+      "sha256": "3818cfba876683687257628c92966a11646721100388b8017fe58a674a92bd8b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d355e64bdc2d962f8b4569/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d355e64bdc2d962f8b4569/component.json",
+      "sha256": "1418d4f97cb4d446628774946e7702f0735112e62e5cf61133c3191e452cf464",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d355e64bdc2d962f8b4569/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d355e64bdc2d962f8b4569/model.bbmodel",
+      "sha256": "96ff523afa03066d9a7d075abf8c93da4663257da0d668582771f0faffe0a9e9",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d355e64bdc2d962f8b4569/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d355e64bdc2d962f8b4569/nodes.json",
+      "sha256": "c16124179d7e1a76a9712704786a9758cdc6d2b029ec46770ba2a98e5e5f2751",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d355e64bdc2d962f8b4569/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d355e64bdc2d962f8b4569/source-component.json",
+      "sha256": "e6494422bc494fb73339ff70cee4791445ba60d9682cacd1954e7745274630c6",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d355e64bdc2d962f8b4569/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d355e64bdc2d962f8b4569/source-evidence.json",
+      "sha256": "1fe12670d3d6d850abab59cb3ccc4c9e27a5e8be3afdd28bb338b1018e8cf52e",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d3632e4bdc2d972f8b4569/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d3632e4bdc2d972f8b4569/bindings.json",
+      "sha256": "2e51f1bbe778ac1ee94ea0c443f66a0415a7520fb944f599c54e8987c6ba0d8b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d3632e4bdc2d972f8b4569/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d3632e4bdc2d972f8b4569/component.json",
+      "sha256": "0f3595314ad2599d7831b7d2e244ed8037b284dc5443a051440ae20f08fdd7a9",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d3632e4bdc2d972f8b4569/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d3632e4bdc2d972f8b4569/model.bbmodel",
+      "sha256": "d1ceb3eca3a72f8bbbe48b43de56b2c52142895f10841928d5b74e70d252ac2b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d3632e4bdc2d972f8b4569/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d3632e4bdc2d972f8b4569/nodes.json",
+      "sha256": "fee4a94313535e5b51d984b9290a3c03f9119b476696d93f61b84a0cf9786bba",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d3632e4bdc2d972f8b4569/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d3632e4bdc2d972f8b4569/source-component.json",
+      "sha256": "622547d0c87fddbffb8c360e3c0f22c343377bc9f5a9a11dffdafd0b6e24d114",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d3632e4bdc2d972f8b4569/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d3632e4bdc2d972f8b4569/source-evidence.json",
+      "sha256": "c91671c1b2ead136e6908954720d08cac61836a1a3403eee8e0564b596d5d335",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d44fd14bdc2d962f8b456e/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d44fd14bdc2d962f8b456e/bindings.json",
+      "sha256": "26d5c5eb14a3dc3b7bbbcd291fecb4f8ff8c2309867667b46c0ebed8ae667238",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d44fd14bdc2d962f8b456e/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d44fd14bdc2d962f8b456e/component.json",
+      "sha256": "20760fa3eecc7c49536eed4bd07719623fc279d2c5a4f3372421aed69f4fd91e",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d44fd14bdc2d962f8b456e/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d44fd14bdc2d962f8b456e/model.bbmodel",
+      "sha256": "842fefbb420d8ac7b559b9c223638e9681486ab7014d5258264010d1274a4838",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d44fd14bdc2d962f8b456e/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d44fd14bdc2d962f8b456e/nodes.json",
+      "sha256": "d35a77ff233439ffdd22211d0cf3ba6aecde320480a2eb08055f0bbe42bd2121",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d44fd14bdc2d962f8b456e/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d44fd14bdc2d962f8b456e/source-component.json",
+      "sha256": "2f4f297a037b3dd8735ba67d9d1118aa1a58477ff253902ba14121af0bacc21a",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d44fd14bdc2d962f8b456e/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d44fd14bdc2d962f8b456e/source-evidence.json",
+      "sha256": "4c7488ca0a8b4ad6d96a08917ce05e301bbec19cb4bbbd34fa1c8514040c6c0a",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4887d4bdc2d962f8b4570/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4887d4bdc2d962f8b4570/bindings.json",
+      "sha256": "61c3f44159206af703f3b90555311c555e0ff72e68db9ac85b9824d894a4ec39",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4887d4bdc2d962f8b4570/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4887d4bdc2d962f8b4570/component.json",
+      "sha256": "0b5ba408b59b851ce70977a92ce2f05ddf4d472dee82ce701e139e30341574fa",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4887d4bdc2d962f8b4570/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4887d4bdc2d962f8b4570/model.bbmodel",
+      "sha256": "5e071b4c58e97dfa215acbcf2bfa89c82147433ec6ae1b0a94a7e4143b9f6f45",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4887d4bdc2d962f8b4570/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4887d4bdc2d962f8b4570/nodes.json",
+      "sha256": "ce4de04468a3e79873ba2485615f5496500bf07fc600e689dd095719ae43fb67",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4887d4bdc2d962f8b4570/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4887d4bdc2d962f8b4570/source-component.json",
+      "sha256": "b15ba7f77a7a5b8f3957c999bd4807e307a650157ed35ca49eace896afb20e11",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4887d4bdc2d962f8b4570/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4887d4bdc2d962f8b4570/source-evidence.json",
+      "sha256": "c9070277163e3439aa78517b0ec2be178400b7b0fad72711c105437c90c667a3",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/bindings.json",
+      "sha256": "f50e33d6700cec1589517d84181b94b5d4a606869d96b844a3ecf32f7ed114d5",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/component.json",
+      "sha256": "4099754a4c26cf033f888a039d4065601434dc55a57269d1126170cd922adf21",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/model.bbmodel",
+      "sha256": "9d32813d04df18cd377f69914001e6a6ad479649ee875bf553c79803e61ef6c7",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/nodes.json",
+      "sha256": "8c6616f7016af4cd13fb38dae2845fbe240b740c0be90d02d0580531cd81d14d",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/source-component.json",
+      "sha256": "4929ac1d7cd7c34b33da6d8af226b5acc318ebf72b4c662385a2729816448b54",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4ae6c4bdc2d8b2f8b456e/source-evidence.json",
+      "sha256": "93e8f2f7d78be78955b2444448e848be817bee76595d9fa6b1ee7c5c7fe3e085",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4b9964bdc2d1d4e8b456e/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4b9964bdc2d1d4e8b456e/bindings.json",
+      "sha256": "78b72d0778a1ca17ef4f26fc85354f335aa3cb1df0d532e172a9b86b31e96eb1",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4b9964bdc2d1d4e8b456e/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4b9964bdc2d1d4e8b456e/component.json",
+      "sha256": "2228c0f77c247aa571db88e49eead9c84dd3f3dd66b6895b2c81168ca795d739",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4b9964bdc2d1d4e8b456e/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4b9964bdc2d1d4e8b456e/model.bbmodel",
+      "sha256": "c1339a13da2efc1b2cab4168ceab1b763e4c2b3172138a7ecf4c1d18f02990e5",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4b9964bdc2d1d4e8b456e/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4b9964bdc2d1d4e8b456e/nodes.json",
+      "sha256": "7736e91f436a09f2d1eb36ee19c2afb74baa8ce29e5cee767f2f7699b66357e0",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4b9964bdc2d1d4e8b456e/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4b9964bdc2d1d4e8b456e/source-component.json",
+      "sha256": "dd0c9a4697d9215996d183080da13f7b6f1c843db666ea42d6a6a4390dac94b1",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/55d4b9964bdc2d1d4e8b456e/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/55d4b9964bdc2d1d4e8b456e/source-evidence.json",
+      "sha256": "1f92957869a586fb70559eff5daef750d44d30df6c2914faaf46aa9d0ac6b9e1",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5649be884bdc2d79388b4577/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5649be884bdc2d79388b4577/bindings.json",
+      "sha256": "72b4c362e7828f8b74eb545032f3ab3aa4c1039aa8341cc63dce8a147f309707",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5649be884bdc2d79388b4577/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5649be884bdc2d79388b4577/component.json",
+      "sha256": "106e809fdb8c21c2fef94e00fa7a0534756515357d30ce2dcb7018756897acc2",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5649be884bdc2d79388b4577/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5649be884bdc2d79388b4577/model.bbmodel",
+      "sha256": "98f4664f5867f8ad66df6689056a63236d3b695b4d545c2d4deac1d8eae371e0",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5649be884bdc2d79388b4577/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5649be884bdc2d79388b4577/nodes.json",
+      "sha256": "486256013638ba28170b90376e6b4699ccc8fef5eceaba94f1272bf714337689",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5649be884bdc2d79388b4577/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5649be884bdc2d79388b4577/source-component.json",
+      "sha256": "20b9074d0323838b203934b53354d4b269bab78b25215ac9dddc851660522095",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5649be884bdc2d79388b4577/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5649be884bdc2d79388b4577/source-evidence.json",
+      "sha256": "3bc1715dd967dcac8194fb3c2df61e46a0c2d6b9870da74f850689707036fd3b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30bad5acfc400185c2dc4/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30bad5acfc400185c2dc4/bindings.json",
+      "sha256": "d132e4cb15666367bca894e0ee052cde4803dcb30f31f764b613b8e68a94962d",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30bad5acfc400185c2dc4/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30bad5acfc400185c2dc4/component.json",
+      "sha256": "45f84ecaa32733856707c18489417c4547056d0fc8fcdf968020265e6bbabc0b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30bad5acfc400185c2dc4/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30bad5acfc400185c2dc4/model.bbmodel",
+      "sha256": "ccca3a215e69e5d15338a4809d1ef4886c0025aa5b7ab50b3553e676ec15c10e",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30bad5acfc400185c2dc4/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30bad5acfc400185c2dc4/nodes.json",
+      "sha256": "2eea32252079b70d8a0db590f3203494d2d15ebd62c079173de1da8b38898e29",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30bad5acfc400185c2dc4/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30bad5acfc400185c2dc4/source-component.json",
+      "sha256": "9fea48fc779e032e01d93011728ff5787c1b94536f2f926f090cc1c8866dc69c",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30bad5acfc400185c2dc4/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30bad5acfc400185c2dc4/source-evidence.json",
+      "sha256": "b8e885a80f405b2f138468be7f386a61d3962c6c10f174dd2b3300544006e6a4",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30db85acfc408fb139a05/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30db85acfc408fb139a05/bindings.json",
+      "sha256": "bee55db19cbf4e20ea901c900e347075cdf440784953376a72610f479d087283",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30db85acfc408fb139a05/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30db85acfc408fb139a05/component.json",
+      "sha256": "0316991bd2027167c4f15849155dd2764848185cf18de45da70852c84fa89b0e",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30db85acfc408fb139a05/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30db85acfc408fb139a05/model.bbmodel",
+      "sha256": "4d8572c4f293589ef008e19dc819ec2848553ff8007b2fcd96a459636f0ccc67",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30db85acfc408fb139a05/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30db85acfc408fb139a05/nodes.json",
+      "sha256": "022fad2e519eaa4373541ff2da6d482c7ce6f61a7258d6466d0071be4b45d1db",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30db85acfc408fb139a05/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30db85acfc408fb139a05/source-component.json",
+      "sha256": "3ffd6fdc44f349912724e01057ffa5ae5f5ab1b89b0a229511435184530db50b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30db85acfc408fb139a05/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30db85acfc408fb139a05/source-evidence.json",
+      "sha256": "0dde33ae9bd763a1c77b4f6f5f73fa0cc5aa114d60c49d3120f073fad1fb403f",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30e795acfc408fb139a0b/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30e795acfc408fb139a0b/bindings.json",
+      "sha256": "087701bce1d0e29ddc7b94d7df51e47ce907d6f9a2b27e488636227cca1539b1",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30e795acfc408fb139a0b/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30e795acfc408fb139a0b/component.json",
+      "sha256": "a5eaaf888996d1807a6ae2aa6fdce153513d1bc2d167f40e7085d5659189327a",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30e795acfc408fb139a0b/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30e795acfc408fb139a0b/model.bbmodel",
+      "sha256": "fe91db1ec801bbf8b1f2af33cd47159cc8282c12097e8c26c3e47dc3df46e7f0",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30e795acfc408fb139a0b/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30e795acfc408fb139a0b/nodes.json",
+      "sha256": "9d6da5db6d6c850bd9d10cfe0b124a4c13cdce8381e1307eceb7320ec5be3f6e",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30e795acfc408fb139a0b/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30e795acfc408fb139a0b/source-component.json",
+      "sha256": "b69905b675a7fe9162a9673ea17aa1b953d46ea11ea94c61791a98d2894cf251",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/5ae30e795acfc408fb139a0b/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/5ae30e795acfc408fb139a0b/source-evidence.json",
+      "sha256": "3b9e84b373f8ebbbf849c5777124f9ff6ede240141f285844f6506f6d56bd0dc",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/637f57a68d137b27f70c4968/bindings.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/637f57a68d137b27f70c4968/bindings.json",
+      "sha256": "e9f58f13b1ddfe60c078f2bf3345d1c8abc4ac4322b005000f58f0fe4f5694d2",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/637f57a68d137b27f70c4968/component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/637f57a68d137b27f70c4968/component.json",
+      "sha256": "a2c7a8b98457ddbf894fd5154c35b44e2b2ca3e775603631d4b89f5955522fff",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/637f57a68d137b27f70c4968/model.bbmodel",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/637f57a68d137b27f70c4968/model.bbmodel",
+      "sha256": "4039ccbf1399c14bb0e5bcd1f8f7a6c3088484948396d891838ff9a76ca33cb5",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/637f57a68d137b27f70c4968/nodes.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/637f57a68d137b27f70c4968/nodes.json",
+      "sha256": "77800314c57b74ddc191f33ce7ead9f38312e088e2537ba92057287705de2896",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/637f57a68d137b27f70c4968/source-component.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/637f57a68d137b27f70c4968/source-component.json",
+      "sha256": "b183cfd6c4068b31c85a374c64990c4d86ded1292d8311c6ee4b6c9a1004182d",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/components/637f57a68d137b27f70c4968/source-evidence.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/components/637f57a68d137b27f70c4968/source-evidence.json",
+      "sha256": "72e29bef134cf638870e6243aaa48c7aa1e9df303c04a9cd154d6d9f8553c20b",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source-pack/manifest.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source-pack/manifest.json",
+      "sha256": "93e15e0d8fe6dcad827f64c5f92f043571104f9623d3ce7fbfaa4aad991050a4",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/source.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/source.json",
+      "sha256": "a008c5d02c3f8c5861b917c0c45262cac936c0fb106839cc62c5abc6f2c8dd70",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/m4a1-20260915-data/verification.json",
+      "new": "modules/tacz_adapter/weapon-sources/m4a1/verification.json",
+      "sha256": "02961dfdff6094c7abf920220e1236add3e67e74f63f9d823ee0eb2a3f2c27e2",
+      "action": "move"
+    },
+    {
+      "old": "docs/参考资料/adar-20260913-data/items.raw.json",
+      "new": "modules/tacz_adapter/weapon-sources/adar/items.raw.json",
+      "sha256": "c28d4b8d422a9e678e27c31ff1c10dc31cb4543cee8bb39ff0fe42d32c5e875f",
+      "action": "snapshot",
+      "reason": "Immutable historical reference retained; live production pipeline consumes the migrated snapshot"
+    }
+  ]
+}

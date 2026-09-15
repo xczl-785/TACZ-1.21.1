@@ -111,6 +111,11 @@ public class LocalPlayerShoot {
     }
 
     public ShootResult shoot() {
+        if (dev.tacticaltacz.AssemblyFireGate.blocked(player.getMainHandItem())) {
+            player.displayClientMessage(net.minecraft.network.chat.Component.translatable("tactical_tacz_adapter.assembly.cannot_fire"), true);
+            return ShootResult.FORGE_EVENT_CANCEL;
+        }
+
         // 因为开火冷却检测用了特别定制的方法，所以不检查状态锁，而是手动检查是否换弹、切枪
         IGunOperator gunOperator = IGunOperator.fromLivingEntity(player);
         ItemStack mainHandItem = player.getMainHandItem();

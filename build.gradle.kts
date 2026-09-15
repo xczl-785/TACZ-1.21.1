@@ -208,3 +208,4 @@ sourceSets.main { resources.srcDir("ammunition/runtime") }
 
 // Four portable weapon responsibilities, compiled into this single Mod.
 apply(from = "build-logic/weapon-modules.gradle")
+apply(from = "build-logic/adapter-integration.gradle")

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "disable_property": "withDevelopment=false",
+  "registrars": [
+    {
+      "source": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AdapterVerification.java",
+      "registration_method": "commands",
+      "literals": [
+        "tacztest",
+        "kit",
+        "target",
+        "ammo_kit",
+        "select_flesh",
+        "select_ap"
+      ],
+      "purpose": "TaCZ样品和靶标"
+    },
+    {
+      "source": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/ArmorVerification.java",
+      "registration_method": "commands",
+      "literals": [
+        "armortest",
+        "target",
+        "bare",
+        "status"
+      ],
+      "purpose": "防护靶标及状态"
+    },
+    {
+      "source": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/PlayerArmorCommands.java",
+      "registration_method": "commands",
+      "literals": [
+        "armortest",
+        "assembly_kit",
+        "catalog_kit",
+        "player_kit",
+        "shoot_me"
+      ],
+      "purpose": "护甲样品与玩家受击测试"
+    },
+    {
+      "source": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/RicochetTargetVerification.java",
+      "registration_method": "commands",
+      "literals": [
+        "armortest",
+        "ricochet"
+      ],
+      "purpose": "跳弹验证靶标"
+    },
+    {
+      "source": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/BarrelFireCommands.java",
+      "registration_method": "commands",
+      "literals": [
+        "assemblyfire",
+        "kit",
+        "remove",
+        "install",
+        "status"
+      ],
+      "purpose": "独立武器能力枪管禁射验证"
+    }
+  ]
+}
