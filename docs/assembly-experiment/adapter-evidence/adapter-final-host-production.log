@@ -1,0 +1,44 @@
+> Task :foundation:createMinecraftArtifacts UP-TO-DATE
+> Task :tacz_runtime:createMinecraftArtifacts UP-TO-DATE
+> Task :combat:createMinecraftArtifacts UP-TO-DATE
+> Task :tactical:createMinecraftArtifacts UP-TO-DATE
+> Task :combat:processResources UP-TO-DATE
+> Task :tactical:generateModMetadata UP-TO-DATE
+> Task :character:createMinecraftArtifacts UP-TO-DATE
+> Task :combat:jarJar NO-SOURCE
+> Task :tarkov_content:createMinecraftArtifacts UP-TO-DATE
+> Task :tactical:processResources UP-TO-DATE
+> Task :character:processResources UP-TO-DATE
+> Task :tactical:jarJar NO-SOURCE
+> Task :character:jarJar NO-SOURCE
+> Task :foundation:compileJava UP-TO-DATE
+> Task :foundation:generateModMetadata UP-TO-DATE
+> Task :tarkov_content:processResources UP-TO-DATE
+> Task :foundation:processResources UP-TO-DATE
+> Task :foundation:classes UP-TO-DATE
+> Task :foundation:jarJar NO-SOURCE
+> Task :foundation:jar UP-TO-DATE
+> Task :tactical:compileJava UP-TO-DATE
+> Task :tarkov_content:compileJava UP-TO-DATE
+> Task :tarkov_content:classes UP-TO-DATE
+> Task :tactical:classes UP-TO-DATE
+> Task :tarkov_content:jarJar NO-SOURCE
+> Task :tactical:jar UP-TO-DATE
+> Task :tarkov_content:jar UP-TO-DATE
+> Task :character:compileJava UP-TO-DATE
+> Task :character:classes UP-TO-DATE
+> Task :character:jar UP-TO-DATE
+> Task :combat:compileJava UP-TO-DATE
+> Task :combat:classes UP-TO-DATE
+> Task :combat:jar UP-TO-DATE
+> Task :tacz_runtime:verifyTaczDependency
+
+> Task :tacz_runtime:verifyRuntime
+TACZ_RUNTIME PASS: 907 engine/integration/weapon classes, one artifact, no adapter or weapon Mods; development=false
+
+> Task :tacz_runtime:downloadAssets UP-TO-DATE
+> Task :tacz_runtime:writeProductionClientLegacyClasspath
+> Task :tacz_runtime:prepareProductionClientRun
+
+BUILD SUCCESSFUL in 835ms
+28 actionable tasks: 4 executed, 24 up-to-date

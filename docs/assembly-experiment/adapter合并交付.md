@@ -1,6 +1,8 @@
 # 第二项：adapter 吸收交付
 
-2026-09-15。工程验证记录见 `adapter-integration-evidence.json`（完成制品锁定后生成）。前两项待用户联合验收；第三项没有实施。未启动 Minecraft 客户端/服务端，未触碰日常世界。
+2026-09-15。工程验证记录见 [机器证据](adapter-integration-evidence.json)。前两项待用户联合验收；第三项没有实施。未启动 Minecraft 客户端/服务端，未触碰日常世界。
+
+源码提交 `556149d37403fcf5a401a792380f3e94281f83ec`；NewMod 接入提交 `7bb5d87`；最终版本 `1.1.8-hotfix-r6-newmod.556149d3`。两份 Jar 的完整 SHA-512 位于机器证据及主线锁。
 
 ## 最终组合与边界
 
@@ -56,3 +58,7 @@
 ## 回退
 
 第二项必须整体回退：NewMod 回到 `3ef90e9f79c3544b5c2b5b5a8b863df66797c11f`，恢复原 adapter、运行设置、脚本和第一项 vendor 锁；实验室回到 `588db63a22279cb1b766cc8bbf6092295f0f618b`。旧第一项版本化 Jar 已保留。先保全后续未提交工作，再由所有者决定回退提交或另建基线检出，不能只替换 Jar 后混用新宿主。存档不在这些提交中，本次没有迁移或修改存档。
+
+## 公共开发辅助制品来源
+
+在 NewMod 基线 `3ef90e9`、Java 21 下执行 `:tactical:jar :character:jar :combat:jar :tarkov_content:jar :tactical:developmentClasses :tarkov_content:developmentClasses`。正式公共 Jar 直接取对应 `build/libs`；两个 development 辅助 Jar 仅把对应模块 `build/classes/java/development` 和 `build/resources/development` 下文件按相对路径 ZIP 打包，不含 Mod 元数据。它们只提供开发 Java 编译符号；实际验收宿主加载 NewMod 对应开发 source set。文件哈希固定在公共锁，更新公共代码须重新构建并更新锁，不能只改版本文字。

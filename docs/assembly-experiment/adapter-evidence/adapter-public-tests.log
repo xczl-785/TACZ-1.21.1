@@ -1,0 +1,95 @@
+> Task :foundation:createMinecraftArtifacts UP-TO-DATE
+> Task :vanilla_tactical_adapter:createMinecraftArtifacts UP-TO-DATE
+> Task :tactical:createMinecraftArtifacts UP-TO-DATE
+> Task :combat:createMinecraftArtifacts UP-TO-DATE
+> Task :examples:createMinecraftArtifacts UP-TO-DATE
+> Task :character:createMinecraftArtifacts UP-TO-DATE
+> Task :tarkov_content:createMinecraftArtifacts UP-TO-DATE
+> Task :combat:processResources UP-TO-DATE
+> Task :character:processResources UP-TO-DATE
+> Task :tactical:generateModMetadata UP-TO-DATE
+> Task :examples:processResources UP-TO-DATE
+> Task :character:jarJar NO-SOURCE
+> Task :vanilla_tactical_adapter:processResources UP-TO-DATE
+> Task :tactical:processResources UP-TO-DATE
+> Task :vanilla_tactical_adapter:jarJar NO-SOURCE
+> Task :tactical:jarJar NO-SOURCE
+> Task :examples:processDevelopmentResources UP-TO-DATE
+> Task :tactical:processDevelopmentResources UP-TO-DATE
+> Task :examples:jarJar NO-SOURCE
+> Task :combat:processDevelopmentResources UP-TO-DATE
+> Task :tarkov_content:processResources UP-TO-DATE
+> Task :tarkov_content:processDevelopmentResources UP-TO-DATE
+> Task :tarkov_content:jarJar NO-SOURCE
+> Task :foundation:compileJava UP-TO-DATE
+> Task :foundation:generateModMetadata UP-TO-DATE
+> Task :foundation:processResources UP-TO-DATE
+> Task :foundation:classes UP-TO-DATE
+> Task :tarkov_content:compileJava UP-TO-DATE
+> Task :foundation:jarJar NO-SOURCE
+> Task :examples:compileJava UP-TO-DATE
+> Task :examples:classes UP-TO-DATE
+> Task :tarkov_content:classes UP-TO-DATE
+> Task :foundation:jar UP-TO-DATE
+> Task :examples:compileDevelopmentJava UP-TO-DATE
+> Task :examples:developmentClasses UP-TO-DATE
+> Task :examples:jar UP-TO-DATE
+> Task :tarkov_content:compileDevelopmentJava UP-TO-DATE
+> Task :tarkov_content:developmentClasses UP-TO-DATE
+> Task :tarkov_content:jar UP-TO-DATE
+
+> Task :tactical:downloadAssets
+Loaded 137 artifacts from /Users/zhengpanpan/Downloads/tempProgram/NewMod/source/mods/tactical/build/tmp/downloadAssets/nfrt_artifact_manifest.properties
+Downloading asset index 17
+Using Minecraft asset root: /Users/zhengpanpan/.gradle/caches/neoformruntime/assets
+  ↓ https://piston-meta.mojang.com/v1/packages/1f22f8f4b4575831ce8d1d74b5656eb1bc04732c/17.json
+
+> Task :combat:downloadAssets
+Loaded 137 artifacts from /Users/zhengpanpan/Downloads/tempProgram/NewMod/source/mods/combat/build/tmp/downloadAssets/nfrt_artifact_manifest.properties
+Downloading asset index 17
+Using Minecraft asset root: /Users/zhengpanpan/.gradle/caches/neoformruntime/assets
+  ↓ https://piston-meta.mojang.com/v1/packages/1f22f8f4b4575831ce8d1d74b5656eb1bc04732c/17.json
+
+> Task :tactical:compileJava UP-TO-DATE
+> Task :tactical:classes UP-TO-DATE
+> Task :tactical:jar UP-TO-DATE
+> Task :vanilla_tactical_adapter:compileJava UP-TO-DATE
+> Task :vanilla_tactical_adapter:classes UP-TO-DATE
+> Task :vanilla_tactical_adapter:jar UP-TO-DATE
+> Task :combat:writeNeoForgeTestClasspath UP-TO-DATE
+> Task :tactical:writeNeoForgeTestClasspath UP-TO-DATE
+
+> Task :character:downloadAssets
+Loaded 137 artifacts from /Users/zhengpanpan/Downloads/tempProgram/NewMod/source/mods/character/build/tmp/downloadAssets/nfrt_artifact_manifest.properties
+Downloading asset index 17
+Using Minecraft asset root: /Users/zhengpanpan/.gradle/caches/neoformruntime/assets
+  ↓ https://piston-meta.mojang.com/v1/packages/1f22f8f4b4575831ce8d1d74b5656eb1bc04732c/17.json
+
+> Task :character:compileJava UP-TO-DATE
+> Task :character:classes UP-TO-DATE
+> Task :character:jar UP-TO-DATE
+> Task :combat:prepareNeoForgeTestFiles
+> Task :tactical:prepareNeoForgeTestFiles
+> Task :combat:compileJava UP-TO-DATE
+> Task :combat:classes UP-TO-DATE
+> Task :tactical:compileDevelopmentJava UP-TO-DATE
+> Task :tactical:developmentClasses UP-TO-DATE
+> Task :character:compileTestJava UP-TO-DATE
+> Task :combat:compileDevelopmentJava UP-TO-DATE
+> Task :combat:developmentClasses UP-TO-DATE
+> Task :character:writeNeoForgeTestClasspath UP-TO-DATE
+> Task :combat:compileTestJava UP-TO-DATE
+> Task :combat:processTestResources NO-SOURCE
+> Task :combat:testClasses UP-TO-DATE
+> Task :character:prepareNeoForgeTestFiles
+> Task :character:processTestResources NO-SOURCE
+> Task :character:testClasses UP-TO-DATE
+> Task :tactical:compileTestJava UP-TO-DATE
+> Task :combat:test UP-TO-DATE
+> Task :tactical:processTestResources NO-SOURCE
+> Task :tactical:testClasses UP-TO-DATE
+> Task :character:test UP-TO-DATE
+> Task :tactical:test UP-TO-DATE
+
+BUILD SUCCESSFUL in 2s
+52 actionable tasks: 6 executed, 46 up-to-date

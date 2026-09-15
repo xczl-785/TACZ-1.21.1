@@ -1,0 +1,122 @@
+{
+  "date": "2026-09-15",
+  "status": "engineering_complete_controller_review_pending_owner_joint_acceptance_pending",
+  "experiment_source_commit": "556149d37403fcf5a401a792380f3e94281f83ec",
+  "newmod_integration_commit": "7bb5d879a434d6c40bc1b5d2d9287bd2b6295f72",
+  "lock": {
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.249",
+    "java": 21,
+    "tacz": {
+      "version": "1.1.8-hotfix-r6-newmod.556149d3",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.556149d3.jar",
+      "sha512": "097a360ca271109c31edd435cf66036300492c9675745cec60248a8c23f8712a6cf14dcb93ee8e8d2066ee214b8145ff0e7d537217d8e014dc6e6eaa21c5182d",
+      "source_commit": "556149d37403fcf5a401a792380f3e94281f83ec"
+    },
+    "upstream_release": {
+      "project": "MUKSC/TACZ-1.21.1",
+      "unofficial_port": true,
+      "version": "1.1.8-hotfix-r6",
+      "modrinth_project_id": "OypNE65K",
+      "modrinth_version_id": "wPvGWIj9",
+      "maven": "maven.modrinth:OypNE65K:wPvGWIj9",
+      "url": "https://cdn.modrinth.com/data/OypNE65K/versions/wPvGWIj9/tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar",
+      "sha512": "ce14e985ce16d0517e7b1d41969a244818f46c1e4ae93842c3149963990aa488692c5372ecc4b71fe560a99794a3f865244dbef5b182beec4411148b4f83c53c",
+      "source_commit_reference": "ff715d80176f9ca61f5b2e6f029864f5adf209c2",
+      "verification": "Release source matches normalized EntityKineticBullet and ModernKineticGunScriptAPI source at this commit."
+    },
+    "development": {
+      "version": "1.1.8-hotfix-r6-newmod.556149d3",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.556149d3-development.jar",
+      "sha512": "207e6c74b6ea4c8ca24a045b11a59145688c1f8b0b4ae0e47a9c3114493058138837d4afbabb0619c0a9f5d49e13701fba8bb63bb7279a0291a0d1fdf1470601",
+      "source_commit": "556149d37403fcf5a401a792380f3e94281f83ec"
+    },
+    "rollback": {
+      "newmod_commit": "3ef90e9f79c3544b5c2b5b5a8b863df66797c11f",
+      "experiment_commit": "588db63a22279cb1b766cc8bbf6092295f0f618b",
+      "scope": "Restore whole source/runtime/lock combination, not jar only"
+    }
+  },
+  "tests": {
+    "experiment/adapterTest": {
+      "tests": 2,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "experiment/weapon_assemblyTest": {
+      "tests": 27,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "experiment/weapon_assembly_uiTest": {
+      "tests": 33,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "experiment/weapon_modelsTest": {
+      "tests": 9,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "tactical/test": {
+      "tests": 310,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "combat/test": {
+      "tests": 62,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "character/test": {
+      "tests": 20,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "python_tools": 12,
+  "source_equivalence_cases": 4,
+  "temporary_refund_quantity_cases": 1505,
+  "native_protection": {
+    "rounds": 86,
+    "guns": 15,
+    "attachments": 85,
+    "caliber_effect_indices": 24,
+    "jar_resources": 1986
+  },
+  "runtime_classes": {
+    "production": 907,
+    "development": 948
+  },
+  "game_started": false,
+  "worlds_modified": false,
+  "public_tests": "unchanged public code; Gradle up-to-date cached results",
+  "log_sha256": {
+    "three-gun-comparison.json": "fa0e44bdbd8486c2f545c0946322b8d52f6619c716585efe77a7fc578e323d9d",
+    "adapter-final-build.log": "0eed586d8191f35fb706ded049863f5683fcc418f26c4dff08c4228792da4992",
+    "adapter-public-tests.log": "e6f2ade6b4295809a4909d34bb2e349bf91cac5c24e122487cf6cfc0428896fa",
+    "adapter-final-host-development.log": "773e23a8eb9760718474b2c745f4a2bfbe7b64742075c8f3db6ef4dca39d5301",
+    "adapter-final-host-production.log": "d7ddc2df493894efd88ede8d696485d76ef6f6119f5f0d7c23d46cee05c191b0"
+  },
+  "commands": [
+    "JAVA_HOME=<JDK21> bash gradlew build compilePureJava prepareAssemblyClientRun --offline --console=plain -Pmod_version=1.1.8-hotfix-r6-newmod.556149d3",
+    "python3 tools/verify_adapter_integration.py --jar <formal> --development <development> --newmod ../NewMod",
+    "python3 tools/verify_weapon_modules.py --jar <formal> --newmod ../NewMod",
+    "python3 tools/test_adapter_hook_equivalence.py",
+    "python3 tools/verify_native_ammo_retirement.py --jar <formal>",
+    "python3 tools/verify_cleanup.py <formal>",
+    "python3 tools/verify_extra_content.py",
+    "python3 tools/generate_newmod_ammunition.py --check",
+    "JAVA_HOME=<JDK21> python3 tools/test_temporary_ammo_refund.py",
+    "NewMod: :tacz_runtime:verifyRuntime :tacz_runtime:prepareClientRun verifyModuleBoundaries verifyDistribution verifyDevelopmentCommands",
+    "NewMod: :tacz_runtime:verifyRuntime :tacz_runtime:prepareProductionClientRun -PwithDevelopment=false"
+  ],
+  "log_normalization": "Trailing whitespace removed only"
+}

@@ -1,0 +1,76 @@
+> Task :tactical:createMinecraftArtifacts UP-TO-DATE
+> Task :combat:createMinecraftArtifacts UP-TO-DATE
+> Task :firearms:createMinecraftArtifacts UP-TO-DATE
+> Task :examples:createMinecraftArtifacts UP-TO-DATE
+> Task :raid_gameplay:createMinecraftArtifacts UP-TO-DATE
+> Task :vanilla_tactical_adapter:createMinecraftArtifacts UP-TO-DATE
+> Task :tarkov_content:createMinecraftArtifacts UP-TO-DATE
+> Task :character:createMinecraftArtifacts UP-TO-DATE
+> Task :foundation:createMinecraftArtifacts UP-TO-DATE
+> Task :tacz_runtime:createMinecraftArtifacts UP-TO-DATE
+> Task :character:processResources UP-TO-DATE
+> Task :combat:processResources UP-TO-DATE
+> Task :character:jarJar NO-SOURCE
+> Task :raid_gameplay:processResources UP-TO-DATE
+> Task :combat:jarJar NO-SOURCE
+> Task :vanilla_tactical_adapter:processResources UP-TO-DATE
+> Task :examples:processResources UP-TO-DATE
+> Task :raid_gameplay:jarJar NO-SOURCE
+> Task :tactical:generateModMetadata UP-TO-DATE
+> Task :examples:jarJar NO-SOURCE
+> Task :tactical:processResources UP-TO-DATE
+> Task :vanilla_tactical_adapter:jarJar NO-SOURCE
+> Task :tactical:jarJar NO-SOURCE
+> Task :foundation:compileJava UP-TO-DATE
+> Task :tarkov_content:processResources UP-TO-DATE
+> Task :foundation:generateModMetadata UP-TO-DATE
+> Task :foundation:processResources UP-TO-DATE
+> Task :foundation:classes UP-TO-DATE
+> Task :foundation:jarJar NO-SOURCE
+> Task :foundation:jar UP-TO-DATE
+> Task :tactical:compileJava UP-TO-DATE
+> Task :tactical:classes UP-TO-DATE
+> Task :tactical:jar UP-TO-DATE
+> Task :examples:compileJava UP-TO-DATE
+> Task :tarkov_content:compileJava UP-TO-DATE
+> Task :tarkov_content:classes UP-TO-DATE
+> Task :tarkov_content:jarJar NO-SOURCE
+> Task :examples:classes UP-TO-DATE
+> Task :tarkov_content:jar UP-TO-DATE
+> Task :examples:jar UP-TO-DATE
+> Task :character:compileJava UP-TO-DATE
+> Task :vanilla_tactical_adapter:compileJava UP-TO-DATE
+> Task :raid_gameplay:compileJava UP-TO-DATE
+> Task :character:classes UP-TO-DATE
+> Task :vanilla_tactical_adapter:classes UP-TO-DATE
+> Task :raid_gameplay:classes UP-TO-DATE
+> Task :character:jar UP-TO-DATE
+> Task :vanilla_tactical_adapter:jar UP-TO-DATE
+> Task :raid_gameplay:jar UP-TO-DATE
+> Task :combat:compileJava UP-TO-DATE
+> Task :combat:classes UP-TO-DATE
+> Task :combat:jar UP-TO-DATE
+> Task :tacz_runtime:verifyTaczDependency
+
+> Task :verifyDevelopmentCommands
+Development command catalog: 9 registrars verified
+
+> Task :firearms:verifyIndependence
+> Task :firearms:compileJava UP-TO-DATE
+> Task :firearms:processResources UP-TO-DATE
+> Task :firearms:classes UP-TO-DATE
+> Task :firearms:jarJar NO-SOURCE
+> Task :firearms:jar UP-TO-DATE
+> Task :firearms:verifyArtifact
+> Task :verifyModuleBoundaries
+
+> Task :tacz_runtime:verifyRuntime
+TACZ_RUNTIME PASS: 948 engine/integration/weapon classes, one artifact, no adapter or weapon Mods; development=true
+
+> Task :tacz_runtime:downloadAssets UP-TO-DATE
+> Task :tacz_runtime:writeClientLegacyClasspath UP-TO-DATE
+> Task :tacz_runtime:prepareClientRun UP-TO-DATE
+> Task :verifyDistribution
+
+BUILD SUCCESSFUL in 1s
+49 actionable tasks: 7 executed, 42 up-to-date
