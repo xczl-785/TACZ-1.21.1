@@ -2,7 +2,7 @@
 
 2026-09-15。工程验证记录见 [机器证据](adapter-integration-evidence.json)。前两项待用户联合验收；第三项没有实施。未启动 Minecraft 客户端/服务端，未触碰日常世界。
 
-源码提交 `556149d37403fcf5a401a792380f3e94281f83ec`；NewMod 接入提交 `7bb5d87`；最终版本 `1.1.8-hotfix-r6-newmod.556149d3`。两份 Jar 的完整 SHA-512 位于机器证据及主线锁。
+源码提交 `556149d37403fcf5a401a792380f3e94281f83ec`；NewMod 初始接入 `7bb5d87`，默认配置缓存修复后的最终接入 `e45dd1f896adb4342781c88716c690d34a850372`；最终版本 `1.1.8-hotfix-r6-newmod.556149d3`。两份 Jar 的完整 SHA-512 位于机器证据及主线锁。
 
 ## 最终组合与边界
 
@@ -62,3 +62,7 @@
 ## 公共开发辅助制品来源
 
 在 NewMod 基线 `3ef90e9`、Java 21 下执行 `:tactical:jar :character:jar :combat:jar :tarkov_content:jar :tactical:developmentClasses :tarkov_content:developmentClasses`。正式公共 Jar 直接取对应 `build/libs`；两个 development 辅助 Jar 仅把对应模块 `build/classes/java/development` 和 `build/resources/development` 下文件按相对路径 ZIP 打包，不含 Mod 元数据。它们只提供开发 Java 编译符号；实际验收宿主加载 NewMod 对应开发 source set。文件哈希固定在公共锁，更新公共代码须重新构建并更新锁，不能只改版本文字。
+
+## 主控复核返修：默认配置缓存
+
+首轮主控未通过：最初证据命令使用 `--no-configuration-cache`，新宿主在默认缓存下的执行闭包引用 `rootProject`，导致校验失败。已将候选文件与版本/哈希在配置期捕获，执行期只读取值；保留仓库默认缓存策略。相邻 verifyRuntime 使用预先捕获的文件集合和源 Mod ID，不调用 Project。开发 `verifyRuntime + prepareClientRun + verifyModuleBoundaries`、正式 `verifyRuntime + prepareProductionClientRun` 各在默认配置下首次保存、再次复用通过，四份日志已归档。仅 NewMod 宿主修复，实验室源码和两个固定 Jar 未变；没有启动游戏。

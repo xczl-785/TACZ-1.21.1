@@ -2,7 +2,7 @@
   "date": "2026-09-15",
   "status": "engineering_complete_controller_review_pending_owner_joint_acceptance_pending",
   "experiment_source_commit": "556149d37403fcf5a401a792380f3e94281f83ec",
-  "newmod_integration_commit": "7bb5d879a434d6c40bc1b5d2d9287bd2b6295f72",
+  "newmod_integration_commit": "e45dd1f896adb4342781c88716c690d34a850372",
   "lock": {
     "minecraft": "1.21.1",
     "neoforge": "21.1.249",
@@ -99,10 +99,14 @@
   "worlds_modified": false,
   "public_tests": "unchanged public code; Gradle up-to-date cached results",
   "log_sha256": {
+    "adapter-cache-production-reuse.log": "8333be2e2ebcfc49c5b481ae3d3c74e76071e503a99c4c43cf5e59d191e98e82",
     "three-gun-comparison.json": "fa0e44bdbd8486c2f545c0946322b8d52f6619c716585efe77a7fc578e323d9d",
     "adapter-final-build.log": "0eed586d8191f35fb706ded049863f5683fcc418f26c4dff08c4228792da4992",
     "adapter-public-tests.log": "e6f2ade6b4295809a4909d34bb2e349bf91cac5c24e122487cf6cfc0428896fa",
+    "adapter-cache-production-first.log": "5076b62df2d4e60893e82e1bc3083554d83539b68f0d38fcd1106533e1e7920a",
+    "adapter-cache-development-first.log": "55c3825515e13ebaaf2561ce39d38db1985a401b499d16be7ec4822763948cc3",
     "adapter-final-host-development.log": "773e23a8eb9760718474b2c745f4a2bfbe7b64742075c8f3db6ef4dca39d5301",
+    "adapter-cache-development-reuse.log": "93233c0dfbe766f7838501864f5e642669b7252657b1ab64338d448a07c4636f",
     "adapter-final-host-production.log": "d7ddc2df493894efd88ede8d696485d76ef6f6119f5f0d7c23d46cee05c191b0"
   },
   "commands": [
@@ -116,7 +120,28 @@
     "python3 tools/generate_newmod_ammunition.py --check",
     "JAVA_HOME=<JDK21> python3 tools/test_temporary_ammo_refund.py",
     "NewMod: :tacz_runtime:verifyRuntime :tacz_runtime:prepareClientRun verifyModuleBoundaries verifyDistribution verifyDevelopmentCommands",
-    "NewMod: :tacz_runtime:verifyRuntime :tacz_runtime:prepareProductionClientRun -PwithDevelopment=false"
+    "NewMod: :tacz_runtime:verifyRuntime :tacz_runtime:prepareProductionClientRun -PwithDevelopment=false",
+    "NewMod default cache: :tacz_runtime:verifyRuntime :tacz_runtime:prepareClientRun verifyModuleBoundaries --offline --console=plain (twice)",
+    "NewMod default cache: :tacz_runtime:verifyRuntime :tacz_runtime:prepareProductionClientRun -PwithDevelopment=false --offline --console=plain (twice)"
   ],
-  "log_normalization": "Trailing whitespace removed only"
+  "log_normalization": "Trailing whitespace removed only",
+  "newmod_initial_integration_commit": "7bb5d879a434d6c40bc1b5d2d9287bd2b6295f72",
+  "configuration_cache": {
+    "initial_review": "Failed: verifyTaczDependency referenced rootProject during execution; no-configuration-cache checks did not cover default behavior",
+    "fix": "Capture artifact File and scalar metadata during task configuration; no project access in verification actions",
+    "development": [
+      "stored",
+      "reused"
+    ],
+    "production": [
+      "stored",
+      "reused"
+    ],
+    "logs": [
+      "adapter-cache-development-first.log",
+      "adapter-cache-development-reuse.log",
+      "adapter-cache-production-first.log",
+      "adapter-cache-production-reuse.log"
+    ]
+  }
 }
