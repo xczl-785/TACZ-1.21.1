@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-16",
+  "sourceCommit": "2d583307ac80f0d9cb2425cead4087dbd2c9fbf0",
+  "newmodCommit": "35a78c5201b4c1f30c755414bce879ac18500f05",
+  "version": "1.1.8-hotfix-r6-newmod.2d583307",
+  "scope": "Native assembly root uses native renderer; GUI bakes enabled assembly appearance, caches bounded textures and provides visible bounds to inventory fitting",
+  "checks": {
+    "java": {
+      "tests": 90,
+      "failures": 0,
+      "errors": 0
+    },
+    "pythonPipelineTests": 14,
+    "pythonEditableTests": 3,
+    "checkAssemble": "passed for final source commit",
+    "artifacts": "both jars contain custom renderer entry, icon classes and matching generated appearance resources",
+    "adapterIntegration": "passed",
+    "development": "960 classes, single artifact; prepare and configuration cache reuse passed",
+    "production": "919 classes, single artifact; prepare and configuration cache reuse passed",
+    "offlineImages": [
+      "display-full.png",
+      "display-no-stock.png",
+      "display-bare-receiver.png"
+    ]
+  },
+  "gameStarted": false,
+  "worldsModified": false,
+  "userAcceptance": "pending: first/third person, inventory/hotbar, ground/fixed, near/far, resource reload and multiple assemblies",
+  "limitations": [
+    "Offline rendering and model-state tests do not establish GPU or in-game FPS acceptance",
+    "Existing optic candidates keep neutral workbench geometry in thumbnails; optics production and folded/scope visual review remain in the final optics stage"
+  ],
+  "deferred": [
+    "Bulk non-optic production planning after owner acceptance",
+    "Optics production last"
+  ]
+}

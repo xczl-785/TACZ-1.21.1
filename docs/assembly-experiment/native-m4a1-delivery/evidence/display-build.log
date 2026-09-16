@@ -1,0 +1,88 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :verifyGameplayDependencies
+> Task :verifyPublicDependency
+
+> Task :compileJava
+/Users/zhengpanpan/Downloads/tempProgram/TACZ-1.21.1-experiments/modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunClientRegistration.java:3: 警告: [removal] EventBusSubscriber 中的 bus() 已过时, 且标记为待删除
+@net.neoforged.fml.common.EventBusSubscriber(modid="tacz",value=net.neoforged.api.distmarker.Dist.CLIENT,bus=net.neoforged.fml.common.EventBusSubscriber.Bus.MOD)
+                                                                                                         ^
+/Users/zhengpanpan/Downloads/tempProgram/TACZ-1.21.1-experiments/modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunClientRegistration.java:3: 警告: [removal] EventBusSubscriber 中的 Bus 已过时, 且标记为待删除
+@net.neoforged.fml.common.EventBusSubscriber(modid="tacz",value=net.neoforged.api.distmarker.Dist.CLIENT,bus=net.neoforged.fml.common.EventBusSubscriber.Bus.MOD)
+                                                                                                                                                        ^
+2 个警告
+
+> Task :verifyConfiguredWeapons
+Native M4A1 contract PASS: 15 default nodes, 52 attachments, 140 preserved rig nodes; high/low 1011 144
+Configured weapons: 4; physical items: 52; names, preset, material and registration resources valid
+
+> Task :processResources
+> Task :classes
+> Task :compileAdapterDevelopmentJava UP-TO-DATE
+> Task :processAdapterDevelopmentResources UP-TO-DATE
+> Task :adapterDevelopmentClasses UP-TO-DATE
+> Task :jarJar UP-TO-DATE
+> Task :jar
+> Task :mergeDevelopmentLanguages
+> Task :developmentJar
+> Task :sourcesJar
+> Task :compileAdapterTestJava
+> Task :processAdapterTestResources NO-SOURCE
+> Task :adapterTestClasses
+> Task :adapterTest
+> Task :compilePureJava UP-TO-DATE
+> Task :compileTestJava
+> Task :compileUiDevelopmentJava UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :writeNeoForgeTestClasspath UP-TO-DATE
+> Task :prepareNeoForgeTestFiles UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses
+> Task :processUiDevelopmentResources UP-TO-DATE
+> Task :uiDevelopmentClasses UP-TO-DATE
+> Task :test
+
+> Task :verifyAdapterIntegration
+ADAPTER_INTEGRATION PASS: 386 paths, 12 injections retired; unchanged gun content and public ownership; 20 bootstrap/subscriber source edits
+
+> Task :verifyNativeEditable
+...
+----------------------------------------------------------------------
+Ran 3 tests in 1.218s
+
+OK
+
+> Task :verifyWeaponModules
+WEAPON_MODULES PASS: 24 production sources, four internal boundaries, persistent profile identity, unchanged resources
+
+> Task :verifyWeaponPipeline
+..............
+----------------------------------------------------------------------
+Ran 14 tests in 1.871s
+
+OK
+
+> Task :compileWeapon_assemblyTestJava UP-TO-DATE
+> Task :processWeapon_assemblyTestResources UP-TO-DATE
+> Task :weapon_assemblyTestClasses UP-TO-DATE
+> Task :weapon_assemblyTest
+> Task :compileWeapon_assembly_uiTestJava UP-TO-DATE
+> Task :processWeapon_assembly_uiTestResources UP-TO-DATE
+> Task :weapon_assembly_uiTestClasses UP-TO-DATE
+> Task :weapon_assembly_uiTest
+> Task :compileWeapon_modelsTestJava UP-TO-DATE
+> Task :processWeapon_modelsTestResources NO-SOURCE
+> Task :weapon_modelsTestClasses UP-TO-DATE
+> Task :weapon_modelsTest
+> Task :compileWeapon_runtimeTestJava NO-SOURCE
+> Task :processWeapon_runtimeTestResources NO-SOURCE
+> Task :weapon_runtimeTestClasses UP-TO-DATE
+> Task :weapon_runtimeTest NO-SOURCE
+> Task :check
+> Task :assemble
+
+[Incubating] Problems report is available at: file:///Users/zhengpanpan/Downloads/tempProgram/TACZ-1.21.1-experiments/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 51s
+35 actionable tasks: 20 executed, 15 up-to-date
