@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tacz_assembly:ump45",
+      "tags": [
+        "item_foundation:type/weapon/firearm/smg"
+      ]
+    },
+    {
+      "item": "tacz_assembly:ump_upper",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_assembly:ump_barrel",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "tacz_assembly:ump_bolt",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_assembly:ump_charging_handle",
+      "tags": [
+        "item_foundation:type/weapon_mod/charging_handle"
+      ]
+    },
+    {
+      "item": "tacz_assembly:ump_stock",
+      "tags": [
+        "item_foundation:type/weapon_mod/stock"
+      ]
+    },
+    {
+      "item": "tacz_assembly:ump_rails",
+      "tags": [
+        "item_foundation:type/weapon_mod/mount"
+      ]
+    },
+    {
+      "item": "tacz_assembly:ump_magazine_standard",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    }
+  ]
+}

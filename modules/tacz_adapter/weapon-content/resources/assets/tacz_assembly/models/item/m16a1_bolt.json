@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tacz_assembly:item/m16a1/m16a1_bolt"
+  }
+}

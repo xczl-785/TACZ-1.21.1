@@ -1,0 +1,9 @@
+{
+  "name": "gun.tacz_assembly.scar_l",
+  "display": "tacz_assembly:scar_l",
+  "data": "tacz_assembly:scar_l",
+  "tooltip": "tacz.gun.scar_l.desc",
+  "type": "rifle",
+  "sort": 103,
+  "item_type": "tacz_assembly:scar_l"
+}

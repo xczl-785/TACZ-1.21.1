@@ -1,0 +1,630 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "method": "Actual Blockbench Codecs.project.load + compile(raw), temporary files only; independent native source cube-index geometry/UV comparison",
+  "models": 38,
+  "cubes": 1716,
+  "results": [
+    {
+      "definitionId": "m16a1_lower",
+      "source": "native_m16a1/editable",
+      "cubes": 79,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "b259681eae1f65ddcda2777667ef93792058d2f7f4a86751829833c83faad1dc"
+    },
+    {
+      "definitionId": "m16a1_upper",
+      "source": "native_m16a1/editable",
+      "cubes": 40,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "2e36acc7eea15b579c9a0fa3ba81af546a9b79cdff96bc801b7c6555855d731f"
+    },
+    {
+      "definitionId": "m16a1_barrel",
+      "source": "native_m16a1/editable",
+      "cubes": 4,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.1086244689504383e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "07b9a42b52b5af97cdadf1786efa927377fce586fb1b24204e4f28439c43607c"
+    },
+    {
+      "definitionId": "m16a1_front_sight",
+      "source": "native_m16a1/editable",
+      "cubes": 47,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 5.329070518200751e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "6cf0bce486b034b24eb79a5e69e1219d64d7dd6a058b3ea40b5f173db30e313d"
+    },
+    {
+      "definitionId": "m16a1_pistol_grip",
+      "source": "native_m16a1/editable",
+      "cubes": 10,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "a4832c3d717a5eb1de0f440f4d113acc169f3002d6c8460f10475d6bc2da0745"
+    },
+    {
+      "definitionId": "m16a1_muzzle",
+      "source": "native_m16a1/editable",
+      "cubes": 25,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "83b1d9ef8ab99205faabde2108891e24b76d29fa3190ef6d0d0dbd6f413fb81f"
+    },
+    {
+      "definitionId": "m16a1_charging_handle",
+      "source": "native_m16a1/editable",
+      "cubes": 15,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "ce180ce6247172c6c8e378931b23265f5328b6d9dff759615a4f5bfbc649bae3"
+    },
+    {
+      "definitionId": "m16a1_bolt",
+      "source": "native_m16a1/editable",
+      "cubes": 26,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "dbef41b0512b151c079213cfe78ae7a43e48a0ed97375c4e06cad064ba1a5bb3"
+    },
+    {
+      "definitionId": "m16a1_rear_sight",
+      "source": "native_m16a1/editable",
+      "cubes": 43,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "13838ae947af067deb9864ab6074fafd26431164cf37a9e30462662b0c59941a"
+    },
+    {
+      "definitionId": "m16a1_stock",
+      "source": "native_m16a1/editable",
+      "cubes": 38,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 7.105427357601002e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "fb9583bf9f8e9376ded0012ed53cd2cf79e266403a6bbfbf1ce9448fe7eb5134"
+    },
+    {
+      "definitionId": "m16a1_barrel_ring",
+      "source": "native_m16a1/editable",
+      "cubes": 8,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "a3e38d6d589a5a6c635bbba38b449ede0678ef5f5ba59961c455ee4f2f1fa366"
+    },
+    {
+      "definitionId": "m16a1_handguard",
+      "source": "native_m16a1/editable",
+      "cubes": 84,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 5.329070518200751e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "d8211db934469cc22ab58063f34971c1281994d8f8481eab066b775c9acbe833"
+    },
+    {
+      "definitionId": "m16a1_magazine_standard",
+      "source": "native_m16a1/editable",
+      "cubes": 12,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 2.220446049250313e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "bb74b044402d1b46c555143978d9a922f5e368e33ac1727644c233866c012b8a"
+    },
+    {
+      "definitionId": "tacz_m16a1_extended_mag_1",
+      "source": "native_m16a1/magazine_variants",
+      "cubes": 27,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "587b2a1579b0976cd61eed0d759060394a433031cd8212dd3e3156ece4fb2dfa"
+    },
+    {
+      "definitionId": "tacz_m16a1_extended_mag_2",
+      "source": "native_m16a1/magazine_variants",
+      "cubes": 27,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "f6b7406ddbf858806fc4c8b44354a35d0214fd7d67e04bcbded4b02f1f272d68"
+    },
+    {
+      "definitionId": "tacz_m16a1_extended_mag_3",
+      "source": "native_m16a1/magazine_variants",
+      "cubes": 27,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "a5fdddb499f77d7f6aaed46eb7a15d638701fc119fa90f51a8947fc3069a7510"
+    },
+    {
+      "definitionId": "scar_l_lower",
+      "source": "native_scar_l/editable",
+      "cubes": 65,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "260fe976b9a055e77b28d0e02ec64e0d7ad2df690c24f14a0f39986e97bb686f"
+    },
+    {
+      "definitionId": "scar_l_upper",
+      "source": "native_scar_l/editable",
+      "cubes": 216,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "fbc6fe41b1f5c9b7c99a2409875321347a100c33c1cdc084532702659275cc30"
+    },
+    {
+      "definitionId": "scar_l_barrel",
+      "source": "native_scar_l/editable",
+      "cubes": 4,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "994dbfdcce90fba84798f21524e1d783aaf0aaff6b6b44663b875392e6b01e5d"
+    },
+    {
+      "definitionId": "scar_l_gas_system",
+      "source": "native_scar_l/editable",
+      "cubes": 28,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.887379141862766e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "5a13585d6fc839bb88053eeb75b9206e71c7bdaecf649371b8a6a53f07c6cd1f"
+    },
+    {
+      "definitionId": "scar_l_pistol_grip",
+      "source": "native_scar_l/editable",
+      "cubes": 12,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "c2b2293e7e53ce668bb395acd1827d94b68f42fee9fd9c372138270d0ba6178d"
+    },
+    {
+      "definitionId": "scar_l_stock",
+      "source": "native_scar_l/editable",
+      "cubes": 123,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "ef5ff2ee842c5d3b0b72cd6b6fe828ff11b6fa912f220ed4245683120e3909c6"
+    },
+    {
+      "definitionId": "scar_l_muzzle",
+      "source": "native_scar_l/editable",
+      "cubes": 36,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "5405a3b3876ab0ba0927e1fd19dc7d06c220e8cbb225980bc5d06b679358f1b2"
+    },
+    {
+      "definitionId": "scar_l_bolt",
+      "source": "native_scar_l/editable",
+      "cubes": 15,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "01f97892a7b07f3adb8aade389e11772fef590898b421aabccb6adb9a0485357"
+    },
+    {
+      "definitionId": "scar_l_front_sight",
+      "source": "native_scar_l/editable",
+      "cubes": 48,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "8908452036258411b3d0f704fc78ec99a1b3994f0c3e0077f8b7efbb9ef36db1"
+    },
+    {
+      "definitionId": "scar_l_rear_sight",
+      "source": "native_scar_l/editable",
+      "cubes": 54,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "4eb359c272e2a0ebca576d648b57abf62f72662788a7d73d7878d8aa8fac8109"
+    },
+    {
+      "definitionId": "scar_l_magazine_standard",
+      "source": "native_scar_l/editable",
+      "cubes": 27,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "ee4e193865f0a6ec3c407a595f5106e8622443cc534d83506551b137f7c4b48e"
+    },
+    {
+      "definitionId": "tacz_scar_l_extended_mag_1",
+      "source": "native_scar_l/magazine_variants",
+      "cubes": 33,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "18ce2af767bdb27af9d35f3486885928e2168f95dd947dad7103f7634bb7d687"
+    },
+    {
+      "definitionId": "tacz_scar_l_extended_mag_2",
+      "source": "native_scar_l/magazine_variants",
+      "cubes": 32,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "3c1d833f5ad9c2d3fb7f2258b3b51c729b70d826d8b1ee72e9e7ae1f61e8fbec"
+    },
+    {
+      "definitionId": "tacz_scar_l_extended_mag_3",
+      "source": "native_scar_l/magazine_variants",
+      "cubes": 88,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "210141c00a0281f101fca1053c6254a7818780eb77a1931a9a4798a759230443"
+    },
+    {
+      "definitionId": "ump_lower",
+      "source": "native_ump45/editable",
+      "cubes": 53,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "76a03196952fbf3afc1bc41a581d8fe24d3e91351ebae2109f25cc4ed560bc6b"
+    },
+    {
+      "definitionId": "ump_upper",
+      "source": "native_ump45/editable",
+      "cubes": 162,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 3.552713678800501e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "da4d8f8451b1593c329fd0639e662c4786652d4f7a662f3facfc1f2b38bfc86c"
+    },
+    {
+      "definitionId": "ump_barrel",
+      "source": "native_ump45/editable",
+      "cubes": 12,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "92b3b637bd34ce4dbd958e8b797a2eb1a02dfc579c668e714673e9438fd0e95b"
+    },
+    {
+      "definitionId": "ump_bolt",
+      "source": "native_ump45/editable",
+      "cubes": 5,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 0,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "8398aa5d9ce1199880bacf9d489f2600b168cf0a5d5ba599cd12c1a045d2601d"
+    },
+    {
+      "definitionId": "ump_charging_handle",
+      "source": "native_ump45/editable",
+      "cubes": 9,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "6c7fa13dd877e418c659affa882779589d0f6adcd0458c0289eb682b2e7ccbc8"
+    },
+    {
+      "definitionId": "ump_stock",
+      "source": "native_ump45/editable",
+      "cubes": 86,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 7.105427357601002e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "fa281e28dda2121c4316468cdb6184350f31038f19201f827271cbcff8c427c0"
+    },
+    {
+      "definitionId": "ump_rails",
+      "source": "native_ump45/editable",
+      "cubes": 85,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 1.7763568394002505e-15,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "d4ccabe8583d95eefcf1ba16e3859abe4efcb7d620d727915a7f0a0c17a79056"
+    },
+    {
+      "definitionId": "ump_magazine_standard",
+      "source": "native_ump45/editable",
+      "cubes": 11,
+      "maxRoundtripPositionError": 0,
+      "maxNativePositionError": 8.881784197001252e-16,
+      "uvEqual": true,
+      "boneMetadataEqual": true,
+      "sourceModelSha256": "3279dfe3253f2403c76a88a1e7574c46df1044ecc85a32950ec6d456ac0a7e55"
+    }
+  ],
+  "blockbenchCounts": [
+    {
+      "definitionId": "m16a1_lower",
+      "source": "native_m16a1/editable",
+      "cubes": 79,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_upper",
+      "source": "native_m16a1/editable",
+      "cubes": 40,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_barrel",
+      "source": "native_m16a1/editable",
+      "cubes": 4,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_front_sight",
+      "source": "native_m16a1/editable",
+      "cubes": 47,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_pistol_grip",
+      "source": "native_m16a1/editable",
+      "cubes": 10,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_muzzle",
+      "source": "native_m16a1/editable",
+      "cubes": 25,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_charging_handle",
+      "source": "native_m16a1/editable",
+      "cubes": 15,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_bolt",
+      "source": "native_m16a1/editable",
+      "cubes": 26,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_rear_sight",
+      "source": "native_m16a1/editable",
+      "cubes": 43,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_stock",
+      "source": "native_m16a1/editable",
+      "cubes": 38,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_barrel_ring",
+      "source": "native_m16a1/editable",
+      "cubes": 8,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_handguard",
+      "source": "native_m16a1/editable",
+      "cubes": 84,
+      "meshes": 0
+    },
+    {
+      "definitionId": "m16a1_magazine_standard",
+      "source": "native_m16a1/editable",
+      "cubes": 12,
+      "meshes": 0
+    },
+    {
+      "definitionId": "tacz_m16a1_extended_mag_1",
+      "source": "native_m16a1/magazine_variants",
+      "cubes": 27,
+      "meshes": 0
+    },
+    {
+      "definitionId": "tacz_m16a1_extended_mag_2",
+      "source": "native_m16a1/magazine_variants",
+      "cubes": 27,
+      "meshes": 0
+    },
+    {
+      "definitionId": "tacz_m16a1_extended_mag_3",
+      "source": "native_m16a1/magazine_variants",
+      "cubes": 27,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_lower",
+      "source": "native_scar_l/editable",
+      "cubes": 65,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_upper",
+      "source": "native_scar_l/editable",
+      "cubes": 216,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_barrel",
+      "source": "native_scar_l/editable",
+      "cubes": 4,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_gas_system",
+      "source": "native_scar_l/editable",
+      "cubes": 28,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_pistol_grip",
+      "source": "native_scar_l/editable",
+      "cubes": 12,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_stock",
+      "source": "native_scar_l/editable",
+      "cubes": 123,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_muzzle",
+      "source": "native_scar_l/editable",
+      "cubes": 36,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_bolt",
+      "source": "native_scar_l/editable",
+      "cubes": 15,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_front_sight",
+      "source": "native_scar_l/editable",
+      "cubes": 48,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_rear_sight",
+      "source": "native_scar_l/editable",
+      "cubes": 54,
+      "meshes": 0
+    },
+    {
+      "definitionId": "scar_l_magazine_standard",
+      "source": "native_scar_l/editable",
+      "cubes": 27,
+      "meshes": 0
+    },
+    {
+      "definitionId": "tacz_scar_l_extended_mag_1",
+      "source": "native_scar_l/magazine_variants",
+      "cubes": 33,
+      "meshes": 0
+    },
+    {
+      "definitionId": "tacz_scar_l_extended_mag_2",
+      "source": "native_scar_l/magazine_variants",
+      "cubes": 32,
+      "meshes": 0
+    },
+    {
+      "definitionId": "tacz_scar_l_extended_mag_3",
+      "source": "native_scar_l/magazine_variants",
+      "cubes": 88,
+      "meshes": 0
+    },
+    {
+      "definitionId": "ump_lower",
+      "source": "native_ump45/editable",
+      "cubes": 53,
+      "meshes": 0
+    },
+    {
+      "definitionId": "ump_upper",
+      "source": "native_ump45/editable",
+      "cubes": 162,
+      "meshes": 0
+    },
+    {
+      "definitionId": "ump_barrel",
+      "source": "native_ump45/editable",
+      "cubes": 12,
+      "meshes": 0
+    },
+    {
+      "definitionId": "ump_bolt",
+      "source": "native_ump45/editable",
+      "cubes": 5,
+      "meshes": 0
+    },
+    {
+      "definitionId": "ump_charging_handle",
+      "source": "native_ump45/editable",
+      "cubes": 9,
+      "meshes": 0
+    },
+    {
+      "definitionId": "ump_stock",
+      "source": "native_ump45/editable",
+      "cubes": 86,
+      "meshes": 0
+    },
+    {
+      "definitionId": "ump_rails",
+      "source": "native_ump45/editable",
+      "cubes": 85,
+      "meshes": 0
+    },
+    {
+      "definitionId": "ump_magazine_standard",
+      "source": "native_ump45/editable",
+      "cubes": 11,
+      "meshes": 0
+    }
+  ],
+  "restoredProject": {
+    "uuid": "950c532d-bb10-a2d7-eb9e-497bc81a903c",
+    "name": "02-M4A1默认配件拆解"
+  },
+  "sourceFilesOverwritten": false,
+  "scopeNotes": [
+    "38 new sources include 6 gun-specific magazine variants and both upright/folded SCAR sight cubes.",
+    "Existing shared UMP magazine sources were validated previously; not counted as newly authored sources.",
+    "No optics sources authored or edited.",
+    "No Minecraft client executed; runtime pose/action validation remains owner acceptance."
+  ]
+}

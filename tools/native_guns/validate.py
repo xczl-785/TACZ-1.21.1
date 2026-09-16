@@ -10,7 +10,7 @@ def validate(resources=p.RES,weapon=None):
     resources=Path(resources)
     if weapon is None:weapon=p.ex.read(p.DEFAULT)['weapon']
     ns,gun=weapon['gunId'].split(':');base=resources/f'data/{ns}/{weapon["resourceDirectory"]}';assets=resources/f'assets/{ns}'
-    source_root=p.R/'modules/tacz_adapter/weapon-sources'/weapon['developmentSource'];config=p.ex.read(source_root/'production.json')
+    source_root=p.R/'modules/tacz_adapter/weapon-sources'/weapon['developmentSource'];config=p.ex.read(source_root/'production.json');p.validate_configuration(config)
     _,_,_,original_display,original_path,original_texture,original_data=p.inputs(config)
     assert p.ex.read(base/'weapon.json')==weapon==config['weapon']
     report=p.ex.read(base/'geometry-evidence.json');assert report==p.ex.read(source_root/'build-report.json')
@@ -29,9 +29,28 @@ def validate(resources=p.RES,weapon=None):
     for name,key in [('native-profile.json','nativeProfile'),('native-visual-rules.json','visualRules')]:assert p.ex.read(base/name)==config[key]
     original=p.ex.read(original_path)['minecraft:geometry'][0];native={b['name']:b for b in original['bones']}
     high=p.ex.read(assets/f'geo_models/gun/{gun}.json')['minecraft:geometry'][0];low=p.ex.read(assets/f'geo_models/gun/lod/{gun}.json')['minecraft:geometry'][0]
-    assert high==low,'Declared full rig LOD fallback must match high geometry'
+    lowbones={b['name']:b for b in low['bones']}
+    assert len(lowbones)==len(low['bones'])
+    if not report.get('lod'):assert high==low,'Declared full rig LOD fallback must match high geometry'
     bones={b['name']:b for b in high['bones']};assert len(bones)==len(high['bones'])
-    for name,bone in native.items():assert {k:v for k,v in bone.items() if k!='cubes'}=={k:v for k,v in bones[name].items() if k!='cubes'},name
+    for lookup in (bones,lowbones):
+        for name,bone in native.items():assert {k:v for k,v in bone.items() if k!='cubes'}=={k:v for k,v in lookup[name].items() if k!='cubes'},name
+    assert set(lowbones)==set(bones)
+    for name,bone in bones.items():
+        assert {k:v for k,v in bone.items() if k!='cubes'}=={k:v for k,v in lowbones[name].items() if k!='cubes'}
+        if name in native:assert lowbones[name].get('cubes',[])==bone.get('cubes',[])
+        if bone.get('cubes'):assert lowbones[name].get('cubes'),'LOD omitted complete geometry bone: '+name
+    for key,evidence in report.get('lod',{}).items():
+        d,variant=key.split('/')
+        assert evidence['lowCubes']<=evidence['highCubes']
+        assert max(evidence['silhouetteLoss'])<=config['lod']['maxSilhouetteLoss']
+        for metric in evidence['textureComparisons']:
+            assert metric['meanError']<=config['lod']['maxTextureMeanError']
+            assert metric['changedPixelFraction']<=config['lod']['maxTextureChangedFraction']
+        for name,indices in evidence['selectedIndices'].items():
+            leaf='assembly_'+d+'_'+name
+            assert indices and lowbones[leaf]['cubes']==[bones[leaf]['cubes'][i] for i in indices]
+    assert report['lowCubes']==sum(len(b.get('cubes',[])) for b in lowbones.values())
     for bone in bones.values():
         if bone.get('parent'):assert bone['parent'] in bones
     batches=p.ex.read(base/'batches.json');owned={part['definitionId'] for part in report['parts']}
@@ -63,6 +82,9 @@ def validate(resources=p.RES,weapon=None):
                     source=p.ex.read(p.R/row['sourceGeometry'])['minecraft:geometry'][0];lookup={b['name']:b for b in source['bones']}
                     original_v,original_uv=p.ex.cube_geometry(lookup[name],lookup[name]['cubes'][indices[i]],lookup,np.eye(4))
                     assert np.allclose(vv,original_v,atol=1e-8) and ff==original_uv,d
+            if config.get('sourceBoneVariants',{}).get(name) in config.get('previewHiddenVariants',[]):
+                assert name not in triangles
+                continue
             for tri,(verts,uvs) in zip(triangles[name],flattened):
                 assert np.allclose(np.asarray(tri['vertices'])+anchors[d],verts,atol=1e-8)
                 assert np.allclose(tri['uv'],uvs,atol=1e-10)

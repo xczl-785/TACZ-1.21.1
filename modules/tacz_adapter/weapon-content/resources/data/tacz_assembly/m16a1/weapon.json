@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_assembly:m16a1",
+  "rootDefinition": "m16a1_lower",
+  "resourceDirectory": "m16a1",
+  "modelType": "tacz_native_m16a1_assembly",
+  "caliber": "556x45",
+  "magazinePath": [
+    "magazine"
+  ],
+  "requiredPaths": [
+    [
+      "upper"
+    ],
+    [
+      "upper",
+      "barrel_ring"
+    ],
+    [
+      "upper",
+      "barrel_ring",
+      "barrel"
+    ],
+    [
+      "upper",
+      "bolt"
+    ],
+    [
+      "upper",
+      "charging_handle"
+    ]
+  ],
+  "defaultFireMode": "auto",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "developmentSource": "native_m16a1",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/m16a1"
+}

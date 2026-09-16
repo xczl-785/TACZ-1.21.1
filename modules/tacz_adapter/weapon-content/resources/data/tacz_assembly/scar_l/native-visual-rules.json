@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "mag_extended_3",
+    "muzzle_default",
+    "stock_default",
+    "sight",
+    "sight_folded"
+  ],
+  "definitionRequirements": {},
+  "variantRequirements": {
+    "upright": {
+      "SCOPE": false
+    },
+    "folded": {
+      "SCOPE": true
+    }
+  },
+  "boneRequirements": {
+    "bullet": [
+      "scar_l_magazine_standard",
+      "tacz_scar_l_extended_mag_1",
+      "tacz_scar_l_extended_mag_2",
+      "tacz_scar_l_extended_mag_3"
+    ],
+    "bullet_in_mag": [
+      "scar_l_magazine_standard",
+      "tacz_scar_l_extended_mag_1",
+      "tacz_scar_l_extended_mag_2",
+      "tacz_scar_l_extended_mag_3"
+    ],
+    "bullet_in_barrel": [
+      "scar_l_barrel"
+    ],
+    "muzzle_flash": [
+      "scar_l_barrel"
+    ],
+    "additional_magazine": [
+      "scar_l_magazine_standard",
+      "tacz_scar_l_extended_mag_1",
+      "tacz_scar_l_extended_mag_2",
+      "tacz_scar_l_extended_mag_3"
+    ],
+    "bolt": [
+      "scar_l_bolt"
+    ]
+  }
+}

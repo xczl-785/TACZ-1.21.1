@@ -1,0 +1,13 @@
+{
+  "schema_version": 3,
+  "item": "tacz_assembly:scar_l",
+  "footprint": [
+    5,
+    2
+  ],
+  "weight_kg": 0,
+  "wearable_slots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ]
+}

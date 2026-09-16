@@ -19,7 +19,7 @@
     "modelsAndPngsChanged": false,
     "gameStarted": false,
     "worldModified": false,
-    "clientAcceptance": "pending"
+    "clientAcceptance": "owner accepted in conversation"
   },
   "artifacts": {
     "tacz": {
@@ -34,5 +34,6 @@
       "sha512": "0e2540e0256d2bbad31bc90c9f7b4a1adcea9d44b29dac1a12a094b7225b06e93dc1a34a287108a7d1bf800b273c944fe609037e56476f9231c3e5a876a43c28",
       "source_commit": "ec3468dcc574111c3cd088a8eae36d16c8dfebf1"
     }
-  }
+  },
+  "ownerFeedback": "验证完毕，这把枪应该是通过了"
 }

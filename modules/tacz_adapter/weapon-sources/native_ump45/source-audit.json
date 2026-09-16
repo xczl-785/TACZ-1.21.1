@@ -1,0 +1,2048 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz:ump45",
+  "high": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/ump45_geo.json",
+    "bones": 69,
+    "cubes": 473,
+    "uvSize": [
+      128,
+      128
+    ]
+  },
+  "low": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/lod/ump45.json",
+    "bones": 10,
+    "cubes": 50,
+    "policy": "Complete editable geometry with full native high rig in both high and LOD; no unsafe original low topology reuse"
+  },
+  "parts": [
+    {
+      "definitionId": "ump_lower",
+      "sourceCubeIndices": {
+        "lower": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "pattern": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "mag_release": [
+          0,
+          1,
+          2
+        ],
+        "bolt_release": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "ump45_safety": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "inventoryType": "weapon/firearm/smg",
+      "footprint": [
+        3,
+        2
+      ],
+      "cubes": 53,
+      "bounds": {
+        "min": [
+          -1.13125,
+          3.0083213888930844,
+          -10.117077946421716
+        ],
+        "max": [
+          1.125,
+          10.48125206666034,
+          2.05
+        ]
+      },
+      "motionOwnership": {
+        "lower": [
+          "root",
+          "ump45"
+        ],
+        "pattern": [
+          "root",
+          "ump45"
+        ],
+        "mag_release": [
+          "root",
+          "ump45",
+          "mag_release"
+        ],
+        "bolt_release": [
+          "root",
+          "ump45",
+          "bolt_release"
+        ],
+        "ump45_safety": [
+          "root",
+          "ump45"
+        ]
+      }
+    },
+    {
+      "definitionId": "ump_upper",
+      "sourceCubeIndices": {
+        "group2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "group3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133
+        ],
+        "sight_illuminated": [
+          0,
+          1,
+          2
+        ],
+        "hinge2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        4,
+        1
+      ],
+      "cubes": 162,
+      "bounds": {
+        "min": [
+          -1.0750000000000002,
+          8.15,
+          -11.387500000000001
+        ],
+        "max": [
+          1.4663954997674826,
+          14.062081300222534,
+          9.5
+        ]
+      },
+      "motionOwnership": {
+        "group2": [
+          "root",
+          "ump45"
+        ],
+        "group3": [
+          "root",
+          "ump45"
+        ],
+        "sight_illuminated": [
+          "root",
+          "ump45"
+        ],
+        "hinge2": [
+          "root",
+          "ump45"
+        ],
+        "octagon2": [
+          "root",
+          "ump45"
+        ]
+      }
+    },
+    {
+      "definitionId": "ump_barrel",
+      "sourceCubeIndices": {
+        "octagon3": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        2,
+        1
+      ],
+      "cubes": 12,
+      "bounds": {
+        "min": [
+          -0.5625034444338985,
+          9.937496555566101,
+          0.75
+        ],
+        "max": [
+          0.562503444433899,
+          11.062503444433899,
+          11.0
+        ]
+      },
+      "motionOwnership": {
+        "octagon3": [
+          "root",
+          "ump45"
+        ],
+        "octagon4": [
+          "root",
+          "ump45"
+        ]
+      }
+    },
+    {
+      "definitionId": "ump_bolt",
+      "sourceCubeIndices": {
+        "ump45_bolt": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        2,
+        1
+      ],
+      "cubes": 5,
+      "bounds": {
+        "min": [
+          -0.75,
+          9.8125,
+          -2.0
+        ],
+        "max": [
+          0.75,
+          11.9375,
+          2.0
+        ]
+      },
+      "motionOwnership": {
+        "ump45_bolt": [
+          "root",
+          "ump45",
+          "ump45_bolt"
+        ]
+      }
+    },
+    {
+      "definitionId": "ump_charging_handle",
+      "sourceCubeIndices": {
+        "ump45_charge_handle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "inventoryType": "weapon_mod/charging_handle",
+      "footprint": [
+        1,
+        1
+      ],
+      "cubes": 9,
+      "bounds": {
+        "min": [
+          -2.0000032039659046,
+          11.5625,
+          2.000000000000001
+        ],
+        "max": [
+          0.5000063416775505,
+          12.562505216180597,
+          8.54822820285305
+        ]
+      },
+      "motionOwnership": {
+        "ump45_charge_handle": [
+          "root",
+          "ump45",
+          "ump45_charge_handle"
+        ]
+      }
+    },
+    {
+      "definitionId": "ump_stock",
+      "sourceCubeIndices": {
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group6": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61
+        ],
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "hinge": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "inventoryType": "weapon_mod/stock",
+      "footprint": [
+        2,
+        2
+      ],
+      "cubes": 86,
+      "bounds": {
+        "min": [
+          -1.01875,
+          6.20625,
+          -22.43750647700888
+        ],
+        "max": [
+          1.25,
+          12.61875,
+          -9.749997725480405
+        ]
+      },
+      "motionOwnership": {
+        "octagon": [
+          "root",
+          "ump45"
+        ],
+        "group6": [
+          "root",
+          "ump45"
+        ],
+        "group": [
+          "root",
+          "ump45"
+        ],
+        "hinge": [
+          "root",
+          "ump45"
+        ]
+      }
+    },
+    {
+      "definitionId": "ump_rails",
+      "sourceCubeIndices": {
+        "rails": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "side_rail2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "side_rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "bottom_rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "top_rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      "inventoryType": "weapon_mod/mount",
+      "footprint": [
+        3,
+        1
+      ],
+      "cubes": 85,
+      "bounds": {
+        "min": [
+          -1.3125,
+          8.71875,
+          -7.0
+        ],
+        "max": [
+          1.3125,
+          13.125,
+          9.375
+        ]
+      },
+      "motionOwnership": {
+        "rails": [
+          "root",
+          "ump45"
+        ],
+        "side_rail2": [
+          "root",
+          "ump45"
+        ],
+        "side_rail": [
+          "root",
+          "ump45"
+        ],
+        "bottom_rail": [
+          "root",
+          "ump45"
+        ],
+        "top_rail": [
+          "root",
+          "ump45"
+        ]
+      }
+    },
+    {
+      "definitionId": "ump_magazine_standard",
+      "sourceCubeIndices": {
+        "mag_standard": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ],
+      "cubes": 11,
+      "bounds": {
+        "min": [
+          -0.6875,
+          0.9166037676285974,
+          -1.3015323128366962
+        ],
+        "max": [
+          0.6875,
+          10.206099741895859,
+          2.557807874939097
+        ]
+      },
+      "motionOwnership": {
+        "mag_standard": [
+          "root",
+          "magzine_and_bullet"
+        ]
+      }
+    }
+  ],
+  "publicMagazineVariants": [
+    {
+      "definitionId": "tacz_ump45_light_extended_mag_1",
+      "attachmentId": "tacz:light_extended_mag_1",
+      "capacity": 32,
+      "sourceCubeIndices": {
+        "root": [],
+        "magzine_and_bullet": [],
+        "magazine": [],
+        "mag_extended_1": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/ump45_geo.json",
+      "sourceSha256": "9c1d6499f1e941edfcf667402b5e747e297e81239d3c6a6690feb98d68935ff5"
+    },
+    {
+      "definitionId": "tacz_ump45_light_extended_mag_2",
+      "attachmentId": "tacz:light_extended_mag_2",
+      "capacity": 40,
+      "sourceCubeIndices": {
+        "root": [],
+        "magzine_and_bullet": [],
+        "magazine": [],
+        "mag_extended_2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/ump45_geo.json",
+      "sourceSha256": "9c1d6499f1e941edfcf667402b5e747e297e81239d3c6a6690feb98d68935ff5"
+    },
+    {
+      "definitionId": "tacz_ump45_light_extended_mag_3",
+      "attachmentId": "tacz:light_extended_mag_3",
+      "capacity": 48,
+      "sourceCubeIndices": {
+        "root": [],
+        "magzine_and_bullet": [],
+        "magazine": [],
+        "mag_extended_3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/ump45_geo.json",
+      "sourceSha256": "9c1d6499f1e941edfcf667402b5e747e297e81239d3c6a6690feb98d68935ff5"
+    }
+  ],
+  "presentationOnly": {
+    "4": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "2": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "3": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "lefthand_pos": [
+      0
+    ],
+    "righthand_pos": [
+      0
+    ]
+  },
+  "unassignedCubes": [],
+  "duplicateOwnership": [],
+  "allBones": [
+    {
+      "name": "root",
+      "pivot": [
+        0,
+        9,
+        5
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "magzine_and_bullet",
+      "parent": "root",
+      "pivot": [
+        0,
+        4.49291,
+        -0.69807
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "bullet",
+      "parent": "magzine_and_bullet",
+      "pivot": [
+        0,
+        10.25,
+        1.25
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "4",
+      "parent": "bullet",
+      "pivot": [
+        0,
+        11.0025,
+        1
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "cubeCount": 5
+    },
+    {
+      "name": "magazine",
+      "parent": "magzine_and_bullet",
+      "pivot": [
+        0,
+        4.49291,
+        -0.69807
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "bullet_in_mag",
+      "parent": "magazine",
+      "pivot": [
+        0,
+        10.25,
+        1.25
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "2",
+      "parent": "bullet_in_mag",
+      "pivot": [
+        0,
+        11.0025,
+        1
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "cubeCount": 5
+    },
+    {
+      "name": "mag_standard",
+      "parent": "magazine",
+      "pivot": [
+        0,
+        4.10915,
+        -1.01505
+      ],
+      "cubeCount": 11
+    },
+    {
+      "name": "mag_extended_1",
+      "parent": "magazine",
+      "pivot": [
+        0,
+        4.10915,
+        -1.01505
+      ],
+      "cubeCount": 11
+    },
+    {
+      "name": "mag_extended_2",
+      "parent": "magazine",
+      "pivot": [
+        0,
+        4.10915,
+        -1.01505
+      ],
+      "cubeCount": 11
+    },
+    {
+      "name": "mag_extended_3",
+      "parent": "magazine",
+      "pivot": [
+        0,
+        4.10915,
+        -1.01505
+      ],
+      "cubeCount": 11
+    },
+    {
+      "name": "ump45",
+      "parent": "root",
+      "pivot": [
+        0,
+        9,
+        5
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "positioning2",
+      "parent": "ump45",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "muzzle_flash",
+      "parent": "positioning2",
+      "pivot": [
+        0,
+        10.5,
+        -11.0625
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "muzzle_pos",
+      "parent": "positioning2",
+      "pivot": [
+        0,
+        10.5,
+        -10.5625
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "laser_pos",
+      "parent": "positioning2",
+      "pivot": [
+        1.25,
+        10.3,
+        -7.4
+      ],
+      "rotation": [
+        0,
+        0,
+        90
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "grip_pos",
+      "parent": "positioning2",
+      "pivot": [
+        0,
+        8.875,
+        -6.2875
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "scope_pos",
+      "parent": "positioning2",
+      "pivot": [
+        0,
+        13.11875,
+        5.375
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "shell",
+      "parent": "positioning2",
+      "pivot": [
+        -0.15,
+        10.39375,
+        0.7
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "constraint",
+      "parent": "ump45",
+      "pivot": [
+        0,
+        13.6,
+        -8.925
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "ump45_stock_extended",
+      "parent": "ump45",
+      "pivot": [
+        1,
+        -0.25,
+        9.8125
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "stock",
+      "parent": "ump45_stock_extended",
+      "pivot": [
+        0.19687,
+        8.81809,
+        2.10938
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "octagon",
+      "parent": "stock",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 8
+    },
+    {
+      "name": "group6",
+      "parent": "stock",
+      "pivot": [
+        0.19687,
+        8.81809,
+        2.60938
+      ],
+      "cubeCount": 62
+    },
+    {
+      "name": "group",
+      "parent": "stock",
+      "pivot": [
+        0.19687,
+        8.81809,
+        2.35938
+      ],
+      "cubeCount": 11
+    },
+    {
+      "name": "hinge",
+      "parent": "ump45_stock_extended",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 5
+    },
+    {
+      "name": "ump45_charge_handle",
+      "parent": "ump45",
+      "pivot": [
+        0.75466,
+        12.07986,
+        -6.77373
+      ],
+      "cubeCount": 9
+    },
+    {
+      "name": "ump45_bolt",
+      "parent": "ump45",
+      "pivot": [
+        -0.125,
+        10.6375,
+        0.4375
+      ],
+      "cubeCount": 5
+    },
+    {
+      "name": "bullet_in_barrel",
+      "parent": "ump45_bolt",
+      "pivot": [
+        0,
+        10.75,
+        -0.925
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "3",
+      "parent": "bullet_in_barrel",
+      "pivot": [
+        0,
+        11.5025,
+        -1.175
+      ],
+      "rotation": [
+        0,
+        45,
+        0
+      ],
+      "cubeCount": 5
+    },
+    {
+      "name": "ump45_default",
+      "parent": "ump45",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "upper",
+      "parent": "ump45_default",
+      "pivot": [
+        0.21875,
+        7.57566,
+        -0.15625
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "group2",
+      "parent": "upper",
+      "pivot": [
+        0,
+        8.5233,
+        -9.25
+      ],
+      "cubeCount": 11
+    },
+    {
+      "name": "group3",
+      "parent": "upper",
+      "pivot": [
+        0.21875,
+        7.57566,
+        -0.15625
+      ],
+      "cubeCount": 134
+    },
+    {
+      "name": "sight_illuminated",
+      "parent": "group3",
+      "pivot": [
+        0.0625,
+        0,
+        0
+      ],
+      "cubeCount": 3
+    },
+    {
+      "name": "hinge2",
+      "parent": "upper",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 10
+    },
+    {
+      "name": "octagon2",
+      "parent": "upper",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 4
+    },
+    {
+      "name": "lower",
+      "parent": "ump45_default",
+      "pivot": [
+        0.19687,
+        8.81809,
+        2.10938
+      ],
+      "cubeCount": 32
+    },
+    {
+      "name": "pattern",
+      "parent": "lower",
+      "pivot": [
+        0,
+        8.8125,
+        6.8125
+      ],
+      "cubeCount": 4
+    },
+    {
+      "name": "mag_release",
+      "parent": "lower",
+      "pivot": [
+        0,
+        7.44995,
+        1.44885
+      ],
+      "rotation": [
+        10,
+        0,
+        0
+      ],
+      "cubeCount": 3
+    },
+    {
+      "name": "barrel",
+      "parent": "ump45_default",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "octagon3",
+      "parent": "barrel",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 4
+    },
+    {
+      "name": "octagon4",
+      "parent": "barrel",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 8
+    },
+    {
+      "name": "rails",
+      "parent": "ump45_default",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 4
+    },
+    {
+      "name": "side_rail2",
+      "parent": "rails",
+      "pivot": [
+        -0.90625,
+        7.57566,
+        -0.15625
+      ],
+      "cubeCount": 17
+    },
+    {
+      "name": "side_rail",
+      "parent": "rails",
+      "pivot": [
+        -0.90625,
+        7.57566,
+        -0.15625
+      ],
+      "cubeCount": 17
+    },
+    {
+      "name": "bottom_rail",
+      "parent": "rails",
+      "pivot": [
+        -0.90625,
+        7.57566,
+        -0.15625
+      ],
+      "cubeCount": 18
+    },
+    {
+      "name": "top_rail",
+      "parent": "rails",
+      "pivot": [
+        -0.90625,
+        7.57566,
+        -0.15625
+      ],
+      "cubeCount": 29
+    },
+    {
+      "name": "bolt_release",
+      "parent": "ump45_default",
+      "pivot": [
+        0.93362,
+        9.45169,
+        1.51875
+      ],
+      "cubeCount": 6
+    },
+    {
+      "name": "ump45_safety",
+      "parent": "ump45_default",
+      "pivot": [
+        0,
+        9.125,
+        6.06204
+      ],
+      "cubeCount": 8
+    },
+    {
+      "name": "lefthand",
+      "parent": "root",
+      "pivot": [
+        -6,
+        19,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "lefthand_pos",
+      "parent": "lefthand",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 1
+    },
+    {
+      "name": "righthand",
+      "parent": "root",
+      "pivot": [
+        6,
+        19,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "righthand_pos",
+      "parent": "righthand",
+      "pivot": [
+        0,
+        8,
+        0
+      ],
+      "cubeCount": 1
+    },
+    {
+      "name": "camera",
+      "pivot": [
+        2.5,
+        14.5,
+        15
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "positioning",
+      "pivot": [
+        0,
+        0,
+        -8
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "thirdperson_hand",
+      "parent": "positioning",
+      "pivot": [
+        0,
+        8.175,
+        5.75
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "ground",
+      "parent": "positioning",
+      "pivot": [
+        0,
+        -3.525,
+        0.65
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "fixed",
+      "parent": "positioning",
+      "pivot": [
+        1.1,
+        10.8,
+        2.375
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "view",
+      "pivot": [
+        0,
+        0,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "idle_view",
+      "parent": "view",
+      "pivot": [
+        2.5,
+        14.5,
+        15
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "iron_view",
+      "parent": "view",
+      "pivot": [
+        0,
+        13.65,
+        13.8
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "refit_view",
+      "parent": "view",
+      "pivot": [
+        24.4,
+        9,
+        3
+      ],
+      "rotation": [
+        0,
+        89.9,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "refit_muzzle_view",
+      "parent": "view",
+      "pivot": [
+        11,
+        9,
+        -13
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "refit_grip_view",
+      "parent": "view",
+      "pivot": [
+        5.8,
+        7.4,
+        -6
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "refit_laser_view",
+      "parent": "view",
+      "pivot": [
+        7,
+        10.525,
+        -11
+      ],
+      "rotation": [
+        0,
+        125,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "refit_extended_mag_view",
+      "parent": "view",
+      "pivot": [
+        10,
+        4,
+        -0.55
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "refit_stock_view",
+      "parent": "view",
+      "pivot": [
+        10,
+        9,
+        12.6
+      ],
+      "rotation": [
+        0,
+        90,
+        0
+      ],
+      "cubeCount": 0
+    },
+    {
+      "name": "refit_scope_view",
+      "parent": "view",
+      "pivot": [
+        8.075,
+        14.7,
+        11.525
+      ],
+      "rotation": [
+        0,
+        50,
+        0
+      ],
+      "cubeCount": 0
+    }
+  ],
+  "animations": {
+    "static_idle": [
+      "lefthand",
+      "righthand",
+      "constraint"
+    ],
+    "static_bolt_caught": [
+      "lefthand",
+      "righthand",
+      "ump45_bolt",
+      "bolt_release"
+    ],
+    "draw": [
+      "lefthand",
+      "righthand",
+      "magzine_and_bullet",
+      "ump45",
+      "camera"
+    ],
+    "put_away": [
+      "lefthand",
+      "righthand",
+      "magzine_and_bullet",
+      "ump45",
+      "camera"
+    ],
+    "reload_tactical": [
+      "lefthand",
+      "righthand",
+      "magzine_and_bullet",
+      "ump45",
+      "root",
+      "bullet",
+      "mag_release",
+      "constraint",
+      "camera"
+    ],
+    "reload_empty": [
+      "lefthand",
+      "righthand",
+      "magzine_and_bullet",
+      "ump45",
+      "ump45_bolt",
+      "bolt_release",
+      "root",
+      "ump45_charge_handle",
+      "bullet",
+      "mag_release",
+      "constraint",
+      "camera"
+    ],
+    "inspect": [
+      "lefthand",
+      "righthand",
+      "magzine_and_bullet",
+      "ump45",
+      "ump45_bolt",
+      "root",
+      "ump45_charge_handle",
+      "bullet",
+      "mag_release",
+      "camera"
+    ],
+    "inspect_empty": [
+      "lefthand",
+      "righthand",
+      "magzine_and_bullet",
+      "ump45",
+      "ump45_bolt",
+      "bolt_release",
+      "root",
+      "bullet",
+      "mag_release",
+      "camera"
+    ],
+    "shoot": [
+      "root",
+      "ump45_bolt",
+      "camera"
+    ]
+  },
+  "animationRefsWithoutBones": [],
+  "attachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i",
+    "tacz:grip_cobra",
+    "tacz:grip_cqr",
+    "tacz:grip_magpul_afg_2",
+    "tacz:grip_osovets_black",
+    "tacz:grip_rk0",
+    "tacz:grip_rk1_b25u",
+    "tacz:grip_rk6",
+    "tacz:grip_se_5",
+    "tacz:grip_td",
+    "tacz:grip_vertical_military",
+    "tacz:grip_vertical_ranger",
+    "tacz:grip_vertical_talon",
+    "tacz:laser_compact",
+    "tacz:laser_nightstick",
+    "tacz:light_extended_mag_1",
+    "tacz:light_extended_mag_2",
+    "tacz:light_extended_mag_3",
+    "tacz:muzzle_brake_cthulhu",
+    "tacz:muzzle_brake_cyclone_d2",
+    "tacz:muzzle_brake_pioneer",
+    "tacz:muzzle_brake_trex",
+    "tacz:muzzle_compensator_trident",
+    "tacz:muzzle_silencer_knight_qd",
+    "tacz:muzzle_silencer_mirage",
+    "tacz:muzzle_silencer_phantom_s1",
+    "tacz:muzzle_silencer_ptilopsis",
+    "tacz:muzzle_silencer_ursus",
+    "tacz:muzzle_silencer_wraith",
+    "tacz:scope_acog_ta31",
+    "tacz:scope_contender",
+    "tacz:scope_elcan_4x",
+    "tacz:scope_hamr",
+    "tacz:scope_qmk152",
+    "tacz:sight_552",
+    "tacz:sight_acro_rifle",
+    "tacz:sight_coyote",
+    "tacz:sight_deltapoint_rifle",
+    "tacz:sight_exp3",
+    "tacz:sight_fastfire_rifle",
+    "tacz:sight_okp7",
+    "tacz:sight_pk06_rifle",
+    "tacz:sight_srs_02",
+    "tacz:sight_t2",
+    "tacz:sight_uh1"
+  ],
+  "tagSources": [
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/ump45.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/grip.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/light_extended_mag.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_laser.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_muzzle.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_lowsight.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_scope.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_sight.json"
+  ],
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/ump45.animation.json": "c09977dc2841a7d34b82adeb81af94e664cccef08e75cda275de3030a2928786",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/ump45_display.json": "7a9ec006fe92b5cf088c386b4924cac020eea597d0899e66c954dfd5fe824e19",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/lod/ump45.json": "37ed5446a8d148cf6fd50aee1d6c0be68542770e0edfa8f83667ff1b4aefd11a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/ump45_geo.json": "9c1d6499f1e941edfcf667402b5e747e297e81239d3c6a6690feb98d68935ff5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/ump45.png": "8ed23ba36294c7e60890351c9ba9e7e0d294927cad7502382253e9870001b2c6",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/ump45_data.json": "7cea36b639f374c05ce985739bd1cb28b8c70dd79b1edfe763271333282215d3",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/ump45.json": "fc1665b6fd8017b2a8f87c0a4f8e6b18d3e773c36faab98bb7a662978323fd47",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/ump45.json": "7e0110ff6c0558c7b0907bc1ec1f389c6aa38d938e8dd1c741b0999beeab0a4b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/grip.json": "f42e578d1be8a0c611dc2b451612fc845d45a282dca944a8242aea1d38ca955d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/light_extended_mag.json": "3200df180109748e789cfec9da9e9bd852ccb1947eb0c3bb4b628e2d938ef91c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_laser.json": "357e45b04394aa5d9e03e0981681759ab272f66697ec04c17d65bd04639d0911",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_muzzle.json": "b578bb02121792c2fcfe9cddc0dbaa1343905d3809a6d8d11869d3cae5d0c6c5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_lowsight.json": "15eec57ec5eb49502e725d6af0a107389b0949ff47a0de4c98853b1bed639375",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_scope.json": "c43054cf2496852639ac6638033fb7d099194b62b338d4573902b56e5eafbd20",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_sight.json": "6fa76be1d9663e7f3e6e855db34f46611256f577aca574963318ff35fc2b5e63"
+  },
+  "reload": {
+    "capacity": [
+      25,
+      32,
+      40,
+      48
+    ],
+    "nativeData": "tacz:ump45_data",
+    "nativeAnimation": "tacz:ump45",
+    "additionalMagazineBonePresent": false,
+    "bulletAnimation": {
+      "reload_tactical": {
+        "scale": {
+          "0.0": [
+            0,
+            0,
+            0
+          ],
+          "0.9": {
+            "pre": [
+              0,
+              0,
+              0
+            ],
+            "post": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "reload_empty": {
+        "scale": {
+          "0.0": [
+            0,
+            0,
+            0
+          ],
+          "1.0667": {
+            "pre": [
+              0,
+              0,
+              0
+            ],
+            "post": [
+              1,
+              1,
+              1
+            ]
+          }
+        }
+      },
+      "inspect": {
+        "scale": 0
+      },
+      "inspect_empty": {
+        "scale": 0
+      }
+    }
+  },
+  "sights": {
+    "policy": "Integrated factory mechanical sights remain in upper receiver; optical models are read-only existing candidates, no optical authoring",
+    "geometricEvidence": {
+      "front": {
+        "group3": [
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70
+        ],
+        "sight_illuminated": [
+          0
+        ]
+      },
+      "rear": {
+        "group3": [
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53
+        ],
+        "sight_illuminated": [
+          1,
+          2
+        ]
+      }
+    },
+    "reasonNotSeparate": "group3 contains protective ears and bases continuous with receiver; geometry ranges are not proof of separable replacement parts",
+    "nativeOpticBehavior": "No sight/sight_folded functional nodes. Preserve fixed original iron geometry with installed scope."
+  },
+  "stock": {
+    "nativeAncestor": "ump45_stock_extended",
+    "sourceNodes": [
+      "octagon",
+      "group6",
+      "group",
+      "hinge"
+    ],
+    "animatedNodes": [],
+    "policy": "Keep native extended pose and hinge tree. No invented folding or external stock compatibility."
+  },
+  "mounts": {
+    "muzzle_pos": {
+      "name": "muzzle_pos",
+      "parent": "positioning2",
+      "pivot": [
+        0,
+        10.5,
+        -10.5625
+      ]
+    },
+    "laser_pos": {
+      "name": "laser_pos",
+      "parent": "positioning2",
+      "pivot": [
+        1.25,
+        10.3,
+        -7.4
+      ],
+      "rotation": [
+        0,
+        0,
+        90
+      ]
+    },
+    "grip_pos": {
+      "name": "grip_pos",
+      "parent": "positioning2",
+      "pivot": [
+        0,
+        8.875,
+        -6.2875
+      ]
+    },
+    "scope_pos": {
+      "name": "scope_pos",
+      "parent": "positioning2",
+      "pivot": [
+        0,
+        13.11875,
+        5.375
+      ]
+    },
+    "muzzle_flash": {
+      "name": "muzzle_flash",
+      "parent": "positioning2",
+      "pivot": [
+        0,
+        10.5,
+        -11.0625
+      ]
+    },
+    "shell": {
+      "name": "shell",
+      "parent": "positioning2",
+      "pivot": [
+        -0.15,
+        10.39375,
+        0.7
+      ]
+    },
+    "iron_view": {
+      "name": "iron_view",
+      "parent": "view",
+      "pivot": [
+        0,
+        13.65,
+        13.8
+      ]
+    }
+  },
+  "constraints": [
+    "No synthetic split of receiver-integrated iron sights. Sight authoring remains deferred.",
+    "Rail set is one assembly, not individual decorative screws.",
+    "Public UMP-specific light magazine authoring sources are reused unchanged.",
+    "Laser native Z rotation is +90 degrees. Preserve original mount and do not apply twice.",
+    "bullet_in_barrel follows native moving bolt; physical barrel presence plus the bolt ancestor gate require both parts without replacing ammo/animation logic."
+  ]
+}

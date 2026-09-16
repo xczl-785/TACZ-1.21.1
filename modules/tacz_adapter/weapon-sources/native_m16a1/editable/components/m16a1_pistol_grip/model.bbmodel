@@ -1,0 +1,2543 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "m16a1_pistol_grip",
+  "resolution": {
+    "width": 128,
+    "height": 128
+  },
+  "elements": [
+    {
+      "name": "grip",
+      "type": "cube",
+      "uuid": "1f1c27a8-c249-56a5-822c-42293c979baf",
+      "from": [
+        -0.625,
+        0.75603,
+        -1.91244
+      ],
+      "to": [
+        0.625,
+        2.31853,
+        -0.47494
+      ],
+      "origin": [
+        0.0,
+        0.35121,
+        -0.7635
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            72.5,
+            46.0,
+            71,
+            47.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            38.5,
+            72.5,
+            37,
+            71
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            34,
+            71,
+            35.5,
+            72.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "east": {
+          "uv": [
+            71,
+            22,
+            72.5,
+            23.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            71,
+            25,
+            72.5,
+            26.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "grip",
+      "type": "cube",
+      "uuid": "9a05980e-c6d8-5287-ac13-dfa58f873257",
+      "from": [
+        -0.625,
+        0.75603,
+        -2.16244
+      ],
+      "to": [
+        0.625,
+        2.06853,
+        -1.91244
+      ],
+      "origin": [
+        0.0,
+        0.35121,
+        -0.7635
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            23.5,
+            86.0,
+            22,
+            86.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            86,
+            20,
+            86.5,
+            21.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            71,
+            52,
+            72.5,
+            53.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            20,
+            86,
+            20.5,
+            87.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "grip",
+      "type": "cube",
+      "uuid": "36884fb2-9e87-5a12-9382-cce516f40aa1",
+      "from": [
+        -0.625,
+        8.0305,
+        -4.04168
+      ],
+      "to": [
+        0.625,
+        8.38562,
+        -3.83207
+      ],
+      "origin": [
+        0.06274,
+        2.78188,
+        -10.30069
+      ],
+      "rotation": [
+        45,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            87.5,
+            28.0,
+            86,
+            28.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            87.5,
+            26.5,
+            86,
+            26
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            104,
+            102,
+            104.5,
+            102.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            25,
+            86,
+            26.5,
+            86.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            104,
+            100,
+            104.5,
+            100.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "grip",
+      "type": "cube",
+      "uuid": "68402d91-68ad-5521-a5c2-7a9c186a68ac",
+      "from": [
+        -0.4375,
+        0.55843,
+        0.48274
+      ],
+      "to": [
+        0.4375,
+        1.05843,
+        0.98274
+      ],
+      "origin": [
+        0.06274,
+        2.78187,
+        -10.42569
+      ],
+      "rotation": [
+        15,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            100,
+            50.0,
+            99,
+            50.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            100,
+            48.5,
+            99,
+            48
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            38,
+            118,
+            38.5,
+            118.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            47,
+            99,
+            48,
+            99.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            36,
+            118,
+            36.5,
+            118.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "grip",
+      "type": "cube",
+      "uuid": "53735616-983c-5e65-8948-d16397b8ad0d",
+      "from": [
+        -0.4375,
+        -6.85731,
+        -3.93093
+      ],
+      "to": [
+        0.4375,
+        -3.29481,
+        -3.74343
+      ],
+      "origin": [
+        0.06274,
+        2.78188,
+        -10.42569
+      ],
+      "rotation": [
+        -30,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            100,
+            52.0,
+            99,
+            52.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            39,
+            74,
+            39.5,
+            77.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            44,
+            61,
+            45,
+            64.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            28,
+            74,
+            28.5,
+            77.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "grip",
+      "type": "cube",
+      "uuid": "530db374-cffc-5182-8238-cc380c5b6385",
+      "from": [
+        -0.625,
+        -8.28455,
+        -4.01067
+      ],
+      "to": [
+        0.625,
+        -4.28455,
+        -3.44817
+      ],
+      "origin": [
+        0.06274,
+        2.78188,
+        -10.42569
+      ],
+      "rotation": [
+        -40,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            20,
+            73,
+            20.5,
+            77
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "east": {
+          "uv": [
+            10,
+            73,
+            10.5,
+            77
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            44,
+            0,
+            45.5,
+            4
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true,
+      "inflate": 0.001
+    },
+    {
+      "name": "grip",
+      "type": "cube",
+      "uuid": "37c70039-d16e-540a-a1b0-151fb74d643c",
+      "from": [
+        -0.625,
+        -6.85731,
+        -3.74343
+      ],
+      "to": [
+        0.625,
+        -2.60731,
+        -2.24342
+      ],
+      "origin": [
+        0.06274,
+        2.78188,
+        -10.42569
+      ],
+      "rotation": [
+        -30,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            43,
+            23,
+            44.5,
+            27.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            38,
+            0,
+            39.5,
+            4.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            41,
+            0,
+            42.5,
+            4.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            43,
+            8,
+            44.5,
+            12.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true,
+      "inflate": -0.001
+    },
+    {
+      "name": "grip",
+      "type": "cube",
+      "uuid": "d0672c88-ffcf-5c7a-9e4a-818d254adbe4",
+      "from": [
+        -0.625,
+        -4.78427,
+        -1.47227
+      ],
+      "to": [
+        0.625,
+        -4.28427,
+        0.58033
+      ],
+      "origin": [
+        0.06274,
+        2.78188,
+        -10.42569
+      ],
+      "rotation": [
+        -15,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            68.5,
+            67,
+            67,
+            69
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            65.5,
+            69,
+            64,
+            67
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            84,
+            78,
+            86,
+            78.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            58,
+            91,
+            59.5,
+            91.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            84,
+            76,
+            86,
+            76.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            61,
+            91,
+            62.5,
+            91.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "grip",
+      "type": "cube",
+      "uuid": "33d49a67-5472-50f8-b6e1-00abae23b7ee",
+      "from": [
+        -4.5217,
+        -6.85631,
+        -5.5682
+      ],
+      "to": [
+        -4.26617,
+        -3.28994,
+        -5.30304
+      ],
+      "origin": [
+        0.06274,
+        2.78188,
+        -10.42569
+      ],
+      "rotation": [
+        -39.23152,
+        37.76124,
+        -26.56505
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            72.5,
+            119.0,
+            72,
+            119.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            119.5,
+            70.5,
+            119,
+            70
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            56,
+            74,
+            56.5,
+            77.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            50,
+            74,
+            50.5,
+            77.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            52,
+            74,
+            52.5,
+            77.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            54,
+            74,
+            54.5,
+            77.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "grip",
+      "type": "cube",
+      "uuid": "024d2b23-ab81-525e-9461-800af4c1f4cb",
+      "from": [
+        4.30151,
+        -6.85731,
+        -5.47948
+      ],
+      "to": [
+        4.55845,
+        -3.28994,
+        -5.21432
+      ],
+      "origin": [
+        0.06274,
+        2.78188,
+        -10.42569
+      ],
+      "rotation": [
+        -39.23152,
+        -37.76124,
+        26.56505
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            74.5,
+            119.0,
+            74,
+            119.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            119.5,
+            72.5,
+            119,
+            72
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            64,
+            74,
+            64.5,
+            77.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            60,
+            74,
+            60.5,
+            77.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            62,
+            74,
+            62.5,
+            77.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            74,
+            62,
+            74.5,
+            65.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    }
+  ],
+  "groups": [
+    {
+      "name": "m16a1_pistol_grip",
+      "uuid": "5190aeb4-6fe5-561e-b00a-da3a899e3bc7",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__root",
+      "uuid": "a1caf0ca-fe7e-5816-a6e9-eaf235318fdc",
+      "origin": [
+        0.0,
+        3.57165,
+        -5.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag_and_lefthand",
+      "uuid": "0e664eaf-7a7f-5eea-b041-1218e85f4217",
+      "origin": [
+        0.0,
+        0.13415,
+        -6.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag_and_bullet",
+      "uuid": "2bd88f96-5a6a-5c92-b2b7-34b83e8ef814",
+      "origin": [
+        0.0,
+        0.13415,
+        -6.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bullet",
+      "uuid": "ab81ca36-f541-5d63-b569-b4450d5dd56b",
+      "origin": [
+        0.0,
+        4.49842,
+        -6.55307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__magazine",
+      "uuid": "fe30be84-68ab-5a6a-a3a3-6d16eb80bde2",
+      "origin": [
+        0.0,
+        0.13415,
+        -6.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bullet_in_mag",
+      "uuid": "273af957-fa12-56db-9ebf-befc07ddb3e7",
+      "origin": [
+        0.0,
+        4.49842,
+        -6.55307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag_standard",
+      "uuid": "2b667310-e0d7-59e2-b152-895f5738006b",
+      "origin": [
+        0.0,
+        0.13415,
+        -6.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag2",
+      "uuid": "9b788484-9257-535e-b2ca-fcc8255f8263",
+      "origin": [
+        -8.0,
+        -4.79085,
+        -18.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag_extended_1",
+      "uuid": "d8f224e6-7ecb-5514-9dfb-e7b711964adf",
+      "origin": [
+        4.0,
+        3.27165,
+        -8.11557
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag",
+      "uuid": "40f5e50d-8957-5c6d-9aba-3b3009d1511d",
+      "origin": [
+        2.0,
+        -1.21391,
+        -6.47685
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group24",
+      "uuid": "92a19d42-81f9-5d18-99a1-d1aa9d3f424d",
+      "origin": [
+        0.0,
+        -3.72835,
+        -15.24057
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bullet2",
+      "uuid": "c7fa981b-bd04-5437-adc5-d7a69ac7cea0",
+      "origin": [
+        -4.0,
+        -4.72835,
+        -16.11557
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag_extended_2",
+      "uuid": "22342ac9-cf30-5952-8a4c-c5e12696d987",
+      "origin": [
+        4.0,
+        3.27165,
+        -8.11557
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag3",
+      "uuid": "48ba6ef5-c1b6-50cd-a7fd-6b72982d857a",
+      "origin": [
+        2.0,
+        -1.21391,
+        -6.47685
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group3",
+      "uuid": "742d41ea-9893-546f-8842-0817053a9378",
+      "origin": [
+        0.0,
+        -3.72835,
+        -15.24057
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bullet3",
+      "uuid": "dc3c1b0a-a473-5ed6-863d-dc3e2abfbaae",
+      "origin": [
+        -4.0,
+        -4.72835,
+        -16.11557
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag_extended_3",
+      "uuid": "0410e25c-0a54-572a-abc9-fb865af00dd7",
+      "origin": [
+        4.0,
+        3.27165,
+        -8.11557
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag4",
+      "uuid": "bd3f5cc5-59eb-53d3-a3e1-210bb6ad2bc5",
+      "origin": [
+        2.0,
+        -1.21391,
+        -6.47685
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group6",
+      "uuid": "0a44171f-0cdb-5313-b9ac-24e8e556d3e2",
+      "origin": [
+        0.0,
+        -3.72835,
+        -15.24057
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bullet4",
+      "uuid": "d2ffdbb1-87bc-5fa9-afe9-9397b91dd134",
+      "origin": [
+        -4.0,
+        -4.72835,
+        -16.11557
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__lefthand",
+      "uuid": "583b3312-6184-5cb9-86fc-1296a0438620",
+      "origin": [
+        6.0,
+        14.27165,
+        -10.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__lefthand_pos",
+      "uuid": "03ac7362-b1ec-5d16-b4b0-7dd19030de59",
+      "origin": [
+        0.0,
+        3.27165,
+        -10.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__gun_and_righthand",
+      "uuid": "6eaf36c7-9652-5887-a394-7997d0b19125",
+      "origin": [
+        0.0,
+        3.57165,
+        -5.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__m16a1",
+      "uuid": "820c5343-f23c-55ed-b525-a3798dacb156",
+      "origin": [
+        0.0,
+        3.57165,
+        -5.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__constraint",
+      "uuid": "c418035e-d963-5f5a-ad7a-057eacfc4a8e",
+      "origin": [
+        0.0,
+        7.87165,
+        -10.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__m16a1_default",
+      "uuid": "52eeb2eb-a62b-582b-be72-8a54d6337b16",
+      "origin": [
+        0.0,
+        3.57165,
+        -5.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__barrel",
+      "uuid": "0c8a7e4e-da9a-5f0c-834a-aa69bc2ad104",
+      "origin": [
+        0.0,
+        8.77165,
+        -19.80307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__default",
+      "uuid": "c5a1c1fe-3099-5abd-bece-9142d0724f77",
+      "origin": [
+        0.0,
+        2.89665,
+        -28.92807
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__octagon2",
+      "uuid": "4084646a-89e1-5776-a151-6d50ff29676e",
+      "origin": [
+        0.0,
+        3.27165,
+        -10.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__fix_sight",
+      "uuid": "ecce19f1-a3cd-5248-8a41-3a532829c7c2",
+      "origin": [
+        0.0,
+        5.39665,
+        -25.38119
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__sight_illuminated",
+      "uuid": "74c9805f-aa68-50d8-a9fd-6b02aeccd2a6",
+      "origin": [
+        0.06274,
+        2.78188,
+        -10.30069
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bone",
+      "uuid": "60341557-5a04-5fa0-b3fe-f4fb82011342",
+      "origin": [
+        -0.29687,
+        7.5529,
+        -26.38119
+      ],
+      "rotation": [
+        0,
+        0,
+        10
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bone2",
+      "uuid": "53c02039-9b86-5e51-baa7-e9a44bb33839",
+      "origin": [
+        0.29687,
+        7.5529,
+        -26.38119
+      ],
+      "rotation": [
+        0,
+        0,
+        -10
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__grip",
+      "uuid": "d821d5b7-0004-5aeb-bc15-2cf9bd1517ab",
+      "origin": [
+        0.0,
+        0.35121,
+        -0.7635
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__body",
+      "uuid": "4c0fa250-567b-5eb2-ba22-8875d16a4a4c",
+      "origin": [
+        -8.0,
+        -4.72835,
+        -18.49057
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__upper",
+      "uuid": "e51af151-fe2c-5d4b-be4b-b0815d4994cb",
+      "origin": [
+        -0.01831,
+        4.30563,
+        -10.49449
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group2",
+      "uuid": "0048a91e-97df-5681-a511-8ae54193c96d",
+      "origin": [
+        0.88597,
+        5.02326,
+        -5.77963
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__lower",
+      "uuid": "11792a17-0688-51fc-9078-ced107f8ade2",
+      "origin": [
+        -0.01831,
+        3.93063,
+        -10.74449
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__cap",
+      "uuid": "141efd5e-a7cf-5a6b-82c1-fc18e76ff4d3",
+      "origin": [
+        -0.19018,
+        4.1025,
+        -10.30699
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bolt_release",
+      "uuid": "d5f8bd6f-7909-515f-9dba-733a0bd21f4b",
+      "origin": [
+        -0.83593,
+        3.76541,
+        -4.7015
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__mag_release",
+      "uuid": "759e8a31-720a-55f1-adaf-9c4bf8b0bf6d",
+      "origin": [
+        -0.32031,
+        3.09197,
+        -4.77182
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__deco",
+      "uuid": "66adb0ec-00f8-5493-b07c-247c3ce0bc70",
+      "origin": [
+        0.0,
+        3.63103,
+        -0.72494
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__safety",
+      "uuid": "f92e3895-8dad-5e83-846c-31c89f4e1e77",
+      "origin": [
+        -0.69476,
+        3.21339,
+        -1.36557
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__octagon",
+      "uuid": "8bb584c6-4c8a-57bb-acf2-28753d9a37d2",
+      "origin": [
+        0.0,
+        3.20915,
+        -1.36557
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__light_part",
+      "uuid": "bd89a762-636f-5455-9e89-9dd793eb4204",
+      "origin": [
+        -0.01831,
+        4.04,
+        -10.30699
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group4",
+      "uuid": "03ea7503-6c0f-59f0-8b03-9181f02cd7e3",
+      "origin": [
+        -0.01831,
+        4.04,
+        -10.30699
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group5",
+      "uuid": "bc1be4af-0fc3-5bff-ac8a-414776eb284f",
+      "origin": [
+        -0.01831,
+        4.04,
+        -10.30699
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__muzzle_default",
+      "uuid": "fba697b4-9b25-59e5-b2fd-bf9ea4fdeee7",
+      "origin": [
+        -0.01831,
+        4.04,
+        -11.55699
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bone3",
+      "uuid": "333d4c43-296e-5bdd-b7dd-63c3d8757d76",
+      "origin": [
+        0.0,
+        4.83555,
+        -33.60957
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__pull2",
+      "uuid": "f5392d1f-b993-5ed9-82d8-a695d36eb34e",
+      "origin": [
+        0.0,
+        6.02165,
+        0.34693
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__pull",
+      "uuid": "03680b9a-6463-589b-a5e3-1403a984db72",
+      "origin": [
+        -0.01831,
+        4.08688,
+        -10.30699
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bolt",
+      "uuid": "39ab8cc8-c454-5a7c-b24f-2153e1c5e887",
+      "origin": [
+        0.0,
+        5.07165,
+        -5.85307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group",
+      "uuid": "03978665-19ca-5497-a15e-967d5a044468",
+      "origin": [
+        0.03503,
+        11.79767,
+        -6.35172
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__bullet_in_barrel",
+      "uuid": "3a714c8a-1acf-50d1-a834-41e90cb1145d",
+      "origin": [
+        0.025,
+        4.84842,
+        -10.72807
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__fix_carry",
+      "uuid": "fb665f67-a9fd-588a-933e-529a7e3f6e4f",
+      "origin": [
+        0.0,
+        6.1154,
+        -1.55307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group7",
+      "uuid": "743c0fcb-aa8f-5dd5-aeef-c1d70533e2bb",
+      "origin": [
+        -0.5,
+        7.38103,
+        -3.86557
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__octagon5",
+      "uuid": "cbf524d0-828c-572b-8a4c-c5917899234c",
+      "origin": [
+        0.0,
+        -0.0721,
+        -1.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__stock",
+      "uuid": "c8fc8230-6e53-508c-9b74-5d4d0ddc147c",
+      "origin": [
+        0.0,
+        3.72887,
+        12.33122
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group16",
+      "uuid": "cd4acd44-f7cf-5393-b45d-b1e2a8689978",
+      "origin": [
+        0.0,
+        5.97876,
+        11.25061
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group17",
+      "uuid": "002ee10a-32f0-5ec1-983d-63c717199682",
+      "origin": [
+        0.0,
+        8.77165,
+        -1.80307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__group18",
+      "uuid": "cb40e646-a3f3-5e7c-8931-3c428306418f",
+      "origin": [
+        0.0,
+        -0.6971,
+        11.27506
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__ring",
+      "uuid": "78b642fc-60d2-5d75-9de0-ca8ece55449a",
+      "origin": [
+        0.0,
+        3.27165,
+        -10.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__octagon3",
+      "uuid": "c6395e61-b22f-50dc-bfff-1528532f1eaa",
+      "origin": [
+        0.0,
+        3.27165,
+        -10.55307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__octagon4",
+      "uuid": "e86dab66-9154-502b-90a7-0cd3b03e7bd4",
+      "origin": [
+        0.0,
+        4.83415,
+        -9.24057
+      ],
+      "rotation": [
+        0,
+        -180,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__handguard",
+      "uuid": "b9036134-a5af-53eb-a565-2673906f6d82",
+      "origin": [
+        -0.00027,
+        5.11119,
+        -16.72077
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__positioning2",
+      "uuid": "34c7c0b4-73fd-552e-a5b9-8345a91f9ed4",
+      "origin": [
+        0.0,
+        -4.72835,
+        -10.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__muzzle_pos",
+      "uuid": "8b82bace-aa47-547f-8c0f-c386d7f11354",
+      "origin": [
+        0.0,
+        4.8279,
+        -31.70307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__muzzle_flash",
+      "uuid": "991d5363-1ce7-57da-924d-815aada91247",
+      "origin": [
+        0.0,
+        4.8779,
+        -34.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__shell",
+      "uuid": "3104862e-37b9-5fa9-b488-4afedae5c33d",
+      "origin": [
+        0.15,
+        5.03415,
+        -6.07807
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__scope_pos",
+      "uuid": "97a61359-f9e7-5459-bba3-5a125897dd29",
+      "origin": [
+        0.0,
+        7.70915,
+        -5.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__righthand",
+      "uuid": "ba3d9348-9918-5424-b158-700667e2aedc",
+      "origin": [
+        -6.0,
+        14.27165,
+        -10.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__righthand_pos",
+      "uuid": "bddb0cae-453e-5bd2-a5c8-6a50fcc1f1d8",
+      "origin": [
+        0.0,
+        3.27165,
+        -10.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__camera",
+      "uuid": "089baf0d-2c48-5ecd-b394-acfdbf6bd7c1",
+      "origin": [
+        -3.39375,
+        8.32165,
+        6.15943
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__positioning",
+      "uuid": "a866d5e2-e95b-523a-941e-5cdfe91b23d2",
+      "origin": [
+        0.0,
+        -4.72835,
+        -10.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__thirdperson_hand",
+      "uuid": "87d2679d-4a3d-58e4-ac68-65cfa36d6468",
+      "origin": [
+        0.0,
+        2.28415,
+        -2.80307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__ground",
+      "uuid": "1d0535b9-9d1b-5fc2-acb2-497d36a527ff",
+      "origin": [
+        0.0,
+        -5.62835,
+        -7.27807
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__fixed",
+      "uuid": "38300790-32de-57b2-a822-1788cfcacfa8",
+      "origin": [
+        -1.05,
+        4.87165,
+        -5.15307
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__view",
+      "uuid": "b8452192-125e-5b41-b786-034e94d423e6",
+      "origin": [
+        0.0,
+        -4.72835,
+        -10.30307
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__iron_view",
+      "uuid": "3e714788-c85f-5b14-b1b0-b46c9c02662f",
+      "origin": [
+        0.0,
+        7.92165,
+        3.64693
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__idle_view",
+      "uuid": "ead0469c-55db-5594-bcbc-8f99b7641362",
+      "origin": [
+        -3.39375,
+        8.32165,
+        6.15943
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__refit_view",
+      "uuid": "52fcfe3b-0bd7-53cb-8c3f-b31c17165482",
+      "origin": [
+        -23.0,
+        4.27165,
+        -7.30307
+      ],
+      "rotation": [
+        0,
+        -89.9,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__refit_muzzle_view",
+      "uuid": "8e62c4fd-7a08-5dd7-8357-166b22751f91",
+      "origin": [
+        -11.0,
+        4.47165,
+        -34.30307
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__refit_laser_view",
+      "uuid": "0070c8c0-444b-5cea-b519-ead092d4462a",
+      "origin": [
+        -7.0,
+        5.27165,
+        -21.30307
+      ],
+      "rotation": [
+        0,
+        -125,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__refit_extended_mag_view",
+      "uuid": "078bfbf3-b817-5043-9981-8c4e79c9f2ff",
+      "origin": [
+        -10.0,
+        -0.72835,
+        -7.30307
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_m16a1_pistol_grip__refit_scope_view",
+      "uuid": "1d2d4e1b-3e56-5bb8-954a-d520de7f6949",
+      "origin": [
+        -8.0,
+        7.77165,
+        -6.00307
+      ],
+      "rotation": [
+        0,
+        -50,
+        0
+      ],
+      "export": true
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "5190aeb4-6fe5-561e-b00a-da3a899e3bc7",
+      "children": [
+        {
+          "uuid": "a1caf0ca-fe7e-5816-a6e9-eaf235318fdc",
+          "children": [
+            {
+              "uuid": "0e664eaf-7a7f-5eea-b041-1218e85f4217",
+              "children": [
+                {
+                  "uuid": "2bd88f96-5a6a-5c92-b2b7-34b83e8ef814",
+                  "children": [
+                    {
+                      "uuid": "ab81ca36-f541-5d63-b569-b4450d5dd56b",
+                      "children": []
+                    },
+                    {
+                      "uuid": "fe30be84-68ab-5a6a-a3a3-6d16eb80bde2",
+                      "children": [
+                        {
+                          "uuid": "273af957-fa12-56db-9ebf-befc07ddb3e7",
+                          "children": []
+                        },
+                        {
+                          "uuid": "2b667310-e0d7-59e2-b152-895f5738006b",
+                          "children": [
+                            {
+                              "uuid": "9b788484-9257-535e-b2ca-fcc8255f8263",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "d8f224e6-7ecb-5514-9dfb-e7b711964adf",
+                          "children": [
+                            {
+                              "uuid": "40f5e50d-8957-5c6d-9aba-3b3009d1511d",
+                              "children": [
+                                {
+                                  "uuid": "92a19d42-81f9-5d18-99a1-d1aa9d3f424d",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "c7fa981b-bd04-5437-adc5-d7a69ac7cea0",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "22342ac9-cf30-5952-8a4c-c5e12696d987",
+                          "children": [
+                            {
+                              "uuid": "48ba6ef5-c1b6-50cd-a7fd-6b72982d857a",
+                              "children": [
+                                {
+                                  "uuid": "742d41ea-9893-546f-8842-0817053a9378",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "dc3c1b0a-a473-5ed6-863d-dc3e2abfbaae",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "0410e25c-0a54-572a-abc9-fb865af00dd7",
+                          "children": [
+                            {
+                              "uuid": "bd3f5cc5-59eb-53d3-a3e1-210bb6ad2bc5",
+                              "children": [
+                                {
+                                  "uuid": "0a44171f-0cdb-5313-b9ac-24e8e556d3e2",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "d2ffdbb1-87bc-5fa9-afe9-9397b91dd134",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "583b3312-6184-5cb9-86fc-1296a0438620",
+                  "children": [
+                    {
+                      "uuid": "03ac7362-b1ec-5d16-b4b0-7dd19030de59",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "6eaf36c7-9652-5887-a394-7997d0b19125",
+              "children": [
+                {
+                  "uuid": "820c5343-f23c-55ed-b525-a3798dacb156",
+                  "children": [
+                    {
+                      "uuid": "c418035e-d963-5f5a-ad7a-057eacfc4a8e",
+                      "children": []
+                    },
+                    {
+                      "uuid": "52eeb2eb-a62b-582b-be72-8a54d6337b16",
+                      "children": [
+                        {
+                          "uuid": "0c8a7e4e-da9a-5f0c-834a-aa69bc2ad104",
+                          "children": [
+                            {
+                              "uuid": "c5a1c1fe-3099-5abd-bece-9142d0724f77",
+                              "children": []
+                            },
+                            {
+                              "uuid": "4084646a-89e1-5776-a151-6d50ff29676e",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "ecce19f1-a3cd-5248-8a41-3a532829c7c2",
+                          "children": [
+                            {
+                              "uuid": "74c9805f-aa68-50d8-a9fd-6b02aeccd2a6",
+                              "children": []
+                            },
+                            {
+                              "uuid": "60341557-5a04-5fa0-b3fe-f4fb82011342",
+                              "children": []
+                            },
+                            {
+                              "uuid": "53c02039-9b86-5e51-baa7-e9a44bb33839",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "d821d5b7-0004-5aeb-bc15-2cf9bd1517ab",
+                          "children": [
+                            "1f1c27a8-c249-56a5-822c-42293c979baf",
+                            "9a05980e-c6d8-5287-ac13-dfa58f873257",
+                            "36884fb2-9e87-5a12-9382-cce516f40aa1",
+                            "68402d91-68ad-5521-a5c2-7a9c186a68ac",
+                            "53735616-983c-5e65-8948-d16397b8ad0d",
+                            "530db374-cffc-5182-8238-cc380c5b6385",
+                            "37c70039-d16e-540a-a1b0-151fb74d643c",
+                            "d0672c88-ffcf-5c7a-9e4a-818d254adbe4",
+                            "33d49a67-5472-50f8-b6e1-00abae23b7ee",
+                            "024d2b23-ab81-525e-9461-800af4c1f4cb"
+                          ]
+                        },
+                        {
+                          "uuid": "4c0fa250-567b-5eb2-ba22-8875d16a4a4c",
+                          "children": [
+                            {
+                              "uuid": "e51af151-fe2c-5d4b-be4b-b0815d4994cb",
+                              "children": [
+                                {
+                                  "uuid": "0048a91e-97df-5681-a511-8ae54193c96d",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "11792a17-0688-51fc-9078-ced107f8ade2",
+                              "children": []
+                            },
+                            {
+                              "uuid": "141efd5e-a7cf-5a6b-82c1-fc18e76ff4d3",
+                              "children": []
+                            },
+                            {
+                              "uuid": "d5f8bd6f-7909-515f-9dba-733a0bd21f4b",
+                              "children": []
+                            },
+                            {
+                              "uuid": "759e8a31-720a-55f1-adaf-9c4bf8b0bf6d",
+                              "children": []
+                            },
+                            {
+                              "uuid": "66adb0ec-00f8-5493-b07c-247c3ce0bc70",
+                              "children": [
+                                {
+                                  "uuid": "f92e3895-8dad-5e83-846c-31c89f4e1e77",
+                                  "children": [
+                                    {
+                                      "uuid": "8bb584c6-4c8a-57bb-acf2-28753d9a37d2",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "bd89a762-636f-5455-9e89-9dd793eb4204",
+                                  "children": [
+                                    {
+                                      "uuid": "03ea7503-6c0f-59f0-8b03-9181f02cd7e3",
+                                      "children": []
+                                    },
+                                    {
+                                      "uuid": "bc1be4af-0fc3-5bff-ac8a-414776eb284f",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "fba697b4-9b25-59e5-b2fd-bf9ea4fdeee7",
+                          "children": [
+                            {
+                              "uuid": "333d4c43-296e-5bdd-b7dd-63c3d8757d76",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "f5392d1f-b993-5ed9-82d8-a695d36eb34e",
+                          "children": [
+                            {
+                              "uuid": "03680b9a-6463-589b-a5e3-1403a984db72",
+                              "children": []
+                            },
+                            {
+                              "uuid": "39ab8cc8-c454-5a7c-b24f-2153e1c5e887",
+                              "children": [
+                                {
+                                  "uuid": "03978665-19ca-5497-a15e-967d5a044468",
+                                  "children": []
+                                },
+                                {
+                                  "uuid": "3a714c8a-1acf-50d1-a834-41e90cb1145d",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "fb665f67-a9fd-588a-933e-529a7e3f6e4f",
+                          "children": [
+                            {
+                              "uuid": "743c0fcb-aa8f-5dd5-aeef-c1d70533e2bb",
+                              "children": []
+                            },
+                            {
+                              "uuid": "cbf524d0-828c-572b-8a4c-c5917899234c",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "c8fc8230-6e53-508c-9b74-5d4d0ddc147c",
+                          "children": [
+                            {
+                              "uuid": "cd4acd44-f7cf-5393-b45d-b1e2a8689978",
+                              "children": []
+                            },
+                            {
+                              "uuid": "002ee10a-32f0-5ec1-983d-63c717199682",
+                              "children": []
+                            },
+                            {
+                              "uuid": "cb40e646-a3f3-5e7c-8931-3c428306418f",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "78b642fc-60d2-5d75-9de0-ca8ece55449a",
+                          "children": [
+                            {
+                              "uuid": "c6395e61-b22f-50dc-bfff-1528532f1eaa",
+                              "children": []
+                            },
+                            {
+                              "uuid": "e86dab66-9154-502b-90a7-0cd3b03e7bd4",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "b9036134-a5af-53eb-a565-2673906f6d82",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "34c7c0b4-73fd-552e-a5b9-8345a91f9ed4",
+                      "children": [
+                        {
+                          "uuid": "8b82bace-aa47-547f-8c0f-c386d7f11354",
+                          "children": []
+                        },
+                        {
+                          "uuid": "991d5363-1ce7-57da-924d-815aada91247",
+                          "children": []
+                        },
+                        {
+                          "uuid": "3104862e-37b9-5fa9-b488-4afedae5c33d",
+                          "children": []
+                        },
+                        {
+                          "uuid": "97a61359-f9e7-5459-bba3-5a125897dd29",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "ba3d9348-9918-5424-b158-700667e2aedc",
+                  "children": [
+                    {
+                      "uuid": "bddb0cae-453e-5bd2-a5c8-6a50fcc1f1d8",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "089baf0d-2c48-5ecd-b394-acfdbf6bd7c1",
+          "children": []
+        },
+        {
+          "uuid": "a866d5e2-e95b-523a-941e-5cdfe91b23d2",
+          "children": [
+            {
+              "uuid": "87d2679d-4a3d-58e4-ac68-65cfa36d6468",
+              "children": []
+            },
+            {
+              "uuid": "1d0535b9-9d1b-5fc2-acb2-497d36a527ff",
+              "children": []
+            },
+            {
+              "uuid": "38300790-32de-57b2-a822-1788cfcacfa8",
+              "children": []
+            }
+          ]
+        },
+        {
+          "uuid": "b8452192-125e-5b41-b786-034e94d423e6",
+          "children": [
+            {
+              "uuid": "3e714788-c85f-5b14-b1b0-b46c9c02662f",
+              "children": []
+            },
+            {
+              "uuid": "ead0469c-55db-5594-bcbc-8f99b7641362",
+              "children": []
+            },
+            {
+              "uuid": "52fcfe3b-0bd7-53cb-8c3f-b31c17165482",
+              "children": []
+            },
+            {
+              "uuid": "8e62c4fd-7a08-5dd7-8357-166b22751f91",
+              "children": []
+            },
+            {
+              "uuid": "0070c8c0-444b-5cea-b519-ead092d4462a",
+              "children": []
+            },
+            {
+              "uuid": "078bfbf3-b817-5043-9981-8c4e79c9f2ff",
+              "children": []
+            },
+            {
+              "uuid": "1d2d4e1b-3e56-5bb8-954a-d520de7f6949",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "texture.png",
+      "id": "0",
+      "uuid": "03272666-c024-518a-83f9-84928f83e434",
+      "path": "texture.png",
+      "relative_path": "texture.png",
+      "source": "data:image/png;base64,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",
+      "width": 256,
+      "height": 256,
+      "uv_width": 128,
+      "uv_height": 128,
+      "internal": true
+    }
+  ]
+}

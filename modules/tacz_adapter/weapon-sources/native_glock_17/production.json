@@ -468,7 +468,7 @@
       5
     ]
   },
-  "lodPolicy": "Complete editable geometry with full native high rig in both high and LOD; no unsafe original low topology reuse",
+  "lodPolicy": "Conservative original-cube subset; eight-view silhouette and 48px textured comparison gates, each geometry bone retained; full native functional rig",
   "labels": {
     "glock_frame": [
       "Glock 17 枪身",
@@ -518,5 +518,13 @@
       "Slide"
     ]
   },
-  "integrationFragments": "/tmp/glock-integration"
+  "integrationFragments": "/tmp/native-gun-integration/glock_17",
+  "lod": {
+    "strategy": "conservative_cube_subset",
+    "silhouetteResolution": 96,
+    "textureResolution": 48,
+    "maxSilhouetteLoss": 0.01,
+    "maxTextureMeanError": 0.02,
+    "maxTextureChangedFraction": 0.05
+  }
 }

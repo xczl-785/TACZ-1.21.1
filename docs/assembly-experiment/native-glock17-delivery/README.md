@@ -1,8 +1,8 @@
 # 第二把原生组装枪：Glock 17
 
-当前修复制品：`1.1.8-hotfix-r6-newmod.ec3468dc`，NewMod接入 `f41e9f9`；工作台缺图修复见[evidence/card-icon-fix.json](evidence/card-icon-fix.json)，待所有者重启实机核验。
+当前修复制品：`1.1.8-hotfix-r6-newmod.ec3468dc`，NewMod接入 `f41e9f9`；工作台缺图修复见[evidence/card-icon-fix.json](evidence/card-icon-fix.json)，所有者已确认实机验收通过。
 
-2026-09-16。所有者授权继续扩大 TaCZ 原生组装覆盖；本批选择结构不同的 Glock 17，验证公共制作与运行机制。制作、运行接线、完整构建与 NewMod 制品接入均通过，未实机验收。
+2026-09-16。所有者授权继续扩大 TaCZ 原生组装覆盖；本批选择结构不同的 Glock 17，验证公共制作与运行机制。制作、运行接线、完整构建与 NewMod 制品接入均通过；所有者已接受 ec3468dc 卡片修正版。
 
 ## 本批合同
 
@@ -50,3 +50,7 @@ NewMod 接入完成后，从 `/devitems` 领取 **Glock 17 · 原生实体组装
 所有者实际界面反馈紫黑卡片，上一版不作为实机通过。根因：资源在 `textures/item/glock_17/<definition>.png`，但实际卡片读取器硬编码公共 `textures/item/<definition>.png`。已在30acf818开发Jar核实20图全存在，18旧路径不存在，另2激光误用旧图。
 
 修复把 `partIconDirectory` 纳入每枪配置，由 `AssembledWeapon.partIcon` 统一提供界面实际路径；生产器与普通物品图标引用同一目录。旧M4默认路径保持。此前测试只验证生成目录，没验证界面调用的路径；现增加M4/Glock全部87项实际解析路径的PNG解码回归。无模型/贴图丢失或变更。更新制品和实机重验见后续证据。
+
+## 所有者接受
+
+所有者反馈“验证完毕，这把枪应该是通过了”，按 ec3468dc 修正版登记实机接受。低模完整几何的已知缺口保持独立，本次接受不冒称已经减面。下一批授权：先补Glock低模，再接M16A1/SCAR-L/UMP45；光学制作留最后且需所有者深度参与。

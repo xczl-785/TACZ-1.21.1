@@ -1,0 +1,829 @@
+{
+  "schemaVersion": 1,
+  "sourceGun": "ump45",
+  "gunId": "tacz_assembly:ump45",
+  "sourceDirectory": "native_ump45",
+  "rootDefinition": "ump_lower",
+  "parts": [
+    {
+      "definitionId": "ump_lower",
+      "sourceCubeIndices": {
+        "lower": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "pattern": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "mag_release": [
+          0,
+          1,
+          2
+        ],
+        "bolt_release": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "ump45_safety": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "inventoryType": "weapon/firearm/smg",
+      "footprint": [
+        3,
+        2
+      ]
+    },
+    {
+      "definitionId": "ump_upper",
+      "sourceCubeIndices": {
+        "group2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "group3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          125,
+          126,
+          127,
+          128,
+          129,
+          130,
+          131,
+          132,
+          133
+        ],
+        "sight_illuminated": [
+          0,
+          1,
+          2
+        ],
+        "hinge2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        4,
+        1
+      ]
+    },
+    {
+      "definitionId": "ump_barrel",
+      "sourceCubeIndices": {
+        "octagon3": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "ump_bolt",
+      "sourceCubeIndices": {
+        "ump45_bolt": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "ump_charging_handle",
+      "sourceCubeIndices": {
+        "ump45_charge_handle": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "inventoryType": "weapon_mod/charging_handle",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "ump_stock",
+      "sourceCubeIndices": {
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group6": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61
+        ],
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "hinge": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "inventoryType": "weapon_mod/stock",
+      "footprint": [
+        2,
+        2
+      ]
+    },
+    {
+      "definitionId": "ump_rails",
+      "sourceCubeIndices": {
+        "rails": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "side_rail2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "side_rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "bottom_rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "top_rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      "inventoryType": "weapon_mod/mount",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "ump_magazine_standard",
+      "sourceCubeIndices": {
+        "mag_standard": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ]
+    }
+  ],
+  "slots": {
+    "ump_lower": {
+      "upper": [
+        "ump_upper"
+      ],
+      "magazine": [
+        "ump_magazine_standard",
+        "$extended_mag"
+      ]
+    },
+    "ump_upper": {
+      "barrel": [
+        "ump_barrel"
+      ],
+      "bolt": [
+        "ump_bolt"
+      ],
+      "charging_handle": [
+        "ump_charging_handle"
+      ],
+      "stock": [
+        "ump_stock"
+      ],
+      "rails": [
+        "ump_rails"
+      ]
+    },
+    "ump_barrel": {
+      "muzzle": [
+        "$muzzle"
+      ]
+    },
+    "ump_rails": {
+      "scope": [
+        "$scope"
+      ],
+      "grip": [
+        "$grip"
+      ],
+      "laser": [
+        "$laser"
+      ]
+    }
+  },
+  "preset": {
+    "ump_lower": {
+      "upper": "ump_upper",
+      "magazine": "ump_magazine_standard"
+    },
+    "ump_upper": {
+      "barrel": "ump_barrel",
+      "bolt": "ump_bolt",
+      "charging_handle": "ump_charging_handle",
+      "stock": "ump_stock",
+      "rails": "ump_rails"
+    }
+  },
+  "weapon": {
+    "schemaVersion": 1,
+    "gunId": "tacz_assembly:ump45",
+    "rootDefinition": "ump_lower",
+    "resourceDirectory": "ump45",
+    "modelType": "tacz_native_ump45_assembly",
+    "caliber": "45acp",
+    "magazinePath": [
+      "magazine"
+    ],
+    "requiredPaths": [
+      [
+        "upper"
+      ],
+      [
+        "upper",
+        "barrel"
+      ],
+      [
+        "upper",
+        "bolt"
+      ],
+      [
+        "upper",
+        "charging_handle"
+      ]
+    ],
+    "defaultFireMode": "auto",
+    "feed": "detachable_magazine",
+    "nativeRig": true,
+    "assemblyIcons": true,
+    "developmentSource": "native_ump45",
+    "wearableSlots": [
+      "tactical_inventory:primary_weapon_1",
+      "tactical_inventory:primary_weapon_2"
+    ],
+    "partIconDirectory": "textures/item/ump45"
+  },
+  "nativeProfile": {
+    "schemaVersion": 1,
+    "attachmentPaths": {
+      "SCOPE": [
+        "upper",
+        "rails",
+        "scope"
+      ],
+      "MUZZLE": [
+        "upper",
+        "barrel",
+        "muzzle"
+      ],
+      "GRIP": [
+        "upper",
+        "rails",
+        "grip"
+      ],
+      "LASER": [
+        "upper",
+        "rails",
+        "laser"
+      ],
+      "EXTENDED_MAG": [
+        "magazine"
+      ]
+    },
+    "attachmentOverrides": {},
+    "sightAlternatives": [
+      [
+        [
+          "upper",
+          "rails",
+          "scope"
+        ]
+      ],
+      [
+        [
+          "upper"
+        ]
+      ]
+    ]
+  },
+  "visualRules": {
+    "schemaVersion": 1,
+    "alwaysVisibleBones": [
+      "mag_standard",
+      "mag_extended_1",
+      "mag_extended_2",
+      "mag_extended_3"
+    ],
+    "definitionRequirements": {},
+    "variantRequirements": {},
+    "boneRequirements": {
+      "bullet": [
+        "ump_magazine_standard",
+        "tacz_ump45_light_extended_mag_1",
+        "tacz_ump45_light_extended_mag_2",
+        "tacz_ump45_light_extended_mag_3"
+      ],
+      "bullet_in_mag": [
+        "ump_magazine_standard",
+        "tacz_ump45_light_extended_mag_1",
+        "tacz_ump45_light_extended_mag_2",
+        "tacz_ump45_light_extended_mag_3"
+      ],
+      "bullet_in_barrel": [
+        "ump_barrel"
+      ],
+      "ump45_bolt": [
+        "ump_bolt"
+      ]
+    }
+  },
+  "presentationOnly": {
+    "4": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "2": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "3": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "lefthand_pos": [
+      0
+    ],
+    "righthand_pos": [
+      0
+    ]
+  },
+  "lodPolicy": "Conservative original-cube subset; eight-view silhouette and 48px textured comparison gates, each geometry bone retained; full native functional rig",
+  "labels": {
+    "ump_lower": [
+      "UMP45 下机匣与扳机组件",
+      "UMP45 lower receiver and trigger assembly"
+    ],
+    "ump_upper": [
+      "UMP45 上机匣（原厂机械瞄具）",
+      "UMP45 upper receiver with factory iron sights"
+    ],
+    "ump_barrel": [
+      "UMP45 枪管",
+      "UMP45 barrel"
+    ],
+    "ump_bolt": [
+      "UMP45 枪机",
+      "UMP45 bolt"
+    ],
+    "ump_charging_handle": [
+      "UMP45 拉机柄",
+      "UMP45 charging handle"
+    ],
+    "ump_stock": [
+      "UMP45 原厂枪托组件",
+      "UMP45 factory stock assembly"
+    ],
+    "ump_rails": [
+      "UMP45 导轨套件",
+      "UMP45 rail set"
+    ],
+    "ump_magazine_standard": [
+      "UMP45 标准25发弹匣",
+      "UMP45 standard 25-round magazine"
+    ]
+  },
+  "excludedAttachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i"
+  ],
+  "editableAttachmentCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
+  ],
+  "attachmentOverrideCatalogs": [
+    "data/tacz_assembly/native_attachments/standalone.json",
+    "data/tacz_assembly/m4a1/native_attachment_overrides.json"
+  ],
+  "gunLabels": [
+    "UMP45 · 原生实体组装",
+    "UMP45 · Native Assembly"
+  ],
+  "slotLabels": {
+    "rails": [
+      "导轨套件",
+      "Rail set"
+    ],
+    "charging_handle": [
+      "拉机柄",
+      "Charging handle"
+    ]
+  },
+  "integrationFragments": "/tmp/native-gun-integration/ump45",
+  "lod": {
+    "strategy": "conservative_cube_subset",
+    "silhouetteResolution": 96,
+    "textureResolution": 48,
+    "maxSilhouetteLoss": 0.01,
+    "maxTextureMeanError": 0.02,
+    "maxTextureChangedFraction": 0.05
+  }
+}

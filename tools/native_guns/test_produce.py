@@ -1,5 +1,5 @@
 """Independent contracts for editable native gun projection and scope boundaries."""
-import importlib.util,tempfile,unittest
+import copy,importlib.util,tempfile,unittest
 from pathlib import Path
 import numpy as np
 import produce as p
@@ -10,7 +10,47 @@ validate=_validation.validate
 class NativeGunProductionTest(unittest.TestCase):
     def test_complete_runtime_contract(self):
         report=validate();self.assertEqual(report['nativeRigBones'],57)
-        self.assertEqual(report['highCubes'],264);self.assertEqual(report['highCubes'],report['lowCubes'])
+        self.assertEqual(report['highCubes'],264);self.assertLess(report['lowCubes'],report['highCubes']);self.assertTrue(report['lod'])
+
+    def test_configuration_rejects_wrong_caliber_and_cross_gun_icons(self):
+        config=p.ex.read(p.DEFAULT)
+        wrong=copy.deepcopy(config);wrong['weapon']['caliber']='9mm'
+        with self.assertRaises(ValueError):p.validate_configuration(wrong)
+        wrong=copy.deepcopy(config);wrong['weapon']['partIconDirectory']='textures/item/m4a1'
+        with self.assertRaises(ValueError):p.validate_configuration(wrong)
+
+    def test_lod_retains_each_physical_entity_and_exact_uv_cubes(self):
+        report=p.ex.read(p.DEFAULT.parent/'build-report.json')
+        self.assertTrue(report['lod']);self.assertLess(report['lowCubes'],report['highCubes'])
+        for proof in report['lod'].values():
+            self.assertGreater(proof['lowCubes'],0)
+            self.assertTrue(all(indices for indices in proof['selectedIndices'].values()))
+            self.assertLessEqual(max(proof['silhouetteLoss']),.01)
+            self.assertTrue(all(metric['meanError']<=.02 and metric['changedPixelFraction']<=.05 for metric in proof['textureComparisons']))
+
+    def test_registered_batch_resources_use_distinct_configured_paths(self):
+        types=set();directories=set()
+        for gun in ('glock_17','m16a1','scar_l','ump45'):
+            root=p.R/'modules/tacz_adapter/weapon-sources'/('native_'+gun)
+            config=p.ex.read(root/'production.json');weapon=config['weapon']
+            validate(p.RES,weapon)
+            self.assertNotIn(weapon['modelType'],types);types.add(weapon['modelType'])
+            self.assertNotIn(weapon['partIconDirectory'],directories);directories.add(weapon['partIconDirectory'])
+            report=p.ex.read(root/'build-report.json')
+            self.assertLessEqual(report['lowCubes'],report['highCubes'])
+            self.assertTrue((root/'lod-comparison.png').is_file())
+
+    def test_scar_reuses_authored_stocks_without_baking_m4_mount(self):
+        source_root=p.R/'modules/tacz_adapter/weapon-sources/native_scar_l'
+        records,_=p.attachment_records(p.ex.read(source_root/'production.json'))
+        stocks=[r for r in records if r['type']=='stock']
+        self.assertEqual(len(stocks),9)
+        overrides=p.ex.read(p.RES/'data/tacz_assembly/scar_l/native_attachment_overrides.json')
+        catalog=p.ex.read(p.RES/'data/tacz_assembly/native_attachments/stocks.json')['attachments']
+        for stock in stocks:
+            self.assertIn('row',stock);self.assertTrue(p.authored_stock(stock['row']))
+            self.assertEqual(overrides[stock['attachmentId']],catalog[stock['attachmentId']])
+            self.assertIn('/authored_stock/',overrides[stock['attachmentId']]['model'])
 
     def test_blockbench_rounding_preserves_native_rig_and_uv(self):
         source_root=p.DEFAULT.parent;manifest=p.ex.read(source_root/'editable/manifest.json')

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "attachmentPaths": {
+    "MUZZLE": [
+      "upper",
+      "barrel_ring",
+      "barrel",
+      "muzzle"
+    ],
+    "SCOPE": [
+      "upper",
+      "rear_sight",
+      "scope"
+    ],
+    "EXTENDED_MAG": [
+      "magazine"
+    ]
+  },
+  "attachmentOverrides": {},
+  "sightAlternatives": [
+    [
+      [
+        "upper",
+        "rear_sight",
+        "scope"
+      ]
+    ],
+    [
+      [
+        "upper",
+        "barrel_ring",
+        "barrel",
+        "front_sight"
+      ],
+      [
+        "upper",
+        "rear_sight"
+      ]
+    ]
+  ]
+}

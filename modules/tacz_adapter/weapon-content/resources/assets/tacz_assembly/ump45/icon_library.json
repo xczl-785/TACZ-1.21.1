@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "materials": {
+    "ump_lower": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/ump_lower.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "ump_upper": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/ump_upper.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "ump_barrel": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/ump_barrel.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "ump_bolt": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/ump_bolt.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "ump_charging_handle": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/ump_charging_handle.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "ump_stock": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/ump_stock.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "ump_rails": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/ump_rails.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "ump_magazine_standard": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/ump_magazine_standard.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_cobra": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_cobra.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_cqr": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_cqr.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_magpul_afg_2": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_magpul_afg_2.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_osovets_black": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_osovets_black.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_rk0": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_rk0.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_rk1_b25u": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_rk1_b25u.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_rk6": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_rk6.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_se_5": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_se_5.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_td": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_td.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_vertical_military": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_vertical_military.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_vertical_ranger": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_vertical_ranger.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_grip_vertical_talon": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_grip_vertical_talon.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_laser_compact": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_laser_compact.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_laser_nightstick": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_laser_nightstick.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_ump45_light_extended_mag_1": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_ump45_light_extended_mag_1.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_ump45_light_extended_mag_2": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_ump45_light_extended_mag_2.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_ump45_light_extended_mag_3": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_ump45_light_extended_mag_3.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_brake_cthulhu": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_brake_cthulhu.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_brake_cyclone_d2": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_brake_cyclone_d2.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_brake_pioneer": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_brake_pioneer.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_brake_trex": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_brake_trex.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_compensator_trident": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_compensator_trident.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_knight_qd": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_silencer_knight_qd.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_mirage": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_silencer_mirage.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_phantom_s1": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_silencer_phantom_s1.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_ptilopsis": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_silencer_ptilopsis.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_ursus": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_silencer_ursus.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_wraith": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_muzzle_silencer_wraith.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_scope_acog_ta31": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_scope_acog_ta31.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_scope_contender": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_scope_contender.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_scope_elcan_4x": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_scope_elcan_4x.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_scope_hamr": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_scope_hamr.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_scope_qmk152": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_scope_qmk152.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_552": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_552.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_acro_rifle": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_acro_rifle.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_coyote": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_coyote.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_deltapoint_rifle": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_deltapoint_rifle.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_exp3": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_exp3.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_fastfire_rifle": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_fastfire_rifle.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_okp7": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_okp7.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_pk06_rifle": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_pk06_rifle.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_srs_02": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_srs_02.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_t2": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_t2.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_uh1": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/ump45/tacz_sight_uh1.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    }
+  }
+}

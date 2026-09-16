@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tacz_assembly:scar_l",
+      "tags": [
+        "item_foundation:type/weapon/firearm/assault_rifle"
+      ]
+    },
+    {
+      "item": "tacz_assembly:scar_l_upper",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_assembly:scar_l_barrel",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "tacz_assembly:scar_l_gas_system",
+      "tags": [
+        "item_foundation:type/weapon_mod/gas_block"
+      ]
+    },
+    {
+      "item": "tacz_assembly:scar_l_pistol_grip",
+      "tags": [
+        "item_foundation:type/weapon_mod/pistol_grip"
+      ]
+    },
+    {
+      "item": "tacz_assembly:scar_l_stock",
+      "tags": [
+        "item_foundation:type/weapon_mod/stock"
+      ]
+    },
+    {
+      "item": "tacz_assembly:scar_l_muzzle",
+      "tags": [
+        "item_foundation:type/weapon_mod/muzzle"
+      ]
+    },
+    {
+      "item": "tacz_assembly:scar_l_bolt",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_assembly:scar_l_front_sight",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_assembly:scar_l_rear_sight",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_assembly:scar_l_magazine_standard",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    }
+  ]
+}

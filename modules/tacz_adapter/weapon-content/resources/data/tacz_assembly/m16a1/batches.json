@@ -1,0 +1,182 @@
+{
+  "assembly_m16a1_lower_lower": {
+    "definition": "m16a1_lower",
+    "variant": "always",
+    "sourceBone": "lower"
+  },
+  "assembly_m16a1_lower_bolt_release": {
+    "definition": "m16a1_lower",
+    "variant": "always",
+    "sourceBone": "bolt_release"
+  },
+  "assembly_m16a1_lower_mag_release": {
+    "definition": "m16a1_lower",
+    "variant": "always",
+    "sourceBone": "mag_release"
+  },
+  "assembly_m16a1_lower_deco": {
+    "definition": "m16a1_lower",
+    "variant": "always",
+    "sourceBone": "deco"
+  },
+  "assembly_m16a1_lower_safety": {
+    "definition": "m16a1_lower",
+    "variant": "always",
+    "sourceBone": "safety"
+  },
+  "assembly_m16a1_lower_octagon": {
+    "definition": "m16a1_lower",
+    "variant": "always",
+    "sourceBone": "octagon"
+  },
+  "assembly_m16a1_lower_group4": {
+    "definition": "m16a1_lower",
+    "variant": "always",
+    "sourceBone": "group4"
+  },
+  "assembly_m16a1_lower_group5": {
+    "definition": "m16a1_lower",
+    "variant": "always",
+    "sourceBone": "group5"
+  },
+  "assembly_m16a1_upper_upper": {
+    "definition": "m16a1_upper",
+    "variant": "always",
+    "sourceBone": "upper"
+  },
+  "assembly_m16a1_upper_group2": {
+    "definition": "m16a1_upper",
+    "variant": "always",
+    "sourceBone": "group2"
+  },
+  "assembly_m16a1_upper_cap": {
+    "definition": "m16a1_upper",
+    "variant": "always",
+    "sourceBone": "cap"
+  },
+  "assembly_m16a1_barrel_octagon2": {
+    "definition": "m16a1_barrel",
+    "variant": "always",
+    "sourceBone": "octagon2"
+  },
+  "assembly_m16a1_front_sight_fix_sight": {
+    "definition": "m16a1_front_sight",
+    "variant": "always",
+    "sourceBone": "fix_sight"
+  },
+  "assembly_m16a1_front_sight_sight_illuminated": {
+    "definition": "m16a1_front_sight",
+    "variant": "always",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_m16a1_front_sight_bone": {
+    "definition": "m16a1_front_sight",
+    "variant": "always",
+    "sourceBone": "bone"
+  },
+  "assembly_m16a1_front_sight_bone2": {
+    "definition": "m16a1_front_sight",
+    "variant": "always",
+    "sourceBone": "bone2"
+  },
+  "assembly_m16a1_pistol_grip_grip": {
+    "definition": "m16a1_pistol_grip",
+    "variant": "always",
+    "sourceBone": "grip"
+  },
+  "assembly_m16a1_muzzle_muzzle_default": {
+    "definition": "m16a1_muzzle",
+    "variant": "always",
+    "sourceBone": "muzzle_default"
+  },
+  "assembly_m16a1_muzzle_bone3": {
+    "definition": "m16a1_muzzle",
+    "variant": "always",
+    "sourceBone": "bone3"
+  },
+  "assembly_m16a1_charging_handle_pull": {
+    "definition": "m16a1_charging_handle",
+    "variant": "always",
+    "sourceBone": "pull"
+  },
+  "assembly_m16a1_bolt_bolt": {
+    "definition": "m16a1_bolt",
+    "variant": "always",
+    "sourceBone": "bolt"
+  },
+  "assembly_m16a1_bolt_group": {
+    "definition": "m16a1_bolt",
+    "variant": "always",
+    "sourceBone": "group"
+  },
+  "assembly_m16a1_rear_sight_fix_carry": {
+    "definition": "m16a1_rear_sight",
+    "variant": "always",
+    "sourceBone": "fix_carry"
+  },
+  "assembly_m16a1_rear_sight_group7": {
+    "definition": "m16a1_rear_sight",
+    "variant": "always",
+    "sourceBone": "group7"
+  },
+  "assembly_m16a1_rear_sight_octagon5": {
+    "definition": "m16a1_rear_sight",
+    "variant": "always",
+    "sourceBone": "octagon5"
+  },
+  "assembly_m16a1_stock_stock": {
+    "definition": "m16a1_stock",
+    "variant": "always",
+    "sourceBone": "stock"
+  },
+  "assembly_m16a1_stock_group16": {
+    "definition": "m16a1_stock",
+    "variant": "always",
+    "sourceBone": "group16"
+  },
+  "assembly_m16a1_stock_group17": {
+    "definition": "m16a1_stock",
+    "variant": "always",
+    "sourceBone": "group17"
+  },
+  "assembly_m16a1_stock_group18": {
+    "definition": "m16a1_stock",
+    "variant": "always",
+    "sourceBone": "group18"
+  },
+  "assembly_m16a1_barrel_ring_octagon3": {
+    "definition": "m16a1_barrel_ring",
+    "variant": "always",
+    "sourceBone": "octagon3"
+  },
+  "assembly_m16a1_barrel_ring_octagon4": {
+    "definition": "m16a1_barrel_ring",
+    "variant": "always",
+    "sourceBone": "octagon4"
+  },
+  "assembly_m16a1_handguard_handguard": {
+    "definition": "m16a1_handguard",
+    "variant": "always",
+    "sourceBone": "handguard"
+  },
+  "assembly_m16a1_magazine_standard_mag2": {
+    "definition": "m16a1_magazine_standard",
+    "variant": "always",
+    "sourceBone": "mag2"
+  },
+  "assembly_tacz_m16a1_extended_mag_1_group24": {
+    "definition": "tacz_m16a1_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "group24"
+  },
+  "assembly_tacz_m16a1_extended_mag_2_group3": {
+    "definition": "tacz_m16a1_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "group3"
+  },
+  "assembly_tacz_m16a1_extended_mag_3_group6": {
+    "definition": "tacz_m16a1_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "group6"
+  }
+}

@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "id": "m16a1_lower",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "upper",
+          "required": false,
+          "allowedParts": [
+            "m16a1_upper"
+          ]
+        },
+        {
+          "id": "pistol_grip",
+          "required": false,
+          "allowedParts": [
+            "m16a1_pistol_grip"
+          ]
+        },
+        {
+          "id": "stock",
+          "required": false,
+          "allowedParts": [
+            "m16a1_stock"
+          ]
+        },
+        {
+          "id": "magazine",
+          "required": false,
+          "allowedParts": [
+            "m16a1_magazine_standard",
+            "tacz_m16a1_extended_mag_1",
+            "tacz_m16a1_extended_mag_2",
+            "tacz_m16a1_extended_mag_3"
+          ]
+        }
+      ],
+      "conflictingParts": [],
+      "weapon": {
+        "recoilVertical": 0,
+        "recoilHorizontal": 0,
+        "centerOfImpact": 0,
+        "sightingRange": 0
+      }
+    },
+    {
+      "id": "m16a1_upper",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "barrel_ring",
+          "required": false,
+          "allowedParts": [
+            "m16a1_barrel_ring"
+          ]
+        },
+        {
+          "id": "bolt",
+          "required": false,
+          "allowedParts": [
+            "m16a1_bolt"
+          ]
+        },
+        {
+          "id": "charging_handle",
+          "required": false,
+          "allowedParts": [
+            "m16a1_charging_handle"
+          ]
+        },
+        {
+          "id": "rear_sight",
+          "required": false,
+          "allowedParts": [
+            "m16a1_rear_sight"
+          ]
+        }
+      ],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_barrel",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "front_sight",
+          "required": false,
+          "allowedParts": [
+            "m16a1_front_sight"
+          ]
+        },
+        {
+          "id": "muzzle",
+          "required": false,
+          "allowedParts": [
+            "m16a1_muzzle",
+            "tacz_bayonet_m9",
+            "tacz_muzzle_brake_cthulhu",
+            "tacz_muzzle_brake_cyclone_d2",
+            "tacz_muzzle_brake_pioneer",
+            "tacz_muzzle_brake_trex",
+            "tacz_muzzle_compensator_trident",
+            "tacz_muzzle_silencer_knight_qd",
+            "tacz_muzzle_silencer_phantom_s1",
+            "tacz_muzzle_silencer_ursus"
+          ]
+        }
+      ],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_front_sight",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_pistol_grip",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_muzzle",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_charging_handle",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_bolt",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_rear_sight",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "scope",
+          "required": false,
+          "allowedParts": [
+            "tacz_scope_retro_2x"
+          ]
+        }
+      ],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_stock",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_barrel_ring",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "barrel",
+          "required": false,
+          "allowedParts": [
+            "m16a1_barrel"
+          ]
+        },
+        {
+          "id": "handguard",
+          "required": false,
+          "allowedParts": [
+            "m16a1_handguard"
+          ]
+        }
+      ],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_handguard",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m16a1_magazine_standard",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_bayonet_m9",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_m16a1_extended_mag_1",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_m16a1_extended_mag_2",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_m16a1_extended_mag_3",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_brake_cthulhu",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_brake_cyclone_d2",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_brake_pioneer",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_brake_trex",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_compensator_trident",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_knight_qd",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_phantom_s1",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_ursus",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_scope_retro_2x",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    }
+  ]
+}

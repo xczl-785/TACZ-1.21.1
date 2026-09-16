@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "tacz_assembly:m16a1",
+      "slots": [
+        {
+          "id": "upper",
+          "compatibleItems": [
+            "tacz_assembly:m16a1_upper"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "pistol_grip",
+          "compatibleItems": [
+            "tacz_assembly:m16a1_pistol_grip"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "stock",
+          "compatibleItems": [
+            "tacz_assembly:m16a1_stock"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "magazine",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_assembly:m16a1_magazine_standard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_upper",
+      "slots": [
+        {
+          "id": "barrel_ring",
+          "compatibleItems": [
+            "tacz_assembly:m16a1_barrel_ring"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bolt",
+          "compatibleItems": [
+            "tacz_assembly:m16a1_bolt"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "charging_handle",
+          "compatibleItems": [
+            "tacz_assembly:m16a1_charging_handle"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "rear_sight",
+          "compatibleItems": [
+            "tacz_assembly:m16a1_rear_sight"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_barrel",
+      "slots": [
+        {
+          "id": "front_sight",
+          "compatibleItems": [
+            "tacz_assembly:m16a1_front_sight"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "muzzle",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_assembly:m16a1_muzzle"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_front_sight",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_pistol_grip",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_muzzle",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_charging_handle",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_bolt",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_rear_sight",
+      "slots": [
+        {
+          "id": "scope",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_stock",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_barrel_ring",
+      "slots": [
+        {
+          "id": "barrel",
+          "compatibleItems": [
+            "tacz_assembly:m16a1_barrel"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "handguard",
+          "compatibleItems": [
+            "tacz_assembly:m16a1_handguard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_handguard",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m16a1_magazine_standard",
+      "slots": []
+    }
+  ]
+}

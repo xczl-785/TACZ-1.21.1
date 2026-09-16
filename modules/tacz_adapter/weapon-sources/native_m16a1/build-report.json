@@ -1,0 +1,2909 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_assembly:m16a1",
+  "configuration": "modules/tacz_adapter/weapon-sources/native_m16a1/production.json",
+  "parts": [
+    {
+      "definitionId": "m16a1_lower",
+      "cubes": 79,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_lower",
+        "group": "m16a1_lower",
+        "prefix": "native_attachment_m16a1_lower",
+        "cubes": 79,
+        "sourceCubeIndices": {
+          "lower": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54
+          ],
+          "bolt_release": [
+            0,
+            1
+          ],
+          "mag_release": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "deco": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "safety": [
+            0,
+            1
+          ],
+          "octagon": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "group4": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "group5": [
+            0,
+            1,
+            2
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.50663,
+          8.0547,
+          6.48438
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_lower/model.bbmodel",
+        "texture": "components/m16a1_lower/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "b259681eae1f65ddcda2777667ef93792058d2f7f4a86751829833c83faad1dc"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "b259681eae1f65ddcda2777667ef93792058d2f7f4a86751829833c83faad1dc",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_upper",
+      "cubes": 40,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_upper",
+        "group": "m16a1_upper",
+        "prefix": "native_attachment_m16a1_upper",
+        "cubes": 40,
+        "sourceCubeIndices": {
+          "upper": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ],
+          "group2": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "cap": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.50903,
+          9.64303,
+          6.375
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_upper/model.bbmodel",
+        "texture": "components/m16a1_upper/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "2e36acc7eea15b579c9a0fa3ba81af546a9b79cdff96bc801b7c6555855d731f"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "2e36acc7eea15b579c9a0fa3ba81af546a9b79cdff96bc801b7c6555855d731f",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_barrel",
+      "cubes": 4,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_barrel",
+        "group": "m16a1_barrel",
+        "prefix": "native_attachment_m16a1_barrel",
+        "cubes": 4,
+        "sourceCubeIndices": {
+          "octagon2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0,
+          9.5625,
+          -10.0
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_barrel/model.bbmodel",
+        "texture": "components/m16a1_barrel/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "07b9a42b52b5af97cdadf1786efa927377fce586fb1b24204e4f28439c43607c"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "07b9a42b52b5af97cdadf1786efa927377fce586fb1b24204e4f28439c43607c",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_front_sight",
+      "cubes": 47,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_front_sight",
+        "group": "m16a1_front_sight",
+        "prefix": "native_attachment_m16a1_front_sight",
+        "cubes": 47,
+        "sourceCubeIndices": {
+          "fix_sight": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37
+          ],
+          "sight_illuminated": [
+            0
+          ],
+          "bone": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "bone2": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0,
+          10.21735,
+          -7.32031
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_front_sight/model.bbmodel",
+        "texture": "components/m16a1_front_sight/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "6cf0bce486b034b24eb79a5e69e1219d64d7dd6a058b3ea40b5f173db30e313d"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "6cf0bce486b034b24eb79a5e69e1219d64d7dd6a058b3ea40b5f173db30e313d",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_pistol_grip",
+      "cubes": 10,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_pistol_grip",
+        "group": "m16a1_pistol_grip",
+        "prefix": "native_attachment_m16a1_pistol_grip",
+        "cubes": 10,
+        "sourceCubeIndices": {
+          "grip": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0,
+          4.72835,
+          10.30307
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_pistol_grip/model.bbmodel",
+        "texture": "components/m16a1_pistol_grip/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "a4832c3d717a5eb1de0f440f4d113acc169f3002d6c8460f10475d6bc2da0745"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "a4832c3d717a5eb1de0f440f4d113acc169f3002d6c8460f10475d6bc2da0745",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_muzzle",
+      "cubes": 25,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_muzzle",
+        "group": "m16a1_muzzle",
+        "prefix": "native_attachment_m16a1_muzzle",
+        "cubes": 25,
+        "sourceCubeIndices": {
+          "muzzle_default": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ],
+          "bone3": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0,
+          9.56258,
+          -22.68684
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_muzzle/model.bbmodel",
+        "texture": "components/m16a1_muzzle/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "83b1d9ef8ab99205faabde2108891e24b76d29fa3190ef6d0d0dbd6f413fb81f"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "83b1d9ef8ab99205faabde2108891e24b76d29fa3190ef6d0d0dbd6f413fb81f",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_charging_handle",
+      "cubes": 15,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_charging_handle",
+        "group": "m16a1_charging_handle",
+        "prefix": "native_attachment_m16a1_charging_handle",
+        "cubes": 15,
+        "sourceCubeIndices": {
+          "pull": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          -0.02998,
+          10.76094,
+          7.58257
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_charging_handle/model.bbmodel",
+        "texture": "components/m16a1_charging_handle/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "ce180ce6247172c6c8e378931b23265f5328b6d9dff759615a4f5bfbc649bae3"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "ce180ce6247172c6c8e378931b23265f5328b6d9dff759615a4f5bfbc649bae3",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_bolt",
+      "cubes": 26,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_bolt",
+        "group": "m16a1_bolt",
+        "prefix": "native_attachment_m16a1_bolt",
+        "cubes": 26,
+        "sourceCubeIndices": {
+          "bolt": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ],
+          "group": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          -1e-05,
+          9.5625,
+          3.9375
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_bolt/model.bbmodel",
+        "texture": "components/m16a1_bolt/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "dbef41b0512b151c079213cfe78ae7a43e48a0ed97375c4e06cad064ba1a5bb3"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "dbef41b0512b151c079213cfe78ae7a43e48a0ed97375c4e06cad064ba1a5bb3",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_rear_sight",
+      "cubes": 43,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_rear_sight",
+        "group": "m16a1_rear_sight",
+        "prefix": "native_attachment_m16a1_rear_sight",
+        "cubes": 43,
+        "sourceCubeIndices": {
+          "fix_carry": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29
+          ],
+          "group7": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ],
+          "octagon5": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0625,
+          11.74742,
+          6.19533
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_rear_sight/model.bbmodel",
+        "texture": "components/m16a1_rear_sight/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "13838ae947af067deb9864ab6074fafd26431164cf37a9e30462662b0c59941a"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "13838ae947af067deb9864ab6074fafd26431164cf37a9e30462662b0c59941a",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_stock",
+      "cubes": 38,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_stock",
+        "group": "m16a1_stock",
+        "prefix": "native_attachment_m16a1_stock",
+        "cubes": 38,
+        "sourceCubeIndices": {
+          "stock": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "group16": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "group17": [
+            0,
+            1,
+            2
+          ],
+          "group18": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0,
+          7.40267,
+          17.37554
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_stock/model.bbmodel",
+        "texture": "components/m16a1_stock/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "fb9583bf9f8e9376ded0012ed53cd2cf79e266403a6bbfbf1ce9448fe7eb5134"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "fb9583bf9f8e9376ded0012ed53cd2cf79e266403a6bbfbf1ce9448fe7eb5134",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_barrel_ring",
+      "cubes": 8,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_barrel_ring",
+        "group": "m16a1_barrel_ring",
+        "prefix": "native_attachment_m16a1_barrel_ring",
+        "cubes": 8,
+        "sourceCubeIndices": {
+          "octagon3": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "octagon4": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0,
+          9.5625,
+          1.0625
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_barrel_ring/model.bbmodel",
+        "texture": "components/m16a1_barrel_ring/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "a3e38d6d589a5a6c635bbba38b449ede0678ef5f5ba59961c455ee4f2f1fa366"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "a3e38d6d589a5a6c635bbba38b449ede0678ef5f5ba59961c455ee4f2f1fa366",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_handguard",
+      "cubes": 84,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_handguard",
+        "group": "m16a1_handguard",
+        "prefix": "native_attachment_m16a1_handguard",
+        "cubes": 84,
+        "sourceCubeIndices": {
+          "handguard": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0,
+          9.5,
+          -6.78125
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_handguard/model.bbmodel",
+        "texture": "components/m16a1_handguard/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "d8211db934469cc22ab58063f34971c1281994d8f8481eab066b775c9acbe833"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "d8211db934469cc22ab58063f34971c1281994d8f8481eab066b775c9acbe833",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "m16a1_magazine_standard",
+      "cubes": 12,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/editable",
+      "row": {
+        "definitionId": "m16a1_magazine_standard",
+        "group": "m16a1_magazine_standard",
+        "prefix": "native_attachment_m16a1_magazine_standard",
+        "cubes": 12,
+        "sourceCubeIndices": {
+          "mag2": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          -0.0,
+          6.26029,
+          3.9375
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/m16a1_magazine_standard/model.bbmodel",
+        "texture": "components/m16a1_magazine_standard/texture.png",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "runtimeMode": "native_gun_bone_part",
+        "baselineModelSha256": "bb74b044402d1b46c555143978d9a922f5e368e33ac1727644c233866c012b8a"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "bb74b044402d1b46c555143978d9a922f5e368e33ac1727644c233866c012b8a",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "tacz_m16a1_extended_mag_1",
+      "cubes": 27,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/magazine_variants",
+      "row": {
+        "definitionId": "tacz_m16a1_extended_mag_1",
+        "group": "tacz_m16a1_extended_mag_1",
+        "prefix": "native_attachment_tacz_m16a1_extended_mag_1",
+        "cubes": 27,
+        "sourceCubeIndices": {
+          "root": [],
+          "mag_and_lefthand": [],
+          "mag_and_bullet": [],
+          "magazine": [],
+          "mag_extended_1": [],
+          "mag": [],
+          "group24": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "bullet2": []
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0,
+          5.0807,
+          3.41228
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/tacz_m16a1_extended_mag_1/model.bbmodel",
+        "texture": "components/tacz_m16a1_extended_mag_1/texture.png",
+        "gunId": "tacz:m16a1",
+        "attachmentId": "tacz:extended_mag_1",
+        "level": 1,
+        "variantBone": "mag_extended_1",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "sourceHashes": {
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/m16a1.animation.json": "f5320f4a5a1fe6325c099966df468648c2446f8b93dbeaf4729686933f0309b9",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/extended_mag_1_display.json": "ba04240f8ad6868a75e04b7a4d66a1c9a795bbb8156d34e1e8fc3af5e5dbb463",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/m16a1_display.json": "d80a25e79c52175d2e92dd5d28f08f25da351fa55cce19e1a98d682f1c478bb9",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_n.png": "5dbbe86008c54657e8b9c0860824a429f71c1c6afa2f7cbf70acf4c445d9ca14",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_s.png": "7373274bb2ada97c1c855afa0446231fb5e79055c0799d9055e40756aa9ba1cf",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/extended_mag_1_data.json": "da32034a7dfa26b7705dba478cbef405691f0f0cb9576c1e041de923887a8ab3",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m16a1_data.json": "a89f1f314da8c85d024f5b59b1d8d2fe0205552146a892b6dd4b26ea04398088",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/extended_mag_1.json": "8004d7d966af2162e628871777921722ce6fe463877102eccd451dcea085d462",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m16a1.json": "82e642ce8e20fb371cd0f15f3ca8128cd2471564c2d9617513ad803b80da371d",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/m16a1.json": "b58bb12811e1379c0c8333ffa41b8d80660568a6459049eb6aabdce1676e043e",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/bayonet_ar.json": "6be61a0dc44f0731ab6e941387a37d0720f0f6d1d0a38867d4edd57020fa7f75",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/extended_mag.json": "5f6d94703048e27941e84ae26daf11601c876b58c1a96d3a35027032eb0bcb9c",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/m16a1_scope.json": "60a627da23fec32d1f438ec4d9fd9f3118246988cad7763c197ddee7e71d19b4",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a"
+        },
+        "preservedBones": [
+          "root",
+          "mag_and_lefthand",
+          "mag_and_bullet",
+          "magazine",
+          "mag_extended_1",
+          "mag",
+          "group24",
+          "bullet2"
+        ],
+        "auxiliaryTextures": [
+          {
+            "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_n.png",
+            "file": "components/tacz_m16a1_extended_mag_1/texture_n.png"
+          },
+          {
+            "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_s.png",
+            "file": "components/tacz_m16a1_extended_mag_1/texture_s.png"
+          }
+        ],
+        "motionOwnership": {
+          "group24": [
+            "root",
+            "mag_and_lefthand",
+            "mag_and_bullet"
+          ]
+        },
+        "nativeAnimation": "tacz:m16a1",
+        "nativeGunData": "tacz:m16a1_data",
+        "nativeReloadScript": null,
+        "capacity": 24,
+        "runtimeMode": "native_gun_bone_variant",
+        "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+        "integrationStatus": "prepared; target gun assembly integration pending",
+        "note": "Gun-specific level variant; retain native reload bone ownership",
+        "baselineModelSha256": "587b2a1579b0976cd61eed0d759060394a433031cd8212dd3e3156ece4fb2dfa"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "587b2a1579b0976cd61eed0d759060394a433031cd8212dd3e3156ece4fb2dfa",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "tacz_m16a1_extended_mag_2",
+      "cubes": 27,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/magazine_variants",
+      "row": {
+        "definitionId": "tacz_m16a1_extended_mag_2",
+        "group": "tacz_m16a1_extended_mag_2",
+        "prefix": "native_attachment_tacz_m16a1_extended_mag_2",
+        "cubes": 27,
+        "sourceCubeIndices": {
+          "root": [],
+          "mag_and_lefthand": [],
+          "mag_and_bullet": [],
+          "magazine": [],
+          "mag_extended_2": [],
+          "mag3": [],
+          "group3": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "bullet3": []
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0,
+          5.0807,
+          3.41228
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/tacz_m16a1_extended_mag_2/model.bbmodel",
+        "texture": "components/tacz_m16a1_extended_mag_2/texture.png",
+        "gunId": "tacz:m16a1",
+        "attachmentId": "tacz:extended_mag_2",
+        "level": 2,
+        "variantBone": "mag_extended_2",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "sourceHashes": {
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/m16a1.animation.json": "f5320f4a5a1fe6325c099966df468648c2446f8b93dbeaf4729686933f0309b9",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/extended_mag_2_display.json": "13e1657c08bbbc08f6f4af9f1766e1099d84de3198a46dfac4a006da3d150e48",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/m16a1_display.json": "d80a25e79c52175d2e92dd5d28f08f25da351fa55cce19e1a98d682f1c478bb9",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_n.png": "5dbbe86008c54657e8b9c0860824a429f71c1c6afa2f7cbf70acf4c445d9ca14",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_s.png": "7373274bb2ada97c1c855afa0446231fb5e79055c0799d9055e40756aa9ba1cf",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/extended_mag_2_data.json": "435cf506d570e7701d235e92e801c7dec687a95e4e758735106c98a206ee9b7d",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m16a1_data.json": "a89f1f314da8c85d024f5b59b1d8d2fe0205552146a892b6dd4b26ea04398088",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/extended_mag_2.json": "a941d5d5f09963921187e2b5ab829be607b4bd7252e7e26480ccee5618dba967",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m16a1.json": "82e642ce8e20fb371cd0f15f3ca8128cd2471564c2d9617513ad803b80da371d",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/m16a1.json": "b58bb12811e1379c0c8333ffa41b8d80660568a6459049eb6aabdce1676e043e",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/bayonet_ar.json": "6be61a0dc44f0731ab6e941387a37d0720f0f6d1d0a38867d4edd57020fa7f75",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/extended_mag.json": "5f6d94703048e27941e84ae26daf11601c876b58c1a96d3a35027032eb0bcb9c",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/m16a1_scope.json": "60a627da23fec32d1f438ec4d9fd9f3118246988cad7763c197ddee7e71d19b4",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a"
+        },
+        "preservedBones": [
+          "root",
+          "mag_and_lefthand",
+          "mag_and_bullet",
+          "magazine",
+          "mag_extended_2",
+          "mag3",
+          "group3",
+          "bullet3"
+        ],
+        "auxiliaryTextures": [
+          {
+            "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_n.png",
+            "file": "components/tacz_m16a1_extended_mag_2/texture_n.png"
+          },
+          {
+            "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_s.png",
+            "file": "components/tacz_m16a1_extended_mag_2/texture_s.png"
+          }
+        ],
+        "motionOwnership": {
+          "group3": [
+            "root",
+            "mag_and_lefthand",
+            "mag_and_bullet"
+          ]
+        },
+        "nativeAnimation": "tacz:m16a1",
+        "nativeGunData": "tacz:m16a1_data",
+        "nativeReloadScript": null,
+        "capacity": 27,
+        "runtimeMode": "native_gun_bone_variant",
+        "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+        "integrationStatus": "prepared; target gun assembly integration pending",
+        "note": "Gun-specific level variant; retain native reload bone ownership",
+        "baselineModelSha256": "f6b7406ddbf858806fc4c8b44354a35d0214fd7d67e04bcbded4b02f1f272d68"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "f6b7406ddbf858806fc4c8b44354a35d0214fd7d67e04bcbded4b02f1f272d68",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    },
+    {
+      "definitionId": "tacz_m16a1_extended_mag_3",
+      "cubes": 27,
+      "sourceRoot": "modules/tacz_adapter/weapon-sources/native_m16a1/magazine_variants",
+      "row": {
+        "definitionId": "tacz_m16a1_extended_mag_3",
+        "group": "tacz_m16a1_extended_mag_3",
+        "prefix": "native_attachment_tacz_m16a1_extended_mag_3",
+        "cubes": 27,
+        "sourceCubeIndices": {
+          "root": [],
+          "mag_and_lefthand": [],
+          "mag_and_bullet": [],
+          "magazine": [],
+          "mag_extended_3": [],
+          "mag4": [],
+          "group6": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26
+          ],
+          "bullet4": []
+        },
+        "translation": [
+          0,
+          0,
+          0
+        ],
+        "editorCenter": [
+          0.0,
+          5.0807,
+          3.41228
+        ],
+        "uvSize": [
+          128,
+          128
+        ],
+        "model": "components/tacz_m16a1_extended_mag_3/model.bbmodel",
+        "texture": "components/tacz_m16a1_extended_mag_3/texture.png",
+        "gunId": "tacz:m16a1",
+        "attachmentId": "tacz:extended_mag_3",
+        "level": 3,
+        "variantBone": "mag_extended_3",
+        "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json",
+        "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png",
+        "sourceSha256": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+        "sourceTextureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+        "sourceHashes": {
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/m16a1.animation.json": "f5320f4a5a1fe6325c099966df468648c2446f8b93dbeaf4729686933f0309b9",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/extended_mag_3_display.json": "bb7d7012edc05ed33fe70f9fa7bc57ea6908e0ec20ca11f07f09ee62f37fd02c",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/m16a1_display.json": "d80a25e79c52175d2e92dd5d28f08f25da351fa55cce19e1a98d682f1c478bb9",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_n.png": "5dbbe86008c54657e8b9c0860824a429f71c1c6afa2f7cbf70acf4c445d9ca14",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_s.png": "7373274bb2ada97c1c855afa0446231fb5e79055c0799d9055e40756aa9ba1cf",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/extended_mag_3_data.json": "86cb97758f5aaea64d4db8e6db59929d9a1bed81df93bee7f2f7093d623460e3",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m16a1_data.json": "a89f1f314da8c85d024f5b59b1d8d2fe0205552146a892b6dd4b26ea04398088",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/extended_mag_3.json": "78334fc8c27b040668664272b0aa6b9e115ae525eda698ab15f2b9ff1346f53c",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m16a1.json": "82e642ce8e20fb371cd0f15f3ca8128cd2471564c2d9617513ad803b80da371d",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/m16a1.json": "b58bb12811e1379c0c8333ffa41b8d80660568a6459049eb6aabdce1676e043e",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/bayonet_ar.json": "6be61a0dc44f0731ab6e941387a37d0720f0f6d1d0a38867d4edd57020fa7f75",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/extended_mag.json": "5f6d94703048e27941e84ae26daf11601c876b58c1a96d3a35027032eb0bcb9c",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/m16a1_scope.json": "60a627da23fec32d1f438ec4d9fd9f3118246988cad7763c197ddee7e71d19b4",
+          "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a"
+        },
+        "preservedBones": [
+          "root",
+          "mag_and_lefthand",
+          "mag_and_bullet",
+          "magazine",
+          "mag_extended_3",
+          "mag4",
+          "group6",
+          "bullet4"
+        ],
+        "auxiliaryTextures": [
+          {
+            "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_n.png",
+            "file": "components/tacz_m16a1_extended_mag_3/texture_n.png"
+          },
+          {
+            "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1_s.png",
+            "file": "components/tacz_m16a1_extended_mag_3/texture_s.png"
+          }
+        ],
+        "motionOwnership": {
+          "group6": [
+            "root",
+            "mag_and_lefthand",
+            "mag_and_bullet"
+          ]
+        },
+        "nativeAnimation": "tacz:m16a1",
+        "nativeGunData": "tacz:m16a1_data",
+        "nativeReloadScript": null,
+        "capacity": 30,
+        "runtimeMode": "native_gun_bone_variant",
+        "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+        "integrationStatus": "prepared; target gun assembly integration pending",
+        "note": "Gun-specific level variant; retain native reload bone ownership",
+        "baselineModelSha256": "a5fdddb499f77d7f6aaed46eb7a15d638701fc119fa90f51a8947fc3069a7510"
+      },
+      "atlasCell": [
+        0,
+        0
+      ],
+      "modelSha256": "a5fdddb499f77d7f6aaed46eb7a15d638701fc119fa90f51a8947fc3069a7510",
+      "textureSha256": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060"
+    }
+  ],
+  "sourceHashes": {
+    "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/native_attachment_overrides.json": "fc23f678550144c122f9c8b0f7b4d88b371b445f266906de7443d488d5221d8f",
+    "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/native_attachments/standalone.json": "694035f41e930c875684b096a8aa55d3a8631b09cd381c24f500f6109e787aa7",
+    "modules/tacz_adapter/weapon-sources/native_m16a1/production.json": "0d9b410e60e55dcd2009a4924343df6b1d7736695c8c9c6aa3da503432119e70",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_bayonet_m9/model.bbmodel": "1cae63a6ae033f76ad685b3e6ed1b746f4a32b5381f9fe0f6ea487841140e3f9",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_bayonet_m9/texture.png": "c61aa79b3e8d88ff23fea1ec3331d4c27fc57c47f815897feace878bdae3de9b",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_brake_cthulhu/model.bbmodel": "fe88a9225b22ba76e4f223cf038e719460e6b32bbe696fda9e211c245134e3cc",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_brake_cthulhu/texture.png": "4993367875c8b9f2bf87de25032e5267c2716d715bb231193fce301ea4d3cd4c",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_brake_cyclone_d2/model.bbmodel": "359e465689a46d0e44ab5f2f7058111c2f39b09801f066a27d1b4e13f1908277",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_brake_cyclone_d2/texture.png": "affae07dae316c58c6585d43eaf5466b41a1fc29c2a3a90cbd98e6530e66bdab",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_brake_pioneer/model.bbmodel": "567b67317f19ae2450c95e8b79712e3c96df6d7f59d193d3c82cde1f0a7b4948",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_brake_pioneer/texture.png": "1970abc8b7503979939fd2f0094e25ea212a0e233b373b827f265a3807273d70",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_brake_trex/model.bbmodel": "8487c8afa6f0556a340a138ff22ffd628b202d206515d54f90692ad2bc697215",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_brake_trex/texture.png": "15887ce0f9e46308c6ba053a0f16c6d7b1153ac979e4a1ce439c7aacecc320f9",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_compensator_trident/model.bbmodel": "8662297b0e446e4dd1cd94f11f4ef10e6eed451a4d818999a7826b787ee9b032",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_compensator_trident/texture.png": "7626bac3314f39b3a73fc8c7e2e0cf77c8c80fb4ba775fb088332dff994de3c5",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_knight_qd/model.bbmodel": "18afa325fa772a8b320a9e31662612c795fc0f6cf9616d990a45185500572d28",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_knight_qd/texture.png": "73019d3f55c7c88b1712ace7a9bf07c80040fd9253d68f8fdc1ada9e908894ca",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_phantom_s1/model.bbmodel": "906f969fcb20fefda57b0aa8ca55be547df61e10712edc1ddaf1dde5c72b01c2",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_phantom_s1/texture.png": "a08b3e276176f416258015d02dbfd5de3f89eef036ae4b8435173dc69ed2335a",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_ursus/model.bbmodel": "3fe2274720ce3cb8d11c522574e1397ddacc05330063c91eb8ed56578c52a96a",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_ursus/texture.png": "a34f1e6558395bcdc4e2af4ae6e402e6b4a5e3531b1ee5442c46c6753cf0dc11",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/m16a1.animation.json": "f5320f4a5a1fe6325c099966df468648c2446f8b93dbeaf4729686933f0309b9",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/bayonet_m9_display.json": "236f57ce916e305a324d5de4e245df0da684adb4fcc717308fff94a95b118973",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/extended_mag_1_display.json": "ba04240f8ad6868a75e04b7a4d66a1c9a795bbb8156d34e1e8fc3af5e5dbb463",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/extended_mag_2_display.json": "13e1657c08bbbc08f6f4af9f1766e1099d84de3198a46dfac4a006da3d150e48",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/extended_mag_3_display.json": "bb7d7012edc05ed33fe70f9fa7bc57ea6908e0ec20ca11f07f09ee62f37fd02c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/muzzle_brake_cthulhu_display.json": "75d380db74625fdacb4488810a9a1321745576bdd3911985c4825098e2bc9d5b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/muzzle_brake_cyclone_d2_display.json": "872703c278b9aab352c0417e4baa190abfd8956844ca8c06010813db84ddade6",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/muzzle_brake_pioneer_display.json": "59c207748875cb5a0ef7371823a17159575a5acc195c6ec8e123339e13404ef4",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/muzzle_brake_trex_display.json": "019c7bbb9cdf29f1d5ee13f13f6ce42d8ffd0d6280986ac74346c2715732cf98",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/muzzle_compensator_trident_display.json": "c7c29c22613412191e5836823710beabed68ec834885511b135677eb7bdb2bf6",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/muzzle_silencer_knight_qd_display.json": "0b25d2f606dcd39e86dc2497549dc2ab0b2475e5b7c4d47a76aa9312a86c6103",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/muzzle_silencer_phantom_s1_display.json": "604851cddcedbc91c2686dc438b8991f6f9ca3d2d86be8842e20a6e6135d01e3",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/muzzle_silencer_ursus_display.json": "dfa0c2334986313d43f09655f07b716fc22bb1b95f6400755dfd10fdc94f0a3a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/scope_retro_2x_display.json": "693774a6ab66dbce400a7cadf933d115e0e08a9705f3c1949c4fa7f5576aaa07",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/m16a1_display.json": "d80a25e79c52175d2e92dd5d28f08f25da351fa55cce19e1a98d682f1c478bb9",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/bayonet_m9_geo.json": "0c27b3a885f2eaebfda8d2def8f0da8ddd7c6dacb40f4e33db74fe5ee1c79a4f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_brake_cthulhu_geo.json": "e14d1f93b6a8905947aa96efefc3bc7d366856251eddc250e424c9acd8599059",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_brake_cyclone_d2_geo.json": "6363bd9d6884ace6c52f6ce1224e13d215d692fea2cf916a43f738ddfdc8f10c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_brake_pioneer_geo.json": "c8a557915fe3f847e06d468027dec4827bd47762163b3fee97a51264dde5a9a9",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_brake_trex_geo.json": "727d2398f99d10128a60fe109453291808e63f70aa65d443855b94d8202bde9e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_compensator_trident_geo.json": "cc06bc5862b1e05a51816ef08c862b75544c10b9e29692832470098c35a3c28c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_silencer_knight_qd_geo.json": "58c22ec8b3fb5fe1a5e95b604737f799a46e6db6808023b709394251d8596587",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_silencer_phantom_s1_geo.json": "e27716d0a90d8bb2e1ac2787cc0cba5f2d291eb1c3c80c9a20b2bfc07195d485",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_silencer_ursus_geo.json": "897bfe4d4ed07a8c31c32e1573e6c86842257ab994f592873a4cc3f096973024",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_retro_2x_geo.json": "884e1219e9c6138cbc8db2b6f79c4a1ba652d890731e7f4566b4476b9a018746",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m16a1_geo.json": "322af8821795c30e43fb4fb2857acface31ea0d7a6dcd12a37d6256b628aace0",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_retro_2x.png": "65e0acf7f75a40b44340f6c29ee5b266bc0a990206238610552eab8d4eb50f2c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m16a1.png": "17aa0b4cda096dcbaf84ace1d8a359f8012dccf9bcfa8f4a2f4aac6c4cc30060",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/bayonet_m9_data.json": "29bb2ccc456124f683b1ae0ad28efb07de3d50ccc6a896c37167b11f7cd11105",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/extended_mag_1_data.json": "da32034a7dfa26b7705dba478cbef405691f0f0cb9576c1e041de923887a8ab3",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/extended_mag_2_data.json": "435cf506d570e7701d235e92e801c7dec687a95e4e758735106c98a206ee9b7d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/extended_mag_3_data.json": "86cb97758f5aaea64d4db8e6db59929d9a1bed81df93bee7f2f7093d623460e3",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/muzzle_brake_cthulhu_data.json": "448081ce17edfbc128b449dd677a4e29d8b878ae8ec60ea77aa8a9d6dbeadc98",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/muzzle_brake_cyclone_d2_data.json": "2a059eced7ae955bc4656f087bb865277091540792263ecde465f01fe854fd24",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/muzzle_brake_pioneer_data.json": "6b279e86a84b053de3f09c36dde71dc619956218a581a1f808258e267d6fd01b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/muzzle_brake_trex_data.json": "f27b3ce56666f9c3c58ed152e5f959fac817c2af6cba41a774e4e2e9367114a2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/muzzle_compensator_trident_data.json": "d2c0d18cb5ec1c26223150671e274e5f81cb3b9e5801c478309cc07704056a44",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/muzzle_silencer_knight_qd_data.json": "3be677f6e51c06c241f16dac3d4f790791351e56f580ed12275c50adf071a47a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/muzzle_silencer_phantom_s1_data.json": "e0605e08a31c9a15c311ef7d2813858d715456f4207100c0bd40940768a79902",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/muzzle_silencer_ursus_data.json": "32155cccf1988e5c1f1e3100520452fb66e4a6dfba1031ee6a30a8aedeb3a40c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/scope_retro_2x_data.json": "936a5a4174cff2939aa6fd7b7d04454a10dcc13951630f145216cfc7e538dd3b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m16a1_data.json": "a89f1f314da8c85d024f5b59b1d8d2fe0205552146a892b6dd4b26ea04398088",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/bayonet_m9.json": "3a8fddee4919c8bae22d65dccc13af834b26912b17cfd1ed5dbf5ac0a989b0a4",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/extended_mag_1.json": "8004d7d966af2162e628871777921722ce6fe463877102eccd451dcea085d462",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/extended_mag_2.json": "a941d5d5f09963921187e2b5ab829be607b4bd7252e7e26480ccee5618dba967",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/extended_mag_3.json": "78334fc8c27b040668664272b0aa6b9e115ae525eda698ab15f2b9ff1346f53c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/muzzle_brake_cthulhu.json": "1e808c0f2233fb3a92696c8ffe6522a8ac3d724b415d2312b604df86d6313f31",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/muzzle_brake_cyclone_d2.json": "35bdd00a1bed54b6b7daf360c7b050cdec9d9ce967251b36b1dbc3ae8d7451e2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/muzzle_brake_pioneer.json": "c3b5d8c9f128c06f05be977c342ef6cbc1fc1ad8f4f293f9eeb37335260c2d3f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/muzzle_brake_trex.json": "1606d6c06a96e1732bb01f9dbb5e9f672b181302021635f81fe4121933630ad0",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/muzzle_compensator_trident.json": "fca0fde55a9bc66f8244b0adb5e01d892a2620c6fdc7b2ba05069df986f7f440",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/muzzle_silencer_knight_qd.json": "55d30d4e5cbc0d8f5b6de06cb61dcc299feee4fb3618f3a24dbb52d24f1f2fec",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/muzzle_silencer_phantom_s1.json": "5237d12cbe9e4ba0f96fc24ee75937621835b151c9c64c0432586e89b52d2831",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/muzzle_silencer_ursus.json": "637fd915bf88bd0f3f310f7d6842085f9e29fd9a4756fe73720c1086876abc9e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/scope_retro_2x.json": "49ff1f79946ff2c52eac034e4d955d40c0141f2d8a5a26f69d195644c64a933d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m16a1.json": "82e642ce8e20fb371cd0f15f3ca8128cd2471564c2d9617513ad803b80da371d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/m16a1.json": "b58bb12811e1379c0c8333ffa41b8d80660568a6459049eb6aabdce1676e043e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/bayonet_ar.json": "6be61a0dc44f0731ab6e941387a37d0720f0f6d1d0a38867d4edd57020fa7f75",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/extended_mag.json": "5f6d94703048e27941e84ae26daf11601c876b58c1a96d3a35027032eb0bcb9c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/m16a1_scope.json": "60a627da23fec32d1f438ec4d9fd9f3118246988cad7763c197ddee7e71d19b4",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a"
+  },
+  "nativeRigBones": 85,
+  "highCubes": 550,
+  "lowCubes": 423,
+  "lod": {
+    "m16a1_lower/always": {
+      "highCubes": 79,
+      "lowCubes": 36,
+      "highTriangles": 650,
+      "lowTriangles": 326,
+      "selectedIndices": {
+        "lower": [
+          0,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          29,
+          40,
+          46,
+          50,
+          51,
+          52,
+          53,
+          54
+        ],
+        "bolt_release": [
+          1
+        ],
+        "mag_release": [
+          3
+        ],
+        "deco": [
+          3
+        ],
+        "safety": [
+          0
+        ],
+        "octagon": [
+          2
+        ],
+        "group4": [
+          2,
+          4
+        ],
+        "group5": [
+          1,
+          2
+        ]
+      },
+      "silhouetteLoss": [
+        0.009840674789128397,
+        0.009877704609595485,
+        0.007532467532467533,
+        0.007532467532467533,
+        0.008943781942078365,
+        0.005121638924455826,
+        0.005513439007580979,
+        0.009938313913639479
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.010597716009480718,
+          "changedPixelFraction": 0.015384615384615385
+        },
+        {
+          "meanError": 0.008149224093860775,
+          "changedPixelFraction": 0.006593406593406593
+        },
+        {
+          "meanError": 0.017022880746064138,
+          "changedPixelFraction": 0.04230769230769231
+        },
+        {
+          "meanError": 0.011963623458433149,
+          "changedPixelFraction": 0.03974358974358974
+        },
+        {
+          "meanError": 0.011703945863200328,
+          "changedPixelFraction": 0.026584867075664622
+        },
+        {
+          "meanError": 0.011746784988505208,
+          "changedPixelFraction": 0.026530612244897958
+        },
+        {
+          "meanError": 0.012245697047473211,
+          "changedPixelFraction": 0.027303754266211604
+        },
+        {
+          "meanError": 0.009424620548010467,
+          "changedPixelFraction": 0.013961605584642234
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_upper/always": {
+      "highCubes": 40,
+      "lowCubes": 35,
+      "highTriangles": 346,
+      "lowTriangles": 304,
+      "selectedIndices": {
+        "upper": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "group2": [
+          0,
+          1,
+          2
+        ],
+        "cap": [
+          0,
+          1,
+          3,
+          4
+        ]
+      },
+      "silhouetteLoss": [
+        0.0006060606060606061,
+        0.0006075334143377885,
+        0.007869249394673124,
+        0.007905138339920948,
+        0.0011229646266142617,
+        0.0,
+        0.0,
+        0.00043591979075850045
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.00031654491862104304,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0012847860034839406,
+          "changedPixelFraction": 0.0030864197530864196
+        },
+        {
+          "meanError": 0.00203891573019665,
+          "changedPixelFraction": 0.0015479876160990713
+        },
+        {
+          "meanError": 0.0036829607093247065,
+          "changedPixelFraction": 0.01238390092879257
+        },
+        {
+          "meanError": 0.000700621218559663,
+          "changedPixelFraction": 0.002631578947368421
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0005662194702442387,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0006851659479698373,
+          "changedPixelFraction": 0.0
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_barrel/always": {
+      "highCubes": 4,
+      "lowCubes": 4,
+      "highTriangles": 32,
+      "lowTriangles": 32,
+      "selectedIndices": {
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "silhouetteLoss": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_front_sight/always": {
+      "highCubes": 47,
+      "lowCubes": 32,
+      "highTriangles": 404,
+      "lowTriangles": 286,
+      "selectedIndices": {
+        "fix_sight": [
+          0,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          18,
+          19,
+          21,
+          24,
+          25,
+          26,
+          27,
+          29,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "sight_illuminated": [
+          0
+        ],
+        "bone": [
+          2,
+          3
+        ],
+        "bone2": [
+          0,
+          3
+        ]
+      },
+      "silhouetteLoss": [
+        0.0053475935828877,
+        0.005333333333333333,
+        0.009900990099009901,
+        0.009900990099009901,
+        0.00684931506849315,
+        0.006872852233676976,
+        0.008064516129032258,
+        0.004618937644341801
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0046359388400910905,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.005595628900127169,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.006765906750015426,
+          "changedPixelFraction": 0.014814814814814815
+        },
+        {
+          "meanError": 0.011393984270057576,
+          "changedPixelFraction": 0.03950617283950617
+        },
+        {
+          "meanError": 0.0026902171864516666,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.002875515450316997,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0043059024121157394,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.008975453532939354,
+          "changedPixelFraction": 0.020618556701030927
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_pistol_grip/always": {
+      "highCubes": 10,
+      "lowCubes": 8,
+      "highTriangles": 96,
+      "lowTriangles": 72,
+      "selectedIndices": {
+        "grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "silhouetteLoss": [
+        0.0002756339581036384,
+        0.0002756339581036384,
+        0.0018975332068311196,
+        0.0018975332068311196,
+        0.00029027576197387516,
+        0.0002905287623474724,
+        0.00034083162917518747,
+        0.0
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.003883899450945834,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.007112216995191997,
+          "changedPixelFraction": 0.025280898876404494
+        },
+        {
+          "meanError": 0.005099066418963936,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.000474920098259331,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.00731177585316526,
+          "changedPixelFraction": 0.03106508875739645
+        },
+        {
+          "meanError": 0.0024951941560938107,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.00757118698295169,
+          "changedPixelFraction": 0.03496503496503497
+        },
+        {
+          "meanError": 3.930414782605738e-05,
+          "changedPixelFraction": 0.0
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_muzzle/always": {
+      "highCubes": 25,
+      "lowCubes": 23,
+      "highTriangles": 268,
+      "lowTriangles": 244,
+      "selectedIndices": {
+        "muzzle_default": [
+          0,
+          1,
+          2,
+          3,
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "bone3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "silhouetteLoss": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0023952095808383233,
+        0.0
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0008761010145093194,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.00013352452798819588,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0008100679225938743,
+          "changedPixelFraction": 0.0013333333333333333
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.003649092019822485,
+          "changedPixelFraction": 0.012269938650306749
+        },
+        {
+          "meanError": 0.0036544698476046263,
+          "changedPixelFraction": 0.012269938650306749
+        },
+        {
+          "meanError": 0.0022923381551334015,
+          "changedPixelFraction": 0.003952569169960474
+        },
+        {
+          "meanError": 0.006187271996363213,
+          "changedPixelFraction": 0.02280130293159609
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_charging_handle/always": {
+      "highCubes": 15,
+      "lowCubes": 10,
+      "highTriangles": 134,
+      "lowTriangles": 94,
+      "selectedIndices": {
+        "pull": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          11,
+          14
+        ]
+      },
+      "silhouetteLoss": [
+        0.0,
+        0.0,
+        0.008519701810436636,
+        0.008492569002123142,
+        0.0,
+        0.0,
+        0.0024096385542168677,
+        0.008158508158508158
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0016339869281045735,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.005907959224047511,
+          "changedPixelFraction": 0.009708737864077669
+        },
+        {
+          "meanError": 0.002434015296581226,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.006000085437225,
+          "changedPixelFraction": 0.011111111111111112
+        },
+        {
+          "meanError": 0.0038081079926523985,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0031417239260376527,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0035423803703512427,
+          "changedPixelFraction": 0.004975124378109453
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_bolt/always": {
+      "highCubes": 26,
+      "lowCubes": 22,
+      "highTriangles": 312,
+      "lowTriangles": 264,
+      "selectedIndices": {
+        "bolt": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          11,
+          12,
+          13
+        ],
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "silhouetteLoss": [
+        0.0006369426751592356,
+        0.0012746972594008922,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0005561735261401557,
+        0.006026689625484288
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0022763642942759577,
+          "changedPixelFraction": 0.008823529411764706
+        },
+        {
+          "meanError": 0.006291109754166952,
+          "changedPixelFraction": 0.026470588235294117
+        },
+        {
+          "meanError": 0.0019669117647058824,
+          "changedPixelFraction": 0.0046875
+        },
+        {
+          "meanError": 0.0033857650903498667,
+          "changedPixelFraction": 0.0109375
+        },
+        {
+          "meanError": 0.002853579043025409,
+          "changedPixelFraction": 0.011363636363636364
+        },
+        {
+          "meanError": 0.002278537974904758,
+          "changedPixelFraction": 0.008522727272727272
+        },
+        {
+          "meanError": 0.0023857656071072752,
+          "changedPixelFraction": 0.008064516129032258
+        },
+        {
+          "meanError": 0.001743924962434491,
+          "changedPixelFraction": 0.008528784648187633
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_rear_sight/always": {
+      "highCubes": 43,
+      "lowCubes": 26,
+      "highTriangles": 386,
+      "lowTriangles": 220,
+      "selectedIndices": {
+        "fix_carry": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          9,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          25,
+          26,
+          28,
+          29
+        ],
+        "group7": [
+          0,
+          4
+        ],
+        "octagon5": [
+          4
+        ]
+      },
+      "silhouetteLoss": [
+        0.0018298261665141812,
+        0.001834862385321101,
+        0.006389776357827476,
+        0.006408972561586221,
+        0.0007936507936507937,
+        0.009478672985781991,
+        0.008339124391938846,
+        0.008161816891412349
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0017289675792155016,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.001757558221725454,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.003452051784990118,
+          "changedPixelFraction": 0.010763209393346379
+        },
+        {
+          "meanError": 0.006543140490147173,
+          "changedPixelFraction": 0.018590998043052837
+        },
+        {
+          "meanError": 0.003201865745974829,
+          "changedPixelFraction": 0.0033003300330033004
+        },
+        {
+          "meanError": 0.0018147881685515739,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0023173572294679563,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0030631717203652644,
+          "changedPixelFraction": 0.001692047377326565
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_stock/always": {
+      "highCubes": 38,
+      "lowCubes": 30,
+      "highTriangles": 344,
+      "lowTriangles": 252,
+      "selectedIndices": {
+        "stock": [
+          0,
+          1,
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          13,
+          14,
+          15,
+          16,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "group16": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group17": [
+          0,
+          1,
+          2
+        ],
+        "group18": [
+          0,
+          2
+        ]
+      },
+      "silhouetteLoss": [
+        0.004784688995215311,
+        0.004351610095735422,
+        0.0062031532695787026,
+        0.0062031532695787026,
+        0.0037688442211055275,
+        0.003787878787878788,
+        0.009654062751407884,
+        0.005597629239380968
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0010176940492972791,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0012450595924644364,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.004197422759953655,
+          "changedPixelFraction": 0.014965986394557823
+        },
+        {
+          "meanError": 0.0016922429102359897,
+          "changedPixelFraction": 0.0027210884353741495
+        },
+        {
+          "meanError": 0.0007645686298589188,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0008110257898238911,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0011377180974132138,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0006592336280917595,
+          "changedPixelFraction": 0.0
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_barrel_ring/always": {
+      "highCubes": 8,
+      "lowCubes": 7,
+      "highTriangles": 56,
+      "lowTriangles": 50,
+      "selectedIndices": {
+        "octagon3": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon4": [
+          0,
+          2,
+          3
+        ]
+      },
+      "silhouetteLoss": [
+        0.0036840893391664746,
+        0.0036840893391664746,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.007507175977036874,
+        0.0
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0023109385519834366,
+          "changedPixelFraction": 0.0011737089201877935
+        },
+        {
+          "meanError": 0.0029527104959630912,
+          "changedPixelFraction": 0.012910798122065728
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.007230546989490685,
+          "changedPixelFraction": 0.03347280334728033
+        },
+        {
+          "meanError": 0.0003260241548695281,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.002276606118403107,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0014733502145505488,
+          "changedPixelFraction": 0.006896551724137931
+        },
+        {
+          "meanError": 0.00950880397952445,
+          "changedPixelFraction": 0.0435244161358811
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_handguard/always": {
+      "highCubes": 84,
+      "lowCubes": 61,
+      "highTriangles": 1008,
+      "lowTriangles": 732,
+      "selectedIndices": {
+        "handguard": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          12,
+          13,
+          14,
+          15,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          47,
+          49,
+          52,
+          53,
+          54,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83
+        ]
+      },
+      "silhouetteLoss": [
+        0.0076495132127955496,
+        0.0076495132127955496,
+        0.0050858232676414495,
+        0.005100414408670704,
+        0.007761966364812419,
+        0.007838014369693011,
+        0.009791921664626682,
+        0.0075069142631371
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0005332278225078976,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0003880011297621403,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0014343681658415212,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0006018562513858531,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0009564294332852142,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.002444052722827941,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0018989948920744772,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0024151422490803582,
+          "changedPixelFraction": 0.0
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "m16a1_magazine_standard/always": {
+      "highCubes": 12,
+      "lowCubes": 10,
+      "highTriangles": 138,
+      "lowTriangles": 120,
+      "selectedIndices": {
+        "mag2": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "silhouetteLoss": [
+        0.0005580357142857143,
+        0.0005580357142857143,
+        0.0,
+        0.0,
+        0.0023612750885478157,
+        0.0023467292461132297,
+        0.0006015037593984962,
+        0.0
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0007889876442695499,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.001533885372680407,
+          "changedPixelFraction": 0.0056022408963585435
+        },
+        {
+          "meanError": 0.0005194583279935072,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0004933999743688327,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0010158630861228954,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0010064794722586061,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0013990087294987925,
+          "changedPixelFraction": 0.0031007751937984496
+        },
+        {
+          "meanError": 0.0005862584773529957,
+          "changedPixelFraction": 0.0
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "tacz_m16a1_extended_mag_1/always": {
+      "highCubes": 27,
+      "lowCubes": 27,
+      "highTriangles": 324,
+      "lowTriangles": 324,
+      "selectedIndices": {
+        "group24": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      "silhouetteLoss": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "tacz_m16a1_extended_mag_2/always": {
+      "highCubes": 27,
+      "lowCubes": 27,
+      "highTriangles": 324,
+      "lowTriangles": 324,
+      "selectedIndices": {
+        "group3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      "silhouetteLoss": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    },
+    "tacz_m16a1_extended_mag_3/always": {
+      "highCubes": 27,
+      "lowCubes": 27,
+      "highTriangles": 324,
+      "lowTriangles": 324,
+      "selectedIndices": {
+        "group6": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      "silhouetteLoss": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "textureComparisons": [
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        },
+        {
+          "meanError": 0.0,
+          "changedPixelFraction": 0.0
+        }
+      ],
+      "textureResolution": 48,
+      "preserve": "original cube transform/UV, every source bone represented, exact axis bounds"
+    }
+  },
+  "highTriangles": 5602,
+  "lowTriangles": 4424,
+  "lodPolicy": "Conservative original-cube subset; eight-view silhouette and 48px textured comparison gates, each geometry bone retained; full native functional rig",
+  "atlasUnit": 256,
+  "atlasSize": [
+    256,
+    256
+  ],
+  "presentationOnly": {
+    "bullet": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bullet_in_mag": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bullet_in_barrel": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "lefthand_pos": [
+      0
+    ],
+    "righthand_pos": [
+      0
+    ]
+  },
+  "gameStarted": false
+}

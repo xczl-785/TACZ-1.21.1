@@ -1,0 +1,137 @@
+{
+  "assembly_ump_lower_lower": {
+    "definition": "ump_lower",
+    "variant": "always",
+    "sourceBone": "lower"
+  },
+  "assembly_ump_lower_pattern": {
+    "definition": "ump_lower",
+    "variant": "always",
+    "sourceBone": "pattern"
+  },
+  "assembly_ump_lower_mag_release": {
+    "definition": "ump_lower",
+    "variant": "always",
+    "sourceBone": "mag_release"
+  },
+  "assembly_ump_lower_bolt_release": {
+    "definition": "ump_lower",
+    "variant": "always",
+    "sourceBone": "bolt_release"
+  },
+  "assembly_ump_lower_ump45_safety": {
+    "definition": "ump_lower",
+    "variant": "always",
+    "sourceBone": "ump45_safety"
+  },
+  "assembly_ump_upper_group2": {
+    "definition": "ump_upper",
+    "variant": "always",
+    "sourceBone": "group2"
+  },
+  "assembly_ump_upper_group3": {
+    "definition": "ump_upper",
+    "variant": "always",
+    "sourceBone": "group3"
+  },
+  "assembly_ump_upper_sight_illuminated": {
+    "definition": "ump_upper",
+    "variant": "always",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_ump_upper_hinge2": {
+    "definition": "ump_upper",
+    "variant": "always",
+    "sourceBone": "hinge2"
+  },
+  "assembly_ump_upper_octagon2": {
+    "definition": "ump_upper",
+    "variant": "always",
+    "sourceBone": "octagon2"
+  },
+  "assembly_ump_barrel_octagon3": {
+    "definition": "ump_barrel",
+    "variant": "always",
+    "sourceBone": "octagon3"
+  },
+  "assembly_ump_barrel_octagon4": {
+    "definition": "ump_barrel",
+    "variant": "always",
+    "sourceBone": "octagon4"
+  },
+  "assembly_ump_bolt_ump45_bolt": {
+    "definition": "ump_bolt",
+    "variant": "always",
+    "sourceBone": "ump45_bolt"
+  },
+  "assembly_ump_charging_handle_ump45_charge_handle": {
+    "definition": "ump_charging_handle",
+    "variant": "always",
+    "sourceBone": "ump45_charge_handle"
+  },
+  "assembly_ump_stock_octagon": {
+    "definition": "ump_stock",
+    "variant": "always",
+    "sourceBone": "octagon"
+  },
+  "assembly_ump_stock_group6": {
+    "definition": "ump_stock",
+    "variant": "always",
+    "sourceBone": "group6"
+  },
+  "assembly_ump_stock_group": {
+    "definition": "ump_stock",
+    "variant": "always",
+    "sourceBone": "group"
+  },
+  "assembly_ump_stock_hinge": {
+    "definition": "ump_stock",
+    "variant": "always",
+    "sourceBone": "hinge"
+  },
+  "assembly_ump_rails_rails": {
+    "definition": "ump_rails",
+    "variant": "always",
+    "sourceBone": "rails"
+  },
+  "assembly_ump_rails_side_rail2": {
+    "definition": "ump_rails",
+    "variant": "always",
+    "sourceBone": "side_rail2"
+  },
+  "assembly_ump_rails_side_rail": {
+    "definition": "ump_rails",
+    "variant": "always",
+    "sourceBone": "side_rail"
+  },
+  "assembly_ump_rails_bottom_rail": {
+    "definition": "ump_rails",
+    "variant": "always",
+    "sourceBone": "bottom_rail"
+  },
+  "assembly_ump_rails_top_rail": {
+    "definition": "ump_rails",
+    "variant": "always",
+    "sourceBone": "top_rail"
+  },
+  "assembly_ump_magazine_standard_mag_standard": {
+    "definition": "ump_magazine_standard",
+    "variant": "always",
+    "sourceBone": "mag_standard"
+  },
+  "assembly_tacz_ump45_light_extended_mag_1_mag_extended_1": {
+    "definition": "tacz_ump45_light_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "mag_extended_1"
+  },
+  "assembly_tacz_ump45_light_extended_mag_2_mag_extended_2": {
+    "definition": "tacz_ump45_light_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "mag_extended_2"
+  },
+  "assembly_tacz_ump45_light_extended_mag_3_mag_extended_3": {
+    "definition": "tacz_ump45_light_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "mag_extended_3"
+  }
+}

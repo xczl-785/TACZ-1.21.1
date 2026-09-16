@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "tacz_assembly:ump45",
+      "slots": [
+        {
+          "id": "upper",
+          "compatibleItems": [
+            "tacz_assembly:ump_upper"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "magazine",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_assembly:ump_magazine_standard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:ump_upper",
+      "slots": [
+        {
+          "id": "barrel",
+          "compatibleItems": [
+            "tacz_assembly:ump_barrel"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bolt",
+          "compatibleItems": [
+            "tacz_assembly:ump_bolt"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "charging_handle",
+          "compatibleItems": [
+            "tacz_assembly:ump_charging_handle"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "stock",
+          "compatibleItems": [
+            "tacz_assembly:ump_stock"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "rails",
+          "compatibleItems": [
+            "tacz_assembly:ump_rails"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:ump_barrel",
+      "slots": [
+        {
+          "id": "muzzle",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:ump_bolt",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:ump_charging_handle",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:ump_stock",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:ump_rails",
+      "slots": [
+        {
+          "id": "scope",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "grip",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "laser",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:ump_magazine_standard",
+      "slots": []
+    }
+  ]
+}

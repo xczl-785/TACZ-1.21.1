@@ -1,5 +1,5 @@
 """Config-driven native gun assembly producer; source pack and other guns stay read-only."""
-import argparse,copy,json,math,sys,uuid
+import argparse,copy,json,math,re,sys,uuid
 from pathlib import Path
 import numpy as np
 from PIL import Image
@@ -12,9 +12,19 @@ RES=R/'modules/tacz_adapter/weapon-content/resources'
 DEFAULT=R/'modules/tacz_adapter/weapon-sources/native_glock_17/production.json'
 sys.path.insert(0,str(R/'modules/tacz_adapter/tools'))
 from render_part_icon import render_part_icon
+import lod
 
 def write(p,value):
     p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
+def validate_configuration(config):
+    adoption=(R/'modules/tacz_adapter/src/main/java/dev/tacticaltacz/GunAdoption.java').read_text()
+    calibers={gun:caliber for caliber,gun_text in re.findall(r'add\(map,"([^"]+)",(.*?)\);',adoption) for gun in re.findall(r'"([^"]+)"',gun_text)}
+    gun=config['sourceGun']
+    for part in config['parts']:
+        if not part.get('inventoryType') or len(part.get('footprint',[]))!=2:raise ValueError('Missing inventory type/footprint for '+part['definitionId'])
+    if config['weapon']['caliber']!=calibers.get(gun):raise ValueError('Caliber differs from GunAdoption for '+gun)
+    if config['weapon']['partIconDirectory']!='textures/item/'+gun:raise ValueError('Part icon directory must be gun-scoped: '+gun)
+
 def inputs(config):
     gun=config['sourceGun'];index=ex.SRC/f'data/tacz/index/guns/{gun}.json';idx=ex.read(index)
     display=ex.asset(idx['display'],'display/guns','.json');dp=ex.read(display)
@@ -42,14 +52,24 @@ def append(config,source_root):
     write(edit/'manifest.json',manifest)
     return manifest
 
+def authored_stock(row):
+    if '/attachment/' not in row.get('sourceGeometry',''):return False
+    mount=row.get('nativeMount')
+    if mount is None and row.get('componentMetadata'):
+        mount=ex.read(R/row['componentMetadata']).get('anchorBone')
+    return mount=='stock_pos'
+
 def attachment_records(config):
     allowed,tags=magazines.allowed(config['sourceGun']);records=[]
-    variants=ex.read(magazines.ROOT/'manifest.json')['parts']
+    variants=[]
+    for catalog in config.get('nativeMagazineCatalogs',[])+[str((magazines.ROOT/'manifest.json').relative_to(R))]:
+        root=(R/catalog).parent
+        variants.extend((row,root) for row in ex.read(R/catalog)['parts'])
     sources=[]
     for catalog in config['editableAttachmentCatalogs']:
         root=(R/catalog).parent
         for row in ex.read(R/catalog)['parts']:
-            if row.get('runtimeMode')=='native_attachment':sources.append((row,root))
+            if row.get('runtimeMode')=='native_attachment' or authored_stock(row):sources.append((row,root))
     for aid in sorted(allowed-set(config.get('excludedAttachments',[]))):
         path=ex.SRC/f"data/tacz/index/attachments/{aid.split(':')[1]}.json";idx=ex.read(path)
         typ=idx['type']
@@ -58,8 +78,8 @@ def attachment_records(config):
         attachment_data=ex.SRC/f"data/tacz/data/attachments/{idx['data'].split(':')[1]}.json"
         provenance=[path,display,attachment_data]
         if typ=='extended_mag':
-            row=next(r for r in variants if r['gunId']=='tacz:'+config['sourceGun'] and r['attachmentId']==aid)
-            records.append({'definitionId':row['definitionId'],'attachmentId':aid,'type':typ,'row':row,'root':magazines.ROOT,'native':True,'display':dp,'index':path,'provenance':provenance})
+            row,root=next((r,root) for r,root in variants if r['gunId']=='tacz:'+config['sourceGun'] and r['attachmentId']==aid)
+            records.append({'definitionId':row['definitionId'],'attachmentId':aid,'type':typ,'row':row,'root':root,'native':True,'display':dp,'index':path,'provenance':provenance})
         else:
             d=aid.replace(':','_');found=next(((row,root) for row,root in sources if row['definitionId']==d),None)
             rec={'definitionId':d,'attachmentId':aid,'type':typ,'display':dp,'native':False,'index':path,'provenance':provenance}
@@ -100,9 +120,34 @@ def atlas_cube(cube,uvsize,cell,unit):
         face['uv_size']=[face['uv_size'][a]*unit/uvsize[a] for a in range(2)]
     return result
 
+def write_lod_review(source_root,config,high,low,batches,nodes,attachments,texture):
+    from PIL import ImageDraw
+    defaults={n['definitionId'] for n in nodes};magazine_node=next((n['definitionId'] for n in nodes if n.get('slot')==config['weapon'].get('magazinePath',['magazine'])[-1]),None)
+    scenes=[('default',defaults)]
+    if magazine_node:
+        scenes.extend((a['definitionId'],(defaults-{magazine_node})|{a['definitionId']}) for a in attachments if a['native'])
+    image=Image.new('RGB',(768,len(scenes)*170),(80,80,80));draw=ImageDraw.Draw(image)
+    for i,(label,enabled) in enumerate(scenes):
+        for j,model in enumerate((high,low)):
+            geo=model['minecraft:geometry'][0];bones=copy.deepcopy({b['name']:b for b in geo['bones']})
+            for name,b in bones.items():
+                info=batches.get(name)
+                if not info or info['definition'] not in enabled or info['variant'] in config.get('previewHiddenVariants',[]):b.pop('cubes',None)
+            meshes,_=mesh_for('review',bones,[geo['description']['texture_width'],geo['description']['texture_height']],texture,np.eye(4))
+            library={'materials':{'review':{'baseColor':'#ffffff','texture':'source','textureScale':1}}};binding={'defaultMaterial':'review','parts':{}}
+            for size,x in ((144,j*180),(48,380+j*185)):
+                rendered=render_part_icon({'definitionId':'review','meshes':meshes},library,binding,lambda _:texture,size=size,muzzle_left=True,alpha_cutout=True)
+                if size==48:rendered=rendered.resize((144,144),Image.Resampling.NEAREST)
+                image.paste(rendered,(x,i*170),rendered)
+        draw.text((8,i*170+145),label+' | high / low | 48px high / low',fill='white')
+    image.save(source_root/'lod-comparison.png')
+
 def build(config_path=DEFAULT,resources=RES,append_sources=False):
-    config_path=Path(config_path);config=ex.read(config_path);source_root=config_path.parent;resources=Path(resources)
+    config_path=Path(config_path).resolve();config=ex.read(config_path);validate_configuration(config);source_root=config_path.parent;resources=Path(resources)
     if append_sources:append(config,source_root)
+    if config.get('authoredStockAssets',False):
+        import stock_assets
+        stock_assets.build(resources=resources)
     index,idx,display_path,dp,source,original_texture,data_path=inputs(config)
     gun=config['sourceGun'];ns=config['gunId'].split(':')[0];base=resources/f'data/{ns}/{gun}';assets=resources/f'assets/{ns}'
     original=ex.read(source);geo=original['minecraft:geometry'][0];native={b['name']:b for b in geo['bones']};native_uv=[geo['description'][k] for k in ('texture_width','texture_height')]
@@ -164,16 +209,33 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
             leaf='assembly_'+d+'_'+name
             # Fullbright is determined by the original suffix, not inherited from parent.
             target={'name':leaf,'parent':name,'pivot':bone['pivot'],'cubes':[atlas_cube(c,uv,cell,unit) for c in bone['cubes']]}
-            hb.append(target);batches[leaf]={'definition':d,'variant':'always','sourceBone':name}
+            hb.append(target);batches[leaf]={'definition':d,'variant':config.get('sourceBoneVariants',{}).get(name,'always'),'sourceBone':name}
         proof.append({'definitionId':d,'cubes':count,'sourceRoot':str(root.relative_to(R)),'row':row,'atlasCell':cell,'modelSha256':ex.sha(root/row['model']),'textureSha256':ex.sha(root/row['texture'])})
     highgeo['description'].update(identifier='geometry.assembly.'+gun,texture_width=atlas.width,texture_height=atlas.height)
-    for path in (assets/f'geo_models/gun/{gun}.json',assets/f'geo_models/gun/lod/{gun}.json'):write(path,high)
+    low=copy.deepcopy(high);lowbones={b['name']:b for b in low['minecraft:geometry'][0]['bones']};lod_evidence={}
+    if config.get('lod',{}).get('strategy')=='conservative_cube_subset':
+        for row,root,bones,uv,count in owned:
+            d=row['definitionId'];variants={config.get('sourceBoneVariants',{}).get(name,'always') for name,b in bones.items() if b.get('cubes')}
+            for variant in sorted(variants):
+                group=copy.deepcopy(bones)
+                for name,b in group.items():
+                    if config.get('sourceBoneVariants',{}).get(name,'always')!=variant:b.pop('cubes',None)
+                selection,evidence,_,_=lod.simplify(group,uv,root/row['texture'],config['lod'],ex.cube_geometry)
+                lod_evidence[d+'/'+variant]=evidence
+                for name,indices in selection.items():
+                    leaf=lowbones['assembly_'+d+'_'+name];leaf['cubes']=[leaf['cubes'][i] for i in indices]
+    elif config.get('lod',{}).get('strategy','full')!='full':raise ValueError('Unsupported LOD policy')
+    write(assets/f'geo_models/gun/{gun}.json',high);write(assets/f'geo_models/gun/lod/{gun}.json',low)
     atlaspath=assets/f'textures/gun/{gun}.png';atlaspath.parent.mkdir(parents=True,exist_ok=True);atlas.save(atlaspath)
     display=copy.deepcopy(dp);display.update(model_type=config['weapon']['modelType'],model=ns+':gun/'+gun,texture=ns+':gun/'+gun,lod={'model':ns+':gun/lod/'+gun,'texture':ns+':gun/'+gun});write(assets/f'display/guns/{gun}.json',display)
     write(resources/f'data/{ns}/data/guns/{gun}.json',ex.read(data_path));newindex=copy.deepcopy(idx);newindex.update(name='gun.'+ns+'.'+gun,display=ns+':'+gun,data=ns+':'+gun,item_type=ns+':'+gun,sort=103);write(resources/f'data/{ns}/index/guns/{gun}.json',newindex)
     # Each preview uses the same neutral native transform and normalized texture coordinates.
     meshes={};anchors={}
-    for d,(bones,uv,texture,extra) in parsed.items():meshes[d],anchors[d]=mesh_for(d,bones,uv,texture,extra)
+    for d,(bones,uv,texture,extra) in parsed.items():
+        visible=copy.deepcopy(bones)
+        for name,b in visible.items():
+            if config.get('sourceBoneVariants',{}).get(name) in config.get('previewHiddenVariants',[]):b.pop('cubes',None)
+        meshes[d],anchors[d]=mesh_for(d,visible,uv,texture,extra)
     for d,byslot in slots.items():
         for slot,candidates in byslot.items():
             if not candidates:continue
@@ -218,9 +280,10 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
         if ref:
             ns0,path=ref.split(':');candidate=ex.SRC/f'{folder}/{ns0}/scripts/{path}.lua'
             if candidate.exists():source_paths.add(candidate)
-    report={'schemaVersion':1,'gunId':config['gunId'],'configuration':str(config_path.relative_to(R)),'parts':proof,'sourceHashes':{str(p.relative_to(R)):ex.sha(p) for p in sorted(source_paths)},'nativeRigBones':len(native),'highCubes':sum(len(b.get('cubes',[])) for b in hb),'lowCubes':sum(len(b.get('cubes',[])) for b in hb),'lodPolicy':config['lodPolicy'],'atlasUnit':unit,'atlasSize':list(atlas.size),'presentationOnly':config['presentationOnly'],'gameStarted':False}
+    report={'schemaVersion':1,'gunId':config['gunId'],'configuration':str(config_path.relative_to(R)),'parts':proof,'sourceHashes':{str(p.relative_to(R)):ex.sha(p) for p in sorted(source_paths)},'nativeRigBones':len(native),'highCubes':sum(len(b.get('cubes',[])) for b in hb),'lowCubes':sum(len(b.get('cubes',[])) for b in lowbones.values()),'lod':lod_evidence,'highTriangles':sum(2*len(im.face_uv(c)) for b in hb for c in b.get('cubes',[])),'lowTriangles':sum(2*len(im.face_uv(c)) for b in lowbones.values() for c in b.get('cubes',[])),'lodPolicy':config['lodPolicy'],'atlasUnit':unit,'atlasSize':list(atlas.size),'presentationOnly':config['presentationOnly'],'gameStarted':False}
     write(base/'geometry-evidence.json',report);write(source_root/'build-report.json',report)
-    fragments=Path(config['integrationFragments']);fragments.mkdir(exist_ok=True)
+    if lod_evidence:write_lod_review(source_root,config,high,low,batches,nodes,attachments,atlaspath)
+    fragments=Path(config['integrationFragments']);fragments.mkdir(parents=True,exist_ok=True)
     write(fragments/'weapon-index-entry.json',config['weapon'])
     for i,locale in enumerate(('zh_cn','en_us')):
         language={'gun.'+ns+'.'+gun:config['gunLabels'][i],'item.'+config['gunId'].replace(':','.'):config['gunLabels'][i]}

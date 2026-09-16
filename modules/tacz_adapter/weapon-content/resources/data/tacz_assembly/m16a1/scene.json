@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "66cbca50-47a8-5974-9cfd-3ae6fbddbde9",
+      "definitionId": "m16a1_lower"
+    },
+    {
+      "instanceId": "896d07a8-9bf8-56e7-a82b-3523522cb275",
+      "definitionId": "m16a1_upper",
+      "parentId": "66cbca50-47a8-5974-9cfd-3ae6fbddbde9",
+      "slot": "upper"
+    },
+    {
+      "instanceId": "81ba8d52-a0c7-502d-a168-3b4e2a961b89",
+      "definitionId": "m16a1_barrel_ring",
+      "parentId": "896d07a8-9bf8-56e7-a82b-3523522cb275",
+      "slot": "barrel_ring"
+    },
+    {
+      "instanceId": "26f7ce90-2317-51d5-a75a-bbc5b815659a",
+      "definitionId": "m16a1_barrel",
+      "parentId": "81ba8d52-a0c7-502d-a168-3b4e2a961b89",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "92cc3fce-fa88-5d66-8652-3244f1cd79fe",
+      "definitionId": "m16a1_front_sight",
+      "parentId": "26f7ce90-2317-51d5-a75a-bbc5b815659a",
+      "slot": "front_sight"
+    },
+    {
+      "instanceId": "2628e5d0-2799-52e8-a9a4-9013d4475f84",
+      "definitionId": "m16a1_muzzle",
+      "parentId": "26f7ce90-2317-51d5-a75a-bbc5b815659a",
+      "slot": "muzzle"
+    },
+    {
+      "instanceId": "43e6ae9f-09d9-58fd-a946-40e70d968bf9",
+      "definitionId": "m16a1_handguard",
+      "parentId": "81ba8d52-a0c7-502d-a168-3b4e2a961b89",
+      "slot": "handguard"
+    },
+    {
+      "instanceId": "8843d29a-1217-5e62-ba14-e03a635b2af8",
+      "definitionId": "m16a1_bolt",
+      "parentId": "896d07a8-9bf8-56e7-a82b-3523522cb275",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "1671d87f-703d-5f0d-b591-eace919d6cc0",
+      "definitionId": "m16a1_charging_handle",
+      "parentId": "896d07a8-9bf8-56e7-a82b-3523522cb275",
+      "slot": "charging_handle"
+    },
+    {
+      "instanceId": "f0f47a0d-866a-5cc6-9f17-3e5c5e81c589",
+      "definitionId": "m16a1_rear_sight",
+      "parentId": "896d07a8-9bf8-56e7-a82b-3523522cb275",
+      "slot": "rear_sight"
+    },
+    {
+      "instanceId": "6ed66eff-166a-5568-9385-86f01a02160b",
+      "definitionId": "m16a1_pistol_grip",
+      "parentId": "66cbca50-47a8-5974-9cfd-3ae6fbddbde9",
+      "slot": "pistol_grip"
+    },
+    {
+      "instanceId": "8f798766-5a04-59bd-9258-2a782e3c4f3f",
+      "definitionId": "m16a1_stock",
+      "parentId": "66cbca50-47a8-5974-9cfd-3ae6fbddbde9",
+      "slot": "stock"
+    },
+    {
+      "instanceId": "54ea693f-93f8-5f9a-88bb-d395f215a4d4",
+      "definitionId": "m16a1_magazine_standard",
+      "parentId": "66cbca50-47a8-5974-9cfd-3ae6fbddbde9",
+      "slot": "magazine"
+    }
+  ]
+}

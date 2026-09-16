@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "mag_extended_3",
+    "muzzle_default"
+  ],
+  "definitionRequirements": {},
+  "variantRequirements": {},
+  "boneRequirements": {
+    "bullet": [
+      "m16a1_magazine_standard",
+      "tacz_m16a1_extended_mag_1",
+      "tacz_m16a1_extended_mag_2",
+      "tacz_m16a1_extended_mag_3"
+    ],
+    "bullet_in_mag": [
+      "m16a1_magazine_standard",
+      "tacz_m16a1_extended_mag_1",
+      "tacz_m16a1_extended_mag_2",
+      "tacz_m16a1_extended_mag_3"
+    ],
+    "bullet_in_barrel": [
+      "m16a1_barrel"
+    ],
+    "muzzle_flash": [
+      "m16a1_barrel"
+    ],
+    "bolt": [
+      "m16a1_bolt"
+    ]
+  }
+}

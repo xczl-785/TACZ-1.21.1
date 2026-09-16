@@ -1,0 +1,262 @@
+{
+  "assembly_scar_l_lower_lower": {
+    "definition": "scar_l_lower",
+    "variant": "always",
+    "sourceBone": "lower"
+  },
+  "assembly_scar_l_lower_trigger": {
+    "definition": "scar_l_lower",
+    "variant": "always",
+    "sourceBone": "trigger"
+  },
+  "assembly_scar_l_lower_switch": {
+    "definition": "scar_l_lower",
+    "variant": "always",
+    "sourceBone": "switch"
+  },
+  "assembly_scar_l_lower_magrelease": {
+    "definition": "scar_l_lower",
+    "variant": "always",
+    "sourceBone": "magrelease"
+  },
+  "assembly_scar_l_lower_octagon2": {
+    "definition": "scar_l_lower",
+    "variant": "always",
+    "sourceBone": "octagon2"
+  },
+  "assembly_scar_l_lower_holdrelease": {
+    "definition": "scar_l_lower",
+    "variant": "always",
+    "sourceBone": "holdrelease"
+  },
+  "assembly_scar_l_upper_handguard_default": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "handguard_default"
+  },
+  "assembly_scar_l_upper_metal": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "metal"
+  },
+  "assembly_scar_l_upper_group2": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "group2"
+  },
+  "assembly_scar_l_upper_upper": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "upper"
+  },
+  "assembly_scar_l_upper_group3": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "group3"
+  },
+  "assembly_scar_l_upper_group4": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "group4"
+  },
+  "assembly_scar_l_upper_pattern": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "pattern"
+  },
+  "assembly_scar_l_upper_Gun_rails2": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "Gun_rails2"
+  },
+  "assembly_scar_l_upper_Gun_rails3": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "Gun_rails3"
+  },
+  "assembly_scar_l_upper_Gun_rails4": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "Gun_rails4"
+  },
+  "assembly_scar_l_upper_Gunrails": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "Gunrails"
+  },
+  "assembly_scar_l_upper_screws": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "screws"
+  },
+  "assembly_scar_l_upper_group5": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "group5"
+  },
+  "assembly_scar_l_upper_base": {
+    "definition": "scar_l_upper",
+    "variant": "always",
+    "sourceBone": "base"
+  },
+  "assembly_scar_l_barrel_barrel": {
+    "definition": "scar_l_barrel",
+    "variant": "always",
+    "sourceBone": "barrel"
+  },
+  "assembly_scar_l_gas_system_gaslock": {
+    "definition": "scar_l_gas_system",
+    "variant": "always",
+    "sourceBone": "gaslock"
+  },
+  "assembly_scar_l_gas_system_gas_tube": {
+    "definition": "scar_l_gas_system",
+    "variant": "always",
+    "sourceBone": "gas_tube"
+  },
+  "assembly_scar_l_pistol_grip_grip": {
+    "definition": "scar_l_pistol_grip",
+    "variant": "always",
+    "sourceBone": "grip"
+  },
+  "assembly_scar_l_stock_stock_extended_part": {
+    "definition": "scar_l_stock",
+    "variant": "always",
+    "sourceBone": "stock_extended_part"
+  },
+  "assembly_scar_l_stock_group8": {
+    "definition": "scar_l_stock",
+    "variant": "always",
+    "sourceBone": "group8"
+  },
+  "assembly_scar_l_stock_bone": {
+    "definition": "scar_l_stock",
+    "variant": "always",
+    "sourceBone": "bone"
+  },
+  "assembly_scar_l_stock_stock": {
+    "definition": "scar_l_stock",
+    "variant": "always",
+    "sourceBone": "stock"
+  },
+  "assembly_scar_l_stock_octagon9": {
+    "definition": "scar_l_stock",
+    "variant": "always",
+    "sourceBone": "octagon9"
+  },
+  "assembly_scar_l_stock_bone5": {
+    "definition": "scar_l_stock",
+    "variant": "always",
+    "sourceBone": "bone5"
+  },
+  "assembly_scar_l_muzzle_muzzle_default": {
+    "definition": "scar_l_muzzle",
+    "variant": "always",
+    "sourceBone": "muzzle_default"
+  },
+  "assembly_scar_l_muzzle_octagon4": {
+    "definition": "scar_l_muzzle",
+    "variant": "always",
+    "sourceBone": "octagon4"
+  },
+  "assembly_scar_l_bolt_bolt": {
+    "definition": "scar_l_bolt",
+    "variant": "always",
+    "sourceBone": "bolt"
+  },
+  "assembly_scar_l_bolt_octagon3": {
+    "definition": "scar_l_bolt",
+    "variant": "always",
+    "sourceBone": "octagon3"
+  },
+  "assembly_scar_l_front_sight_fore_sight": {
+    "definition": "scar_l_front_sight",
+    "variant": "upright",
+    "sourceBone": "fore_sight"
+  },
+  "assembly_scar_l_front_sight_sight_illuminated": {
+    "definition": "scar_l_front_sight",
+    "variant": "upright",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_scar_l_front_sight_fore_sight2": {
+    "definition": "scar_l_front_sight",
+    "variant": "folded",
+    "sourceBone": "fore_sight2"
+  },
+  "assembly_scar_l_front_sight_bone8": {
+    "definition": "scar_l_front_sight",
+    "variant": "folded",
+    "sourceBone": "bone8"
+  },
+  "assembly_scar_l_rear_sight_rear_sight": {
+    "definition": "scar_l_rear_sight",
+    "variant": "upright",
+    "sourceBone": "rear_sight"
+  },
+  "assembly_scar_l_rear_sight_octagon5": {
+    "definition": "scar_l_rear_sight",
+    "variant": "upright",
+    "sourceBone": "octagon5"
+  },
+  "assembly_scar_l_rear_sight_octagon6": {
+    "definition": "scar_l_rear_sight",
+    "variant": "upright",
+    "sourceBone": "octagon6"
+  },
+  "assembly_scar_l_rear_sight_octagon7": {
+    "definition": "scar_l_rear_sight",
+    "variant": "upright",
+    "sourceBone": "octagon7"
+  },
+  "assembly_scar_l_rear_sight_octagon8": {
+    "definition": "scar_l_rear_sight",
+    "variant": "upright",
+    "sourceBone": "octagon8"
+  },
+  "assembly_scar_l_rear_sight_octagon": {
+    "definition": "scar_l_rear_sight",
+    "variant": "upright",
+    "sourceBone": "octagon"
+  },
+  "assembly_scar_l_rear_sight_rear_sight2": {
+    "definition": "scar_l_rear_sight",
+    "variant": "folded",
+    "sourceBone": "rear_sight2"
+  },
+  "assembly_scar_l_magazine_standard_mag_standard": {
+    "definition": "scar_l_magazine_standard",
+    "variant": "always",
+    "sourceBone": "mag_standard"
+  },
+  "assembly_tacz_scar_l_extended_mag_1_mag_extended_1": {
+    "definition": "tacz_scar_l_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "mag_extended_1"
+  },
+  "assembly_tacz_scar_l_extended_mag_2_bone7": {
+    "definition": "tacz_scar_l_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "bone7"
+  },
+  "assembly_tacz_scar_l_extended_mag_2_bone6": {
+    "definition": "tacz_scar_l_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "bone6"
+  },
+  "assembly_tacz_scar_l_extended_mag_3_mag_extended_3": {
+    "definition": "tacz_scar_l_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "mag_extended_3"
+  },
+  "assembly_tacz_scar_l_extended_mag_3_bone4": {
+    "definition": "tacz_scar_l_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "bone4"
+  },
+  "assembly_tacz_scar_l_extended_mag_3_bone3": {
+    "definition": "tacz_scar_l_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "bone3"
+  }
+}

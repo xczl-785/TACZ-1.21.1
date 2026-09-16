@@ -5,6 +5,9 @@
     "data/newmod_m4a1/m4a1/weapon.json",
     "data/newmod_radian/radian/weapon.json",
     "data/tacz_assembly/m4a1/weapon.json",
-    "data/tacz_assembly/glock_17/weapon.json"
+    "data/tacz_assembly/glock_17/weapon.json",
+    "data/tacz_assembly/m16a1/weapon.json",
+    "data/tacz_assembly/scar_l/weapon.json",
+    "data/tacz_assembly/ump45/weapon.json"
   ]
 }

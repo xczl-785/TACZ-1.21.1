@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "mag_extended_3"
+  ],
+  "definitionRequirements": {},
+  "variantRequirements": {},
+  "boneRequirements": {
+    "bullet": [
+      "ump_magazine_standard",
+      "tacz_ump45_light_extended_mag_1",
+      "tacz_ump45_light_extended_mag_2",
+      "tacz_ump45_light_extended_mag_3"
+    ],
+    "bullet_in_mag": [
+      "ump_magazine_standard",
+      "tacz_ump45_light_extended_mag_1",
+      "tacz_ump45_light_extended_mag_2",
+      "tacz_ump45_light_extended_mag_3"
+    ],
+    "bullet_in_barrel": [
+      "ump_barrel"
+    ],
+    "ump45_bolt": [
+      "ump_bolt"
+    ]
+  }
+}

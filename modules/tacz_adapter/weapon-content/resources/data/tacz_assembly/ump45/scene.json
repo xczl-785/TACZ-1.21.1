@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "0a0f09fd-227c-5790-be26-124c534b4ef7",
+      "definitionId": "ump_lower"
+    },
+    {
+      "instanceId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "definitionId": "ump_upper",
+      "parentId": "0a0f09fd-227c-5790-be26-124c534b4ef7",
+      "slot": "upper"
+    },
+    {
+      "instanceId": "0eda7cee-5190-5fd9-beda-064482870ec8",
+      "definitionId": "ump_barrel",
+      "parentId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "9584fc23-6f28-556b-ad96-aa2a6d191622",
+      "definitionId": "ump_bolt",
+      "parentId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "ac1b7949-f8d4-5a64-bb57-2df836a5f0f3",
+      "definitionId": "ump_charging_handle",
+      "parentId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "slot": "charging_handle"
+    },
+    {
+      "instanceId": "5e76d64f-00d4-53e2-9c1f-3b626cb44d87",
+      "definitionId": "ump_stock",
+      "parentId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "slot": "stock"
+    },
+    {
+      "instanceId": "ce4206c9-d6d2-58ad-a500-60f627d9e2f0",
+      "definitionId": "ump_rails",
+      "parentId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "slot": "rails"
+    },
+    {
+      "instanceId": "aa49be0f-3c89-5c7a-847b-7050974ce259",
+      "definitionId": "ump_magazine_standard",
+      "parentId": "0a0f09fd-227c-5790-be26-124c534b4ef7",
+      "slot": "magazine"
+    }
+  ]
+}
