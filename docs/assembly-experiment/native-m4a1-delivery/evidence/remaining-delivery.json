@@ -1,0 +1,51 @@
+{
+  "date": "2026-09-16",
+  "sourceCommit": "01c69961af248a8dd325b625f2e5c495cbff47c0",
+  "newmodCommit": "894a4047d0bf4566e983bdfa34a1517b29c4a008",
+  "version": "1.1.8-hotfix-r6-newmod.01c69961",
+  "scope": "Remaining 28 non-optic candidates for assembled native M4 only; no other gun or optic production",
+  "newParts": 28,
+  "newCubes": 1034,
+  "editableParts": 52,
+  "editableCubes": 2447,
+  "categories": {
+    "grips": 12,
+    "muzzles": 8,
+    "lasers": 4,
+    "extendedMagazines": 3,
+    "bayonets": 1
+  },
+  "nativeAttachmentOverrides": 25,
+  "derivedLaserLods": 3,
+  "checks": {
+    "java": {
+      "tests": 101,
+      "failures": 0,
+      "errors": 0
+    },
+    "pythonModelTests": 11,
+    "pythonPipelineTests": 14,
+    "blockbench": "28 real load/compile/import round trips: zero vertex error, identical UV; original project restored",
+    "existingSources": "24 editable models and textures byte-identical to previous commit",
+    "sharedNativeResources": "unchanged",
+    "regeneration": "two complete generation runs hash-identical",
+    "runtimeReview": "Independent subagent found no blocking issue in per-weapon override, delegation, transforms, laser effects, inline exclusion or LOD",
+    "checkAssemble": "passed for final source commit",
+    "artifacts": "both jars contain matching attachment overrides, high/low models and runtime classes",
+    "adapterIntegration": "passed",
+    "development": "964 classes; unique artifact; preparation and configuration cache reuse passed",
+    "production": "923 classes; unique artifact; preparation and configuration cache reuse passed"
+  },
+  "previousBatchUserAcceptance": "User reported validation passed before authorizing current 28-part batch",
+  "userAcceptance": "current 28-part batch pending",
+  "gameStarted": false,
+  "worldsModified": false,
+  "routeLedger": "No trusted binding; deferred route remains in linked delivery document",
+  "deferred": [
+    "15 optical candidates last",
+    "second native TaCZ gun integration proof",
+    "shared workbench sight folding and hiding after attachment expansion",
+    "dynamic text_show display migration required before future matching attachment imports",
+    "cold icon scheduling and source texture memory budget"
+  ]
+}
