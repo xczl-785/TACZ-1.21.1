@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-17",
+  "sourceCommit": "1fa61d74bcadcaf69949b3adb6650aa97a2a1532",
+  "newmodCommit": "92f4f11f80a57190579b6c4b272b5a528b927c3a",
+  "version": "1.1.8-hotfix-r6-newmod.1fa61d74",
+  "status": "delivered-awaiting-owner-client-acceptance",
+  "guns": [
+    "aa12",
+    "ai_awp",
+    "m700",
+    "m870",
+    "mk14",
+    "p90",
+    "qbz_191",
+    "scar_h",
+    "sks_tactical",
+    "uzi"
+  ],
+  "nativeAssemblyTotal": 15,
+  "packageProof": {
+    "tacz": {
+      "resourceFiles": 2272,
+      "decodedPNGs": 1521,
+      "sha512": "9d69f1520d896d437eda7ab5608eab67e0b53467ad96e03d864c28b71c39fe53721323807e8bd11c426e708d7fa7d47d06dfc5eebb5e756eb45448a0e2f685f0"
+    },
+    "development": {
+      "resourceFiles": 2272,
+      "decodedPNGs": 1521,
+      "sha512": "994bf1f3255881a57d42bf0157835ddd1732f18b3a0fc0e6f54a1a8cc4a574580539c0e1696e0f5d257f088bedd0fb39ef37f9eea4794008abf37f0f7da76328"
+    }
+  },
+  "supplementalNativeIndexVerified": true,
+  "globalGunIndexVerified": true,
+  "productionClasses": 929,
+  "developmentClasses": 970,
+  "configurationCache": {
+    "production": "stored and reused",
+    "development": "stored and reused"
+  },
+  "finalPreparedMode": "development",
+  "gameStarted": false,
+  "worldsModified": false,
+  "pushed": false,
+  "logs": {
+    "/tmp/native-remaining-final.log": "948829533ce8c65d2f5f3088fb7c7b13fe0af948c6a372b2209334d44ba48478",
+    "/tmp/native-remaining-state-final.log": "108de77f6bf66703bb23f5c7b07ee7226a3cbf1f1505a9191cd11f4726d4dfc3",
+    "/tmp/native-remaining-stamped.log": "74448fac4b774d0434e051846ea237ce394bce5b010c9dedd1c0d2ac0a25fc8f",
+    "/tmp/native-remaining-host-dev.log": "9198d330445b2aca99f3a1302b3ca9e76f649ebbcc3784317f403a7466f39175",
+    "/tmp/native-remaining-host-prod.log": "b07b938ed19ce48c4a602893d472d25d1d8a4747b073be2dc0b7e10bee1cc460",
+    "/tmp/native-remaining-host-prod-reuse.log": "3ea2dca77a12a016e2eb7640bac7e2925d2f972c7d6e18d740c30222cb60340f",
+    "/tmp/native-remaining-host-dev-reuse.log": "873cc85d306825b128ece9b95f7587d7d8a19d64c36de81bb8033a1479b884f5",
+    "/tmp/native-remaining-integration-proof.log": "eecc95e62bbaf1e2029fbe96163c038c101ec21d113eb943a2167fbe73aaec59"
+  }
+}
