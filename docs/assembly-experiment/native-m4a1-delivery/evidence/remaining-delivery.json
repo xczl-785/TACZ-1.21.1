@@ -37,7 +37,7 @@
     "production": "923 classes; unique artifact; preparation and configuration cache reuse passed"
   },
   "previousBatchUserAcceptance": "User reported validation passed before authorizing current 28-part batch",
-  "userAcceptance": "current 28-part batch pending",
+  "userAcceptance": "passed: user confirmed 全部验证通过 on the integrated 21820224 build",
   "gameStarted": false,
   "worldsModified": false,
   "routeLedger": "No trusted binding; deferred route remains in linked delivery document",
@@ -47,5 +47,12 @@
     "shared workbench sight folding and hiding after attachment expansion",
     "dynamic text_show display migration required before future matching attachment imports",
     "cold icon scheduling and source texture memory budget"
-  ]
+  ],
+  "acceptanceEvidence": {
+    "date": "2026-09-16",
+    "reportedBy": "user",
+    "statement": "全部验证通过",
+    "acceptedVersion": "1.1.8-hotfix-r6-newmod.21820224",
+    "scope": "Current delivered M4 non-optic batch, mounted RK-1 direction correction and temporary preset editor; user-reported overall acceptance, not an agent-observed per-case checklist"
+  }
 }
