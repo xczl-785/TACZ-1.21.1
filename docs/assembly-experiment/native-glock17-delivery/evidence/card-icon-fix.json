@@ -1,0 +1,38 @@
+{
+  "sourceCommit": "ec3468dcc574111c3cd088a8eae36d16c8dfebf1",
+  "newmodCommit": "f41e9f98bbc06384c15a3f944eeb7275e71e3691",
+  "version": "1.1.8-hotfix-r6-newmod.ec3468dc",
+  "cause": "UI requested shared textures/item/<definition>.png; producer emitted gun-specific textures/item/glock_17/<definition>.png",
+  "before": {
+    "glockImagesPresent": 20,
+    "missingRequestedPaths": 18,
+    "incorrectSharedLaserImages": 2
+  },
+  "after": {
+    "nativeCardResourcesDecodedPerArtifact": 87,
+    "javaTests": 126,
+    "pythonTests": 41,
+    "checkAssemble": "PASS",
+    "bothArtifactHashes": "PASS",
+    "developmentAndProductionPreparation": "PASS",
+    "configurationCacheBothModes": "stored and reused",
+    "modelsAndPngsChanged": false,
+    "gameStarted": false,
+    "worldModified": false,
+    "clientAcceptance": "pending"
+  },
+  "artifacts": {
+    "tacz": {
+      "version": "1.1.8-hotfix-r6-newmod.ec3468dc",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.ec3468dc.jar",
+      "sha512": "a0e51f0e430e3b0b07367b4ae620e9c0f662706ce6ddfabc8a15dbcaa4904600a01303ecad58e7d1deb7cab70898a1dbbe2e61bb606ea7072c8d2268f2ea3149",
+      "source_commit": "ec3468dcc574111c3cd088a8eae36d16c8dfebf1"
+    },
+    "development": {
+      "version": "1.1.8-hotfix-r6-newmod.ec3468dc",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.ec3468dc-development.jar",
+      "sha512": "0e2540e0256d2bbad31bc90c9f7b4a1adcea9d44b29dac1a12a094b7225b06e93dc1a34a287108a7d1bf800b273c944fe609037e56476f9231c3e5a876a43c28",
+      "source_commit": "ec3468dcc574111c3cd088a8eae36d16c8dfebf1"
+    }
+  }
+}

@@ -1,5 +1,7 @@
 # 第二把原生组装枪：Glock 17
 
+当前修复制品：`1.1.8-hotfix-r6-newmod.ec3468dc`，NewMod接入 `f41e9f9`；工作台缺图修复见[evidence/card-icon-fix.json](evidence/card-icon-fix.json)，待所有者重启实机核验。
+
 2026-09-16。所有者授权继续扩大 TaCZ 原生组装覆盖；本批选择结构不同的 Glock 17，验证公共制作与运行机制。制作、运行接线、完整构建与 NewMod 制品接入均通过，未实机验收。
 
 ## 本批合同
