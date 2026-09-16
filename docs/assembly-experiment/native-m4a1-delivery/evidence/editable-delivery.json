@@ -1,0 +1,79 @@
+{
+  "version": "1.1.8-hotfix-r6-newmod.9da6cb13",
+  "sourceCommit": "9da6cb13529b6e7f5a65fec6cf7d2b2721698327",
+  "newmodCommit": "e2da87181499f7d897391053c65ce145264895d0",
+  "dependencyLock": {
+    "minecraft": "1.21.1",
+    "neoforge": "21.1.249",
+    "java": 21,
+    "tacz": {
+      "version": "1.1.8-hotfix-r6-newmod.9da6cb13",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.9da6cb13.jar",
+      "sha512": "10cbc648ce462964945b3182f808ce2d8946739126153982482ec529da43b2f1cf2e8e070831dcbd1c93a6e0c4c2f05333bbf7ec070d2938deb174140f7bf59a",
+      "source_commit": "9da6cb13529b6e7f5a65fec6cf7d2b2721698327"
+    },
+    "upstream_release": {
+      "project": "MUKSC/TACZ-1.21.1",
+      "unofficial_port": true,
+      "version": "1.1.8-hotfix-r6",
+      "modrinth_project_id": "OypNE65K",
+      "modrinth_version_id": "wPvGWIj9",
+      "maven": "maven.modrinth:OypNE65K:wPvGWIj9",
+      "url": "https://cdn.modrinth.com/data/OypNE65K/versions/wPvGWIj9/tacz-neoforge-1.21.1-1.1.8-hotfix-r6.jar",
+      "sha512": "ce14e985ce16d0517e7b1d41969a244818f46c1e4ae93842c3149963990aa488692c5372ecc4b71fe560a99794a3f865244dbef5b182beec4411148b4f83c53c",
+      "source_commit_reference": "ff715d80176f9ca61f5b2e6f029864f5adf209c2",
+      "verification": "Release source matches normalized EntityKineticBullet and ModernKineticGunScriptAPI source at this commit."
+    },
+    "development": {
+      "version": "1.1.8-hotfix-r6-newmod.9da6cb13",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.9da6cb13-development.jar",
+      "sha512": "5baa8c5cb925404658932bc70f754f46eaa69609fad379476e02e0f27048f5b41cf4ed19263f8e92ab42557cea5a056f066fadc8359c41b2d9b58f8651eef344",
+      "source_commit": "9da6cb13529b6e7f5a65fec6cf7d2b2721698327"
+    },
+    "rollback": {
+      "newmod_commit": "fe848b41280273c40c61a5ae1bdeddf5cf87b172",
+      "experiment_commit": "d59a0fcd884dacc6553fdb8af70e24988d35f74c",
+      "tacz": {
+        "version": "1.1.8-hotfix-r6-newmod.d59a0fcd",
+        "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.d59a0fcd.jar",
+        "sha512": "82c15390ac4797ed31dfecd886bebd8983d030156f1c29113592bde5b991e0ced25a8bb83b0cb3031954ce77f1554415af522665db3df291ba33fe5398f8f2bc",
+        "source_commit": "d59a0fcd884dacc6553fdb8af70e24988d35f74c"
+      },
+      "development": {
+        "version": "1.1.8-hotfix-r6-newmod.d59a0fcd",
+        "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.d59a0fcd-development.jar",
+        "sha512": "73ac068c4bbe2ad82c2575ff9d69463bdbb37a82ac357de6c8949a178572efaa56b4f979617d8cfa51c4c77f7bb770d13920f6f50701949aae34d21c6824dfb2",
+        "source_commit": "d59a0fcd884dacc6553fdb8af70e24988d35f74c"
+      },
+      "scope": "Before editable default M4 parts; preserve worlds"
+    }
+  },
+  "editableParts": 15,
+  "editableCubes": 583,
+  "blockbenchIndependentRoundtrips": 15,
+  "javaTests": {
+    "tests": 83,
+    "failures": 0,
+    "errors": 0
+  },
+  "pythonChecks": "3 editable geometry/UV/atlas checks plus existing 12 weapon pipeline tests passed",
+  "deterministicRegeneration": true,
+  "newmod": "Production/development dependency verification, single runtime artifact, launch preparation and configuration cache reuse passed",
+  "gameStarted": false,
+  "worldModified": false,
+  "clientAcceptance": "owner pending",
+  "sourceEntry": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/README.md",
+  "logs": {
+    "m4-editable-final-build.log": "1faca95ba220b82b9a27bf245c3b6ee7829552f86fd60c54c9bdcffbe6893f87",
+    "m4-editable-generation.log": "d93601dce5734840a34176691fbe1a3dfe60f569e45007a9bff4adc11e24a240",
+    "m4-editable-newmod-development.log": "b70d12c875d8687b8678a01a511b53c1bdf959e394e05c28d0ae73ff467fc7fc",
+    "m4-editable-newmod-development-reuse.log": "71f4a35aa0c7a85b9f39e576a6e54ee140a496b37e4a30176db375ea5ca740c6",
+    "m4-editable-newmod-production.log": "94b27b5eaaf07c7b7471d789133d67f5ca95d72c8fc0320768b672c6366ee556",
+    "m4-editable-newmod-production-reuse.log": "da42693fb3a7145be92d537d22937506002a85208e1ff61ff304cc635ecd91d6"
+  },
+  "remaining": [
+    "Owner visual acceptance including distant LOD",
+    "Optics and non-default candidate authoring are outside this batch",
+    "Folded front sight retains its native source; review it when changing the front sight shape"
+  ]
+}

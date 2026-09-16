@@ -4,7 +4,7 @@
 
 15 件独立方块模型已建立，583 方块；保留原生动画骨骼，工作台/图标/持枪高低模由同一编辑来源生成。修正 PNG 像素尺寸与 UV 尺寸混淆。CTR 仅替换本枪显示，其他枪与候选保留。来源和操作见[默认套件编辑入口](../../../modules/tacz_adapter/weapon-sources/native_m4a1/editable/README.md)。
 
-15 件 Blockbench 加载/编译坐标与 UV 往返通过。打包接入状态见后续 `evidence/editable-delivery.json`；实机接受仍待用户。低模按当前可编辑几何重新选面，远景观感待用户查看。
+15 件 Blockbench 加载/编译坐标与 UV 往返通过。已交付 `1.1.8-hotfix-r6-newmod.9da6cb13`，NewMod 接入 `e2da871`。83 项 Java 测试通过；正式/开发启动准备及配置缓存复用通过。详情见 [editable-delivery.json](evidence/editable-delivery.json)；实机接受仍待用户。低模按当前可编辑几何重新选面，远景观感待用户查看。
 
 ---
 
