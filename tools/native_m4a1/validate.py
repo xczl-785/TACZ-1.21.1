@@ -35,13 +35,13 @@ def validate(resources=DEFAULT):
  assert read(out/'data/tacz_assembly/data/guns/m4a1.json')==read(SRC/'data/tacz/data/guns/m4a1_data.json')
  native=read(SRC/'assets/tacz/display/guns/m4a1_display.json');display=read(a/'display/guns/m4a1.json')
  for k,v in native.items():
-  if k not in {'model','model_type','lod'}:assert display[k]==v,k
+  if k not in {'model','model_type','lod','texture'}:assert display[k]==v,k
  original=read(SRC/'assets/tacz/geo_models/gun/m4a1_geo.json')['minecraft:geometry'][0]['bones'];batches=read(base/'batches.json');high=read(a/'geo_models/gun/m4a1.json')['minecraft:geometry'][0]['bones'];low=read(a/'geo_models/gun/lod/m4a1.json')['minecraft:geometry'][0]['bones']
  for bones in [high,low]:
   lookup={b['name']:b for b in bones};assert len(lookup)==len(bones)
   for b in original:
    assert {k:v for k,v in b.items() if k!='cubes'}=={k:v for k,v in lookup[b['name']].items() if k!='cubes'},b['name']
-  assert {v['definition'] for k,v in batches.items() if k in lookup}==set(mapping)-set(external.values())|{'tacz_extended_mag_1','tacz_extended_mag_2','tacz_extended_mag_3'}
+  assert {v['definition'] for k,v in batches.items() if k in lookup}==set(mapping)-set(external.values())|{'tacz_extended_mag_1','tacz_extended_mag_2','tacz_extended_mag_3','tacz_stock_tactical_ar'}
   for b in bones:
    if b.get('parent'):assert b['parent'] in lookup
    if b['name'].startswith('assembly_'):assert b['name'] in batches
@@ -50,6 +50,6 @@ def validate(resources=DEFAULT):
   if id in external:continue
   assert (out/f'data/tacz_assembly/item_foundation/items/{id.split(":")[1]}.json').is_file()
   assert (a/f'models/item/{id.split(":")[1]}.json').is_file()
- evidence=read(base/'geometry-evidence.json');assert evidence['reusedLowCubes']==47 and evidence['maximumNeutralMatrixError']<1e-10 and evidence['lowCubes']<evidence['highCubes']
+ evidence=read(base/'geometry-evidence.json');assert evidence['editableParts']==15 and evidence['reusedLowCubes']==0 and evidence['maximumNeutralMatrixError']<1e-10 and evidence['lowCubes']<evidence['highCubes']
  print('Native M4A1 contract PASS: 15 default nodes, 52 attachments, 140 preserved rig nodes; high/low',evidence['highCubes'],evidence['lowCubes'])
 if __name__=='__main__':validate()

@@ -1,9 +1,9 @@
 {
   "model": "tacz_assembly:gun/m4a1",
-  "texture": "tacz:gun/uv/m4a1",
+  "texture": "tacz_assembly:gun/editable_m4a1",
   "lod": {
     "model": "tacz_assembly:gun/lod/m4a1",
-    "texture": "tacz_assembly:gun/lod/m4a1"
+    "texture": "tacz_assembly:gun/editable_m4a1"
   },
   "hud": "tacz:gun/hud/m4a1",
   "slot": "tacz:gun/slot/m4a1",

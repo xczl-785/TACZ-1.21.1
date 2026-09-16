@@ -6,7 +6,7 @@
     {
       "path": "build-logic/adapter-integration.gradle",
       "before_sha256": "1056e98c61ffafec0b014c6474e74d70852b46ef71a4d64eddb78ea18e8c508e",
-      "after_sha256": "0a7694839b8b765866ade6fdbefd1ac0ffebc9702d05e2598e39af50a3255ab5",
+      "after_sha256": "bd04e7e758b81782932acd71c6adbf493533d1a55a8e0557e15b9917dfbf1e45",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -78,7 +78,7 @@
     {
       "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/NativeAssemblyGunModel.java",
       "before_sha256": null,
-      "after_sha256": "00bbdd7ce5439bdad6c0a984d37f1e5f0b648adba1385faa1d351853ed311e33",
+      "after_sha256": "dd5e82f5ef0eb0731178a5e58d2949806f800ed51c7f8bad8f061f81fbc8631a",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -108,7 +108,7 @@
     {
       "path": "modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/NativeAssemblyStateTest.java",
       "before_sha256": null,
-      "after_sha256": "8c75124a570d522e8b27f078af22ba5e1223274bd786812d53920cd69ddd38e7",
+      "after_sha256": "4d1a1c5710478ce7059108e4a122588a9ae1093eea05879d6a3b740a8b3bd0b7",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -126,19 +126,19 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/display/guns/m4a1.json",
       "before_sha256": null,
-      "after_sha256": "d4a993f1d02f9fe230d9e70be886d1da41e9685e596157ce53ad854b9376de3c",
+      "after_sha256": "23e879f82a4031917603d32fafb2f5b6c2404dfaa8baa86ca8db06d24164937d",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/geo_models/gun/lod/m4a1.json",
       "before_sha256": null,
-      "after_sha256": "24642a9532085ced6a4d0e9b2dbdb29b3a25cc281117cbd1c4ed1c97a13857de",
+      "after_sha256": "372cafe1839d8c8f01a6ea691c73384aea412f70e8e6e9e917f0de4ff4e02291",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/geo_models/gun/m4a1.json",
       "before_sha256": null,
-      "after_sha256": "a8f5dbbae2bb2447737b4887f610c23cfc4d70a967d8f4b8fa53deaa73887337",
+      "after_sha256": "e27edc4a1205b89b20367beb96ab17da8351c6618b9ef2beea6ee668e933af3e",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -244,6 +244,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/gun/editable_m4a1.png",
+      "before_sha256": null,
+      "after_sha256": "71147cd6ea12d73dcadfcf0afa3730e61e4c781b73df8a668e8d91f32fe3139d",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/gun/lod/m4a1.png",
       "before_sha256": null,
       "after_sha256": "b23a42348b43c551aa1dc894f328bc67d600dc9c5012e17e4f23e7d01f659fa9",
@@ -252,49 +258,49 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/barrel.png",
       "before_sha256": null,
-      "after_sha256": "aef2a2e020f372bad496956a918d28f999f266559f7ee2b3738738ec93dbb44d",
+      "after_sha256": "9c89e28a5698bf0279e1bafbd3a764b742815d8a36fd1613cb7b471c2099b558",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/barrel_mount_collar.png",
       "before_sha256": null,
-      "after_sha256": "dce97886ad4e07047cbe7372a8e842b921e87cd75f7af331a805ebbf3e26a263",
+      "after_sha256": "db06f5cfa90c2d7b41bbb1a92f634e628e8329b443911c97c71e4c9ebb21b149",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/bolt.png",
       "before_sha256": null,
-      "after_sha256": "8a7feba3e57058bff6f26fdc9bf74fcb91ffb897935844a5be86872c33d46de8",
+      "after_sha256": "ffe22e8c4cd6ab98b5f18a9776f75818f065dd0abd1d87cc70ca5cfc71a83dd5",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/buffer.png",
       "before_sha256": null,
-      "after_sha256": "e5f94a76722e6cfebbe965dfe80753e385c32622be7052d98d0bd421942be662",
+      "after_sha256": "8decafad1e5be6387a7819e4060fd12c2755907b1e9172f67d88f4145036502e",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/charging_mechanism.png",
       "before_sha256": null,
-      "after_sha256": "072fae4fd5c75d54386d00f2fb3fb213d5c77585333f5a35c9ae25e46d19c1d6",
+      "after_sha256": "0a3d120a7017311e3610b0c22ca0fc364be4a88564c71def180d5ddde3a4218e",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/front_sight.png",
       "before_sha256": null,
-      "after_sha256": "0eb634a41e0fb74c767cf27b90704262b8390f3656fd1ddeef5e5c90405315b1",
+      "after_sha256": "6f226c7767f12306e9066e1a7bcdbd550fb0cf3100d8702dc093ad44f0718de4",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/gas_block_and_tube.png",
       "before_sha256": null,
-      "after_sha256": "aa42c83496dc2158f37c22af81b467e81dbfacfd6d2022bfe56540e5aacf98e0",
+      "after_sha256": "276a3688b92a32b210217cdd03d8ca4fbd46f6f702973a44e8a5917f87162d38",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/handguard_default.png",
       "before_sha256": null,
-      "after_sha256": "94609e89ed730d52d78231925f0a1c0bd3a8ce28dc888b4a9e5a10cfb62cdf7e",
+      "after_sha256": "ed01dbdbe512a04b1b6e7bbfb8509ba48a6b4303540c0d7de3742af3f24a0d38",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -306,31 +312,31 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/lower_receiver.png",
       "before_sha256": null,
-      "after_sha256": "dbefac5e4938b9f9be43db6a6db079142c1091f3044f54fe6b8a67d1c259a13f",
+      "after_sha256": "fe83dfe671bea9c11a487dd55ba03d7e5da8d27b89f09fe8e0679b11e64f0073",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/magazine_standard.png",
       "before_sha256": null,
-      "after_sha256": "faf6b38b7e70d1aa0b47dc32538032312f77bc0a5df00e43f99cf02ef210fe14",
+      "after_sha256": "0e6d511df1bee074ffdabf733c9baf5fd574e2a0089127ff5034499ef776fa0d",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/muzzle_default.png",
       "before_sha256": null,
-      "after_sha256": "ba160e47f7c03faf8254347b62a06a787c373e00dc1a7369850a497b8b22cc48",
+      "after_sha256": "92d20a0815fb6e992b448ec6f757623b2f422369dbb0fc061ea8e1327c0a4f48",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/pistol_grip.png",
       "before_sha256": null,
-      "after_sha256": "da2107563fca69c03f8a0229f00e6bc1ca879c0d297f66f0e6ce8697e268b498",
+      "after_sha256": "fb094fc249726ec816f6381958965ca3b93c51a7a4357dc7aa0a7bc01debd196",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/rear_sight.png",
       "before_sha256": null,
-      "after_sha256": "23322d6a58d397d7bd5d8d44f7e4f261515c6d58dbcc2788ecd686afe86ba709",
+      "after_sha256": "5e8239810ec0038297dadb177b8750f47d9772d714c82fc4901963066af30e07",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -342,13 +348,13 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/tacz_extended_mag_1.png",
       "before_sha256": null,
-      "after_sha256": "10e0a30f996103609daa8164053003c194e7829b4ce4bcc565b0b312fb072fae",
+      "after_sha256": "260c63465260fd8721dedf7914c3a5552176b99102c26e56aeb2a71191c0206e",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/tacz_extended_mag_2.png",
       "before_sha256": null,
-      "after_sha256": "10e0a30f996103609daa8164053003c194e7829b4ce4bcc565b0b312fb072fae",
+      "after_sha256": "260c63465260fd8721dedf7914c3a5552176b99102c26e56aeb2a71191c0206e",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -642,13 +648,13 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/tacz_stock_tactical_ar.png",
       "before_sha256": null,
-      "after_sha256": "c9d36ff9ae90e3193d0d0dfbcbda41a683b096fe74b0f98f58181f4f13e0d7d3",
+      "after_sha256": "893b18395748e03254ffb2774b791e0e8474c53b95311ef3a8dfa174222d7843",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/upper_receiver.png",
       "before_sha256": null,
-      "after_sha256": "6291b7c438806b04b6b1ac7a2011e7274b50807626b4206d9c88e628cf59c6a5",
+      "after_sha256": "8c584d781adb389d546154faade1f5038824e04254fac8de87f212f3f0497905",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1176,7 +1182,7 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/batches.json",
       "before_sha256": null,
-      "after_sha256": "b3c03880d99d1ae41eb6c53d76b9f752b8e7a514b22d6b73688856287a64bc79",
+      "after_sha256": "04a588b97a9f5b61834f02452802f9c97551312190e771e89e5254275b3f0c9b",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1188,7 +1194,13 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "ddef87bccdea8192994c137959e4082d03c54ea55326f6d416914d405de64620",
+      "after_sha256": "d528fd4603642aaf5caa3eafbae851e91f755e29ca5717401eaee1f6b80ee207",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/inline_attachments.json",
+      "before_sha256": null,
+      "after_sha256": "cec8ac9e54189eaffb1540df0316fad2403601b30bad08637557a477665aaceb",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1218,7 +1230,7 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/preview.json",
       "before_sha256": null,
-      "after_sha256": "76207ecc1981ffaaaa47b052933a0cd9d11ba7fe57f16184fc8d02d749d585ee",
+      "after_sha256": "0d1e7d2d3cbabf27c78503cab5537e996bb4450731d2c75b16505c35dd6b6194",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1236,7 +1248,7 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/workbench-anchors.json",
       "before_sha256": null,
-      "after_sha256": "3a9ff6c9b804043d03a93f9f1ebbba0763a15c5064bf57f4d760ab47e787c332",
+      "after_sha256": "e9cad5649c87944b222365a2427d9a245d478bd4b488f6680ebc118e69c59fd3",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1248,25 +1260,229 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/README.md",
       "before_sha256": null,
-      "after_sha256": "f3bc7db50530e1e2fe7fd25904f671f955dbc62fb8daae6eb4d20e1490e5cc74",
+      "after_sha256": "7d2f7d93805688f3e45c66dcadec1fb657380d4232c9b4a0e7100c89a0024ed9",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable-import-report.json",
+      "before_sha256": null,
+      "after_sha256": "e6ae859399f04968aa7ea382ae7eb67a029b64dbde055b7efc14e2d7611815d0",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/README.md",
+      "before_sha256": null,
+      "after_sha256": "cc193648ddc01db78168a9e1b451bc63c01bd7c0b928d74f5c256b905d679044",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/blockbench-check.json",
+      "before_sha256": null,
+      "after_sha256": "fa9eb5bb32b83412c83ec8fec6f92f58873ecf18f6f997edc67f72280ee40d64",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/barrel/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "572e38edc490b6744734b674431253c502f37940ede9096a403ae046df16fed4",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/barrel/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/barrel_mount_collar/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "a7f20a9fedbd2518ae9e13106c8b781bcb35003d4d0d4c70534f3bd883054b76",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/barrel_mount_collar/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/bolt/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "4fe78b9ef4c560163abb75c6b315eaa2ae289f656a07d63ae642582a0a9af7d6",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/bolt/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/buffer/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "fb41fae7d1eae65d5842834e9148b69cae939392ccaec5a286a59efb89f4cc17",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/buffer/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/charging_mechanism/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "f826eef7ad92accf78c65c11a7e7051e677f131cfc0060c79c72600359c12eab",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/charging_mechanism/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/front_sight/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "195c43bd604e5d5cd1dad4ca2ac4833dcec2b6798b502ef213810577d118b03a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/front_sight/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/gas_block_and_tube/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "f536d9c96baa92eef30bbd93a0feb7fbeac95ce8d5b81b64e8f4c8f88caa7af7",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/gas_block_and_tube/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/handguard_default/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "11feb43e42e2d960203646877ca90493068a0fc72f7fd06fcd248309fbb33d94",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/handguard_default/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/lower_receiver/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "a90ae24f064d0981311d8a39d0866a99c46b29373861e448d055e666230e7919",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/lower_receiver/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/magazine_standard/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "33f819ec2782a5fdcdaabd9369de7771aecf397bcff3d9a1259ab3e7283d30f9",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/magazine_standard/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/muzzle_default/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "7a2ed62900f4377fe51d7f431ac40629e529deafb375f810da7bee8b5f5879af",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/muzzle_default/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/pistol_grip/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "41cad973185ad684372397a86631f68cac2ac55c3f8251174403ef99993d7fdb",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/pistol_grip/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/rear_sight/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "4d8e4b69b0b887007bde299bfc62836b49526fa1604d625b83b3c455c92449e8",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/rear_sight/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_tactical_ar/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "ce3c739d61773beea81bc5f7d70b328b22f81e3e68e321391e0600b13d877299",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_tactical_ar/texture.png",
+      "before_sha256": null,
+      "after_sha256": "a768112c7b40fe4abaf2eac10c32bde545f12e3556712e381bb99a7467fab363",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/upper_receiver/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "82324423a57595757d6c3a3ee583651f65dee9372390e28b0239154b329a5848",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/upper_receiver/texture.png",
+      "before_sha256": null,
+      "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json",
+      "before_sha256": null,
+      "after_sha256": "cc29f2309f25e8f84e24a4af6ec6f4d3afcc222234c39a909264187ab2f051be",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/manifest.json",
       "before_sha256": null,
-      "after_sha256": "e92039ed541dcf72af931233a0610eec17de5b00aecf251ec91c8d6e4022642d",
+      "after_sha256": "218fea3a00f48ab15ceb202fbe3546316251bc96eb31ad8d81894ddca586384f",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/barrel/component.json",
       "before_sha256": null,
-      "after_sha256": "11b8dedcb05dc6d4d0457b8bee18b995640f9cc9b41abfda8b360dedc9d2e74f",
+      "after_sha256": "9012fdf95da8b984f4b7afbd300fd791cb97e2e51d2794f9cfc5efd8cf34277d",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/barrel/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "b093eec7c06f81db50376ae5587a9837ebe951eba6055b23ff5ffb6b7bee3588",
+      "after_sha256": "3872f924fdb94265eddd8b7108a2ed57c6131de6c2225dc9ca381f6731757376",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1278,13 +1494,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/barrel_mount_collar/component.json",
       "before_sha256": null,
-      "after_sha256": "879fe820d09615c925bed361b6f833ad026be90a714dbd6ccb7f9b1f966422e7",
+      "after_sha256": "c2a347bd164c425fe234bd16e7c1ee048a76f6904799ab1017fb7b1801ae64f3",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/barrel_mount_collar/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "c8d798fdbb8580c91e3ec2b1770c0ea993d1e396bf2568fdf52e471d0817a5d6",
+      "after_sha256": "db87f061400ec7c820a121c0d864489696db0acb917a9209edfec6520e8e4b26",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1296,13 +1512,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/bolt/component.json",
       "before_sha256": null,
-      "after_sha256": "2690633aa3d19af728b2ab279b9d9e298e3d3c54ad8937d29b0e3fc0a79f91f2",
+      "after_sha256": "1a4d9035c7269a88f43d5ed1385b0321cea5e4ccdbbdede5de72c671bf50840f",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/bolt/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "4310fd29710184efcedfbc77382bf635bf882ce1d7ce1ed7cc1ed4a38af16109",
+      "after_sha256": "3417c7b76cf1abc02f8854f25fea39549685c17dac5ff2642172fac7bc055b84",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1314,13 +1530,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/buffer/component.json",
       "before_sha256": null,
-      "after_sha256": "4492c15db7a696f8ca182d6248197b62dde6cd11d4d09d03a0e7d949e7ef979a",
+      "after_sha256": "15eae0def4a1eef650a3ed89d448e40fc896c5096837e37eee56e27519ada7bb",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/buffer/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "75a4b912f3bd9c1c3b0bed019397be690301eea661da6ee4ea8a1d9839009dd0",
+      "after_sha256": "7c75246aa9b101d7b1777389efd948522af0637997205c873af7a6936971f0e9",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1332,13 +1548,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/charging_mechanism/component.json",
       "before_sha256": null,
-      "after_sha256": "d0ccb064def1beee4d3d2bddb4a640cceeea3a566e253418d2640d88d0136d09",
+      "after_sha256": "e76c6af3f1099424ed91ed065b321fb81c2a1e86438efec88b119c50cce22199",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/charging_mechanism/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "a45c11ceb5c7a0282c98ef23175cb9a60e94ab11fd778f25bd0629a1ddd8e4d6",
+      "after_sha256": "31bac1ecb12934cf926fdb6b993040ae97634d7bd00d6ee5ae5b3756ea1dda2a",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1356,7 +1572,7 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/front_sight/component.json",
       "before_sha256": null,
-      "after_sha256": "8667a7083e2c3fb41057e7eb7a33d5b969bd592a76167de5e1470c73d5e0f645",
+      "after_sha256": "184dc6484b27d9abd9ecf3404b3d8d7d26c0ff97b2ce814ac4083e7adeedba1e",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1368,7 +1584,7 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/front_sight/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "29627e7d2c2a459f6d7989ead08f716ff08e510c3015b7070cad9c90c3f4ada9",
+      "after_sha256": "23dbe9c522a6a8988dbb89aa7553a069444f8aa7ae3929411a6bfe674c415ce2",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1380,13 +1596,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/gas_block_and_tube/component.json",
       "before_sha256": null,
-      "after_sha256": "3a88211810ef9a74a96229539eb1a7555cd9654f53f915ba381bf23ed52d8582",
+      "after_sha256": "90e5aa02cb081749a7d20ed9a44e50ad48d0b5028de8b7733c297d087c413ff9",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/gas_block_and_tube/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "973106eaa6f59533bdce10f99cce9eb3fe5e3c3583d0f88d25882f457df29f8d",
+      "after_sha256": "ff87b99f031c69bd0c69e3273357255d014225db3e7407cecf104233b8c956ff",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1398,13 +1614,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/handguard_default/component.json",
       "before_sha256": null,
-      "after_sha256": "69967f3e49e5306581f6b245e0489aa4ca68a0b323f39bf4704accfff6badf9f",
+      "after_sha256": "a8fdada1880e6edb325c4898d589cb7506000f01bff24795f84e84f2c866cd90",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/handguard_default/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "6b42f551200d0456f7321001bd0d45a3d1757b5ebf1f6adf82ba7feb2c50c0b6",
+      "after_sha256": "122dc6e8ebfde64a7b6f9d3253c2f387219c64a9fbb700ec407eec4c0cd2b1ed",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1434,13 +1650,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/lower_receiver/component.json",
       "before_sha256": null,
-      "after_sha256": "1b1216fb561f22f79cce8ae11d8c9bc644ef6672e1f0171704c6916cdc7711b5",
+      "after_sha256": "944a04bf1a30a25a562f3a5331a1f3bc07086fad83ea06f91396a2649c0ca1e9",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/lower_receiver/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "c7bb107538b9d0e45348d42823de70059f0dfbbd6d0d8160e34d61f9774b932d",
+      "after_sha256": "8e388ebade55f496dd5c6da003a4938b15772ab7596cb003f34658d3fc864560",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1452,13 +1668,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/magazine_standard/component.json",
       "before_sha256": null,
-      "after_sha256": "48c4f6a8562a05c673c1261df3c8bd024d53484ee91f6a8fe7d6a8bb7f17855c",
+      "after_sha256": "62a237e17e0ed202b3f95c2b58456d25cb75f5ecf8d47e53b54a373bd5f99059",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/magazine_standard/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "f683de859aadbfb43bc04df599a095dc2e567f7dcd4597e226f6b491c0495114",
+      "after_sha256": "2d73560f440b1a81a592e8f27164ba969b31d2fc19e3f1c07f6bfdc7da081621",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1470,13 +1686,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/muzzle_default/component.json",
       "before_sha256": null,
-      "after_sha256": "603bf025605453ab140cff45d8d1c6e07622548a7d8c03b78acbf3300fdee390",
+      "after_sha256": "00b5aaa55b724ba6470e3f83ef50d03a0b5c29bbf8f311f023dd13200b3fa7e0",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/muzzle_default/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "c7c5e0df304fe03728807b7a6e0f41053c1e36d36524ff438524075af9ee0643",
+      "after_sha256": "acd45b87558bce6fb61caa3b114ed7ce1edad456a7a54a37f58c43da33aba078",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1488,13 +1704,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/pistol_grip/component.json",
       "before_sha256": null,
-      "after_sha256": "7b2632bd8faa9cf57a4f7a327ce31679ba706ede66dca58bf6876888334ef0c7",
+      "after_sha256": "3adf347de10bbe2434ed5605b0039de91bb2fffae4767076051057e444d9880a",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/pistol_grip/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "dbb2b5a42f72c8c5a6ce4bf970f8c2e72db59f5adb471a0b697cf819fb7c75d0",
+      "after_sha256": "98cdbeae6f4c8fb4323543d8a55e7d34020dbdb9da1571b4b47b4f92a7381389",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1506,13 +1722,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/rear_sight/component.json",
       "before_sha256": null,
-      "after_sha256": "d9f38bd6095e007d20e49321a889905fbcc8a5697232618fe5b827bbb3bb8ff1",
+      "after_sha256": "71732fff666d6bd0134905a35bf87bc05b1aa8bef18f536b8ec48d39b87495e2",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/rear_sight/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "ea1ea9d3dd92dbdeb22ecd93f21d3ad99d4f3318f976ed241577b7d344e24298",
+      "after_sha256": "7425cdcd43101ee9c5ac5c38ac0e9f70fd5951b11ffbe0a5fda8aae8868bf124",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -2442,13 +2658,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_stock_tactical_ar/component.json",
       "before_sha256": null,
-      "after_sha256": "569ccb14501bfa73e6c7b7cee60841fd2edc7a6f7f85d51fa06110c6d86ba57a",
+      "after_sha256": "5f7c212e325eac8c205cf34df3b79dafa26a1c61598574f681c63250b004e0f8",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_stock_tactical_ar/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "f843cf06e804ad52cb28d0f08b4792c4870363a868c62e135ddc10f94c7daf1e",
+      "after_sha256": "dfb099c3d2fec73b3d5837038fceff004b7f96cc8b84f8762258d341e975fee8",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -2460,13 +2676,13 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/upper_receiver/component.json",
       "before_sha256": null,
-      "after_sha256": "e3d0b802633aa0d61734a4d6ddb8471086ab2bd2c9c786a3625b87d8198502a7",
+      "after_sha256": "00bad487d27f7601afb90fff20531fdc0999968fa036b721e95b34533f12994b",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/upper_receiver/model.bbmodel",
       "before_sha256": null,
-      "after_sha256": "a690bdbf913a2a2b1fea71967724e32fe23bdab9eac505303604edd4e75c1534",
+      "after_sha256": "a893d67b7f064195f12fa8b069992580af23569cc10faa4e73bc97e82f21eb1c",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {

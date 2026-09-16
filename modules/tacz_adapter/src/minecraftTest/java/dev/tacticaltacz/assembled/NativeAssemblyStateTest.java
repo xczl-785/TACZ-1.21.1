@@ -92,6 +92,14 @@ class NativeAssemblyStateTest {
             var pojo=gson.fromJson(AssembledWeapon.resource(resource),com.tacz.guns.client.resource.pojo.model.BedrockModelPOJO.class);
             var model=new NativeAssemblyGunModel(pojo,com.tacz.guns.client.resource.pojo.model.BedrockVersion.NEW,weapon());
             var cubes=model.batchCubeCounts();var first=weapon().preset();model.prepareGeometry(first);var original=model.visibleBatchNames();assertFalse(original.isEmpty());
+            assertTrue(model.usesInlineAttachment(AttachmentType.STOCK,weapon().createPart("tacz_stock_tactical_ar")));
+            assertFalse(model.usesInlineAttachment(AttachmentType.STOCK,weapon().createPart("tacz_stock_moe")));
+            assertFalse(model.usesInlineAttachment(AttachmentType.STOCK,ItemStack.EMPTY));
+            assertTrue(original.stream().anyMatch(n->n.startsWith("assembly_editable_tacz_stock_tactical_ar_")));
+            var noStock=AssemblyGunExchange.plan(weapon().preset(),ItemStack.EMPTY,List.of("buffer","stock")).orElseThrow().held();
+            model.prepareGeometry(noStock);
+            assertFalse(model.visibleBatchNames().stream().anyMatch(n->n.startsWith("assembly_editable_tacz_stock_tactical_ar_")));
+            model.prepareGeometry(first);
             var second=AssemblyGunExchange.plan(weapon().preset(),ItemStack.EMPTY,List.of("upper")).orElseThrow().held();
             model.prepareGeometry(second);assertTrue(model.visibleBatchNames().size()<original.size());
             model.prepareGeometry(first);assertEquals(original,model.visibleBatchNames());assertEquals(cubes,model.batchCubeCounts());

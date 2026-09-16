@@ -1,0 +1,92 @@
+[
+  {
+    "part": "lower_receiver",
+    "cubes": 78,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "upper_receiver",
+    "cubes": 82,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "barrel_mount_collar",
+    "cubes": 18,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "barrel",
+    "cubes": 32,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "gas_block_and_tube",
+    "cubes": 36,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "front_sight",
+    "cubes": 21,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "muzzle_default",
+    "cubes": 28,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "handguard_default",
+    "cubes": 77,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "bolt",
+    "cubes": 26,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "charging_mechanism",
+    "cubes": 15,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "rear_sight",
+    "cubes": 49,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "pistol_grip",
+    "cubes": 11,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "buffer",
+    "cubes": 10,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "tacz_stock_tactical_ar",
+    "cubes": 73,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  },
+  {
+    "part": "magazine_standard",
+    "cubes": 27,
+    "loaded": true,
+    "geometryUVRoundtrip": true
+  }
+]

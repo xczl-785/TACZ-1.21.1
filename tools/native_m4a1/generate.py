@@ -167,3 +167,8 @@ for locale,text in [('zh_cn','使用原生枪械属性；此处不换算为塔�
 # Standard editable components share the Radian workbench and icon producer.
 from build_workbench import build as build_workbench
 build_workbench()
+
+# Editable default components are the final geometry/texture authority. Native rig,
+# non-default candidates and presentation-only bones remain the preserved inputs.
+from editable_import import build as build_editable
+build_editable()

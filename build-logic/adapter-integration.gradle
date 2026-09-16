@@ -81,6 +81,12 @@ tasks.register('verifyAdapterIntegration', Exec) {
 }
 tasks.named('check') { dependsOn 'verifyAdapterIntegration' }
 
+tasks.register('verifyNativeEditable', Exec) {
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', 'tools/native_m4a1/test_editable.py'
+}
+tasks.named('check') { dependsOn 'verifyNativeEditable' }
+
 // Registry-backed JUnit only: loads Mod registrations, never creates a server or world.
 neoForge { unitTest { enable(); testedMod = mods.tacz } }
 sourceSets.test.java.srcDir('modules/tacz_adapter/src/minecraftTest/java')

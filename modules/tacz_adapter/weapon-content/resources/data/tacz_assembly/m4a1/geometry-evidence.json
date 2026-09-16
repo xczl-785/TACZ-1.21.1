@@ -1,8 +1,8 @@
 {
   "nativeRigBones": 140,
-  "highCubes": 938,
-  "lowCubes": 135,
-  "reusedLowCubes": 47,
+  "highCubes": 1011,
+  "lowCubes": 144,
+  "reusedLowCubes": 0,
   "maximumNeutralMatrixError": 8.881784197001252e-16,
   "derivedRegions": [
     {
@@ -467,7 +467,7 @@
       "outputCubes": 2
     }
   ],
-  "lodPolicy": "47 isolated old cubes rebound; mixed regions replaced by largest native surfaces per original bone, at most two; no baked stock; physical attachment uses native renderer",
+  "lodPolicy": "At most two largest current editable cubes per source bone; original non-default variants retained",
   "sourceHashes": {
     "model": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
     "animation": "ce4ee6dcdf16bbc8ce2ce9c3bdc4d56c7cc025040675a4688da74621190924f2",
@@ -475,20 +475,18 @@
     "display": "79952eeb898bf98d7b29e5dc47e8ec9166e0295ffb6982dc7032370413437d3c"
   },
   "textureAtlas": {
-    "high": [
-      0,
-      0,
-      512,
+    "size": [
+      1024,
       512
     ],
-    "oldLow": [
+    "cellSize": 512,
+    "originalCell": [
       0,
-      512,
-      256,
-      256
+      0
     ]
   },
   "limits": [
     "No game, animation playback or FPS measurement; LOD surface reduction requires owner visual acceptance"
-  ]
+  ],
+  "editableParts": 15
 }

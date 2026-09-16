@@ -1,0 +1,1119 @@
+{
+  "schemaVersion": 1,
+  "coordinateSystem": "Blockbench Bedrock editor X-reflection; local centered parts; editorCenter restores assembly coordinates",
+  "parts": [
+    {
+      "definitionId": "lower_receiver",
+      "group": "01 下机匣",
+      "prefix": "01_lower_receiver",
+      "cubes": 78,
+      "texture": "components/lower_receiver/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/lower_receiver/component.json",
+      "sourceCubeIndices": {
+        "gun_body": [
+          0,
+          1
+        ],
+        "lower2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53
+        ],
+        "deco2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "group34": [
+          0,
+          1,
+          2
+        ],
+        "bolt_release": [
+          0,
+          1
+        ],
+        "mag_release": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "selector": [
+          0,
+          1
+        ],
+        "octagon42": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/lower_receiver/model.bbmodel",
+      "editorCenter": [
+        -0.01079,
+        8.0547,
+        -3.64062
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "a90ae24f064d0981311d8a39d0866a99c46b29373861e448d055e666230e7919"
+    },
+    {
+      "definitionId": "upper_receiver",
+      "group": "02 上机匣",
+      "prefix": "02_upper_receiver",
+      "cubes": 82,
+      "texture": "components/upper_receiver/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/upper_receiver/component.json",
+      "sourceCubeIndices": {
+        "upper2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "cap2": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group35": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group31": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "body_rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/upper_receiver/model.bbmodel",
+      "editorCenter": [
+        0.56429,
+        9.71926,
+        -3.7209
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "82324423a57595757d6c3a3ee583651f65dee9372390e28b0239154b329a5848"
+    },
+    {
+      "definitionId": "barrel_mount_collar",
+      "group": "03 枪管连接环",
+      "prefix": "03_barrel_mount_collar",
+      "cubes": 18,
+      "texture": "components/barrel_mount_collar/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/barrel_mount_collar/component.json",
+      "sourceCubeIndices": {
+        "bone38": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "bone61": [
+          0
+        ],
+        "bone62": [
+          0
+        ],
+        "bone70": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/barrel_mount_collar/model.bbmodel",
+      "editorCenter": [
+        -0.0,
+        9.5625,
+        -9.11789
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "a7f20a9fedbd2518ae9e13106c8b781bcb35003d4d0d4c70534f3bd883054b76"
+    },
+    {
+      "definitionId": "barrel",
+      "group": "04 枪管",
+      "prefix": "04_barrel",
+      "cubes": 32,
+      "texture": "components/barrel/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/barrel/component.json",
+      "sourceCubeIndices": {
+        "group2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "octagon4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "octagon5": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon7": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/barrel/model.bbmodel",
+      "editorCenter": [
+        -0.0,
+        9.54688,
+        -15.90625
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "572e38edc490b6744734b674431253c502f37940ede9096a403ae046df16fed4"
+    },
+    {
+      "definitionId": "gas_block_and_tube",
+      "group": "05 导气总成",
+      "prefix": "05_gas_block_and_tube",
+      "cubes": 36,
+      "texture": "components/gas_block_and_tube/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/gas_block_and_tube/component.json",
+      "sourceCubeIndices": {
+        "sight2": [
+          0
+        ],
+        "fore_sight3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/gas_block_and_tube/model.bbmodel",
+      "editorCenter": [
+        0.0,
+        9.57202,
+        -12.63281
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "f536d9c96baa92eef30bbd93a0feb7fbeac95ce8d5b81b64e8f4c8f88caa7af7"
+    },
+    {
+      "definitionId": "front_sight",
+      "group": "06 前准星",
+      "prefix": "06_front_sight",
+      "cubes": 21,
+      "texture": "components/front_sight/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/front_sight/component.json",
+      "sourceCubeIndices": {
+        "fore_sights": [
+          0
+        ],
+        "fore_sight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "bone": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bone2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "sight_illuminated": [
+          0
+        ],
+        "bone9": [
+          0
+        ],
+        "bone4": [
+          0,
+          1
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/front_sight/model.bbmodel",
+      "editorCenter": [
+        1e-05,
+        11.71451,
+        -17.76131
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "195c43bd604e5d5cd1dad4ca2ac4833dcec2b6798b502ef213810577d118b03a"
+    },
+    {
+      "definitionId": "muzzle_default",
+      "group": "07 默认枪口",
+      "prefix": "07_muzzle_default",
+      "cubes": 28,
+      "texture": "components/muzzle_default/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/muzzle_default/component.json",
+      "sourceCubeIndices": {
+        "muzzle_default": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "octagon6": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon8": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/muzzle_default/model.bbmodel",
+      "editorCenter": [
+        0.0,
+        9.54688,
+        -25.57812
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "7a2ed62900f4377fe51d7f431ac40629e529deafb375f810da7bee8b5f5879af"
+    },
+    {
+      "definitionId": "handguard_default",
+      "group": "08 标准护木",
+      "prefix": "08_handguard_default",
+      "cubes": 77,
+      "texture": "components/handguard_default/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/handguard_default/component.json",
+      "sourceCubeIndices": {
+        "rings2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35
+        ],
+        "holes3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "holes2": [
+          0,
+          1,
+          2
+        ],
+        "bone7": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "octagon37": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/handguard_default/model.bbmodel",
+      "editorCenter": [
+        0.0,
+        9.56254,
+        -13.05644
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "11feb43e42e2d960203646877ca90493068a0fc72f7fd06fcd248309fbb33d94"
+    },
+    {
+      "definitionId": "bolt",
+      "group": "09 枪机",
+      "prefix": "09_bolt",
+      "cubes": 26,
+      "texture": "components/bolt/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/bolt/component.json",
+      "sourceCubeIndices": {
+        "bolt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "group26": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/bolt/model.bbmodel",
+      "editorCenter": [
+        -1e-05,
+        9.5625,
+        -6.125
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "4fe78b9ef4c560163abb75c6b315eaa2ae289f656a07d63ae642582a0a9af7d6"
+    },
+    {
+      "definitionId": "charging_mechanism",
+      "group": "10 拉机柄",
+      "prefix": "10_charging_mechanism",
+      "cubes": 15,
+      "texture": "components/charging_mechanism/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/charging_mechanism/component.json",
+      "sourceCubeIndices": {
+        "pull": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/charging_mechanism/model.bbmodel",
+      "editorCenter": [
+        -0.02998,
+        10.71407,
+        -2.60493
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "f826eef7ad92accf78c65c11a7e7051e677f131cfc0060c79c72600359c12eab"
+    },
+    {
+      "definitionId": "rear_sight",
+      "group": "11 后照门",
+      "prefix": "11_rear_sight",
+      "cubes": 49,
+      "texture": "components/rear_sight/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/rear_sight/component.json",
+      "sourceCubeIndices": {
+        "bone3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "octagon26": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon33": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group16": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "octagon34": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/rear_sight/model.bbmodel",
+      "editorCenter": [
+        -0.09375,
+        11.70939,
+        -1.61169
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "4d8e4b69b0b887007bde299bfc62836b49526fa1604d625b83b3c455c92449e8"
+    },
+    {
+      "definitionId": "pistol_grip",
+      "group": "12 手枪握把",
+      "prefix": "12_pistol_grip",
+      "cubes": 11,
+      "texture": "components/pistol_grip/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/pistol_grip/component.json",
+      "sourceCubeIndices": {
+        "grip2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/pistol_grip/model.bbmodel",
+      "editorCenter": [
+        0.0,
+        4.72835,
+        0.17807
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "41cad973185ad684372397a86631f68cac2ac55c3f8251174403ef99993d7fdb"
+    },
+    {
+      "definitionId": "buffer",
+      "group": "13 缓冲管",
+      "prefix": "13_buffer",
+      "cubes": 10,
+      "texture": "components/buffer/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/buffer/component.json",
+      "sourceCubeIndices": {
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/buffer/model.bbmodel",
+      "editorCenter": [
+        -0.0,
+        9.4375,
+        5.45313
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "fb41fae7d1eae65d5842834e9148b69cae939392ccaec5a286a59efb89f4cc17"
+    },
+    {
+      "definitionId": "tacz_stock_tactical_ar",
+      "group": "14 CTR枪托",
+      "prefix": "14_tacz_stock_tactical_ar",
+      "cubes": 73,
+      "texture": "components/tacz_stock_tactical_ar/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/stock_tactical_ar_geo.json",
+      "sourceSha256": "f6bf0d87208f9bf3300934f93164b3d103af2ac0d09a1cc54ae87c592a188109",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_stock_tactical_ar/component.json",
+      "sourceCubeIndices": {
+        "stock": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "group22": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "group23": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "group24": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group25": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "translation": [
+        0,
+        9.525,
+        4.125
+      ],
+      "model": "components/tacz_stock_tactical_ar/model.bbmodel",
+      "editorCenter": [
+        0.0,
+        7.04997,
+        9.0
+      ],
+      "uvSize": [
+        64,
+        64
+      ],
+      "baselineModelSha256": "ce3c739d61773beea81bc5f7d70b328b22f81e3e68e321391e0600b13d877299"
+    },
+    {
+      "definitionId": "magazine_standard",
+      "group": "15 30发弹匣",
+      "prefix": "15_magazine_standard",
+      "cubes": 27,
+      "texture": "components/magazine_standard/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/magazine_standard/component.json",
+      "sourceCubeIndices": {
+        "mag_standard": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/magazine_standard/model.bbmodel",
+      "editorCenter": [
+        0.0,
+        5.0807,
+        -6.71272
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "baselineModelSha256": "33f819ec2782a5fdcdaabd9369de7771aecf397bcff3d9a1259ab3e7283d30f9"
+    }
+  ]
+}
