@@ -26,6 +26,7 @@ public final class AssembledWeapon {
     public final boolean nativeRig, assemblyIcons;
     public final NativeAssemblyProfile nativeProfile;
     public final List<String> magazinePath;
+    public final Set<String> wearableSlots;
     public final List<List<String>> requiredPaths;
     public final FireMode defaultFireMode;
     public final float meshScale;
@@ -44,6 +45,15 @@ public final class AssembledWeapon {
         meshScale=nativeRig?1:config.get("meshScale").getAsFloat();
         if (!Float.isFinite(meshScale)||meshScale<=0) throw new IllegalArgumentException("Invalid mesh scale");
         magazinePath=strings(config.getAsJsonArray("magazinePath"));
+        var equipment=new LinkedHashSet<String>();
+        if(config.has("wearableSlots")){
+            for(var slot:config.getAsJsonArray("wearableSlots")){
+                String id=slot.getAsString();
+                if(ResourceLocation.tryParse(id)==null||!equipment.add(id))throw new IllegalArgumentException("Invalid/duplicate wearable slot: "+id);
+            }
+            if(equipment.isEmpty())throw new IllegalArgumentException("No wearable slots: "+PROFILE);
+        }else equipment.addAll(List.of("tactical_inventory:primary_weapon_1","tactical_inventory:primary_weapon_2"));
+        wearableSlots=Collections.unmodifiableSet(equipment);
         var paths=new ArrayList<List<String>>(); for (var path:config.getAsJsonArray("requiredPaths")) paths.add(strings(path.getAsJsonArray()));requiredPaths=List.copyOf(paths);
         defaultFireMode=FireMode.valueOf(config.get("defaultFireMode").getAsString().toUpperCase(Locale.ROOT));
         String base="data/"+GUN.getNamespace()+"/"+resourceDirectory+"/";

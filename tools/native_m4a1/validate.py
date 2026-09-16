@@ -14,6 +14,7 @@ def validate(resources=DEFAULT):
  assert set(external.values())<=catalog.keys()
  assert config['assemblyIcons'] is True
  assert read(base/'native-profile.json')==read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/native-profile.json')
+ assert read(base/'native-visual-rules.json')==read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/native-visual-rules.json')
  editable=read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json')['parts']
  edited={p['definitionId'] for p in editable}
  inline={v for variants in read(base/'inline_attachments.json').values() for v in variants.values()}

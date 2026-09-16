@@ -1,0 +1,92 @@
+{
+  "assembly_glock_frame_deco": {
+    "definition": "glock_frame",
+    "variant": "always",
+    "sourceBone": "deco"
+  },
+  "assembly_glock_frame_group3": {
+    "definition": "glock_frame",
+    "variant": "always",
+    "sourceBone": "group3"
+  },
+  "assembly_glock_frame_grip_lower": {
+    "definition": "glock_frame",
+    "variant": "always",
+    "sourceBone": "grip_lower"
+  },
+  "assembly_glock_frame_octagon2": {
+    "definition": "glock_frame",
+    "variant": "always",
+    "sourceBone": "octagon2"
+  },
+  "assembly_glock_frame_trigger": {
+    "definition": "glock_frame",
+    "variant": "always",
+    "sourceBone": "trigger"
+  },
+  "assembly_glock_slide_slide_base": {
+    "definition": "glock_slide",
+    "variant": "always",
+    "sourceBone": "slide_base"
+  },
+  "assembly_glock_slide_group": {
+    "definition": "glock_slide",
+    "variant": "always",
+    "sourceBone": "group"
+  },
+  "assembly_glock_slide_latter": {
+    "definition": "glock_slide",
+    "variant": "always",
+    "sourceBone": "latter"
+  },
+  "assembly_glock_barrel_barrel": {
+    "definition": "glock_barrel",
+    "variant": "always",
+    "sourceBone": "barrel"
+  },
+  "assembly_glock_barrel_barrel2": {
+    "definition": "glock_barrel",
+    "variant": "always",
+    "sourceBone": "barrel2"
+  },
+  "assembly_glock_front_sight_iron_sight": {
+    "definition": "glock_front_sight",
+    "variant": "always",
+    "sourceBone": "iron_sight"
+  },
+  "assembly_glock_front_sight_sight_illuminated": {
+    "definition": "glock_front_sight",
+    "variant": "always",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_glock_rear_sight_iron_sight": {
+    "definition": "glock_rear_sight",
+    "variant": "always",
+    "sourceBone": "iron_sight"
+  },
+  "assembly_glock_rear_sight_sight_illuminated": {
+    "definition": "glock_rear_sight",
+    "variant": "always",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_glock_magazine_standard_mag": {
+    "definition": "glock_magazine_standard",
+    "variant": "always",
+    "sourceBone": "mag"
+  },
+  "assembly_tacz_glock_17_light_extended_mag_1_extd_mag": {
+    "definition": "tacz_glock_17_light_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "extd_mag"
+  },
+  "assembly_tacz_glock_17_light_extended_mag_2_extd_mag3": {
+    "definition": "tacz_glock_17_light_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "extd_mag3"
+  },
+  "assembly_tacz_glock_17_light_extended_mag_3_extd_mag4": {
+    "definition": "tacz_glock_17_light_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "extd_mag4"
+  }
+}

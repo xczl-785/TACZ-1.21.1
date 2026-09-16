@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "f52c9ec8-ed4d-5e5c-b3ba-fd9854994a1d",
+      "definitionId": "glock_frame"
+    },
+    {
+      "instanceId": "d5c9a3f6-ce2c-553a-aa95-8652b7022641",
+      "definitionId": "glock_slide",
+      "parentId": "f52c9ec8-ed4d-5e5c-b3ba-fd9854994a1d",
+      "slot": "slide"
+    },
+    {
+      "instanceId": "20c8f4cc-bef4-54e8-beb5-f4c65cd47c8a",
+      "definitionId": "glock_front_sight",
+      "parentId": "d5c9a3f6-ce2c-553a-aa95-8652b7022641",
+      "slot": "front_sight"
+    },
+    {
+      "instanceId": "4a68d94e-c00b-5116-9e68-a54987ea6aac",
+      "definitionId": "glock_rear_sight",
+      "parentId": "d5c9a3f6-ce2c-553a-aa95-8652b7022641",
+      "slot": "rear_sight"
+    },
+    {
+      "instanceId": "9806ec23-c273-5ad1-933a-858b83207491",
+      "definitionId": "glock_barrel",
+      "parentId": "f52c9ec8-ed4d-5e5c-b3ba-fd9854994a1d",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "95fcb69d-15c0-5f55-b819-5c604f7535e6",
+      "definitionId": "glock_magazine_standard",
+      "parentId": "f52c9ec8-ed4d-5e5c-b3ba-fd9854994a1d",
+      "slot": "magazine"
+    }
+  ]
+}

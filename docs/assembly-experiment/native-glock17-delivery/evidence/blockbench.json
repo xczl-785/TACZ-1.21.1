@@ -1,0 +1,105 @@
+{
+  "results": [
+    {
+      "definitionId": "glock_frame",
+      "cubes": 112,
+      "meshes": 0
+    },
+    {
+      "definitionId": "glock_slide",
+      "cubes": 48,
+      "meshes": 0
+    },
+    {
+      "definitionId": "glock_barrel",
+      "cubes": 13,
+      "meshes": 0
+    },
+    {
+      "definitionId": "glock_front_sight",
+      "cubes": 3,
+      "meshes": 0
+    },
+    {
+      "definitionId": "glock_rear_sight",
+      "cubes": 8,
+      "meshes": 0
+    },
+    {
+      "definitionId": "glock_magazine_standard",
+      "cubes": 12,
+      "meshes": 0
+    }
+  ],
+  "restoredProject": {
+    "uuid": "950c532d-bb10-a2d7-eb9e-497bc81a903c",
+    "name": "02-M4A1默认配件拆解"
+  },
+  "schemaVersion": 1,
+  "status": "passed",
+  "roundtrip": [
+    {
+      "definitionId": "glock_frame",
+      "cubes": 112,
+      "bonesPreserved": 57,
+      "maxPositionError": 0,
+      "sourceGeometryEqual": true,
+      "uvEqual": true,
+      "sourceSha256": "f4db87c7a85f3bff9b93ca8d6b426827443f63e712607c2cd48c03108f072b4e"
+    },
+    {
+      "definitionId": "glock_slide",
+      "cubes": 48,
+      "bonesPreserved": 57,
+      "maxPositionError": 0,
+      "sourceGeometryEqual": true,
+      "uvEqual": true,
+      "sourceSha256": "44f85632ea8e35914986f3def6ce465269cf2650c91c0efa3310b6e92ccb9bec"
+    },
+    {
+      "definitionId": "glock_barrel",
+      "cubes": 13,
+      "bonesPreserved": 57,
+      "maxPositionError": 0,
+      "sourceGeometryEqual": true,
+      "uvEqual": true,
+      "sourceSha256": "e81027b48a0f39126dd93308c40a140b6bff1b4b0e532b4936a9cb878bfa75df"
+    },
+    {
+      "definitionId": "glock_front_sight",
+      "cubes": 3,
+      "bonesPreserved": 57,
+      "maxPositionError": 0,
+      "sourceGeometryEqual": true,
+      "uvEqual": true,
+      "sourceSha256": "c5c993c397c38df64d69a6739506ba8bf419890ca08defd0b26ef5e4d789f930"
+    },
+    {
+      "definitionId": "glock_rear_sight",
+      "cubes": 8,
+      "bonesPreserved": 57,
+      "maxPositionError": 0,
+      "sourceGeometryEqual": true,
+      "uvEqual": true,
+      "sourceSha256": "cf2e1e93b49414a642fdc7a2bacdf7467ac852a3b60e9a0458a25d86ab360ac7"
+    },
+    {
+      "definitionId": "glock_magazine_standard",
+      "cubes": 12,
+      "bonesPreserved": 57,
+      "maxPositionError": 0,
+      "sourceGeometryEqual": true,
+      "uvEqual": true,
+      "sourceSha256": "dec11cd490a5ca78b2323ff0bcd10d0af3baf5a04c172c485a47cffa97a73704"
+    }
+  ],
+  "totalCubes": 196,
+  "originalProjectRestored": true,
+  "sourceFilesOverwritten": false,
+  "nativeCubeOwnershipAudit": "6 definitions match independent /tmp/glock-native-audit.json sourceCubeIndices",
+  "limitations": [
+    "No Minecraft client execution or screenshot acceptance",
+    "LOD currently retains full high geometry and native rig, not a reduced-poly optimization",
+    "Ammo/extra-magazine existence gating requires runtime tests; editor roundtrip does not validate gameplay"
+  ]
+}

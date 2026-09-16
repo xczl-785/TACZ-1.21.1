@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "id": "glock_frame",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "slide",
+          "required": false,
+          "allowedParts": [
+            "glock_slide"
+          ]
+        },
+        {
+          "id": "barrel",
+          "required": false,
+          "allowedParts": [
+            "glock_barrel"
+          ]
+        },
+        {
+          "id": "magazine",
+          "required": false,
+          "allowedParts": [
+            "glock_magazine_standard",
+            "tacz_glock_17_light_extended_mag_1",
+            "tacz_glock_17_light_extended_mag_2",
+            "tacz_glock_17_light_extended_mag_3"
+          ]
+        },
+        {
+          "id": "laser",
+          "required": false,
+          "allowedParts": [
+            "tacz_laser_compact",
+            "tacz_laser_nightstick"
+          ]
+        }
+      ],
+      "conflictingParts": [],
+      "weapon": {
+        "recoilVertical": 0,
+        "recoilHorizontal": 0,
+        "centerOfImpact": 0,
+        "sightingRange": 0
+      }
+    },
+    {
+      "id": "glock_slide",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "front_sight",
+          "required": false,
+          "allowedParts": [
+            "glock_front_sight"
+          ]
+        },
+        {
+          "id": "rear_sight",
+          "required": false,
+          "allowedParts": [
+            "glock_rear_sight"
+          ]
+        },
+        {
+          "id": "scope",
+          "required": false,
+          "allowedParts": [
+            "tacz_sight_acro_pistol",
+            "tacz_sight_deltapoint_pistol",
+            "tacz_sight_fastfire_pistol",
+            "tacz_sight_pk06_pistol",
+            "tacz_sight_rmr_dot",
+            "tacz_sight_sro_dot"
+          ]
+        }
+      ],
+      "conflictingParts": []
+    },
+    {
+      "id": "glock_barrel",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "muzzle",
+          "required": false,
+          "allowedParts": [
+            "tacz_muzzle_silencer_mirage",
+            "tacz_muzzle_silencer_ptilopsis",
+            "tacz_muzzle_silencer_wraith"
+          ]
+        }
+      ],
+      "conflictingParts": []
+    },
+    {
+      "id": "glock_front_sight",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "glock_rear_sight",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "glock_magazine_standard",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_laser_compact",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_laser_nightstick",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_glock_17_light_extended_mag_1",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_glock_17_light_extended_mag_2",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_glock_17_light_extended_mag_3",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_mirage",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_ptilopsis",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_wraith",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_acro_pistol",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_deltapoint_pistol",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_fastfire_pistol",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_pk06_pistol",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_rmr_dot",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_sro_dot",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    }
+  ]
+}

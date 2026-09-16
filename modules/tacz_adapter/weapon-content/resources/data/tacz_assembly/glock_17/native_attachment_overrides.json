@@ -1,0 +1,26 @@
+{
+  "tacz:laser_compact": {
+    "model": "tacz_assembly:attachments/tacz_laser_compact",
+    "texture": "tacz_assembly:attachments/tacz_laser_compact",
+    "lodModel": "tacz_assembly:attachments/lod/tacz_laser_compact",
+    "lodTexture": "tacz_assembly:attachments/tacz_laser_compact"
+  },
+  "tacz:laser_nightstick": {
+    "model": "tacz_assembly:attachments/tacz_laser_nightstick",
+    "texture": "tacz_assembly:attachments/tacz_laser_nightstick",
+    "lodModel": "tacz_assembly:attachments/lod/tacz_laser_nightstick",
+    "lodTexture": "tacz_assembly:attachments/tacz_laser_nightstick"
+  },
+  "tacz:muzzle_silencer_mirage": {
+    "model": "tacz_assembly:attachments/muzzle_silencer_mirage",
+    "texture": "tacz_assembly:attachments/muzzle_silencer_mirage"
+  },
+  "tacz:muzzle_silencer_ptilopsis": {
+    "model": "tacz_assembly:attachments/muzzle_silencer_ptilopsis",
+    "texture": "tacz_assembly:attachments/muzzle_silencer_ptilopsis"
+  },
+  "tacz:muzzle_silencer_wraith": {
+    "model": "tacz_assembly:attachments/muzzle_silencer_wraith",
+    "texture": "tacz_assembly:attachments/muzzle_silencer_wraith"
+  }
+}

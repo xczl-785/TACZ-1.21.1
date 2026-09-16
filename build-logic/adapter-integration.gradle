@@ -113,3 +113,10 @@ tasks.register('verifyNativeAttachmentLibrary', Exec) {
     commandLine 'python3', '-m', 'unittest', 'discover', '-s', 'tools/native_attachments', '-p', 'test_*.py'
 }
 tasks.named('check') { dependsOn 'verifyNativeAttachmentLibrary' }
+
+// Config-driven native gun production, geometry ownership and mount transforms.
+tasks.register('verifyNativeGunPipeline', Exec) {
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', '-m', 'unittest', 'discover', '-s', 'tools/native_guns', '-p', 'test_*.py'
+}
+tasks.named('check') { dependsOn 'verifyNativeGunPipeline' }

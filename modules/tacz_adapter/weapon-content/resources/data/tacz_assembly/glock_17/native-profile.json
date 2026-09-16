@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "attachmentPaths": {
+    "SCOPE": [
+      "slide",
+      "scope"
+    ],
+    "MUZZLE": [
+      "barrel",
+      "muzzle"
+    ],
+    "LASER": [
+      "laser"
+    ],
+    "EXTENDED_MAG": [
+      "magazine"
+    ]
+  },
+  "attachmentOverrides": {},
+  "sightAlternatives": [
+    [
+      [
+        "slide",
+        "scope"
+      ]
+    ],
+    [
+      [
+        "slide",
+        "front_sight"
+      ],
+      [
+        "slide",
+        "rear_sight"
+      ]
+    ]
+  ]
+}

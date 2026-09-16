@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "glock_frame",
+      "group": "glock_frame",
+      "prefix": "native_attachment_glock_frame",
+      "cubes": 112,
+      "sourceCubeIndices": {
+        "deco": [
+          0,
+          1,
+          2
+        ],
+        "group3": [
+          0,
+          1,
+          2
+        ],
+        "grip_lower": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "trigger": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.00675,
+        2.365,
+        -0.19188
+      ],
+      "uvSize": [
+        1024,
+        1024
+      ],
+      "model": "components/glock_frame/model.bbmodel",
+      "texture": "components/glock_frame/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/glock_17_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/glock_17.png",
+      "sourceSha256": "7b7089ab31b30d6b27908e8e0087e81bf93fbb1b0e00b38b2487985806d19ff1",
+      "sourceTextureSha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "f4db87c7a85f3bff9b93ca8d6b426827443f63e712607c2cd48c03108f072b4e"
+    },
+    {
+      "definitionId": "glock_slide",
+      "group": "glock_slide",
+      "prefix": "native_attachment_glock_slide",
+      "cubes": 48,
+      "sourceCubeIndices": {
+        "slide_base": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "latter": [
+          0,
+          1,
+          2
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.00725,
+        5.125,
+        -0.51101
+      ],
+      "uvSize": [
+        1024,
+        1024
+      ],
+      "model": "components/glock_slide/model.bbmodel",
+      "texture": "components/glock_slide/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/glock_17_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/glock_17.png",
+      "sourceSha256": "7b7089ab31b30d6b27908e8e0087e81bf93fbb1b0e00b38b2487985806d19ff1",
+      "sourceTextureSha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "44f85632ea8e35914986f3def6ce465269cf2650c91c0efa3310b6e92ccb9bec"
+    },
+    {
+      "definitionId": "glock_barrel",
+      "group": "glock_barrel",
+      "prefix": "native_attachment_glock_barrel",
+      "cubes": 13,
+      "sourceCubeIndices": {
+        "barrel": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "barrel2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.00725,
+        5.26554,
+        -2.276
+      ],
+      "uvSize": [
+        1024,
+        1024
+      ],
+      "model": "components/glock_barrel/model.bbmodel",
+      "texture": "components/glock_barrel/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/glock_17_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/glock_17.png",
+      "sourceSha256": "7b7089ab31b30d6b27908e8e0087e81bf93fbb1b0e00b38b2487985806d19ff1",
+      "sourceTextureSha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "e81027b48a0f39126dd93308c40a140b6bff1b4b0e532b4936a9cb878bfa75df"
+    },
+    {
+      "definitionId": "glock_front_sight",
+      "group": "glock_front_sight",
+      "prefix": "native_attachment_glock_front_sight",
+      "cubes": 3,
+      "sourceCubeIndices": {
+        "iron_sight": [
+          5,
+          6
+        ],
+        "sight_illuminated": [
+          1
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.00725,
+        5.84316,
+        -4.53407
+      ],
+      "uvSize": [
+        1024,
+        1024
+      ],
+      "model": "components/glock_front_sight/model.bbmodel",
+      "texture": "components/glock_front_sight/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/glock_17_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/glock_17.png",
+      "sourceSha256": "7b7089ab31b30d6b27908e8e0087e81bf93fbb1b0e00b38b2487985806d19ff1",
+      "sourceTextureSha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "c5c993c397c38df64d69a6739506ba8bf419890ca08defd0b26ef5e4d789f930"
+    },
+    {
+      "definitionId": "glock_rear_sight",
+      "group": "glock_rear_sight",
+      "prefix": "native_attachment_glock_rear_sight",
+      "cubes": 8,
+      "sourceCubeIndices": {
+        "iron_sight": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "sight_illuminated": [
+          0,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.00686,
+        5.87704,
+        3.3995
+      ],
+      "uvSize": [
+        1024,
+        1024
+      ],
+      "model": "components/glock_rear_sight/model.bbmodel",
+      "texture": "components/glock_rear_sight/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/glock_17_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/glock_17.png",
+      "sourceSha256": "7b7089ab31b30d6b27908e8e0087e81bf93fbb1b0e00b38b2487985806d19ff1",
+      "sourceTextureSha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "cf2e1e93b49414a642fdc7a2bacdf7467ac852a3b60e9a0458a25d86ab360ac7"
+    },
+    {
+      "definitionId": "glock_magazine_standard",
+      "group": "glock_magazine_standard",
+      "prefix": "native_attachment_glock_magazine_standard",
+      "cubes": 12,
+      "sourceCubeIndices": {
+        "mag": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.00695,
+        2.17374,
+        2.3991
+      ],
+      "uvSize": [
+        1024,
+        1024
+      ],
+      "model": "components/glock_magazine_standard/model.bbmodel",
+      "texture": "components/glock_magazine_standard/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/glock_17_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/glock_17.png",
+      "sourceSha256": "7b7089ab31b30d6b27908e8e0087e81bf93fbb1b0e00b38b2487985806d19ff1",
+      "sourceTextureSha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "dec11cd490a5ca78b2323ff0bcd10d0af3baf5a04c172c485a47cffa97a73704"
+    }
+  ]
+}

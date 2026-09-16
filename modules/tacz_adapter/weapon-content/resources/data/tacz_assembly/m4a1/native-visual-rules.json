@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "sight",
+    "sight_folded",
+    "handguard_default",
+    "handguard_tactical",
+    "muzzle_default",
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "extend_magazine"
+  ],
+  "definitionRequirements": {
+    "rear_sight": {
+      "SCOPE": false
+    }
+  },
+  "variantRequirements": {
+    "upright": {
+      "SCOPE": false
+    },
+    "folded": {
+      "SCOPE": true
+    }
+  }
+}

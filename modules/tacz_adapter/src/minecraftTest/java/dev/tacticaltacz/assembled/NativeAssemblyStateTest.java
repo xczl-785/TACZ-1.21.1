@@ -15,11 +15,13 @@ class NativeAssemblyStateTest {
     @BeforeAll static void boot() throws Exception {
         Bootstrap.bootStrap();
         var definitions=new ArrayList<AssemblyDefinition>();
-        var json=JsonParser.parseString(AssembledWeapon.resource("data/tacz_assembly/assembly/m4a1.json")).getAsJsonObject();
+        for(var weapon:AssembledWeapons.all())if(weapon.nativeRig){
+        var json=JsonParser.parseString(AssembledWeapon.resource("data/"+weapon.GUN.getNamespace()+"/assembly/"+weapon.GUN.getPath()+".json")).getAsJsonObject();
         for(var entry:json.getAsJsonArray("items")){
             var o=entry.getAsJsonObject();var slots=new ArrayList<AssemblyDefinition.Slot>();
             for(var s:o.getAsJsonArray("slots")){var slot=s.getAsJsonObject();var ids=new HashSet<String>();for(var id:slot.getAsJsonArray("compatibleItems"))ids.add(id.getAsString());slots.add(new AssemblyDefinition.Slot(slot.get("id").getAsString(),ids,Set.of(),Set.of(),false));}
             definitions.add(new AssemblyDefinition(o.get("itemId").getAsString(),slots));
+        }
         }
         AssemblyDefinitions.replace(definitions);
     }

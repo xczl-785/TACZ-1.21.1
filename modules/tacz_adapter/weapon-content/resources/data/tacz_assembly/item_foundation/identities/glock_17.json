@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tacz_assembly:glock_17",
+      "tags": [
+        "item_foundation:type/weapon/firearm/pistol"
+      ]
+    },
+    {
+      "item": "tacz_assembly:glock_slide",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_assembly:glock_barrel",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "tacz_assembly:glock_front_sight",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_assembly:glock_rear_sight",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_assembly:glock_magazine_standard",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    }
+  ]
+}

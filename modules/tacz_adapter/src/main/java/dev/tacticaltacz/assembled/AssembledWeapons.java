@@ -40,7 +40,7 @@ public final class AssembledWeapons {
             WeaponCapabilities.register(weapon.PROFILE,new WeaponCapabilities.Profile(weapon.PROFILE,weapon.CATALOG,weapon.ROOT,weapon.DEFINITIONS,weapon.requiredPaths,weapon::definition));
             var item=BuiltInRegistries.ITEM.get(weapon.GUN);var provider=ResourceLocation.fromNamespaceAndPath(weapon.GUN.getNamespace(),weapon.GUN.getPath()+"_firearm");
             dev.itemfoundation.api.identity.ItemIdentities.server().register(item,provider,s->Set.of(ResourceLocation.parse("item_foundation:type/weapon/firearm")));
-            dev.itemfoundation.api.equipment.WearableQualifications.register(item,provider,Set.of("tactical_inventory:primary_weapon_1","tactical_inventory:primary_weapon_2"),s->Set.of("tactical_inventory:primary_weapon_1","tactical_inventory:primary_weapon_2"));
+            dev.itemfoundation.api.equipment.WearableQualifications.register(item,provider,weapon.wearableSlots,s->weapon.wearableSlots);
         }
     });}
     private AssembledWeapons(){}

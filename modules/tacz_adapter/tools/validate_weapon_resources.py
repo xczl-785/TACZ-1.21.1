@@ -52,9 +52,14 @@ def validate(resources=RESOURCES):
             if not {s['id'] for s in catalog[node['definitionId']]['slots'] if s['required']}.issubset(occupied):
                 raise ValueError('Preset lacks required components')
         if weapon.get('nativeRig'):
-            assert gun == 'tacz_assembly:m4a1', 'Unreviewed native assembly'
             import runpy
-            runpy.run_path(str(MODULE.parents[1]/'tools/native_m4a1/validate.py'))['validate'](RESOURCES)
+            if weapon['developmentSource'] == 'native_m4a1':
+                runpy.run_path(str(MODULE.parents[1]/'tools/native_m4a1/validate.py'))['validate'](RESOURCES)
+            else:
+                runpy.run_path(str(MODULE.parents[1]/'tools/native_guns/validate.py'))['validate'](RESOURCES, weapon)
+            slots = weapon.get('wearableSlots', ['tactical_inventory:primary_weapon_1', 'tactical_inventory:primary_weapon_2'])
+            assert slots and len(slots) == len(set(slots)), 'Invalid equipment qualifications'
+            assert read(data/'item_foundation/items'/f'{name}.json')['wearable_slots'] == slots, 'Equipment config and physical definition disagree'
             external=read(data/directory/'native_attachments.json')
             for item in mapping.values():
                 if item not in external:

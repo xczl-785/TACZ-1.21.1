@@ -6,7 +6,7 @@
     {
       "path": "build-logic/adapter-integration.gradle",
       "before_sha256": "1056e98c61ffafec0b014c6474e74d70852b46ef71a4d64eddb78ea18e8c508e",
-      "after_sha256": "9768a87fd0a6a9d0de6ef5cc6a2a934b9d9ca6e5dcd4a45abf396ae8daf518d5",
+      "after_sha256": "d626d3c32f6a8f95dbbffb496c2fa330ae07db3118272d0a64ae5edc8bfb0e8d",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -24,13 +24,13 @@
     {
       "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssembledWeapon.java",
       "before_sha256": "4a4c92185fc49a4faa01bdabe487f049db620c35e918de3c54f01b75632a1345",
-      "after_sha256": "2bd4e40d0fae64ce167dbf268b5a58d48b3cbb3f817d549d9c0ee3d56c8a43af",
+      "after_sha256": "bc9ca6875a402dd574e59fb88ed0e9893cca7df28b37a628933245ceed202c3c",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssembledWeapons.java",
       "before_sha256": "1c2bb34b2d4bece7719d934b2c0b9bd7f5ede75ab1c039733700934101c6ac47",
-      "after_sha256": "4446d1eb592b5a96186469d82c98ab2ca5c162185a03b7c1ea6b33f9af312c41",
+      "after_sha256": "591bde9bd42d2974efe354dc8242786cff4857b91ae60baa6106c981ed339b54",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -82,9 +82,15 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/NativeAssemblyBoneGate.java",
+      "before_sha256": null,
+      "after_sha256": "96114920ec0a0f51c48395488b2856142a7ecfdd39a46f6d1b155f94c539575c",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/NativeAssemblyGunModel.java",
       "before_sha256": null,
-      "after_sha256": "101e51d626e6fe0d1e2116927f8e14bd9fc2a2d712e5a120688b77a8cc089f58",
+      "after_sha256": "c52334616ff21797a97d5dee1854bcc534ac7dba8acfd16a4db4d9c31497a876",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -109,6 +115,12 @@
       "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/NativeAssemblyView.java",
       "before_sha256": null,
       "after_sha256": "9c36c2418c2356c1eb9c16ada5f94c3b98401ec8a008e2ea8cd0fb73fa5876ab",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/NativeAssemblyVisualRules.java",
+      "before_sha256": null,
+      "after_sha256": "44ce0b3c85a6c4e1588aaea1b5f46fb5951d54e0809d781b3190325797eb679a",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -142,6 +154,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/NativeAssemblyBoneGateTest.java",
+      "before_sha256": null,
+      "after_sha256": "aea53087a4248152c0e0947fda022be10025cb9ba7a2a6868c22e966f2080841",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/NativeAssemblyIconsFallbackTest.java",
       "before_sha256": null,
       "after_sha256": "9b7ba10b3c5bad41b3a333800c3223d9babb767faae906656ef3b3a8a51c5339",
@@ -150,7 +168,13 @@
     {
       "path": "modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/NativeAssemblyStateTest.java",
       "before_sha256": null,
-      "after_sha256": "6467d1f192398f9b6e18d5626a5a1c470efc7bc326d2963d9e6061f3e8dfa511",
+      "after_sha256": "6dbaa100c0d4a8e8cad8323fa23c1200740815c35a925bfb392b1d651740a9a5",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/NativeGlockStateTest.java",
+      "before_sha256": null,
+      "after_sha256": "0040dcf736565530db40ee004e50040e785c6b8e4a4b979d1eb183c66b38bc55",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -178,6 +202,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/src/test/java/dev/tacticaltacz/assembled/NativeAssemblyVisualRulesTest.java",
+      "before_sha256": null,
+      "after_sha256": "f5ed4bbce8595189bca76ac55a87ba543048f8afd577403da5e0b33603e338b3",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/tacz_adapter/src/test/java/dev/tacticaltacz/assembled/NativeIconFailuresTest.java",
       "before_sha256": null,
       "after_sha256": "6ff354f52e766c630cac468c599cd94772711b5f6280d9389ac043d8fd70f694",
@@ -198,7 +228,13 @@
     {
       "path": "modules/tacz_adapter/tools/validate_weapon_resources.py",
       "before_sha256": "748215ce9b2929123ba4230c52192d722ff779ad82a897155c13686bd5b90df5",
-      "after_sha256": "7deb0e5071b462ddce79e1ed956dd26e92c4dc59c2cc97944bee09ee3379b05c",
+      "after_sha256": "404cfa9b76375f892bc95c9e71d4dcee5ef7b1002ec54392d6090118c995fbb1",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/display/guns/glock_17.json",
+      "before_sha256": null,
+      "after_sha256": "2cd0698bfa0973bc05b68177ae8d261d444655674ad91cb89b58f5da00c6a90f",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -412,6 +448,18 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/geo_models/gun/glock_17.json",
+      "before_sha256": null,
+      "after_sha256": "11b77a23ff1df65b2134bae62171ff903cddcc3326cbea5900bb57a23a05e8a3",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/geo_models/gun/lod/glock_17.json",
+      "before_sha256": null,
+      "after_sha256": "11b77a23ff1df65b2134bae62171ff903cddcc3326cbea5900bb57a23a05e8a3",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/geo_models/gun/lod/m4a1.json",
       "before_sha256": null,
       "after_sha256": "9a3414fcaee61bb56b0cfed2e2837a158e3c7c4d8d1ee5a905db7282561d5110",
@@ -532,15 +580,33 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/glock_17/icon_geometry.json",
+      "before_sha256": null,
+      "after_sha256": "337f25300b9deeb809f11c9a03ebc3f7bbb9b449013694c6fa062b6a47eee2cb",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/glock_17/icon_library.json",
+      "before_sha256": null,
+      "after_sha256": "160212ea54c2a821fc62e8e57863e8daf35b3f904517bc5cc7509ed7412c083d",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/glock_17/icon_materials.json",
+      "before_sha256": null,
+      "after_sha256": "9d56b90bd47effd335604303b6ee572375638c29706313ef0a364ed845b624b8",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/lang/en_us.json",
       "before_sha256": null,
-      "after_sha256": "ef8ab2c2bc3aa499aed8fcb8b413eab0344be9038737273aa4eec791600a691d",
+      "after_sha256": "e8c776d36f04378218f07e1a09a5d93adf97033629e7779fc7c2255b76d3eb4f",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/lang/zh_cn.json",
       "before_sha256": null,
-      "after_sha256": "1832babea2d77a591853069c3275674622083e362f724b6bdf7fedfc81e468d6",
+      "after_sha256": "4b47b0aa37af85839fee3d3ebaf5bc1afadc03636a901bf4bd1268592deb54fa",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -559,6 +625,42 @@
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/m4a1/icon_materials.json",
       "before_sha256": null,
       "after_sha256": "623891d00ef8a5a15cc92383b62e2a9006e2670d91e6a445ebcad3e4eabe8930",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/models/item/glock_17.json",
+      "before_sha256": null,
+      "after_sha256": "0e7a7b34652549715935d6356c37906ee78e1cefb268fc8ba4fa185a88e2bb37",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/models/item/glock_barrel.json",
+      "before_sha256": null,
+      "after_sha256": "8f59a4aac4d2117b1b3ec53e9c8fb63c0fa80a59eadcb3d8ecaab07e1c8f7d75",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/models/item/glock_front_sight.json",
+      "before_sha256": null,
+      "after_sha256": "299292ae8672228f23f0314e2421c6bdff35a3bca91f5912773510a76c6d65ca",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/models/item/glock_magazine_standard.json",
+      "before_sha256": null,
+      "after_sha256": "e396918e4a22422713bc29b37790c1d777af25f3e5327113b326a66c7afe4b8c",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/models/item/glock_rear_sight.json",
+      "before_sha256": null,
+      "after_sha256": "7efce0354535df817698bd2734ba1a9db5e2415e0efb3171f5cd835381e7f13e",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/models/item/glock_slide.json",
+      "before_sha256": null,
+      "after_sha256": "4004cfde9337c4b3c579b4c90be37d1277892658b1c2ce5f4f00e4be317b73ab",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -889,6 +991,12 @@
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/gun/editable_m4a1.png",
       "before_sha256": null,
       "after_sha256": "d74544f0e27f1b2069ccec30f439904edcb66d58a2ed12c1bbce353181b49b83",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/gun/glock_17.png",
+      "before_sha256": null,
+      "after_sha256": "508f579fc3b748faefec170ab53d5b1cc78ebeaf1687fd7fe6e515b4784a0068",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1261,6 +1369,126 @@
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/gas_block_and_tube.png",
       "before_sha256": null,
       "after_sha256": "8753354ca4aaeeb0ea7ba96c3cc366e27968d32d38d2e705da761bacfec10479",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/glock_barrel.png",
+      "before_sha256": null,
+      "after_sha256": "7411d80d8a325479d2e0dd1a7f74bee0920042248afe5fdf500421417ffb7c1d",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/glock_frame.png",
+      "before_sha256": null,
+      "after_sha256": "a5225614dff556ab9a352ec9043d7bc45bba7b01c04501f30688944a63477571",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/glock_front_sight.png",
+      "before_sha256": null,
+      "after_sha256": "216db60561f05d8c1f5e8d12d31b7f3b68f6bf8a265f4537a97499c9fbc22fd6",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/glock_magazine_standard.png",
+      "before_sha256": null,
+      "after_sha256": "88b82a4411e70e054e4743a3923b343e74b3f5cdf320eefdb7b0a5b81a599feb",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/glock_rear_sight.png",
+      "before_sha256": null,
+      "after_sha256": "bab79def5242226a52ff539ceb4ef5afd774d979d302548073ac0b58073ab3c0",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/glock_slide.png",
+      "before_sha256": null,
+      "after_sha256": "386715ef27538dc5cf68cdc658503a0a17ed91396a4d6d9fa38de650cb38f945",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_glock_17_light_extended_mag_1.png",
+      "before_sha256": null,
+      "after_sha256": "932c32ecabdb6489af66656a7c873edab4af143f8b766b5b18505b72262aa9aa",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_glock_17_light_extended_mag_2.png",
+      "before_sha256": null,
+      "after_sha256": "932c32ecabdb6489af66656a7c873edab4af143f8b766b5b18505b72262aa9aa",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_glock_17_light_extended_mag_3.png",
+      "before_sha256": null,
+      "after_sha256": "932c32ecabdb6489af66656a7c873edab4af143f8b766b5b18505b72262aa9aa",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_laser_compact.png",
+      "before_sha256": null,
+      "after_sha256": "a33a5c1c3d1b8bbda6e7c0bc63941a70cfcc22e7a24aa3648db66da1cc4c5721",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_laser_nightstick.png",
+      "before_sha256": null,
+      "after_sha256": "a74f62ef7cdf44e4f2ba7fe528b96e2ca36dcbf67fa9595c3f804b8c4d1abe36",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_muzzle_silencer_mirage.png",
+      "before_sha256": null,
+      "after_sha256": "250f23885283dea9f61f80f1a2e9f32fdb4e68806bf23b7a0c143e4a86dd1452",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_muzzle_silencer_ptilopsis.png",
+      "before_sha256": null,
+      "after_sha256": "432d2ac4abb8ad6638adf530a60c07d234e5d1403d76cc6f75aa7b43b85a0f87",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_muzzle_silencer_wraith.png",
+      "before_sha256": null,
+      "after_sha256": "43c6b02e6e40bdb304c790bf25dd4dded9b0f178b27fdab35ce46c9c69b980be",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_sight_acro_pistol.png",
+      "before_sha256": null,
+      "after_sha256": "27327153b73381c1918fc6e471735ef066b4004bc4d31de2f627e10afb973a04",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_sight_deltapoint_pistol.png",
+      "before_sha256": null,
+      "after_sha256": "6d5ef4ea1577c8c673b189a47054c5a6529f04c70154f2af522d0d839cc30f68",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_sight_fastfire_pistol.png",
+      "before_sha256": null,
+      "after_sha256": "7e780c16915da508cc8a9593854798a74281b6a50e71e74e98b3c114eaa6b4e8",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_sight_pk06_pistol.png",
+      "before_sha256": null,
+      "after_sha256": "174acaf186aad5f7f3b6ceef17dcf0e1a8a0ced90e2f155142fb6de7c23f3231",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_sight_rmr_dot.png",
+      "before_sha256": null,
+      "after_sha256": "702a79820b72314eb7470e0cda73809074e0caa19a22e543fe530732c50faffd",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/item/glock_17/tacz_sight_sro_dot.png",
+      "before_sha256": null,
+      "after_sha256": "b74516fc4296ebf827ec4fb17988cefff060b584035a6ad715331764c3dc39d3",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -1666,6 +1894,126 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/glock_barrel.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/glock_frame.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/glock_front_sight.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/glock_magazine_standard.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/glock_rear_sight.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/glock_slide.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_glock_17_light_extended_mag_1.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_glock_17_light_extended_mag_2.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_glock_17_light_extended_mag_3.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_laser_compact.png",
+      "before_sha256": null,
+      "after_sha256": "48131dcee1263f7313f65b935cc81670707ebf31a417a8bceea9d1ef87869094",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_laser_nightstick.png",
+      "before_sha256": null,
+      "after_sha256": "f7a1079a5b052de629d73edf5de4355b9c5a3cde644e8ff76bd247a23d20c679",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_muzzle_silencer_mirage.png",
+      "before_sha256": null,
+      "after_sha256": "0898164b07f630d1944d08435fd90755ce624b96e62a576fca166d2ea22ffe5e",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_muzzle_silencer_ptilopsis.png",
+      "before_sha256": null,
+      "after_sha256": "6345cbb456c140ae31e5783b04b6cf0cfbd4e4b7fef107bc7a9a87509787e1c5",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_muzzle_silencer_wraith.png",
+      "before_sha256": null,
+      "after_sha256": "1e52e8ed0e673bf117f6df2b5f35c079c3cd3242f9d8da5aec09bb5926cf9880",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_sight_acro_pistol.png",
+      "before_sha256": null,
+      "after_sha256": "7004666ece401ee622e572f66e140b5ccff361c42a8a92eea62f18c9d56ec24b",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_sight_deltapoint_pistol.png",
+      "before_sha256": null,
+      "after_sha256": "ac2bacd5c819ce4456584f6f7f5ae8f6e384f2518625922187040792e370c26f",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_sight_fastfire_pistol.png",
+      "before_sha256": null,
+      "after_sha256": "e812fa9deb0d0434efdf13dfcf18a62d97790e5366cf6c6ba3d259db96a332b6",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_sight_pk06_pistol.png",
+      "before_sha256": null,
+      "after_sha256": "d275fe34f682ccaacdeaad1cc7f2d05eec3a8d732244d3c8d0b7849dedd08d6e",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_sight_rmr_dot.png",
+      "before_sha256": null,
+      "after_sha256": "df4e5af92be29cc9b4c9162faefd2b1e7e0cb6aa04f59e517a5f144858b9e5e9",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/glock_17/tacz_sight_sro_dot.png",
+      "before_sha256": null,
+      "after_sha256": "11981cc23c04245ecfddc84b26cb329ab1ea06b7873524fe47e97c9b43803299",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/textures/parts/handguard_default.png",
       "before_sha256": null,
       "after_sha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
@@ -2028,7 +2376,13 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tactical_tacz_adapter/assembled_weapons.json",
       "before_sha256": "faaa833c50bc4d8f5bf4a1a32419cd643ef42d489e9470bebbc0392aac8cf991",
-      "after_sha256": "02c92e081c3c115fa668a6dc92e1ac420cf74fd3757356d7e3e8bd31b3ab8f03",
+      "after_sha256": "8ce16aa31b8eb657bf739a2c4ce058f163293396b1d732606e024c409da57ae9",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/assembly/glock_17.json",
+      "before_sha256": null,
+      "after_sha256": "712d6d64cbb76ede393f60976f2df6c3c782401a26efc821c1ffa2a653cc997d",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -2038,9 +2392,111 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/data/guns/glock_17.json",
+      "before_sha256": null,
+      "after_sha256": "9a0dcf2f3796f6b2447266a63744faab10d26b434c0ebfb249a14bdec486390d",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/data/guns/m4a1.json",
       "before_sha256": null,
       "after_sha256": "68acbf9bdd41d9257ad982cda5d6901308ca3ddd0a9dc2a72b0a45a308cb9f28",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/batches.json",
+      "before_sha256": null,
+      "after_sha256": "49b93da9d471a7b639e633b4603012deaec23ef8c711269711ca9861327b1885",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/catalog.json",
+      "before_sha256": null,
+      "after_sha256": "ca391ea64d0c8de0435a750d42fec651fc927181d0687a3c5749319b7e4a1a62",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/geometry-evidence.json",
+      "before_sha256": null,
+      "after_sha256": "ab941cbef4aa1fe461b09588b073bdd05f41950b467822f834f53b221d41c918",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/inline_attachments.json",
+      "before_sha256": null,
+      "after_sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/library.json",
+      "before_sha256": null,
+      "after_sha256": "160212ea54c2a821fc62e8e57863e8daf35b3f904517bc5cc7509ed7412c083d",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/mapping.json",
+      "before_sha256": null,
+      "after_sha256": "5b240e44920a36081ba3e8cacb874f85ca46e310b440c987368b28d861d8300f",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/materials.json",
+      "before_sha256": null,
+      "after_sha256": "9d56b90bd47effd335604303b6ee572375638c29706313ef0a364ed845b624b8",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/native-profile.json",
+      "before_sha256": null,
+      "after_sha256": "f8e7cf5fb7bb31dfa84c462dc1b8fa9338f3f99eb2cb4040a8d7b0056552556a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/native-visual-rules.json",
+      "before_sha256": null,
+      "after_sha256": "6156563468d6858ea89d9a76da8c9f4558cdce9f6892bb828d7fa11ecf0d9223",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/native_attachment_overrides.json",
+      "before_sha256": null,
+      "after_sha256": "3f7ffb60ce4f8abbd9df1b09d4550d532ce7e2fb3b4fdd56bf91c7a2c94e1707",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/native_attachments.json",
+      "before_sha256": null,
+      "after_sha256": "d5774c1d6a91a6c31083f46ee3b2c153c707ee2c26b0b42e22a16324e2e213cd",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/preview.json",
+      "before_sha256": null,
+      "after_sha256": "337f25300b9deeb809f11c9a03ebc3f7bbb9b449013694c6fa062b6a47eee2cb",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/scene.json",
+      "before_sha256": null,
+      "after_sha256": "5e1e455577027a16ce8116f7549d7fdfa9ea1c18d167a8f6d83f212ef36aded2",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/weapon.json",
+      "before_sha256": null,
+      "after_sha256": "a2e0cf03699412951d8c1e8f650251ee20a170c077afe92b720c55d699c09879",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/workbench-anchors.json",
+      "before_sha256": null,
+      "after_sha256": "bd3ec43f5667c5743ff8552a52d93b9a9b70d472e878f13a221cb45620f4b53d",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/index/guns/glock_17.json",
+      "before_sha256": null,
+      "after_sha256": "7dbd3452ef9d7c2bdcaef65119a1d3a83849d73f57d357ec18b5f51eb3658020",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -2050,9 +2506,51 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/item_foundation/identities/glock_17.json",
+      "before_sha256": null,
+      "after_sha256": "c8b6168fc19c33c8b57388e2c17ab47111b6fcff17d0856582a7d801f4dc7788",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/item_foundation/identities/m4a1.json",
       "before_sha256": null,
       "after_sha256": "05afdfe355ef402dbd02f2ba9be3603caf3e7a92d0f0ff92b230ba3eb42c9f39",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/item_foundation/items/glock_17.json",
+      "before_sha256": null,
+      "after_sha256": "b04ce27a7a9cfe280d20935a60f8b5efd88f621a6b2e617528c6e5193958d92f",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/item_foundation/items/glock_barrel.json",
+      "before_sha256": null,
+      "after_sha256": "62a1fe24d0350da119a00c18e8ad614c095bf62ed334bf667fa5c9436fd23118",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/item_foundation/items/glock_front_sight.json",
+      "before_sha256": null,
+      "after_sha256": "acc491a499c0ccdf57fbe59d386d05e27a6a83f5c2e5730e44a031095f69c2c8",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/item_foundation/items/glock_magazine_standard.json",
+      "before_sha256": null,
+      "after_sha256": "0ffd35e53974a0d2ae7bee01b1d75497b537ec9f0f2f24c6871a96467eae8e0f",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/item_foundation/items/glock_rear_sight.json",
+      "before_sha256": null,
+      "after_sha256": "f8c8b8a22eb5261cf2998f0c65797fa189bdfa8361f25581e859a5d08fd48b66",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/item_foundation/items/glock_slide.json",
+      "before_sha256": null,
+      "after_sha256": "75e4d362398072bc0ee5dac1e5740d967fc554a39793400383adbe50a9f63a40",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -2194,6 +2692,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/native-visual-rules.json",
+      "before_sha256": null,
+      "after_sha256": "ac29174c69b09871b12d4741306c7cb32b2a3a959da3d0c721ac980df945170e",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/native_attachment_overrides.json",
       "before_sha256": null,
       "after_sha256": "fc23f678550144c122f9c8b0f7b4d88b371b445f266906de7443d488d5221d8f",
@@ -2245,6 +2749,12 @@
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/native_attachments/standalone.json",
       "before_sha256": null,
       "after_sha256": "694035f41e930c875684b096a8aa55d3a8631b09cd381c24f500f6109e787aa7",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/tacz_tags/attachments/allow_attachments/glock_17.json",
+      "before_sha256": null,
+      "after_sha256": "52a71a6a6becfcdd69d03b473a743987cc6b74d9017a4406f343aa15d86915fd",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -2821,6 +3331,108 @@
       "path": "modules/tacz_adapter/weapon-sources/native_attachments/magazine_variants/manifest.json",
       "before_sha256": null,
       "after_sha256": "405b1aaa4b8fc265c3cf71cd53047b2ccf1302de81c3201bddd89439dbd446c0",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/README.md",
+      "before_sha256": null,
+      "after_sha256": "7bdb91220dbae52e3bcd6ac4258da32ea511d73b844dc90cc8a9967dbeb4773a",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/build-report.json",
+      "before_sha256": null,
+      "after_sha256": "ab941cbef4aa1fe461b09588b073bdd05f41950b467822f834f53b221d41c918",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_barrel/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "e81027b48a0f39126dd93308c40a140b6bff1b4b0e532b4936a9cb878bfa75df",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_barrel/texture.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_frame/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "f4db87c7a85f3bff9b93ca8d6b426827443f63e712607c2cd48c03108f072b4e",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_frame/texture.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_front_sight/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "c5c993c397c38df64d69a6739506ba8bf419890ca08defd0b26ef5e4d789f930",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_front_sight/texture.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_magazine_standard/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "dec11cd490a5ca78b2323ff0bcd10d0af3baf5a04c172c485a47cffa97a73704",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_magazine_standard/texture.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_rear_sight/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "cf2e1e93b49414a642fdc7a2bacdf7467ac852a3b60e9a0458a25d86ab360ac7",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_rear_sight/texture.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_slide/model.bbmodel",
+      "before_sha256": null,
+      "after_sha256": "44f85632ea8e35914986f3def6ce465269cf2650c91c0efa3310b6e92ccb9bec",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_slide/texture.png",
+      "before_sha256": null,
+      "after_sha256": "79bf67a4cb69eed86a3a7c7754d1d0f28c3ca8d5ce15480beeb818cd87fd60ad",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/manifest.json",
+      "before_sha256": null,
+      "after_sha256": "14d57011c9caa3a2476fd50653ed6729306c8f9deb438684747f2cb16cb8cdd0",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/production.json",
+      "before_sha256": null,
+      "after_sha256": "c57af090af049c8dff16dbabf5655236632dc31d27806d1f0be5b98b72a76e85",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/source-audit.json",
+      "before_sha256": null,
+      "after_sha256": "1546a3b853ac61f2ed56ef46babead2e083b088d7ad11097d2d005c7141aaa94",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -3499,6 +4111,12 @@
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/native-profile.json",
       "before_sha256": null,
       "after_sha256": "65e5f1d232852d736232382f35c9cc91fd35e2f37282c797efd89dd627089b43",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/native-visual-rules.json",
+      "before_sha256": null,
+      "after_sha256": "ac29174c69b09871b12d4741306c7cb32b2a3a959da3d0c721ac980df945170e",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {

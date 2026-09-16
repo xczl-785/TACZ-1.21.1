@@ -52,6 +52,7 @@ node('lower_receiver','');assert len(nodes)==15
 write(BASE/'scene.json',{'schemaVersion':1,'nodes':nodes})
 write(BASE/'weapon.json',{'schemaVersion':1,'gunId':f'{NS}:{GUN}','rootDefinition':'lower_receiver','resourceDirectory':'m4a1','modelType':'tacz_native_assembly','caliber':'556x45','magazinePath':['magazine'],'requiredPaths':critical,'defaultFireMode':'auto','feed':'detachable_magazine','nativeRig':True,'assemblyIcons':True,'developmentSource':'native_m4a1'})
 write(BASE/'native-profile.json',read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/native-profile.json'))
+write(BASE/'native-visual-rules.json',read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/native-visual-rules.json'))
 # Resource references intentionally inherit native actions and server feed times byte-for-byte semantically.
 data=read(SRC/'data/tacz/data/guns/m4a1_data.json');write(OUT/f'data/{NS}/data/guns/m4a1.json',data)
 index=read(SRC/'data/tacz/index/guns/m4a1.json');index.update(name=f'gun.{NS}.m4a1',display=f'{NS}:m4a1',data=f'{NS}:m4a1',item_type=f'{NS}:m4a1',sort=102);write(OUT/f'data/{NS}/index/guns/m4a1.json',index)
@@ -143,7 +144,9 @@ write(BASE/'geometry-evidence.json',{'nativeRigBones':len(hb),'highCubes':sum(le
 for locale in ['en_us','zh_cn']:
  labels={f'item.{NS}.{id.split(":")[1]}':name.replace('_',' ').capitalize() for name,id in mapping.items() if not id.startswith('tacz:')}
  labels[f'gun.{NS}.m4a1']='M4A1 · Native Assembly' if locale=='en_us' else 'M4A1 · 原生实体组装'
- write(OUT/f'assets/{NS}/lang/{locale}.json',labels)
+ language_path=OUT/f'assets/{NS}/lang/{locale}.json'
+ # Shared namespace: rebuilding this gun must retain other guns' translations.
+ write(language_path,(read(language_path) if language_path.exists() else {}) | labels)
 print('Generated native M4A1:',len(nodes),'default physical nodes;',len(attachments),'native candidates;',reused,'rebound LOD cubes; error',max(errors))
 labels={'lower_receiver':'下机匣','upper_receiver':'上机匣','barrel_mount_collar':'枪管连接环','barrel':'枪管','gas_block_and_tube':'导气总成','front_sight':'前瞄具','rear_sight':'后瞄具','bolt':'枪机总成','charging_mechanism':'拉机柄','handguard_default':'标准护木','handguard_tactical':'导轨护木','pistol_grip':'手枪握把','buffer':'缓冲管','magazine_standard':'标准30发弹匣','muzzle_default':'默认枪口装置'}
 p=OUT/f'assets/{NS}/lang/zh_cn.json';data=read(p)

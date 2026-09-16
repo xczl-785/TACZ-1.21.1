@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "mag_extended_3"
+  ],
+  "definitionRequirements": {},
+  "variantRequirements": {},
+  "boneRequirements": {
+    "bullet_in_mag": [
+      "glock_magazine_standard",
+      "tacz_glock_17_light_extended_mag_1",
+      "tacz_glock_17_light_extended_mag_2",
+      "tacz_glock_17_light_extended_mag_3"
+    ],
+    "additional_magazine": [
+      "glock_magazine_standard",
+      "tacz_glock_17_light_extended_mag_1",
+      "tacz_glock_17_light_extended_mag_2",
+      "tacz_glock_17_light_extended_mag_3"
+    ],
+    "bullet": [
+      "glock_magazine_standard",
+      "tacz_glock_17_light_extended_mag_1",
+      "tacz_glock_17_light_extended_mag_2",
+      "tacz_glock_17_light_extended_mag_3"
+    ],
+    "bullet_in_barrel": [
+      "glock_barrel"
+    ]
+  }
+}

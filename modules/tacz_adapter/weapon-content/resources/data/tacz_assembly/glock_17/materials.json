@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "defaultMaterial": "glock_frame",
+  "parts": {
+    "glock_frame": {
+      "defaultMaterial": "glock_frame",
+      "regions": {}
+    },
+    "glock_slide": {
+      "defaultMaterial": "glock_slide",
+      "regions": {}
+    },
+    "glock_barrel": {
+      "defaultMaterial": "glock_barrel",
+      "regions": {}
+    },
+    "glock_front_sight": {
+      "defaultMaterial": "glock_front_sight",
+      "regions": {}
+    },
+    "glock_rear_sight": {
+      "defaultMaterial": "glock_rear_sight",
+      "regions": {}
+    },
+    "glock_magazine_standard": {
+      "defaultMaterial": "glock_magazine_standard",
+      "regions": {}
+    },
+    "tacz_laser_compact": {
+      "defaultMaterial": "tacz_laser_compact",
+      "regions": {}
+    },
+    "tacz_laser_nightstick": {
+      "defaultMaterial": "tacz_laser_nightstick",
+      "regions": {}
+    },
+    "tacz_glock_17_light_extended_mag_1": {
+      "defaultMaterial": "tacz_glock_17_light_extended_mag_1",
+      "regions": {}
+    },
+    "tacz_glock_17_light_extended_mag_2": {
+      "defaultMaterial": "tacz_glock_17_light_extended_mag_2",
+      "regions": {}
+    },
+    "tacz_glock_17_light_extended_mag_3": {
+      "defaultMaterial": "tacz_glock_17_light_extended_mag_3",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_mirage": {
+      "defaultMaterial": "tacz_muzzle_silencer_mirage",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_ptilopsis": {
+      "defaultMaterial": "tacz_muzzle_silencer_ptilopsis",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_wraith": {
+      "defaultMaterial": "tacz_muzzle_silencer_wraith",
+      "regions": {}
+    },
+    "tacz_sight_acro_pistol": {
+      "defaultMaterial": "tacz_sight_acro_pistol",
+      "regions": {}
+    },
+    "tacz_sight_deltapoint_pistol": {
+      "defaultMaterial": "tacz_sight_deltapoint_pistol",
+      "regions": {}
+    },
+    "tacz_sight_fastfire_pistol": {
+      "defaultMaterial": "tacz_sight_fastfire_pistol",
+      "regions": {}
+    },
+    "tacz_sight_pk06_pistol": {
+      "defaultMaterial": "tacz_sight_pk06_pistol",
+      "regions": {}
+    },
+    "tacz_sight_rmr_dot": {
+      "defaultMaterial": "tacz_sight_rmr_dot",
+      "regions": {}
+    },
+    "tacz_sight_sro_dot": {
+      "defaultMaterial": "tacz_sight_sro_dot",
+      "regions": {}
+    }
+  }
+}

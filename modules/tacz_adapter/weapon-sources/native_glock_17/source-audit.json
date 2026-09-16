@@ -1,0 +1,814 @@
+{
+  "gunId": "tacz:glock_17",
+  "high": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/glock_17_geo.json",
+    "bones": 57,
+    "cubes": 264,
+    "uvSize": [
+      1024,
+      1024
+    ]
+  },
+  "low": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/lod/glock_17.json",
+    "bones": 12,
+    "cubes": 20,
+    "uvSize": [
+      64,
+      64
+    ],
+    "warning": "Different topology and names, no magazine variants or scope/muzzle anchors. Do not map by high-model bone names."
+  },
+  "parts": [
+    {
+      "definitionId": "frame",
+      "sourceCubeIndices": {
+        "deco": [
+          0,
+          1,
+          2
+        ],
+        "group3": [
+          0,
+          1,
+          2
+        ],
+        "grip_lower": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "trigger": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "cubes": 112,
+      "motionOwnership": {
+        "deco": [
+          "root",
+          "g17"
+        ],
+        "group3": [
+          "root",
+          "g17",
+          "group3"
+        ],
+        "grip_lower": [
+          "root",
+          "g17"
+        ],
+        "octagon2": [
+          "root",
+          "g17"
+        ],
+        "trigger": [
+          "root",
+          "g17"
+        ]
+      }
+    },
+    {
+      "definitionId": "slide",
+      "sourceCubeIndices": {
+        "slide_base": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "latter": [
+          0,
+          1,
+          2
+        ]
+      },
+      "cubes": 48,
+      "motionOwnership": {
+        "slide_base": [
+          "root",
+          "g17",
+          "slide"
+        ],
+        "group": [
+          "root",
+          "g17",
+          "slide"
+        ],
+        "latter": [
+          "root",
+          "g17",
+          "slide"
+        ]
+      }
+    },
+    {
+      "definitionId": "barrel",
+      "sourceCubeIndices": {
+        "barrel": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "barrel2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "cubes": 13,
+      "motionOwnership": {
+        "barrel": [
+          "root",
+          "g17"
+        ],
+        "barrel2": [
+          "root",
+          "g17",
+          "barrel2"
+        ]
+      }
+    },
+    {
+      "definitionId": "front_sight",
+      "sourceCubeIndices": {
+        "iron_sight": [
+          5,
+          6
+        ],
+        "sight_illuminated": [
+          1
+        ]
+      },
+      "cubes": 3,
+      "motionOwnership": {
+        "iron_sight": [
+          "root",
+          "g17",
+          "slide"
+        ],
+        "sight_illuminated": [
+          "root",
+          "g17",
+          "slide"
+        ]
+      }
+    },
+    {
+      "definitionId": "rear_sight",
+      "sourceCubeIndices": {
+        "iron_sight": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "sight_illuminated": [
+          0,
+          2,
+          3
+        ]
+      },
+      "cubes": 8,
+      "motionOwnership": {
+        "iron_sight": [
+          "root",
+          "g17",
+          "slide"
+        ],
+        "sight_illuminated": [
+          "root",
+          "g17",
+          "slide"
+        ]
+      }
+    },
+    {
+      "definitionId": "magazine_standard",
+      "sourceCubeIndices": {
+        "mag": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "cubes": 12,
+      "motionOwnership": {
+        "mag": [
+          "root",
+          "mag_and_left",
+          "mag_and_bullet"
+        ]
+      }
+    },
+    {
+      "definitionId": "tacz_light_extended_mag_1",
+      "sourceCubeIndices": {
+        "extd_mag": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "cubes": 16,
+      "motionOwnership": {
+        "extd_mag": [
+          "root",
+          "mag_and_left",
+          "mag_and_bullet"
+        ]
+      }
+    },
+    {
+      "definitionId": "tacz_light_extended_mag_2",
+      "sourceCubeIndices": {
+        "extd_mag3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "cubes": 16,
+      "motionOwnership": {
+        "extd_mag3": [
+          "root",
+          "mag_and_left",
+          "mag_and_bullet"
+        ]
+      }
+    },
+    {
+      "definitionId": "tacz_light_extended_mag_3",
+      "sourceCubeIndices": {
+        "extd_mag4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "cubes": 16,
+      "motionOwnership": {
+        "extd_mag4": [
+          "root",
+          "mag_and_left",
+          "mag_and_bullet"
+        ]
+      }
+    }
+  ],
+  "presentationOnly": {
+    "lefthand_pos": [
+      0
+    ],
+    "righthand_pos": [
+      0
+    ],
+    "bullet": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "bullet_in_mag": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "bullet_in_barrel": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  "ownershipCoverage": {
+    "highCubes": 264,
+    "physicalCandidateCubes": 244,
+    "presentationCubes": 20,
+    "duplicates": 0,
+    "unassigned": 0
+  },
+  "recommendedTree": {
+    "frame": {
+      "slide": {
+        "front_sight": {},
+        "rear_sight": {},
+        "scope": {}
+      },
+      "barrel": {
+        "muzzle": {}
+      },
+      "magazine": {},
+      "laser": {}
+    }
+  },
+  "requiredForComplete": [
+    "slide",
+    "barrel",
+    "magazine"
+  ],
+  "aimAlternatives": [
+    [
+      "slide",
+      "scope"
+    ],
+    [
+      "slide",
+      "front_sight",
+      "AND",
+      "slide",
+      "rear_sight"
+    ]
+  ],
+  "anchors": {
+    "muzzle_pos": {
+      "name": "muzzle_pos",
+      "parent": "barrel2",
+      "pivot": [
+        0.00625,
+        5.35,
+        -5.05
+      ]
+    },
+    "scope_pos": {
+      "name": "scope_pos",
+      "parent": "slide",
+      "pivot": [
+        0,
+        5.8,
+        3.225
+      ]
+    },
+    "laser_pos": {
+      "name": "laser_pos",
+      "parent": "g17",
+      "pivot": [
+        0,
+        4.0625,
+        -3.8125
+      ],
+      "rotation": [
+        0,
+        0,
+        -180
+      ]
+    },
+    "iron_view": {
+      "name": "iron_view",
+      "pivot": [
+        0,
+        6,
+        14.75
+      ]
+    },
+    "muzzle_flash": {
+      "name": "muzzle_flash",
+      "parent": "barrel2",
+      "pivot": [
+        0.00625,
+        5.35,
+        -7.05
+      ]
+    },
+    "shell": {
+      "name": "shell",
+      "parent": "g17",
+      "pivot": [
+        -0.01875,
+        5.375,
+        1.35
+      ],
+      "rotation": [
+        0,
+        15,
+        0
+      ]
+    },
+    "additional_magazine": {
+      "name": "additional_magazine",
+      "parent": "root",
+      "pivot": [
+        0.00625,
+        1.375,
+        2.3
+      ]
+    },
+    "magazine": {
+      "name": "magazine",
+      "parent": "mag_and_bullet",
+      "pivot": [
+        0.00625,
+        1.375,
+        2.3
+      ]
+    }
+  },
+  "attachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i",
+    "tacz:laser_compact",
+    "tacz:laser_nightstick",
+    "tacz:light_extended_mag_1",
+    "tacz:light_extended_mag_2",
+    "tacz:light_extended_mag_3",
+    "tacz:muzzle_silencer_mirage",
+    "tacz:muzzle_silencer_ptilopsis",
+    "tacz:muzzle_silencer_wraith",
+    "tacz:sight_acro_pistol",
+    "tacz:sight_deltapoint_pistol",
+    "tacz:sight_fastfire_pistol",
+    "tacz:sight_pk06_pistol",
+    "tacz:sight_rmr_dot",
+    "tacz:sight_sro_dot"
+  ],
+  "tagSources": [
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/glock_17.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/light_extended_mag.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_laser.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_muzzle.json",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_sight.json"
+  ],
+  "animations": {
+    "static_idle": [
+      "root",
+      "lefthand",
+      "righthand",
+      "constraint",
+      "mag_and_bullet",
+      "camera"
+    ],
+    "static_bolt_caught": [
+      "root",
+      "group3",
+      "barrel2",
+      "bullet_in_barrel",
+      "slide",
+      "bullet"
+    ],
+    "draw": [
+      "root",
+      "lefthand",
+      "righthand",
+      "camera"
+    ],
+    "put_away": [
+      "root",
+      "lefthand",
+      "righthand",
+      "camera"
+    ],
+    "reload_tactical": [
+      "righthand",
+      "lefthand",
+      "additional_magazine",
+      "mag_and_bullet",
+      "g17",
+      "bullet",
+      "constraint",
+      "camera"
+    ],
+    "reload_tactical_xmag": [
+      "root",
+      "additional_magazine",
+      "mag_and_left",
+      "lefthand",
+      "mag_and_bullet",
+      "righthand",
+      "constraint",
+      "camera"
+    ],
+    "reload_empty": [
+      "righthand",
+      "lefthand",
+      "additional_magazine",
+      "mag_and_bullet",
+      "g17",
+      "group3",
+      "bullet_in_barrel",
+      "slide",
+      "bullet",
+      "constraint",
+      "camera"
+    ],
+    "reload_empty_xmag": [
+      "root",
+      "lefthand",
+      "righthand",
+      "constraint",
+      "additional_magazine",
+      "bullet2",
+      "mag_and_bullet",
+      "slide",
+      "camera",
+      "bullet",
+      "mag_and_left",
+      "bullet_in_mag2"
+    ],
+    "inspect": [
+      "righthand",
+      "lefthand",
+      "additional_magazine",
+      "mag_and_bullet",
+      "g17",
+      "bullet",
+      "barrel2",
+      "bullet_in_barrel",
+      "slide",
+      "camera"
+    ],
+    "inspect_empty": [
+      "camera",
+      "righthand",
+      "lefthand",
+      "additional_magazine",
+      "mag_and_bullet",
+      "g17",
+      "bullet_in_mag",
+      "bullet",
+      "group3",
+      "barrel2",
+      "bullet_in_barrel",
+      "slide"
+    ],
+    "shoot": [
+      "root",
+      "barrel2",
+      "bullet_in_barrel",
+      "slide",
+      "camera",
+      "constraint"
+    ]
+  },
+  "animationRefsWithoutBones": [
+    "bullet2",
+    "bullet_in_mag2"
+  ],
+  "reload": {
+    "capacity": [
+      17,
+      20,
+      25,
+      30
+    ],
+    "script": "tacz:xmag_reload_logic",
+    "stateMachine": "tacz:glock_17_state_machine",
+    "extendedLevels": [
+      1,
+      2,
+      3
+    ],
+    "extendedAnimations": [
+      "reload_tactical_xmag",
+      "reload_empty_xmag"
+    ],
+    "additionalMagazine": "native renderer re-renders magazine children at additional_magazine; preserve selected geometry and ammo gates"
+  },
+  "sights": {
+    "front": {
+      "iron_sight": [
+        5,
+        6
+      ],
+      "sight_illuminated": [
+        1
+      ]
+    },
+    "rear": {
+      "iron_sight": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "sight_illuminated": [
+        0,
+        2,
+        3
+      ]
+    },
+    "positionEvidence": "Original native -Z muzzle: front z about -4.8..-4.268, rear z about +3.255..+3.544. Ownership derived from transformed cube bounds, not bone names.",
+    "nativeOpticBehavior": "Glock has iron_sight, not engine-reserved sight/sight_folded; native engine does not auto-hide/fold these. Preserve neutral behavior unless explicitly changing policy.",
+    "illumination": "_illuminated suffix triggers full-bright in BedrockModel; new leaves must retain illuminated semantics."
+  },
+  "constraints": [
+    "Keep trigger/deco/group3 in frame for initial slice; do not label each decorative geometry as real detachable part without product need.",
+    "barrel and barrel2 share physical barrel definition but retain distinct bone parents/animations; barrel2 moves on shoot and bolt-caught.",
+    "latter is single-face textured slide decal geometry; retain with slide, not a standalone item.",
+    "Keep camera, iron_view, hand origins, bullet nodes, shell, muzzle_flash and animation constraint nodes; they are presentation/function nodes.",
+    "laser_pos has Z rotation -180 degrees; avoid identity-mount assumption.",
+    "scope_pos belongs to slide, muzzle_pos to animated barrel2.",
+    "Do not animate low original topology as though it is same rig; derive lowered geometry retaining high rig or explicitly map low owners."
+  ]
+}

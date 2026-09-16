@@ -11,7 +11,7 @@ preset_paths={
  'modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyWorkbenchLifecycle.java',
  'modules/tacz_adapter/src/test/java/dev/tacticaltacz/assembled/AssemblyWorkbenchLifecycleTest.java',
 }
-new_prefixes=['modules/tacz_adapter/weapon-sources/native_attachments/','modules/tacz_adapter/weapon-sources/native_m4a1/','modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/','modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/','modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/Native','modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyProposalSessions.java','modules/tacz_adapter/src/test/java/dev/tacticaltacz/assembled/Native','modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/Native']
+new_prefixes=['modules/tacz_adapter/weapon-sources/native_glock_17/','modules/tacz_adapter/weapon-sources/native_attachments/','modules/tacz_adapter/weapon-sources/native_m4a1/','modules/tacz_adapter/weapon-content/resources/assets/tacz_assembly/','modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/','modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/Native','modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyProposalSessions.java','modules/tacz_adapter/src/test/java/dev/tacticaltacz/assembled/Native','modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/Native']
 paths=set(subprocess.check_output(['git','diff','--name-only','-z',BASE,'--','src','modules','build-logic'],cwd=R).decode().strip('\0').split('\0'))
 paths.update(subprocess.check_output(['git','ls-files','--others','--exclude-standard','-z','--','src','modules','build-logic'],cwd=R).decode().strip('\0').split('\0'))
 rows=[]

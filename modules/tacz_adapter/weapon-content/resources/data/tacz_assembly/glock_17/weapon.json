@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_assembly:glock_17",
+  "rootDefinition": "glock_frame",
+  "resourceDirectory": "glock_17",
+  "modelType": "tacz_native_glock_17_assembly",
+  "caliber": "9x19",
+  "magazinePath": [
+    "magazine"
+  ],
+  "requiredPaths": [
+    [
+      "slide"
+    ],
+    [
+      "barrel"
+    ]
+  ],
+  "defaultFireMode": "semi",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "developmentSource": "native_glock_17",
+  "wearableSlots": [
+    "tactical_inventory:sidearm"
+  ]
+}
