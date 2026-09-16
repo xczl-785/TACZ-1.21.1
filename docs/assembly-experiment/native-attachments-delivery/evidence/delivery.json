@@ -1,0 +1,66 @@
+{
+  "date": "2026-09-16",
+  "sourceCommit": "415712352ea1c50a0a1936dd0352ea2bb0c2b6e4",
+  "newmodCommit": "8d30402fd995059b2dcf307139b2f76a24123f99",
+  "version": "1.1.8-hotfix-r6-newmod.41571235",
+  "scope": "Prepare remaining 15 retained native non-optic attachment definitions as isolated editable assets; no gun assembly expansion",
+  "attachmentDefinitions": 15,
+  "standaloneMuzzles": 6,
+  "magazineLevelDefinitions": 9,
+  "magazineVariants": 18,
+  "magazineGuns": [
+    "ai_awp",
+    "glock_17",
+    "m700",
+    "m870",
+    "ump45",
+    "uzi"
+  ],
+  "editableModels": 24,
+  "editableCubes": 446,
+  "standaloneCubes": 215,
+  "magazineCubes": 231,
+  "deliveryState": {
+    "editableSourcesProduced": true,
+    "runtimeAssetsPackaged": true,
+    "activatedInAdditionalAssembledGuns": false,
+    "additionalGunAssemblyIntegration": "deferred to per-gun batches",
+    "userAcceptance": "not requested as in-game new gun acceptance; assets not activated"
+  },
+  "checks": {
+    "java": {
+      "tests": 111,
+      "failures": 0,
+      "errors": 0
+    },
+    "libraryPythonTests": 9,
+    "existingM4ModelTests": 12,
+    "pipelineTests": 14,
+    "blockbench": "24 actual load/compile/decode round trips; 0 maximum vertex delta, identical UV; original project restored",
+    "regeneration": "byte-identical across independent Python processes with different hash seeds",
+    "sourceProtection": "Original TaCZ pack, accepted M4 52 editable sources and M4 runtime assets unchanged",
+    "productionClasses": "925 class files byte-identical to accepted 21820224 artifact",
+    "checkAssemble": "passed",
+    "artifactAssets": "95 asset files matched source bytes in both jars",
+    "adapterIntegration": "passed",
+    "development": "966 classes; unique runtime artifact; preparation and configuration cache reuse passed",
+    "production": "925 classes; unique runtime artifact; preparation and configuration cache reuse passed"
+  },
+  "specialCases": [
+    "Magazine level items have no independent attachment geometry; extract actual per-gun mag_extended_N subtree",
+    "M870 represents tube extensions, not detachable magazines",
+    "AA12 uses other extended_mag definitions and is not one of these nine level definitions",
+    "No native LOD for six muzzles; original full model fallback retained"
+  ],
+  "gameStarted": false,
+  "worldsModified": false,
+  "remotePush": false,
+  "deferred": [
+    "Second native gun full assembly integration",
+    "Other thirteen native gun batches",
+    "Remaining per-gun geometry for already-known heavy magazine definitions",
+    "Shared sight folding and hiding",
+    "28 optical definitions last",
+    "5 ammo-effect definitions excluded from geometry batch"
+  ]
+}
