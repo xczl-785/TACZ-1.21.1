@@ -1,0 +1,128 @@
+[
+  {
+    "definitionId": "tacz_ai_awp_sniper_extended_mag_1",
+    "cubes": 15,
+    "preservedBones": 7,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_ai_awp_sniper_extended_mag_2",
+    "cubes": 15,
+    "preservedBones": 7,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_ai_awp_sniper_extended_mag_3",
+    "cubes": 15,
+    "preservedBones": 7,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_glock_17_light_extended_mag_1",
+    "cubes": 16,
+    "preservedBones": 6,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_glock_17_light_extended_mag_2",
+    "cubes": 16,
+    "preservedBones": 6,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_glock_17_light_extended_mag_3",
+    "cubes": 16,
+    "preservedBones": 6,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_m700_sniper_extended_mag_1",
+    "cubes": 10,
+    "preservedBones": 8,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_m700_sniper_extended_mag_2",
+    "cubes": 10,
+    "preservedBones": 8,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_m700_sniper_extended_mag_3",
+    "cubes": 10,
+    "preservedBones": 8,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_m870_shotgun_extended_mag_1",
+    "cubes": 14,
+    "preservedBones": 4,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_m870_shotgun_extended_mag_2",
+    "cubes": 14,
+    "preservedBones": 4,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_m870_shotgun_extended_mag_3",
+    "cubes": 14,
+    "preservedBones": 4,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_ump45_light_extended_mag_1",
+    "cubes": 11,
+    "preservedBones": 4,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_ump45_light_extended_mag_2",
+    "cubes": 11,
+    "preservedBones": 4,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_ump45_light_extended_mag_3",
+    "cubes": 11,
+    "preservedBones": 4,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_uzi_light_extended_mag_1",
+    "cubes": 11,
+    "preservedBones": 6,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_uzi_light_extended_mag_2",
+    "cubes": 11,
+    "preservedBones": 6,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_uzi_light_extended_mag_3",
+    "cubes": 11,
+    "preservedBones": 6,
+    "maxPositionError": 0,
+    "uvEqual": true
+  }
+]

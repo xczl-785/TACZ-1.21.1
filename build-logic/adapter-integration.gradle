@@ -106,3 +106,10 @@ configurations.testRuntimeClasspath {
     exclude group: 'mezz.jei'
     exclude group: 'dev.latvian.mods', module: 'kubejs-neoforge'
 }
+
+// Cross-gun authoring assets stay opt-in until each assembled weapon is integrated.
+tasks.register('verifyNativeAttachmentLibrary', Exec) {
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', '-m', 'unittest', 'discover', '-s', 'tools/native_attachments', '-p', 'test_*.py'
+}
+tasks.named('check') { dependsOn 'verifyNativeAttachmentLibrary' }

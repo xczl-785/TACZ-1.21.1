@@ -1,0 +1,38 @@
+[
+  {
+    "definitionId": "tacz_muzzle_silencer_sg",
+    "cubes": 18,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_muzzle_silencer_ptilopsis",
+    "cubes": 33,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_muzzle_choke_sg",
+    "cubes": 30,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_muzzle_silencer_mirage",
+    "cubes": 18,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_muzzle_brake_mastiff_sg",
+    "cubes": 67,
+    "maxPositionError": 0,
+    "uvEqual": true
+  },
+  {
+    "definitionId": "tacz_muzzle_silencer_wraith",
+    "cubes": 49,
+    "maxPositionError": 0,
+    "uvEqual": true
+  }
+]
