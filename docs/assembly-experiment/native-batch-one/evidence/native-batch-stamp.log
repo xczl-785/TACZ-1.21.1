@@ -1,0 +1,29 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :verifyGameplayDependencies
+> Task :verifyPublicDependency
+> Task :compileJava UP-TO-DATE
+
+> Task :verifyConfiguredWeapons
+Native M4A1 contract PASS: 15 default nodes, 52 attachments, 140 preserved rig nodes; high/low 1547 166
+Native gun contract PASS: glock_17 9 editable parts; 20 catalog; 57 native bones; maximum geometry error 0
+Native gun contract PASS: m16a1 16 editable parts; 26 catalog; 85 native bones; maximum geometry error 0
+Native gun contract PASS: scar_l 14 editable parts; 66 catalog; 105 native bones; maximum geometry error 0
+Native gun contract PASS: ump45 11 editable parts; 52 catalog; 69 native bones; maximum geometry error 0
+Configured weapons: 8; physical items: 90; names, preset, material and registration resources valid
+
+> Task :processResources
+> Task :classes
+> Task :compileAdapterDevelopmentJava UP-TO-DATE
+> Task :processAdapterDevelopmentResources UP-TO-DATE
+> Task :adapterDevelopmentClasses UP-TO-DATE
+> Task :jarJar UP-TO-DATE
+> Task :jar
+> Task :mergeDevelopmentLanguages
+> Task :developmentJar
+> Task :sourcesJar
+> Task :assemble
+
+BUILD SUCCESSFUL in 48s
+13 actionable tasks: 8 executed, 5 up-to-date

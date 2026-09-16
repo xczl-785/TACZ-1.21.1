@@ -1,6 +1,6 @@
 # 第一批原生枪批量接入：M16A1 / SCAR-L / UMP45
 
-所有者已接受 M4 与 Glock17（ec3468dc修正版），授权先补 Glock 远距离简化模型，再推进本批三枪。三枪制作与注册已完成，正在最终打包验证；新批次尚未实机接受。
+所有者已接受 M4 与 Glock17（ec3468dc修正版），授权先补 Glock 远距离简化模型，再推进本批三枪。本批已提交并接入NewMod，离线验证通过；新批次尚未实机接受。
 
 完整目标：15把保留的TaCZ原生枪逐枪实体组装，公共制作/渲染/库存接入可配置复用；原生动画与单一装配物品树保留。M4/Glock已接受，本批后为5/15，其余10把另批。
 
@@ -26,3 +26,5 @@
 证据入口：[Blockbench往返](evidence/blockbench.json)、[独立来源审核](evidence/source-review.md)、[运行机制审核](evidence/runtime-review.md)。最终测试和跨仓库制品信息将在交付证据中记录。
 
 最终源码检查：`check assemble --offline`通过；136项Java、48项Python，零失败。原枪包未修改，Glock高模/纹理不变；新三枪实机接受待所有者。
+
+交付制品`1.1.8-hotfix-r6-newmod.394d7c7c`，源码`394d7c7c66952672029f9c59cbe46ebb7d5749f5`，NewMod提交`4a9c4453beba8c3b6766cca740e6b9a0afb6463d`。正式/开发依赖与启动准备、配置缓存复用通过，最后准备开发模式。[最终证据](evidence/delivery.json)。所有者领取及抽查见[NewMod入口](../../../../NewMod/docs/进行中/原生枪首批批量接入.md)。

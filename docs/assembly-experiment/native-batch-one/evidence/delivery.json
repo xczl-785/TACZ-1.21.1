@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-17",
+  "sourceCommit": "394d7c7c66952672029f9c59cbe46ebb7d5749f5",
+  "newmodCommit": "4a9c4453beba8c3b6766cca740e6b9a0afb6463d",
+  "version": "1.1.8-hotfix-r6-newmod.394d7c7c",
+  "javaTests": 136,
+  "pythonTests": 48,
+  "failures": 0,
+  "editableBlockbenchSources": 38,
+  "blockbenchMaxPositionError": 0,
+  "package": {
+    "tacz": {
+      "resourceFiles": 873,
+      "decodedPNGs": 570,
+      "sha512": "e3fd9b17582b0c39ffa8ef194f7b3a365ee8a428f3c075003baec5cfcd0765e30c13686e59862f191199c049f6bfffc8c1d6a0b27af270a425c4308d953a634b"
+    },
+    "development": {
+      "resourceFiles": 873,
+      "decodedPNGs": 570,
+      "sha512": "c7990c5baf5b970a8691bb73953b16a7c2617a405d9e4dadfa718c50e51f009bfc0e54ebcba8a2e9bb70cd72cc3032c9eb302fc9b1661f21447c8b2fd5ebcf57"
+    }
+  },
+  "newmod": {
+    "productionClasses": 927,
+    "developmentClasses": 968,
+    "singleRuntimeArtifact": true,
+    "dependencyAndPreparation": true,
+    "configurationCacheStoredAndReusedBothModes": true,
+    "lastPreparation": "development"
+  },
+  "gameStarted": false,
+  "worldsModified": false,
+  "remotePushed": false,
+  "userAcceptance": {
+    "previousGlock": "accepted ec3468dc by user before this batch",
+    "newThreeGuns": "pending",
+    "newGlockLOD": "pending"
+  },
+  "deferred": [
+    "remaining 10 native firearms",
+    "shared workbench sight posture after nonoptic expansion",
+    "optical production last with owner participation"
+  ],
+  "limitations": [
+    "authored shared stocks use full edited geometry for LOD fallback",
+    "SCAR ar_stock_adapter actual draw needs owner client check"
+  ]
+}
