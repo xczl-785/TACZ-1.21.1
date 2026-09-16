@@ -87,6 +87,16 @@ class NativeAssemblyStateTest {
         var encoded=ItemStack.CODEC.encodeStart(ops,first).getOrThrow();var decoded=ItemStack.CODEC.parse(ops,encoded).getOrThrow();
         assertTrue(ItemStack.matches(first,decoded));assertEquals(AssembledWeapon.identity(bayonet),AssembledWeapon.identity(NativeAttachmentProjection.get(decoded,AttachmentType.MUZZLE)));
     }
+    @Test void disabledNestedBayonetDoesNotMaskItsParentRoute(){
+        var gun=AssemblyGunExchange.plan(weapon().preset(),weapon().createPart("tacz_bayonet_m9"),List.of("upper","barrel_mount","barrel","muzzle","bayonet")).orElseThrow().held();
+        var path=List.of("upper","barrel_mount","barrel","muzzle");
+        var muzzle=AssemblyTrees.at(gun,path).copy();var bayonet=AssemblyTrees.state(muzzle).in("bayonet").orElseThrow();
+        muzzle.set(AssemblyComponents.STATE.get(),AssemblyState.empty().updated(List.of(new AssemblyState.Installed("bayonet",bayonet.instanceId(),bayonet.stack(),false))));
+        var disabled=AssemblyTrees.replace(gun,path,muzzle);
+        assertEquals(path,NativeAttachmentProjection.path(disabled,AttachmentType.MUZZLE,ItemStack.EMPTY));
+        assertTrue(NativeAttachmentProjection.get(disabled,AttachmentType.MUZZLE).isEmpty()); // default muzzle is a physical part, not a native IAttachment
+        assertFalse(NativeAttachmentProjection.get(gun,AttachmentType.MUZZLE).isEmpty());
+    }
     @Test void laserStateIsStoredOnReturnedPartAndChamberSurvivesMagazineRemoval(){
         var gun=weapon().preset();var item=(AssemblyGunItem)gun.getItem();item.setBulletInBarrel(gun,true);
         gun=AssemblyGunExchange.plan(gun,weapon().createPart("handguard_tactical"),List.of("upper","barrel_mount","handguard")).orElseThrow().held();
@@ -104,9 +114,19 @@ class NativeAssemblyStateTest {
             var model=new NativeAssemblyGunModel(pojo,com.tacz.guns.client.resource.pojo.model.BedrockVersion.NEW,weapon());
             var cubes=model.batchCubeCounts();var first=weapon().preset();model.prepareGeometry(first);var original=model.visibleBatchNames();assertFalse(original.isEmpty());
             assertTrue(model.usesInlineAttachment(AttachmentType.STOCK,weapon().createPart("tacz_stock_tactical_ar")));
-            assertFalse(model.usesInlineAttachment(AttachmentType.STOCK,weapon().createPart("tacz_stock_moe")));
+            assertTrue(model.usesInlineAttachment(AttachmentType.STOCK,weapon().createPart("tacz_stock_moe")));
             assertFalse(model.usesInlineAttachment(AttachmentType.STOCK,ItemStack.EMPTY));
             assertTrue(original.stream().anyMatch(n->n.startsWith("assembly_editable_tacz_stock_tactical_ar_")));
+            var inline=JsonParser.parseString(AssembledWeapon.resource("data/tacz_assembly/m4a1/inline_attachments.json")).getAsJsonObject().getAsJsonObject("stock");
+            for(var candidate:inline.entrySet()){
+                String definition=candidate.getValue().getAsString();
+                var exchanged=AssemblyGunExchange.plan(weapon().preset(),weapon().createPart(definition),List.of("buffer","stock")).orElseThrow().held();
+                assertTrue(model.usesInlineAttachment(AttachmentType.STOCK,weapon().createPart(definition)));
+                model.prepareGeometry(exchanged);
+                assertTrue(model.visibleBatchNames().stream().anyMatch(n->n.startsWith("assembly_editable_"+definition+"_")),definition);
+                for(var other:inline.entrySet())if(!other.getValue().getAsString().equals(definition))
+                    assertFalse(model.visibleBatchNames().stream().anyMatch(n->n.startsWith("assembly_editable_"+other.getValue().getAsString()+"_")),other.getKey());
+            }
             var noStock=AssemblyGunExchange.plan(weapon().preset(),ItemStack.EMPTY,List.of("buffer","stock")).orElseThrow().held();
             model.prepareGeometry(noStock);
             assertFalse(model.visibleBatchNames().stream().anyMatch(n->n.startsWith("assembly_editable_tacz_stock_tactical_ar_")));

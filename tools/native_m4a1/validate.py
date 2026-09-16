@@ -12,6 +12,12 @@ def validate(resources=DEFAULT):
  assert not {'tacz:ammo_mod_fmj','tacz:ammo_mod_hp','tacz:ammo_mod_i'}&external.keys()
  assert set(mapping)==set(catalog)=={m['definitionId'] for m in read(base/'preview.json')['models']}
  assert set(external.values())<=catalog.keys()
+ assert config['assemblyIcons'] is True
+ assert read(base/'native-profile.json')==read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/native-profile.json')
+ editable=read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json')['parts']
+ edited={p['definitionId'] for p in editable}
+ inline={v for variants in read(base/'inline_attachments.json').values() for v in variants.values()}
+ assert inline<=edited and all(mapping[d] in external for d in inline)
  # Standard component contract: local geometry, textured UVs, and translated physical mount labels.
  preview=read(base/'preview.json');assert preview['schemaVersion']==3
  models={m['definitionId']:m for m in preview['models']}
@@ -43,7 +49,7 @@ def validate(resources=DEFAULT):
   lookup={b['name']:b for b in bones};assert len(lookup)==len(bones)
   for b in original:
    assert {k:v for k,v in b.items() if k!='cubes'}=={k:v for k,v in lookup[b['name']].items() if k!='cubes'},b['name']
-  assert {v['definition'] for k,v in batches.items() if k in lookup}==set(mapping)-set(external.values())|{'tacz_extended_mag_1','tacz_extended_mag_2','tacz_extended_mag_3','tacz_stock_tactical_ar'}
+  assert {v['definition'] for k,v in batches.items() if k in lookup}==set(mapping)-set(external.values())|{'tacz_extended_mag_1','tacz_extended_mag_2','tacz_extended_mag_3'}|inline
   for b in bones:
    if b.get('parent'):assert b['parent'] in lookup
    if b['name'].startswith('assembly_'):assert b['name'] in batches
@@ -52,6 +58,6 @@ def validate(resources=DEFAULT):
   if id in external:continue
   assert (out/f'data/tacz_assembly/item_foundation/items/{id.split(":")[1]}.json').is_file()
   assert (a/f'models/item/{id.split(":")[1]}.json').is_file()
- evidence=read(base/'geometry-evidence.json');assert evidence['editableParts']==15 and evidence['reusedLowCubes']==0 and evidence['maximumNeutralMatrixError']<1e-10 and evidence['lowCubes']<evidence['highCubes']
+ evidence=read(base/'geometry-evidence.json');assert evidence['editableParts']==len(edited) and evidence['reusedLowCubes']==0 and evidence['maximumNeutralMatrixError']<1e-10 and evidence['lowCubes']<evidence['highCubes']
  print('Native M4A1 contract PASS: 15 default nodes, 52 attachments, 140 preserved rig nodes; high/low',evidence['highCubes'],evidence['lowCubes'])
 if __name__=='__main__':validate()

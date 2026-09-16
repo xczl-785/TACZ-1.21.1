@@ -23,7 +23,8 @@ public final class AssembledWeapon {
     public final AssemblyNode PRESET;
     public final Map<String,String> ITEMS, DEFINITIONS;
     public final Map<String,String> nativeAttachments;
-    public final boolean nativeRig;
+    public final boolean nativeRig, assemblyIcons;
+    public final NativeAssemblyProfile nativeProfile;
     public final List<String> magazinePath;
     public final List<List<String>> requiredPaths;
     public final FireMode defaultFireMode;
@@ -34,6 +35,7 @@ public final class AssembledWeapon {
         var config = JsonParser.parseString(resource(resource)).getAsJsonObject();
         if (config.get("schemaVersion").getAsInt()!=1) throw new IllegalArgumentException("Unsupported weapon definition");
         nativeRig=config.has("nativeRig")&&config.get("nativeRig").getAsBoolean();
+        assemblyIcons=config.has("assemblyIcons")&&config.get("assemblyIcons").getAsBoolean();
         PROFILE=config.get("gunId").getAsString(); GUN=ResourceLocation.parse(PROFILE);
         ROOT=config.get("rootDefinition").getAsString(); resourceDirectory=config.get("resourceDirectory").getAsString();
         modelType=config.get("modelType").getAsString(); itemType=config.has("itemType")?config.get("itemType").getAsString():PROFILE;
@@ -48,6 +50,7 @@ public final class AssembledWeapon {
         handling=nativeRig?null:WeaponHandling.load(resource(base+"handling.json"));
         CATALOG=AssemblyJson.readCatalog(resource(base+"catalog.json")); ENGINE=new AssemblyEngine(CATALOG);
         PRESET=AssemblyJson.readSnapshot(resource(base+"scene.json"),ENGINE);
+        nativeProfile=nativeRig?NativeAssemblyProfile.load(resource(base+"native-profile.json"),CATALOG,ROOT):null;
         if(!PRESET.definitionId().equals(ROOT)||!ENGINE.validate(PRESET).complete()) throw new IllegalArgumentException("Invalid preset: "+PROFILE);
         var ids=new LinkedHashMap<String,String>();
         JsonParser.parseString(resource(base+"mapping.json")).getAsJsonObject().entrySet().forEach(e->ids.put(e.getKey(),e.getValue().getAsString()));

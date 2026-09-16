@@ -49,56 +49,6 @@
     "variant": "folded",
     "sourceBone": "bone20"
   },
-  "assembly_rail2": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "rail2"
-  },
-  "assembly_rail3": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "rail3"
-  },
-  "assembly_rail4": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "rail4"
-  },
-  "assembly_rail": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "rail"
-  },
-  "assembly_hexadecagon": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "hexadecagon"
-  },
-  "assembly_group9": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "group9"
-  },
-  "assembly_group12": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "group12"
-  },
-  "assembly_group10": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "group10"
-  },
-  "assembly_group11": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "group11"
-  },
-  "assembly_group17": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "group17"
-  },
   "assembly_lod_derived_mag_extended_1": {
     "definition": "tacz_extended_mag_1",
     "variant": "always",
@@ -148,56 +98,6 @@
     "definition": "front_sight",
     "variant": "folded",
     "sourceBone": "bone20"
-  },
-  "assembly_lod_derived_rail2": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "rail2"
-  },
-  "assembly_lod_derived_rail3": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "rail3"
-  },
-  "assembly_lod_derived_rail4": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "rail4"
-  },
-  "assembly_lod_derived_rail": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "rail"
-  },
-  "assembly_lod_derived_hexadecagon": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "hexadecagon"
-  },
-  "assembly_lod_derived_group9": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "group9"
-  },
-  "assembly_lod_derived_group12": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "group12"
-  },
-  "assembly_lod_derived_group10": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "group10"
-  },
-  "assembly_lod_derived_group11": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "group11"
-  },
-  "assembly_lod_derived_group17": {
-    "definition": "handguard_tactical",
-    "variant": "always",
-    "sourceBone": "group17"
   },
   "assembly_editable_lower_receiver_gun_body": {
     "definition": "lower_receiver",
@@ -748,5 +648,215 @@
     "definition": "magazine_standard",
     "variant": "always",
     "sourceBone": "mag_standard"
+  },
+  "assembly_editable_handguard_tactical_rail2": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail2"
+  },
+  "assembly_editable_handguard_tactical_rail2_lod": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail2"
+  },
+  "assembly_editable_handguard_tactical_rail3": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail3"
+  },
+  "assembly_editable_handguard_tactical_rail3_lod": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail3"
+  },
+  "assembly_editable_handguard_tactical_rail4": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail4"
+  },
+  "assembly_editable_handguard_tactical_rail4_lod": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail4"
+  },
+  "assembly_editable_handguard_tactical_rail": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail"
+  },
+  "assembly_editable_handguard_tactical_rail_lod": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "rail"
+  },
+  "assembly_editable_handguard_tactical_hexadecagon": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "hexadecagon"
+  },
+  "assembly_editable_handguard_tactical_hexadecagon_lod": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "hexadecagon"
+  },
+  "assembly_editable_handguard_tactical_group9": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group9"
+  },
+  "assembly_editable_handguard_tactical_group9_lod": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group9"
+  },
+  "assembly_editable_handguard_tactical_group12": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group12"
+  },
+  "assembly_editable_handguard_tactical_group12_lod": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group12"
+  },
+  "assembly_editable_handguard_tactical_group10": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group10"
+  },
+  "assembly_editable_handguard_tactical_group10_lod": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group10"
+  },
+  "assembly_editable_handguard_tactical_group11": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group11"
+  },
+  "assembly_editable_handguard_tactical_group11_lod": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group11"
+  },
+  "assembly_editable_handguard_tactical_group17": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group17"
+  },
+  "assembly_editable_handguard_tactical_group17_lod": {
+    "definition": "handguard_tactical",
+    "variant": "always",
+    "sourceBone": "group17"
+  },
+  "assembly_editable_tacz_stock_ak12_oem_stock_tactical": {
+    "definition": "tacz_stock_ak12",
+    "variant": "always",
+    "sourceBone": "oem_stock_tactical"
+  },
+  "assembly_editable_tacz_stock_ak12_oem_stock_tactical_lod": {
+    "definition": "tacz_stock_ak12",
+    "variant": "always",
+    "sourceBone": "oem_stock_tactical"
+  },
+  "assembly_editable_tacz_stock_carbon_bone_c5_carbon_bone_c5": {
+    "definition": "tacz_stock_carbon_bone_c5",
+    "variant": "always",
+    "sourceBone": "carbon_bone_c5"
+  },
+  "assembly_editable_tacz_stock_carbon_bone_c5_carbon_bone_c5_lod": {
+    "definition": "tacz_stock_carbon_bone_c5",
+    "variant": "always",
+    "sourceBone": "carbon_bone_c5"
+  },
+  "assembly_editable_tacz_stock_carbon_bone_c5_group21": {
+    "definition": "tacz_stock_carbon_bone_c5",
+    "variant": "always",
+    "sourceBone": "group21"
+  },
+  "assembly_editable_tacz_stock_carbon_bone_c5_group21_lod": {
+    "definition": "tacz_stock_carbon_bone_c5",
+    "variant": "always",
+    "sourceBone": "group21"
+  },
+  "assembly_editable_tacz_stock_hk_slim_line_stock": {
+    "definition": "tacz_stock_hk_slim_line",
+    "variant": "always",
+    "sourceBone": "stock"
+  },
+  "assembly_editable_tacz_stock_hk_slim_line_stock_lod": {
+    "definition": "tacz_stock_hk_slim_line",
+    "variant": "always",
+    "sourceBone": "stock"
+  },
+  "assembly_editable_tacz_stock_m4ss_stock": {
+    "definition": "tacz_stock_m4ss",
+    "variant": "always",
+    "sourceBone": "stock"
+  },
+  "assembly_editable_tacz_stock_m4ss_stock_lod": {
+    "definition": "tacz_stock_m4ss",
+    "variant": "always",
+    "sourceBone": "stock"
+  },
+  "assembly_editable_tacz_stock_m4ss_group23": {
+    "definition": "tacz_stock_m4ss",
+    "variant": "always",
+    "sourceBone": "group23"
+  },
+  "assembly_editable_tacz_stock_m4ss_group23_lod": {
+    "definition": "tacz_stock_m4ss",
+    "variant": "always",
+    "sourceBone": "group23"
+  },
+  "assembly_editable_tacz_stock_militech_b5_b5_stock": {
+    "definition": "tacz_stock_militech_b5",
+    "variant": "always",
+    "sourceBone": "b5_stock"
+  },
+  "assembly_editable_tacz_stock_militech_b5_b5_stock_lod": {
+    "definition": "tacz_stock_militech_b5",
+    "variant": "always",
+    "sourceBone": "b5_stock"
+  },
+  "assembly_editable_tacz_stock_militech_b5_group11": {
+    "definition": "tacz_stock_militech_b5",
+    "variant": "always",
+    "sourceBone": "group11"
+  },
+  "assembly_editable_tacz_stock_militech_b5_group11_lod": {
+    "definition": "tacz_stock_militech_b5",
+    "variant": "always",
+    "sourceBone": "group11"
+  },
+  "assembly_editable_tacz_stock_moe_stock_moe": {
+    "definition": "tacz_stock_moe",
+    "variant": "always",
+    "sourceBone": "stock_moe"
+  },
+  "assembly_editable_tacz_stock_moe_stock_moe_lod": {
+    "definition": "tacz_stock_moe",
+    "variant": "always",
+    "sourceBone": "stock_moe"
+  },
+  "assembly_editable_tacz_stock_ripstock_main": {
+    "definition": "tacz_stock_ripstock",
+    "variant": "always",
+    "sourceBone": "main"
+  },
+  "assembly_editable_tacz_stock_ripstock_main_lod": {
+    "definition": "tacz_stock_ripstock",
+    "variant": "always",
+    "sourceBone": "main"
+  },
+  "assembly_editable_tacz_stock_sba3_stock": {
+    "definition": "tacz_stock_sba3",
+    "variant": "always",
+    "sourceBone": "stock"
+  },
+  "assembly_editable_tacz_stock_sba3_stock_lod": {
+    "definition": "tacz_stock_sba3",
+    "variant": "always",
+    "sourceBone": "stock"
   }
 }

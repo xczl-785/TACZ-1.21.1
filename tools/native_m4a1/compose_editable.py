@@ -4,7 +4,9 @@ from pathlib import Path
 from editable_import import EDIT,ex,write
 
 def compose(output):
-    output=Path(output);output.mkdir(parents=True,exist_ok=True);rows=ex.read(EDIT/'manifest.json')['parts']
+    output=Path(output);output.mkdir(parents=True,exist_ok=True)
+    default_ids={n['definitionId'] for n in ex.read(ex.DATA/'scene.json')['nodes']}
+    rows=[r for r in ex.read(EDIT/'manifest.json')['parts'] if r['definitionId'] in default_ids]
     for exploded,filename in [(False,'01-M4A1标准整枪.bbmodel'),(True,'02-M4A1默认配件拆解.bbmodel')]:
         combined={'meta':{'format_version':'5.0','model_format':'free','box_uv':False},'name':filename[:-8],'resolution':{'width':256,'height':256},'elements':[],'groups':[],'outliner':[],'textures':[]}
         for i,row in enumerate(rows):

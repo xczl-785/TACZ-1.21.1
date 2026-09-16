@@ -56,11 +56,11 @@ def build():
   bindings['parts'][d]={'defaultMaterial':d,'regions':{}}
  write(BASE/'workbench-anchors.json',{'schemaVersion':1,'policy':'Default component bounds center shared by slot alternatives; original motion pivots retained in source manifest','maximumRebaseError':max(errors),'anchors':{d:v.tolist() for d,v in anchors.items()}})
  write(BASE/'preview.json' ,{'schemaVersion':3,'models':models});write(BASE/'library.json',library);write(BASE/'materials.json',bindings)
- default_parts={n['definitionId'] for n in scene}
+ edited_parts={p['definitionId'] for p in read(SOURCE/'editable/manifest.json')['parts']}
  root_definition=read(BASE/'weapon.json')['rootDefinition']
  for source,target in [('preview.json','icon_geometry.json'),('library.json','icon_library.json'),('materials.json','icon_materials.json')]:write(ASSETS/'m4a1'/target,read(BASE/source))
  for model in models:
-  d=model['definitionId'];render_part_icon(model,library,bindings,lambda res:OUT/'assets'/res.replace(':','/'),muzzle_left=d in default_parts,alpha_cutout=d in default_parts).save(ASSETS/f'textures/item/{d}.png')
+  d=model['definitionId'];render_part_icon(model,library,bindings,lambda res:OUT/'assets'/res.replace(':','/'),muzzle_left=d in edited_parts,alpha_cutout=d in edited_parts).save(ASSETS/f'textures/item/{d}.png')
   if not mapping[d].startswith('tacz:'):
    write(ASSETS/f'models/item/{mapping[d].split(":")[1]}.json',{'parent':'builtin/entity','gui_light':'front'} if d==root_definition else {'parent':'minecraft:item/generated','textures':{'layer0':f'tacz_assembly:item/{d}'}})
  labels={

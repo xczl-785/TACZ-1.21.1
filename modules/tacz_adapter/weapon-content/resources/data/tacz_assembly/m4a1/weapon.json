@@ -42,5 +42,6 @@
   "defaultFireMode": "auto",
   "feed": "detachable_magazine",
   "nativeRig": true,
+  "assemblyIcons": true,
   "developmentSource": "native_m4a1"
 }

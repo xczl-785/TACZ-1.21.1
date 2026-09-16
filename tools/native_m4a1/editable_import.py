@@ -78,7 +78,8 @@ def atlas_cube(cube,uvsize,cell):
 
 def build():
     manifest=ex.read(EDIT/'manifest.json');rows=manifest['parts'];defaults={r['definitionId'] for r in rows}
-    scene=ex.read(BASE/'scene.json');assert defaults=={n['definitionId'] for n in scene['nodes']} and len(rows)==15
+    scene=ex.read(BASE/'scene.json');assert {n['definitionId'] for n in scene['nodes']} <= defaults
+    assert len(defaults)==len(rows), 'Duplicate editable definitions'
     parsed={r['definitionId']:load_part(r) for r in rows}
     highpath=OUT/'assets/tacz_assembly/geo_models/gun/m4a1.json';lowpath=OUT/'assets/tacz_assembly/geo_models/gun/lod/m4a1.json'
     high=ex.read(highpath);low=ex.read(lowpath);batches=ex.read(BASE/'batches.json');hb=high['minecraft:geometry'][0]['bones'];lb=low['minecraft:geometry'][0]['bones']
@@ -91,7 +92,7 @@ def build():
     atlas=Image.new('RGBA',atlas_size);atlas.paste(Image.open(original_texture).convert('RGBA').resize((512,512),Image.Resampling.NEAREST),(0,0))
     def replaced(b):
         info=batches.get(b['name'],{});return info.get('definition') in defaults and info.get('variant')!='folded'
-    # Keep native rig nodes and unrelated alternatives. Rebuild only this default set.
+    # Keep native rig nodes and unrelated alternatives. Rebuild only this editable set.
     hb[:]=[b for b in hb if not replaced(b)];lb[:]=[b for b in lb if not replaced(b)]
     batches={k:v for k,v in batches.items() if v.get('definition') not in defaults or v.get('variant')=='folded'}
     for collection in [hb,lb]:
@@ -103,11 +104,13 @@ def build():
     derivedmanifest=ex.read(SOURCE/'manifest.json');sourceparts={p['definitionId']:p for p in derivedmanifest['parts']};proof=[]
     for i,row in enumerate(rows,1):
         d=row['definitionId'];model,bones,uvsize,texture,count=parsed[d];cell_id=texture_ids[ex.sha(EDIT/row['texture'])];cell=((cell_id%columns)*512,(cell_id//columns)*512);atlas.paste(texture.resize((512,512),Image.Resampling.NEAREST),cell)
-        stock=d=='tacz_stock_tactical_ar';anchor=np.asarray(sourceparts[d]['anchor']);extra=ex.matrix('stock_pos',native) if stock else np.eye(4)
+        mount=row.get('nativeMount') or ('stock_pos' if d=='tacz_stock_tactical_ar' else None);stock=mount is not None
+        rig_prefix=('editable_stock_' if d=='tacz_stock_tactical_ar' else 'editable_'+d+'_')
+        anchor=np.asarray(sourceparts[d]['anchor']);extra=ex.matrix(mount,native) if stock else np.eye(4)
         meshes=[];allvertices=[]
         if stock:
             for b in bones.values():
-                copied={k:copy.deepcopy(v) for k,v in b.items() if k!='cubes'};copied['name']='editable_stock_'+b['name'];copied['parent']='editable_stock_'+b['parent'] if b.get('parent') else 'stock_pos'
+                copied={k:copy.deepcopy(v) for k,v in b.items() if k!='cubes'};copied['name']=rig_prefix+b['name'];copied['parent']=rig_prefix+b['parent'] if b.get('parent') else mount
                 # Bone pivots are absolute in native Bedrock; offset by the mount's world-art pivot.
                 copied['pivot']=[v+row['translation'][a] for a,v in enumerate(b['pivot'])]
                 hb.append(copy.deepcopy(copied));lb.append(copy.deepcopy(copied))
@@ -122,7 +125,7 @@ def build():
                     keys=[str(base+j) for j in ids];uv=[[p[0]*texture.width/uvsize[0],p[1]*texture.height/uvsize[1]] for p in uv]
                     faces[str(len(faces))]={'vertices':keys,'uv':dict(zip(keys,uv)),'texture':0}
             meshes.append({'type':'mesh','name':name,'uuid':ex.uid('editable/'+d+'/'+name),'origin':[0,0,0],'rotation':[0,0,0],'visibility':True,'export':True,'vertices':vertices,'faces':faces})
-            target='editable_stock_'+name if stock else name
+            target=rig_prefix+name if stock else name
             newname='assembly_editable_'+d+'_'+name
             transformed=[]
             for c in cubes:
@@ -145,14 +148,21 @@ def build():
         geo['minecraft:geometry'][0]['description'].update(texture_width=atlas.width,texture_height=atlas.height);write(path,geo)
     atlaspath=OUT/'assets/tacz_assembly/textures/gun/editable_m4a1.png';atlaspath.parent.mkdir(parents=True,exist_ok=True);atlas.save(atlaspath)
     displaypath=OUT/'assets/tacz_assembly/display/guns/m4a1.json';display=ex.read(displaypath);display['texture']='tacz_assembly:gun/editable_m4a1';display['lod']['texture']=display['texture'];write(displaypath,display)
-    write(BASE/'batches.json',batches);write(BASE/'inline_attachments.json',{'stock':{'tacz:stock_tactical_ar':'tacz_stock_tactical_ar'}})
+    write(BASE/'batches.json',batches)
+    inline={}
+    for row in rows:
+        d=row['definitionId'];mount=row.get('nativeMount') or ('stock_pos' if d=='tacz_stock_tactical_ar' else None)
+        if mount:
+            if mount!='stock_pos':raise ValueError('Inline mount requires explicit native attachment type: '+mount)
+            inline.setdefault('stock',{})[sourceparts[d]['itemId']]=d
+    write(BASE/'inline_attachments.json',inline)
     write(SOURCE/'manifest.json',derivedmanifest)
     from build_workbench import build as workbench
     workbench()
-    report={'parts':proof,'cubes':sum(p['cubes'] for p in proof),'highCubes':sum(len(b.get('cubes',[])) for b in hb),'lowCubes':sum(len(b.get('cubes',[])) for b in lb),'lodPolicy':'At most two largest current editable cubes per source bone; original non-default variants retained','gameStarted':False}
+    report={'parts':proof,'cubes':sum(p['cubes'] for p in proof),'highCubes':sum(len(b.get('cubes',[])) for b in hb),'lowCubes':sum(len(b.get('cubes',[])) for b in lb),'lodPolicy':'At most two largest current editable cubes per source bone; original non-editable variants retained','gameStarted':False}
     write(SOURCE/'editable-import-report.json',report)
     evidence=ex.read(BASE/'geometry-evidence.json')
-    evidence.update(highCubes=report['highCubes'],lowCubes=report['lowCubes'],reusedLowCubes=0,lodPolicy=report['lodPolicy'],editableParts=15,textureAtlas={'size':list(atlas_size),'cellSize':512,'originalCell':[0,0]})
+    evidence.update(highCubes=report['highCubes'],lowCubes=report['lowCubes'],reusedLowCubes=0,lodPolicy=report['lodPolicy'],editableParts=len(rows),textureAtlas={'size':list(atlas_size),'cellSize':512,'originalCell':[0,0]})
     write(BASE/'geometry-evidence.json',evidence)
     print('Editable native import:',len(rows),'parts;',report['cubes'],'cubes; workbench/icons/native high/low generated')
 if __name__=='__main__':

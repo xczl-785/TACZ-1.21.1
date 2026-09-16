@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "attachmentPaths": {
+    "SCOPE": [
+      "upper",
+      "scope"
+    ],
+    "STOCK": [
+      "buffer",
+      "stock"
+    ],
+    "GRIP": [
+      "upper",
+      "barrel_mount",
+      "handguard",
+      "grip"
+    ],
+    "LASER": [
+      "upper",
+      "barrel_mount",
+      "handguard",
+      "laser"
+    ],
+    "EXTENDED_MAG": [
+      "magazine"
+    ],
+    "MUZZLE": [
+      "upper",
+      "barrel_mount",
+      "barrel",
+      "muzzle"
+    ]
+  },
+  "attachmentOverrides": {
+    "MUZZLE": [
+      {
+        "attachmentIds": [
+          "tacz:bayonet_m9"
+        ],
+        "path": [
+          "upper",
+          "barrel_mount",
+          "barrel",
+          "muzzle",
+          "bayonet"
+        ]
+      }
+    ]
+  },
+  "sightAlternatives": [
+    [
+      [
+        "upper",
+        "scope"
+      ]
+    ],
+    [
+      [
+        "upper",
+        "rear_sight"
+      ],
+      [
+        "upper",
+        "barrel_mount",
+        "barrel",
+        "gas",
+        "front_sight"
+      ]
+    ]
+  ]
+}

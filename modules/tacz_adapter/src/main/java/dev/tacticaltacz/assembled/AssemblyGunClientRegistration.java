@@ -7,7 +7,7 @@ public final class AssemblyGunClientRegistration {
     }
     @net.neoforged.bus.api.SubscribeEvent public static void keys(net.neoforged.neoforge.client.event.RegisterKeyMappingsEvent event){event.register(AssemblyPresentationClient.NEXT);}
     @net.neoforged.bus.api.SubscribeEvent public static void setup(net.neoforged.fml.event.lifecycle.FMLClientSetupEvent event){
-        event.enqueueWork(()->AssembledWeapons.all().stream().filter(w->w.nativeRig).forEach(w->dev.itemfoundation.client.api.ItemModelBounds.register(net.minecraft.core.registries.BuiltInRegistries.ITEM.get(w.GUN),NativeAssemblyIcons::bounds)));
+        event.enqueueWork(()->AssembledWeapons.all().stream().filter(w->w.assemblyIcons).forEach(w->dev.itemfoundation.client.api.ItemModelBounds.register(net.minecraft.core.registries.BuiltInRegistries.ITEM.get(w.GUN),NativeAssemblyIcons::bounds)));
         AssembledWeapons.all().stream().filter(weapon->weapon.nativeRig).forEach(weapon->com.tacz.guns.api.client.other.GunModelTypeManager.registerLodModelType(weapon.modelType,(pojo,version)->new NativeAssemblyGunModel(pojo,version,weapon)));
         AssembledWeapons.all().forEach(weapon->com.tacz.guns.api.client.other.GunModelTypeManager.registerModelType(weapon.modelType,(pojo,version)->weapon.nativeRig?new NativeAssemblyGunModel(pojo,version,weapon):new AssemblyGunModel(pojo,version,weapon)));
     }

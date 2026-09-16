@@ -85,7 +85,11 @@ tasks.register('verifyNativeEditable', Exec) {
     environment 'PYTHONDONTWRITEBYTECODE', '1'
     commandLine 'python3', 'tools/native_m4a1/test_editable.py'
 }
-tasks.named('check') { dependsOn 'verifyNativeEditable' }
+tasks.register('verifyNativeEditableBatch', Exec) {
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', 'tools/native_m4a1/test_batch_editable.py'
+}
+tasks.named('check') { dependsOn 'verifyNativeEditable', 'verifyNativeEditableBatch' }
 
 // Registry-backed JUnit only: loads Mod registrations, never creates a server or world.
 neoForge { unitTest { enable(); testedMod = mods.tacz } }

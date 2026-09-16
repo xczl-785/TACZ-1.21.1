@@ -50,7 +50,8 @@ def node(name,path,parent=None,slot=None):
  for s,c in preset.get(name,{}).items():node(c,path+'/'+s,id,s)
 node('lower_receiver','');assert len(nodes)==15
 write(BASE/'scene.json',{'schemaVersion':1,'nodes':nodes})
-write(BASE/'weapon.json',{'schemaVersion':1,'gunId':f'{NS}:{GUN}','rootDefinition':'lower_receiver','resourceDirectory':'m4a1','modelType':'tacz_native_assembly','caliber':'556x45','magazinePath':['magazine'],'requiredPaths':critical,'defaultFireMode':'auto','feed':'detachable_magazine','nativeRig':True,'developmentSource':'native_m4a1'})
+write(BASE/'weapon.json',{'schemaVersion':1,'gunId':f'{NS}:{GUN}','rootDefinition':'lower_receiver','resourceDirectory':'m4a1','modelType':'tacz_native_assembly','caliber':'556x45','magazinePath':['magazine'],'requiredPaths':critical,'defaultFireMode':'auto','feed':'detachable_magazine','nativeRig':True,'assemblyIcons':True,'developmentSource':'native_m4a1'})
+write(BASE/'native-profile.json',read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/native-profile.json'))
 # Resource references intentionally inherit native actions and server feed times byte-for-byte semantically.
 data=read(SRC/'data/tacz/data/guns/m4a1_data.json');write(OUT/f'data/{NS}/data/guns/m4a1.json',data)
 index=read(SRC/'data/tacz/index/guns/m4a1.json');index.update(name=f'gun.{NS}.m4a1',display=f'{NS}:m4a1',data=f'{NS}:m4a1',item_type=f'{NS}:m4a1',sort=102);write(OUT/f'data/{NS}/index/guns/m4a1.json',index)

@@ -1,7 +1,7 @@
 {
   "nativeRigBones": 140,
-  "highCubes": 1011,
-  "lowCubes": 144,
+  "highCubes": 1547,
+  "lowCubes": 166,
   "reusedLowCubes": 0,
   "maximumNeutralMatrixError": 8.881784197001252e-16,
   "derivedRegions": [
@@ -467,7 +467,7 @@
       "outputCubes": 2
     }
   ],
-  "lodPolicy": "At most two largest current editable cubes per source bone; original non-default variants retained",
+  "lodPolicy": "At most two largest current editable cubes per source bone; original non-editable variants retained",
   "sourceHashes": {
     "model": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
     "animation": "ce4ee6dcdf16bbc8ce2ce9c3bdc4d56c7cc025040675a4688da74621190924f2",
@@ -476,8 +476,8 @@
   },
   "textureAtlas": {
     "size": [
-      1024,
-      512
+      2048,
+      1536
     ],
     "cellSize": 512,
     "originalCell": [
@@ -488,5 +488,5 @@
   "limits": [
     "No game, animation playback or FPS measurement; LOD surface reduction requires owner visual acceptance"
   ],
-  "editableParts": 15
+  "editableParts": 24
 }

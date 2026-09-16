@@ -11,22 +11,11 @@ import net.minecraft.world.item.component.CustomData;
 
 /** Native attachment access is a view of physical children, never a GunAttachment copy. */
 public final class NativeAttachmentProjection {
-    private static final List<String> MUZZLE=List.of("upper","barrel_mount","barrel","muzzle");
     public static List<String> path(ItemStack gun,AttachmentType type,ItemStack replacement){
-        return switch(type){
-            case SCOPE -> List.of("upper","scope");
-            case STOCK -> List.of("buffer","stock");
-            case GRIP -> List.of("upper","barrel_mount","handguard","grip");
-            case LASER -> List.of("upper","barrel_mount","handguard","laser");
-            case EXTENDED_MAG -> List.of("magazine");
-            case MUZZLE -> {
-                var id=IAttachment.getIAttachmentOrNull(replacement);
-                boolean bayonet=id!=null&&id.getAttachmentId(replacement).toString().equals("tacz:bayonet_m9");
-                var child=at(gun,MUZZLE);boolean existing=AssemblyTrees.state(child).in("bayonet").isPresent();
-                yield bayonet||(replacement.isEmpty()&&existing)?List.of("upper","barrel_mount","barrel","muzzle","bayonet"):MUZZLE;
-            }
-            default -> List.of();
-        };
+        var weapon=AssembledWeapons.from(gun);if(weapon==null||weapon.nativeProfile==null)return List.of();
+        var attachment=IAttachment.getIAttachmentOrNull(replacement);
+        String id=replacement.isEmpty()?null:attachment==null?"":attachment.getAttachmentId(replacement).toString();
+        return weapon.nativeProfile.path(type.name(),id,path->!at(gun,path).isEmpty());
     }
     public static ItemStack at(ItemStack gun,List<String> path){
         if(path.isEmpty())return ItemStack.EMPTY;
@@ -58,7 +47,8 @@ public final class NativeAttachmentProjection {
     }
     public static boolean blocksAim(ItemStack gun){var weapon=AssembledWeapons.from(gun);return weapon!=null&&weapon.nativeRig&&!hasSight(gun);}
     public static boolean hasSight(ItemStack gun){
-        return !get(gun,AttachmentType.SCOPE).isEmpty()||(!at(gun,List.of("upper","rear_sight")).isEmpty()&&!at(gun,List.of("upper","barrel_mount","barrel","gas","front_sight")).isEmpty());
+        var weapon=AssembledWeapons.from(gun);
+        return weapon!=null&&weapon.nativeProfile!=null&&weapon.nativeProfile.hasSight(path->!at(gun,path).isEmpty());
     }
     private NativeAttachmentProjection(){}
 }
