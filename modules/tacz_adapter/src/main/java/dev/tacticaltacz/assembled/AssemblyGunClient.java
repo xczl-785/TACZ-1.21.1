@@ -51,7 +51,7 @@ public final class AssemblyGunClient {
         var materials=model instanceof AssemblyGunModel assembled?assembled.materials():NativeAssemblyView.materials(weapon,geometry);
         return new WorkbenchScreen(access,geometry,materials,
                 id->weapon.nativeRig?weapon.createPart(id).getHoverName().getString():Component.translatable("item."+weapon.ITEMS.get(id).replace(':','.')).getString(),
-                id->{if(weapon.nativeRig)return net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(weapon.GUN.getNamespace(),"textures/item/"+id+".png");var item=net.minecraft.resources.ResourceLocation.parse(weapon.ITEMS.get(id));return item.withPath("textures/item/"+item.getPath()+".png");},
+                weapon::partIcon,
                 name+" · "+Component.translatable("tactical_tacz_adapter.assembly_workbench.title").getString(),modeAction);
     }
     private static void editPreset(){

@@ -191,9 +191,9 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
         write(base/filename,value);write(assets/gun/{'preview.json':'icon_geometry.json','library.json':'icon_library.json','materials.json':'icon_materials.json'}[filename],value)
     write(base/'workbench-anchors.json',{'schemaVersion':1,'anchors':{d:v.tolist() for d,v in anchors.items()}})
     for model in models:
-        d=model['definitionId'];icon=assets/f'textures/item/{gun}/{d}.png';icon.parent.mkdir(parents=True,exist_ok=True)
+        d=model['definitionId'];icon=assets/config['weapon']['partIconDirectory']/f'{d}.png';icon.parent.mkdir(parents=True,exist_ok=True)
         render_part_icon(model,library,bindings,lambda ref:resources/'assets'/ref.replace(':','/'),muzzle_left=True,alpha_cutout=True).save(icon)
-        if not mapping[d].startswith('tacz:'):write(assets/f'models/item/{mapping[d].split(":")[1]}.json',{'parent':'builtin/entity','gui_light':'front'} if d==config['rootDefinition'] else {'parent':'minecraft:item/generated','textures':{'layer0':f'{ns}:item/{gun}/{d}'}})
+        if not mapping[d].startswith('tacz:'):write(assets/f'models/item/{mapping[d].split(":")[1]}.json',{'parent':'builtin/entity','gui_light':'front'} if d==config['rootDefinition'] else {'parent':'minecraft:item/generated','textures':{'layer0':f"{ns}:{config['weapon']['partIconDirectory'].removeprefix('textures/')}/{d}"}})
     overrides={};available_overrides={}
     for catalog_path in config['attachmentOverrideCatalogs']:
         path=resources/catalog_path;entries=ex.read(path);source_paths.add(path)

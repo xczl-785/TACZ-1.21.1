@@ -18,6 +18,7 @@ import net.minecraft.world.item.component.CustomData;
 public final class AssembledWeapon {
     public final String PROFILE, ROOT, resourceDirectory, modelType, itemType, caliber, developmentSource;
     public final ResourceLocation GUN;
+    private final String partIconDirectory;
     public final AssemblyCatalog CATALOG;
     public final AssemblyEngine ENGINE;
     public final AssemblyNode PRESET;
@@ -39,6 +40,8 @@ public final class AssembledWeapon {
         assemblyIcons=config.has("assemblyIcons")&&config.get("assemblyIcons").getAsBoolean();
         PROFILE=config.get("gunId").getAsString(); GUN=ResourceLocation.parse(PROFILE);
         ROOT=config.get("rootDefinition").getAsString(); resourceDirectory=config.get("resourceDirectory").getAsString();
+        partIconDirectory=config.has("partIconDirectory")?config.get("partIconDirectory").getAsString():"textures/item";
+        ResourceLocation.fromNamespaceAndPath(GUN.getNamespace(),partIconDirectory+"/part.png");
         modelType=config.get("modelType").getAsString(); itemType=config.has("itemType")?config.get("itemType").getAsString():PROFILE;
         caliber=config.get("caliber").getAsString(); developmentSource=config.get("developmentSource").getAsString();
         if (!"detachable_magazine".equals(config.get("feed").getAsString())) throw new IllegalArgumentException("Unsupported feed strategy: "+PROFILE);
@@ -73,6 +76,13 @@ public final class AssembledWeapon {
 
     }
     private static List<String> strings(JsonArray array){var out=new ArrayList<String>();for(var v:array)out.add(v.getAsString());if(out.isEmpty()||out.size()>AssemblyEngine.MAX_DEPTH)throw new IllegalArgumentException("Invalid slot path");return List.copyOf(out);}
+    /** Shared by actual workbench cards and resource-contract tests. */
+    public ResourceLocation partIcon(String definition){
+        String itemId=ITEMS.get(definition);
+        if(itemId==null)throw new IllegalArgumentException("Unknown icon definition: "+definition);
+        if(nativeRig)return ResourceLocation.fromNamespaceAndPath(GUN.getNamespace(),partIconDirectory+"/"+definition+".png");
+        var item=ResourceLocation.parse(itemId);return item.withPath("textures/item/"+item.getPath()+".png");
+    }
     public String asset(String name){return GUN.getNamespace()+":"+resourceDirectory+"/"+name;}
     public static String resource(String path){try(var in=AssembledWeapon.class.getResourceAsStream("/"+path)){if(in==null)throw new IllegalStateException("Missing "+path);return new String(in.readAllBytes(),java.nio.charset.StandardCharsets.UTF_8);}catch(java.io.IOException e){throw new java.io.UncheckedIOException(e);}}
     public boolean isGun(ItemStack stack){return stack.getItem() instanceof AssemblyGunItem item && item.weapon()==this;}

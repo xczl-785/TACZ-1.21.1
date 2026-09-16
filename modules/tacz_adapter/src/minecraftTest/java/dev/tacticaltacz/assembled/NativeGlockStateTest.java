@@ -16,6 +16,19 @@ class NativeGlockStateTest {
     private static ItemStack remove(ItemStack gun,String... path){return AssemblyGunExchange.plan(gun,ItemStack.EMPTY,List.of(path)).orElseThrow().held();}
     private static ItemStack install(ItemStack gun,String definition,String... path){return AssemblyGunExchange.plan(gun,weapon().createPart(definition),List.of(path)).orElseThrow().held();}
 
+    @Test void actualWorkbenchCardResolverFindsEveryNativeGunIcon() throws Exception {
+        for(var w:AssembledWeapons.all())if(w.nativeRig)for(String definition:w.ITEMS.keySet()){
+            var icon=w.partIcon(definition);
+            try(var input=AssembledWeapon.class.getResourceAsStream("/assets/"+icon.getNamespace()+"/"+icon.getPath())){
+                assertNotNull(input,w.PROFILE+" / "+definition+" -> "+icon);
+                assertNotNull(javax.imageio.ImageIO.read(input),"Invalid image: "+icon);
+            }
+        }
+        assertEquals("textures/item/glock_17/tacz_laser_compact.png",weapon().partIcon("tacz_laser_compact").getPath());
+        assertEquals("textures/item/tacz_laser_compact.png",AssembledWeapons.byId(ResourceLocation.parse("tacz_assembly:m4a1")).partIcon("tacz_laser_compact").getPath());
+        assertThrows(IllegalArgumentException.class,()->weapon().partIcon("unknown"));
+    }
+
     @Test void pistolConfigurationAndPhysicalTreeAreIndependentOfM4(){
         var w=weapon();var gun=w.preset();
         assertEquals("9x19",dev.tacticaltacz.GunAdoption.caliber(gun));

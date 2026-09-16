@@ -23,5 +23,6 @@
   "developmentSource": "native_glock_17",
   "wearableSlots": [
     "tactical_inventory:sidearm"
-  ]
+  ],
+  "partIconDirectory": "textures/item/glock_17"
 }

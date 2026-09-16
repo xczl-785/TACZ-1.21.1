@@ -42,3 +42,9 @@ NewMod 接入完成后，从 `/devitems` 领取 **Glock 17 · 原生实体组装
 用户负责实机接受，agent 未启动客户端、服务端或修改世界。
 
 制品 `1.1.8-hotfix-r6-newmod.30acf818`；源码 `30acf818`，NewMod接入 `d4634bf`。正式927/开发968个集成类，唯一制品、哈希、启动准备及配置缓存存储/复用通过；默认开发启动准备已恢复。详见[evidence/delivery.json](evidence/delivery.json)。未推送远端。
+
+## 所有者反馈：工作台卡片缺图
+
+所有者实际界面反馈紫黑卡片，上一版不作为实机通过。根因：资源在 `textures/item/glock_17/<definition>.png`，但实际卡片读取器硬编码公共 `textures/item/<definition>.png`。已在30acf818开发Jar核实20图全存在，18旧路径不存在，另2激光误用旧图。
+
+修复把 `partIconDirectory` 纳入每枪配置，由 `AssembledWeapon.partIcon` 统一提供界面实际路径；生产器与普通物品图标引用同一目录。旧M4默认路径保持。此前测试只验证生成目录，没验证界面调用的路径；现增加M4/Glock全部87项实际解析路径的PNG解码回归。无模型/贴图丢失或变更。更新制品和实机重验见后续证据。
