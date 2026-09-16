@@ -5,11 +5,13 @@ import numpy as np
 from PIL import Image
 
 
-def render_part_icon(model, library, bindings, texture_path, size=128):
+def render_part_icon(model, library, bindings, texture_path, size=128, *, muzzle_left=False, alpha_cutout=False):
     triangles = [t for mesh in model['meshes'] for t in mesh['triangles']]
     vertices = np.asarray([t['vertices'] for t in triangles], dtype=float)
     # Mostly side-on, with enough depth to show openings and separate adjacent faces.
     horizontal = np.array([-.22, 0, .9755]); horizontal /= np.linalg.norm(horizontal)
+    # +Z is the mounted gun muzzle. Reverse the camera side, not the final bitmap.
+    if muzzle_left: horizontal = -horizontal
     depth = np.cross(np.array([0., 1., 0.]), horizontal)
     vertical = np.cross(horizontal, depth)
     screen = np.stack((vertices @ horizontal, -(vertices @ vertical)), axis=-1)
@@ -28,7 +30,7 @@ def render_part_icon(model, library, bindings, texture_path, size=128):
         color = np.array([int(material['baseColor'][n:n+2], 16) for n in (1, 3, 5)], dtype=float)
         texture_id = material.get('texture', '')
         if texture_id not in textures:
-            textures[texture_id] = np.asarray(Image.open(texture_path(texture_id)).convert('RGB'), dtype=float) if texture_id else np.full((1, 1, 3), 255.)
+            textures[texture_id] = np.asarray(Image.open(texture_path(texture_id)).convert('RGBA'), dtype=float) if texture_id else np.full((1, 1, 4), 255.)
         texture = textures[texture_id]
         a, b, c = screen[index]
         determinant = (b[1]-c[1])*(a[0]-c[0]) + (c[0]-b[0])*(a[1]-c[1])
@@ -52,7 +54,9 @@ def render_part_icon(model, library, bindings, texture_path, size=128):
         normal = np.cross(vertices[index,1]-vertices[index,0], vertices[index,2]-vertices[index,0])
         normal /= max(np.linalg.norm(normal), 1e-9)
         lighting = .65 + .35 * abs(float(normal @ np.array([.8,.5,.33])))
-        rgb = np.clip(texels / 255 * color * lighting, 0, 255).astype(np.uint8)
+        rgb = np.clip(texels[..., :3] / 255 * color * lighting, 0, 255).astype(np.uint8)
+        # Match native cutout coverage: transparent texels must not write depth.
+        if alpha_cutout: mask &= texels[..., 3] >= 26
         target = pixels[y0:y1+1, x0:x1+1]
         target[mask, :3] = rgb[mask]; target[mask, 3] = 255
         target_z[mask] = interpolated_z[mask]

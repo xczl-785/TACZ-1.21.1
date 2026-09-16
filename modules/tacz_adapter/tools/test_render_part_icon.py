@@ -44,4 +44,48 @@ class PartIconTest(unittest.TestCase):
         mesh,lib,bind=self.scene();lib['materials']['wood']['texture']='missing:texture.png'
         with self.assertRaises(FileNotFoundError):render_part_icon(mesh,lib,bind,lambda _: '/nonexistent/adar-texture.png')
 
+
+
+class MountedIconTest(unittest.TestCase):
+    scene = PartIconTest.scene
+    def test_muzzle_left_and_camera_side(self):
+        mesh,lib,bind=self.scene()
+        lib['materials'].update(red={'baseColor':'#FF0000'},blue={'baseColor':'#0000FF'})
+        bind['parts']['part']['regions'].update(muzzle='red',rear='blue',top='green')
+        def mark(x,y,z,region):
+            return {'vertices':[[x,y-.2,z-.2],[x,y-.2,z+.2],[x,y+.2,z]],'uv':[[0,0]]*3,'region':region}
+        mesh['meshes'][0]['triangles']=[mark(0,0,2,'muzzle'),mark(0,0,-2,'rear'),mark(0,1,0,'top')]
+        image=np.asarray(render_part_icon(mesh,lib,bind,lambda _:None,muzzle_left=True))
+        red=np.argwhere((image[:,:,0]>100)&(image[:,:,1]<10)&(image[:,:,3]>240))
+        blue=np.argwhere((image[:,:,2]>100)&(image[:,:,0]<10)&(image[:,:,3]>240))
+        green=np.argwhere((image[:,:,1]>100)&(image[:,:,0]<10)&(image[:,:,3]>240))
+        self.assertLess(red[:,1].mean(),blue[:,1].mean())
+        self.assertLess(green[:,0].mean(),red[:,0].mean())
+        # A camera rotation sees the opposite side; mirroring a bitmap does not.
+        a=mark(-1,0,0,'muzzle');a['vertices']=[[-1,-2,-2],[-1,-2,2],[-1,2,0]]
+        b=mark(1,0,0,'rear');b['vertices']=[[1,-2,-2],[1,-2,2],[1,2,0]]
+        mesh['meshes'][0]['triangles']=[a,b]
+        image=np.asarray(render_part_icon(mesh,lib,bind,lambda _:None,muzzle_left=True))
+        self.assertGreater(image[64,64,0],100);self.assertEqual(image[64,64,2],0)
+
+    def test_transparent_front_does_not_hide_back(self):
+        import tempfile
+        from pathlib import Path
+        from PIL import Image
+        mesh,lib,bind=self.scene();front=mesh['meshes'][0]['triangles'][0]
+        front['region']='hole';front['vertices']=[[-1,y,z] for _,y,z in front['vertices']]
+        back={'vertices':[[0,-1,-1],[0,-1,1],[0,1,0]],'uv':front['uv'],'region':'pad'}
+        lib['materials']['transparent']={'baseColor':'#FFFFFF','texture':'hole'}
+        bind['parts']['part']['regions']['hole']='transparent'
+        with tempfile.TemporaryDirectory() as directory:
+            path=Path(directory)/'hole.png';Image.new('RGBA',(2,2),(255,0,0,0)).save(path)
+            empty=np.asarray(render_part_icon(mesh,lib,bind,lambda _:path,muzzle_left=True,alpha_cutout=True))
+            self.assertFalse(empty[:,:,3].any())
+            mesh['meshes'][0]['triangles'].append(back)
+            image=np.asarray(render_part_icon(mesh,lib,bind,lambda _:path,muzzle_left=True,alpha_cutout=True))
+            self.assertEqual(image[64,64,3],255);self.assertGreater(image[64,64,1],10)
+            mesh['meshes'][0]['triangles'].reverse()
+            reverse=np.asarray(render_part_icon(mesh,lib,bind,lambda _:path,muzzle_left=True,alpha_cutout=True))
+            np.testing.assert_array_equal(image,reverse)
+
 if __name__=='__main__':unittest.main()
