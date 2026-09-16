@@ -51,5 +51,10 @@
   "weapon_assembly_ui.white_model": "Compare white model",
   "weapon_assembly_ui.show_materials": "Show materials",
   "weapon_assembly_ui.pending": "Applying…",
-  "weapon_assembly_ui.attachment_slot": "Attachment slot"
+  "weapon_assembly_ui.attachment_slot": "Attachment slot",
+  "weapon_assembly_ui.edit_preset": "Edit preset",
+  "weapon_assembly_ui.exit_preset": "Return to real assembly",
+  "weapon_assembly_ui.temporary_preset": "Temporary preset · discarded on close; no inventory cost",
+  "weapon_assembly_ui.catalog_unlimited": "Full parts catalog · unlimited supply",
+  "weapon_assembly_ui.no_catalog_candidates": "No integrated compatible parts for this slot"
 }

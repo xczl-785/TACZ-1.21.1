@@ -3,7 +3,7 @@
 import argparse,hashlib,json,re,zipfile
 from pathlib import Path
 from weapon_migration import source_rows
-from native_m4a1_migration import native_successor
+from native_m4a1_migration import native_successor, predecessor_text
 R=Path(__file__).resolve().parents[1]
 MODULES=['weapon_assembly','weapon_models','weapon_runtime','weapon_assembly_ui']
 def verify(jar=None, newmod=None):
@@ -35,7 +35,14 @@ def verify(jar=None, newmod=None):
         elif 'after_sha256' in row:
             assert hashlib.sha256(target.read_bytes()).hexdigest()==native_successor(row['new'],row['after_sha256']),row['new']
         if '/src/main/resources/' in row['new'] and not row['new'].endswith('neoforge.mods.toml'):
-            assert hashlib.sha256((R/row['new']).read_bytes()).hexdigest()==row['before_sha256'],row['new']
+            if row['new'] in {f'modules/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/lang/{locale}.json' for locale in ('en_us','zh_cn')}:
+                current=target.read_text();before=json.loads(predecessor_text(row['new'],current));after=json.loads(current)
+                assert all(after.get(k)==v for k,v in before.items()),row['new']
+                expected={'weapon_assembly_ui.'+k for k in ('edit_preset','exit_preset','temporary_preset','catalog_unlimited','no_catalog_candidates')}
+                assert set(after)-set(before)==expected,row['new']
+                assert hashlib.sha256(target.read_bytes()).hexdigest()==native_successor(row['new'],row['before_sha256']),row['new']
+            else:
+                assert hashlib.sha256(target.read_bytes()).hexdigest()==row['before_sha256'],row['new']
     fixture_sources=json.loads((R/'modules/fixture-sources.json').read_text())
     for row in fixture_sources['files']:
         assert hashlib.sha256((R/row['new']).read_bytes()).hexdigest()==row['sha256'],row['new']
@@ -72,6 +79,6 @@ def verify(jar=None, newmod=None):
                     # Annotation descriptor must not survive in class files.
                     assert b'Lnet/neoforged/fml/common/Mod;' not in z.read(name),name
             assert 'META-INF/licenses/EFTForge-MIT.txt' in names
-    print(f'WEAPON_MODULES PASS: {count} production sources, four internal boundaries, persistent profile identity, unchanged resources'+(', single Mod Jar' if jar else ''))
+    print(f'WEAPON_MODULES PASS: {count} production sources, four internal boundaries, persistent profile identity, original resources preserved with audited additive preset labels'+(', single Mod Jar' if jar else ''))
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--jar',type=Path);p.add_argument('--newmod',type=Path);a=p.parse_args();verify(a.jar,a.newmod)

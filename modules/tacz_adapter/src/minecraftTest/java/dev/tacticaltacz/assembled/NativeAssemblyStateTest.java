@@ -124,6 +124,23 @@ class NativeAssemblyStateTest {
         assertNull(models.resolve(weapon().createPart("tacz_stock_moe")));
     }
 
+    @Test void temporaryPresetEditsHaveNoPhysicalInventoryAuthority(){
+        var actual=weapon().preset();var before=actual.copy();
+        var draft=dev.weaponassemblyui.session.AssemblySession.preset(weapon().CATALOG,weapon().project(actual),new dev.weaponassembly.api.WeaponStats.Context(0,0),Optional.of("native stats"));
+        assertTrue(draft.temporaryPreset());assertEquals(Optional.of("native stats"),draft.statsExplanation());
+        draft.select(List.of("upper","barrel_mount","handguard"));
+        var rail=draft.candidates().stream().filter(n->n.definitionId().equals("handguard_tactical")).findFirst().orElseThrow();
+        assertTrue(draft.install(rail.instanceId()).success());
+        draft.select(List.of("upper","barrel_mount","handguard","grip"));
+        var grip=draft.candidates().stream().filter(n->n.definitionId().equals("tacz_grip_rk1_b25u")).findFirst().orElseThrow();
+        assertTrue(draft.install(grip.instanceId()).success());assertTrue(draft.remove().success());
+        assertTrue(draft.install(grip.instanceId()).success());
+        assertTrue(draft.detached().isEmpty());assertTrue(ItemStack.matches(before,actual));
+        var reopened=dev.weaponassemblyui.session.AssemblySession.preset(weapon().CATALOG,weapon().project(actual),new dev.weaponassembly.api.WeaponStats.Context(0,0),Optional.empty());
+        assertEquals("handguard_default",reopened.nodeAt(List.of("upper","barrel_mount","handguard")).orElseThrow().definitionId());
+        assertTrue(ItemStack.matches(before,actual));
+    }
+
     @Test void nativeHighAndLowSelectImmutableLeavesWithoutInstanceLeakage(){
         var gson=new com.google.gson.GsonBuilder().registerTypeAdapter(com.tacz.guns.client.resource.pojo.model.CubesItem.class,new com.tacz.guns.client.resource.pojo.model.CubesItem.Deserializer()).create();
         for(var resource:List.of("assets/tacz_assembly/geo_models/gun/m4a1.json","assets/tacz_assembly/geo_models/gun/lod/m4a1.json")){

@@ -23,6 +23,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
     private final AssemblyMaterials materials;
     private final Function<String,String> partName;
     private final String titleText;
+    private final Runnable modeAction;
     private final Function<String,ResourceLocation> partImage;
     private final InventoryRootElement root;
     private UiDesign design;
@@ -42,7 +43,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
     private List<String> hoveredPath;
     private InventoryTextElement stats,delta,status,previewNotice;
     private InventoryButtonElement undo,reset;
-    private InventoryButtonElement materialMode;
+    private InventoryButtonElement materialMode,modeButton;
     private boolean whiteModel;
     private AssemblyNode lastTree;
     private int oldWidth=-1,oldHeight=-1;
@@ -56,7 +57,10 @@ public final class WorkbenchScreen extends ModularUIScreen {
         this(host,geometry,materials,names,id->null,title);
     }
     public WorkbenchScreen(WorkbenchAccess host,Map<String,ModelGeometry> geometry,AssemblyMaterials materials,Function<String,String> names,Function<String,ResourceLocation> images,String title) {
-        super(createUi(),Component.literal(title));this.host=Objects.requireNonNull(host);this.geometry=Map.copyOf(geometry);
+        this(host,geometry,materials,names,images,title,null);
+    }
+    public WorkbenchScreen(WorkbenchAccess host,Map<String,ModelGeometry> geometry,AssemblyMaterials materials,Function<String,String> names,Function<String,ResourceLocation> images,String title,Runnable modeAction) {
+        super(createUi(),Component.literal(title));this.host=Objects.requireNonNull(host);this.geometry=Map.copyOf(geometry);this.modeAction=modeAction;
         this.materials=Objects.requireNonNull(materials);
         partName=Objects.requireNonNull(names);partImage=Objects.requireNonNull(images);titleText=title;root=(InventoryRootElement)modularUI.ui.rootElement;
     }
@@ -92,7 +96,12 @@ public final class WorkbenchScreen extends ModularUIScreen {
         leaders.setAllowHitTest(false);design.place(leaders,0,100,canvasWidth,canvasHeight-300);page.addChild(leaders);
         text(page,"GUNSMITH",28,UiDesign.TEXT,28,20,450,42).setId("assembly-heading");
         text(page,titleText,20,UiDesign.TEXT,28,65,650,32);
-        previewNotice=text(page,"",18,InventoryUiTheme.WINDOW_SELECTED_BORDER,460,24,720,35);
+        previewNotice=text(page,"",18,InventoryUiTheme.WINDOW_SELECTED_BORDER,460,24,450,35);
+        if(host.temporaryPreset())text(page,tr("temporary_preset"),16,InventoryUiTheme.WINDOW_SELECTED_BORDER,690,65,560,32).setId("assembly-preset-notice");
+        if(modeAction!=null){
+            modeButton=button(page,tr(host.temporaryPreset()?"exit_preset":"edit_preset"),!host.busy(),()->{if(!host.busy())modeAction.run();},1012+right,24,220,36);
+            modeButton.setId("assembly-preset-mode");
+        }
         var panel=design.surface(UiDesign.SURFACE);design.place(panel,12,600+bottom,350,188);page.addChild(panel);
         text(panel,tr("attributes"),18,UiDesign.TEXT,14,10,300,28);
         stats=text(panel,"",18,UiDesign.TEXT,14,44,310,78);
@@ -160,9 +169,10 @@ public final class WorkbenchScreen extends ModularUIScreen {
     }
     private void refreshReadout() {
         viewport.selection(hoveredPath!=null&&chooser==null?hoveredPath:host.selectedPath().isEmpty()?null:host.selectedPath(),host.preview().isPresent());
-        var current=host.stats();var candidate=host.preview();
+        var candidate=host.preview();
         if(host.statsExplanation().isPresent()){stats.text(host.statsExplanation().orElseThrow());delta.text("");}
         else {
+        var current=host.stats();
         stats.text(tr("stats",String.format(Locale.ROOT,"%.2f",current.weightKg()),String.format(Locale.ROOT,"%.1f",current.ergonomics()),String.format(Locale.ROOT,"%.1f",current.recoilVertical())));
         delta.text(candidate.flatMap(AssemblySession.Preview::stats).map(v->tr("delta",signed(v.weightKg()-current.weightKg()),signed(v.ergonomics()-current.ergonomics()),signed(v.recoilVertical()-current.recoilVertical()))).orElse(""));
         }
@@ -170,8 +180,9 @@ public final class WorkbenchScreen extends ModularUIScreen {
         var errors=candidate.filter(p->!p.plan().success()).map(p->p.plan().errors()).orElse(host.feedback());
         if(!errors.isEmpty())status.text(tr("rejected")+": "+issue(errors.getFirst()));
         else if(!host.validation().complete())status.text(tr("incomplete")+": "+pathName(host.validation().missingRequired().getFirst().path()));
-        else status.text(tr("complete")+" · "+tr("detached",host.detached().size()));
+        else status.text(tr("complete")+" · "+(host.temporaryPreset()?tr("catalog_unlimited"):tr("detached",host.detached().size())));
         undo.setActive(host.canUndo());reset.setActive(host.canReset());
+        if(modeButton!=null)modeButton.setActive(!host.busy());
         materialMode.setText(Component.literal(whiteModel?tr("show_materials"):tr("white_model")));
     }
     private String issue(AssemblyEngine.Issue issue) { return tr("error."+issue.code().name())+" · "+pathName(issue.path()); }
@@ -337,7 +348,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
             empty.style(s->s.tooltips(Component.literal(tr("remove"))));
             empty.addEventListener(UIEvents.MOUSE_ENTER,e->{host.clearPreview();refreshReadout();});
             design.place(empty,10,10,CELL,CELL);addChild(empty);
-            noCandidates=text(this,tr("no_candidates"),14,UiDesign.MUTED,104,20,324,60);
+            noCandidates=text(this,tr(host.temporaryPreset()?"no_catalog_candidates":"no_candidates"),14,UiDesign.MUTED,104,20,324,60);
             scroll=new InventoryScrollView(design);scroll.setId("assembly-candidates");
             scroll.viewPort.layout(l->l.paddingAll(0));
             scroll.viewPort.style(s->s.backgroundTexture(com.lowdragmc.lowdraglib2.gui.texture.IGuiTexture.EMPTY));design.place(scroll,10,98,436,258);
@@ -366,7 +377,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
                 var b=cards.get(candidate.instanceId());
                 if(b==null) {
                     b=new AttachmentCard(design,partName.apply(candidate.definitionId()),partImage.apply(candidate.definitionId()),true,()->{
-                        if(!host.busy()){host.install(candidate.instanceId());closeChooser();reconcile(true);}
+                        if(!host.busy()){var result=host.install(candidate.instanceId());if(result.success())closeChooser();reconcile(true);}
                     });
                     content.addChild(b);cards.put(candidate.instanceId(),b);
                     b.setId("assembly-candidate-"+candidate.instanceId());

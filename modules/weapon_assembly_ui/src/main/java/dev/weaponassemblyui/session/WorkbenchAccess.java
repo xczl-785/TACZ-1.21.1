@@ -15,6 +15,8 @@ public interface WorkbenchAccess {
     WeaponStats.Values stats();
     /** Explain when the host uses a different stat system instead of showing fabricated zero values. */
     default Optional<String> statsExplanation(){return Optional.empty();}
+    /** Temporary draft backed by a virtual catalog rather than player inventory. */
+    default boolean temporaryPreset(){return false;}
     AssemblyEngine.Validation validation();
     boolean canUndo();
     boolean canReset();

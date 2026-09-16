@@ -15,8 +15,8 @@ import net.neoforged.neoforge.client.event.*;
 /** Client projection, hover plans and input only. No optimistic inventory writes or local undo. */
 @EventBusSubscriber(modid="tacz",value=Dist.CLIENT)
 public final class AssemblyGunClient {
-    private static UUID request=AssemblyGunProtocol.EMPTY,token=AssemblyGunProtocol.EMPTY;
-    private static boolean opening,pending;
+    private static final AssemblyWorkbenchLifecycle lifecycle=new AssemblyWorkbenchLifecycle();
+    private static UUID token=AssemblyGunProtocol.EMPTY;
     private static WorkbenchScreen screen;
     private static Host host;
     private static ItemStack quoted=ItemStack.EMPTY;
@@ -35,33 +35,64 @@ public final class AssemblyGunClient {
             for(var line:lines){event.getGuiGraphics().drawString(mc.font,line,8,y,0xffcccccc,true);y+=10;}
         }
     }
-    public static void open(){opening=true;screen=null;send(0,"",List.of());}
-    private static void send(int action,String source,List<String> path){request=UUID.randomUUID();pending=true;PacketDistributor.sendToServer(new AssemblyGunProtocol.Request(request,token,action,source,path));}
+    public static void open(){
+        var mc=Minecraft.getInstance();
+        token=AssemblyGunProtocol.EMPTY;host=null;screen=null;quoted=ItemStack.EMPTY;
+        var request=lifecycle.open(mc.screen);
+        PacketDistributor.sendToServer(new AssemblyGunProtocol.Request(request,token,0,"",List.of()));
+    }
+    private static void send(int action,String source,List<String> path){
+        lifecycle.exchange(Minecraft.getInstance().screen).ifPresent(request->
+                PacketDistributor.sendToServer(new AssemblyGunProtocol.Request(request,token,action,source,path)));
+    }
+    private static WorkbenchScreen createScreen(AssembledWeapon weapon,WorkbenchAccess access,String name,Runnable modeAction){
+        var model=com.tacz.guns.api.TimelessAPI.getClientGunIndex(weapon.GUN).orElseThrow().getDefaultDisplay().getGunModel();
+        var geometry=model instanceof AssemblyGunModel assembled?assembled.geometry():NativeAssemblyView.geometry(weapon);
+        var materials=model instanceof AssemblyGunModel assembled?assembled.materials():NativeAssemblyView.materials(weapon,geometry);
+        return new WorkbenchScreen(access,geometry,materials,
+                id->weapon.nativeRig?weapon.createPart(id).getHoverName().getString():Component.translatable("item."+weapon.ITEMS.get(id).replace(':','.')).getString(),
+                id->{if(weapon.nativeRig)return net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(weapon.GUN.getNamespace(),"textures/item/"+id+".png");var item=net.minecraft.resources.ResourceLocation.parse(weapon.ITEMS.get(id));return item.withPath("textures/item/"+item.getPath()+".png");},
+                name+" · "+Component.translatable("tactical_tacz_adapter.assembly_workbench.title").getString(),modeAction);
+    }
+    private static void editPreset(){
+        var mc=Minecraft.getInstance();
+        if(mc.player==null||mc.screen!=screen||host==null||lifecycle.pending()||lifecycle.temporary())return;
+        // Copy only a confirmed view of the current held item. Refresh first if it changed.
+        if(!ItemStack.matches(quoted,mc.player.getMainHandItem())){open();return;}
+        var weapon=AssembledWeapons.from(quoted);
+        var draft=AssemblySession.preset(host.catalog(),host.tree(),new WeaponStats.Context(0,0),host.statsExplanation());
+        var next=createScreen(weapon,draft,quoted.getHoverName().getString(),AssemblyGunClient::open);
+        if(!lifecycle.preset(screen,next))return;
+        token=AssemblyGunProtocol.EMPTY;host=null;quoted=ItemStack.EMPTY;screen=next;
+        mc.setScreen(next);
+    }
     public static void receive(AssemblyGunProtocol.View view){
-        var mc=Minecraft.getInstance();if(!view.requestId().equals(request)||mc.player==null||(!opening&&mc.screen!=screen))return;
-        pending=false;token=view.token();
+        var mc=Minecraft.getInstance();
+        if(mc.player==null||!lifecycle.receive(view.requestId(),mc.screen))return;
+        boolean opening=lifecycle.opening();token=view.token();
         if(token.equals(AssemblyGunProtocol.EMPTY)||!AssembledWeapons.isGun(view.held())){
-            opening=false;if(mc.screen==screen)mc.setScreen(null);screen=null;host=null;
+            if(mc.screen instanceof WorkbenchScreen)mc.setScreen(null);clear();
             mc.player.displayClientMessage(Component.translatable("tactical_tacz_adapter.assembly_workbench.unavailable"),true);return;
         }
         var weapon=AssembledWeapons.from(view.held());
         try{
-            if(host==null||opening||!weapon.isGun(quoted)){opening=true;host=new Host();}host.accept(view);quoted=view.held();
+            if(host==null||opening||!weapon.isGun(quoted)){opening=true;host=new Host();}
+            host.accept(view);quoted=view.held().copy();
             if(weapon.nativeRig&&view.result().equals("committed"))com.tacz.guns.resource.modifier.AttachmentPropertyManager.postChangeEvent(mc.player,mc.player.getMainHandItem());
             if(opening){
-                var model=com.tacz.guns.api.TimelessAPI.getClientGunIndex(weapon.GUN).orElseThrow().getDefaultDisplay().getGunModel();
-                var geometry=model instanceof AssemblyGunModel assembled?assembled.geometry():NativeAssemblyView.geometry(weapon);
-                var materials=model instanceof AssemblyGunModel assembled?assembled.materials():NativeAssemblyView.materials(weapon,geometry);
-                screen=new WorkbenchScreen(host,geometry,materials,id->weapon.nativeRig?weapon.createPart(id).getHoverName().getString():Component.translatable("item."+weapon.ITEMS.get(id).replace(':','.')).getString(),id->{if(weapon.nativeRig)return net.minecraft.resources.ResourceLocation.fromNamespaceAndPath(weapon.GUN.getNamespace(),"textures/item/"+id+".png");var item=net.minecraft.resources.ResourceLocation.parse(weapon.ITEMS.get(id));return item.withPath("textures/item/"+item.getPath()+".png");},view.held().getHoverName().getString()+" · "+Component.translatable("tactical_tacz_adapter.assembly_workbench.title").getString());
-                opening=false;mc.setScreen(screen);
+                screen=createScreen(weapon,host,view.held().getHoverName().getString(),AssemblyGunClient::editPreset);
+                lifecycle.real(screen);mc.setScreen(screen);
             }
             if(!view.result().isEmpty())mc.player.displayClientMessage(Component.translatable("tactical_tacz_adapter.assembly_workbench."+view.result()),true);
-        }catch(IllegalArgumentException bad){opening=false;screen=null;host=null;mc.setScreen(null);mc.player.displayClientMessage(Component.translatable("tactical_tacz_adapter.assembly_workbench.unavailable"),true);}
+        }catch(IllegalArgumentException bad){clear();mc.setScreen(null);mc.player.displayClientMessage(Component.translatable("tactical_tacz_adapter.assembly_workbench.unavailable"),true);}
     }
+    private static void clear(){lifecycle.close();screen=null;host=null;token=AssemblyGunProtocol.EMPTY;quoted=ItemStack.EMPTY;ticks=0;}
     @SubscribeEvent public static void tick(ClientTickEvent.Post event){
         var mc=Minecraft.getInstance();
-        if(screen!=null&&mc.screen!=screen){screen=null;host=null;token=AssemblyGunProtocol.EMPTY;pending=false;opening=false;return;}
-        if(screen!=null&&mc.player!=null&&!pending&&++ticks%20==0&&!ItemStack.matches(quoted,mc.player.getMainHandItem()))send(0,"",List.of());
+        if(!lifecycle.watch(mc.screen)||mc.player==null){clear();return;}
+        // A temporary preset has no server quote, inventory source or refresh channel.
+        if(lifecycle.temporary()||lifecycle.opening())return;
+        if(screen!=null&&!lifecycle.pending()&&++ticks%20==0&&!ItemStack.matches(quoted,mc.player.getMainHandItem()))send(0,"",List.of());
     }
     private static final class Host implements WorkbenchAccess {
         private AssemblySession view;
@@ -84,22 +115,22 @@ public final class AssemblyGunClient {
         public WeaponStats.Values stats(){return view.stats();}
         public Optional<String> statsExplanation(){return nativeRig?Optional.of(Component.translatable("tacz_assembly.native_stats").getString()):Optional.empty();}
         public AssemblyEngine.Validation validation(){return view.validation();}
-        public boolean busy(){return pending;}
+        public boolean busy(){return lifecycle.pending();}
         public boolean canUndo(){return false;}
         public boolean canReset(){return false;}
         public Optional<AssemblyNode> nodeAt(List<String> path){return view.nodeAt(path);}
         public List<AssemblySession.SlotView> slots(List<String> path){return view.slots(path);}
         public boolean select(List<String> path){return view.select(path);}
-        public List<AssemblyNode> candidates(){return pending?List.of():view.candidates();}
+        public List<AssemblyNode> candidates(){return lifecycle.pending()?List.of():view.candidates();}
         public void clearPreview(){view.clearPreview();}
         public AssemblySession.Preview preview(UUID id){return view.preview(id);}
         public AssemblyEngine.Result install(UUID id){
             var proposal=view.preview(id).plan();
             if(!proposal.success())return proposal;
             view.clearPreview();
-            if(!pending&&proposal.success()&&sources.containsKey(id))send(1,sources.get(id),selectedPath());return unchanged();
+            if(!lifecycle.pending()&&proposal.success()&&sources.containsKey(id))send(1,sources.get(id),selectedPath());return unchanged();
         }
-        public AssemblyEngine.Result remove(){if(!pending&&!selectedPath().isEmpty())send(2,"",selectedPath());return unchanged();}
+        public AssemblyEngine.Result remove(){if(!lifecycle.pending()&&!selectedPath().isEmpty())send(2,"",selectedPath());return unchanged();}
         private AssemblyEngine.Result unchanged(){return new AssemblyEngine.Result(tree(),tree(),Optional.empty(),List.of());}
         public boolean undo(){return false;}
         public void reset(){}

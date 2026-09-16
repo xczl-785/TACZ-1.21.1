@@ -98,4 +98,77 @@ class AssemblySessionTest {
         assertEquals(Set.of(List.of("top"),List.of("side")),
                 new HashSet<>(s.visibleSlots().stream().map(AssemblySession.SlotView::path).toList()));
     }
+
+    private static AssemblySession preset(AssemblyNode tree) {
+        return AssemblySession.preset(catalog(), tree, new WeaponStats.Context(0, 0), Optional.of("原生枪械属性"));
+    }
+    private static UUID selector(AssemblySession session, String definition) {
+        return session.stock().stream().filter(n -> n.definitionId().equals(definition)).findFirst().orElseThrow().instanceId();
+    }
+    private static Set<UUID> identities(AssemblyNode node) {
+        var ids = new HashSet<UUID>(); ids.add(node.instanceId());
+        node.children().values().forEach(child -> ids.addAll(identities(child))); return ids;
+    }
+    @Test void presetCopiesEveryIdentityAndKeepsNativeStatExplanation() {
+        var original = gun(Map.of("top", mount(leaf("optic"))));
+        var s = preset(original);
+        assertTrue(s.temporaryPreset()); assertEquals(Optional.of("原生枪械属性"), s.statsExplanation());
+        assertTrue(Collections.disjoint(identities(original), identities(s.tree())));
+        assertEquals(Set.of("mount", "optic", "blocker"), new HashSet<>(s.stock().stream().map(AssemblyNode::definitionId).toList()));
+        var originalChild = original.children().get("top");
+        s.select(List.of("top")); assertTrue(s.remove().success());
+        assertSame(originalChild, original.children().get("top"));
+        assertTrue(originalChild.children().containsKey("optic"));
+        var finite = session(original); assertFalse(finite.temporaryPreset()); assertTrue(finite.statsExplanation().isEmpty());
+    }
+    @Test void virtualSelectorCanInstallRepeatedDefinitionWithFreshIdentities() {
+        var s = preset(gun(Map.of())); var directory = s.stock(); var selector = selector(s, "mount");
+        s.select(List.of("top"));
+        var firstPreview = s.preview(selector).plan().after().children().get("top");
+        var secondPreview = s.preview(selector).plan().after().children().get("top");
+        assertNotEquals(firstPreview.instanceId(), secondPreview.instanceId());
+        assertTrue(s.tree().children().isEmpty()); assertFalse(s.canUndo());
+        assertTrue(s.install(selector).success()); var first = s.nodeAt(List.of("top")).orElseThrow();
+        assertNotEquals(selector, first.instanceId()); assertNotEquals(secondPreview.instanceId(), first.instanceId());
+        s.select(List.of("side")); assertTrue(s.install(selector).success());
+        assertNotEquals(first.instanceId(), s.nodeAt(List.of("side")).orElseThrow().instanceId());
+        assertEquals(directory, s.stock()); assertEquals(1, s.candidates().stream().filter(n -> n.definitionId().equals("mount")).count());
+        assertTrue(s.validation().valid()); assertFalse(s.validation().complete());
+    }
+    @Test void repeatedVirtualReplacementAndRemovalNeverConsumesOrAccumulatesParts() {
+        var s = preset(gun(Map.of())); var directory = s.stock(); var selector = selector(s, "mount");
+        var installedIds = new HashSet<UUID>(); s.select(List.of("top"));
+        for (int i = 0; i < 30; i++) {
+            assertTrue(s.install(selector).success());
+            assertTrue(installedIds.add(s.nodeAt(List.of("top")).orElseThrow().instanceId()));
+            assertEquals(directory, s.stock()); assertTrue(s.detached().isEmpty());
+        }
+        s.select(List.of("top", "optic")); assertTrue(s.install(selector(s, "optic")).success());
+        s.select(List.of("top")); assertTrue(s.remove().success());
+        assertTrue(s.tree().children().isEmpty()); assertEquals(directory, s.stock()); assertTrue(s.detached().isEmpty());
+    }
+    @Test void presetStillRejectsIncompatibleConflictingAndForgedSelectors() {
+        var s = preset(gun(Map.of("top", mount(leaf("optic"))))); var before = s.tree(); var directory = s.stock();
+        s.select(List.of("side"));
+        assertFalse(s.preview(selector(s, "blocker")).plan().success());
+        assertFalse(s.install(selector(s, "blocker")).success());
+        assertTrue(s.feedback().stream().anyMatch(i -> i.code() == AssemblyEngine.Code.PART_CONFLICT));
+        assertFalse(s.install(selector(s, "optic")).success());
+        assertFalse(s.install(UUID.randomUUID()).success());
+        assertEquals(AssemblyEngine.Code.UNKNOWN_PART, s.feedback().getFirst().code());
+        assertFalse(s.install(before.children().get("top").instanceId()).success());
+        assertSame(before, s.tree()); assertEquals(directory, s.stock()); assertFalse(s.canUndo());
+    }
+    @Test void presetUndoResetAndReopenKeepDraftsIsolated() {
+        var original = gun(Map.of("top", mount(leaf("optic")))); var s = preset(original);
+        var initial = s.tree(); var directory = s.stock(); s.select(List.of("top"));
+        assertTrue(s.remove().success()); var removed = s.tree(); assertTrue(s.canReset());
+        assertTrue(s.undo()); assertEquals(initial, s.tree()); assertFalse(s.canReset());
+        assertTrue(s.remove().success()); s.reset(); assertEquals(initial, s.tree());
+        assertTrue(s.undo()); assertEquals(removed, s.tree()); assertEquals(directory, s.stock()); assertTrue(s.detached().isEmpty());
+        var reopened = preset(original);
+        assertTrue(reopened.nodeAt(List.of("top", "optic")).isPresent());
+        assertTrue(Collections.disjoint(identities(s.tree()), identities(reopened.tree())));
+        assertEquals(directory, reopened.stock()); assertFalse(reopened.canUndo()); assertFalse(reopened.canReset());
+    }
 }

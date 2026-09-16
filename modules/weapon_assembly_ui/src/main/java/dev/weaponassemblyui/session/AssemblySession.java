@@ -2,8 +2,9 @@ package dev.weaponassemblyui.session;
 
 import dev.weaponassembly.api.*;
 import java.util.*;
+import java.nio.charset.StandardCharsets;
 
-/** In-memory sample workbench. Hosts supply every instance; this never writes a player inventory. */
+/** In-memory workbench with either host-supplied stock or a temporary virtual catalog. */
 public final class AssemblySession implements WorkbenchAccess {
     public record SlotView(List<String> path, UUID ownerId, PartDefinition.Slot definition,
                            Optional<AssemblyNode> installed) {
@@ -17,6 +18,8 @@ public final class AssemblySession implements WorkbenchAccess {
     private final WeaponStats calculator;
     private final WeaponStats.Context context;
     private final State initial;
+    private final boolean temporaryPreset;
+    private final Optional<String> statsExplanation;
     private final Deque<State> history = new ArrayDeque<>();
     private State state;
     private List<String> selected = List.of();
@@ -25,6 +28,28 @@ public final class AssemblySession implements WorkbenchAccess {
 
     public AssemblySession(AssemblyCatalog catalog, AssemblyNode initialTree,
                            Collection<AssemblyNode> suppliedParts, WeaponStats.Context context) {
+        this(catalog, initialTree, suppliedParts, context, false, Optional.empty());
+    }
+    /** Isolated draft: selector identities are catalog keys, never installed part identities. */
+    public static AssemblySession preset(AssemblyCatalog catalog, AssemblyNode initialTree,
+                                         WeaponStats.Context context, Optional<String> statsExplanation) {
+        var selectors = catalog.parts().values().stream().filter(part -> part.weapon().isEmpty())
+                .map(part -> AssemblyNode.leaf(UUID.nameUUIDFromBytes(
+                        ("weaponassemblyui:preset-selector/" + part.id()).getBytes(StandardCharsets.UTF_8)), part.id()))
+                .toList();
+        return new AssemblySession(catalog, copyWithFreshIdentities(initialTree), selectors,
+                context, true, statsExplanation);
+    }
+    private static AssemblyNode copyWithFreshIdentities(AssemblyNode node) {
+        var children = new TreeMap<String, AssemblyNode>();
+        node.children().forEach((slot, child) -> children.put(slot, copyWithFreshIdentities(child)));
+        return new AssemblyNode(UUID.randomUUID(), node.definitionId(), children);
+    }
+    private AssemblySession(AssemblyCatalog catalog, AssemblyNode initialTree,
+                            Collection<AssemblyNode> suppliedParts, WeaponStats.Context context,
+                            boolean temporaryPreset, Optional<String> statsExplanation) {
+        this.temporaryPreset = temporaryPreset;
+        this.statsExplanation = Objects.requireNonNull(statsExplanation);
         engine = new AssemblyEngine(catalog);
         calculator = new WeaponStats(engine);
         this.context = Objects.requireNonNull(context);
@@ -42,6 +67,8 @@ public final class AssemblySession implements WorkbenchAccess {
         if (!identities.add(node.instanceId())) throw new IllegalArgumentException("Duplicate supplied instance: " + node.instanceId());
         node.children().values().forEach(child -> collectIdentities(child, identities));
     }
+    public boolean temporaryPreset() { return temporaryPreset; }
+    public Optional<String> statsExplanation() { return statsExplanation; }
     public AssemblyCatalog catalog() { return engine.catalog(); }
     public AssemblyNode tree() { return state.tree(); }
     public List<AssemblyNode> stock() { return state.stock(); }
@@ -93,8 +120,11 @@ public final class AssemblySession implements WorkbenchAccess {
         var source = stock().stream().filter(n -> n.instanceId().equals(sourceId)).findFirst();
         AssemblyEngine.Result result;
         if (source.isEmpty()) result = failure(AssemblyEngine.Code.UNKNOWN_PART, "Candidate is not supplied by this host");
-        else if (nodeAt(selected).isPresent() && !selected.isEmpty()) result = engine.replace(tree(), selected, source.orElseThrow());
-        else result = engine.install(tree(), selected, source.orElseThrow());
+        else {
+            var attachment = temporaryPreset ? copyWithFreshIdentities(source.orElseThrow()) : source.orElseThrow();
+            if (nodeAt(selected).isPresent() && !selected.isEmpty()) result = engine.replace(tree(), selected, attachment);
+            else result = engine.install(tree(), selected, attachment);
+        }
         Optional<WeaponStats.Values> values = Optional.empty();
         if (result.success()) {
             try { values = Optional.of(calculator.calculate(result.after(), context)); }
@@ -123,8 +153,10 @@ public final class AssemblySession implements WorkbenchAccess {
         if (!result.success()) return result;
         var stock = new ArrayList<>(state.stock());
         var detached = new HashSet<>(state.detached());
-        consumed.ifPresent(id -> { stock.removeIf(n -> n.instanceId().equals(id)); detached.remove(id); });
-        result.detached().ifPresent(n -> { stock.add(n); detached.add(n.instanceId()); });
+        if (!temporaryPreset) {
+            consumed.ifPresent(id -> { stock.removeIf(n -> n.instanceId().equals(id)); detached.remove(id); });
+            result.detached().ifPresent(n -> { stock.add(n); detached.add(n.instanceId()); });
+        }
         history.push(state);
         state = new State(result.after(), stock, detached);
         return result;
@@ -133,7 +165,7 @@ public final class AssemblySession implements WorkbenchAccess {
         if (history.isEmpty()) return false;
         state = history.pop(); tidySelection(); return true;
     }
-    /** Restore the complete original sample session, including its supplied parts and detached tray. */
+    /** Restore the initial session, including its stock policy; reset itself remains undoable. */
     public void reset() {
         if (!state.equals(initial)) history.push(state);
         state = initial; tidySelection();
