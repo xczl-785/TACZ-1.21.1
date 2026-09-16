@@ -1,0 +1,54 @@
+{
+  "results": [
+    {
+      "definition": "handguard_tactical",
+      "cubes": 294,
+      "meshes": 0
+    },
+    {
+      "definition": "tacz_stock_ak12",
+      "cubes": 115,
+      "meshes": 0
+    },
+    {
+      "definition": "tacz_stock_carbon_bone_c5",
+      "cubes": 42,
+      "meshes": 0
+    },
+    {
+      "definition": "tacz_stock_hk_slim_line",
+      "cubes": 79,
+      "meshes": 0
+    },
+    {
+      "definition": "tacz_stock_m4ss",
+      "cubes": 68,
+      "meshes": 0
+    },
+    {
+      "definition": "tacz_stock_militech_b5",
+      "cubes": 65,
+      "meshes": 0
+    },
+    {
+      "definition": "tacz_stock_moe",
+      "cubes": 48,
+      "meshes": 0
+    },
+    {
+      "definition": "tacz_stock_ripstock",
+      "cubes": 35,
+      "meshes": 0
+    },
+    {
+      "definition": "tacz_stock_sba3",
+      "cubes": 84,
+      "meshes": 0
+    }
+  ],
+  "restoredProject": "950c532d-bb10-a2d7-eb9e-497bc81a903c",
+  "maximumNativeCornerDifference": 0,
+  "uvEqual": true,
+  "originalEditorProjectRestored": true,
+  "sourceFilesOverwritten": false
+}

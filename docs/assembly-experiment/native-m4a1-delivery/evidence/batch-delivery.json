@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-16",
+  "sourceCommit": "b6399f969465e1c18a1e37b1df52f428d28a82b4",
+  "newmodCommit": "400a159b39710ca5871c1fb86ff9a3240edc967c",
+  "version": "1.1.8-hotfix-r6-newmod.b6399f96",
+  "scope": "Native TaCZ assembled weapons: configured attachment routes and icon capability, safe icon fallback; first batch tactical handguard and eight alternative stocks",
+  "editableParts": 24,
+  "editableCubes": 1413,
+  "newParts": 9,
+  "newCubes": 830,
+  "checks": {
+    "java": {
+      "tests": 100,
+      "failures": 0,
+      "errors": 0
+    },
+    "pythonPipelineTests": 14,
+    "pythonEditableTests": 3,
+    "pythonBatchTests": 5,
+    "blockbench": "9 independently loaded and compiled; source-coordinate delta zero, UV identical, original project restored",
+    "defaultSourceProtection": "15 prior editable models and textures byte-identical to previous commit",
+    "sharedResourceProtection": "src/main/resources unchanged",
+    "regeneration": "subagent compared two complete runs, all generated resource hashes identical",
+    "checkAssemble": "passed for final source commit",
+    "artifacts": "both jars contain matching route/preview/batches and 9 stock inline mappings",
+    "adapterIntegration": "passed",
+    "development": "962 classes, single artifact; prepare and cache reuse passed",
+    "production": "921 classes, single artifact; prepare and cache reuse passed"
+  },
+  "previousDisplayUserAcceptance": "User reported no major issues before this batch",
+  "gameStarted": false,
+  "worldsModified": false,
+  "userAcceptance": "current batch pending",
+  "routeLedger": "runtime unbound; no canonical writes; route and residuals in linked delivery document",
+  "deferred": [
+    "remaining non-optic batches",
+    "second native TaCZ gun integration proof",
+    "shared posture projection after attachment expansion",
+    "optics last",
+    "cold-icon scheduling and CPU texture memory budget"
+  ]
+}
