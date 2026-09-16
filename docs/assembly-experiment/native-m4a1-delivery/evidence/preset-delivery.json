@@ -1,0 +1,49 @@
+{
+  "date": "2026-09-16",
+  "sourceCommit": "21820224ba0adff075514f14104551e477f19308",
+  "newmodCommit": "673dba3087a2093ce462a0fb5159ac24eb910cb2",
+  "version": "1.1.8-hotfix-r6-newmod.21820224",
+  "precedingFix": "RK-1 mounted lateral reflection committed 220e8d7e and integrated 0f37374 before preset work",
+  "scope": "Temporary in-memory preset editing in existing gunsmith; complete compatible definition catalog without physical inventory consumption",
+  "behavior": [
+    "Copies initial assembly with independent identities",
+    "Stable definition selectors create fresh installed instances on each operation",
+    "Install replace remove undo reset reuse original engine constraints",
+    "Missing required parts remain editable and visibly incomplete",
+    "Close discards draft; return to real workbench requests fresh server view",
+    "UI ownership and request ID reject late responses and cross-mode changes",
+    "Native stat explanation retained"
+  ],
+  "checks": {
+    "java": {
+      "tests": 111,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "sessionTests": 13,
+    "lifecycleTests": 4,
+    "realM4ItemIsolationTest": "passed",
+    "pythonModelTests": 12,
+    "pythonPipelineTests": 14,
+    "checkAssemble": "passed",
+    "runtimeReview": "Independent review; unavailable response leaving old screen was fixed",
+    "languageProtection": "Only five new keys per locale permitted; all original entries unchanged",
+    "artifactContents": "both artifacts contain session/lifecycle classes, labels and corrected RK-1 resource",
+    "adapterIntegration": "passed",
+    "weaponModulesPackaged": "passed",
+    "development": "966 classes; unique artifact; preparation and configuration cache reuse passed",
+    "production": "925 classes; unique artifact; preparation and configuration cache reuse passed"
+  },
+  "userAcceptance": "pending real client inspection",
+  "gameStarted": false,
+  "worldsModified": false,
+  "remotePush": false,
+  "deferred": [
+    "Preset persistence naming loading",
+    "Take draft gun outside editor or fire it",
+    "New optic production",
+    "Second native TaCZ gun integration",
+    "Shared folded/hidden sight presentation"
+  ]
+}
