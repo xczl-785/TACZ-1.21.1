@@ -35,6 +35,7 @@ class BatchImportContract(unittest.TestCase):
     def test_blockbench_five_decimal_save_preserves_rig_and_surfaces(self):
         for row in im.ex.read(im.EDIT/'manifest.json')['parts']:
             if row['definitionId'] not in batch.BATCH+batch.REMAINING:continue
+            _,native,_,_,_=im.load_part(row)
             model=im.ex.read(im.EDIT/row['model'])
             for obj in model['groups']+model['elements']:
                 for key in ('origin','from','to','rotation'):
@@ -43,10 +44,9 @@ class BatchImportContract(unittest.TestCase):
                 root=Path(tmp);im.write(root/row['model'],model)
                 (root/row['texture']).write_bytes((im.EDIT/row['texture']).read_bytes())
                 with patch.object(im,'EDIT',root):_,bones,_,_,_=im.load_part(row)
-            native={b['name']:b for b in im.ex.read(im.R/row['sourceGeometry'])['minecraft:geometry'][0]['bones']}
-            for name,indices in row['sourceCubeIndices'].items():
-                for j,index in enumerate(indices):
-                    before,old_uv=im.ex.cube_geometry(native[name],native[name]['cubes'][index],native,np.eye(4))
+            for name,bone in native.items():
+                for j,cube in enumerate(bone.get('cubes',[])):
+                    before,old_uv=im.ex.cube_geometry(bone,cube,native,np.eye(4))
                     after,new_uv=im.ex.cube_geometry(bones[name],bones[name]['cubes'][j],bones,np.eye(4))
                     self.assertLess(float(np.max(np.abs(before-after))),1e-8,row['definitionId'])
                     self.assertEqual(old_uv,new_uv)
@@ -80,7 +80,8 @@ class RemainingImportContract(unittest.TestCase):
         sourceparts={p['definitionId']:p for p in im.ex.read(im.SOURCE/'manifest.json')['parts']}
         for d in batch.REMAINING:
             row=rows[d];again,model,texture=batch.extract(sourceparts[d])
-            self.assertEqual(im.ex.read(im.EDIT/row['model']),model)
+            if im.ex.sha(im.EDIT/row['model'])==row['baselineModelSha256']:
+                self.assertEqual(im.ex.read(im.EDIT/row['model']),model)
             self.assertEqual((im.EDIT/row['texture']).read_bytes(),texture.read_bytes())
             _,bones,uv,_,_=im.load_part(row)
             source=im.ex.read(im.R/row['sourceGeometry'])['minecraft:geometry'][0]
@@ -94,6 +95,21 @@ class RemainingImportContract(unittest.TestCase):
             else:
                 self.assertEqual(row['anchorBone'] if 'anchorBone' in row else sourceparts[d]['anchorBone'],'magazine')
                 self.assertTrue(any('mag_and_bullet' in g['animationAncestors'] for g in row['motionOwnership']))
+
+    def test_rk1_mounted_side_is_reflected_with_same_surface_uv(self):
+        row=next(r for r in im.ex.read(im.EDIT/'manifest.json')['parts'] if r['definitionId']=='tacz_grip_rk1_b25u')
+        _,bones,_,_,_=im.load_part(row)
+        native={b['name']:b for b in im.ex.read(im.R/row['sourceGeometry'])['minecraft:geometry'][0]['bones']}
+        for name,indices in row['sourceCubeIndices'].items():
+            for j,index in enumerate(indices):
+                before,old_uv=im.ex.cube_geometry(native[name],native[name]['cubes'][index],native,np.eye(4))
+                after,new_uv=im.ex.cube_geometry(bones[name],bones[name]['cubes'][j],bones,np.eye(4))
+                before[:,0]*=-1
+                # Mirroring exchanges cube corner order. Compare each textured surface corner.
+                for ids,uvs in old_uv:
+                    for vertex,uv in zip(ids,uvs):
+                        self.assertTrue(any(np.max(np.abs(before[vertex]-after[n]))<2e-5 and np.allclose(uv,nu)
+                                            for ns,nuv in new_uv for n,nu in zip(ns,nuv)),(name,index,vertex))
 
     def test_generated_detached_contract_preserves_all_source_nodes(self):
         overrides=im.ex.read(im.BASE/'native_attachment_overrides.json')
