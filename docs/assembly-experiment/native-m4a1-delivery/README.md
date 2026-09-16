@@ -1,5 +1,7 @@
 # 当前：默认配件独立编辑与纹理回写
 
+最新交付（2026-09-16）：默认 15 件图标已统一枪口向左，并修正透明像素遮挡。源码 `71d0bcdd`，NewMod 接入 `94b1ce1`，制品 `1.1.8-hotfix-r6-newmod.71d0bcdd`。构建与正式/开发启动准备通过；未启动游戏，待用户核实。详见 [本轮证据](evidence/icon-delivery.json) 与 [新旧图标对照](evidence/icon-comparison.png)。用户核实后再考虑低成本批量制作，瞄具最后处理。
+
 2026-09-16 用户授权：拆分默认完整 M4，带纹理替换游戏配件并接入 NewMod，由用户启动验收。
 
 15 件独立方块模型已建立，583 方块；保留原生动画骨骼，工作台/图标/持枪高低模由同一编辑来源生成。修正 PNG 像素尺寸与 UV 尺寸混淆。CTR 仅替换本枪显示，其他枪与候选保留。来源和操作见[默认套件编辑入口](../../../modules/tacz_adapter/weapon-sources/native_m4a1/editable/README.md)。

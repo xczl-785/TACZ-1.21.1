@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-16",
+  "sourceCommit": "71d0bcdd67fbc0f3706aa9635a5b73c1b75bae29",
+  "newmodCommit": "94b1ce106beb61638d7c098f2cfe84d991d3e49b",
+  "version": "1.1.8-hotfix-r6-newmod.71d0bcdd",
+  "scope": "15 default M4 part icons: mounted muzzle left, native alpha cutout before depth write; camera reversal without bitmap mirroring",
+  "checks": {
+    "javaTests": 83,
+    "javaFailures": 0,
+    "pipelinePythonTests": 14,
+    "editablePythonTests": 3,
+    "checkAssemble": "passed on final source commit",
+    "artifactIconBytes": "all icon PNGs match source in both jars",
+    "adapterIntegration": "passed for both jars and NewMod",
+    "developmentRuntime": "954 classes, one artifact, preparation and configuration cache reuse passed",
+    "productionRuntime": "913 classes, one artifact, preparation and configuration cache reuse passed"
+  },
+  "gameStarted": false,
+  "worldsModified": false,
+  "userAcceptance": "pending",
+  "deferred": [
+    "Discuss cost-controlled bulk non-optic production after user acceptance; scripts/configuration for repetitive work, agent for exceptions and quality checks",
+    "Optics production last, after other attachments"
+  ]
+}
