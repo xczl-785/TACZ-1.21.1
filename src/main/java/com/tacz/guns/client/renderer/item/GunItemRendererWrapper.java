@@ -273,7 +273,7 @@ public class GunItemRendererWrapper extends AnimateGeoItemRenderer<BedrockGunMod
             }
             // GUI 特殊渲染
             if (transformType == GUI) {
-                renderSlotTexture(poseStack, pBuffer, pPackedLight, pPackedOverlay, gunIndex.getSlotTexture());
+                renderSlotTexture(poseStack, pBuffer, pPackedLight, pPackedOverlay, dev.tacticaltacz.assembled.NativeAssemblyIcons.texture(stack, gunIndex.getSlotTexture()));
                 return;
             }
             // 剩下的渲染

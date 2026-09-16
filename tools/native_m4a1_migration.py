@@ -4,7 +4,7 @@ from functools import lru_cache
 import hashlib,json,subprocess
 ROOT=Path(__file__).resolve().parents[1]
 LEDGER=ROOT/'docs/assembly-experiment/native-m4a1-integration.json'
-ROOT_EDITS={'src/main/java/com/tacz/guns/api/item/gun/AbstractGunItem.java','src/main/java/com/tacz/guns/api/client/other/GunModelTypeManager.java','src/main/java/com/tacz/guns/client/resource/GunDisplayInstance.java','src/main/java/com/tacz/guns/api/item/builder/GunItemBuilder.java','src/main/java/com/tacz/guns/client/gameplay/LocalPlayerAim.java','src/main/java/com/tacz/guns/entity/shooter/LivingEntityAim.java'}
+ROOT_EDITS={'src/main/java/com/tacz/guns/client/renderer/item/GunItemRendererWrapper.java','src/main/java/com/tacz/guns/api/item/gun/AbstractGunItem.java','src/main/java/com/tacz/guns/api/client/other/GunModelTypeManager.java','src/main/java/com/tacz/guns/client/resource/GunDisplayInstance.java','src/main/java/com/tacz/guns/api/item/builder/GunItemBuilder.java','src/main/java/com/tacz/guns/client/gameplay/LocalPlayerAim.java','src/main/java/com/tacz/guns/entity/shooter/LivingEntityAim.java'}
 @lru_cache(maxsize=1)
 def native_rows():
  data=json.loads(LEDGER.read_text());rows={r['path']:r for r in data['files']}

@@ -37,6 +37,17 @@ class NativeAssemblyStateTest {
         var buffer=dev.weaponmodels.ModelGeometry.origin(weapon().PRESET,models,List.of("buffer")).orElseThrow();
         assertTrue(muzzle.z()>buffer.z(),"Radian workbench art frame points toward +Z");
     }
+    @Test void itemEntryAndIconGeometryCoverTheCurrentAssembly(){
+        var entry=JsonParser.parseString(AssembledWeapon.resource("assets/tacz_assembly/models/item/m4a1.json")).getAsJsonObject();
+        assertEquals("builtin/entity",entry.get("parent").getAsString());
+        var a=weapon().preset();var b=weapon().preset();
+        assertEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(b)));
+        ((AssemblyGunItem)a.getItem()).setCurrentAmmoCount(a,10);
+        assertEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(b)));
+        var noStock=AssemblyGunExchange.plan(a,ItemStack.EMPTY,List.of("buffer","stock")).orElseThrow().held();
+        assertNotEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(noStock)));
+        assertEquals(AssembledWeapon.resource("data/tacz_assembly/m4a1/preview.json"),AssembledWeapon.resource("assets/tacz_assembly/m4a1/icon_geometry.json"));
+    }
     @Test void presetIsOnePhysicalTreeAndCanDetachMagazine(){
         var gun=weapon().preset();assertEquals(14,AssemblyTrees.flatten(gun).size());AssemblyTrees.validate(gun,AssembledWeapon.identity(gun));
         var before=gun.copy();var result=AssemblyGunExchange.plan(gun,ItemStack.EMPTY,List.of("magazine")).orElseThrow();
@@ -102,6 +113,8 @@ class NativeAssemblyStateTest {
             model.prepareGeometry(first);
             var second=AssemblyGunExchange.plan(weapon().preset(),ItemStack.EMPTY,List.of("upper")).orElseThrow().held();
             model.prepareGeometry(second);assertTrue(model.visibleBatchNames().size()<original.size());
+            var bare=weapon().createPart("lower_receiver");model.prepareGeometry(bare);
+            assertFalse(model.visibleBatchNames().isEmpty());assertTrue(model.visibleBatchNames().stream().allMatch(n->n.startsWith("assembly_editable_lower_receiver_")));
             model.prepareGeometry(first);assertEquals(original,model.visibleBatchNames());assertEquals(cubes,model.batchCubeCounts());
             var scoped=AssemblyGunExchange.plan(first,weapon().createPart("tacz_scope_acog_ta31"),List.of("upper","scope")).orElseThrow().held();
             model.prepareGeometry(scoped);assertNotEquals(original,model.visibleBatchNames());model.prepareGeometry(first);assertEquals(original,model.visibleBatchNames());
