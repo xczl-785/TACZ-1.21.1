@@ -1,5 +1,7 @@
 # 原生 M4 模型与显示交付
 
+最新修正：RK-1斜握把按用户装枪反馈改为相反的左右侧倾，持枪/组装台/图标同步；源码 `220e8d7e`，NewMod `0f37374`，制品 `1.1.8-hotfix-r6-newmod.220e8d7e`。工程检查通过，实机待用户，见 [证据](evidence/rk1-direction.json)。
+
 当前批次（2026-09-16）：M4剩余28件非瞄具已制作，累计52件2447方块。源码 `01c69961`，NewMod `894a404`，制品 `1.1.8-hotfix-r6-newmod.01c69961`。101 Java测试、11编辑/批量模型测试及28件Blockbench真实往返通过；NewMod接入与实机状态见 [本批证据](evidence/remaining-delivery.json)。不新增其他枪械，15光学候选继续延后。详见 [说明与后续路线](非瞄具批量与框架加固.md)。
 
 上一批战术护木/8替换枪托（源码 `b6399f96`、NewMod `400a159`）已获用户实机确认无误。历史工程证据见 [首批证据](evidence/batch-delivery.json)。

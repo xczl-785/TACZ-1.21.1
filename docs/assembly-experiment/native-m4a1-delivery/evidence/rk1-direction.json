@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "220e8d7e35d8abbeceba52a26307b46fef7bfaa0",
+  "newmodCommit": "0f37374570f43895a94b810b1b00935f4c9d0d22",
+  "version": "1.1.8-hotfix-r6-newmod.220e8d7e",
+  "change": "Reflect mounted RK-1 left/right geometry, preserve original bones, mounting point, forward and vertical coordinates and surface UV correspondence",
+  "checks": {
+    "java": 101,
+    "pythonModel": 12,
+    "blockbenchRoundtripError": 0,
+    "checkAssemble": "passed",
+    "developmentAndProduction": "dependency, runtime, preparation and configuration cache reuse passed"
+  },
+  "userAcceptance": "pending",
+  "gameStarted": false,
+  "worldsModified": false
+}
