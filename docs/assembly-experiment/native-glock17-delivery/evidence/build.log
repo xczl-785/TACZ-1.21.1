@@ -1,0 +1,109 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.12/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :createMinecraftArtifacts UP-TO-DATE
+> Task :verifyGameplayDependencies
+> Task :verifyPublicDependency
+> Task :compileJava UP-TO-DATE
+
+> Task :verifyConfiguredWeapons
+Native M4A1 contract PASS: 15 default nodes, 52 attachments, 140 preserved rig nodes; high/low 1547 166
+Native gun contract PASS: glock_17 9 editable parts; 20 catalog; 57 native bones; maximum geometry error 0
+Configured weapons: 5; physical items: 58; names, preset, material and registration resources valid
+
+> Task :processResources
+> Task :classes
+
+> Task :compileAdapterDevelopmentJava
+注: /Users/zhengpanpan/Downloads/tempProgram/TACZ-1.21.1-experiments/modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AdarSmoke.java使用或覆盖了已过时的 API。
+注: 有关详细信息, 请使用 -Xlint:deprecation 重新编译。
+
+> Task :processAdapterDevelopmentResources UP-TO-DATE
+> Task :adapterDevelopmentClasses
+> Task :jarJar UP-TO-DATE
+> Task :jar
+> Task :mergeDevelopmentLanguages
+> Task :developmentJar
+> Task :sourcesJar
+> Task :compileAdapterTestJava UP-TO-DATE
+> Task :processAdapterTestResources NO-SOURCE
+> Task :adapterTestClasses UP-TO-DATE
+> Task :adapterTest
+> Task :compilePureJava UP-TO-DATE
+> Task :compileTestJava UP-TO-DATE
+> Task :compileUiDevelopmentJava UP-TO-DATE
+> Task :downloadAssets UP-TO-DATE
+> Task :writeNeoForgeTestClasspath UP-TO-DATE
+> Task :prepareNeoForgeTestFiles UP-TO-DATE
+> Task :processTestResources NO-SOURCE
+> Task :testClasses UP-TO-DATE
+> Task :processUiDevelopmentResources UP-TO-DATE
+> Task :uiDevelopmentClasses UP-TO-DATE
+> Task :test
+
+> Task :verifyAdapterIntegration
+ADAPTER_INTEGRATION PASS: 386 paths, 12 injections retired; unchanged gun content and public ownership; 20 bootstrap/subscriber source edits
+
+> Task :verifyNativeAttachmentLibrary
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 1.902s
+
+OK
+
+> Task :verifyNativeEditable
+...
+----------------------------------------------------------------------
+Ran 3 tests in 1.657s
+
+OK
+
+> Task :verifyNativeEditableBatch
+.........{"batch": ["handguard_tactical", "tacz_stock_ak12", "tacz_stock_carbon_bone_c5", "tacz_stock_hk_slim_line", "tacz_stock_m4ss", "tacz_stock_militech_b5", "tacz_stock_moe", "tacz_stock_ripstock", "tacz_stock_sba3"], "imported": ["handguard_tactical", "tacz_stock_ak12", "tacz_stock_carbon_bone_c5", "tacz_stock_hk_slim_line", "tacz_stock_m4ss", "tacz_stock_militech_b5", "tacz_stock_moe", "tacz_stock_ripstock", "tacz_stock_sba3"], "skipped": [], "existingSourcesOverwritten": false, "sourcePolicy": "Audited native cube ownership; native texture byte copy; UV units from geometry description; original resources read-only"}
+
+----------------------------------------------------------------------
+{"batch": ["tacz_bayonet_m9", "tacz_extended_mag_1", "tacz_extended_mag_2", "tacz_extended_mag_3", "tacz_grip_cobra", "tacz_grip_cqr", "tacz_grip_magpul_afg_2", "tacz_grip_osovets_black", "tacz_grip_rk0", "tacz_grip_rk1_b25u", "tacz_grip_rk6", "tacz_grip_se_5", "tacz_grip_td", "tacz_grip_vertical_military", "tacz_grip_vertical_ranger", "tacz_grip_vertical_talon", "tacz_laser_compact", "tacz_laser_lopro", "tacz_laser_nightstick", "tacz_laser_peq15", "tacz_muzzle_brake_cthulhu", "tacz_muzzle_brake_cyclone_d2", "tacz_muzzle_brake_pioneer", "tacz_muzzle_brake_trex", "tacz_muzzle_compensator_trident", "tacz_muzzle_silencer_knight_qd", "tacz_muzzle_silencer_phantom_s1", "tacz_muzzle_silencer_ursus"], "imported": ["tacz_bayonet_m9", "tacz_extended_mag_1", "tacz_extended_mag_2", "tacz_extended_mag_3", "tacz_grip_cobra", "tacz_grip_cqr", "tacz_grip_magpul_afg_2", "tacz_grip_osovets_black", "tacz_grip_rk0", "tacz_grip_rk1_b25u", "tacz_grip_rk6", "tacz_grip_se_5", "tacz_grip_td", "tacz_grip_vertical_military", "tacz_grip_vertical_ranger", "tacz_grip_vertical_talon", "tacz_laser_compact", "tacz_laser_lopro", "tacz_laser_nightstick", "tacz_laser_peq15", "tacz_muzzle_brake_cthulhu", "tacz_muzzle_brake_cyclone_d2", "tacz_muzzle_brake_pioneer", "tacz_muzzle_brake_trex", "tacz_muzzle_compensator_trident", "tacz_muzzle_silencer_knight_qd", "tacz_muzzle_silencer_phantom_s1", "tacz_muzzle_silencer_ursus"], "skipped": [], "existingSourcesOverwritten": false, "sourcePolicy": "Audited native cube ownership; native texture byte copy; UV units from geometry description; original resources read-only"}
+Ran 9 tests in 1.862s
+
+OK
+
+> Task :verifyNativeGunPipeline
+......Native gun contract PASS: glock_17 9 editable parts; 20 catalog; 57 native bones; maximum geometry error 0
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.639s
+
+OK
+
+> Task :verifyWeaponModules
+WEAPON_MODULES PASS: 24 production sources, four internal boundaries, persistent profile identity, original resources preserved with audited additive preset labels
+
+> Task :verifyWeaponPipeline
+..............
+----------------------------------------------------------------------
+Ran 14 tests in 1.407s
+
+OK
+
+> Task :compileWeapon_assemblyTestJava UP-TO-DATE
+> Task :processWeapon_assemblyTestResources UP-TO-DATE
+> Task :weapon_assemblyTestClasses UP-TO-DATE
+> Task :weapon_assemblyTest
+> Task :compileWeapon_assembly_uiTestJava UP-TO-DATE
+> Task :processWeapon_assembly_uiTestResources UP-TO-DATE
+> Task :weapon_assembly_uiTestClasses UP-TO-DATE
+> Task :weapon_assembly_uiTest
+> Task :compileWeapon_modelsTestJava UP-TO-DATE
+> Task :processWeapon_modelsTestResources NO-SOURCE
+> Task :weapon_modelsTestClasses UP-TO-DATE
+> Task :weapon_modelsTest
+> Task :compileWeapon_runtimeTestJava NO-SOURCE
+> Task :processWeapon_runtimeTestResources NO-SOURCE
+> Task :weapon_runtimeTestClasses UP-TO-DATE
+> Task :weapon_runtimeTest NO-SOURCE
+> Task :check
+> Task :assemble
+
+[Incubating] Problems report is available at: file:///Users/zhengpanpan/Downloads/tempProgram/TACZ-1.21.1-experiments/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 37s
+38 actionable tasks: 21 executed, 17 up-to-date

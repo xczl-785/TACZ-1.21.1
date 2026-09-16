@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "sourceCommit": "30acf8185127888fb2bf180c49c7c4dc0103a5ec",
+  "newmodCommit": "d4634bfa88521483a981f559e4dc63d31e2edb1b",
+  "version": "1.1.8-hotfix-r6-newmod.30acf818",
+  "production": {
+    "version": "1.1.8-hotfix-r6-newmod.30acf818",
+    "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.30acf818.jar",
+    "sha512": "3e92ed1b5284d6b4db394b57971e1884eb1c662b3a9c4af6f37864adc8a33b9322416eda2a0929f988d9f70082f1e83a1a224c6216d766bff6c5e034039cf5a8",
+    "source_commit": "30acf8185127888fb2bf180c49c7c4dc0103a5ec"
+  },
+  "development": {
+    "version": "1.1.8-hotfix-r6-newmod.30acf818",
+    "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.30acf818-development.jar",
+    "sha512": "25aca19438066eac83c9e2e36010331013391a55a10b0e46e0dab697a711c76379edcc6cdafee7eea38022adf3655dfee5944245c8321cb39d00e615c6727a93",
+    "source_commit": "30acf8185127888fb2bf180c49c7c4dc0103a5ec"
+  },
+  "checks": {
+    "javaTests": 125,
+    "pythonTests": 41,
+    "blockbenchNewParts": 6,
+    "blockbenchCubes": 196,
+    "maximumRoundtripGeometryError": 0,
+    "newGunCatalogEntries": 20,
+    "newGunOwnedEditableDefinitions": 9,
+    "originalRigBones": 57,
+    "highCubes": 264,
+    "lowCubes": 264,
+    "sourcePackAndAcceptedEditableAssetsUnchanged": true,
+    "productionClassCount": 927,
+    "developmentClassCount": 968,
+    "configurationCacheStoredAndReusedBothModes": true,
+    "jarResourcesAndHashesVerified": true
+  },
+  "commands": [
+    "JAVA_HOME=<java21> bash gradlew check assemble --offline",
+    "JAVA_HOME=<java21> bash gradlew -Pmod_version=1.1.8-hotfix-r6-newmod.30acf818 assemble --offline",
+    "tools/verify_adapter_integration.py --jar <production> --development <development> --newmod ../NewMod",
+    "NewMod/source/gradlew :tacz_runtime:verifyTaczDependency :tacz_runtime:verifyRuntime :tacz_runtime:prepareClientRun --offline",
+    "NewMod/source/gradlew -PwithDevelopment=false :tacz_runtime:verifyTaczDependency :tacz_runtime:verifyRuntime :tacz_runtime:prepareProductionClientRun --offline"
+  ],
+  "gameStarted": false,
+  "worldModified": false,
+  "userAcceptance": "pending",
+  "pushed": false,
+  "deferred": [
+    "Glock lower-detail LOD before broader gun batch",
+    "remaining 13 native firearms",
+    "shared workbench iron-sight posture after attachment expansion",
+    "optical model production last"
+  ],
+  "rollback": {
+    "newmod_commit": "8d30402fd995059b2dcf307139b2f76a24123f99",
+    "experiment_commit": "415712352ea1c50a0a1936dd0352ea2bb0c2b6e4",
+    "tacz": {
+      "version": "1.1.8-hotfix-r6-newmod.41571235",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.41571235.jar",
+      "sha512": "035c7860ee2c1f6489eed39bc38ce32119d64b23a7546b02539bc170d8d076325d07ac3035f8e031aaa5e9ffc309dd4694ed1cafa167c24ae5db19294e665370",
+      "source_commit": "415712352ea1c50a0a1936dd0352ea2bb0c2b6e4"
+    },
+    "development": {
+      "version": "1.1.8-hotfix-r6-newmod.41571235",
+      "artifact": "vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.41571235-development.jar",
+      "sha512": "c7b093987ccbafe91e41f00a45c0055e2e27461cc72cf1209eeb8fbd92c3839f579e1f0ccacea1ee3ae3b974f45a154fd65e92773ab4258a37a36a9640a77d25",
+      "source_commit": "415712352ea1c50a0a1936dd0352ea2bb0c2b6e4"
+    },
+    "scope": "Glock17 native assembly and configurable render rules; previous public non-optic library package retained"
+  }
+}
