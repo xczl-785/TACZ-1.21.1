@@ -107,6 +107,23 @@ class NativeAssemblyStateTest {
         var withoutMag=AssemblyGunExchange.plan(removed.held(),ItemStack.EMPTY,List.of("magazine")).orElseThrow().held();assertTrue(item.hasBulletInBarrel(withoutMag));assertFalse(weapon().hasMagazine(withoutMag));
     }
 
+    @Test void editedAttachmentModelsAreScopedAndKeepNativeFallback() {
+        var models=new NativeAttachmentModels(weapon());assertEquals(25,models.size());
+        var entries=JsonParser.parseString(AssembledWeapon.resource("data/tacz_assembly/m4a1/native_attachment_overrides.json")).getAsJsonObject();
+        for(var entry:entries.entrySet()){
+            var stack=weapon().createPart(entry.getKey().replace(':','_'));
+            var asset=models.resolve(stack);assertNotNull(asset,entry.getKey());
+            assertNotNull(asset.model());assertTrue(asset.texture().getPath().endsWith(".png"));
+        }
+        assertNotNull(models.resolve(weapon().createPart("tacz_laser_compact")).lodModel());
+        assertNotNull(models.resolve(weapon().createPart("tacz_laser_lopro")).lodModel());
+        assertNotNull(models.resolve(weapon().createPart("tacz_laser_nightstick")).lodModel());
+        assertNull(models.resolve(weapon().createPart("tacz_grip_cobra")).lodModel());
+        assertNull(models.resolve(ItemStack.EMPTY));
+        assertNull(models.resolve(weapon().createPart("tacz_scope_acog_ta31")));
+        assertNull(models.resolve(weapon().createPart("tacz_stock_moe")));
+    }
+
     @Test void nativeHighAndLowSelectImmutableLeavesWithoutInstanceLeakage(){
         var gson=new com.google.gson.GsonBuilder().registerTypeAdapter(com.tacz.guns.client.resource.pojo.model.CubesItem.class,new com.tacz.guns.client.resource.pojo.model.CubesItem.Deserializer()).create();
         for(var resource:List.of("assets/tacz_assembly/geo_models/gun/m4a1.json","assets/tacz_assembly/geo_models/gun/lod/m4a1.json")){
@@ -126,6 +143,14 @@ class NativeAssemblyStateTest {
                 assertTrue(model.visibleBatchNames().stream().anyMatch(n->n.startsWith("assembly_editable_"+definition+"_")),definition);
                 for(var other:inline.entrySet())if(!other.getValue().getAsString().equals(definition))
                     assertFalse(model.visibleBatchNames().stream().anyMatch(n->n.startsWith("assembly_editable_"+other.getValue().getAsString()+"_")),other.getKey());
+            }
+            for(var magazine:List.of("tacz_extended_mag_1","tacz_extended_mag_2","tacz_extended_mag_3")){
+                var changed=AssemblyGunExchange.plan(weapon().preset(),weapon().createPart(magazine),List.of("magazine")).orElseThrow().held();
+                model.prepareGeometry(changed);
+                assertTrue(model.visibleBatchNames().stream().anyMatch(n->n.startsWith("assembly_editable_"+magazine+"_")),magazine);
+                assertFalse(model.visibleBatchNames().stream().anyMatch(n->n.startsWith("assembly_editable_magazine_standard_")));
+                for(var other:List.of("tacz_extended_mag_1","tacz_extended_mag_2","tacz_extended_mag_3"))if(!other.equals(magazine))
+                    assertFalse(model.visibleBatchNames().stream().anyMatch(n->n.startsWith("assembly_editable_"+other+"_")),other);
             }
             var noStock=AssemblyGunExchange.plan(weapon().preset(),ItemStack.EMPTY,List.of("buffer","stock")).orElseThrow().held();
             model.prepareGeometry(noStock);

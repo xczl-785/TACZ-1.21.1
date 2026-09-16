@@ -34,7 +34,7 @@ class BatchImportContract(unittest.TestCase):
 
     def test_blockbench_five_decimal_save_preserves_rig_and_surfaces(self):
         for row in im.ex.read(im.EDIT/'manifest.json')['parts']:
-            if row['definitionId'] not in batch.BATCH:continue
+            if row['definitionId'] not in batch.BATCH+batch.REMAINING:continue
             model=im.ex.read(im.EDIT/row['model'])
             for obj in model['groups']+model['elements']:
                 for key in ('origin','from','to','rotation'):
@@ -60,5 +60,61 @@ class BatchImportContract(unittest.TestCase):
             if row['definitionId'].startswith('tacz_stock_'):
                 d=row['definitionId'];self.assertEqual(inline[d.replace('tacz_','tacz:',1)],d)
                 self.assertTrue(any(n.startswith('assembly_editable_'+d+'_') for n in names))
+
+class RemainingImportContract(unittest.TestCase):
+    def test_scope_and_append_preserve_existing_sources(self):
+        self.assertEqual(len(batch.REMAINING),28)
+        self.assertFalse(set(batch.BATCH)&set(batch.REMAINING))
+        self.assertFalse(any('scope' in d or 'sight' in d for d in batch.REMAINING))
+        with tempfile.TemporaryDirectory() as tmp:
+            root=Path(tmp);manifest=im.ex.read(im.EDIT/'manifest.json')
+            im.write(root/'manifest.json',manifest)
+            sentinel=root/'components'/batch.REMAINING[0]/'model.bbmodel';sentinel.parent.mkdir(parents=True);sentinel.write_text('edited source')
+            report=batch.append(root,batch.REMAINING)
+            self.assertEqual(sentinel.read_text(),'edited source')
+            self.assertEqual(im.ex.read(root/'manifest.json'),manifest)
+            self.assertEqual(report['skipped'],[])
+
+    def test_detached_sources_keep_functional_bones_and_native_texture(self):
+        rows={r['definitionId']:r for r in im.ex.read(im.EDIT/'manifest.json')['parts']}
+        sourceparts={p['definitionId']:p for p in im.ex.read(im.SOURCE/'manifest.json')['parts']}
+        for d in batch.REMAINING:
+            row=rows[d];again,model,texture=batch.extract(sourceparts[d])
+            self.assertEqual(im.ex.read(im.EDIT/row['model']),model)
+            self.assertEqual((im.EDIT/row['texture']).read_bytes(),texture.read_bytes())
+            _,bones,uv,_,_=im.load_part(row)
+            source=im.ex.read(im.R/row['sourceGeometry'])['minecraft:geometry'][0]
+            self.assertEqual(uv,[source['description'][k] for k in ('texture_width','texture_height')])
+            if row['runtimeMode']=='native_attachment':
+                self.assertEqual(list(bones),[b['name'] for b in source['bones']])
+                for bone in source['bones']:
+                    for k,v in bone.items():
+                        if k!='cubes':self.assertEqual(bones[bone['name']][k],v)
+                if d.startswith('tacz_laser_') or d=='tacz_grip_vertical_ranger':self.assertIn('laser_beam',bones)
+            else:
+                self.assertEqual(row['anchorBone'] if 'anchorBone' in row else sourceparts[d]['anchorBone'],'magazine')
+                self.assertTrue(any('mag_and_bullet' in g['animationAncestors'] for g in row['motionOwnership']))
+
+    def test_generated_detached_contract_preserves_all_source_nodes(self):
+        overrides=im.ex.read(im.BASE/'native_attachment_overrides.json')
+        rows={r['definitionId']:r for r in im.ex.read(im.EDIT/'manifest.json')['parts']}
+        self.assertEqual(len(overrides),25)
+        for d in batch.REMAINING:
+            row=rows[d]
+            if row['runtimeMode']!='native_attachment':continue
+            mapping=overrides[d.replace('tacz_','tacz:',1)]
+            model=im.ex.read(im.OUT/('assets/tacz_assembly/geo_models/'+mapping['model'].split(':')[1]+'.json'))['minecraft:geometry'][0]
+            source=im.ex.read(im.R/row['sourceGeometry'])['minecraft:geometry'][0]
+            self.assertEqual([b['name'] for b in model['bones']],[b['name'] for b in source['bones']])
+            self.assertEqual((im.OUT/('assets/tacz_assembly/textures/'+mapping['texture'].split(':')[1]+'.png')).read_bytes(),(im.EDIT/row['texture']).read_bytes())
+            if 'lodModel' in mapping:
+                lod=im.ex.read(im.OUT/('assets/tacz_assembly/geo_models/'+mapping['lodModel'].split(':')[1]+'.json'))['minecraft:geometry'][0]
+                self.assertEqual(mapping['lodTexture'],mapping['texture'])
+                self.assertEqual([b['name'] for b in lod['bones']],[b['name'] for b in model['bones']])
+                for low,high in zip(lod['bones'],model['bones']):
+                    self.assertEqual({k:v for k,v in low.items() if k!='cubes'},{k:v for k,v in high.items() if k!='cubes'})
+                    self.assertLessEqual(len(low.get('cubes',[])),2)
+                    self.assertTrue(all(c in high.get('cubes',[]) for c in low.get('cubes',[])))
+        self.assertEqual(sum('lodModel' in v for v in overrides.values()),3)
 
 if __name__=='__main__':unittest.main()

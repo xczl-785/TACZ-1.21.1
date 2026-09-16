@@ -87,7 +87,8 @@ def build():
     highuv=[original['minecraft:geometry'][0]['description'][k] for k in ['texture_width','texture_height']]
     original_texture=ex.asset('tacz:gun/uv/m4a1','textures','.png')
     texture_ids={ex.sha(original_texture):0}
-    for row in rows:texture_ids.setdefault(ex.sha(EDIT/row['texture']),len(texture_ids))
+    for row in rows:
+        if row.get('runtimeMode')!='native_attachment':texture_ids.setdefault(ex.sha(EDIT/row['texture']),len(texture_ids))
     columns=math.ceil(math.sqrt(len(texture_ids)));atlas_size=(columns*512,math.ceil(len(texture_ids)/columns)*512)
     atlas=Image.new('RGBA',atlas_size);atlas.paste(Image.open(original_texture).convert('RGBA').resize((512,512),Image.Resampling.NEAREST),(0,0))
     def replaced(b):
@@ -102,13 +103,38 @@ def build():
     # The old reused LOD leaves all belong to the replaced set. Other leaves use native high UV.
     assert not any(b['name'].startswith('assembly_lod_ld_') for b in lb)
     derivedmanifest=ex.read(SOURCE/'manifest.json');sourceparts={p['definitionId']:p for p in derivedmanifest['parts']};proof=[]
+    attachment_overrides={}
+    attachment_displays={a['id']:a['display'] for a in ex.read(R/'docs/assembly-experiment/native-m4a1-review/audit.json')['attachments']}
     for i,row in enumerate(rows,1):
-        d=row['definitionId'];model,bones,uvsize,texture,count=parsed[d];cell_id=texture_ids[ex.sha(EDIT/row['texture'])];cell=((cell_id%columns)*512,(cell_id//columns)*512);atlas.paste(texture.resize((512,512),Image.Resampling.NEAREST),cell)
+        d=row['definitionId'];model,bones,uvsize,texture,count=parsed[d]
+        detached=row.get('runtimeMode')=='native_attachment'
+        cell_id=texture_ids.get(ex.sha(EDIT/row['texture']),0);cell=((cell_id%columns)*512,(cell_id//columns)*512)
+        if not detached:atlas.paste(texture.resize((512,512),Image.Resampling.NEAREST),cell)
+        if detached:
+            geometry=copy.deepcopy(ex.read(R/row['sourceGeometry']))
+            geometry['minecraft:geometry'][0]['bones']=list(bones.values())
+            geometry['minecraft:geometry'][0]['description'].update(texture_width=uvsize[0],texture_height=uvsize[1])
+            model_ref='tacz_assembly:attachments/'+d
+            texture_ref='tacz_assembly:attachments/'+d
+            write(OUT/('assets/tacz_assembly/geo_models/attachments/'+d+'.json'),geometry)
+            texture_path=OUT/('assets/tacz_assembly/textures/attachments/'+d+'.png');texture_path.parent.mkdir(parents=True,exist_ok=True)
+            texture_path.write_bytes((EDIT/row['texture']).read_bytes())
+            override={'model':model_ref,'texture':texture_ref}
+            if attachment_displays[sourceparts[d]['itemId']].get('lod'):
+                lod=copy.deepcopy(geometry)
+                for bone in lod['minecraft:geometry'][0]['bones']:
+                    cubes=bone.get('cubes',[])
+                    order=sorted(range(len(cubes)),key=lambda j:-sum(cubes[j]['size'][a]*cubes[j]['size'][b] for a,b in [(0,1),(0,2),(1,2)]))[:2]
+                    if cubes:bone['cubes']=[cubes[j] for j in sorted(order)]
+                write(OUT/('assets/tacz_assembly/geo_models/attachments/lod/'+d+'.json'),lod)
+                override.update(lodModel='tacz_assembly:attachments/lod/'+d,lodTexture=texture_ref)
+            attachment_overrides[sourceparts[d]['itemId']]=override
+
         mount=row.get('nativeMount') or ('stock_pos' if d=='tacz_stock_tactical_ar' else None);stock=mount is not None
         rig_prefix=('editable_stock_' if d=='tacz_stock_tactical_ar' else 'editable_'+d+'_')
         anchor=np.asarray(sourceparts[d]['anchor']);extra=ex.matrix(mount,native) if stock else np.eye(4)
         meshes=[];allvertices=[]
-        if stock:
+        if stock and not detached:
             for b in bones.values():
                 copied={k:copy.deepcopy(v) for k,v in b.items() if k!='cubes'};copied['name']=rig_prefix+b['name'];copied['parent']=rig_prefix+b['parent'] if b.get('parent') else mount
                 # Bone pivots are absolute in native Bedrock; offset by the mount's world-art pivot.
@@ -125,6 +151,7 @@ def build():
                     keys=[str(base+j) for j in ids];uv=[[p[0]*texture.width/uvsize[0],p[1]*texture.height/uvsize[1]] for p in uv]
                     faces[str(len(faces))]={'vertices':keys,'uv':dict(zip(keys,uv)),'texture':0}
             meshes.append({'type':'mesh','name':name,'uuid':ex.uid('editable/'+d+'/'+name),'origin':[0,0,0],'rotation':[0,0,0],'visibility':True,'export':True,'vertices':vertices,'faces':faces})
+            if detached:continue
             target=rig_prefix+name if stock else name
             newname='assembly_editable_'+d+'_'+name
             transformed=[]
@@ -143,7 +170,7 @@ def build():
         write(SOURCE/entry['model'],data);(SOURCE/entry['texture']).write_bytes((EDIT/row['texture']).read_bytes())
         entry.update(editableSource=str((EDIT/row['model']).relative_to(SOURCE)),meshCount=len(meshes),triangles=sum(len(m['faces']) for m in meshes),modelSha256=ex.sha(SOURCE/entry['model']),sourceTextureSha256=ex.sha(EDIT/row['texture']))
         write(SOURCE/entry['component'],{k:v for k,v in entry.items() if k!='component'})
-        proof.append({'definitionId':d,'cubes':count,'source':row['model'],'modelSha256':ex.sha(EDIT/row['model']),'textureSha256':ex.sha(EDIT/row['texture']),'uvSize':uvsize,'atlasCell':cell})
+        proof.append({'definitionId':d,'cubes':count,'source':row['model'],'modelSha256':ex.sha(EDIT/row['model']),'textureSha256':ex.sha(EDIT/row['texture']),'uvSize':uvsize,'atlasCell':None if detached else cell,'runtimeMode':'native_attachment' if detached else 'inline'})
     for geo,path in [(high,highpath),(low,lowpath)]:
         geo['minecraft:geometry'][0]['description'].update(texture_width=atlas.width,texture_height=atlas.height);write(path,geo)
     atlaspath=OUT/'assets/tacz_assembly/textures/gun/editable_m4a1.png';atlaspath.parent.mkdir(parents=True,exist_ok=True);atlas.save(atlaspath)
@@ -152,10 +179,11 @@ def build():
     inline={}
     for row in rows:
         d=row['definitionId'];mount=row.get('nativeMount') or ('stock_pos' if d=='tacz_stock_tactical_ar' else None)
-        if mount:
+        if mount and row.get('runtimeMode')!='native_attachment':
             if mount!='stock_pos':raise ValueError('Inline mount requires explicit native attachment type: '+mount)
             inline.setdefault('stock',{})[sourceparts[d]['itemId']]=d
     write(BASE/'inline_attachments.json',inline)
+    write(BASE/'native_attachment_overrides.json',attachment_overrides)
     write(SOURCE/'manifest.json',derivedmanifest)
     from build_workbench import build as workbench
     workbench()

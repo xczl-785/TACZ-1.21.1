@@ -1,5 +1,5 @@
 """Append repeatable native cube imports without overwriting any existing edit source.
-Selection is deliberately restricted to the first non-optic batch. Provenance comes
+Selection is deliberately restricted to reviewed non-optic batches. Provenance comes
 from audited component ownership, never from guessing cube positions or names.
 """
 import argparse,base64,collections,json
@@ -11,9 +11,15 @@ import editable_import as im
 BATCH=('handguard_tactical','tacz_stock_ak12','tacz_stock_carbon_bone_c5','tacz_stock_hk_slim_line',
        'tacz_stock_m4ss','tacz_stock_militech_b5','tacz_stock_moe','tacz_stock_ripstock','tacz_stock_sba3')
 
+REMAINING=tuple('tacz_'+d for d in (
+ 'bayonet_m9','extended_mag_1','extended_mag_2','extended_mag_3',
+ 'grip_cobra','grip_cqr','grip_magpul_afg_2','grip_osovets_black','grip_rk0','grip_rk1_b25u','grip_rk6','grip_se_5','grip_td','grip_vertical_military','grip_vertical_ranger','grip_vertical_talon',
+ 'laser_compact','laser_lopro','laser_nightstick','laser_peq15',
+ 'muzzle_brake_cthulhu','muzzle_brake_cyclone_d2','muzzle_brake_pioneer','muzzle_brake_trex','muzzle_compensator_trident','muzzle_silencer_knight_qd','muzzle_silencer_phantom_s1','muzzle_silencer_ursus'))
+
 def extract(entry):
     d=entry['definitionId']
-    if d not in BATCH:raise ValueError('Not in reviewed non-optic batch: '+d)
+    if d not in BATCH+REMAINING:raise ValueError('Not in reviewed non-optic batch: '+d)
     if len(entry['sourceGeometry'])!=1:raise ValueError('Multiple geometry sources need explicit mapping')
     source=im.R/entry['sourceGeometry'][0];geo=im.ex.read(source)['minecraft:geometry'][0]
     bones={b['name']:b for b in geo['bones']};indices=collections.defaultdict(list)
@@ -21,12 +27,14 @@ def extract(entry):
         for c in group['sourceCubes']:indices[c['bone']].append(c['cubeIndex'])
     selected=set()
     for name in indices:selected.update(im.ex.ancestors(name,bones))
-    external=d.startswith('tacz_stock_')
+    external=source!=im.ex.asset('tacz:gun/m4a1_geo','geo_models','.json')
+    detached=d in REMAINING and external
+    if detached:selected=set(bones) # Keep functional empty nodes such as laser_beam.
     native=im.ex.read(im.ex.asset('tacz:gun/m4a1_geo','geo_models','.json'))['minecraft:geometry'][0]
     mount=next(b for b in native['bones'] if b['name']==entry['anchorBone'])
-    delta=mount['pivot'] if external else [0,0,0]
-    if external and any(mount.get('rotation',[0,0,0])):raise ValueError('Rotated mount requires explicit rig mapping')
-    extra=im.ex.matrix(entry['anchorBone'],{b['name']:b for b in native['bones']}) if external else np.eye(4)
+    delta=mount['pivot'] if external and not detached else [0,0,0]
+    if external and not detached and any(mount.get('rotation',[0,0,0])):raise ValueError('Rotated mount requires explicit rig mapping')
+    extra=im.ex.matrix(entry['anchorBone'],{b['name']:b for b in native['bones']}) if external and not detached else np.eye(4)
     vertices=np.concatenate([im.ex.cube_geometry(bones[name],bones[name]['cubes'][index],bones,extra)[0] for name,ids in indices.items() for index in ids])
     bounds_center=(vertices.min(axis=0)+vertices.max(axis=0))/2
     # Blockbench saves positions to five decimals. Quantize the center as well
@@ -63,14 +71,20 @@ def extract(entry):
     uvsize=[geo['description'][k] for k in ('texture_width','texture_height')]
     t={'name':'texture.png','id':'0','uuid':im.ex.uid(prefix+'/texture'),'path':'texture.png','relative_path':'texture.png','source':'data:image/png;base64,'+base64.b64encode(texture.read_bytes()).decode(),'width':width,'height':height,'uv_width':uvsize[0],'uv_height':uvsize[1],'internal':True}
     model={'meta':{'format_version':'5.0','model_format':'free','box_uv':False},'name':d,'resolution':{'width':uvsize[0],'height':uvsize[1]},'elements':elements,'groups':groups,'outliner':[root],'textures':[t]}
-    row={'definitionId':d,'group':groupname,'prefix':prefix,'cubes':len(elements),'sourceGeometry':str(source.relative_to(im.R)),'sourceSha256':im.ex.sha(source),'componentMetadata':str((im.SOURCE/entry['component']).relative_to(im.R)),'sourceCubeIndices':{name:ids for name,ids in indices.items() if ids},'translation':delta,'model':f'components/{d}/model.bbmodel','texture':f'components/{d}/texture.png','editorCenter':center,'uvSize':uvsize,'nativeMount':entry['anchorBone'] if external else None,'batch':'non-optic-stock-handguard-1'}
+    row={'definitionId':d,'group':groupname,'prefix':prefix,'cubes':len(elements),'sourceGeometry':str(source.relative_to(im.R)),'sourceSha256':im.ex.sha(source),'componentMetadata':str((im.SOURCE/entry['component']).relative_to(im.R)),'sourceCubeIndices':{name:ids for name,ids in indices.items() if ids},'translation':delta,'model':f'components/{d}/model.bbmodel','texture':f'components/{d}/texture.png','editorCenter':center,'uvSize':uvsize,'nativeMount':entry['anchorBone'] if external else None,'batch':'non-optic-remaining-2' if d in REMAINING else 'non-optic-stock-handguard-1'}
+    if d in REMAINING:
+        row.update(runtimeMode='native_attachment' if detached else 'native_gun_bone',
+                   sourceTexture=entry['sourceTexture'],sourceTextureSha256=im.ex.sha(texture),
+                   motionOwnership=[{'mesh':g['mesh'],'animationAncestors':g['animationAncestors']} for g in entry['meshGroups']],
+                   functionalBones=[name for name,b in bones.items() if not b.get('cubes')] if detached else [],
+                   nativeMountMatrix=im.ex.matrix(entry['anchorBone'],{b['name']:b for b in native['bones']}).tolist())
     return row,model,texture
 
-def append(output=im.EDIT):
+def append(output=im.EDIT,selection=BATCH):
     output=Path(output);manifest=im.ex.read(output/'manifest.json');existing={r['definitionId'] for r in manifest['parts']}
     entries={p['definitionId']:p for p in im.ex.read(im.SOURCE/'manifest.json')['parts']}
     pending=[];skipped=[]
-    for d in BATCH:
+    for d in selection:
         if d in existing:continue
         if (output/'components'/d).exists():raise ValueError('Unregistered existing edit directory: '+d)
         try:pending.append(extract(entries[d]))
@@ -79,10 +93,10 @@ def append(output=im.EDIT):
         im.write(output/row['model'],model);(output/row['texture']).write_bytes(texture.read_bytes())
         row['baselineModelSha256']=im.ex.sha(output/row['model']);manifest['parts'].append(row)
     (output/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
-    report={'batch':list(BATCH),'imported':[r['definitionId'] for r in manifest['parts'] if r['definitionId'] in BATCH],'skipped':skipped,'existingSourcesOverwritten':False,'sourcePolicy':'Audited native cube ownership; native texture byte copy; UV units from geometry description; original resources read-only'}
-    im.write(output/'batch-import-report.json',report)
+    report={'batch':list(selection),'imported':[r['definitionId'] for r in manifest['parts'] if r['definitionId'] in selection],'skipped':skipped,'existingSourcesOverwritten':False,'sourcePolicy':'Audited native cube ownership; native texture byte copy; UV units from geometry description; original resources read-only'}
+    im.write(output/('remaining-import-report.json' if selection==REMAINING else 'batch-import-report.json'),report)
     print(json.dumps(report))
     return report
 
 if __name__=='__main__':
-    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=im.EDIT);append(parser.parse_args().output)
+    parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path,default=im.EDIT);parser.add_argument('--batch',choices=['first','remaining'],default='first');args=parser.parse_args();append(args.output,REMAINING if args.batch=='remaining' else BATCH)

@@ -26,6 +26,12 @@ public final class NativeAssemblyGunModel extends BedrockGunModel {
         var list=new ArrayList<Batch>();
         data.entrySet().forEach(e->{var wrapper=modelMap.get(e.getKey());if(wrapper!=null){var v=e.getValue().getAsJsonObject();list.add(new Batch(wrapper.getModelRenderer(),v.get("definition").getAsString(),v.get("variant").getAsString()));}});
         batches=List.copyOf(list);
+        var attachmentModels=new NativeAttachmentModels(weapon);
+        for(var type:AttachmentType.values())if(type!=AttachmentType.NONE&&type!=AttachmentType.SCOPE){
+            setFunctionalRenderer(type.name().toLowerCase(Locale.ROOT)+"_pos",part->{
+                part.visible=false;return attachmentModels.renderer(this,type);
+            });
+        }
         var inline=JsonParser.parseString(AssembledWeapon.resource("data/"+weapon.GUN.getNamespace()+"/"+weapon.resourceDirectory+"/inline_attachments.json")).getAsJsonObject();
         inline.entrySet().forEach(e->{
             var type=AttachmentType.valueOf(e.getKey().toUpperCase(Locale.ROOT));
@@ -35,7 +41,7 @@ public final class NativeAssemblyGunModel extends BedrockGunModel {
                 // still use the native attachment renderer, never both at once.
                 boolean embedded=usesInlineAttachment(type,getCurrentAttachmentItem().get(type));
                 part.visible=embedded;
-                return embedded?null:new AttachmentRender(this,type);
+                return embedded?null:attachmentModels.renderer(this,type);
             });
         });
         // These are rig ancestors, not inventory entities. Gate their leaves instead.

@@ -2256,6 +2256,3157 @@
       "nativeMount": "stock_pos",
       "batch": "non-optic-stock-handguard-1",
       "baselineModelSha256": "ff04cef7c27ea1733544354c15424a199fd34474519ac83011fcade4792f5fb0"
+    },
+    {
+      "definitionId": "tacz_bayonet_m9",
+      "group": "tacz_bayonet_m9",
+      "prefix": "batch_tacz_bayonet_m9",
+      "cubes": 43,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/bayonet_m9_geo.json",
+      "sourceSha256": "0c27b3a885f2eaebfda8d2def8f0da8ddd7c6dacb40f4e33db74fe5ee1c79a4f",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_bayonet_m9/component.json",
+      "sourceCubeIndices": {
+        "blade": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "bone3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_bayonet_m9/model.bbmodel",
+      "texture": "components/tacz_bayonet_m9/texture.png",
+      "editorCenter": [
+        0.0,
+        -1.36524,
+        -1.72871
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "nativeMount": "muzzle_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/bayonet_m9.png",
+      "sourceTextureSha256": "c61aa79b3e8d88ff23fea1ec3331d4c27fc57c47f815897feace878bdae3de9b",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "dagger"
+      ],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.55
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "1cae63a6ae033f76ad685b3e6ed1b746f4a32b5381f9fe0f6ea487841140e3f9"
+    },
+    {
+      "definitionId": "tacz_extended_mag_1",
+      "group": "tacz_extended_mag_1",
+      "prefix": "batch_tacz_extended_mag_1",
+      "cubes": 33,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_extended_mag_1/component.json",
+      "sourceCubeIndices": {
+        "mag_extended_1": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_extended_mag_1/model.bbmodel",
+      "texture": "components/tacz_extended_mag_1/texture.png",
+      "editorCenter": [
+        0.0,
+        4.02512,
+        -7.04267
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "nativeMount": null,
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_gun_bone",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m4a1.png",
+      "sourceTextureSha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "motionOwnership": [
+        {
+          "mesh": "motion_root_mag_and_lefthand_mag_and_bullet",
+          "animationAncestors": [
+            "root",
+            "mag_and_lefthand",
+            "mag_and_bullet"
+          ]
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "210f6620042f0575dc278eb27870c84bf9cfb18ff987aabe6adc2d26b65a0f4f"
+    },
+    {
+      "definitionId": "tacz_extended_mag_2",
+      "group": "tacz_extended_mag_2",
+      "prefix": "batch_tacz_extended_mag_2",
+      "cubes": 33,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_extended_mag_2/component.json",
+      "sourceCubeIndices": {
+        "mag_extended_2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_extended_mag_2/model.bbmodel",
+      "texture": "components/tacz_extended_mag_2/texture.png",
+      "editorCenter": [
+        0.0,
+        4.02512,
+        -7.04267
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "nativeMount": null,
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_gun_bone",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m4a1.png",
+      "sourceTextureSha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "motionOwnership": [
+        {
+          "mesh": "motion_root_mag_and_lefthand_mag_and_bullet",
+          "animationAncestors": [
+            "root",
+            "mag_and_lefthand",
+            "mag_and_bullet"
+          ]
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "3ad9cb03a26be0050d7b1269a717ee7cae83ef8fd29ea543a8d285ac1f405b87"
+    },
+    {
+      "definitionId": "tacz_extended_mag_3",
+      "group": "tacz_extended_mag_3",
+      "prefix": "batch_tacz_extended_mag_3",
+      "cubes": 9,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json",
+      "sourceSha256": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_extended_mag_3/component.json",
+      "sourceCubeIndices": {
+        "extend_magazine": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_extended_mag_3/model.bbmodel",
+      "texture": "components/tacz_extended_mag_3/texture.png",
+      "editorCenter": [
+        -0.0,
+        4.09461,
+        -7.00527
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "nativeMount": null,
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_gun_bone",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m4a1.png",
+      "sourceTextureSha256": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+      "motionOwnership": [
+        {
+          "mesh": "motion_root_mag_and_lefthand_mag_and_bullet",
+          "animationAncestors": [
+            "root",
+            "mag_and_lefthand",
+            "mag_and_bullet"
+          ]
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -5.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -6.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "a9c8f27b089a9c719eb1e7a649c42dad35c54b06c2a0c3e7a2f0c3b48db253a7"
+    },
+    {
+      "definitionId": "tacz_grip_cobra",
+      "group": "tacz_grip_cobra",
+      "prefix": "batch_tacz_grip_cobra",
+      "cubes": 35,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_cobra.json",
+      "sourceSha256": "8edcc07cf456b1d68202f3af6adf3fb8c6f04386dda2e60db1d77524322b9a5a",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_cobra/component.json",
+      "sourceCubeIndices": {
+        "grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_cobra/model.bbmodel",
+      "texture": "components/tacz_grip_cobra/texture.png",
+      "editorCenter": [
+        0.0,
+        -0.66433,
+        -0.19129
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_cobra.png",
+      "sourceTextureSha256": "e3a70809b0d1f6b8894dc634ed008b636189cae4d774c67febdb9cdab8350fe1",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "7a292c3470bdc3c3ec2eea1e89100bd3b985aa0f869638952cc82b8b2c7d59fc"
+    },
+    {
+      "definitionId": "tacz_grip_cqr",
+      "group": "tacz_grip_cqr",
+      "prefix": "batch_tacz_grip_cqr",
+      "cubes": 46,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_cqr.json",
+      "sourceSha256": "44bc53bc5c682db01dd20fd7c2baaede207d531c7219e6f5afa3b5ff6c1f3468",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_cqr/component.json",
+      "sourceCubeIndices": {
+        "cqr": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_cqr/model.bbmodel",
+      "texture": "components/tacz_grip_cqr/texture.png",
+      "editorCenter": [
+        0.0,
+        -2.13853,
+        1.8755
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_cqr.png",
+      "sourceTextureSha256": "93c5045de0392000cd9d0cbeb32a969c281cbd0ee02ca58c6e137af2e580a999",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "554f40ed707d664e3d126b25f8a0ae1d0cd85fbe7a6d8d2e34947ff70e3690cb"
+    },
+    {
+      "definitionId": "tacz_grip_magpul_afg_2",
+      "group": "tacz_grip_magpul_afg_2",
+      "prefix": "batch_tacz_grip_magpul_afg_2",
+      "cubes": 23,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_magpul_afg_2_geo.json",
+      "sourceSha256": "97ff75aacaad24adb9c44a96b142ec90bdcd459cf106a92c805b9e0077c876ef",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_magpul_afg_2/component.json",
+      "sourceCubeIndices": {
+        "416d_light_grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_magpul_afg_2/model.bbmodel",
+      "texture": "components/tacz_grip_magpul_afg_2/texture.png",
+      "editorCenter": [
+        0.00228,
+        -0.75008,
+        0.425
+      ],
+      "uvSize": [
+        16,
+        16
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_magpul_afg_2.png",
+      "sourceTextureSha256": "b00d259c458a23e1da738040da1bd0b2b8c041d21d14e6d7cf3c9a74936bb390",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "5d0b2d904de73790f95b822285a0f9ee39c5087fab66d01c2908bd2d67b68435"
+    },
+    {
+      "definitionId": "tacz_grip_osovets_black",
+      "group": "tacz_grip_osovets_black",
+      "prefix": "batch_tacz_grip_osovets_black",
+      "cubes": 38,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_osovets_black.json",
+      "sourceSha256": "93d71d78ddc186f216c1a3492f3a2530b188fe0a3574d0714b7dbf8173ad94e8",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_osovets_black/component.json",
+      "sourceCubeIndices": {
+        "main": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_osovets_black/model.bbmodel",
+      "texture": "components/tacz_grip_osovets_black/texture.png",
+      "editorCenter": [
+        0.0,
+        -1.7495,
+        0.875
+      ],
+      "uvSize": [
+        16,
+        16
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_osovets_black.png",
+      "sourceTextureSha256": "11e6c99d72fb5822c817bbe21037102710ade4bbb0f3c64d24ed8bd3bab82362",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "85e2c1f70ee9c6b043800ff53b229c5e87328ba9289aa85a3c61fd1f7c45dadd"
+    },
+    {
+      "definitionId": "tacz_grip_rk0",
+      "group": "tacz_grip_rk0",
+      "prefix": "batch_tacz_grip_rk0",
+      "cubes": 35,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_rk0.json",
+      "sourceSha256": "3bb1429d47960ba2d73cf0bfd313e5935cbbef1573339386b0262a42c3cee448",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_rk0/component.json",
+      "sourceCubeIndices": {
+        "rk2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_rk0/model.bbmodel",
+      "texture": "components/tacz_grip_rk0/texture.png",
+      "editorCenter": [
+        0.0,
+        -1.90848,
+        0.8755
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_rk0.png",
+      "sourceTextureSha256": "3c85966eb168e4f6b8e12417052b0bb84451eb2667d6c80199ed99532e501fbd",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "8cbdca56f5088067a87e391db680f588758184c9cf43296f34fcb1fe89918a46"
+    },
+    {
+      "definitionId": "tacz_grip_rk1_b25u",
+      "group": "tacz_grip_rk1_b25u",
+      "prefix": "batch_tacz_grip_rk1_b25u",
+      "cubes": 33,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_rk1_b25u.json",
+      "sourceSha256": "ea42940dccc538cd629dc3bf1d03e57241655f6f242006fa8b4aac5d3aadbb80",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_rk1_b25u/component.json",
+      "sourceCubeIndices": {
+        "base": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "main": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_rk1_b25u/model.bbmodel",
+      "texture": "components/tacz_grip_rk1_b25u/texture.png",
+      "editorCenter": [
+        -1.32049,
+        -1.87194,
+        0.8745
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_rk1_b25u.png",
+      "sourceTextureSha256": "a40d3c27a5f5f21220bcc4677f0343f1d21ee53000867e7b5dce1c157a0b2442",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "rk2"
+      ],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "17803e95f38b4a654108965c5d662991ae9b561507be6c8ba46b04633677887b"
+    },
+    {
+      "definitionId": "tacz_grip_rk6",
+      "group": "tacz_grip_rk6",
+      "prefix": "batch_tacz_grip_rk6",
+      "cubes": 23,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_rk6.json",
+      "sourceSha256": "2bd8e2e06124b558e9b2b5565d14766f8842a4970a78bc10f251fe12f2c18d51",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_rk6/component.json",
+      "sourceCubeIndices": {
+        "rk2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_rk6/model.bbmodel",
+      "texture": "components/tacz_grip_rk6/texture.png",
+      "editorCenter": [
+        0.0,
+        -0.98349,
+        0.8755
+      ],
+      "uvSize": [
+        16,
+        16
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_rk6.png",
+      "sourceTextureSha256": "70e5dfddde884ec926bfe78cb76423f388b343fb15f8d343f2aa7de93803d743",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "4a55309d5ab0a52418d18301a015ba83988368d1fb3e06049d2d236e1d2dbfb9"
+    },
+    {
+      "definitionId": "tacz_grip_se_5",
+      "group": "tacz_grip_se_5",
+      "prefix": "batch_tacz_grip_se_5",
+      "cubes": 16,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_se_5.json",
+      "sourceSha256": "e4a320a9906fc9910db962698c396c5141b43462c48869a9cb8b0b8ca6466e43",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_se_5/component.json",
+      "sourceCubeIndices": {
+        "se5_grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_se_5/model.bbmodel",
+      "texture": "components/tacz_grip_se_5/texture.png",
+      "editorCenter": [
+        0.0,
+        -0.95711,
+        1.01941
+      ],
+      "uvSize": [
+        16,
+        16
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_se_5.png",
+      "sourceTextureSha256": "f0e92cfe0a83c60f94f048fcf3aaab9b5cd69e4bc3bb29ac02b35ca7567f4860",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "0d50a304e98df57f89531a4114dc8e94b41d3b3b25ecefc45675969866667f46"
+    },
+    {
+      "definitionId": "tacz_grip_td",
+      "group": "tacz_grip_td",
+      "prefix": "batch_tacz_grip_td",
+      "cubes": 22,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_td.json",
+      "sourceSha256": "204b6fba8a9570f9402280610f9d3a1530cf5d58ef859a71ed23ea39adcb631e",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_td/component.json",
+      "sourceCubeIndices": {
+        "td_grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_td/model.bbmodel",
+      "texture": "components/tacz_grip_td/texture.png",
+      "editorCenter": [
+        0.0,
+        -1.70127,
+        1.35532
+      ],
+      "uvSize": [
+        16,
+        16
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_td.png",
+      "sourceTextureSha256": "8127b1153af968280f36471a06545700bc7fda15ba6ebca28b338dd43d542e50",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "24c1d60aa745050433ed978e371a0050c2c7b0bc1dccf1c6f7d724fe23d9f38d"
+    },
+    {
+      "definitionId": "tacz_grip_vertical_military",
+      "group": "tacz_grip_vertical_military",
+      "prefix": "batch_tacz_grip_vertical_military",
+      "cubes": 43,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_vertical_military_geo.json",
+      "sourceSha256": "189f40eef8bb35cf72399f3187c208ba5cff6005f763db5dde97c9a63c5e0ac8",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_vertical_military/component.json",
+      "sourceCubeIndices": {
+        "grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_vertical_military/model.bbmodel",
+      "texture": "components/tacz_grip_vertical_military/texture.png",
+      "editorCenter": [
+        0.0,
+        -2.6245,
+        1.0
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_vertical_military.png",
+      "sourceTextureSha256": "cbdccc6a23f8470cb9f3d132d96adfe8d79712fa54182db3a21337944d97d8e8",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "f23a1b11330e7699af645667fc77a294671bb143f3153da8bd8cad8d51dd70c6"
+    },
+    {
+      "definitionId": "tacz_grip_vertical_ranger",
+      "group": "tacz_grip_vertical_ranger",
+      "prefix": "batch_tacz_grip_vertical_ranger",
+      "cubes": 57,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_vertical_ranger_geo.json",
+      "sourceSha256": "ce0492010c2c06afba5895a6e2b805a00dedd5f80cc7dc80b632c6fd630ffbcc",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_vertical_ranger/component.json",
+      "sourceCubeIndices": {
+        "grip_vertical_ranger": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "bone9_illuminated": [
+          0,
+          1,
+          2
+        ],
+        "hexagon": [
+          0,
+          1,
+          2
+        ],
+        "hexagon2": [
+          0,
+          1,
+          2
+        ],
+        "bone5": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "bone": [
+          0,
+          1,
+          2
+        ],
+        "bone2": [
+          0,
+          1,
+          2
+        ],
+        "bone3": [
+          0,
+          1,
+          2
+        ],
+        "bone4": [
+          0,
+          1,
+          2
+        ],
+        "bone6": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "bone7": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "bone8": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_vertical_ranger/model.bbmodel",
+      "texture": "components/tacz_grip_vertical_ranger/texture.png",
+      "editorCenter": [
+        -0.01214,
+        -2.89355,
+        -0.05023
+      ],
+      "uvSize": [
+        64,
+        64
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_vertical_ranger.png",
+      "sourceTextureSha256": "7fc562896366206fad58f8b122da5903b3748af04db431e4b39cb9a524a9df64",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "laser_beam"
+      ],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "5357017ef402557069194e86368f8c72d8627f6e2f86f9a1648d4514d8bbd439"
+    },
+    {
+      "definitionId": "tacz_grip_vertical_talon",
+      "group": "tacz_grip_vertical_talon",
+      "prefix": "batch_tacz_grip_vertical_talon",
+      "cubes": 17,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/grip_vertical_talon_geo.json",
+      "sourceSha256": "88bac82f18b6de4caf148d66784039d40ab87fad890f5a55d8332e2f0ec0f63b",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_grip_vertical_talon/component.json",
+      "sourceCubeIndices": {
+        "416d_tac_grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_grip_vertical_talon/model.bbmodel",
+      "texture": "components/tacz_grip_vertical_talon/texture.png",
+      "editorCenter": [
+        0.0,
+        -1.64062,
+        1.00002
+      ],
+      "uvSize": [
+        16,
+        16
+      ],
+      "nativeMount": "grip_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/grip_vertical_talon.png",
+      "sourceTextureSha256": "e8cf0089e2b1cbbf882634c9f0e04a04a61f2ad96d3f0cb3f234a11c7e60bad6",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -8.075
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -13.625
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "953880eb8bb2a88cf6b618cba38b6e03c3e22c2e16b281e73545ec57d9133678"
+    },
+    {
+      "definitionId": "tacz_laser_compact",
+      "group": "tacz_laser_compact",
+      "prefix": "batch_tacz_laser_compact",
+      "cubes": 44,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/laser_compact_geo.json",
+      "sourceSha256": "bf5dbcc1b1eb09a8f47871102658cdc6294180392ea7e7f798f1b2619dea662a",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_laser_compact/component.json",
+      "sourceCubeIndices": {
+        "base": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "light_illuminated": [
+          0
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_laser_compact/model.bbmodel",
+      "texture": "components/tacz_laser_compact/texture.png",
+      "editorCenter": [
+        -0.0,
+        0.49914,
+        0.38963
+      ],
+      "uvSize": [
+        64,
+        64
+      ],
+      "nativeMount": "laser_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/laser_compact.png",
+      "sourceTextureSha256": "48131dcee1263f7313f65b935cc81670707ebf31a417a8bceea9d1ef87869094",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "laser_compact",
+        "laser_beam"
+      ],
+      "nativeMountMatrix": [
+        [
+          6.123233995736766e-17,
+          -1.0,
+          0.0,
+          1.46875
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          0.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -15.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "61024035cc584375f79f08f5d28e8c465a2be8d3ae155b8dd92cd50fb531e954"
+    },
+    {
+      "definitionId": "tacz_laser_lopro",
+      "group": "tacz_laser_lopro",
+      "prefix": "batch_tacz_laser_lopro",
+      "cubes": 86,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/laser_lopro_geo.json",
+      "sourceSha256": "5103c26e91e654828581125792f2b2ba1a3ea82810c3b1280e73b654353ef637",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_laser_lopro/component.json",
+      "sourceCubeIndices": {
+        "laser_lopro_mini": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62
+        ],
+        "laser_illuminated": [
+          0
+        ],
+        "bone3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "bone4": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "flashlight_illuminated": [
+          0
+        ],
+        "bone5": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bone2": [
+          0,
+          1,
+          2
+        ],
+        "bone": [
+          0,
+          1,
+          2
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_laser_lopro/model.bbmodel",
+      "texture": "components/tacz_laser_lopro/texture.png",
+      "editorCenter": [
+        0.05468,
+        0.44967,
+        -0.21088
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "nativeMount": "laser_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/laser_lopro.png",
+      "sourceTextureSha256": "d11f3ea4dd5c265e6a65b4c531e0829ec0418d120fd6b52d9b8f57aa9b2f1524",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "laser_beam"
+      ],
+      "nativeMountMatrix": [
+        [
+          6.123233995736766e-17,
+          -1.0,
+          0.0,
+          1.46875
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          0.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -15.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "a714f695b179bf4aef3acba84223ab87af7af18874e6b8259db3c2faccdadb0b"
+    },
+    {
+      "definitionId": "tacz_laser_nightstick",
+      "group": "tacz_laser_nightstick",
+      "prefix": "batch_tacz_laser_nightstick",
+      "cubes": 70,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/laser_nightstick_geo.json",
+      "sourceSha256": "a27541206ac17a2e8c3d58306a91a240af99d984a4b6d0c1bde9363cb2ab16b1",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_laser_nightstick/component.json",
+      "sourceCubeIndices": {
+        "laser_nightstick": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65
+        ],
+        "laser_illuminated": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_laser_nightstick/model.bbmodel",
+      "texture": "components/tacz_laser_nightstick/texture.png",
+      "editorCenter": [
+        0.01858,
+        0.98661,
+        0.2505
+      ],
+      "uvSize": [
+        64,
+        64
+      ],
+      "nativeMount": "laser_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/laser_nightstick.png",
+      "sourceTextureSha256": "f7a1079a5b052de629d73edf5de4355b9c5a3cde644e8ff76bd247a23d20c679",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "root",
+        "laser_beam"
+      ],
+      "nativeMountMatrix": [
+        [
+          6.123233995736766e-17,
+          -1.0,
+          0.0,
+          1.46875
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          0.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -15.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "9c7076f413604d04e0bce444ef05e58409d2507bc1b0d9469cbd39720ce8862c"
+    },
+    {
+      "definitionId": "tacz_laser_peq15",
+      "group": "tacz_laser_peq15",
+      "prefix": "batch_tacz_laser_peq15",
+      "cubes": 48,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/laser_peq15_geo.json",
+      "sourceSha256": "77592886f58cdb8de1fedaff44af8dc962324650971740026d2985d3f47509dd",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_laser_peq15/component.json",
+      "sourceCubeIndices": {
+        "nodyed": [
+          0,
+          1
+        ],
+        "pins": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "hole": [
+          0,
+          1
+        ],
+        "botton": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "dyed": [
+          0
+        ],
+        "shell": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "flashlight": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "rubber": [
+          0
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_laser_peq15/model.bbmodel",
+      "texture": "components/tacz_laser_peq15/texture.png",
+      "editorCenter": [
+        -0.2471,
+        0.77096,
+        -0.33938
+      ],
+      "uvSize": [
+        64,
+        64
+      ],
+      "nativeMount": "laser_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/laser_peq15.png",
+      "sourceTextureSha256": "c5c254e0861df611d8f1d6d056ef34fd906f07da28327386d9a3d1e504e1f13f",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "an_peq15",
+        "laser_beam"
+      ],
+      "nativeMountMatrix": [
+        [
+          6.123233995736766e-17,
+          -1.0,
+          0.0,
+          1.46875
+        ],
+        [
+          1.0,
+          6.123233995736766e-17,
+          0.0,
+          -9.5
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -15.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "dde2a39d5faf049c2d5d5ca2d94a61312c902364e7ef0cc2a68dc7eb11f83fc5"
+    },
+    {
+      "definitionId": "tacz_muzzle_brake_cthulhu",
+      "group": "tacz_muzzle_brake_cthulhu",
+      "prefix": "batch_tacz_muzzle_brake_cthulhu",
+      "cubes": 52,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_brake_cthulhu_geo.json",
+      "sourceSha256": "e14d1f93b6a8905947aa96efefc3bc7d366856251eddc250e424c9acd8599059",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_muzzle_brake_cthulhu/component.json",
+      "sourceCubeIndices": {
+        "bone34": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bone4": [
+          0
+        ],
+        "bone5": [
+          0
+        ],
+        "bone8": [
+          0
+        ],
+        "bone9": [
+          0
+        ],
+        "bone12": [
+          0
+        ],
+        "bone13": [
+          0
+        ],
+        "bone16": [
+          0
+        ],
+        "bone17": [
+          0
+        ],
+        "bone20": [
+          0
+        ],
+        "bone21": [
+          0
+        ],
+        "bone24": [
+          0
+        ],
+        "bone25": [
+          0
+        ],
+        "bone28": [
+          0
+        ],
+        "bone29": [
+          0
+        ],
+        "bone32": [
+          0
+        ],
+        "bone33": [
+          0
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_muzzle_brake_cthulhu/model.bbmodel",
+      "texture": "components/tacz_muzzle_brake_cthulhu/texture.png",
+      "editorCenter": [
+        0.0,
+        0.0,
+        -2.40533
+      ],
+      "uvSize": [
+        64,
+        64
+      ],
+      "nativeMount": "muzzle_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/muzzle_brake_cthulhu.png",
+      "sourceTextureSha256": "4993367875c8b9f2bf87de25032e5267c2716d715bb231193fce301ea4d3cd4c",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "brake",
+        "bone",
+        "bone2",
+        "bone3",
+        "bone6",
+        "bone7",
+        "bone10",
+        "bone11",
+        "bone14",
+        "bone15",
+        "bone18",
+        "bone19",
+        "bone22",
+        "bone23",
+        "bone26",
+        "bone27",
+        "bone30",
+        "bone31"
+      ],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.55
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "fe88a9225b22ba76e4f223cf038e719460e6b32bbe696fda9e211c245134e3cc"
+    },
+    {
+      "definitionId": "tacz_muzzle_brake_cyclone_d2",
+      "group": "tacz_muzzle_brake_cyclone_d2",
+      "prefix": "batch_tacz_muzzle_brake_cyclone_d2",
+      "cubes": 24,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_brake_cyclone_d2_geo.json",
+      "sourceSha256": "6363bd9d6884ace6c52f6ce1224e13d215d692fea2cf916a43f738ddfdc8f10c",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_muzzle_brake_cyclone_d2/component.json",
+      "sourceCubeIndices": {
+        "group20": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_muzzle_brake_cyclone_d2/model.bbmodel",
+      "texture": "components/tacz_muzzle_brake_cyclone_d2/texture.png",
+      "editorCenter": [
+        0.0,
+        0.0,
+        -1.525
+      ],
+      "uvSize": [
+        16,
+        16
+      ],
+      "nativeMount": "muzzle_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/muzzle_brake_cyclone_d2.png",
+      "sourceTextureSha256": "affae07dae316c58c6585d43eaf5466b41a1fc29c2a3a90cbd98e6530e66bdab",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "cyclone_c2"
+      ],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.55
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "359e465689a46d0e44ab5f2f7058111c2f39b09801f066a27d1b4e13f1908277"
+    },
+    {
+      "definitionId": "tacz_muzzle_brake_pioneer",
+      "group": "tacz_muzzle_brake_pioneer",
+      "prefix": "batch_tacz_muzzle_brake_pioneer",
+      "cubes": 45,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_brake_pioneer_geo.json",
+      "sourceSha256": "c8a557915fe3f847e06d468027dec4827bd47762163b3fee97a51264dde5a9a9",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_muzzle_brake_pioneer/component.json",
+      "sourceCubeIndices": {
+        "bone34": [
+          0,
+          1,
+          2
+        ],
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_muzzle_brake_pioneer/model.bbmodel",
+      "texture": "components/tacz_muzzle_brake_pioneer/texture.png",
+      "editorCenter": [
+        0.0,
+        -0.00016,
+        -1.5625
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "nativeMount": "muzzle_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/muzzle_brake_pioneer.png",
+      "sourceTextureSha256": "1970abc8b7503979939fd2f0094e25ea212a0e233b373b827f265a3807273d70",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "root"
+      ],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.55
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "567b67317f19ae2450c95e8b79712e3c96df6d7f59d193d3c82cde1f0a7b4948"
+    },
+    {
+      "definitionId": "tacz_muzzle_brake_trex",
+      "group": "tacz_muzzle_brake_trex",
+      "prefix": "batch_tacz_muzzle_brake_trex",
+      "cubes": 48,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_brake_trex_geo.json",
+      "sourceSha256": "727d2398f99d10128a60fe109453291808e63f70aa65d443855b94d8202bde9e",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_muzzle_brake_trex/component.json",
+      "sourceCubeIndices": {
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "bone6": [
+          0
+        ],
+        "bone7": [
+          0
+        ],
+        "bone10": [
+          0
+        ],
+        "bone11": [
+          0
+        ],
+        "bone14": [
+          0
+        ],
+        "bone15": [
+          0
+        ],
+        "bone18": [
+          0
+        ],
+        "bone19": [
+          0
+        ],
+        "bone22": [
+          0
+        ],
+        "bone23": [
+          0
+        ],
+        "bone26": [
+          0
+        ],
+        "bone27": [
+          0
+        ],
+        "bone30": [
+          0
+        ],
+        "bone31": [
+          0
+        ],
+        "bone34": [
+          0
+        ],
+        "bone35": [
+          0
+        ],
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_muzzle_brake_trex/model.bbmodel",
+      "texture": "components/tacz_muzzle_brake_trex/texture.png",
+      "editorCenter": [
+        0.0,
+        0.0,
+        -1.6885
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "nativeMount": "muzzle_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/muzzle_brake_trex.png",
+      "sourceTextureSha256": "15887ce0f9e46308c6ba053a0f16c6d7b1153ac979e4a1ce439c7aacecc320f9",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "trex",
+        "bone3",
+        "bone4",
+        "bone5",
+        "bone8",
+        "bone9",
+        "bone12",
+        "bone13",
+        "bone16",
+        "bone17",
+        "bone20",
+        "bone21",
+        "bone24",
+        "bone25",
+        "bone28",
+        "bone29",
+        "bone32",
+        "bone33"
+      ],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.55
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "8487c8afa6f0556a340a138ff22ffd628b202d206515d54f90692ad2bc697215"
+    },
+    {
+      "definitionId": "tacz_muzzle_compensator_trident",
+      "group": "tacz_muzzle_compensator_trident",
+      "prefix": "batch_tacz_muzzle_compensator_trident",
+      "cubes": 29,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_compensator_trident_geo.json",
+      "sourceSha256": "cc06bc5862b1e05a51816ef08c862b75544c10b9e29692832470098c35a3c28c",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_muzzle_compensator_trident/component.json",
+      "sourceCubeIndices": {
+        "bone4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_muzzle_compensator_trident/model.bbmodel",
+      "texture": "components/tacz_muzzle_compensator_trident/texture.png",
+      "editorCenter": [
+        0.0,
+        0.00051,
+        -1.33973
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "nativeMount": "muzzle_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/muzzle_compensator_trident.png",
+      "sourceTextureSha256": "7626bac3314f39b3a73fc8c7e2e0cf77c8c80fb4ba775fb088332dff994de3c5",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [
+        "compensator"
+      ],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.55
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "8662297b0e446e4dd1cd94f11f4ef10e6eed451a4d818999a7826b787ee9b032"
+    },
+    {
+      "definitionId": "tacz_muzzle_silencer_knight_qd",
+      "group": "tacz_muzzle_silencer_knight_qd",
+      "prefix": "batch_tacz_muzzle_silencer_knight_qd",
+      "cubes": 42,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_silencer_knight_qd_geo.json",
+      "sourceSha256": "58c22ec8b3fb5fe1a5e95b604737f799a46e6db6808023b709394251d8596587",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_muzzle_silencer_knight_qd/component.json",
+      "sourceCubeIndices": {
+        "muzzle_silencer_knight_qd": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_muzzle_silencer_knight_qd/model.bbmodel",
+      "texture": "components/tacz_muzzle_silencer_knight_qd/texture.png",
+      "editorCenter": [
+        -1e-05,
+        0.02458,
+        -4.00562
+      ],
+      "uvSize": [
+        64,
+        64
+      ],
+      "nativeMount": "muzzle_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/muzzle_silencer_knight_qd.png",
+      "sourceTextureSha256": "73019d3f55c7c88b1712ace7a9bf07c80040fd9253d68f8fdc1ada9e908894ca",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.55
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "18afa325fa772a8b320a9e31662612c795fc0f6cf9616d990a45185500572d28"
+    },
+    {
+      "definitionId": "tacz_muzzle_silencer_phantom_s1",
+      "group": "tacz_muzzle_silencer_phantom_s1",
+      "prefix": "batch_tacz_muzzle_silencer_phantom_s1",
+      "cubes": 16,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_silencer_phantom_s1_geo.json",
+      "sourceSha256": "e27716d0a90d8bb2e1ac2787cc0cba5f2d291eb1c3c80c9a20b2bfc07195d485",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_muzzle_silencer_phantom_s1/component.json",
+      "sourceCubeIndices": {
+        "G3_muzzle_s": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_muzzle_silencer_phantom_s1/model.bbmodel",
+      "texture": "components/tacz_muzzle_silencer_phantom_s1/texture.png",
+      "editorCenter": [
+        0.0,
+        0.0,
+        -5.275
+      ],
+      "uvSize": [
+        16,
+        16
+      ],
+      "nativeMount": "muzzle_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/muzzle_silencer_phantom_s1.png",
+      "sourceTextureSha256": "a08b3e276176f416258015d02dbfd5de3f89eef036ae4b8435173dc69ed2335a",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.55
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "906f969fcb20fefda57b0aa8ca55be547df61e10712edc1ddaf1dde5c72b01c2"
+    },
+    {
+      "definitionId": "tacz_muzzle_silencer_ursus",
+      "group": "tacz_muzzle_silencer_ursus",
+      "prefix": "batch_tacz_muzzle_silencer_ursus",
+      "cubes": 24,
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/muzzle_silencer_ursus_geo.json",
+      "sourceSha256": "897bfe4d4ed07a8c31c32e1573e6c86842257ab994f592873a4cc3f096973024",
+      "componentMetadata": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/tacz_muzzle_silencer_ursus/component.json",
+      "sourceCubeIndices": {
+        "muzzle_silencer_ursus": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "model": "components/tacz_muzzle_silencer_ursus/model.bbmodel",
+      "texture": "components/tacz_muzzle_silencer_ursus/texture.png",
+      "editorCenter": [
+        0.0,
+        0.0,
+        -4.49927
+      ],
+      "uvSize": [
+        64,
+        64
+      ],
+      "nativeMount": "muzzle_pos",
+      "batch": "non-optic-remaining-2",
+      "runtimeMode": "native_attachment",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/muzzle_silencer_ursus.png",
+      "sourceTextureSha256": "a34f1e6558395bcdc4e2af4ae6e402e6b4a5e3531b1ee5442c46c6753cf0dc11",
+      "motionOwnership": [
+        {
+          "mesh": "static",
+          "animationAncestors": []
+        }
+      ],
+      "functionalBones": [],
+      "nativeMountMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          -9.55
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          -24.25
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "baselineModelSha256": "3fe2274720ce3cb8d11c522574e1397ddacc05330063c91eb8ed56578c52a96a"
     }
   ]
 }

@@ -18,6 +18,17 @@ def validate(resources=DEFAULT):
  edited={p['definitionId'] for p in editable}
  inline={v for variants in read(base/'inline_attachments.json').values() for v in variants.values()}
  assert inline<=edited and all(mapping[d] in external for d in inline)
+ overrides=read(base/'native_attachment_overrides.json')
+ detached={p['definitionId'] for p in editable if p.get('runtimeMode')=='native_attachment'}
+ assert set(overrides)=={mapping[d] for d in detached}
+ assert not detached&inline
+ for item,entry in overrides.items():
+  for key,folder,suffix in [('model','geo_models','.json'),('texture','textures','.png'),('lodModel','geo_models','.json'),('lodTexture','textures','.png')]:
+   if key in entry:
+    namespace,path=entry[key].split(':',1)
+    assert namespace=='tacz_assembly'
+    assert (out/'assets'/namespace/folder/(path+suffix)).is_file(),(item,key)
+  assert ('lodModel' in entry)==('lodTexture' in entry)
  # Standard component contract: local geometry, textured UVs, and translated physical mount labels.
  preview=read(base/'preview.json');assert preview['schemaVersion']==3
  models={m['definitionId']:m for m in preview['models']}

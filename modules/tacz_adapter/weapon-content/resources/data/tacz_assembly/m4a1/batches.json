@@ -1,19 +1,4 @@
 {
-  "assembly_mag_extended_1": {
-    "definition": "tacz_extended_mag_1",
-    "variant": "always",
-    "sourceBone": "mag_extended_1"
-  },
-  "assembly_mag_extended_2": {
-    "definition": "tacz_extended_mag_2",
-    "variant": "always",
-    "sourceBone": "mag_extended_2"
-  },
-  "assembly_extend_magazine": {
-    "definition": "tacz_extended_mag_3",
-    "variant": "always",
-    "sourceBone": "extend_magazine"
-  },
   "assembly_fore_sights2": {
     "definition": "front_sight",
     "variant": "folded",
@@ -48,21 +33,6 @@
     "definition": "front_sight",
     "variant": "folded",
     "sourceBone": "bone20"
-  },
-  "assembly_lod_derived_mag_extended_1": {
-    "definition": "tacz_extended_mag_1",
-    "variant": "always",
-    "sourceBone": "mag_extended_1"
-  },
-  "assembly_lod_derived_mag_extended_2": {
-    "definition": "tacz_extended_mag_2",
-    "variant": "always",
-    "sourceBone": "mag_extended_2"
-  },
-  "assembly_lod_derived_extend_magazine": {
-    "definition": "tacz_extended_mag_3",
-    "variant": "always",
-    "sourceBone": "extend_magazine"
   },
   "assembly_lod_derived_fore_sights2": {
     "definition": "front_sight",
@@ -858,5 +828,35 @@
     "definition": "tacz_stock_sba3",
     "variant": "always",
     "sourceBone": "stock"
+  },
+  "assembly_editable_tacz_extended_mag_1_mag_extended_1": {
+    "definition": "tacz_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "mag_extended_1"
+  },
+  "assembly_editable_tacz_extended_mag_1_mag_extended_1_lod": {
+    "definition": "tacz_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "mag_extended_1"
+  },
+  "assembly_editable_tacz_extended_mag_2_mag_extended_2": {
+    "definition": "tacz_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "mag_extended_2"
+  },
+  "assembly_editable_tacz_extended_mag_2_mag_extended_2_lod": {
+    "definition": "tacz_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "mag_extended_2"
+  },
+  "assembly_editable_tacz_extended_mag_3_extend_magazine": {
+    "definition": "tacz_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "extend_magazine"
+  },
+  "assembly_editable_tacz_extended_mag_3_extend_magazine_lod": {
+    "definition": "tacz_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "extend_magazine"
   }
 }

@@ -26,20 +26,29 @@ class EditableContract(unittest.TestCase):
         high=im.ex.read(im.OUT/'assets/tacz_assembly/geo_models/gun/m4a1.json')['minecraft:geometry'][0];bones={b['name']:b for b in high['bones']}
         atlas=Image.open(im.OUT/'assets/tacz_assembly/textures/gun/editable_m4a1.png').convert('RGBA')
         for row in report['parts']:
-            d=row['definitionId'];entry=parts[d];mesh=im.ex.read(im.SOURCE/entry['model']);src=Image.open(im.SOURCE/entry['texture']).convert('RGBA');cx,cy=row['atlasCell']
+            d=row['definitionId'];entry=parts[d];mesh=im.ex.read(im.SOURCE/entry['model']);src=Image.open(im.SOURCE/entry['texture']).convert('RGBA')
+            detached=row.get('runtimeMode')=='native_attachment'
+            cx,cy=(0,0) if detached else row['atlasCell']
+            if detached:
+                geo=im.ex.read(im.OUT/('assets/tacz_assembly/geo_models/attachments/'+d+'.json'))['minecraft:geometry'][0]
+                current_bones={b['name']:b for b in geo['bones']}
+                extra=im.ex.matrix(entry['anchorBone'],bones)
+                uvwidth,uvheight=geo['description']['texture_width'],geo['description']['texture_height']
+            else:current_bones=bones;extra=np.eye(4);uvwidth=uvheight=512
             for element in mesh['elements']:
-                leaf=bones['assembly_editable_'+d+'_'+element['name']];faces=[];vertices=[]
+                leaf=current_bones[element['name'] if detached else 'assembly_editable_'+d+'_'+element['name']];faces=[];vertices=[]
                 for c in leaf['cubes']:
-                    vv,ff=im.ex.cube_geometry(leaf,c,bones,np.eye(4));start=len(vertices);vertices.extend(vv)
+                    vv,ff=im.ex.cube_geometry(leaf,c,current_bones,extra);start=len(vertices);vertices.extend(vv)
                     faces.extend(([i+start for i in ids],uv) for ids,uv in ff)
                 actual=np.asarray(list(element['vertices'].values()))+entry['anchor']
                 self.assertTrue(np.allclose(actual,vertices,atol=1e-8),d)
                 for face,(indices,uv) in zip(element['faces'].values(),faces):
                     for key,held_uv in zip(face['vertices'],uv):
                         u,v=face['uv'][key];u/=src.width;v/=src.height
-                        self.assertAlmostEqual(u,(held_uv[0]-cx)/512,places=8)
-                        self.assertAlmostEqual(v,(held_uv[1]-cy)/512,places=8)
+                        self.assertAlmostEqual(u,(held_uv[0]-cx)/uvwidth,places=8)
+                        self.assertAlmostEqual(v,(held_uv[1]-cy)/uvheight,places=8)
                 # Cell content matches source resampling, including transparent areas.
+            if detached:continue
             self.assertEqual(atlas.crop((cx,cy,cx+512,cy+512)).tobytes(),src.resize((512,512),Image.Resampling.NEAREST).tobytes())
 
     def test_native_uv_units_are_not_png_pixels(self):

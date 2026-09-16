@@ -1,0 +1,170 @@
+[
+  {
+    "definition": "tacz_bayonet_m9",
+    "cubes": 43,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_extended_mag_1",
+    "cubes": 33,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_extended_mag_2",
+    "cubes": 33,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_extended_mag_3",
+    "cubes": 9,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_cobra",
+    "cubes": 35,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_cqr",
+    "cubes": 46,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_magpul_afg_2",
+    "cubes": 23,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_osovets_black",
+    "cubes": 38,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_rk0",
+    "cubes": 35,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_rk1_b25u",
+    "cubes": 33,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_rk6",
+    "cubes": 23,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_se_5",
+    "cubes": 16,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_td",
+    "cubes": 22,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_vertical_military",
+    "cubes": 43,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_vertical_ranger",
+    "cubes": 57,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_grip_vertical_talon",
+    "cubes": 17,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_laser_compact",
+    "cubes": 44,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_laser_lopro",
+    "cubes": 86,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_laser_nightstick",
+    "cubes": 70,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_laser_peq15",
+    "cubes": 48,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_muzzle_brake_cthulhu",
+    "cubes": 52,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_muzzle_brake_cyclone_d2",
+    "cubes": 24,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_muzzle_brake_pioneer",
+    "cubes": 45,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_muzzle_brake_trex",
+    "cubes": 48,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_muzzle_compensator_trident",
+    "cubes": 29,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_muzzle_silencer_knight_qd",
+    "cubes": 42,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_muzzle_silencer_phantom_s1",
+    "cubes": 16,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  },
+  {
+    "definition": "tacz_muzzle_silencer_ursus",
+    "cubes": 24,
+    "maximumPositionError": 0.0,
+    "uvEqual": true
+  }
+]
