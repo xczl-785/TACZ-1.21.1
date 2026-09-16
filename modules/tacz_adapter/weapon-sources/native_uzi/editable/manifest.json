@@ -1,0 +1,649 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "uzi_receiver",
+      "group": "uzi_receiver",
+      "prefix": "native_attachment_uzi_receiver",
+      "cubes": 149,
+      "sourceCubeIndices": {
+        "mount": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "cap": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "lower": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "group3": [
+          0,
+          1
+        ],
+        "rec": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "group4": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group5": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group6": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group7": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "deco": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "group8": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "screw": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        6.625,
+        1.71875
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/uzi_receiver/model.bbmodel",
+      "texture": "components/uzi_receiver/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "52bed73abcb2de94325f86acef3c950f77724ab8781f47f094abb23b6b2cad1a"
+    },
+    {
+      "definitionId": "uzi_iron_sights",
+      "group": "uzi_iron_sights",
+      "prefix": "native_attachment_uzi_iron_sights",
+      "cubes": 12,
+      "sourceCubeIndices": {
+        "rearsight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sight_illuminated": [
+          0,
+          1,
+          2
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.09375,
+        10.25,
+        1.54531
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/uzi_iron_sights/model.bbmodel",
+      "texture": "components/uzi_iron_sights/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "d6bb199d1c5aff69fce0837f8b641b25e7ead04ad254450e36732b3929629bbe"
+    },
+    {
+      "definitionId": "uzi_stock",
+      "group": "uzi_stock",
+      "prefix": "native_attachment_uzi_stock",
+      "cubes": 34,
+      "sourceCubeIndices": {
+        "fold_stock": [
+          0,
+          1
+        ],
+        "group12": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "group14": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.15625,
+        5.59572,
+        8.19847
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/uzi_stock/model.bbmodel",
+      "texture": "components/uzi_stock/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "1d28d395ac2d155b296df24b05418415ecc10c789a9d71967123ae02e4c7c9c2"
+    },
+    {
+      "definitionId": "uzi_barrel",
+      "group": "uzi_barrel",
+      "prefix": "native_attachment_uzi_barrel",
+      "cubes": 20,
+      "sourceCubeIndices": {
+        "barrel": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "group2": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        8.375,
+        -7.15625
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/uzi_barrel/model.bbmodel",
+      "texture": "components/uzi_barrel/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "08a897d62a2f5ef4e94400019712dba4d67d687e7027e0fbb9e026048518bbb3"
+    },
+    {
+      "definitionId": "uzi_handguard",
+      "group": "uzi_handguard",
+      "prefix": "native_attachment_uzi_handguard",
+      "cubes": 26,
+      "sourceCubeIndices": {
+        "guard": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "hg": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        7.125,
+        -2.4375
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/uzi_handguard/model.bbmodel",
+      "texture": "components/uzi_handguard/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "c0ff643742b73d714cf9f282fccff1bf142b7c1c5c98ac423584a1d39f339bc2"
+    },
+    {
+      "definitionId": "uzi_grip",
+      "group": "uzi_grip",
+      "prefix": "native_attachment_uzi_grip",
+      "cubes": 10,
+      "sourceCubeIndices": {
+        "grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        4.75,
+        3.25
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/uzi_grip/model.bbmodel",
+      "texture": "components/uzi_grip/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "6524c1f349ba28d0b7a471437ed7732d1da8cc357ad2e8b284f15704a302b777"
+    },
+    {
+      "definitionId": "uzi_mag_release",
+      "group": "uzi_mag_release",
+      "prefix": "native_attachment_uzi_mag_release",
+      "cubes": 2,
+      "sourceCubeIndices": {
+        "mag_release": [
+          0,
+          1
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.7358,
+        2.86548,
+        2.875
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/uzi_mag_release/model.bbmodel",
+      "texture": "components/uzi_mag_release/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "b56aac5d74cc9a6a0044ed84b67fd450577d43a03783ec638ce16b262865c342"
+    },
+    {
+      "definitionId": "uzi_charging_handle",
+      "group": "uzi_charging_handle",
+      "prefix": "native_attachment_uzi_charging_handle",
+      "cubes": 13,
+      "sourceCubeIndices": {
+        "pull": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        10.00586,
+        -2.125
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/uzi_charging_handle/model.bbmodel",
+      "texture": "components/uzi_charging_handle/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "2c2528dab112e9e9f1071094fec34b310e0499ae09474ccab77762b25d3466dd"
+    },
+    {
+      "definitionId": "uzi_bolt",
+      "group": "uzi_bolt",
+      "prefix": "native_attachment_uzi_bolt",
+      "cubes": 9,
+      "sourceCubeIndices": {
+        "bolt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.00076,
+        8.77115,
+        3.875
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/uzi_bolt/model.bbmodel",
+      "texture": "components/uzi_bolt/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "97d04ff91fe1c63bf8850c57737182b7015b27f8c47be05494828188a4cdf250"
+    },
+    {
+      "definitionId": "uzi_magazine_standard",
+      "group": "uzi_magazine_standard",
+      "prefix": "native_attachment_uzi_magazine_standard",
+      "cubes": 11,
+      "sourceCubeIndices": {
+        "mag": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        4.17561,
+        2.55871
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/uzi_magazine_standard/model.bbmodel",
+      "texture": "components/uzi_magazine_standard/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "e6f3193c0dd2494d421e15db33f06e3073cb267ae073d882ee74c196646a65b6"
+    }
+  ]
+}

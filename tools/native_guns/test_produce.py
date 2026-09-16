@@ -19,6 +19,12 @@ class NativeGunProductionTest(unittest.TestCase):
         wrong=copy.deepcopy(config);wrong['weapon']['partIconDirectory']='textures/item/m4a1'
         with self.assertRaises(ValueError):p.validate_configuration(wrong)
 
+    def test_exported_physical_parts_must_be_installable(self):
+        config=copy.deepcopy(p.ex.read(p.DEFAULT))
+        config['parts'].append(dict(config['parts'][0],definitionId='orphan_release'))
+        with self.assertRaisesRegex(ValueError,'Unreachable physical parts: orphan_release'):
+            p.validate_configuration(config)
+
     def test_lod_retains_each_physical_entity_and_exact_uv_cubes(self):
         report=p.ex.read(p.DEFAULT.parent/'build-report.json')
         self.assertTrue(report['lod']);self.assertLess(report['lowCubes'],report['highCubes'])
@@ -28,9 +34,24 @@ class NativeGunProductionTest(unittest.TestCase):
             self.assertLessEqual(max(proof['silhouetteLoss']),.01)
             self.assertTrue(all(metric['meanError']<=.02 and metric['changedPixelFraction']<=.05 for metric in proof['textureComparisons']))
 
+    def test_native_nonstandard_scope_body_uses_explicit_readonly_projection(self):
+        index=p.ex.read(p.ex.SRC/'data/tacz/index/attachments/sight_p90.json')
+        display=p.ex.read(p.ex.asset(index['display'],'display/attachments','.json'))
+        geo=p.ex.read(p.ex.asset(display['model'],'geo_models','.json'))['minecraft:geometry'][0]
+        bones={b['name']:b for b in geo['bones']}
+        result=p.exterior_scope_geometry(bones,['default_sight'])
+        self.assertEqual(result['default_sight']['cubes'],bones['default_sight']['cubes'])
+        self.assertFalse(result['ocular'].get('cubes'))
+        self.assertFalse(result['division_illuminated'].get('cubes'))
+        self.assertTrue(bones['ocular']['cubes'])
+        with self.assertRaises(ValueError):p.exterior_scope_geometry(bones,['missing'])
+
     def test_registered_batch_resources_use_distinct_configured_paths(self):
         types=set();directories=set()
-        for gun in ('glock_17','m16a1','scar_l','ump45'):
+        for entry in p.ex.read(p.RES/'data/tactical_tacz_adapter/assembled_weapons.json')['weapons']:
+            weapon=p.ex.read(p.RES/entry)
+            if not weapon.get('nativeRig') or weapon['developmentSource']=='native_m4a1':continue
+            gun=weapon['gunId'].split(':')[1]
             root=p.R/'modules/tacz_adapter/weapon-sources'/('native_'+gun)
             config=p.ex.read(root/'production.json');weapon=config['weapon']
             validate(p.RES,weapon)

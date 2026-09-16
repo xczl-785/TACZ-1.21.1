@@ -1,0 +1,887 @@
+{
+  "schemaVersion": 1,
+  "sourceGun": "ai_awp",
+  "gunId": "tacz_assembly:ai_awp",
+  "sourceDirectory": "native_ai_awp",
+  "rootDefinition": "awp_receiver",
+  "parts": [
+    {
+      "definitionId": "awp_receiver",
+      "sourceCubeIndices": {
+        "receiver": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "trigger": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "group13": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "safety": [
+          0,
+          1
+        ]
+      },
+      "inventoryType": "weapon/firearm/bolt_action_rifle",
+      "footprint": [
+        6,
+        2
+      ]
+    },
+    {
+      "definitionId": "awp_barrel",
+      "sourceCubeIndices": {
+        "barrel": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "rail": [
+          0
+        ],
+        "group24": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "group25": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "awp_bipod",
+      "sourceCubeIndices": {
+        "octagon4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      },
+      "inventoryType": "weapon_mod/bipod",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "awp_bolt",
+      "sourceCubeIndices": {
+        "bolt_rotate": [
+          0,
+          1
+        ],
+        "bone2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "ball": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "striker": [
+          0
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "awp_stock",
+      "sourceCubeIndices": {
+        "group4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group5": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "group6": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "group32": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group31": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group3": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group2": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "group29": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group30": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "screws": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "inventoryType": "weapon_mod/stock",
+      "footprint": [
+        2,
+        2
+      ]
+    },
+    {
+      "definitionId": "awp_iron_sights",
+      "sourceCubeIndices": {
+        "group8": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "sight_illuminated": [
+          0
+        ],
+        "rearsight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "awp_magazine_standard",
+      "sourceCubeIndices": {
+        "mag2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ]
+    }
+  ],
+  "slots": {
+    "awp_receiver": {
+      "barrel": [
+        "awp_barrel"
+      ],
+      "bolt": [
+        "awp_bolt"
+      ],
+      "stock": [
+        "awp_stock"
+      ],
+      "iron_sights": [
+        "awp_iron_sights"
+      ],
+      "magazine": [
+        "awp_magazine_standard",
+        "$extended_mag"
+      ]
+    },
+    "awp_barrel": {
+      "bipod": [
+        "awp_bipod"
+      ],
+      "muzzle": [
+        "$muzzle"
+      ],
+      "scope": [
+        "$scope"
+      ]
+    }
+  },
+  "preset": {
+    "awp_receiver": {
+      "barrel": "awp_barrel",
+      "bolt": "awp_bolt",
+      "stock": "awp_stock",
+      "iron_sights": "awp_iron_sights",
+      "magazine": "awp_magazine_standard"
+    },
+    "awp_barrel": {
+      "bipod": "awp_bipod"
+    }
+  },
+  "weapon": {
+    "schemaVersion": 1,
+    "gunId": "tacz_assembly:ai_awp",
+    "rootDefinition": "awp_receiver",
+    "resourceDirectory": "ai_awp",
+    "modelType": "tacz_native_ai_awp_assembly",
+    "caliber": "338lapua",
+    "requiredPaths": [
+      [
+        "barrel"
+      ],
+      [
+        "bolt"
+      ]
+    ],
+    "defaultFireMode": "semi",
+    "feed": "detachable_magazine",
+    "nativeRig": true,
+    "assemblyIcons": true,
+    "developmentSource": "native_ai_awp",
+    "wearableSlots": [
+      "tactical_inventory:primary_weapon_1",
+      "tactical_inventory:primary_weapon_2"
+    ],
+    "partIconDirectory": "textures/item/ai_awp",
+    "magazinePath": [
+      "magazine"
+    ]
+  },
+  "nativeProfile": {
+    "schemaVersion": 1,
+    "attachmentPaths": {
+      "MUZZLE": [
+        "barrel",
+        "muzzle"
+      ],
+      "SCOPE": [
+        "barrel",
+        "scope"
+      ],
+      "EXTENDED_MAG": [
+        "magazine"
+      ]
+    },
+    "attachmentOverrides": {},
+    "sightAlternatives": [
+      [
+        [
+          "barrel",
+          "scope"
+        ]
+      ],
+      [
+        [
+          "iron_sights"
+        ]
+      ]
+    ]
+  },
+  "visualRules": {
+    "schemaVersion": 1,
+    "alwaysVisibleBones": [
+      "mag_standard",
+      "mag_extended_1",
+      "mag_extended_2",
+      "mag_extended_3"
+    ],
+    "definitionRequirements": {},
+    "variantRequirements": {},
+    "boneRequirements": {
+      "bullet": [
+        "awp_magazine_standard",
+        "tacz_ai_awp_sniper_extended_mag_1",
+        "tacz_ai_awp_sniper_extended_mag_2",
+        "tacz_ai_awp_sniper_extended_mag_3"
+      ],
+      "bullet_in_mag": [
+        "awp_magazine_standard",
+        "tacz_ai_awp_sniper_extended_mag_1",
+        "tacz_ai_awp_sniper_extended_mag_2",
+        "tacz_ai_awp_sniper_extended_mag_3"
+      ]
+    },
+    "boneAllRequirements": {
+      "bullet_in_barrel": [
+        "awp_barrel",
+        "awp_bolt"
+      ]
+    }
+  },
+  "presentationOnly": {
+    "righthand_pos": [
+      0
+    ],
+    "lefthand_pos": [
+      0
+    ],
+    "bullet_shell": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "shell_part": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "head": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "bullet": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bullet3": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "lodPolicy": "Conservative per-part original-cube subset; full functional rig and UV preserved with silhouette and textured comparison gates.",
+  "lod": {
+    "strategy": "conservative_cube_subset",
+    "silhouetteResolution": 96,
+    "textureResolution": 48,
+    "maxSilhouetteLoss": 0.01,
+    "maxTextureMeanError": 0.02,
+    "maxTextureChangedFraction": 0.05
+  },
+  "labels": {
+    "awp_receiver": [
+      "机匣 · AI_AWP",
+      "awp_receiver"
+    ],
+    "awp_barrel": [
+      "枪管 · AI_AWP",
+      "awp_barrel"
+    ],
+    "awp_bipod": [
+      "两脚架 · AI_AWP",
+      "awp_bipod"
+    ],
+    "awp_bolt": [
+      "枪机 · AI_AWP",
+      "awp_bolt"
+    ],
+    "awp_stock": [
+      "枪托 · AI_AWP",
+      "awp_stock"
+    ],
+    "awp_iron_sights": [
+      "机械瞄具 · AI_AWP",
+      "awp_iron_sights"
+    ],
+    "awp_magazine_standard": [
+      "弹匣 · AI_AWP",
+      "awp_magazine_standard"
+    ]
+  },
+  "slotLabels": {},
+  "gunLabels": [
+    "AI_AWP · 原生实体组装",
+    "AI_AWP · Native Assembly"
+  ],
+  "editableAttachmentCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
+  ],
+  "attachmentOverrideCatalogs": [
+    "data/tacz_assembly/native_attachments/standalone.json",
+    "data/tacz_assembly/m4a1/native_attachment_overrides.json"
+  ],
+  "integrationFragments": "/tmp/native-gun-integration/ai_awp",
+  "excludedAttachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_he",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i"
+  ],
+  "nativeMagazineVariants": {
+    "tacz_ai_awp_sniper_extended_mag_1": {
+      "mag": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "tacz_ai_awp_sniper_extended_mag_2": {
+      "mag3": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "tacz_ai_awp_sniper_extended_mag_3": {
+      "mag4": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  },
+  "nativeMagazineCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_ai_awp/magazine_variants/manifest.json"
+  ]
+}

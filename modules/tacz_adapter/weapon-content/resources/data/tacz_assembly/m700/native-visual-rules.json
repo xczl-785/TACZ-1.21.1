@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "mag_extended_3"
+  ],
+  "definitionRequirements": {},
+  "variantRequirements": {},
+  "boneRequirements": {
+    "bullet": [
+      "m700_magazine_standard",
+      "tacz_m700_sniper_extended_mag_1",
+      "tacz_m700_sniper_extended_mag_2",
+      "tacz_m700_sniper_extended_mag_3"
+    ],
+    "bullet_in_mag": [
+      "m700_magazine_standard",
+      "tacz_m700_sniper_extended_mag_1",
+      "tacz_m700_sniper_extended_mag_2",
+      "tacz_m700_sniper_extended_mag_3"
+    ],
+    "bolt": [
+      "m700_bolt"
+    ]
+  }
+}

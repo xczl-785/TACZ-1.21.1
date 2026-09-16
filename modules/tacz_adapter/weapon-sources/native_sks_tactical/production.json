@@ -1,0 +1,971 @@
+{
+  "schemaVersion": 1,
+  "sourceGun": "sks_tactical",
+  "gunId": "tacz_assembly:sks_tactical",
+  "sourceDirectory": "native_sks_tactical",
+  "rootDefinition": "sks_tactical_lower",
+  "parts": [
+    {
+      "definitionId": "sks_tactical_lower",
+      "sourceCubeIndices": {
+        "receiver": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "trigger": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "magazinecatch": [
+          0,
+          1,
+          2
+        ],
+        "magrelease": [
+          0
+        ],
+        "pins": [
+          0
+        ],
+        "octagon13": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon14": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "safety": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "inventoryType": "weapon/firearm/assault_rifle",
+      "footprint": [
+        5,
+        2
+      ]
+    },
+    {
+      "definitionId": "sks_tactical_handguard",
+      "sourceCubeIndices": {
+        "lower": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51
+        ],
+        "upper": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "adapter": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "bone5": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "inventoryType": "weapon_mod/handguard",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "sks_tactical_barrel",
+      "sourceCubeIndices": {
+        "bone2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "sks_tactical_bolt",
+      "sourceCubeIndices": {
+        "bolt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "octagon18": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "octagon19": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "sks_tactical_front_sight",
+      "sourceCubeIndices": {
+        "sight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "sight_front_illuminated": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "sks_tactical_rear_sight",
+      "sourceCubeIndices": {
+        "rearsight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "sight_illuminated": [
+          0
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "sks_tactical_stock",
+      "sourceCubeIndices": {
+        "stock": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53
+        ],
+        "bone4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "inventoryType": "weapon_mod/stock",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "sks_tactical_heavy_stock",
+      "sourceCubeIndices": {
+        "oem_stock_heavy": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "bone6": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "inventoryType": "weapon_mod/stock",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "sks_tactical_mount",
+      "sourceCubeIndices": {
+        "bone3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ],
+        "rail2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "inventoryType": "weapon_mod/mount",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "sks_tactical_magazine_standard",
+      "sourceCubeIndices": {
+        "mag_standard": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ]
+    }
+  ],
+  "slots": {
+    "sks_tactical_lower": {
+      "handguard": [
+        "sks_tactical_handguard"
+      ],
+      "stock": [
+        "sks_tactical_stock",
+        "sks_tactical_heavy_stock",
+        "$stock"
+      ],
+      "magazine": [
+        "sks_tactical_magazine_standard",
+        "$extended_mag"
+      ]
+    },
+    "sks_tactical_handguard": {
+      "barrel": [
+        "sks_tactical_barrel"
+      ],
+      "bolt": [
+        "sks_tactical_bolt"
+      ],
+      "front_sight": [
+        "sks_tactical_front_sight"
+      ],
+      "rear_sight": [
+        "sks_tactical_rear_sight"
+      ],
+      "mount": [
+        "sks_tactical_mount"
+      ],
+      "grip": [
+        "$grip"
+      ],
+      "laser": [
+        "$laser"
+      ]
+    },
+    "sks_tactical_barrel": {
+      "muzzle": [
+        "$muzzle"
+      ]
+    },
+    "sks_tactical_mount": {
+      "scope": [
+        "$scope"
+      ]
+    }
+  },
+  "preset": {
+    "sks_tactical_lower": {
+      "handguard": "sks_tactical_handguard",
+      "stock": "sks_tactical_stock",
+      "magazine": "sks_tactical_magazine_standard"
+    },
+    "sks_tactical_handguard": {
+      "barrel": "sks_tactical_barrel",
+      "bolt": "sks_tactical_bolt",
+      "front_sight": "sks_tactical_front_sight",
+      "rear_sight": "sks_tactical_rear_sight",
+      "mount": "sks_tactical_mount"
+    },
+    "sks_tactical_barrel": {},
+    "sks_tactical_mount": {}
+  },
+  "presentationOnly": {
+    "lefthand_pos": [
+      0
+    ],
+    "bullet_in_mag": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bullet": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "righthand_pos": [
+      0
+    ],
+    "bullet_in_barrel": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "weapon": {
+    "schemaVersion": 1,
+    "gunId": "tacz_assembly:sks_tactical",
+    "rootDefinition": "sks_tactical_lower",
+    "resourceDirectory": "sks_tactical",
+    "modelType": "tacz_native_sks_tactical_assembly",
+    "caliber": "762x39",
+    "magazinePath": [
+      "magazine"
+    ],
+    "requiredPaths": [
+      [
+        "handguard"
+      ],
+      [
+        "handguard",
+        "barrel"
+      ],
+      [
+        "handguard",
+        "bolt"
+      ]
+    ],
+    "defaultFireMode": "semi",
+    "feed": "detachable_magazine",
+    "nativeRig": true,
+    "assemblyIcons": true,
+    "developmentSource": "native_sks_tactical",
+    "wearableSlots": [
+      "tactical_inventory:primary_weapon_1",
+      "tactical_inventory:primary_weapon_2"
+    ],
+    "partIconDirectory": "textures/item/sks_tactical"
+  },
+  "nativeProfile": {
+    "schemaVersion": 1,
+    "attachmentPaths": {
+      "SCOPE": [
+        "handguard",
+        "mount",
+        "scope"
+      ],
+      "MUZZLE": [
+        "handguard",
+        "barrel",
+        "muzzle"
+      ],
+      "GRIP": [
+        "handguard",
+        "grip"
+      ],
+      "LASER": [
+        "handguard",
+        "laser"
+      ],
+      "STOCK": [
+        "stock"
+      ],
+      "EXTENDED_MAG": [
+        "magazine"
+      ]
+    },
+    "attachmentOverrides": {},
+    "sightAlternatives": [
+      [
+        [
+          "handguard",
+          "mount",
+          "scope"
+        ]
+      ],
+      [
+        [
+          "handguard",
+          "front_sight"
+        ],
+        [
+          "handguard",
+          "rear_sight"
+        ]
+      ]
+    ]
+  },
+  "visualRules": {
+    "schemaVersion": 1,
+    "alwaysVisibleBones": [
+      "mag_standard",
+      "mag_extended_1",
+      "mag_extended_2",
+      "mag_extended_3",
+      "oem_stock_tactical",
+      "oem_stock_heavy"
+    ],
+    "definitionRequirements": {},
+    "variantRequirements": {},
+    "boneRequirements": {
+      "bullet": [
+        "sks_tactical_magazine_standard",
+        "tacz_sks_tactical_extended_mag_1",
+        "tacz_sks_tactical_extended_mag_2",
+        "tacz_sks_tactical_extended_mag_3"
+      ],
+      "bullet_in_mag": [
+        "sks_tactical_magazine_standard",
+        "tacz_sks_tactical_extended_mag_1",
+        "tacz_sks_tactical_extended_mag_2",
+        "tacz_sks_tactical_extended_mag_3"
+      ],
+      "bullet_in_barrel": [
+        "sks_tactical_barrel"
+      ],
+      "bolt": [
+        "sks_tactical_bolt"
+      ],
+      "additional_magazine": [
+        "sks_tactical_magazine_standard",
+        "tacz_sks_tactical_extended_mag_1",
+        "tacz_sks_tactical_extended_mag_2",
+        "tacz_sks_tactical_extended_mag_3"
+      ]
+    }
+  },
+  "sourceBoneVariants": {},
+  "previewHiddenVariants": [
+    "folded"
+  ],
+  "nativeMagazineCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_sks_tactical/magazine_variants/manifest.json"
+  ],
+  "lod": {
+    "strategy": "conservative_cube_subset",
+    "silhouetteResolution": 96,
+    "textureResolution": 48,
+    "maxSilhouetteLoss": 0.01,
+    "maxTextureMeanError": 0.02,
+    "maxTextureChangedFraction": 0.05
+  },
+  "lodPolicy": "Conservative original-cube subset; eight-view silhouette and 48px textured comparison gates, each geometry bone retained; full native functional rig",
+  "labels": {
+    "sks_tactical_lower": [
+      "SKS_TACTICAL 下机匣与扳机组件",
+      "SKS_TACTICAL lower"
+    ],
+    "sks_tactical_handguard": [
+      "SKS_TACTICAL 护木",
+      "SKS_TACTICAL handguard"
+    ],
+    "sks_tactical_barrel": [
+      "SKS_TACTICAL 枪管",
+      "SKS_TACTICAL barrel"
+    ],
+    "sks_tactical_bolt": [
+      "SKS_TACTICAL 枪机",
+      "SKS_TACTICAL bolt"
+    ],
+    "sks_tactical_front_sight": [
+      "SKS_TACTICAL 前机械瞄具",
+      "SKS_TACTICAL front sight"
+    ],
+    "sks_tactical_rear_sight": [
+      "SKS_TACTICAL 后机械瞄具",
+      "SKS_TACTICAL rear sight"
+    ],
+    "sks_tactical_stock": [
+      "SKS_TACTICAL 原厂枪托",
+      "SKS_TACTICAL stock"
+    ],
+    "sks_tactical_heavy_stock": [
+      "SKS_TACTICAL 重型原厂枪托",
+      "SKS_TACTICAL heavy stock"
+    ],
+    "sks_tactical_mount": [
+      "SKS_TACTICAL 瞄具安装座",
+      "SKS_TACTICAL mount"
+    ],
+    "sks_tactical_magazine_standard": [
+      "SKS_TACTICAL 标准弹匣",
+      "SKS_TACTICAL magazine standard"
+    ]
+  },
+  "slotLabels": {},
+  "gunLabels": [
+    "SKS_TACTICAL · 原生实体组装",
+    "SKS_TACTICAL · Native Assembly"
+  ],
+  "excludedAttachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i"
+  ],
+  "editableAttachmentCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
+  ],
+  "attachmentOverrideCatalogs": [
+    "data/tacz_assembly/native_attachments/standalone.json",
+    "data/tacz_assembly/m4a1/native_attachment_overrides.json",
+    "data/tacz_assembly/native_attachments/stocks.json"
+  ],
+  "integrationFragments": "/tmp/native-gun-integration/sks_tactical",
+  "authoredStockAssets": true
+}

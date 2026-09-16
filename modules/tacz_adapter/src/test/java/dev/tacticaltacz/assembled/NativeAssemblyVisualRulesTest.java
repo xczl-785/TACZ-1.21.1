@@ -53,4 +53,29 @@ class NativeAssemblyVisualRulesTest {
         assertThrows(IllegalArgumentException.class,()->NativeAssemblyVisualRules.load(json.replace("\"alwaysVisibleBones\":[]","\"alwaysVisibleBones\":[\"bullet\"]"),Set.of("standard","extended"),Set.of("bullet")));
     }
 
+    @Test void chamberRequiresBothPhysicalPartsWhileMagazineVariantsRemainAlternatives(){
+        String json="""
+            {"schemaVersion":1,"alwaysVisibleBones":[],"definitionRequirements":{},"variantRequirements":{},
+             "boneRequirements":{"feed":["standard","extended"]},"boneAllRequirements":{"chamber":["barrel","bolt"]}}
+            """;
+        var rules=NativeAssemblyVisualRules.load(json,Set.of("barrel","bolt","standard","extended"),Set.of("feed","chamber"));
+        assertEquals(Set.of("feed","chamber"),rules.dependentBones());
+        assertFalse(rules.boneVisible("chamber",Set.of("barrel")));
+        assertFalse(rules.boneVisible("chamber",Set.of("bolt")));
+        assertTrue(rules.boneVisible("chamber",Set.of("barrel","bolt")));
+        assertTrue(rules.boneVisible("feed",Set.of("extended")));
+        assertThrows(IllegalArgumentException.class,()->NativeAssemblyVisualRules.load(json,Set.of("barrel","standard","extended"),Set.of("feed","chamber")));
+    }
+
+    @Test void sameBoneCombinesCapacityAlternativesWithRequiredMechanism(){
+        String json="""
+            {"schemaVersion":1,"alwaysVisibleBones":[],"definitionRequirements":{},"variantRequirements":{},
+             "boneRequirements":{"round":["standard","extended"]},"boneAllRequirements":{"round":["barrel","bolt"]}}
+            """;
+        var rules=NativeAssemblyVisualRules.load(json,Set.of("barrel","bolt","standard","extended"),Set.of("round"));
+        assertTrue(rules.boneVisible("round",Set.of("barrel","bolt","extended")));
+        assertFalse(rules.boneVisible("round",Set.of("barrel","bolt")));
+        assertFalse(rules.boneVisible("round",Set.of("barrel","extended")));
+    }
+
 }

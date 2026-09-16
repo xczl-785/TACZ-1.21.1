@@ -1,0 +1,58 @@
+{
+  "tacz:laser_compact": {
+    "model": "tacz_assembly:attachments/tacz_laser_compact",
+    "texture": "tacz_assembly:attachments/tacz_laser_compact",
+    "lodModel": "tacz_assembly:attachments/lod/tacz_laser_compact",
+    "lodTexture": "tacz_assembly:attachments/tacz_laser_compact"
+  },
+  "tacz:laser_nightstick": {
+    "model": "tacz_assembly:attachments/tacz_laser_nightstick",
+    "texture": "tacz_assembly:attachments/tacz_laser_nightstick",
+    "lodModel": "tacz_assembly:attachments/lod/tacz_laser_nightstick",
+    "lodTexture": "tacz_assembly:attachments/tacz_laser_nightstick"
+  },
+  "tacz:muzzle_brake_cthulhu": {
+    "model": "tacz_assembly:attachments/tacz_muzzle_brake_cthulhu",
+    "texture": "tacz_assembly:attachments/tacz_muzzle_brake_cthulhu"
+  },
+  "tacz:muzzle_brake_cyclone_d2": {
+    "model": "tacz_assembly:attachments/tacz_muzzle_brake_cyclone_d2",
+    "texture": "tacz_assembly:attachments/tacz_muzzle_brake_cyclone_d2"
+  },
+  "tacz:muzzle_brake_pioneer": {
+    "model": "tacz_assembly:attachments/tacz_muzzle_brake_pioneer",
+    "texture": "tacz_assembly:attachments/tacz_muzzle_brake_pioneer"
+  },
+  "tacz:muzzle_brake_trex": {
+    "model": "tacz_assembly:attachments/tacz_muzzle_brake_trex",
+    "texture": "tacz_assembly:attachments/tacz_muzzle_brake_trex"
+  },
+  "tacz:muzzle_compensator_trident": {
+    "model": "tacz_assembly:attachments/tacz_muzzle_compensator_trident",
+    "texture": "tacz_assembly:attachments/tacz_muzzle_compensator_trident"
+  },
+  "tacz:muzzle_silencer_knight_qd": {
+    "model": "tacz_assembly:attachments/tacz_muzzle_silencer_knight_qd",
+    "texture": "tacz_assembly:attachments/tacz_muzzle_silencer_knight_qd"
+  },
+  "tacz:muzzle_silencer_mirage": {
+    "model": "tacz_assembly:attachments/muzzle_silencer_mirage",
+    "texture": "tacz_assembly:attachments/muzzle_silencer_mirage"
+  },
+  "tacz:muzzle_silencer_phantom_s1": {
+    "model": "tacz_assembly:attachments/tacz_muzzle_silencer_phantom_s1",
+    "texture": "tacz_assembly:attachments/tacz_muzzle_silencer_phantom_s1"
+  },
+  "tacz:muzzle_silencer_ptilopsis": {
+    "model": "tacz_assembly:attachments/muzzle_silencer_ptilopsis",
+    "texture": "tacz_assembly:attachments/muzzle_silencer_ptilopsis"
+  },
+  "tacz:muzzle_silencer_ursus": {
+    "model": "tacz_assembly:attachments/tacz_muzzle_silencer_ursus",
+    "texture": "tacz_assembly:attachments/tacz_muzzle_silencer_ursus"
+  },
+  "tacz:muzzle_silencer_wraith": {
+    "model": "tacz_assembly:attachments/muzzle_silencer_wraith",
+    "texture": "tacz_assembly:attachments/muzzle_silencer_wraith"
+  }
+}

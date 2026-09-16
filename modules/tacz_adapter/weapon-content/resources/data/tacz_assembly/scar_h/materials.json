@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "defaultMaterial": "scar_h_lower",
+  "parts": {
+    "scar_h_lower": {
+      "defaultMaterial": "scar_h_lower",
+      "regions": {}
+    },
+    "scar_h_upper": {
+      "defaultMaterial": "scar_h_upper",
+      "regions": {}
+    },
+    "scar_h_handguard": {
+      "defaultMaterial": "scar_h_handguard",
+      "regions": {}
+    },
+    "scar_h_barrel": {
+      "defaultMaterial": "scar_h_barrel",
+      "regions": {}
+    },
+    "scar_h_gas_system": {
+      "defaultMaterial": "scar_h_gas_system",
+      "regions": {}
+    },
+    "scar_h_muzzle": {
+      "defaultMaterial": "scar_h_muzzle",
+      "regions": {}
+    },
+    "scar_h_pistol_grip": {
+      "defaultMaterial": "scar_h_pistol_grip",
+      "regions": {}
+    },
+    "scar_h_bolt": {
+      "defaultMaterial": "scar_h_bolt",
+      "regions": {}
+    },
+    "scar_h_stock": {
+      "defaultMaterial": "scar_h_stock",
+      "regions": {}
+    },
+    "scar_h_front_sight": {
+      "defaultMaterial": "scar_h_front_sight",
+      "regions": {}
+    },
+    "scar_h_rear_sight": {
+      "defaultMaterial": "scar_h_rear_sight",
+      "regions": {}
+    },
+    "scar_h_magazine_standard": {
+      "defaultMaterial": "scar_h_magazine_standard",
+      "regions": {}
+    },
+    "tacz_scar_h_extended_mag_1": {
+      "defaultMaterial": "tacz_scar_h_extended_mag_1",
+      "regions": {}
+    },
+    "tacz_scar_h_extended_mag_2": {
+      "defaultMaterial": "tacz_scar_h_extended_mag_2",
+      "regions": {}
+    },
+    "tacz_scar_h_extended_mag_3": {
+      "defaultMaterial": "tacz_scar_h_extended_mag_3",
+      "regions": {}
+    },
+    "tacz_grip_cobra": {
+      "defaultMaterial": "tacz_grip_cobra",
+      "regions": {}
+    },
+    "tacz_grip_cqr": {
+      "defaultMaterial": "tacz_grip_cqr",
+      "regions": {}
+    },
+    "tacz_grip_magpul_afg_2": {
+      "defaultMaterial": "tacz_grip_magpul_afg_2",
+      "regions": {}
+    },
+    "tacz_grip_osovets_black": {
+      "defaultMaterial": "tacz_grip_osovets_black",
+      "regions": {}
+    },
+    "tacz_grip_rk0": {
+      "defaultMaterial": "tacz_grip_rk0",
+      "regions": {}
+    },
+    "tacz_grip_rk1_b25u": {
+      "defaultMaterial": "tacz_grip_rk1_b25u",
+      "regions": {}
+    },
+    "tacz_grip_rk6": {
+      "defaultMaterial": "tacz_grip_rk6",
+      "regions": {}
+    },
+    "tacz_grip_se_5": {
+      "defaultMaterial": "tacz_grip_se_5",
+      "regions": {}
+    },
+    "tacz_grip_td": {
+      "defaultMaterial": "tacz_grip_td",
+      "regions": {}
+    },
+    "tacz_grip_vertical_military": {
+      "defaultMaterial": "tacz_grip_vertical_military",
+      "regions": {}
+    },
+    "tacz_grip_vertical_ranger": {
+      "defaultMaterial": "tacz_grip_vertical_ranger",
+      "regions": {}
+    },
+    "tacz_grip_vertical_talon": {
+      "defaultMaterial": "tacz_grip_vertical_talon",
+      "regions": {}
+    },
+    "tacz_laser_compact": {
+      "defaultMaterial": "tacz_laser_compact",
+      "regions": {}
+    },
+    "tacz_laser_lopro": {
+      "defaultMaterial": "tacz_laser_lopro",
+      "regions": {}
+    },
+    "tacz_laser_nightstick": {
+      "defaultMaterial": "tacz_laser_nightstick",
+      "regions": {}
+    },
+    "tacz_laser_peq15": {
+      "defaultMaterial": "tacz_laser_peq15",
+      "regions": {}
+    },
+    "tacz_muzzle_brake_cthulhu": {
+      "defaultMaterial": "tacz_muzzle_brake_cthulhu",
+      "regions": {}
+    },
+    "tacz_muzzle_brake_cyclone_d2": {
+      "defaultMaterial": "tacz_muzzle_brake_cyclone_d2",
+      "regions": {}
+    },
+    "tacz_muzzle_brake_pioneer": {
+      "defaultMaterial": "tacz_muzzle_brake_pioneer",
+      "regions": {}
+    },
+    "tacz_muzzle_brake_trex": {
+      "defaultMaterial": "tacz_muzzle_brake_trex",
+      "regions": {}
+    },
+    "tacz_muzzle_compensator_trident": {
+      "defaultMaterial": "tacz_muzzle_compensator_trident",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_knight_qd": {
+      "defaultMaterial": "tacz_muzzle_silencer_knight_qd",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_phantom_s1": {
+      "defaultMaterial": "tacz_muzzle_silencer_phantom_s1",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_ursus": {
+      "defaultMaterial": "tacz_muzzle_silencer_ursus",
+      "regions": {}
+    },
+    "tacz_scope_acog_ta31": {
+      "defaultMaterial": "tacz_scope_acog_ta31",
+      "regions": {}
+    },
+    "tacz_scope_elcan_4x": {
+      "defaultMaterial": "tacz_scope_elcan_4x",
+      "regions": {}
+    },
+    "tacz_scope_hamr": {
+      "defaultMaterial": "tacz_scope_hamr",
+      "regions": {}
+    },
+    "tacz_scope_lpvo_1_6": {
+      "defaultMaterial": "tacz_scope_lpvo_1_6",
+      "regions": {}
+    },
+    "tacz_scope_mk5hd": {
+      "defaultMaterial": "tacz_scope_mk5hd",
+      "regions": {}
+    },
+    "tacz_scope_qmk152": {
+      "defaultMaterial": "tacz_scope_qmk152",
+      "regions": {}
+    },
+    "tacz_scope_standard_8x": {
+      "defaultMaterial": "tacz_scope_standard_8x",
+      "regions": {}
+    },
+    "tacz_scope_vudu": {
+      "defaultMaterial": "tacz_scope_vudu",
+      "regions": {}
+    },
+    "tacz_sight_552": {
+      "defaultMaterial": "tacz_sight_552",
+      "regions": {}
+    },
+    "tacz_sight_acro_rifle": {
+      "defaultMaterial": "tacz_sight_acro_rifle",
+      "regions": {}
+    },
+    "tacz_sight_coyote": {
+      "defaultMaterial": "tacz_sight_coyote",
+      "regions": {}
+    },
+    "tacz_sight_deltapoint_rifle": {
+      "defaultMaterial": "tacz_sight_deltapoint_rifle",
+      "regions": {}
+    },
+    "tacz_sight_exp3": {
+      "defaultMaterial": "tacz_sight_exp3",
+      "regions": {}
+    },
+    "tacz_sight_fastfire_rifle": {
+      "defaultMaterial": "tacz_sight_fastfire_rifle",
+      "regions": {}
+    },
+    "tacz_sight_okp7": {
+      "defaultMaterial": "tacz_sight_okp7",
+      "regions": {}
+    },
+    "tacz_sight_pk06_rifle": {
+      "defaultMaterial": "tacz_sight_pk06_rifle",
+      "regions": {}
+    },
+    "tacz_sight_srs_02": {
+      "defaultMaterial": "tacz_sight_srs_02",
+      "regions": {}
+    },
+    "tacz_sight_t2": {
+      "defaultMaterial": "tacz_sight_t2",
+      "regions": {}
+    },
+    "tacz_sight_uh1": {
+      "defaultMaterial": "tacz_sight_uh1",
+      "regions": {}
+    },
+    "tacz_stock_ak12": {
+      "defaultMaterial": "tacz_stock_ak12",
+      "regions": {}
+    },
+    "tacz_stock_carbon_bone_c5": {
+      "defaultMaterial": "tacz_stock_carbon_bone_c5",
+      "regions": {}
+    },
+    "tacz_stock_hk_slim_line": {
+      "defaultMaterial": "tacz_stock_hk_slim_line",
+      "regions": {}
+    },
+    "tacz_stock_m4ss": {
+      "defaultMaterial": "tacz_stock_m4ss",
+      "regions": {}
+    },
+    "tacz_stock_militech_b5": {
+      "defaultMaterial": "tacz_stock_militech_b5",
+      "regions": {}
+    },
+    "tacz_stock_moe": {
+      "defaultMaterial": "tacz_stock_moe",
+      "regions": {}
+    },
+    "tacz_stock_ripstock": {
+      "defaultMaterial": "tacz_stock_ripstock",
+      "regions": {}
+    },
+    "tacz_stock_sba3": {
+      "defaultMaterial": "tacz_stock_sba3",
+      "regions": {}
+    },
+    "tacz_stock_tactical_ar": {
+      "defaultMaterial": "tacz_stock_tactical_ar",
+      "regions": {}
+    }
+  }
+}

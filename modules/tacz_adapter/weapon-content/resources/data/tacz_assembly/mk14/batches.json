@@ -1,0 +1,192 @@
+{
+  "assembly_mk14_lower_magrelease": {
+    "definition": "mk14_lower",
+    "variant": "always",
+    "sourceBone": "magrelease"
+  },
+  "assembly_mk14_lower_trigger2": {
+    "definition": "mk14_lower",
+    "variant": "always",
+    "sourceBone": "trigger2"
+  },
+  "assembly_mk14_lower_boltrelease": {
+    "definition": "mk14_lower",
+    "variant": "always",
+    "sourceBone": "boltrelease"
+  },
+  "assembly_mk14_lower_selector": {
+    "definition": "mk14_lower",
+    "variant": "always",
+    "sourceBone": "selector"
+  },
+  "assembly_mk14_lower_safety": {
+    "definition": "mk14_lower",
+    "variant": "always",
+    "sourceBone": "safety"
+  },
+  "assembly_mk14_lower_receiver": {
+    "definition": "mk14_lower",
+    "variant": "always",
+    "sourceBone": "receiver"
+  },
+  "assembly_mk14_lower_group45": {
+    "definition": "mk14_lower",
+    "variant": "always",
+    "sourceBone": "group45"
+  },
+  "assembly_mk14_lower_group46": {
+    "definition": "mk14_lower",
+    "variant": "always",
+    "sourceBone": "group46"
+  },
+  "assembly_mk14_upper_mid": {
+    "definition": "mk14_upper",
+    "variant": "always",
+    "sourceBone": "mid"
+  },
+  "assembly_mk14_handguard_hg": {
+    "definition": "mk14_handguard",
+    "variant": "always",
+    "sourceBone": "hg"
+  },
+  "assembly_mk14_handguard_group48": {
+    "definition": "mk14_handguard",
+    "variant": "always",
+    "sourceBone": "group48"
+  },
+  "assembly_mk14_handguard_group49": {
+    "definition": "mk14_handguard",
+    "variant": "always",
+    "sourceBone": "group49"
+  },
+  "assembly_mk14_handguard_front_rail": {
+    "definition": "mk14_handguard",
+    "variant": "always",
+    "sourceBone": "front_rail"
+  },
+  "assembly_mk14_handguard_handguard": {
+    "definition": "mk14_handguard",
+    "variant": "always",
+    "sourceBone": "handguard"
+  },
+  "assembly_mk14_muzzle_muzzle_default": {
+    "definition": "mk14_muzzle",
+    "variant": "always",
+    "sourceBone": "muzzle_default"
+  },
+  "assembly_mk14_barrel_sight_illuminated": {
+    "definition": "mk14_barrel",
+    "variant": "always",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_mk14_barrel_octagon18": {
+    "definition": "mk14_barrel",
+    "variant": "always",
+    "sourceBone": "octagon18"
+  },
+  "assembly_mk14_barrel_octagon19": {
+    "definition": "mk14_barrel",
+    "variant": "always",
+    "sourceBone": "octagon19"
+  },
+  "assembly_mk14_barrel_octagon20": {
+    "definition": "mk14_barrel",
+    "variant": "always",
+    "sourceBone": "octagon20"
+  },
+  "assembly_mk14_barrel_octagon21": {
+    "definition": "mk14_barrel",
+    "variant": "always",
+    "sourceBone": "octagon21"
+  },
+  "assembly_mk14_barrel_octagon22": {
+    "definition": "mk14_barrel",
+    "variant": "always",
+    "sourceBone": "octagon22"
+  },
+  "assembly_mk14_rear_sight_bone3": {
+    "definition": "mk14_rear_sight",
+    "variant": "always",
+    "sourceBone": "bone3"
+  },
+  "assembly_mk14_rear_sight_octagon3": {
+    "definition": "mk14_rear_sight",
+    "variant": "always",
+    "sourceBone": "octagon3"
+  },
+  "assembly_mk14_pistol_grip_grip2": {
+    "definition": "mk14_pistol_grip",
+    "variant": "always",
+    "sourceBone": "grip2"
+  },
+  "assembly_mk14_stock_stock_default": {
+    "definition": "mk14_stock",
+    "variant": "always",
+    "sourceBone": "stock_default"
+  },
+  "assembly_mk14_mount_mount": {
+    "definition": "mk14_mount",
+    "variant": "always",
+    "sourceBone": "mount"
+  },
+  "assembly_mk14_bolt_bolt2": {
+    "definition": "mk14_bolt",
+    "variant": "always",
+    "sourceBone": "bolt2"
+  },
+  "assembly_mk14_charging_handle_charger": {
+    "definition": "mk14_charging_handle",
+    "variant": "always",
+    "sourceBone": "charger"
+  },
+  "assembly_mk14_bipod_group47": {
+    "definition": "mk14_bipod",
+    "variant": "always",
+    "sourceBone": "group47"
+  },
+  "assembly_mk14_bipod_l2": {
+    "definition": "mk14_bipod",
+    "variant": "always",
+    "sourceBone": "l2"
+  },
+  "assembly_mk14_bipod_octagon26": {
+    "definition": "mk14_bipod",
+    "variant": "always",
+    "sourceBone": "octagon26"
+  },
+  "assembly_mk14_bipod_r2": {
+    "definition": "mk14_bipod",
+    "variant": "always",
+    "sourceBone": "r2"
+  },
+  "assembly_mk14_bipod_octagon27": {
+    "definition": "mk14_bipod",
+    "variant": "always",
+    "sourceBone": "octagon27"
+  },
+  "assembly_mk14_bipod_octagon28": {
+    "definition": "mk14_bipod",
+    "variant": "always",
+    "sourceBone": "octagon28"
+  },
+  "assembly_mk14_magazine_standard_mb": {
+    "definition": "mk14_magazine_standard",
+    "variant": "always",
+    "sourceBone": "mb"
+  },
+  "assembly_tacz_mk14_extended_mag_1_mag_extended_1": {
+    "definition": "tacz_mk14_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "mag_extended_1"
+  },
+  "assembly_tacz_mk14_extended_mag_2_mag_extended_2": {
+    "definition": "tacz_mk14_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "mag_extended_2"
+  },
+  "assembly_tacz_mk14_extended_mag_3_mag_extended_3": {
+    "definition": "tacz_mk14_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "mag_extended_3"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "mag_extended_3",
+    "oem_stock_tactical",
+    "oem_stock_heavy"
+  ],
+  "definitionRequirements": {},
+  "variantRequirements": {},
+  "boneRequirements": {
+    "bullet": [
+      "sks_tactical_magazine_standard",
+      "tacz_sks_tactical_extended_mag_1",
+      "tacz_sks_tactical_extended_mag_2",
+      "tacz_sks_tactical_extended_mag_3"
+    ],
+    "bullet_in_mag": [
+      "sks_tactical_magazine_standard",
+      "tacz_sks_tactical_extended_mag_1",
+      "tacz_sks_tactical_extended_mag_2",
+      "tacz_sks_tactical_extended_mag_3"
+    ],
+    "bullet_in_barrel": [
+      "sks_tactical_barrel"
+    ],
+    "bolt": [
+      "sks_tactical_bolt"
+    ],
+    "additional_magazine": [
+      "sks_tactical_magazine_standard",
+      "tacz_sks_tactical_extended_mag_1",
+      "tacz_sks_tactical_extended_mag_2",
+      "tacz_sks_tactical_extended_mag_3"
+    ]
+  }
+}

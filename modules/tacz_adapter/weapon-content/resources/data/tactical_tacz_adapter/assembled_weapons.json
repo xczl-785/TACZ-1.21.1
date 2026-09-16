@@ -8,6 +8,16 @@
     "data/tacz_assembly/glock_17/weapon.json",
     "data/tacz_assembly/m16a1/weapon.json",
     "data/tacz_assembly/scar_l/weapon.json",
-    "data/tacz_assembly/ump45/weapon.json"
+    "data/tacz_assembly/ump45/weapon.json",
+    "data/tacz_assembly/aa12/weapon.json",
+    "data/tacz_assembly/ai_awp/weapon.json",
+    "data/tacz_assembly/m700/weapon.json",
+    "data/tacz_assembly/m870/weapon.json",
+    "data/tacz_assembly/mk14/weapon.json",
+    "data/tacz_assembly/p90/weapon.json",
+    "data/tacz_assembly/qbz_191/weapon.json",
+    "data/tacz_assembly/scar_h/weapon.json",
+    "data/tacz_assembly/sks_tactical/weapon.json",
+    "data/tacz_assembly/uzi/weapon.json"
   ]
 }

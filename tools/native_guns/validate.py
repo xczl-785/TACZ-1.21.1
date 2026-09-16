@@ -28,6 +28,10 @@ def validate(resources=p.RES,weapon=None):
     assert sum('parentId' not in n for n in scene)==1
     for name,key in [('native-profile.json','nativeProfile'),('native-visual-rules.json','visualRules')]:assert p.ex.read(base/name)==config[key]
     original=p.ex.read(original_path)['minecraft:geometry'][0];native={b['name']:b for b in original['bones']}
+    rules=config['visualRules']
+    dependent=set(rules.get('boneRequirements',{}))|set(rules.get('boneAllRequirements',{}))
+    assert (dependent|set(rules['alwaysVisibleBones']))<=set(native),'Visual rule references a nonexistent native bone: '+gun
+    assert not dependent&set(rules['alwaysVisibleBones']),'Conflicting native bone visibility rules: '+gun
     high=p.ex.read(assets/f'geo_models/gun/{gun}.json')['minecraft:geometry'][0];low=p.ex.read(assets/f'geo_models/gun/lod/{gun}.json')['minecraft:geometry'][0]
     lowbones={b['name']:b for b in low['bones']}
     assert len(lowbones)==len(low['bones'])

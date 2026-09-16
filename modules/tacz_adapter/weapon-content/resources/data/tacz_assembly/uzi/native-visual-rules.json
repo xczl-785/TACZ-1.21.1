@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "mag_extended_3"
+  ],
+  "definitionRequirements": {},
+  "variantRequirements": {},
+  "boneRequirements": {
+    "bullet": [
+      "uzi_magazine_standard",
+      "tacz_uzi_light_extended_mag_1",
+      "tacz_uzi_light_extended_mag_2",
+      "tacz_uzi_light_extended_mag_3"
+    ],
+    "bullet_in_mag": [
+      "uzi_magazine_standard",
+      "tacz_uzi_light_extended_mag_1",
+      "tacz_uzi_light_extended_mag_2",
+      "tacz_uzi_light_extended_mag_3"
+    ],
+    "bolt": [
+      "uzi_bolt"
+    ],
+    "pull": [
+      "uzi_charging_handle"
+    ]
+  }
+}

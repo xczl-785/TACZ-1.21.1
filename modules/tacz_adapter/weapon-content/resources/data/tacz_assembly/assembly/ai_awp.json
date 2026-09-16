@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "tacz_assembly:ai_awp",
+      "slots": [
+        {
+          "id": "barrel",
+          "compatibleItems": [
+            "tacz_assembly:awp_barrel"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bolt",
+          "compatibleItems": [
+            "tacz_assembly:awp_bolt"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "stock",
+          "compatibleItems": [
+            "tacz_assembly:awp_stock"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "iron_sights",
+          "compatibleItems": [
+            "tacz_assembly:awp_iron_sights"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "magazine",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_assembly:awp_magazine_standard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:awp_barrel",
+      "slots": [
+        {
+          "id": "bipod",
+          "compatibleItems": [
+            "tacz_assembly:awp_bipod"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "muzzle",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "scope",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:awp_bipod",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:awp_bolt",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:awp_stock",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:awp_iron_sights",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:awp_magazine_standard",
+      "slots": []
+    }
+  ]
+}

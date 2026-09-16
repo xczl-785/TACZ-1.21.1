@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_assembly:m700",
+  "rootDefinition": "m700_receiver",
+  "resourceDirectory": "m700",
+  "modelType": "tacz_native_m700_assembly",
+  "caliber": "762x51",
+  "requiredPaths": [
+    [
+      "barrel"
+    ],
+    [
+      "bolt"
+    ]
+  ],
+  "defaultFireMode": "semi",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "developmentSource": "native_m700",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/m700",
+  "magazinePath": [
+    "magazine"
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "e6d87d31-7f04-5828-8d35-c316ae370067",
+      "definitionId": "aa12_lower"
+    },
+    {
+      "instanceId": "2e6b0aba-38cf-529f-bec3-49d130025b44",
+      "definitionId": "aa12_upper",
+      "parentId": "e6d87d31-7f04-5828-8d35-c316ae370067",
+      "slot": "upper"
+    },
+    {
+      "instanceId": "51c402b9-3e85-5199-909b-378d45425214",
+      "definitionId": "aa12_handguard",
+      "parentId": "2e6b0aba-38cf-529f-bec3-49d130025b44",
+      "slot": "handguard"
+    },
+    {
+      "instanceId": "fc8d0200-280f-5893-aed9-c0105fdb07ea",
+      "definitionId": "aa12_barrel",
+      "parentId": "2e6b0aba-38cf-529f-bec3-49d130025b44",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "d642e32d-8b6e-532f-ae05-d28c20349fe6",
+      "definitionId": "aa12_front_sight",
+      "parentId": "2e6b0aba-38cf-529f-bec3-49d130025b44",
+      "slot": "front_sight"
+    },
+    {
+      "instanceId": "847d6e10-8e5b-59e4-947a-75a94dba3b17",
+      "definitionId": "aa12_rear_sight",
+      "parentId": "2e6b0aba-38cf-529f-bec3-49d130025b44",
+      "slot": "rear_sight"
+    },
+    {
+      "instanceId": "6056bc72-8ffb-509e-bebb-6b11e23c76ac",
+      "definitionId": "aa12_mount",
+      "parentId": "2e6b0aba-38cf-529f-bec3-49d130025b44",
+      "slot": "mount"
+    },
+    {
+      "instanceId": "ff7a568e-b9a8-5f13-b4c5-3924186f95d5",
+      "definitionId": "aa12_bolt",
+      "parentId": "2e6b0aba-38cf-529f-bec3-49d130025b44",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "70ea97a7-ff3d-52f2-9945-beba611c9135",
+      "definitionId": "aa12_charging_handle",
+      "parentId": "2e6b0aba-38cf-529f-bec3-49d130025b44",
+      "slot": "charging_handle"
+    },
+    {
+      "instanceId": "33a7dfc1-2ed5-5166-90eb-8467add3e01c",
+      "definitionId": "aa12_magazine_standard",
+      "parentId": "e6d87d31-7f04-5828-8d35-c316ae370067",
+      "slot": "magazine"
+    }
+  ]
+}

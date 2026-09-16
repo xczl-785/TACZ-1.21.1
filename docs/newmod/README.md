@@ -1,6 +1,6 @@
 # NewMod TaCZ fork 改造入口
 
-当前实验整合路线见[整合与组装路线](../assembly-experiment/整合与组装路线.md)；第三项原生 M4A1 接入见[交付与验收入口](../assembly-experiment/native-m4a1-delivery/README.md)。下文保留早期 fork 历史。
+当前实验整合路线见[整合与组装路线](../assembly-experiment/整合与组装路线.md)；第三项原生 M4A1 接入见[交付与验收入口](../assembly-experiment/native-m4a1-delivery/README.md)。本轮全量扩面见[剩余十枪接入](../assembly-experiment/native-remaining/README.md)。下文保留早期 fork 历史。
 
 实验分支当前弹药结果见[弹药链路与清理](../assembly-experiment/弹药链路与清理.md)：原生子弹物品链已退役，86 弹保留，默认退弹由临时固定口径接口承接。下文为原 fork 改造历史，不替代本实验当前结论。
 

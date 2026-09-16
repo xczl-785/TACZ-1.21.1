@@ -1,0 +1,117 @@
+{
+  "assembly_m870_receiver_panel": {
+    "definition": "m870_receiver",
+    "variant": "always",
+    "sourceBone": "panel"
+  },
+  "assembly_m870_receiver_trigger": {
+    "definition": "m870_receiver",
+    "variant": "always",
+    "sourceBone": "trigger"
+  },
+  "assembly_m870_receiver_safety2": {
+    "definition": "m870_receiver",
+    "variant": "always",
+    "sourceBone": "safety2"
+  },
+  "assembly_m870_receiver_body": {
+    "definition": "m870_receiver",
+    "variant": "always",
+    "sourceBone": "body"
+  },
+  "assembly_m870_receiver_group25": {
+    "definition": "m870_receiver",
+    "variant": "always",
+    "sourceBone": "group25"
+  },
+  "assembly_m870_receiver_safety": {
+    "definition": "m870_receiver",
+    "variant": "always",
+    "sourceBone": "safety"
+  },
+  "assembly_m870_receiver_screw": {
+    "definition": "m870_receiver",
+    "variant": "always",
+    "sourceBone": "screw"
+  },
+  "assembly_m870_barrel_barrel": {
+    "definition": "m870_barrel",
+    "variant": "always",
+    "sourceBone": "barrel"
+  },
+  "assembly_m870_tube_magazine": {
+    "definition": "m870_tube",
+    "variant": "always",
+    "sourceBone": "magazine"
+  },
+  "assembly_m870_tube_group5": {
+    "definition": "m870_tube",
+    "variant": "always",
+    "sourceBone": "group5"
+  },
+  "assembly_m870_tube_group7": {
+    "definition": "m870_tube",
+    "variant": "always",
+    "sourceBone": "group7"
+  },
+  "assembly_m870_tube_group8": {
+    "definition": "m870_tube",
+    "variant": "always",
+    "sourceBone": "group8"
+  },
+  "assembly_m870_iron_sights_sight": {
+    "definition": "m870_iron_sights",
+    "variant": "always",
+    "sourceBone": "sight"
+  },
+  "assembly_m870_iron_sights_group": {
+    "definition": "m870_iron_sights",
+    "variant": "always",
+    "sourceBone": "group"
+  },
+  "assembly_m870_pump_group9": {
+    "definition": "m870_pump",
+    "variant": "always",
+    "sourceBone": "group9"
+  },
+  "assembly_m870_pump_slide3": {
+    "definition": "m870_pump",
+    "variant": "always",
+    "sourceBone": "slide3"
+  },
+  "assembly_m870_bolt_octagon": {
+    "definition": "m870_bolt",
+    "variant": "always",
+    "sourceBone": "octagon"
+  },
+  "assembly_m870_stock_group21": {
+    "definition": "m870_stock",
+    "variant": "always",
+    "sourceBone": "group21"
+  },
+  "assembly_m870_stock_group22": {
+    "definition": "m870_stock",
+    "variant": "always",
+    "sourceBone": "group22"
+  },
+  "assembly_m870_stock_group23": {
+    "definition": "m870_stock",
+    "variant": "always",
+    "sourceBone": "group23"
+  },
+  "assembly_m870_tube_extension_1_mag_extended_1": {
+    "definition": "m870_tube_extension_1",
+    "variant": "always",
+    "sourceBone": "mag_extended_1"
+  },
+  "assembly_m870_tube_extension_2_mag_extended_2": {
+    "definition": "m870_tube_extension_2",
+    "variant": "always",
+    "sourceBone": "mag_extended_2"
+  },
+  "assembly_m870_tube_extension_3_mag_extended_3": {
+    "definition": "m870_tube_extension_3",
+    "variant": "always",
+    "sourceBone": "mag_extended_3"
+  }
+}

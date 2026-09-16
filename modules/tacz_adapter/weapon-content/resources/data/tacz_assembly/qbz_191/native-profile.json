@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "attachmentPaths": {
+    "SCOPE": [
+      "kit",
+      "scope"
+    ],
+    "MUZZLE": [
+      "kit",
+      "barrel",
+      "muzzle"
+    ],
+    "GRIP": [
+      "kit",
+      "grip"
+    ],
+    "LASER": [
+      "kit",
+      "laser"
+    ],
+    "STOCK": [
+      "stock"
+    ],
+    "EXTENDED_MAG": [
+      "magazine"
+    ]
+  },
+  "attachmentOverrides": {},
+  "sightAlternatives": [
+    [
+      [
+        "kit",
+        "scope"
+      ]
+    ],
+    [
+      [
+        "kit",
+        "front_sight"
+      ],
+      [
+        "kit",
+        "rear_sight"
+      ]
+    ]
+  ]
+}

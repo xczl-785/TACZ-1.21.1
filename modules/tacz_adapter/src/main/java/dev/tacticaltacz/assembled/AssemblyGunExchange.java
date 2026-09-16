@@ -9,7 +9,7 @@ import java.util.*;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
 
-/** Pure proposal over one server inventory quote. Native ammunition is refunded atomically with a magazine. */
+/** Pure proposal over one server inventory quote. Native stored ammunition is refunded atomically with feed-container/capacity changes. */
 public final class AssemblyGunExchange {
     public static boolean ready(ServerPlayer p){
         if(!AssembledWeapons.isGun(p.getMainHandItem()))return false;
@@ -30,7 +30,7 @@ public final class AssemblyGunExchange {
             AssemblyTrees.validate(changed,AssembledWeapon.identity(changed));
             if(!weapon.project(changed).equals(result.after()))return Optional.empty();
             var refunds=new ArrayList<ItemStack>();old.ifPresent(p->refunds.add(p.stack()));
-            if(weapon.magazinePath.size()>=path.size()&&weapon.magazinePath.subList(0,path.size()).equals(path)){
+            if(weapon.feed.affectedBy(path)){
                 var gun=IGun.getIGunOrNull(changed);int count=gun.getCurrentAmmoCount(changed);
                 if(count>0){var ammo=AmmoBridge.ammunition(changed);if(ammo==null)return Optional.empty();refunds.add(new ItemStack(ammo,count));gun.setCurrentAmmoCount(changed,0);}
                 // A chambered round remains usable; no physical loaded-magazine claim is made.

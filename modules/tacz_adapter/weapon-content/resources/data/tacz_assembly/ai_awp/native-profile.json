@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "attachmentPaths": {
+    "MUZZLE": [
+      "barrel",
+      "muzzle"
+    ],
+    "SCOPE": [
+      "barrel",
+      "scope"
+    ],
+    "EXTENDED_MAG": [
+      "magazine"
+    ]
+  },
+  "attachmentOverrides": {},
+  "sightAlternatives": [
+    [
+      [
+        "barrel",
+        "scope"
+      ]
+    ],
+    [
+      [
+        "iron_sights"
+      ]
+    ]
+  ]
+}

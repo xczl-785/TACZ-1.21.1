@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_assembly:scar_h",
+  "rootDefinition": "scar_h_lower",
+  "resourceDirectory": "scar_h",
+  "modelType": "tacz_native_scar_h_assembly",
+  "caliber": "762x51",
+  "magazinePath": [
+    "magazine"
+  ],
+  "requiredPaths": [
+    [
+      "upper"
+    ],
+    [
+      "upper",
+      "barrel"
+    ],
+    [
+      "upper",
+      "barrel",
+      "gas_system"
+    ],
+    [
+      "upper",
+      "bolt"
+    ]
+  ],
+  "defaultFireMode": "semi",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "developmentSource": "native_scar_h",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/scar_h"
+}

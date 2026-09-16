@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "definitionId": "p90_body"
+    },
+    {
+      "instanceId": "d37d1fb6-2643-5257-b44f-77a3c6fc0121",
+      "definitionId": "p90_builtin_sight",
+      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "slot": "iron_sights"
+    },
+    {
+      "instanceId": "86aa7346-49b7-59db-8f12-c612ba19fc78",
+      "definitionId": "p90_barrel",
+      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "16002676-775e-593c-a12d-05675ce722d8",
+      "definitionId": "p90_muzzle",
+      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "slot": "muzzle"
+    },
+    {
+      "instanceId": "d3d28f75-3c12-51ff-9f18-c58f44236ffc",
+      "definitionId": "p90_magazine_standard",
+      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "slot": "magazine"
+    },
+    {
+      "instanceId": "769267e1-94be-5fee-8815-519fb23857a0",
+      "definitionId": "p90_mag_release",
+      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "slot": "mag_release"
+    },
+    {
+      "instanceId": "b9cbbdce-7064-5345-a9e2-8b8f04ac5bcf",
+      "definitionId": "p90_charging_handle",
+      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "slot": "charging_handle"
+    }
+  ]
+}

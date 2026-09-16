@@ -1,0 +1,1284 @@
+{
+  "schemaVersion": 1,
+  "sourceGun": "scar_h",
+  "gunId": "tacz_assembly:scar_h",
+  "sourceDirectory": "native_scar_h",
+  "rootDefinition": "scar_h_lower",
+  "parts": [
+    {
+      "definitionId": "scar_h_lower",
+      "sourceCubeIndices": {
+        "lower": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ],
+        "magwell": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "trigger": [
+          0,
+          1,
+          2
+        ],
+        "switch": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "magrelease": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "holdrelease": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "pattern": [
+          0,
+          1
+        ]
+      },
+      "inventoryType": "weapon/firearm/assault_rifle",
+      "footprint": [
+        5,
+        2
+      ]
+    },
+    {
+      "definitionId": "scar_h_upper",
+      "sourceCubeIndices": {
+        "metal": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "upper": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "group3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "group4": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "screws": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "scar_h_handguard",
+      "sourceCubeIndices": {
+        "handguard_default": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "Gunrails": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "Gunrails2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "Gun_rails2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "Gun_rails3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45
+        ]
+      },
+      "inventoryType": "weapon_mod/handguard",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "scar_h_barrel",
+      "sourceCubeIndices": {
+        "barrel": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "scar_h_gas_system",
+      "sourceCubeIndices": {
+        "gaslock": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "group": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "gas_tube": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "inventoryType": "weapon_mod/gas_block",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "scar_h_muzzle",
+      "sourceCubeIndices": {
+        "muzzle_default": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "inventoryType": "weapon_mod/muzzle",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "scar_h_pistol_grip",
+      "sourceCubeIndices": {
+        "grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "inventoryType": "weapon_mod/pistol_grip",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "scar_h_bolt",
+      "sourceCubeIndices": {
+        "bolt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "scar_h_stock",
+      "sourceCubeIndices": {
+        "stock_extended_part": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "group8": [
+          0,
+          1
+        ],
+        "bone": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "group10": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon9": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bone5": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43
+        ]
+      },
+      "inventoryType": "weapon_mod/stock",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "scar_h_front_sight",
+      "sourceCubeIndices": {
+        "fore_sight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "sight_illuminated": [
+          0
+        ],
+        "fore_sight2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "bone8": [
+          0
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "scar_h_rear_sight",
+      "sourceCubeIndices": {
+        "group6": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "group7": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "sight_base": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "scar_h_magazine_standard",
+      "sourceCubeIndices": {
+        "mag_standard": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "group5": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ]
+    }
+  ],
+  "slots": {
+    "scar_h_lower": {
+      "upper": [
+        "scar_h_upper"
+      ],
+      "pistol_grip": [
+        "scar_h_pistol_grip"
+      ],
+      "stock": [
+        "scar_h_stock",
+        "$stock"
+      ],
+      "magazine": [
+        "scar_h_magazine_standard",
+        "$extended_mag"
+      ]
+    },
+    "scar_h_upper": {
+      "handguard": [
+        "scar_h_handguard"
+      ],
+      "barrel": [
+        "scar_h_barrel"
+      ],
+      "bolt": [
+        "scar_h_bolt"
+      ],
+      "front_sight": [
+        "scar_h_front_sight"
+      ],
+      "rear_sight": [
+        "scar_h_rear_sight"
+      ],
+      "scope": [
+        "$scope"
+      ],
+      "grip": [
+        "$grip"
+      ],
+      "laser": [
+        "$laser"
+      ]
+    },
+    "scar_h_barrel": {
+      "gas_system": [
+        "scar_h_gas_system"
+      ],
+      "muzzle": [
+        "scar_h_muzzle",
+        "$muzzle"
+      ]
+    }
+  },
+  "preset": {
+    "scar_h_lower": {
+      "upper": "scar_h_upper",
+      "pistol_grip": "scar_h_pistol_grip",
+      "stock": "scar_h_stock",
+      "magazine": "scar_h_magazine_standard"
+    },
+    "scar_h_upper": {
+      "handguard": "scar_h_handguard",
+      "barrel": "scar_h_barrel",
+      "bolt": "scar_h_bolt",
+      "front_sight": "scar_h_front_sight",
+      "rear_sight": "scar_h_rear_sight"
+    },
+    "scar_h_barrel": {
+      "gas_system": "scar_h_gas_system",
+      "muzzle": "scar_h_muzzle"
+    }
+  },
+  "presentationOnly": {
+    "bullet2": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "lefthand_pos": [
+      0
+    ],
+    "bullet_in_mag": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bullet": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "righthand_pos": [
+      0
+    ],
+    "ar_stock_adapter": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42
+    ]
+  },
+  "weapon": {
+    "schemaVersion": 1,
+    "gunId": "tacz_assembly:scar_h",
+    "rootDefinition": "scar_h_lower",
+    "resourceDirectory": "scar_h",
+    "modelType": "tacz_native_scar_h_assembly",
+    "caliber": "762x51",
+    "magazinePath": [
+      "magazine"
+    ],
+    "requiredPaths": [
+      [
+        "upper"
+      ],
+      [
+        "upper",
+        "barrel"
+      ],
+      [
+        "upper",
+        "barrel",
+        "gas_system"
+      ],
+      [
+        "upper",
+        "bolt"
+      ]
+    ],
+    "defaultFireMode": "semi",
+    "feed": "detachable_magazine",
+    "nativeRig": true,
+    "assemblyIcons": true,
+    "developmentSource": "native_scar_h",
+    "wearableSlots": [
+      "tactical_inventory:primary_weapon_1",
+      "tactical_inventory:primary_weapon_2"
+    ],
+    "partIconDirectory": "textures/item/scar_h"
+  },
+  "nativeProfile": {
+    "schemaVersion": 1,
+    "attachmentPaths": {
+      "SCOPE": [
+        "upper",
+        "scope"
+      ],
+      "MUZZLE": [
+        "upper",
+        "barrel",
+        "muzzle"
+      ],
+      "GRIP": [
+        "upper",
+        "grip"
+      ],
+      "LASER": [
+        "upper",
+        "laser"
+      ],
+      "STOCK": [
+        "stock"
+      ],
+      "EXTENDED_MAG": [
+        "magazine"
+      ]
+    },
+    "attachmentOverrides": {},
+    "sightAlternatives": [
+      [
+        [
+          "upper",
+          "scope"
+        ]
+      ],
+      [
+        [
+          "upper",
+          "front_sight"
+        ],
+        [
+          "upper",
+          "rear_sight"
+        ]
+      ]
+    ]
+  },
+  "visualRules": {
+    "schemaVersion": 1,
+    "alwaysVisibleBones": [
+      "mag_standard",
+      "mag_extended_1",
+      "mag_extended_2",
+      "mag_extended_3",
+      "muzzle_default",
+      "stock_default"
+    ],
+    "definitionRequirements": {},
+    "variantRequirements": {
+      "upright": {
+        "SCOPE": false
+      },
+      "folded": {
+        "SCOPE": true
+      }
+    },
+    "boneRequirements": {
+      "bullet": [
+        "scar_h_magazine_standard",
+        "tacz_scar_h_extended_mag_1",
+        "tacz_scar_h_extended_mag_2",
+        "tacz_scar_h_extended_mag_3"
+      ],
+      "bullet_in_mag": [
+        "scar_h_magazine_standard",
+        "tacz_scar_h_extended_mag_1",
+        "tacz_scar_h_extended_mag_2",
+        "tacz_scar_h_extended_mag_3"
+      ],
+      "bullet_in_barrel": [
+        "scar_h_barrel"
+      ],
+      "bolt": [
+        "scar_h_bolt"
+      ],
+      "additional_magazine": [
+        "scar_h_magazine_standard",
+        "tacz_scar_h_extended_mag_1",
+        "tacz_scar_h_extended_mag_2",
+        "tacz_scar_h_extended_mag_3"
+      ]
+    }
+  },
+  "sourceBoneVariants": {
+    "fore_sight": "upright",
+    "sight_illuminated": "upright",
+    "fore_sight2": "folded",
+    "bone8": "folded",
+    "group6": "upright",
+    "group7": "folded"
+  },
+  "previewHiddenVariants": [
+    "folded"
+  ],
+  "nativeMagazineCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_scar_h/magazine_variants/manifest.json"
+  ],
+  "lod": {
+    "strategy": "conservative_cube_subset",
+    "silhouetteResolution": 96,
+    "textureResolution": 48,
+    "maxSilhouetteLoss": 0.01,
+    "maxTextureMeanError": 0.02,
+    "maxTextureChangedFraction": 0.05
+  },
+  "lodPolicy": "Conservative original-cube subset; eight-view silhouette and 48px textured comparison gates, each geometry bone retained; full native functional rig",
+  "labels": {
+    "scar_h_lower": [
+      "SCAR_H 下机匣与扳机组件",
+      "SCAR_H lower"
+    ],
+    "scar_h_upper": [
+      "SCAR_H 上机匣",
+      "SCAR_H upper"
+    ],
+    "scar_h_handguard": [
+      "SCAR_H 护木",
+      "SCAR_H handguard"
+    ],
+    "scar_h_barrel": [
+      "SCAR_H 枪管",
+      "SCAR_H barrel"
+    ],
+    "scar_h_gas_system": [
+      "SCAR_H 导气组件",
+      "SCAR_H gas system"
+    ],
+    "scar_h_muzzle": [
+      "SCAR_H 默认枪口",
+      "SCAR_H muzzle"
+    ],
+    "scar_h_pistol_grip": [
+      "SCAR_H 手枪握把",
+      "SCAR_H pistol grip"
+    ],
+    "scar_h_bolt": [
+      "SCAR_H 枪机",
+      "SCAR_H bolt"
+    ],
+    "scar_h_stock": [
+      "SCAR_H 原厂枪托",
+      "SCAR_H stock"
+    ],
+    "scar_h_front_sight": [
+      "SCAR_H 前机械瞄具",
+      "SCAR_H front sight"
+    ],
+    "scar_h_rear_sight": [
+      "SCAR_H 后机械瞄具",
+      "SCAR_H rear sight"
+    ],
+    "scar_h_magazine_standard": [
+      "SCAR_H 标准弹匣",
+      "SCAR_H magazine standard"
+    ]
+  },
+  "slotLabels": {},
+  "gunLabels": [
+    "SCAR_H · 原生实体组装",
+    "SCAR_H · Native Assembly"
+  ],
+  "excludedAttachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i",
+    "tacz:ammo_mod_he"
+  ],
+  "editableAttachmentCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
+  ],
+  "attachmentOverrideCatalogs": [
+    "data/tacz_assembly/native_attachments/standalone.json",
+    "data/tacz_assembly/m4a1/native_attachment_overrides.json",
+    "data/tacz_assembly/native_attachments/stocks.json"
+  ],
+  "integrationFragments": "/tmp/native-gun-integration/scar_h",
+  "authoredStockAssets": true
+}

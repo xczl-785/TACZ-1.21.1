@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "tacz_uzi_light_extended_mag_1",
+      "group": "tacz_uzi_light_extended_mag_1",
+      "prefix": "native_attachment_tacz_uzi_light_extended_mag_1",
+      "cubes": 11,
+      "sourceCubeIndices": {
+        "root": [],
+        "mag_and_lefthand": [],
+        "mag_and_bullet": [],
+        "magazine": [],
+        "mag_extended_1": [],
+        "extdmag": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        2.67561,
+        2.55871
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/tacz_uzi_light_extended_mag_1/model.bbmodel",
+      "texture": "components/tacz_uzi_light_extended_mag_1/texture.png",
+      "gunId": "tacz:uzi",
+      "attachmentId": "tacz:light_extended_mag_1",
+      "level": 1,
+      "variantBone": "mag_extended_1",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "sourceHashes": {
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/uzi.animation.json": "bb40def81e00f13dcebb6aa100f19d4746697fba43041e5db2a63ea0d398ed18",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/light_extended_mag_1_display.json": "c0799f301754f433169bd0ef830a93a5cc900bf497b041f371a8d41f7c5dcaf3",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/uzi_display.json": "6199cf095fd382667f36d89ad86f327f8fbd427c729f8606c7c0b0a565b64a1a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_n.png": "16ea515ba2e54ad38855110a715e84856cd923af86d4e70f7cfbd48c082bf9df",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_s.png": "a2a1c52955c52fbb7ca38842ea3cccfe44144b9259ef1ef60610333ae75111ec",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/light_extended_mag_1_data.json": "26af92ee9480cf99aa53d86d0c2e6f820e26a347975fb1fe1e26b5fdfdc7e586",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/uzi_data.json": "c599339dca1104ed6180f2df7959a2b848e318c0d1206f69af93e53e08f67e02",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/light_extended_mag_1.json": "41716c88aec79602c3743653bf188cfe904e6c5f8f5dfc33aa66c2498b44a141",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/uzi.json": "394c9adc743b087f736757fa03e14189ff575302e81d84cf06b2a9cfbbd6c52c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/uzi.json": "7695a1cc03baf0d5992c4c268422f6a69ed759a11b6a4094a2d14258fe096966",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/light_extended_mag.json": "3200df180109748e789cfec9da9e9bd852ccb1947eb0c3bb4b628e2d938ef91c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_muzzle.json": "b578bb02121792c2fcfe9cddc0dbaa1343905d3809a6d8d11869d3cae5d0c6c5",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_scope.json": "c43054cf2496852639ac6638033fb7d099194b62b338d4573902b56e5eafbd20",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_sight.json": "6fa76be1d9663e7f3e6e855db34f46611256f577aca574963318ff35fc2b5e63"
+      },
+      "preservedBones": [
+        "root",
+        "mag_and_lefthand",
+        "mag_and_bullet",
+        "magazine",
+        "mag_extended_1",
+        "extdmag"
+      ],
+      "auxiliaryTextures": [
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_n.png",
+          "file": "components/tacz_uzi_light_extended_mag_1/texture_n.png"
+        },
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_s.png",
+          "file": "components/tacz_uzi_light_extended_mag_1/texture_s.png"
+        }
+      ],
+      "motionOwnership": {
+        "extdmag": [
+          "root",
+          "mag_and_lefthand",
+          "mag_and_bullet"
+        ]
+      },
+      "nativeAnimation": "tacz:uzi",
+      "nativeGunData": "tacz:uzi_data",
+      "nativeReloadScript": null,
+      "capacity": 32,
+      "runtimeMode": "native_gun_bone_variant",
+      "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+      "integrationStatus": "prepared; target gun assembly integration pending",
+      "note": "Gun-specific level variant; retain native reload bone ownership",
+      "baselineModelSha256": "8129deaa6fbc12780436e427acc14a04c8427206fb97893d0064455b9aa51ae6"
+    },
+    {
+      "definitionId": "tacz_uzi_light_extended_mag_2",
+      "group": "tacz_uzi_light_extended_mag_2",
+      "prefix": "native_attachment_tacz_uzi_light_extended_mag_2",
+      "cubes": 11,
+      "sourceCubeIndices": {
+        "root": [],
+        "mag_and_lefthand": [],
+        "mag_and_bullet": [],
+        "magazine": [],
+        "mag_extended_2": [],
+        "extdmag2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        2.67561,
+        2.55871
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/tacz_uzi_light_extended_mag_2/model.bbmodel",
+      "texture": "components/tacz_uzi_light_extended_mag_2/texture.png",
+      "gunId": "tacz:uzi",
+      "attachmentId": "tacz:light_extended_mag_2",
+      "level": 2,
+      "variantBone": "mag_extended_2",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "sourceHashes": {
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/uzi.animation.json": "bb40def81e00f13dcebb6aa100f19d4746697fba43041e5db2a63ea0d398ed18",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/light_extended_mag_2_display.json": "9f0ecf854b64dc3bb6145d51a1d7451990e1c669ce7cdf5dace2e9d0fdf5e1be",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/uzi_display.json": "6199cf095fd382667f36d89ad86f327f8fbd427c729f8606c7c0b0a565b64a1a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_n.png": "16ea515ba2e54ad38855110a715e84856cd923af86d4e70f7cfbd48c082bf9df",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_s.png": "a2a1c52955c52fbb7ca38842ea3cccfe44144b9259ef1ef60610333ae75111ec",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/light_extended_mag_2_data.json": "09cfd671e9b55bb1d8fdb18852cbeefa76b9c79590fbe5d68bd22ebc707e7b88",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/uzi_data.json": "c599339dca1104ed6180f2df7959a2b848e318c0d1206f69af93e53e08f67e02",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/light_extended_mag_2.json": "e783a72a9414d2cc89268c9f95d913cd64e1a4be26939a06f76cd80a628cd72f",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/uzi.json": "394c9adc743b087f736757fa03e14189ff575302e81d84cf06b2a9cfbbd6c52c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/uzi.json": "7695a1cc03baf0d5992c4c268422f6a69ed759a11b6a4094a2d14258fe096966",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/light_extended_mag.json": "3200df180109748e789cfec9da9e9bd852ccb1947eb0c3bb4b628e2d938ef91c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_muzzle.json": "b578bb02121792c2fcfe9cddc0dbaa1343905d3809a6d8d11869d3cae5d0c6c5",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_scope.json": "c43054cf2496852639ac6638033fb7d099194b62b338d4573902b56e5eafbd20",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_sight.json": "6fa76be1d9663e7f3e6e855db34f46611256f577aca574963318ff35fc2b5e63"
+      },
+      "preservedBones": [
+        "root",
+        "mag_and_lefthand",
+        "mag_and_bullet",
+        "magazine",
+        "mag_extended_2",
+        "extdmag2"
+      ],
+      "auxiliaryTextures": [
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_n.png",
+          "file": "components/tacz_uzi_light_extended_mag_2/texture_n.png"
+        },
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_s.png",
+          "file": "components/tacz_uzi_light_extended_mag_2/texture_s.png"
+        }
+      ],
+      "motionOwnership": {
+        "extdmag2": [
+          "root",
+          "mag_and_lefthand",
+          "mag_and_bullet"
+        ]
+      },
+      "nativeAnimation": "tacz:uzi",
+      "nativeGunData": "tacz:uzi_data",
+      "nativeReloadScript": null,
+      "capacity": 40,
+      "runtimeMode": "native_gun_bone_variant",
+      "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+      "integrationStatus": "prepared; target gun assembly integration pending",
+      "note": "Gun-specific level variant; retain native reload bone ownership",
+      "baselineModelSha256": "04b9e467f1d1fa9175726f836b781aef1021aa30deb2c35cc31c253e0684aa39"
+    },
+    {
+      "definitionId": "tacz_uzi_light_extended_mag_3",
+      "group": "tacz_uzi_light_extended_mag_3",
+      "prefix": "native_attachment_tacz_uzi_light_extended_mag_3",
+      "cubes": 11,
+      "sourceCubeIndices": {
+        "root": [],
+        "mag_and_lefthand": [],
+        "mag_and_bullet": [],
+        "magazine": [],
+        "mag_extended_3": [],
+        "extdmag3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        2.67561,
+        2.55871
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/tacz_uzi_light_extended_mag_3/model.bbmodel",
+      "texture": "components/tacz_uzi_light_extended_mag_3/texture.png",
+      "gunId": "tacz:uzi",
+      "attachmentId": "tacz:light_extended_mag_3",
+      "level": 3,
+      "variantBone": "mag_extended_3",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png",
+      "sourceSha256": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+      "sourceTextureSha256": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+      "sourceHashes": {
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/uzi.animation.json": "bb40def81e00f13dcebb6aa100f19d4746697fba43041e5db2a63ea0d398ed18",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/light_extended_mag_3_display.json": "0766c7a3fd09b97315701f94101b0e4e696ecad7c8872cc038048962e7e8ae19",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/uzi_display.json": "6199cf095fd382667f36d89ad86f327f8fbd427c729f8606c7c0b0a565b64a1a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/uzi_geo.json": "f2b0c9b76e145b78c1c8bb6eb78c78353d912f1e23ad2e9091c8502265025f1d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi.png": "22e33c2dc4154ddf641ea854f4025406d220f9a271a3d26037d18716884f08cc",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_n.png": "16ea515ba2e54ad38855110a715e84856cd923af86d4e70f7cfbd48c082bf9df",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_s.png": "a2a1c52955c52fbb7ca38842ea3cccfe44144b9259ef1ef60610333ae75111ec",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/light_extended_mag_3_data.json": "29d1af6e00ecbfcde489238d2aae9bcca8503028c5ee4b083949f2e891b49ed8",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/uzi_data.json": "c599339dca1104ed6180f2df7959a2b848e318c0d1206f69af93e53e08f67e02",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/light_extended_mag_3.json": "bfbdc0b2bb5d74ab29cd6b6719c98787f99e6dc01735353ffd98275593f3410a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/uzi.json": "394c9adc743b087f736757fa03e14189ff575302e81d84cf06b2a9cfbbd6c52c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/uzi.json": "7695a1cc03baf0d5992c4c268422f6a69ed759a11b6a4094a2d14258fe096966",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/light_extended_mag.json": "3200df180109748e789cfec9da9e9bd852ccb1947eb0c3bb4b628e2d938ef91c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_muzzle.json": "b578bb02121792c2fcfe9cddc0dbaa1343905d3809a6d8d11869d3cae5d0c6c5",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_scope.json": "c43054cf2496852639ac6638033fb7d099194b62b338d4573902b56e5eafbd20",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_sight.json": "6fa76be1d9663e7f3e6e855db34f46611256f577aca574963318ff35fc2b5e63"
+      },
+      "preservedBones": [
+        "root",
+        "mag_and_lefthand",
+        "mag_and_bullet",
+        "magazine",
+        "mag_extended_3",
+        "extdmag3"
+      ],
+      "auxiliaryTextures": [
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_n.png",
+          "file": "components/tacz_uzi_light_extended_mag_3/texture_n.png"
+        },
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/uzi_s.png",
+          "file": "components/tacz_uzi_light_extended_mag_3/texture_s.png"
+        }
+      ],
+      "motionOwnership": {
+        "extdmag3": [
+          "root",
+          "mag_and_lefthand",
+          "mag_and_bullet"
+        ]
+      },
+      "nativeAnimation": "tacz:uzi",
+      "nativeGunData": "tacz:uzi_data",
+      "nativeReloadScript": null,
+      "capacity": 50,
+      "runtimeMode": "native_gun_bone_variant",
+      "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+      "integrationStatus": "prepared; target gun assembly integration pending",
+      "note": "Gun-specific level variant; retain native reload bone ownership",
+      "baselineModelSha256": "d8a426e71c2881bc3fa1f98f75a5e0513699f06cb414f425ee61319c2e600c48"
+    }
+  ]
+}

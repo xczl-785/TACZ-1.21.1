@@ -1,0 +1,77 @@
+{
+  "assembly_p90_body_Body2": {
+    "definition": "p90_body",
+    "variant": "always",
+    "sourceBone": "Body2"
+  },
+  "assembly_p90_body_side_rail2": {
+    "definition": "p90_body",
+    "variant": "always",
+    "sourceBone": "side_rail2"
+  },
+  "assembly_p90_body_hexadecagon2": {
+    "definition": "p90_body",
+    "variant": "always",
+    "sourceBone": "hexadecagon2"
+  },
+  "assembly_p90_body_Trigger2": {
+    "definition": "p90_body",
+    "variant": "always",
+    "sourceBone": "Trigger2"
+  },
+  "assembly_p90_body_stock2": {
+    "definition": "p90_body",
+    "variant": "always",
+    "sourceBone": "stock2"
+  },
+  "assembly_p90_body_grip2": {
+    "definition": "p90_body",
+    "variant": "always",
+    "sourceBone": "grip2"
+  },
+  "assembly_p90_body_screws2": {
+    "definition": "p90_body",
+    "variant": "always",
+    "sourceBone": "screws2"
+  },
+  "assembly_p90_builtin_sight_group": {
+    "definition": "p90_builtin_sight",
+    "variant": "always",
+    "sourceBone": "group"
+  },
+  "assembly_p90_barrel_barrel2": {
+    "definition": "p90_barrel",
+    "variant": "always",
+    "sourceBone": "barrel2"
+  },
+  "assembly_p90_barrel_group4": {
+    "definition": "p90_barrel",
+    "variant": "always",
+    "sourceBone": "group4"
+  },
+  "assembly_p90_muzzle_muzzle_default": {
+    "definition": "p90_muzzle",
+    "variant": "always",
+    "sourceBone": "muzzle_default"
+  },
+  "assembly_p90_mag_release_mag_release": {
+    "definition": "p90_mag_release",
+    "variant": "always",
+    "sourceBone": "mag_release"
+  },
+  "assembly_p90_magazine_standard_Mag": {
+    "definition": "p90_magazine_standard",
+    "variant": "always",
+    "sourceBone": "Mag"
+  },
+  "assembly_p90_magazine_standard_octagon2": {
+    "definition": "p90_magazine_standard",
+    "variant": "always",
+    "sourceBone": "octagon2"
+  },
+  "assembly_p90_charging_handle_pull": {
+    "definition": "p90_charging_handle",
+    "variant": "always",
+    "sourceBone": "pull"
+  }
+}

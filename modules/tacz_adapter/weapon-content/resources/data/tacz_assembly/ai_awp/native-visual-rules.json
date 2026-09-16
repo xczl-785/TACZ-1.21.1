@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "mag_extended_3"
+  ],
+  "definitionRequirements": {},
+  "variantRequirements": {},
+  "boneRequirements": {
+    "bullet": [
+      "awp_magazine_standard",
+      "tacz_ai_awp_sniper_extended_mag_1",
+      "tacz_ai_awp_sniper_extended_mag_2",
+      "tacz_ai_awp_sniper_extended_mag_3"
+    ],
+    "bullet_in_mag": [
+      "awp_magazine_standard",
+      "tacz_ai_awp_sniper_extended_mag_1",
+      "tacz_ai_awp_sniper_extended_mag_2",
+      "tacz_ai_awp_sniper_extended_mag_3"
+    ]
+  },
+  "boneAllRequirements": {
+    "bullet_in_barrel": [
+      "awp_barrel",
+      "awp_bolt"
+    ]
+  }
+}

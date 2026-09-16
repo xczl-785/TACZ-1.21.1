@@ -1,0 +1,9 @@
+{
+  "schema_version": 3,
+  "item": "tacz_assembly:m700_magazine_standard",
+  "footprint": [
+    1,
+    2
+  ],
+  "weight_kg": 0
+}

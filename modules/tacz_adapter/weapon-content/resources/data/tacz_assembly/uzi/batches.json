@@ -1,0 +1,162 @@
+{
+  "assembly_uzi_receiver_mount": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "mount"
+  },
+  "assembly_uzi_receiver_cap": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "cap"
+  },
+  "assembly_uzi_receiver_lower": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "lower"
+  },
+  "assembly_uzi_receiver_group3": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "group3"
+  },
+  "assembly_uzi_receiver_rec": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "rec"
+  },
+  "assembly_uzi_receiver_group4": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "group4"
+  },
+  "assembly_uzi_receiver_group5": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "group5"
+  },
+  "assembly_uzi_receiver_group6": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "group6"
+  },
+  "assembly_uzi_receiver_group7": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "group7"
+  },
+  "assembly_uzi_receiver_octagon2": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "octagon2"
+  },
+  "assembly_uzi_receiver_deco": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "deco"
+  },
+  "assembly_uzi_receiver_group8": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "group8"
+  },
+  "assembly_uzi_receiver_screw": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "screw"
+  },
+  "assembly_uzi_receiver_octagon": {
+    "definition": "uzi_receiver",
+    "variant": "always",
+    "sourceBone": "octagon"
+  },
+  "assembly_uzi_iron_sights_rearsight": {
+    "definition": "uzi_iron_sights",
+    "variant": "always",
+    "sourceBone": "rearsight"
+  },
+  "assembly_uzi_iron_sights_sight_illuminated": {
+    "definition": "uzi_iron_sights",
+    "variant": "always",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_uzi_stock_fold_stock": {
+    "definition": "uzi_stock",
+    "variant": "always",
+    "sourceBone": "fold_stock"
+  },
+  "assembly_uzi_stock_group12": {
+    "definition": "uzi_stock",
+    "variant": "always",
+    "sourceBone": "group12"
+  },
+  "assembly_uzi_stock_group14": {
+    "definition": "uzi_stock",
+    "variant": "always",
+    "sourceBone": "group14"
+  },
+  "assembly_uzi_stock_group": {
+    "definition": "uzi_stock",
+    "variant": "always",
+    "sourceBone": "group"
+  },
+  "assembly_uzi_barrel_barrel": {
+    "definition": "uzi_barrel",
+    "variant": "always",
+    "sourceBone": "barrel"
+  },
+  "assembly_uzi_barrel_group2": {
+    "definition": "uzi_barrel",
+    "variant": "always",
+    "sourceBone": "group2"
+  },
+  "assembly_uzi_handguard_guard": {
+    "definition": "uzi_handguard",
+    "variant": "always",
+    "sourceBone": "guard"
+  },
+  "assembly_uzi_handguard_hg": {
+    "definition": "uzi_handguard",
+    "variant": "always",
+    "sourceBone": "hg"
+  },
+  "assembly_uzi_grip_grip": {
+    "definition": "uzi_grip",
+    "variant": "always",
+    "sourceBone": "grip"
+  },
+  "assembly_uzi_mag_release_mag_release": {
+    "definition": "uzi_mag_release",
+    "variant": "always",
+    "sourceBone": "mag_release"
+  },
+  "assembly_uzi_charging_handle_pull": {
+    "definition": "uzi_charging_handle",
+    "variant": "always",
+    "sourceBone": "pull"
+  },
+  "assembly_uzi_bolt_bolt": {
+    "definition": "uzi_bolt",
+    "variant": "always",
+    "sourceBone": "bolt"
+  },
+  "assembly_uzi_magazine_standard_mag": {
+    "definition": "uzi_magazine_standard",
+    "variant": "always",
+    "sourceBone": "mag"
+  },
+  "assembly_tacz_uzi_light_extended_mag_1_extdmag": {
+    "definition": "tacz_uzi_light_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "extdmag"
+  },
+  "assembly_tacz_uzi_light_extended_mag_2_extdmag2": {
+    "definition": "tacz_uzi_light_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "extdmag2"
+  },
+  "assembly_tacz_uzi_light_extended_mag_3_extdmag3": {
+    "definition": "tacz_uzi_light_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "extdmag3"
+  }
+}

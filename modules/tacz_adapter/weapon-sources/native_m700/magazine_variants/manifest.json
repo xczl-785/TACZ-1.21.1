@@ -1,0 +1,335 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "tacz_m700_sniper_extended_mag_1",
+      "group": "tacz_m700_sniper_extended_mag_1",
+      "prefix": "native_attachment_tacz_m700_sniper_extended_mag_1",
+      "cubes": 10,
+      "sourceCubeIndices": {
+        "root": [],
+        "mag_and_lefthand": [],
+        "mag_and_bullet": [],
+        "magazine": [],
+        "mag_extended_1": [],
+        "mag2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "a": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bullet": []
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.0,
+        4.90295,
+        5.92488
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/tacz_m700_sniper_extended_mag_1/model.bbmodel",
+      "texture": "components/tacz_m700_sniper_extended_mag_1/texture.png",
+      "gunId": "tacz:m700",
+      "attachmentId": "tacz:sniper_extended_mag_1",
+      "level": 1,
+      "variantBone": "mag_extended_1",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m700_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700.png",
+      "sourceSha256": "aafb7df0b76d4b7ca6181d38bd409e43c6feadae0813c22075401ac74d5d46a5",
+      "sourceTextureSha256": "479bd9d2cfd4d4db5072e5a3c35d818d46b8aa30b37edfdb0ccfe1289b2b6ef8",
+      "sourceHashes": {
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/m700.animation.json": "13e68a020d7f0ef533166fdb465222c92e7487dd133c3a24cd6d9981788abe91",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sniper_extended_mag_1_display.json": "557b8c0eda6d9256f6e9e289cf1d9cc24133e099b4eb6355ca0c222874191123",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/m700_display.json": "235c0bc88d8937428275b4590665232f81f4f2ec283777d3724e7aaa025305af",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m700_geo.json": "aafb7df0b76d4b7ca6181d38bd409e43c6feadae0813c22075401ac74d5d46a5",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700.png": "479bd9d2cfd4d4db5072e5a3c35d818d46b8aa30b37edfdb0ccfe1289b2b6ef8",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_n.png": "491891548d818ca8ceb92ea6b545669108f56ef28c06c11278d5ae473f377fb0",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_s.png": "ef35cc738dc14a9d65ddd2513fe579ab6a7e2eeaf491b8b590568f18cb28137a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sniper_extended_mag_1_data.json": "e1d9b1dab5c66bbf9b090970e42058343b61d7428058d5a4238eedf1466ec95b",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m700_data.json": "1284172fe499802de25202592248e3fe73f7669ca221379b7fc2803a3ecc0f78",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sniper_extended_mag_1.json": "0b7703445bd5abdb7e700f6647afa94c8c7883c20e83b3a16d5be456f5b89d8d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m700.json": "a916f11f297f7d549a3988f2c6a53f8afb5c4abee90777bdbfba2be8891a5f2b",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/m700.json": "ec5f796826a6dc56f6d2676f44e70a32ce9b06281569fab648e3c497f3f11c66",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope.json": "5688064fef185e70a5e3ab2dc4df6004e3c9b7669e891bd7c909fd7346790984",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_lowsight.json": "15eec57ec5eb49502e725d6af0a107389b0949ff47a0de4c98853b1bed639375",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/sniper_extended_mag.json": "e47761fb4dabd48868731d52913f53e3e3fd26c497aa3b037b7304a9ccb70ebf"
+      },
+      "preservedBones": [
+        "root",
+        "mag_and_lefthand",
+        "mag_and_bullet",
+        "magazine",
+        "mag_extended_1",
+        "mag2",
+        "a",
+        "bullet"
+      ],
+      "auxiliaryTextures": [
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_n.png",
+          "file": "components/tacz_m700_sniper_extended_mag_1/texture_n.png"
+        },
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_s.png",
+          "file": "components/tacz_m700_sniper_extended_mag_1/texture_s.png"
+        }
+      ],
+      "motionOwnership": {
+        "a": [
+          "root",
+          "mag_and_lefthand"
+        ],
+        "mag2": [
+          "root",
+          "mag_and_lefthand"
+        ]
+      },
+      "nativeAnimation": "tacz:m700",
+      "nativeGunData": "tacz:m700_data",
+      "nativeReloadScript": null,
+      "capacity": 6,
+      "runtimeMode": "native_gun_bone_variant",
+      "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+      "integrationStatus": "prepared; target gun assembly integration pending",
+      "note": "Gun-specific level variant; retain native reload bone ownership",
+      "baselineModelSha256": "c65224790c1db5ca59796c12a245f3c3f195f8c56a82bb9acd38db108c08031f"
+    },
+    {
+      "definitionId": "tacz_m700_sniper_extended_mag_2",
+      "group": "tacz_m700_sniper_extended_mag_2",
+      "prefix": "native_attachment_tacz_m700_sniper_extended_mag_2",
+      "cubes": 10,
+      "sourceCubeIndices": {
+        "root": [],
+        "mag_and_lefthand": [],
+        "mag_and_bullet": [],
+        "magazine": [],
+        "mag_extended_2": [],
+        "mag3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "a2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bullet3": []
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.0,
+        4.90295,
+        5.92488
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/tacz_m700_sniper_extended_mag_2/model.bbmodel",
+      "texture": "components/tacz_m700_sniper_extended_mag_2/texture.png",
+      "gunId": "tacz:m700",
+      "attachmentId": "tacz:sniper_extended_mag_2",
+      "level": 2,
+      "variantBone": "mag_extended_2",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m700_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700.png",
+      "sourceSha256": "aafb7df0b76d4b7ca6181d38bd409e43c6feadae0813c22075401ac74d5d46a5",
+      "sourceTextureSha256": "479bd9d2cfd4d4db5072e5a3c35d818d46b8aa30b37edfdb0ccfe1289b2b6ef8",
+      "sourceHashes": {
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/m700.animation.json": "13e68a020d7f0ef533166fdb465222c92e7487dd133c3a24cd6d9981788abe91",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sniper_extended_mag_2_display.json": "625d1e5c18d4eb09f41dd3f4ff9e3e366a4e02cc51e295e124186dc47402f059",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/m700_display.json": "235c0bc88d8937428275b4590665232f81f4f2ec283777d3724e7aaa025305af",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m700_geo.json": "aafb7df0b76d4b7ca6181d38bd409e43c6feadae0813c22075401ac74d5d46a5",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700.png": "479bd9d2cfd4d4db5072e5a3c35d818d46b8aa30b37edfdb0ccfe1289b2b6ef8",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_n.png": "491891548d818ca8ceb92ea6b545669108f56ef28c06c11278d5ae473f377fb0",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_s.png": "ef35cc738dc14a9d65ddd2513fe579ab6a7e2eeaf491b8b590568f18cb28137a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sniper_extended_mag_2_data.json": "11b0f4f92334019449e7fa7d605d89627d05dce612034f2301c3912b4d21f1da",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m700_data.json": "1284172fe499802de25202592248e3fe73f7669ca221379b7fc2803a3ecc0f78",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sniper_extended_mag_2.json": "0a8ac4185ca3d4441d157b4630e72cc4d1ef64a3e0457e1bdd725b7e3ad31534",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m700.json": "a916f11f297f7d549a3988f2c6a53f8afb5c4abee90777bdbfba2be8891a5f2b",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/m700.json": "ec5f796826a6dc56f6d2676f44e70a32ce9b06281569fab648e3c497f3f11c66",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope.json": "5688064fef185e70a5e3ab2dc4df6004e3c9b7669e891bd7c909fd7346790984",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_lowsight.json": "15eec57ec5eb49502e725d6af0a107389b0949ff47a0de4c98853b1bed639375",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/sniper_extended_mag.json": "e47761fb4dabd48868731d52913f53e3e3fd26c497aa3b037b7304a9ccb70ebf"
+      },
+      "preservedBones": [
+        "root",
+        "mag_and_lefthand",
+        "mag_and_bullet",
+        "magazine",
+        "mag_extended_2",
+        "mag3",
+        "a2",
+        "bullet3"
+      ],
+      "auxiliaryTextures": [
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_n.png",
+          "file": "components/tacz_m700_sniper_extended_mag_2/texture_n.png"
+        },
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_s.png",
+          "file": "components/tacz_m700_sniper_extended_mag_2/texture_s.png"
+        }
+      ],
+      "motionOwnership": {
+        "a2": [
+          "root",
+          "mag_and_lefthand"
+        ],
+        "mag3": [
+          "root",
+          "mag_and_lefthand"
+        ]
+      },
+      "nativeAnimation": "tacz:m700",
+      "nativeGunData": "tacz:m700_data",
+      "nativeReloadScript": null,
+      "capacity": 8,
+      "runtimeMode": "native_gun_bone_variant",
+      "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+      "integrationStatus": "prepared; target gun assembly integration pending",
+      "note": "Gun-specific level variant; retain native reload bone ownership",
+      "baselineModelSha256": "4996ea5f2f0ae3b3a056af03d57ce684467870f688554173c5cab073c242233e"
+    },
+    {
+      "definitionId": "tacz_m700_sniper_extended_mag_3",
+      "group": "tacz_m700_sniper_extended_mag_3",
+      "prefix": "native_attachment_tacz_m700_sniper_extended_mag_3",
+      "cubes": 10,
+      "sourceCubeIndices": {
+        "root": [],
+        "mag_and_lefthand": [],
+        "mag_and_bullet": [],
+        "magazine": [],
+        "mag_extended_3": [],
+        "mag4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "a3": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bullet4": []
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.0,
+        4.90295,
+        5.92488
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/tacz_m700_sniper_extended_mag_3/model.bbmodel",
+      "texture": "components/tacz_m700_sniper_extended_mag_3/texture.png",
+      "gunId": "tacz:m700",
+      "attachmentId": "tacz:sniper_extended_mag_3",
+      "level": 3,
+      "variantBone": "mag_extended_3",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m700_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700.png",
+      "sourceSha256": "aafb7df0b76d4b7ca6181d38bd409e43c6feadae0813c22075401ac74d5d46a5",
+      "sourceTextureSha256": "479bd9d2cfd4d4db5072e5a3c35d818d46b8aa30b37edfdb0ccfe1289b2b6ef8",
+      "sourceHashes": {
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/m700.animation.json": "13e68a020d7f0ef533166fdb465222c92e7487dd133c3a24cd6d9981788abe91",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sniper_extended_mag_3_display.json": "5cd89db8fd033898a13bcf75f08354afa33721ad062cf7e68d44e5c06f9b66d1",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/m700_display.json": "235c0bc88d8937428275b4590665232f81f4f2ec283777d3724e7aaa025305af",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m700_geo.json": "aafb7df0b76d4b7ca6181d38bd409e43c6feadae0813c22075401ac74d5d46a5",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700.png": "479bd9d2cfd4d4db5072e5a3c35d818d46b8aa30b37edfdb0ccfe1289b2b6ef8",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_n.png": "491891548d818ca8ceb92ea6b545669108f56ef28c06c11278d5ae473f377fb0",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_s.png": "ef35cc738dc14a9d65ddd2513fe579ab6a7e2eeaf491b8b590568f18cb28137a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sniper_extended_mag_3_data.json": "d0ffa6bf55f251defff63082e138532b0e9ed480d34914603e4c1acf665f0a8d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m700_data.json": "1284172fe499802de25202592248e3fe73f7669ca221379b7fc2803a3ecc0f78",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sniper_extended_mag_3.json": "f4d298048d9b915c356cfdd024f4f65c09ddc7fdde382d91cb75eb3e62a10a0f",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m700.json": "a916f11f297f7d549a3988f2c6a53f8afb5c4abee90777bdbfba2be8891a5f2b",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/m700.json": "ec5f796826a6dc56f6d2676f44e70a32ce9b06281569fab648e3c497f3f11c66",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod_no_he.json": "8bd08ec5e7193de6af4603c3bb8fc25d0d4a4f594adc9b38a530e727c3604f45",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope.json": "5688064fef185e70a5e3ab2dc4df6004e3c9b7669e891bd7c909fd7346790984",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope_lowsight.json": "15eec57ec5eb49502e725d6af0a107389b0949ff47a0de4c98853b1bed639375",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/sniper_extended_mag.json": "e47761fb4dabd48868731d52913f53e3e3fd26c497aa3b037b7304a9ccb70ebf"
+      },
+      "preservedBones": [
+        "root",
+        "mag_and_lefthand",
+        "mag_and_bullet",
+        "magazine",
+        "mag_extended_3",
+        "mag4",
+        "a3",
+        "bullet4"
+      ],
+      "auxiliaryTextures": [
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_n.png",
+          "file": "components/tacz_m700_sniper_extended_mag_3/texture_n.png"
+        },
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m700_s.png",
+          "file": "components/tacz_m700_sniper_extended_mag_3/texture_s.png"
+        }
+      ],
+      "motionOwnership": {
+        "a3": [
+          "root",
+          "mag_and_lefthand"
+        ],
+        "mag4": [
+          "root",
+          "mag_and_lefthand"
+        ]
+      },
+      "nativeAnimation": "tacz:m700",
+      "nativeGunData": "tacz:m700_data",
+      "nativeReloadScript": null,
+      "capacity": 10,
+      "runtimeMode": "native_gun_bone_variant",
+      "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+      "integrationStatus": "prepared; target gun assembly integration pending",
+      "note": "Gun-specific level variant; retain native reload bone ownership",
+      "baselineModelSha256": "360f2a02443fcd09022a245cad8ea8934627af9b095bc02090fadaf560aaba91"
+    }
+  ]
+}

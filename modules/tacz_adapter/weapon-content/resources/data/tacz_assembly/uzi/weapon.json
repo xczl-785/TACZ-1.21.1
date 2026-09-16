@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_assembly:uzi",
+  "rootDefinition": "uzi_receiver",
+  "resourceDirectory": "uzi",
+  "modelType": "tacz_native_uzi_assembly",
+  "caliber": "9x19",
+  "requiredPaths": [
+    [
+      "barrel"
+    ],
+    [
+      "charging_handle"
+    ],
+    [
+      "bolt"
+    ]
+  ],
+  "defaultFireMode": "auto",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "developmentSource": "native_uzi",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/uzi",
+  "magazinePath": [
+    "magazine"
+  ]
+}

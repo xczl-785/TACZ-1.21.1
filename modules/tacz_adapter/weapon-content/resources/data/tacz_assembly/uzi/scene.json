@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "definitionId": "uzi_receiver"
+    },
+    {
+      "instanceId": "8d5a1645-e9d3-5654-aa4d-a64a4565f096",
+      "definitionId": "uzi_iron_sights",
+      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "slot": "iron_sights"
+    },
+    {
+      "instanceId": "fdc4e385-db80-5ca3-8ff3-1294f6740cb1",
+      "definitionId": "uzi_stock",
+      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "slot": "stock"
+    },
+    {
+      "instanceId": "2b28413b-be8c-5b62-8c79-65f96e3a0ba1",
+      "definitionId": "uzi_barrel",
+      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "67bf8da2-9af6-5c69-882f-64c55545c03c",
+      "definitionId": "uzi_handguard",
+      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "slot": "handguard"
+    },
+    {
+      "instanceId": "c1690b60-4ba0-5a8a-a0ff-fa9981c7f155",
+      "definitionId": "uzi_grip",
+      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "slot": "grip"
+    },
+    {
+      "instanceId": "5ad4354d-cc41-581d-bc27-a5a66268b52b",
+      "definitionId": "uzi_magazine_standard",
+      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "slot": "magazine"
+    },
+    {
+      "instanceId": "82d26245-5a7c-5096-846a-a84ccdc7fd2e",
+      "definitionId": "uzi_mag_release",
+      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "slot": "mag_release"
+    },
+    {
+      "instanceId": "3b95b564-fb5e-511a-b265-bb1f279b59aa",
+      "definitionId": "uzi_charging_handle",
+      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "slot": "charging_handle"
+    },
+    {
+      "instanceId": "2cc85694-4e4d-5789-b86d-cb696bc34326",
+      "definitionId": "uzi_bolt",
+      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "slot": "bolt"
+    }
+  ]
+}

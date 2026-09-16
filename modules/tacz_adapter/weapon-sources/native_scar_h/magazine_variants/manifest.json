@@ -1,0 +1,508 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "tacz_scar_h_extended_mag_1",
+      "group": "tacz_scar_h_extended_mag_1",
+      "prefix": "native_attachment_tacz_scar_h_extended_mag_1",
+      "cubes": 36,
+      "sourceCubeIndices": {
+        "root": [],
+        "mag_and_lh": [],
+        "mag_and_bullet": [],
+        "magazine": [],
+        "mag_extended_1": [],
+        "extd_mag2": [],
+        "bone9": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "bone10": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "bone11": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        5.09317,
+        2.68163
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/tacz_scar_h_extended_mag_1/model.bbmodel",
+      "texture": "components/tacz_scar_h_extended_mag_1/texture.png",
+      "gunId": "tacz:scar_h",
+      "attachmentId": "tacz:extended_mag_1",
+      "level": 1,
+      "variantBone": "mag_extended_1",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/scar_h_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h.png",
+      "sourceSha256": "cbb25a2549876024812a5fb5ee781384b8c49beaed97a25964cce53340ebd394",
+      "sourceTextureSha256": "57ebf798608ad6fbb61a99f89b7b1f33edcdccd6405870b4b17e45487439b6d8",
+      "sourceHashes": {
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/scar_h.animation.json": "bb8f54f5dcd75007c2b95b866b622366a9e0e2358afcc3a06f077a7c38630878",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/extended_mag_1_display.json": "ba04240f8ad6868a75e04b7a4d66a1c9a795bbb8156d34e1e8fc3af5e5dbb463",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/scar_h_display.json": "c7c2c8092c0d872ce7d891fa5dc7b408c2f13ccbe8ff02437ce0f68dc6906e2f",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/scar_h_geo.json": "cbb25a2549876024812a5fb5ee781384b8c49beaed97a25964cce53340ebd394",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h.png": "57ebf798608ad6fbb61a99f89b7b1f33edcdccd6405870b4b17e45487439b6d8",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_n.png": "b0078a86a4a561bb6e11e3d53b421b27ca61c4ceacfd195ecfb83c71ba0018bf",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_s.png": "b44ccf6807a7ed5c02900c2fbfa39ccc1eaf2b0b5d9ace42d2869393a6a98c8b",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/extended_mag_1_data.json": "da32034a7dfa26b7705dba478cbef405691f0f0cb9576c1e041de923887a8ab3",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/scar_h_data.json": "8659fb4936ac768c59c14b012fb4f49349e4cb9af8e7a5fb368001df81737970",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/extended_mag_1.json": "8004d7d966af2162e628871777921722ce6fe463877102eccd451dcea085d462",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/scar_h.json": "d780ab37acc9d44e23235fd2d57f87bae75647d12847b44acaffa06df2b273e8",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/scripts/xmag_reload_logic.lua": "851c2e13741918f1c0b7e940ca5c1134c4d605ef81e551f114f2c782664a34fa",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/scar_h.json": "c41188ecbf5c93630a3a6e3d4f7c53105ff3a6132e8156179c7d8234f2f0499c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod.json": "6a440b565436bb974cc9a0935eb6b01aae2ba0ca9fdd54eb71d08e759524194d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ar_laser.json": "44cf70d855fd742e5f9ec1eadb1b83f2c03f62aafe52b8903937e12a08c58989",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/extended_mag.json": "5f6d94703048e27941e84ae26daf11601c876b58c1a96d3a35027032eb0bcb9c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/grip.json": "f42e578d1be8a0c611dc2b451612fc845d45a282dca944a8242aea1d38ca955d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_laser.json": "357e45b04394aa5d9e03e0981681759ab272f66697ec04c17d65bd04639d0911",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope.json": "5688064fef185e70a5e3ab2dc4df6004e3c9b7669e891bd7c909fd7346790984",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/stock.json": "84d2d4e7d49d1dca43a3540a8ed589a0614a8b3ea998c1136e7297f756c96f28"
+      },
+      "preservedBones": [
+        "root",
+        "mag_and_lh",
+        "mag_and_bullet",
+        "magazine",
+        "mag_extended_1",
+        "extd_mag2",
+        "bone9",
+        "bone10",
+        "bone11"
+      ],
+      "auxiliaryTextures": [
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_n.png",
+          "file": "components/tacz_scar_h_extended_mag_1/texture_n.png"
+        },
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_s.png",
+          "file": "components/tacz_scar_h_extended_mag_1/texture_s.png"
+        }
+      ],
+      "motionOwnership": {
+        "bone10": [
+          "root",
+          "mag_and_lh",
+          "mag_and_bullet"
+        ],
+        "bone11": [
+          "root",
+          "mag_and_lh",
+          "mag_and_bullet"
+        ],
+        "bone9": [
+          "root",
+          "mag_and_lh",
+          "mag_and_bullet"
+        ]
+      },
+      "nativeAnimation": "tacz:scar_h",
+      "nativeGunData": "tacz:scar_h_data",
+      "nativeReloadScript": "tacz:xmag_reload_logic",
+      "capacity": 25,
+      "runtimeMode": "native_gun_bone_variant",
+      "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+      "integrationStatus": "prepared; target gun assembly integration pending",
+      "note": "Gun-specific level variant; retain native reload bone ownership",
+      "baselineModelSha256": "d4598dbc252340eed92276e94a252211bb6ff40abc4429a6a785ba3361b1b976"
+    },
+    {
+      "definitionId": "tacz_scar_h_extended_mag_2",
+      "group": "tacz_scar_h_extended_mag_2",
+      "prefix": "native_attachment_tacz_scar_h_extended_mag_2",
+      "cubes": 41,
+      "sourceCubeIndices": {
+        "root": [],
+        "mag_and_lh": [],
+        "mag_and_bullet": [],
+        "magazine": [],
+        "mag_extended_2": [],
+        "extd_mag": [],
+        "bone2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "bone6": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "bone7": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        4.34603,
+        2.61626
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/tacz_scar_h_extended_mag_2/model.bbmodel",
+      "texture": "components/tacz_scar_h_extended_mag_2/texture.png",
+      "gunId": "tacz:scar_h",
+      "attachmentId": "tacz:extended_mag_2",
+      "level": 2,
+      "variantBone": "mag_extended_2",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/scar_h_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h.png",
+      "sourceSha256": "cbb25a2549876024812a5fb5ee781384b8c49beaed97a25964cce53340ebd394",
+      "sourceTextureSha256": "57ebf798608ad6fbb61a99f89b7b1f33edcdccd6405870b4b17e45487439b6d8",
+      "sourceHashes": {
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/scar_h.animation.json": "bb8f54f5dcd75007c2b95b866b622366a9e0e2358afcc3a06f077a7c38630878",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/extended_mag_2_display.json": "13e1657c08bbbc08f6f4af9f1766e1099d84de3198a46dfac4a006da3d150e48",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/scar_h_display.json": "c7c2c8092c0d872ce7d891fa5dc7b408c2f13ccbe8ff02437ce0f68dc6906e2f",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/scar_h_geo.json": "cbb25a2549876024812a5fb5ee781384b8c49beaed97a25964cce53340ebd394",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h.png": "57ebf798608ad6fbb61a99f89b7b1f33edcdccd6405870b4b17e45487439b6d8",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_n.png": "b0078a86a4a561bb6e11e3d53b421b27ca61c4ceacfd195ecfb83c71ba0018bf",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_s.png": "b44ccf6807a7ed5c02900c2fbfa39ccc1eaf2b0b5d9ace42d2869393a6a98c8b",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/extended_mag_2_data.json": "435cf506d570e7701d235e92e801c7dec687a95e4e758735106c98a206ee9b7d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/scar_h_data.json": "8659fb4936ac768c59c14b012fb4f49349e4cb9af8e7a5fb368001df81737970",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/extended_mag_2.json": "a941d5d5f09963921187e2b5ab829be607b4bd7252e7e26480ccee5618dba967",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/scar_h.json": "d780ab37acc9d44e23235fd2d57f87bae75647d12847b44acaffa06df2b273e8",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/scripts/xmag_reload_logic.lua": "851c2e13741918f1c0b7e940ca5c1134c4d605ef81e551f114f2c782664a34fa",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/scar_h.json": "c41188ecbf5c93630a3a6e3d4f7c53105ff3a6132e8156179c7d8234f2f0499c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod.json": "6a440b565436bb974cc9a0935eb6b01aae2ba0ca9fdd54eb71d08e759524194d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ar_laser.json": "44cf70d855fd742e5f9ec1eadb1b83f2c03f62aafe52b8903937e12a08c58989",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/extended_mag.json": "5f6d94703048e27941e84ae26daf11601c876b58c1a96d3a35027032eb0bcb9c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/grip.json": "f42e578d1be8a0c611dc2b451612fc845d45a282dca944a8242aea1d38ca955d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_laser.json": "357e45b04394aa5d9e03e0981681759ab272f66697ec04c17d65bd04639d0911",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope.json": "5688064fef185e70a5e3ab2dc4df6004e3c9b7669e891bd7c909fd7346790984",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/stock.json": "84d2d4e7d49d1dca43a3540a8ed589a0614a8b3ea998c1136e7297f756c96f28"
+      },
+      "preservedBones": [
+        "root",
+        "mag_and_lh",
+        "mag_and_bullet",
+        "magazine",
+        "mag_extended_2",
+        "extd_mag",
+        "bone2",
+        "bone6",
+        "bone7"
+      ],
+      "auxiliaryTextures": [
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_n.png",
+          "file": "components/tacz_scar_h_extended_mag_2/texture_n.png"
+        },
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_s.png",
+          "file": "components/tacz_scar_h_extended_mag_2/texture_s.png"
+        }
+      ],
+      "motionOwnership": {
+        "bone2": [
+          "root",
+          "mag_and_lh",
+          "mag_and_bullet"
+        ],
+        "bone6": [
+          "root",
+          "mag_and_lh",
+          "mag_and_bullet"
+        ],
+        "bone7": [
+          "root",
+          "mag_and_lh",
+          "mag_and_bullet"
+        ]
+      },
+      "nativeAnimation": "tacz:scar_h",
+      "nativeGunData": "tacz:scar_h_data",
+      "nativeReloadScript": "tacz:xmag_reload_logic",
+      "capacity": 30,
+      "runtimeMode": "native_gun_bone_variant",
+      "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+      "integrationStatus": "prepared; target gun assembly integration pending",
+      "note": "Gun-specific level variant; retain native reload bone ownership",
+      "baselineModelSha256": "cb72cd6400cd430057d0885cd6a84a811a94787f594ed78f25d71b2fbcc634ff"
+    },
+    {
+      "definitionId": "tacz_scar_h_extended_mag_3",
+      "group": "tacz_scar_h_extended_mag_3",
+      "prefix": "native_attachment_tacz_scar_h_extended_mag_3",
+      "cubes": 88,
+      "sourceCubeIndices": {
+        "root": [],
+        "mag_and_lh": [],
+        "mag_and_bullet": [],
+        "magazine": [],
+        "mag_extended_3": [
+          0,
+          1,
+          2
+        ],
+        "bone3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "bone4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.0,
+        3.99387,
+        1.82865
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/tacz_scar_h_extended_mag_3/model.bbmodel",
+      "texture": "components/tacz_scar_h_extended_mag_3/texture.png",
+      "gunId": "tacz:scar_h",
+      "attachmentId": "tacz:extended_mag_3",
+      "level": 3,
+      "variantBone": "mag_extended_3",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/scar_h_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h.png",
+      "sourceSha256": "cbb25a2549876024812a5fb5ee781384b8c49beaed97a25964cce53340ebd394",
+      "sourceTextureSha256": "57ebf798608ad6fbb61a99f89b7b1f33edcdccd6405870b4b17e45487439b6d8",
+      "sourceHashes": {
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/scar_h.animation.json": "bb8f54f5dcd75007c2b95b866b622366a9e0e2358afcc3a06f077a7c38630878",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/extended_mag_3_display.json": "bb7d7012edc05ed33fe70f9fa7bc57ea6908e0ec20ca11f07f09ee62f37fd02c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/guns/scar_h_display.json": "c7c2c8092c0d872ce7d891fa5dc7b408c2f13ccbe8ff02437ce0f68dc6906e2f",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/scar_h_geo.json": "cbb25a2549876024812a5fb5ee781384b8c49beaed97a25964cce53340ebd394",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h.png": "57ebf798608ad6fbb61a99f89b7b1f33edcdccd6405870b4b17e45487439b6d8",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_n.png": "b0078a86a4a561bb6e11e3d53b421b27ca61c4ceacfd195ecfb83c71ba0018bf",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_s.png": "b44ccf6807a7ed5c02900c2fbfa39ccc1eaf2b0b5d9ace42d2869393a6a98c8b",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/extended_mag_3_data.json": "86cb97758f5aaea64d4db8e6db59929d9a1bed81df93bee7f2f7093d623460e3",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/scar_h_data.json": "8659fb4936ac768c59c14b012fb4f49349e4cb9af8e7a5fb368001df81737970",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/extended_mag_3.json": "78334fc8c27b040668664272b0aa6b9e115ae525eda698ab15f2b9ff1346f53c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/scar_h.json": "d780ab37acc9d44e23235fd2d57f87bae75647d12847b44acaffa06df2b273e8",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/scripts/xmag_reload_logic.lua": "851c2e13741918f1c0b7e940ca5c1134c4d605ef81e551f114f2c782664a34fa",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/allow_attachments/scar_h.json": "c41188ecbf5c93630a3a6e3d4f7c53105ff3a6132e8156179c7d8234f2f0499c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ammo_mod.json": "6a440b565436bb974cc9a0935eb6b01aae2ba0ca9fdd54eb71d08e759524194d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/ar_laser.json": "44cf70d855fd742e5f9ec1eadb1b83f2c03f62aafe52b8903937e12a08c58989",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/extended_mag.json": "5f6d94703048e27941e84ae26daf11601c876b58c1a96d3a35027032eb0bcb9c",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/grip.json": "f42e578d1be8a0c611dc2b451612fc845d45a282dca944a8242aea1d38ca955d",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/muzzle.json": "061cc43a5a1640048bc07114028f6573e62eab6b740c8139f2a316c5277f992a",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/pistol_laser.json": "357e45b04394aa5d9e03e0981681759ab272f66697ec04c17d65bd04639d0911",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/scope.json": "5688064fef185e70a5e3ab2dc4df6004e3c9b7669e891bd7c909fd7346790984",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/tacz_tags/attachments/stock.json": "84d2d4e7d49d1dca43a3540a8ed589a0614a8b3ea998c1136e7297f756c96f28"
+      },
+      "preservedBones": [
+        "root",
+        "mag_and_lh",
+        "mag_and_bullet",
+        "magazine",
+        "mag_extended_3",
+        "bone3",
+        "bone4"
+      ],
+      "auxiliaryTextures": [
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_n.png",
+          "file": "components/tacz_scar_h_extended_mag_3/texture_n.png"
+        },
+        {
+          "source": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/scar_h_s.png",
+          "file": "components/tacz_scar_h_extended_mag_3/texture_s.png"
+        }
+      ],
+      "motionOwnership": {
+        "bone3": [
+          "root",
+          "mag_and_lh",
+          "mag_and_bullet"
+        ],
+        "bone4": [
+          "root",
+          "mag_and_lh",
+          "mag_and_bullet"
+        ],
+        "mag_extended_3": [
+          "root",
+          "mag_and_lh",
+          "mag_and_bullet"
+        ]
+      },
+      "nativeAnimation": "tacz:scar_h",
+      "nativeGunData": "tacz:scar_h_data",
+      "nativeReloadScript": "tacz:xmag_reload_logic",
+      "capacity": 40,
+      "runtimeMode": "native_gun_bone_variant",
+      "coordinateSpace": "native gun rig; preserve pivots and parents; no attachment mount transform",
+      "integrationStatus": "prepared; target gun assembly integration pending",
+      "note": "Gun-specific level variant; retain native reload bone ownership",
+      "baselineModelSha256": "967cddf7069694df85a587e0123912a5973bacd75d9f4d4493cfb00a374d7a03"
+    }
+  ]
+}

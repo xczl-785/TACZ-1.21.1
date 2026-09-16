@@ -1,0 +1,9 @@
+{
+  "name": "gun.tacz_assembly.p90",
+  "display": "tacz_assembly:p90",
+  "data": "tacz_assembly:p90",
+  "tooltip": "tacz.gun.p90.desc",
+  "type": "smg",
+  "sort": 103,
+  "item_type": "tacz_assembly:p90"
+}

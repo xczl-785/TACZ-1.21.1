@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz:p90",
+  "high": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/p90_geo.json",
+    "bones": 47,
+    "cubes": 300,
+    "uvSize": [
+      128,
+      128
+    ]
+  },
+  "low": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/lod/p90.json",
+    "policy": "conservative_cube_subset: retain the complete authored native high rig until a reviewed component-preserving low rig exists; never reuse incompatible original low topology."
+  },
+  "parts": [
+    {
+      "definitionId": "p90_body",
+      "sourceCubeIndices": {
+        "Body2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78
+        ],
+        "side_rail2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "hexadecagon2": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "Trigger2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "stock2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "grip2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ],
+        "screws2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "inventoryType": "weapon/firearm/pdw",
+      "footprint": [
+        4,
+        2
+      ],
+      "cubes": 195
+    },
+    {
+      "definitionId": "p90_builtin_sight",
+      "sourceCubeIndices": {
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        2,
+        1
+      ],
+      "cubes": 35
+    },
+    {
+      "definitionId": "p90_barrel",
+      "sourceCubeIndices": {
+        "barrel2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group4": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        3,
+        1
+      ],
+      "cubes": 7
+    },
+    {
+      "definitionId": "p90_muzzle",
+      "sourceCubeIndices": {
+        "muzzle_default": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      "inventoryType": "weapon_mod/muzzle",
+      "footprint": [
+        1,
+        1
+      ],
+      "cubes": 23
+    },
+    {
+      "definitionId": "p90_mag_release",
+      "sourceCubeIndices": {
+        "mag_release": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        2,
+        1
+      ],
+      "cubes": 3
+    },
+    {
+      "definitionId": "p90_magazine_standard",
+      "sourceCubeIndices": {
+        "Mag": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ],
+      "cubes": 21
+    },
+    {
+      "definitionId": "p90_charging_handle",
+      "sourceCubeIndices": {
+        "pull": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "inventoryType": "weapon_mod/charging_handle",
+      "footprint": [
+        1,
+        1
+      ],
+      "cubes": 14
+    }
+  ],
+  "nativeMagazineVariants": {},
+  "nativeTubeVariants": null,
+  "presentationOnly": {
+    "righthand_pos": [
+      0
+    ],
+    "lefthand_pos": [
+      0
+    ]
+  },
+  "unassignedCubes": [],
+  "duplicateOwnership": [],
+  "animations": {
+    "static_idle": [
+      "righthand",
+      "lefthand",
+      "constraint"
+    ],
+    "draw": [
+      "righthand",
+      "lefthand",
+      "root",
+      "camera"
+    ],
+    "put_away": [
+      "righthand",
+      "lefthand",
+      "root",
+      "camera"
+    ],
+    "reload_empty": [
+      "root",
+      "lefthand",
+      "righthand",
+      "p90_mag_standard",
+      "pull",
+      "camera",
+      "constraint"
+    ],
+    "reload_tactical": [
+      "righthand",
+      "lefthand",
+      "root",
+      "p90_mag_standard",
+      "camera",
+      "constraint"
+    ],
+    "inspect": [
+      "root",
+      "righthand",
+      "lefthand",
+      "camera"
+    ],
+    "inspect_empty": [
+      "root",
+      "righthand",
+      "lefthand",
+      "camera"
+    ],
+    "shoot": [
+      "ump45_bolt",
+      "root",
+      "camera",
+      "constraint"
+    ]
+  },
+  "animationRefsWithoutBones": [
+    "ump45_bolt"
+  ],
+  "reload": {
+    "capacity": [
+      50,
+      35,
+      45,
+      50
+    ],
+    "nativeData": "tacz:p90_data",
+    "nativeAnimation": "tacz:p90",
+    "feed": "detachable_magazine"
+  },
+  "sights": {
+    "policy": "The built-in P90 optic remains an existing read-only native candidate; no new optical BBModel/PNG is produced."
+  },
+  "defaultScene": {
+    "installed": ["p90_body", "p90_builtin_sight", "p90_barrel", "p90_muzzle", "p90_magazine_standard", "p90_mag_release", "p90_charging_handle"],
+    "magazineRelease": "Independent physical component installed by p90_body.mag_release; it is not presentation-only."
+  },
+  "constraints": [
+    "Every source cube is assigned once to a physical definition, a gun-specific capacity variant, or presentation-only pose/ammo geometry.",
+    "No optical source was created.",
+    "No runtime resource, global index, or language file is written by this authoring script."
+  ]
+}

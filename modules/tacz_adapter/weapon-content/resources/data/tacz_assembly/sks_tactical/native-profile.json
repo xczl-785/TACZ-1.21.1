@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "attachmentPaths": {
+    "SCOPE": [
+      "handguard",
+      "mount",
+      "scope"
+    ],
+    "MUZZLE": [
+      "handguard",
+      "barrel",
+      "muzzle"
+    ],
+    "GRIP": [
+      "handguard",
+      "grip"
+    ],
+    "LASER": [
+      "handguard",
+      "laser"
+    ],
+    "STOCK": [
+      "stock"
+    ],
+    "EXTENDED_MAG": [
+      "magazine"
+    ]
+  },
+  "attachmentOverrides": {},
+  "sightAlternatives": [
+    [
+      [
+        "handguard",
+        "mount",
+        "scope"
+      ]
+    ],
+    [
+      [
+        "handguard",
+        "front_sight"
+      ],
+      [
+        "handguard",
+        "rear_sight"
+      ]
+    ]
+  ]
+}

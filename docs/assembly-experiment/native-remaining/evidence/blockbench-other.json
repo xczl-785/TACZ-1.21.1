@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "method": "Actual Blockbench Codecs.project.load(JSON model, {path, no_file:true}) plus Codecs.project.compile({raw:true}) in /tmp/native-gun-integration/blockbench-other; source files were never written.",
+  "models": 50,
+  "cubes": 1656,
+  "scope": {
+    "guns": ["ai_awp", "m700", "m870", "p90", "uzi"],
+    "includes": "49 gun authoring sources and the 16-cube supplemental muzzle_duckbill_sg source"
+  },
+  "checks": {
+    "blockbenchLoadedEveryTemporaryModel": true,
+    "compiledEveryTemporaryModel": true,
+    "editorCubeCountsEqualSourceElementCounts": true,
+    "sourceToCompiledGeometryEqual": true,
+    "sourceToCompiledPivotRotationEqual": true,
+    "sourceToCompiledFaceUvAndTextureEqual": true,
+    "originalEditorProjectRestored": "950c532d-bb10-a2d7-eb9e-497bc81a903c",
+    "authoringSourcesOverwritten": false
+  },
+  "temporaryArtifacts": "/tmp/native-gun-integration/blockbench-other/compiled-*.bbmodel"
+}

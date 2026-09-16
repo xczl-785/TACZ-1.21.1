@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "method": "Independent read-only verification. Each source was copied to /tmp/native-gun-integration/blockbench-rifles, loaded with Blockbench Codecs.project.load(JSON model, {path, no_file:true}), compiled with raw:true, and compared to its compiled temporary copy.",
+  "guns": ["aa12", "mk14", "qbz_191", "scar_h", "sks_tactical"],
+  "models": 71,
+  "cubes": 3534,
+  "checks": {
+    "blockbenchLoadedEveryTemporaryModel": true,
+    "compiledEveryTemporaryModel": true,
+    "editorCubeCountsEqualSourceElementCounts": true,
+    "sourceToCompiledGeometryEqual": true,
+    "sourceToCompiledPivotRotationEqual": true,
+    "sourceToCompiledFaceUvAndTextureEqual": true,
+    "sourceAuditCubeOwnership": "all five report no unassigned or duplicate cubes",
+    "sourceAuditAnimationReferences": "all five report no animation references without source bones",
+    "productionValidation": "produce.validate_configuration and attachment_records passed for AA12=34, MK14=56, QBZ-191=55, SCAR-H=55, SKS Tactical=54",
+    "nativeSightRouting": "all five declare a real scope alternative and a physical default iron-sight alternative",
+    "originalEditorProjectRestored": "950c532d-bb10-a2d7-eb9e-497bc81a903c",
+    "authoringSourcesOverwritten": false
+  },
+  "temporaryArtifacts": "/tmp/native-gun-integration/blockbench-rifles/compiled-*.bbmodel"
+}

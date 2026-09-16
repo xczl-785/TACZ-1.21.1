@@ -1,0 +1,843 @@
+{
+  "schemaVersion": 1,
+  "sourceGun": "aa12",
+  "gunId": "tacz_assembly:aa12",
+  "sourceDirectory": "native_aa12",
+  "rootDefinition": "aa12_lower",
+  "parts": [
+    {
+      "definitionId": "aa12_lower",
+      "sourceCubeIndices": {
+        "body": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86
+        ],
+        "bone6": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bone3": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group4": [
+          0,
+          1
+        ],
+        "bone4": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group9": [
+          0
+        ],
+        "group8": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "guard": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "octagon7": [
+          0,
+          1,
+          2
+        ],
+        "deco": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "inventoryType": "weapon/firearm/shotgun",
+      "footprint": [
+        5,
+        2
+      ]
+    },
+    {
+      "definitionId": "aa12_upper",
+      "sourceCubeIndices": {
+        "aa12": [
+          0
+        ],
+        "deco2": [
+          0,
+          1
+        ],
+        "gaslock": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_handguard",
+      "sourceCubeIndices": {
+        "handguard_tactical": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ]
+      },
+      "inventoryType": "weapon_mod/handguard",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_barrel",
+      "sourceCubeIndices": {
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group11": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_front_sight",
+      "sourceCubeIndices": {
+        "frontsight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_rear_sight",
+      "sourceCubeIndices": {
+        "sight_back": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "sight_illuminated": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_mount",
+      "sourceCubeIndices": {
+        "mount_default": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "top_rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43
+        ]
+      },
+      "inventoryType": "weapon_mod/mount",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_bolt",
+      "sourceCubeIndices": {
+        "bolt": [
+          0
+        ],
+        "octagon9": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group14": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon10": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_charging_handle",
+      "sourceCubeIndices": {
+        "charge_l": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "charge_r": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "base": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "inventoryType": "weapon_mod/charging_handle",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_magazine_standard",
+      "sourceCubeIndices": {
+        "mag": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ]
+    }
+  ],
+  "slots": {
+    "aa12_lower": {
+      "upper": [
+        "aa12_upper"
+      ],
+      "magazine": [
+        "aa12_magazine_standard",
+        "$extended_mag"
+      ]
+    },
+    "aa12_upper": {
+      "handguard": [
+        "aa12_handguard"
+      ],
+      "barrel": [
+        "aa12_barrel"
+      ],
+      "front_sight": [
+        "aa12_front_sight"
+      ],
+      "rear_sight": [
+        "aa12_rear_sight"
+      ],
+      "mount": [
+        "aa12_mount"
+      ],
+      "bolt": [
+        "aa12_bolt"
+      ],
+      "charging_handle": [
+        "aa12_charging_handle"
+      ],
+      "grip": [
+        "$grip"
+      ]
+    },
+    "aa12_mount": {
+      "scope": [
+        "$scope"
+      ]
+    },
+    "aa12_barrel": {
+      "muzzle": [
+        "$muzzle"
+      ]
+    }
+  },
+  "preset": {
+    "aa12_lower": {
+      "upper": "aa12_upper",
+      "magazine": "aa12_magazine_standard"
+    },
+    "aa12_upper": {
+      "handguard": "aa12_handguard",
+      "barrel": "aa12_barrel",
+      "front_sight": "aa12_front_sight",
+      "rear_sight": "aa12_rear_sight",
+      "mount": "aa12_mount",
+      "bolt": "aa12_bolt",
+      "charging_handle": "aa12_charging_handle"
+    },
+    "aa12_mount": {},
+    "aa12_barrel": {}
+  },
+  "presentationOnly": {
+    "bullet_in_mag": [
+      0,
+      1
+    ],
+    "righthand_pos": [
+      0
+    ],
+    "bullet": [
+      0,
+      1
+    ],
+    "lefthand_pos": [
+      0
+    ]
+  },
+  "weapon": {
+    "schemaVersion": 1,
+    "gunId": "tacz_assembly:aa12",
+    "rootDefinition": "aa12_lower",
+    "resourceDirectory": "aa12",
+    "modelType": "tacz_native_aa12_assembly",
+    "caliber": "12/70",
+    "magazinePath": [
+      "magazine"
+    ],
+    "requiredPaths": [
+      [
+        "upper"
+      ],
+      [
+        "upper",
+        "barrel"
+      ],
+      [
+        "upper",
+        "bolt"
+      ],
+      [
+        "upper",
+        "charging_handle"
+      ]
+    ],
+    "defaultFireMode": "semi",
+    "feed": "detachable_magazine",
+    "nativeRig": true,
+    "assemblyIcons": true,
+    "developmentSource": "native_aa12",
+    "wearableSlots": [
+      "tactical_inventory:primary_weapon_1",
+      "tactical_inventory:primary_weapon_2"
+    ],
+    "partIconDirectory": "textures/item/aa12"
+  },
+  "nativeProfile": {
+    "schemaVersion": 1,
+    "attachmentPaths": {
+      "SCOPE": [
+        "upper",
+        "mount",
+        "scope"
+      ],
+      "MUZZLE": [
+        "upper",
+        "barrel",
+        "muzzle"
+      ],
+      "GRIP": [
+        "upper",
+        "grip"
+      ],
+      "EXTENDED_MAG": [
+        "magazine"
+      ]
+    },
+    "attachmentOverrides": {},
+    "sightAlternatives": [
+      [
+        [
+          "upper",
+          "mount",
+          "scope"
+        ]
+      ],
+      [
+        [
+          "upper",
+          "front_sight"
+        ],
+        [
+          "upper",
+          "rear_sight"
+        ]
+      ]
+    ]
+  },
+  "visualRules": {
+    "schemaVersion": 1,
+    "alwaysVisibleBones": [
+      "mag_standard",
+      "mag_extended_1",
+      "mag_extended_2",
+      "mag_extended_3"
+    ],
+    "definitionRequirements": {},
+    "variantRequirements": {},
+    "boneRequirements": {
+      "bullet": [
+        "aa12_magazine_standard",
+        "tacz_aa12_extended_mag_1",
+        "tacz_aa12_extended_mag_2",
+        "tacz_aa12_extended_mag_3"
+      ],
+      "bullet_in_mag": [
+        "aa12_magazine_standard",
+        "tacz_aa12_extended_mag_1",
+        "tacz_aa12_extended_mag_2",
+        "tacz_aa12_extended_mag_3"
+      ],
+      "bolt": [
+        "aa12_bolt"
+      ]
+    }
+  },
+  "sourceBoneVariants": {},
+  "previewHiddenVariants": [
+    "folded"
+  ],
+  "nativeMagazineCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_aa12/magazine_variants/manifest.json"
+  ],
+  "lod": {
+    "strategy": "conservative_cube_subset",
+    "silhouetteResolution": 96,
+    "textureResolution": 48,
+    "maxSilhouetteLoss": 0.01,
+    "maxTextureMeanError": 0.02,
+    "maxTextureChangedFraction": 0.05
+  },
+  "lodPolicy": "Conservative original-cube subset; eight-view silhouette and 48px textured comparison gates, each geometry bone retained; full native functional rig",
+  "labels": {
+    "aa12_lower": [
+      "AA12 下机匣与扳机组件",
+      "AA12 lower"
+    ],
+    "aa12_upper": [
+      "AA12 上机匣",
+      "AA12 upper"
+    ],
+    "aa12_handguard": [
+      "AA12 护木",
+      "AA12 handguard"
+    ],
+    "aa12_barrel": [
+      "AA12 枪管",
+      "AA12 barrel"
+    ],
+    "aa12_front_sight": [
+      "AA12 前机械瞄具",
+      "AA12 front sight"
+    ],
+    "aa12_rear_sight": [
+      "AA12 后机械瞄具",
+      "AA12 rear sight"
+    ],
+    "aa12_mount": [
+      "AA12 瞄具安装座",
+      "AA12 mount"
+    ],
+    "aa12_bolt": [
+      "AA12 枪机",
+      "AA12 bolt"
+    ],
+    "aa12_charging_handle": [
+      "AA12 拉机柄",
+      "AA12 charging handle"
+    ],
+    "aa12_magazine_standard": [
+      "AA12 标准弹匣",
+      "AA12 magazine standard"
+    ]
+  },
+  "slotLabels": {},
+  "gunLabels": [
+    "AA12 · 原生实体组装",
+    "AA12 · Native Assembly"
+  ],
+  "excludedAttachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i",
+    "tacz:ammo_mod_slug"
+  ],
+  "editableAttachmentCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json",
+    "modules/tacz_adapter/weapon-sources/native_attachments/supplemental/manifest.json"
+  ],
+  "attachmentOverrideCatalogs": [
+    "data/tacz_assembly/native_attachments/standalone.json",
+    "data/tacz_assembly/m4a1/native_attachment_overrides.json",
+    "data/tacz_assembly/native_attachments/supplemental.json"
+  ],
+  "integrationFragments": "/tmp/native-gun-integration/aa12",
+  "supplementalAttachmentLibraries": [
+    {
+      "source": "modules/tacz_adapter/weapon-sources/native_attachments/supplemental",
+      "catalog": "data/tacz_assembly/native_attachments/supplemental.json"
+    }
+  ]
+}

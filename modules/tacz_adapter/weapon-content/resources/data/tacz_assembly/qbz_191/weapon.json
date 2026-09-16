@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_assembly:qbz_191",
+  "rootDefinition": "qbz_191_lower",
+  "resourceDirectory": "qbz_191",
+  "modelType": "tacz_native_qbz_191_assembly",
+  "caliber": "58x42",
+  "magazinePath": [
+    "magazine"
+  ],
+  "requiredPaths": [
+    [
+      "kit"
+    ],
+    [
+      "kit",
+      "barrel"
+    ],
+    [
+      "kit",
+      "bolt"
+    ]
+  ],
+  "defaultFireMode": "auto",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "developmentSource": "native_qbz_191",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/qbz_191"
+}

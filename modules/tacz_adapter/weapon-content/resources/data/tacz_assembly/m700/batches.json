@@ -1,0 +1,72 @@
+{
+  "assembly_m700_receiver_main_body": {
+    "definition": "m700_receiver",
+    "variant": "always",
+    "sourceBone": "main_body"
+  },
+  "assembly_m700_barrel_main_body": {
+    "definition": "m700_barrel",
+    "variant": "always",
+    "sourceBone": "main_body"
+  },
+  "assembly_m700_stock_main_body": {
+    "definition": "m700_stock",
+    "variant": "always",
+    "sourceBone": "main_body"
+  },
+  "assembly_m700_bolt_striker": {
+    "definition": "m700_bolt",
+    "variant": "always",
+    "sourceBone": "striker"
+  },
+  "assembly_m700_bolt_rotate": {
+    "definition": "m700_bolt",
+    "variant": "always",
+    "sourceBone": "rotate"
+  },
+  "assembly_m700_iron_sights_sight": {
+    "definition": "m700_iron_sights",
+    "variant": "always",
+    "sourceBone": "sight"
+  },
+  "assembly_m700_iron_sights_sight_illuminated": {
+    "definition": "m700_iron_sights",
+    "variant": "always",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_m700_magazine_standard_mag_default": {
+    "definition": "m700_magazine_standard",
+    "variant": "always",
+    "sourceBone": "mag_default"
+  },
+  "assembly_tacz_m700_sniper_extended_mag_1_mag2": {
+    "definition": "tacz_m700_sniper_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "mag2"
+  },
+  "assembly_tacz_m700_sniper_extended_mag_1_a": {
+    "definition": "tacz_m700_sniper_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "a"
+  },
+  "assembly_tacz_m700_sniper_extended_mag_2_mag3": {
+    "definition": "tacz_m700_sniper_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "mag3"
+  },
+  "assembly_tacz_m700_sniper_extended_mag_2_a2": {
+    "definition": "tacz_m700_sniper_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "a2"
+  },
+  "assembly_tacz_m700_sniper_extended_mag_3_mag4": {
+    "definition": "tacz_m700_sniper_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "mag4"
+  },
+  "assembly_tacz_m700_sniper_extended_mag_3_a3": {
+    "definition": "tacz_m700_sniper_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "a3"
+  }
+}

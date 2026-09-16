@@ -126,7 +126,7 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
 
         var g = (IGun) gunItem.getItem();
         var assembled=dev.tacticaltacz.assembled.AssembledWeapons.from(gunItem);
-        if(assembled!=null&&!assembled.hasMagazine(gunItem)){return false;}
+        if(assembled!=null&&!assembled.hasFeedContainer(gunItem)){return false;}
         boolean room = TimelessAPI.getCommonGunIndex(g.getGunId(gunItem)).map(index ->
                 g.getCurrentAmmoCount(gunItem) < AttachmentDataUtils.getAmmoCountWithAttachment(gunItem, index.getGunData())).orElse(false);
         return (room && !g.useInventoryAmmo(gunItem) && !g.useDummyAmmo(gunItem)

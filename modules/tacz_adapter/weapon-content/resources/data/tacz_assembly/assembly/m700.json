@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "tacz_assembly:m700",
+      "slots": [
+        {
+          "id": "barrel",
+          "compatibleItems": [
+            "tacz_assembly:m700_barrel"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "stock",
+          "compatibleItems": [
+            "tacz_assembly:m700_stock"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bolt",
+          "compatibleItems": [
+            "tacz_assembly:m700_bolt"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "iron_sights",
+          "compatibleItems": [
+            "tacz_assembly:m700_iron_sights"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "magazine",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_assembly:m700_magazine_standard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "scope",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "muzzle",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:m700_barrel",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m700_stock",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m700_bolt",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m700_iron_sights",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:m700_magazine_standard",
+      "slots": []
+    }
+  ]
+}

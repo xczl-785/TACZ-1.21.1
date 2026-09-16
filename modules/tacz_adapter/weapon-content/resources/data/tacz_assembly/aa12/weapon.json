@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_assembly:aa12",
+  "rootDefinition": "aa12_lower",
+  "resourceDirectory": "aa12",
+  "modelType": "tacz_native_aa12_assembly",
+  "caliber": "12/70",
+  "magazinePath": [
+    "magazine"
+  ],
+  "requiredPaths": [
+    [
+      "upper"
+    ],
+    [
+      "upper",
+      "barrel"
+    ],
+    [
+      "upper",
+      "bolt"
+    ],
+    [
+      "upper",
+      "charging_handle"
+    ]
+  ],
+  "defaultFireMode": "semi",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "developmentSource": "native_aa12",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/aa12"
+}

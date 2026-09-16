@@ -26,7 +26,8 @@ public final class AssembledWeapon {
     public final Map<String,String> nativeAttachments;
     public final boolean nativeRig, assemblyIcons;
     public final NativeAssemblyProfile nativeProfile;
-    public final List<String> magazinePath;
+    public final NativeAssemblyFeed feed;
+    public final List<String> magazinePath; // Compatibility accessor for existing detachable-magazine clients.
     public final Set<String> wearableSlots;
     public final List<List<String>> requiredPaths;
     public final FireMode defaultFireMode;
@@ -44,10 +45,10 @@ public final class AssembledWeapon {
         ResourceLocation.fromNamespaceAndPath(GUN.getNamespace(),partIconDirectory+"/part.png");
         modelType=config.get("modelType").getAsString(); itemType=config.has("itemType")?config.get("itemType").getAsString():PROFILE;
         caliber=config.get("caliber").getAsString(); developmentSource=config.get("developmentSource").getAsString();
-        if (!"detachable_magazine".equals(config.get("feed").getAsString())) throw new IllegalArgumentException("Unsupported feed strategy: "+PROFILE);
+        feed=NativeAssemblyFeed.load(config);
         meshScale=nativeRig?1:config.get("meshScale").getAsFloat();
         if (!Float.isFinite(meshScale)||meshScale<=0) throw new IllegalArgumentException("Invalid mesh scale");
-        magazinePath=strings(config.getAsJsonArray("magazinePath"));
+        magazinePath=feed.containerPath();
         var equipment=new LinkedHashSet<String>();
         if(config.has("wearableSlots")){
             for(var slot:config.getAsJsonArray("wearableSlots")){
@@ -62,6 +63,7 @@ public final class AssembledWeapon {
         String base="data/"+GUN.getNamespace()+"/"+resourceDirectory+"/";
         handling=nativeRig?null:WeaponHandling.load(resource(base+"handling.json"));
         CATALOG=AssemblyJson.readCatalog(resource(base+"catalog.json")); ENGINE=new AssemblyEngine(CATALOG);
+        feed.validate(CATALOG,ROOT);
         PRESET=AssemblyJson.readSnapshot(resource(base+"scene.json"),ENGINE);
         nativeProfile=nativeRig?NativeAssemblyProfile.load(resource(base+"native-profile.json"),CATALOG,ROOT):null;
         if(!PRESET.definitionId().equals(ROOT)||!ENGINE.validate(PRESET).complete()) throw new IllegalArgumentException("Invalid preset: "+PROFILE);
@@ -122,8 +124,9 @@ public final class AssembledWeapon {
         for(var part:AssemblyTrees.state(stack).installed())if(part.enabled())children.put(part.slotId(),enabled(part.stack(),part.instanceId(),depth+1));
         return new AssemblyNode(id,definition(stack),children);
     }
-    public boolean hasMagazine(ItemStack stack){
-        try {var owner=stack;for(var slot:magazinePath){var part=AssemblyTrees.state(owner).in(slot).filter(AssemblyState.Installed::enabled);if(part.isEmpty())return false;owner=part.get().stack();}return true;}
+    public boolean hasMagazine(ItemStack stack){return feed.kind()==NativeAssemblyFeed.Kind.DETACHABLE_MAGAZINE&&hasFeedContainer(stack);}
+    public boolean hasFeedContainer(ItemStack stack){
+        try {var owner=stack;for(var slot:feed.containerPath()){var part=AssemblyTrees.state(owner).in(slot).filter(AssemblyState.Installed::enabled);if(part.isEmpty())return false;owner=part.get().stack();}return true;}
         catch(IllegalArgumentException invalid){return false;}
     }
 }

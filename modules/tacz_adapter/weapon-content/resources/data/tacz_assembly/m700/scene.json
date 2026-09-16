@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "definitionId": "m700_receiver"
+    },
+    {
+      "instanceId": "842e973c-21dc-555b-82ef-ee75bfd4101d",
+      "definitionId": "m700_barrel",
+      "parentId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "3df5fada-ed52-5c36-a96e-87b354485b6b",
+      "definitionId": "m700_stock",
+      "parentId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "slot": "stock"
+    },
+    {
+      "instanceId": "e900ce25-d8e3-55a9-8164-73ea95cc2033",
+      "definitionId": "m700_bolt",
+      "parentId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "48ad6ee5-3e14-55b2-bd84-6ff03ae21d05",
+      "definitionId": "m700_iron_sights",
+      "parentId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "slot": "iron_sights"
+    },
+    {
+      "instanceId": "25364e02-a59d-517c-8d3a-6c6b9e8d53c3",
+      "definitionId": "m700_magazine_standard",
+      "parentId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "slot": "magazine"
+    }
+  ]
+}

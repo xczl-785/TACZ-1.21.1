@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "definitionId": "awp_receiver"
+    },
+    {
+      "instanceId": "ca23f798-adad-50c4-b986-0456c66655a6",
+      "definitionId": "awp_barrel",
+      "parentId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "d2868636-baf0-5a1c-b5c9-900016010b01",
+      "definitionId": "awp_bipod",
+      "parentId": "ca23f798-adad-50c4-b986-0456c66655a6",
+      "slot": "bipod"
+    },
+    {
+      "instanceId": "7a4da2dc-d860-583f-ad73-fd3f612b59d0",
+      "definitionId": "awp_bolt",
+      "parentId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "f4307b88-aaf1-5186-84a1-0883655cee3e",
+      "definitionId": "awp_stock",
+      "parentId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "slot": "stock"
+    },
+    {
+      "instanceId": "f37781f6-8042-5758-933b-2d404d7a0c50",
+      "definitionId": "awp_iron_sights",
+      "parentId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "slot": "iron_sights"
+    },
+    {
+      "instanceId": "82e55695-6710-57e2-8607-a28a08f6d179",
+      "definitionId": "awp_magazine_standard",
+      "parentId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "slot": "magazine"
+    }
+  ]
+}

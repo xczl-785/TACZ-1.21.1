@@ -1,0 +1,1246 @@
+{
+  "schemaVersion": 1,
+  "sourceGun": "qbz_191",
+  "gunId": "tacz_assembly:qbz_191",
+  "sourceDirectory": "native_qbz_191",
+  "rootDefinition": "qbz_191_lower",
+  "parts": [
+    {
+      "definitionId": "qbz_191_lower",
+      "sourceCubeIndices": {
+        "gun_body": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "receiver": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101,
+          102,
+          103,
+          104,
+          105,
+          106,
+          107,
+          108,
+          109,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118
+        ],
+        "bone": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "body_rail2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "pattern": [
+          0,
+          1
+        ],
+        "mag_release": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "bolt_release": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "selector": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "bone3": [
+          0,
+          1,
+          2
+        ],
+        "bone6": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon/firearm/assault_rifle",
+      "footprint": [
+        5,
+        2
+      ]
+    },
+    {
+      "definitionId": "qbz_191_upper_kit",
+      "sourceCubeIndices": {
+        "deco2": [
+          0
+        ],
+        "bone15": [
+          0,
+          1,
+          2
+        ],
+        "bone16": [
+          0,
+          1,
+          2
+        ],
+        "rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ],
+        "Gunrails": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "body_rail3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "bone7": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        4,
+        1
+      ]
+    },
+    {
+      "definitionId": "qbz_191_handguard",
+      "sourceCubeIndices": {
+        "handguard": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82
+        ],
+        "bone9": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "bone10": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "bone11": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "bone12": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "bone13": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "bone14": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "inventoryType": "weapon_mod/handguard",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "qbz_191_barrel",
+      "sourceCubeIndices": {
+        "barrel": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "bone8": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "qbz_191_muzzle",
+      "sourceCubeIndices": {
+        "muzzle_default": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "group2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "inventoryType": "weapon_mod/muzzle",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "qbz_191_pistol_grip",
+      "sourceCubeIndices": {
+        "grip": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "inventoryType": "weapon_mod/pistol_grip",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "qbz_191_bolt",
+      "sourceCubeIndices": {
+        "bolt": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "qbz_191_stock",
+      "sourceCubeIndices": {
+        "buffer_tube": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47
+        ]
+      },
+      "inventoryType": "weapon_mod/stock",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "qbz_191_front_sight",
+      "sourceCubeIndices": {
+        "fore_sight": [
+          0,
+          1
+        ],
+        "sight_illuminated": [
+          0
+        ],
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "fore_sight2": [
+          0,
+          1
+        ],
+        "sight2_illuminated": [
+          0
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "qbz_191_rear_sight",
+      "sourceCubeIndices": {
+        "rear_sight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "rear_illuminated": [
+          0,
+          1
+        ],
+        "rear_sight2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29
+        ],
+        "rear2_illuminated": [
+          0,
+          1
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "qbz_191_magazine_standard",
+      "sourceCubeIndices": {
+        "mag_standard": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ]
+    }
+  ],
+  "slots": {
+    "qbz_191_lower": {
+      "kit": [
+        "qbz_191_upper_kit"
+      ],
+      "pistol_grip": [
+        "qbz_191_pistol_grip"
+      ],
+      "stock": [
+        "qbz_191_stock",
+        "$stock"
+      ],
+      "magazine": [
+        "qbz_191_magazine_standard",
+        "$extended_mag"
+      ]
+    },
+    "qbz_191_upper_kit": {
+      "handguard": [
+        "qbz_191_handguard"
+      ],
+      "barrel": [
+        "qbz_191_barrel"
+      ],
+      "bolt": [
+        "qbz_191_bolt"
+      ],
+      "front_sight": [
+        "qbz_191_front_sight"
+      ],
+      "rear_sight": [
+        "qbz_191_rear_sight"
+      ],
+      "scope": [
+        "$scope"
+      ],
+      "grip": [
+        "$grip"
+      ],
+      "laser": [
+        "$laser"
+      ]
+    },
+    "qbz_191_barrel": {
+      "muzzle": [
+        "qbz_191_muzzle",
+        "$muzzle"
+      ]
+    }
+  },
+  "preset": {
+    "qbz_191_lower": {
+      "kit": "qbz_191_upper_kit",
+      "pistol_grip": "qbz_191_pistol_grip",
+      "stock": "qbz_191_stock",
+      "magazine": "qbz_191_magazine_standard"
+    },
+    "qbz_191_upper_kit": {
+      "handguard": "qbz_191_handguard",
+      "barrel": "qbz_191_barrel",
+      "bolt": "qbz_191_bolt",
+      "front_sight": "qbz_191_front_sight",
+      "rear_sight": "qbz_191_rear_sight"
+    },
+    "qbz_191_barrel": {
+      "muzzle": "qbz_191_muzzle"
+    }
+  },
+  "presentationOnly": {
+    "lefthand_pos": [
+      0
+    ],
+    "bullet_in_mag": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bullet": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "righthand_pos": [
+      0
+    ],
+    "bullet_in_barrel": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "ar_stock_adapter": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  "weapon": {
+    "schemaVersion": 1,
+    "gunId": "tacz_assembly:qbz_191",
+    "rootDefinition": "qbz_191_lower",
+    "resourceDirectory": "qbz_191",
+    "modelType": "tacz_native_qbz_191_assembly",
+    "caliber": "58x42",
+    "magazinePath": [
+      "magazine"
+    ],
+    "requiredPaths": [
+      [
+        "kit"
+      ],
+      [
+        "kit",
+        "barrel"
+      ],
+      [
+        "kit",
+        "bolt"
+      ]
+    ],
+    "defaultFireMode": "auto",
+    "feed": "detachable_magazine",
+    "nativeRig": true,
+    "assemblyIcons": true,
+    "developmentSource": "native_qbz_191",
+    "wearableSlots": [
+      "tactical_inventory:primary_weapon_1",
+      "tactical_inventory:primary_weapon_2"
+    ],
+    "partIconDirectory": "textures/item/qbz_191"
+  },
+  "nativeProfile": {
+    "schemaVersion": 1,
+    "attachmentPaths": {
+      "SCOPE": [
+        "kit",
+        "scope"
+      ],
+      "MUZZLE": [
+        "kit",
+        "barrel",
+        "muzzle"
+      ],
+      "GRIP": [
+        "kit",
+        "grip"
+      ],
+      "LASER": [
+        "kit",
+        "laser"
+      ],
+      "STOCK": [
+        "stock"
+      ],
+      "EXTENDED_MAG": [
+        "magazine"
+      ]
+    },
+    "attachmentOverrides": {},
+    "sightAlternatives": [
+      [
+        [
+          "kit",
+          "scope"
+        ]
+      ],
+      [
+        [
+          "kit",
+          "front_sight"
+        ],
+        [
+          "kit",
+          "rear_sight"
+        ]
+      ]
+    ]
+  },
+  "visualRules": {
+    "schemaVersion": 1,
+    "alwaysVisibleBones": [
+      "mag_standard",
+      "mag_extended_1",
+      "mag_extended_2",
+      "mag_extended_3",
+      "muzzle_default",
+      "stock_default"
+    ],
+    "definitionRequirements": {},
+    "variantRequirements": {
+      "upright": {
+        "SCOPE": false
+      },
+      "folded": {
+        "SCOPE": true
+      }
+    },
+    "boneRequirements": {
+      "bullet": [
+        "qbz_191_magazine_standard",
+        "tacz_qbz_191_extended_mag_1",
+        "tacz_qbz_191_extended_mag_2",
+        "tacz_qbz_191_extended_mag_3"
+      ],
+      "bullet_in_mag": [
+        "qbz_191_magazine_standard",
+        "tacz_qbz_191_extended_mag_1",
+        "tacz_qbz_191_extended_mag_2",
+        "tacz_qbz_191_extended_mag_3"
+      ],
+      "bullet_in_barrel": [
+        "qbz_191_barrel"
+      ],
+      "bolt": [
+        "qbz_191_bolt"
+      ],
+      "additional_magazine": [
+        "qbz_191_magazine_standard",
+        "tacz_qbz_191_extended_mag_1",
+        "tacz_qbz_191_extended_mag_2",
+        "tacz_qbz_191_extended_mag_3"
+      ]
+    }
+  },
+  "sourceBoneVariants": {
+    "fore_sight": "upright",
+    "sight_illuminated": "upright",
+    "octagon": "upright",
+    "fore_sight2": "folded",
+    "sight2_illuminated": "folded",
+    "octagon2": "folded",
+    "rear_sight": "upright",
+    "rear_illuminated": "upright",
+    "rear_sight2": "folded",
+    "rear2_illuminated": "folded"
+  },
+  "previewHiddenVariants": [
+    "folded"
+  ],
+  "nativeMagazineCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_qbz_191/magazine_variants/manifest.json"
+  ],
+  "lod": {
+    "strategy": "conservative_cube_subset",
+    "silhouetteResolution": 96,
+    "textureResolution": 48,
+    "maxSilhouetteLoss": 0.01,
+    "maxTextureMeanError": 0.02,
+    "maxTextureChangedFraction": 0.05
+  },
+  "lodPolicy": "Conservative original-cube subset; eight-view silhouette and 48px textured comparison gates, each geometry bone retained; full native functional rig",
+  "labels": {
+    "qbz_191_lower": [
+      "QBZ_191 下机匣与扳机组件",
+      "QBZ_191 lower"
+    ],
+    "qbz_191_upper_kit": [
+      "QBZ_191 上机匣与导轨套件",
+      "QBZ_191 upper kit"
+    ],
+    "qbz_191_handguard": [
+      "QBZ_191 护木",
+      "QBZ_191 handguard"
+    ],
+    "qbz_191_barrel": [
+      "QBZ_191 枪管",
+      "QBZ_191 barrel"
+    ],
+    "qbz_191_muzzle": [
+      "QBZ_191 默认枪口",
+      "QBZ_191 muzzle"
+    ],
+    "qbz_191_pistol_grip": [
+      "QBZ_191 手枪握把",
+      "QBZ_191 pistol grip"
+    ],
+    "qbz_191_bolt": [
+      "QBZ_191 枪机",
+      "QBZ_191 bolt"
+    ],
+    "qbz_191_stock": [
+      "QBZ_191 原厂枪托",
+      "QBZ_191 stock"
+    ],
+    "qbz_191_front_sight": [
+      "QBZ_191 前机械瞄具",
+      "QBZ_191 front sight"
+    ],
+    "qbz_191_rear_sight": [
+      "QBZ_191 后机械瞄具",
+      "QBZ_191 rear sight"
+    ],
+    "qbz_191_magazine_standard": [
+      "QBZ_191 标准弹匣",
+      "QBZ_191 magazine standard"
+    ]
+  },
+  "slotLabels": {},
+  "gunLabels": [
+    "QBZ_191 · 原生实体组装",
+    "QBZ_191 · Native Assembly"
+  ],
+  "excludedAttachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i"
+  ],
+  "editableAttachmentCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
+  ],
+  "attachmentOverrideCatalogs": [
+    "data/tacz_assembly/native_attachments/standalone.json",
+    "data/tacz_assembly/m4a1/native_attachment_overrides.json",
+    "data/tacz_assembly/native_attachments/stocks.json"
+  ],
+  "integrationFragments": "/tmp/native-gun-integration/qbz_191",
+  "authoredStockAssets": true
+}

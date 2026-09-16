@@ -1,0 +1,589 @@
+{
+  "schemaVersion": 1,
+  "sourceGun": "p90",
+  "gunId": "tacz_assembly:p90",
+  "sourceDirectory": "native_p90",
+  "rootDefinition": "p90_body",
+  "parts": [
+    {
+      "definitionId": "p90_body",
+      "sourceCubeIndices": {
+        "Body2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78
+        ],
+        "side_rail2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37
+        ],
+        "hexadecagon2": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "Trigger2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "stock2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "grip2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ],
+        "screws2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "inventoryType": "weapon/firearm/smg",
+      "footprint": [
+        4,
+        2
+      ]
+    },
+    {
+      "definitionId": "p90_builtin_sight",
+      "sourceCubeIndices": {
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "p90_barrel",
+      "sourceCubeIndices": {
+        "barrel2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group4": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "p90_muzzle",
+      "sourceCubeIndices": {
+        "muzzle_default": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ]
+      },
+      "inventoryType": "weapon_mod/muzzle",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "p90_mag_release",
+      "sourceCubeIndices": {
+        "mag_release": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "p90_magazine_standard",
+      "sourceCubeIndices": {
+        "Mag": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ]
+    },
+    {
+      "definitionId": "p90_charging_handle",
+      "sourceCubeIndices": {
+        "pull": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "inventoryType": "weapon_mod/charging_handle",
+      "footprint": [
+        1,
+        1
+      ]
+    }
+  ],
+  "slots": {
+    "p90_body": {
+      "iron_sights": [
+        "p90_builtin_sight"
+      ],
+      "barrel": [
+        "p90_barrel"
+      ],
+      "muzzle": [
+        "p90_muzzle",
+        "$muzzle"
+      ],
+      "magazine": [
+        "p90_magazine_standard"
+      ],
+      "mag_release": [
+        "p90_mag_release"
+      ],
+      "charging_handle": [
+        "p90_charging_handle"
+      ],
+      "scope": [
+        "$scope"
+      ],
+      "laser": [
+        "$laser"
+      ]
+    }
+  },
+  "preset": {
+    "p90_body": {
+      "iron_sights": "p90_builtin_sight",
+      "barrel": "p90_barrel",
+      "muzzle": "p90_muzzle",
+      "magazine": "p90_magazine_standard",
+      "mag_release": "p90_mag_release",
+      "charging_handle": "p90_charging_handle"
+    }
+  },
+  "weapon": {
+    "schemaVersion": 1,
+    "gunId": "tacz_assembly:p90",
+    "rootDefinition": "p90_body",
+    "resourceDirectory": "p90",
+    "modelType": "tacz_native_p90_assembly",
+    "caliber": "57x28",
+    "requiredPaths": [
+      [
+        "barrel"
+      ],
+      [
+        "charging_handle"
+      ]
+    ],
+    "defaultFireMode": "auto",
+    "feed": "detachable_magazine",
+    "nativeRig": true,
+    "assemblyIcons": true,
+    "developmentSource": "native_p90",
+    "wearableSlots": [
+      "tactical_inventory:primary_weapon_1",
+      "tactical_inventory:primary_weapon_2"
+    ],
+    "partIconDirectory": "textures/item/p90",
+    "magazinePath": [
+      "magazine"
+    ]
+  },
+  "nativeProfile": {
+    "schemaVersion": 1,
+    "attachmentPaths": {
+      "MUZZLE": [
+        "muzzle"
+      ],
+      "SCOPE": [
+        "scope"
+      ],
+      "LASER": [
+        "laser"
+      ]
+    },
+    "attachmentOverrides": {},
+    "sightAlternatives": [
+      [
+        [
+          "scope"
+        ]
+      ],
+      [
+        [
+          "iron_sights"
+        ]
+      ]
+    ]
+  },
+  "visualRules": {
+    "schemaVersion": 1,
+    "alwaysVisibleBones": [],
+    "definitionRequirements": {},
+    "variantRequirements": {},
+    "boneRequirements": {
+      "pull": [
+        "p90_charging_handle"
+      ]
+    }
+  },
+  "presentationOnly": {
+    "righthand_pos": [
+      0
+    ],
+    "lefthand_pos": [
+      0
+    ]
+  },
+  "lodPolicy": "Conservative per-part original-cube subset; full functional rig and UV preserved with silhouette and textured comparison gates.",
+  "lod": {
+    "strategy": "conservative_cube_subset",
+    "silhouetteResolution": 96,
+    "textureResolution": 48,
+    "maxSilhouetteLoss": 0.01,
+    "maxTextureMeanError": 0.02,
+    "maxTextureChangedFraction": 0.05
+  },
+  "labels": {
+    "p90_body": [
+      "机匣 · P90",
+      "p90_body"
+    ],
+    "p90_builtin_sight": [
+      "机匣 · P90",
+      "p90_builtin_sight"
+    ],
+    "p90_barrel": [
+      "枪管 · P90",
+      "p90_barrel"
+    ],
+    "p90_muzzle": [
+      "枪口 · P90",
+      "p90_muzzle"
+    ],
+    "p90_mag_release": [
+      "机匣 · P90",
+      "p90_mag_release"
+    ],
+    "p90_magazine_standard": [
+      "弹匣 · P90",
+      "p90_magazine_standard"
+    ],
+    "p90_charging_handle": [
+      "拉机柄 · P90",
+      "p90_charging_handle"
+    ]
+  },
+  "slotLabels": {
+    "mag_release": [
+      "弹匣卡笋",
+      "Magazine release"
+    ]
+  },
+  "gunLabels": [
+    "P90 · 原生实体组装",
+    "P90 · Native Assembly"
+  ],
+  "editableAttachmentCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
+  ],
+  "attachmentOverrideCatalogs": [
+    "data/tacz_assembly/native_attachments/standalone.json",
+    "data/tacz_assembly/m4a1/native_attachment_overrides.json"
+  ],
+  "integrationFragments": "/tmp/native-gun-integration/p90",
+  "excludedAttachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i"
+  ],
+  "scopeExteriorRoots": {
+    "tacz:sight_p90": [
+      "default_sight"
+    ]
+  }
+}

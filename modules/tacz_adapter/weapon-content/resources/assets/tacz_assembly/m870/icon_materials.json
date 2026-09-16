@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "defaultMaterial": "m870_receiver",
+  "parts": {
+    "m870_receiver": {
+      "defaultMaterial": "m870_receiver",
+      "regions": {}
+    },
+    "m870_barrel": {
+      "defaultMaterial": "m870_barrel",
+      "regions": {}
+    },
+    "m870_tube": {
+      "defaultMaterial": "m870_tube",
+      "regions": {}
+    },
+    "m870_iron_sights": {
+      "defaultMaterial": "m870_iron_sights",
+      "regions": {}
+    },
+    "m870_pump": {
+      "defaultMaterial": "m870_pump",
+      "regions": {}
+    },
+    "m870_bolt": {
+      "defaultMaterial": "m870_bolt",
+      "regions": {}
+    },
+    "m870_stock": {
+      "defaultMaterial": "m870_stock",
+      "regions": {}
+    },
+    "tacz_muzzle_brake_mastiff_sg": {
+      "defaultMaterial": "tacz_muzzle_brake_mastiff_sg",
+      "regions": {}
+    },
+    "tacz_muzzle_choke_sg": {
+      "defaultMaterial": "tacz_muzzle_choke_sg",
+      "regions": {}
+    },
+    "tacz_muzzle_duckbill_sg": {
+      "defaultMaterial": "tacz_muzzle_duckbill_sg",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_sg": {
+      "defaultMaterial": "tacz_muzzle_silencer_sg",
+      "regions": {}
+    },
+    "m870_tube_extension_1": {
+      "defaultMaterial": "m870_tube_extension_1",
+      "regions": {}
+    },
+    "m870_tube_extension_2": {
+      "defaultMaterial": "m870_tube_extension_2",
+      "regions": {}
+    },
+    "m870_tube_extension_3": {
+      "defaultMaterial": "m870_tube_extension_3",
+      "regions": {}
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "attachmentPaths": {
+    "MUZZLE": [
+      "barrel",
+      "muzzle"
+    ],
+    "EXTENDED_MAG": [
+      "tube",
+      "tube_extension"
+    ]
+  },
+  "attachmentOverrides": {},
+  "sightAlternatives": [
+    [
+      [
+        "iron_sights"
+      ]
+    ]
+  ]
+}

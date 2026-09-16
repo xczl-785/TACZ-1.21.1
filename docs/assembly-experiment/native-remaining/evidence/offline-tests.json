@@ -1,0 +1,17 @@
+{
+  "command": "JAVA_HOME=Java21 bash gradlew check assemble --offline",
+  "status": "passed",
+  "java": {
+    "tests": 149,
+    "failures": 0,
+    "errors": 0
+  },
+  "pythonTests": 50,
+  "clientStarted": false,
+  "logs": [
+    "/tmp/native-remaining-final.log",
+    "/tmp/native-remaining-state-final.log"
+  ],
+  "nativeGunsRegistered": 15,
+  "totalAssemblyProfiles": 18
+}

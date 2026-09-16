@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "id": "uzi_receiver",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "iron_sights",
+          "required": false,
+          "allowedParts": [
+            "uzi_iron_sights"
+          ]
+        },
+        {
+          "id": "stock",
+          "required": false,
+          "allowedParts": [
+            "uzi_stock"
+          ]
+        },
+        {
+          "id": "barrel",
+          "required": false,
+          "allowedParts": [
+            "uzi_barrel"
+          ]
+        },
+        {
+          "id": "handguard",
+          "required": false,
+          "allowedParts": [
+            "uzi_handguard"
+          ]
+        },
+        {
+          "id": "grip",
+          "required": false,
+          "allowedParts": [
+            "uzi_grip"
+          ]
+        },
+        {
+          "id": "magazine",
+          "required": false,
+          "allowedParts": [
+            "uzi_magazine_standard",
+            "tacz_uzi_light_extended_mag_1",
+            "tacz_uzi_light_extended_mag_2",
+            "tacz_uzi_light_extended_mag_3"
+          ]
+        },
+        {
+          "id": "mag_release",
+          "required": false,
+          "allowedParts": [
+            "uzi_mag_release"
+          ]
+        },
+        {
+          "id": "charging_handle",
+          "required": false,
+          "allowedParts": [
+            "uzi_charging_handle"
+          ]
+        },
+        {
+          "id": "bolt",
+          "required": false,
+          "allowedParts": [
+            "uzi_bolt"
+          ]
+        },
+        {
+          "id": "muzzle",
+          "required": false,
+          "allowedParts": [
+            "tacz_muzzle_brake_cthulhu",
+            "tacz_muzzle_brake_cyclone_d2",
+            "tacz_muzzle_brake_pioneer",
+            "tacz_muzzle_brake_trex",
+            "tacz_muzzle_compensator_trident",
+            "tacz_muzzle_silencer_knight_qd",
+            "tacz_muzzle_silencer_mirage",
+            "tacz_muzzle_silencer_phantom_s1",
+            "tacz_muzzle_silencer_ptilopsis",
+            "tacz_muzzle_silencer_ursus",
+            "tacz_muzzle_silencer_wraith"
+          ]
+        },
+        {
+          "id": "scope",
+          "required": false,
+          "allowedParts": [
+            "tacz_scope_acog_ta31",
+            "tacz_scope_elcan_4x",
+            "tacz_scope_hamr",
+            "tacz_scope_qmk152",
+            "tacz_sight_552",
+            "tacz_sight_acro_rifle",
+            "tacz_sight_coyote",
+            "tacz_sight_deltapoint_rifle",
+            "tacz_sight_exp3",
+            "tacz_sight_fastfire_rifle",
+            "tacz_sight_okp7",
+            "tacz_sight_pk06_rifle",
+            "tacz_sight_srs_02",
+            "tacz_sight_t2",
+            "tacz_sight_uh1"
+          ]
+        }
+      ],
+      "conflictingParts": [],
+      "weapon": {
+        "recoilVertical": 0,
+        "recoilHorizontal": 0,
+        "centerOfImpact": 0,
+        "sightingRange": 0
+      }
+    },
+    {
+      "id": "uzi_iron_sights",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "uzi_stock",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "uzi_barrel",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "uzi_handguard",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "uzi_grip",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "uzi_mag_release",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "uzi_charging_handle",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "uzi_bolt",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "uzi_magazine_standard",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_uzi_light_extended_mag_1",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_uzi_light_extended_mag_2",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_uzi_light_extended_mag_3",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_brake_cthulhu",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_brake_cyclone_d2",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_brake_pioneer",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_brake_trex",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_compensator_trident",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_knight_qd",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_mirage",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_phantom_s1",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_ptilopsis",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_ursus",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_wraith",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_scope_acog_ta31",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_scope_elcan_4x",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_scope_hamr",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_scope_qmk152",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_552",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_acro_rifle",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_coyote",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_deltapoint_rifle",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_exp3",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_fastfire_rifle",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_okp7",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_pk06_rifle",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_srs_02",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_t2",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_sight_uh1",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    }
+  ]
+}

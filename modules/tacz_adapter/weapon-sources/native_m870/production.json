@@ -1,0 +1,635 @@
+{
+  "schemaVersion": 1,
+  "sourceGun": "m870",
+  "gunId": "tacz_assembly:m870",
+  "sourceDirectory": "native_m870",
+  "rootDefinition": "m870_receiver",
+  "parts": [
+    {
+      "definitionId": "m870_receiver",
+      "sourceCubeIndices": {
+        "panel": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "trigger": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "safety2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "body": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "group25": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "safety": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "screw": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon/firearm/shotgun",
+      "footprint": [
+        6,
+        2
+      ]
+    },
+    {
+      "definitionId": "m870_barrel",
+      "sourceCubeIndices": {
+        "barrel": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "m870_tube",
+      "sourceCubeIndices": {
+        "magazine": [
+          0
+        ],
+        "group5": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group7": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group8": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ]
+    },
+    {
+      "definitionId": "m870_iron_sights",
+      "sourceCubeIndices": {
+        "sight": [
+          0,
+          1
+        ],
+        "group": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "m870_pump",
+      "sourceCubeIndices": {
+        "group9": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "slide3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      "inventoryType": "weapon_mod/handguard",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "m870_bolt",
+      "sourceCubeIndices": {
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "m870_stock",
+      "sourceCubeIndices": {
+        "group21": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "group22": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group23": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      "inventoryType": "weapon_mod/stock",
+      "footprint": [
+        2,
+        2
+      ]
+    }
+  ],
+  "slots": {
+    "m870_receiver": {
+      "barrel": [
+        "m870_barrel"
+      ],
+      "tube": [
+        "m870_tube"
+      ],
+      "iron_sights": [
+        "m870_iron_sights"
+      ],
+      "pump": [
+        "m870_pump"
+      ],
+      "bolt": [
+        "m870_bolt"
+      ],
+      "stock": [
+        "m870_stock"
+      ]
+    },
+    "m870_barrel": {
+      "muzzle": [
+        "$muzzle"
+      ]
+    },
+    "m870_tube": {
+      "tube_extension": [
+        "$extended_mag"
+      ]
+    }
+  },
+  "preset": {
+    "m870_receiver": {
+      "barrel": "m870_barrel",
+      "tube": "m870_tube",
+      "iron_sights": "m870_iron_sights",
+      "pump": "m870_pump",
+      "bolt": "m870_bolt",
+      "stock": "m870_stock"
+    }
+  },
+  "weapon": {
+    "schemaVersion": 1,
+    "gunId": "tacz_assembly:m870",
+    "rootDefinition": "m870_receiver",
+    "resourceDirectory": "m870",
+    "modelType": "tacz_native_m870_assembly",
+    "caliber": "12/70",
+    "requiredPaths": [
+      [
+        "barrel"
+      ],
+      [
+        "pump"
+      ],
+      [
+        "bolt"
+      ]
+    ],
+    "defaultFireMode": "semi",
+    "feed": "internal_tube",
+    "nativeRig": true,
+    "assemblyIcons": true,
+    "developmentSource": "native_m870",
+    "wearableSlots": [
+      "tactical_inventory:primary_weapon_1",
+      "tactical_inventory:primary_weapon_2"
+    ],
+    "partIconDirectory": "textures/item/m870",
+    "feedPath": [
+      "tube"
+    ],
+    "capacityPaths": [
+      [
+        "tube",
+        "tube_extension"
+      ]
+    ],
+    "reloadPolicy": "preserve_native_scripted_incremental_reload"
+  },
+  "nativeProfile": {
+    "schemaVersion": 1,
+    "attachmentPaths": {
+      "MUZZLE": [
+        "barrel",
+        "muzzle"
+      ],
+      "EXTENDED_MAG": [
+        "tube",
+        "tube_extension"
+      ]
+    },
+    "attachmentOverrides": {},
+    "sightAlternatives": [
+      [
+        [
+          "iron_sights"
+        ]
+      ]
+    ]
+  },
+  "visualRules": {
+    "schemaVersion": 1,
+    "alwaysVisibleBones": [
+      "mag_extended_1",
+      "mag_extended_2",
+      "mag_extended_3"
+    ],
+    "definitionRequirements": {},
+    "variantRequirements": {},
+    "boneRequirements": {
+      "bullet": [
+        "m870_tube",
+        "m870_tube_extension_1",
+        "m870_tube_extension_2",
+        "m870_tube_extension_3"
+      ],
+      "bullet_in_mag": [
+        "m870_tube",
+        "m870_tube_extension_1",
+        "m870_tube_extension_2",
+        "m870_tube_extension_3"
+      ],
+      "bolt": [
+        "m870_bolt"
+      ],
+      "slide2": [
+        "m870_pump"
+      ]
+    },
+    "boneAllRequirements": {
+      "bullet_in_barrel": [
+        "m870_barrel",
+        "m870_bolt"
+      ]
+    }
+  },
+  "presentationOnly": {
+    "bullet_shell": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "bullet_in_barrel": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "bullet_in_mag": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "bullet": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "lodPolicy": "Conservative per-part original-cube subset; full functional rig and UV preserved with silhouette and textured comparison gates.",
+  "lod": {
+    "strategy": "conservative_cube_subset",
+    "silhouetteResolution": 96,
+    "textureResolution": 48,
+    "maxSilhouetteLoss": 0.01,
+    "maxTextureMeanError": 0.02,
+    "maxTextureChangedFraction": 0.05
+  },
+  "labels": {
+    "m870_receiver": [
+      "机匣 · M870",
+      "m870_receiver"
+    ],
+    "m870_barrel": [
+      "枪管 · M870",
+      "m870_barrel"
+    ],
+    "m870_tube": [
+      "储弹管 · M870",
+      "m870_tube"
+    ],
+    "m870_iron_sights": [
+      "机械瞄具 · M870",
+      "m870_iron_sights"
+    ],
+    "m870_pump": [
+      "泵动护木 · M870",
+      "m870_pump"
+    ],
+    "m870_bolt": [
+      "枪机 · M870",
+      "m870_bolt"
+    ],
+    "m870_stock": [
+      "枪托 · M870",
+      "m870_stock"
+    ]
+  },
+  "slotLabels": {},
+  "gunLabels": [
+    "M870 · 原生实体组装",
+    "M870 · Native Assembly"
+  ],
+  "editableAttachmentCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json",
+    "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json",
+    "modules/tacz_adapter/weapon-sources/native_attachments/supplemental/manifest.json"
+  ],
+  "attachmentOverrideCatalogs": [
+    "data/tacz_assembly/native_attachments/standalone.json",
+    "data/tacz_assembly/m4a1/native_attachment_overrides.json",
+    "data/tacz_assembly/native_attachments/supplemental.json"
+  ],
+  "integrationFragments": "/tmp/native-gun-integration/m870",
+  "excludedAttachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_he",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i",
+    "tacz:ammo_mod_slug"
+  ],
+  "nativeTubeVariants": {
+    "defaultDefinition": "m870_tube",
+    "capacity": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "variants": {
+      "m870_tube_extension_1": {
+        "mag_extended_1": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "m870_tube_extension_2": {
+        "mag_extended_2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "m870_tube_extension_3": {
+        "mag_extended_3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      }
+    },
+    "semantic": "tube_extension_not_detachable_magazine"
+  },
+  "supplementalAttachmentLibraries": [
+    {
+      "source": "modules/tacz_adapter/weapon-sources/native_attachments/supplemental",
+      "catalog": "data/tacz_assembly/native_attachments/supplemental.json"
+    }
+  ],
+  "nativeMagazineCatalogs": [
+    "modules/tacz_adapter/weapon-sources/native_m870/tube_extensions/manifest.json"
+  ]
+}

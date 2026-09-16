@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "status": "passed",
+  "method": "Independent original pack versus final generated references/rig metadata/data/pixels; does not invoke produce.validate",
+  "guns": [
+    {
+      "gun": "aa12",
+      "nativeBones": 84,
+      "highCubes": 527,
+      "lowCubes": 303,
+      "dataAndNonModelDisplayFieldsUnchanged": true,
+      "nativeRigMetadataUnchanged": true,
+      "atlasPixelCopiesExact": true,
+      "visualAndRoutingConfigurationCurrent": true
+    },
+    {
+      "gun": "ai_awp",
+      "nativeBones": 111,
+      "highCubes": 521,
+      "lowCubes": 297,
+      "dataAndNonModelDisplayFieldsUnchanged": true,
+      "nativeRigMetadataUnchanged": true,
+      "atlasPixelCopiesExact": true,
+      "visualAndRoutingConfigurationCurrent": true
+    },
+    {
+      "gun": "m700",
+      "nativeBones": 56,
+      "highCubes": 353,
+      "lowCubes": 236,
+      "dataAndNonModelDisplayFieldsUnchanged": true,
+      "nativeRigMetadataUnchanged": true,
+      "atlasPixelCopiesExact": true,
+      "visualAndRoutingConfigurationCurrent": true
+    },
+    {
+      "gun": "m870",
+      "nativeBones": 69,
+      "highCubes": 273,
+      "lowCubes": 202,
+      "dataAndNonModelDisplayFieldsUnchanged": true,
+      "nativeRigMetadataUnchanged": true,
+      "atlasPixelCopiesExact": true,
+      "visualAndRoutingConfigurationCurrent": true
+    },
+    {
+      "gun": "mk14",
+      "nativeBones": 125,
+      "highCubes": 801,
+      "lowCubes": 625,
+      "dataAndNonModelDisplayFieldsUnchanged": true,
+      "nativeRigMetadataUnchanged": true,
+      "atlasPixelCopiesExact": true,
+      "visualAndRoutingConfigurationCurrent": true
+    },
+    {
+      "gun": "p90",
+      "nativeBones": 47,
+      "highCubes": 300,
+      "lowCubes": 165,
+      "dataAndNonModelDisplayFieldsUnchanged": true,
+      "nativeRigMetadataUnchanged": true,
+      "atlasPixelCopiesExact": true,
+      "visualAndRoutingConfigurationCurrent": true
+    },
+    {
+      "gun": "qbz_191",
+      "nativeBones": 95,
+      "highCubes": 903,
+      "lowCubes": 642,
+      "dataAndNonModelDisplayFieldsUnchanged": true,
+      "nativeRigMetadataUnchanged": true,
+      "atlasPixelCopiesExact": true,
+      "visualAndRoutingConfigurationCurrent": true
+    },
+    {
+      "gun": "scar_h",
+      "nativeBones": 111,
+      "highCubes": 921,
+      "lowCubes": 602,
+      "dataAndNonModelDisplayFieldsUnchanged": true,
+      "nativeRigMetadataUnchanged": true,
+      "atlasPixelCopiesExact": true,
+      "visualAndRoutingConfigurationCurrent": true
+    },
+    {
+      "gun": "sks_tactical",
+      "nativeBones": 79,
+      "highCubes": 601,
+      "lowCubes": 421,
+      "dataAndNonModelDisplayFieldsUnchanged": true,
+      "nativeRigMetadataUnchanged": true,
+      "atlasPixelCopiesExact": true,
+      "visualAndRoutingConfigurationCurrent": true
+    },
+    {
+      "gun": "uzi",
+      "nativeBones": 69,
+      "highCubes": 333,
+      "lowCubes": 201,
+      "dataAndNonModelDisplayFieldsUnchanged": true,
+      "nativeRigMetadataUnchanged": true,
+      "atlasPixelCopiesExact": true,
+      "visualAndRoutingConfigurationCurrent": true
+    }
+  ],
+  "clientStarted": false
+}

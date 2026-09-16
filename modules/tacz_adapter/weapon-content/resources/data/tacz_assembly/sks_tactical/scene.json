@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "e92e8f22-58bb-5c18-a011-d651b4a6f007",
+      "definitionId": "sks_tactical_lower"
+    },
+    {
+      "instanceId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "definitionId": "sks_tactical_handguard",
+      "parentId": "e92e8f22-58bb-5c18-a011-d651b4a6f007",
+      "slot": "handguard"
+    },
+    {
+      "instanceId": "47673aaa-8931-50dd-9132-946dcdc68ec3",
+      "definitionId": "sks_tactical_barrel",
+      "parentId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "f1b066b0-ca4a-51e8-9435-ebbce892a60b",
+      "definitionId": "sks_tactical_bolt",
+      "parentId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "f4f5e381-8c97-5c62-b4c3-89935f553700",
+      "definitionId": "sks_tactical_front_sight",
+      "parentId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "slot": "front_sight"
+    },
+    {
+      "instanceId": "37d0e0fd-0661-5a41-a45f-c4745f3d6c7e",
+      "definitionId": "sks_tactical_rear_sight",
+      "parentId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "slot": "rear_sight"
+    },
+    {
+      "instanceId": "c7157ae7-75ab-545d-ada0-e627ffd05315",
+      "definitionId": "sks_tactical_mount",
+      "parentId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "slot": "mount"
+    },
+    {
+      "instanceId": "1bfc003e-d9fb-56e1-8cee-2f514b313b51",
+      "definitionId": "sks_tactical_stock",
+      "parentId": "e92e8f22-58bb-5c18-a011-d651b4a6f007",
+      "slot": "stock"
+    },
+    {
+      "instanceId": "22191179-974f-5215-a231-f909e26226d8",
+      "definitionId": "sks_tactical_magazine_standard",
+      "parentId": "e92e8f22-58bb-5c18-a011-d651b4a6f007",
+      "slot": "magazine"
+    }
+  ]
+}

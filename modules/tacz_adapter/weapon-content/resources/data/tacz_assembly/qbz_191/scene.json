@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "0c258ff8-d1da-5163-b069-a29e1821caa7",
+      "definitionId": "qbz_191_lower"
+    },
+    {
+      "instanceId": "afe5dc94-c5a0-5fff-9b24-a86bfd79d080",
+      "definitionId": "qbz_191_upper_kit",
+      "parentId": "0c258ff8-d1da-5163-b069-a29e1821caa7",
+      "slot": "kit"
+    },
+    {
+      "instanceId": "3a252d20-915d-543e-ba9b-c53aac8f751b",
+      "definitionId": "qbz_191_handguard",
+      "parentId": "afe5dc94-c5a0-5fff-9b24-a86bfd79d080",
+      "slot": "handguard"
+    },
+    {
+      "instanceId": "06bae62f-aa5c-5718-86ac-ec3b8a5e5512",
+      "definitionId": "qbz_191_barrel",
+      "parentId": "afe5dc94-c5a0-5fff-9b24-a86bfd79d080",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "049eeac2-1d16-5904-ac1a-d3d7122be829",
+      "definitionId": "qbz_191_muzzle",
+      "parentId": "06bae62f-aa5c-5718-86ac-ec3b8a5e5512",
+      "slot": "muzzle"
+    },
+    {
+      "instanceId": "e84937a5-3c63-5497-a038-b825825b5a47",
+      "definitionId": "qbz_191_bolt",
+      "parentId": "afe5dc94-c5a0-5fff-9b24-a86bfd79d080",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "66311b8a-faf5-5e90-971c-9fd3b3963213",
+      "definitionId": "qbz_191_front_sight",
+      "parentId": "afe5dc94-c5a0-5fff-9b24-a86bfd79d080",
+      "slot": "front_sight"
+    },
+    {
+      "instanceId": "c406496a-4d7d-5506-8ae9-cf3cdd136fc4",
+      "definitionId": "qbz_191_rear_sight",
+      "parentId": "afe5dc94-c5a0-5fff-9b24-a86bfd79d080",
+      "slot": "rear_sight"
+    },
+    {
+      "instanceId": "bab785e3-b764-5865-94eb-8814516b4f47",
+      "definitionId": "qbz_191_pistol_grip",
+      "parentId": "0c258ff8-d1da-5163-b069-a29e1821caa7",
+      "slot": "pistol_grip"
+    },
+    {
+      "instanceId": "827d649a-e1a1-54db-87b9-44d4ecf59a7a",
+      "definitionId": "qbz_191_stock",
+      "parentId": "0c258ff8-d1da-5163-b069-a29e1821caa7",
+      "slot": "stock"
+    },
+    {
+      "instanceId": "570a5aae-55da-5c92-a26e-ab35c92d0494",
+      "definitionId": "qbz_191_magazine_standard",
+      "parentId": "0c258ff8-d1da-5163-b069-a29e1821caa7",
+      "slot": "magazine"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "assembly_sks_tactical_lower_trigger": {
+    "definition": "sks_tactical_lower",
+    "variant": "always",
+    "sourceBone": "trigger"
+  },
+  "assembly_sks_tactical_lower_receiver": {
+    "definition": "sks_tactical_lower",
+    "variant": "always",
+    "sourceBone": "receiver"
+  },
+  "assembly_sks_tactical_lower_magazinecatch": {
+    "definition": "sks_tactical_lower",
+    "variant": "always",
+    "sourceBone": "magazinecatch"
+  },
+  "assembly_sks_tactical_lower_magrelease": {
+    "definition": "sks_tactical_lower",
+    "variant": "always",
+    "sourceBone": "magrelease"
+  },
+  "assembly_sks_tactical_lower_pins": {
+    "definition": "sks_tactical_lower",
+    "variant": "always",
+    "sourceBone": "pins"
+  },
+  "assembly_sks_tactical_lower_octagon13": {
+    "definition": "sks_tactical_lower",
+    "variant": "always",
+    "sourceBone": "octagon13"
+  },
+  "assembly_sks_tactical_lower_octagon14": {
+    "definition": "sks_tactical_lower",
+    "variant": "always",
+    "sourceBone": "octagon14"
+  },
+  "assembly_sks_tactical_lower_safety": {
+    "definition": "sks_tactical_lower",
+    "variant": "always",
+    "sourceBone": "safety"
+  },
+  "assembly_sks_tactical_handguard_lower": {
+    "definition": "sks_tactical_handguard",
+    "variant": "always",
+    "sourceBone": "lower"
+  },
+  "assembly_sks_tactical_handguard_upper": {
+    "definition": "sks_tactical_handguard",
+    "variant": "always",
+    "sourceBone": "upper"
+  },
+  "assembly_sks_tactical_handguard_rail": {
+    "definition": "sks_tactical_handguard",
+    "variant": "always",
+    "sourceBone": "rail"
+  },
+  "assembly_sks_tactical_handguard_adapter": {
+    "definition": "sks_tactical_handguard",
+    "variant": "always",
+    "sourceBone": "adapter"
+  },
+  "assembly_sks_tactical_handguard_bone5": {
+    "definition": "sks_tactical_handguard",
+    "variant": "always",
+    "sourceBone": "bone5"
+  },
+  "assembly_sks_tactical_barrel_bone2": {
+    "definition": "sks_tactical_barrel",
+    "variant": "always",
+    "sourceBone": "bone2"
+  },
+  "assembly_sks_tactical_bolt_bolt": {
+    "definition": "sks_tactical_bolt",
+    "variant": "always",
+    "sourceBone": "bolt"
+  },
+  "assembly_sks_tactical_bolt_octagon18": {
+    "definition": "sks_tactical_bolt",
+    "variant": "always",
+    "sourceBone": "octagon18"
+  },
+  "assembly_sks_tactical_bolt_octagon19": {
+    "definition": "sks_tactical_bolt",
+    "variant": "always",
+    "sourceBone": "octagon19"
+  },
+  "assembly_sks_tactical_front_sight_sight": {
+    "definition": "sks_tactical_front_sight",
+    "variant": "always",
+    "sourceBone": "sight"
+  },
+  "assembly_sks_tactical_front_sight_sight_front_illuminated": {
+    "definition": "sks_tactical_front_sight",
+    "variant": "always",
+    "sourceBone": "sight_front_illuminated"
+  },
+  "assembly_sks_tactical_rear_sight_sight_illuminated": {
+    "definition": "sks_tactical_rear_sight",
+    "variant": "always",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_sks_tactical_rear_sight_rearsight": {
+    "definition": "sks_tactical_rear_sight",
+    "variant": "always",
+    "sourceBone": "rearsight"
+  },
+  "assembly_sks_tactical_stock_stock": {
+    "definition": "sks_tactical_stock",
+    "variant": "always",
+    "sourceBone": "stock"
+  },
+  "assembly_sks_tactical_stock_bone4": {
+    "definition": "sks_tactical_stock",
+    "variant": "always",
+    "sourceBone": "bone4"
+  },
+  "assembly_sks_tactical_heavy_stock_oem_stock_heavy": {
+    "definition": "sks_tactical_heavy_stock",
+    "variant": "always",
+    "sourceBone": "oem_stock_heavy"
+  },
+  "assembly_sks_tactical_heavy_stock_bone6": {
+    "definition": "sks_tactical_heavy_stock",
+    "variant": "always",
+    "sourceBone": "bone6"
+  },
+  "assembly_sks_tactical_mount_bone3": {
+    "definition": "sks_tactical_mount",
+    "variant": "always",
+    "sourceBone": "bone3"
+  },
+  "assembly_sks_tactical_mount_rail2": {
+    "definition": "sks_tactical_mount",
+    "variant": "always",
+    "sourceBone": "rail2"
+  },
+  "assembly_sks_tactical_magazine_standard_mag_standard": {
+    "definition": "sks_tactical_magazine_standard",
+    "variant": "always",
+    "sourceBone": "mag_standard"
+  },
+  "assembly_tacz_sks_tactical_extended_mag_1_mag_extended_1": {
+    "definition": "tacz_sks_tactical_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "mag_extended_1"
+  },
+  "assembly_tacz_sks_tactical_extended_mag_2_mag_extended_2": {
+    "definition": "tacz_sks_tactical_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "mag_extended_2"
+  },
+  "assembly_tacz_sks_tactical_extended_mag_3_group9": {
+    "definition": "tacz_sks_tactical_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "group9"
+  },
+  "assembly_tacz_sks_tactical_extended_mag_3_group10": {
+    "definition": "tacz_sks_tactical_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "group10"
+  }
+}

@@ -25,6 +25,32 @@ def validate_configuration(config):
     if config['weapon']['caliber']!=calibers.get(gun):raise ValueError('Caliber differs from GunAdoption for '+gun)
     if config['weapon']['partIconDirectory']!='textures/item/'+gun:raise ValueError('Part icon directory must be gun-scoped: '+gun)
 
+    weapon=config['weapon']
+    if weapon.get('feed') not in ('detachable_magazine','internal_tube'):raise ValueError('Unsupported feed strategy')
+    feed_path=weapon.get('feedPath',weapon.get('magazinePath'))
+    if not isinstance(feed_path,list) or not feed_path or not all(isinstance(x,str) and x for x in feed_path):raise ValueError('Missing feed container path: '+gun)
+    paths=config['nativeProfile']['attachmentPaths']
+    for definition,slots in config['slots'].items():
+        for slot,candidates in slots.items():
+            for candidate in candidates:
+                if candidate.startswith('$') and candidate[1:].upper() not in paths:raise ValueError('Unsupported attachment placeholder: '+candidate)
+    reachable=set();pending=[config['rootDefinition']]
+    while pending:
+        definition=pending.pop()
+        if definition in reachable:continue
+        reachable.add(definition)
+        pending.extend(candidate for choices in config['slots'].get(definition,{}).values() for candidate in choices if not candidate.startswith('$'))
+    orphaned={part['definitionId'] for part in config['parts']}-reachable
+    if orphaned:raise ValueError('Unreachable physical parts: '+', '.join(sorted(orphaned)))
+    if config.get('lod',{}).get('strategy') not in ('conservative_cube_subset','full'):raise ValueError('Explicit LOD strategy required')
+    def valid_path(value):return isinstance(value,list) and bool(value) and all(isinstance(v,str) and bool(v) for v in value)
+    sights=config['nativeProfile'].get('sightAlternatives',[])
+    if not sights or any(not isinstance(option,list) or not option or not all(valid_path(path) for path in option) for option in sights):raise ValueError('Invalid sight alternative path nesting: '+gun)
+    if not all(valid_path(path) for path in paths.values()):raise ValueError('Invalid native attachment path: '+gun)
+    if not all(valid_path(path) for path in weapon['requiredPaths']+weapon.get('capacityPaths',[])):raise ValueError('Invalid physical dependency path: '+gun)
+    native_data=ex.read(inputs(config)[-1])
+    if weapon['defaultFireMode'] not in native_data['fire_mode']:raise ValueError('Unsupported native fire mode: '+gun)
+
 def inputs(config):
     gun=config['sourceGun'];index=ex.SRC/f'data/tacz/index/guns/{gun}.json';idx=ex.read(index)
     display=ex.asset(idx['display'],'display/guns','.json');dp=ex.read(display)
@@ -88,13 +114,14 @@ def attachment_records(config):
             records.append(rec)
     return records,tags
 
-def exterior_scope_geometry(bones):
+def exterior_scope_geometry(bones,exterior_roots=None):
     """Match BedrockAttachmentModel's non-first-person scope projection.
 
     Optical division/ocular planes belong to special first-person passes, not to
     inventory geometry or its framing bounds. Keep every bone's transform metadata.
     """
-    roots={'scope_body','ocular_ring'} & bones.keys()
+    roots=set(exterior_roots) if exterior_roots is not None else {'scope_body','ocular_ring'} & bones.keys()
+    if not roots.issubset(bones):raise ValueError('Configured scope exterior root missing from native model')
     if not roots:raise ValueError('Scope has no native non-first-person body or ocular ring')
     result=copy.deepcopy(bones)
     for name,bone in result.items():
@@ -122,10 +149,14 @@ def atlas_cube(cube,uvsize,cell,unit):
 
 def write_lod_review(source_root,config,high,low,batches,nodes,attachments,texture):
     from PIL import ImageDraw
-    defaults={n['definitionId'] for n in nodes};magazine_node=next((n['definitionId'] for n in nodes if n.get('slot')==config['weapon'].get('magazinePath',['magazine'])[-1]),None)
+    defaults={n['definitionId'] for n in nodes};extension_path=config['nativeProfile']['attachmentPaths'].get('EXTENDED_MAG',[])
+    cursor=next(n for n in nodes if 'parentId' not in n)
+    for slot in extension_path:
+        cursor=next((n for n in nodes if n.get('parentId')==cursor['instanceId'] and n.get('slot')==slot),None) if cursor else None
+    magazine_node=cursor['definitionId'] if cursor and extension_path else None
     scenes=[('default',defaults)]
-    if magazine_node:
-        scenes.extend((a['definitionId'],(defaults-{magazine_node})|{a['definitionId']}) for a in attachments if a['native'])
+    if extension_path:
+        scenes.extend((a['definitionId'],(defaults-({magazine_node} if magazine_node else set()))|{a['definitionId']}) for a in attachments if a['native'])
     image=Image.new('RGB',(768,len(scenes)*170),(80,80,80));draw=ImageDraw.Draw(image)
     for i,(label,enabled) in enumerate(scenes):
         for j,model in enumerate((high,low)):
@@ -145,6 +176,9 @@ def write_lod_review(source_root,config,high,low,batches,nodes,attachments,textu
 def build(config_path=DEFAULT,resources=RES,append_sources=False):
     config_path=Path(config_path).resolve();config=ex.read(config_path);validate_configuration(config);source_root=config_path.parent;resources=Path(resources)
     if append_sources:append(config,source_root)
+    for library in config.get('supplementalAttachmentLibraries',[]):
+        import import_assets
+        import_assets.build(root=R/library['source'],output=resources,catalog_path=library['catalog'])
     if config.get('authoredStockAssets',False):
         import stock_assets
         stock_assets.build(resources=resources)
@@ -179,7 +213,7 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
             _,bones,uv,_,_=shared.load_part(rec['row'],rec['root']);texture=rec['root']/rec['row']['texture'];source_paths.add(R/rec['row']['sourceGeometry']);source_paths.add(rec['root']/rec['row']['model'])
         else:
             shape=ex.read(rec['source'])['minecraft:geometry'][0];bones={b['name']:b for b in shape['bones']};uv=[shape['description'][k] for k in ('texture_width','texture_height')];texture=rec['texture'];source_paths.add(rec['source'])
-        if rec['type']=='scope':bones=exterior_scope_geometry(bones)
+        if rec['type']=='scope':bones=exterior_scope_geometry(bones,config.get('scopeExteriorRoots',{}).get(rec['attachmentId']))
         source_paths.add(texture);parsed[rec['definitionId']]=(bones,uv,texture,extra)
     # Preserve the original rig exactly. Move editable geometry to gated leaves only.
     high=copy.deepcopy(original);highgeo=high['minecraft:geometry'][0];hb=highgeo['bones'];batches={};proof=[]

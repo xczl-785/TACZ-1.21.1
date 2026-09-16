@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "id": "m870_receiver",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "barrel",
+          "required": false,
+          "allowedParts": [
+            "m870_barrel"
+          ]
+        },
+        {
+          "id": "tube",
+          "required": false,
+          "allowedParts": [
+            "m870_tube"
+          ]
+        },
+        {
+          "id": "iron_sights",
+          "required": false,
+          "allowedParts": [
+            "m870_iron_sights"
+          ]
+        },
+        {
+          "id": "pump",
+          "required": false,
+          "allowedParts": [
+            "m870_pump"
+          ]
+        },
+        {
+          "id": "bolt",
+          "required": false,
+          "allowedParts": [
+            "m870_bolt"
+          ]
+        },
+        {
+          "id": "stock",
+          "required": false,
+          "allowedParts": [
+            "m870_stock"
+          ]
+        }
+      ],
+      "conflictingParts": [],
+      "weapon": {
+        "recoilVertical": 0,
+        "recoilHorizontal": 0,
+        "centerOfImpact": 0,
+        "sightingRange": 0
+      }
+    },
+    {
+      "id": "m870_barrel",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "muzzle",
+          "required": false,
+          "allowedParts": [
+            "tacz_muzzle_brake_mastiff_sg",
+            "tacz_muzzle_choke_sg",
+            "tacz_muzzle_duckbill_sg",
+            "tacz_muzzle_silencer_sg"
+          ]
+        }
+      ],
+      "conflictingParts": []
+    },
+    {
+      "id": "m870_tube",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [
+        {
+          "id": "tube_extension",
+          "required": false,
+          "allowedParts": [
+            "m870_tube_extension_1",
+            "m870_tube_extension_2",
+            "m870_tube_extension_3"
+          ]
+        }
+      ],
+      "conflictingParts": []
+    },
+    {
+      "id": "m870_iron_sights",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m870_pump",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m870_bolt",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m870_stock",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_brake_mastiff_sg",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_choke_sg",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_duckbill_sg",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_muzzle_silencer_sg",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m870_tube_extension_1",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m870_tube_extension_2",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "m870_tube_extension_3",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    }
+  ]
+}

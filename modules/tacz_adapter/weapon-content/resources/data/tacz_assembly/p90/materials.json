@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "defaultMaterial": "p90_body",
+  "parts": {
+    "p90_body": {
+      "defaultMaterial": "p90_body",
+      "regions": {}
+    },
+    "p90_builtin_sight": {
+      "defaultMaterial": "p90_builtin_sight",
+      "regions": {}
+    },
+    "p90_barrel": {
+      "defaultMaterial": "p90_barrel",
+      "regions": {}
+    },
+    "p90_muzzle": {
+      "defaultMaterial": "p90_muzzle",
+      "regions": {}
+    },
+    "p90_mag_release": {
+      "defaultMaterial": "p90_mag_release",
+      "regions": {}
+    },
+    "p90_magazine_standard": {
+      "defaultMaterial": "p90_magazine_standard",
+      "regions": {}
+    },
+    "p90_charging_handle": {
+      "defaultMaterial": "p90_charging_handle",
+      "regions": {}
+    },
+    "tacz_laser_compact": {
+      "defaultMaterial": "tacz_laser_compact",
+      "regions": {}
+    },
+    "tacz_laser_nightstick": {
+      "defaultMaterial": "tacz_laser_nightstick",
+      "regions": {}
+    },
+    "tacz_muzzle_brake_cthulhu": {
+      "defaultMaterial": "tacz_muzzle_brake_cthulhu",
+      "regions": {}
+    },
+    "tacz_muzzle_brake_cyclone_d2": {
+      "defaultMaterial": "tacz_muzzle_brake_cyclone_d2",
+      "regions": {}
+    },
+    "tacz_muzzle_brake_pioneer": {
+      "defaultMaterial": "tacz_muzzle_brake_pioneer",
+      "regions": {}
+    },
+    "tacz_muzzle_brake_trex": {
+      "defaultMaterial": "tacz_muzzle_brake_trex",
+      "regions": {}
+    },
+    "tacz_muzzle_compensator_trident": {
+      "defaultMaterial": "tacz_muzzle_compensator_trident",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_knight_qd": {
+      "defaultMaterial": "tacz_muzzle_silencer_knight_qd",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_mirage": {
+      "defaultMaterial": "tacz_muzzle_silencer_mirage",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_phantom_s1": {
+      "defaultMaterial": "tacz_muzzle_silencer_phantom_s1",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_ptilopsis": {
+      "defaultMaterial": "tacz_muzzle_silencer_ptilopsis",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_ursus": {
+      "defaultMaterial": "tacz_muzzle_silencer_ursus",
+      "regions": {}
+    },
+    "tacz_muzzle_silencer_wraith": {
+      "defaultMaterial": "tacz_muzzle_silencer_wraith",
+      "regions": {}
+    },
+    "tacz_scope_acog_ta31": {
+      "defaultMaterial": "tacz_scope_acog_ta31",
+      "regions": {}
+    },
+    "tacz_scope_contender": {
+      "defaultMaterial": "tacz_scope_contender",
+      "regions": {}
+    },
+    "tacz_scope_elcan_4x": {
+      "defaultMaterial": "tacz_scope_elcan_4x",
+      "regions": {}
+    },
+    "tacz_scope_lpvo_1_6": {
+      "defaultMaterial": "tacz_scope_lpvo_1_6",
+      "regions": {}
+    },
+    "tacz_scope_standard_8x": {
+      "defaultMaterial": "tacz_scope_standard_8x",
+      "regions": {}
+    },
+    "tacz_sight_552": {
+      "defaultMaterial": "tacz_sight_552",
+      "regions": {}
+    },
+    "tacz_sight_acro_pistol": {
+      "defaultMaterial": "tacz_sight_acro_pistol",
+      "regions": {}
+    },
+    "tacz_sight_coyote": {
+      "defaultMaterial": "tacz_sight_coyote",
+      "regions": {}
+    },
+    "tacz_sight_deltapoint_pistol": {
+      "defaultMaterial": "tacz_sight_deltapoint_pistol",
+      "regions": {}
+    },
+    "tacz_sight_exp3": {
+      "defaultMaterial": "tacz_sight_exp3",
+      "regions": {}
+    },
+    "tacz_sight_fastfire_pistol": {
+      "defaultMaterial": "tacz_sight_fastfire_pistol",
+      "regions": {}
+    },
+    "tacz_sight_p90": {
+      "defaultMaterial": "tacz_sight_p90",
+      "regions": {}
+    },
+    "tacz_sight_pk06_pistol": {
+      "defaultMaterial": "tacz_sight_pk06_pistol",
+      "regions": {}
+    },
+    "tacz_sight_rmr_dot": {
+      "defaultMaterial": "tacz_sight_rmr_dot",
+      "regions": {}
+    },
+    "tacz_sight_sro_dot": {
+      "defaultMaterial": "tacz_sight_sro_dot",
+      "regions": {}
+    },
+    "tacz_sight_t2": {
+      "defaultMaterial": "tacz_sight_t2",
+      "regions": {}
+    },
+    "tacz_sight_uh1": {
+      "defaultMaterial": "tacz_sight_uh1",
+      "regions": {}
+    }
+  }
+}

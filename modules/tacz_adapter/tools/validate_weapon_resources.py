@@ -61,6 +61,12 @@ def validate(resources=RESOURCES):
             assert slots and len(slots) == len(set(slots)), 'Invalid equipment qualifications'
             assert read(data/'item_foundation/items'/f'{name}.json')['wearable_slots'] == slots, 'Equipment config and physical definition disagree'
             external=read(data/directory/'native_attachments.json')
+            identity_rows=read(data/'item_foundation/identities'/f'{name}.json')['items']
+            native_identities={row['item']:row['tags'] for row in identity_rows}
+            for physical_item in mapping.values():
+                if physical_item not in external:
+                    declared=native_identities.get(physical_item,[])
+                    assert declared and set(declared)<=tags, 'Missing/unknown native inventory identity: '+physical_item+' '+str(declared)
             for item in mapping.values():
                 if item not in external:
                     assert item not in seen_items

@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "materials": {
+    "p90_body": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/p90_body.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "p90_builtin_sight": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/p90_builtin_sight.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "p90_barrel": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/p90_barrel.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "p90_muzzle": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/p90_muzzle.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "p90_mag_release": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/p90_mag_release.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "p90_magazine_standard": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/p90_magazine_standard.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "p90_charging_handle": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/p90_charging_handle.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_laser_compact": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_laser_compact.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_laser_nightstick": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_laser_nightstick.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_brake_cthulhu": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_brake_cthulhu.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_brake_cyclone_d2": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_brake_cyclone_d2.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_brake_pioneer": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_brake_pioneer.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_brake_trex": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_brake_trex.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_compensator_trident": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_compensator_trident.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_knight_qd": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_silencer_knight_qd.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_mirage": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_silencer_mirage.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_phantom_s1": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_silencer_phantom_s1.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_ptilopsis": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_silencer_ptilopsis.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_ursus": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_silencer_ursus.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_wraith": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_muzzle_silencer_wraith.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_scope_acog_ta31": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_scope_acog_ta31.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_scope_contender": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_scope_contender.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_scope_elcan_4x": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_scope_elcan_4x.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_scope_lpvo_1_6": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_scope_lpvo_1_6.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_scope_standard_8x": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_scope_standard_8x.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_552": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_552.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_acro_pistol": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_acro_pistol.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_coyote": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_coyote.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_deltapoint_pistol": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_deltapoint_pistol.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_exp3": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_exp3.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_fastfire_pistol": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_fastfire_pistol.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_p90": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_p90.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_pk06_pistol": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_pk06_pistol.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_rmr_dot": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_rmr_dot.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_sro_dot": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_sro_dot.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_t2": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_t2.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_sight_uh1": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/p90/tacz_sight_uh1.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    }
+  }
+}

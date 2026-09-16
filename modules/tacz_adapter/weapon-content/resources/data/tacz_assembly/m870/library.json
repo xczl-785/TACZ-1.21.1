@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "materials": {
+    "m870_receiver": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/m870_receiver.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "m870_barrel": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/m870_barrel.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "m870_tube": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/m870_tube.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "m870_iron_sights": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/m870_iron_sights.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "m870_pump": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/m870_pump.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "m870_bolt": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/m870_bolt.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "m870_stock": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/m870_stock.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_brake_mastiff_sg": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/tacz_muzzle_brake_mastiff_sg.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_choke_sg": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/tacz_muzzle_choke_sg.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_duckbill_sg": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/tacz_muzzle_duckbill_sg.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_muzzle_silencer_sg": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/tacz_muzzle_silencer_sg.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "m870_tube_extension_1": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/m870_tube_extension_1.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "m870_tube_extension_2": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/m870_tube_extension_2.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "m870_tube_extension_3": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_assembly:textures/parts/m870/m870_tube_extension_3.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    }
+  }
+}

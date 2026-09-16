@@ -1,0 +1,960 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz:aa12",
+  "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+  "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+  "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+  "nativeBones": 84,
+  "totalCubes": 527,
+  "defaultDefinitions": 10,
+  "parts": [
+    {
+      "definitionId": "aa12_lower",
+      "sourceCubeIndices": {
+        "body": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86
+        ],
+        "bone6": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bone3": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group4": [
+          0,
+          1
+        ],
+        "bone4": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group9": [
+          0
+        ],
+        "group8": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "guard": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "octagon7": [
+          0,
+          1,
+          2
+        ],
+        "deco": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "inventoryType": "weapon/firearm/shotgun",
+      "footprint": [
+        5,
+        2
+      ]
+    },
+    {
+      "definitionId": "aa12_upper",
+      "sourceCubeIndices": {
+        "aa12": [
+          0
+        ],
+        "deco2": [
+          0,
+          1
+        ],
+        "gaslock": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_handguard",
+      "sourceCubeIndices": {
+        "handguard_tactical": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ]
+      },
+      "inventoryType": "weapon_mod/handguard",
+      "footprint": [
+        3,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_barrel",
+      "sourceCubeIndices": {
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group11": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_front_sight",
+      "sourceCubeIndices": {
+        "frontsight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_rear_sight",
+      "sourceCubeIndices": {
+        "sight_back": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "sight_illuminated": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_mount",
+      "sourceCubeIndices": {
+        "mount_default": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "top_rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43
+        ]
+      },
+      "inventoryType": "weapon_mod/mount",
+      "footprint": [
+        2,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_bolt",
+      "sourceCubeIndices": {
+        "bolt": [
+          0
+        ],
+        "octagon9": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group14": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon10": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "inventoryType": "weapon_mod/receiver",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_charging_handle",
+      "sourceCubeIndices": {
+        "charge_l": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "charge_r": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "base": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "inventoryType": "weapon_mod/charging_handle",
+      "footprint": [
+        1,
+        1
+      ]
+    },
+    {
+      "definitionId": "aa12_magazine_standard",
+      "sourceCubeIndices": {
+        "mag": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ]
+    }
+  ],
+  "magazineParts": {
+    "tacz_aa12_extended_mag_1": {
+      "root": [],
+      "bone": [],
+      "magazine_and_bullet": [],
+      "magazine": [],
+      "mag_extended_1": [],
+      "mag3": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    "tacz_aa12_extended_mag_2": {
+      "root": [],
+      "bone": [],
+      "magazine_and_bullet": [],
+      "magazine": [],
+      "mag_extended_2": [],
+      "mag2": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    "tacz_aa12_extended_mag_3": {
+      "root": [],
+      "bone": [],
+      "magazine_and_bullet": [],
+      "magazine": [],
+      "mag_extended_3": [],
+      "drum_mag": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ]
+    }
+  },
+  "presentationOnly": {
+    "bullet_in_mag": [
+      0,
+      1
+    ],
+    "righthand_pos": [
+      0
+    ],
+    "bullet": [
+      0,
+      1
+    ],
+    "lefthand_pos": [
+      0
+    ]
+  },
+  "unassignedCubes": [],
+  "duplicateOwnership": [],
+  "sourceBoneVariants": {},
+  "animations": {
+    "static_idle": [
+      "righthand",
+      "lefthand",
+      "constraint"
+    ],
+    "static_bolt_caught": [
+      "bullet",
+      "bolt"
+    ],
+    "idle_VG": [
+      "righthand",
+      "lefthand"
+    ],
+    "idle_AFG": [
+      "righthand",
+      "lefthand"
+    ],
+    "draw": [
+      "righthand",
+      "lefthand",
+      "root",
+      "camera"
+    ],
+    "put_away": [
+      "righthand",
+      "lefthand",
+      "root",
+      "camera"
+    ],
+    "reload_tactical": [
+      "righthand",
+      "lefthand",
+      "root",
+      "magazine_and_bullet",
+      "camera"
+    ],
+    "reload_empty": [
+      "righthand",
+      "lefthand",
+      "root",
+      "magazine_and_bullet",
+      "bolt",
+      "charge_handle",
+      "charge_l",
+      "bullet_in_mag",
+      "camera",
+      "bullet"
+    ],
+    "inspect": [
+      "righthand",
+      "lefthand",
+      "root",
+      "magazine_and_bullet",
+      "camera",
+      "bone5"
+    ],
+    "inspect_empty": [
+      "righthand",
+      "lefthand",
+      "root",
+      "magazine_and_bullet",
+      "camera",
+      "bone5",
+      "bullet_in_mag",
+      "bolt",
+      "charge_handle",
+      "charge_l",
+      "bullet"
+    ],
+    "shoot": [
+      "root",
+      "bolt",
+      "charge_handle",
+      "charge_l",
+      "charge_r",
+      "camera"
+    ]
+  },
+  "animationRefsWithoutBones": [],
+  "attachments": [
+    "tacz:ammo_mod_fmj",
+    "tacz:ammo_mod_hp",
+    "tacz:ammo_mod_i",
+    "tacz:ammo_mod_slug",
+    "tacz:extended_mag_1",
+    "tacz:extended_mag_2",
+    "tacz:extended_mag_3",
+    "tacz:grip_cobra",
+    "tacz:grip_cqr",
+    "tacz:grip_magpul_afg_2",
+    "tacz:grip_osovets_black",
+    "tacz:grip_rk0",
+    "tacz:grip_rk1_b25u",
+    "tacz:grip_rk6",
+    "tacz:grip_se_5",
+    "tacz:grip_td",
+    "tacz:grip_vertical_military",
+    "tacz:grip_vertical_ranger",
+    "tacz:grip_vertical_talon",
+    "tacz:muzzle_brake_mastiff_sg",
+    "tacz:muzzle_choke_sg",
+    "tacz:muzzle_duckbill_sg",
+    "tacz:muzzle_silencer_sg",
+    "tacz:scope_acog_ta31",
+    "tacz:scope_elcan_4x",
+    "tacz:scope_hamr",
+    "tacz:scope_qmk152",
+    "tacz:sight_552",
+    "tacz:sight_acro_rifle",
+    "tacz:sight_coyote",
+    "tacz:sight_deltapoint_rifle",
+    "tacz:sight_exp3",
+    "tacz:sight_fastfire_rifle",
+    "tacz:sight_okp7",
+    "tacz:sight_pk06_rifle",
+    "tacz:sight_srs_02",
+    "tacz:sight_t2",
+    "tacz:sight_uh1"
+  ],
+  "nativeProfile": {
+    "schemaVersion": 1,
+    "attachmentPaths": {
+      "SCOPE": [
+        "upper",
+        "mount",
+        "scope"
+      ],
+      "MUZZLE": [
+        "upper",
+        "barrel",
+        "muzzle"
+      ],
+      "GRIP": [
+        "upper",
+        "grip"
+      ],
+      "EXTENDED_MAG": [
+        "magazine"
+      ]
+    },
+    "attachmentOverrides": {},
+    "sightAlternatives": [
+      [
+        [
+          "upper",
+          "mount",
+          "scope"
+        ]
+      ],
+      [
+        [
+          "upper",
+          "front_sight"
+        ],
+        [
+          "upper",
+          "rear_sight"
+        ]
+      ]
+    ]
+  },
+  "reload": {
+    "capacity": [
+      8,
+      16,
+      24,
+      32
+    ],
+    "nativeAnimation": "tacz:aa12",
+    "additionalMagazineBonePresent": false
+  },
+  "sights": {
+    "policy": "Existing native optical candidates only; no optical editable source was created.",
+    "nativeIronSightBones": [
+      "sight_back",
+      "sight_illuminated"
+    ]
+  },
+  "low": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/lod/aa12.json",
+    "bones": 7,
+    "cubes": 28,
+    "policy": "Conservative original-cube subset; eight-view silhouette and 48px textured comparison gates, each geometry bone retained; full native functional rig"
+  },
+  "notes": [
+    "AA-12 retains the open-bolt native animation gate: bolt and charging-handle parts are both required.",
+    "No stock or laser path is invented because neither is allowed by the native attachment tag.",
+    "Every original cube has exactly one audited owner or presentation-only role.",
+    "Editable sources preserve original bones, parents, pivots, UV and animation ownership; icons are rendered muzzle-left by produce.py."
+  ],
+  "visualRules": {
+    "schemaVersion": 1,
+    "alwaysVisibleBones": [
+      "mag_standard",
+      "mag_extended_1",
+      "mag_extended_2",
+      "mag_extended_3"
+    ],
+    "definitionRequirements": {},
+    "variantRequirements": {},
+    "boneRequirements": {
+      "bullet": [
+        "aa12_magazine_standard",
+        "tacz_aa12_extended_mag_1",
+        "tacz_aa12_extended_mag_2",
+        "tacz_aa12_extended_mag_3"
+      ],
+      "bullet_in_mag": [
+        "aa12_magazine_standard",
+        "tacz_aa12_extended_mag_1",
+        "tacz_aa12_extended_mag_2",
+        "tacz_aa12_extended_mag_3"
+      ],
+      "bolt": [
+        "aa12_bolt"
+      ]
+    }
+  }
+}

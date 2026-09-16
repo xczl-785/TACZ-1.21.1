@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "tacz_assembly:mk14",
+      "slots": [
+        {
+          "id": "upper",
+          "compatibleItems": [
+            "tacz_assembly:mk14_upper"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "pistol_grip",
+          "compatibleItems": [
+            "tacz_assembly:mk14_pistol_grip"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "stock",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_assembly:mk14_stock"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "magazine",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_assembly:mk14_magazine_standard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:mk14_upper",
+      "slots": [
+        {
+          "id": "handguard",
+          "compatibleItems": [
+            "tacz_assembly:mk14_handguard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "barrel",
+          "compatibleItems": [
+            "tacz_assembly:mk14_barrel"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "rear_sight",
+          "compatibleItems": [
+            "tacz_assembly:mk14_rear_sight"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "mount",
+          "compatibleItems": [
+            "tacz_assembly:mk14_mount"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bolt",
+          "compatibleItems": [
+            "tacz_assembly:mk14_bolt"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "charging_handle",
+          "compatibleItems": [
+            "tacz_assembly:mk14_charging_handle"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bipod",
+          "compatibleItems": [
+            "tacz_assembly:mk14_bipod"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "grip",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "laser",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:mk14_handguard",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:mk14_muzzle",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:mk14_barrel",
+      "slots": [
+        {
+          "id": "muzzle",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_assembly:mk14_muzzle"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:mk14_rear_sight",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:mk14_pistol_grip",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:mk14_stock",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:mk14_mount",
+      "slots": [
+        {
+          "id": "scope",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_assembly:mk14_bolt",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:mk14_charging_handle",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:mk14_bipod",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_assembly:mk14_magazine_standard",
+      "slots": []
+    }
+  ]
+}

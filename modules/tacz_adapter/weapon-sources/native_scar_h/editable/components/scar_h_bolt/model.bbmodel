@@ -1,0 +1,3470 @@
+{
+  "meta": {
+    "format_version": "5.0",
+    "model_format": "free",
+    "box_uv": false
+  },
+  "name": "scar_h_bolt",
+  "resolution": {
+    "width": 128,
+    "height": 128
+  },
+  "elements": [
+    {
+      "name": "bolt",
+      "type": "cube",
+      "uuid": "6ad178e6-bfed-5b11-baf1-23af2d1cbd70",
+      "from": [
+        -1.10938,
+        0.62255,
+        -0.625
+      ],
+      "to": [
+        -0.03125,
+        0.77788,
+        -0.25
+      ],
+      "origin": [
+        -0.17188,
+        0.70021,
+        -0.4375
+      ],
+      "rotation": [
+        -45,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            12,
+            76,
+            12.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            68,
+            35,
+            69,
+            35.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            76,
+            11,
+            76.5,
+            11.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            36,
+            68,
+            37,
+            68.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "bolt",
+      "type": "cube",
+      "uuid": "a1f80a74-4ca4-5472-9b65-0937da445e10",
+      "from": [
+        -1.10938,
+        0.62255,
+        -0.625
+      ],
+      "to": [
+        -0.03125,
+        0.77788,
+        -0.25
+      ],
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            13,
+            76,
+            13.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            68,
+            36,
+            69,
+            36.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            76,
+            12,
+            76.5,
+            12.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            37,
+            68,
+            38,
+            68.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "bolt",
+      "type": "cube",
+      "uuid": "9e81efc3-b7a0-59df-b3ff-1ba89fcd36cf",
+      "from": [
+        0.20312,
+        -0.97365,
+        1.21875
+      ],
+      "to": [
+        1.20312,
+        -0.01655,
+        6.09375
+      ],
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            20,
+            38,
+            19,
+            43
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            5,
+            43,
+            4,
+            38
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            41,
+            5,
+            46,
+            6
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            41,
+            60,
+            42,
+            61
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            41,
+            4,
+            46,
+            5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            61,
+            2,
+            62,
+            3
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "bolt",
+      "type": "cube",
+      "uuid": "8af09614-e8d8-5613-8150-c9aaea83155a",
+      "from": [
+        -1.10938,
+        0.57133,
+        -0.5644
+      ],
+      "to": [
+        0.32812,
+        0.82133,
+        -0.3144
+      ],
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            62.5,
+            64.0,
+            61,
+            64.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            65.5,
+            59.5,
+            64,
+            59
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            14,
+            76,
+            14.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            64,
+            57,
+            65.5,
+            57.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            76,
+            13,
+            76.5,
+            13.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            59,
+            64,
+            60.5,
+            64.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "bolt",
+      "type": "cube",
+      "uuid": "c27c5573-c063-50de-a6d8-c22a653689c3",
+      "from": [
+        -1.10938,
+        0.51271,
+        -0.51517
+      ],
+      "to": [
+        -0.03125,
+        0.88771,
+        -0.35983
+      ],
+      "origin": [
+        -0.17188,
+        0.70021,
+        -0.4375
+      ],
+      "rotation": [
+        -45,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            39,
+            68.0,
+            38,
+            68.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            69,
+            37.5,
+            68,
+            37
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            15,
+            76,
+            15.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "east": {
+          "uv": [
+            76,
+            14,
+            76.5,
+            14.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "bolt",
+      "type": "cube",
+      "uuid": "43a2b218-2d70-5d54-92dc-b1d6d41cdf9e",
+      "from": [
+        -1.10938,
+        0.51271,
+        -0.51517
+      ],
+      "to": [
+        -0.03125,
+        0.88771,
+        -0.35983
+      ],
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            40,
+            68.0,
+            39,
+            68.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            69,
+            38.5,
+            68,
+            38
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            16,
+            76,
+            16.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "east": {
+          "uv": [
+            76,
+            15,
+            76.5,
+            15.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "bolt",
+      "type": "cube",
+      "uuid": "65180fe3-6535-53d0-90cf-3cf6d10f6d8f",
+      "from": [
+        0.14062,
+        0.28615,
+        -6.09375
+      ],
+      "to": [
+        0.89062,
+        0.97365,
+        5.78125
+      ],
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            3,
+            22,
+            2,
+            34
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            2,
+            34,
+            1,
+            22
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            35,
+            27,
+            47,
+            27.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            68,
+            39,
+            69,
+            39.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            35,
+            26,
+            47,
+            26.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            40,
+            68,
+            41,
+            68.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "octagon3",
+      "type": "cube",
+      "uuid": "82761a6b-44a6-5546-bae3-56bc073c5044",
+      "from": [
+        -1.20313,
+        0.60701,
+        -0.2725
+      ],
+      "to": [
+        -0.92188,
+        0.79341,
+        -0.2125
+      ],
+      "origin": [
+        -1.4375,
+        0.70021,
+        -0.4375
+      ],
+      "rotation": [
+        -45,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            18,
+            76,
+            18.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            76,
+            16,
+            76.5,
+            16.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            17,
+            76,
+            17.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            76,
+            17,
+            76.5,
+            17.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "octagon3",
+      "type": "cube",
+      "uuid": "2b7d742d-858b-53f2-a6ff-203dad923795",
+      "from": [
+        -1.20313,
+        0.60701,
+        -0.2725
+      ],
+      "to": [
+        -0.92188,
+        0.79341,
+        -0.2125
+      ],
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            20,
+            76,
+            20.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            76,
+            18,
+            76.5,
+            18.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            19,
+            76,
+            19.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            76,
+            19,
+            76.5,
+            19.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "octagon3",
+      "type": "cube",
+      "uuid": "9fe6a174-1617-575b-8175-40343a9dafcb",
+      "from": [
+        -1.20313,
+        0.60701,
+        -0.6625
+      ],
+      "to": [
+        -0.92188,
+        0.79341,
+        -0.6025
+      ],
+      "origin": [
+        -1.4375,
+        0.70021,
+        -0.4375
+      ],
+      "rotation": [
+        -45,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            22,
+            76,
+            22.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            76,
+            20,
+            76.5,
+            20.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            21,
+            76,
+            21.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            76,
+            21,
+            76.5,
+            21.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "octagon3",
+      "type": "cube",
+      "uuid": "a166328e-9dd0-557c-859d-547390238bc1",
+      "from": [
+        -1.20313,
+        0.60701,
+        -0.6625
+      ],
+      "to": [
+        -0.92188,
+        0.79341,
+        -0.6025
+      ],
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "west": {
+          "uv": [
+            24,
+            76,
+            24.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            76,
+            22,
+            76.5,
+            22.5
+          ],
+          "texture": 0
+        },
+        "east": {
+          "uv": [
+            23,
+            76,
+            23.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            76,
+            23,
+            76.5,
+            23.5
+          ],
+          "texture": 0
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "octagon3",
+      "type": "cube",
+      "uuid": "3ebe98b0-ce15-5319-bffe-11114c882ebf",
+      "from": [
+        -1.20313,
+        0.47521,
+        -0.5307
+      ],
+      "to": [
+        -0.92188,
+        0.53521,
+        -0.3443
+      ],
+      "origin": [
+        -1.4375,
+        0.70021,
+        -0.4375
+      ],
+      "rotation": [
+        -45,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            26.5,
+            76.0,
+            26,
+            76.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            76.5,
+            25.5,
+            76,
+            25
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            25,
+            76,
+            25.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "east": {
+          "uv": [
+            76,
+            24,
+            76.5,
+            24.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "octagon3",
+      "type": "cube",
+      "uuid": "93a3d39e-c3db-5e40-827f-7cb59f603848",
+      "from": [
+        -1.20313,
+        0.47521,
+        -0.5307
+      ],
+      "to": [
+        -0.92188,
+        0.53521,
+        -0.3443
+      ],
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            28.5,
+            76.0,
+            28,
+            76.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            76.5,
+            27.5,
+            76,
+            27
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            27,
+            76,
+            27.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "east": {
+          "uv": [
+            76,
+            26,
+            76.5,
+            26.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "octagon3",
+      "type": "cube",
+      "uuid": "b3bd4223-3b8b-511e-b511-a732d9fae398",
+      "from": [
+        -1.20313,
+        0.86521,
+        -0.5307
+      ],
+      "to": [
+        -0.92188,
+        0.92521,
+        -0.3443
+      ],
+      "origin": [
+        -1.4375,
+        0.70021,
+        -0.4375
+      ],
+      "rotation": [
+        -45,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            30.5,
+            76.0,
+            30,
+            76.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            76.5,
+            29.5,
+            76,
+            29
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            29,
+            76,
+            29.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "east": {
+          "uv": [
+            76,
+            28,
+            76.5,
+            28.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "box_uv": false,
+      "export": true
+    },
+    {
+      "name": "octagon3",
+      "type": "cube",
+      "uuid": "c55d60b8-b3ec-591e-a160-df1e6ebcd3f9",
+      "from": [
+        -1.20313,
+        0.86521,
+        -0.5307
+      ],
+      "to": [
+        -0.92188,
+        0.92521,
+        -0.3443
+      ],
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "faces": {
+        "down": {
+          "uv": [
+            32.5,
+            76.0,
+            32,
+            76.5
+          ],
+          "texture": 0
+        },
+        "up": {
+          "uv": [
+            76.5,
+            31.5,
+            76,
+            31
+          ],
+          "texture": 0
+        },
+        "west": {
+          "uv": [
+            31,
+            76,
+            31.5,
+            76.5
+          ],
+          "texture": 0
+        },
+        "north": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        },
+        "east": {
+          "uv": [
+            76,
+            30,
+            76.5,
+            30.5
+          ],
+          "texture": 0
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "texture": null
+        }
+      },
+      "box_uv": false,
+      "export": true
+    }
+  ],
+  "groups": [
+    {
+      "name": "scar_h_bolt",
+      "uuid": "b629e21b-9392-5e51-891d-85b024f89662",
+      "origin": [
+        0,
+        0,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__root",
+      "uuid": "81f7239c-bc13-5936-a633-f73f70a29727",
+      "origin": [
+        0.51562,
+        -1.90135,
+        5.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__gun_and_rh",
+      "uuid": "32cc34b0-bded-5612-bc32-13c870be77fc",
+      "origin": [
+        0.51562,
+        -9.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__scar_h",
+      "uuid": "ae83da39-f6cd-5770-8fef-c9f0a988e12d",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__constraint",
+      "uuid": "b050f35d-2bcd-5c42-a2db-f72a00a92527",
+      "origin": [
+        0.51562,
+        2.91115,
+        7.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__additional_magazine",
+      "uuid": "42e226e2-e022-5d8f-bd14-bd4ab1d04847",
+      "origin": [
+        0.51562,
+        -4.90135,
+        3.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__attachment_adapter",
+      "uuid": "0e7cc19d-3f59-5037-9c98-575a9e1ee710",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__ar_stock_adapter",
+      "uuid": "ce6dd4db-3557-5ccc-b7c9-95f42ed81f7a",
+      "origin": [
+        0.51562,
+        -1.65224,
+        11.84072
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__stock_default",
+      "uuid": "34595ec4-39dd-562a-aad4-0cb62ad7f59b",
+      "origin": [
+        0.51562,
+        -9.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__stock_extended_part",
+      "uuid": "f91473a0-712c-584b-89e7-af8ee4a97c13",
+      "origin": [
+        0.51562,
+        -2.39198,
+        16.54687
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__group8",
+      "uuid": "0aa13a3d-2394-5661-bf23-82aa225a7112",
+      "origin": [
+        0.51562,
+        -4.73732,
+        20.62919
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone",
+      "uuid": "46dc027c-2a1b-546d-bbcd-4f92a5900cf6",
+      "origin": [
+        0.51562,
+        -4.73732,
+        21.62919
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__stock",
+      "uuid": "ec49193f-6d24-557b-ab5c-063cc4c1dc1f",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__group10",
+      "uuid": "fec3835e-83cf-5329-b525-433f0bd74aea",
+      "origin": [
+        1.32912,
+        0.35902,
+        17.26662
+      ],
+      "rotation": [
+        -3,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__octagon9",
+      "uuid": "310950ee-89a8-509b-a6d7-3c4c3d0e0f25",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__hinge",
+      "uuid": "ec7bda56-8fec-518f-80e7-15431a99e177",
+      "origin": [
+        1.39062,
+        6.10802,
+        6.0625
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone5",
+      "uuid": "88011adf-f3d1-52c4-bade-7094916b6200",
+      "origin": [
+        0.07812,
+        -0.96385,
+        12.65625
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__muzzle_default",
+      "uuid": "38446d18-5dee-5dfd-bc1b-fc87ccd8548e",
+      "origin": [
+        0.51562,
+        -0.52635,
+        -15.28125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__handguard_default",
+      "uuid": "37e73d14-184c-5faa-ab1f-b152a72e93b1",
+      "origin": [
+        0.51562,
+        6.47365,
+        -1.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__default_gun",
+      "uuid": "3a6af018-5c51-514e-a478-92284a46ef8e",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__body",
+      "uuid": "d7014591-970d-51ff-8b7e-8c1fc7ea4432",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__metal",
+      "uuid": "bb1ec137-a621-56ea-b28e-b7390c80cd54",
+      "origin": [
+        1.01941,
+        -0.0596,
+        -4.77344
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__group2",
+      "uuid": "84f72530-bc05-50ab-b4bf-9ff30bddfdb3",
+      "origin": [
+        0.01562,
+        -9.90135,
+        -8.53125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__plastic",
+      "uuid": "f5ec1f3d-3474-5c53-aedb-9651c95ed5be",
+      "origin": [
+        0.51562,
+        -4.70215,
+        3.18551
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__upper",
+      "uuid": "2237c5e5-de52-5eaa-800e-3c0728a94ea1",
+      "origin": [
+        1.02255,
+        7.53236,
+        2.96875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__group3",
+      "uuid": "c267daa4-8498-511f-9299-50abe4d7f94a",
+      "origin": [
+        0.34226,
+        -0.52635,
+        -1.39935
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__group4",
+      "uuid": "45b14257-d21c-525b-8a6c-b134c5e637bf",
+      "origin": [
+        0.51562,
+        -0.80917,
+        5.69665
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__lower",
+      "uuid": "918b3485-e54b-50d7-8883-a6861ed344b0",
+      "origin": [
+        0.01562,
+        -0.96385,
+        -7.53125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__magwell",
+      "uuid": "0c0df017-8bf5-50fa-9eed-1a80f378c233",
+      "origin": [
+        0.51562,
+        -3.49778,
+        2.96878
+      ],
+      "rotation": [
+        10,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__pattern",
+      "uuid": "cfaaf37a-b196-5188-ad50-e576d127903d",
+      "origin": [
+        0.51562,
+        -9.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__barrel2",
+      "uuid": "60281aec-bde7-5fb5-b808-dd0bb1986403",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__gaslock",
+      "uuid": "e76820ec-bbcc-5c28-9aff-67ca3fee609a",
+      "origin": [
+        0.81172,
+        7.33225,
+        -14.8125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__group",
+      "uuid": "b8a3e3bf-76d1-5ab5-98b8-14d15f0a1948",
+      "origin": [
+        0.51562,
+        -0.52635,
+        -8.4375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__gas_tube",
+      "uuid": "30161aed-2f46-5b85-9b3a-8991b50ff741",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__rails",
+      "uuid": "3a9c05e8-2b56-5852-9cee-7fe9f947fff2",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__Gunrails",
+      "uuid": "dd9377eb-58f3-5634-b5fc-31015afdfde1",
+      "origin": [
+        0.36029,
+        0.46816,
+        -7.375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__Gunrails2",
+      "uuid": "7c17bb3b-5844-51dc-bf26-e5a990b49392",
+      "origin": [
+        0.67095,
+        0.46816,
+        -7.375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__Gun_rails2",
+      "uuid": "a3d9e732-5aa3-5681-84a3-75fd42223ea8",
+      "origin": [
+        0.42279,
+        0.46816,
+        -8.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__Gun_rails3",
+      "uuid": "3508e6ca-4cf2-521b-b9a1-2fd9b535c4a2",
+      "origin": [
+        0.42279,
+        0.46816,
+        -7.125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__grip",
+      "uuid": "e07ed88d-fbab-52e2-960b-d1737e9c7f1a",
+      "origin": [
+        -7.48438,
+        -9.90135,
+        -7.71875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__trigger",
+      "uuid": "3d529532-5db3-58c8-9c80-264a7642f0fe",
+      "origin": [
+        0.51562,
+        -5.2959,
+        1.37784
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__buttons",
+      "uuid": "b5d045ea-2b80-5064-93ba-d471840d91ad",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__switch",
+      "uuid": "8eac7b5f-7a00-57ac-915f-b92958a079c8",
+      "origin": [
+        0.51562,
+        -1.83885,
+        8.2125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__magrelease",
+      "uuid": "dfdc6099-76be-573f-84c8-fd3c31407fac",
+      "origin": [
+        -0.20313,
+        -3.60605,
+        -1.59754
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__octagon2",
+      "uuid": "9701b1d4-e6fb-54ee-9cb1-8e7ce153430a",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__holdrelease",
+      "uuid": "c3c909da-db38-5f94-a911-67d9d53d807d",
+      "origin": [
+        -0.27095,
+        -1.23551,
+        5.71875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__screws",
+      "uuid": "da501369-d877-5f5e-95d7-ea2c8c34db27",
+      "origin": [
+        0.51562,
+        -1.90135,
+        -5.20044
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__barrel",
+      "uuid": "9d71a0dc-7498-5385-b1da-6ed538bfba2c",
+      "origin": [
+        0.51562,
+        -0.52635,
+        -5.71875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bolt",
+      "uuid": "c883f950-3e36-55d4-adfe-88f9565cc369",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__octagon3",
+      "uuid": "61bc7797-8c5d-5196-8097-9219b83e3559",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bullet_in_barrel",
+      "uuid": "087382bd-3530-5fd0-9478-2fa60b9f9bd5",
+      "origin": [
+        0.51562,
+        -0.51075,
+        -0.53125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bullet2",
+      "uuid": "eeee2640-41c7-5dbd-9f13-63fde5433d90",
+      "origin": [
+        0.51563,
+        -0.51072,
+        0.71876
+      ],
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__sights",
+      "uuid": "3dee0176-8652-5f08-93ac-4064a1a33cf3",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__sight",
+      "uuid": "7a06a2c2-dab1-555b-811f-3d6bfc093eee",
+      "origin": [
+        0.51562,
+        1.60149,
+        14.27813
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__fore_sight",
+      "uuid": "bf8e5d58-0a4a-5d73-8201-971d362bac64",
+      "origin": [
+        0.51562,
+        8.97837,
+        -7.02813
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__sight_illuminated",
+      "uuid": "174b7a43-b9f5-5b38-8c46-d4b0da123867",
+      "origin": [
+        0.51562,
+        2.71962,
+        -8.12188
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__rear_sight",
+      "uuid": "d43ab08d-094a-5a21-b4e9-11966d291313",
+      "origin": [
+        0.51562,
+        1.60149,
+        14.27813
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__rear",
+      "uuid": "4bc5793c-0bc3-5fb0-809d-a57b9d9c22b9",
+      "origin": [
+        -0.60938,
+        1.78615,
+        10.53125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__group6",
+      "uuid": "1420661c-09f0-5cf7-9da7-3b5e4324c3dd",
+      "origin": [
+        0.51562,
+        2.47365,
+        10.53125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__sight_folded",
+      "uuid": "d2a75dd1-4ac4-5cee-acfc-cb635df7682d",
+      "origin": [
+        0.51562,
+        1.60149,
+        12.27813
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__fore_sight2",
+      "uuid": "06398549-675c-5630-b108-beb40e3424a5",
+      "origin": [
+        0.51562,
+        1.33053,
+        -8.03295
+      ],
+      "rotation": [
+        -90,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone8",
+      "uuid": "3178e65d-67ac-5bfa-996c-eaafc35ab370",
+      "origin": [
+        0.51562,
+        2.71962,
+        -8.12188
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__rear2",
+      "uuid": "0ad7bcc5-345a-5e98-a1a7-fe2f8fde74d5",
+      "origin": [
+        -0.60938,
+        1.78615,
+        10.53125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__group7",
+      "uuid": "71ecb662-68c8-5730-9ff8-976d229b578c",
+      "origin": [
+        0.51562,
+        1.78615,
+        10.34375
+      ],
+      "rotation": [
+        90,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__sight_base",
+      "uuid": "54508910-9f11-5740-8519-4901be5e074d",
+      "origin": [
+        -0.60938,
+        1.78615,
+        10.28125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__positioning2",
+      "uuid": "1e1d161a-4438-5d25-becf-383965c4cb75",
+      "origin": [
+        0.51562,
+        -9.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__stock_pos",
+      "uuid": "3c7842ec-70f9-54c0-aadf-490323356c2b",
+      "origin": [
+        0.51562,
+        0.12365,
+        13.99375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__muzzle_pos",
+      "uuid": "2bef79b4-8897-509b-810b-bb2188ce328b",
+      "origin": [
+        0.51562,
+        -0.52635,
+        -14.28125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__muzzle_flash",
+      "uuid": "db11972e-207a-545c-96fd-bfc923371b84",
+      "origin": [
+        0.51562,
+        -0.5451,
+        -15.90625
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__grip_pos",
+      "uuid": "1ba1fab4-20da-5fb1-987b-9e578ceba0f4",
+      "origin": [
+        0.51562,
+        -1.81385,
+        -2.53125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__scope_pos",
+      "uuid": "08ccdaca-0431-56da-a124-d29ce17615bc",
+      "origin": [
+        0.51562,
+        1.51115,
+        7.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__shell",
+      "uuid": "2b828fed-116a-59e8-ae68-07e5129a7688",
+      "origin": [
+        0.66562,
+        -0.63885,
+        4.71875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__laser_pos",
+      "uuid": "094d89af-f232-5011-93fe-440e30566920",
+      "origin": [
+        -0.59638,
+        -0.52635,
+        -4.93125
+      ],
+      "rotation": [
+        0,
+        0,
+        90
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__righthand",
+      "uuid": "a86363da-62ad-54a4-838c-63dd6ba00aee",
+      "origin": [
+        -5.48438,
+        9.09865,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__righthand_pos",
+      "uuid": "3d72ce1d-c3ac-5613-a3ca-e24dd35ed26b",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__mag_and_lh",
+      "uuid": "aed277a9-151f-5c4a-be9d-796f60442b14",
+      "origin": [
+        0.51562,
+        -4.90135,
+        3.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__mag_and_bullet",
+      "uuid": "72f075ea-aa8b-5dfe-830f-8823058f717a",
+      "origin": [
+        0.51562,
+        -4.90135,
+        3.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bullet",
+      "uuid": "45508ba0-e98f-5c5d-80ba-0fa69f12f897",
+      "origin": [
+        0.51562,
+        -0.91967,
+        3.21614
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__magazine",
+      "uuid": "10f8e76d-042c-5bfb-84d2-4f8e7faf0517",
+      "origin": [
+        0.51562,
+        -4.90135,
+        3.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bullet_in_mag",
+      "uuid": "f6075a4b-4b98-5afd-93b3-cb81d04220f8",
+      "origin": [
+        0.51562,
+        -0.91967,
+        3.21614
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__mag_standard",
+      "uuid": "6bfdcc51-7422-5651-90d9-00219e2c99d1",
+      "origin": [
+        0.51562,
+        -12.40135,
+        2.03125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__group5",
+      "uuid": "85954c0d-fc2a-550d-ad34-3e2c5795d925",
+      "origin": [
+        -0.04688,
+        -7.90135,
+        3.90625
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__mag_extended_1",
+      "uuid": "0d6dddb3-edf3-5291-a396-00e2fef5e148",
+      "origin": [
+        0.51562,
+        -2.90135,
+        9.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__extd_mag2",
+      "uuid": "29e18f1d-fa2f-5639-ab56-f753d5dc46e2",
+      "origin": [
+        0.5157,
+        -3.28605,
+        9.09182
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone9",
+      "uuid": "84195ffe-08b7-5145-adf2-9e1f6adc531d",
+      "origin": [
+        0.51562,
+        -1.83267,
+        9.00035
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone10",
+      "uuid": "5b327fb3-26cc-5d05-bb6d-509259104eea",
+      "origin": [
+        0.51562,
+        -2.45654,
+        10.63783
+      ],
+      "rotation": [
+        5,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone11",
+      "uuid": "ea87e00a-01cb-501b-a041-b87eb65c1c5e",
+      "origin": [
+        1.14062,
+        -1.58885,
+        8.71875
+      ],
+      "rotation": [
+        -5,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__mag_extended_2",
+      "uuid": "b931739d-4b63-528f-b1f2-c7abc750b695",
+      "origin": [
+        0.51562,
+        -2.90135,
+        9.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__extd_mag",
+      "uuid": "59cdd176-117e-5a39-a4fd-bae14cf955ab",
+      "origin": [
+        0.5157,
+        -3.28605,
+        9.09182
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone2",
+      "uuid": "8bd7ddb9-985f-52a9-ba7a-a6f71278f43c",
+      "origin": [
+        0.51562,
+        -1.83267,
+        9.00035
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone6",
+      "uuid": "219735b9-e20b-5a54-a082-1fb7a4daf8ef",
+      "origin": [
+        0.51562,
+        -2.45654,
+        10.63783
+      ],
+      "rotation": [
+        5,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone7",
+      "uuid": "45670511-c469-5160-b42d-304769b4fd67",
+      "origin": [
+        1.14062,
+        -1.58885,
+        8.71875
+      ],
+      "rotation": [
+        -5,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__mag_extended_3",
+      "uuid": "496ab29a-ae57-5a47-bf2a-ec7144290bc4",
+      "origin": [
+        0.51562,
+        -5.15135,
+        3.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone3",
+      "uuid": "80918cf0-e814-53b6-b493-2e4503da815a",
+      "origin": [
+        0.51562,
+        -7.11914,
+        3.06713
+      ],
+      "rotation": [
+        10,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__bone4",
+      "uuid": "7eed4240-6f06-5640-94e4-6169df7e0265",
+      "origin": [
+        0.51562,
+        -7.70056,
+        -0.13659
+      ],
+      "rotation": [
+        2e-05,
+        5e-05,
+        22.50003
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__lefthand",
+      "uuid": "82f42247-fc0b-52a1-b9ec-9578fbe0dbec",
+      "origin": [
+        6.51562,
+        9.09865,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__lefthand_pos",
+      "uuid": "38db584a-c6ac-55f7-8639-a2aa6cecc336",
+      "origin": [
+        0.51562,
+        -1.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__camera",
+      "uuid": "05024adf-e6d4-56fb-8cfe-110e4cd6831a",
+      "origin": [
+        -1.85313,
+        3.1924,
+        16.65625
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__positioning",
+      "uuid": "44ed1c51-9a95-5143-babd-37f3cf43a5d1",
+      "origin": [
+        0.51562,
+        -9.90135,
+        -7.53125
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__thirdperson_hand",
+      "uuid": "9013f6b9-f353-53fb-a45b-f73f9324b3a5",
+      "origin": [
+        0.51562,
+        -2.77635,
+        8.04375
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__ground",
+      "uuid": "d80d7dec-82e7-5144-bd97-5d07e6dca1bb",
+      "origin": [
+        0.51562,
+        -11.80135,
+        5.11875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__fixed",
+      "uuid": "15f8a90d-c44f-524b-a32a-5f16843d2141",
+      "origin": [
+        -0.38438,
+        -0.57635,
+        5.69375
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__view",
+      "uuid": "b5036c14-11f6-5eba-8d33-36c239e3f897",
+      "origin": [
+        0.51562,
+        -9.90135,
+        0.46875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__idle_view",
+      "uuid": "07e61d8f-cace-543e-89be-6f2adbc0e8f1",
+      "origin": [
+        -1.85313,
+        3.1924,
+        16.65625
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__iron_view",
+      "uuid": "6a024f4b-93bd-5a5d-b074-dd53d25c5fb3",
+      "origin": [
+        0.51562,
+        2.96115,
+        15.96875
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__refit_view",
+      "uuid": "c0866548-515c-5f26-a8a0-bb875aeb47c4",
+      "origin": [
+        -22.48438,
+        -0.90135,
+        3.46875
+      ],
+      "rotation": [
+        0,
+        -89.9,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__refit_muzzle_view",
+      "uuid": "deb668f9-77b3-555a-a969-56339fcfd382",
+      "origin": [
+        -10.48438,
+        -0.90135,
+        -14.53125
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__refit_grip_view",
+      "uuid": "63a2cd3f-65e1-5e34-99d8-c4f344fd8754",
+      "origin": [
+        -5.28438,
+        -4.50135,
+        -2.53125
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__refit_extended_mag_view",
+      "uuid": "1dddeed1-8e23-5f2c-95cc-8f33aa9d329a",
+      "origin": [
+        -9.48438,
+        -5.90135,
+        3.46875
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__refit_stock_view",
+      "uuid": "6ad6f2b2-8f27-5687-89fb-c82fbe70adeb",
+      "origin": [
+        -9.48438,
+        -0.90135,
+        16.06875
+      ],
+      "rotation": [
+        0,
+        -90,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__refit_scope_view",
+      "uuid": "9bc46a93-c94d-597b-8902-70fc6c6f83a1",
+      "origin": [
+        -7.48438,
+        3.19865,
+        12.76875
+      ],
+      "rotation": [
+        0,
+        -50,
+        0
+      ],
+      "export": true
+    },
+    {
+      "name": "native_attachment_scar_h_bolt__refit_laser_view",
+      "uuid": "6fa3110d-5255-5617-bad3-e644562232cc",
+      "origin": [
+        -13.48438,
+        4.09865,
+        -15.53125
+      ],
+      "rotation": [
+        -15,
+        -135,
+        0
+      ],
+      "export": true
+    }
+  ],
+  "outliner": [
+    {
+      "uuid": "b629e21b-9392-5e51-891d-85b024f89662",
+      "children": [
+        {
+          "uuid": "81f7239c-bc13-5936-a633-f73f70a29727",
+          "children": [
+            {
+              "uuid": "32cc34b0-bded-5612-bc32-13c870be77fc",
+              "children": [
+                {
+                  "uuid": "ae83da39-f6cd-5770-8fef-c9f0a988e12d",
+                  "children": [
+                    {
+                      "uuid": "b050f35d-2bcd-5c42-a2db-f72a00a92527",
+                      "children": []
+                    },
+                    {
+                      "uuid": "42e226e2-e022-5d8f-bd14-bd4ab1d04847",
+                      "children": []
+                    },
+                    {
+                      "uuid": "0e7cc19d-3f59-5037-9c98-575a9e1ee710",
+                      "children": [
+                        {
+                          "uuid": "ce6dd4db-3557-5ccc-b7c9-95f42ed81f7a",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "34595ec4-39dd-562a-aad4-0cb62ad7f59b",
+                      "children": [
+                        {
+                          "uuid": "f91473a0-712c-584b-89e7-af8ee4a97c13",
+                          "children": [
+                            {
+                              "uuid": "0aa13a3d-2394-5661-bf23-82aa225a7112",
+                              "children": [
+                                {
+                                  "uuid": "46dc027c-2a1b-546d-bbcd-4f92a5900cf6",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "ec49193f-6d24-557b-ab5c-063cc4c1dc1f",
+                          "children": [
+                            {
+                              "uuid": "fec3835e-83cf-5329-b525-433f0bd74aea",
+                              "children": []
+                            },
+                            {
+                              "uuid": "310950ee-89a8-509b-a6d7-3c4c3d0e0f25",
+                              "children": []
+                            },
+                            {
+                              "uuid": "ec7bda56-8fec-518f-80e7-15431a99e177",
+                              "children": [
+                                {
+                                  "uuid": "88011adf-f3d1-52c4-bade-7094916b6200",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "38446d18-5dee-5dfd-bc1b-fc87ccd8548e",
+                      "children": []
+                    },
+                    {
+                      "uuid": "37e73d14-184c-5faa-ab1f-b152a72e93b1",
+                      "children": []
+                    },
+                    {
+                      "uuid": "3a6af018-5c51-514e-a478-92284a46ef8e",
+                      "children": [
+                        {
+                          "uuid": "d7014591-970d-51ff-8b7e-8c1fc7ea4432",
+                          "children": [
+                            {
+                              "uuid": "bb1ec137-a621-56ea-b28e-b7390c80cd54",
+                              "children": [
+                                {
+                                  "uuid": "84f72530-bc05-50ab-b4bf-9ff30bddfdb3",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "f5ec1f3d-3474-5c53-aedb-9651c95ed5be",
+                              "children": [
+                                {
+                                  "uuid": "2237c5e5-de52-5eaa-800e-3c0728a94ea1",
+                                  "children": [
+                                    {
+                                      "uuid": "c267daa4-8498-511f-9299-50abe4d7f94a",
+                                      "children": []
+                                    },
+                                    {
+                                      "uuid": "45b14257-d21c-525b-8a6c-b134c5e637bf",
+                                      "children": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "uuid": "918b3485-e54b-50d7-8883-a6861ed344b0",
+                                  "children": [
+                                    {
+                                      "uuid": "0c0df017-8bf5-50fa-9eed-1a80f378c233",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "cfaaf37a-b196-5188-ad50-e576d127903d",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "60281aec-bde7-5fb5-b808-dd0bb1986403",
+                          "children": [
+                            {
+                              "uuid": "e76820ec-bbcc-5c28-9aff-67ca3fee609a",
+                              "children": [
+                                {
+                                  "uuid": "b8a3e3bf-76d1-5ab5-98b8-14d15f0a1948",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "30161aed-2f46-5b85-9b3a-8991b50ff741",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "3a9c05e8-2b56-5852-9cee-7fe9f947fff2",
+                          "children": [
+                            {
+                              "uuid": "dd9377eb-58f3-5634-b5fc-31015afdfde1",
+                              "children": []
+                            },
+                            {
+                              "uuid": "7c17bb3b-5844-51dc-bf26-e5a990b49392",
+                              "children": []
+                            },
+                            {
+                              "uuid": "a3d9e732-5aa3-5681-84a3-75fd42223ea8",
+                              "children": []
+                            },
+                            {
+                              "uuid": "3508e6ca-4cf2-521b-b9a1-2fd9b535c4a2",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "e07ed88d-fbab-52e2-960b-d1737e9c7f1a",
+                          "children": []
+                        },
+                        {
+                          "uuid": "3d529532-5db3-58c8-9c80-264a7642f0fe",
+                          "children": []
+                        },
+                        {
+                          "uuid": "b5d045ea-2b80-5064-93ba-d471840d91ad",
+                          "children": [
+                            {
+                              "uuid": "8eac7b5f-7a00-57ac-915f-b92958a079c8",
+                              "children": []
+                            },
+                            {
+                              "uuid": "dfdc6099-76be-573f-84c8-fd3c31407fac",
+                              "children": [
+                                {
+                                  "uuid": "9701b1d4-e6fb-54ee-9cb1-8e7ce153430a",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "c3c909da-db38-5f94-a911-67d9d53d807d",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "da501369-d877-5f5e-95d7-ea2c8c34db27",
+                          "children": []
+                        },
+                        {
+                          "uuid": "9d71a0dc-7498-5385-b1da-6ed538bfba2c",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "c883f950-3e36-55d4-adfe-88f9565cc369",
+                      "children": [
+                        "6ad178e6-bfed-5b11-baf1-23af2d1cbd70",
+                        "a1f80a74-4ca4-5472-9b65-0937da445e10",
+                        "9e81efc3-b7a0-59df-b3ff-1ba89fcd36cf",
+                        "8af09614-e8d8-5613-8150-c9aaea83155a",
+                        "c27c5573-c063-50de-a6d8-c22a653689c3",
+                        "43a2b218-2d70-5d54-92dc-b1d6d41cdf9e",
+                        "65180fe3-6535-53d0-90cf-3cf6d10f6d8f",
+                        {
+                          "uuid": "61bc7797-8c5d-5196-8097-9219b83e3559",
+                          "children": [
+                            "82761a6b-44a6-5546-bae3-56bc073c5044",
+                            "2b7d742d-858b-53f2-a6ff-203dad923795",
+                            "9fe6a174-1617-575b-8175-40343a9dafcb",
+                            "a166328e-9dd0-557c-859d-547390238bc1",
+                            "3ebe98b0-ce15-5319-bffe-11114c882ebf",
+                            "93a3d39e-c3db-5e40-827f-7cb59f603848",
+                            "b3bd4223-3b8b-511e-b511-a732d9fae398",
+                            "c55d60b8-b3ec-591e-a160-df1e6ebcd3f9"
+                          ]
+                        },
+                        {
+                          "uuid": "087382bd-3530-5fd0-9478-2fa60b9f9bd5",
+                          "children": [
+                            {
+                              "uuid": "eeee2640-41c7-5dbd-9f13-63fde5433d90",
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "3dee0176-8652-5f08-93ac-4064a1a33cf3",
+                      "children": [
+                        {
+                          "uuid": "7a06a2c2-dab1-555b-811f-3d6bfc093eee",
+                          "children": [
+                            {
+                              "uuid": "bf8e5d58-0a4a-5d73-8201-971d362bac64",
+                              "children": [
+                                {
+                                  "uuid": "174b7a43-b9f5-5b38-8c46-d4b0da123867",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "d43ab08d-094a-5a21-b4e9-11966d291313",
+                              "children": [
+                                {
+                                  "uuid": "4bc5793c-0bc3-5fb0-809d-a57b9d9c22b9",
+                                  "children": [
+                                    {
+                                      "uuid": "1420661c-09f0-5cf7-9da7-3b5e4324c3dd",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "d2a75dd1-4ac4-5cee-acfc-cb635df7682d",
+                          "children": [
+                            {
+                              "uuid": "06398549-675c-5630-b108-beb40e3424a5",
+                              "children": [
+                                {
+                                  "uuid": "3178e65d-67ac-5bfa-996c-eaafc35ab370",
+                                  "children": []
+                                }
+                              ]
+                            },
+                            {
+                              "uuid": "0ad7bcc5-345a-5e98-a1a7-fe2f8fde74d5",
+                              "children": [
+                                {
+                                  "uuid": "71ecb662-68c8-5730-9ff8-976d229b578c",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "54508910-9f11-5740-8519-4901be5e074d",
+                          "children": []
+                        }
+                      ]
+                    },
+                    {
+                      "uuid": "1e1d161a-4438-5d25-becf-383965c4cb75",
+                      "children": [
+                        {
+                          "uuid": "3c7842ec-70f9-54c0-aadf-490323356c2b",
+                          "children": []
+                        },
+                        {
+                          "uuid": "2bef79b4-8897-509b-810b-bb2188ce328b",
+                          "children": []
+                        },
+                        {
+                          "uuid": "db11972e-207a-545c-96fd-bfc923371b84",
+                          "children": []
+                        },
+                        {
+                          "uuid": "1ba1fab4-20da-5fb1-987b-9e578ceba0f4",
+                          "children": []
+                        },
+                        {
+                          "uuid": "08ccdaca-0431-56da-a124-d29ce17615bc",
+                          "children": []
+                        },
+                        {
+                          "uuid": "2b828fed-116a-59e8-ae68-07e5129a7688",
+                          "children": []
+                        },
+                        {
+                          "uuid": "094d89af-f232-5011-93fe-440e30566920",
+                          "children": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "a86363da-62ad-54a4-838c-63dd6ba00aee",
+                  "children": [
+                    {
+                      "uuid": "3d72ce1d-c3ac-5613-a3ca-e24dd35ed26b",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "uuid": "aed277a9-151f-5c4a-be9d-796f60442b14",
+              "children": [
+                {
+                  "uuid": "72f075ea-aa8b-5dfe-830f-8823058f717a",
+                  "children": [
+                    {
+                      "uuid": "45508ba0-e98f-5c5d-80ba-0fa69f12f897",
+                      "children": []
+                    },
+                    {
+                      "uuid": "10f8e76d-042c-5bfb-84d2-4f8e7faf0517",
+                      "children": [
+                        {
+                          "uuid": "f6075a4b-4b98-5afd-93b3-cb81d04220f8",
+                          "children": []
+                        },
+                        {
+                          "uuid": "6bfdcc51-7422-5651-90d9-00219e2c99d1",
+                          "children": [
+                            {
+                              "uuid": "85954c0d-fc2a-550d-ad34-3e2c5795d925",
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "0d6dddb3-edf3-5291-a396-00e2fef5e148",
+                          "children": [
+                            {
+                              "uuid": "29e18f1d-fa2f-5639-ab56-f753d5dc46e2",
+                              "children": [
+                                {
+                                  "uuid": "84195ffe-08b7-5145-adf2-9e1f6adc531d",
+                                  "children": []
+                                },
+                                {
+                                  "uuid": "5b327fb3-26cc-5d05-bb6d-509259104eea",
+                                  "children": [
+                                    {
+                                      "uuid": "ea87e00a-01cb-501b-a041-b87eb65c1c5e",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "b931739d-4b63-528f-b1f2-c7abc750b695",
+                          "children": [
+                            {
+                              "uuid": "59cdd176-117e-5a39-a4fd-bae14cf955ab",
+                              "children": [
+                                {
+                                  "uuid": "8bd7ddb9-985f-52a9-ba7a-a6f71278f43c",
+                                  "children": []
+                                },
+                                {
+                                  "uuid": "219735b9-e20b-5a54-a082-1fb7a4daf8ef",
+                                  "children": [
+                                    {
+                                      "uuid": "45670511-c469-5160-b42d-304769b4fd67",
+                                      "children": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "uuid": "496ab29a-ae57-5a47-bf2a-ec7144290bc4",
+                          "children": [
+                            {
+                              "uuid": "80918cf0-e814-53b6-b493-2e4503da815a",
+                              "children": [
+                                {
+                                  "uuid": "7eed4240-6f06-5640-94e4-6169df7e0265",
+                                  "children": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "uuid": "82f42247-fc0b-52a1-b9ec-9578fbe0dbec",
+                  "children": [
+                    {
+                      "uuid": "38db584a-c6ac-55f7-8639-a2aa6cecc336",
+                      "children": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "uuid": "05024adf-e6d4-56fb-8cfe-110e4cd6831a",
+          "children": []
+        },
+        {
+          "uuid": "44ed1c51-9a95-5143-babd-37f3cf43a5d1",
+          "children": [
+            {
+              "uuid": "9013f6b9-f353-53fb-a45b-f73f9324b3a5",
+              "children": []
+            },
+            {
+              "uuid": "d80d7dec-82e7-5144-bd97-5d07e6dca1bb",
+              "children": []
+            },
+            {
+              "uuid": "15f8a90d-c44f-524b-a32a-5f16843d2141",
+              "children": []
+            }
+          ]
+        },
+        {
+          "uuid": "b5036c14-11f6-5eba-8d33-36c239e3f897",
+          "children": [
+            {
+              "uuid": "07e61d8f-cace-543e-89be-6f2adbc0e8f1",
+              "children": []
+            },
+            {
+              "uuid": "6a024f4b-93bd-5a5d-b074-dd53d25c5fb3",
+              "children": []
+            },
+            {
+              "uuid": "c0866548-515c-5f26-a8a0-bb875aeb47c4",
+              "children": []
+            },
+            {
+              "uuid": "deb668f9-77b3-555a-a969-56339fcfd382",
+              "children": []
+            },
+            {
+              "uuid": "63a2cd3f-65e1-5e34-99d8-c4f344fd8754",
+              "children": []
+            },
+            {
+              "uuid": "1dddeed1-8e23-5f2c-95cc-8f33aa9d329a",
+              "children": []
+            },
+            {
+              "uuid": "6ad6f2b2-8f27-5687-89fb-c82fbe70adeb",
+              "children": []
+            },
+            {
+              "uuid": "9bc46a93-c94d-597b-8902-70fc6c6f83a1",
+              "children": []
+            },
+            {
+              "uuid": "6fa3110d-5255-5617-bad3-e644562232cc",
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "name": "texture.png",
+      "id": "0",
+      "uuid": "30bfa905-e371-57a8-8877-cfb7f5d55fef",
+      "path": "texture.png",
+      "relative_path": "texture.png",
+      "source": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQAAAAEACAYAAABccqhmAAAQAElEQVR4nOydC5wU1ZX/74wDOiMgjKAww0NBEIgihBgVQ6KJj2xighr/GNdnNMn+16C7fpK/rzz2v9lEE9esu4nr7sbFuBqDIj7wlURZH2sAjRpHNIiMoiID8hqQeSGD1vap7l9x63Tdvre6e7pq7PP9fJrbt+pWdU3T95xzzz333LrzLviapxxY8dJLLs3UGWec4Zfr16/PO9fU1OSX3/vu1TXTZ3zc+rktL/6p5pQ5pwXtHlp8X83o0aOD+rp160L1pKHnmThpstfT3anKAd3v/8w90/r33b3wroLfg+l7ouOfPHqW98dnltX88JrrvB9cfXnNkUd9yut9v0uNHneQ36blhef8sr5hUHBd6+pV/v1wXypx/bQZM70VL75Qc/CECd6bb7xR89ffutT7t3/9edDukMmTvddXrfK/J7rPFVdd5f302mv9z8X9n3v2DzVKqAh1qsysbm0t6lyx0I9KpQj6UasS4B2VOrfLdbbvgZ83CQx0vpaWF5XL/VBS56eSOj+V1PmppM6vt6POTyW+J+r8SkiMsguA9W1tqpKkzQIgDahKoH3zxlCdLLSe7m5j+/qGBnXbrb+qeeKJp/zPfX3NG+qQ8RP8EnzjogutltKGtnV+SZqYhAAsL1gAOrrmRwnNzy0A3g4ltwCUkAg15R4CDB8+3NpmyWOPlm0IoISPBDIESIayWwCV5sqrf+ANP+AA4/ktmzblHXv33Q3B+53vv6/uvOO2kKDpK3QB1jjiwOA4aUyMja//5xtDz6E//6ZN7/rlLf/5S2ffACySnq4u/9jYg8YG5//70Uf98yNG7B/UvzL3LO+ehQuC7+PPr6zwz/Vmvidfc0+c5LW2rvYVB1kecS2AKYdP8159eUVgAfzox9d45BNSQiL0ewvgq2efl3efffbe2y+pc7tAAkBVCJsAUGWGD0kwRo8LOrDqI8QCSIZ+bwFQZx+07x4P9aDBg1UxVMoCsLX53EkneZs3b/XfU2fVBSUJRF63+RzgU3j8mnFq0nlL87zt9Hn0nj6TPo/PAugWAIQXCYITTjzJI0EOwQBvPywAui9ZFPApmGYBxAJIln4vAIjOrs7I93Fw6ZyVgkxyCAEbNo1OHY3K7du3+3WuXamT6nXXWQDq/FTCKoC3H8+D++J+plkA6fzJ0u8FQH19vSoV0l6qBDZt3qxWaB2mft9989rQGFyPD9jdu0utfOXlkuMYXC0Apfbz/+UWwLkXXOQNyj0vdWIMCZuaxvjH7n/gfr/s3N7ul4dOnep3bj62n3vWOd7CBb8OLAAc/+wJX/AeX/KIdRZg8OAhqqNjh6JSqByJ+QCUI/1lFgCaFnAhwAXAkKHDAgGgO8dUmcH3dfM3atRf/N07qdW2F39rnvfc8y3qyE9MVzf9641iFVSIslsATc3NTu3oP5zKzRntOWLEiOC4Xnf5IaQpDgDsNXBgqL6rt9cXCPSCRu7d1Rtq05uxCAiKzFMWKHLPFh9AIIiIBMyEg4/N3PcdxQWobkGQ5oZC+NMLL/jHtm/Lav7hI7IzLVs2b4r0AWDMz2cB4AO47vobvMu/c1nN0bNme88sezq4TuIAkqXsFsDJnz/Z2ob+w0kAUGfftm2bGjZsWHAOdRICJAD6iwXgGgCEMbIpkEaVGdz/jz//mPfJS/8sHU0IUXYL4Pe/+71TO+r8pZwH3PROikMnHuLUrlZ5/vN2dUVrb1cLwDUOgB8jzY33pMH5mB2W2dp1bb7AJU1O9d7clCqtCdDXAuB6rAWAJcAtANMsACwJmQZMhtQ6AfVhQSFKjb0vF9OnHxFLEI0ZO56ePe84dW6X613XCICt23b4Jfe/IAgIYNgFywsx/RxYX7BasBYA3n9cZ5sFiOMPEspP2QWAixOwnKTFAogLebx1yDfg4s+gsTjN/7taAJOnTFWZl/ezP5D2nxJcs+rVlZFDKMQBrH7tNTX+kMnerp1Zx+WkydP8sqZ2d+QsAFYV2iIBuQ+A4hro71FCIvS7aUD+o+2vFgCf7nL1Z2QEgP85cS0ArmkhbKCx8fkm8ztzXkU9L0pYLnw1IG9HnV+vS+dPltQKAJMP4I4Fiwp2tH32qVc7d/b4ZRxwDZVxOfusM0r+Eetjcw5p62NmHes7SLds2eIfc7UAoOnJ275hQ3YtwahRI9Udt9/uv8fYnTtXRzU1eRvWrw+OwwJYvWpF5GpAPguAulgA6SaxOAD8gE2zAERcLZckLh2SaM3lRGjcf6TSA2SUI+XuMBAA/DgEgBI+0iRmAVBHJ6DRAK/Tar8h+w1RO97bkXcPWgWI1XLUZuDe+ygbu97fmdeOjtH99VWFdIyIuud3/nZe4LWGKb+1vcMv9bH9hra38q7FfDqgRUGZl1V4xM0TQJAAhWBqZclYMJ8/Ztw4v06rAHGOVgPW1taq5oxwggQgXwIBi4JmC8hhyDMCmTS/aRYAAk1mAZIh9ZGAacXksBvVfFDwPkoAQNsjRFbF/Dw4AV2vgwDg1lRfr+6LiwiAZEjMAkD8fWdunXp3Rptt377VaREMjTErsXovLjRvrmtzfcmvdsw/v2XrxsjgoYkTJwXvSRPz1X9wArr6AJYvWxqZW5COExiz67MppJlJ+7dlrkMcwH5DsmsJYDnYfAAHTTjEe+uN1/PiBcQHkC4SdQLqnZ8YOjQ7J+0iBNK0ek+n1Gg+SrhBgtBG3FyBtvam2RRbHABKzCbg76fOr5/HcZkFSBdlFwB8DG+COn93gTGsrgk5mR9TKuf/ESGnSgCdv2NH4WXNcbIF19c3ZJyHM8LXf/UcNff0LwWdj68JGNk8VmUsADX5sGn+8X0G1Pmdla/mm3nkJ70XnvtjXkYgnh+AzwLguFgAyVJ2H4AL9B9Oy1BJADQ0NOQJAuoEWI4axe23zpcfjCNkUey77760vj/0nS2890FPFwCcmUfN8l54dk9UonTUjyZ1kyZOdErXPe2IIxS1XbRokYrDxMw1Ece8nd2dqjbznsp7MppKz4VHXnZex/z/P/3zP/k/TtPnfbBrZ/AeGgv1qLGwiQ8zT0eCiIYlNBafd8llxusoCQllJUIykltvubkGXvXxE8J//+DB2exFHR2dwXtwzLGz1fKlT/thta4aHjn8bp5/S9AeWYGpJI4//jN599vZk4134N8PvPt75bq6fp6EAPcBwALgPgA+9uezANwCwJoBJVSUfhcJOCgi2QaAT6EvKJRpqKc705ky3aSnZ08QEXVKVQJxYyAo9Xec+2Xqfum6n4ApEpA6P5XcB8DH/nwtAI6LVZEsdR2dHc6N47TVwZw/D/jhx1yYOmWKWvnqqxntmc3919Gx55lIOLynWQClQEMTsgCoJKiT1zdERxfiuH6e5sWh0XV0zU/vdda8kbXESHi4WgDb2t/z38fZGahQ/YHF94eu5dOP3HsPC4CP+bEWgFsAvJShRbLUDR40WG1Q7zo1prbFENXJ43Z8sLW9PVSPEgSFcNWsMOHhnzh4/Hi/bGgIWyDd3V15x4io6Lo4xLUAXDW5a50fx/Qj997DAuA5ATF7wC0AXkrnT5aKWADlZjDL/Ova+QmXdORRdOY+o5N9VmdnWItjGKCv66eFMtCkx59wsu/EnHrY4Z6eEgze9uamkcG9EFGHOjQm6nrnwXEEYtFsDN5T4BW89jZL4JQ5p3sPLb63BinVEQdAvhzy3YyfMN5P6GLzAZgsAMwC8EhAJSRCan0AB487OPI4JZ4sdF2xHZzDhwAHHDgydB6a/4ADw8dsdFvCd4vFtRO5an4ATZ4pI+9j8gGYLADEASDuQDp/slREALj4AHiHf/PtNyPvVWgGoHcXaa2+CQ+4e9HCvGMDcxuQFAPPCVgKFFZcW7Pbf69rfsRk6J2MR/xxC6C7a6eaPn2Gh78N+wY0Ds3+P9ksAJ4RyDQLIBZAOqiIAHDxAZg6fBSmmYBtu+w7Abn+2A4/YkakJInq9Prz2GYinl2WdQqathDnefq5hubP77qeABqXR/zx++N+GMLw5+HXcQuAZwQyzQKIBZAO+v00IPwBG951c2Tq8/m2XYT2y630KxQDEMULzy4znjtq1my1buECP7deFK7e/ziRgPRe/zwXXwDecwsAyVp5JCDiEbgPQPc9SCRg+qjr65TMmf9c1RdwRyAJhgMznvrVq1YWvO7GX9xQkR+bLbcfzwm46pXsngCrcltx2Yg7S2DT/CZfgMkCwP1gASDugfsA0I77ACQOIB3Uuebn55qkvkBADqCEkxRJB0eavgNNs6Zx2opYlkqef10IDDZo83POu1CvFtSanV0dmWfM3qd3967g+IC6gcb2xI3/ckOMCMMsPCcgZQSiYRGt0sPa+yho3wWXPAA8+69N43PfwOAhg0L7FCLrcUvLS6GswKa1ALAA9IxDkhEoffhDAOTn10HdNTsvR882i5h/Gh8PchAcBDkFo/wCTz3+WKwfy0+u+WEqf1w8J6CeI4FH3ZUDm8bnFgLX/LQAK+p6WADQ6NwCQDyELSeghAEnQ12x+fkLrdZrbV3tl1jeS9imv0wdnnPPfQ/HdvM3jRmt1rS2qvER6xJcwLXr34numF857Ysl/3hdLQgXyALYtWu3am/PzgIcdvg0r7FxuPqfpx6PtASiLAI9TwAJB17nFoApEhDtEeuPWQCxANJBHWl41004dGDWR8FzzaN9OebAy9HZ0ki58x9SZ486bov4MwHNzsf0tkhAtIeGxyyARAKmg6JnAXZ2mxfHwGO8Z8SbbY/Vf6TtluUy0sQlrTkCVZG45gR02XmIhAjFBESd07P54pje6bkPgIQ4+QDWvrXWP8bzAEDTcx8AjwNAHRaAzAKki6IFAPcZlBvTcCCtY/picc0gxMfgJkxxAej4Jl+AyQcAwcDb4bm5D4DHAaAOC0BmAdJFXTHmP8Ez/9iSgdoyBbkGAqU1F6Br27Vvv6OgpXVtvX9jcQutotBnASiLrw63AGjX3vbcAqufXPMPNdgZ6MOaWv8YbWtOQoACl6g95vtNm5uaMgJx34FEAqaD1AYCmczqtOYCdCUpbzdfhQdoy269bns+zPfz+/FZAO4T4L4DiQRMB3Wu+fltxG1vgzzXVJ7ypVNDx8kCICFw5lfPSZ0lcNedv7bmBLSdpx2AbOgRfuD22+8I3lM2oLvuvNN/P3RYo1/WNwzKy/qLepu2ypAsOewaTPWeXGgzLAC+26/JAsBxSv1Gqx/5WgB9N2JsSCpUHucvngcCnXjiCaHzTU1NBa9fv359qL5YSzxBP0CeAowLgMMPz25NteDOO/q9FVAObAlA8B7f4ysvr5BOJuRRR151evPr224JnfjsCSf65fJly9W4cWPzxpK2Ds9xac9zARZi7PhDgnZr17yeN8bkHeTLc051mu6kaVEKWEK0XX1m+lKPvKsvMP15262/qtFXK1LQkx6hSOsVaMUiaVWKpCRNSWPqI6bPUC+1vKgK8Ubra765jDHzoVOn+g62v7r40tDfXX8/oQAAEABJREFUuW1buxo2rNGjklj69JN+CY0/Z84ei4o075VXfz+4XvcBfJCZs3m5JX/sbrMAsEuwaTXglIxAejUjjFAnX4VsEZ4cdh+A92FeKCnxve9eXdJ/WnOJ6bP7Cr3zEzzsdn1bmx+Oy6HjBCId9Y6PmIkJ48erVateDV1HY+rMS9kw5Tn4j5t+Huv/IdPpQ3Xq9HodPoDDp4c3LYFVgfMmHwDWQJhWA76as0RQl86fLEYBMCkXNUcWALzAOhiLU2YbHKMMN7zONTW8wyqlUAemFw9bxjJfkwUAoUDtRo3ckzyE1iwUWqmo78kXBawDsgCigGCgbL3+8w/Njvk7trfntW3TNDb3AZAm1vMH1NTkPycJK76Fl20W4AtfPtV75IH78ywGWBbiA0gWowBYdPfd2TcZC6C1dbXRuYXEFgMGDsg7FgckBDFlAiqVSv3IJuRyBxIU+UiWAL2QtoznLLBlD4Z1EDfTkW2BFT/PNfE+LO+B6TltswDU+fV2fBZAOn+y+AKAouY4s47NeqNzY3fv3//tpsgbkGVAjkF0epQ93YV3tjERJzFIHEjTxIl5oE67+4MPQr4AWAYmyAewLDfmtkHfT5RQ1fcTpM70ox9f4xUz3IoaYumdHmN1igPAMZoShKannIBYDUjPSc8VFbRk2hvQti8ALADxASSLLwCiwmpJMlNqKOwoU8jrDCGg14vFZAGcfdYZ/nNUKhCIJxqFILD5AGwx9TZcwoKjCD7XspLQFgfA1/Vr1xW8X9x9AWABSOdPFuMQgDQPlV3dPZ5p48hKEnc7axJIxQiiepa7gND9AVGdXz8+usLOTey8RBl7qdzaHp0h+Z21a4L3+v8ntwDw/N+8+FKlr+OHJuf3NfkA+FoAUz4AsQCSxSgAyOykfeWUhVHNBwVr2ynDDWW6ISjhRZx17TD9yzUE4J2/UmPNUi2AUnMBuOYIhLeeWwDa84f+701rFkw+AL4WwJQPQDp/shgFgL8IJOMAnHOqP2/s3bngN8abUGfXE1zwbDdxcHUC7l1Xp97fvdsvXYBFg70NaVUfjXPJ2UWd4Tv/73Lv+n+8Li/z0e4PelXv+/Zko3H5v399scLzkNcd3nDk4COo85DvJcqqOHTiJNXc1Jx3HJu90pCEOheGTGvXrg3a6PP1GPPr6xJIiGxoW+fvbvTLm37ufz59H2Q5jB03RmEtALW1WQB8LQAsgPmXHOhd9IuNNVdcdZXX12npBDPm3uNll/Iuvv/+grMA/YUnn3zSL7FoadOWbKorbIBBnZ/KAQOz3u8KDHtifZ+ImUdps2gwa/DWmmw+f1skILccTFO1rmsBeBwAvk9YANT5qZTOnyx1+pp3nZzm98l0DlUsJk29v+btbtPMXtchAN2znHBve18IvAEZa6NurwGxrtHWBhifh9YG0PNTuDXN2uh/R1dXNo+BHm+gT+nR5icEaWIco07JNTfP7MPn9U07A/HVg5gFaF14qjdx7v3iA0gYv1ci2YXOksceU/2BcgmCA0eGd/4pdSzvQKhDI1Sa5+IrNVPQrl3Z2Qs+jw8fAD7Ppol5Zh9uAZh2BuIWA2YBqPNTKZ0/WeqQQYdzwokn+mYxjY1bLHHqLpRbYx/36dl+ueKll1Rjxtzt6irvlluIaGwaNcqvb9sRPaOwK8I/gBh6ZSBqeIHFUq75/vmY2xSnAUtr/9z0YvvmjUHOP7RBZh7UaZhxbMby0JOQ8PX7pvl+Uz4APgsAC0AiAZPFOASgsT/NApRqCZS74/cV37jowtCPMCqaMSo0WN8piAsDPhNh2gxEp1y5AeEr4N57DG34cdu6fL5+3zTfb8oHwGcBYAFI508WoxOQfAAkBMgSKGQBTJmSnYcmTUzagXLP6Rz1iZnB+7VrXldpJUoT6R14Y9tatVG5QZ0sKgYBx+g8aWx9t18MAVwtAB6qq+8lQFOJ+u7EBOX514cX3ALA7AFBEY2jmkeHZgEQCchzAtryAcAS4D4D+Fzo7y13QlTBnYJzaOT9L8UB2J+waaK+9glgetK1M+y0TE2adibiGhtQp9fryOevXeeXPCegyQLAcVgC3GcAR6V0/mQxCoAlS5b4Gv2MM87w66YxZlrR1R/FwGc0ZEHNevP8WzwaBvTmFuvU1YW99fr8fLnQNfK35s2jYUjRFgDP1xA1Bse5KB8AtwAQJ0BjdjrW3dOt9Cy+toxAtt2Btz3+dW/YZ/9TLICEMQoAzJdj/twVhOC6jHeThGtA7gOgiEY9oMm0R1652JhbMlwuC4DDLRibBQAwZgfwAcSNA+CzANT5qZTOnyz9bnfgcsE1IM1vz/nyF9T8+fMj2/eVBfChqvGfZeGie0LPxKnVbBrqhNwCaBy+Zwu3qHBimwXA4x5mzvwEDSMUfS8b2t5S3AfgagEgPmBk20jv3eZ3g/ZiAaSDqhUAHJrfzryMAUB9ZQG47gvA8wHYLIDVratCdZsFEOHj8D9Pm/f3D/Lsvq5rAajz6+3FAkgHIgByQNNRjD45qCZNnhbqcLbIwAE5jUzrBvThD60lMEX/wZuunAg3m37ENHp5ufehk5869ljvtdz+jEccMZ1e2XF8d7d6dtnTikfuUWwAoedSxCzAg4sfUMVYAIgAfOyp5d6JnzkmzwLYdNNp3gEX3ycWQMKUXQBgqgslbScdhavmqxRaPvzIDtlXswDFfg+mMTuHUnLrdS7ITJZAZhZAseN+6WoBIAKQOj+V3AKgzk+ldP5k6XML4PSvnBa8/+m11wbvK724aGYuHuH3v/t97kj4d4cYd9P12IegvqE+79ygwdEOz0H7DladXR3Be517Fi1UJvYaONAvBw4Y4Lwn4LTpM/aM6VteDLL9NjY2Bu340l+C+wag4WEh0CrB7s5tqvv9XU5xAKhjFoGsCJpSFAsgnfS5AFjzxhqndjwkGavXMqVfL1Vg8Fh3bnrbdsShTT9UArjuCcjh2X4Bj903WTYdudBnvkrQFgeAOuIQEE8gFkA6CQQAJfagTrBnXXhxIbxHzZodvD++ocF7YsnvVTFwL7UqEdOuuPzzyBtPIKKxYd8pftivnu+fQn4pBFgP/SVN+9TjjxnH9LTbLuXXi9o6naBzRCm7ANO05X5DshmNKA6An9fjAqDhSaPD4lj1yooaDN3gZKTPoe8irg8AFsCv7rjL+9rZZ9YcNOEQ7603Xg/OSyRgOqiLu7U1NMChU6ZYNbIeO2/DtCahWNrKNGbX8/sD6iJ+glCVH/9fqrAqdRdg4Jp63Zb3AJ8T1wcAC4A6P5XU+fXzEgmYDuooBp7ePPd8i3+AtAhZAthdltNXY3cMAaKWJhcDVvMd95nP+PUHtK3I4kDJQbF7LgHN36nVdUjDmbQ8ASsAGp/jagEgP7+eoUf34n9pzul510UJhUKWEbdm4lgA3CcAC0DiANKFsw8AP45yCwBk4AGUqqsc2PYmKEZTU2eH5ufWDSyFSlkANkwWAJ7P5gMw/R2uFgD3CcACkDiAdOEsAGApxNGkhXLol8rzzz/vl1iv39W1NnQe4cj0vF+ec2re9XcsWOT/PS/nnIyP/PbhyM85+KCD/NegfQdl/p5OvywEH5sjnFjPmaifo+Moydx2XQsAp+XkKRdFtjf5AKIiAnf19qoPdu0KOjdW/3F0jW7LCARLgfsA0K73N+d7A/7yv8QCSJg+nQVw8QH0sp1yTAlKiiWq8+vYfA893T3ZN5lu09PTY83k55qVF3CBEbczdLO9C7VVeJHtXSMCbfsA2DICQZhwHwDaUeenUjp/shgFAPaJO/nzJ/tlx47ofPN/fD5rsjY3jfT/cydMPDT4QbtYAHwI4Eox248Vw9I/PBmKnMNuyqAzt4HIoMwQYN4llxnFQ2dnOD+AL0wyfGzaNHXMsbPV8qVPq+M+e1xwfUdHZ8YqGOSXxILbs7s3Dx9xgL8WQN+jTwfZjzn6ak59nb5pTQB2H4YlsXTZ0oIWAB/7mywAtBcLIB3UrV69OvKEloXWr2MIYIOSTA4dmnWCrV//jkoK7Fdg+vuK5SfX/LC8P9Y73Zpx34tpCBB3GzGTBZARAP59uS/BZAHwsb/JAkB7sQDSQWABDNmvwZf4tC48M5fs0U43FG7qHquepbmpOdg+656Fj4Y01boiNr341Kxj1NwzvuL1dT4CxMPbmDgpP69A6+qVNYW0P7jxFzeE9uKzoe/Uw+EWAFWwH2BbTsPza/TMPDjGfQKo0yyFPqPx2sqVKkrzu1oAyAMgFkC6iBwCRG1/FUeTmrbPKidDhw1XaYKGAA0Ne3we3d3Z4Y9+jIgKxy2GPRbAoZECwhYHwDP1gGJ9ADYLAHkAxAJIF6lbDcidcrSj7+Ahg63XmXbbrRTvvbfdf0UdB9DKmzJ/0wEj9qzfp5V3L7e4Tf+1traG6nACNo8e6+f9I2ifBZMFgPd87I8dejAL8YU5p/udN8pCoPK2OxZ6550917d8yLKBjwSrAGEB3PfQ77zTTvl8XlyAWADpoOICYFNui27T+nM+CzBC6yjEQ4vvS+WPxTXyrlR4XgCAzm97HlNOQDh50RkzAsDT2/PrqfNTSZ2fSnj3sQoQFgB1fv3zxAJIF30uANa3vRW8pzHqM8ue9t9zzTJkvyFO9zN1gHJDeQEoVz+Pe+jpzt/3MMryKJQSDavpaP6doDl4E2MPGut3LuTiw3Fo2IbcbsY8stDmA6BYfX1vRP633HD9dUG90NgfFoDJBwALQOIA0klqhgBXX/Ed/0dQdi97CtBThEMwuEYMZgRAQYHH4wCAzSLhWYORFRkaujG3kQgwjf1hAZh8ALAAJA4gndRhvn//EXucavDiR0Ex5vTjmj7zSOMPs9D1Jkwx6a4+AG0PPcIznV+emc82XU/DDfq8zI9SdXR2+O85LuYHeeFPOunzftNt73UGDsth+w1SK1e+Yoy0Kwc9XV0qaleicy+4MJTqm+9CHGXF6NmCXC0AHhkIC4Bft/3eK7yhp/9ULICEybMAXDPNmMbirte7Qp1y8CC7AIjL2WedEXpOinOgDq/7HLj/oZy4WgA8GSnfwQdDAFBgdV9oTM9zHEaM9f0SgsHVAuD3hwXAr6POT6V0/mTJEwBckuM4ttOeOClbh7f45ZWvhq6HRMf1dAOuOVQZoDx1+v0oQo7YsjnrREQkG49sQ51CcClsF38v7hul9XWacgFGnHfezu56NGbcIerQydO8N9/M1oc27pnVePTR3wWfT587MfNltrau9sfhrmm+uS+AU2hPQnwuxuo4VmjfgIb6Bl8YmFYBzvubjAXwL/kWgG0WQCyAdFCyD4CSSFDZ3DQya/Ju26bKCcamcQUHohFNdQ60v00A2DIHZQSA/5y0qxKVRx51QORzU2dwWfnnmo7cZlHwHH+mCEC+dyAEgWkVIHV+vT2O22YBxAJIB04CABleos5xDeoKMszQ9aagE92rrGKCfe9NdQ46v272RwkDrjn5WLqmNptJCWNgWq9PUBT/lS8AABAASURBVDZeXYiZIixhDcA6MHH++efRlub+PT49+1i/xOYiRNv6d/OuKRQHAMsB8RSU2UnfUhyam+8O7GoB8LUAYgGkA2cLwNVEHTZsmOqPoLOjJL9DKT4A5NTT10bo2IQarAOTBRA35p9/Lv987js4Kucz6N2dnaqE5ua7A7taAHwtgFgA6cBZAPCdaMoNaRx0lnULF6hSaWoaU7DOad9e3qGLCfJFkHDAYpuPzzzaP46Vf4NZhmFaKfiZ407w7r07vGoIawF0fwT5NAr5WnjsPo5HZfqhSEWKJXjxxezO0KbY/29ffqX3s+t+YswSbJoFkIxA6aDsFkC5fQAcaCCbT+Cll1oK1jnUKfVoOmjYYpyW+r0oQEe3APjn/OO1xcU9mHwRfIxuglsAfDtzDBcgKEyx/9T59To/b5oFkIxA6aDWtSFZAH1pBWCMbhurU6w5vUznJ02eFvrx87or9MOPuxISUAfHEIDnB+Qhu/gc24sEUSFhhPN4Rd3D9LlUJ8sEww1cT+8xBMBnY/YHiUzIAsD99HbwKdDOQFHnkbfAJQOS0HfUQaPavM1p8gHYhEQxoNOig5qEHdecfD6d17kFUOwegzZLxDSPb2pn+ztMkYBcY5ssAPgAsDMQPy9ZgdNBnauJy7PV/nnlSrXylZfz8gXQ8UryzYsv9SPcMqW/A01Uvvwo9K2//TozzU0Cj/IlUDl79mx/S3H+/ZEm1e9HAkAXWHzsHWhgh2zABFYDzj3rHP+6YcMaM8Oudr/UWb48P+KRj9GjnoMi/3Rhst/g/fySj+Fx3uQDgE8BewPytQCyL0A6KDoOwJSSq9hUXXE0o77wBSmzUBYLj403WQCPL3ksVJqARcE1LdesIG4nWLjg1yV1Gv5cqHOBtqU9vHqTWxquFgBfCyAWQDqILQCwnJc7jYDpuI2x4w/x1q55vQZlobY0rkaMeueO7aHSFR7Nhx8+JRGl4COTBUCpxsA6S4YjEgIUYkz3Qw4+U1seieeaHZivjpw4cWLoPB/avZaz0KIsAC4EotYCQLPjWpMFgBIWAM8IJLMA6SC2ADjAMDde7Ni2GHQL4MHF94ZKV/gQgAMLwBQ7b4K3O3TipKKcXOXqFKbnNsUh8IxA1HH14zxewGQBoIQFwDMCySxAOnCeBbBRqWw83AF41rkXhkpXendFL6Nd9Vp2M1OyAOgFDYvyww93+VNwVEYx88hPenqJ+wGyXui1Y8d7qhCkGW0vajdp8tTgNWHioerDzH8pxTS81ppdi8BnAhbe+6DHj1OdND2fRfC/h1w2Y/z/8v9n5ELUZxCoxCwAZmz4LMBv/36MzAKkgMACsGm4k07OpgffsDG7fDg3vZbXznS8XOA5ixU4hRJ16ECjlTsByZ4ZgTWhz+G4akabLyDi/l7UcT62t+UDADwjELcUEE7MLYS/+Lt3xAJIAYEA4N5dE089uUQlCcbUqkhOPPEE+nFa27mOTXWfAFkGB45qiiUwih37096NSx7L7sRDFgUEy1577RW0I+HABeXO3H4EUWsa9NWSPEsyH9tjCDVt+gxvRcuLxlkA+D74WgCyAEgIiA8gWer4KjATNOVFJUw9/ABo0Yq+qs02tubw6+OeN2HyctvaJU3czmB7fi7Uzzt7bsHrTL8HkwVAnV+/H7cA4PjkawHEAkgHtXwXYIwFeUOumeBF5yvWcJzmw2kFIebFKdafxoNU6hRa8aafP/vcc0PHkeGHzwLQajwSUhBUzaNH+fVzL4jeQw9/F92/mIhBykuAl8uwhBJ48CQe/Hlcxv4AqzTpu8XfjdcXvnyqR5oYL2qDZ6Q4Anrx3IHwAdD/2xlnnuXRkImu5T4A/D9jpyRTJCB8AEfPmh06P/+SA8UHkAKsswAOq9Yiz8NTv3NzdjoNzjuYqqZVafy+/HxTU5OKA3LmmXLnlQoXGrYhwO23zvfbk0kcdX2xGlFfumuChj7ogCbfAZ8FMJ2HpYccjiYLAM/1zLKnQ+cv+sVGsQBSgHUWwCahTU4yeLsRC68vj9Xviy3H9q7LyiKUOA8LBWmrKVNvHKBtC2ld/f5xwXO6Ogt5O1eNb/ucH15zncdftCuPaT0AP0bxAXw9AR2HJjfNAsACcJ0FQCkWQDrIswCKMYOj4LMKPNKur+CfC42bVsqlAfWEny7YZgFcfQCwAFxnAVCKBZAO8iyAuBrNBJ8/5yXn/d27Q6UJPgRYvuwPoTLu5yYN/7556aohoc31MT/G7lGancb+8ANQHedIo1/z0+vzPtNkAdAsAD6fytPP/MtICwBDHvEBpIui1wJQ8ok4x8vFokWLVH+kr3cOcp3NQAc07fqb0eihdvy8bRbg3rt+E2kB8FkAsQDSQdGRgFyjIitvsZq2MbczUKNlh6BvzZun+pL2reFcenpsPTH+4IP98gODpYLjKHE/rumGDnHbCckVaGDyqdBKO5Pm19vrPgC8p8g+eg3N7VuAtR0mC6BZWzegn+cWAEKK9azMVIoFkCyp2xzUBDYH0RNfFoMpiIhvPtJfNJPJt2Ly5ZjyAWhjdL8+fvJUJwugjd3P5APgawFgKYoFkCyBBQANbmPr5i0qSUodArhqnLT6DDimbM3QwFGZhXCctDO3AE6Zc5r/mn7E9GA8r1sQrhYANL8pI5BYAOmgjsJJXRomLalp62q9XurzIBMS7sPv31+BhQMBwDW9nvdfj7DkFoAJVwsAmt+UEUgsgHRQ66rpXDeo6Cu4piv1eXA9SsQj9FcQb0H/n/r/qckPwH0A+B5gAYw2aPa4PgBYAHwWgOcYFJLB6gOwSehC21S53Nc0Jsd5WCiuOQkrDZ7T9Xso9fsyXW/a+cjkCzDNGmDPR9dZAJsPgGcE4vcRCyBZrLMAWNduolCG3kKcMuf0kObg8Mixvt6XoFigWV0tkmItF26xcPjOQ4QpHoDOwaKCFYDQbVgA+Nv0jEB6CQ47fFpBS4EiEqnkswBiAaSDPAsgrkYzgetNZVxMFoDtc0r93L6Gf9+8jKsh4/6d3BLguz6jo3LNjX0JXnl5RaQFgBIRinwWQCyAdJBnAdg0DWdbe3RmG+R953ngUd/47qZgdxsXTBYAxpp6zDq9bp5/i/fEE08FL9tKvQcW36+SABaUyWtP/w9RVtbbb6+NvB9fQ2CaBQBkCeBzqK77AOiFBCpcY6N+8PhJBX0AsAD4eazxoFWa2OuhWGtSKJ6i4wC4pomraaFB8MOwXW+yABCowpORIn8BcFmqG/X5XEPbLCRXTY7j4yeEA41MY3OTQEYcgDY29wrdD98DruNxBNwCQEfmGhv1N9esLugDgAXAz8O3M2jffftspaZgp2gBwDuUawcDJO31JayTD5tW8Pq4PgB+v87t7U7X5WXZzXUAwAXN5ClT/R8z9vpDph5YPJwnnnpS6e34XoD69bTycdmyZaoQej4Huo5vzca1KvkKCH1WhYQAMvVg/N/ywnPB36sPA9DutjsWeuedPbeGZgHatL0ATVmBeUYg/J1KSJRAAPS1F7tUYAHYPh8aZvLQxsgO6DrmLPXvNO3eW+npVFOeAFMEIbcAOPh+qfNTaZoF4FmB+SyAdP50EAgAjO34LrnDhg71y8ahw4I2eidavWqFKgZoIldqc5YtcsjR80Rh0yzUASk3Ab1ICyJPAYfnv48Lz7RDFFoQVJ8xheOA9rovgJ551at7dmYibduYi+kHeq4/vkMQJQHhFgBdH6XZUcIC0HMK6jkByQdAwwDsC4Dj+H/q7OpSQnLU2TSdqTNF7EXH2xXUdLz9qldWhOp8enDL5k1+OSK3L8EIw/4EW7ZsibwfzFhb9mN8HzD9bUIgMwSIvK+ps/N2Y8aNi2pmtCD49bbns2Vots0CIDsw1+wo29i+CSYfAGYBcFx8AOmgzpYNGB1h+bKlwRiQ6rgOVsFbb7cF1/Bdd6KgWHCklaLZAMqpR8DrjNyEPRkNQc9g2nGIPpy0EEoIimbmkyBNZtqWy/87J05Sxzc0BOefWZbdW4/G0Ho6M5Plwn0FNt8B+P4V3w7m23U/is2nQs87Udt0xGZR0d9PnwGNTtmC6Pg7b7/td1JoZG4B6M8VZQFA89t8AKbzYgEkSzAE4GNj151wsFllV+eeH/j29k0ZDfZISCNAo6HevmWD37Ylt57c9IOnNN7kCEMH2pzbmgxlmyWTDeCaDoEpaMzHyujAtlx7sAC4Ce9qOXDhazrOWbdwgYoDLAGUXzv7zJJ8AHzHJJsPwHR+/fp3gijGvtj1WShMIAC4yb3osn3UpPOW1jz8vf390tSxhg8fHiqxPfj0GTMi27e0vOR3jq7ubH56fawdpWFGNo/1Wl68Mfh8PgTQvdx6Z91fG/vqu9+ifsS0GUq/jp+P8n7jvP58o5rH+Mewq64ebUd1jIH59Z8+/gQyg0P59ukcxvBRn1eojn389DF7ofb8e4MvgVsAaI//J15++vjPef/zxH8bNTz+fswCkLVHU8CwONa+tVa17t6zexLtDUmlbX9IoTwEAoBryO3bP+Zly8Kbbsb15rqOrTnQGFg7gJJraNt6d8Cvs+XIs2lkWzurRrd8nq2uaVin9ibLxhQJiP8vXlLnZ58fKuEDwCwA4j/wuxkwcID/ol2lbenghPLjRwIWWu8NaAcckt7YCQf54tGhSaLjpd/HlJHGdNyEHteu3x/z9nz1mik2HcfhpTetevvRtT8reL0Jfp3+90YdN523PT8/Hvc8j74bOmy4mj59hhcVCRj1vaM8fHp4NaFtLQCiP3E/6vj6lvLICi1UhjqTZtq6bUeohOQGXIO7zhbo5n5UO5MGMVkMcPpVGjwfsg6bvkdTtl4cd7Usyg23APD/m/HJFLyO//+83PJC5CyAaS0APgf/n6T9O3PDQaHy1PLYbXDF/dkMQS8M/Fu/jKtxgOk6bgHY6pR9Fi+VAvB3UywBXlHtoAGjrue5+l3oKZPXHBobz0eaOcoCwMv0/wwLwHSeZwRCJiDdAhjUUB9ofhkGVJa8wA2cgFOHTNrvXfVtYyCIyfmD+5iuU/0c6vAuex3QdJvJ454kmL6Dk04lBDn9SADAB0CCgEpxAlYG42pAV0wayTa2t1kEeI4rr/6+h5d+HCXG8ij1nWh4xht9z0B+Ps/isJwHru2i/j79eXjd1t5mMVE7eia+7p9bHBvask5D+G5MFgBiDrjF6GoBICMQLAB9RygaAojmT4Y8KQvNoErEpultFoHpOXAcJbafRskXGQluJLU4h1sAQCyAylCLMSAfq0ZpmKjjtOoOL6pfcdVVBe9z3gVfi7QMTJqTe/8nTZysCoFgEtI0eOFz8TLVo0poRmgs1HmJ81Fj5yhLRNeYpF3xN3KLht8PL74TcJQXXn/h/4XG+njRmB/PjxBqVwuAW2quswD8PMb+5AzU60JlyPu2uTeXY4vhxyab3Btsuo+pHZ6De/8RY4/zqPPjfIei2279VcF6uYiY3fBLdHg8H+q8/bkXXOhrWprLAAAK3UlEQVQfH9U8OvJ+/L6AD91MazP4bA5f/lxsJKDrLEDU/7fMAiRHHcaAKKExCcTq6z8aaLrnnm8JbkKhvyeedFIowSe1ozpKygH40OJ7g/OkgfiaAQoPbhw+KnSMnoE+X88eFFXHmoTluRh+cMysYxWOc2ck2rg4JfnGIabzpvvzmHoe+w9+edPP/eMohw5r9I8f99nP+eWKlpf8csjQ/fKeAVF802cemXffP69cFZznjB47ztNLApGAAwZm8zDU7bWXam1dHXstAMqjZ832aItw1Enw0MIrOP4I8QNUnrJpQXR0XjcJAEBmKNYD6JDJST84WzvTcY5tlkKVCdv9y/15glAKdSatAL77/f/vl2tyi37+499v8kvSQGQujj9ksrfm9VU1i3M59bAKD/Vnn/+TX65d+7ZfYvoM5Yc12YkImLCUnZY0Sf2grEaFqXz4EdMzHuePe7R4hNi0aasfhLL/ASOCa0kT4b66c5DM6UV33+Wbzd+8+FIyS4Ox6UMP3O8f55qMe8sv+87l6o8ZK2Jp5qWfp3z8+nV81SGd1+9P56nO76+vJYhbqj5gwN7Q/AOCY/oaAGQEgtPV1QLA9VAM3JJTQkWps435Mucjj5sEB1bnNcf8YWIMiWkrpAAz7ViD6SdcByEwZuw4ynYTtINvgHc4jE1NATx8bUBmLl/p98F5Pvbm1+mCrVC7Yjtypa0J+GSQEQgzLqa1ACip8+vXm/aDECpL3cETJoR+eHvXZ5e18hx6dXvv45f1DQ1++edXVii61vN6Fe5BpX49/ajbt2z0j3fs2O6XOzo7/ZmD9evWRsbX03G95BGKBP2IdnZ3hc6jg61oedE/RivtkEcAY27ikYceVKSN1q190697Xq3vj9jxXrf/PHsPrA/i1SlHAVkMxDMZofL+zm4/kxCyCg0eMki9tnJlsJ6f4BoPz9VQn/3eendn4951S8OUCNQmFHSfQiHLAIFe+veH87qPRCcY+9dlLQB8j8jIFNcHgIxAtulfobLUvfnGG4n+J3BvNv2Q9GN8FoALBJyHpuXteSeCJjJ9Pq/TcMEFPBcSmnT3dOfKrlAd7DmeLXEdSnQOkxCIex7fS0SWXxUHnhXYlg8AZaFZACE5avl8r76aT38h17xpXhorAbE3HaaXeF3PWx/10nPW4Tn0kqcB5xYA5s9hVXxpzun+ceTG46sF45ZRcRH68+K58HfszCVKoQw+RMe29tBxlPzvsml/LgiPmjU7dJ5PMwbZg7wPQ+fz7ptrB4Ea7LuQO873BdAjL/XjvJyS20EI9f6y+/JHnTwpXK6IMEzzmOqCQIgTMFnyVgNSphqCR3LpO9dE1bnE/zAnW3Ce1/mOPogv0C0HKvXItag64hb083o5Zephoc/Bffnn85K3M2m2tJblem7T96NHNup10334edkTMB2IxBUSRSyAZKmNyuATVfKxn03j8Ew9cduhpPnmQudhAfCSt+MZgGzlwnsfLIsGxfOjxPNh7MwtFpNFY2rPy0pbGq4WgGktgJAsInGFRBELIFlqXSU9l/A2DTnzyE+WpSy3xio1px7KeX9zmVN55dU/CJXfvvzKUDnvkmw7ZDpCuwu//s3QcQRW8RK785rqzUxTUxZfKhFIxUu+us9U8lWLrt8rfEpiAaQDkbiCUMXUcsnMc8WhPvesc0J17CzD2yO0lmsM7jXGmJZrFD6v/FcXhzVMuUrTfcv9eX39Obb78O/fdrzU+3DNf931N0RaALqvQ5/VESqLWABCoogPIFlqk9IUxd5fz3FXjtI2ZnV9PteIuGotMQsAC0AiAdOBSFwhUcQCSBbrLABW+iErb9x2yAaLsWCxGgT35/cxHXe9HiU0OCwMbmnYIh9NEXP8PLcUTO14LL4pgpJfZ6rHnR3hdZ7zz1TnPh3T/cQCSAcicYVEEQsgWWqjstDqpSniDJrMVbNUqjTNOpjac83MsySjxKwHL+976HexSuTJ5yU+37XEdfw5+X1tx/l5Pk9vsxRslhefBUApFkA6EIkrJIpYAMlSaxozukr2YsectpLvImsba5vGxrZyZNvIUGnTgHzMS5l/9BLebtfjuJ/pOD/PY+pN9+fed9vxYp/fdhx5ACQfQDoRiSskilgAyVILSc3HaPw4vPmm9jhvOs7P2+7j2t71efjzF2uZmHbAMVlCtvb8fLktKX4/06pCnvkn7nOYfCe4D3aOQikWQDoQiSskilgAyVLrOraG5oAER900T10ujWUqTc+z7fGv+2XrwlND5fxLDgyd/9GPr/HLTTedFlmiHcre35zvVG6/94pQye/Dy9/+/ZhQiefk5dFHH+OXiKHnexPyfA28jr/Xlv9B3+Ow0HF+H9Nz4XNRYo9CvoekkAwicYVEEQsgWWp5Dj7X0pYhqFwl/1xoDmgYXjft5ot2eG5e52Xc9qVeh+ct9Tq+WzBtv81f2Il46mGHByW96DunF+p6G1tuxmLqSkgckbgfMT6n7VREOfupw6NOm3BiG+7eXb1+CnLah4COoU7wY1QfOmx48Bkum7W61KOOK6Gi1NLYjeLe6Ydz8/xbvNfXvFmSZI6btVc0Qd+D3XcJ6tT0IrAJCYHOz9/rbfoC6vR4KaHi+L8M2oaLNpDIaAzVV2ArcFMp9D3YfntQQ30gBLKdPb+T69pf+Ojib80r2zR9tEHHJ0sgv/MXxqWN0H+pVQnR0bEjVAp9hz4EIEggmDr2kKHD/JeOCIGPLnUqIWQIUHmo49OLBELrGoPVxzZHBaOaD4rlq+Fjehnjp5NAACxfvtxrb29XX/ziF2sefvhhr7GxUVEdJR2nNtR29erVavjw4cE5YsuWLer88883OnNE4yeHPgQg735nd48SBCIQAMccc0zQcamzRzXW28SFa3wRCH0DtuvWoY5PQgBTgHxIIFQvIQuANPukSZP8jg4rgECd3sMSgObXLYU4AkKGAJUHml8EgAAiLQCCWwF6vRhLgGv8x5c8UqOXQt+Djo8hQTmRMX7/pGKqQDR+Mqxd83pZOma5nXoiMNKB2IKCUMWIFBaEKkYsAEGoYkICAJ7+cmKaUhQEIXnEAhCEKka0syBUMbGHALpJH7e9IAjpIvZqQHT6vvAXCIJQWSJ9ACatHdXpRcMLQv8lUgAU0u68w8dpKwhCuih6CODSuWWYIAjppqQhQCEhIJ1fENJP7CFAnDaCIKSb2IFAccb14gMQhHQjHVQQqhhZCyAIVYysBRCEKka0syBUMWIBCEIVIwJAEKoYEQCCUMWIABCEKkYEgCBUMSIABKGKEQEgCFWMCABBqGJEAAhCFSMCQBCqGBEAglDFiAAQhCpGBIAgVDEiAAShihEBIAhVjAgAQahiRAAIQhUjAkAQqhgRAIJQxYgAEIQqRgSAIFQxIgAEoYoRASAIVYwIAEGoYkQACEIVIwJAEKoYEQCCUMWIABCEKkYEgCBUMSIABKGKEQEgCFWMCABBqGJEAAhCFSMCQBCqGBEAglDFiAAQhCpGBIAgVDEiAAShihEBIAhVjAgAQahiRAAIQhUjAkAQqhgRAIJQxYgAEIQqRgSAIFQxIgAEoYoRASAIVYwIAEGoYkQACEIVIwJAEKoYEQCCUMWIABCEKkYEgCBUMSIABKGKEQEgCFWMCABBqGJEAAhCFSMCQBCqGBEAglDFiAAQhCpGBIAgVDEiAAShihEBIAhVjAgAQahiRAAIQhUjAkAQqpj/BQAA//9qrOdGAAAABklEQVQDAGUVbjx0ZjdqAAAAAElFTkSuQmCC",
+      "width": 256,
+      "height": 256,
+      "uv_width": 128,
+      "uv_height": 128,
+      "internal": true
+    }
+  ]
+}

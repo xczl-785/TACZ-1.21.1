@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "672ad7f5-d639-5c2c-ac42-6a339eff595f",
+      "definitionId": "scar_h_lower"
+    },
+    {
+      "instanceId": "b5a64e17-15db-5c51-9813-b93a07a2c4af",
+      "definitionId": "scar_h_upper",
+      "parentId": "672ad7f5-d639-5c2c-ac42-6a339eff595f",
+      "slot": "upper"
+    },
+    {
+      "instanceId": "aa7ee020-400d-54c3-962e-9288169c5c2f",
+      "definitionId": "scar_h_handguard",
+      "parentId": "b5a64e17-15db-5c51-9813-b93a07a2c4af",
+      "slot": "handguard"
+    },
+    {
+      "instanceId": "4afadaba-5800-5fce-a0b8-4df0e5bae112",
+      "definitionId": "scar_h_barrel",
+      "parentId": "b5a64e17-15db-5c51-9813-b93a07a2c4af",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "766995f2-406f-5e7e-8778-91ecf86b1aa7",
+      "definitionId": "scar_h_gas_system",
+      "parentId": "4afadaba-5800-5fce-a0b8-4df0e5bae112",
+      "slot": "gas_system"
+    },
+    {
+      "instanceId": "7e1f05c3-cf1a-5807-a3e3-40545b737467",
+      "definitionId": "scar_h_muzzle",
+      "parentId": "4afadaba-5800-5fce-a0b8-4df0e5bae112",
+      "slot": "muzzle"
+    },
+    {
+      "instanceId": "bcc7cd6e-70d1-5f68-8c0b-32f04fc874d3",
+      "definitionId": "scar_h_bolt",
+      "parentId": "b5a64e17-15db-5c51-9813-b93a07a2c4af",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "362fe25b-bce5-5cff-aab6-e26bc80b8eb5",
+      "definitionId": "scar_h_front_sight",
+      "parentId": "b5a64e17-15db-5c51-9813-b93a07a2c4af",
+      "slot": "front_sight"
+    },
+    {
+      "instanceId": "5ebda406-5be3-5d5d-8360-37ae8ee88502",
+      "definitionId": "scar_h_rear_sight",
+      "parentId": "b5a64e17-15db-5c51-9813-b93a07a2c4af",
+      "slot": "rear_sight"
+    },
+    {
+      "instanceId": "14104905-ff11-5aaa-a920-8c1a6cd1ee14",
+      "definitionId": "scar_h_pistol_grip",
+      "parentId": "672ad7f5-d639-5c2c-ac42-6a339eff595f",
+      "slot": "pistol_grip"
+    },
+    {
+      "instanceId": "b3c6f6a3-e0ff-5098-acf0-4c4acb9f4875",
+      "definitionId": "scar_h_stock",
+      "parentId": "672ad7f5-d639-5c2c-ac42-6a339eff595f",
+      "slot": "stock"
+    },
+    {
+      "instanceId": "4c62d530-8503-5e24-befd-f3f52a292a2e",
+      "definitionId": "scar_h_magazine_standard",
+      "parentId": "672ad7f5-d639-5c2c-ac42-6a339eff595f",
+      "slot": "magazine"
+    }
+  ]
+}

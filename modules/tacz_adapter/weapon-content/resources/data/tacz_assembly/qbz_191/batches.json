@@ -1,0 +1,237 @@
+{
+  "assembly_qbz_191_lower_gun_body": {
+    "definition": "qbz_191_lower",
+    "variant": "always",
+    "sourceBone": "gun_body"
+  },
+  "assembly_qbz_191_lower_bone6": {
+    "definition": "qbz_191_lower",
+    "variant": "always",
+    "sourceBone": "bone6"
+  },
+  "assembly_qbz_191_lower_bone3": {
+    "definition": "qbz_191_lower",
+    "variant": "always",
+    "sourceBone": "bone3"
+  },
+  "assembly_qbz_191_lower_receiver": {
+    "definition": "qbz_191_lower",
+    "variant": "always",
+    "sourceBone": "receiver"
+  },
+  "assembly_qbz_191_lower_bone": {
+    "definition": "qbz_191_lower",
+    "variant": "always",
+    "sourceBone": "bone"
+  },
+  "assembly_qbz_191_lower_body_rail2": {
+    "definition": "qbz_191_lower",
+    "variant": "always",
+    "sourceBone": "body_rail2"
+  },
+  "assembly_qbz_191_lower_pattern": {
+    "definition": "qbz_191_lower",
+    "variant": "always",
+    "sourceBone": "pattern"
+  },
+  "assembly_qbz_191_lower_mag_release": {
+    "definition": "qbz_191_lower",
+    "variant": "always",
+    "sourceBone": "mag_release"
+  },
+  "assembly_qbz_191_lower_bolt_release": {
+    "definition": "qbz_191_lower",
+    "variant": "always",
+    "sourceBone": "bolt_release"
+  },
+  "assembly_qbz_191_lower_selector": {
+    "definition": "qbz_191_lower",
+    "variant": "always",
+    "sourceBone": "selector"
+  },
+  "assembly_qbz_191_upper_kit_body_rail3": {
+    "definition": "qbz_191_upper_kit",
+    "variant": "always",
+    "sourceBone": "body_rail3"
+  },
+  "assembly_qbz_191_upper_kit_bone7": {
+    "definition": "qbz_191_upper_kit",
+    "variant": "always",
+    "sourceBone": "bone7"
+  },
+  "assembly_qbz_191_upper_kit_Gunrails": {
+    "definition": "qbz_191_upper_kit",
+    "variant": "always",
+    "sourceBone": "Gunrails"
+  },
+  "assembly_qbz_191_upper_kit_rail": {
+    "definition": "qbz_191_upper_kit",
+    "variant": "always",
+    "sourceBone": "rail"
+  },
+  "assembly_qbz_191_upper_kit_deco2": {
+    "definition": "qbz_191_upper_kit",
+    "variant": "always",
+    "sourceBone": "deco2"
+  },
+  "assembly_qbz_191_upper_kit_bone15": {
+    "definition": "qbz_191_upper_kit",
+    "variant": "always",
+    "sourceBone": "bone15"
+  },
+  "assembly_qbz_191_upper_kit_bone16": {
+    "definition": "qbz_191_upper_kit",
+    "variant": "always",
+    "sourceBone": "bone16"
+  },
+  "assembly_qbz_191_handguard_handguard": {
+    "definition": "qbz_191_handguard",
+    "variant": "always",
+    "sourceBone": "handguard"
+  },
+  "assembly_qbz_191_handguard_bone9": {
+    "definition": "qbz_191_handguard",
+    "variant": "always",
+    "sourceBone": "bone9"
+  },
+  "assembly_qbz_191_handguard_bone10": {
+    "definition": "qbz_191_handguard",
+    "variant": "always",
+    "sourceBone": "bone10"
+  },
+  "assembly_qbz_191_handguard_bone11": {
+    "definition": "qbz_191_handguard",
+    "variant": "always",
+    "sourceBone": "bone11"
+  },
+  "assembly_qbz_191_handguard_bone12": {
+    "definition": "qbz_191_handguard",
+    "variant": "always",
+    "sourceBone": "bone12"
+  },
+  "assembly_qbz_191_handguard_bone13": {
+    "definition": "qbz_191_handguard",
+    "variant": "always",
+    "sourceBone": "bone13"
+  },
+  "assembly_qbz_191_handguard_bone14": {
+    "definition": "qbz_191_handguard",
+    "variant": "always",
+    "sourceBone": "bone14"
+  },
+  "assembly_qbz_191_barrel_barrel": {
+    "definition": "qbz_191_barrel",
+    "variant": "always",
+    "sourceBone": "barrel"
+  },
+  "assembly_qbz_191_barrel_bone8": {
+    "definition": "qbz_191_barrel",
+    "variant": "always",
+    "sourceBone": "bone8"
+  },
+  "assembly_qbz_191_muzzle_muzzle_default": {
+    "definition": "qbz_191_muzzle",
+    "variant": "always",
+    "sourceBone": "muzzle_default"
+  },
+  "assembly_qbz_191_muzzle_group2": {
+    "definition": "qbz_191_muzzle",
+    "variant": "always",
+    "sourceBone": "group2"
+  },
+  "assembly_qbz_191_pistol_grip_grip": {
+    "definition": "qbz_191_pistol_grip",
+    "variant": "always",
+    "sourceBone": "grip"
+  },
+  "assembly_qbz_191_bolt_bolt": {
+    "definition": "qbz_191_bolt",
+    "variant": "always",
+    "sourceBone": "bolt"
+  },
+  "assembly_qbz_191_stock_buffer_tube": {
+    "definition": "qbz_191_stock",
+    "variant": "always",
+    "sourceBone": "buffer_tube"
+  },
+  "assembly_qbz_191_stock_stock": {
+    "definition": "qbz_191_stock",
+    "variant": "always",
+    "sourceBone": "stock"
+  },
+  "assembly_qbz_191_front_sight_fore_sight": {
+    "definition": "qbz_191_front_sight",
+    "variant": "upright",
+    "sourceBone": "fore_sight"
+  },
+  "assembly_qbz_191_front_sight_sight_illuminated": {
+    "definition": "qbz_191_front_sight",
+    "variant": "upright",
+    "sourceBone": "sight_illuminated"
+  },
+  "assembly_qbz_191_front_sight_octagon": {
+    "definition": "qbz_191_front_sight",
+    "variant": "upright",
+    "sourceBone": "octagon"
+  },
+  "assembly_qbz_191_front_sight_fore_sight2": {
+    "definition": "qbz_191_front_sight",
+    "variant": "folded",
+    "sourceBone": "fore_sight2"
+  },
+  "assembly_qbz_191_front_sight_sight2_illuminated": {
+    "definition": "qbz_191_front_sight",
+    "variant": "folded",
+    "sourceBone": "sight2_illuminated"
+  },
+  "assembly_qbz_191_front_sight_octagon2": {
+    "definition": "qbz_191_front_sight",
+    "variant": "folded",
+    "sourceBone": "octagon2"
+  },
+  "assembly_qbz_191_rear_sight_rear_sight": {
+    "definition": "qbz_191_rear_sight",
+    "variant": "upright",
+    "sourceBone": "rear_sight"
+  },
+  "assembly_qbz_191_rear_sight_rear_illuminated": {
+    "definition": "qbz_191_rear_sight",
+    "variant": "upright",
+    "sourceBone": "rear_illuminated"
+  },
+  "assembly_qbz_191_rear_sight_rear_sight2": {
+    "definition": "qbz_191_rear_sight",
+    "variant": "folded",
+    "sourceBone": "rear_sight2"
+  },
+  "assembly_qbz_191_rear_sight_rear2_illuminated": {
+    "definition": "qbz_191_rear_sight",
+    "variant": "folded",
+    "sourceBone": "rear2_illuminated"
+  },
+  "assembly_qbz_191_magazine_standard_mag_standard": {
+    "definition": "qbz_191_magazine_standard",
+    "variant": "always",
+    "sourceBone": "mag_standard"
+  },
+  "assembly_tacz_qbz_191_extended_mag_1_mag_extended_1": {
+    "definition": "tacz_qbz_191_extended_mag_1",
+    "variant": "always",
+    "sourceBone": "mag_extended_1"
+  },
+  "assembly_tacz_qbz_191_extended_mag_2_mag_extended_2": {
+    "definition": "tacz_qbz_191_extended_mag_2",
+    "variant": "always",
+    "sourceBone": "mag_extended_2"
+  },
+  "assembly_tacz_qbz_191_extended_mag_3_bone26": {
+    "definition": "tacz_qbz_191_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "bone26"
+  },
+  "assembly_tacz_qbz_191_extended_mag_3_drum": {
+    "definition": "tacz_qbz_191_extended_mag_3",
+    "variant": "always",
+    "sourceBone": "drum"
+  }
+}

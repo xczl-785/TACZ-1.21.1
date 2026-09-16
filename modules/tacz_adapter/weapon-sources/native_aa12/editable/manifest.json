@@ -1,0 +1,765 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "aa12_lower",
+      "group": "aa12_lower",
+      "prefix": "native_attachment_aa12_lower",
+      "cubes": 119,
+      "sourceCubeIndices": {
+        "body": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86
+        ],
+        "bone6": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bone3": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group4": [
+          0,
+          1
+        ],
+        "bone4": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group9": [
+          0
+        ],
+        "group8": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "guard": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "octagon7": [
+          0,
+          1,
+          2
+        ],
+        "deco": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.0625,
+        7.60407,
+        0.16248
+      ],
+      "uvSize": [
+        512,
+        512
+      ],
+      "model": "components/aa12_lower/model.bbmodel",
+      "texture": "components/aa12_lower/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+      "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+      "sourceTextureSha256": "daf01f77a79c7cc1e237b49e1d6c8a85ae8ac5a0d1548521dc50504469f111d7",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "2d095fbf4376bb72055d770f9e19de68850877ad641dd7ad5f1d3d68f82df3cd"
+    },
+    {
+      "definitionId": "aa12_upper",
+      "group": "aa12_upper",
+      "prefix": "native_attachment_aa12_upper",
+      "cubes": 15,
+      "sourceCubeIndices": {
+        "aa12": [
+          0
+        ],
+        "deco2": [
+          0,
+          1
+        ],
+        "gaslock": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        10.85558,
+        -0.96932
+      ],
+      "uvSize": [
+        512,
+        512
+      ],
+      "model": "components/aa12_upper/model.bbmodel",
+      "texture": "components/aa12_upper/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+      "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+      "sourceTextureSha256": "daf01f77a79c7cc1e237b49e1d6c8a85ae8ac5a0d1548521dc50504469f111d7",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "7a26373e748e92ab316815b263e42f921ec377cb79e48a13f62763374c8d3f08"
+    },
+    {
+      "definitionId": "aa12_handguard",
+      "group": "aa12_handguard",
+      "prefix": "native_attachment_aa12_handguard",
+      "cubes": 92,
+      "sourceCubeIndices": {
+        "handguard_tactical": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        10.35937,
+        -14.87448
+      ],
+      "uvSize": [
+        512,
+        512
+      ],
+      "model": "components/aa12_handguard/model.bbmodel",
+      "texture": "components/aa12_handguard/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+      "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+      "sourceTextureSha256": "daf01f77a79c7cc1e237b49e1d6c8a85ae8ac5a0d1548521dc50504469f111d7",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "c7ad9d58c8460adbd546bb659e69b147f540d1bd7af7a514401aae063d71cd75"
+    },
+    {
+      "definitionId": "aa12_barrel",
+      "group": "aa12_barrel",
+      "prefix": "native_attachment_aa12_barrel",
+      "cubes": 11,
+      "sourceCubeIndices": {
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group11": [
+          0,
+          1,
+          2
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.20312,
+        10.03204,
+        -9.744
+      ],
+      "uvSize": [
+        512,
+        512
+      ],
+      "model": "components/aa12_barrel/model.bbmodel",
+      "texture": "components/aa12_barrel/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+      "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+      "sourceTextureSha256": "daf01f77a79c7cc1e237b49e1d6c8a85ae8ac5a0d1548521dc50504469f111d7",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "004fe4d2c89560062701ee148c2df97c133b9809c7631f866e6d1f0d2a00ff61"
+    },
+    {
+      "definitionId": "aa12_front_sight",
+      "group": "aa12_front_sight",
+      "prefix": "native_attachment_aa12_front_sight",
+      "cubes": 16,
+      "sourceCubeIndices": {
+        "frontsight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        14.02042,
+        -17.42861
+      ],
+      "uvSize": [
+        512,
+        512
+      ],
+      "model": "components/aa12_front_sight/model.bbmodel",
+      "texture": "components/aa12_front_sight/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+      "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+      "sourceTextureSha256": "daf01f77a79c7cc1e237b49e1d6c8a85ae8ac5a0d1548521dc50504469f111d7",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "56bdca6521dd09fe03cbd5f40d54bf87e6dcad2b636346b496e4f6cc3f56731a"
+    },
+    {
+      "definitionId": "aa12_rear_sight",
+      "group": "aa12_rear_sight",
+      "prefix": "native_attachment_aa12_rear_sight",
+      "cubes": 11,
+      "sourceCubeIndices": {
+        "sight_back": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "sight_illuminated": [
+          0,
+          1,
+          2,
+          3
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.09375,
+        14.8257,
+        -6.48136
+      ],
+      "uvSize": [
+        512,
+        512
+      ],
+      "model": "components/aa12_rear_sight/model.bbmodel",
+      "texture": "components/aa12_rear_sight/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+      "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+      "sourceTextureSha256": "daf01f77a79c7cc1e237b49e1d6c8a85ae8ac5a0d1548521dc50504469f111d7",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "a93cf848a8a1ff3a3dc10663d925fc653066cf157febdb110e8bb814933023ba"
+    },
+    {
+      "definitionId": "aa12_mount",
+      "group": "aa12_mount",
+      "prefix": "native_attachment_aa12_mount",
+      "cubes": 85,
+      "sourceCubeIndices": {
+        "mount_default": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40
+        ],
+        "top_rail": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        13.47752,
+        -1.29748
+      ],
+      "uvSize": [
+        512,
+        512
+      ],
+      "model": "components/aa12_mount/model.bbmodel",
+      "texture": "components/aa12_mount/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+      "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+      "sourceTextureSha256": "daf01f77a79c7cc1e237b49e1d6c8a85ae8ac5a0d1548521dc50504469f111d7",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "7d77443ba4fc9673fee8a699e21118d12baec60749588d9a04e302b474f8565e"
+    },
+    {
+      "definitionId": "aa12_bolt",
+      "group": "aa12_bolt",
+      "prefix": "native_attachment_aa12_bolt",
+      "cubes": 15,
+      "sourceCubeIndices": {
+        "bolt": [
+          0
+        ],
+        "octagon9": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group14": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon10": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.01195,
+        11.71875,
+        -4.1144
+      ],
+      "uvSize": [
+        512,
+        512
+      ],
+      "model": "components/aa12_bolt/model.bbmodel",
+      "texture": "components/aa12_bolt/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+      "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+      "sourceTextureSha256": "daf01f77a79c7cc1e237b49e1d6c8a85ae8ac5a0d1548521dc50504469f111d7",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "591ef491b61f6c235f682960834dcc35e683313d3a3fece51db8259a7ab15a9d"
+    },
+    {
+      "definitionId": "aa12_charging_handle",
+      "group": "aa12_charging_handle",
+      "prefix": "native_attachment_aa12_charging_handle",
+      "cubes": 26,
+      "sourceCubeIndices": {
+        "charge_l": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "charge_r": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "base": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        13.29783,
+        -2.0
+      ],
+      "uvSize": [
+        512,
+        512
+      ],
+      "model": "components/aa12_charging_handle/model.bbmodel",
+      "texture": "components/aa12_charging_handle/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+      "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+      "sourceTextureSha256": "daf01f77a79c7cc1e237b49e1d6c8a85ae8ac5a0d1548521dc50504469f111d7",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "644680fedd5cbc1768f2da9b8ab03595dc5baa383319c9fd5cc834de82332bf2"
+    },
+    {
+      "definitionId": "aa12_magazine_standard",
+      "group": "aa12_magazine_standard",
+      "prefix": "native_attachment_aa12_magazine_standard",
+      "cubes": 10,
+      "sourceCubeIndices": {
+        "mag": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        5.67637,
+        -2.97853
+      ],
+      "uvSize": [
+        512,
+        512
+      ],
+      "model": "components/aa12_magazine_standard/model.bbmodel",
+      "texture": "components/aa12_magazine_standard/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/aa12_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/aa12.png",
+      "sourceSha256": "efb05f617401507363596c5934051deb56cb1b41d758fda9ee4d03056fb16b5d",
+      "sourceTextureSha256": "daf01f77a79c7cc1e237b49e1d6c8a85ae8ac5a0d1548521dc50504469f111d7",
+      "runtimeMode": "native_gun_bone_part",
+      "baselineModelSha256": "88447ccd979e9f2befee1bc8d59fd3f416b710fadc4055827cb243936c64482d"
+    }
+  ]
+}

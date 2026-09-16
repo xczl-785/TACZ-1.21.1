@@ -1,0 +1,9 @@
+{
+  "name": "gun.tacz_assembly.sks_tactical",
+  "display": "tacz_assembly:sks_tactical",
+  "data": "tacz_assembly:sks_tactical",
+  "tooltip": "tacz.gun.sks_tactical.desc",
+  "type": "rifle",
+  "sort": 103,
+  "item_type": "tacz_assembly:sks_tactical"
+}

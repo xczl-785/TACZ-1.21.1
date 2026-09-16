@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "m870_tube_extension_1",
+      "group": "m870_tube_extension_1",
+      "prefix": "native_attachment_m870_tube_extension_1",
+      "cubes": 14,
+      "sourceCubeIndices": {
+        "mag_extended_1": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        7.98262,
+        -17.4375
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/m870_tube_extension_1/model.bbmodel",
+      "texture": "components/m870_tube_extension_1/texture.png",
+      "gunId": "tacz:m870",
+      "attachmentId": "tacz:shotgun_extended_mag_1",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m870_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m870.png",
+      "sourceSha256": "3b92b23bd40541223bd620b9cf2d8c6a2bfd225a2a7767c6b56a11448fbae679",
+      "sourceTextureSha256": "3cefd9350ba62bb3adda9fe690de5df03a30b4ac75d708abef685d8b6a78f109",
+      "runtimeMode": "native_tube_extension",
+      "semantic": "tube extension, not detachable magazine",
+      "capacity": 6,
+      "baselineModelSha256": "490481d3634dfc984c942b0f47f5a1375c908a85145c9aeb3c6e9bca13bfd52a"
+    },
+    {
+      "definitionId": "m870_tube_extension_2",
+      "group": "m870_tube_extension_2",
+      "prefix": "native_attachment_m870_tube_extension_2",
+      "cubes": 14,
+      "sourceCubeIndices": {
+        "mag_extended_2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        7.98262,
+        -18.6875
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/m870_tube_extension_2/model.bbmodel",
+      "texture": "components/m870_tube_extension_2/texture.png",
+      "gunId": "tacz:m870",
+      "attachmentId": "tacz:shotgun_extended_mag_2",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m870_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m870.png",
+      "sourceSha256": "3b92b23bd40541223bd620b9cf2d8c6a2bfd225a2a7767c6b56a11448fbae679",
+      "sourceTextureSha256": "3cefd9350ba62bb3adda9fe690de5df03a30b4ac75d708abef685d8b6a78f109",
+      "runtimeMode": "native_tube_extension",
+      "semantic": "tube extension, not detachable magazine",
+      "capacity": 7,
+      "baselineModelSha256": "4721ecd0bb5f8e038d67dbe7050bac10d5083303192fcf5da2dfea20e179f847"
+    },
+    {
+      "definitionId": "m870_tube_extension_3",
+      "group": "m870_tube_extension_3",
+      "prefix": "native_attachment_m870_tube_extension_3",
+      "cubes": 14,
+      "sourceCubeIndices": {
+        "mag_extended_3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        7.98262,
+        -19.1875
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/m870_tube_extension_3/model.bbmodel",
+      "texture": "components/m870_tube_extension_3/texture.png",
+      "gunId": "tacz:m870",
+      "attachmentId": "tacz:shotgun_extended_mag_3",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m870_geo.json",
+      "sourceTexture": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/gun/uv/m870.png",
+      "sourceSha256": "3b92b23bd40541223bd620b9cf2d8c6a2bfd225a2a7767c6b56a11448fbae679",
+      "sourceTextureSha256": "3cefd9350ba62bb3adda9fe690de5df03a30b4ac75d708abef685d8b6a78f109",
+      "runtimeMode": "native_tube_extension",
+      "semantic": "tube extension, not detachable magazine",
+      "capacity": 8,
+      "baselineModelSha256": "e6055f5713d952313c4896642efe0305fc946b37779aebdc47c7a7e5101430a6"
+    }
+  ]
+}

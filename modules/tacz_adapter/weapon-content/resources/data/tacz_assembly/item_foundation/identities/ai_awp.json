@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tacz_assembly:ai_awp",
+      "tags": [
+        "item_foundation:type/weapon/firearm/bolt_action_rifle"
+      ]
+    },
+    {
+      "item": "tacz_assembly:awp_barrel",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "tacz_assembly:awp_bipod",
+      "tags": [
+        "item_foundation:type/weapon_mod/bipod"
+      ]
+    },
+    {
+      "item": "tacz_assembly:awp_bolt",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_assembly:awp_stock",
+      "tags": [
+        "item_foundation:type/weapon_mod/stock"
+      ]
+    },
+    {
+      "item": "tacz_assembly:awp_iron_sights",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_assembly:awp_magazine_standard",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    }
+  ]
+}

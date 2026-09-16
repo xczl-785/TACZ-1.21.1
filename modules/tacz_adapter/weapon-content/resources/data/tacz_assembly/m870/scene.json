@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "definitionId": "m870_receiver"
+    },
+    {
+      "instanceId": "986ea64c-f750-5c76-bb78-65543cdaa93f",
+      "definitionId": "m870_barrel",
+      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "7e773c2b-dd0e-5ec1-90d4-02cd3f29c4e3",
+      "definitionId": "m870_tube",
+      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "slot": "tube"
+    },
+    {
+      "instanceId": "6a18bc64-a29e-5a99-a5f5-dc8f75e333ae",
+      "definitionId": "m870_iron_sights",
+      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "slot": "iron_sights"
+    },
+    {
+      "instanceId": "656ab609-06f0-5e9a-bd12-7d230a80a47f",
+      "definitionId": "m870_pump",
+      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "slot": "pump"
+    },
+    {
+      "instanceId": "e7ea7582-d5e4-597f-a46e-26097be76ad1",
+      "definitionId": "m870_bolt",
+      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "1c4217ed-53be-5b1c-ade5-869ddd7ecbbf",
+      "definitionId": "m870_stock",
+      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "slot": "stock"
+    }
+  ]
+}

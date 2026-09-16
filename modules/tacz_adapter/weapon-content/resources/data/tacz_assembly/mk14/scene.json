@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "nodes": [
+    {
+      "instanceId": "990e3d80-274d-5aaf-9599-55341047a816",
+      "definitionId": "mk14_lower"
+    },
+    {
+      "instanceId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "definitionId": "mk14_upper",
+      "parentId": "990e3d80-274d-5aaf-9599-55341047a816",
+      "slot": "upper"
+    },
+    {
+      "instanceId": "164e7154-a3f0-56bf-b263-be00f5efbfc1",
+      "definitionId": "mk14_handguard",
+      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "slot": "handguard"
+    },
+    {
+      "instanceId": "095a5c53-0e09-56ae-a8d6-9a1e6ce9271e",
+      "definitionId": "mk14_barrel",
+      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "slot": "barrel"
+    },
+    {
+      "instanceId": "b1febbcc-124a-54ac-8f95-298f1d420b99",
+      "definitionId": "mk14_muzzle",
+      "parentId": "095a5c53-0e09-56ae-a8d6-9a1e6ce9271e",
+      "slot": "muzzle"
+    },
+    {
+      "instanceId": "b8b004f4-aab4-5ba5-aa78-347c060bd97f",
+      "definitionId": "mk14_rear_sight",
+      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "slot": "rear_sight"
+    },
+    {
+      "instanceId": "fe316e4a-a67e-5b18-8672-32460ada4b36",
+      "definitionId": "mk14_mount",
+      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "slot": "mount"
+    },
+    {
+      "instanceId": "a762cf46-2e5c-5fb6-9512-9598fb1f86f8",
+      "definitionId": "mk14_bolt",
+      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "slot": "bolt"
+    },
+    {
+      "instanceId": "b59dc2e4-d8e9-55d5-8420-a1bbe4ab83b4",
+      "definitionId": "mk14_charging_handle",
+      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "slot": "charging_handle"
+    },
+    {
+      "instanceId": "7c62916a-8d63-510e-825f-4b87a7df3f69",
+      "definitionId": "mk14_bipod",
+      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "slot": "bipod"
+    },
+    {
+      "instanceId": "40263f74-f3be-5c59-8916-94eda501247d",
+      "definitionId": "mk14_pistol_grip",
+      "parentId": "990e3d80-274d-5aaf-9599-55341047a816",
+      "slot": "pistol_grip"
+    },
+    {
+      "instanceId": "1b8a7a36-894c-5bf9-9034-6ebea203e534",
+      "definitionId": "mk14_stock",
+      "parentId": "990e3d80-274d-5aaf-9599-55341047a816",
+      "slot": "stock"
+    },
+    {
+      "instanceId": "ed305ecc-7251-56b7-86a6-65ed95196565",
+      "definitionId": "mk14_magazine_standard",
+      "parentId": "990e3d80-274d-5aaf-9599-55341047a816",
+      "slot": "magazine"
+    }
+  ]
+}

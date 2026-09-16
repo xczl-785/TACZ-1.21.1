@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "mag_extended_3"
+  ],
+  "definitionRequirements": {},
+  "variantRequirements": {},
+  "boneRequirements": {
+    "bullet": [
+      "aa12_magazine_standard",
+      "tacz_aa12_extended_mag_1",
+      "tacz_aa12_extended_mag_2",
+      "tacz_aa12_extended_mag_3"
+    ],
+    "bullet_in_mag": [
+      "aa12_magazine_standard",
+      "tacz_aa12_extended_mag_1",
+      "tacz_aa12_extended_mag_2",
+      "tacz_aa12_extended_mag_3"
+    ],
+    "bolt": [
+      "aa12_bolt"
+    ]
+  }
+}

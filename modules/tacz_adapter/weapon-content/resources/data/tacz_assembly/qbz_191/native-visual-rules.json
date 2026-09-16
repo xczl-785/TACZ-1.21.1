@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "alwaysVisibleBones": [
+    "mag_standard",
+    "mag_extended_1",
+    "mag_extended_2",
+    "mag_extended_3",
+    "muzzle_default",
+    "stock_default"
+  ],
+  "definitionRequirements": {},
+  "variantRequirements": {
+    "upright": {
+      "SCOPE": false
+    },
+    "folded": {
+      "SCOPE": true
+    }
+  },
+  "boneRequirements": {
+    "bullet": [
+      "qbz_191_magazine_standard",
+      "tacz_qbz_191_extended_mag_1",
+      "tacz_qbz_191_extended_mag_2",
+      "tacz_qbz_191_extended_mag_3"
+    ],
+    "bullet_in_mag": [
+      "qbz_191_magazine_standard",
+      "tacz_qbz_191_extended_mag_1",
+      "tacz_qbz_191_extended_mag_2",
+      "tacz_qbz_191_extended_mag_3"
+    ],
+    "bullet_in_barrel": [
+      "qbz_191_barrel"
+    ],
+    "bolt": [
+      "qbz_191_bolt"
+    ],
+    "additional_magazine": [
+      "qbz_191_magazine_standard",
+      "tacz_qbz_191_extended_mag_1",
+      "tacz_qbz_191_extended_mag_2",
+      "tacz_qbz_191_extended_mag_3"
+    ]
+  }
+}

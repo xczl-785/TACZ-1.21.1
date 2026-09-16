@@ -9,9 +9,9 @@ final class NativeAssemblyVisualRules {
     private static final Set<String> ATTACHMENTS=Set.of("SCOPE","STOCK","GRIP","LASER","EXTENDED_MAG","MUZZLE");
     private final Set<String> alwaysVisibleBones;
     private final Map<String,Map<String,Boolean>> definitions,variants;
-    private final Map<String,Set<String>> boneRequirements;
-    private NativeAssemblyVisualRules(Set<String> bones,Map<String,Map<String,Boolean>> definitions,Map<String,Map<String,Boolean>> variants,Map<String,Set<String>> boneRequirements){
-        alwaysVisibleBones=Set.copyOf(bones);this.definitions=definitions;this.variants=variants;this.boneRequirements=Map.copyOf(boneRequirements);
+    private final Map<String,Set<String>> boneRequirements, boneAllRequirements;
+    private NativeAssemblyVisualRules(Set<String> bones,Map<String,Map<String,Boolean>> definitions,Map<String,Map<String,Boolean>> variants,Map<String,Set<String>> boneRequirements,Map<String,Set<String>> boneAllRequirements){
+        alwaysVisibleBones=Set.copyOf(bones);this.definitions=definitions;this.variants=variants;this.boneRequirements=Map.copyOf(boneRequirements);this.boneAllRequirements=Map.copyOf(boneAllRequirements);
     }
     static NativeAssemblyVisualRules load(String json,Set<String> validDefinitions,Set<String> rigBones){
         try {
@@ -35,7 +35,18 @@ final class NativeAssemblyVisualRules {
                 if(allowed.isEmpty())throw new IllegalArgumentException("Empty bone dependency: "+entry.getKey());
                 dependencies.put(entry.getKey(),Set.copyOf(allowed));
             }
-            return new NativeAssemblyVisualRules(bones,definitions,requirements(data.getAsJsonObject("variantRequirements")),dependencies);
+            var allDependencies=new HashMap<String,Set<String>>();
+            if(data.has("boneAllRequirements"))for(var entry:data.getAsJsonObject("boneAllRequirements").entrySet()){
+                if(!rigBones.contains(entry.getKey())||bones.contains(entry.getKey()))throw new IllegalArgumentException("Missing or conflicting dependent bone: "+entry.getKey());
+                var required=new HashSet<String>();
+                for(var value:entry.getValue().getAsJsonArray()){
+                    String definition=value.getAsString();
+                    if(!validDefinitions.contains(definition)||!required.add(definition))throw new IllegalArgumentException("Unknown or duplicate bone dependency: "+definition);
+                }
+                if(required.isEmpty())throw new IllegalArgumentException("Empty bone dependency: "+entry.getKey());
+                allDependencies.put(entry.getKey(),Set.copyOf(required));
+            }
+            return new NativeAssemblyVisualRules(bones,definitions,requirements(data.getAsJsonObject("variantRequirements")),dependencies,allDependencies);
         }catch(RuntimeException invalid){throw new IllegalArgumentException("Invalid native-visual-rules.json: "+invalid.getMessage(),invalid);}
     }
     private static Map<String,Map<String,Boolean>> requirements(JsonObject data){
@@ -53,9 +64,9 @@ final class NativeAssemblyVisualRules {
         return Map.copyOf(result);
     }
     Set<String> alwaysVisibleBones(){return alwaysVisibleBones;}
-    Set<String> dependentBones(){return boneRequirements.keySet();}
+    Set<String> dependentBones(){var bones=new HashSet<>(boneRequirements.keySet());bones.addAll(boneAllRequirements.keySet());return Set.copyOf(bones);}
     boolean boneVisible(String bone,Set<String> installed){
-        var required=boneRequirements.get(bone);return required==null||required.stream().anyMatch(installed::contains);
+        var required=boneRequirements.get(bone);var all=boneAllRequirements.get(bone);return (required==null||required.stream().anyMatch(installed::contains))&&(all==null||installed.containsAll(all));
     }
     boolean visible(String definition,String variant,Set<String> installed,Predicate<String> attachmentPresent){
         return installed.contains(definition)&&matches(definitions.get(definition),attachmentPresent)&&matches(variants.get(variant),attachmentPresent);

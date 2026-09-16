@@ -1,0 +1,581 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz:m870",
+  "high": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m870_geo.json",
+    "bones": 69,
+    "cubes": 273,
+    "uvSize": [
+      128,
+      128
+    ]
+  },
+  "low": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/lod/m870.json",
+    "policy": "conservative_cube_subset: retain the complete authored native high rig until a reviewed component-preserving low rig exists; never reuse incompatible original low topology."
+  },
+  "parts": [
+    {
+      "definitionId": "m870_receiver",
+      "sourceCubeIndices": {
+        "panel": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "trigger": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "safety2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "body": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32
+        ],
+        "group25": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "safety": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "screw": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon/firearm/shotgun",
+      "footprint": [
+        6,
+        2
+      ],
+      "cubes": 63
+    },
+    {
+      "definitionId": "m870_barrel",
+      "sourceCubeIndices": {
+        "barrel": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        3,
+        1
+      ],
+      "cubes": 28
+    },
+    {
+      "definitionId": "m870_tube",
+      "sourceCubeIndices": {
+        "magazine": [
+          0
+        ],
+        "group5": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group7": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group8": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ],
+      "cubes": 17
+    },
+    {
+      "definitionId": "m870_iron_sights",
+      "sourceCubeIndices": {
+        "sight": [
+          0,
+          1
+        ],
+        "group": [
+          0,
+          1,
+          2
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ],
+      "cubes": 5
+    },
+    {
+      "definitionId": "m870_pump",
+      "sourceCubeIndices": {
+        "group9": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "slide3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ]
+      },
+      "inventoryType": "weapon_mod/handguard",
+      "footprint": [
+        2,
+        1
+      ],
+      "cubes": 24
+    },
+    {
+      "definitionId": "m870_bolt",
+      "sourceCubeIndices": {
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "inventoryType": "weapon_mod/bolt",
+      "footprint": [
+        1,
+        1
+      ],
+      "cubes": 6
+    },
+    {
+      "definitionId": "m870_stock",
+      "sourceCubeIndices": {
+        "group21": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "group22": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group23": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ]
+      },
+      "inventoryType": "weapon_mod/stock",
+      "footprint": [
+        2,
+        2
+      ],
+      "cubes": 56
+    }
+  ],
+  "nativeMagazineVariants": {},
+  "nativeTubeVariants": {
+    "defaultDefinition": "m870_tube",
+    "capacity": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "variants": {
+      "m870_tube_extension_1": {
+        "mag_extended_1": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "m870_tube_extension_2": {
+        "mag_extended_2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "m870_tube_extension_3": {
+        "mag_extended_3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      }
+    },
+    "semantic": "tube_extension_not_detachable_magazine"
+  },
+  "presentationOnly": {
+    "bullet_shell": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "bullet_in_barrel": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "bullet_in_mag": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "bullet": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ]
+  },
+  "unassignedCubes": [],
+  "duplicateOwnership": [],
+  "animations": {
+    "static_idle": [
+      "lefthand",
+      "righthand",
+      "constraint"
+    ],
+    "reload_empty_all": [
+      "lefthand",
+      "righthand",
+      "root",
+      "bullet",
+      "slide2",
+      "bullet_shell",
+      "constraint",
+      "bullet_in_mag",
+      "panel",
+      "camera"
+    ],
+    "reload_intro_empty": [
+      "lefthand",
+      "righthand",
+      "root",
+      "bullet",
+      "slide2",
+      "bullet_shell",
+      "constraint",
+      "camera"
+    ],
+    "reload_intro": [
+      "lefthand",
+      "righthand",
+      "root",
+      "bullet",
+      "constraint",
+      "camera"
+    ],
+    "reload_loop": [
+      "lefthand",
+      "righthand",
+      "root",
+      "bullet",
+      "bullet_in_mag",
+      "constraint",
+      "panel",
+      "camera"
+    ],
+    "reload_end": [
+      "lefthand",
+      "righthand",
+      "root",
+      "bullet",
+      "constraint",
+      "camera"
+    ],
+    "shoot": [
+      "root",
+      "camera",
+      "constraint"
+    ],
+    "put_away": [
+      "constraint",
+      "root",
+      "lefthand",
+      "righthand",
+      "camera"
+    ],
+    "bolt": [
+      "lefthand",
+      "righthand",
+      "root",
+      "slide2",
+      "camera"
+    ],
+    "inspect": [
+      "root",
+      "bullet_shell",
+      "bullet_in_barrel",
+      "bullet_in_mag",
+      "bullet",
+      "lefthand",
+      "gun_and_righthand",
+      "slide2",
+      "righthand",
+      "constraint",
+      "panel",
+      "camera"
+    ],
+    "inspect_01": [
+      "root",
+      "bullet_shell",
+      "bullet_in_barrel",
+      "bullet_in_mag",
+      "bullet",
+      "lefthand",
+      "gun_and_righthand",
+      "slide2",
+      "righthand",
+      "camera",
+      "constraint"
+    ],
+    "inspect_empty": [
+      "root",
+      "bullet_shell",
+      "bullet_in_barrel",
+      "bullet_in_mag",
+      "bullet",
+      "lefthand",
+      "gun_and_righthand",
+      "slide2",
+      "righthand",
+      "panel",
+      "constraint",
+      "camera"
+    ]
+  },
+  "animationRefsWithoutBones": [],
+  "reload": {
+    "capacity": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "nativeData": "tacz:m870_data",
+    "nativeAnimation": "tacz:m870",
+    "feed": "internal_tube"
+  },
+  "sights": {
+    "policy": "M870 uses its original scripted, interruptible one-shell-at-a-time reload. No detachable-magazine slot or semantic is created."
+  },
+  "constraints": [
+    "Every source cube is assigned once to a physical definition, a gun-specific capacity variant, or presentation-only pose/ammo geometry.",
+    "No optical source was created.",
+    "No runtime resource, global index, or language file is written by this authoring script."
+  ]
+}

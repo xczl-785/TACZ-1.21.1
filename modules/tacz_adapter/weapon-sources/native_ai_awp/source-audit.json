@@ -1,0 +1,821 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz:ai_awp",
+  "high": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/ai_awp_geo.json",
+    "bones": 111,
+    "cubes": 521,
+    "uvSize": [
+      128,
+      128
+    ]
+  },
+  "low": {
+    "path": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/lod/ai_awp.json",
+    "policy": "conservative_cube_subset: retain the complete authored native high rig until a reviewed component-preserving low rig exists; never reuse incompatible original low topology."
+  },
+  "parts": [
+    {
+      "definitionId": "awp_receiver",
+      "sourceCubeIndices": {
+        "receiver": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17
+        ],
+        "trigger": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "group13": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "safety": [
+          0,
+          1
+        ]
+      },
+      "inventoryType": "weapon/firearm/sniper_rifle",
+      "footprint": [
+        6,
+        2
+      ],
+      "cubes": 34
+    },
+    {
+      "definitionId": "awp_barrel",
+      "sourceCubeIndices": {
+        "barrel": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "rail": [
+          0
+        ],
+        "group24": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "group25": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "inventoryType": "weapon_mod/barrel",
+      "footprint": [
+        3,
+        1
+      ],
+      "cubes": 36
+    },
+    {
+      "definitionId": "awp_bipod",
+      "sourceCubeIndices": {
+        "octagon4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ],
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25
+        ]
+      },
+      "inventoryType": "weapon_mod/bipod",
+      "footprint": [
+        2,
+        1
+      ],
+      "cubes": 69
+    },
+    {
+      "definitionId": "awp_bolt",
+      "sourceCubeIndices": {
+        "bolt_rotate": [
+          0,
+          1
+        ],
+        "bone2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "ball": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16
+        ],
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "striker": [
+          0
+        ]
+      },
+      "inventoryType": "weapon_mod/bolt",
+      "footprint": [
+        1,
+        1
+      ],
+      "cubes": 37
+    },
+    {
+      "definitionId": "awp_stock",
+      "sourceCubeIndices": {
+        "group4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "group5": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "group6": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "group32": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group31": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group3": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group2": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "stock": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83,
+          84,
+          85,
+          86,
+          87,
+          88,
+          89,
+          90,
+          91,
+          92,
+          93,
+          94,
+          95,
+          96,
+          97,
+          98,
+          99,
+          100,
+          101
+        ],
+        "group29": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group30": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "screws": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "inventoryType": "weapon_mod/stock",
+      "footprint": [
+        2,
+        2
+      ],
+      "cubes": 194
+    },
+    {
+      "definitionId": "awp_iron_sights",
+      "sourceCubeIndices": {
+        "group8": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "sight_illuminated": [
+          0
+        ],
+        "rearsight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ]
+      },
+      "inventoryType": "weapon_mod/sight/iron",
+      "footprint": [
+        1,
+        1
+      ],
+      "cubes": 47
+    },
+    {
+      "definitionId": "awp_magazine_standard",
+      "sourceCubeIndices": {
+        "mag2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ]
+      },
+      "inventoryType": "weapon_mod/magazine",
+      "footprint": [
+        1,
+        2
+      ],
+      "cubes": 13
+    }
+  ],
+  "nativeMagazineVariants": {
+    "tacz_ai_awp_sniper_extended_mag_1": {
+      "mag": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "tacz_ai_awp_sniper_extended_mag_2": {
+      "mag3": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    "tacz_ai_awp_sniper_extended_mag_3": {
+      "mag4": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    }
+  },
+  "nativeTubeVariants": null,
+  "presentationOnly": {
+    "righthand_pos": [
+      0
+    ],
+    "lefthand_pos": [
+      0
+    ],
+    "bullet_shell": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "shell_part": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "head": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "bullet": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "bullet3": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ]
+  },
+  "unassignedCubes": [],
+  "duplicateOwnership": [],
+  "animations": {
+    "static_idle": [
+      "root",
+      "righthand",
+      "lefthand",
+      "constraint"
+    ],
+    "static_bolt_caught": [
+      "striker"
+    ],
+    "draw": [
+      "root",
+      "righthand",
+      "lefthand",
+      "camera",
+      "constraint"
+    ],
+    "put_away": [
+      "root",
+      "righthand",
+      "lefthand",
+      "camera",
+      "constraint"
+    ],
+    "shoot": [
+      "root",
+      "camera",
+      "constraint"
+    ],
+    "bolt": [
+      "root",
+      "bolt_group",
+      "bolt_rotate",
+      "striker",
+      "righthand",
+      "lefthand",
+      "camera",
+      "bullet_shell"
+    ],
+    "reload_tactical": [
+      "root",
+      "mag_and_lefthand",
+      "righthand",
+      "lefthand",
+      "camera",
+      "bullet",
+      "constraint"
+    ],
+    "reload_empty": [
+      "root",
+      "magzine_and_bullet",
+      "bullet_in_mag",
+      "bolt_group",
+      "bolt_rotate",
+      "righthand",
+      "lefthand",
+      "camera",
+      "striker",
+      "bullet",
+      "bullet_shell",
+      "constraint"
+    ],
+    "inspect": [
+      "root",
+      "bolt_group",
+      "bolt_rotate",
+      "bullet_in_barrel",
+      "gun_and_righthand",
+      "mag_and_lefthand",
+      "righthand",
+      "lefthand",
+      "camera",
+      "bullet_shell",
+      "bullet"
+    ],
+    "inspect_empty": [
+      "root",
+      "bolt_group",
+      "bolt_rotate",
+      "bullet_in_barrel",
+      "gun_and_righthand",
+      "mag_and_lefthand",
+      "righthand",
+      "lefthand",
+      "camera",
+      "bullet_shell",
+      "bullet"
+    ]
+  },
+  "animationRefsWithoutBones": [],
+  "reload": {
+    "capacity": [
+      5,
+      6,
+      7,
+      8
+    ],
+    "nativeData": "tacz:ai_awp_data",
+    "nativeAnimation": "tacz:ai_awp",
+    "feed": "detachable_magazine"
+  },
+  "sights": {
+    "policy": "Factory iron sights are physical native geometry. Existing scope_pos is read-only; no optical source is authored."
+  },
+  "constraints": [
+    "Every source cube is assigned once to a physical definition, a gun-specific capacity variant, or presentation-only pose/ammo geometry.",
+    "No optical source was created.",
+    "No runtime resource, global index, or language file is written by this authoring script."
+  ]
+}
