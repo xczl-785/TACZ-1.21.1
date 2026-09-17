@@ -43,6 +43,7 @@ public final class AssemblyViewport extends UIElement {
     private boolean highlighted,preview;
     private Point center=new Point(0,0,0);
     private float fitScale=1;
+    private AssemblyNode fittedTree;
     private static final Point ZERO=new Point(0,0,0);
     // Outward winding; both face directions are emitted because GUI Y points down.
     private static final int[][] FACES={{0,3,2,1},{4,5,6,7},{0,4,7,3},{1,2,6,5},{0,1,5,4},{3,7,6,2}};
@@ -58,7 +59,7 @@ public final class AssemblyViewport extends UIElement {
         this.modelBackend=modelBackend;
         this.materials.all().stream().map(AssemblyMaterials.Material::texture).filter(v->!v.isEmpty()).distinct()
                 .map(net.minecraft.resources.ResourceLocation::parse).forEach(AssemblyTextureQuality::prepare);
-        fitInitialAssembly();
+        fitAssembly(source.get());
         for(var entry:this.models.entrySet())for(var mesh:entry.getValue().meshes())for(var triangle:mesh.triangles()) {
             var a=triangle.vertices().get(1).subtract(triangle.vertices().get(0));
             var b=triangle.vertices().get(2).subtract(triangle.vertices().get(0));
@@ -77,15 +78,9 @@ public final class AssemblyViewport extends UIElement {
     }
     public void rotate(double dx,double dy) { camera.rotate(dx,dy); }
     public void framing(float top,float bottom) {
-        // Pan is expressed in UI pixels, so rescale it together with GUI scale changes.
-        if(frameTop>0&&top!=frameTop){double ratio=top/frameTop;camera.panX*=ratio;camera.panY*=ratio;}
         frameTop=top;frameBottom=bottom;
     }
-    public void zoom(double wheelDelta) { zoomAt(wheelDelta,frameCenterX(),frameCenterY()); }
-    public void zoomAt(double wheelDelta,double x,double y) {
-        camera.zoomAt(wheelDelta,x,y,frameCenterX(),frameCenterY());
-    }
-    public void resetCamera() { camera.reset(); }
+    public void resetCamera() { camera.reset();fittedTree=null;fitAssembly(source.get()); }
     private float frameCenterX(){return getPositionX()+getSizeWidth()/2;}
     private float frameCenterY(){return getPositionY()+frameTop+(getSizeHeight()-frameTop-frameBottom)/2;}
     private void rotation() {
@@ -95,21 +90,9 @@ public final class AssemblyViewport extends UIElement {
     }
     public void whiteModel(boolean value) { whiteModel=value; }
     public boolean whiteModel() { return whiteModel; }
-    private void fitInitialAssembly() {
-        var points=new ArrayList<Point>();collectBounds(source.get(),List.of(),points);
-        if(points.isEmpty())return;
-        float minX=Float.MAX_VALUE,minY=minX,minZ=minX,maxX=-minX,maxY=-minX,maxZ=-minX;
-        for(var p:points){minX=Math.min(minX,p.x());minY=Math.min(minY,p.y());minZ=Math.min(minZ,p.z());maxX=Math.max(maxX,p.x());maxY=Math.max(maxY,p.y());maxZ=Math.max(maxZ,p.z());}
-        center=new Point((minX+maxX)/2,(minY+maxY)/2,(minZ+maxZ)/2);
-        fitScale=18/Math.max(.01f,Math.max(maxX-minX,Math.max(maxY-minY,maxZ-minZ)));
-    }
-    private void collectBounds(AssemblyNode node,List<String> path,List<Point> points) {
-        if(node==null)return;
-        var geometry=models.get(node.definitionId());if(geometry==null)return;
-        var offset=ModelGeometry.origin(source.get(),models,path).orElseThrow();
-        for(var box:geometry.boxes()){points.add(box.min().add(offset));points.add(box.max().add(offset));}
-        for(var mesh:geometry.meshes())for(var triangle:mesh.triangles())for(var v:triangle.vertices())points.add(v.add(offset));
-        node.children().forEach((slot,child)->{var next=new ArrayList<>(path);next.add(slot);collectBounds(child,next,points);});
+    private void fitAssembly(AssemblyNode root) {
+        if(root==fittedTree)return;
+        fittedTree=root;var frame=AssemblyFraming.fit(root,models);center=frame.center();fitScale=frame.fitScale();
     }
     public Optional<ScreenPoint> projectSlot(List<String> ownerPath,String slot) {
         return projectSlot(source.get(),ownerPath,slot);
@@ -134,16 +117,17 @@ public final class AssemblyViewport extends UIElement {
         return new Point(projected.x(),projected.y(),20+projected.depth()*.2f);
     }
     private WorkbenchViewportFrame frame() {
+        fitAssembly(source.get());
         rotation();
-        double scale=Math.min(getSizeWidth()/24,(getSizeHeight()-frameTop-frameBottom)/8)*camera.zoom;
-        return new WorkbenchViewportFrame(center,frameCenterX()+(float)camera.panX,frameCenterY()+(float)camera.panY,fitScale,scale,camera.yaw,camera.pitch);
+        double scale=Math.min(getSizeWidth()/24,(getSizeHeight()-frameTop-frameBottom)/8);
+        return new WorkbenchViewportFrame(center,frameCenterX(),frameCenterY(),fitScale,scale,camera.yaw,camera.pitch);
     }
     @Override public void drawBackgroundAdditional(GUIContext context) {
         super.drawBackgroundAdditional(context);
         var root=source.get();if(root==null||getSizeWidth()<=0||getSizeHeight()<=0)return;
-        long started=System.nanoTime();lastTriangleCount=0;rotation();
-        renderScale=Math.min(getSizeWidth()/24,(getSizeHeight()-frameTop-frameBottom)/8)*camera.zoom;
-        renderCenterX=frameCenterX()+camera.panX;renderCenterY=frameCenterY()+camera.panY;
+        long started=System.nanoTime();lastTriangleCount=0;fitAssembly(root);rotation();
+        renderScale=Math.min(getSizeWidth()/24,(getSizeHeight()-frameTop-frameBottom)/8);
+        renderCenterX=frameCenterX();renderCenterY=frameCenterY();
         var graphics=context.graphics;graphics.flush();
         graphics.enableScissor((int)getPositionX(),(int)getPositionY(),(int)Math.ceil(getPositionX()+getSizeWidth()),(int)Math.ceil(getPositionY()+getSizeHeight()));
         try {

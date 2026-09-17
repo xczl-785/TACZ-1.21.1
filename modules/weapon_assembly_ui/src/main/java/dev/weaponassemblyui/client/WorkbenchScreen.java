@@ -296,10 +296,10 @@ public final class WorkbenchScreen extends ModularUIScreen {
         return super.mouseReleased(x,y,b);
     }
     @Override public boolean mouseScrolled(double x,double y,double horizontal,double vertical) {
-        // Only the candidate scroll view owns wheel scrolling. Slot cards are not dead zones.
+        // Tarkov-style assembly canvas has no user zoom or pan; only the candidate list scrolls.
         if(chooser!=null&&UIElement.isMouseOverRect(chooser.scroll.getPositionX(),chooser.scroll.getPositionY(),
                 chooser.scroll.getSizeWidth(),chooser.scroll.getSizeHeight(),x,y))return super.mouseScrolled(x,y,horizontal,vertical);
-        viewport.zoomAt(vertical,x,y);return true;
+        return false;
     }
     @Override public boolean keyPressed(int key,int scan,int mods) {
         if(key==256&&chooser!=null){closeChooser();return true;}return super.keyPressed(key,scan,mods);

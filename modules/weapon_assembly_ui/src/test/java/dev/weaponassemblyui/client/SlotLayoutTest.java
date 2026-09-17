@@ -34,7 +34,7 @@ class SlotLayoutTest {
         double footprint=WorkbenchSlotMetrics.CARD+WorkbenchSlotMetrics.TOGGLE;
         check(place(anchors,footprint),12,footprint);
     }
-    @Test void rotationAndExtremeZoomKeepEveryCardInsideTheWorkbench() {
+    @Test void extremeProjectedAnchorsKeepEveryCardInsideTheWorkbench() {
         var state=new SlotLayout.State();
         for(int step=0;step<72;step++) {
             var anchors=new ArrayList<SlotLayout.Anchor>();

@@ -181,7 +181,7 @@ public final class SlotLayout {
         return new Bounds(left,top,Math.max(1,right-left),Math.max(1,bottom-top));
     }
     private static Point nearestFree(Point anchor, Bounds mounts, Bounds area, double width, double height, Collection<Point> occupied) {
-        // At extreme zoom the weapon can leave the workbench. There is then no complete perimeter
+        // A rotated or unusually proportioned weapon can project beyond the workbench. There is then no complete perimeter
         // to reserve; place new cards in local free space while existing cards keep their offsets.
         if(mounts.x<area.x||mounts.x+mounts.width>area.x+area.width||mounts.y<area.y||mounts.y+mounts.height>area.y+area.height) {
             double sign=anchor.y<=area.y+area.height/2?-1:1;
@@ -223,7 +223,7 @@ public final class SlotLayout {
             if(score<bestScore){bestScore=score;best=p;}
         }
         if(best!=null)return best;
-        // Extreme zoom/density can leave no exterior strip; retain access using remaining free space.
+        // Extreme projection/density can leave no exterior strip; retain access using remaining free space.
         return freeSite(clamp(preferred.get(0),area,width,height),anchor,area,width,height,occupied);
     }
     private static Point freeSite(Point preferred, Point anchor, Bounds area, double width, double height, Collection<Point> occupied) {
