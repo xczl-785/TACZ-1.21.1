@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StableSlotLayoutTest {
     private static final SlotLayout.Bounds AREA=new SlotLayout.Bounds(28,112,1224,472);
-    private static final double WIDTH=98, HEIGHT=80, DT=1d/60;
+    private static final double WIDTH=WorkbenchSlotMetrics.CARD+WorkbenchSlotMetrics.TOGGLE, HEIGHT=WorkbenchSlotMetrics.CARD, DT=1d/60;
     private static SlotLayout.Anchor a(String path,double x,double y) {
         return new SlotLayout.Anchor(List.of(path.split("/")),new SlotLayout.Point(x,y));
     }

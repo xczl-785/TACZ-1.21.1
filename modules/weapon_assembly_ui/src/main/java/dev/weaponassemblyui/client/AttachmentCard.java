@@ -42,20 +42,20 @@ final class AttachmentCard extends Button {
         InventorySurfaceTexture.border(g,x,y,x+w,y+h,design.px(selected?2:1),
                 selected?InventoryUiTheme.WINDOW_SELECTED_BORDER:hover?0xffb7c2c5:0xff637178);
         if(icon!=null) {
-            float size=Math.min(w,h)-design.px(8);
+            float size=Math.min(w,h)-design.px(WorkbenchSlotMetrics.ICON_INSET);
             icon.draw(g,0,0,x+(w-size)/2,y+(h-size)/2,size,size,0);
         }
         if(!name.isEmpty()) {
             var font=Minecraft.getInstance().font;
-            float scale=design.px(12)/9;
-            int available=Math.max(1,(int)((w-design.px(8))/scale));
+            float scale=design.px(WorkbenchSlotMetrics.LABEL_HEIGHT)/9;
+            int available=Math.max(1,(int)((w-design.px(WorkbenchSlotMetrics.TEXT_INSET*2))/scale));
             String first=font.plainSubstrByWidth(name,available);
             String rest=name.substring(first.length()).stripLeading();
             String second=font.plainSubstrByWidth(rest,available);
             if(!second.equals(rest))second=font.plainSubstrByWidth(rest,Math.max(1,available-font.width("…")))+"…";
             g.pose().pushPose();
             try {
-                g.pose().translate(x+design.px(4),y+design.px(4),0);g.pose().scale(scale,scale,1);
+                g.pose().translate(x+design.px(WorkbenchSlotMetrics.TEXT_INSET),y+design.px(WorkbenchSlotMetrics.TEXT_INSET),0);g.pose().scale(scale,scale,1);
                 g.drawString(font,first,0,0,UiDesign.TEXT,false);
                 if(!second.isEmpty())g.drawString(font,second,0,10,UiDesign.TEXT,false);
             }

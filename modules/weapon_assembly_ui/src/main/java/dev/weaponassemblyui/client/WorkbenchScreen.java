@@ -37,7 +37,8 @@ public final class WorkbenchScreen extends ModularUIScreen {
     private final List<UIElement> controls=new ArrayList<>();
     private List<SlotLayout.Anchor> lastAnchors=List.of();
     private Map<List<String>,SlotLayout.Point> cardPositions=Map.of();
-    private static final float cardSize=80;
+    private static final float cardSize=WorkbenchSlotMetrics.CARD;
+    private static final float toggleSize=WorkbenchSlotMetrics.TOGGLE;
     private final SlotLayout.State slotLayout=new SlotLayout.State();
     private long layoutNanos;
     private boolean lastBusy;
@@ -151,7 +152,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
             b.addEventListener(UIEvents.MOUSE_ENTER,e->{hoveredPath=slot.path();refreshReadout();});
             b.addEventListener(UIEvents.MOUSE_LEAVE,e->{if(slot.path().equals(hoveredPath))hoveredPath=null;refreshReadout();});
             var toggle=new SlotToggle(slot.path());
-            design.place(toggle,0,0,18,cardSize);toggle.setVisible(false);page.addChild(toggle);controls.add(toggle);
+            design.place(toggle,0,0,toggleSize,cardSize);toggle.setVisible(false);page.addChild(toggle);controls.add(toggle);
             toggle.setId("assembly-toggle-"+String.join("-",slot.path()));
             labels.add(new Label(slot.path(),b,toggle));
         }
@@ -206,14 +207,14 @@ public final class WorkbenchScreen extends ModularUIScreen {
         // Pin the full card+bar hover region, before moving any hit targets this frame.
         for(var label:labels) {
             var p=cardPositions.get(label.path());
-            if(p!=null&&UIElement.isMouseOverRect(design.px(p.x()),design.px(p.y()),design.px(cardSize+18),design.px(cardSize),mouseX,mouseY)
+            if(p!=null&&UIElement.isMouseOverRect(design.px(p.x()),design.px(p.y()),design.px(cardSize+toggleSize),design.px(cardSize),mouseX,mouseY)
                     &&(chooser==null||!chooser.contains(mouseX,mouseY)))pinned.add(label.path());
         }
         long now=System.nanoTime();
         double seconds=!animate||layoutNanos==0?0:(now-layoutNanos)/1_000_000_000d;
         if(animate)layoutNanos=now;
         var previousPositions=cardPositions;
-        cardPositions=slotLayout.update(anchors,new SlotLayout.Bounds(12,104,canvasWidth-24,canvasHeight-316),cardSize+18,cardSize,pinned,seconds);
+        cardPositions=slotLayout.update(anchors,new SlotLayout.Bounds(12,104,canvasWidth-24,canvasHeight-316),cardSize+toggleSize,cardSize,pinned,seconds);
         lastAnchors=List.copyOf(anchors);
         for(var label:labels) {
             var p=cardPositions.get(label.path());if(p==null)continue;
@@ -224,7 +225,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
             var p=cardPositions.get(label.path());if(p==null){label.toggle().setVisible(false);continue;}
             float x=design.px(p.x()+cardSize),y=design.px(p.y());
             // The card and adjoining bar share one continuous hover region.
-            boolean over=UIElement.isMouseOverRect(design.px(p.x()),y,design.px(cardSize+18),design.px(cardSize),mouseX,mouseY)
+            boolean over=UIElement.isMouseOverRect(design.px(p.x()),y,design.px(cardSize+toggleSize),design.px(cardSize),mouseX,mouseY)
                     &&(chooser==null||!chooser.contains(mouseX,mouseY));
             label.toggle().setVisible(label.button().isVisible()&&(over||(chooser!=null&&label.path().equals(host.selectedPath()))));
             if(!p.equals(previousPositions.get(label.path()))||label.toggle().getSizeWidth()==0)
@@ -238,7 +239,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
                 y=design.px(p.y()-chooser.panelHeight-8);
                 if(y<design.px(12)) {
                     // A tall menu must not cover the same bar needed to collapse it.
-                    y=design.px(p.y());x=design.px(p.x()+cardSize+26);
+                    y=design.px(p.y());x=design.px(p.x()+cardSize+toggleSize+8);
                     if(x+design.px(Chooser.WIDTH)>width-design.px(12))x=design.px(p.x()-Chooser.WIDTH-8);
                 }
             }
@@ -331,8 +332,8 @@ public final class WorkbenchScreen extends ModularUIScreen {
         }
     }
     private final class Chooser extends InventoryWindowElement {
-        static final int CELL=80,GAP=6,WIDTH=456;
-        final int panelHeight=364;
+        static final int CELL=WorkbenchSlotMetrics.CHOOSER_CELL,GAP=WorkbenchSlotMetrics.CHOOSER_GAP,WIDTH=WorkbenchSlotMetrics.CHOOSER_WIDTH;
+        final int panelHeight=WorkbenchSlotMetrics.CHOOSER_HEIGHT;
         private final List<String> path=List.copyOf(host.selectedPath());
         private final AttachmentCard empty;
         private final InventoryScrollView scroll;
@@ -352,13 +353,13 @@ public final class WorkbenchScreen extends ModularUIScreen {
             empty.style(s->s.tooltips(Component.literal(tr("remove"))));
             empty.addEventListener(UIEvents.MOUSE_ENTER,e->{host.clearPreview();refreshReadout();});
             design.place(empty,10,10,CELL,CELL);addChild(empty);
-            noCandidates=text(this,tr(host.temporaryPreset()?"no_catalog_candidates":"no_candidates"),14,UiDesign.MUTED,104,20,324,60);
+            noCandidates=text(this,tr(host.temporaryPreset()?"no_catalog_candidates":"no_candidates"),12,UiDesign.MUTED,72,14,WIDTH-82,48);
             scroll=new InventoryScrollView(design);scroll.setId("assembly-candidates");
             scroll.viewPort.layout(l->l.paddingAll(0));
-            scroll.viewPort.style(s->s.backgroundTexture(com.lowdragmc.lowdraglib2.gui.texture.IGuiTexture.EMPTY));design.place(scroll,10,98,436,258);
+            scroll.viewPort.style(s->s.backgroundTexture(com.lowdragmc.lowdraglib2.gui.texture.IGuiTexture.EMPTY));design.place(scroll,10,70,WIDTH-20,panelHeight-78);
             scroll.scrollerStyle(s->s.mode(com.lowdragmc.lowdraglib2.gui.ui.data.ScrollerMode.VERTICAL).verticalScrollDisplay(com.lowdragmc.lowdraglib2.gui.ui.data.ScrollDisplay.AUTO).adaptiveWidth(false).adaptiveHeight(false));
             InventoryScrollView.sizeVerticalScroller(scroll.verticalScroller,design);InventoryScrollView.styleScroller(scroll.verticalScroller);addChild(scroll);
-            content=new UIElement();content.layout(l->l.width(design.px(424)));scroll.addScrollViewChild(content);
+            content=new UIElement();content.layout(l->l.width(design.px(WorkbenchSlotMetrics.CHOOSER_CONTENT_WIDTH)));scroll.addScrollViewChild(content);
             refresh();
         }
         void refresh() {
@@ -374,7 +375,8 @@ public final class WorkbenchScreen extends ModularUIScreen {
                 entry.getValue().removeSelf();it.remove();
             }
             noCandidates.setVisible(candidates.isEmpty());
-            int rows=(candidates.size()+4)/5;
+            int columns=WorkbenchSlotMetrics.CHOOSER_COLUMNS;
+            int rows=(candidates.size()+columns-1)/columns;
             content.layout(l->l.height(design.px(rows*(CELL+GAP))));
             int i=0;
             for(var candidate:candidates) {
@@ -391,7 +393,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
                 }
                 b.setActive(true);
                 b.content(partName.apply(candidate.definitionId()),partImage.apply(candidate.definitionId()));
-                design.place(b,(i%5)*(CELL+GAP),(i/5)*(CELL+GAP),CELL,CELL);i++;
+                design.place(b,(i%columns)*(CELL+GAP),(i/columns)*(CELL+GAP),CELL,CELL);i++;
             }
         }
     }
