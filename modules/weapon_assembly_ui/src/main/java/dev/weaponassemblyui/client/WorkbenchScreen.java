@@ -240,10 +240,10 @@ public final class WorkbenchScreen extends ModularUIScreen {
                 if(y<design.px(12)) {
                     // A tall menu must not cover the same bar needed to collapse it.
                     y=design.px(p.y());x=design.px(p.x()+cardSize+toggleSize+8);
-                    if(x+design.px(Chooser.WIDTH)>width-design.px(12))x=design.px(p.x()-Chooser.WIDTH-8);
+                    if(x+design.px(chooser.panelWidth)>width-design.px(12))x=design.px(p.x()-chooser.panelWidth-8);
                 }
             }
-            x=Math.clamp(x,design.px(12),Math.max(design.px(12),width-design.px(Chooser.WIDTH+12)));
+            x=Math.clamp(x,design.px(12),Math.max(design.px(12),width-design.px(chooser.panelWidth+12)));
             y=Math.clamp(y,design.px(12),Math.max(design.px(12),height-design.px(chooser.panelHeight+12)));
             float fx=x,fy=y;chooser.layout(l->l.left(fx).top(fy));
         }
@@ -297,7 +297,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
     }
     @Override public boolean mouseScrolled(double x,double y,double horizontal,double vertical) {
         // Tarkov-style assembly canvas has no user zoom or pan; only the candidate list scrolls.
-        if(chooser!=null&&UIElement.isMouseOverRect(chooser.scroll.getPositionX(),chooser.scroll.getPositionY(),
+        if(chooser!=null&&chooser.scroll.isVisible()&&UIElement.isMouseOverRect(chooser.scroll.getPositionX(),chooser.scroll.getPositionY(),
                 chooser.scroll.getSizeWidth(),chooser.scroll.getSizeHeight(),x,y))return super.mouseScrolled(x,y,horizontal,vertical);
         return false;
     }
@@ -332,17 +332,17 @@ public final class WorkbenchScreen extends ModularUIScreen {
         }
     }
     private final class Chooser extends InventoryWindowElement {
-        static final int CELL=WorkbenchSlotMetrics.CHOOSER_CELL,GAP=WorkbenchSlotMetrics.CHOOSER_GAP,WIDTH=WorkbenchSlotMetrics.CHOOSER_WIDTH;
-        final int panelHeight=WorkbenchSlotMetrics.CHOOSER_HEIGHT;
+        static final int CELL=WorkbenchSlotMetrics.CHOOSER_CELL,GAP=WorkbenchSlotMetrics.CHOOSER_GAP;
+        int panelWidth=ChooserLayout.forCount(0).width();
+        int panelHeight=ChooserLayout.forCount(0).height();
         private final List<String> path=List.copyOf(host.selectedPath());
         private final AttachmentCard empty;
         private final InventoryScrollView scroll;
         private final UIElement content;
-        private final InventoryTextElement noCandidates;
         private final Map<UUID,AttachmentCard> cards=new LinkedHashMap<>();
         Chooser() {
             super(design,Kind.MENU);setId("assembly-chooser");
-            layout(l->l.width(design.px(WIDTH)).height(design.px(panelHeight)));
+            layout(l->l.width(design.px(panelWidth)).height(design.px(panelHeight)));
             style(s->s.backgroundTexture(new InventorySurfaceTexture(design,0xf0080c0f,0xff536068,false)));
             empty=new AttachmentCard(design,"",null,!host.busy(),()->{
                 if(host.busy())return;
@@ -352,14 +352,13 @@ public final class WorkbenchScreen extends ModularUIScreen {
             empty.setId("assembly-remove");
             empty.style(s->s.tooltips(Component.literal(tr("remove"))));
             empty.addEventListener(UIEvents.MOUSE_ENTER,e->{host.clearPreview();refreshReadout();});
-            design.place(empty,10,10,CELL,CELL);addChild(empty);
-            noCandidates=text(this,tr(host.temporaryPreset()?"no_catalog_candidates":"no_candidates"),12,UiDesign.MUTED,72,14,WIDTH-82,48);
+            design.place(empty,ChooserLayout.PADDING,ChooserLayout.PADDING,CELL,CELL);addChild(empty);
             scroll=new InventoryScrollView(design);scroll.setId("assembly-candidates");
             scroll.viewPort.layout(l->l.paddingAll(0));
-            scroll.viewPort.style(s->s.backgroundTexture(com.lowdragmc.lowdraglib2.gui.texture.IGuiTexture.EMPTY));design.place(scroll,10,70,WIDTH-20,panelHeight-78);
+            scroll.viewPort.style(s->s.backgroundTexture(com.lowdragmc.lowdraglib2.gui.texture.IGuiTexture.EMPTY));
             scroll.scrollerStyle(s->s.mode(com.lowdragmc.lowdraglib2.gui.ui.data.ScrollerMode.VERTICAL).verticalScrollDisplay(com.lowdragmc.lowdraglib2.gui.ui.data.ScrollDisplay.AUTO).adaptiveWidth(false).adaptiveHeight(false));
             InventoryScrollView.sizeVerticalScroller(scroll.verticalScroller,design);InventoryScrollView.styleScroller(scroll.verticalScroller);addChild(scroll);
-            content=new UIElement();content.layout(l->l.width(design.px(WorkbenchSlotMetrics.CHOOSER_CONTENT_WIDTH)));scroll.addScrollViewChild(content);
+            content=new UIElement();scroll.addScrollViewChild(content);
             refresh();
         }
         void refresh() {
@@ -374,10 +373,15 @@ public final class WorkbenchScreen extends ModularUIScreen {
                 var entry=it.next();if(ids.contains(entry.getKey()))continue;
                 entry.getValue().removeSelf();it.remove();
             }
-            noCandidates.setVisible(candidates.isEmpty());
-            int columns=WorkbenchSlotMetrics.CHOOSER_COLUMNS;
-            int rows=(candidates.size()+columns-1)/columns;
-            content.layout(l->l.height(design.px(rows*(CELL+GAP))));
+            var metrics=ChooserLayout.forCount(candidates.size());
+            panelWidth=metrics.width();panelHeight=metrics.height();
+            layout(l->l.width(design.px(panelWidth)).height(design.px(panelHeight)));
+            scroll.setVisible(!candidates.isEmpty());
+            int scrollWidth=metrics.contentWidth()+(metrics.scrollable()?ChooserLayout.SCROLLER_WIDTH:0);
+            int scrollHeight=metrics.visibleRows()*CELL+Math.max(0,metrics.visibleRows()-1)*GAP;
+            design.place(scroll,ChooserLayout.PADDING,metrics.candidateTop(),scrollWidth,scrollHeight);
+            content.layout(l->l.width(design.px(metrics.contentWidth())).height(design.px(metrics.contentHeight())));
+            int columns=metrics.columns();
             int i=0;
             for(var candidate:candidates) {
                 var b=cards.get(candidate.instanceId());

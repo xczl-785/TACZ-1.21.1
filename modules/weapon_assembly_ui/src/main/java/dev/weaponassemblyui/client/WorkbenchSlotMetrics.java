@@ -9,9 +9,5 @@ final class WorkbenchSlotMetrics {
     static final int TEXT_INSET=3;
     static final int CHOOSER_CELL=CARD;
     static final int CHOOSER_GAP=4;
-    static final int CHOOSER_COLUMNS=5;
-    static final int CHOOSER_CONTENT_WIDTH=CHOOSER_COLUMNS*CHOOSER_CELL+(CHOOSER_COLUMNS-1)*CHOOSER_GAP;
-    static final int CHOOSER_WIDTH=CHOOSER_CONTENT_WIDTH+32;
-    static final int CHOOSER_HEIGHT=316;
     private WorkbenchSlotMetrics(){}
 }
