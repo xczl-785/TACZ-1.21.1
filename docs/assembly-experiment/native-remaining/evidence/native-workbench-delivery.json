@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-17",
+  "sourceCommit": "1a5af19fa5e99182390d305b7274c4a0cb943534",
+  "newmodCommit": "9e9766c22f24bdc5d640d079dc4d1400648092c0",
+  "version": "1.1.8-hotfix-r6-newmod.1a5af19f",
+  "status": "delivered-awaiting-owner-client-acceptance",
+  "architecture": {
+    "uiOwner": "camera, clipping, slot projection, interaction, and explicit white-model fallback",
+    "nativeOwner": "Bedrock gun model, original texture, attachment rendering, and render-only ItemStack projection",
+    "stableFrameAssemblyRebuild": false,
+    "previewWritesPlayerInventory": false,
+    "nativeGunCoverage": 15
+  },
+  "verification": {
+    "focusedCameraProjection": "passed",
+    "focusedRenderStackProjection": "passed",
+    "allNativeGunProjection": "passed",
+    "fullCheckAndAssemble": "passed in 3m34s",
+    "adapterIntegration": "passed",
+    "productionClasses": 938,
+    "developmentClasses": 979,
+    "singleRuntimeArtifact": true,
+    "productionConfigurationCache": "stored and reused",
+    "developmentConfigurationCache": "stored and reused",
+    "finalPreparedMode": "development"
+  },
+  "artifacts": {
+    "taczSha512": "d25707fa8b8ef4c03492aad673292dc23dc4d267686bf205848d00df30c919ff705b0d08fd568df05ec1838d8d56a789e85bd43723956001e7a9ef991953643f",
+    "developmentSha512": "7358055a5c7b5f49f165e1af074aa7bf63d4bc72af7ddbb10d64f98e82726fb6001470c2bbc012341328d7848e6da47a161348acb22ec7516fa7ae76e6d2fab6"
+  },
+  "gameStarted": false,
+  "worldsModified": false,
+  "pushed": false
+}
