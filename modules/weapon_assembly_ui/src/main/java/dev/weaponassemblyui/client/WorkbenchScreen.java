@@ -85,6 +85,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
         canvasWidth=width/design.scale();canvasHeight=height/design.scale();
         double right=canvasWidth-1280,bottom=canvasHeight-800;
         page=new UIElement();page.layout(l->l.widthPercent(100).heightPercent(100));
+        var backdrop=new WorkbenchBackdrop();design.place(backdrop,0,0,canvasWidth,canvasHeight);page.addChild(backdrop);
         if(viewport==null)viewport=new AssemblyViewport(()->host.preview().filter(p->p.plan().success()).map(p->p.plan().after()).orElse(host.tree()),geometry,materials);
         viewport.whiteModel(whiteModel);
         design.place(viewport,8,8,canvasWidth-16,canvasHeight-16);viewport.framing(design.px(92),design.px(192));page.addChild(viewport);

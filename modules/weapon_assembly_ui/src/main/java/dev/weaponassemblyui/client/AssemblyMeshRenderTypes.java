@@ -27,7 +27,7 @@ final class AssemblyMeshRenderTypes {
             DefaultVertexFormat.POSITION_TEX_COLOR,VertexFormat.Mode.TRIANGLES,262144,
             RenderType.CompositeState.builder()
                 .setShaderState(new RenderStateShard.ShaderStateShard(GameRenderer::getPositionTexColorShader))
-                .setTextureState(new RenderStateShard.TextureStateShard(ResourceLocation.parse(key),true,false))
+                .setTextureState(new RenderStateShard.TextureStateShard(ResourceLocation.parse(key),AssemblyTextureQuality.BLUR,AssemblyTextureQuality.MIPMAP))
                 .setCullState(RenderStateShard.NO_CULL).setTransparencyState(RenderStateShard.NO_TRANSPARENCY)
                 .setDepthTestState(RenderStateShard.LEQUAL_DEPTH_TEST)
                 .setWriteMaskState(RenderStateShard.COLOR_DEPTH_WRITE).createCompositeState(false)));

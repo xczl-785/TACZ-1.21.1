@@ -25,6 +25,15 @@ class NativeAssemblyIconRasterTest {
         assertArrayEquals(b,NativeAssemblyIconRaster.bake(full,models,AssemblyMaterials.white(),id->{throw new AssertionError();},64));
     }
 
+    @Test void rectangularRasterUsesTheWholeLongWeaponSurface(){
+        var models=Map.of("root",geometry(0,0),"stock",geometry(0,-3));
+        var pixels=NativeAssemblyIconRaster.bake(node("root",Map.of("child",node("stock",Map.of()))),models,
+                AssemblyMaterials.white(),id->{throw new AssertionError();},512,192);
+        assertEquals(512*192,pixels.length);
+        var bounds=NativeAssemblyIconRaster.bounds(pixels,512,192);
+        assertTrue(bounds[2]-bounds[0]>bounds[3]-bounds[1]);
+    }
+
     @Test void transparentFrontDoesNotOccludeRearAndMuzzleProjectsLeft(){
         var models=Map.of("root",geometry(0,0),"front",geometry(-1,0));
         var library="{\"schemaVersion\":1,\"materials\":{\"back\":{\"baseColor\":\"#ffffff\",\"texture\":\"test:back\",\"roughness\":1,\"specular\":0},\"front\":{\"baseColor\":\"#ffffff\",\"texture\":\"test:front\",\"roughness\":1,\"specular\":0}}}";
@@ -60,6 +69,11 @@ class NativeAssemblyIconRasterTest {
             assertTrue(Arrays.stream(pixels).filter(c->c!=0).count()>100);results.add(pixels);
             var image=new java.awt.image.BufferedImage(256,256,java.awt.image.BufferedImage.TYPE_INT_ARGB);image.setRGB(0,0,256,256,pixels,0,256);javax.imageio.ImageIO.write(image,"png",output.resolve(names.get(i)+".png").toFile());
         }
+        long wideStart=System.nanoTime();var wide=NativeAssemblyIconRaster.bake(full,models,materials,textures::get,512,192);
+        System.out.println("full wide bake ms="+(System.nanoTime()-wideStart)/1_000_000.);
+        var wideImage=new java.awt.image.BufferedImage(512,192,java.awt.image.BufferedImage.TYPE_INT_ARGB);
+        wideImage.setRGB(0,0,512,192,wide,0,512);javax.imageio.ImageIO.write(wideImage,"png",output.resolve("full-wide.png").toFile());
+        assertTrue(Arrays.stream(wide).filter(c->c!=0).count()>1000);
         assertFalse(Arrays.equals(results.get(0),results.get(1)));assertFalse(Arrays.equals(results.get(0),results.get(2)));
         assertArrayEquals(results.get(0),NativeAssemblyIconRaster.bake(full,models,materials,textures::get,256));
     }

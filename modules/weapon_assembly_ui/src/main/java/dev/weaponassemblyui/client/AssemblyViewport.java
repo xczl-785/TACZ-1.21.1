@@ -51,6 +51,8 @@ public final class AssemblyViewport extends UIElement {
     public AssemblyViewport(Supplier<AssemblyNode> source,Map<String,ModelGeometry> models,AssemblyMaterials materials) {
         this.source=Objects.requireNonNull(source);this.models=Map.copyOf(models);
         this.materials=Objects.requireNonNull(materials);
+        this.materials.all().stream().map(AssemblyMaterials.Material::texture).filter(v->!v.isEmpty()).distinct()
+                .map(net.minecraft.resources.ResourceLocation::parse).forEach(AssemblyTextureQuality::prepare);
         fitInitialAssembly();
         for(var entry:this.models.entrySet())for(var mesh:entry.getValue().meshes())for(var triangle:mesh.triangles()) {
             var a=triangle.vertices().get(1).subtract(triangle.vertices().get(0));

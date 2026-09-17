@@ -14,7 +14,9 @@ import net.minecraft.world.item.ItemStack;
 public final class NativeAssemblyIcons {
     private record Assets(Map<String,ModelGeometry> geometry,AssemblyMaterials materials){}
     private record Icon(ResourceLocation location,dev.itemfoundation.client.api.ItemModelBounds.Bounds bounds){}
-    private static final int SIZE=256,LIMIT=128;
+    private static final int WIDTH=512,HEIGHT=192;
+    private static final long CACHE_BYTES=64L*1024*1024;
+    private static final int LIMIT=(int)Math.min(128,CACHE_BYTES/(WIDTH*HEIGHT*4L));
     private static final org.slf4j.Logger LOGGER=com.mojang.logging.LogUtils.getLogger();
     private static final NativeIconFailures failures=new NativeIconFailures(LIMIT,30_000_000_000L,System::nanoTime);
     private static final dev.itemfoundation.client.api.ItemModelBounds.Bounds NOMINAL_BOUNDS=new dev.itemfoundation.client.api.ItemModelBounds.Bounds(-8,-8,8,8);
@@ -46,18 +48,19 @@ public final class NativeAssemblyIcons {
         if(failures.blocked(key))return null;
         try {
             var art=assets.computeIfAbsent(weapon.PROFILE,k->load(weapon));
-            var pixels=NativeAssemblyIconRaster.bake(tree,art.geometry,art.materials,NativeAssemblyIcons::loadTexture,SIZE);
+            var pixels=NativeAssemblyIconRaster.bake(tree,art.geometry,art.materials,NativeAssemblyIcons::loadTexture,WIDTH,HEIGHT);
             if(Arrays.stream(pixels).noneMatch(c->(c>>>24)!=0))throw new IllegalStateException("Assembly icon has no visible geometry");
-            var bounds=NativeAssemblyIconRaster.bounds(pixels,SIZE);
+            var bounds=NativeAssemblyIconRaster.bounds(pixels,WIDTH,HEIGHT);
             var manager=Minecraft.getInstance().getTextureManager();
             if(icons.size()>=LIMIT){Minecraft.getInstance().renderBuffers().bufferSource().endBatch();var oldest=icons.entrySet().iterator();manager.release(oldest.next().getValue().location);oldest.remove();}
             var location=ResourceLocation.fromNamespaceAndPath("tacz_assembly","dynamic/assembly_icon_"+(serial++));
-            var image=new NativeImage(SIZE,SIZE,false);
+            var image=new NativeImage(WIDTH,HEIGHT,false);
             DynamicTexture texture=null;
             try {
-                for(int y=0;y<SIZE;y++)for(int x=0;x<SIZE;x++){int c=pixels[y*SIZE+x];image.setPixelRGBA(x,y,(c&0xff00ff00)|((c>>>16)&255)|((c&255)<<16));}
+                for(int y=0;y<HEIGHT;y++)for(int x=0;x<WIDTH;x++){int c=pixels[y*WIDTH+x];image.setPixelRGBA(x,y,(c&0xff00ff00)|((c>>>16)&255)|((c&255)<<16));}
                 texture=new DynamicTexture(image);
                 manager.register(location,texture);
+                dev.weaponassemblyui.client.AssemblyTextureQuality.prepare(location);
                 var icon=new Icon(location,new dev.itemfoundation.client.api.ItemModelBounds.Bounds(bounds[0],bounds[1],bounds[2],bounds[3]));
                 icons.put(key,icon);return icon;
             }catch(RuntimeException failure){
