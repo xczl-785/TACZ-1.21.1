@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-09-17",
+  "sourceCommit": "20eeddb441fece13087ec6637cf6369638e5c6e3",
+  "newmodCommit": "7a2c11e551f27bede0db80b9a4b0b73848b374e6",
+  "version": "1.1.8-hotfix-r6-newmod.20eeddb4",
+  "status": "delivered-awaiting-owner-client-acceptance",
+  "scope": {
+    "sharedForAllNativeAssemblyGuns": true,
+    "workbenchTextureSampling": "sharp magnification with generated mipmaps for minification",
+    "workbenchBackdrop": "static graphite gradient, subtle grid, and vignette",
+    "assembledIcon": "512x192 update-driven cached raster"
+  },
+  "performanceBoundary": {
+    "oldM4IconBakeMs": 11.386958,
+    "newM4IconBakeMs": 13.588334,
+    "iconBakeTrigger": "cache miss or assembly appearance update",
+    "iconCacheEntries": 128,
+    "iconCachePixelBudgetMiB": 48,
+    "workbenchExtraGeometryTraversalPerFrame": false
+  },
+  "verification": {
+    "focusedTests": "passed",
+    "fullCheckAndAssemble": "passed",
+    "productionClasses": 932,
+    "developmentClasses": 973,
+    "singleRuntimeArtifact": true,
+    "productionConfigurationCache": "stored and reused",
+    "developmentConfigurationCache": "stored and reused",
+    "finalPreparedMode": "development"
+  },
+  "artifacts": {
+    "taczSha512": "44cfad2fb5c9f4fb7d07f28f609ab5af74df73fb2dbb58ba391f4745161dc7b5680edd2d6c8d9a1544c92c5045e6682ba80662b02bcc5fc61f55339f574aaf66",
+    "developmentSha512": "ec3583e356601fccf74d14c2d4a13185fbe08b42bbb6081c73056c4ddc1c888495efb3154de1ead889777140cf73a5e6e5dfc6601f8dd4c8fc493013d9dfc171"
+  },
+  "gameStarted": false,
+  "worldsModified": false,
+  "pushed": false
+}
