@@ -1,18 +1,15 @@
 {
   "weapon_assembly_ui.root": "Weapon",
   "weapon_assembly_ui.back": "Up one level",
-  "weapon_assembly_ui.attributes": "Installed attributes",
-  "weapon_assembly_ui.camera_hint": "Drag to rotate · Scroll to zoom · Esc closes chooser",
   "weapon_assembly_ui.camera_reset": "Reset view",
   "weapon_assembly_ui.undo": "Undo",
   "weapon_assembly_ui.reset": "Restore initial",
   "weapon_assembly_ui.stats": "Weight %s kg\nErgonomics %s\nVertical recoil %s",
   "weapon_assembly_ui.delta": "Change %s kg / %s / %s",
-  "weapon_assembly_ui.preview": "Preview · Click part to install",
+  "weapon_assembly_ui.preview": "Preview",
   "weapon_assembly_ui.preview_rejected": "Cannot install this part",
   "weapon_assembly_ui.rejected": "Not committed",
   "weapon_assembly_ui.incomplete": "Required part missing",
-  "weapon_assembly_ui.complete": "Assembly complete",
   "weapon_assembly_ui.detached": "%s detached groups retained",
   "weapon_assembly_ui.empty": "Empty slot",
   "weapon_assembly_ui.remove": "Detach",
@@ -54,7 +51,6 @@
   "weapon_assembly_ui.attachment_slot": "Attachment slot",
   "weapon_assembly_ui.edit_preset": "Edit preset",
   "weapon_assembly_ui.exit_preset": "Return to real assembly",
-  "weapon_assembly_ui.temporary_preset": "Temporary preset · discarded on close; no inventory cost",
-  "weapon_assembly_ui.catalog_unlimited": "Full parts catalog · unlimited supply",
+  "weapon_assembly_ui.temporary_preset": "Temporary preset (discarded on close)",
   "weapon_assembly_ui.no_catalog_candidates": "No integrated compatible parts for this slot"
 }

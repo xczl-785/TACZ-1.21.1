@@ -14,7 +14,9 @@ import net.minecraft.world.item.ItemStack;
 public final class NativeAssemblyIcons {
     private record Assets(Map<String,ModelGeometry> geometry,AssemblyMaterials materials){}
     private record Icon(ResourceLocation location,dev.itemfoundation.client.api.ItemModelBounds.Bounds bounds){}
-    private static final int WIDTH=512,HEIGHT=192;
+    // GunItemRendererWrapper displays this texture on a square GUI quad. Keep the
+    // backing raster square so the model is not geometrically stretched in slots.
+    private static final int WIDTH=512,HEIGHT=512;
     private static final long CACHE_BYTES=64L*1024*1024;
     private static final int LIMIT=(int)Math.min(128,CACHE_BYTES/(WIDTH*HEIGHT*4L));
     private static final org.slf4j.Logger LOGGER=com.mojang.logging.LogUtils.getLogger();
@@ -24,6 +26,8 @@ public final class NativeAssemblyIcons {
     private static final Map<String,Assets> assets=new HashMap<>();
     private static final Map<String,NativeAssemblyIconRaster.Texture> textures=new HashMap<>();
     private static final LinkedHashMap<String,Icon> icons=new LinkedHashMap<>(16,.75f,true);
+    static int canvasWidth(){return WIDTH;}
+    static int canvasHeight(){return HEIGHT;}
     public static ResourceLocation texture(ItemStack stack,ResourceLocation fallback){
         var icon=safeIcon(stack);return icon==null?fallback:icon.location;
     }

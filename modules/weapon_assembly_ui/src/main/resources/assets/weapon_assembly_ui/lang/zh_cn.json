@@ -1,18 +1,15 @@
 {
   "weapon_assembly_ui.root": "整枪",
   "weapon_assembly_ui.back": "返回上层",
-  "weapon_assembly_ui.attributes": "当前装配属性",
-  "weapon_assembly_ui.camera_hint": "拖动旋转 · 滚轮缩放 · Esc 关闭浮窗",
   "weapon_assembly_ui.camera_reset": "复位视角",
   "weapon_assembly_ui.undo": "撤销",
   "weapon_assembly_ui.reset": "恢复初始配置",
   "weapon_assembly_ui.stats": "重量 %s kg\n人机工效 %s\n垂直后坐 %s",
   "weapon_assembly_ui.delta": "变化 %s kg / %s / %s",
-  "weapon_assembly_ui.preview": "正在预览 · 点击配件安装",
+  "weapon_assembly_ui.preview": "预览",
   "weapon_assembly_ui.preview_rejected": "无法安装此配件",
   "weapon_assembly_ui.rejected": "操作未提交",
   "weapon_assembly_ui.incomplete": "缺少必需件",
-  "weapon_assembly_ui.complete": "装配完整",
   "weapon_assembly_ui.detached": "已保留 %s 组拆下配件",
   "weapon_assembly_ui.empty": "空槽位",
   "weapon_assembly_ui.remove": "拆卸",
@@ -54,7 +51,6 @@
   "weapon_assembly_ui.attachment_slot": "配件槽",
   "weapon_assembly_ui.edit_preset": "编辑预设",
   "weapon_assembly_ui.exit_preset": "返回实际改装",
-  "weapon_assembly_ui.temporary_preset": "临时预设 · 关闭后丢弃，不消耗背包配件",
-  "weapon_assembly_ui.catalog_unlimited": "完整配件目录 · 不限数量",
+  "weapon_assembly_ui.temporary_preset": "临时预设（关闭即丢弃）",
   "weapon_assembly_ui.no_catalog_candidates": "该槽位尚无已接入的兼容配件"
 }

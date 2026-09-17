@@ -2,8 +2,12 @@ package dev.tacticaltacz.assembled;
 
 import com.mojang.math.Axis;
 import com.tacz.guns.client.model.BedrockGunModel;
+import com.tacz.guns.api.TimelessAPI;
+import com.tacz.guns.api.item.IAttachment;
+import com.tacz.guns.api.item.attachment.AttachmentType;
 import dev.weaponassembly.api.AssemblyNode;
 import dev.weaponassemblyui.client.NativeWorkbenchTransform;
+import dev.weaponassemblyui.client.AssemblyTextureQuality;
 import dev.weaponassemblyui.client.WorkbenchModelBackend;
 import dev.weaponassemblyui.client.WorkbenchViewportFrame;
 import java.util.Map;
@@ -41,7 +45,22 @@ public final class NativeWorkbenchScene implements WorkbenchModelBackend {
         var base=quoted.get();var target=tree.get();var currentPayloads=payloads.get();
         if(target==cachedTree&&base==cachedBaseSource&&currentPayloads==cachedPayloads)return cachedRender;
         cachedBaseSource=base;cachedTree=target;cachedPayloads=currentPayloads;
-        cachedRender=NativeWorkbenchStack.materialize(weapon,base,target,currentPayloads);return cachedRender;
+        cachedRender=NativeWorkbenchStack.materialize(weapon,base,target,currentPayloads);
+        prepareTextures(cachedRender);return cachedRender;
+    }
+
+    private void prepareTextures(ItemStack stack) {
+        AssemblyTextureQuality.prepare(texture);
+        for(var type:AttachmentType.values()) {
+            if(type==AttachmentType.NONE)continue;
+            var attachment=NativeAttachmentProjection.get(stack,type);
+            var item=IAttachment.getIAttachmentOrNull(attachment);
+            if(item==null)continue;
+            TimelessAPI.getClientAttachmentIndex(item.getAttachmentId(attachment)).ifPresent(index->{
+                var main=index.getModelTexture();if(main!=null)AssemblyTextureQuality.prepare(main);
+                var lod=index.getLodModel();if(lod!=null&&lod.getRight()!=null)AssemblyTextureQuality.prepare(lod.getRight());
+            });
+        }
     }
 
     @Override public void render(com.lowdragmc.lowdraglib2.gui.ui.rendering.GUIContext context,WorkbenchViewportFrame frame) {

@@ -15,6 +15,7 @@ import com.tacz.guns.client.resource.pojo.model.CubesItem;
 import java.util.*;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
 import org.joml.Matrix3f;
 import org.joml.Matrix4f;
@@ -63,7 +64,10 @@ final class NativeAttachmentModels {
                 var restored=new PoseStack();restored.last().normal().mul(normal);restored.last().pose().mul(pose);
                 restored.translate(0,-1.5,0);
                 boolean low=asset.lodModel!=null&&!context.firstPerson()&&!com.tacz.guns.util.RenderDistance.inRenderHighPolyModelDistance(restored);
-                (low?asset.lodModel:asset.model).render(stack,gun.getCurrentGunItem(),restored,context,RenderType.entityCutout(low?asset.lodTexture:asset.texture),light,overlay);
+                var texture=low?asset.lodTexture:asset.texture;
+                if(context==ItemDisplayContext.NONE)dev.weaponassemblyui.client.AssemblyTextureQuality.prepare(texture);
+                var renderType=context==ItemDisplayContext.NONE?RenderType.entityCutoutNoCull(texture):RenderType.entityCutout(texture);
+                (low?asset.lodModel:asset.model).render(stack,gun.getCurrentGunItem(),restored,context,renderType,light,overlay);
             });
         };
     }

@@ -163,11 +163,6 @@ for d in physical:
 # Foundation owns serialization/structural safety. Specific native model rules stay in this catalog.
 write(OUT/f'data/{NS}/assembly/m4a1.json',{'schemaVersion':1,'items':[{'itemId':mapping[d],'slots':[{'id':slot,'compatibleItems':sorted({'tacz:attachment' if mapping[child] in external else mapping[child] for child in allowed}),'requiredSiblingSlots':[],'conflictingSiblingSlots':[],'toggleable':False} for slot,allowed in slots.get(d,{}).items()]} for d in physical]})
 
-for locale,text in [('zh_cn','FMJ/HP/I 效果附件不兼容；前握把和激光需要导轨护木；M9 需要默认枪口装置。'),('en_us','FMJ/HP/I effect attachments are incompatible. Grips/lasers need the rail handguard; M9 needs the default muzzle.')]:
- p=OUT/f'assets/{NS}/lang/{locale}.json';data=read(p);data['tacz_assembly.restrictions']=text;write(p,data)
-for locale,text in [('zh_cn','使用原生枪械属性；此处不换算为塔科夫后坐力数值。'),('en_us','Native gun properties apply; no conversion to Tarkov recoil units.')]:
- p=OUT/f'assets/{NS}/lang/{locale}.json';data=read(p);data['tacz_assembly.native_stats']=text;write(p,data)
-
 # Standard editable components share the Radian workbench and icon producer.
 from build_workbench import build as build_workbench
 build_workbench()

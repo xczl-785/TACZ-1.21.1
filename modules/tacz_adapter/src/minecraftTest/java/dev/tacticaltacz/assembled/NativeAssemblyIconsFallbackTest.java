@@ -9,6 +9,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class NativeAssemblyIconsFallbackTest {
     @BeforeAll static void boot(){Bootstrap.bootStrap();}
+    @Test void cachedGuiRasterKeepsTheSquareSlotTextureContract(){
+        assertEquals(NativeAssemblyIcons.canvasWidth(),NativeAssemblyIcons.canvasHeight());
+    }
     @Test void nonAssemblyStackUsesCallerFallbackAndNominalBounds(){
         var fallback=ResourceLocation.parse("test:fallback");
         assertEquals(fallback,NativeAssemblyIcons.texture(ItemStack.EMPTY,fallback));

@@ -16,8 +16,6 @@
   "item.tacz_assembly.m4a1_muzzle_default": "默认枪口装置",
   "gun.tacz_assembly.m4a1": "M4A1 · 原生实体组装",
   "tacz_assembly.workbench": "打开组装工作台",
-  "tacz_assembly.restrictions": "FMJ/HP/I 效果附件不兼容；前握把和激光需要导轨护木；M9 需要默认枪口装置。",
-  "tacz_assembly.native_stats": "使用原生枪械属性；此处不换算为塔科夫后坐力数值。",
   "weapon_assembly_ui.slot.upper": "机匣",
   "weapon_assembly_ui.slot.pistol_grip": "手枪握把",
   "weapon_assembly_ui.slot.buffer": "缓冲管",

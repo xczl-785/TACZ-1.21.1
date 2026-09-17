@@ -7,7 +7,6 @@
   "message.tactical_tacz_adapter.refit.rejected": "改装未完成：请检查空间、兼容性或物品状态；物品未改变",
   "message.tactical_tacz_adapter.refit.unavailable": "当前无法改装：请持有已接入枪械并结束其他动作",
   "tactical_tacz_adapter.assembly.cannot_fire": "无法射击：关键组件缺失或装配无效",
-  "tactical_tacz_adapter.assembly_workbench.title": "真实库存组装",
   "tactical_tacz_adapter.assembly_workbench.unavailable": "请持有空闲的 ADAR，并通过正常装备流程进入主手后改装。",
   "tactical_tacz_adapter.assembly_workbench.committed": "装配已更新。",
   "tactical_tacz_adapter.assembly_workbench.rejected": "未提交：库存、枪械状态或返还空间发生变化。",

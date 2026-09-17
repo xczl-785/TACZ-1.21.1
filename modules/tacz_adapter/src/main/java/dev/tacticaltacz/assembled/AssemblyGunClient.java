@@ -27,14 +27,6 @@ public final class AssemblyGunClient {
             event.setCanceled(true);open();
         }
     }
-    @SubscribeEvent public static void restrictions(ScreenEvent.Render.Post event){
-        var mc=Minecraft.getInstance();var weapon=mc.player==null?null:AssembledWeapons.from(mc.player.getMainHandItem());
-        if(weapon!=null&&weapon.nativeRig&&(event.getScreen() instanceof com.tacz.guns.client.gui.GunRefitScreen||event.getScreen()==screen)){
-            var lines=mc.font.split(Component.translatable("tacz_assembly.restrictions"),Math.max(100,event.getScreen().width-16));
-            int y=event.getScreen().height-4-lines.size()*10;
-            for(var line:lines){event.getGuiGraphics().drawString(mc.font,line,8,y,0xffcccccc,true);y+=10;}
-        }
-    }
     public static void open(){
         var mc=Minecraft.getInstance();
         token=AssemblyGunProtocol.EMPTY;host=null;screen=null;quoted=ItemStack.EMPTY;
@@ -56,7 +48,7 @@ public final class AssemblyGunClient {
         return new WorkbenchScreen(access,geometry,materials,
                 id->weapon.nativeRig?weapon.createPart(id).getHoverName().getString():Component.translatable("item."+weapon.ITEMS.get(id).replace(':','.')).getString(),
                 weapon::partIcon,
-                name+" · "+Component.translatable("tactical_tacz_adapter.assembly_workbench.title").getString(),modeAction,backend);
+                name,modeAction,backend);
     }
     private static void editPreset(){
         var mc=Minecraft.getInstance();
@@ -119,7 +111,9 @@ public final class AssemblyGunClient {
         public Optional<AssemblySession.Preview> preview(){return view.preview();}
         public List<AssemblyEngine.Issue> feedback(){return view.feedback();}
         public WeaponStats.Values stats(){return view.stats();}
-        public Optional<String> statsExplanation(){return nativeRig?Optional.of(Component.translatable("tacz_assembly.native_stats").getString()):Optional.empty();}
+        // Presence suppresses misleading converted stats in preset mode; an empty value keeps that
+        // behavior without occupying the workbench with a fixed explanatory sentence.
+        public Optional<String> statsExplanation(){return nativeRig?Optional.of(""):Optional.empty();}
         public AssemblyEngine.Validation validation(){return view.validation();}
         public boolean busy(){return lifecycle.pending();}
         public boolean canUndo(){return false;}

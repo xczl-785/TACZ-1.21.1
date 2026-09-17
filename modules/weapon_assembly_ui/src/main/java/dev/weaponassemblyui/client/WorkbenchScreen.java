@@ -99,20 +99,17 @@ public final class WorkbenchScreen extends ModularUIScreen {
             }
         };
         leaders.setAllowHitTest(false);design.place(leaders,0,100,canvasWidth,canvasHeight-300);page.addChild(leaders);
-        text(page,"GUNSMITH",28,UiDesign.TEXT,28,20,450,42).setId("assembly-heading");
-        text(page,titleText,20,UiDesign.TEXT,28,65,650,32);
+        text(page,titleText,20,UiDesign.TEXT,28,24,650,32);
         previewNotice=text(page,"",18,InventoryUiTheme.WINDOW_SELECTED_BORDER,460,24,450,35);
         if(host.temporaryPreset())text(page,tr("temporary_preset"),16,InventoryUiTheme.WINDOW_SELECTED_BORDER,690,65,560,32).setId("assembly-preset-notice");
         if(modeAction!=null){
             modeButton=button(page,tr(host.temporaryPreset()?"exit_preset":"edit_preset"),!host.busy(),()->{if(!host.busy())modeAction.run();},1012+right,24,220,36);
             modeButton.setId("assembly-preset-mode");
         }
-        var panel=design.surface(UiDesign.SURFACE);design.place(panel,12,600+bottom,350,188);page.addChild(panel);
-        text(panel,tr("attributes"),18,UiDesign.TEXT,14,10,300,28);
-        stats=text(panel,"",18,UiDesign.TEXT,14,44,310,78);
-        delta=text(panel,"",16,UiDesign.MUTED,14,126,315,30);
+        var panel=design.surface(UiDesign.SURFACE);design.place(panel,12,638+bottom,350,150);page.addChild(panel);
+        stats=text(panel,"",18,UiDesign.TEXT,14,14,310,78);
+        delta=text(panel,"",16,UiDesign.MUTED,14,100,315,30);
         status=text(page,"",16,UiDesign.MUTED,400,614+bottom,canvasWidth-412,64);
-        text(page,tr("camera_hint"),16,UiDesign.MUTED,760+right,680+bottom,490,28);
         materialMode=button(page,tr("white_model"),true,()->{whiteModel=!whiteModel;viewport.whiteModel(whiteModel);refreshReadout();},400,723+bottom,180,40);
         materialMode.setId("assembly-material-mode");
         button(page,tr("camera_reset"),true,()->viewport.resetCamera(),758+right,723+bottom,150,40).setId("assembly-camera-reset");
@@ -183,9 +180,11 @@ public final class WorkbenchScreen extends ModularUIScreen {
         }
         previewNotice.text(candidate.map(p->tr(p.plan().success()?"preview":"preview_rejected")).orElse(""));
         var errors=candidate.filter(p->!p.plan().success()).map(p->p.plan().errors()).orElse(host.feedback());
-        if(!errors.isEmpty())status.text(tr("rejected")+": "+issue(errors.getFirst()));
+        if(host.busy())status.text(tr("pending"));
+        else if(!errors.isEmpty())status.text(tr("rejected")+": "+issue(errors.getFirst()));
         else if(!host.validation().complete())status.text(tr("incomplete")+": "+pathName(host.validation().missingRequired().getFirst().path()));
-        else status.text(tr("complete")+" · "+(host.temporaryPreset()?tr("catalog_unlimited"):tr("detached",host.detached().size())));
+        else if(!host.temporaryPreset()&&!host.detached().isEmpty())status.text(tr("detached",host.detached().size()));
+        else status.text("");
         undo.setActive(host.canUndo());reset.setActive(host.canReset());
         if(modeButton!=null)modeButton.setActive(!host.busy());
         materialMode.setText(Component.literal(whiteModel?tr("show_materials"):tr("white_model")));

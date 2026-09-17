@@ -48,7 +48,11 @@ public class AttachmentRender implements IFunctionalRenderer {
                         model = lodModel.getLeft();
                         texture = lodModel.getRight();
                     }
-                    RenderType renderType = RenderType.entityCutout(texture);
+                    // Neutral display scenes can invert face winding while rotating the
+                    // model. Match the workbench gun body's no-cull exterior policy.
+                    RenderType renderType = transformType == ItemDisplayContext.NONE
+                            ? RenderType.entityCutoutNoCull(texture)
+                            : RenderType.entityCutout(texture);
                     model.render(attachmentItem, gunItem, poseStack, transformType, renderType, light, overlay);
                 }
             }, () -> {

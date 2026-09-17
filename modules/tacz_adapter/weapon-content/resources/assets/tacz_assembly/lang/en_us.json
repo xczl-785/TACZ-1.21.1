@@ -16,8 +16,6 @@
   "item.tacz_assembly.m4a1_muzzle_default": "Muzzle default",
   "gun.tacz_assembly.m4a1": "M4A1 · Native Assembly",
   "tacz_assembly.workbench": "Assembly workbench",
-  "tacz_assembly.restrictions": "FMJ/HP/I effect attachments are incompatible. Grips/lasers need the rail handguard; M9 needs the default muzzle.",
-  "tacz_assembly.native_stats": "Native gun properties apply; no conversion to Tarkov recoil units.",
   "weapon_assembly_ui.slot.upper": "Receiver",
   "weapon_assembly_ui.slot.pistol_grip": "Pistol grip",
   "weapon_assembly_ui.slot.buffer": "Buffer tube",
