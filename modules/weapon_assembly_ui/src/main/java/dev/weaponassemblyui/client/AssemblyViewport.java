@@ -17,6 +17,7 @@ public final class AssemblyViewport extends UIElement {
     private final Supplier<AssemblyNode> source;
     private final Map<String,ModelGeometry> models;
     private final AssemblyMaterials materials;
+    private final WorkbenchModelBackend modelBackend;
     private boolean whiteModel;
     // Authored weapons point along +Z; -90 degrees presents a level, muzzle-left side view.
     private final WorkbenchCamera camera=new WorkbenchCamera();
@@ -46,11 +47,15 @@ public final class AssemblyViewport extends UIElement {
     // Outward winding; both face directions are emitted because GUI Y points down.
     private static final int[][] FACES={{0,3,2,1},{4,5,6,7},{0,4,7,3},{1,2,6,5},{0,1,5,4},{3,7,6,2}};
     public AssemblyViewport(Supplier<AssemblyNode> source,Map<String,ModelGeometry> models) {
-        this(source,models,AssemblyMaterials.white());
+        this(source,models,AssemblyMaterials.white(),null);
     }
     public AssemblyViewport(Supplier<AssemblyNode> source,Map<String,ModelGeometry> models,AssemblyMaterials materials) {
+        this(source,models,materials,null);
+    }
+    public AssemblyViewport(Supplier<AssemblyNode> source,Map<String,ModelGeometry> models,AssemblyMaterials materials,WorkbenchModelBackend modelBackend) {
         this.source=Objects.requireNonNull(source);this.models=Map.copyOf(models);
         this.materials=Objects.requireNonNull(materials);
+        this.modelBackend=modelBackend;
         this.materials.all().stream().map(AssemblyMaterials.Material::texture).filter(v->!v.isEmpty()).distinct()
                 .map(net.minecraft.resources.ResourceLocation::parse).forEach(AssemblyTextureQuality::prepare);
         fitInitialAssembly();
@@ -125,11 +130,13 @@ public final class AssemblyViewport extends UIElement {
         return Optional.of(new ScreenPoint(projected.x(),projected.y()));
     }
     private Point project(Point p) {
+        var projected=frame().project(p);
+        return new Point(projected.x(),projected.y(),20+projected.depth()*.2f);
+    }
+    private WorkbenchViewportFrame frame() {
         rotation();
-        double x=(p.x()-center.x())*fitScale,y=(p.y()-center.y())*fitScale,z=(p.z()-center.z())*fitScale;
-        double rx=x*cy+z*sy,rz=-x*sy+z*cy,ry=y*cp-rz*sp;
         double scale=Math.min(getSizeWidth()/24,(getSizeHeight()-frameTop-frameBottom)/8)*camera.zoom;
-        return new Point(frameCenterX()+(float)(camera.panX+rx*scale),frameCenterY()+(float)(camera.panY-ry*scale),20+(float)(y*sp+rz*cp)*.2f);
+        return new WorkbenchViewportFrame(center,frameCenterX()+(float)camera.panX,frameCenterY()+(float)camera.panY,fitScale,scale,camera.yaw,camera.pitch);
     }
     @Override public void drawBackgroundAdditional(GUIContext context) {
         super.drawBackgroundAdditional(context);
@@ -141,7 +148,8 @@ public final class AssemblyViewport extends UIElement {
         graphics.enableScissor((int)getPositionX(),(int)getPositionY(),(int)Math.ceil(getPositionX()+getSizeWidth()),(int)Math.ceil(getPositionY()+getSizeHeight()));
         try {
             RenderSystem.enableDepthTest();RenderSystem.depthMask(true);
-            drawNode(context,root,ZERO,List.of());
+            if(modelBackend!=null&&!whiteModel)modelBackend.render(context,frame());
+            else drawNode(context,root,ZERO,List.of());
             graphics.flush();
         } finally {
             // Keep local mesh occlusion, then release depth so ordinary controls and menus can cover it.

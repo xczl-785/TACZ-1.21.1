@@ -25,6 +25,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
     private final String titleText;
     private final Runnable modeAction;
     private final Function<String,ResourceLocation> partImage;
+    private final WorkbenchModelBackend modelBackend;
     private final InventoryRootElement root;
     private UiDesign design;
     private double canvasWidth,canvasHeight;
@@ -51,18 +52,21 @@ public final class WorkbenchScreen extends ModularUIScreen {
     private double pressX,pressY;
     private record Label(List<String> path,AttachmentCard button,SlotToggle toggle) {}
     public WorkbenchScreen(WorkbenchAccess host,Map<String,ModelGeometry> geometry,Function<String,String> names,String title) {
-        this(host,geometry,AssemblyMaterials.white(),names,title);
+        this(host,geometry,AssemblyMaterials.white(),names,id->null,title,null,null);
     }
     public WorkbenchScreen(WorkbenchAccess host,Map<String,ModelGeometry> geometry,AssemblyMaterials materials,Function<String,String> names,String title) {
-        this(host,geometry,materials,names,id->null,title);
+        this(host,geometry,materials,names,id->null,title,null,null);
     }
     public WorkbenchScreen(WorkbenchAccess host,Map<String,ModelGeometry> geometry,AssemblyMaterials materials,Function<String,String> names,Function<String,ResourceLocation> images,String title) {
-        this(host,geometry,materials,names,images,title,null);
+        this(host,geometry,materials,names,images,title,null,null);
     }
     public WorkbenchScreen(WorkbenchAccess host,Map<String,ModelGeometry> geometry,AssemblyMaterials materials,Function<String,String> names,Function<String,ResourceLocation> images,String title,Runnable modeAction) {
+        this(host,geometry,materials,names,images,title,modeAction,null);
+    }
+    public WorkbenchScreen(WorkbenchAccess host,Map<String,ModelGeometry> geometry,AssemblyMaterials materials,Function<String,String> names,Function<String,ResourceLocation> images,String title,Runnable modeAction,WorkbenchModelBackend modelBackend) {
         super(createUi(),Component.literal(title));this.host=Objects.requireNonNull(host);this.geometry=Map.copyOf(geometry);this.modeAction=modeAction;
         this.materials=Objects.requireNonNull(materials);
-        partName=Objects.requireNonNull(names);partImage=Objects.requireNonNull(images);titleText=title;root=(InventoryRootElement)modularUI.ui.rootElement;
+        partName=Objects.requireNonNull(names);partImage=Objects.requireNonNull(images);this.modelBackend=modelBackend;titleText=title;root=(InventoryRootElement)modularUI.ui.rootElement;
     }
     private static ModularUI createUi() {
         var root=new InventoryRootElement();root.layout(l->l.positionType(TaffyPosition.RELATIVE));
@@ -86,7 +90,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
         double right=canvasWidth-1280,bottom=canvasHeight-800;
         page=new UIElement();page.layout(l->l.widthPercent(100).heightPercent(100));
         var backdrop=new WorkbenchBackdrop();design.place(backdrop,0,0,canvasWidth,canvasHeight);page.addChild(backdrop);
-        if(viewport==null)viewport=new AssemblyViewport(()->host.preview().filter(p->p.plan().success()).map(p->p.plan().after()).orElse(host.tree()),geometry,materials);
+        if(viewport==null)viewport=new AssemblyViewport(()->host.preview().filter(p->p.plan().success()).map(p->p.plan().after()).orElse(host.tree()),geometry,materials,modelBackend);
         viewport.whiteModel(whiteModel);
         design.place(viewport,8,8,canvasWidth-16,canvasHeight-16);viewport.framing(design.px(92),design.px(192));page.addChild(viewport);
         var leaders=new UIElement() {

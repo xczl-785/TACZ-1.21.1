@@ -45,14 +45,17 @@ public final class AssemblyGunClient {
         lifecycle.exchange(Minecraft.getInstance().screen).ifPresent(request->
                 PacketDistributor.sendToServer(new AssemblyGunProtocol.Request(request,token,action,source,path)));
     }
-    private static WorkbenchScreen createScreen(AssembledWeapon weapon,WorkbenchAccess access,String name,Runnable modeAction){
-        var model=com.tacz.guns.api.TimelessAPI.getClientGunIndex(weapon.GUN).orElseThrow().getDefaultDisplay().getGunModel();
+    private static WorkbenchScreen createScreen(AssembledWeapon weapon,WorkbenchAccess access,java.util.function.Supplier<ItemStack> quotedStack,String name,Runnable modeAction){
+        var display=com.tacz.guns.api.TimelessAPI.getClientGunIndex(weapon.GUN).orElseThrow().getDefaultDisplay();
+        var model=display.getGunModel();
         var geometry=model instanceof AssemblyGunModel assembled?assembled.geometry():NativeAssemblyView.geometry(weapon);
         var materials=model instanceof AssemblyGunModel assembled?assembled.materials():NativeAssemblyView.materials(weapon,geometry);
+        var backend=model==null?null:new NativeWorkbenchRenderer(weapon,model,display.getModelTexture(),display.enablesTransparency(),quotedStack,
+                ()->access.preview().filter(p->p.plan().success()).map(p->p.plan().after()).orElse(access.tree()));
         return new WorkbenchScreen(access,geometry,materials,
                 id->weapon.nativeRig?weapon.createPart(id).getHoverName().getString():Component.translatable("item."+weapon.ITEMS.get(id).replace(':','.')).getString(),
                 weapon::partIcon,
-                name+" · "+Component.translatable("tactical_tacz_adapter.assembly_workbench.title").getString(),modeAction);
+                name+" · "+Component.translatable("tactical_tacz_adapter.assembly_workbench.title").getString(),modeAction,backend);
     }
     private static void editPreset(){
         var mc=Minecraft.getInstance();
@@ -61,7 +64,7 @@ public final class AssemblyGunClient {
         if(!ItemStack.matches(quoted,mc.player.getMainHandItem())){open();return;}
         var weapon=AssembledWeapons.from(quoted);
         var draft=AssemblySession.preset(host.catalog(),host.tree(),new WeaponStats.Context(0,0),host.statsExplanation());
-        var next=createScreen(weapon,draft,quoted.getHoverName().getString(),AssemblyGunClient::open);
+        var base=quoted.copy();var next=createScreen(weapon,draft,()->base,quoted.getHoverName().getString(),AssemblyGunClient::open);
         if(!lifecycle.preset(screen,next))return;
         token=AssemblyGunProtocol.EMPTY;host=null;quoted=ItemStack.EMPTY;screen=next;
         mc.setScreen(next);
@@ -80,7 +83,7 @@ public final class AssemblyGunClient {
             host.accept(view);quoted=view.held().copy();
             if(weapon.nativeRig&&view.result().equals("committed"))com.tacz.guns.resource.modifier.AttachmentPropertyManager.postChangeEvent(mc.player,mc.player.getMainHandItem());
             if(opening){
-                screen=createScreen(weapon,host,view.held().getHoverName().getString(),AssemblyGunClient::editPreset);
+                screen=createScreen(weapon,host,()->quoted,view.held().getHoverName().getString(),AssemblyGunClient::editPreset);
                 lifecycle.real(screen);mc.setScreen(screen);
             }
             if(!view.result().isEmpty())mc.player.displayClientMessage(Component.translatable("tactical_tacz_adapter.assembly_workbench."+view.result()),true);
