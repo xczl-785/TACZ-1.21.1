@@ -14,9 +14,14 @@ public final class NativeWorkbenchStack {
     private record Existing(ItemStack stack,boolean enabled) {}
 
     public static ItemStack materialize(AssembledWeapon weapon,ItemStack quoted,AssemblyNode target) {
+        return materialize(weapon,quoted,target,Map.of());
+    }
+
+    public static ItemStack materialize(AssembledWeapon weapon,ItemStack quoted,AssemblyNode target,Map<UUID,ItemStack> payloads) {
         if(quoted.isEmpty()||!weapon.isGun(quoted)||!target.definitionId().equals(weapon.ROOT))return ItemStack.EMPTY;
         if(target.equals(weapon.project(quoted)))return quoted.copy();
         var existing=new HashMap<UUID,Existing>();collect(quoted,true,existing);
+        payloads.forEach((id,stack)->existing.putIfAbsent(id,new Existing(stack.copy(),true)));
         var root=build(weapon,quoted.copy(),target,existing);
         AssemblyTrees.validate(root,AssembledWeapon.identity(root));return root;
     }

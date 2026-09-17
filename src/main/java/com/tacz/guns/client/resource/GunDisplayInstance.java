@@ -395,6 +395,10 @@ public class GunDisplayInstance {
     }
 
     private void checkTextShow(GunDisplay display) {
+        applyTextShow(gunModel,display);
+    }
+
+    private static void applyTextShow(BedrockGunModel model,GunDisplay display) {
         Map<String, TextShow> textShowMap = Maps.newHashMap();
         display.getTextShows().forEach((key, value) -> {
             if (StringUtils.isNoneBlank(key)) {
@@ -403,10 +407,17 @@ public class GunDisplayInstance {
                 textShowMap.put(key, value);
             }
         });
-        gunModel.setTextShowList(textShowMap);
+        model.setTextShowList(textShowMap);
     }
 
     private void checkTextureAndModel(GunDisplay display) {
+        ResourceLocation textureLocation = display.getModelTexture();
+        Preconditions.checkArgument(textureLocation != null, "missing default texture");
+        modelTexture = textureLocation;
+        gunModel=createModel(display);
+    }
+
+    private static BedrockGunModel createModel(GunDisplay display) {
         //获取模型类型
         String modelType = display.getModelType();
         BiFunction<BedrockModelPOJO, BedrockVersion, ? extends BedrockGunModel> constructor = GunModelTypeManager.getModelInstanceConstructor(modelType);
@@ -415,19 +426,15 @@ public class GunDisplayInstance {
         Preconditions.checkArgument(modelLocation != null, "display object missing model field");
         BedrockModelPOJO modelPOJO = ClientAssetsManager.INSTANCE.getBedrockModelPOJO(modelLocation);
         Preconditions.checkArgument(modelPOJO != null, "there is no corresponding model file");
-        // 检查默认材质是否存在
-        ResourceLocation textureLocation = display.getModelTexture();
-        Preconditions.checkArgument(textureLocation != null, "missing default texture");
-        modelTexture = textureLocation;
         // 先判断是不是 1.10.0 版本基岩版模型文件
         if (BedrockVersion.isLegacyVersion(modelPOJO) && modelPOJO.getGeometryModelLegacy() != null) {
-            gunModel = constructor.apply(modelPOJO, BedrockVersion.LEGACY);
+            return constructor.apply(modelPOJO, BedrockVersion.LEGACY);
         }
         // 判定是不是 1.12.0 版本基岩版模型文件
         if (BedrockVersion.isNewVersion(modelPOJO) && modelPOJO.getGeometryModelNew() != null) {
-            gunModel = constructor.apply(modelPOJO, BedrockVersion.NEW);
+            return constructor.apply(modelPOJO, BedrockVersion.NEW);
         }
-        Preconditions.checkArgument(gunModel != null, "there is no model data in the model file");
+        throw new IllegalArgumentException("there is no model data in the model file");
     }
 
     private void checkLod(GunDisplay display) {
@@ -647,6 +654,15 @@ public class GunDisplayInstance {
     public @Nullable BedrockGunModel getGunModel() {
         ensureModelLoaded();
         return gunModel;
+    }
+
+    /** A workbench owns its mutable model state instead of borrowing the held-item renderer instance. */
+    public BedrockGunModel createWorkbenchGunModel() {
+        ensureModelLoaded();
+        Preconditions.checkState(modelLoaded,"gun model is unavailable");
+        BedrockGunModel model=createModel(display);
+        applyTextShow(model,display);
+        return model;
     }
 
     @Nullable

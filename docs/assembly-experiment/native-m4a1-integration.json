@@ -36,7 +36,7 @@
     {
       "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/AssemblyGunClient.java",
       "before_sha256": "3d5266f5e67e54fd4ad67329f83f88a086b87680efc8d347152293e2b97b7bef",
-      "after_sha256": "e56a9f7d42f7dca7c45abef2a855df28c6aeff52cd785ba4e73c48845bb04e00",
+      "after_sha256": "5fee762cfa786c48317d11812c1c051e72896f01b1853a537a06fc45d541ec03",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -148,15 +148,15 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
-      "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/NativeWorkbenchRenderer.java",
+      "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/NativeWorkbenchScene.java",
       "before_sha256": null,
-      "after_sha256": "1f1cc2a54741ee799c6453eaa8477b6ccda112d7ad2541866f704d74c8e9fd5d",
+      "after_sha256": "c3288a0c3c3ff97eab0e5cd805c1cdd95fd9bafc18ffdac662a365cd4a293d02",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
       "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/assembled/NativeWorkbenchStack.java",
       "before_sha256": null,
-      "after_sha256": "7c85d3829b6e232459a9c53d50598b5140ec81cde2ef2176424fc4f5038496b4",
+      "after_sha256": "64bba20c9e3d8a60471ebeb6b54963203fc89e82075acbfc56e7a0b0ceba9365",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -216,7 +216,7 @@
     {
       "path": "modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/NativeWorkbenchStackTest.java",
       "before_sha256": null,
-      "after_sha256": "02a09f5c84d4abcb3fe12fe03491eabbab9f88f2dcd04b2219ec76704fbd0a99",
+      "after_sha256": "dc00fc2010b11391e506f69a33bcb3d057656607bfe6f682fef5ca5737d81db5",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -19246,6 +19246,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/NativeWorkbenchTransform.java",
+      "before_sha256": null,
+      "after_sha256": "6ec251f520ef86dab66bba998d5cba73c340e6af93fb8d90f836327fa81f13b5",
+      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
       "path": "modules/weapon_assembly_ui/src/main/java/dev/weaponassemblyui/client/WorkbenchBackdrop.java",
       "before_sha256": null,
       "after_sha256": "e141e8d72d09b77a82b2fc942cbe43bebaf9ed5d2001bb60378aafb830a29b62",
@@ -19302,7 +19308,7 @@
     {
       "path": "modules/weapon_assembly_ui/src/test/java/dev/weaponassemblyui/client/WorkbenchViewportFrameTest.java",
       "before_sha256": null,
-      "after_sha256": "8e4b3014bcc2c9336132b0ae5542b649295f59cf6ff9acf2c63a014726f0541f",
+      "after_sha256": "5b37b2886b4275b0331abd897aff588c5c68ed10a60765a31d27d781136518e6",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
@@ -19350,7 +19356,7 @@
     {
       "path": "src/main/java/com/tacz/guns/client/resource/GunDisplayInstance.java",
       "before_sha256": "aba2306333b421212ff965c20890000e00408b2c82f0b093ceccc685854d0097",
-      "after_sha256": "2c772c0fcdf4b23a2047e5190d29ce0f48bac0280ea74342b27765f4ad1204a6",
+      "after_sha256": "a7a4ff2e94e19614f5b6b2db5061d982319e68ebfb984144759fd10dfbdd6afe",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {

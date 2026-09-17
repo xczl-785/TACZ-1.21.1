@@ -19,4 +19,11 @@ class WorkbenchViewportFrameTest {
         var projected=frame.project(new Point(0,0,2));
         assertEquals(100,projected.x(),1e-5);assertEquals(100,projected.y(),1e-5);
     }
+
+    @Test void nativeBedrockMuzzleIsBridgedIntoPositiveAssemblyZ() {
+        var origin=NativeWorkbenchTransform.toAssembly(new Point(0,1.5f,0));
+        var muzzle=NativeWorkbenchTransform.toAssembly(new Point(0,1.5f,-1));
+        assertEquals(0,origin.x(),1e-5);assertEquals(0,origin.y(),1e-5);assertEquals(0,origin.z(),1e-5);
+        assertEquals(0,muzzle.x(),1e-5);assertEquals(0,muzzle.y(),1e-5);assertEquals(16,muzzle.z(),1e-5);
+    }
 }

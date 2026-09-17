@@ -47,11 +47,12 @@ public final class AssemblyGunClient {
     }
     private static WorkbenchScreen createScreen(AssembledWeapon weapon,WorkbenchAccess access,java.util.function.Supplier<ItemStack> quotedStack,String name,Runnable modeAction){
         var display=com.tacz.guns.api.TimelessAPI.getClientGunIndex(weapon.GUN).orElseThrow().getDefaultDisplay();
-        var model=display.getGunModel();
-        var geometry=model instanceof AssemblyGunModel assembled?assembled.geometry():NativeAssemblyView.geometry(weapon);
-        var materials=model instanceof AssemblyGunModel assembled?assembled.materials():NativeAssemblyView.materials(weapon,geometry);
-        var backend=model==null?null:new NativeWorkbenchRenderer(weapon,model,display.getModelTexture(),display.enablesTransparency(),quotedStack,
-                ()->access.preview().filter(p->p.plan().success()).map(p->p.plan().after()).orElse(access.tree()));
+        var displayModel=display.getGunModel();
+        var geometry=displayModel instanceof AssemblyGunModel assembled?assembled.geometry():NativeAssemblyView.geometry(weapon);
+        var materials=displayModel instanceof AssemblyGunModel assembled?assembled.materials():NativeAssemblyView.materials(weapon,geometry);
+        java.util.function.Supplier<Map<UUID,ItemStack>> payloads=access instanceof Host nativeHost?nativeHost::candidatePayloads:Map::of;
+        var backend=displayModel==null?null:new NativeWorkbenchScene(weapon,display.createWorkbenchGunModel(),display.getModelTexture(),display.enablesTransparency(),quotedStack,
+                ()->access.preview().filter(p->p.plan().success()).map(p->p.plan().after()).orElse(access.tree()),payloads);
         return new WorkbenchScreen(access,geometry,materials,
                 id->weapon.nativeRig?weapon.createPart(id).getHoverName().getString():Component.translatable("item."+weapon.ITEMS.get(id).replace(':','.')).getString(),
                 weapon::partIcon,
@@ -101,14 +102,16 @@ public final class AssemblyGunClient {
         private AssemblySession view;
         private boolean nativeRig;
         private Map<UUID,String> sources=Map.of();
+        private Map<UUID,ItemStack> payloads=Map.of();
         void accept(AssemblyGunProtocol.View response){
             var weapon=AssembledWeapons.from(response.held());nativeRig=weapon.nativeRig;
-            var selected=view==null?List.<String>of():view.selectedPath();var stock=new ArrayList<AssemblyNode>();var ids=new HashMap<UUID,String>();
-            for(var choice:response.choices()){var node=weapon.project(choice.stack());stock.add(node);ids.put(node.instanceId(),choice.id());}
-            view=new AssemblySession(weapon.CATALOG,weapon.project(response.held()),stock,new WeaponStats.Context(0,0));sources=Map.copyOf(ids);
+            var selected=view==null?List.<String>of():view.selectedPath();var stock=new ArrayList<AssemblyNode>();var ids=new HashMap<UUID,String>();var stacks=new HashMap<UUID,ItemStack>();
+            for(var choice:response.choices()){var node=weapon.project(choice.stack());stock.add(node);ids.put(node.instanceId(),choice.id());stacks.put(node.instanceId(),choice.stack().copy());}
+            view=new AssemblySession(weapon.CATALOG,weapon.project(response.held()),stock,new WeaponStats.Context(0,0));sources=Map.copyOf(ids);payloads=Map.copyOf(stacks);
             while(!view.select(selected)&&!selected.isEmpty())selected=selected.subList(0,selected.size()-1);
         }
         public AssemblyCatalog catalog(){return view.catalog();}
+        Map<UUID,ItemStack> candidatePayloads(){return payloads;}
         public AssemblyNode tree(){return view.tree();}
         public List<AssemblyNode> stock(){return view.stock();}
         public List<AssemblyNode> detached(){return List.of();}

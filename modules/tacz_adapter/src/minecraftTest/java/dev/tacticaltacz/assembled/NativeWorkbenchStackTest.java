@@ -2,7 +2,10 @@ package dev.tacticaltacz.assembled;
 
 import dev.itemfoundation.api.assembly.AssemblyTrees;
 import java.util.List;
+import java.util.Map;
 import net.minecraft.server.Bootstrap;
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.world.item.component.CustomData;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -44,5 +47,22 @@ class NativeWorkbenchStackTest {
             assertEquals(weapon.project(held),weapon.project(rendered),weapon.PROFILE);
             assertTrue(net.minecraft.world.item.ItemStack.matches(held,rendered),weapon.PROFILE);
         }
+    }
+
+    @Test void previewKeepsTheExactCandidatePayload() {
+        var weapon=AssembledWeapons.byId(net.minecraft.resources.ResourceLocation.parse("tacz_assembly:m4a1"));
+        var held=weapon.preset();
+        var candidate=weapon.createPart("tacz_grip_rk1_b25u");
+        var tag=candidate.getOrDefault(DataComponents.CUSTOM_DATA,CustomData.EMPTY).copyTag();
+        tag.putString("workbench_test_payload","preserved");candidate.set(DataComponents.CUSTOM_DATA,CustomData.of(tag));
+        var node=weapon.project(candidate);
+        var target=weapon.ENGINE.replace(weapon.project(held),List.of("upper","barrel_mount","handguard"),
+                dev.weaponassembly.api.AssemblyNode.leaf(java.util.UUID.randomUUID(),"handguard_tactical")).after();
+        target=weapon.ENGINE.install(target,List.of("upper","barrel_mount","handguard","grip"),node).after();
+
+        var rendered=NativeWorkbenchStack.materialize(weapon,held,target,Map.of(node.instanceId(),candidate));
+        var installed=AssemblyTrees.flatten(rendered).stream().filter(value->value.instanceId().equals(node.instanceId())).findFirst().orElseThrow().stack();
+
+        assertEquals("preserved",installed.getOrDefault(DataComponents.CUSTOM_DATA,CustomData.EMPTY).copyTag().getString("workbench_test_payload"));
     }
 }
