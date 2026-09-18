@@ -125,6 +125,43 @@ class StableSlotLayoutTest {
             assertEquals(next,update(state,anchors),"a rendered frame must not leave trailing motion");
         }
     }
+    @Test void denseRotationDoesNotJumpBetweenTemporaryCollisionSites() {
+        var state=new SlotLayout.State();
+        Map<List<String>,SlotLayout.Point> previous=null;
+        var previousDelta=new HashMap<List<String>,SlotLayout.Point>();
+        for(int frame=0;frame<360;frame++) {
+            double angle=Math.toRadians(frame);
+            var anchors=new ArrayList<SlotLayout.Anchor>();
+            for(int i=0;i<12;i++) {
+                double along=(i-5.5)*55;
+                double vertical=(i%3-1)*18;
+                anchors.add(a("slot"+i,640+along*Math.cos(angle),348+vertical+along*.22*Math.sin(angle)));
+            }
+            var next=update(state,anchors);usable(next);
+            if(previous!=null)for(var entry:next.entrySet()) {
+                var old=previous.get(entry.getKey());
+                var delta=new SlotLayout.Point(entry.getValue().x()-old.x(),entry.getValue().y()-old.y());
+                double distance=Math.hypot(delta.x(),delta.y());
+                assertTrue(distance<40,"dense rotation must not teleport "+entry.getKey()+" by "+distance);
+                var last=previousDelta.get(entry.getKey());
+                if(last!=null&&distance>20&&Math.hypot(last.x(),last.y())>20)
+                    assertTrue(delta.x()*last.x()+delta.y()*last.y()>=0,
+                            "collision avoidance must not immediately reverse "+entry.getKey());
+                previousDelta.put(entry.getKey(),delta);
+            }
+            previous=next;
+        }
+    }
+    @Test void interactionBoundaryAllowsOneDeterministicFullReflow() {
+        var anchors=List.of(a("a",350,340),a("b",900,340),a("c",640,390));
+        var state=new SlotLayout.State();update(state,anchors);
+        var rotated=List.of(a("a",900,340),a("b",350,340),a("c",640,390));
+        var during=update(state,rotated);usable(during);
+        state.reflow();
+        var after=update(state,rotated);usable(after);
+        assertEquals(update(new SlotLayout.State(),rotated),after);
+        assertEquals(after,update(state,rotated),"reflow must settle in one frame");
+    }
     @Test void touchingCardsCanExchangeOccupiedEndpointsHorizontallyAndVertically() {
         for(boolean horizontal:List.of(true,false)) {
             var state=new SlotLayout.State();

@@ -22,13 +22,22 @@ public final class SlotLayout {
         private Map<List<String>,Point> lastSnapshot=Map.of();
         private Bounds lastArea;
         private double lastWidth,lastHeight;
+        private boolean reflow;
+
+        /** Request one deterministic full placement after an interaction boundary. */
+        void reflow() { reflow=true; }
 
         public Map<List<String>, Point> update(List<Anchor> anchors, Bounds area, double width,
                 double height) {
             // A transient invalid native layout must never replace the last usable frame.
             if (!valid(area, width, height) || anchors.stream().anyMatch(a -> !finite(a.point)))
                 return snapshot();
-            boolean changed=anchors.size()!=mounts.size()||anchors.stream().anyMatch(a->!a.point.equals(mounts.get(a.path)));
+            if(reflow) {
+                positions.clear();mounts.clear();targets.clear();destinations.clear();
+                reflow=false;
+            }
+            boolean structureChanged=anchors.size()!=mounts.size()||anchors.stream().anyMatch(a->!mounts.containsKey(a.path));
+            boolean changed=structureChanged||anchors.stream().anyMatch(a->!a.point.equals(mounts.get(a.path)));
             boolean resized=!area.equals(lastArea)||width!=lastWidth||height!=lastHeight;
             if(!changed&&!resized)return snapshot();
             lastArea=area;lastWidth=width;lastHeight=height;
@@ -68,7 +77,35 @@ public final class SlotLayout {
                     entry.setValue(p);targets.put(entry.getKey(),p);destinations.put(entry.getKey(),p);reserved.add(p);
                 }
             }
-            if(changed || resized) {
+            if(changed && !structureChanged && !resized) {
+                // Camera motion is continuous even when projected mounts cross. Do not let the
+                // sequential free-site search send one member of a collision group to a distant
+                // temporary site: keep that group at its last legal positions while every other
+                // card follows the current projection immediately.
+                var frozen=new HashSet<List<String>>();
+                for(int i=0;i<ordered.size();i++)for(int j=0;j<i;j++) {
+                    var a=ordered.get(i).path;var b=ordered.get(j).path;
+                    if(overlaps(clamp(targets.get(a),area,width,height),clamp(targets.get(b),area,width,height),width,height,GAP-.00001)) {
+                        frozen.add(a);frozen.add(b);
+                    }
+                }
+                boolean expanded;
+                do {
+                    expanded=false;
+                    for(var anchor:ordered) {
+                        if(frozen.contains(anchor.path))continue;
+                        var desired=clamp(targets.get(anchor.path),area,width,height);
+                        boolean blockedByFrozen=false;
+                        for(var blocked:frozen)if(overlaps(desired,positions.get(blocked),width,height,GAP-.00001)) {
+                            blockedByFrozen=true;break;
+                        }
+                        if(blockedByFrozen){frozen.add(anchor.path);expanded=true;}
+                    }
+                } while(expanded);
+                destinations.clear();
+                for(var anchor:ordered)destinations.put(anchor.path,frozen.contains(anchor.path)?positions.get(anchor.path):
+                        clamp(targets.get(anchor.path),area,width,height));
+            } else if(changed || resized) {
                 var reserved=new LinkedHashMap<List<String>,Point>();
                 var priority=new ArrayList<>(ordered);
                 priority.sort(Comparator.comparingInt((Anchor a)->a.point.equals(previousMounts.get(a.path))?0:1)
@@ -85,7 +122,11 @@ public final class SlotLayout {
             }
             // The current camera frame owns the visible result. Cards snap to the resolved
             // non-overlapping destinations instead of integrating velocity across later frames.
+            // A collision-adjusted destination also becomes the next frame's stable baseline;
+            // otherwise the card keeps retrying its obstructed pre-collision target and visibly
+            // flips between the old site and whichever temporary site the greedy pass found.
             positions.clear();positions.putAll(destinations);
+            targets.clear();targets.putAll(destinations);
             return snapshot();
         }
         private Map<List<String>, Point> snapshot() {

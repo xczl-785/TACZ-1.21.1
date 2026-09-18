@@ -112,7 +112,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
         status=text(page,"",16,UiDesign.MUTED,400,614+bottom,canvasWidth-412,64);
         materialMode=button(page,tr("white_model"),true,()->{whiteModel=!whiteModel;viewport.whiteModel(whiteModel);refreshReadout();},400,723+bottom,180,40);
         materialMode.setId("assembly-material-mode");
-        button(page,tr("camera_reset"),true,()->viewport.resetCamera(),758+right,723+bottom,150,40).setId("assembly-camera-reset");
+        button(page,tr("camera_reset"),true,()->{viewport.resetCamera();slotLayout.reflow();},758+right,723+bottom,150,40).setId("assembly-camera-reset");
         undo=button(page,tr("undo"),host.canUndo(),()->{host.undo();reconcile(true);},920+right,723+bottom,130,40);undo.setId("assembly-undo");
         reset=button(page,tr("reset"),host.canReset(),()->{host.reset();reconcile(true);},1062+right,723+bottom,170,40);reset.setId("assembly-reset");
         oldWidth=width;oldHeight=height;lastTree=host.tree();syncLabels();refreshReadout();root.addSurface(page,InventoryRootElement.Layer.PAGE);
@@ -169,7 +169,9 @@ public final class WorkbenchScreen extends ModularUIScreen {
     private void closeChooserOnly() { if(chooser!=null){chooser.removeSelf();chooser=null;} }
     private void closeChooser() { closeChooserOnly();host.clearPreview();host.select(List.of());refreshReadout(); }
     private void reconcile(boolean force) {
-        if(lastTree!=host.tree()||lastBusy!=host.busy()||force) {
+        boolean treeChanged=lastTree!=host.tree();
+        if(treeChanged||lastBusy!=host.busy()||force) {
+            if(treeChanged||force)slotLayout.reflow();
             lastTree=host.tree();lastBusy=host.busy();syncLabels();
             if(chooser!=null) {
                 if(!chooser.path.equals(host.selectedPath())||labels.stream().noneMatch(l->l.path().equals(host.selectedPath())))closeChooserOnly();
@@ -290,7 +292,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
         return super.mouseDragged(x,y,b,dx,dy);
     }
     @Override public boolean mouseReleased(double x,double y,int b) {
-        if(backgroundPress&&b==0){backgroundPress=false;if(!dragged&&Math.hypot(x-pressX,y-pressY)<=design.px(6))closeChooser();return true;}
+        if(backgroundPress&&b==0){backgroundPress=false;if(dragged)slotLayout.reflow();else if(Math.hypot(x-pressX,y-pressY)<=design.px(6))closeChooser();return true;}
         return super.mouseReleased(x,y,b);
     }
     @Override public boolean mouseScrolled(double x,double y,double horizontal,double vertical) {
