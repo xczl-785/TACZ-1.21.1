@@ -124,6 +124,15 @@ public final class WorkbenchScreen extends ModularUIScreen {
     private InventoryButtonElement button(UIElement parent,String label,boolean enabled,Runnable action,double x,double y,double w,double h) {
         var b=new InventoryButtonElement(design,label,enabled,e->action.run());design.place(b,x,y,w,h);parent.addChild(b);if(parent==page)controls.add(b);return b;
     }
+    @Override public void init() {
+        // Build the complete tree before LDLib2 performs its first screen layout. Building from
+        // render() leaves the initial native layout empty, so newly visible cards can expose their
+        // zero-position layout while the first real projection is being applied.
+        build();
+        super.init();
+        viewport.beginFrame();
+        positionLabels(-1,-1);
+    }
     private void syncLabels() {
         var slots=host.visibleSlots();
         var paths=new HashSet<List<String>>();
