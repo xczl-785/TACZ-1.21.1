@@ -16,8 +16,7 @@ def native_point(v,center,delta):return [-(v[0]+center[0])-delta[0],v[1]+center[
 def native_rotation(v):return [-v[0],-v[1],v[2]]
 
 def mount_offset(row):
-    metadata=ex.read(R/row['componentMetadata']) if row.get('componentMetadata') else {}
-    value=row.get('seatOffset',metadata.get('seatOffset',[0,0,0]))
+    value=row.get('seatOffset',[0,0,0])
     if len(value)!=3 or not all(isinstance(axis,(int,float)) for axis in value):
         raise ValueError('Invalid seatOffset: '+row['definitionId'])
     return np.asarray(value,dtype=float)
@@ -122,7 +121,7 @@ def build():
     assert not any(b['name'].startswith('assembly_lod_ld_') for b in lb)
     derivedmanifest=ex.read(SOURCE/'manifest.json');sourceparts={p['definitionId']:p for p in derivedmanifest['parts']};proof=[]
     attachment_overrides={}
-    attachment_displays={a['id']:a['display'] for a in ex.read(R/'docs/assembly-experiment/native-m4a1-review/audit.json')['attachments']}
+    attachment_displays={a['id']:a['display'] for a in ex.read(SOURCE/'native-reference.json')['attachments']}
     for i,row in enumerate(rows,1):
         d=row['definitionId'];model,bones,uvsize,texture,count=parsed[d]
         detached=row.get('runtimeMode')=='native_attachment'
@@ -148,7 +147,7 @@ def build():
                 override.update(lodModel='tacz_assembly:attachments/lod/'+d,lodTexture=texture_ref)
             attachment_overrides[sourceparts[d]['itemId']]=override
 
-        mount=row.get('nativeMount') or ('stock_pos' if d=='tacz_stock_tactical_ar' else None);stock=mount is not None
+        mount=row.get('nativeMount');stock=mount is not None
         if stock:bones=shifted_bones(bones,mount_offset(row))
         rig_prefix=('editable_stock_' if d=='tacz_stock_tactical_ar' else 'editable_'+d+'_')
         anchor=np.asarray(sourceparts[d]['anchor']);extra=ex.matrix(mount,native) if stock else np.eye(4)
@@ -197,7 +196,7 @@ def build():
     write(BASE/'batches.json',batches)
     inline={}
     for row in rows:
-        d=row['definitionId'];mount=row.get('nativeMount') or ('stock_pos' if d=='tacz_stock_tactical_ar' else None)
+        d=row['definitionId'];mount=row.get('nativeMount')
         if mount and row.get('runtimeMode')!='native_attachment':
             if mount!='stock_pos':raise ValueError('Inline mount requires explicit native attachment type: '+mount)
             inline.setdefault('stock',{})[sourceparts[d]['itemId']]=d

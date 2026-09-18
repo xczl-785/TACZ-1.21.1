@@ -4,6 +4,7 @@ Only workbench and item appearance; native held rig, item identities and assembl
 from pathlib import Path
 import json,sys,shutil
 import numpy as np
+from mount_source import load_mounts
 R=Path(__file__).resolve().parents[2]
 MODULE=R/'modules/tacz_adapter'
 sys.path.insert(0,str(MODULE/'tools'))
@@ -20,21 +21,8 @@ def build():
  manifest=read(SOURCE/'manifest.json');parts={p['definitionId']:p for p in manifest['parts']}
  catalog=read(BASE/'catalog.json')['parts'];mapping=read(BASE/'mapping.json')
  assert set(parts)==set(mapping)
- # Locate cards on the default part instead of off-body animation pivots. All alternatives
- # share that slot reference; local rebasing leaves assembled vertex positions unchanged.
- anchors={d:np.asarray(entry['boundsCenter'],dtype=float) for d,entry in parts.items()}
- scene=read(BASE/'scene.json')['nodes'];by_instance={n['instanceId']:n for n in scene}
- defaults={(by_instance[n['parentId']]['definitionId'],n['slot']):n['definitionId'] for n in scene if 'parentId' in n}
- for part in catalog:
-  for slot in part['slots']:
-   representative=defaults.get((part['id'],slot['id']),slot['allowedParts'][0])
-   mount=np.asarray(parts[representative]['boundsCenter'],dtype=float)
-   # Optic source bounds include distant helper geometry, so the receiver rail mount is authoritative.
-   authored=parts[part['id']].get('slots',{}).get(slot['id'])
-   if (part['id'],slot['id'])==('upper_receiver','scope') and authored is not None:
-    mount=np.asarray(authored,dtype=float)
-   for candidate in slot['allowedParts']:anchors[candidate]=mount
- anchors['lower_receiver']=np.zeros(3)
+ mounts=load_mounts(SOURCE/'mounts.json',catalog)
+ anchors={d:np.asarray(frame['frameOrigin'],dtype=float) for d,frame in mounts.items()}
  errors=[]
  models=[];library={'schemaVersion':1,'materials':{}};bindings={'schemaVersion':1,'defaultMaterial':'lower_receiver','parts':{}}
  for part in catalog:
@@ -48,17 +36,13 @@ def build():
     assert error<1e-7,(d,error)
     assert a['uv']==b['uv']
     errors.append(error)
-  slots={}
-  for slot in part['slots']:
-   candidates=[anchors[c] for c in slot['allowedParts']]
-   assert all(np.allclose(v,candidates[0]) for v in candidates),(d,slot['id'])
-   slots[slot['id']]=(candidates[0]-anchor).round(8).tolist()
-  view={'definitionId':d,'attachmentOrigin':[0,0,0],'slots':slots,'boxes':[],'meshes':meshes};models.append(view)
+  frame=mounts[d]
+  view={'definitionId':d,'attachmentOrigin':frame['attachmentOrigin'],'slots':frame['slots'],'boxes':[],'meshes':meshes};models.append(view)
   texture=f'tacz_assembly:textures/parts/{d}.png'
   target=ASSETS/f'textures/parts/{d}.png';target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(SOURCE/entry['texture'],target)
   library['materials'][d]={'baseColor':'#ffffff','texture':texture,'roughness':.8,'specular':.12,'textureScale':1}
   bindings['parts'][d]={'defaultMaterial':d,'regions':{}}
- write(BASE/'workbench-anchors.json',{'schemaVersion':1,'policy':'Default component bounds center shared by slot alternatives; original motion pivots retained in source manifest','maximumRebaseError':max(errors),'anchors':{d:v.tolist() for d,v in anchors.items()}})
+ write(BASE/'workbench-anchors.json',{'schemaVersion':1,'policy':'Explicit author frames from mounts.json; independent of mesh bounds and candidate order; native motion pivots preserved','maximumRebaseError':max(errors),'anchors':{d:v.tolist() for d,v in anchors.items()}})
  write(BASE/'preview.json' ,{'schemaVersion':3,'models':models});write(BASE/'library.json',library);write(BASE/'materials.json',bindings)
  edited_parts={p['definitionId'] for p in read(SOURCE/'editable/manifest.json')['parts']}
  root_definition=read(BASE/'weapon.json')['rootDefinition']

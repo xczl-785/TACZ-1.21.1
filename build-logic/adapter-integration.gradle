@@ -120,6 +120,12 @@ tasks.register('verifyNativeEditableBatch', Exec) {
 }
 tasks.named('check') { dependsOn 'verifyNativeEditable', 'verifyNativeEditableBatch' }
 
+tasks.register('verifyNativeM4Authoring', Exec) {
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', '-m', 'unittest', 'discover', '-s', 'tools/native_m4a1', '-p', 'test_*source.py'
+}
+tasks.named('check') { dependsOn 'verifyNativeM4Authoring' }
+
 // Registry-backed JUnit only: loads Mod registrations, never creates a server or world.
 neoForge { unitTest { enable(); testedMod = mods.tacz } }
 sourceSets.test.java.srcDir('modules/tacz_adapter/src/minecraftTest/java')

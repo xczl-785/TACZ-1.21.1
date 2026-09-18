@@ -56,14 +56,15 @@ public final class TaczWorkbenchWorker {
     }
     private static AssemblyNode reidentify(AssemblyNode node,String base){
         var children=new TreeMap<String,AssemblyNode>();node.children().forEach((slot,child)->children.put(slot,reidentify(child,join(base,slot))));
-        return new AssemblyNode(id(base,node.definitionId()),node.definitionId(),children);
+        // A catalog candidate is a new instance, even when replacing the same definition.
+        return new AssemblyNode(UUID.randomUUID(),node.definitionId(),children);
     }
     private static AssemblyNode edit(AssembledWeapon w,AssemblyNode tree,JsonObject edit){
         String raw=edit.get("path").getAsString(),definition=edit.get("definition").getAsString();var p=path(raw);
         var parent=tree;for(String slot:p.subList(0,p.size()-1)){parent=parent.children().get(slot);if(parent==null)throw new IllegalArgumentException("Missing parent: "+raw);}
         boolean occupied=parent.children().containsKey(p.getLast());AssemblyEngine.Result result;
         if(definition.isEmpty())result=w.ENGINE.remove(tree,p);
-        else {var part=template(w.PRESET,definition,raw);if(part==null)part=AssemblyNode.leaf(id(raw,definition),definition);result=occupied?w.ENGINE.replace(tree,p,part):w.ENGINE.install(tree,p,part);}
+        else {var part=template(w.PRESET,definition,raw);if(part==null)part=AssemblyNode.leaf(UUID.randomUUID(),definition);result=occupied?w.ENGINE.replace(tree,p,part):w.ENGINE.install(tree,p,part);}
         if(!result.success())throw new IllegalArgumentException(result.errors().toString());return result.after();
     }
 

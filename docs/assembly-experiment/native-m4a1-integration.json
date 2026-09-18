@@ -6,8 +6,8 @@
     {
       "path": "build-logic/adapter-integration.gradle",
       "before_sha256": "1056e98c61ffafec0b014c6474e74d70852b46ef71a4d64eddb78ea18e8c508e",
-      "after_sha256": "d626d3c32f6a8f95dbbffb496c2fa330ae07db3118272d0a64ae5edc8bfb0e8d",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "bd8bb4354f529e7f34625a796df4b7fc1331d5aa7d2a16c045c41fe1edebef32",
+      "reason": "2026-09-18 M4 authored assembly/mount inputs and workbench candidate identity; existing native rig and item identities retained"
     },
     {
       "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/ClientAimResource.java",
@@ -260,6 +260,12 @@
       "before_sha256": null,
       "after_sha256": "6ff354f52e766c630cac468c599cd94772711b5f6280d9389ac043d8fd70f694",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/src/workbench/java/dev/tacticaltacz/workbench/TaczWorkbenchWorker.java",
+      "before_sha256": null,
+      "after_sha256": "daf20c05f399aff6df62e60a032655529eafb5243aa9c079c531ea5f10d5f1ac",
+      "reason": "2026-09-18 M4 authored assembly/mount inputs and workbench candidate identity; existing native rig and item identities retained"
     },
     {
       "path": "modules/tacz_adapter/tools/render_part_icon.py",
@@ -12808,6 +12814,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/authoring-contract.json",
+      "before_sha256": null,
+      "after_sha256": "ab2d672a102595b8972147ee924cb0230a8692da25a4ddf26136ba31f97c4a11",
+      "reason": "2026-09-18 M4 authored assembly/mount inputs and workbench candidate identity; existing native rig and item identities retained"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/batches.json",
       "before_sha256": null,
       "after_sha256": "46727ce47c3374c83f4dc3416925a4c7198c73702c4a207df409cd7278dc7386",
@@ -12894,8 +12906,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/workbench-anchors.json",
       "before_sha256": null,
-      "after_sha256": "e4ca4febd511151deee6792f77b164ef076f0d093c6d7a07749550f0dd2c388f",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "4252585e93099c24d92dd9b54f2b850273098cc836d167e63601db8e1a2f6fa0",
+      "reason": "2026-09-18 M4 authored assembly/mount inputs and workbench candidate identity; existing native rig and item identities retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m700/batches.json",
@@ -15300,8 +15312,14 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/README.md",
       "before_sha256": null,
-      "after_sha256": "7d2f7d93805688f3e45c66dcadec1fb657380d4232c9b4a0e7100c89a0024ed9",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "3543a1c5bcea15ca6045f21c35a1987920a1da195075cc630b133a5fe864b9a5",
+      "reason": "2026-09-18 M4 authored assembly/mount inputs and workbench candidate identity; existing native rig and item identities retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/assembly.json",
+      "before_sha256": null,
+      "after_sha256": "9563b433bb118b54a9acca5f4bcc46c24571115249679e2afe438ab99c7a7173",
+      "reason": "2026-09-18 M4 authored assembly/mount inputs and workbench candidate identity; existing native rig and item identities retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable-import-report.json",
@@ -15954,8 +15972,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json",
       "before_sha256": null,
-      "after_sha256": "915fb64afc8d7adc026a1a9fea232235ba4e988d210d8d05f74f3423c2656498",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "22a7e2a3cd5792c07eacd661b05ba9e0d82d08ee110877fa2c82b2dcfecf5b80",
+      "reason": "2026-09-18 M4 authored assembly/mount inputs and workbench candidate identity; existing native rig and item identities retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/remaining-import-report.json",
@@ -15970,10 +15988,22 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "24794819386fe112a5fcca08b435ef5607fee117ad1df43338cb908e9f5da8cc",
+      "reason": "2026-09-18 M4 authored assembly/mount inputs and workbench candidate identity; existing native rig and item identities retained"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/native-profile.json",
       "before_sha256": null,
       "after_sha256": "65e5f1d232852d736232382f35c9cc91fd35e2f37282c797efd89dd627089b43",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/native-reference.json",
+      "before_sha256": null,
+      "after_sha256": "6a702227bc07fb19e7aba1298a4ba42fecf3110c62144b621b7ca7a909771688",
+      "reason": "2026-09-18 M4 authored assembly/mount inputs and workbench candidate identity; existing native rig and item identities retained"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m4a1/native-visual-rules.json",

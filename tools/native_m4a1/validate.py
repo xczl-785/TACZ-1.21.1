@@ -8,6 +8,9 @@ def validate(resources=DEFAULT):
  assert read(a/'models/item/m4a1.json')['parent']=='builtin/entity'
  for source,target in [('preview.json','icon_geometry.json'),('library.json','icon_library.json'),('materials.json','icon_materials.json')]:assert read(base/source)==read(a/'m4a1'/target)
  config=read(base/'weapon.json');mapping=read(base/'mapping.json');external=read(base/'native_attachments.json');catalog={p['id']:p for p in read(base/'catalog.json')['parts']};nodes=read(base/'scene.json')['nodes']
+ contract=read(base/'authoring-contract.json');assert contract['schemaVersion']==1 and contract['gunId']==config['gunId']
+ for name,digest in contract['sources'].items():
+  assert hashlib.sha256((R/'modules/tacz_adapter/weapon-sources/native_m4a1'/name).read_bytes()).hexdigest()==digest,('Stale M4 author source',name)
  assert len(nodes)==15 and len(external)==52 and len(catalog)==67
  assert not {'tacz:ammo_mod_fmj','tacz:ammo_mod_hp','tacz:ammo_mod_i'}&external.keys()
  assert set(mapping)==set(catalog)=={m['definitionId'] for m in read(base/'preview.json')['models']}

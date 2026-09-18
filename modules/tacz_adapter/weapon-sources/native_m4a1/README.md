@@ -1,6 +1,21 @@
 # 当前默认套件：方块编辑源
 
-配件兼容关系、默认装配和关键槽位路径的编辑入口为 `assembly.json`。`tools/native_m4a1/generate.py` 读取并校验候选、默认组合与循环关系，再生成 catalog、scene 等运行资源；不要直接修改生成文件。模型仍由 editable 提供，原生动画绑定保持原入口。本轮只提取已有关系，安装点及绑定来源统一尚未完成。
+配件组织已采用显式作者输入，生成后沿用 `tacz_assembly:m4a1`，不新增另一个 M4。模型、候选名单及默认装配语义保持现有 TaCZ 资产，不照搬自有枪械的物品 ID 或旧 UI。
+
+| 编辑内容 | 唯一入口 |
+| --- | --- |
+| 配件身份、兼容槽位、默认树、关键路径 | `assembly.json` |
+| 各零件局部坐标基准、附件原点、父槽位位置 | `mounts.json` |
+| 可编辑模型及贴图 | `editable/components/` |
+| 编辑坐标还原、原生挂点、枪托座偏移 | `editable/manifest.json` 的 `editorCenter`、`translation`、`nativeMount`、`seatOffset` |
+| 原生骨骼归属及保留附件显示资料 | `native-reference.json`，首次整理来源为历史 native-m4a1-review 审计 |
+| 配件到 TaCZ 功能路径、原生显隐条件 | `native-profile.json`、`native-visual-rules.json` |
+
+`tools/native_m4a1/generate.py` 是正式生成入口，先验证关系和安装点，再生成 catalog、scene、预览、图标及原生高低模。工作台最后生成一次；生成器不再读取历史审计目录。`export_parts.py` 是原始拆件工具，不属于日常重生成入口，不应用它覆盖 editable 的编辑结果。
+
+`mounts.json` 使用 +Z 枪口、原模型单位；`frameOrigin` 是零件局部坐标基准在装配空间中的位置，`slots` 和 `attachmentOrigin` 均为零件局部坐标。初值沿用已有位置，但之后不再由包围盒或第一个候选重新推导。坐标基准不是物理铰链，也不是动画 pivot；调整界面坐标基准时应同步保持父槽位与子安装点重合。想改变实际几何安装姿态，应编辑零件及原生绑定并验证，不能只移动浏览器槽位就视为改好了原生模型。
+
+生成的 `authoring-contract.json` 记录这些作者输入的 SHA-256；资源校验会拒绝作者资料与生成结果不一致的状态。验证命令：`python3 tools/native_m4a1/validate.py`、`python3 -m unittest discover -s tools/native_m4a1 -p 'test_*.py'`。外部工作台全候选检查：先 `bash gradlew prepareTaczWorkbench --offline`，再 `python3 tools/native_m4a1/verify_workbench_runtime.py`。这些都不替代 Minecraft 实机验收。
 
 15 件默认配件的正式编辑入口为 [editable/README.md](editable/README.md)。它们生成工作台、图标和原生持枪高低模；下面的三角网格说明主要描述旧导出与其余候选。不要编辑默认件的 source-pack 生成物。
 
@@ -27,7 +42,7 @@
 
 `model.bbmodel` 顶点在配件局部坐标；`local_to_assembly` 为原生安装骨骼艺术坐标的平移矩阵。消费时使用雷电现有 `convert_component(model, local_to_assembly, selected_anchor)`，不要额外应用已经烘焙的骨骼旋转。
 
-`anchor`/`anchorBone` 保留原始骨骼旋转参考点，`slots` 是候选默认件的绝对源 anchor。原生动画 pivot 经常远离几何，不能直接当作界面标签位置。提供绝对艺术坐标 `geometryBounds`、`boundsCenter` 和 `geometryCenter`，工作台可以改用默认件 boundsCenter 来选择可视化安装参考点，同时对所有候选重新计算相对顶点，保持装配姿态。
+`anchor`/`anchorBone` 保留原始骨骼旋转参考点，source-pack 中的 `slots` 是历史拆件参考信息，不再决定当前预览安装点。`geometryBounds`、`boundsCenter` 和 `geometryCenter` 只描述形状范围；正式安装坐标来自 `mounts.json`。原生动画 pivot 经常远离几何，不直接当作界面标签位置。
 
 ## 材质与来源
 

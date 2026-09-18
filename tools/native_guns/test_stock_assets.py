@@ -4,11 +4,11 @@ import numpy as np
 import stock_assets as stocks
 
 class AuthoredStocksTest(unittest.TestCase):
-    def test_nine_reviewed_stocks_include_metadata_anchored_ctr(self):
+    def test_nine_reviewed_stocks_include_explicitly_anchored_ctr(self):
         rows=stocks.selected_rows()
         self.assertEqual(9,len(rows))
         ctr=next(row for row,aid in rows if aid=='tacz:stock_tactical_ar')
-        self.assertNotIn('nativeMount',ctr)
+        self.assertEqual('stock_pos',ctr['nativeMount'])
         self.assertEqual('stock_pos',stocks.ex.read(stocks.R/ctr['componentMetadata'])['anchorBone'])
         self.assertTrue(all('/attachment/' in row['sourceGeometry'] for row,_ in rows))
         self.assertTrue(all(stocks.mount_offset(row).tolist()==[0,0,-3] for row,_ in rows))

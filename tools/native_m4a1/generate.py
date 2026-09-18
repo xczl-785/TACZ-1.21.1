@@ -6,16 +6,17 @@ import json,re,copy,uuid,hashlib,math,collections
 import numpy as np
 from PIL import Image
 from assembly_source import load_assembly
+from mount_source import load_mounts
 R=Path(__file__).resolve().parents[2]
 OUT=R/'modules/tacz_adapter/weapon-content/resources'
 SRC=R/'src/main/resources/assets/tacz/custom/tacz_default_gun'
-REVIEW=R/'docs/assembly-experiment/native-m4a1-review'
+AUTHOR=R/'modules/tacz_adapter/weapon-sources/native_m4a1'
 NS='tacz_assembly'; GUN='m4a1'; BASE=OUT/f'data/{NS}/m4a1'
 def read(p):
  return json.loads(re.sub(r'"(?:\\.|[^"\\])*"|//[^\n]*|/\*[\s\S]*?\*/',lambda m:m[0] if m[0].startswith('"') else '',p.read_text()))
 def write(p,v):
  p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,ensure_ascii=False,indent=2)+'\n')
-audit=read(REVIEW/'audit.json');ownership=read(REVIEW/'ownership-proposal.json')['boneOwner']
+audit=read(AUTHOR/'native-reference.json');ownership=audit['boneOwner']
 attachments=[a for a in audit['attachments'] if a['tagAllowed'] and a['id'] not in {'tacz:ammo_mod_fmj','tacz:ammo_mod_hp','tacz:ammo_mod_i'}]
 assert len(attachments)==52
 assembly=load_assembly(R/'modules/tacz_adapter/weapon-sources/native_m4a1/assembly.json')
@@ -29,6 +30,7 @@ for name in physical+list(external.values()):
  entry={'id':name,'stats':{'weightKg':0,'ergonomics':0},'slots':[{'id':slot,'required':False,'allowedParts':allowed} for slot,allowed in slots.get(name,{}).items()],'conflictingParts':[]}
  if name=='lower_receiver':entry['weapon']={'recoilVertical':0,'recoilHorizontal':0,'centerOfImpact':0,'sightingRange':0}
  catalog.append(entry)
+load_mounts(AUTHOR/'mounts.json',catalog)  # Fail before publishing partial resources.
 write(BASE/'catalog.json',{'schemaVersion':1,'parts':catalog})
 mapping={p:f'{NS}:{GUN}' if p=='lower_receiver' else f'{NS}:m4a1_{p}' for p in physical};mapping.update({v:k for k,v in external.items()})
 write(BASE/'mapping.json',mapping);write(BASE/'native_attachments.json',external)
@@ -154,11 +156,11 @@ for d in physical:
 # Foundation owns serialization/structural safety. Specific native model rules stay in this catalog.
 write(OUT/f'data/{NS}/assembly/m4a1.json',{'schemaVersion':1,'items':[{'itemId':mapping[d],'slots':[{'id':slot,'compatibleItems':sorted({'tacz:attachment' if mapping[child] in external else mapping[child] for child in allowed}),'requiredSiblingSlots':[],'conflictingSiblingSlots':[],'toggleable':False} for slot,allowed in slots.get(d,{}).items()]} for d in physical]})
 
-# Standard editable components share the Radian workbench and icon producer.
-from build_workbench import build as build_workbench
-build_workbench()
-
 # Editable default components are the final geometry/texture authority. Native rig,
 # non-default candidates and presentation-only bones remain the preserved inputs.
 from editable_import import build as build_editable
 build_editable()
+write(BASE/'authoring-contract.json',{'schemaVersion':1,'gunId':f'{NS}:{GUN}',
+ 'sources':{name:hashlib.sha256((AUTHOR/name).read_bytes()).hexdigest() for name in
+ ('assembly.json','mounts.json','native-reference.json','native-profile.json','native-visual-rules.json','editable/manifest.json')},
+ 'policy':'Explicit local frames and assembly relations; native animation rig preserved; existing gun and part identities retained'})

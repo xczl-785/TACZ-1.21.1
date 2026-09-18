@@ -1,0 +1,1649 @@
+{
+  "schemaVersion": 1,
+  "sourceHashes": {
+    "model": "1dec97c90d8fb2ff7c786165d074aef4f1b41772de56ae82ac470bf294203658",
+    "animation": "ce4ee6dcdf16bbc8ce2ce9c3bdc4d56c7cc025040675a4688da74621190924f2",
+    "texture": "88fc01bdcf80b2e5ecc2051c50f330ec0de1d79a84a0288630b5a7522052ec4a",
+    "display": "79952eeb898bf98d7b29e5dc47e8ec9166e0295ffb6982dc7032370413437d3c"
+  },
+  "attachments": [
+    {
+      "id": "tacz:ammo_mod_fmj",
+      "type": "extended_mag",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/ammo_mod_fmj",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:ammo_mod_he",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/ammo_mod_he",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:ammo_mod_hp",
+      "type": "extended_mag",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/ammo_mod_hp",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:ammo_mod_i",
+      "type": "extended_mag",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/ammo_mod_i",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:ammo_mod_slug",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/ammo_mod_slug",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:bayonet_m9",
+      "type": "muzzle",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/bayonet_m9",
+        "model": "tacz:attachment/bayonet_m9_geo",
+        "texture": "tacz:attachment/uv/bayonet_m9",
+        "show_muzzle": true,
+        "sounds": {
+          "install": "tacz:attachments/bayonet_install",
+          "uninstall": "tacz:attachments/bayonet_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:extended_mag_1",
+      "type": "extended_mag",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/extended_mag_1",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:extended_mag_2",
+      "type": "extended_mag",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/extended_mag_2",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:extended_mag_3",
+      "type": "extended_mag",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/extended_mag_3",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_cobra",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_cobra",
+        "model": "tacz:attachment/grip_cobra",
+        "texture": "tacz:attachment/uv/grip_cobra",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_cqr",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_cqr",
+        "model": "tacz:attachment/grip_cqr",
+        "texture": "tacz:attachment/uv/grip_cqr",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_magpul_afg_2",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_magpul_afg_2",
+        "model": "tacz:attachment/grip_magpul_afg_2_geo",
+        "texture": "tacz:attachment/uv/grip_magpul_afg_2",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_osovets_black",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_osovets_black",
+        "model": "tacz:attachment/grip_osovets_black",
+        "texture": "tacz:attachment/uv/grip_osovets_black",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_rk0",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_rk0",
+        "model": "tacz:attachment/grip_rk0",
+        "texture": "tacz:attachment/uv/grip_rk0",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_rk1_b25u",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_rk1_b25u",
+        "model": "tacz:attachment/grip_rk1_b25u",
+        "texture": "tacz:attachment/uv/grip_rk1_b25u",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_rk6",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_rk6",
+        "model": "tacz:attachment/grip_rk6",
+        "texture": "tacz:attachment/uv/grip_rk6",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_se_5",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_se_5",
+        "model": "tacz:attachment/grip_se_5",
+        "texture": "tacz:attachment/uv/grip_se_5",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_td",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_td",
+        "model": "tacz:attachment/grip_td",
+        "texture": "tacz:attachment/uv/grip_td",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_vertical_military",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_vertical_military",
+        "model": "tacz:attachment/grip_vertical_military_geo",
+        "texture": "tacz:attachment/uv/grip_vertical_military",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_vertical_ranger",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_vertical_ranger",
+        "model": "tacz:attachment/grip_vertical_ranger_geo",
+        "texture": "tacz:attachment/uv/grip_vertical_ranger",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        },
+        "laser": {
+          "default_color": "0xff0000",
+          "can_edit": false,
+          "length": 75
+        }
+      }
+    },
+    {
+      "id": "tacz:grip_vertical_talon",
+      "type": "grip",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_vertical_talon",
+        "model": "tacz:attachment/grip_vertical_talon_geo",
+        "texture": "tacz:attachment/uv/grip_vertical_talon",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:laser_compact",
+      "type": "laser",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/laser_compact_slot",
+        "model": "tacz:attachment/laser_compact_geo",
+        "texture": "tacz:attachment/uv/laser_compact",
+        "lod": {
+          "model": "tacz:attachment/lod/laser_compact",
+          "texture": "tacz:attachment/lod/laser_compact"
+        },
+        "adapter": "laser_adapter",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        },
+        "laser": {
+          "default_color": "0x00FF00",
+          "can_edit": true,
+          "length": 2,
+          "width": 0.008
+        }
+      }
+    },
+    {
+      "id": "tacz:laser_lopro",
+      "type": "laser",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/laser_lopro_slot",
+        "model": "tacz:attachment/laser_lopro_geo",
+        "texture": "tacz:attachment/uv/laser_lopro",
+        "lod": {
+          "model": "tacz:attachment/lod/laser_lopro",
+          "texture": "tacz:attachment/lod/laser_lopro"
+        },
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        },
+        "laser": {
+          "default_color": "0xff0000",
+          "can_edit": true,
+          "length": 75
+        }
+      }
+    },
+    {
+      "id": "tacz:laser_nightstick",
+      "type": "laser",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/laser_nightstick_slot",
+        "model": "tacz:attachment/laser_nightstick_geo",
+        "texture": "tacz:attachment/uv/laser_nightstick",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        },
+        "lod": {
+          "model": "tacz:attachment/lod/laser_nightstick",
+          "texture": "tacz:attachment/lod/laser_nightstick"
+        },
+        "laser": {
+          "default_color": "0x00ff00",
+          "can_edit": true,
+          "length": 50
+        }
+      }
+    },
+    {
+      "id": "tacz:laser_peq15",
+      "type": "laser",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/grip_td",
+        "model": "tacz:attachment/laser_peq15_geo",
+        "texture": "tacz:attachment/uv/laser_peq15",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_b",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        },
+        "laser": {
+          "default_color": "0xFF6060",
+          "can_edit": true,
+          "length": 75
+        }
+      }
+    },
+    {
+      "id": "tacz:light_extended_mag_1",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/light_extended_mag_1",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:light_extended_mag_2",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/light_extended_mag_2",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:light_extended_mag_3",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/light_extended_mag_3",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_brake_cthulhu",
+      "type": "muzzle",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_brake_cthulhu",
+        "model": "tacz:attachment/muzzle_brake_cthulhu_geo",
+        "texture": "tacz:attachment/uv/muzzle_brake_cthulhu",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_brake_cyclone_d2",
+      "type": "muzzle",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_brake_cyclone_d2",
+        "model": "tacz:attachment/muzzle_brake_cyclone_d2_geo",
+        "texture": "tacz:attachment/uv/muzzle_brake_cyclone_d2",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_brake_mastiff_sg",
+      "type": "muzzle",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_brake_mastiff_sg",
+        "model": "tacz:attachment/muzzle_brake_mastiff_sg_geo",
+        "texture": "tacz:attachment/uv/muzzle_brake_mastiff_sg",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_brake_pioneer",
+      "type": "muzzle",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_brake_pioneer",
+        "model": "tacz:attachment/muzzle_brake_pioneer_geo",
+        "texture": "tacz:attachment/uv/muzzle_brake_pioneer",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_brake_trex",
+      "type": "muzzle",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_brake_trex",
+        "model": "tacz:attachment/muzzle_brake_trex_geo",
+        "texture": "tacz:attachment/uv/muzzle_brake_trex",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_choke_sg",
+      "type": "muzzle",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_choke_sg",
+        "model": "tacz:attachment/muzzle_choke_sg_geo",
+        "texture": "tacz:attachment/uv/muzzle_choke_sg",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_compensator_trident",
+      "type": "muzzle",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_compensator_trident",
+        "model": "tacz:attachment/muzzle_compensator_trident_geo",
+        "texture": "tacz:attachment/uv/muzzle_compensator_trident",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_silencer_knight_qd",
+      "type": "muzzle",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_silencer_knight_qd",
+        "model": "tacz:attachment/muzzle_silencer_knight_qd_geo",
+        "texture": "tacz:attachment/uv/muzzle_silencer_knight_qd",
+        "sounds": {
+          "install": "tacz:attachments/muzzle_general",
+          "uninstall": "tacz:attachments/muzzle_general"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_silencer_mirage",
+      "type": "muzzle",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_silencer_mirage",
+        "model": "tacz:attachment/muzzle_silencer_mirage_geo",
+        "texture": "tacz:attachment/uv/muzzle_silencer_mirage",
+        "sounds": {
+          "install": "tacz:attachments/muzzle_general",
+          "uninstall": "tacz:attachments/muzzle_general"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_silencer_phantom_s1",
+      "type": "muzzle",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_silencer_phantom_s1",
+        "model": "tacz:attachment/muzzle_silencer_phantom_s1_geo",
+        "texture": "tacz:attachment/uv/muzzle_silencer_phantom_s1",
+        "sounds": {
+          "install": "tacz:attachments/muzzle_general",
+          "uninstall": "tacz:attachments/muzzle_general"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_silencer_ptilopsis",
+      "type": "muzzle",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_silencer_ptilopsis",
+        "model": "tacz:attachment/muzzle_silencer_ptilopsis_geo",
+        "texture": "tacz:attachment/uv/muzzle_silencer_ptilopsis",
+        "sounds": {
+          "install": "tacz:attachments/muzzle_general",
+          "uninstall": "tacz:attachments/muzzle_general"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_silencer_sg",
+      "type": "muzzle",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_silencer_sg",
+        "model": "tacz:attachment/muzzle_silencer_sg_geo",
+        "texture": "tacz:attachment/uv/muzzle_silencer_sg",
+        "sounds": {
+          "install": "tacz:attachments/muzzle_general",
+          "uninstall": "tacz:attachments/muzzle_general"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_silencer_ursus",
+      "type": "muzzle",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_silencer_ursus",
+        "model": "tacz:attachment/muzzle_silencer_ursus_geo",
+        "texture": "tacz:attachment/uv/muzzle_silencer_ursus",
+        "sounds": {
+          "install": "tacz:attachments/muzzle_general",
+          "uninstall": "tacz:attachments/muzzle_general"
+        }
+      }
+    },
+    {
+      "id": "tacz:muzzle_silencer_wraith",
+      "type": "muzzle",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/muzzle_silencer_wraith",
+        "model": "tacz:attachment/muzzle_silencer_wraith_geo",
+        "texture": "tacz:attachment/uv/muzzle_silencer_wraith",
+        "sounds": {
+          "install": "tacz:attachments/muzzle_general",
+          "uninstall": "tacz:attachments/muzzle_general"
+        }
+      }
+    },
+    {
+      "id": "tacz:scope_acog_ta31",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/scope_acog_ta31",
+        "model": "tacz:attachment/scope_acog_ta31_geo",
+        "texture": "tacz:attachment/uv/scope_acog_ta31",
+        "lod": {
+          "model": "tacz:attachment/lod/scope_acog_ta31",
+          "texture": "tacz:attachment/lod/scope_acog_ta31"
+        },
+        "zoom": [
+          2.5
+        ],
+        "scope": true,
+        "fov": 45.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_b",
+          "uninstall": "tacz:attachments/scope_general_b"
+        }
+      }
+    },
+    {
+      "id": "tacz:scope_contender",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/scope_contender_slot",
+        "model": "tacz:attachment/scope_contender_geo",
+        "texture": "tacz:attachment/uv/scope_contender",
+        "lod": {
+          "model": "tacz:attachment/lod/scope_contender",
+          "texture": "tacz:attachment/lod/scope_contender"
+        },
+        "zoom": [
+          4.25
+        ],
+        "views": [
+          2
+        ],
+        "views_fov": [
+          35
+        ],
+        "scope": true,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_d",
+          "uninstall": "tacz:attachments/scope_general_d"
+        }
+      }
+    },
+    {
+      "id": "tacz:scope_elcan_4x",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/scope_elcan_4x",
+        "model": "tacz:attachment/scope_elcan_4x_geo",
+        "texture": "tacz:attachment/uv/scope_elcan_4x",
+        "lod": {
+          "model": "tacz:attachment/lod/scope_elcan_4x",
+          "texture": "tacz:attachment/lod/scope_elcan_4x"
+        },
+        "zoom": [
+          4.25,
+          1.25
+        ],
+        "views": [
+          2,
+          2
+        ],
+        "views_fov": [
+          40.0,
+          60.0
+        ],
+        "scope": true,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_d",
+          "uninstall": "tacz:attachments/scope_general_d"
+        }
+      }
+    },
+    {
+      "id": "tacz:scope_hamr",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/scope_hamr_slot",
+        "model": "tacz:attachment/scope_hamr_geo",
+        "texture": "tacz:attachment/uv/scope_hamr",
+        "lod": {
+          "model": "tacz:attachment/lod/scope_hamr",
+          "texture": "tacz:attachment/lod/scope_hamr"
+        },
+        "zoom": [
+          3.25,
+          1.25
+        ],
+        "views": [
+          2,
+          1
+        ],
+        "views_fov": [
+          50.0,
+          60.0
+        ],
+        "scope": true,
+        "sight": true,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:scope_lpvo_1_6",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/scope_lpvo_1_6",
+        "model": "tacz:attachment/scope_lpvo_1_6_geo",
+        "texture": "tacz:attachment/uv/scope_lpvo_1_6",
+        "lod": {
+          "model": "tacz:attachment/lod/scope_lpvo_1_6",
+          "texture": "tacz:attachment/lod/scope_lpvo_1_6"
+        },
+        "zoom": [
+          6.25,
+          1.25
+        ],
+        "views": [
+          2,
+          2
+        ],
+        "views_fov": [
+          30.0,
+          60.0
+        ],
+        "scope": true,
+        "sight": false,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:scope_mk5hd",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/scope_mk5hd_slot",
+        "model": "tacz:attachment/scope_mk5hd_geo",
+        "texture": "tacz:attachment/uv/scope_mk5hd",
+        "lod": {
+          "model": "tacz:attachment/lod/scope_mk5hd",
+          "texture": "tacz:attachment/lod/scope_mk5hd"
+        },
+        "zoom": [
+          5,
+          25,
+          1.25
+        ],
+        "views": [
+          2,
+          2,
+          1
+        ],
+        "views_fov": [
+          27.0,
+          10.0,
+          60.0
+        ],
+        "text_show": {
+          "ammo_count_text": {
+            "scale": 0.09375,
+            "align": "left",
+            "shadow": false,
+            "color": "#00ffff",
+            "light": 15,
+            "text": "%ammo_count%"
+          },
+          "custom_text_ammo": {
+            "scale": 0.0625,
+            "align": "center",
+            "shadow": false,
+            "color": "#ffffff",
+            "light": 15,
+            "text": "AMMO"
+          }
+        },
+        "scope": true,
+        "sight": true,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:scope_qmk152",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/scope_qmk152",
+        "model": "tacz:attachment/scope_qmk152_geo",
+        "texture": "tacz:attachment/uv/scope_qmk152",
+        "lod": {
+          "model": "tacz:attachment/lod/scope_qmk152",
+          "texture": "tacz:attachment/lod/scope_qmk152"
+        },
+        "zoom": [
+          3
+        ],
+        "views": [
+          2
+        ],
+        "views_fov": [
+          50
+        ],
+        "scope": true,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_b",
+          "uninstall": "tacz:attachments/scope_general_b"
+        }
+      }
+    },
+    {
+      "id": "tacz:scope_retro_2x",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/scope_retro_2x",
+        "model": "tacz:attachment/scope_retro_2x_geo",
+        "texture": "tacz:attachment/uv/scope_retro_2x",
+        "lod": {
+          "model": "tacz:attachment/lod/scope_retro_2x",
+          "texture": "tacz:attachment/lod/scope_retro_2x"
+        },
+        "zoom": [
+          3.25
+        ],
+        "scope": true,
+        "fov": 45.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_d",
+          "uninstall": "tacz:attachments/scope_general_d"
+        }
+      }
+    },
+    {
+      "id": "tacz:scope_standard_8x",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/scope_scout_slot",
+        "model": "tacz:attachment/scope_scout_geo",
+        "texture": "tacz:attachment/uv/scope_scout",
+        "lod": {
+          "model": "tacz:attachment/lod/scope_scout",
+          "texture": "tacz:attachment/lod/scope_scout"
+        },
+        "zoom": [
+          4.5,
+          10
+        ],
+        "views": [
+          2,
+          2
+        ],
+        "views_fov": [
+          55.0,
+          25.0
+        ],
+        "scope": true,
+        "sight": false,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:scope_vudu",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/scope_vudu",
+        "model": "tacz:attachment/scope_vudu_geo",
+        "texture": "tacz:attachment/uv/scope_vudu",
+        "lod": {
+          "model": "tacz:attachment/lod/scope_vudu",
+          "texture": "tacz:attachment/lod/scope_vudu"
+        },
+        "zoom": [
+          6.5,
+          1.35
+        ],
+        "views": [
+          2,
+          1
+        ],
+        "views_fov": [
+          30.0,
+          60.0
+        ],
+        "scope": true,
+        "sight": true,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:shotgun_extended_mag_1",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/shotgun_extended_mag_1",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:shotgun_extended_mag_2",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/shotgun_extended_mag_2",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:shotgun_extended_mag_3",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/shotgun_extended_mag_3",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_552",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_552",
+        "model": "tacz:attachment/sight_552_geo",
+        "texture": "tacz:attachment/uv/sight_552",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_552",
+          "texture": "tacz:attachment/lod/sight_552"
+        },
+        "zoom": [
+          2
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 35.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_acro_pistol",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_acro_pistol",
+        "model": "tacz:attachment/sight_acro_pistol_geo",
+        "texture": "tacz:attachment/uv/sight_acro_pistol",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_acro_pistol",
+          "texture": "tacz:attachment/lod/sight_acro_pistol"
+        },
+        "zoom": [
+          2
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_acro_rifle",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_acro_rifle",
+        "model": "tacz:attachment/sight_acro_rifle_geo",
+        "texture": "tacz:attachment/uv/sight_acro_rifle",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_acro_rifle",
+          "texture": "tacz:attachment/lod/sight_acro_rifle"
+        },
+        "zoom": [
+          2
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_coyote",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_coyote",
+        "model": "tacz:attachment/sight_coyote_geo",
+        "texture": "tacz:attachment/uv/sight_coyote",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_coyote",
+          "texture": "tacz:attachment/lod/sight_coyote"
+        },
+        "zoom": [
+          1.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_deltapoint_pistol",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_deltapoint_pistol",
+        "model": "tacz:attachment/sight_deltapoint_pistol_geo",
+        "texture": "tacz:attachment/uv/sight_deltapoint_pistol",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_deltapoint_pistol",
+          "texture": "tacz:attachment/lod/sight_deltapoint_pistol"
+        },
+        "zoom": [
+          1.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_deltapoint_rifle",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_deltapoint_rifle",
+        "model": "tacz:attachment/sight_deltapoint_rifle_geo",
+        "texture": "tacz:attachment/uv/sight_deltapoint_rifle",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_deltapoint_rifle",
+          "texture": "tacz:attachment/lod/sight_deltapoint_rifle"
+        },
+        "zoom": [
+          1.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_exp3",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_exp3",
+        "model": "tacz:attachment/sight_exp3_geo",
+        "texture": "tacz:attachment/uv/sight_exp3",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_exp3",
+          "texture": "tacz:attachment/lod/sight_exp3"
+        },
+        "zoom": [
+          2
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 35.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_fastfire_pistol",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_fastfire_pistol",
+        "model": "tacz:attachment/sight_fastfire_pistol_geo",
+        "texture": "tacz:attachment/uv/sight_fastfire_pistol",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_fastfire_pistol",
+          "texture": "tacz:attachment/lod/sight_fastfire_pistol"
+        },
+        "zoom": [
+          1.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 45.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_fastfire_rifle",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_fastfire_rifle",
+        "model": "tacz:attachment/sight_fastfire_rifle_geo",
+        "texture": "tacz:attachment/uv/sight_fastfire_rifle",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_fastfire_rifle",
+          "texture": "tacz:attachment/lod/sight_fastfire_rifle"
+        },
+        "zoom": [
+          1.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 45.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_okp7",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_okp7",
+        "model": "tacz:attachment/sight_okp7_geo",
+        "texture": "tacz:attachment/uv/sight_okp7",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_okp7",
+          "texture": "tacz:attachment/lod/sight_okp7"
+        },
+        "zoom": [
+          1.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 45.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_p90",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_p90",
+        "model": "tacz:attachment/sight_p90_geo",
+        "texture": "tacz:attachment/uv/sight_p90",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_p90",
+          "texture": "tacz:attachment/lod/sight_p90"
+        },
+        "zoom": [
+          1.35
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_pk06_pistol",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_pk06_pistol",
+        "model": "tacz:attachment/sight_pk06_pistol_geo",
+        "texture": "tacz:attachment/uv/sight_pk06_pistol",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_pk06_pistol",
+          "texture": "tacz:attachment/lod/sight_pk06_pistol"
+        },
+        "zoom": [
+          2
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_pk06_rifle",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_pk06_rifle",
+        "model": "tacz:attachment/sight_pk06_rifle_geo",
+        "texture": "tacz:attachment/uv/sight_pk06_rifle",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_pk06_rifle",
+          "texture": "tacz:attachment/lod/sight_pk06_rifle"
+        },
+        "zoom": [
+          2
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_rmr_dot",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_rmr_dot",
+        "model": "tacz:attachment/sight_rmr_dot_geo",
+        "texture": "tacz:attachment/uv/sight_rmr_dot",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_rmr_dot",
+          "texture": "tacz:attachment/lod/sight_rmr_dot"
+        },
+        "zoom": [
+          1.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_e",
+          "uninstall": "tacz:attachments/scope_general_e"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_sro_dot",
+      "type": "scope",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_sro_dot",
+        "model": "tacz:attachment/sight_sro_dot_geo",
+        "texture": "tacz:attachment/uv/sight_sro_dot",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_sro_dot",
+          "texture": "tacz:attachment/lod/sight_sro_dot"
+        },
+        "zoom": [
+          1.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_e",
+          "uninstall": "tacz:attachments/scope_general_e"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_srs_02",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_srs_02",
+        "model": "tacz:attachment/sight_srs_02_geo",
+        "texture": "tacz:attachment/uv/sight_srs_02",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_srs_02",
+          "texture": "tacz:attachment/lod/sight_srs_02"
+        },
+        "zoom": [
+          1.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 40.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_t2",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_t2",
+        "model": "tacz:attachment/sight_t2_geo",
+        "texture": "tacz:attachment/uv/sight_t2",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_t2",
+          "texture": "tacz:attachment/lod/sight_t2"
+        },
+        "zoom": [
+          2.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 35.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sight_uh1",
+      "type": "scope",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/sight_uh1",
+        "model": "tacz:attachment/sight_uh1_geo",
+        "texture": "tacz:attachment/uv/sight_uh1",
+        "lod": {
+          "model": "tacz:attachment/lod/sight_uh1",
+          "texture": "tacz:attachment/lod/sight_uh1"
+        },
+        "zoom": [
+          2.5
+        ],
+        "scope": false,
+        "sight": true,
+        "fov": 32.0,
+        "sounds": {
+          "install": "tacz:attachments/scope_general_c",
+          "uninstall": "tacz:attachments/scope_general_c"
+        }
+      }
+    },
+    {
+      "id": "tacz:sniper_extended_mag_1",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/sniper_extended_mag_1",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:sniper_extended_mag_2",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/sniper_extended_mag_2",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:sniper_extended_mag_3",
+      "type": "extended_mag",
+      "tagAllowed": false,
+      "display": {
+        "slot": "tacz:attachment/slot/sniper_extended_mag_3",
+        "sounds": {
+          "install": "tacz:attachments/extended_mag_install",
+          "uninstall": "tacz:attachments/extended_mag_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:stock_ak12",
+      "type": "stock",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/stock_ak12",
+        "model": "tacz:attachment/stock_ak12_geo",
+        "texture": "tacz:attachment/uv/stock_ak12",
+        "adapter": "ar_stock_adapter",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:stock_carbon_bone_c5",
+      "type": "stock",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/stock_carbon_bone_c5",
+        "model": "tacz:attachment/stock_carbon_bone_c5_geo",
+        "texture": "tacz:attachment/uv/stock_carbon_bone_c5",
+        "adapter": "ar_stock_adapter",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:stock_hk_slim_line",
+      "type": "stock",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/stock_hk_slim_line",
+        "model": "tacz:attachment/stock_hk_slim_line_geo",
+        "texture": "tacz:attachment/uv/stock_hk_slim_line",
+        "adapter": "ar_stock_adapter",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:stock_m4ss",
+      "type": "stock",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/stock_m4ss",
+        "model": "tacz:attachment/stock_m4ss_geo",
+        "texture": "tacz:attachment/uv/stock_m4ss",
+        "adapter": "ar_stock_adapter",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:stock_militech_b5",
+      "type": "stock",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/stock_militech_b5",
+        "model": "tacz:attachment/stock_militech_b5_geo",
+        "texture": "tacz:attachment/uv/stock_militech_b5",
+        "adapter": "ar_stock_adapter",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:stock_moe",
+      "type": "stock",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/stock_moe",
+        "model": "tacz:attachment/stock_moe_geo",
+        "texture": "tacz:attachment/uv/stock_moe",
+        "adapter": "ar_stock_adapter",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:stock_ripstock",
+      "type": "stock",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/stock_ripstock",
+        "model": "tacz:attachment/stock_ripstock_geo",
+        "texture": "tacz:attachment/uv/stock_ripstock",
+        "adapter": "ar_stock_adapter",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:stock_sba3",
+      "type": "stock",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/stock_sba3",
+        "model": "tacz:attachment/stock_sba3_geo",
+        "texture": "tacz:attachment/uv/stock_sba3",
+        "adapter": "ar_stock_adapter",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    },
+    {
+      "id": "tacz:stock_tactical_ar",
+      "type": "stock",
+      "tagAllowed": true,
+      "display": {
+        "slot": "tacz:attachment/slot/stock_tactical_ar",
+        "model": "tacz:attachment/stock_tactical_ar_geo",
+        "texture": "tacz:attachment/uv/stock_tactical_ar",
+        "adapter": "ar_stock_adapter",
+        "sounds": {
+          "install": "tacz:attachments/attachment_general_a",
+          "uninstall": "tacz:attachments/attachment_general_uninstall"
+        }
+      }
+    }
+  ],
+  "boneOwner": {
+    "gun_body": "lower_receiver",
+    "lower2": "lower_receiver",
+    "deco2": "lower_receiver",
+    "bolt_release": "lower_receiver",
+    "mag_release": "lower_receiver",
+    "group34": "lower_receiver",
+    "selector": "lower_receiver",
+    "octagon42": "lower_receiver",
+    "upper2": "upper_receiver",
+    "cap2": "upper_receiver",
+    "group35": "upper_receiver",
+    "group31": "upper_receiver",
+    "body_rail": "upper_receiver",
+    "sight2": "gas_block_and_tube",
+    "fore_sight3": "gas_block_and_tube",
+    "bone38": "barrel_mount_collar",
+    "bone61": "barrel_mount_collar",
+    "bone62": "barrel_mount_collar",
+    "bone70": "barrel_mount_collar",
+    "lefthand_pos": "presentation_hands",
+    "group3": "presentation_rounds",
+    "group25": "presentation_rounds",
+    "mag_standard": "magazine",
+    "mag_extended_1": "magazine",
+    "mag_extended_2": "magazine",
+    "extend_magazine": "magazine",
+    "group5": "presentation_rounds",
+    "bolt": "bolt",
+    "group26": "bolt",
+    "pull": "charging_mechanism",
+    "octagon2": "buffer",
+    "octagon3": "buffer",
+    "group2": "barrel",
+    "octagon4": "barrel",
+    "octagon5": "barrel",
+    "octagon7": "barrel",
+    "grip2": "pistol_grip",
+    "bone3": "rear_sight",
+    "octagon26": "rear_sight",
+    "octagon33": "rear_sight",
+    "group16": "rear_sight",
+    "octagon34": "rear_sight",
+    "fore_sights": "front_sight",
+    "fore_sight": "front_sight",
+    "bone": "front_sight",
+    "bone2": "front_sight",
+    "sight_illuminated": "front_sight",
+    "bone9": "front_sight",
+    "bone4": "front_sight",
+    "fore_sights2": "front_sight",
+    "fore_sight2": "front_sight",
+    "bone15": "front_sight",
+    "bone16": "front_sight",
+    "sight_illuminated2": "front_sight",
+    "bone19": "front_sight",
+    "bone20": "front_sight",
+    "muzzle_default": "muzzle",
+    "octagon6": "muzzle",
+    "octagon8": "muzzle",
+    "oem_stock_tactical": "dormant_oem_stock_geometry",
+    "group23": "dormant_oem_stock_geometry",
+    "rail2": "handguard",
+    "rail3": "handguard",
+    "rail4": "handguard",
+    "rail": "handguard",
+    "hexadecagon": "handguard",
+    "group9": "handguard",
+    "group12": "handguard",
+    "group10": "handguard",
+    "group11": "handguard",
+    "group17": "handguard",
+    "rings2": "handguard",
+    "holes3": "handguard",
+    "holes2": "handguard",
+    "bone7": "handguard",
+    "octagon37": "handguard",
+    "righthand_pos": "presentation_hands"
+  }
+}
