@@ -38,8 +38,8 @@ def make(gun):
  bone_req={'bolt':[d('bolt')],'bullet':mags,'bullet_in_mag':mags,'bullet_in_barrel':[d('barrel')],'muzzle_flash':[d('barrel')]}
  if 'additional_magazine' in bs:bone_req['additional_magazine']=mags
  cfg=copy.deepcopy(ex.read(R/'modules/tacz_adapter/weapon-sources/native_glock_17/production.json'))
- cfg.update(sourceGun=gun,gunId='tacz_assembly:'+gun,sourceDirectory='native_'+gun,rootDefinition=d('lower'),parts=parts,slots=converted,preset=preset,presentationOnly=presentation,integrationFragments='/tmp/'+gun+'-integration',gunLabels=[gun.upper()+' · 原生实体组装',gun.upper()+' · Native Assembly'])
- cfg['weapon'].update(gunId=cfg['gunId'],rootDefinition=d('lower'),resourceDirectory=gun,modelType='tacz_native_'+gun+'_assembly',caliber='556x45',requiredPaths=required,developmentSource='native_'+gun,defaultFireMode='auto',wearableSlots=['tactical_inventory:primary_weapon_1','tactical_inventory:primary_weapon_2'])
+ cfg.update(sourceGun=gun,gunId='tacz_fork_tarkov:'+gun,sourceDirectory='native_'+gun,rootDefinition=d('lower'),parts=parts,slots=converted,preset=preset,presentationOnly=presentation,integrationFragments='/tmp/'+gun+'-integration',gunLabels=[gun.upper()+' · 原生实体组装',gun.upper()+' · Native Assembly'])
+ cfg['weapon'].update(gunId=cfg['gunId'],rootDefinition=d('lower'),resourceDirectory=gun,modelType='tacz_native_'+gun+'_assembly',caliber='556x45',requiredPaths=required,authoringSource='native_'+gun,developmentCategory='tacz_fork_tarkov',defaultFireMode='auto',wearableSlots=['tactical_inventory:primary_weapon_1','tactical_inventory:primary_weapon_2'])
  cfg['nativeProfile']={'schemaVersion':1,'attachmentPaths':paths,'attachmentOverrides':{},'sightAlternatives':[[paths['SCOPE']],[front,rear]]}
  cfg['visualRules']={'schemaVersion':1,'alwaysVisibleBones':always,'definitionRequirements':{},'variantRequirements':{'upright':{'SCOPE':False},'folded':{'SCOPE':True}} if variants else {},'boneRequirements':bone_req}
  cfg['sourceBoneVariants']=variants;cfg['previewHiddenVariants']=['folded'];cfg['nativeMagazineCatalogs']=[str((root/'magazine_variants/manifest.json').relative_to(R))]

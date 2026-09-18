@@ -1,9 +1,0 @@
-{
-  "name": "gun.tacz_assembly.ai_awp",
-  "display": "tacz_assembly:ai_awp",
-  "data": "tacz_assembly:ai_awp",
-  "tooltip": "tacz.gun.ai_awp.desc",
-  "type": "sniper",
-  "sort": 103,
-  "item_type": "tacz_assembly:ai_awp"
-}

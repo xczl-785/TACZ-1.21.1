@@ -15,7 +15,7 @@ class NativeAssemblyVisualRulesTest {
         assertFalse(rules.visible("slide","always",Set.of(),type->true));
     }
     @Test void productionM4RetainsInstalledAndFoldedVisibility() throws Exception {
-        String json=Files.readString(Path.of("weapon-content/resources/data/tacz_assembly/m4a1/native-visual-rules.json"));
+        String json=Files.readString(Path.of("weapon-content/resources/data/tacz_fork_tarkov/m4a1/native-visual-rules.json"));
         var bones=new HashSet<String>();for(var value:JsonParser.parseString(json).getAsJsonObject().getAsJsonArray("alwaysVisibleBones"))bones.add(value.getAsString());
         var rules=NativeAssemblyVisualRules.load(json,Set.of("rear_sight","front_sight","barrel"),bones);
         var installed=Set.of("rear_sight","front_sight","barrel");

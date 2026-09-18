@@ -16,7 +16,7 @@ import net.minecraft.world.item.component.CustomData;
  * Change of variant is legal only after both magazine and chamber are empty. */
 public final class AmmoBridge {
     public static final String KEY = "tactical_tacz_adapter:ammunition_v1";
-    public static final ResourceLocation GUN = ResourceLocation.parse("tacz:glock_17");
+    public static final ResourceLocation GUN = ResourceLocation.parse("tacz_fork_tarkov:glock_17");
     public static final ResourceLocation CALIBER = ResourceLocation.parse("tacz:9mm");
     private static final java.util.Map<String,AmmunitionContent.Entry> ENTRIES=AmmunitionContent.load().stream().collect(java.util.stream.Collectors.toUnmodifiableMap(AmmunitionContent.Entry::id,java.util.function.Function.identity()));
     public static AmmunitionContent.Entry definition(ItemStack gun){var ammo=ammunition(gun);return ammo==null?null:ENTRIES.get(ammo.definition().id());}

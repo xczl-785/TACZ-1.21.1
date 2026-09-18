@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceGun": "ai_awp",
-  "gunId": "tacz_assembly:ai_awp",
+  "gunId": "tacz_fork_tarkov:ai_awp",
   "sourceDirectory": "native_ai_awp",
   "rootDefinition": "awp_receiver",
   "parts": [
@@ -613,7 +613,7 @@
   },
   "weapon": {
     "schemaVersion": 1,
-    "gunId": "tacz_assembly:ai_awp",
+    "gunId": "tacz_fork_tarkov:ai_awp",
     "rootDefinition": "awp_receiver",
     "resourceDirectory": "ai_awp",
     "modelType": "tacz_native_ai_awp_assembly",
@@ -630,7 +630,8 @@
     "feed": "detachable_magazine",
     "nativeRig": true,
     "assemblyIcons": true,
-    "developmentSource": "native_ai_awp",
+    "authoringSource": "native_ai_awp",
+  "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:primary_weapon_1",
       "tactical_inventory:primary_weapon_2"
@@ -812,8 +813,8 @@
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
   ],
   "attachmentOverrideCatalogs": [
-    "data/tacz_assembly/native_attachments/standalone.json",
-    "data/tacz_assembly/m4a1/native_attachment_overrides.json"
+    "data/tacz_fork_tarkov/native_attachments/standalone.json",
+    "data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json"
   ],
   "integrationFragments": "/tmp/native-gun-integration/ai_awp",
   "excludedAttachments": [

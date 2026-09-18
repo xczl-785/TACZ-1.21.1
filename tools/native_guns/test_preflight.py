@@ -72,7 +72,7 @@ class PreflightTest(unittest.TestCase):
         for path in sorted((p.R/'modules/tacz_adapter/weapon-sources').glob('native_*/production.json')):
             with self.subTest(gun=path.parent.name):
                 config,_,_,_,_,catalog,_=p.preflight(path)
-                existing=p.ex.read(p.RES/'data/tacz_assembly'/config['sourceGun']/'catalog.json')['parts']
+                existing=p.ex.read(p.RES/'data/tacz_fork_tarkov'/config['sourceGun']/'catalog.json')['parts']
                 self.assertEqual(catalog,existing)
 
 

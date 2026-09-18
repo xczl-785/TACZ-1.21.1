@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_fork_tarkov:m870",
+  "rootDefinition": "m870_receiver",
+  "resourceDirectory": "m870",
+  "modelType": "tacz_native_m870_assembly",
+  "caliber": "12/70",
+  "requiredPaths": [
+    [
+      "barrel"
+    ],
+    [
+      "pump"
+    ],
+    [
+      "bolt"
+    ]
+  ],
+  "defaultFireMode": "semi",
+  "feed": "internal_tube",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "authoringSource": "native_m870",
+  "developmentCategory": "tacz_fork_tarkov",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/m870",
+  "feedPath": [
+    "tube"
+  ],
+  "capacityPaths": [
+    [
+      "tube",
+      "tube_extension"
+    ]
+  ],
+  "reloadPolicy": "preserve_native_scripted_incremental_reload"
+}

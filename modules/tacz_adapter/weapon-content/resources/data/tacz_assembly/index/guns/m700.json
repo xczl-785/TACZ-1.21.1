@@ -1,9 +1,0 @@
-{
-  "name": "gun.tacz_assembly.m700",
-  "display": "tacz_assembly:m700",
-  "data": "tacz_assembly:m700",
-  "tooltip": "tacz.gun.m700.desc",
-  "type": "sniper",
-  "sort": 103,
-  "item_type": "tacz_assembly:m700"
-}

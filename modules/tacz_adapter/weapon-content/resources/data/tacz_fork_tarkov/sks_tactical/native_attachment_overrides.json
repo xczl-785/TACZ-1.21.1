@@ -1,0 +1,128 @@
+{
+  "tacz:grip_cobra": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_cobra",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_cobra"
+  },
+  "tacz:grip_cqr": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_cqr",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_cqr"
+  },
+  "tacz:grip_magpul_afg_2": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_magpul_afg_2",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_magpul_afg_2"
+  },
+  "tacz:grip_osovets_black": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_osovets_black",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_osovets_black"
+  },
+  "tacz:grip_rk0": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_rk0",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_rk0"
+  },
+  "tacz:grip_rk1_b25u": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_rk1_b25u",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_rk1_b25u"
+  },
+  "tacz:grip_rk6": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_rk6",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_rk6"
+  },
+  "tacz:grip_se_5": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_se_5",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_se_5"
+  },
+  "tacz:grip_td": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_td",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_td"
+  },
+  "tacz:grip_vertical_military": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_vertical_military",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_vertical_military"
+  },
+  "tacz:grip_vertical_ranger": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_vertical_ranger",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_vertical_ranger"
+  },
+  "tacz:grip_vertical_talon": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_vertical_talon",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_vertical_talon"
+  },
+  "tacz:laser_lopro": {
+    "model": "tacz_fork_tarkov:attachments/tacz_laser_lopro",
+    "texture": "tacz_fork_tarkov:attachments/tacz_laser_lopro",
+    "lodModel": "tacz_fork_tarkov:attachments/lod/tacz_laser_lopro",
+    "lodTexture": "tacz_fork_tarkov:attachments/tacz_laser_lopro"
+  },
+  "tacz:laser_peq15": {
+    "model": "tacz_fork_tarkov:attachments/tacz_laser_peq15",
+    "texture": "tacz_fork_tarkov:attachments/tacz_laser_peq15"
+  },
+  "tacz:muzzle_brake_cthulhu": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_brake_cthulhu",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_brake_cthulhu"
+  },
+  "tacz:muzzle_brake_cyclone_d2": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_brake_cyclone_d2",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_brake_cyclone_d2"
+  },
+  "tacz:muzzle_brake_pioneer": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_brake_pioneer",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_brake_pioneer"
+  },
+  "tacz:muzzle_brake_trex": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_brake_trex",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_brake_trex"
+  },
+  "tacz:muzzle_compensator_trident": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_compensator_trident",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_compensator_trident"
+  },
+  "tacz:muzzle_silencer_knight_qd": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_knight_qd",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_knight_qd"
+  },
+  "tacz:muzzle_silencer_phantom_s1": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_phantom_s1",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_phantom_s1"
+  },
+  "tacz:muzzle_silencer_ursus": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_ursus",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_ursus"
+  },
+  "tacz:stock_ak12": {
+    "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_ak12",
+    "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_ak12"
+  },
+  "tacz:stock_carbon_bone_c5": {
+    "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_carbon_bone_c5",
+    "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_carbon_bone_c5"
+  },
+  "tacz:stock_hk_slim_line": {
+    "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_hk_slim_line",
+    "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_hk_slim_line"
+  },
+  "tacz:stock_m4ss": {
+    "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_m4ss",
+    "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_m4ss"
+  },
+  "tacz:stock_militech_b5": {
+    "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_militech_b5",
+    "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_militech_b5"
+  },
+  "tacz:stock_moe": {
+    "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_moe",
+    "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_moe"
+  },
+  "tacz:stock_ripstock": {
+    "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_ripstock",
+    "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_ripstock"
+  },
+  "tacz:stock_sba3": {
+    "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_sba3",
+    "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_sba3"
+  },
+  "tacz:stock_tactical_ar": {
+    "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_tactical_ar",
+    "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_tactical_ar"
+  }
+}

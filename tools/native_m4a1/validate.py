@@ -4,7 +4,7 @@ import json,re,hashlib
 R=Path(__file__).resolve().parents[2];DEFAULT=R/'modules/tacz_adapter/weapon-content/resources';SRC=R/'src/main/resources/assets/tacz/custom/tacz_default_gun'
 def read(p):return json.loads(re.sub(r'"(?:\\.|[^"\\])*"|//[^\n]*|/\*[\s\S]*?\*/',lambda m:m[0] if m[0].startswith('"') else '',p.read_text()))
 def validate(resources=DEFAULT):
- out=Path(resources);base=out/'data/tacz_assembly/m4a1';a=out/'assets/tacz_assembly'
+ out=Path(resources);base=out/'data/tacz_fork_tarkov/m4a1';a=out/'assets/tacz_fork_tarkov'
  assert read(a/'models/item/m4a1.json')['parent']=='builtin/entity'
  for source,target in [('preview.json','icon_geometry.json'),('library.json','icon_library.json'),('materials.json','icon_materials.json')]:assert read(base/source)==read(a/'m4a1'/target)
  config=read(base/'weapon.json');mapping=read(base/'mapping.json');external=read(base/'native_attachments.json');catalog={p['id']:p for p in read(base/'catalog.json')['parts']};nodes=read(base/'scene.json')['nodes']
@@ -30,7 +30,7 @@ def validate(resources=DEFAULT):
   for key,folder,suffix in [('model','geo_models','.json'),('texture','textures','.png'),('lodModel','geo_models','.json'),('lodTexture','textures','.png')]:
    if key in entry:
     namespace,path=entry[key].split(':',1)
-    assert namespace=='tacz_assembly'
+    assert namespace=='tacz_fork_tarkov'
     assert (out/'assets'/namespace/folder/(path+suffix)).is_file(),(item,key)
   assert ('lodModel' in entry)==('lodTexture' in entry)
  # Standard component contract: local geometry, textured UVs, and translated physical mount labels.
@@ -55,7 +55,7 @@ def validate(resources=DEFAULT):
   for m in models.values():
    for slot in m['slots']:assert 'weapon_assembly_ui.slot.'+slot in lang
 
- assert read(out/'data/tacz_assembly/data/guns/m4a1.json')==read(SRC/'data/tacz/data/guns/m4a1_data.json')
+ assert read(out/'data/tacz_fork_tarkov/data/guns/m4a1.json')==read(SRC/'data/tacz/data/guns/m4a1_data.json')
  native=read(SRC/'assets/tacz/display/guns/m4a1_display.json');display=read(a/'display/guns/m4a1.json')
  for k,v in native.items():
   if k not in {'model','model_type','lod','texture'}:assert display[k]==v,k
@@ -71,7 +71,7 @@ def validate(resources=DEFAULT):
  for definition,id in mapping.items():
   assert (a/f'textures/item/{definition}.png').is_file()
   if id in external:continue
-  assert (out/f'data/tacz_assembly/item_foundation/items/{id.split(":")[1]}.json').is_file()
+  assert (out/f'data/tacz_fork_tarkov/item_foundation/items/{id.split(":")[1]}.json').is_file()
   assert (a/f'models/item/{id.split(":")[1]}.json').is_file()
  evidence=read(base/'geometry-evidence.json');assert evidence['editableParts']==len(edited) and evidence['reusedLowCubes']==0 and evidence['maximumNeutralMatrixError']<1e-10 and evidence['lowCubes']<evidence['highCubes']
  print('Native M4A1 contract PASS: 15 default nodes, 52 attachments, 140 preserved rig nodes; high/low',evidence['highCubes'],evidence['lowCubes'])

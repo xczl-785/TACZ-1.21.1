@@ -119,13 +119,13 @@ def make(gun, refresh=False):
     if expected != set(assigned): raise ValueError((gun,'unassigned',sorted(expected-set(assigned))))
     slots={k:{s:[v if v.startswith('$') else v for v in vals] for s,vals in row.items()} for k,row in spec['slots'].items()}
     preset={k:{s:vs[0] for s,vs in row.items() if not vs[0].startswith('$')} for k,row in slots.items()}; preset={k:v for k,v in preset.items() if v}
-    config={'schemaVersion':1,'sourceGun':gun,'gunId':'tacz_assembly:'+gun,'sourceDirectory':'native_'+gun,'rootDefinition':spec['root'],'parts':parts,'slots':slots,'preset':preset,
-      'weapon':{'schemaVersion':1,'gunId':'tacz_assembly:'+gun,'rootDefinition':spec['root'],'resourceDirectory':gun,'modelType':'tacz_native_'+gun+'_assembly','caliber':None,'requiredPaths':spec['required'],'defaultFireMode':spec['fire'],'feed':spec['feed'],'nativeRig':True,'assemblyIcons':True,'developmentSource':'native_'+gun,'wearableSlots':['tactical_inventory:primary_weapon_1','tactical_inventory:primary_weapon_2'],'partIconDirectory':'textures/item/'+gun},
+    config={'schemaVersion':1,'sourceGun':gun,'gunId':'tacz_fork_tarkov:'+gun,'sourceDirectory':'native_'+gun,'rootDefinition':spec['root'],'parts':parts,'slots':slots,'preset':preset,
+      'weapon':{'schemaVersion':1,'gunId':'tacz_fork_tarkov:'+gun,'rootDefinition':spec['root'],'resourceDirectory':gun,'modelType':'tacz_native_'+gun+'_assembly','caliber':None,'requiredPaths':spec['required'],'defaultFireMode':spec['fire'],'feed':spec['feed'],'nativeRig':True,'assemblyIcons':True,'authoringSource':'native_'+gun,'developmentCategory':'tacz_fork_tarkov','wearableSlots':['tactical_inventory:primary_weapon_1','tactical_inventory:primary_weapon_2'],'partIconDirectory':'textures/item/'+gun},
       'nativeProfile':{'schemaVersion':1,'attachmentPaths':spec['paths'],'attachmentOverrides':{},'sightAlternatives':[[spec['paths']['SCOPE']]] if 'SCOPE' in spec['paths'] else []},
       'visualRules':{'schemaVersion':1,'alwaysVisibleBones':['mag_standard','mag_extended_1','mag_extended_2','mag_extended_3'], 'definitionRequirements':{},'variantRequirements':{},'boneRequirements':{}},'presentationOnly':presentation,
       'lodPolicy':'conservative_cube_subset: retain the complete authored native high rig until a reviewed component-preserving low rig exists; never reuse incompatible original low topology.','lod':{'strategy':'conservative_cube_subset','maxSilhouetteLoss':0.01,'maxTextureMeanError':0.02,'maxTextureChangedFraction':0.05},
       'labels':{p['definitionId']:[{'barrel':'枪管','stock':'枪托','grip':'握把','handguard':'护木','pump':'泵动护木','iron':'机械瞄具','magazine':'弹匣','tube':'储弹管','bolt':'枪机','muzzle':'枪口','charging':'拉机柄','bipod':'两脚架'}.get(next((k for k in ('barrel','stock','grip','handguard','pump','iron','magazine','tube','bolt','muzzle','charging','bipod') if k in p['definitionId']),'receiver'),'机匣')+' · '+gun.upper(),p['definitionId']] for p in parts},'slotLabels':({'mag_release':['弹匣卡笋','Magazine release']} if gun in ('p90','uzi') else {}),'gunLabels':[gun.upper()+' · 原生实体组装',gun.upper()+' · Native Assembly'],
-      'editableAttachmentCatalogs':['modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json','modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json'],'attachmentOverrideCatalogs':['data/tacz_assembly/native_attachments/standalone.json','data/tacz_assembly/m4a1/native_attachment_overrides.json'],'integrationFragments':'/tmp/native-gun-integration/'+gun}
+      'editableAttachmentCatalogs':['modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json','modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json'],'attachmentOverrideCatalogs':['data/tacz_fork_tarkov/native_attachments/standalone.json','data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json'],'integrationFragments':'/tmp/native-gun-integration/'+gun}
     # Caliber is deliberately read from GunAdoption rather than inferred from ammo strings.
     adoption=(R/'modules/tacz_adapter/src/main/java/dev/tacticaltacz/GunAdoption.java').read_text()
     import re
@@ -155,8 +155,8 @@ def make(gun, refresh=False):
         config['weapon'].update(feedPath=['tube'],capacityPaths=[['tube','tube_extension']],reloadPolicy='preserve_native_scripted_incremental_reload')
         config['nativeTubeVariants']={'defaultDefinition':'m870_tube','capacity':[data['ammo_amount']]+data['extended_mag_ammo_amount'],'variants':tube_extensions,'semantic':'tube_extension_not_detachable_magazine'}
         config['editableAttachmentCatalogs'].append('modules/tacz_adapter/weapon-sources/native_attachments/supplemental/manifest.json')
-        config['attachmentOverrideCatalogs'].append('data/tacz_assembly/native_attachments/supplemental.json')
-        config['supplementalAttachmentLibraries']=[{'source':'modules/tacz_adapter/weapon-sources/native_attachments/supplemental','catalog':'data/tacz_assembly/native_attachments/supplemental.json'}]
+        config['attachmentOverrideCatalogs'].append('data/tacz_fork_tarkov/native_attachments/supplemental.json')
+        config['supplementalAttachmentLibraries']=[{'source':'modules/tacz_adapter/weapon-sources/native_attachments/supplemental','catalog':'data/tacz_fork_tarkov/native_attachments/supplemental.json'}]
     elif variants:
         config['nativeMagazineVariants']=variants
     # produce.append is the shared authoring conversion; it only writes this native_<gun>/editable directory.

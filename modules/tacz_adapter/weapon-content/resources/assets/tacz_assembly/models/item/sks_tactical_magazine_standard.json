@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tacz_assembly:item/sks_tactical/sks_tactical_magazine_standard"
-  }
-}

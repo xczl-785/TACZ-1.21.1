@@ -1,6 +1,6 @@
 # 当前默认套件：方块编辑源
 
-配件组织已采用显式作者输入，生成后沿用 `tacz_assembly:m4a1`，不新增另一个 M4。模型、候选名单及默认装配语义保持现有 TaCZ 资产，不照搬自有枪械的物品 ID 或旧 UI。
+配件组织已采用显式作者输入，生成后沿用 `tacz_fork_tarkov:m4a1`，不新增另一个 M4。模型、候选名单及默认装配语义保持现有 TaCZ 资产，不照搬自有枪械的物品 ID 或旧 UI。
 
 | 编辑内容 | 唯一入口 |
 | --- | --- |
@@ -64,20 +64,20 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/native_m4a1/export_parts.py
 
 | 身份 | 模型 | Mesh 数 | 三角形数 |
 | --- | --- | ---: | ---: |
-| `tacz_assembly:m4a1_barrel` | [barrel](source-pack/components/barrel/model.bbmodel) | 1 | 242 |
-| `tacz_assembly:m4a1_barrel_mount_collar` | [barrel_mount_collar](source-pack/components/barrel_mount_collar/model.bbmodel) | 1 | 216 |
-| `tacz_assembly:m4a1_bolt` | [bolt](source-pack/components/bolt/model.bbmodel) | 1 | 312 |
-| `tacz_assembly:m4a1_buffer` | [buffer](source-pack/components/buffer/model.bbmodel) | 1 | 66 |
-| `tacz_assembly:m4a1_charging_mechanism` | [charging_mechanism](source-pack/components/charging_mechanism/model.bbmodel) | 1 | 134 |
-| `tacz_assembly:m4a1_front_sight` | [front_sight](source-pack/components/front_sight/model.bbmodel) | 1 | 190 |
-| `tacz_assembly:m4a1_gas_block_and_tube` | [gas_block_and_tube](source-pack/components/gas_block_and_tube/model.bbmodel) | 1 | 314 |
-| `tacz_assembly:m4a1_handguard_default` | [handguard_default](source-pack/components/handguard_default/model.bbmodel) | 1 | 756 |
-| `tacz_assembly:m4a1_handguard_tactical` | [handguard_tactical](source-pack/components/handguard_tactical/model.bbmodel) | 1 | 2614 |
-| `tacz_assembly:m4a1` | [lower_receiver](source-pack/components/lower_receiver/model.bbmodel) | 4 | 602 |
-| `tacz_assembly:m4a1_magazine_standard` | [magazine_standard](source-pack/components/magazine_standard/model.bbmodel) | 1 | 324 |
-| `tacz_assembly:m4a1_muzzle_default` | [muzzle_default](source-pack/components/muzzle_default/model.bbmodel) | 1 | 254 |
-| `tacz_assembly:m4a1_pistol_grip` | [pistol_grip](source-pack/components/pistol_grip/model.bbmodel) | 1 | 106 |
-| `tacz_assembly:m4a1_rear_sight` | [rear_sight](source-pack/components/rear_sight/model.bbmodel) | 1 | 398 |
+| `tacz_fork_tarkov:m4a1_barrel` | [barrel](source-pack/components/barrel/model.bbmodel) | 1 | 242 |
+| `tacz_fork_tarkov:m4a1_barrel_mount_collar` | [barrel_mount_collar](source-pack/components/barrel_mount_collar/model.bbmodel) | 1 | 216 |
+| `tacz_fork_tarkov:m4a1_bolt` | [bolt](source-pack/components/bolt/model.bbmodel) | 1 | 312 |
+| `tacz_fork_tarkov:m4a1_buffer` | [buffer](source-pack/components/buffer/model.bbmodel) | 1 | 66 |
+| `tacz_fork_tarkov:m4a1_charging_mechanism` | [charging_mechanism](source-pack/components/charging_mechanism/model.bbmodel) | 1 | 134 |
+| `tacz_fork_tarkov:m4a1_front_sight` | [front_sight](source-pack/components/front_sight/model.bbmodel) | 1 | 190 |
+| `tacz_fork_tarkov:m4a1_gas_block_and_tube` | [gas_block_and_tube](source-pack/components/gas_block_and_tube/model.bbmodel) | 1 | 314 |
+| `tacz_fork_tarkov:m4a1_handguard_default` | [handguard_default](source-pack/components/handguard_default/model.bbmodel) | 1 | 756 |
+| `tacz_fork_tarkov:m4a1_handguard_tactical` | [handguard_tactical](source-pack/components/handguard_tactical/model.bbmodel) | 1 | 2614 |
+| `tacz_fork_tarkov:m4a1` | [lower_receiver](source-pack/components/lower_receiver/model.bbmodel) | 4 | 602 |
+| `tacz_fork_tarkov:m4a1_magazine_standard` | [magazine_standard](source-pack/components/magazine_standard/model.bbmodel) | 1 | 324 |
+| `tacz_fork_tarkov:m4a1_muzzle_default` | [muzzle_default](source-pack/components/muzzle_default/model.bbmodel) | 1 | 254 |
+| `tacz_fork_tarkov:m4a1_pistol_grip` | [pistol_grip](source-pack/components/pistol_grip/model.bbmodel) | 1 | 106 |
+| `tacz_fork_tarkov:m4a1_rear_sight` | [rear_sight](source-pack/components/rear_sight/model.bbmodel) | 1 | 398 |
 | `tacz:bayonet_m9` | [tacz_bayonet_m9](source-pack/components/tacz_bayonet_m9/model.bbmodel) | 1 | 504 |
 | `tacz:extended_mag_1` | [tacz_extended_mag_1](source-pack/components/tacz_extended_mag_1/model.bbmodel) | 1 | 356 |
 | `tacz:extended_mag_2` | [tacz_extended_mag_2](source-pack/components/tacz_extended_mag_2/model.bbmodel) | 1 | 356 |
@@ -130,5 +130,5 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/native_m4a1/export_parts.py
 | `tacz:stock_ripstock` | [tacz_stock_ripstock](source-pack/components/tacz_stock_ripstock/model.bbmodel) | 1 | 248 |
 | `tacz:stock_sba3` | [tacz_stock_sba3](source-pack/components/tacz_stock_sba3/model.bbmodel) | 1 | 642 |
 | `tacz:stock_tactical_ar` | [tacz_stock_tactical_ar](source-pack/components/tacz_stock_tactical_ar/model.bbmodel) | 1 | 532 |
-| `tacz_assembly:m4a1_upper_receiver` | [upper_receiver](source-pack/components/upper_receiver/model.bbmodel) | 1 | 620 |
-| `tacz_assembly:m4a1_front_sight` 折叠 | [front_sight](source-pack/components/front_sight/model-folded.bbmodel) | 1 | 220 |
+| `tacz_fork_tarkov:m4a1_upper_receiver` | [upper_receiver](source-pack/components/upper_receiver/model.bbmodel) | 1 | 620 |
+| `tacz_fork_tarkov:m4a1_front_sight` 折叠 | [front_sight](source-pack/components/front_sight/model-folded.bbmodel) | 1 | 220 |

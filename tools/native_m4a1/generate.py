@@ -11,7 +11,7 @@ R=Path(__file__).resolve().parents[2]
 OUT=R/'modules/tacz_adapter/weapon-content/resources'
 SRC=R/'src/main/resources/assets/tacz/custom/tacz_default_gun'
 AUTHOR=R/'modules/tacz_adapter/weapon-sources/native_m4a1'
-NS='tacz_assembly'; GUN='m4a1'; BASE=OUT/f'data/{NS}/m4a1'
+NS='tacz_fork_tarkov'; GUN='m4a1'; BASE=OUT/f'data/{NS}/m4a1'
 def read(p):
  return json.loads(re.sub(r'"(?:\\.|[^"\\])*"|//[^\n]*|/\*[\s\S]*?\*/',lambda m:m[0] if m[0].startswith('"') else '',p.read_text()))
 def write(p,v):
@@ -43,7 +43,7 @@ def node(name,path,parent=None,slot=None):
  for s,c in preset.get(name,{}).items():node(c,path+'/'+s,id,s)
 node('lower_receiver','');assert len(nodes)==15
 write(BASE/'scene.json',{'schemaVersion':1,'nodes':nodes})
-write(BASE/'weapon.json',{'schemaVersion':1,'gunId':f'{NS}:{GUN}','rootDefinition':'lower_receiver','resourceDirectory':'m4a1','modelType':'tacz_native_assembly','caliber':'556x45','magazinePath':['magazine'],'requiredPaths':critical,'defaultFireMode':'auto','feed':'detachable_magazine','nativeRig':True,'assemblyIcons':True,'developmentSource':'native_m4a1'})
+write(BASE/'weapon.json',{'schemaVersion':1,'gunId':f'{NS}:{GUN}','rootDefinition':'lower_receiver','resourceDirectory':'m4a1','modelType':'tacz_native_assembly','caliber':'556x45','magazinePath':['magazine'],'requiredPaths':critical,'defaultFireMode':'auto','feed':'detachable_magazine','nativeRig':True,'assemblyIcons':True,'authoringSource':'native_m4a1','developmentCategory':'tacz_fork_tarkov'})
 write(BASE/'native-profile.json',read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/native-profile.json'))
 write(BASE/'native-visual-rules.json',read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/native-visual-rules.json'))
 # Resource references intentionally inherit native actions and server feed times byte-for-byte semantically.
@@ -145,8 +145,8 @@ labels={'lower_receiver':'下机匣','upper_receiver':'上机匣','barrel_mount_
 p=OUT/f'assets/{NS}/lang/zh_cn.json';data=read(p)
 for d,label in labels.items():data['item.'+mapping[d].replace(':','.')]=label
 # Root name describes the gun, even though its physical root is the lower receiver.
-data[f'item.{NS}.m4a1']='M4A1 · 原生实体组装';data['tacz_assembly.workbench']='打开组装工作台';write(p,data)
-p=OUT/f'assets/{NS}/lang/en_us.json';data=read(p);data['tacz_assembly.workbench']='Assembly workbench';write(p,data)
+data[f'item.{NS}.m4a1']='M4A1 · 原生实体组装';data['tacz_fork_tarkov.workbench']='打开组装工作台';write(p,data)
+p=OUT/f'assets/{NS}/lang/en_us.json';data=read(p);data['tacz_fork_tarkov.workbench']='Assembly workbench';write(p,data)
 identity_types={'lower_receiver':'weapon/firearm/assault_rifle','upper_receiver':'weapon_mod/receiver','barrel':'weapon_mod/barrel','gas_block_and_tube':'weapon_mod/gas_block','front_sight':'weapon_mod/sight/iron','rear_sight':'weapon_mod/sight/iron','handguard_default':'weapon_mod/handguard','handguard_tactical':'weapon_mod/handguard','pistol_grip':'weapon_mod/pistol_grip','buffer':'weapon_mod/stock','charging_mechanism':'weapon_mod/charging_handle','magazine_standard':'weapon_mod/magazine','muzzle_default':'weapon_mod/muzzle/brake','barrel_mount_collar':'weapon_mod/receiver','bolt':'weapon_mod/receiver'}
 write(OUT/f'data/{NS}/item_foundation/identities/m4a1.json',{'schema_version':1,'items':[{'item':mapping[d],'tags':['item_foundation:type/'+identity_types[d]]} for d in physical]})
 for d in physical:

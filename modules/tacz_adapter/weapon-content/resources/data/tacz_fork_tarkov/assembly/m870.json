@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "tacz_fork_tarkov:m870",
+      "slots": [
+        {
+          "id": "barrel",
+          "compatibleItems": [
+            "tacz_fork_tarkov:m870_barrel"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "tube",
+          "compatibleItems": [
+            "tacz_fork_tarkov:m870_tube"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "iron_sights",
+          "compatibleItems": [
+            "tacz_fork_tarkov:m870_iron_sights"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "pump",
+          "compatibleItems": [
+            "tacz_fork_tarkov:m870_pump"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bolt",
+          "compatibleItems": [
+            "tacz_fork_tarkov:m870_bolt"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "stock",
+          "compatibleItems": [
+            "tacz_fork_tarkov:m870_stock"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:m870_barrel",
+      "slots": [
+        {
+          "id": "muzzle",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:m870_tube",
+      "slots": [
+        {
+          "id": "tube_extension",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:m870_iron_sights",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:m870_pump",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:m870_bolt",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:m870_stock",
+      "slots": []
+    }
+  ]
+}

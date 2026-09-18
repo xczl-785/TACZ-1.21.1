@@ -5,7 +5,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE = ROOT / 'modules/tacz_adapter/weapon-sources/native_m4a1/assembly.json'
-OUTPUT = ROOT / 'modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1'
+OUTPUT = ROOT / 'modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1'
 
 
 class AssemblySourceTest(unittest.TestCase):

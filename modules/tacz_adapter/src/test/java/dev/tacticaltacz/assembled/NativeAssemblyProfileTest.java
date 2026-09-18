@@ -9,7 +9,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class NativeAssemblyProfileTest {
-    private static final Path BASE=Path.of("weapon-content/resources/data/tacz_assembly/m4a1");
+    private static final Path BASE=Path.of("weapon-content/resources/data/tacz_fork_tarkov/m4a1");
     private AssemblyCatalog catalog() throws Exception{return AssemblyJson.readCatalog(Files.readString(BASE.resolve("catalog.json")));}
     private String config() throws Exception{return Files.readString(BASE.resolve("native-profile.json"));}
     @Test void nativeRoutesAndNestedMuzzleSelection() throws Exception {

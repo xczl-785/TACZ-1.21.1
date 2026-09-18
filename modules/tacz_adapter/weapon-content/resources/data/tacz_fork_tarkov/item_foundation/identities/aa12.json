@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tacz_fork_tarkov:aa12",
+      "tags": [
+        "item_foundation:type/weapon/firearm/shotgun"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:aa12_upper",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:aa12_handguard",
+      "tags": [
+        "item_foundation:type/weapon_mod/handguard"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:aa12_barrel",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:aa12_front_sight",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:aa12_rear_sight",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:aa12_mount",
+      "tags": [
+        "item_foundation:type/weapon_mod/mount"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:aa12_bolt",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:aa12_charging_handle",
+      "tags": [
+        "item_foundation:type/weapon_mod/charging_handle"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:aa12_magazine_standard",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    }
+  ]
+}

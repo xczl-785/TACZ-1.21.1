@@ -22,11 +22,11 @@ public final class TaczDevelopmentCatalog {
                 .setHeatData(data.hasHeatData()).setAmmoCount(0).setAmmoInBarrel(false).build(null);
             var assembled=dev.tacticaltacz.assembled.AssembledWeapons.byId(id);
             if(assembled!=null)stack=assembled.preset();
-            event.put(ResourceLocation.fromNamespaceAndPath(id.getNamespace(),"gun/"+id.getPath()),assembled!=null?assembled.developmentSource:"tacz",stack);
+            event.put(ResourceLocation.fromNamespaceAndPath(id.getNamespace(),"gun/"+id.getPath()),assembled!=null?assembled.developmentCategory:"tacz",stack);
         });
         for(var weapon:dev.tacticaltacz.assembled.AssembledWeapons.all()) for(var entry:weapon.ITEMS.entrySet()){
             var id=ResourceLocation.parse(entry.getValue());event.remove(id);
-            if(!entry.getKey().equals(weapon.ROOT))event.put(id,weapon.developmentSource,weapon.createPart(entry.getKey()));
+            if(!entry.getKey().equals(weapon.ROOT))event.put(id,weapon.developmentCategory,weapon.createPart(entry.getKey()));
         }
         for(var entry:TimelessAPI.getAllCommonAttachmentIndex()){
             var id=entry.getKey();

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_fork_tarkov:ump45",
+  "rootDefinition": "ump_lower",
+  "resourceDirectory": "ump45",
+  "modelType": "tacz_native_ump45_assembly",
+  "caliber": "45acp",
+  "magazinePath": [
+    "magazine"
+  ],
+  "requiredPaths": [
+    [
+      "upper"
+    ],
+    [
+      "upper",
+      "barrel"
+    ],
+    [
+      "upper",
+      "bolt"
+    ],
+    [
+      "upper",
+      "charging_handle"
+    ]
+  ],
+  "defaultFireMode": "auto",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "authoringSource": "native_ump45",
+  "developmentCategory": "tacz_fork_tarkov",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/ump45"
+}

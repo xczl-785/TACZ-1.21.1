@@ -18,7 +18,6 @@ public final class TacticalTaczAdapter {
         bus.addListener(dev.tacticaltacz.assembled.AssemblyGunProtocol::register);
         dev.tacticaltacz.refit.RefitBridge.register();
         dev.itemfoundation.api.inspection.InspectionProviders.register(MOD_ID+":ammunition",AmmunitionInspection::inspect);
-        bus.addListener((net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent event)->event.enqueueWork(PistolAdoption::register));
         NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, TacticalTaczAdapter::prepareFeedback);
         NeoForge.EVENT_BUS.addListener(TacticalTaczAdapter::playerPose);
         NeoForge.EVENT_BUS.addListener((dev.tacticalcharacter.resource.ResourceActionEvent event) -> {

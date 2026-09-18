@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tacz_assembly:item/mk14/mk14_charging_handle"
-  }
-}

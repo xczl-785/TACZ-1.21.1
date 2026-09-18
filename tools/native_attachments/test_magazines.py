@@ -47,15 +47,15 @@ class MagazineVariants(unittest.TestCase):
     def test_generated_variants_preserve_bones_and_edited_texture(self):
         for row in self.rows():
             _,bones,_,_,_=shared.load_part(row,m.ROOT)
-            path='gun_parts/'+row['definitionId'];actual=ex.read(m.RES/('assets/tacz_assembly/geo_models/'+path+'.json'))['minecraft:geometry'][0]
+            path='gun_parts/'+row['definitionId'];actual=ex.read(m.RES/('assets/tacz_fork_tarkov/geo_models/'+path+'.json'))['minecraft:geometry'][0]
             self.assertEqual(actual['bones'],[bones[n] for n in row['preservedBones']])
-            self.assertEqual((m.RES/('assets/tacz_assembly/textures/'+path+'.png')).read_bytes(),(m.ROOT/row['texture']).read_bytes())
+            self.assertEqual((m.RES/('assets/tacz_fork_tarkov/textures/'+path+'.png')).read_bytes(),(m.ROOT/row['texture']).read_bytes())
     def test_unified_build_is_deterministic_and_catalog_only(self):
         with tempfile.TemporaryDirectory() as tmp:
             root=Path(tmp)
             command=[sys.executable,'-c','import sys;from pathlib import Path;import build;build.build(Path(sys.argv[1]))',str(root)]
             subprocess.run(command,cwd=Path(__file__).parent,env=dict(os.environ,PYTHONHASHSEED='1',PYTHONDONTWRITEBYTECODE='1'),check=True,capture_output=True)
-            doc=ex.read(root/'data/tacz_assembly/native_attachments/catalog.json')
+            doc=ex.read(root/'data/tacz_fork_tarkov/native_attachments/catalog.json')
             first={str(p.relative_to(root)):ex.sha(p) for p in root.rglob('*') if p.is_file()}
             subprocess.run(command,cwd=Path(__file__).parent,env=dict(os.environ,PYTHONHASHSEED='2',PYTHONDONTWRITEBYTECODE='1'),check=True,capture_output=True)
             second={str(p.relative_to(root)):ex.sha(p) for p in root.rglob('*') if p.is_file()}

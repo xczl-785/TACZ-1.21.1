@@ -2,11 +2,13 @@ package com.tacz.guns.resource;
 
 import java.util.Set;
 
-/** NewMod selection, modified 2026-09-13: 15 guns; retired IDs also blocked in external overrides. */
+/** Fork selection: all original TaCZ gun identities stay retired, including external overrides. */
 public final class SelectedContentPolicy {
     private SelectedContentPolicy() {}
     private static final Set<String> EXCLUDED_GUNS = Set.of(
+            "aa12",
             "ak47",
+            "ai_awp",
             "aug",
             "b93r",
             "cz75",
@@ -17,6 +19,7 @@ public final class SelectedContentPolicy {
             "fn_evolys",
             "fn_fal",
             "g36k",
+            "glock_17",
             "hk416d",
             "hk_g3",
             "hk_mk23",
@@ -26,13 +29,20 @@ public final class SelectedContentPolicy {
             "m1014",
             "m107",
             "m16a4",
+            "m16a1",
             "m1911",
             "m249",
+            "m4a1",
             "m320",
             "m95",
             "m9a4",
+            "m700",
+            "m870",
+            "mk14",
             "minigun",
             "p320",
+            "p90",
+            "qbz_191",
             "qbz_95",
             "rhino357",
             "rpg7",
@@ -40,12 +50,22 @@ public final class SelectedContentPolicy {
             "spas_12",
             "spr15hb",
             "springfield1873",
+            "scar_h",
+            "scar_l",
+            "sks_tactical",
             "taurus500",
             "taurus943",
             "timeless50",
             "type_81",
+            "ump45",
+            "uzi",
             "vector45");
     private static final Set<String> EXCLUDED_ATTACHMENTS = Set.of(
+            "ammo_mod_fmj",
+            "ammo_mod_he",
+            "ammo_mod_hp",
+            "ammo_mod_i",
+            "ammo_mod_slug",
             "bayonet_6h3",
             "deagle_golden_long_barrel",
             "laser_peq6",

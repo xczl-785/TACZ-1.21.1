@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tacz_fork_tarkov:item/qbz_191/qbz_191_pistol_grip"
+  }
+}

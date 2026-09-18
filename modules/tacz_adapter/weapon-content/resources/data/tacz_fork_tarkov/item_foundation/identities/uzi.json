@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tacz_fork_tarkov:uzi",
+      "tags": [
+        "item_foundation:type/weapon/firearm/smg"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:uzi_iron_sights",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:uzi_stock",
+      "tags": [
+        "item_foundation:type/weapon_mod/stock"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:uzi_barrel",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:uzi_handguard",
+      "tags": [
+        "item_foundation:type/weapon_mod/handguard"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:uzi_grip",
+      "tags": [
+        "item_foundation:type/weapon_mod/pistol_grip"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:uzi_mag_release",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:uzi_charging_handle",
+      "tags": [
+        "item_foundation:type/weapon_mod/charging_handle"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:uzi_bolt",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:uzi_magazine_standard",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    }
+  ]
+}

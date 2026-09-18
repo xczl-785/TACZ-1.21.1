@@ -1,0 +1,9 @@
+{
+  "name": "gun.tacz_fork_tarkov.m870",
+  "display": "tacz_fork_tarkov:m870",
+  "data": "tacz_fork_tarkov:m870",
+  "tooltip": "tacz.gun.m870.desc",
+  "type": "shotgun",
+  "item_type": "tacz_fork_tarkov:m870",
+  "sort": 103
+}

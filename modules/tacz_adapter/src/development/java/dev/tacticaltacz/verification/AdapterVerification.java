@@ -139,7 +139,6 @@ public final class AdapterVerification {
         UnregisteredAttachmentSmoke.verify(level);
         RefitInventorySmoke.verify(level);
         BarrelFireSmoke.verify(level);
-        AdarSmoke.verify(level);
         AutomaticAmmoSmoke.run(level);
         for(var item:AmmunitionRegistry.AMMUNITION.values()) {
             var stack=item.get().getDefaultInstance();

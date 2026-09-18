@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tacz_fork_tarkov:m870",
+      "tags": [
+        "item_foundation:type/weapon/firearm/shotgun"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:m870_barrel",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:m870_tube",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:m870_iron_sights",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:m870_pump",
+      "tags": [
+        "item_foundation:type/weapon_mod/handguard"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:m870_bolt",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:m870_stock",
+      "tags": [
+        "item_foundation:type/weapon_mod/stock"
+      ]
+    }
+  ]
+}

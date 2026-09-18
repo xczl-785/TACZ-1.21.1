@@ -17,10 +17,10 @@ class NativeGunProductionTest(unittest.TestCase):
         report=validate();self.assertEqual(report['nativeRigBones'],57)
         self.assertEqual(report['highCubes'],264);self.assertLess(report['lowCubes'],report['highCubes']);self.assertTrue(report['lod'])
 
-    def test_configuration_rejects_wrong_caliber_and_cross_gun_icons(self):
+    def test_configuration_owns_caliber_and_rejects_cross_gun_icons(self):
         config=p.ex.read(p.DEFAULT)
-        wrong=copy.deepcopy(config);wrong['weapon']['caliber']='9mm'
-        with self.assertRaises(ValueError):p.validate_configuration(wrong)
+        wrong=copy.deepcopy(config);wrong['weapon']['caliber']=''
+        with self.assertRaisesRegex(ValueError,'Missing canonical caliber'):p.validate_configuration(wrong)
         wrong=copy.deepcopy(config);wrong['weapon']['partIconDirectory']='textures/item/m4a1'
         with self.assertRaises(ValueError):p.validate_configuration(wrong)
 
@@ -55,7 +55,7 @@ class NativeGunProductionTest(unittest.TestCase):
         types=set();directories=set()
         for entry in p.ex.read(p.RES/'data/tactical_tacz_adapter/assembled_weapons.json')['weapons']:
             weapon=p.ex.read(p.RES/entry)
-            if not weapon.get('nativeRig') or weapon['developmentSource']=='native_m4a1':continue
+            if not weapon.get('nativeRig') or weapon['authoringSource']=='native_m4a1':continue
             gun=weapon['gunId'].split(':')[1]
             root=p.R/'modules/tacz_adapter/weapon-sources'/('native_'+gun)
             config=p.ex.read(root/'production.json');weapon=config['weapon']
@@ -71,15 +71,15 @@ class NativeGunProductionTest(unittest.TestCase):
         records,_=p.attachment_records(p.ex.read(source_root/'production.json'))
         stocks=[r for r in records if r['type']=='stock']
         self.assertEqual(len(stocks),9)
-        overrides=p.ex.read(p.RES/'data/tacz_assembly/scar_l/native_attachment_overrides.json')
-        catalog=p.ex.read(p.RES/'data/tacz_assembly/native_attachments/stocks.json')['attachments']
+        overrides=p.ex.read(p.RES/'data/tacz_fork_tarkov/scar_l/native_attachment_overrides.json')
+        catalog=p.ex.read(p.RES/'data/tacz_fork_tarkov/native_attachments/stocks.json')['attachments']
         for stock in stocks:
             self.assertIn('row',stock);self.assertTrue(p.authored_stock(stock['row']))
             self.assertEqual(overrides[stock['attachmentId']],catalog[stock['attachmentId']])
             self.assertIn('/authored_stock/',overrides[stock['attachmentId']]['model'])
 
     def test_scar_ar_stock_reaches_the_receiver_adapter_boundary(self):
-        models={model['definitionId']:model for model in p.ex.read(p.RES/'data/tacz_assembly/scar_l/preview.json')['models']}
+        models={model['definitionId']:model for model in p.ex.read(p.RES/'data/tacz_fork_tarkov/scar_l/preview.json')['models']}
         lower_min,_=self.bounds(models['scar_l_lower'])
         _,stock_max=self.bounds(models['tacz_stock_tactical_ar'])
         gap=lower_min[2]-(models['scar_l_lower']['slots']['stock'][2]+stock_max[2])
@@ -115,7 +115,7 @@ class NativeGunProductionTest(unittest.TestCase):
 
     def test_scope_projection_excludes_first_person_planes_and_preserves_bones(self):
         records,_=p.attachment_records(p.ex.read(p.DEFAULT))
-        preview={m['definitionId']:m for m in p.ex.read(p.RES/'data/tacz_assembly/glock_17/preview.json')['models']}
+        preview={m['definitionId']:m for m in p.ex.read(p.RES/'data/tacz_fork_tarkov/glock_17/preview.json')['models']}
         for record in records:
             if record['type']!='scope':continue
             source=p.ex.read(record['source'])['minecraft:geometry'][0]
@@ -148,8 +148,8 @@ class NativeGunProductionTest(unittest.TestCase):
         records,_=p.attachment_records(config);laser=next(r for r in records if r['attachmentId']=='tacz:laser_compact')
         _,geometry,uv,_,_=p.shared.load_part(laser['row'],laser['root'])
         meshes,_=p.mesh_for(laser['definitionId'],geometry,uv,laser['root']/laser['row']['texture'],matrix)
-        model=next(m for m in p.ex.read(p.RES/'data/tacz_assembly/glock_17/preview.json')['models'] if m['definitionId']==laser['definitionId'])
-        anchor=p.ex.read(p.RES/'data/tacz_assembly/glock_17/workbench-anchors.json')['anchors'][laser['definitionId']]
+        model=next(m for m in p.ex.read(p.RES/'data/tacz_fork_tarkov/glock_17/preview.json')['models'] if m['definitionId']==laser['definitionId'])
+        anchor=p.ex.read(p.RES/'data/tacz_fork_tarkov/glock_17/workbench-anchors.json')['anchors'][laser['definitionId']]
         for expected,actual in zip(meshes,model['meshes']):
             for e,a in zip(expected['triangles'],actual['triangles']):
                 self.assertTrue(np.allclose(e['vertices'],np.asarray(a['vertices'])+anchor,atol=1e-8));self.assertEqual(e['uv'],a['uv'])

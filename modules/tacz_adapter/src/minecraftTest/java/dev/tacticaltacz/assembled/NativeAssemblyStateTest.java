@@ -25,7 +25,7 @@ class NativeAssemblyStateTest {
         }
         AssemblyDefinitions.replace(definitions);
     }
-    private static AssembledWeapon weapon(){return AssembledWeapons.byId(net.minecraft.resources.ResourceLocation.parse("tacz_assembly:m4a1"));}
+    private static AssembledWeapon weapon(){return AssembledWeapons.byId(net.minecraft.resources.ResourceLocation.parse("tacz_fork_tarkov:m4a1"));}
     @Test void standardWorkbenchLoadsTexturedPartsAndLocalMounts(){
         var models=NativeAssemblyView.geometry(weapon());
         var materials=NativeAssemblyView.materials(weapon(),models);
@@ -40,7 +40,7 @@ class NativeAssemblyStateTest {
         assertTrue(muzzle.z()>buffer.z(),"Radian workbench art frame points toward +Z");
     }
     @Test void itemEntryAndIconGeometryCoverTheCurrentAssembly(){
-        var entry=JsonParser.parseString(AssembledWeapon.resource("assets/tacz_assembly/models/item/m4a1.json")).getAsJsonObject();
+        var entry=JsonParser.parseString(AssembledWeapon.resource("assets/tacz_fork_tarkov/models/item/m4a1.json")).getAsJsonObject();
         assertEquals("builtin/entity",entry.get("parent").getAsString());
         var a=weapon().preset();var b=weapon().preset();
         assertEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(b)));
@@ -48,7 +48,7 @@ class NativeAssemblyStateTest {
         assertEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(b)));
         var noStock=AssemblyGunExchange.plan(a,ItemStack.EMPTY,List.of("buffer","stock")).orElseThrow().held();
         assertNotEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(noStock)));
-        assertEquals(AssembledWeapon.resource("data/tacz_assembly/m4a1/preview.json"),AssembledWeapon.resource("assets/tacz_assembly/m4a1/icon_geometry.json"));
+        assertEquals(AssembledWeapon.resource("data/tacz_fork_tarkov/m4a1/preview.json"),AssembledWeapon.resource("assets/tacz_fork_tarkov/m4a1/icon_geometry.json"));
     }
     @Test void presetIsOnePhysicalTreeAndCanDetachMagazine(){
         var gun=weapon().preset();assertEquals(14,AssemblyTrees.flatten(gun).size());AssemblyTrees.validate(gun,AssembledWeapon.identity(gun));
@@ -111,7 +111,7 @@ class NativeAssemblyStateTest {
 
     @Test void editedAttachmentModelsAreScopedAndKeepNativeFallback() {
         var models=new NativeAttachmentModels(weapon());assertEquals(25,models.size());
-        var entries=JsonParser.parseString(AssembledWeapon.resource("data/tacz_assembly/m4a1/native_attachment_overrides.json")).getAsJsonObject();
+        var entries=JsonParser.parseString(AssembledWeapon.resource("data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json")).getAsJsonObject();
         for(var entry:entries.entrySet()){
             var stack=weapon().createPart(entry.getKey().replace(':','_'));
             var asset=models.resolve(stack);assertNotNull(asset,entry.getKey());
@@ -145,7 +145,7 @@ class NativeAssemblyStateTest {
 
     @Test void nativeHighAndLowSelectImmutableLeavesWithoutInstanceLeakage(){
         var gson=new com.google.gson.GsonBuilder().registerTypeAdapter(com.tacz.guns.client.resource.pojo.model.CubesItem.class,new com.tacz.guns.client.resource.pojo.model.CubesItem.Deserializer()).create();
-        for(var resource:List.of("assets/tacz_assembly/geo_models/gun/m4a1.json","assets/tacz_assembly/geo_models/gun/lod/m4a1.json")){
+        for(var resource:List.of("assets/tacz_fork_tarkov/geo_models/gun/m4a1.json","assets/tacz_fork_tarkov/geo_models/gun/lod/m4a1.json")){
             var pojo=gson.fromJson(AssembledWeapon.resource(resource),com.tacz.guns.client.resource.pojo.model.BedrockModelPOJO.class);
             var model=new NativeAssemblyGunModel(pojo,com.tacz.guns.client.resource.pojo.model.BedrockVersion.NEW,weapon());
             var cubes=model.batchCubeCounts();var first=weapon().preset();model.prepareGeometry(first);var original=model.visibleBatchNames();assertFalse(original.isEmpty());
@@ -153,7 +153,7 @@ class NativeAssemblyStateTest {
             assertTrue(model.usesInlineAttachment(AttachmentType.STOCK,weapon().createPart("tacz_stock_moe")));
             assertFalse(model.usesInlineAttachment(AttachmentType.STOCK,ItemStack.EMPTY));
             assertTrue(original.stream().anyMatch(n->n.startsWith("assembly_editable_tacz_stock_tactical_ar_")));
-            var inline=JsonParser.parseString(AssembledWeapon.resource("data/tacz_assembly/m4a1/inline_attachments.json")).getAsJsonObject().getAsJsonObject("stock");
+            var inline=JsonParser.parseString(AssembledWeapon.resource("data/tacz_fork_tarkov/m4a1/inline_attachments.json")).getAsJsonObject().getAsJsonObject("stock");
             for(var candidate:inline.entrySet()){
                 String definition=candidate.getValue().getAsString();
                 var exchanged=AssemblyGunExchange.plan(weapon().preset(),weapon().createPart(definition),List.of("buffer","stock")).orElseThrow().held();

@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tacz_fork_tarkov:p90",
+      "tags": [
+        "item_foundation:type/weapon/firearm/smg"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:p90_builtin_sight",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:p90_barrel",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:p90_muzzle",
+      "tags": [
+        "item_foundation:type/weapon_mod/muzzle"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:p90_mag_release",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:p90_magazine_standard",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:p90_charging_handle",
+      "tags": [
+        "item_foundation:type/weapon_mod/charging_handle"
+      ]
+    }
+  ]
+}

@@ -17,7 +17,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /** Registry-backed checks for three distinct native rigs. No world, server or GL rendering. */
 class NativeGunBatchStateTest {
     private static final List<String> GUNS=List.of("m16a1","scar_l","ump45");
-    private static AssembledWeapon weapon(String gun){return Objects.requireNonNull(AssembledWeapons.byId(ResourceLocation.parse("tacz_assembly:"+gun)),gun);}
+    private static AssembledWeapon weapon(String gun){return Objects.requireNonNull(AssembledWeapons.byId(ResourceLocation.parse("tacz_fork_tarkov:"+gun)),gun);}
     @BeforeAll static void boot() throws Exception {
         NativeAssemblyStateTest.boot();
         for(String gun:GUNS){
@@ -30,7 +30,7 @@ class NativeGunBatchStateTest {
     private static JsonObject json(String path){return JsonParser.parseString(AssembledWeapon.resource(path)).getAsJsonObject();}
     private static NativeAssemblyGunModel model(AssembledWeapon w,boolean low){
         var gson=new GsonBuilder().registerTypeAdapter(CubesItem.class,new CubesItem.Deserializer()).create();
-        var pojo=gson.fromJson(AssembledWeapon.resource("assets/tacz_assembly/geo_models/gun/"+(low?"lod/":"")+w.GUN.getPath()+".json"),BedrockModelPOJO.class);
+        var pojo=gson.fromJson(AssembledWeapon.resource("assets/tacz_fork_tarkov/geo_models/gun/"+(low?"lod/":"")+w.GUN.getPath()+".json"),BedrockModelPOJO.class);
         return new NativeAssemblyGunModel(pojo,BedrockVersion.NEW,w);
     }
     private static Set<String> visibleDefinitions(NativeAssemblyGunModel model,JsonObject batches){
@@ -108,7 +108,7 @@ class NativeGunBatchStateTest {
     @Test void highAndLowRenderTheSameEntitiesAcrossRemovalReplacementAndDifferentInstances(){
         for(String name:GUNS){
             var w=weapon(name);var hi=model(w,false);var lo=model(w,true);
-            var batches=json("data/tacz_assembly/"+name+"/batches.json");
+            var batches=json("data/tacz_fork_tarkov/"+name+"/batches.json");
             var original=w.preset();var cases=new ArrayList<ItemStack>();cases.add(original);
             for(var child:w.PRESET.children().keySet())cases.add(remove(original,List.of(child)));
             for(var candidate:w.nativeAttachments.entrySet())if(candidate.getKey().contains("extended_mag_"))cases.add(install(w,original,candidate.getValue(),w.magazinePath));

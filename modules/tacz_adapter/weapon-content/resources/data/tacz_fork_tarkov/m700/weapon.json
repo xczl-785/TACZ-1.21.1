@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_fork_tarkov:m700",
+  "rootDefinition": "m700_receiver",
+  "resourceDirectory": "m700",
+  "modelType": "tacz_native_m700_assembly",
+  "caliber": "762x51",
+  "requiredPaths": [
+    [
+      "barrel"
+    ],
+    [
+      "bolt"
+    ]
+  ],
+  "defaultFireMode": "semi",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "authoringSource": "native_m700",
+  "developmentCategory": "tacz_fork_tarkov",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/m700",
+  "magazinePath": [
+    "magazine"
+  ]
+}

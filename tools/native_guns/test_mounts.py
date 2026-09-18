@@ -21,7 +21,7 @@ class AuthoredMountTest(unittest.TestCase):
         for path in sorted((p.R/'modules/tacz_adapter/weapon-sources').glob('native_*/production.json')):
             with self.subTest(gun=path.parent.name):
                 config=p.ex.read(path)
-                base=p.RES/'data/tacz_assembly'/config['sourceGun']
+                base=p.RES/'data/tacz_fork_tarkov'/config['sourceGun']
                 catalog=p.ex.read(base/'catalog.json')['parts']
                 frames=p.load_mounts(path.parent/'mounts.json',catalog,config['rootDefinition'])
                 anchors=p.ex.read(base/'workbench-anchors.json')['anchors']

@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /** Execute the production catalog with the production engine; no mock Minecraft inventory. */
 class NativeAssemblyRulesTest {
-    private static final Path BASE=Path.of("weapon-content/resources/data/tacz_assembly/m4a1");
+    private static final Path BASE=Path.of("weapon-content/resources/data/tacz_fork_tarkov/m4a1");
     private static final AssemblyCatalog CATALOG;
     private static final AssemblyEngine ENGINE;
     private static final AssemblyNode PRESET;
@@ -52,6 +52,6 @@ class NativeAssemblyRulesTest {
         for(int i=1;i<=3;i++){var changed=ENGINE.replace(PRESET,path("magazine"),part("tacz_extended_mag_"+i));assertTrue(changed.success());assertEquals("magazine_standard",changed.detached().orElseThrow().definitionId());assertEquals(15,count(changed.after()));}
     }
     @Test void definitionLoadsWithoutLegacyPresentationCalibration(){
-        var weapon=new AssembledWeapon("data/tacz_assembly/m4a1/weapon.json");assertTrue(weapon.nativeRig);assertEquals(52,weapon.nativeAttachments.size());assertNull(weapon.handling);assertEquals(PRESET,weapon.PRESET);
+        var weapon=new AssembledWeapon("data/tacz_fork_tarkov/m4a1/weapon.json");assertTrue(weapon.nativeRig);assertEquals(52,weapon.nativeAttachments.size());assertNull(weapon.handling);assertEquals(PRESET,weapon.PRESET);
     }
 }

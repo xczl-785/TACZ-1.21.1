@@ -12,8 +12,8 @@ from build_weapon import convert_component
 from render_part_icon import render_part_icon
 SOURCE=MODULE/'weapon-sources/native_m4a1'
 OUT=MODULE/'weapon-content/resources'
-BASE=OUT/'data/tacz_assembly/m4a1'
-ASSETS=OUT/'assets/tacz_assembly'
+BASE=OUT/'data/tacz_fork_tarkov/m4a1'
+ASSETS=OUT/'assets/tacz_fork_tarkov'
 def read(p):return json.loads(p.read_text())
 def write(p,v):
  p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(v,ensure_ascii=False,separators=(',',':'))+'\n')
@@ -38,7 +38,7 @@ def build():
     errors.append(error)
   frame=mounts[d]
   view={'definitionId':d,'attachmentOrigin':frame['attachmentOrigin'],'slots':frame['slots'],'boxes':[],'meshes':meshes};models.append(view)
-  texture=f'tacz_assembly:textures/parts/{d}.png'
+  texture=f'tacz_fork_tarkov:textures/parts/{d}.png'
   target=ASSETS/f'textures/parts/{d}.png';target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(SOURCE/entry['texture'],target)
   library['materials'][d]={'baseColor':'#ffffff','texture':texture,'roughness':.8,'specular':.12,'textureScale':1}
   bindings['parts'][d]={'defaultMaterial':d,'regions':{}}
@@ -50,7 +50,7 @@ def build():
  for model in models:
   d=model['definitionId'];render_part_icon(model,library,bindings,lambda res:OUT/'assets'/res.replace(':','/'),muzzle_left=d in edited_parts,alpha_cutout=d in edited_parts).save(ASSETS/f'textures/item/{d}.png')
   if not mapping[d].startswith('tacz:'):
-   write(ASSETS/f'models/item/{mapping[d].split(":")[1]}.json',{'parent':'builtin/entity','gui_light':'front'} if d==root_definition else {'parent':'minecraft:item/generated','textures':{'layer0':f'tacz_assembly:item/{d}'}})
+   write(ASSETS/f'models/item/{mapping[d].split(":")[1]}.json',{'parent':'builtin/entity','gui_light':'front'} if d==root_definition else {'parent':'minecraft:item/generated','textures':{'layer0':f'tacz_fork_tarkov:item/{d}'}})
  labels={
  'upper':('机匣','Receiver'),'pistol_grip':('手枪握把','Pistol grip'),'buffer':('缓冲管','Buffer tube'),'magazine':('弹匣','Magazine'),
  'barrel_mount':('枪管连接环','Barrel collar'),'bolt':('枪机','Bolt'),'charging_handle':('拉机柄','Charging handle'),'rear_sight':('后照门','Rear sight'),

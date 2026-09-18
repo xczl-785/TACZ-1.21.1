@@ -1,3 +1,0 @@
-# Preserve the delivered source bytes and checksums across platforms.
-source-pack/** -text
-source-pack/manifest.csv whitespace=cr-at-eol

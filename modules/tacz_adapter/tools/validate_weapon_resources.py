@@ -53,7 +53,7 @@ def validate(resources=RESOURCES):
                 raise ValueError('Preset lacks required components')
         if weapon.get('nativeRig'):
             import runpy
-            if weapon['developmentSource'] == 'native_m4a1':
+            if weapon['authoringSource'] == 'native_m4a1':
                 runpy.run_path(str(MODULE.parents[1]/'tools/native_m4a1/validate.py'))['validate'](RESOURCES)
             else:
                 runpy.run_path(str(MODULE.parents[1]/'tools/native_guns/validate.py'))['validate'](RESOURCES, weapon)

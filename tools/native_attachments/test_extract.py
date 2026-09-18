@@ -49,10 +49,10 @@ class NativeAttachmentContract(unittest.TestCase):
             self.assertEqual(len(records),6)
             for row in im.ex.read(s.OUT/'manifest.json')['parts']:
                 asset=records[row['attachmentId']]
-                geo=im.ex.read(out/'assets/tacz_assembly/geo_models'/f"{asset['model'].split(':')[1]}.json")['minecraft:geometry'][0]
+                geo=im.ex.read(out/'assets/tacz_fork_tarkov/geo_models'/f"{asset['model'].split(':')[1]}.json")['minecraft:geometry'][0]
                 original=im.ex.read(s.R/row['sourceGeometry'])['minecraft:geometry'][0]
                 self.assertEqual([b['name'] for b in geo['bones']],[b['name'] for b in original['bones']])
-                tex=out/'assets/tacz_assembly/textures'/f"{asset['texture'].split(':')[1]}.png"
+                tex=out/'assets/tacz_fork_tarkov/textures'/f"{asset['texture'].split(':')[1]}.png"
                 self.assertEqual(tex.read_bytes(),(s.OUT/row['texture']).read_bytes())
 
 if __name__=='__main__':unittest.main()

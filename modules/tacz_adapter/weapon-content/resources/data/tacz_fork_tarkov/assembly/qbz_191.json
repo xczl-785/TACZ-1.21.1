@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191",
+      "slots": [
+        {
+          "id": "kit",
+          "compatibleItems": [
+            "tacz_fork_tarkov:qbz_191_upper_kit"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "pistol_grip",
+          "compatibleItems": [
+            "tacz_fork_tarkov:qbz_191_pistol_grip"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "stock",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_fork_tarkov:qbz_191_stock"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "magazine",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_fork_tarkov:qbz_191_magazine_standard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191_upper_kit",
+      "slots": [
+        {
+          "id": "handguard",
+          "compatibleItems": [
+            "tacz_fork_tarkov:qbz_191_handguard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "barrel",
+          "compatibleItems": [
+            "tacz_fork_tarkov:qbz_191_barrel"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bolt",
+          "compatibleItems": [
+            "tacz_fork_tarkov:qbz_191_bolt"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "front_sight",
+          "compatibleItems": [
+            "tacz_fork_tarkov:qbz_191_front_sight"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "rear_sight",
+          "compatibleItems": [
+            "tacz_fork_tarkov:qbz_191_rear_sight"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "scope",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "grip",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "laser",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191_handguard",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191_barrel",
+      "slots": [
+        {
+          "id": "muzzle",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_fork_tarkov:qbz_191_muzzle"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191_muzzle",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191_pistol_grip",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191_bolt",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191_stock",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191_front_sight",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191_rear_sight",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:qbz_191_magazine_standard",
+      "slots": []
+    }
+  ]
+}

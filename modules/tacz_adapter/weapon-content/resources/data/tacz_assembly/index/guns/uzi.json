@@ -1,9 +1,0 @@
-{
-  "name": "gun.tacz_assembly.uzi",
-  "display": "tacz_assembly:uzi",
-  "data": "tacz_assembly:uzi",
-  "tooltip": "tacz.gun.uzi.desc",
-  "type": "smg",
-  "sort": 103,
-  "item_type": "tacz_assembly:uzi"
-}

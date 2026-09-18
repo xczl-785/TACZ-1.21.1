@@ -54,7 +54,7 @@ class BatchImportContract(unittest.TestCase):
     def test_all_selected_stocks_have_distinct_inline_rig(self):
         rows=im.ex.read(im.EDIT/'manifest.json')['parts']
         inline=im.ex.read(im.BASE/'inline_attachments.json')['stock']
-        high=im.ex.read(im.OUT/'assets/tacz_assembly/geo_models/gun/m4a1.json')['minecraft:geometry'][0]['bones']
+        high=im.ex.read(im.OUT/'assets/tacz_fork_tarkov/geo_models/gun/m4a1.json')['minecraft:geometry'][0]['bones']
         names=[b['name'] for b in high];self.assertEqual(len(names),len(set(names)))
         for row in rows:
             if row['definitionId'].startswith('tacz_stock_'):
@@ -119,12 +119,12 @@ class RemainingImportContract(unittest.TestCase):
             row=rows[d]
             if row['runtimeMode']!='native_attachment':continue
             mapping=overrides[d.replace('tacz_','tacz:',1)]
-            model=im.ex.read(im.OUT/('assets/tacz_assembly/geo_models/'+mapping['model'].split(':')[1]+'.json'))['minecraft:geometry'][0]
+            model=im.ex.read(im.OUT/('assets/tacz_fork_tarkov/geo_models/'+mapping['model'].split(':')[1]+'.json'))['minecraft:geometry'][0]
             source=im.ex.read(im.R/row['sourceGeometry'])['minecraft:geometry'][0]
             self.assertEqual([b['name'] for b in model['bones']],[b['name'] for b in source['bones']])
-            self.assertEqual((im.OUT/('assets/tacz_assembly/textures/'+mapping['texture'].split(':')[1]+'.png')).read_bytes(),(im.EDIT/row['texture']).read_bytes())
+            self.assertEqual((im.OUT/('assets/tacz_fork_tarkov/textures/'+mapping['texture'].split(':')[1]+'.png')).read_bytes(),(im.EDIT/row['texture']).read_bytes())
             if 'lodModel' in mapping:
-                lod=im.ex.read(im.OUT/('assets/tacz_assembly/geo_models/'+mapping['lodModel'].split(':')[1]+'.json'))['minecraft:geometry'][0]
+                lod=im.ex.read(im.OUT/('assets/tacz_fork_tarkov/geo_models/'+mapping['lodModel'].split(':')[1]+'.json'))['minecraft:geometry'][0]
                 self.assertEqual(mapping['lodTexture'],mapping['texture'])
                 self.assertEqual([b['name'] for b in lod['bones']],[b['name'] for b in model['bones']])
                 for low,high in zip(lod['bones'],model['bones']):

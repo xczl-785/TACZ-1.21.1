@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "attachments": {
+    "tacz:stock_tactical_ar": {
+      "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_tactical_ar",
+      "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_tactical_ar"
+    },
+    "tacz:stock_ak12": {
+      "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_ak12",
+      "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_ak12"
+    },
+    "tacz:stock_carbon_bone_c5": {
+      "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_carbon_bone_c5",
+      "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_carbon_bone_c5"
+    },
+    "tacz:stock_hk_slim_line": {
+      "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_hk_slim_line",
+      "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_hk_slim_line"
+    },
+    "tacz:stock_m4ss": {
+      "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_m4ss",
+      "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_m4ss"
+    },
+    "tacz:stock_militech_b5": {
+      "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_militech_b5",
+      "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_militech_b5"
+    },
+    "tacz:stock_moe": {
+      "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_moe",
+      "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_moe"
+    },
+    "tacz:stock_ripstock": {
+      "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_ripstock",
+      "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_ripstock"
+    },
+    "tacz:stock_sba3": {
+      "model": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_sba3",
+      "texture": "tacz_fork_tarkov:attachments/authored_stock/tacz_stock_sba3"
+    }
+  },
+  "sources": [
+    {
+      "definitionId": "tacz_stock_tactical_ar",
+      "attachmentId": "tacz:stock_tactical_ar",
+      "sourceModel": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_tactical_ar/model.bbmodel",
+      "sourceModelSha256": "ce3c739d61773beea81bc5f7d70b328b22f81e3e68e321391e0600b13d877299",
+      "sourceTextureSha256": "a768112c7b40fe4abaf2eac10c32bde545f12e3556712e381bb99a7467fab363",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/stock_tactical_ar_geo.json",
+      "sourceGeometrySha256": "f6bf0d87208f9bf3300934f93164b3d103af2ac0d09a1cc54ae87c592a188109",
+      "cubes": 73,
+      "uvSize": [
+        64,
+        64
+      ],
+      "coordinateSpace": "native attachment local; inverse authoring translation/editorCenter applied exactly once; target gun mount not baked",
+      "lodPolicy": "full authored geometry fallback; no reduced stock LOD produced in this batch"
+    },
+    {
+      "definitionId": "tacz_stock_ak12",
+      "attachmentId": "tacz:stock_ak12",
+      "sourceModel": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_ak12/model.bbmodel",
+      "sourceModelSha256": "b0bb8bf60d9e861e3363ae5d732fbd53506a7c948a96bba3a7bf13eab4c93fc1",
+      "sourceTextureSha256": "97a3b17567aef4ac9ffd86dcddfb090317655ce7af7ba6047c5ee3394b103f0f",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/stock_ak12_geo.json",
+      "sourceGeometrySha256": "4615f9487ff0a7479876ba999779fa37bee213b37414b9a192cf93c5d2619452",
+      "cubes": 115,
+      "uvSize": [
+        32,
+        32
+      ],
+      "coordinateSpace": "native attachment local; inverse authoring translation/editorCenter applied exactly once; target gun mount not baked",
+      "lodPolicy": "full authored geometry fallback; no reduced stock LOD produced in this batch"
+    },
+    {
+      "definitionId": "tacz_stock_carbon_bone_c5",
+      "attachmentId": "tacz:stock_carbon_bone_c5",
+      "sourceModel": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_carbon_bone_c5/model.bbmodel",
+      "sourceModelSha256": "6d0d21b7b0d2316303fde058074fe354f4c1d326a13c1286bcfe0f1c1c3e77c7",
+      "sourceTextureSha256": "6118059af4d2b4179884e0d4a04bf4367e7ac572f0a2c83cad3fa57619234bc0",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/stock_carbon_bone_c5_geo.json",
+      "sourceGeometrySha256": "75e9e0d69fcc44c9a51b08310a5ee67170c15719dd0dae63138646ef7fbf9609",
+      "cubes": 42,
+      "uvSize": [
+        32,
+        32
+      ],
+      "coordinateSpace": "native attachment local; inverse authoring translation/editorCenter applied exactly once; target gun mount not baked",
+      "lodPolicy": "full authored geometry fallback; no reduced stock LOD produced in this batch"
+    },
+    {
+      "definitionId": "tacz_stock_hk_slim_line",
+      "attachmentId": "tacz:stock_hk_slim_line",
+      "sourceModel": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_hk_slim_line/model.bbmodel",
+      "sourceModelSha256": "7d9d3f6610b62755c4bc668a82f734eb2c0ea4439daedba1c3d7bd6138a69a35",
+      "sourceTextureSha256": "b448f6c6bd577ba0362c87913a635270526fed0ecdbbf3a8ec5976d6dd2b2bfa",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/stock_hk_slim_line_geo.json",
+      "sourceGeometrySha256": "874c1834d6830d7deb0258665e5ee26064d5449f4d4ab3cf8beeb9e4b52625ab",
+      "cubes": 79,
+      "uvSize": [
+        32,
+        32
+      ],
+      "coordinateSpace": "native attachment local; inverse authoring translation/editorCenter applied exactly once; target gun mount not baked",
+      "lodPolicy": "full authored geometry fallback; no reduced stock LOD produced in this batch"
+    },
+    {
+      "definitionId": "tacz_stock_m4ss",
+      "attachmentId": "tacz:stock_m4ss",
+      "sourceModel": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_m4ss/model.bbmodel",
+      "sourceModelSha256": "cae04adc2d59d22bf6df3d6e76c41b12230b14e0eb7c95e2b640f9e802d288f7",
+      "sourceTextureSha256": "c8d13e97deb0bb41e34b9372f85c4d43583b0c6cd21417ccb030acd4272c93f5",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/stock_m4ss_geo.json",
+      "sourceGeometrySha256": "adfd6f2893a8dd22e978c53a5db8f5016ad2273b17017613a36c260d66de40dc",
+      "cubes": 68,
+      "uvSize": [
+        32,
+        32
+      ],
+      "coordinateSpace": "native attachment local; inverse authoring translation/editorCenter applied exactly once; target gun mount not baked",
+      "lodPolicy": "full authored geometry fallback; no reduced stock LOD produced in this batch"
+    },
+    {
+      "definitionId": "tacz_stock_militech_b5",
+      "attachmentId": "tacz:stock_militech_b5",
+      "sourceModel": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_militech_b5/model.bbmodel",
+      "sourceModelSha256": "add6a234ba517868a74ba8237702a4928635d1d4f470664580bd422fce77f459",
+      "sourceTextureSha256": "f2a0ac19b2d9ed23133c431134e6f7f4124c51044f50b8c9be53d8cbfe4486b2",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/stock_militech_b5_geo.json",
+      "sourceGeometrySha256": "00b3568dd1fea6b5b90480c77a80e34557ec31515d2c5651bc96cec417746101",
+      "cubes": 65,
+      "uvSize": [
+        64,
+        64
+      ],
+      "coordinateSpace": "native attachment local; inverse authoring translation/editorCenter applied exactly once; target gun mount not baked",
+      "lodPolicy": "full authored geometry fallback; no reduced stock LOD produced in this batch"
+    },
+    {
+      "definitionId": "tacz_stock_moe",
+      "attachmentId": "tacz:stock_moe",
+      "sourceModel": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_moe/model.bbmodel",
+      "sourceModelSha256": "e996eaabf63e4c06ec2734fa45c933b3a1d39a54b298fb7e5bebe72e7a2ef504",
+      "sourceTextureSha256": "d21bb8f3a7bdd849d21d4a149611d7f039be27aa0e05d79774d4eda0f8a51089",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/stock_moe_geo.json",
+      "sourceGeometrySha256": "17766b41988032aa414e1baaeaadaff9831eabc3f4627c42eb69e03e0a92ce04",
+      "cubes": 48,
+      "uvSize": [
+        32,
+        32
+      ],
+      "coordinateSpace": "native attachment local; inverse authoring translation/editorCenter applied exactly once; target gun mount not baked",
+      "lodPolicy": "full authored geometry fallback; no reduced stock LOD produced in this batch"
+    },
+    {
+      "definitionId": "tacz_stock_ripstock",
+      "attachmentId": "tacz:stock_ripstock",
+      "sourceModel": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_ripstock/model.bbmodel",
+      "sourceModelSha256": "aa4f9c03efb28c8becc82492de766e7c3c24f071525780edcf544fb688f86399",
+      "sourceTextureSha256": "a55b499996972481f50e88ec134ba60fb89eed95cb827762cc7a5cc561ab52c2",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/stock_ripstock_geo.json",
+      "sourceGeometrySha256": "86534dbee2b41f3e0020b35856446733be0666e9c201718435d59a24fdc91b6f",
+      "cubes": 35,
+      "uvSize": [
+        32,
+        32
+      ],
+      "coordinateSpace": "native attachment local; inverse authoring translation/editorCenter applied exactly once; target gun mount not baked",
+      "lodPolicy": "full authored geometry fallback; no reduced stock LOD produced in this batch"
+    },
+    {
+      "definitionId": "tacz_stock_sba3",
+      "attachmentId": "tacz:stock_sba3",
+      "sourceModel": "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_sba3/model.bbmodel",
+      "sourceModelSha256": "ff04cef7c27ea1733544354c15424a199fd34474519ac83011fcade4792f5fb0",
+      "sourceTextureSha256": "423ec39fa5dfc3297a9bfbcfede9cc5e6bc677b5d044c4fdf92618acb10506b2",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/stock_sba3_geo.json",
+      "sourceGeometrySha256": "ba161628a518a3cf245790a5fe8d95f598dcb61e496467f4cac57dd3ce7e2df0",
+      "cubes": 84,
+      "uvSize": [
+        32,
+        32
+      ],
+      "coordinateSpace": "native attachment local; inverse authoring translation/editorCenter applied exactly once; target gun mount not baked",
+      "lodPolicy": "full authored geometry fallback; no reduced stock LOD produced in this batch"
+    }
+  ]
+}

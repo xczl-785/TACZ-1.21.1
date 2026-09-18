@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "tacz_fork_tarkov:aa12",
+      "slots": [
+        {
+          "id": "upper",
+          "compatibleItems": [
+            "tacz_fork_tarkov:aa12_upper"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "magazine",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_fork_tarkov:aa12_magazine_standard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:aa12_upper",
+      "slots": [
+        {
+          "id": "handguard",
+          "compatibleItems": [
+            "tacz_fork_tarkov:aa12_handguard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "barrel",
+          "compatibleItems": [
+            "tacz_fork_tarkov:aa12_barrel"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "front_sight",
+          "compatibleItems": [
+            "tacz_fork_tarkov:aa12_front_sight"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "rear_sight",
+          "compatibleItems": [
+            "tacz_fork_tarkov:aa12_rear_sight"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "mount",
+          "compatibleItems": [
+            "tacz_fork_tarkov:aa12_mount"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bolt",
+          "compatibleItems": [
+            "tacz_fork_tarkov:aa12_bolt"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "charging_handle",
+          "compatibleItems": [
+            "tacz_fork_tarkov:aa12_charging_handle"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "grip",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:aa12_handguard",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:aa12_barrel",
+      "slots": [
+        {
+          "id": "muzzle",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:aa12_front_sight",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:aa12_rear_sight",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:aa12_mount",
+      "slots": [
+        {
+          "id": "scope",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:aa12_bolt",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:aa12_charging_handle",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:aa12_magazine_standard",
+      "slots": []
+    }
+  ]
+}

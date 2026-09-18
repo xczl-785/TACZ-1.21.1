@@ -57,7 +57,7 @@ public final class NativeAssemblyIcons {
             var bounds=NativeAssemblyIconRaster.bounds(pixels,WIDTH,HEIGHT);
             var manager=Minecraft.getInstance().getTextureManager();
             if(icons.size()>=LIMIT){Minecraft.getInstance().renderBuffers().bufferSource().endBatch();var oldest=icons.entrySet().iterator();manager.release(oldest.next().getValue().location);oldest.remove();}
-            var location=ResourceLocation.fromNamespaceAndPath("tacz_assembly","dynamic/assembly_icon_"+(serial++));
+            var location=ResourceLocation.fromNamespaceAndPath("tacz_fork_tarkov","dynamic/assembly_icon_"+(serial++));
             var image=new NativeImage(WIDTH,HEIGHT,false);
             DynamicTexture texture=null;
             try {

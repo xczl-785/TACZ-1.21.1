@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceGun": "qbz_191",
-  "gunId": "tacz_assembly:qbz_191",
+  "gunId": "tacz_fork_tarkov:qbz_191",
   "sourceDirectory": "native_qbz_191",
   "rootDefinition": "qbz_191_lower",
   "parts": [
@@ -1024,7 +1024,7 @@
   },
   "weapon": {
     "schemaVersion": 1,
-    "gunId": "tacz_assembly:qbz_191",
+    "gunId": "tacz_fork_tarkov:qbz_191",
     "rootDefinition": "qbz_191_lower",
     "resourceDirectory": "qbz_191",
     "modelType": "tacz_native_qbz_191_assembly",
@@ -1049,7 +1049,8 @@
     "feed": "detachable_magazine",
     "nativeRig": true,
     "assemblyIcons": true,
-    "developmentSource": "native_qbz_191",
+    "authoringSource": "native_qbz_191",
+  "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:primary_weapon_1",
       "tactical_inventory:primary_weapon_2"
@@ -1237,9 +1238,9 @@
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
   ],
   "attachmentOverrideCatalogs": [
-    "data/tacz_assembly/native_attachments/standalone.json",
-    "data/tacz_assembly/m4a1/native_attachment_overrides.json",
-    "data/tacz_assembly/native_attachments/stocks.json"
+    "data/tacz_fork_tarkov/native_attachments/standalone.json",
+    "data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json",
+    "data/tacz_fork_tarkov/native_attachments/stocks.json"
   ],
   "integrationFragments": "/tmp/native-gun-integration/qbz_191",
   "authoredStockAssets": true

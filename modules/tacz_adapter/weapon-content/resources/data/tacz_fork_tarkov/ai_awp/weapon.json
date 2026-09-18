@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_fork_tarkov:ai_awp",
+  "rootDefinition": "awp_receiver",
+  "resourceDirectory": "ai_awp",
+  "modelType": "tacz_native_ai_awp_assembly",
+  "caliber": "338lapua",
+  "requiredPaths": [
+    [
+      "barrel"
+    ],
+    [
+      "bolt"
+    ]
+  ],
+  "defaultFireMode": "semi",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "authoringSource": "native_ai_awp",
+  "developmentCategory": "tacz_fork_tarkov",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/ai_awp",
+  "magazinePath": [
+    "magazine"
+  ]
+}

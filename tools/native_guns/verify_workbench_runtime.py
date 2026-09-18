@@ -14,7 +14,7 @@ def verify(guns):
     worker=server.Worker()
     try:
         for gun in guns:
-            weapon='tacz_assembly:'+gun
+            weapon='tacz_fork_tarkov:'+gun
             def request(**kwargs):
                 result=worker.call({'op':'assembly','weapon':weapon,**kwargs})
                 assert result['validation']['valid'],result['validation']
@@ -35,7 +35,7 @@ def verify(guns):
                         assert not any(p==slot['path'] or p.startswith(slot['path']+'/') for p in removed['selection'])
                         definitions.add(candidate['id'])
                         queue.append(changed)
-            external=json.loads((ROOT/f'modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/{gun}/native_attachments.json').read_text())
+            external=json.loads((ROOT/f'modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/{gun}/native_attachments.json').read_text())
             assert set(external.values())<=definitions,'Native candidates were not visited'
             assert request()['selection']==original['selection'],'Temporary edits changed preset'
             print(json.dumps({'gun':weapon,'slotCandidateCases':len(visited),'distinctCandidates':len(definitions),

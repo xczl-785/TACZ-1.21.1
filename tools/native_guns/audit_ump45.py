@@ -37,15 +37,15 @@ def create():
         parts.append({'definitionId':d,'sourceCubeIndices':{n:list(range(len(bones[n]['cubes']))) for n in names},'inventoryType':typ,'footprint':size})
     magazines=['ump_magazine_standard']+['tacz_ump45_light_extended_mag_'+str(i) for i in (1,2,3)]
     config={
-      'schemaVersion':1,'sourceGun':'ump45','gunId':'tacz_assembly:ump45','sourceDirectory':'native_ump45','rootDefinition':'ump_lower','parts':parts,
+      'schemaVersion':1,'sourceGun':'ump45','gunId':'tacz_fork_tarkov:ump45','sourceDirectory':'native_ump45','rootDefinition':'ump_lower','parts':parts,
       'slots':{'ump_lower':{'upper':['ump_upper'],'magazine':['ump_magazine_standard','$extended_mag']},
                'ump_upper':{'barrel':['ump_barrel'],'bolt':['ump_bolt'],'charging_handle':['ump_charging_handle'],'stock':['ump_stock'],'rails':['ump_rails']},
                'ump_barrel':{'muzzle':['$muzzle']},'ump_rails':{'scope':['$scope'],'grip':['$grip'],'laser':['$laser']}},
       'preset':{'ump_lower':{'upper':'ump_upper','magazine':'ump_magazine_standard'},
                 'ump_upper':{'barrel':'ump_barrel','bolt':'ump_bolt','charging_handle':'ump_charging_handle','stock':'ump_stock','rails':'ump_rails'}},
-      'weapon':{'schemaVersion':1,'gunId':'tacz_assembly:ump45','rootDefinition':'ump_lower','resourceDirectory':'ump45','modelType':'tacz_native_ump45_assembly',
+      'weapon':{'schemaVersion':1,'gunId':'tacz_fork_tarkov:ump45','rootDefinition':'ump_lower','resourceDirectory':'ump45','modelType':'tacz_native_ump45_assembly',
         'caliber':'45acp','magazinePath':['magazine'],'requiredPaths':[['upper'],['upper','barrel'],['upper','bolt'],['upper','charging_handle']],
-        'defaultFireMode':'auto','feed':'detachable_magazine','nativeRig':True,'assemblyIcons':True,'developmentSource':'native_ump45',
+        'defaultFireMode':'auto','feed':'detachable_magazine','nativeRig':True,'assemblyIcons':True,'authoringSource':'native_ump45','developmentCategory':'tacz_fork_tarkov',
         'wearableSlots':['tactical_inventory:primary_weapon_1','tactical_inventory:primary_weapon_2'],'partIconDirectory':'textures/item/ump45'},
       'nativeProfile':{'schemaVersion':1,'attachmentPaths':{'SCOPE':['upper','rails','scope'],'MUZZLE':['upper','barrel','muzzle'],
           'GRIP':['upper','rails','grip'],'LASER':['upper','rails','laser'],'EXTENDED_MAG':['magazine']},'attachmentOverrides':{},
@@ -57,7 +57,7 @@ def create():
       'labels':{d:list(props[d][2:]) for d in ownership},
       'excludedAttachments':['tacz:ammo_mod_fmj','tacz:ammo_mod_hp','tacz:ammo_mod_i'],
       'editableAttachmentCatalogs':['modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json','modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json'],
-      'attachmentOverrideCatalogs':['data/tacz_assembly/native_attachments/standalone.json','data/tacz_assembly/m4a1/native_attachment_overrides.json'],
+      'attachmentOverrideCatalogs':['data/tacz_fork_tarkov/native_attachments/standalone.json','data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json'],
       'gunLabels':['UMP45 · 原生实体组装','UMP45 · Native Assembly'],
       'slotLabels':{'rails':['导轨套件','Rail set'],'charging_handle':['拉机柄','Charging handle']},'integrationFragments':'/tmp/ump45-integration'}
     allowed,tags=p.magazines.allowed('ump45')

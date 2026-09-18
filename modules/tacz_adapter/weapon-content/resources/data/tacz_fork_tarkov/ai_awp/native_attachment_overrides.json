@@ -1,0 +1,14 @@
+{
+  "tacz:muzzle_silencer_knight_qd": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_knight_qd",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_knight_qd"
+  },
+  "tacz:muzzle_silencer_phantom_s1": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_phantom_s1",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_phantom_s1"
+  },
+  "tacz:muzzle_silencer_ursus": {
+    "model": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_ursus",
+    "texture": "tacz_fork_tarkov:attachments/tacz_muzzle_silencer_ursus"
+  }
+}

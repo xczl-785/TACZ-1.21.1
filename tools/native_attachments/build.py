@@ -13,15 +13,15 @@ def build(output=magazines.RES):
             if item in allowed:compat.setdefault(item,[]).append('tacz:'+p.stem)
     for item in standalone:
         if not compat.get(item):raise ValueError('No retained gun accepts '+item)
-    variants=extract.im.ex.read(output/'data/tacz_assembly/native_attachments/magazine_variants.json')['variants']
+    variants=extract.im.ex.read(output/'data/tacz_fork_tarkov/native_attachments/magazine_variants.json')['variants']
     document={'schemaVersion':1,'scope':'Remaining retained native non-optic attachment definitions',
        'attachmentDefinitions':len(standalone)+len(magazines.IDS),'standaloneModels':len(standalone),'magazineVariants':len(variants),
        'standaloneCompatibility':compat,'compatibilitySourceHashes':tag_hashes,
        'integrationStatus':'Assets prepared and packaged; activate only in each future assembled-gun profile. No native gun or M4 compatibility modified.',
        'excluded':{'opticalDefinitions':28,'ammoEffectDefinitions':5},
-       'standaloneManifest':'tacz_assembly:native_attachments/standalone.json',
-       'magazineManifest':'tacz_assembly:native_attachments/magazine_variants.json'}
-    extract.im.write(output/'data/tacz_assembly/native_attachments/catalog.json',document)
+       'standaloneManifest':'tacz_fork_tarkov:native_attachments/standalone.json',
+       'magazineManifest':'tacz_fork_tarkov:native_attachments/magazine_variants.json'}
+    extract.im.write(output/'data/tacz_fork_tarkov/native_attachments/catalog.json',document)
     return document
 
 if __name__=='__main__':

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tacz_fork_tarkov:glock_17",
+      "tags": [
+        "item_foundation:type/weapon/firearm/pistol"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:glock_slide",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:glock_barrel",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:glock_front_sight",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:glock_rear_sight",
+      "tags": [
+        "item_foundation:type/weapon_mod/sight/iron"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:glock_magazine_standard",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    }
+  ]
+}

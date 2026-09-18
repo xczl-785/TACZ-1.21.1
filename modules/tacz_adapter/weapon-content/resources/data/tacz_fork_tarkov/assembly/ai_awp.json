@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "tacz_fork_tarkov:ai_awp",
+      "slots": [
+        {
+          "id": "barrel",
+          "compatibleItems": [
+            "tacz_fork_tarkov:awp_barrel"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bolt",
+          "compatibleItems": [
+            "tacz_fork_tarkov:awp_bolt"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "stock",
+          "compatibleItems": [
+            "tacz_fork_tarkov:awp_stock"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "iron_sights",
+          "compatibleItems": [
+            "tacz_fork_tarkov:awp_iron_sights"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "magazine",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_fork_tarkov:awp_magazine_standard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:awp_barrel",
+      "slots": [
+        {
+          "id": "bipod",
+          "compatibleItems": [
+            "tacz_fork_tarkov:awp_bipod"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "muzzle",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "scope",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:awp_bipod",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:awp_bolt",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:awp_stock",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:awp_iron_sights",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:awp_magazine_standard",
+      "slots": []
+    }
+  ]
+}

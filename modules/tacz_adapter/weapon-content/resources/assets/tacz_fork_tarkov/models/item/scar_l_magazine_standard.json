@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "tacz_fork_tarkov:item/scar_l/scar_l_magazine_standard"
+  }
+}

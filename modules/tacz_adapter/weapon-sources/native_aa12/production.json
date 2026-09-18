@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceGun": "aa12",
-  "gunId": "tacz_assembly:aa12",
+  "gunId": "tacz_fork_tarkov:aa12",
   "sourceDirectory": "native_aa12",
   "rootDefinition": "aa12_lower",
   "parts": [
@@ -648,7 +648,7 @@
   },
   "weapon": {
     "schemaVersion": 1,
-    "gunId": "tacz_assembly:aa12",
+    "gunId": "tacz_fork_tarkov:aa12",
     "rootDefinition": "aa12_lower",
     "resourceDirectory": "aa12",
     "modelType": "tacz_native_aa12_assembly",
@@ -677,7 +677,8 @@
     "feed": "detachable_magazine",
     "nativeRig": true,
     "assemblyIcons": true,
-    "developmentSource": "native_aa12",
+    "authoringSource": "native_aa12",
+  "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:primary_weapon_1",
       "tactical_inventory:primary_weapon_2"
@@ -829,15 +830,15 @@
     "modules/tacz_adapter/weapon-sources/native_attachments/supplemental/manifest.json"
   ],
   "attachmentOverrideCatalogs": [
-    "data/tacz_assembly/native_attachments/standalone.json",
-    "data/tacz_assembly/m4a1/native_attachment_overrides.json",
-    "data/tacz_assembly/native_attachments/supplemental.json"
+    "data/tacz_fork_tarkov/native_attachments/standalone.json",
+    "data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json",
+    "data/tacz_fork_tarkov/native_attachments/supplemental.json"
   ],
   "integrationFragments": "/tmp/native-gun-integration/aa12",
   "supplementalAttachmentLibraries": [
     {
       "source": "modules/tacz_adapter/weapon-sources/native_attachments/supplemental",
-      "catalog": "data/tacz_assembly/native_attachments/supplemental.json"
+      "catalog": "data/tacz_fork_tarkov/native_attachments/supplemental.json"
     }
   ]
 }

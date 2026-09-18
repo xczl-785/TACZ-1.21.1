@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_fork_tarkov:mk14",
+  "rootDefinition": "mk14_lower",
+  "resourceDirectory": "mk14",
+  "modelType": "tacz_native_mk14_assembly",
+  "caliber": "762x51",
+  "magazinePath": [
+    "magazine"
+  ],
+  "requiredPaths": [
+    [
+      "upper"
+    ],
+    [
+      "upper",
+      "barrel"
+    ],
+    [
+      "upper",
+      "bolt"
+    ],
+    [
+      "upper",
+      "charging_handle"
+    ]
+  ],
+  "defaultFireMode": "semi",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "authoringSource": "native_mk14",
+  "developmentCategory": "tacz_fork_tarkov",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/mk14"
+}

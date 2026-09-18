@@ -1,0 +1,9 @@
+{
+  "name": "gun.tacz_fork_tarkov.m700",
+  "display": "tacz_fork_tarkov:m700",
+  "data": "tacz_fork_tarkov:m700",
+  "tooltip": "tacz.gun.m700.desc",
+  "type": "sniper",
+  "sort": 103,
+  "item_type": "tacz_fork_tarkov:m700"
+}

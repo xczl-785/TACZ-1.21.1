@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_fork_tarkov:p90",
+  "rootDefinition": "p90_body",
+  "resourceDirectory": "p90",
+  "modelType": "tacz_native_p90_assembly",
+  "caliber": "57x28",
+  "requiredPaths": [
+    [
+      "barrel"
+    ],
+    [
+      "charging_handle"
+    ]
+  ],
+  "defaultFireMode": "auto",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "authoringSource": "native_p90",
+  "developmentCategory": "tacz_fork_tarkov",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/p90",
+  "magazinePath": [
+    "magazine"
+  ]
+}

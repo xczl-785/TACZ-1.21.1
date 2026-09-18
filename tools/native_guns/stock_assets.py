@@ -8,7 +8,7 @@ import extract as shared
 R=shared.R;ex=shared.im.ex
 SOURCE=R/'modules/tacz_adapter/weapon-sources/native_m4a1/editable'
 RESOURCES=R/'modules/tacz_adapter/weapon-content/resources'
-CATALOG=Path('data/tacz_assembly/native_attachments/stocks.json')
+CATALOG=Path('data/tacz_fork_tarkov/native_attachments/stocks.json')
 
 def mount_offset(row):return shared.im.mount_offset(row)
 
@@ -49,10 +49,10 @@ def build(resources=RESOURCES,source_root=SOURCE):
         if aid in attachments:raise ValueError('Duplicate authored stock ID: '+aid)
         model,count=geometry(row,source_root)
         path='attachments/authored_stock/'+row['definitionId']
-        write(resources/f'assets/tacz_assembly/geo_models/{path}.json',model)
-        target=resources/f'assets/tacz_assembly/textures/{path}.png';target.parent.mkdir(parents=True,exist_ok=True)
+        write(resources/f'assets/tacz_fork_tarkov/geo_models/{path}.json',model)
+        target=resources/f'assets/tacz_fork_tarkov/textures/{path}.png';target.parent.mkdir(parents=True,exist_ok=True)
         target.write_bytes((source_root/row['texture']).read_bytes())
-        attachments[aid]={'model':'tacz_assembly:'+path,'texture':'tacz_assembly:'+path}
+        attachments[aid]={'model':'tacz_fork_tarkov:'+path,'texture':'tacz_fork_tarkov:'+path}
         evidence.append({'definitionId':row['definitionId'],'attachmentId':aid,'sourceModel':str((source_root/row['model']).relative_to(R)) if (source_root/row['model']).is_relative_to(R) else str(source_root/row['model']),
           'sourceModelSha256':ex.sha(source_root/row['model']),'sourceTextureSha256':ex.sha(source_root/row['texture']),
           'sourceGeometry':row['sourceGeometry'],'sourceGeometrySha256':ex.sha(R/row['sourceGeometry']),

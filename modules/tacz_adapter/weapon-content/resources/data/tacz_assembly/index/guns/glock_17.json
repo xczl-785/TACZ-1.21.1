@@ -1,9 +1,0 @@
-{
-  "name": "gun.tacz_assembly.glock_17",
-  "display": "tacz_assembly:glock_17",
-  "data": "tacz_assembly:glock_17",
-  "tooltip": "tacz.gun.glock_17.desc",
-  "type": "pistol",
-  "sort": 103,
-  "item_type": "tacz_assembly:glock_17"
-}

@@ -50,11 +50,11 @@ class NativeAssemblyIconRasterTest {
     }
     @Test void productionPresetRemovedStockAndBareReceiver() throws Exception {
         var base=java.nio.file.Path.of("weapon-content/resources");
-        var data=base.resolve("data/tacz_assembly/m4a1");
+        var data=base.resolve("data/tacz_fork_tarkov/m4a1");
         var engine=new dev.weaponassembly.api.AssemblyEngine(dev.weaponassembly.io.AssemblyJson.readCatalog(java.nio.file.Files.readString(data.resolve("catalog.json"))));
         var full=dev.weaponassembly.io.AssemblyJson.readSnapshot(java.nio.file.Files.readString(data.resolve("scene.json")),engine);
         Map<String,ModelGeometry> models;AssemblyMaterials materials;
-        try(var geometry=java.nio.file.Files.newBufferedReader(base.resolve("assets/tacz_assembly/m4a1/icon_geometry.json"));var library=java.nio.file.Files.newBufferedReader(data.resolve("library.json"));var bindings=java.nio.file.Files.newBufferedReader(data.resolve("materials.json"))){models=ModelGeometry.load(geometry);materials=AssemblyMaterials.load(library,bindings,models);}
+        try(var geometry=java.nio.file.Files.newBufferedReader(base.resolve("assets/tacz_fork_tarkov/m4a1/icon_geometry.json"));var library=java.nio.file.Files.newBufferedReader(data.resolve("library.json"));var bindings=java.nio.file.Files.newBufferedReader(data.resolve("materials.json"))){models=ModelGeometry.load(geometry);materials=AssemblyMaterials.load(library,bindings,models);}
         var textures=new HashMap<String,NativeAssemblyIconRaster.Texture>();
         for(var material:materials.all())if(!material.texture().isEmpty()){
             var image=javax.imageio.ImageIO.read(base.resolve("assets/"+material.texture().replace(':','/')).toFile());

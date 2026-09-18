@@ -23,14 +23,14 @@ class EditableContract(unittest.TestCase):
 
     def test_preview_and_held_use_same_normalized_uv_and_positions(self):
         report=im.ex.read(im.SOURCE/'editable-import-report.json');parts=im.ex.read(im.SOURCE/'manifest.json')['parts'];parts={p['definitionId']:p for p in parts}
-        high=im.ex.read(im.OUT/'assets/tacz_assembly/geo_models/gun/m4a1.json')['minecraft:geometry'][0];bones={b['name']:b for b in high['bones']}
-        atlas=Image.open(im.OUT/'assets/tacz_assembly/textures/gun/editable_m4a1.png').convert('RGBA')
+        high=im.ex.read(im.OUT/'assets/tacz_fork_tarkov/geo_models/gun/m4a1.json')['minecraft:geometry'][0];bones={b['name']:b for b in high['bones']}
+        atlas=Image.open(im.OUT/'assets/tacz_fork_tarkov/textures/gun/editable_m4a1.png').convert('RGBA')
         for row in report['parts']:
             d=row['definitionId'];entry=parts[d];mesh=im.ex.read(im.SOURCE/entry['model']);src=Image.open(im.SOURCE/entry['texture']).convert('RGBA')
             detached=row.get('runtimeMode')=='native_attachment'
             cx,cy=(0,0) if detached else row['atlasCell']
             if detached:
-                geo=im.ex.read(im.OUT/('assets/tacz_assembly/geo_models/attachments/'+d+'.json'))['minecraft:geometry'][0]
+                geo=im.ex.read(im.OUT/('assets/tacz_fork_tarkov/geo_models/attachments/'+d+'.json'))['minecraft:geometry'][0]
                 current_bones={b['name']:b for b in geo['bones']}
                 extra=im.ex.matrix(entry['anchorBone'],bones)
                 uvwidth,uvheight=geo['description']['texture_width'],geo['description']['texture_height']

@@ -16,7 +16,7 @@ import net.minecraft.world.item.component.CustomData;
 
 /** One immutable content definition. Installed ItemStacks remain the sole state owner. */
 public final class AssembledWeapon {
-    public final String PROFILE, ROOT, resourceDirectory, modelType, itemType, caliber, developmentSource;
+    public final String PROFILE, ROOT, resourceDirectory, modelType, itemType, caliber, authoringSource, developmentCategory;
     public final ResourceLocation GUN;
     private final String partIconDirectory;
     public final AssemblyCatalog CATALOG;
@@ -44,7 +44,9 @@ public final class AssembledWeapon {
         partIconDirectory=config.has("partIconDirectory")?config.get("partIconDirectory").getAsString():"textures/item";
         ResourceLocation.fromNamespaceAndPath(GUN.getNamespace(),partIconDirectory+"/part.png");
         modelType=config.get("modelType").getAsString(); itemType=config.has("itemType")?config.get("itemType").getAsString():PROFILE;
-        caliber=config.get("caliber").getAsString(); developmentSource=config.get("developmentSource").getAsString();
+        caliber=config.get("caliber").getAsString();
+        authoringSource=config.get("authoringSource").getAsString();
+        developmentCategory=config.get("developmentCategory").getAsString();
         feed=NativeAssemblyFeed.load(config);
         meshScale=nativeRig?1:config.get("meshScale").getAsFloat();
         if (!Float.isFinite(meshScale)||meshScale<=0) throw new IllegalArgumentException("Invalid mesh scale");

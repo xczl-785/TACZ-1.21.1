@@ -193,11 +193,11 @@ def make(gun, refresh=False):
     visual_bones={name:definitions for name,definitions in {'bullet':mags,'bullet_in_mag':mags,'bullet_in_barrel':[gun+'_barrel'],'bolt':[gun+'_bolt']}.items() if name in bones}
     if 'additional_magazine' in bones: visual_bones['additional_magazine']=mags
     always=['mag_standard','mag_extended_1','mag_extended_2','mag_extended_3','muzzle_default','stock_default']
-    cfg={'schemaVersion':1,'sourceGun':gun,'gunId':'tacz_assembly:'+gun,'sourceDirectory':'native_'+gun,
+    cfg={'schemaVersion':1,'sourceGun':gun,'gunId':'tacz_fork_tarkov:'+gun,'sourceDirectory':'native_'+gun,
       'rootDefinition':gun+'_'+spec['root'],'parts':parts,'slots':slots,'preset':preset,'presentationOnly':presentation_only,
-      'weapon':{'schemaVersion':1,'gunId':'tacz_assembly:'+gun,'rootDefinition':gun+'_'+spec['root'],'resourceDirectory':gun,
+      'weapon':{'schemaVersion':1,'gunId':'tacz_fork_tarkov:'+gun,'rootDefinition':gun+'_'+spec['root'],'resourceDirectory':gun,
        'modelType':'tacz_native_'+gun+'_assembly','caliber':spec['caliber'],'magazinePath':['magazine'],'requiredPaths':spec['required'],
-       'defaultFireMode':spec['fire'],'feed':'detachable_magazine','nativeRig':True,'assemblyIcons':True,'developmentSource':'native_'+gun,
+       'defaultFireMode':spec['fire'],'feed':'detachable_magazine','nativeRig':True,'assemblyIcons':True,'authoringSource':'native_'+gun,'developmentCategory':'tacz_fork_tarkov',
        'wearableSlots':['tactical_inventory:primary_weapon_1','tactical_inventory:primary_weapon_2'],'partIconDirectory':'textures/item/'+gun},
       'nativeProfile':{'schemaVersion':1,'attachmentPaths':spec['paths'],'attachmentOverrides':{},
        'sightAlternatives':[[spec['paths']['SCOPE']],spec['irons']]},
@@ -208,17 +208,17 @@ def make(gun, refresh=False):
       'slotLabels':{},'gunLabels':[gun.upper()+' · 原生实体组装',gun.upper()+' · Native Assembly'],
       'excludedAttachments':['tacz:ammo_mod_fmj','tacz:ammo_mod_hp','tacz:ammo_mod_i','tacz:ammo_mod_he','tacz:ammo_mod_slug'],
       'editableAttachmentCatalogs':['modules/tacz_adapter/weapon-sources/native_attachments/editable/manifest.json','modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json'],
-      'attachmentOverrideCatalogs':['data/tacz_assembly/native_attachments/standalone.json','data/tacz_assembly/m4a1/native_attachment_overrides.json'],
+      'attachmentOverrideCatalogs':['data/tacz_fork_tarkov/native_attachments/standalone.json','data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json'],
       'integrationFragments':'/tmp/native-gun-integration/'+gun}
     if gun == 'aa12':
         cfg['editableAttachmentCatalogs'].append('modules/tacz_adapter/weapon-sources/native_attachments/supplemental/manifest.json')
-        cfg['attachmentOverrideCatalogs'].append('data/tacz_assembly/native_attachments/supplemental.json')
-        cfg['supplementalAttachmentLibraries']=[{'source':'modules/tacz_adapter/weapon-sources/native_attachments/supplemental','catalog':'data/tacz_assembly/native_attachments/supplemental.json'}]
+        cfg['attachmentOverrideCatalogs'].append('data/tacz_fork_tarkov/native_attachments/supplemental.json')
+        cfg['supplementalAttachmentLibraries']=[{'source':'modules/tacz_adapter/weapon-sources/native_attachments/supplemental','catalog':'data/tacz_fork_tarkov/native_attachments/supplemental.json'}]
     # Only exclusions which actually occur in the native tag are retained.
     cfg['excludedAttachments']=[a for a in cfg['excludedAttachments'] if a in allowed]
     if 'STOCK' in spec['paths']:
         cfg['authoredStockAssets']=True
-        cfg['attachmentOverrideCatalogs'].append('data/tacz_assembly/native_attachments/stocks.json')
+        cfg['attachmentOverrideCatalogs'].append('data/tacz_fork_tarkov/native_attachments/stocks.json')
     write(root/'production.json',cfg); write(root/'magazine_variants/manifest.json',manifest)
     editable=root/'editable'; editmanifest={'schemaVersion':1,'parts':[]}
     for part in parts:
@@ -262,8 +262,8 @@ if __name__ == '__main__':
             if 'STOCK' in spec['paths']: cfg['authoredStockAssets']=True
             if gun == 'aa12':
                 cfg['editableAttachmentCatalogs']=list(dict.fromkeys(cfg['editableAttachmentCatalogs']+['modules/tacz_adapter/weapon-sources/native_attachments/supplemental/manifest.json']))
-                cfg['attachmentOverrideCatalogs']=list(dict.fromkeys(cfg['attachmentOverrideCatalogs']+['data/tacz_assembly/native_attachments/supplemental.json']))
-                cfg['supplementalAttachmentLibraries']=[{'source':'modules/tacz_adapter/weapon-sources/native_attachments/supplemental','catalog':'data/tacz_assembly/native_attachments/supplemental.json'}]
+                cfg['attachmentOverrideCatalogs']=list(dict.fromkeys(cfg['attachmentOverrideCatalogs']+['data/tacz_fork_tarkov/native_attachments/supplemental.json']))
+                cfg['supplementalAttachmentLibraries']=[{'source':'modules/tacz_adapter/weapon-sources/native_attachments/supplemental','catalog':'data/tacz_fork_tarkov/native_attachments/supplemental.json'}]
             idx=ex.read(ex.SRC/f'data/tacz/index/guns/{gun}.json'); display=ex.read(ex.asset(idx['display'],'display/guns','.json'))
             native_bones={bone['name'] for bone in ex.read(ex.asset(display['model'],'geo_models','.json'))['minecraft:geometry'][0]['bones']}
             cfg['visualRules']['boneRequirements']={bone:definitions for bone,definitions in cfg['visualRules'].get('boneRequirements',{}).items() if bone in native_bones}

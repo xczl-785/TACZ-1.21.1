@@ -18,14 +18,14 @@ import static org.junit.jupiter.api.Assertions.*;
 /** Complete retained-gun coverage over real registered ItemStacks, without creating a world. */
 class NativeRemainingStateTest {
     private static final List<String> GUNS=List.of("aa12","ai_awp","m700","m870","mk14","p90","qbz_191","scar_h","sks_tactical","uzi");
-    private static AssembledWeapon weapon(String name){return Objects.requireNonNull(AssembledWeapons.byId(ResourceLocation.parse("tacz_assembly:"+name)),name);}
+    private static AssembledWeapon weapon(String name){return Objects.requireNonNull(AssembledWeapons.byId(ResourceLocation.parse("tacz_fork_tarkov:"+name)),name);}
     @BeforeAll static void boot() throws Exception {
         NativeAssemblyStateTest.boot();
         for(String name:GUNS){var w=weapon(name);if(WeaponCapabilities.profile(w.preset()).isEmpty())WeaponCapabilities.register(w.PROFILE,new WeaponCapabilities.Profile(w.PROFILE,w.CATALOG,w.ROOT,w.DEFINITIONS,w.requiredPaths,w::definition));}
     }
     private static NativeAssemblyGunModel model(AssembledWeapon w,boolean low){
         var gson=new GsonBuilder().registerTypeAdapter(CubesItem.class,new CubesItem.Deserializer()).create();
-        var pojo=gson.fromJson(AssembledWeapon.resource("assets/tacz_assembly/geo_models/gun/"+(low?"lod/":"")+w.GUN.getPath()+".json"),BedrockModelPOJO.class);
+        var pojo=gson.fromJson(AssembledWeapon.resource("assets/tacz_fork_tarkov/geo_models/gun/"+(low?"lod/":"")+w.GUN.getPath()+".json"),BedrockModelPOJO.class);
         try{return new NativeAssemblyGunModel(pojo,BedrockVersion.NEW,w);}
         catch(RuntimeException failure){throw new AssertionError(w.GUN+" low="+low,failure);}
     }
@@ -50,7 +50,7 @@ class NativeRemainingStateTest {
     }
     @Test void allPhysicalRemovalsAndNativeCapacityVariantsAgreeAcrossHighAndLow(){
         for(String name:GUNS){var w=weapon(name);var hi=model(w,false);var low=model(w,true);var base=w.preset();
-            var batches=JsonParser.parseString(AssembledWeapon.resource("data/tacz_assembly/"+name+"/batches.json")).getAsJsonObject();
+            var batches=JsonParser.parseString(AssembledWeapon.resource("data/tacz_fork_tarkov/"+name+"/batches.json")).getAsJsonObject();
             var scenes=new ArrayList<ItemStack>();scenes.add(base);for(var path:installedPaths(w.PRESET,List.of()))scenes.add(remove(base,path));
             for(var entry:w.nativeAttachments.entrySet())if(entry.getKey().contains("extended_mag")){
                 var path=NativeAttachmentProjection.path(base,AttachmentType.EXTENDED_MAG,ItemStack.EMPTY);

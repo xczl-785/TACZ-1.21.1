@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item": "tacz_fork_tarkov:ump45",
+      "tags": [
+        "item_foundation:type/weapon/firearm/smg"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:ump_upper",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:ump_barrel",
+      "tags": [
+        "item_foundation:type/weapon_mod/barrel"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:ump_bolt",
+      "tags": [
+        "item_foundation:type/weapon_mod/receiver"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:ump_charging_handle",
+      "tags": [
+        "item_foundation:type/weapon_mod/charging_handle"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:ump_stock",
+      "tags": [
+        "item_foundation:type/weapon_mod/stock"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:ump_rails",
+      "tags": [
+        "item_foundation:type/weapon_mod/mount"
+      ]
+    },
+    {
+      "item": "tacz_fork_tarkov:ump_magazine_standard",
+      "tags": [
+        "item_foundation:type/weapon_mod/magazine"
+      ]
+    }
+  ]
+}

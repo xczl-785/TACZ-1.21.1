@@ -22,12 +22,10 @@ def write(p,value):
     if p.is_file() and json.loads(p.read_text())==value:return
     p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
 def validate_configuration(config):
-    adoption=(R/'modules/tacz_adapter/src/main/java/dev/tacticaltacz/GunAdoption.java').read_text()
-    calibers={gun:caliber for caliber,gun_text in re.findall(r'add\(map,"([^"]+)",(.*?)\);',adoption) for gun in re.findall(r'"([^"]+)"',gun_text)}
     gun=config['sourceGun']
     for part in config['parts']:
         if not part.get('inventoryType') or len(part.get('footprint',[]))!=2:raise ValueError('Missing inventory type/footprint for '+part['definitionId'])
-    if config['weapon']['caliber']!=calibers.get(gun):raise ValueError('Caliber differs from GunAdoption for '+gun)
+    if not isinstance(config['weapon'].get('caliber'),str) or not config['weapon']['caliber']:raise ValueError('Missing canonical caliber for '+gun)
     if config['weapon']['partIconDirectory']!='textures/item/'+gun:raise ValueError('Part icon directory must be gun-scoped: '+gun)
 
     weapon=config['weapon']

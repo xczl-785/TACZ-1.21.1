@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceGun": "ump45",
-  "gunId": "tacz_assembly:ump45",
+  "gunId": "tacz_fork_tarkov:ump45",
   "sourceDirectory": "native_ump45",
   "rootDefinition": "ump_lower",
   "parts": [
@@ -616,7 +616,7 @@
   },
   "weapon": {
     "schemaVersion": 1,
-    "gunId": "tacz_assembly:ump45",
+    "gunId": "tacz_fork_tarkov:ump45",
     "rootDefinition": "ump_lower",
     "resourceDirectory": "ump45",
     "modelType": "tacz_native_ump45_assembly",
@@ -645,7 +645,8 @@
     "feed": "detachable_magazine",
     "nativeRig": true,
     "assemblyIcons": true,
-    "developmentSource": "native_ump45",
+    "authoringSource": "native_ump45",
+  "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:primary_weapon_1",
       "tactical_inventory:primary_weapon_2"
@@ -800,8 +801,8 @@
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
   ],
   "attachmentOverrideCatalogs": [
-    "data/tacz_assembly/native_attachments/standalone.json",
-    "data/tacz_assembly/m4a1/native_attachment_overrides.json"
+    "data/tacz_fork_tarkov/native_attachments/standalone.json",
+    "data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json"
   ],
   "gunLabels": [
     "UMP45 · 原生实体组装",

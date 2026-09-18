@@ -18,7 +18,7 @@ class NativeAssemblyIconsFallbackTest {
         assertEquals(new dev.itemfoundation.client.api.ItemModelBounds.Bounds(-8,-8,8,8),NativeAssemblyIcons.bounds(ItemStack.EMPTY));
     }
     @Test void missingPhysicalIdentityDoesNotReachRenderingOrEscapeGui(){
-        var weapon=AssembledWeapons.byId(ResourceLocation.parse("tacz_assembly:m4a1"));
+        var weapon=AssembledWeapons.byId(ResourceLocation.parse("tacz_fork_tarkov:m4a1"));
         var malformed=new ItemStack(net.minecraft.core.registries.BuiltInRegistries.ITEM.get(weapon.GUN));
         var fallback=ResourceLocation.parse("test:native-icon");
         for(int i=0;i<3;i++){

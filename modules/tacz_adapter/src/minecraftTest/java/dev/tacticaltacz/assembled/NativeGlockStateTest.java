@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 /** Second native topology: actual registered stacks, no client/server or world startup. */
 class NativeGlockStateTest {
     @BeforeAll static void boot() throws Exception { NativeAssemblyStateTest.boot(); }
-    private static AssembledWeapon weapon(){return AssembledWeapons.byId(ResourceLocation.parse("tacz_assembly:glock_17"));}
+    private static AssembledWeapon weapon(){return AssembledWeapons.byId(ResourceLocation.parse("tacz_fork_tarkov:glock_17"));}
     private static ItemStack remove(ItemStack gun,String... path){return AssemblyGunExchange.plan(gun,ItemStack.EMPTY,List.of(path)).orElseThrow().held();}
     private static ItemStack install(ItemStack gun,String definition,String... path){return AssemblyGunExchange.plan(gun,weapon().createPart(definition),List.of(path)).orElseThrow().held();}
 
@@ -25,7 +25,7 @@ class NativeGlockStateTest {
             }
         }
         assertEquals("textures/item/glock_17/tacz_laser_compact.png",weapon().partIcon("tacz_laser_compact").getPath());
-        assertEquals("textures/item/tacz_laser_compact.png",AssembledWeapons.byId(ResourceLocation.parse("tacz_assembly:m4a1")).partIcon("tacz_laser_compact").getPath());
+        assertEquals("textures/item/tacz_laser_compact.png",AssembledWeapons.byId(ResourceLocation.parse("tacz_fork_tarkov:m4a1")).partIcon("tacz_laser_compact").getPath());
         assertThrows(IllegalArgumentException.class,()->weapon().partIcon("unknown"));
     }
 
@@ -33,7 +33,7 @@ class NativeGlockStateTest {
         var w=weapon();var gun=w.preset();
         assertEquals("9x19",dev.tacticaltacz.GunAdoption.caliber(gun));
         assertEquals(Set.of("tactical_inventory:sidearm"),w.wearableSlots);
-        assertEquals(Set.of("tactical_inventory:primary_weapon_1","tactical_inventory:primary_weapon_2"),AssembledWeapons.byId(ResourceLocation.parse("tacz_assembly:m4a1")).wearableSlots);
+        assertEquals(Set.of("tactical_inventory:primary_weapon_1","tactical_inventory:primary_weapon_2"),AssembledWeapons.byId(ResourceLocation.parse("tacz_fork_tarkov:m4a1")).wearableSlots);
         assertEquals(5,AssemblyTrees.flatten(gun).size());
         AssemblyTrees.validate(gun,AssembledWeapon.identity(gun));
         var before=gun.copy();var removed=remove(gun,"slide");
@@ -75,10 +75,10 @@ class NativeGlockStateTest {
 
     @Test void bothNativeRenderPathsMaskTheSamePartsWithoutSharedInstanceLeakage(){
         var gson=new GsonBuilder().registerTypeAdapter(com.tacz.guns.client.resource.pojo.model.CubesItem.class,new com.tacz.guns.client.resource.pojo.model.CubesItem.Deserializer()).create();
-        for(String resource:List.of("assets/tacz_assembly/geo_models/gun/glock_17.json","assets/tacz_assembly/geo_models/gun/lod/glock_17.json")){
+        for(String resource:List.of("assets/tacz_fork_tarkov/geo_models/gun/glock_17.json","assets/tacz_fork_tarkov/geo_models/gun/lod/glock_17.json")){
             var pojo=gson.fromJson(AssembledWeapon.resource(resource),com.tacz.guns.client.resource.pojo.model.BedrockModelPOJO.class);
             var model=new NativeAssemblyGunModel(pojo,com.tacz.guns.client.resource.pojo.model.BedrockVersion.NEW,weapon());
-            var batches=JsonParser.parseString(AssembledWeapon.resource("data/tacz_assembly/glock_17/batches.json")).getAsJsonObject();
+            var batches=JsonParser.parseString(AssembledWeapon.resource("data/tacz_fork_tarkov/glock_17/batches.json")).getAsJsonObject();
             var gun=weapon().preset();model.prepareGeometry(gun);var original=model.visibleBatchNames();assertFalse(original.isEmpty());
             var missingSlide=remove(gun,"slide");model.prepareGeometry(missingSlide);
             var missingDefinitions=weapon().projectEnabled(missingSlide);var installed=new HashSet<String>();collect(missingDefinitions,installed);
@@ -119,7 +119,7 @@ class NativeGlockStateTest {
         var models=NativeAssemblyView.geometry(weapon());var materials=NativeAssemblyView.materials(weapon(),models);
         assertEquals(weapon().ITEMS.keySet(),models.keySet());
         for(var entry:models.entrySet())for(var mesh:entry.getValue().meshes())for(var triangle:mesh.triangles())assertFalse(materials.resolve(entry.getKey(),triangle.region()).texture().isEmpty());
-        assertEquals(AssembledWeapon.resource("data/tacz_assembly/glock_17/preview.json"),AssembledWeapon.resource("assets/tacz_assembly/glock_17/icon_geometry.json"));
+        assertEquals(AssembledWeapon.resource("data/tacz_fork_tarkov/glock_17/preview.json"),AssembledWeapon.resource("assets/tacz_fork_tarkov/glock_17/icon_geometry.json"));
         var external=new NativeAttachmentModels(weapon());
         for(String definition:List.of("tacz_muzzle_silencer_mirage","tacz_muzzle_silencer_ptilopsis","tacz_muzzle_silencer_wraith","tacz_laser_compact","tacz_laser_nightstick"))assertNotNull(external.resolve(weapon().createPart(definition)));
         assertNull(external.resolve(weapon().createPart("tacz_sight_rmr_dot")));

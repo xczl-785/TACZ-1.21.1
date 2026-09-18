@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "gunId": "tacz_fork_tarkov:scar_l",
+  "rootDefinition": "scar_l_lower",
+  "resourceDirectory": "scar_l",
+  "modelType": "tacz_native_scar_l_assembly",
+  "caliber": "556x45",
+  "magazinePath": [
+    "magazine"
+  ],
+  "requiredPaths": [
+    [
+      "upper"
+    ],
+    [
+      "upper",
+      "barrel"
+    ],
+    [
+      "upper",
+      "barrel",
+      "gas_system"
+    ],
+    [
+      "upper",
+      "bolt"
+    ]
+  ],
+  "defaultFireMode": "auto",
+  "feed": "detachable_magazine",
+  "nativeRig": true,
+  "assemblyIcons": true,
+  "authoringSource": "native_scar_l",
+  "developmentCategory": "tacz_fork_tarkov",
+  "wearableSlots": [
+    "tactical_inventory:primary_weapon_1",
+    "tactical_inventory:primary_weapon_2"
+  ],
+  "partIconDirectory": "textures/item/scar_l"
+}

@@ -1,0 +1,9 @@
+{
+  "name": "gun.tacz_fork_tarkov.mk14",
+  "display": "tacz_fork_tarkov:mk14",
+  "data": "tacz_fork_tarkov:mk14",
+  "tooltip": "tacz.gun.mk14.desc",
+  "type": "rifle",
+  "sort": 103,
+  "item_type": "tacz_fork_tarkov:mk14"
+}

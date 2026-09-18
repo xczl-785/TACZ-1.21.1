@@ -21,7 +21,7 @@
 
 M870是管式弹仓，不是可拆卸弹匣。AA12使用另一组extended_mag等级，不在本批9条定义中。其他步枪虽复用M4已接入的等级ID，也仍需在各枪拆件时提取自己的实际弹匣几何，不能把M4的弹匣外形套过去。
 
-枪口兼容由原生标签展开，见打包数据 `data/tacz_assembly/native_attachments/catalog.json`。每个源manifest记录原始几何、纹理、相关定义/标签/动画/脚本哈希，弹匣额外记录容量、变体骨骼和运动归属；保留原版权/许可。
+枪口兼容由原生标签展开，见打包数据 `data/tacz_fork_tarkov/native_attachments/catalog.json`。每个源manifest记录原始几何、纹理、相关定义/标签/动画/脚本哈希，弹匣额外记录容量、变体骨骼和运动归属；保留原版权/许可。
 
 ## 当前完成程度
 

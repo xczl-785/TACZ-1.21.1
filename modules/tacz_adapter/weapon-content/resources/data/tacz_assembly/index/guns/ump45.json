@@ -1,9 +1,0 @@
-{
-  "name": "gun.tacz_assembly.ump45",
-  "display": "tacz_assembly:ump45",
-  "data": "tacz_assembly:ump45",
-  "tooltip": "tacz.gun.ump45.desc",
-  "type": "smg",
-  "sort": 103,
-  "item_type": "tacz_assembly:ump45"
-}

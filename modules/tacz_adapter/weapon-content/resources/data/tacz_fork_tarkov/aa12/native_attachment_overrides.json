@@ -1,0 +1,66 @@
+{
+  "tacz:grip_cobra": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_cobra",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_cobra"
+  },
+  "tacz:grip_cqr": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_cqr",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_cqr"
+  },
+  "tacz:grip_magpul_afg_2": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_magpul_afg_2",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_magpul_afg_2"
+  },
+  "tacz:grip_osovets_black": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_osovets_black",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_osovets_black"
+  },
+  "tacz:grip_rk0": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_rk0",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_rk0"
+  },
+  "tacz:grip_rk1_b25u": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_rk1_b25u",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_rk1_b25u"
+  },
+  "tacz:grip_rk6": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_rk6",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_rk6"
+  },
+  "tacz:grip_se_5": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_se_5",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_se_5"
+  },
+  "tacz:grip_td": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_td",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_td"
+  },
+  "tacz:grip_vertical_military": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_vertical_military",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_vertical_military"
+  },
+  "tacz:grip_vertical_ranger": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_vertical_ranger",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_vertical_ranger"
+  },
+  "tacz:grip_vertical_talon": {
+    "model": "tacz_fork_tarkov:attachments/tacz_grip_vertical_talon",
+    "texture": "tacz_fork_tarkov:attachments/tacz_grip_vertical_talon"
+  },
+  "tacz:muzzle_brake_mastiff_sg": {
+    "model": "tacz_fork_tarkov:attachments/muzzle_brake_mastiff_sg",
+    "texture": "tacz_fork_tarkov:attachments/muzzle_brake_mastiff_sg"
+  },
+  "tacz:muzzle_choke_sg": {
+    "model": "tacz_fork_tarkov:attachments/muzzle_choke_sg",
+    "texture": "tacz_fork_tarkov:attachments/muzzle_choke_sg"
+  },
+  "tacz:muzzle_duckbill_sg": {
+    "model": "tacz_fork_tarkov:attachments/muzzle_duckbill_sg",
+    "texture": "tacz_fork_tarkov:attachments/muzzle_duckbill_sg"
+  },
+  "tacz:muzzle_silencer_sg": {
+    "model": "tacz_fork_tarkov:attachments/muzzle_silencer_sg",
+    "texture": "tacz_fork_tarkov:attachments/muzzle_silencer_sg"
+  }
+}

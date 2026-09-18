@@ -6,7 +6,7 @@ import base64,copy,hashlib,json,math
 import numpy as np
 from PIL import Image
 import export_parts as ex
-R=ex.R; SOURCE=ex.OUT; EDIT=SOURCE/'editable'; OUT=R/'modules/tacz_adapter/weapon-content/resources'; BASE=OUT/'data/tacz_assembly/m4a1'
+R=ex.R; SOURCE=ex.OUT; EDIT=SOURCE/'editable'; OUT=R/'modules/tacz_adapter/weapon-content/resources'; BASE=OUT/'data/tacz_fork_tarkov/m4a1'
 
 def write(p,d):
     p.parent.mkdir(parents=True,exist_ok=True)
@@ -98,7 +98,7 @@ def build():
     scene=ex.read(BASE/'scene.json');assert {n['definitionId'] for n in scene['nodes']} <= defaults
     assert len(defaults)==len(rows), 'Duplicate editable definitions'
     parsed={r['definitionId']:load_part(r) for r in rows}
-    highpath=OUT/'assets/tacz_assembly/geo_models/gun/m4a1.json';lowpath=OUT/'assets/tacz_assembly/geo_models/gun/lod/m4a1.json'
+    highpath=OUT/'assets/tacz_fork_tarkov/geo_models/gun/m4a1.json';lowpath=OUT/'assets/tacz_fork_tarkov/geo_models/gun/lod/m4a1.json'
     high=ex.read(highpath);low=ex.read(lowpath);batches=ex.read(BASE/'batches.json');hb=high['minecraft:geometry'][0]['bones'];lb=low['minecraft:geometry'][0]['bones']
     original=ex.read(ex.asset('tacz:gun/m4a1_geo','geo_models','.json'));native={b['name']:b for b in original['minecraft:geometry'][0]['bones']}
     highuv=[original['minecraft:geometry'][0]['description'][k] for k in ['texture_width','texture_height']]
@@ -131,10 +131,10 @@ def build():
             geometry=copy.deepcopy(ex.read(R/row['sourceGeometry']))
             geometry['minecraft:geometry'][0]['bones']=list(bones.values())
             geometry['minecraft:geometry'][0]['description'].update(texture_width=uvsize[0],texture_height=uvsize[1])
-            model_ref='tacz_assembly:attachments/'+d
-            texture_ref='tacz_assembly:attachments/'+d
-            write(OUT/('assets/tacz_assembly/geo_models/attachments/'+d+'.json'),geometry)
-            texture_path=OUT/('assets/tacz_assembly/textures/attachments/'+d+'.png');texture_path.parent.mkdir(parents=True,exist_ok=True)
+            model_ref='tacz_fork_tarkov:attachments/'+d
+            texture_ref='tacz_fork_tarkov:attachments/'+d
+            write(OUT/('assets/tacz_fork_tarkov/geo_models/attachments/'+d+'.json'),geometry)
+            texture_path=OUT/('assets/tacz_fork_tarkov/textures/attachments/'+d+'.png');texture_path.parent.mkdir(parents=True,exist_ok=True)
             texture_path.write_bytes((EDIT/row['texture']).read_bytes())
             override={'model':model_ref,'texture':texture_ref}
             if attachment_displays[sourceparts[d]['itemId']].get('lod'):
@@ -143,8 +143,8 @@ def build():
                     cubes=bone.get('cubes',[])
                     order=sorted(range(len(cubes)),key=lambda j:-sum(cubes[j]['size'][a]*cubes[j]['size'][b] for a,b in [(0,1),(0,2),(1,2)]))[:2]
                     if cubes:bone['cubes']=[cubes[j] for j in sorted(order)]
-                write(OUT/('assets/tacz_assembly/geo_models/attachments/lod/'+d+'.json'),lod)
-                override.update(lodModel='tacz_assembly:attachments/lod/'+d,lodTexture=texture_ref)
+                write(OUT/('assets/tacz_fork_tarkov/geo_models/attachments/lod/'+d+'.json'),lod)
+                override.update(lodModel='tacz_fork_tarkov:attachments/lod/'+d,lodTexture=texture_ref)
             attachment_overrides[sourceparts[d]['itemId']]=override
 
         mount=row.get('nativeMount');stock=mount is not None
@@ -191,8 +191,8 @@ def build():
         proof.append({'definitionId':d,'cubes':count,'source':row['model'],'modelSha256':ex.sha(EDIT/row['model']),'textureSha256':ex.sha(EDIT/row['texture']),'uvSize':uvsize,'atlasCell':None if detached else cell,'runtimeMode':'native_attachment' if detached else 'inline'})
     for geo,path in [(high,highpath),(low,lowpath)]:
         geo['minecraft:geometry'][0]['description'].update(texture_width=atlas.width,texture_height=atlas.height);write(path,geo)
-    atlaspath=OUT/'assets/tacz_assembly/textures/gun/editable_m4a1.png';atlaspath.parent.mkdir(parents=True,exist_ok=True);atlas.save(atlaspath)
-    displaypath=OUT/'assets/tacz_assembly/display/guns/m4a1.json';display=ex.read(displaypath);display['texture']='tacz_assembly:gun/editable_m4a1';display['lod']['texture']=display['texture'];write(displaypath,display)
+    atlaspath=OUT/'assets/tacz_fork_tarkov/textures/gun/editable_m4a1.png';atlaspath.parent.mkdir(parents=True,exist_ok=True);atlas.save(atlaspath)
+    displaypath=OUT/'assets/tacz_fork_tarkov/display/guns/m4a1.json';display=ex.read(displaypath);display['texture']='tacz_fork_tarkov:gun/editable_m4a1';display['lod']['texture']=display['texture'];write(displaypath,display)
     write(BASE/'batches.json',batches)
     inline={}
     for row in rows:

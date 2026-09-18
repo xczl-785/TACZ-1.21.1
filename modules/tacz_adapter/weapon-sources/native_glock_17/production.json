@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceGun": "glock_17",
-  "gunId": "tacz_assembly:glock_17",
+  "gunId": "tacz_fork_tarkov:glock_17",
   "sourceDirectory": "native_glock_17",
   "rootDefinition": "glock_frame",
   "parts": [
@@ -338,7 +338,7 @@
   },
   "weapon": {
     "schemaVersion": 1,
-    "gunId": "tacz_assembly:glock_17",
+    "gunId": "tacz_fork_tarkov:glock_17",
     "rootDefinition": "glock_frame",
     "resourceDirectory": "glock_17",
     "modelType": "tacz_native_glock_17_assembly",
@@ -358,7 +358,8 @@
     "feed": "detachable_magazine",
     "nativeRig": true,
     "assemblyIcons": true,
-    "developmentSource": "native_glock_17",
+    "authoringSource": "native_glock_17",
+  "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:sidearm"
     ],
@@ -505,8 +506,8 @@
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
   ],
   "attachmentOverrideCatalogs": [
-    "data/tacz_assembly/native_attachments/standalone.json",
-    "data/tacz_assembly/m4a1/native_attachment_overrides.json"
+    "data/tacz_fork_tarkov/native_attachments/standalone.json",
+    "data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json"
   ],
   "gunLabels": [
     "Glock 17 · 原生实体组装",

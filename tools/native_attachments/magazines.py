@@ -92,14 +92,14 @@ def build(root=ROOT,resources=RES):
         geo['minecraft:geometry'][0]['bones']=[bones[n] for n in row['preservedBones']]
         geo['minecraft:geometry'][0]['description'].update(identifier='geometry.native_magazine.'+row['definitionId'],texture_width=uv[0],texture_height=uv[1])
         path='gun_parts/'+row['definitionId']
-        im.write(resources/('assets/tacz_assembly/geo_models/'+path+'.json'),geo)
-        p=resources/('assets/tacz_assembly/textures/'+path+'.png');p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes((root/row['texture']).read_bytes())
+        im.write(resources/('assets/tacz_fork_tarkov/geo_models/'+path+'.json'),geo)
+        p=resources/('assets/tacz_fork_tarkov/textures/'+path+'.png');p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes((root/row['texture']).read_bytes())
         for extra in row['auxiliaryTextures']:
             suffix=Path(extra['file']).stem.removeprefix('texture')
             p.with_name(p.stem+suffix+'.png').write_bytes((root/extra['file']).read_bytes())
         entries.append({k:row[k] for k in ('definitionId','gunId','attachmentId','level','variantBone','preservedBones','motionOwnership','nativeAnimation','nativeReloadScript','capacity','runtimeMode','integrationStatus')}
-                       |{'model':'tacz_assembly:'+path,'texture':'tacz_assembly:'+path,'cubes':count})
-    im.write(resources/'data/tacz_assembly/native_attachments/magazine_variants.json',{'schemaVersion':1,'variants':entries})
+                       |{'model':'tacz_fork_tarkov:'+path,'texture':'tacz_fork_tarkov:'+path,'cubes':count})
+    im.write(resources/'data/tacz_fork_tarkov/native_attachments/magazine_variants.json',{'schemaVersion':1,'variants':entries})
     print('Prepared magazine variants:',len(entries),'cubes:',sum(e['cubes'] for e in entries))
 
 if __name__=='__main__':

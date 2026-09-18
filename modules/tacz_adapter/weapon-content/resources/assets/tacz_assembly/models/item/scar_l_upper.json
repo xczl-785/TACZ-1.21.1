@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tacz_assembly:item/scar_l/scar_l_upper"
-  }
-}

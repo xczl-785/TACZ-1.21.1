@@ -13,7 +13,7 @@ class WorkbenchLayoutTest(unittest.TestCase):
         self.assertNotIn('http://',html)
         self.assertNotIn('https://',html)
     def test_native_resource_contract_is_complete(self):
-        root=server.PROJECT/'modules/tacz_adapter/weapon-content/resources/data/tacz_assembly'
+        root=server.PROJECT/'modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov'
         weapons=list(root.glob('*/weapon.json'));self.assertGreaterEqual(len(weapons),15)
         for weapon in weapons:
             data=json.loads(weapon.read_text())

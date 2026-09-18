@@ -21,11 +21,11 @@ class AuthoredStocksTest(unittest.TestCase):
                 _,expected,uv,image,count=stocks.shared.load_part(row,stocks.SOURCE);image.close()
                 expected=stocks.shared.im.shifted_bones(expected,stocks.mount_offset(row))
                 entry=result['attachments'][aid];resource=entry['model'].split(':')[1]
-                shape=stocks.ex.read(target/f'assets/tacz_assembly/geo_models/{resource}.json')['minecraft:geometry'][0]
+                shape=stocks.ex.read(target/f'assets/tacz_fork_tarkov/geo_models/{resource}.json')['minecraft:geometry'][0]
                 actual={b['name']:b for b in shape['bones']}
                 self.assertEqual(expected,actual)
                 self.assertEqual(uv,[shape['description'][k] for k in ('texture_width','texture_height')])
-                self.assertEqual((stocks.SOURCE/row['texture']).read_bytes(),(target/f'assets/tacz_assembly/textures/{resource}.png').read_bytes())
+                self.assertEqual((stocks.SOURCE/row['texture']).read_bytes(),(target/f'assets/tacz_fork_tarkov/textures/{resource}.png').read_bytes())
                 for name,bone in expected.items():
                     for before,after in zip(bone.get('cubes',[]),actual[name].get('cubes',[])):
                         a,_=stocks.ex.cube_geometry(bone,before,expected,np.eye(4));b,_=stocks.ex.cube_geometry(actual[name],after,actual,np.eye(4))
@@ -49,12 +49,12 @@ class AuthoredStocksTest(unittest.TestCase):
             with Image.open(root/row['texture']) as image:
                 changed=image.convert('RGBA');changed.putpixel((0,0),(11,22,33,255));changed.save(root/row['texture'])
             result=stocks.build(out,root);entry=result['attachments'][aid];path=entry['model'].split(':')[1]
-            actual=stocks.ex.read(out/f'assets/tacz_assembly/geo_models/{path}.json')
+            actual=stocks.ex.read(out/f'assets/tacz_fork_tarkov/geo_models/{path}.json')
             self.assertNotEqual(baseline,actual)
             before=next(b for b in baseline['minecraft:geometry'][0]['bones'] if b.get('cubes'))['cubes'][0]
             after=next(b for b in actual['minecraft:geometry'][0]['bones'] if b.get('cubes'))['cubes'][0]
             self.assertAlmostEqual(before['origin'][0]-.5,after['origin'][0])
             self.assertNotEqual(before['uv'][face],after['uv'][face])
-            self.assertEqual((root/row['texture']).read_bytes(),(out/f'assets/tacz_assembly/textures/{path}.png').read_bytes())
+            self.assertEqual((root/row['texture']).read_bytes(),(out/f'assets/tacz_fork_tarkov/textures/{path}.png').read_bytes())
 
 if __name__=='__main__':unittest.main()

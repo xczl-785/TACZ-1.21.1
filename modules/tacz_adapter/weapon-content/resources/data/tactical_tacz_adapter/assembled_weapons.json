@@ -1,23 +1,20 @@
 {
   "schemaVersion": 1,
   "weapons": [
-    "data/newmod_adar/adar/weapon.json",
-    "data/newmod_m4a1/m4a1/weapon.json",
-    "data/newmod_radian/radian/weapon.json",
-    "data/tacz_assembly/m4a1/weapon.json",
-    "data/tacz_assembly/glock_17/weapon.json",
-    "data/tacz_assembly/m16a1/weapon.json",
-    "data/tacz_assembly/scar_l/weapon.json",
-    "data/tacz_assembly/ump45/weapon.json",
-    "data/tacz_assembly/aa12/weapon.json",
-    "data/tacz_assembly/ai_awp/weapon.json",
-    "data/tacz_assembly/m700/weapon.json",
-    "data/tacz_assembly/m870/weapon.json",
-    "data/tacz_assembly/mk14/weapon.json",
-    "data/tacz_assembly/p90/weapon.json",
-    "data/tacz_assembly/qbz_191/weapon.json",
-    "data/tacz_assembly/scar_h/weapon.json",
-    "data/tacz_assembly/sks_tactical/weapon.json",
-    "data/tacz_assembly/uzi/weapon.json"
+    "data/tacz_fork_tarkov/m4a1/weapon.json",
+    "data/tacz_fork_tarkov/glock_17/weapon.json",
+    "data/tacz_fork_tarkov/m16a1/weapon.json",
+    "data/tacz_fork_tarkov/scar_l/weapon.json",
+    "data/tacz_fork_tarkov/ump45/weapon.json",
+    "data/tacz_fork_tarkov/aa12/weapon.json",
+    "data/tacz_fork_tarkov/ai_awp/weapon.json",
+    "data/tacz_fork_tarkov/m700/weapon.json",
+    "data/tacz_fork_tarkov/m870/weapon.json",
+    "data/tacz_fork_tarkov/mk14/weapon.json",
+    "data/tacz_fork_tarkov/p90/weapon.json",
+    "data/tacz_fork_tarkov/qbz_191/weapon.json",
+    "data/tacz_fork_tarkov/scar_h/weapon.json",
+    "data/tacz_fork_tarkov/sks_tactical/weapon.json",
+    "data/tacz_fork_tarkov/uzi/weapon.json"
   ]
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceGun": "scar_l",
-  "gunId": "tacz_assembly:scar_l",
+  "gunId": "tacz_fork_tarkov:scar_l",
   "sourceDirectory": "native_scar_l",
   "rootDefinition": "scar_l_lower",
   "parts": [
@@ -906,7 +906,7 @@
   },
   "weapon": {
     "schemaVersion": 1,
-    "gunId": "tacz_assembly:scar_l",
+    "gunId": "tacz_fork_tarkov:scar_l",
     "rootDefinition": "scar_l_lower",
     "resourceDirectory": "scar_l",
     "modelType": "tacz_native_scar_l_assembly",
@@ -936,7 +936,8 @@
     "feed": "detachable_magazine",
     "nativeRig": true,
     "assemblyIcons": true,
-    "developmentSource": "native_scar_l",
+    "authoringSource": "native_scar_l",
+  "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:primary_weapon_1",
       "tactical_inventory:primary_weapon_2"
@@ -1193,9 +1194,9 @@
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
   ],
   "attachmentOverrideCatalogs": [
-    "data/tacz_assembly/native_attachments/standalone.json",
-    "data/tacz_assembly/m4a1/native_attachment_overrides.json",
-    "data/tacz_assembly/native_attachments/stocks.json"
+    "data/tacz_fork_tarkov/native_attachments/standalone.json",
+    "data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json",
+    "data/tacz_fork_tarkov/native_attachments/stocks.json"
   ],
   "gunLabels": [
     "SCAR-L · 原生实体组装",

@@ -8,7 +8,7 @@ from PIL import Image
 R=Path(__file__).resolve().parents[2]
 SRC=R/'src/main/resources/assets/tacz/custom/tacz_default_gun'
 OUT=R/'modules/tacz_adapter/weapon-sources/native_m4a1'
-DATA=R/'modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1'
+DATA=R/'modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1'
 S=np.array([1.,-1.,1.])
 # Native muzzle is -Z. A proper Y half-turn preserves handedness in art space.
 ART=np.diag([-1.,-1.,-1.,1.]) # Java Y-down -> art Y-up and native Y half-turn

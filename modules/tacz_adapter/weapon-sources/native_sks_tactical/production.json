@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "sourceGun": "sks_tactical",
-  "gunId": "tacz_assembly:sks_tactical",
+  "gunId": "tacz_fork_tarkov:sks_tactical",
   "sourceDirectory": "native_sks_tactical",
   "rootDefinition": "sks_tactical_lower",
   "parts": [
@@ -769,7 +769,7 @@
   },
   "weapon": {
     "schemaVersion": 1,
-    "gunId": "tacz_assembly:sks_tactical",
+    "gunId": "tacz_fork_tarkov:sks_tactical",
     "rootDefinition": "sks_tactical_lower",
     "resourceDirectory": "sks_tactical",
     "modelType": "tacz_native_sks_tactical_assembly",
@@ -794,7 +794,8 @@
     "feed": "detachable_magazine",
     "nativeRig": true,
     "assemblyIcons": true,
-    "developmentSource": "native_sks_tactical",
+    "authoringSource": "native_sks_tactical",
+  "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:primary_weapon_1",
       "tactical_inventory:primary_weapon_2"
@@ -962,9 +963,9 @@
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/manifest.json"
   ],
   "attachmentOverrideCatalogs": [
-    "data/tacz_assembly/native_attachments/standalone.json",
-    "data/tacz_assembly/m4a1/native_attachment_overrides.json",
-    "data/tacz_assembly/native_attachments/stocks.json"
+    "data/tacz_fork_tarkov/native_attachments/standalone.json",
+    "data/tacz_fork_tarkov/m4a1/native_attachment_overrides.json",
+    "data/tacz_fork_tarkov/native_attachments/stocks.json"
   ],
   "integrationFragments": "/tmp/native-gun-integration/sks_tactical",
   "authoredStockAssets": true

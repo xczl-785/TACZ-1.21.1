@@ -14,15 +14,15 @@ import static org.junit.jupiter.api.Assertions.*;
 /** Real assembly projections and native functional callbacks, without GL, client or world startup. */
 class NativeScarDisplayTest {
     @BeforeAll static void boot() throws Exception {NativeAssemblyStateTest.boot();}
-    private static AssembledWeapon weapon(){return AssembledWeapons.byId(ResourceLocation.parse("tacz_assembly:scar_l"));}
+    private static AssembledWeapon weapon(){return AssembledWeapons.byId(ResourceLocation.parse("tacz_fork_tarkov:scar_l"));}
     private static ItemStack remove(ItemStack gun,String... path){return AssemblyGunExchange.plan(gun,ItemStack.EMPTY,List.of(path)).orElseThrow().held();}
     private static ItemStack install(ItemStack gun,String definition,String... path){return AssemblyGunExchange.plan(gun,weapon().createPart(definition),List.of(path)).orElseThrow().held();}
     private static NativeAssemblyGunModel model(boolean low){
         var gson=new GsonBuilder().registerTypeAdapter(CubesItem.class,new CubesItem.Deserializer()).create();
-        var pojo=gson.fromJson(AssembledWeapon.resource("assets/tacz_assembly/geo_models/gun/"+(low?"lod/":"")+"scar_l.json"),BedrockModelPOJO.class);
+        var pojo=gson.fromJson(AssembledWeapon.resource("assets/tacz_fork_tarkov/geo_models/gun/"+(low?"lod/":"")+"scar_l.json"),BedrockModelPOJO.class);
         return new NativeAssemblyGunModel(pojo,BedrockVersion.NEW,weapon());
     }
-    private static JsonObject batches(){return JsonParser.parseString(AssembledWeapon.resource("data/tacz_assembly/scar_l/batches.json")).getAsJsonObject();}
+    private static JsonObject batches(){return JsonParser.parseString(AssembledWeapon.resource("data/tacz_fork_tarkov/scar_l/batches.json")).getAsJsonObject();}
     private static BedrockPart find(BedrockPart root,String name){
         if(name.equals(root.name))return root;
         for(var child:root.children){var result=find(child,name);if(result!=null)return result;}

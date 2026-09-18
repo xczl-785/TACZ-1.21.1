@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "newmod_adar:item/part_5aaa5e60e5b5b000140293d6"
-  }
-}

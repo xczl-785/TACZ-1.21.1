@@ -10,7 +10,7 @@ def validate(resources=p.RES,weapon=None):
     resources=Path(resources)
     if weapon is None:weapon=p.ex.read(p.DEFAULT)['weapon']
     ns,gun=weapon['gunId'].split(':');base=resources/f'data/{ns}/{weapon["resourceDirectory"]}';assets=resources/f'assets/{ns}'
-    source_root=p.R/'modules/tacz_adapter/weapon-sources'/weapon['developmentSource'];config=p.ex.read(source_root/'production.json');p.validate_configuration(config)
+    source_root=p.R/'modules/tacz_adapter/weapon-sources'/weapon['authoringSource'];config=p.ex.read(source_root/'production.json');p.validate_configuration(config)
     _,_,_,original_display,original_path,original_texture,original_data=p.inputs(config)
     assert p.ex.read(base/'weapon.json')==weapon==config['weapon']
     report=p.ex.read(base/'geometry-evidence.json');assert report==p.ex.read(source_root/'build-report.json')

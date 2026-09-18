@@ -8,7 +8,7 @@ def adopt(config_path):
     config=p.ex.read(config_path)
     target=config_path.parent/'mounts.json'
     if target.exists():raise ValueError('Refuse overwriting authored mounts: '+str(target))
-    base=p.RES/'data/tacz_assembly'/config['sourceGun']
+    base=p.RES/'data/tacz_fork_tarkov'/config['sourceGun']
     anchors=p.ex.read(base/'workbench-anchors.json')['anchors']
     models=p.ex.read(base/'preview.json')['models']
     source={'schemaVersion':1,'coordinateSystem':'assembly +Z muzzle, original model units',

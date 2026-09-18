@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "items": [
+    {
+      "itemId": "tacz_fork_tarkov:scar_h",
+      "slots": [
+        {
+          "id": "upper",
+          "compatibleItems": [
+            "tacz_fork_tarkov:scar_h_upper"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "pistol_grip",
+          "compatibleItems": [
+            "tacz_fork_tarkov:scar_h_pistol_grip"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "stock",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_fork_tarkov:scar_h_stock"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "magazine",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_fork_tarkov:scar_h_magazine_standard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_upper",
+      "slots": [
+        {
+          "id": "handguard",
+          "compatibleItems": [
+            "tacz_fork_tarkov:scar_h_handguard"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "barrel",
+          "compatibleItems": [
+            "tacz_fork_tarkov:scar_h_barrel"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "bolt",
+          "compatibleItems": [
+            "tacz_fork_tarkov:scar_h_bolt"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "front_sight",
+          "compatibleItems": [
+            "tacz_fork_tarkov:scar_h_front_sight"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "rear_sight",
+          "compatibleItems": [
+            "tacz_fork_tarkov:scar_h_rear_sight"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "scope",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "grip",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "laser",
+          "compatibleItems": [
+            "tacz:attachment"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_handguard",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_barrel",
+      "slots": [
+        {
+          "id": "gas_system",
+          "compatibleItems": [
+            "tacz_fork_tarkov:scar_h_gas_system"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        },
+        {
+          "id": "muzzle",
+          "compatibleItems": [
+            "tacz:attachment",
+            "tacz_fork_tarkov:scar_h_muzzle"
+          ],
+          "requiredSiblingSlots": [],
+          "conflictingSiblingSlots": [],
+          "toggleable": false
+        }
+      ]
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_gas_system",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_muzzle",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_pistol_grip",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_bolt",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_stock",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_front_sight",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_rear_sight",
+      "slots": []
+    },
+    {
+      "itemId": "tacz_fork_tarkov:scar_h_magazine_standard",
+      "slots": []
+    }
+  ]
+}

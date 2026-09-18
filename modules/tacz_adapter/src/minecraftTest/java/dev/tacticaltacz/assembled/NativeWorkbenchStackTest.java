@@ -27,7 +27,7 @@ class NativeWorkbenchStackTest {
     }
 
     @Test void materializesThePreviewTreeWithoutMutatingTheHeldGun() {
-        var weapon=AssembledWeapons.byId(net.minecraft.resources.ResourceLocation.parse("tacz_assembly:m4a1"));
+        var weapon=AssembledWeapons.byId(net.minecraft.resources.ResourceLocation.parse("tacz_fork_tarkov:m4a1"));
         var held=weapon.preset();var before=held.copy();
         var target=weapon.ENGINE.replace(weapon.project(held),List.of("upper","barrel_mount","handguard"),
                 dev.weaponassembly.api.AssemblyNode.leaf(java.util.UUID.randomUUID(),"handguard_tactical")).after();
@@ -50,7 +50,7 @@ class NativeWorkbenchStackTest {
     }
 
     @Test void previewKeepsTheExactCandidatePayload() {
-        var weapon=AssembledWeapons.byId(net.minecraft.resources.ResourceLocation.parse("tacz_assembly:m4a1"));
+        var weapon=AssembledWeapons.byId(net.minecraft.resources.ResourceLocation.parse("tacz_fork_tarkov:m4a1"));
         var held=weapon.preset();
         var candidate=weapon.createPart("tacz_grip_rk1_b25u");
         var tag=candidate.getOrDefault(DataComponents.CUSTOM_DATA,CustomData.EMPTY).copyTag();
