@@ -1439,6 +1439,8 @@
   "sourceHashes": {
     "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/native_attachment_overrides.json": "fc23f678550144c122f9c8b0f7b4d88b371b445f266906de7443d488d5221d8f",
     "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/native_attachments/standalone.json": "694035f41e930c875684b096a8aa55d3a8631b09cd381c24f500f6109e787aa7",
+    "modules/tacz_adapter/weapon-sources/native_m16a1/editable/manifest.json": "958ff24afcc0e67271c48e6bf39c1540514e103b848fed2473d56ffee30cb690",
+    "modules/tacz_adapter/weapon-sources/native_m16a1/mounts.json": "d5d64fd879fa2f2f00cd6f4eb1a1dcb1628819da2f8296a8a3f282493394a5b0",
     "modules/tacz_adapter/weapon-sources/native_m16a1/production.json": "0d9b410e60e55dcd2009a4924343df6b1d7736695c8c9c6aa3da503432119e70",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_bayonet_m9/model.bbmodel": "1cae63a6ae033f76ad685b3e6ed1b746f4a32b5381f9fe0f6ea487841140e3f9",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_bayonet_m9/texture.png": "c61aa79b3e8d88ff23fea1ec3331d4c27fc57c47f815897feace878bdae3de9b",

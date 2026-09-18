@@ -1784,6 +1784,8 @@
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_sba3/texture.png": "423ec39fa5dfc3297a9bfbcfede9cc5e6bc677b5d044c4fdf92618acb10506b2",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_tactical_ar/model.bbmodel": "ce3c739d61773beea81bc5f7d70b328b22f81e3e68e321391e0600b13d877299",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_stock_tactical_ar/texture.png": "a768112c7b40fe4abaf2eac10c32bde545f12e3556712e381bb99a7467fab363",
+    "modules/tacz_adapter/weapon-sources/native_qbz_191/editable/manifest.json": "6f0c1ba7ef4b45e41f77b5cf46a323134ff02739b60fa241b4c27593cbca91d9",
+    "modules/tacz_adapter/weapon-sources/native_qbz_191/mounts.json": "ccc2f50f90cc1e2e1c85438f5d5596d6b1c4e539863c861a3fab7631ff1bbbf8",
     "modules/tacz_adapter/weapon-sources/native_qbz_191/production.json": "1238b66cc767b30fe534aa14a252f7416a7d6b209aac59cf89952e2e4b9fe0bd",
     "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/qbz_191.animation.json": "8ba65e4aeb3e1597b19ef6856507147d0ca3f2000e23d956f35b941b9660a91d",
     "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/extended_mag_1_display.json": "ba04240f8ad6868a75e04b7a4d66a1c9a795bbb8156d34e1e8fc3af5e5dbb463",

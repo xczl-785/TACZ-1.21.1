@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "coordinateSystem": "assembly +Z muzzle, original model units",
+  "parts": {
+    "glock_frame": {
+      "frameOrigin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {
+        "slide": [
+          -0.007249999999999979,
+          5.125,
+          0.5110062017847694
+        ],
+        "barrel": [
+          -0.007249999999999979,
+          5.265540869138925,
+          2.276
+        ],
+        "magazine": [
+          -0.006949657733931025,
+          2.173736665359799,
+          -2.399101793900285
+        ],
+        "laser": [
+          5.551115123125783e-17,
+          3.5633559870664016,
+          3.422871947596987
+        ]
+      }
+    },
+    "glock_slide": {
+      "frameOrigin": [
+        -0.007249999999999979,
+        5.125,
+        0.5110062017847694
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {
+        "front_sight": [
+          1.3877787807814457e-17,
+          0.7181647147994266,
+          4.023065710805663
+        ],
+        "rear_sight": [
+          0.0003927497187873885,
+          0.7520436065415508,
+          -3.9105062017847696
+        ],
+        "scope": [
+          0.02287499999999998,
+          1.4310039535222465,
+          -2.7463612017847696
+        ]
+      }
+    },
+    "glock_barrel": {
+      "frameOrigin": [
+        -0.007249999999999979,
+        5.265540869138925,
+        2.276
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {
+        "muzzle": [
+          0.0010000000000000009,
+          0.0844591308610747,
+          6.524000000000001
+        ]
+      }
+    },
+    "glock_front_sight": {
+      "frameOrigin": [
+        -0.007249999999999965,
+        5.843164714799427,
+        4.5340719125904325
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "glock_rear_sight": {
+      "frameOrigin": [
+        -0.00685725028121259,
+        5.877043606541551,
+        -3.3995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "glock_magazine_standard": {
+      "frameOrigin": [
+        -0.006949657733931025,
+        2.173736665359799,
+        -2.399101793900285
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_laser_compact": {
+      "frameOrigin": [
+        5.551115123125783e-17,
+        3.5633559870664016,
+        3.422871947596987
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_laser_nightstick": {
+      "frameOrigin": [
+        5.551115123125783e-17,
+        3.5633559870664016,
+        3.422871947596987
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_glock_17_light_extended_mag_1": {
+      "frameOrigin": [
+        -0.006949657733931025,
+        2.173736665359799,
+        -2.399101793900285
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_glock_17_light_extended_mag_2": {
+      "frameOrigin": [
+        -0.006949657733931025,
+        2.173736665359799,
+        -2.399101793900285
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_glock_17_light_extended_mag_3": {
+      "frameOrigin": [
+        -0.006949657733931025,
+        2.173736665359799,
+        -2.399101793900285
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_silencer_mirage": {
+      "frameOrigin": [
+        -0.006249999999999978,
+        5.35,
+        8.8
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_silencer_ptilopsis": {
+      "frameOrigin": [
+        -0.006249999999999978,
+        5.35,
+        8.8
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_silencer_wraith": {
+      "frameOrigin": [
+        -0.006249999999999978,
+        5.35,
+        8.8
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_acro_pistol": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_deltapoint_pistol": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_fastfire_pistol": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_pk06_pistol": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_rmr_dot": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_sro_dot": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    }
+  }
+}

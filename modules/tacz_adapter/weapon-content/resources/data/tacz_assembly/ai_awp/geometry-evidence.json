@@ -1146,6 +1146,8 @@
   "sourceHashes": {
     "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/native_attachment_overrides.json": "fc23f678550144c122f9c8b0f7b4d88b371b445f266906de7443d488d5221d8f",
     "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/native_attachments/standalone.json": "694035f41e930c875684b096a8aa55d3a8631b09cd381c24f500f6109e787aa7",
+    "modules/tacz_adapter/weapon-sources/native_ai_awp/editable/manifest.json": "5bd96836cc8cbd93754bdb7fd9a3e7d7695387e7d71a0e34b7afd0aa2eacc767",
+    "modules/tacz_adapter/weapon-sources/native_ai_awp/mounts.json": "280c8b120bcd072a4f0f1d14585981ccf23766e5bb6782800438d8b801a0fca4",
     "modules/tacz_adapter/weapon-sources/native_ai_awp/production.json": "fe6192435c16fae2c03760a3c264dbe0f71ac91ae1e20e3e7e52901eb868a205",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_knight_qd/model.bbmodel": "18afa325fa772a8b320a9e31662612c795fc0f6cf9616d990a45185500572d28",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_knight_qd/texture.png": "73019d3f55c7c88b1712ace7a9bf07c80040fd9253d68f8fdc1ada9e908894ca",

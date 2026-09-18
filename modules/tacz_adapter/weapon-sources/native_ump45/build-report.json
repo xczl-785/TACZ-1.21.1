@@ -1195,6 +1195,8 @@
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_phantom_s1/texture.png": "a08b3e276176f416258015d02dbfd5de3f89eef036ae4b8435173dc69ed2335a",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_ursus/model.bbmodel": "3fe2274720ce3cb8d11c522574e1397ddacc05330063c91eb8ed56578c52a96a",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_ursus/texture.png": "a34f1e6558395bcdc4e2af4ae6e402e6b4a5e3531b1ee5442c46c6753cf0dc11",
+    "modules/tacz_adapter/weapon-sources/native_ump45/editable/manifest.json": "9d93ba7172db0e742670a652e661c5b578e1b9aa8ec0104c6de1204d38318ba9",
+    "modules/tacz_adapter/weapon-sources/native_ump45/mounts.json": "a1032b41e8c7f979cf333714eec0cc07c0e01c453b17624ec7ed6676d36cf889",
     "modules/tacz_adapter/weapon-sources/native_ump45/production.json": "2c06187f11c7ff0e5925fef2c0f6fc437c3817d8e4cb887611f7b283571bff2f",
     "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/ump45.animation.json": "c09977dc2841a7d34b82adeb81af94e664cccef08e75cda275de3030a2928786",
     "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/grip_cobra_display.json": "09d97460169650b2f9e5c5802f48bbefcf18ba57b792ec5d10363fe8aa3d1b41",

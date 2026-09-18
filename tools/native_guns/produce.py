@@ -4,6 +4,8 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 TOOLS=Path(__file__).resolve().parents[1]
+sys.path.insert(0,str(TOOLS))
+from native_m4a1.mount_source import load_mounts
 sys.path.insert(0,str(TOOLS/'native_attachments'))
 import extract as shared
 import magazines
@@ -15,6 +17,8 @@ from render_part_icon import render_part_icon
 import lod
 
 def write(p,value):
+    # Preserve established JSON formatting when the generated content is unchanged.
+    if p.is_file() and json.loads(p.read_text())==value:return
     p.parent.mkdir(parents=True,exist_ok=True);p.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
 def validate_configuration(config):
     adoption=(R/'modules/tacz_adapter/src/main/java/dev/tacticaltacz/GunAdoption.java').read_text()
@@ -195,6 +199,8 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
         entry={'id':d,'stats':{'weightKg':0,'ergonomics':0},'slots':[{'id':slot,'required':False,'allowedParts':candidates} for slot,candidates in slots.get(d,{}).items()],'conflictingParts':[]}
         if d==config['rootDefinition']:entry['weapon']={'recoilVertical':0,'recoilHorizontal':0,'centerOfImpact':0,'sightingRange':0}
         catalog.append(entry)
+    mounts_path=source_root/'mounts.json'
+    mounts=load_mounts(mounts_path,catalog,config['rootDefinition'])
     nodes=[]
     def node(d,path='',parent=None,slot=None):
         ident=str(uuid.uuid5(uuid.NAMESPACE_URL,config['gunId']+'/'+path));item={'instanceId':ident,'definitionId':d}
@@ -202,7 +208,7 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
         nodes.append(item)
         for childslot,child in config['preset'].get(d,{}).items():node(child,path+'/'+childslot,ident,childslot)
     node(config['rootDefinition'])
-    parsed={};owned=[];source_paths={config_path,index,display_path,source,original_texture,data_path}|tags
+    parsed={};owned=[];source_paths={config_path,mounts_path,source_root/'editable/manifest.json',index,display_path,source,original_texture,data_path}|tags
     for row,root in [(r,source_root/'editable') for r in editable]+[(r['row'],r['root']) for r in attachments if r['native']]:
         _,bones,uv,texture,count=shared.load_part(row,root);d=row['definitionId'];parsed[d]=(bones,uv,root/row['texture'],np.eye(4));owned.append((row,root,bones,uv,count));source_paths.add(R/row['sourceGeometry'])
     for rec in attachments:
@@ -271,17 +277,13 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
         for name,b in visible.items():
             if config.get('sourceBoneVariants',{}).get(name) in config.get('previewHiddenVariants',[]):b.pop('cubes',None)
         meshes[d],anchors[d]=mesh_for(d,visible,uv,texture,extra)
-    for d,byslot in slots.items():
-        for slot,candidates in byslot.items():
-            if not candidates:continue
-            representative=config['preset'].get(d,{}).get(slot,candidates[0]);center=anchors[representative].copy()
-            for candidate in candidates:anchors[candidate]=center
-    anchors[config['rootDefinition']]=np.zeros(3);models=[];library={'schemaVersion':1,'materials':{}};bindings={'schemaVersion':1,'defaultMaterial':config['rootDefinition'],'parts':{}}
+    anchors={d:np.asarray(frame['frameOrigin']) for d,frame in mounts.items()}
+    models=[];library={'schemaVersion':1,'materials':{}};bindings={'schemaVersion':1,'defaultMaterial':config['rootDefinition'],'parts':{}}
     for d in mapping:
         anchor=anchors[d]
         for mesh in meshes[d]:
             for tri in mesh['triangles']:tri['vertices']=(np.asarray(tri['vertices'])-anchor).tolist()
-        models.append({'definitionId':d,'attachmentOrigin':[0,0,0],'slots':{slot:(anchors[choices[0]]-anchor).tolist() for slot,choices in slots.get(d,{}).items() if choices},'boxes':[],'meshes':meshes[d]})
+        models.append({'definitionId':d,'attachmentOrigin':mounts[d]['attachmentOrigin'],'slots':mounts[d]['slots'],'boxes':[],'meshes':meshes[d]})
         texture=assets/f'textures/parts/{gun}/{d}.png';texture.parent.mkdir(parents=True,exist_ok=True);texture.write_bytes(parsed[d][2].read_bytes())
         library['materials'][d]={'baseColor':'#ffffff','texture':f'{ns}:textures/parts/{gun}/{d}.png','roughness':.8,'specular':.12,'textureScale':1};bindings['parts'][d]={'defaultMaterial':d,'regions':{}}
     for filename,value in [('preview.json',{'schemaVersion':3,'models':models}),('library.json',library),('materials.json',bindings)]:

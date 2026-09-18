@@ -11232,8 +11232,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/aa12/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "c5959be625b36f9518f262efdea04bb3cca93714066db4cfedc177f05c5b41b9",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "00c6b272fafc505ac19febe03ca62d1c643048b1bd27e6bd03c737ef7d2f32b7",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/aa12/inline_attachments.json",
@@ -11322,8 +11322,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/ai_awp/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "c54f106a047f6ad410e5192eba251b2957f5c5e12c730feaf8b9db64d94c489c",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "b8417d7ca9c6a83b78a8233e2d467e3f4859b18a3d9f9873866074d1a74e7e5e",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/ai_awp/inline_attachments.json",
@@ -11592,8 +11592,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "c309864baa330a1d86c8443af5aaf89651fba502dbc0447d921cd9cc03173467",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "08656a65d6f22be939500ea371a4c93dc02a5c23f06c5c681f89ca5aa35e2ed4",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/glock_17/inline_attachments.json",
@@ -12738,8 +12738,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m16a1/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "16451c2f8461c80a5b6c9762f76fa099b2744a118f59c5f2368e8987ede81bf4",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "a2bce01da8efafa8a1d096e2297afd7086d321c31fb371ddee92baba0908ece9",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m16a1/inline_attachments.json",
@@ -12924,8 +12924,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m700/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "e3d8b0525275d2d96b2c6ebe999b718109209d5d838978a575dcb53ac67cef19",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "42f58f2da68b2a9587b99dfe43252171b8ff882191a816735f65400622e8346f",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m700/inline_attachments.json",
@@ -13014,8 +13014,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m870/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "e3e98ddd92a2f7ea08287ebd06334675d0c4affa4e4b09e5fe6eebf4141296e7",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "09790f0de6447990e26bf62a82af058eedf1f0c48bd75b50b50e5ee20b1aa4f9",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m870/inline_attachments.json",
@@ -13104,8 +13104,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/mk14/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "3b53f2b1b2fe674ac728b8875e7bf9abf60cb85ce8be11dd6ec3710cd49fdbe3",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "6a993ada6ad09286b076a29b2416f1b49c5d3f64f3902c86f2aaeda344ad280e",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/mk14/inline_attachments.json",
@@ -13224,8 +13224,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/p90/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "406f8ea5071bb2968ac04ff31eaae7c03f2ec0bf185d7d007742ff6ab5799b4e",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "e383c14a6a03b545aedee2dc6731a80e2774d53d60c911e567f9ca7be142f0c3",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/p90/inline_attachments.json",
@@ -13314,8 +13314,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/qbz_191/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "a8e48d4a00d250847a8dd57dddf1b84924ead4052f8954b9eb7b6166595ed7f8",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "e83d86c57d3cb611395e3b85017dd302a1b98853707c0f268a3b3ca43aa1b973",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/qbz_191/inline_attachments.json",
@@ -13404,8 +13404,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/scar_h/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "3836b07f70da4e09bd7f936375a2d4f8e4c79dea011f78e2e406a1810112bb6f",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "d568197664bfd3f66033aa2d2b37a806c9aa3a5be9bd3de9895fa8986c9896ae",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/scar_h/inline_attachments.json",
@@ -13494,8 +13494,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/scar_l/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "eff3fe19e9cca65ae69f62ab04bcc2a1534ee7cde958457428c60891da14961f",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "7fe70936b42367fa66feeafa16fcdf844d79a5eecb137d0f0bcc39bbec021a0e",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/scar_l/inline_attachments.json",
@@ -13584,8 +13584,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/sks_tactical/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "ec1e9d97c088ef5e4db384e3fa8b35dc1d92283b6d4859480f11b935d2136268",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "e0f9fa5da6afd8c9bdea7fe4ec9a05bb1aa2602301d9e94715e5f66ecf11c9f6",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/sks_tactical/inline_attachments.json",
@@ -13764,8 +13764,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/ump45/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "f258380f3eb5a991058731fed0c58bbeb9beb0d8a476765d4d6044f9808c9c76",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "9faff9e5c73408d04d93233bde7cfb817e3ea7b1f172392de6bad802c656bae6",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/ump45/inline_attachments.json",
@@ -13854,8 +13854,8 @@
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/uzi/geometry-evidence.json",
       "before_sha256": null,
-      "after_sha256": "497bb9e0efd953fe9bbde29857fff18e02335a25073621ccc70e534bd929d936",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "f7e64fa6e1500e05867105dc49ac6dd6f6a3380bfa79215ea6f0f125653261cf",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/uzi/inline_attachments.json",
@@ -13932,8 +13932,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_aa12/build-report.json",
       "before_sha256": null,
-      "after_sha256": "c5959be625b36f9518f262efdea04bb3cca93714066db4cfedc177f05c5b41b9",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "00c6b272fafc505ac19febe03ca62d1c643048b1bd27e6bd03c737ef7d2f32b7",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_aa12/editable/components/aa12_barrel/model.bbmodel",
@@ -14146,6 +14146,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_aa12/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "f824b0ce4b3b7ede3781b8ea1ee8fc3b2231023ab16da2635533de795a12196a",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_aa12/production.json",
       "before_sha256": null,
       "after_sha256": "807b64f29f8a567de553b5d11ca8c54c1200dd66f548f80620e294b0ddfe16a0",
@@ -14160,8 +14166,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_ai_awp/build-report.json",
       "before_sha256": null,
-      "after_sha256": "c54f106a047f6ad410e5192eba251b2957f5c5e12c730feaf8b9db64d94c489c",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "b8417d7ca9c6a83b78a8233e2d467e3f4859b18a3d9f9873866074d1a74e7e5e",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_ai_awp/editable/components/awp_barrel/model.bbmodel",
@@ -14336,6 +14342,12 @@
       "before_sha256": null,
       "after_sha256": "358f597941f4b32beb00dfd20943587805bd570af97aa5dbd2d29183908f8c91",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_ai_awp/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "280c8b120bcd072a4f0f1d14585981ccf23766e5bb6782800438d8b801a0fca4",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_ai_awp/production.json",
@@ -14946,8 +14958,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_glock_17/build-report.json",
       "before_sha256": null,
-      "after_sha256": "c309864baa330a1d86c8443af5aaf89651fba502dbc0447d921cd9cc03173467",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "08656a65d6f22be939500ea371a4c93dc02a5c23f06c5c681f89ca5aa35e2ed4",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_glock_17/editable/components/glock_barrel/model.bbmodel",
@@ -15034,6 +15046,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_glock_17/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "99940375145e16e94b65688a81c8db7f03882b514a5d806113977005af3120b0",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_glock_17/production.json",
       "before_sha256": null,
       "after_sha256": "b50c69c6315a8b836b8f3f37c511c28ffc2aa71846f5b2f1e57e4a3a90d4f27f",
@@ -15048,8 +15066,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m16a1/build-report.json",
       "before_sha256": null,
-      "after_sha256": "16451c2f8461c80a5b6c9762f76fa099b2744a118f59c5f2368e8987ede81bf4",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "a2bce01da8efafa8a1d096e2297afd7086d321c31fb371ddee92baba0908ece9",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m16a1/editable/components/m16a1_barrel/model.bbmodel",
@@ -15296,6 +15314,12 @@
       "before_sha256": null,
       "after_sha256": "eea71dae88cac22a8610efcfa79f90544ae053d9dadeb060305bf112afcdd619",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m16a1/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "d5d64fd879fa2f2f00cd6f4eb1a1dcb1628819da2f8296a8a3f282493394a5b0",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m16a1/production.json",
@@ -17238,8 +17262,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m700/build-report.json",
       "before_sha256": null,
-      "after_sha256": "e3d8b0525275d2d96b2c6ebe999b718109209d5d838978a575dcb53ac67cef19",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "42f58f2da68b2a9587b99dfe43252171b8ff882191a816735f65400622e8346f",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m700/editable/components/m700_barrel/model.bbmodel",
@@ -17404,6 +17428,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_m700/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "7b48bb062d0649eca5cfb22c196ae67605b2e92660949b26040bda1ced03a5f7",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_m700/production.json",
       "before_sha256": null,
       "after_sha256": "4a4515d38f8d699e61b2e3caf3939f2ada3160a69953373a665460d9ff53c12b",
@@ -17418,8 +17448,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m870/build-report.json",
       "before_sha256": null,
-      "after_sha256": "e3e98ddd92a2f7ea08287ebd06334675d0c4affa4e4b09e5fe6eebf4141296e7",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "09790f0de6447990e26bf62a82af058eedf1f0c48bd75b50b50e5ee20b1aa4f9",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_m870/editable/components/m870_barrel/model.bbmodel",
@@ -17518,6 +17548,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_m870/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "95ee9f6a15a0322d986131e348e49ded30b1531594741c721a7f55319b36e397",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_m870/production.json",
       "before_sha256": null,
       "after_sha256": "da9bc142f5f295b8ac7d389785d6a1274c9923054dbbb4ff9c84951ff1cacf08",
@@ -17574,8 +17610,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_mk14/build-report.json",
       "before_sha256": null,
-      "after_sha256": "3b53f2b1b2fe674ac728b8875e7bf9abf60cb85ce8be11dd6ec3710cd49fdbe3",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "6a993ada6ad09286b076a29b2416f1b49c5d3f64f3902c86f2aaeda344ad280e",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_mk14/editable/components/mk14_barrel/model.bbmodel",
@@ -17824,6 +17860,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_mk14/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "c84d4bcc65b0ce756f2d8642e2a70d5e2ee430a1d43d5a0540fb96e3c5e29041",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_mk14/production.json",
       "before_sha256": null,
       "after_sha256": "6978dcbbda1dd2a56ea1edaf4bfedc0a5f7bc733978ed35330332c595f5386be",
@@ -17838,8 +17880,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_p90/build-report.json",
       "before_sha256": null,
-      "after_sha256": "406f8ea5071bb2968ac04ff31eaae7c03f2ec0bf185d7d007742ff6ab5799b4e",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "e383c14a6a03b545aedee2dc6731a80e2774d53d60c911e567f9ca7be142f0c3",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_p90/editable/components/p90_barrel/model.bbmodel",
@@ -17944,6 +17986,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_p90/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "2b61ae4e2a24028d3d63e5af0b1b4d4f1ec6b3fe513292595c0882102068da48",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_p90/production.json",
       "before_sha256": null,
       "after_sha256": "ff89577ec4fb8fe484d75b1304c4c962472a1b66ed45be62ec1a6f9985116344",
@@ -17958,8 +18006,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_qbz_191/build-report.json",
       "before_sha256": null,
-      "after_sha256": "a8e48d4a00d250847a8dd57dddf1b84924ead4052f8954b9eb7b6166595ed7f8",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "e83d86c57d3cb611395e3b85017dd302a1b98853707c0f268a3b3ca43aa1b973",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_qbz_191/editable/components/qbz_191_barrel/model.bbmodel",
@@ -18166,6 +18214,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_qbz_191/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "ccc2f50f90cc1e2e1c85438f5d5596d6b1c4e539863c861a3fab7631ff1bbbf8",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_qbz_191/production.json",
       "before_sha256": null,
       "after_sha256": "1238b66cc767b30fe534aa14a252f7416a7d6b209aac59cf89952e2e4b9fe0bd",
@@ -18180,8 +18234,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_scar_h/build-report.json",
       "before_sha256": null,
-      "after_sha256": "3836b07f70da4e09bd7f936375a2d4f8e4c79dea011f78e2e406a1810112bb6f",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "d568197664bfd3f66033aa2d2b37a806c9aa3a5be9bd3de9895fa8986c9896ae",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_scar_h/editable/components/scar_h_barrel/model.bbmodel",
@@ -18418,6 +18472,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_scar_h/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "0db27615ea8f1e3a05faada0db784827363db6190f89873b0394f7afe43652c0",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_scar_h/production.json",
       "before_sha256": null,
       "after_sha256": "d3b8db18a7c80badfe6c0617c71ea65b583ef540de89441a4f7476bbf60f23ac",
@@ -18432,8 +18492,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_scar_l/build-report.json",
       "before_sha256": null,
-      "after_sha256": "eff3fe19e9cca65ae69f62ab04bcc2a1534ee7cde958457428c60891da14961f",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "7fe70936b42367fa66feeafa16fcdf844d79a5eecb137d0f0bcc39bbec021a0e",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_scar_l/editable/components/scar_l_barrel/model.bbmodel",
@@ -18658,6 +18718,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_scar_l/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "a36fc93087aad42371ab54d5ca108395050c6b7d8ed87d53b53099a56b27c584",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_scar_l/production.json",
       "before_sha256": null,
       "after_sha256": "eaee56435657d88f1886e199d13d089826435ee84a0e7c6d8128dbb640e8359e",
@@ -18672,8 +18738,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_sks_tactical/build-report.json",
       "before_sha256": null,
-      "after_sha256": "ec1e9d97c088ef5e4db384e3fa8b35dc1d92283b6d4859480f11b935d2136268",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "e0f9fa5da6afd8c9bdea7fe4ec9a05bb1aa2602301d9e94715e5f66ecf11c9f6",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_sks_tactical/editable/components/sks_tactical_barrel/model.bbmodel",
@@ -18886,6 +18952,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_sks_tactical/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "c0939df99ccc897e6c28e675d73a3ba89fba50f3ffcc3c80188d793006d13953",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_sks_tactical/production.json",
       "before_sha256": null,
       "after_sha256": "caed2ddcbf80f3c60199c4c67c48ae2f7cfe4784570f78777253178b1a801e62",
@@ -18906,8 +18978,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_ump45/build-report.json",
       "before_sha256": null,
-      "after_sha256": "f258380f3eb5a991058731fed0c58bbeb9beb0d8a476765d4d6044f9808c9c76",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "9faff9e5c73408d04d93233bde7cfb817e3ea7b1f172392de6bad802c656bae6",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_ump45/editable/components/ump_barrel/model.bbmodel",
@@ -19018,6 +19090,12 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
+      "path": "modules/tacz_adapter/weapon-sources/native_ump45/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "a1032b41e8c7f979cf333714eec0cc07c0e01c453b17624ec7ed6676d36cf889",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
+    },
+    {
       "path": "modules/tacz_adapter/weapon-sources/native_ump45/production.json",
       "before_sha256": null,
       "after_sha256": "2c06187f11c7ff0e5925fef2c0f6fc437c3817d8e4cb887611f7b283571bff2f",
@@ -19032,8 +19110,8 @@
     {
       "path": "modules/tacz_adapter/weapon-sources/native_uzi/build-report.json",
       "before_sha256": null,
-      "after_sha256": "497bb9e0efd953fe9bbde29857fff18e02335a25073621ccc70e534bd929d936",
-      "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+      "after_sha256": "f7e64fa6e1500e05867105dc49ac6dd6f6a3380bfa79215ea6f0f125653261cf",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_uzi/editable/components/uzi_barrel/model.bbmodel",
@@ -19244,6 +19322,12 @@
       "before_sha256": null,
       "after_sha256": "63892a77a79d2b22991cbe8aff85424f048fa629bf1b626d30e84badf2198e0d",
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_uzi/mounts.json",
+      "before_sha256": null,
+      "after_sha256": "83618c0acc2a96bdde80d06fa1250c4eeb9cfc8addd98fa9384961e2cf5a4e3a",
+      "reason": "2026-09-18 batch authored mount contract; runtime geometry and item identities unchanged"
     },
     {
       "path": "modules/tacz_adapter/weapon-sources/native_uzi/production.json",

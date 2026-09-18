@@ -925,6 +925,8 @@
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_phantom_s1/texture.png": "a08b3e276176f416258015d02dbfd5de3f89eef036ae4b8435173dc69ed2335a",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_ursus/model.bbmodel": "3fe2274720ce3cb8d11c522574e1397ddacc05330063c91eb8ed56578c52a96a",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_muzzle_silencer_ursus/texture.png": "a34f1e6558395bcdc4e2af4ae6e402e6b4a5e3531b1ee5442c46c6753cf0dc11",
+    "modules/tacz_adapter/weapon-sources/native_m700/editable/manifest.json": "fa170dcc1f31031bf91c48aef336f00a091fa0bd05732f3a80af8bacd0880ab0",
+    "modules/tacz_adapter/weapon-sources/native_m700/mounts.json": "7b48bb062d0649eca5cfb22c196ae67605b2e92660949b26040bda1ced03a5f7",
     "modules/tacz_adapter/weapon-sources/native_m700/production.json": "4a4515d38f8d699e61b2e3caf3939f2ada3160a69953373a665460d9ff53c12b",
     "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/m700.animation.json": "13e68a020d7f0ef533166fdb465222c92e7487dd133c3a24cd6d9981788abe91",
     "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/muzzle_brake_cthulhu_display.json": "75d380db74625fdacb4488810a9a1321745576bdd3911985c4825098e2bc9d5b",

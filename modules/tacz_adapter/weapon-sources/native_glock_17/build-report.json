@@ -845,6 +845,8 @@
     "modules/tacz_adapter/weapon-sources/native_attachments/editable/components/tacz_muzzle_silencer_ptilopsis/texture.png": "6345cbb456c140ae31e5783b04b6cf0cfbd4e4b7fef107bc7a9a87509787e1c5",
     "modules/tacz_adapter/weapon-sources/native_attachments/editable/components/tacz_muzzle_silencer_wraith/model.bbmodel": "b0f67bbb28981d1fd10ed6d77b6dde94ecdd8f83ed3c4e7fa4a9968349680879",
     "modules/tacz_adapter/weapon-sources/native_attachments/editable/components/tacz_muzzle_silencer_wraith/texture.png": "1e52e8ed0e673bf117f6df2b5f35c079c3cd3242f9d8da5aec09bb5926cf9880",
+    "modules/tacz_adapter/weapon-sources/native_glock_17/editable/manifest.json": "14d57011c9caa3a2476fd50653ed6729306c8f9deb438684747f2cb16cb8cdd0",
+    "modules/tacz_adapter/weapon-sources/native_glock_17/mounts.json": "99940375145e16e94b65688a81c8db7f03882b514a5d806113977005af3120b0",
     "modules/tacz_adapter/weapon-sources/native_glock_17/production.json": "b50c69c6315a8b836b8f3f37c511c28ffc2aa71846f5b2f1e57e4a3a90d4f27f",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_laser_compact/model.bbmodel": "61024035cc584375f79f08f5d28e8c465a2be8d3ae155b8dd92cd50fb531e954",
     "modules/tacz_adapter/weapon-sources/native_m4a1/editable/components/tacz_laser_compact/texture.png": "48131dcee1263f7313f65b935cc81670707ebf31a417a8bceea9d1ef87869094",

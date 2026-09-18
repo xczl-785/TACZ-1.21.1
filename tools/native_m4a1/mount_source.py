@@ -3,7 +3,7 @@ import json
 import math
 
 
-def validate_mounts(source, catalog):
+def validate_mounts(source, catalog, root_definition='lower_receiver'):
     if source.get('schemaVersion') != 1:
         raise ValueError('Unsupported mount schema')
     parts = source['parts']
@@ -23,7 +23,7 @@ def validate_mounts(source, catalog):
             raise ValueError('Mount slots differ from catalog: ' + part['id'])
         for point in frame['slots'].values():
             vector(point)
-    root = parts['lower_receiver']
+    root = parts[root_definition]
     if any(abs(a + b) > 1e-7 for a, b in zip(root['frameOrigin'], root['attachmentOrigin'])):
         raise ValueError('Root frame must preserve native rest placement')
     for part in catalog:
@@ -38,5 +38,5 @@ def validate_mounts(source, catalog):
     return parts
 
 
-def load_mounts(path, catalog):
-    return validate_mounts(json.loads(path.read_text()), catalog)
+def load_mounts(path, catalog, root_definition='lower_receiver'):
+    return validate_mounts(json.loads(path.read_text()), catalog, root_definition)

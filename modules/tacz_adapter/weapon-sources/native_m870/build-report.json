@@ -725,6 +725,8 @@
     "modules/tacz_adapter/weapon-sources/native_attachments/editable/components/tacz_muzzle_silencer_sg/texture.png": "9a7208c2b5616bf2d2eaf3d54908370e1c1a2c5c0938c586c051fe9f4beee7f4",
     "modules/tacz_adapter/weapon-sources/native_attachments/supplemental/components/tacz_muzzle_duckbill_sg/model.bbmodel": "7ab48d1fc5cd0bc314b77ebb7a1c7b7fcc241221a6dee517c3fbad11bf3e256e",
     "modules/tacz_adapter/weapon-sources/native_attachments/supplemental/components/tacz_muzzle_duckbill_sg/texture.png": "dba625fa4357623e6d475c8aab1ca584b06310ed6f03ca26fb24676232536350",
+    "modules/tacz_adapter/weapon-sources/native_m870/editable/manifest.json": "08d1cad6d1ca5f57393952a966d5d8af95d4396373a5692e1bf72c3152ea3ca2",
+    "modules/tacz_adapter/weapon-sources/native_m870/mounts.json": "95ee9f6a15a0322d986131e348e49ded30b1531594741c721a7f55319b36e397",
     "modules/tacz_adapter/weapon-sources/native_m870/production.json": "da9bc142f5f295b8ac7d389785d6a1274c9923054dbbb4ff9c84951ff1cacf08",
     "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/animations/m870.animation.json": "dc545bd8051f4ff0d933e2273fc0bbe64b94d7830902e1948ff6c874d1764bdf",
     "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/muzzle_brake_mastiff_sg_display.json": "f4cf4ff8ce64d24c7afccc0fac1ccbb4a28a57d2bc8ea2e943bf058645a958a0",

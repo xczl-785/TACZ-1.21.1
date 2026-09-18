@@ -1311,6 +1311,8 @@
     "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/m4a1/native_attachment_overrides.json": "fc23f678550144c122f9c8b0f7b4d88b371b445f266906de7443d488d5221d8f",
     "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/native_attachments/standalone.json": "694035f41e930c875684b096a8aa55d3a8631b09cd381c24f500f6109e787aa7",
     "modules/tacz_adapter/weapon-content/resources/data/tacz_assembly/native_attachments/supplemental.json": "465a562ecc0ca276490b9d92047317c7884181b0517c3f4f48fa0d15d363daec",
+    "modules/tacz_adapter/weapon-sources/native_aa12/editable/manifest.json": "4d193788482818ff0cf080ad8b9e6bf861f18bf2e2e06c4c91a0b026be932a42",
+    "modules/tacz_adapter/weapon-sources/native_aa12/mounts.json": "f824b0ce4b3b7ede3781b8ea1ee8fc3b2231023ab16da2635533de795a12196a",
     "modules/tacz_adapter/weapon-sources/native_aa12/production.json": "807b64f29f8a567de553b5d11ca8c54c1200dd66f548f80620e294b0ddfe16a0",
     "modules/tacz_adapter/weapon-sources/native_attachments/editable/components/tacz_muzzle_brake_mastiff_sg/model.bbmodel": "8b3d951ac2150d1249ddd4d2287ebc1bb661f4b444203c19c023465d13ed850d",
     "modules/tacz_adapter/weapon-sources/native_attachments/editable/components/tacz_muzzle_brake_mastiff_sg/texture.png": "b1c949f40764ac31ff3a182d4c02019fbbcfabf56c187b2988331d53287fefe6",

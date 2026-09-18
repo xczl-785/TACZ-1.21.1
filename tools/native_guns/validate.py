@@ -21,6 +21,12 @@ def validate(resources=p.RES,weapon=None):
         if key not in ('model','texture','lod','model_type'):assert display[key]==value,key
     mapping=p.ex.read(base/'mapping.json');catalog={q['id']:q for q in p.ex.read(base/'catalog.json')['parts']};external=p.ex.read(base/'native_attachments.json')
     models={q['definitionId']:q for q in p.ex.read(base/'preview.json')['models']};assert set(mapping)==set(catalog)==set(models)
+    mounts_path=source_root/'mounts.json'
+    mounts=p.load_mounts(mounts_path,list(catalog.values()),config['rootDefinition'])
+    assert str(mounts_path.relative_to(p.R)) in report['sourceHashes'],'Missing authored mount fingerprint'
+    for definition,frame in mounts.items():
+        assert models[definition]['slots']==frame['slots']
+        assert models[definition]['attachmentOrigin']==frame['attachmentOrigin']
     assert set(external.values())<=set(mapping)
     for part in catalog.values():
         for slot in part['slots']:assert set(slot['allowedParts'])<=set(mapping)

@@ -1,0 +1,932 @@
+{
+  "schemaVersion": 1,
+  "coordinateSystem": "assembly +Z muzzle, original model units",
+  "parts": {
+    "qbz_191_lower": {
+      "frameOrigin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {
+        "kit": [
+          0.1875,
+          9.23639350016235,
+          5.078129999999999
+        ],
+        "pistol_grip": [
+          0.0,
+          4.590431818804739,
+          -8.948753125465107
+        ],
+        "stock": [
+          2.220446049250313e-16,
+          7.208903442115781,
+          -15.442183550442277
+        ],
+        "magazine": [
+          0.0,
+          4.161930817996509,
+          -0.562548569700339
+        ]
+      }
+    },
+    "qbz_191_upper_kit": {
+      "frameOrigin": [
+        0.1875,
+        9.23639350016235,
+        5.078129999999999
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {
+        "handguard": [
+          -0.1875,
+          -0.238443932368396,
+          0.07027000000000072
+        ],
+        "barrel": [
+          -0.18750000000000017,
+          -0.01400790721475964,
+          -0.925499999999996
+        ],
+        "bolt": [
+          0.5727474066089898,
+          0.030027283068534416,
+          -9.242814999999998
+        ],
+        "front_sight": [
+          -0.18749808658283817,
+          2.1594158152941922,
+          3.4531199999999993
+        ],
+        "rear_sight": [
+          -0.16249999999999998,
+          2.227386767190435,
+          -13.418275000000001
+        ],
+        "scope": [
+          -0.07922504912523243,
+          2.7192418535376603,
+          -9.131259999999997
+        ],
+        "grip": [
+          -0.1875,
+          -2.447588870771898,
+          -0.38684043456039685
+        ],
+        "laser": [
+          1.6866440129335982,
+          -0.47076350016235047,
+          2.8134919475969893
+        ]
+      }
+    },
+    "qbz_191_handguard": {
+      "frameOrigin": [
+        0.0,
+        8.997949567793954,
+        5.1484
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "qbz_191_barrel": {
+      "frameOrigin": [
+        -1.6653345369377348e-16,
+        9.22238559294759,
+        4.152630000000003
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {
+        "muzzle": [
+          1.6653345369377348e-16,
+          -0.2747955929475907,
+          13.628619999999998
+        ]
+      }
+    },
+    "qbz_191_muzzle": {
+      "frameOrigin": [
+        0.0,
+        8.94759,
+        17.78125
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "qbz_191_pistol_grip": {
+      "frameOrigin": [
+        0.0,
+        4.590431818804739,
+        -8.948753125465107
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "qbz_191_bolt": {
+      "frameOrigin": [
+        0.7602474066089898,
+        9.266420783230885,
+        -4.1646849999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "qbz_191_stock": {
+      "frameOrigin": [
+        2.220446049250313e-16,
+        7.208903442115781,
+        -15.442183550442277
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "qbz_191_front_sight": {
+      "frameOrigin": [
+        1.9134171618251372e-06,
+        11.395809315456543,
+        8.531249999999998
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "qbz_191_rear_sight": {
+      "frameOrigin": [
+        0.025000000000000022,
+        11.463780267352785,
+        -8.340145000000003
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "qbz_191_magazine_standard": {
+      "frameOrigin": [
+        0.0,
+        4.161930817996509,
+        -0.562548569700339
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_qbz_191_extended_mag_1": {
+      "frameOrigin": [
+        0.0,
+        4.161930817996509,
+        -0.562548569700339
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_qbz_191_extended_mag_2": {
+      "frameOrigin": [
+        0.0,
+        4.161930817996509,
+        -0.562548569700339
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_qbz_191_extended_mag_3": {
+      "frameOrigin": [
+        0.0,
+        4.161930817996509,
+        -0.562548569700339
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_cobra": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_cqr": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_magpul_afg_2": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_osovets_black": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_rk0": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_rk1_b25u": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_rk6": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_se_5": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_td": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_vertical_military": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_vertical_ranger": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_grip_vertical_talon": {
+      "frameOrigin": [
+        0.0,
+        6.7888046293904525,
+        4.691289565439602
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_laser_compact": {
+      "frameOrigin": [
+        1.8741440129335982,
+        8.76563,
+        7.891621947596988
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_laser_lopro": {
+      "frameOrigin": [
+        1.8741440129335982,
+        8.76563,
+        7.891621947596988
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_laser_nightstick": {
+      "frameOrigin": [
+        1.8741440129335982,
+        8.76563,
+        7.891621947596988
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_laser_peq15": {
+      "frameOrigin": [
+        1.8741440129335982,
+        8.76563,
+        7.891621947596988
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_brake_cthulhu": {
+      "frameOrigin": [
+        0.0,
+        8.94759,
+        17.78125
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_brake_cyclone_d2": {
+      "frameOrigin": [
+        0.0,
+        8.94759,
+        17.78125
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_brake_pioneer": {
+      "frameOrigin": [
+        0.0,
+        8.94759,
+        17.78125
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_brake_trex": {
+      "frameOrigin": [
+        0.0,
+        8.94759,
+        17.78125
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_compensator_trident": {
+      "frameOrigin": [
+        0.0,
+        8.94759,
+        17.78125
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_silencer_knight_qd": {
+      "frameOrigin": [
+        0.0,
+        8.94759,
+        17.78125
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_silencer_phantom_s1": {
+      "frameOrigin": [
+        0.0,
+        8.94759,
+        17.78125
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_muzzle_silencer_ursus": {
+      "frameOrigin": [
+        0.0,
+        8.94759,
+        17.78125
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_scope_acog_ta31": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_scope_elcan_4x": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_scope_hamr": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_scope_lpvo_1_6": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_scope_mk5hd": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_scope_qmk152": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_scope_standard_8x": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_scope_vudu": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_552": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_acro_rifle": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_coyote": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_deltapoint_rifle": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_exp3": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_fastfire_rifle": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_okp7": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_pk06_rifle": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_srs_02": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_t2": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_sight_uh1": {
+      "frameOrigin": [
+        0.10827495087476757,
+        11.95563535370001,
+        -4.0531299999999995
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_stock_ak12": {
+      "frameOrigin": [
+        2.220446049250313e-16,
+        7.208903442115781,
+        -15.442183550442277
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_stock_carbon_bone_c5": {
+      "frameOrigin": [
+        2.220446049250313e-16,
+        7.208903442115781,
+        -15.442183550442277
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_stock_hk_slim_line": {
+      "frameOrigin": [
+        2.220446049250313e-16,
+        7.208903442115781,
+        -15.442183550442277
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_stock_m4ss": {
+      "frameOrigin": [
+        2.220446049250313e-16,
+        7.208903442115781,
+        -15.442183550442277
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_stock_militech_b5": {
+      "frameOrigin": [
+        2.220446049250313e-16,
+        7.208903442115781,
+        -15.442183550442277
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_stock_moe": {
+      "frameOrigin": [
+        2.220446049250313e-16,
+        7.208903442115781,
+        -15.442183550442277
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_stock_ripstock": {
+      "frameOrigin": [
+        2.220446049250313e-16,
+        7.208903442115781,
+        -15.442183550442277
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_stock_sba3": {
+      "frameOrigin": [
+        2.220446049250313e-16,
+        7.208903442115781,
+        -15.442183550442277
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_stock_tactical_ar": {
+      "frameOrigin": [
+        2.220446049250313e-16,
+        7.208903442115781,
+        -15.442183550442277
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    }
+  }
+}
