@@ -10,7 +10,7 @@ class SlotLayoutTest {
         return new SlotLayout.Anchor(List.of("receiver","slot"+id),new SlotLayout.Point(x,y));
     }
     private static Map<List<String>,SlotLayout.Point> place(List<SlotLayout.Anchor> anchors,double size) {
-        return new SlotLayout.State().update(anchors,AREA,size,size,Set.of(),0);
+        return new SlotLayout.State().update(anchors,AREA,size,size);
     }
     private static void check(Map<List<String>,SlotLayout.Point> result,int count,double size) {
         assertEquals(count,result.size());
@@ -42,7 +42,7 @@ class SlotLayoutTest {
                 double angle=step*Math.PI/36+i*.22;
                 anchors.add(anchor(i,640+900*Math.cos(angle),348+300*Math.sin(angle)));
             }
-            var positions=state.update(anchors,AREA,WorkbenchSlotMetrics.CARD,WorkbenchSlotMetrics.CARD,Set.of(),1d/60);
+            var positions=state.update(anchors,AREA,WorkbenchSlotMetrics.CARD,WorkbenchSlotMetrics.CARD);
             check(positions,12,WorkbenchSlotMetrics.CARD);
         }
     }

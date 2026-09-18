@@ -97,10 +97,10 @@ public final class AssemblyViewport extends UIElement {
     public boolean whiteModel() { return whiteModel; }
     private void fitAssembly(AssemblyNode root,boolean reset) {
         if(root==fittedTree)return;
-        fittedTree=root;var frame=AssemblyFraming.fit(root,models);long now=System.nanoTime();
-        if(frameState==null)frameState=new AssemblyFrameState(frame,now);
-        else if(reset)frameState.reset(frame,now);
-        else frameState.accept(frame,now);
+        fittedTree=root;var frame=AssemblyFraming.fit(root,models);
+        if(frameState==null)frameState=new AssemblyFrameState(frame);
+        else if(reset)frameState.reset(frame);
+        else frameState.accept(frame);
     }
     public Optional<ScreenPoint> projectSlot(List<String> ownerPath,String slot) {
         return projectSlot(source.get(),ownerPath,slot);
@@ -127,7 +127,7 @@ public final class AssemblyViewport extends UIElement {
     /** Freezes one camera snapshot for model geometry, slot projection and leader lines. */
     public void beginFrame() {
         fitAssembly(framingSource.get(),false);
-        var stable=frameState.current(System.nanoTime());center=stable.center();fitScale=stable.fitScale();
+        var stable=frameState.current();center=stable.center();fitScale=stable.fitScale();
         rotation();
         double scale=Math.min(getSizeWidth()/24,(getSizeHeight()-frameTop-frameBottom)/8);
         activeFrame=new WorkbenchViewportFrame(center,frameCenterX(),frameCenterY(),fitScale,scale,camera.yaw,camera.pitch);

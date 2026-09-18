@@ -40,7 +40,6 @@ public final class WorkbenchScreen extends ModularUIScreen {
     private static final float cardSize=WorkbenchSlotMetrics.CARD;
     private static final float toggleSize=WorkbenchSlotMetrics.TOGGLE;
     private final SlotLayout.State slotLayout=new SlotLayout.State();
-    private long layoutNanos;
     private boolean lastBusy;
     private List<String> hoveredPath;
     private InventoryTextElement stats,delta,status,previewNotice;
@@ -192,7 +191,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
     }
     private String issue(AssemblyEngine.Issue issue) { return tr("error."+issue.code().name())+" · "+pathName(issue.path()); }
     private static String signed(double v) { return String.format(Locale.ROOT,"%+.2f",v); }
-    private void positionLabels(int mouseX,int mouseY,boolean animate) {
+    private void positionLabels(int mouseX,int mouseY) {
         if(!viewport.projectionReady())return;
         var anchors=new ArrayList<SlotLayout.Anchor>();
         for(var label:labels) {
@@ -202,19 +201,8 @@ public final class WorkbenchScreen extends ModularUIScreen {
             label.button().setVisible(p.isPresent());
             p.ifPresent(v->anchors.add(new SlotLayout.Anchor(path,new SlotLayout.Point(v.x()/design.scale(),v.y()/design.scale()))));
         }
-        var pinned=new HashSet<List<String>>();
-        if(chooser!=null)pinned.add(host.selectedPath());
-        // Pin the full card+bar hover region, before moving any hit targets this frame.
-        for(var label:labels) {
-            var p=cardPositions.get(label.path());
-            if(p!=null&&UIElement.isMouseOverRect(design.px(p.x()),design.px(p.y()),design.px(cardSize+toggleSize),design.px(cardSize),mouseX,mouseY)
-                    &&(chooser==null||!chooser.contains(mouseX,mouseY)))pinned.add(label.path());
-        }
-        long now=System.nanoTime();
-        double seconds=!animate||layoutNanos==0?0:(now-layoutNanos)/1_000_000_000d;
-        if(animate)layoutNanos=now;
         var previousPositions=cardPositions;
-        cardPositions=slotLayout.update(anchors,new SlotLayout.Bounds(12,104,canvasWidth-24,canvasHeight-316),cardSize+toggleSize,cardSize,pinned,seconds);
+        cardPositions=slotLayout.update(anchors,new SlotLayout.Bounds(12,104,canvasWidth-24,canvasHeight-316),cardSize+toggleSize,cardSize);
         lastAnchors=List.copyOf(anchors);
         for(var label:labels) {
             var p=cardPositions.get(label.path());if(p==null)continue;
@@ -272,7 +260,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
     @Override public void render(GuiGraphics g,int mx,int my,float partial) {
         if(width!=oldWidth||height!=oldHeight)build();
         viewport.beginFrame();
-        long started=System.nanoTime();positionLabels(mx,my,true);long layoutTime=System.nanoTime()-started;
+        long started=System.nanoTime();positionLabels(mx,my);long layoutTime=System.nanoTime()-started;
         super.render(g,mx,my,partial);timings.record(layoutTime,viewport.lastRenderNanos,viewport.lastTriangleCount);
     }
     private boolean overControl(double x,double y) {
@@ -280,7 +268,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
         return controls.stream().anyMatch(c->c.isVisible()&&UIElement.isMouseOverRect(c.getPositionX(),c.getPositionY(),c.getSizeWidth(),c.getSizeHeight(),x,y));
     }
     @Override public void mouseMoved(double x,double y) {
-        if(viewport!=null)positionLabels((int)x,(int)y,false);
+        if(viewport!=null)positionLabels((int)x,(int)y);
         super.mouseMoved(x,y);
     }
     @Override public boolean mouseClicked(double x,double y,int b) {

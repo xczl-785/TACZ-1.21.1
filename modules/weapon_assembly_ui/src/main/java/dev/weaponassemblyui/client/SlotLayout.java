@@ -19,23 +19,18 @@ public final class SlotLayout {
         private final Map<List<String>, Point> mounts = new HashMap<>();
         private final Map<List<String>, Point> targets = new HashMap<>();
         private final Map<List<String>, Point> destinations = new LinkedHashMap<>();
-        private final Map<List<String>,Point> passingPlaces=new HashMap<>();
-        private Set<List<String>> lastPinned=Set.of();
         private Map<List<String>,Point> lastSnapshot=Map.of();
-        private boolean settled;
         private Bounds lastArea;
         private double lastWidth,lastHeight;
 
         public Map<List<String>, Point> update(List<Anchor> anchors, Bounds area, double width,
-                double height, Set<List<String>> pinned, double seconds) {
+                double height) {
             // A transient invalid native layout must never replace the last usable frame.
             if (!valid(area, width, height) || anchors.stream().anyMatch(a -> !finite(a.point)))
                 return snapshot();
-            double dt = Double.isFinite(seconds) ? Math.max(0, Math.min(.05, seconds)) : 0;
             boolean changed=anchors.size()!=mounts.size()||anchors.stream().anyMatch(a->!a.point.equals(mounts.get(a.path)));
             boolean resized=!area.equals(lastArea)||width!=lastWidth||height!=lastHeight;
-            if(!changed&&!resized&&lastPinned.equals(pinned)&&(settled||dt==0))return snapshot();
-            var before=lastSnapshot;
+            if(!changed&&!resized)return snapshot();
             lastArea=area;lastWidth=width;lastHeight=height;
             var previousMounts=new HashMap<>(mounts);
             var paths = new HashSet<List<String>>();
@@ -52,8 +47,7 @@ public final class SlotLayout {
                 if (old == null) continue;
                 var mount = mounts.get(anchor.path);
                 var target = targets.getOrDefault(anchor.path, old);
-                if (pinned.contains(anchor.path)) target = old;
-                else if (mount != null && !mount.equals(anchor.point))
+                if (mount != null && !mount.equals(anchor.point))
                     target = new Point(target.x + anchor.point.x - mount.x, target.y + anchor.point.y - mount.y);
                 targets.put(anchor.path, target);
                 mounts.put(anchor.path, anchor.point);
@@ -66,7 +60,7 @@ public final class SlotLayout {
             }
             if(resized) {
                 // A narrower window can exclude previous positions. Keep in-bounds survivors and
-                // rehome only excluded cards before running motion in the new coordinate domain.
+                // rehome only excluded cards before solving in the new coordinate domain.
                 var reserved=new ArrayList<Point>();
                 for(var p:positions.values())if(inside(p,area,width,height))reserved.add(p);
                 for(var entry:positions.entrySet())if(!inside(entry.getValue(),area,width,height)) {
@@ -74,102 +68,30 @@ public final class SlotLayout {
                     entry.setValue(p);targets.put(entry.getKey(),p);destinations.put(entry.getKey(),p);reserved.add(p);
                 }
             }
-            if(changed || resized || !lastPinned.equals(pinned)) {
-                passingPlaces.clear();
+            if(changed || resized) {
                 var reserved=new LinkedHashMap<List<String>,Point>();
                 var priority=new ArrayList<>(ordered);
-                priority.sort(Comparator.comparingInt((Anchor a)->pinned.contains(a.path)?0:
-                        a.point.equals(previousMounts.get(a.path))?1:2).thenComparing(a->orderKeys.get(a.path)));
+                priority.sort(Comparator.comparingInt((Anchor a)->a.point.equals(previousMounts.get(a.path))?0:1)
+                        .thenComparing(a->orderKeys.get(a.path)));
                 for(var anchor:priority) {
-                    var desired=pinned.contains(anchor.path)?positions.get(anchor.path):
-                            anchor.point.equals(previousMounts.get(anchor.path))&&destinations.containsKey(anchor.path)?destinations.get(anchor.path):
+                    var desired=anchor.point.equals(previousMounts.get(anchor.path))&&destinations.containsKey(anchor.path)?destinations.get(anchor.path):
                             clamp(targets.get(anchor.path),area,width,height);
                     desired=clamp(desired,area,width,height);
                     var destination=free(desired,reserved.values(),width,height)?desired:
                             freeSite(desired,null,area,width,height,reserved.values());
                     reserved.put(anchor.path,destination);
                 }
-                destinations.clear();destinations.putAll(reserved);lastPinned=Set.copyOf(pinned);
+                destinations.clear();destinations.putAll(reserved);
             }
-            // Bounded continuous movement, with swept collision checks (including the dropdown footprint).
-            // Collision response moves locally; changes of side have a continuous, obstacle-free path.
-            for (var anchor : ordered) {
-                if (pinned.contains(anchor.path)) continue;
-                var old = positions.get(anchor.path);
-                var obstacles = new ArrayList<Point>();
-                positions.forEach((path, point) -> { if (!path.equals(anchor.path)) obstacles.add(point); });
-                var finalGoal = destinations.get(anchor.path);
-                var passing = passingPlaces.get(anchor.path);
-                if(passing!=null&&distanceSquared(old,passing)<.0025&&free(finalGoal,obstacles,width,height)) {
-                    passingPlaces.remove(anchor.path);passing=null;
-                }
-                if(passing==null&&!free(finalGoal,obstacles,width,height)) {
-                    // When two touching cards exchange places, neither endpoint is initially free.
-                    // The earlier path yields into a safe passing place; the other can then vacate its endpoint.
-                    boolean yields=positions.entrySet().stream().filter(e->!e.getKey().equals(anchor.path))
-                            .filter(e->overlaps(finalGoal,e.getValue(),width,height,GAP-.00001))
-                            .allMatch(e->orderKeys.get(anchor.path).compareTo(orderKeys.get(e.getKey()))<0);
-                    if(yields) {
-                        var reserved=new ArrayList<>(obstacles);
-                        destinations.forEach((path,point)->{if(!path.equals(anchor.path))reserved.add(point);});
-                        double dx=finalGoal.x-old.x,dy=finalGoal.y-old.y;
-                        Point preferred=Math.abs(dx)>=Math.abs(dy)?new Point(old.x,old.y+height+GAP):new Point(old.x+width+GAP,old.y);
-                        passing=findFreeSite(clamp(preferred,area,width,height),null,area,width,height,reserved);
-                        if(passing!=null)passingPlaces.put(anchor.path,passing);
-                    }
-                }
-                var goal = passing==null?finalGoal:passing;
-                double distance = Math.sqrt(distanceSquared(old,goal));
-                if (dt == 0) continue;
-                if(distance < .05 && distance<=650*dt && free(goal,obstacles,width,height)) {
-                    positions.put(anchor.path,goal);continue;
-                }
-                double travel = Math.min(distance*(1-Math.exp(-18*dt)),650*dt);
-                var wanted = towards(old,goal,travel);
-                var next = slide(old, wanted, obstacles, width, height);
-                if (distanceSquared(next,wanted) > .000001) {
-                    // A mount can cross another mount during rotation. Slide alone would lock their order.
-                    // Route only the blocked card around nearby rectangles; other cards stay reserved.
-                    var route = route(old,goal,area,obstacles,width,height);
-                    // If a dense cluster temporarily disconnects the free area, keep the last valid
-                    // position instead of asymptotically sliding along a wall toward an unreachable goal.
-                    next=old;
-                    if(!route.isEmpty()) {
-                        double remaining=travel;
-                        for(var waypoint:route) {
-                            var step=slide(next,towards(next,waypoint,remaining),obstacles,width,height);
-                            remaining-=Math.sqrt(distanceSquared(next,step));next=step;
-                            if(remaining<.000001||distanceSquared(next,waypoint)>.000001)break;
-                        }
-                    }
-                }
-                positions.put(anchor.path, next);
-            }
-            var result=snapshot();settled=dt>0&&before.equals(result);
-            return result;
+            // The current camera frame owns the visible result. Cards snap to the resolved
+            // non-overlapping destinations instead of integrating velocity across later frames.
+            positions.clear();positions.putAll(destinations);
+            return snapshot();
         }
         private Map<List<String>, Point> snapshot() {
             if(!lastSnapshot.equals(positions))lastSnapshot=Collections.unmodifiableMap(new LinkedHashMap<>(positions));
             return lastSnapshot;
         }
-    }
-
-    private static Point slide(Point old, Point wanted, Collection<Point> obstacles, double width, double height) {
-        // Axis-separated swept AABB motion cannot tunnel through another card even after a long frame.
-        double x = wanted.x;
-        for (var p : obstacles) {
-            if (old.y + height + GAP <= p.y+1e-7 || p.y + height + GAP <= old.y+1e-7) continue;
-            if (x > old.x && old.x + width + GAP <= p.x+1e-7) x = Math.min(x, p.x-width-GAP);
-            if (x < old.x && p.x + width + GAP <= old.x+1e-7) x = Math.max(x, p.x+width+GAP);
-        }
-        double y = wanted.y;
-        for (var p : obstacles) {
-            if (x + width + GAP <= p.x+1e-7 || p.x + width + GAP <= x+1e-7) continue;
-            if (y > old.y && old.y + height + GAP <= p.y+1e-7) y = Math.min(y, p.y-height-GAP);
-            if (y < old.y && p.y + height + GAP <= old.y+1e-7) y = Math.max(y, p.y+height+GAP);
-        }
-        var result=new Point(x,y);
-        return free(result,obstacles,width,height)?result:old;
     }
 
     private static Bounds mountBounds(List<Anchor> anchors) {
@@ -260,56 +182,6 @@ public final class SlotLayout {
     private static boolean free(Point p, Collection<Point> obstacles, double width, double height) {
         return obstacles.stream().noneMatch(o -> overlaps(p,o,width,height,GAP-.00001));
     }
-    private static Point towards(Point from, Point to, double travel) {
-        double distance=Math.sqrt(distanceSquared(from,to));
-        double fraction=distance==0?0:Math.min(1,travel/distance);
-        return new Point(from.x+(to.x-from.x)*fraction,from.y+(to.y-from.y)*fraction);
-    }
-    private record Visit(int index, double cost) {}
-    /** A* on the local obstacle-edge grid in top-left configuration space. No mesh/model dependencies. */
-    private static List<Point> route(Point start, Point goal, Bounds area, Collection<Point> obstacles, double width, double height) {
-        var xSet=new TreeSet<Double>();var ySet=new TreeSet<Double>();
-        xSet.add(start.x);xSet.add(goal.x);xSet.add(area.x);xSet.add(area.x+area.width-width);
-        ySet.add(start.y);ySet.add(goal.y);ySet.add(area.y);ySet.add(area.y+area.height-height);
-        for(var p:obstacles) {
-            xSet.add(p.x-width-GAP);xSet.add(p.x+width+GAP);
-            ySet.add(p.y-height-GAP);ySet.add(p.y+height+GAP);
-        }
-        var xs=xSet.stream().filter(x->x>=area.x&&x<=area.x+area.width-width).toList();
-        var ys=ySet.stream().filter(y->y>=area.y&&y<=area.y+area.height-height).toList();
-        int columns=xs.size(),count=columns*ys.size();
-        int startX=xs.indexOf(start.x),startY=ys.indexOf(start.y),goalX=xs.indexOf(goal.x),goalY=ys.indexOf(goal.y);
-        if(startX<0||startY<0||goalX<0||goalY<0)return List.of();
-        int first=startY*columns+startX,last=goalY*columns+goalX;
-        var points=new Point[count];var clear=new boolean[count];var distance=new double[count];var parent=new int[count];
-        Arrays.fill(distance,Double.POSITIVE_INFINITY);Arrays.fill(parent,-1);
-        for(int i=0;i<count;i++) {points[i]=new Point(xs.get(i%columns),ys.get(i/columns));clear[i]=free(points[i],obstacles,width,height);}
-        var queue=new PriorityQueue<Visit>(Comparator.comparingDouble(Visit::cost).thenComparingInt(Visit::index));
-        distance[first]=0;queue.add(new Visit(first,0));
-        var closed=new boolean[count];
-        while(!queue.isEmpty()) {
-            int current=queue.remove().index;if(closed[current])continue;closed[current]=true;
-            if(current==last) {
-                var result=new ArrayList<Point>();
-                while(current!=first&&parent[current]>=0){result.add(points[current]);current=parent[current];}
-                Collections.reverse(result);return result;
-            }
-            int col=current%columns,row=current/columns;
-            int[] neighbors={col>0?current-1:-1,col+1<columns?current+1:-1,row>0?current-columns:-1,row+1<ys.size()?current+columns:-1};
-            for(int next:neighbors) {
-                if(next<0||!clear[next]||closed[next])continue;
-                var from=points[current];var to=points[next];
-                // Every obstacle boundary belongs to the grid. Midpoint checks cover the open edge.
-                if(!free(new Point((from.x+to.x)/2,(from.y+to.y)/2),obstacles,width,height))continue;
-                double candidate=distance[current]+Math.abs(to.x-from.x)+Math.abs(to.y-from.y);
-                if(candidate>=distance[next])continue;
-                distance[next]=candidate;parent[next]=current;
-                queue.add(new Visit(next,candidate+Math.abs(to.x-goal.x)+Math.abs(to.y-goal.y)));
-            }
-        }
-        return List.of();
-    }
-
     static boolean valid(Bounds b, double width, double height) {
         return Double.isFinite(b.x) && Double.isFinite(b.y) && Double.isFinite(b.width) && Double.isFinite(b.height)
                 && width > 0 && height > 0 && b.width >= width && b.height >= height;

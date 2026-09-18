@@ -6,12 +6,12 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class StableSlotLayoutTest {
     private static final SlotLayout.Bounds AREA=new SlotLayout.Bounds(28,112,1224,472);
-    private static final double WIDTH=WorkbenchSlotMetrics.CARD+WorkbenchSlotMetrics.TOGGLE, HEIGHT=WorkbenchSlotMetrics.CARD, DT=1d/60;
+    private static final double WIDTH=WorkbenchSlotMetrics.CARD+WorkbenchSlotMetrics.TOGGLE, HEIGHT=WorkbenchSlotMetrics.CARD;
     private static SlotLayout.Anchor a(String path,double x,double y) {
         return new SlotLayout.Anchor(List.of(path.split("/")),new SlotLayout.Point(x,y));
     }
     private static Map<List<String>,SlotLayout.Point> update(SlotLayout.State state,List<SlotLayout.Anchor> anchors) {
-        return state.update(anchors,AREA,WIDTH,HEIGHT,Set.of(),DT);
+        return state.update(anchors,AREA,WIDTH,HEIGHT);
     }
     private static void usable(Map<List<String>,SlotLayout.Point> map) {
         var points=new ArrayList<>(map.values());
@@ -56,8 +56,8 @@ class StableSlotLayoutTest {
     @Test void shrinkingWindowRehomesExcludedCardsAndKeepsThemClickable() {
         var state=new SlotLayout.State();var anchors=new ArrayList<SlotLayout.Anchor>();
         for(int i=0;i<12;i++)anchors.add(a("slot"+i,700+i*75,350));
-        state.update(anchors,new SlotLayout.Bounds(28,112,1800,472),WIDTH,HEIGHT,Set.of(),DT);
-        var resized=state.update(anchors,AREA,WIDTH,HEIGHT,Set.of(),DT);
+        state.update(anchors,new SlotLayout.Bounds(28,112,1800,472),WIDTH,HEIGHT);
+        var resized=state.update(anchors,AREA,WIDTH,HEIGHT);
         usable(resized);assertEquals(12,resized.size());
         for(int i=0;i<120;i++)usable(update(state,anchors));
     }
@@ -89,35 +89,31 @@ class StableSlotLayoutTest {
     @Test void invalidFrameCannotEraseOrPolluteValidLayout() {
         var state=new SlotLayout.State();var anchors=List.of(a("muzzle",200,350));
         var first=update(state,anchors);
-        assertEquals(first,state.update(List.of(),new SlotLayout.Bounds(0,0,0,0),WIDTH,HEIGHT,Set.of(),DT));
+        assertEquals(first,state.update(List.of(),new SlotLayout.Bounds(0,0,0,0),WIDTH,HEIGHT));
         assertEquals(first,update(state,List.of(a("muzzle",Double.NaN,0))));
         assertEquals(first,update(state,anchors));
     }
-    @Test void hoveredOrExpandedCardIsPinnedThroughRotationAndAddition() {
+    @Test void hoveredOrExpandedCardStillFollowsTheCurrentFrame() {
         var state=new SlotLayout.State();var original=a("muzzle",260,350);
         var first=update(state,List.of(original));
         var rotated=List.of(a("muzzle",960,290),a("scope",600,330));
-        for(int i=0;i<60;i++) {
-            var positions=state.update(rotated,AREA,WIDTH,HEIGHT,Set.of(original.path()),DT);
-            assertEquals(first.get(original.path()),positions.get(original.path()));usable(positions);
-        }
-        assertEquals(first.get(original.path()),update(state,rotated).get(original.path()),"unpin must not release stored movement");
+        var positions=state.update(rotated,AREA,WIDTH,HEIGHT);
+        usable(positions);
+        assertEquals(first.get(original.path()).x()+700,positions.get(original.path()).x(),.001);
+        assertEquals(first.get(original.path()).y()-60,positions.get(original.path()).y(),.001);
+        assertEquals(positions,state.update(rotated,AREA,WIDTH,HEIGHT));
     }
-    @Test void unimpededRotationFollowsMountContinuouslyAndSettles() {
+    @Test void unimpededRotationReachesTheCurrentFrameWithoutTrailing() {
         var state=new SlotLayout.State();var anchors=List.of(a("muzzle",350,340));
         var previous=update(state,anchors);var start=previous.get(anchors.getFirst().path());
         anchors=List.of(a("muzzle",650,350));
-        for(int frame=0;frame<90;frame++) {
-            var next=update(state,anchors);var p=next.get(anchors.getFirst().path());var old=previous.get(anchors.getFirst().path());
-            assertTrue(Math.hypot(p.x()-old.x(),p.y()-old.y())<=650*DT+.001,"bounded frame travel");
-            usable(next);previous=next;
-        }
-        var end=previous.get(anchors.getFirst().path());
+        var endFrame=update(state,anchors);usable(endFrame);
+        var end=endFrame.get(anchors.getFirst().path());
         assertEquals(300,end.x()-start.x(),.1);assertEquals(10,end.y()-start.y(),.1);
-        for(int i=0;i<60;i++)assertEquals(previous,update(state,anchors),"stopped camera must not drift");
+        for(int i=0;i<60;i++)assertEquals(endFrame,update(state,anchors),"stopped camera must not drift");
     }
-    @Test void denseRotationNeverOverlapsDropdownsOrTeleports() {
-        var state=new SlotLayout.State();Map<List<String>,SlotLayout.Point> previous=Map.of();
+    @Test void denseRotationIsUsableAndSettledInEveryFrame() {
+        var state=new SlotLayout.State();
         List<SlotLayout.Anchor> anchors=List.of();
         for(int frame=0;frame<720;frame++) {
             var moving=new ArrayList<SlotLayout.Anchor>();
@@ -126,14 +122,8 @@ class StableSlotLayoutTest {
                 moving.add(a("slot"+i,640+700*Math.cos(angle),350+220*Math.sin(angle)));
             }
             anchors=moving;var next=update(state,anchors);usable(next);
-            for(var entry:previous.entrySet()) {
-                var p=next.get(entry.getKey());var old=entry.getValue();
-                assertTrue(Math.hypot(p.x()-old.x(),p.y()-old.y())<=650*DT+.001,"bounded rotation movement");
-            }
-            previous=next;
+            assertEquals(next,update(state,anchors),"a rendered frame must not leave trailing motion");
         }
-        for(int i=0;i<120;i++)previous=update(state,anchors);
-        for(int i=0;i<120;i++)assertEquals(previous,update(state,anchors));
     }
     @Test void touchingCardsCanExchangeOccupiedEndpointsHorizontallyAndVertically() {
         for(boolean horizontal:List.of(true,false)) {
@@ -162,23 +152,20 @@ class StableSlotLayoutTest {
         assertEquals(before.get(anchors.get(1).path()).x()-550,positions.get(anchors.get(1).path()).x(),.1);
         assertEquals(positions,update(state,exchanged));
     }
-    @Test void rotatingPastAPinnedNeighborRoutesAroundItInsteadOfLosingMountTracking() {
+    @Test void rotatingPastANeighborResolvesInTheCurrentFrame() {
         var state=new SlotLayout.State();
         var initial=List.of(a("moving",350,320),a("pinned",650,320));
         var before=update(state,initial);
         var moved=List.of(a("moving",950,320),initial.get(1));
         var positions=before;
         for(int i=0;i<240;i++) {
-            var next=state.update(moved,AREA,WIDTH,HEIGHT,Set.of(initial.get(1).path()),DT);
+            var next=state.update(moved,AREA,WIDTH,HEIGHT);
             usable(next);
-            assertEquals(before.get(initial.get(1).path()),next.get(initial.get(1).path()));
-            var old=positions.get(initial.get(0).path());var p=next.get(initial.get(0).path());
-            assertTrue(Math.hypot(old.x()-p.x(),old.y()-p.y())<=650*DT+.001);
             positions=next;
         }
         assertEquals(before.get(initial.get(0).path()).x()+600,positions.get(initial.get(0).path()).x(),.1);
         assertEquals(before.get(initial.get(0).path()).y(),positions.get(initial.get(0).path()).y(),.1);
-        assertEquals(positions,state.update(moved,AREA,WIDTH,HEIGHT,Set.of(initial.get(1).path()),DT));
+        assertEquals(positions,state.update(moved,AREA,WIDTH,HEIGHT));
     }
     @Test void coincidentMountsReserveRectangularFootprintsWithoutResizingCards() {
         var state=new SlotLayout.State();var anchors=new ArrayList<SlotLayout.Anchor>();
