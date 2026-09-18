@@ -2,7 +2,7 @@
 Original rig and resources are inputs only. High/low share physical definitions.
 """
 from pathlib import Path
-import json,re,copy,uuid,hashlib,math,collections
+import json,re,copy,uuid,hashlib,math,collections,sys
 import numpy as np
 from PIL import Image
 from assembly_source import load_assembly
@@ -19,6 +19,12 @@ def write(p,v):
 audit=read(AUTHOR/'native-reference.json');ownership=audit['boneOwner']
 attachments=[a for a in audit['attachments'] if a['tagAllowed'] and a['id'] not in {'tacz:ammo_mod_fmj','tacz:ammo_mod_hp','tacz:ammo_mod_i'}]
 assert len(attachments)==52
+sys.path.insert(0,str(R/'tools/native_optics'))
+from produce import build_for_gun as build_optics
+optic_sources=read(AUTHOR/'optics.json')['optics']
+for entry in optic_sources:
+ source=R/entry['source'];config=read(source/'optic.json')
+ attachments.append({'id':config['attachmentId'],'type':'scope','tagAllowed':True,'display':read(source/'display.json')})
 assembly=load_assembly(R/'modules/tacz_adapter/weapon-sources/native_m4a1/assembly.json')
 external=assembly['external']
 assert set(external)=={a['id'] for a in attachments}, 'author attachment IDs differ from native audit'
@@ -31,6 +37,7 @@ for name in physical+list(external.values()):
  if name=='lower_receiver':entry['weapon']={'recoilVertical':0,'recoilHorizontal':0,'centerOfImpact':0,'sightingRange':0}
  catalog.append(entry)
 load_mounts(AUTHOR/'mounts.json',catalog)  # Fail before publishing partial resources.
+build_optics(AUTHOR,OUT)
 write(BASE/'catalog.json',{'schemaVersion':1,'parts':catalog})
 mapping={p:f'{NS}:{GUN}' if p=='lower_receiver' else f'{NS}:m4a1_{p}' for p in physical};mapping.update({v:k for k,v in external.items()})
 write(BASE/'mapping.json',mapping);write(BASE/'native_attachments.json',external)
@@ -135,7 +142,7 @@ p=OUT/f'assets/{NS}/textures/gun/lod/m4a1.png';p.parent.mkdir(parents=True,exist
 write(BASE/'batches.json',manifest)
 write(BASE/'geometry-evidence.json',{'nativeRigBones':len(hb),'highCubes':sum(len(b.get('cubes',[])) for b in highbones),'lowCubes':sum(len(b.get('cubes',[])) for b in lowbones),'reusedLowCubes':reused,'maximumNeutralMatrixError':max(errors),'derivedRegions':derived,'lodPolicy':'47 isolated old cubes rebound; mixed regions replaced by largest native surfaces per original bone, at most two; no baked stock; physical attachment uses native renderer','sourceHashes':audit['sourceHashes'],'textureAtlas':{'high':[0,0,texhi.width,texhi.height],'oldLow':[0,texhi.height,texlo.width,texlo.height]},'limits':['No game, animation playback or FPS measurement; LOD surface reduction requires owner visual acceptance']})
 for locale in ['en_us','zh_cn']:
- labels={f'item.{NS}.{id.split(":")[1]}':name.replace('_',' ').capitalize() for name,id in mapping.items() if not id.startswith('tacz:')}
+ labels={f'item.{NS}.{id.split(":")[1]}':name.replace('_',' ').capitalize() for name,id in mapping.items() if name in physical}
  labels[f'gun.{NS}.m4a1']='M4A1 · Native Assembly' if locale=='en_us' else 'M4A1 · 原生实体组装'
  language_path=OUT/f'assets/{NS}/lang/{locale}.json'
  # Shared namespace: rebuilding this gun must retain other guns' translations.
@@ -162,5 +169,5 @@ from editable_import import build as build_editable
 build_editable()
 write(BASE/'authoring-contract.json',{'schemaVersion':1,'gunId':f'{NS}:{GUN}',
  'sources':{name:hashlib.sha256((AUTHOR/name).read_bytes()).hexdigest() for name in
- ('assembly.json','mounts.json','native-reference.json','native-profile.json','native-visual-rules.json','editable/manifest.json')},
+ ('assembly.json','mounts.json','native-reference.json','native-profile.json','native-visual-rules.json','editable/manifest.json','optics.json')},
  'policy':'Explicit local frames and assembly relations; native animation rig preserved; existing gun and part identities retained'})

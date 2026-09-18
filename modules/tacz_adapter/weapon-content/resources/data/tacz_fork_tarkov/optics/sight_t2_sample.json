@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_t2_sample",
+  "cubes": 119,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/data.json": "cafb4a424289709d912cb8f1e6bd92bbaa9b74f4edf26085591c2b836224901b",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/display.json": "8d10ba2cb32053f866ddf3b35fa7c79f6526890e89206d8ef9180f9f62fdbf59",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/editable/components/t2_sample/model.bbmodel": "d66073276a3cc14baccc4042625c0e4a80f2b8d9c0cfeb1d0c496483e491a7a5",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/editable/components/t2_sample/texture.png": "db3da537a500ce89f9b25cc75e7f6861c29698f1d02683a7b6406d23670002d6",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/editable/components/t2_sample/texture_n.png": "7994c6c416b56d6545dcbba5996a8f6f77772fc75f20577d92c4e8c2475e4d12",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/editable/components/t2_sample/texture_s.png": "1b26309ddf54e5d64d8ed0d0664ce564b93478078428810490b3334ed6aa49bd",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/editable/manifest.json": "0e5717a24918aa99ce2d003d3f651c7beec6d5d5b602e23d121c2fb8315cb542",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/lod/model.json": "2da461b5a9402a1d05289c4e6ad43cb96ccea5fcd08afbebd88e85149c9e7b79",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/lod/texture.png": "27cd7e65c1c6656af469a0e1f642571e5ae104b3b3d592024dfb51ccaa56563c",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/optic.json": "f0a938043fcd38d06a6e7ec83dd6acc963e2ddf0d042898e4bf6af3403b5f0bc",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample/slot.png": "4e58b28b7c401c0d4a924cbae497d4485013bdcd6879b9164b2c761b16163c63"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

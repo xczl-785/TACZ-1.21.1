@@ -101,7 +101,9 @@
             "tacz_sight_pk06_rifle",
             "tacz_sight_srs_02",
             "tacz_sight_t2",
-            "tacz_sight_uh1"
+            "tacz_sight_uh1",
+            "fork_sight_t2_sample",
+            "fork_scope_elcan_sample"
           ]
         }
       ],
@@ -785,6 +787,24 @@
     },
     {
       "id": "tacz_stock_tactical_ar",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "fork_sight_t2_sample",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "fork_scope_elcan_sample",
       "stats": {
         "weightKg": 0,
         "ergonomics": 0

@@ -29,7 +29,7 @@ class NativeAssemblyStateTest {
     @Test void standardWorkbenchLoadsTexturedPartsAndLocalMounts(){
         var models=NativeAssemblyView.geometry(weapon());
         var materials=NativeAssemblyView.materials(weapon(),models);
-        assertEquals(67,models.size());
+        assertEquals(69,models.size());
         for(var entry:models.entrySet()){
             assertEquals(new dev.weaponmodels.ModelGeometry.Point(0,0,0),entry.getValue().attachmentOrigin());
             for(var mesh:entry.getValue().meshes())for(var triangle:mesh.triangles())

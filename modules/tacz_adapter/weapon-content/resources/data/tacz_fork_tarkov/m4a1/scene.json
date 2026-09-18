@@ -2,91 +2,91 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "0d8b58f1-60b0-5303-96bf-4b34a1577215",
+      "instanceId": "a9a7634e-6ea7-5035-8c15-9de254a119ee",
       "definitionId": "lower_receiver"
     },
     {
-      "instanceId": "4fab7f72-ca95-54af-a795-1c962809c334",
+      "instanceId": "b220691b-515e-5ae4-8696-c898c2cf5ca0",
       "definitionId": "upper_receiver",
-      "parentId": "0d8b58f1-60b0-5303-96bf-4b34a1577215",
+      "parentId": "a9a7634e-6ea7-5035-8c15-9de254a119ee",
       "slot": "upper"
     },
     {
-      "instanceId": "7a871cef-06d1-5a19-b243-9a3328596d15",
+      "instanceId": "65af80cb-2078-59be-8c7a-5037a0ed202b",
       "definitionId": "barrel_mount_collar",
-      "parentId": "4fab7f72-ca95-54af-a795-1c962809c334",
+      "parentId": "b220691b-515e-5ae4-8696-c898c2cf5ca0",
       "slot": "barrel_mount"
     },
     {
-      "instanceId": "0cdaf8b0-f0d9-57cd-bf0f-37d08a848e3c",
+      "instanceId": "598f3345-18f2-55e2-a563-bcb002d0f554",
       "definitionId": "barrel",
-      "parentId": "7a871cef-06d1-5a19-b243-9a3328596d15",
+      "parentId": "65af80cb-2078-59be-8c7a-5037a0ed202b",
       "slot": "barrel"
     },
     {
-      "instanceId": "d693c9b5-5da2-55c9-8c8f-ab73e533191d",
+      "instanceId": "d823838c-5bc0-511a-81f9-b88779de8071",
       "definitionId": "gas_block_and_tube",
-      "parentId": "0cdaf8b0-f0d9-57cd-bf0f-37d08a848e3c",
+      "parentId": "598f3345-18f2-55e2-a563-bcb002d0f554",
       "slot": "gas"
     },
     {
-      "instanceId": "6fbac395-d659-5f3e-9af2-9232f126b917",
+      "instanceId": "88dfa7f9-2a00-579f-9a93-cc5bf27d4f52",
       "definitionId": "front_sight",
-      "parentId": "d693c9b5-5da2-55c9-8c8f-ab73e533191d",
+      "parentId": "d823838c-5bc0-511a-81f9-b88779de8071",
       "slot": "front_sight"
     },
     {
-      "instanceId": "fa40955d-6322-56b0-8e75-5619ec474c89",
+      "instanceId": "6e28b164-3374-5655-9d48-0a3950715641",
       "definitionId": "muzzle_default",
-      "parentId": "0cdaf8b0-f0d9-57cd-bf0f-37d08a848e3c",
+      "parentId": "598f3345-18f2-55e2-a563-bcb002d0f554",
       "slot": "muzzle"
     },
     {
-      "instanceId": "6595cfcc-6cd7-5930-9bbb-deb4b174ad98",
+      "instanceId": "e13ae4f6-7e3f-5b80-aa88-dee4542bee15",
       "definitionId": "handguard_default",
-      "parentId": "7a871cef-06d1-5a19-b243-9a3328596d15",
+      "parentId": "65af80cb-2078-59be-8c7a-5037a0ed202b",
       "slot": "handguard"
     },
     {
-      "instanceId": "82532cfe-fc66-5834-9376-9466012dc4c3",
+      "instanceId": "5b34e53d-8c89-58fd-9317-0dcd740df991",
       "definitionId": "bolt",
-      "parentId": "4fab7f72-ca95-54af-a795-1c962809c334",
+      "parentId": "b220691b-515e-5ae4-8696-c898c2cf5ca0",
       "slot": "bolt"
     },
     {
-      "instanceId": "838e3d2e-8b2d-54c0-9a2a-1e0911cf7ef7",
+      "instanceId": "a195ef58-fd1f-5752-9b60-d713c6957c17",
       "definitionId": "charging_mechanism",
-      "parentId": "4fab7f72-ca95-54af-a795-1c962809c334",
+      "parentId": "b220691b-515e-5ae4-8696-c898c2cf5ca0",
       "slot": "charging_handle"
     },
     {
-      "instanceId": "b4999128-13b8-5c7d-8180-f99ffd694b4c",
+      "instanceId": "1fbdcc2a-9dcd-5c98-a7f2-233e8ee8907e",
       "definitionId": "rear_sight",
-      "parentId": "4fab7f72-ca95-54af-a795-1c962809c334",
+      "parentId": "b220691b-515e-5ae4-8696-c898c2cf5ca0",
       "slot": "rear_sight"
     },
     {
-      "instanceId": "ccc68bde-610b-5bef-a281-84ef4f4b122b",
+      "instanceId": "061c2b33-b0b5-5cfd-b3eb-36d357dd7378",
       "definitionId": "pistol_grip",
-      "parentId": "0d8b58f1-60b0-5303-96bf-4b34a1577215",
+      "parentId": "a9a7634e-6ea7-5035-8c15-9de254a119ee",
       "slot": "pistol_grip"
     },
     {
-      "instanceId": "de57c93e-82fc-5b88-b18a-c30ab71a273b",
+      "instanceId": "4943e74e-a2ee-5296-829e-882cebc793c5",
       "definitionId": "buffer",
-      "parentId": "0d8b58f1-60b0-5303-96bf-4b34a1577215",
+      "parentId": "a9a7634e-6ea7-5035-8c15-9de254a119ee",
       "slot": "buffer"
     },
     {
-      "instanceId": "cf20ed57-7fd4-59ff-8818-6b8aea03bd0b",
+      "instanceId": "c3bad4fd-fbd8-5d41-9ddf-585301ad7ba0",
       "definitionId": "tacz_stock_tactical_ar",
-      "parentId": "de57c93e-82fc-5b88-b18a-c30ab71a273b",
+      "parentId": "4943e74e-a2ee-5296-829e-882cebc793c5",
       "slot": "stock"
     },
     {
-      "instanceId": "12c6ac6c-6e01-5683-b17f-9f1cd36b445e",
+      "instanceId": "06068845-5ec1-52d9-b276-8faa08613c63",
       "definitionId": "magazine_standard",
-      "parentId": "0d8b58f1-60b0-5303-96bf-4b34a1577215",
+      "parentId": "a9a7634e-6ea7-5035-8c15-9de254a119ee",
       "slot": "magazine"
     }
   ]

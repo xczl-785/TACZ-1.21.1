@@ -8,7 +8,7 @@ from mount_source import load_mounts
 R=Path(__file__).resolve().parents[2]
 MODULE=R/'modules/tacz_adapter'
 sys.path.insert(0,str(MODULE/'tools'))
-from build_weapon import convert_component
+from component_mesh import convert_component
 from render_part_icon import render_part_icon
 SOURCE=MODULE/'weapon-sources/native_m4a1'
 OUT=MODULE/'weapon-content/resources'
@@ -45,10 +45,12 @@ def build():
  write(BASE/'workbench-anchors.json',{'schemaVersion':1,'policy':'Explicit author frames from mounts.json; independent of mesh bounds and candidate order; native motion pivots preserved','maximumRebaseError':max(errors),'anchors':{d:v.tolist() for d,v in anchors.items()}})
  write(BASE/'preview.json' ,{'schemaVersion':3,'models':models});write(BASE/'library.json',library);write(BASE/'materials.json',bindings)
  edited_parts={p['definitionId'] for p in read(SOURCE/'editable/manifest.json')['parts']}
+ edited_parts.update(p['definitionId'] for p in read(SOURCE/'optics.json')['optics'])
+ external=read(BASE/'native_attachments.json')
  root_definition=read(BASE/'weapon.json')['rootDefinition']
  for model in models:
   d=model['definitionId'];render_part_icon(model,library,bindings,lambda res:OUT/'assets'/res.replace(':','/'),muzzle_left=d in edited_parts,alpha_cutout=d in edited_parts).save(ASSETS/f'textures/item/{d}.png')
-  if not mapping[d].startswith('tacz:'):
+  if mapping[d] not in external:
    write(ASSETS/f'models/item/{mapping[d].split(":")[1]}.json',{'parent':'builtin/entity','gui_light':'front'} if d==root_definition else {'parent':'minecraft:item/generated','textures':{'layer0':f'tacz_fork_tarkov:item/{d}'}})
  labels={
  'upper':('机匣','Receiver'),'pistol_grip':('手枪握把','Pistol grip'),'buffer':('缓冲管','Buffer tube'),'magazine':('弹匣','Magazine'),

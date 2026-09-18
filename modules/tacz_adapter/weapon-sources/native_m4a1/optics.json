@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "optics": [
+    {
+      "definitionId": "fork_sight_t2_sample",
+      "source": "modules/tacz_adapter/weapon-sources/optics/t2_sample",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "fork_scope_elcan_sample",
+      "source": "modules/tacz_adapter/weapon-sources/optics/elcan_sample",
+      "nativeMount": "scope_pos"
+    }
+  ],
+  "nativeGunModel": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json"
+}

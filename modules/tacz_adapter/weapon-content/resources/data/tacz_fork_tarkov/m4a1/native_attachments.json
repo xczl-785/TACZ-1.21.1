@@ -50,5 +50,7 @@
   "tacz:stock_moe": "tacz_stock_moe",
   "tacz:stock_ripstock": "tacz_stock_ripstock",
   "tacz:stock_sba3": "tacz_stock_sba3",
-  "tacz:stock_tactical_ar": "tacz_stock_tactical_ar"
+  "tacz:stock_tactical_ar": "tacz_stock_tactical_ar",
+  "tacz_fork_tarkov:sight_t2_sample": "fork_sight_t2_sample",
+  "tacz_fork_tarkov:scope_elcan_sample": "fork_scope_elcan_sample"
 }

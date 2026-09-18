@@ -155,3 +155,9 @@ tasks.register('verifyNativeGunPipeline', Exec) {
     commandLine 'python3', '-m', 'unittest', 'discover', '-s', 'tools/native_guns', '-p', 'test_*.py'
 }
 tasks.named('check') { dependsOn 'verifyNativeGunPipeline' }
+
+tasks.register('verifyNativeOptics', Exec) {
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', '-m', 'unittest', 'discover', '-s', 'tools/native_optics', '-p', 'test_*.py'
+}
+tasks.named('check') { dependsOn 'verifyNativeOptics' }

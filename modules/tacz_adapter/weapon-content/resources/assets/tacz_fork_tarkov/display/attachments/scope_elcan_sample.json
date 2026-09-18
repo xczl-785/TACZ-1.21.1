@@ -1,0 +1,26 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/scope_elcan_sample",
+  "model": "tacz_fork_tarkov:attachment/scope_elcan_sample",
+  "texture": "tacz_fork_tarkov:attachment/scope_elcan_sample",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/scope_elcan_sample",
+    "texture": "tacz_fork_tarkov:attachment/lod/scope_elcan_sample"
+  },
+  "zoom": [
+    4.25,
+    1.25
+  ],
+  "views": [
+    2,
+    2
+  ],
+  "views_fov": [
+    40.0,
+    60.0
+  ],
+  "scope": true,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_d",
+    "uninstall": "tacz:attachments/scope_general_d"
+  }
+}

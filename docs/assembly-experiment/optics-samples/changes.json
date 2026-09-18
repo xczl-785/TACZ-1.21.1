@@ -1,0 +1,401 @@
+{
+  "baseline": "2bd0c6a9",
+  "scope": "Two independent editable optical samples for M4; original optic resources unchanged",
+  "files": [
+    {
+      "path": "build-logic/adapter-integration.gradle",
+      "beforeSha256": "bd8bb4354f529e7f34625a796df4b7fc1331d5aa7d2a16c045c41fe1edebef32",
+      "afterSha256": "039e41f3d6e00f0c3fe0149fdf74582b90110cb863c1914e8fdbcecb33009d25"
+    },
+    {
+      "path": "modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/NativeAssemblyStateTest.java",
+      "beforeSha256": "66e6374c71da850581eb12b93bd7b5f85108d4ee4e3c36266172044505b90dcd",
+      "afterSha256": "a6aa281e64c6baba7987c0030d6d30f4faf846b623d9c4d255f363a830749b77"
+    },
+    {
+      "path": "modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/OpticalSampleStateTest.java",
+      "beforeSha256": null,
+      "afterSha256": "d1449c13a9c3f0fe080e931659add4ca5ad2a7ed21da6f600dfe258d16a107c3"
+    },
+    {
+      "path": "modules/tacz_adapter/src/test/java/dev/tacticaltacz/assembled/NativeAssemblyRulesTest.java",
+      "beforeSha256": "137cdd835f9010eaed2ea6f2c95ba0578b2e023b3ca61f64ad2e8df918960f0e",
+      "afterSha256": "d4628e2e912eaf16e786322aa9f209d5c24bd4224fe1452a37fa8d7d65e54f9f"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/display/attachments/scope_elcan_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "ad7c78f7915e4bc4ce00d37b7b848ad06ab45a45fb63c6fd9721cfcb318f41d0"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/display/attachments/sight_t2_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "a03654be208b847ca8a0a49f40819acec41679536247bc4a846ca61953af0f3c"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/geo_models/attachment/lod/scope_elcan_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "f30b014c6308bbf88ac367a437b45c0c443487604ccdaeabf42a65071fcc30f9"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/geo_models/attachment/lod/sight_t2_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "616c167b47546e018585201e6f8d47b89ca4c03ab33723eba0dea28e0d940f34"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/geo_models/attachment/scope_elcan_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "c3e5103aab670f40812eebb2ac3beb3622a51bc2eaba8496895b14fa6e1d5bd5"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/geo_models/attachment/sight_t2_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "938992ea3523d1cb0ab338e4236786549e4091ce705500b4d0dc26e9d7bbb389"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/lang/en_us.json",
+      "beforeSha256": "bf615dd5914e1a1edc64b085177da558bd3e85791f144397eb3f242a6bf9284d",
+      "afterSha256": "3b9c670427bf4d28355e0482c65afa76149fd253f0157775962cc10dfb774d1b"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/lang/zh_cn.json",
+      "beforeSha256": "4552d1da35fdc098c2c2b0a6541a30f4c4b26d652a8af6fb5e68865c788d4cb0",
+      "afterSha256": "d0d9f0d94b3e761d9e70b5a532b5748da27197b99751e4c1e2406a43b69bb7ef"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/attachment/lod/scope_elcan_sample.png",
+      "beforeSha256": null,
+      "afterSha256": "c7879f17558b96e8e3fee7c81729887007c4eba113911d9ff2106438b7063cd5"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/attachment/lod/sight_t2_sample.png",
+      "beforeSha256": null,
+      "afterSha256": "27cd7e65c1c6656af469a0e1f642571e5ae104b3b3d592024dfb51ccaa56563c"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/attachment/scope_elcan_sample.png",
+      "beforeSha256": null,
+      "afterSha256": "29caeac869d8aaa4b7efb9da3cb28848489eb59a89b0cd4140d61a5347d3ff0f"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/attachment/scope_elcan_sample_n.png",
+      "beforeSha256": null,
+      "afterSha256": "8310a573c87c91a8fe6196cd22ca702212e129c315c24fc1c3cc1079272be2a6"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/attachment/scope_elcan_sample_s.png",
+      "beforeSha256": null,
+      "afterSha256": "b4c30905e99dce68501db9823ec8779d0d18559a62d90135d3737dc8ae5dfc88"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/attachment/sight_t2_sample.png",
+      "beforeSha256": null,
+      "afterSha256": "db3da537a500ce89f9b25cc75e7f6861c29698f1d02683a7b6406d23670002d6"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/attachment/sight_t2_sample_n.png",
+      "beforeSha256": null,
+      "afterSha256": "7994c6c416b56d6545dcbba5996a8f6f77772fc75f20577d92c4e8c2475e4d12"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/attachment/sight_t2_sample_s.png",
+      "beforeSha256": null,
+      "afterSha256": "1b26309ddf54e5d64d8ed0d0664ce564b93478078428810490b3334ed6aa49bd"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/attachment/slot/scope_elcan_sample.png",
+      "beforeSha256": null,
+      "afterSha256": "08350f40460aad048feba7c12a39a0aa001f56ab696805455559c146d9d3bb2a"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/attachment/slot/sight_t2_sample.png",
+      "beforeSha256": null,
+      "afterSha256": "4e58b28b7c401c0d4a924cbae497d4485013bdcd6879b9164b2c761b16163c63"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/item/fork_scope_elcan_sample.png",
+      "beforeSha256": null,
+      "afterSha256": "8075829ab34e39a6a6cb336f4d8d9675d6eacedcbd21787885bf0cc2265d2665"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/item/fork_sight_t2_sample.png",
+      "beforeSha256": null,
+      "afterSha256": "b4bf8e2a94f847945c896942ff7441db0ae629b4e205823633bd9559481b63ec"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/parts/fork_scope_elcan_sample.png",
+      "beforeSha256": null,
+      "afterSha256": "29caeac869d8aaa4b7efb9da3cb28848489eb59a89b0cd4140d61a5347d3ff0f"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/assets/tacz_fork_tarkov/textures/parts/fork_sight_t2_sample.png",
+      "beforeSha256": null,
+      "afterSha256": "db3da537a500ce89f9b25cc75e7f6861c29698f1d02683a7b6406d23670002d6"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/data/attachments/scope_elcan_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "f77e34c083e79af58da90843053675e968ba12fbcad9db594bff2f7875f0994c"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/data/attachments/sight_t2_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "c438fa74605490b79ea6c7476208c72af41399bc00dac666cdb0494bde8538a6"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/index/attachments/scope_elcan_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "d69cc5ea2b0717bf817af3c1206f4ec9138ee45ea593bff37524c92b763cd50a"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/index/attachments/sight_t2_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "36ea996f7dc7122853469cea37aa16708c50965916ffb9d11089b52dc1903b71"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/authoring-contract.json",
+      "beforeSha256": "4e851f544521c60cd035a706f89afd14e327033a282082a94084f7b20557478f",
+      "afterSha256": "51264b306a5195c9596b48cef6ca66c67b29f267e335f55f2d4d6446e0be7de8"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/catalog.json",
+      "beforeSha256": "233a297d3ea59f9a0ef21d63456a0c131b909926cbd27419dc7d822115a125b2",
+      "afterSha256": "b0dde3835087af755bc3ea1bbc1b8cef1e60a4fad534a5017c3eca2481990065"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/library.json",
+      "beforeSha256": "e069b019d677171fcae162d3145a154f060e08d45f0996754ced51731cbc79c6",
+      "afterSha256": "0384b104f4ec7a9717bd4bf3f30dd676fd1c09316533877ed8e4b4c5315b23e9"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/mapping.json",
+      "beforeSha256": "183a2c3eb145198653b8287b87ecbff81942e83893b0cfba0db5e1f31e8bf6c5",
+      "afterSha256": "81c5da00d893042e4a9a128114c674724f82c27b6b7ee77b15f410c89546533e"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/materials.json",
+      "beforeSha256": "623891d00ef8a5a15cc92383b62e2a9006e2670d91e6a445ebcad3e4eabe8930",
+      "afterSha256": "9f0b990da6c8ad3fdb5027e4ecbfc62dc00dae5166ea2b5373b1421bf3e39373"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/native_attachments.json",
+      "beforeSha256": "e61227bb65178e8da29e3931b19af399858a6b841e244a1ea4e530d10e989aa3",
+      "afterSha256": "44e499309c9bea9e5c62d776d9d6c8a0704e48be690b57f3e29c48c339216356"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/preview.json",
+      "beforeSha256": "01fba89a829566802ae603477cc69da9f63c07328586d656ce278993ce940b2d",
+      "afterSha256": "4427d692e54aa3933baab0229e00ce188836b58a4e3a3c3b860cc7310f8bb5aa"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/scene.json",
+      "beforeSha256": "756859c399f4ef06951f66dc429ed220ecb17d0c7043f08dd11ce0e8f1ec7e56",
+      "afterSha256": "ccd7bd496c8f28bbc9d4b5f87b423c34c936b1f094bc94674d9d4e72d9480e71"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/workbench-anchors.json",
+      "beforeSha256": "4252585e93099c24d92dd9b54f2b850273098cc836d167e63601db8e1a2f6fa0",
+      "afterSha256": "60cc132e772d58e44bbda784de63ed9b457b5b19f376de3e113b437feef31e65"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/optics/scope_elcan_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "8fd4c152d049aefd43ed3941a6f758c5a994a9c45a68dd02a9727733d05fd52c"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/optics/sight_t2_sample.json",
+      "beforeSha256": null,
+      "afterSha256": "8043e1498dd6d883bc22273896d78fceb395ac645036c83db6475ccb61ba8e1b"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/tacz_tags/attachments/allow_attachments/m4a1.json",
+      "beforeSha256": "dd71d1809a27ab2b0cb48531f29966aacc5714c3698a810ada4058e1f7ec56ee",
+      "afterSha256": "60fa2236d3a33df153f7e6066b9bc510977363cf1dd95b68cee217abf0afa6bf"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/assembly.json",
+      "beforeSha256": "9563b433bb118b54a9acca5f4bcc46c24571115249679e2afe438ab99c7a7173",
+      "afterSha256": "54c7f87127ff280a640ac6f91a45eac120642523f84ab9b1e0df7a895fe5bc8e"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/manifest.json",
+      "beforeSha256": "44512eebd961861a0993fee48077be8fa93d248e591b818b9bd4d6c019b996a4",
+      "afterSha256": "bb09e4b4326dd0dbf87fae386bb8e4a1fa37d3e93326e6cd9412b5322c236a51"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/mounts.json",
+      "beforeSha256": "24794819386fe112a5fcca08b435ef5607fee117ad1df43338cb908e9f5da8cc",
+      "afterSha256": "833a66f4196df568b392025c7337dfbf85d4e4c771398215ffd36b7a51b1f682"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/optics.json",
+      "beforeSha256": null,
+      "afterSha256": "ff19f56f2d9f1a5c20c34012128fa94f9f08b5741868541590e61934b571ff04"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/fork_scope_elcan_sample/model.bbmodel",
+      "beforeSha256": null,
+      "afterSha256": "46debb51f6643087ef404cae69b494353d17078cb15b58d2ccb2f4b9ab6d7bba"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/fork_scope_elcan_sample/texture.png",
+      "beforeSha256": null,
+      "afterSha256": "29caeac869d8aaa4b7efb9da3cb28848489eb59a89b0cd4140d61a5347d3ff0f"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/fork_sight_t2_sample/model.bbmodel",
+      "beforeSha256": null,
+      "afterSha256": "fce9f13538bcef591857aadcc0cdcdbd2a2ab72ab69f509fb5d3174ad0c124a4"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/native_m4a1/source-pack/components/fork_sight_t2_sample/texture.png",
+      "beforeSha256": null,
+      "afterSha256": "db3da537a500ce89f9b25cc75e7f6861c29698f1d02683a7b6406d23670002d6"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/README.md",
+      "beforeSha256": null,
+      "afterSha256": "53179d5cc309636db922116e45f5622b68a1904a84a6348f00da0b23132731e7"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/data.json",
+      "beforeSha256": null,
+      "afterSha256": "803f326d79328bb80c7a00d9ee35afeca597118c7d79296149daa2f8c30342e9"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/display.json",
+      "beforeSha256": null,
+      "afterSha256": "7bdb2eaf4f5bd72f816267e84da056c976468d6110f71c8dd4516d64865368fc"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/editable/components/elcan_sample/model.bbmodel",
+      "beforeSha256": null,
+      "afterSha256": "fcbc8c41c97f14b118786214356aa19b82f5ff4025d04e2e6494fbfe0474fe7f"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/editable/components/elcan_sample/texture.png",
+      "beforeSha256": null,
+      "afterSha256": "29caeac869d8aaa4b7efb9da3cb28848489eb59a89b0cd4140d61a5347d3ff0f"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/editable/components/elcan_sample/texture_n.png",
+      "beforeSha256": null,
+      "afterSha256": "8310a573c87c91a8fe6196cd22ca702212e129c315c24fc1c3cc1079272be2a6"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/editable/components/elcan_sample/texture_s.png",
+      "beforeSha256": null,
+      "afterSha256": "b4c30905e99dce68501db9823ec8779d0d18559a62d90135d3737dc8ae5dfc88"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/editable/manifest.json",
+      "beforeSha256": null,
+      "afterSha256": "ec8e9de992ce89ee0f99315f368b28ffc3330dc8e390a116935c2caf0a1af35b"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/lod/model.json",
+      "beforeSha256": null,
+      "afterSha256": "43a1e297014d6cc1747302c41609095c16ee3f6a6b54b0fa4bd6a2faf8cea6a6"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/lod/texture.png",
+      "beforeSha256": null,
+      "afterSha256": "c7879f17558b96e8e3fee7c81729887007c4eba113911d9ff2106438b7063cd5"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/optic.json",
+      "beforeSha256": null,
+      "afterSha256": "6b2795bbcfa9ecc6e91dd58808187fa6dd7eb83d4808bfd055d7f8f8777e2905"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/elcan_sample/slot.png",
+      "beforeSha256": null,
+      "afterSha256": "08350f40460aad048feba7c12a39a0aa001f56ab696805455559c146d9d3bb2a"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/data.json",
+      "beforeSha256": null,
+      "afterSha256": "cafb4a424289709d912cb8f1e6bd92bbaa9b74f4edf26085591c2b836224901b"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/display.json",
+      "beforeSha256": null,
+      "afterSha256": "8d10ba2cb32053f866ddf3b35fa7c79f6526890e89206d8ef9180f9f62fdbf59"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/editable/components/t2_sample/model.bbmodel",
+      "beforeSha256": null,
+      "afterSha256": "d66073276a3cc14baccc4042625c0e4a80f2b8d9c0cfeb1d0c496483e491a7a5"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/editable/components/t2_sample/texture.png",
+      "beforeSha256": null,
+      "afterSha256": "db3da537a500ce89f9b25cc75e7f6861c29698f1d02683a7b6406d23670002d6"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/editable/components/t2_sample/texture_n.png",
+      "beforeSha256": null,
+      "afterSha256": "7994c6c416b56d6545dcbba5996a8f6f77772fc75f20577d92c4e8c2475e4d12"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/editable/components/t2_sample/texture_s.png",
+      "beforeSha256": null,
+      "afterSha256": "1b26309ddf54e5d64d8ed0d0664ce564b93478078428810490b3334ed6aa49bd"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/editable/manifest.json",
+      "beforeSha256": null,
+      "afterSha256": "0e5717a24918aa99ce2d003d3f651c7beec6d5d5b602e23d121c2fb8315cb542"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/lod/model.json",
+      "beforeSha256": null,
+      "afterSha256": "2da461b5a9402a1d05289c4e6ad43cb96ccea5fcd08afbebd88e85149c9e7b79"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/lod/texture.png",
+      "beforeSha256": null,
+      "afterSha256": "27cd7e65c1c6656af469a0e1f642571e5ae104b3b3d592024dfb51ccaa56563c"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/optic.json",
+      "beforeSha256": null,
+      "afterSha256": "f0a938043fcd38d06a6e7ec83dd6acc963e2ddf0d042898e4bf6af3403b5f0bc"
+    },
+    {
+      "path": "modules/tacz_adapter/weapon-sources/optics/t2_sample/slot.png",
+      "beforeSha256": null,
+      "afterSha256": "4e58b28b7c401c0d4a924cbae497d4485013bdcd6879b9164b2c761b16163c63"
+    },
+    {
+      "path": "tools/native_m4a1/build_workbench.py",
+      "beforeSha256": "aaf41c83a46c7b2229ccad69b9de476a961baee95e0bb3a0d500d6c529268dfe",
+      "afterSha256": "a5f838ffba32a338a26c25f2024f7205fd873bb8ad2e8da276ea7da7b9aeda13"
+    },
+    {
+      "path": "tools/native_m4a1/component_mesh.py",
+      "beforeSha256": null,
+      "afterSha256": "d0c185aa66397a00e6c33aeae8a880eff6d96d60d80f45d2f011e0a566c030f3"
+    },
+    {
+      "path": "tools/native_m4a1/generate.py",
+      "beforeSha256": "8d35118589834a7f2d1eb789e35a0924cf948998a09be6d011bd2aeaa1c02d67",
+      "afterSha256": "e4b25e754739ca83f39908caea925b3978ba5155f54ab077069dd08f195ea80d"
+    },
+    {
+      "path": "tools/native_m4a1/validate.py",
+      "beforeSha256": "74c733b508861ae1b3ebde7d63e29d7c1564c706999b8650ad48614e4496678a",
+      "afterSha256": "47cf2687ffbdb32e77fdcdd515c260c24348812906f44eafc0f0f462f7ccdecc"
+    },
+    {
+      "path": "tools/native_optics/produce.py",
+      "beforeSha256": null,
+      "afterSha256": "8ff9ccd5a2b99973adfb44e6413be33bfa0cda3fe453ecaeddde689a22ff58cd"
+    },
+    {
+      "path": "tools/native_optics/test_produce.py",
+      "beforeSha256": null,
+      "afterSha256": "b0990a3a47acbff460fb276302b5f33887c8979ba22b17f36da968348979ed8f"
+    }
+  ]
+}

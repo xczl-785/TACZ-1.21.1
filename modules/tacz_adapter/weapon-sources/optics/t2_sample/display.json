@@ -1,0 +1,1 @@
+{"slot":"tacz:attachment/slot/sight_t2","model":"tacz:attachment/sight_t2_geo","texture":"tacz:attachment/uv/sight_t2","lod":{"model":"tacz:attachment/lod/sight_t2","texture":"tacz:attachment/lod/sight_t2"},"zoom":[2.5],"scope":false,"sight":true,"fov":35.0,"sounds":{"install":"tacz:attachments/scope_general_c","uninstall":"tacz:attachments/scope_general_c"}}
