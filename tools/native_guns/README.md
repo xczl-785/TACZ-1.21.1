@@ -15,6 +15,7 @@
 仓库根目录执行：
 
 ```sh
+PYTHONDONTWRITEBYTECODE=1 python3 tools/native_guns/batch.py --preflight-only scar_l m16a1
 PYTHONDONTWRITEBYTECODE=1 python3 tools/native_guns/batch.py scar_l m16a1
 PYTHONDONTWRITEBYTECODE=1 python3 tools/native_guns/batch.py --check-only scar_l m16a1
 PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tools/native_guns -p 'test_*.py'
@@ -22,7 +23,11 @@ bash gradlew prepareTaczWorkbench --offline
 PYTHONDONTWRITEBYTECODE=1 python3 tools/native_guns/verify_workbench_runtime.py scar_l m16a1
 ```
 
-批处理显式选择枪 ID，逐枪生成、校验并报告耗时，遇错即停。现有生成器会刷新共用枪托输出；不要与其他资源写入任务同时运行。检查会核对作者指纹、完整原生骨骼、几何/UV、附件和显示引用；工作台检查沿可达槽位安装再拆卸候选，检查默认方案不被污染。这不穷举所有配件组合，也不替代游戏内动画、光学、库存与帧率验收。
+批处理显式选择枪 ID，先只读检查整批的作者关系与安装点，全部通过后才逐枪生成、校验并报告耗时。`--preflight-only` 到此前检结束，不生成资源、不执行耗时几何检查；`--check-only` 继续验证既有输出，但也不生成。两个选项互斥。
+
+关系检查与 M4 共用规则：重复定义、未知/重复候选、不兼容默认件、默认装配循环、不可达默认父件、缺少必需件或供弹路径均拒绝，错误附带枪名。单枪生成也先检查关系和安装点，再写共享资源。它不是整批事务：模型解析、磁盘写入等后续异常仍可能中止在已完成的枪之后；修复后重新生成对应枪，不声称任何失败都能自动回滚。
+
+现有生成器会刷新共用枪托输出；不要与其他资源写入任务同时运行。完整检查会核对作者指纹、原生骨骼、几何/UV、附件和显示引用；工作台检查沿可达槽位安装再拆卸候选，检查默认方案不被污染。这不穷举所有配件组合，也不替代游戏内动画、光学、库存与帧率验收。
 
 同批只做一次完整构建和宿主锁包更新。若仅修改作者资料且运行内容完全相同，可以先提交作者链，保留现有已接受测试包；不能把作者链提交号冒充宿主实际制品来源。
 

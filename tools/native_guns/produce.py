@@ -6,6 +6,7 @@ from PIL import Image
 TOOLS=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(TOOLS))
 from native_m4a1.mount_source import load_mounts
+from native_m4a1.assembly_source import validate_assembly
 sys.path.insert(0,str(TOOLS/'native_attachments'))
 import extract as shared
 import magazines
@@ -177,9 +178,39 @@ def write_lod_review(source_root,config,high,low,batches,nodes,attachments,textu
         draw.text((8,i*170+145),label+' | high / low | 48px high / low',fill='white')
     image.save(source_root/'lod-comparison.png')
 
+def preflight(config_path):
+    """Read-only author checks shared by individual builds and whole batches."""
+    config_path=Path(config_path).resolve();config=ex.read(config_path)
+    validate_configuration(config)
+    attachments,tags=attachment_records(config)
+    external={r['attachmentId']:r['definitionId'] for r in attachments}
+    if len(external)!=len(attachments):raise ValueError('duplicate native attachment')
+    types={typ:[r['definitionId'] for r in attachments if r['type']==typ]
+           for typ in (name.lower() for name in config['nativeProfile']['attachmentPaths'])}
+    slots={d:{slot:[item for c in candidates for item in (types[c[1:].lower()] if c.startswith('$') else [c])]
+              for slot,candidates in byslot.items()} for d,byslot in config['slots'].items()}
+    weapon=config['weapon']
+    assembly={'schemaVersion':1,'physical':[part['definitionId'] for part in config['parts']],
+              'external':external,'slots':slots,'preset':config['preset'],
+              'critical':weapon['requiredPaths']+[weapon.get('feedPath',weapon.get('magazinePath'))]}
+    validate_assembly(assembly,config['rootDefinition'])
+    catalog=[]
+    for d in assembly['physical']+list(external.values()):
+        entry={'id':d,'stats':{'weightKg':0,'ergonomics':0},'slots':[{'id':slot,'required':False,'allowedParts':candidates}
+               for slot,candidates in slots.get(d,{}).items()],'conflictingParts':[]}
+        if d==config['rootDefinition']:entry['weapon']={'recoilVertical':0,'recoilHorizontal':0,'centerOfImpact':0,'sightingRange':0}
+        catalog.append(entry)
+    mounts=load_mounts(config_path.parent/'mounts.json',catalog,config['rootDefinition'])
+    return config,attachments,tags,external,slots,catalog,mounts
+
+
 def build(config_path=DEFAULT,resources=RES,append_sources=False):
-    config_path=Path(config_path).resolve();config=ex.read(config_path);validate_configuration(config);source_root=config_path.parent;resources=Path(resources)
+    config_path=Path(config_path).resolve();source_root=config_path.parent;resources=Path(resources)
+    config,attachments,tags,external,slots,catalog,mounts=preflight(config_path)
     if append_sources:append(config,source_root)
+    editable=ex.read(source_root/'editable/manifest.json')['parts']
+    if [r['definitionId'] for r in editable]!=[r['definitionId'] for r in config['parts']]:
+        raise ValueError('Editable parts differ from authored configuration: '+config['sourceGun'])
     for library in config.get('supplementalAttachmentLibraries',[]):
         import import_assets
         import_assets.build(root=R/library['source'],output=resources,catalog_path=library['catalog'])
@@ -189,18 +220,9 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
     index,idx,display_path,dp,source,original_texture,data_path=inputs(config)
     gun=config['sourceGun'];ns=config['gunId'].split(':')[0];base=resources/f'data/{ns}/{gun}';assets=resources/f'assets/{ns}'
     original=ex.read(source);geo=original['minecraft:geometry'][0];native={b['name']:b for b in geo['bones']};native_uv=[geo['description'][k] for k in ('texture_width','texture_height')]
-    editable=ex.read(source_root/'editable/manifest.json')['parts'];attachments,tags=attachment_records(config)
     mapping={r['definitionId']:(config['gunId'] if r['definitionId']==config['rootDefinition'] else ns+':'+r['definitionId']) for r in editable}
-    mapping.update({r['definitionId']:r['attachmentId'] for r in attachments});external={r['attachmentId']:r['definitionId'] for r in attachments}
-    types={typ:[r['definitionId'] for r in attachments if r['type']==typ] for typ in (name.lower() for name in config['nativeProfile']['attachmentPaths'])}
-    slots={d:{slot:[item for c in candidates for item in (types[c[1:]] if c.startswith('$') else [c])] for slot,candidates in byslot.items()} for d,byslot in config['slots'].items()}
-    catalog=[]
-    for d in mapping:
-        entry={'id':d,'stats':{'weightKg':0,'ergonomics':0},'slots':[{'id':slot,'required':False,'allowedParts':candidates} for slot,candidates in slots.get(d,{}).items()],'conflictingParts':[]}
-        if d==config['rootDefinition']:entry['weapon']={'recoilVertical':0,'recoilHorizontal':0,'centerOfImpact':0,'sightingRange':0}
-        catalog.append(entry)
+    mapping.update({r['definitionId']:r['attachmentId'] for r in attachments})
     mounts_path=source_root/'mounts.json'
-    mounts=load_mounts(mounts_path,catalog,config['rootDefinition'])
     nodes=[]
     def node(d,path='',parent=None,slot=None):
         ident=str(uuid.uuid5(uuid.NAMESPACE_URL,config['gunId']+'/'+path));item={'instanceId':ident,'definitionId':d}

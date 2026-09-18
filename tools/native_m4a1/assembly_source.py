@@ -2,13 +2,15 @@
 import json
 
 
-def validate_assembly(source):
+def validate_assembly(source, root_definition='lower_receiver'):
     if source.get('schemaVersion') != 1:
         raise ValueError('unsupported assembly schema')
     definitions = source['physical'] + list(source['external'].values())
     known = set(definitions)
     if len(known) != len(definitions):
         raise ValueError('duplicate definition')
+    if root_definition not in known:
+        raise ValueError('unknown root: ' + root_definition)
     slots = source['slots']
     for parent, mounts in slots.items():
         if parent not in known:
@@ -34,11 +36,11 @@ def validate_assembly(source):
         for child in preset.get(part, {}).values():
             visit(child, ancestors | {part})
 
-    visit('lower_receiver', set())
+    visit(root_definition, set())
     if not set(preset) <= visited:
         raise ValueError('unreachable preset parent')
     for path in source['critical']:
-        part = 'lower_receiver'
+        part = root_definition
         for slot in path:
             if slot not in preset.get(part, {}):
                 raise ValueError('missing critical path: ' + '/'.join(path))

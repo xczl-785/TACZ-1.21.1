@@ -10,13 +10,19 @@ validation=importlib.util.module_from_spec(spec)
 spec.loader.exec_module(validation)
 
 
-def run(guns,check_only=False):
+def run(guns,check_only=False,preflight_only=False):
     paths=[]
     for gun in guns:
         if not gun.replace('_','').isalnum():raise ValueError('Invalid gun ID')
         path=p.R/'modules/tacz_adapter/weapon-sources'/('native_'+gun)/'production.json'
         if not path.is_file():raise ValueError('No configured gun: '+gun)
         paths.append(path)
+    for path in paths:
+        try:p.preflight(path)
+        except (ValueError,KeyError) as error:
+            raise ValueError(path.parent.name+': '+str(error)) from error
+    print('Author preflight PASS:',len(paths),'guns; no outputs written',flush=True)
+    if preflight_only:return
     for path in paths:
         started=time.monotonic()
         print('Starting',path.parent.name,flush=True)
@@ -29,6 +35,8 @@ def run(guns,check_only=False):
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('guns',nargs='+')
-    parser.add_argument('--check-only',action='store_true')
+    mode=parser.add_mutually_exclusive_group()
+    mode.add_argument('--check-only',action='store_true')
+    mode.add_argument('--preflight-only',action='store_true')
     args=parser.parse_args()
-    run(args.guns,args.check_only)
+    run(args.guns,args.check_only,args.preflight_only)
