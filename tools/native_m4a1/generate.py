@@ -5,6 +5,7 @@ from pathlib import Path
 import json,re,copy,uuid,hashlib,math,collections
 import numpy as np
 from PIL import Image
+from assembly_source import load_assembly
 R=Path(__file__).resolve().parents[2]
 OUT=R/'modules/tacz_adapter/weapon-content/resources'
 SRC=R/'src/main/resources/assets/tacz/custom/tacz_default_gun'
@@ -17,18 +18,12 @@ def write(p,v):
 audit=read(REVIEW/'audit.json');ownership=read(REVIEW/'ownership-proposal.json')['boneOwner']
 attachments=[a for a in audit['attachments'] if a['tagAllowed'] and a['id'] not in {'tacz:ammo_mod_fmj','tacz:ammo_mod_hp','tacz:ammo_mod_i'}]
 assert len(attachments)==52
-external={a['id']:a['id'].replace(':','_') for a in attachments}
-types={t:[external[a['id']] for a in attachments if a['type']==t] for t in {a['type'] for a in attachments}}
-slots={
- 'lower_receiver':{'upper':['upper_receiver'],'pistol_grip':['pistol_grip'],'buffer':['buffer'],'magazine':['magazine_standard']+types['extended_mag']},
- 'upper_receiver':{'barrel_mount':['barrel_mount_collar'],'bolt':['bolt'],'charging_handle':['charging_mechanism'],'rear_sight':['rear_sight'],'scope':types['scope']},
- 'barrel_mount_collar':{'barrel':['barrel'],'handguard':['handguard_default','handguard_tactical']},
- 'barrel':{'gas':['gas_block_and_tube'],'muzzle':['muzzle_default']+[s for s in types['muzzle'] if s!='tacz_bayonet_m9']},
- 'gas_block_and_tube':{'front_sight':['front_sight']},'buffer':{'stock':types['stock']},
- 'muzzle_default':{'bayonet':['tacz_bayonet_m9']},
- 'handguard_tactical':{'grip':types['grip'],'laser':types['laser']}}
-physical=['lower_receiver','upper_receiver','barrel_mount_collar','barrel','gas_block_and_tube','front_sight','rear_sight','bolt','charging_mechanism','handguard_default','handguard_tactical','pistol_grip','buffer','magazine_standard','muzzle_default']
-critical=[['upper'],['upper','barrel_mount'],['upper','barrel_mount','barrel'],['upper','barrel_mount','barrel','gas'],['upper','bolt'],['upper','charging_handle'],['buffer']]
+assembly=load_assembly(R/'modules/tacz_adapter/weapon-sources/native_m4a1/assembly.json')
+external=assembly['external']
+assert set(external)=={a['id'] for a in attachments}, 'author attachment IDs differ from native audit'
+slots=assembly['slots']
+physical=assembly['physical']
+critical=assembly['critical']
 catalog=[]
 for name in physical+list(external.values()):
  entry={'id':name,'stats':{'weightKg':0,'ergonomics':0},'slots':[{'id':slot,'required':False,'allowedParts':allowed} for slot,allowed in slots.get(name,{}).items()],'conflictingParts':[]}
@@ -37,11 +32,7 @@ for name in physical+list(external.values()):
 write(BASE/'catalog.json',{'schemaVersion':1,'parts':catalog})
 mapping={p:f'{NS}:{GUN}' if p=='lower_receiver' else f'{NS}:m4a1_{p}' for p in physical};mapping.update({v:k for k,v in external.items()})
 write(BASE/'mapping.json',mapping);write(BASE/'native_attachments.json',external)
-preset={
- 'lower_receiver':{'upper':'upper_receiver','pistol_grip':'pistol_grip','buffer':'buffer','magazine':'magazine_standard'},
- 'upper_receiver':{'barrel_mount':'barrel_mount_collar','bolt':'bolt','charging_handle':'charging_mechanism','rear_sight':'rear_sight'},
- 'barrel_mount_collar':{'barrel':'barrel','handguard':'handguard_default'},'barrel':{'gas':'gas_block_and_tube','muzzle':'muzzle_default'},
- 'gas_block_and_tube':{'front_sight':'front_sight'},'buffer':{'stock':'tacz_stock_tactical_ar'}}
+preset=assembly['preset']
 nodes=[]
 def node(name,path,parent=None,slot=None):
  id=str(uuid.uuid5(uuid.NAMESPACE_URL,NS+'/'+GUN+'/'+path));v={'instanceId':id,'definitionId':name}
