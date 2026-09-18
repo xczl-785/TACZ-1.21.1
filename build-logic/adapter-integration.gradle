@@ -18,6 +18,13 @@ sourceSets {
         compileClasspath = sourceSets.main.output + sourceSets.main.compileClasspath + configurations.weaponTestLibraries
         runtimeClasspath = output + sourceSets.main.output + sourceSets.main.compileClasspath + configurations.weaponTestLibraries
     }
+    // Standalone authoring workbench. It reuses the production assembly/model
+    // classes but is not packaged in the TaCZ jar and never starts Minecraft.
+    taczWorkbench {
+        java.srcDir('modules/tacz_adapter/src/workbench/java')
+        compileClasspath = sourceSets.main.output.classesDirs + sourceSets.main.compileClasspath
+        runtimeClasspath = output.classesDirs + sourceSets.main.output.classesDirs + sourceSets.main.compileClasspath
+    }
 }
 tasks.register('verifyGameplayDependencies') {
     inputs.files(external.artifacts.collect { file(it.artifact) })
@@ -74,6 +81,28 @@ tasks.register('verifyWeaponPipeline', Exec) {
 }
 tasks.named('processResources') { dependsOn 'verifyConfiguredWeapons' }
 tasks.named('check') { dependsOn 'adapterTest', 'adapterDevelopmentClasses', 'verifyWeaponPipeline', 'verifyGameplayDependencies' }
+
+abstract class WriteTaczWorkbenchRuntime extends DefaultTask {
+    @InputFiles @Classpath abstract ConfigurableFileCollection getRuntimeFiles()
+    @Input abstract Property<String> getJavaExecutable()
+    @OutputFile abstract RegularFileProperty getDestination()
+    @TaskAction void writeRuntime() {
+        def target=destination.get().asFile
+        target.parentFile.mkdirs()
+        target.text=groovy.json.JsonOutput.toJson([java:javaExecutable.get(),classpath:runtimeFiles.files.collect { it.absolutePath }])
+    }
+}
+tasks.register('prepareTaczWorkbench', WriteTaczWorkbenchRuntime) {
+    group='verification'
+    dependsOn tasks.named('taczWorkbenchClasses')
+    // The worker needs production classes/resources and their compile contract,
+    // not client-only launch/JEI/KubeJS runtime plugins.
+    runtimeFiles.from(sourceSets.taczWorkbench.output.classesDirs, sourceSets.main.output.classesDirs,
+        files('src/main/resources','modules/tacz_adapter/src/main/resources','modules/tacz_adapter/weapon-content/resources'),
+        sourceSets.main.compileClasspath)
+    javaExecutable.set(javaToolchains.launcherFor { languageVersion=JavaLanguageVersion.of(21) }.map { it.executablePath.asFile.absolutePath })
+    destination.set(layout.buildDirectory.file('tacz-workbench/runtime.json'))
+}
 tasks.named('assemble') { dependsOn 'developmentJar' }
 tasks.register('verifyAdapterIntegration', Exec) {
     environment 'PYTHONDONTWRITEBYTECODE', '1'
