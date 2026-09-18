@@ -50,7 +50,7 @@ def verify(jar=None, newmod=None):
             origin=newmod/row['old']
             if not origin.exists() and row['old'].startswith('source/mods/tacz_adapter/'):
                 origin=R/row['old'].replace('source/mods/tacz_adapter/','modules/tacz_adapter/',1)
-            assert hashlib.sha256(origin.read_bytes()).hexdigest()==row['sha256'],row['old']
+            assert hashlib.sha256(origin.read_bytes()).hexdigest()==row.get('source_sha256',row['sha256']),row['old']
     if newmod:
         for row in ledger['files']:
             assert not (newmod/row['old']).exists(),row['old']

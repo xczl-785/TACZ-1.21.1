@@ -4,8 +4,9 @@
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/manifest.json",
       "new": "modules/weapon_models/src/test/fixtures/assets/newmod_m4a1/m4a1/manifest.json",
-      "sha256": "fd03eb234db0a46e95393906f2f031fb65447ee1abd4834e1b8f5a6f6c776ba6",
-      "role": "regression/development fixture only; original production content stays in adapter"
+      "source_sha256": "fd03eb234db0a46e95393906f2f031fb65447ee1abd4834e1b8f5a6f6c776ba6",
+      "sha256": "dd59ecf23610cd38e43ed9b458890006266c1fac8ace0b69cda764b23bc09175",
+      "role": "structural presentation fixture; render geometry intentionally projected out"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/markers.json",
@@ -16,8 +17,9 @@
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/manifest.json",
       "new": "modules/weapon_models/src/test/fixtures/assets/newmod_radian/radian/manifest.json",
-      "sha256": "d246134c67439b354de11e2bfbc15512dbe5071f310a21711308d8892901d78f",
-      "role": "regression/development fixture only; original production content stays in adapter"
+      "source_sha256": "d246134c67439b354de11e2bfbc15512dbe5071f310a21711308d8892901d78f",
+      "sha256": "3c644e7eaa057f3562883558a8ac7ec2d90a9177ab7d4ff4c73eade8a5ee8fa5",
+      "role": "structural presentation fixture; render geometry intentionally projected out"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/markers.json",
@@ -28,8 +30,9 @@
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/manifest.json",
       "new": "modules/weapon_models/src/test/fixtures/assets/newmod_adar/adar/manifest.json",
-      "sha256": "5694a66f67481a7eef50359546761b36cb256a7ca0eaba6370a338c85e91254d",
-      "role": "regression/development fixture only; original production content stays in adapter"
+      "source_sha256": "5694a66f67481a7eef50359546761b36cb256a7ca0eaba6370a338c85e91254d",
+      "sha256": "26bd6ab7f9fd56cae2466ba233a172b363e3b69022b611d38042b0a7d0b908e5",
+      "role": "structural presentation fixture; render geometry intentionally projected out"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/markers.json",
