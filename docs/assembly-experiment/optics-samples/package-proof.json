@@ -1,0 +1,37 @@
+{
+  "sourceCommit": "3e395c77",
+  "version": "1.1.8-hotfix-r6-newmod.3e395c77",
+  "artifacts": [
+    {
+      "artifact": "tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.3e395c77.jar",
+      "sha512": "77884d7d63443ca2816e14d3d096ba7b1b4ecffa065b3d27d2389f4afb5b65ba799faa21664d00cb76109778d380b74afec5d8f2fbd922fea73c5595e895496a",
+      "resources": 2255,
+      "pngDecoded": 1535,
+      "originalOpticsUnchanged": true
+    },
+    {
+      "artifact": "tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.3e395c77-development.jar",
+      "sha512": "a980c503eb68039c8b401d704592112710e6a0e9be99b24f99364b46b3344201e88ed554aa587340630e6f9c2e86ccfc1971c30f56585540f623b63a3ac9f13f",
+      "resources": 2255,
+      "pngDecoded": 1535,
+      "originalOpticsUnchanged": true
+    }
+  ],
+  "javaTests": {
+    "registryBacked": 46,
+    "adapter": 35,
+    "failures": 0
+  },
+  "pythonChecks": {
+    "optics": 3,
+    "m4Authoring": 6,
+    "m4Editable": 3,
+    "m4EditableBatch": 9,
+    "attachmentLibrary": 9,
+    "nativeGunPipeline": 28,
+    "weaponPipeline": 3
+  },
+  "fullCheck": "Blocked by existing verifyAdapterIntegration historical migration ledger mismatch; not reported as passed",
+  "minecraftStarted": false,
+  "ownerVisualAcceptance": "pending"
+}

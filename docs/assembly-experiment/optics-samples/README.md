@@ -23,3 +23,7 @@
 - 仓库全量历史迁移台账门禁与当前构建结果分开记录，不用这些离线检查替代所有者视觉验收。
 
 作者入口见 [光学编辑样本](../../../modules/tacz_adapter/weapon-sources/optics/README.md)。逐文件差异与来源基线见 [changes.json](changes.json)。通过本轮实机比较后，再由所有者决定镜片调整、外观制作和其他枪兼容范围。
+
+## 制品
+
+源码 `3e395c77`，正式/开发制品 `1.1.8-hotfix-r6-newmod.3e395c77`。`assemble --offline` 成功；两包各2255份组装资源与源码核对、1535张PNG解码通过，原 T2/ELCAN 源资源哈希均保持。完整哈希、专项测试数量及全量检查限制见 [package-proof.json](package-proof.json)。NewMod 以运行锁为实际选择，回退保留 `2bd0c6a9`；并行历史重写可能改变 NewMod 提交编号，不改变本实验源码提交或制品哈希。
