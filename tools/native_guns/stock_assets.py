@@ -10,6 +10,8 @@ SOURCE=R/'modules/tacz_adapter/weapon-sources/native_m4a1/editable'
 RESOURCES=R/'modules/tacz_adapter/weapon-content/resources'
 CATALOG=Path('data/tacz_assembly/native_attachments/stocks.json')
 
+def mount_offset(row):return shared.im.mount_offset(row)
+
 def write(path,value):
     path.parent.mkdir(parents=True,exist_ok=True)
     path.write_text(json.dumps(value,ensure_ascii=False,indent=2)+'\n')
@@ -33,6 +35,7 @@ def geometry(row,root=SOURCE):
     _,bones,uv,image,count=shared.load_part(row,root)
     image.close()
     if not count:raise ValueError('Empty authored stock: '+row['definitionId'])
+    bones=shared.im.shifted_bones(bones,mount_offset(row))
     model=copy.deepcopy(ex.read(R/row['sourceGeometry']))
     shape=model['minecraft:geometry'][0]
     shape['bones']=list(bones.values())

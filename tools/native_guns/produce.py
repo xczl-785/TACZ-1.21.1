@@ -211,6 +211,7 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
         source_paths.add(rec['index']);mount=rec['type']+'_pos';extra=ex.matrix(mount,native)
         if 'row' in rec:
             _,bones,uv,_,_=shared.load_part(rec['row'],rec['root']);texture=rec['root']/rec['row']['texture'];source_paths.add(R/rec['row']['sourceGeometry']);source_paths.add(rec['root']/rec['row']['model'])
+            if authored_stock(rec['row']):bones=im.shifted_bones(bones,im.mount_offset(rec['row']))
         else:
             shape=ex.read(rec['source'])['minecraft:geometry'][0];bones={b['name']:b for b in shape['bones']};uv=[shape['description'][k] for k in ('texture_width','texture_height')];texture=rec['texture'];source_paths.add(rec['source'])
         if rec['type']=='scope':bones=exterior_scope_geometry(bones,config.get('scopeExteriorRoots',{}).get(rec['attachmentId']))

@@ -487,7 +487,7 @@
       ],
       "model": "components/front_sight/model.bbmodel",
       "editorCenter": [
-        1e-05,
+        0.00001,
         11.71451,
         -17.76131
       ],
@@ -722,7 +722,7 @@
       ],
       "model": "components/bolt/model.bbmodel",
       "editorCenter": [
-        -1e-05,
+        -0.00001,
         9.5625,
         -6.125
       ],
@@ -949,6 +949,11 @@
     },
     {
       "definitionId": "tacz_stock_tactical_ar",
+      "seatOffset": [
+        0,
+        0,
+        -3
+      ],
       "group": "14 CTR枪托",
       "prefix": "14_tacz_stock_tactical_ar",
       "cubes": 73,
@@ -1461,6 +1466,11 @@
     },
     {
       "definitionId": "tacz_stock_ak12",
+      "seatOffset": [
+        0,
+        0,
+        -3
+      ],
       "group": "tacz_stock_ak12",
       "prefix": "batch_tacz_stock_ak12",
       "cubes": 115,
@@ -1608,6 +1618,11 @@
     },
     {
       "definitionId": "tacz_stock_carbon_bone_c5",
+      "seatOffset": [
+        0,
+        0,
+        -3
+      ],
       "group": "tacz_stock_carbon_bone_c5",
       "prefix": "batch_tacz_stock_carbon_bone_c5",
       "cubes": 42,
@@ -1684,6 +1699,11 @@
     },
     {
       "definitionId": "tacz_stock_hk_slim_line",
+      "seatOffset": [
+        0,
+        0,
+        -3
+      ],
       "group": "tacz_stock_hk_slim_line",
       "prefix": "batch_tacz_stock_hk_slim_line",
       "cubes": 79,
@@ -1795,6 +1815,11 @@
     },
     {
       "definitionId": "tacz_stock_m4ss",
+      "seatOffset": [
+        0,
+        0,
+        -3
+      ],
       "group": "tacz_stock_m4ss",
       "prefix": "batch_tacz_stock_m4ss",
       "cubes": 68,
@@ -1897,6 +1922,11 @@
     },
     {
       "definitionId": "tacz_stock_militech_b5",
+      "seatOffset": [
+        0,
+        0,
+        -3
+      ],
       "group": "tacz_stock_militech_b5",
       "prefix": "batch_tacz_stock_militech_b5",
       "cubes": 65,
@@ -1996,6 +2026,11 @@
     },
     {
       "definitionId": "tacz_stock_moe",
+      "seatOffset": [
+        0,
+        0,
+        -3
+      ],
       "group": "tacz_stock_moe",
       "prefix": "batch_tacz_stock_moe",
       "cubes": 48,
@@ -2076,6 +2111,11 @@
     },
     {
       "definitionId": "tacz_stock_ripstock",
+      "seatOffset": [
+        0,
+        0,
+        -3
+      ],
       "group": "tacz_stock_ripstock",
       "prefix": "batch_tacz_stock_ripstock",
       "cubes": 35,
@@ -2143,6 +2183,11 @@
     },
     {
       "definitionId": "tacz_stock_sba3",
+      "seatOffset": [
+        0,
+        0,
+        -3
+      ],
       "group": "tacz_stock_sba3",
       "prefix": "batch_tacz_stock_sba3",
       "cubes": 84,
@@ -3988,14 +4033,14 @@
       ],
       "nativeMountMatrix": [
         [
-          6.123233995736766e-17,
+          6.123233995736766E-17,
           -1.0,
           0.0,
           1.46875
         ],
         [
           1.0,
-          6.123233995736766e-17,
+          6.123233995736766E-17,
           0.0,
           -9.5
         ],
@@ -4158,14 +4203,14 @@
       ],
       "nativeMountMatrix": [
         [
-          6.123233995736766e-17,
+          6.123233995736766E-17,
           -1.0,
           0.0,
           1.46875
         ],
         [
           1.0,
-          6.123233995736766e-17,
+          6.123233995736766E-17,
           0.0,
           -9.5
         ],
@@ -4301,14 +4346,14 @@
       ],
       "nativeMountMatrix": [
         [
-          6.123233995736766e-17,
+          6.123233995736766E-17,
           -1.0,
           0.0,
           1.46875
         ],
         [
           1.0,
-          6.123233995736766e-17,
+          6.123233995736766E-17,
           0.0,
           -9.5
         ],
@@ -4436,14 +4481,14 @@
       ],
       "nativeMountMatrix": [
         [
-          6.123233995736766e-17,
+          6.123233995736766E-17,
           -1.0,
           0.0,
           1.46875
         ],
         [
           1.0,
-          6.123233995736766e-17,
+          6.123233995736766E-17,
           0.0,
           -9.5
         ],
@@ -5184,7 +5229,7 @@
       "model": "components/tacz_muzzle_silencer_knight_qd/model.bbmodel",
       "texture": "components/tacz_muzzle_silencer_knight_qd/texture.png",
       "editorCenter": [
-        -1e-05,
+        -0.00001,
         0.02458,
         -4.00562
       ],

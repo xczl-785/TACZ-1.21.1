@@ -8,6 +8,11 @@ _validation=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(_val
 validate=_validation.validate
 
 class NativeGunProductionTest(unittest.TestCase):
+    @staticmethod
+    def bounds(model):
+        points=[point for mesh in model['meshes'] for triangle in mesh['triangles'] for point in triangle['vertices']]
+        return [min(point[axis] for point in points) for axis in range(3)],[max(point[axis] for point in points) for axis in range(3)]
+
     def test_complete_runtime_contract(self):
         report=validate();self.assertEqual(report['nativeRigBones'],57)
         self.assertEqual(report['highCubes'],264);self.assertLess(report['lowCubes'],report['highCubes']);self.assertTrue(report['lod'])
@@ -72,6 +77,14 @@ class NativeGunProductionTest(unittest.TestCase):
             self.assertIn('row',stock);self.assertTrue(p.authored_stock(stock['row']))
             self.assertEqual(overrides[stock['attachmentId']],catalog[stock['attachmentId']])
             self.assertIn('/authored_stock/',overrides[stock['attachmentId']]['model'])
+
+    def test_scar_ar_stock_reaches_the_receiver_adapter_boundary(self):
+        models={model['definitionId']:model for model in p.ex.read(p.RES/'data/tacz_assembly/scar_l/preview.json')['models']}
+        lower_min,_=self.bounds(models['scar_l_lower'])
+        _,stock_max=self.bounds(models['tacz_stock_tactical_ar'])
+        gap=lower_min[2]-(models['scar_l_lower']['slots']['stock'][2]+stock_max[2])
+        self.assertGreaterEqual(gap,-.5)
+        self.assertLessEqual(gap,.1)
 
     def test_blockbench_rounding_preserves_native_rig_and_uv(self):
         source_root=p.DEFAULT.parent;manifest=p.ex.read(source_root/'editable/manifest.json')

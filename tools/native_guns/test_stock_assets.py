@@ -11,6 +11,7 @@ class AuthoredStocksTest(unittest.TestCase):
         self.assertNotIn('nativeMount',ctr)
         self.assertEqual('stock_pos',stocks.ex.read(stocks.R/ctr['componentMetadata'])['anchorBone'])
         self.assertTrue(all('/attachment/' in row['sourceGeometry'] for row,_ in rows))
+        self.assertTrue(all(stocks.mount_offset(row).tolist()==[0,0,-3] for row,_ in rows))
 
     def test_export_has_local_geometry_authored_uv_and_texture_without_m4_mount(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -18,6 +19,7 @@ class AuthoredStocksTest(unittest.TestCase):
             self.assertEqual(9,len(result['attachments']))
             for row,aid in stocks.selected_rows():
                 _,expected,uv,image,count=stocks.shared.load_part(row,stocks.SOURCE);image.close()
+                expected=stocks.shared.im.shifted_bones(expected,stocks.mount_offset(row))
                 entry=result['attachments'][aid];resource=entry['model'].split(':')[1]
                 shape=stocks.ex.read(target/f'assets/tacz_assembly/geo_models/{resource}.json')['minecraft:geometry'][0]
                 actual={b['name']:b for b in shape['bones']}

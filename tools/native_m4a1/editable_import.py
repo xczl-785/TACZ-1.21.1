@@ -15,6 +15,24 @@ def write(p,d):
 def native_point(v,center,delta):return [-(v[0]+center[0])-delta[0],v[1]+center[1]-delta[1],v[2]+center[2]-delta[2]]
 def native_rotation(v):return [-v[0],-v[1],v[2]]
 
+def mount_offset(row):
+    metadata=ex.read(R/row['componentMetadata']) if row.get('componentMetadata') else {}
+    value=row.get('seatOffset',metadata.get('seatOffset',[0,0,0]))
+    if len(value)!=3 or not all(isinstance(axis,(int,float)) for axis in value):
+        raise ValueError('Invalid seatOffset: '+row['definitionId'])
+    return np.asarray(value,dtype=float)
+
+def shifted_bones(bones,offset):
+    """Translate one attachment rigidly without changing its authored shape or hierarchy."""
+    result=copy.deepcopy(bones);offset=np.asarray(offset,dtype=float)
+    if not np.any(offset):return result
+    for bone in result.values():
+        bone['pivot']=(np.asarray(bone['pivot'],dtype=float)+offset).tolist()
+        for cube in bone.get('cubes',[]):
+            cube['origin']=(np.asarray(cube['origin'],dtype=float)+offset).tolist()
+            if 'pivot' in cube:cube['pivot']=(np.asarray(cube['pivot'],dtype=float)+offset).tolist()
+    return result
+
 def load_part(row):
     model=ex.read(EDIT/row['model']);groups={g['uuid']:g for g in model['groups']};elements={e['uuid']:e for e in model['elements']}
     original=ex.read(R/row['sourceGeometry']);lookup={b['name']:b for b in original['minecraft:geometry'][0]['bones']}
@@ -131,6 +149,7 @@ def build():
             attachment_overrides[sourceparts[d]['itemId']]=override
 
         mount=row.get('nativeMount') or ('stock_pos' if d=='tacz_stock_tactical_ar' else None);stock=mount is not None
+        if stock:bones=shifted_bones(bones,mount_offset(row))
         rig_prefix=('editable_stock_' if d=='tacz_stock_tactical_ar' else 'editable_'+d+'_')
         anchor=np.asarray(sourceparts[d]['anchor']);extra=ex.matrix(mount,native) if stock else np.eye(4)
         meshes=[];allvertices=[]
