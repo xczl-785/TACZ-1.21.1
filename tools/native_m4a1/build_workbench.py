@@ -29,6 +29,10 @@ def build():
   for slot in part['slots']:
    representative=defaults.get((part['id'],slot['id']),slot['allowedParts'][0])
    mount=np.asarray(parts[representative]['boundsCenter'],dtype=float)
+   # Optic source bounds include distant helper geometry, so the receiver rail mount is authoritative.
+   authored=parts[part['id']].get('slots',{}).get(slot['id'])
+   if (part['id'],slot['id'])==('upper_receiver','scope') and authored is not None:
+    mount=np.asarray(authored,dtype=float)
    for candidate in slot['allowedParts']:anchors[candidate]=mount
  anchors['lower_receiver']=np.zeros(3)
  errors=[]

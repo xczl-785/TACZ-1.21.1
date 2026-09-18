@@ -91,7 +91,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
         double right=canvasWidth-1280,bottom=canvasHeight-800;
         page=new UIElement();page.layout(l->l.widthPercent(100).heightPercent(100));
         var backdrop=new WorkbenchBackdrop();design.place(backdrop,0,0,canvasWidth,canvasHeight);page.addChild(backdrop);
-        if(viewport==null)viewport=new AssemblyViewport(()->host.preview().filter(p->p.plan().success()).map(p->p.plan().after()).orElse(host.tree()),geometry,materials,modelBackend);
+        if(viewport==null)viewport=new AssemblyViewport(()->host.preview().filter(p->p.plan().success()).map(p->p.plan().after()).orElse(host.tree()),host::tree,geometry,materials,modelBackend);
         viewport.whiteModel(whiteModel);
         design.place(viewport,8,8,canvasWidth-16,canvasHeight-16);viewport.framing(design.px(92),design.px(192));page.addChild(viewport);
         var leaders=new UIElement() {
@@ -271,6 +271,7 @@ public final class WorkbenchScreen extends ModularUIScreen {
     @Override public void tick() {super.tick();if(width!=oldWidth||height!=oldHeight)build();else reconcile(false);}
     @Override public void render(GuiGraphics g,int mx,int my,float partial) {
         if(width!=oldWidth||height!=oldHeight)build();
+        viewport.beginFrame();
         long started=System.nanoTime();positionLabels(mx,my,true);long layoutTime=System.nanoTime()-started;
         super.render(g,mx,my,partial);timings.record(layoutTime,viewport.lastRenderNanos,viewport.lastTriangleCount);
     }

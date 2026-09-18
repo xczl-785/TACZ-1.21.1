@@ -15,6 +15,7 @@ import static dev.weaponmodels.ModelGeometry.*;
 public final class AssemblyViewport extends UIElement {
     public record ScreenPoint(float x,float y) {}
     private final Supplier<AssemblyNode> source;
+    private final Supplier<AssemblyNode> framingSource;
     private final Map<String,ModelGeometry> models;
     private final AssemblyMaterials materials;
     private final WorkbenchModelBackend modelBackend;
@@ -26,7 +27,6 @@ public final class AssemblyViewport extends UIElement {
     private double rotationYaw=Double.NaN,rotationPitch=Double.NaN;
     private final Map<Triangle,PreparedTriangle> prepared=new IdentityHashMap<>();
     private long lightingVersion;
-    private double renderScale,renderCenterX,renderCenterY;
     private static final class PreparedTriangle {
         final double nx,ny,nz,exponent;
         final int whiteLight;
@@ -44,22 +44,27 @@ public final class AssemblyViewport extends UIElement {
     private Point center=new Point(0,0,0);
     private float fitScale=1;
     private AssemblyNode fittedTree;
+    private AssemblyFrameState frameState;
+    private WorkbenchViewportFrame activeFrame;
     private static final Point ZERO=new Point(0,0,0);
     // Outward winding; both face directions are emitted because GUI Y points down.
     private static final int[][] FACES={{0,3,2,1},{4,5,6,7},{0,4,7,3},{1,2,6,5},{0,1,5,4},{3,7,6,2}};
     public AssemblyViewport(Supplier<AssemblyNode> source,Map<String,ModelGeometry> models) {
-        this(source,models,AssemblyMaterials.white(),null);
+        this(source,source,models,AssemblyMaterials.white(),null);
     }
     public AssemblyViewport(Supplier<AssemblyNode> source,Map<String,ModelGeometry> models,AssemblyMaterials materials) {
-        this(source,models,materials,null);
+        this(source,source,models,materials,null);
     }
     public AssemblyViewport(Supplier<AssemblyNode> source,Map<String,ModelGeometry> models,AssemblyMaterials materials,WorkbenchModelBackend modelBackend) {
-        this.source=Objects.requireNonNull(source);this.models=Map.copyOf(models);
+        this(source,source,models,materials,modelBackend);
+    }
+    public AssemblyViewport(Supplier<AssemblyNode> source,Supplier<AssemblyNode> framingSource,Map<String,ModelGeometry> models,AssemblyMaterials materials,WorkbenchModelBackend modelBackend) {
+        this.source=Objects.requireNonNull(source);this.framingSource=Objects.requireNonNull(framingSource);this.models=Map.copyOf(models);
         this.materials=Objects.requireNonNull(materials);
         this.modelBackend=modelBackend;
         this.materials.all().stream().map(AssemblyMaterials.Material::texture).filter(v->!v.isEmpty()).distinct()
                 .map(net.minecraft.resources.ResourceLocation::parse).forEach(AssemblyTextureQuality::prepare);
-        fitAssembly(source.get());
+        fitAssembly(framingSource.get(),true);
         for(var entry:this.models.entrySet())for(var mesh:entry.getValue().meshes())for(var triangle:mesh.triangles()) {
             var a=triangle.vertices().get(1).subtract(triangle.vertices().get(0));
             var b=triangle.vertices().get(2).subtract(triangle.vertices().get(0));
@@ -80,7 +85,7 @@ public final class AssemblyViewport extends UIElement {
     public void framing(float top,float bottom) {
         frameTop=top;frameBottom=bottom;
     }
-    public void resetCamera() { camera.reset();fittedTree=null;fitAssembly(source.get()); }
+    public void resetCamera() { camera.reset();fittedTree=null;fitAssembly(framingSource.get(),true); }
     private float frameCenterX(){return getPositionX()+getSizeWidth()/2;}
     private float frameCenterY(){return getPositionY()+frameTop+(getSizeHeight()-frameTop-frameBottom)/2;}
     private void rotation() {
@@ -90,9 +95,12 @@ public final class AssemblyViewport extends UIElement {
     }
     public void whiteModel(boolean value) { whiteModel=value; }
     public boolean whiteModel() { return whiteModel; }
-    private void fitAssembly(AssemblyNode root) {
+    private void fitAssembly(AssemblyNode root,boolean reset) {
         if(root==fittedTree)return;
-        fittedTree=root;var frame=AssemblyFraming.fit(root,models);center=frame.center();fitScale=frame.fitScale();
+        fittedTree=root;var frame=AssemblyFraming.fit(root,models);long now=System.nanoTime();
+        if(frameState==null)frameState=new AssemblyFrameState(frame,now);
+        else if(reset)frameState.reset(frame,now);
+        else frameState.accept(frame,now);
     }
     public Optional<ScreenPoint> projectSlot(List<String> ownerPath,String slot) {
         return projectSlot(source.get(),ownerPath,slot);
@@ -116,23 +124,27 @@ public final class AssemblyViewport extends UIElement {
         var projected=frame().project(p);
         return new Point(projected.x(),projected.y(),20+projected.depth()*.2f);
     }
-    private WorkbenchViewportFrame frame() {
-        fitAssembly(source.get());
+    /** Freezes one camera snapshot for model geometry, slot projection and leader lines. */
+    public void beginFrame() {
+        fitAssembly(framingSource.get(),false);
+        var stable=frameState.current(System.nanoTime());center=stable.center();fitScale=stable.fitScale();
         rotation();
         double scale=Math.min(getSizeWidth()/24,(getSizeHeight()-frameTop-frameBottom)/8);
-        return new WorkbenchViewportFrame(center,frameCenterX(),frameCenterY(),fitScale,scale,camera.yaw,camera.pitch);
+        activeFrame=new WorkbenchViewportFrame(center,frameCenterX(),frameCenterY(),fitScale,scale,camera.yaw,camera.pitch);
+    }
+    private WorkbenchViewportFrame frame() {
+        if(activeFrame==null)beginFrame();
+        return activeFrame;
     }
     @Override public void drawBackgroundAdditional(GUIContext context) {
         super.drawBackgroundAdditional(context);
         var root=source.get();if(root==null||getSizeWidth()<=0||getSizeHeight()<=0)return;
-        long started=System.nanoTime();lastTriangleCount=0;fitAssembly(root);rotation();
-        renderScale=Math.min(getSizeWidth()/24,(getSizeHeight()-frameTop-frameBottom)/8);
-        renderCenterX=frameCenterX();renderCenterY=frameCenterY();
+        long started=System.nanoTime();lastTriangleCount=0;var viewportFrame=frame();
         var graphics=context.graphics;graphics.flush();
         graphics.enableScissor((int)getPositionX(),(int)getPositionY(),(int)Math.ceil(getPositionX()+getSizeWidth()),(int)Math.ceil(getPositionY()+getSizeHeight()));
         try {
             RenderSystem.enableDepthTest();RenderSystem.depthMask(true);
-            if(modelBackend!=null&&!whiteModel)modelBackend.render(context,frame());
+            if(modelBackend!=null&&!whiteModel)modelBackend.render(context,viewportFrame);
             else drawNode(context,root,ZERO,List.of());
             graphics.flush();
         } finally {
@@ -175,9 +187,8 @@ public final class AssemblyViewport extends UIElement {
         var vertices=context.graphics.bufferSource().getBuffer(AssemblyMeshRenderTypes.forTexture(material.texture()));var pose=context.graphics.pose().last().pose();
         for(int i=0;i<points.size();i++) {
             var p=points.get(i);
-            double x=(p.x()+origin.x()-center.x())*fitScale,y=(p.y()+origin.y()-center.y())*fitScale,z=(p.z()+origin.z()-center.z())*fitScale;
-            double rx=x*cy+z*sy,rz=-x*sy+z*cy,ry=y*cp-rz*sp;
-            var vertex=vertices.addVertex(pose,(float)(renderCenterX+rx*renderScale),(float)(renderCenterY-ry*renderScale),20+(float)(y*sp+rz*cp)*.2f);
+            var projected=frame().project(p.add(origin));
+            var vertex=vertices.addVertex(pose,projected.x(),projected.y(),20+projected.depth()*.2f);
             if(!material.texture().isEmpty())vertex.setUv(triangle.uv().get(i).u()*material.textureScale(),triangle.uv().get(i).v()*material.textureScale());
             vertex.setColor(red,green,blue,255);
         }
