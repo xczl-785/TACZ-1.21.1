@@ -119,7 +119,7 @@ class NativeGlockStateTest {
         var models=NativeAssemblyView.geometry(weapon());var materials=NativeAssemblyView.materials(weapon(),models);
         assertEquals(weapon().ITEMS.keySet(),models.keySet());
         for(var entry:models.entrySet())for(var mesh:entry.getValue().meshes())for(var triangle:mesh.triangles())assertFalse(materials.resolve(entry.getKey(),triangle.region()).texture().isEmpty());
-        assertEquals(AssembledWeapon.resource("data/tacz_fork_tarkov/glock_17/preview.json"),AssembledWeapon.resource("assets/tacz_fork_tarkov/glock_17/icon_geometry.json"));
+        assertThrows(IllegalStateException.class,()->AssembledWeapon.resource("assets/tacz_fork_tarkov/glock_17/icon_geometry.json"));
         var external=new NativeAttachmentModels(weapon());
         for(String definition:List.of("tacz_muzzle_silencer_mirage","tacz_muzzle_silencer_ptilopsis","tacz_muzzle_silencer_wraith","tacz_laser_compact","tacz_laser_nightstick"))assertNotNull(external.resolve(weapon().createPart(definition)));
         assertNull(external.resolve(weapon().createPart("tacz_sight_rmr_dot")));

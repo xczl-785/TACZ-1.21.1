@@ -306,8 +306,7 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
         models.append({'definitionId':d,'attachmentOrigin':mounts[d]['attachmentOrigin'],'slots':mounts[d]['slots'],'boxes':[],'meshes':meshes[d]})
         texture=assets/f'textures/parts/{gun}/{d}.png';texture.parent.mkdir(parents=True,exist_ok=True);texture.write_bytes(parsed[d][2].read_bytes())
         library['materials'][d]={'baseColor':'#ffffff','texture':f'{ns}:textures/parts/{gun}/{d}.png','roughness':.8,'specular':.12,'textureScale':1};bindings['parts'][d]={'defaultMaterial':d,'regions':{}}
-    for filename,value in [('preview.json',{'schemaVersion':3,'models':models}),('library.json',library),('materials.json',bindings)]:
-        write(base/filename,value);write(assets/gun/{'preview.json':'icon_geometry.json','library.json':'icon_library.json','materials.json':'icon_materials.json'}[filename],value)
+    for filename,value in [('preview.json',{'schemaVersion':3,'models':models}),('library.json',library),('materials.json',bindings)]:write(base/filename,value)
     write(base/'workbench-anchors.json',{'schemaVersion':1,'anchors':{d:v.tolist() for d,v in anchors.items()}})
     for model in models:
         d=model['definitionId'];icon=assets/config['weapon']['partIconDirectory']/f'{d}.png';icon.parent.mkdir(parents=True,exist_ok=True)

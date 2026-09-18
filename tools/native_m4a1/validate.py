@@ -6,7 +6,7 @@ def read(p):return json.loads(re.sub(r'"(?:\\.|[^"\\])*"|//[^\n]*|/\*[\s\S]*?\*/
 def validate(resources=DEFAULT):
  out=Path(resources);base=out/'data/tacz_fork_tarkov/m4a1';a=out/'assets/tacz_fork_tarkov'
  assert read(a/'models/item/m4a1.json')['parent']=='builtin/entity'
- for source,target in [('preview.json','icon_geometry.json'),('library.json','icon_library.json'),('materials.json','icon_materials.json')]:assert read(base/source)==read(a/'m4a1'/target)
+ for target in ('icon_geometry.json','icon_library.json','icon_materials.json'):assert not (a/'m4a1'/target).exists()
  config=read(base/'weapon.json');mapping=read(base/'mapping.json');external=read(base/'native_attachments.json');catalog={p['id']:p for p in read(base/'catalog.json')['parts']};nodes=read(base/'scene.json')['nodes']
  contract=read(base/'authoring-contract.json');assert contract['schemaVersion']==1 and contract['gunId']==config['gunId']
  for name,digest in contract['sources'].items():

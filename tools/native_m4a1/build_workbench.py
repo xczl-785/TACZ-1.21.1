@@ -46,7 +46,6 @@ def build():
  write(BASE/'preview.json' ,{'schemaVersion':3,'models':models});write(BASE/'library.json',library);write(BASE/'materials.json',bindings)
  edited_parts={p['definitionId'] for p in read(SOURCE/'editable/manifest.json')['parts']}
  root_definition=read(BASE/'weapon.json')['rootDefinition']
- for source,target in [('preview.json','icon_geometry.json'),('library.json','icon_library.json'),('materials.json','icon_materials.json')]:write(ASSETS/'m4a1'/target,read(BASE/source))
  for model in models:
   d=model['definitionId'];render_part_icon(model,library,bindings,lambda res:OUT/'assets'/res.replace(':','/'),muzzle_left=d in edited_parts,alpha_cutout=d in edited_parts).save(ASSETS/f'textures/item/{d}.png')
   if not mapping[d].startswith('tacz:'):

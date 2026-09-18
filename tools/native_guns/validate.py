@@ -103,7 +103,7 @@ def validate(resources=p.RES,weapon=None):
     all_cubes={(b['name'],i) for b in original['bones'] for i in range(len(b.get('cubes',[])))}
     assert not seen&presentation and seen|presentation==all_cubes
     assert report['nativeRigBones']==len(native) and report['highCubes']==sum(len(b.get('cubes',[])) for b in bones.values())
-    for source,target in [('preview.json','icon_geometry.json'),('library.json','icon_library.json'),('materials.json','icon_materials.json')]:assert p.ex.read(base/source)==p.ex.read(assets/gun/target)
+    for target in ('icon_geometry.json','icon_library.json','icon_materials.json'):assert not (assets/gun/target).exists()
     library=p.ex.read(base/'library.json')['materials'];bindings=p.ex.read(base/'materials.json')['parts']
     for d,model in models.items():
         assert model['meshes'] and all(m['triangles'] for m in model['meshes'])

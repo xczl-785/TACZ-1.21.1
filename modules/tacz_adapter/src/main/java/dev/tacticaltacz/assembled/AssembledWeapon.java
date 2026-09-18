@@ -88,6 +88,11 @@ public final class AssembledWeapon {
         var item=ResourceLocation.parse(itemId);return item.withPath("textures/item/"+item.getPath()+".png");
     }
     public String asset(String name){return GUN.getNamespace()+":"+resourceDirectory+"/"+name;}
+    public static java.io.Reader resourceReader(String path){
+        var in=AssembledWeapon.class.getResourceAsStream("/"+path);
+        if(in==null)throw new IllegalStateException("Missing "+path);
+        return new java.io.BufferedReader(new java.io.InputStreamReader(in,java.nio.charset.StandardCharsets.UTF_8));
+    }
     public static String resource(String path){try(var in=AssembledWeapon.class.getResourceAsStream("/"+path)){if(in==null)throw new IllegalStateException("Missing "+path);return new String(in.readAllBytes(),java.nio.charset.StandardCharsets.UTF_8);}catch(java.io.IOException e){throw new java.io.UncheckedIOException(e);}}
     public boolean isGun(ItemStack stack){return stack.getItem() instanceof AssemblyGunItem item && item.weapon()==this;}
     public boolean isPart(ItemStack stack){try{return !isGun(stack)&&definition(stack)!=null;}catch(IllegalArgumentException invalid){return false;}}

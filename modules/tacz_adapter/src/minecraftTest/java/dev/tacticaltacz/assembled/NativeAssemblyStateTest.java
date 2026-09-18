@@ -48,7 +48,7 @@ class NativeAssemblyStateTest {
         assertEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(b)));
         var noStock=AssemblyGunExchange.plan(a,ItemStack.EMPTY,List.of("buffer","stock")).orElseThrow().held();
         assertNotEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(noStock)));
-        assertEquals(AssembledWeapon.resource("data/tacz_fork_tarkov/m4a1/preview.json"),AssembledWeapon.resource("assets/tacz_fork_tarkov/m4a1/icon_geometry.json"));
+        assertThrows(IllegalStateException.class,()->AssembledWeapon.resource("assets/tacz_fork_tarkov/m4a1/icon_geometry.json"));
     }
     @Test void presetIsOnePhysicalTreeAndCanDetachMagazine(){
         var gun=weapon().preset();assertEquals(14,AssemblyTrees.flatten(gun).size());AssemblyTrees.validate(gun,AssembledWeapon.identity(gun));

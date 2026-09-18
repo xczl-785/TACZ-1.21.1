@@ -75,10 +75,10 @@ public final class NativeAssemblyIcons {
         }catch(RuntimeException failure){report(key,failure);return null;}
     }
     private static Assets load(AssembledWeapon weapon){
-        var resources=Minecraft.getInstance().getResourceManager();
-        try(var geometry=resources.openAsReader(ResourceLocation.parse(weapon.asset("icon_geometry.json")));
-            var library=resources.openAsReader(ResourceLocation.parse(weapon.asset("icon_library.json")));
-            var bindings=resources.openAsReader(ResourceLocation.parse(weapon.asset("icon_materials.json")))){
+        String base="data/"+weapon.GUN.getNamespace()+"/"+weapon.resourceDirectory+"/";
+        try(var geometry=AssembledWeapon.resourceReader(base+"preview.json");
+            var library=AssembledWeapon.resourceReader(base+"library.json");
+            var bindings=AssembledWeapon.resourceReader(base+"materials.json")){
             var models=ModelGeometry.load(geometry);return new Assets(models,AssemblyMaterials.load(library,bindings,models));
         }catch(IOException e){throw new UncheckedIOException(e);}
     }

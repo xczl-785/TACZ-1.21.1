@@ -30,6 +30,18 @@ class CanonicalFirearmIdentityTest(unittest.TestCase):
             names = {entry.name for entry in (RESOURCES / kind).iterdir() if entry.is_dir()}
             self.assertTrue(RETIRED_NAMESPACES.isdisjoint(names), names & RETIRED_NAMESPACES)
 
+    def test_preview_geometry_has_one_canonical_runtime_copy(self):
+        index = json.loads(INDEX.read_text())
+        for relative in index["weapons"]:
+            weapon = json.loads((RESOURCES / relative).read_text())
+            namespace, _ = weapon["gunId"].split(":", 1)
+            directory = weapon["resourceDirectory"]
+            self.assertTrue((RESOURCES / "data" / namespace / directory / "preview.json").is_file())
+            asset_copy = RESOURCES / "assets" / namespace / directory
+            self.assertFalse((asset_copy / "icon_geometry.json").exists())
+            self.assertFalse((asset_copy / "icon_library.json").exists())
+            self.assertFalse((asset_copy / "icon_materials.json").exists())
+
 
 if __name__ == "__main__":
     unittest.main()
