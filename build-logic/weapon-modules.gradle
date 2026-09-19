@@ -66,6 +66,9 @@ tasks.register('compilePureJava') {
             ['AssemblyMaterials', 'HandPlacement', 'ModelGeometry', 'RecoilResponse', 'ShotSpring', 'WeaponPresentation'].each { type ->
                 assert names.contains("dev/firearms/presentation/${type}.class".toString())
             }
+            ['AssemblySession', 'WorkbenchAccess', 'WorkbenchInventoryHost', 'WorkbenchInventoryHosts', 'WorkbenchProposalSessions'].each { type ->
+                assert names.contains("dev/firearms/workbench/${type}.class".toString())
+            }
             assert !names.any { it.startsWith('com/tacz/') || it.startsWith('dev/tacticaltacz/') }
         }
     }

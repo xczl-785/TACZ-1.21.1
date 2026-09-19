@@ -1,12 +1,12 @@
 {
   "source_repository": "NewMod",
-  "source_commit": "3ef90e9f79c3544b5c2b5b5a8b863df66797c11f",
+  "source_commit": "ac2ef41f67e80bbc49203ea995257ceb4dc09551",
   "scope": "External compilation dependencies, never bundled in TaCZ; development artifacts only support compilation of opt-in acceptance tools",
   "artifacts": [
     {
       "module": "tactical",
-      "artifact": "vendor/newmod/tactical_inventory-3ef90e9.jar",
-      "sha512": "31f999b696775234ae07e2732747bff692a339b68d93e6e74d6331164272b7dcca514b437d699e3f8a8f7c392567983468f27aec7730b4c0b04b99afa9f228b6",
+      "artifact": "vendor/newmod/tactical_inventory-ac2ef41f.jar",
+      "sha512": "5fa66dbe6d0b5562515becdbc1d69654986894710809e9f0d021fd2ad35af22bef4c32af6271989a6a69ee9cca5aa657f4b18cfcf1c93d089aa19c5cb247962b",
       "scope": "main"
     },
     {
