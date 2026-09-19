@@ -8,7 +8,7 @@ import dev.tacticalinventory.api.*;
 import dev.tacticalinventory.core.*;
 import dev.tacticalinventory.platform.*;
 import dev.tacticalinventory.registry.ModRegistries;
-import dev.weaponruntime.*;
+import dev.weaponruntime.WeaponRuntime;
 import java.util.*;
 import net.minecraft.server.level.*;
 import net.minecraft.world.item.ItemStack;
@@ -38,7 +38,7 @@ final class BarrelFireSmoke {
         var empty=p.getMainHandItem();check(dev.tacticaltacz.AssemblyFireGate.blocked(empty),"missing barrel blocks firing");
         var encoded=empty.save(level.registryAccess());var persisted=ItemStack.parseOptional(level.registryAccess(),(net.minecraft.nbt.CompoundTag)encoded);
         check(dev.tacticaltacz.AssemblyFireGate.blocked(persisted),"missing barrel remains blocked after ItemStack save");
-        var bad=persisted.copy();bad.set(WeaponRuntime.PROFILE.get(),"missing:profile");check(dev.tacticaltacz.AssemblyFireGate.blocked(bad),"unknown managed profile fails closed");
+        var bad=persisted.copy();bad.remove(dev.firearms.profile.FirearmComponents.PROFILE.get());bad.set(WeaponRuntime.PROFILE.get(),"missing:profile");check(dev.tacticaltacz.AssemblyFireGate.blocked(bad),"unknown managed profile fails closed");
         var wrong=managed.copy();((IGun)wrong.getItem()).setGunId(wrong,net.minecraft.resources.ResourceLocation.parse("tacz:m4a1"));check(dev.tacticaltacz.AssemblyFireGate.blocked(wrong),"profile cannot transfer to another gun");
         var shooter=new Zombie(level);shooter.setPos(0,250,0);shooter.setNoAi(true);shooter.setItemSlot(EquipmentSlot.MAINHAND,empty);
         IGunOperator.fromLivingEntity(shooter).draw(shooter::getMainHandItem);

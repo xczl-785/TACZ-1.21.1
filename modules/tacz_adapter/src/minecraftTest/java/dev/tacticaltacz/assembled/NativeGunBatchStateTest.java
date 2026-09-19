@@ -7,7 +7,7 @@ import com.tacz.guns.client.model.FunctionalBedrockPart;
 import com.tacz.guns.client.model.bedrock.BedrockPart;
 import com.tacz.guns.client.resource.pojo.model.*;
 import dev.itemfoundation.api.assembly.*;
-import dev.weaponruntime.WeaponCapabilities;
+import dev.firearms.profile.FirearmProfiles;
 import java.util.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -22,7 +22,7 @@ class NativeGunBatchStateTest {
         NativeAssemblyStateTest.boot();
         for(String gun:GUNS){
             var w=weapon(gun);
-            if(WeaponCapabilities.profile(w.preset()).isEmpty())WeaponCapabilities.register(w.PROFILE,new WeaponCapabilities.Profile(w.PROFILE,w.CATALOG,w.ROOT,w.DEFINITIONS,w.requiredPaths,w::definition));
+            if(FirearmProfiles.profile(w.preset()).isEmpty())FirearmProfiles.register(w.PROFILE,new FirearmProfiles.Profile(w.PROFILE,w.CATALOG,w.ROOT,w.DEFINITIONS,w.requiredPaths,w::definition));
         }
     }
     private static ItemStack remove(ItemStack gun,List<String> path){return AssemblyGunExchange.plan(gun,ItemStack.EMPTY,path).orElseThrow().held();}

@@ -1,7 +1,8 @@
 package dev.tacticaltacz.verification;
 
 import dev.itemfoundation.api.assembly.*;
-import dev.weaponruntime.*;
+import dev.firearms.profile.FirearmProfiles;
+import dev.weaponruntime.WeaponRuntime;
 import dev.firearms.assembly.AssemblyJson;
 import dev.tacticalinventory.api.*;
 import net.minecraft.core.component.DataComponents;
@@ -27,7 +28,7 @@ public final class BarrelFireFixture {
         try(var in=BarrelFireFixture.class.getResourceAsStream("/assembly-fire-test/catalog.json")) {
             if(in==null)throw new IllegalStateException("No barrel catalog");
             var catalog=AssemblyJson.readCatalog(new String(in.readAllBytes(),java.nio.charset.StandardCharsets.UTF_8));
-            WeaponCapabilities.register(PROFILE,new WeaponCapabilities.Profile("tacz:glock_17",catalog,"5a7ae0c351dfba0017554310",
+            FirearmProfiles.register(PROFILE,new FirearmProfiles.Profile("tacz:glock_17",catalog,"5a7ae0c351dfba0017554310",
                 Map.of(BARREL.toString(),"5a6b5f868dc32e000a311389"),List.of(List.of("mod_barrel"))));
         }catch(java.io.IOException ex){throw new java.io.UncheckedIOException(ex);}
     });}
@@ -48,7 +49,7 @@ public final class BarrelFireFixture {
             var state=AssemblyTrees.state(held);var existing=state.in("mod_barrel");
             if(install){
                 if(existing.isPresent()||!BuiltInRegistries.ITEM.getKey(payment.getItem()).equals(BARREL))return Optional.empty();
-                try{var result=attach(held,payment);if(!WeaponCapabilities.firing(result,"tacz:glock_17").ready())return Optional.empty();return Optional.of(new TacticalHeldExchange.Change(result,List.of()));}
+                try{var result=attach(held,payment);if(!dev.tacticaltacz.LegacyFirearmProfiles.firing(result,"tacz:glock_17").ready())return Optional.empty();return Optional.of(new TacticalHeldExchange.Change(result,List.of()));}
                 catch(IllegalArgumentException e){return Optional.empty();}
             }
             if(existing.isEmpty())return Optional.empty();

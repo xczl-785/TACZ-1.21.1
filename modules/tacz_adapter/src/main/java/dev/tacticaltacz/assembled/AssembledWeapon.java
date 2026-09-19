@@ -6,7 +6,7 @@ import com.tacz.guns.api.item.gun.FireMode;
 import dev.itemfoundation.api.assembly.*;
 import dev.firearms.assembly.*;
 import dev.firearms.assembly.AssemblyJson;
-import dev.weaponruntime.WeaponRuntime;
+import dev.firearms.profile.FirearmProfiles;
 import java.util.*;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -114,7 +114,7 @@ public final class AssembledWeapon {
     public ItemStack preset(){return materialize(PRESET);}
     private ItemStack materialize(AssemblyNode node){
         var s=createPart(node.definitionId());
-        if(node.definitionId().equals(ROOT)){var gun=(IGun)s.getItem();gun.setGunId(s,GUN);gun.setFireMode(s,defaultFireMode);gun.setCurrentAmmoCount(s,0);gun.setBulletInBarrel(s,false);s.set(WeaponRuntime.PROFILE.get(),PROFILE);}
+        if(node.definitionId().equals(ROOT)){var gun=(IGun)s.getItem();gun.setGunId(s,GUN);gun.setFireMode(s,defaultFireMode);gun.setCurrentAmmoCount(s,0);gun.setBulletInBarrel(s,false);FirearmProfiles.assign(s,PROFILE);}
         var children=new ArrayList<AssemblyState.Installed>();node.children().forEach((slot,n)->{var part=materialize(n);children.add(new AssemblyState.Installed(slot,identity(part),part,true));});
         if(!children.isEmpty())s.set(AssemblyComponents.STATE.get(),AssemblyState.empty().updated(children));return s;
     }

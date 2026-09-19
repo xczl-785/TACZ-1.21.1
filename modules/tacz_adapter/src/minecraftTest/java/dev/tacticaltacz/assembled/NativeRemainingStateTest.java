@@ -7,7 +7,7 @@ import com.tacz.guns.client.resource.pojo.model.*;
 import com.tacz.guns.ammunition.TarkovAmmoItem;
 import dev.itemfoundation.api.assembly.*;
 import dev.tacticaltacz.AmmoBridge;
-import dev.weaponruntime.WeaponCapabilities;
+import dev.firearms.profile.FirearmProfiles;
 import java.util.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -21,7 +21,7 @@ class NativeRemainingStateTest {
     private static AssembledWeapon weapon(String name){return Objects.requireNonNull(AssembledWeapons.byId(ResourceLocation.parse("tacz_fork_tarkov:"+name)),name);}
     @BeforeAll static void boot() throws Exception {
         NativeAssemblyStateTest.boot();
-        for(String name:GUNS){var w=weapon(name);if(WeaponCapabilities.profile(w.preset()).isEmpty())WeaponCapabilities.register(w.PROFILE,new WeaponCapabilities.Profile(w.PROFILE,w.CATALOG,w.ROOT,w.DEFINITIONS,w.requiredPaths,w::definition));}
+        for(String name:GUNS){var w=weapon(name);if(FirearmProfiles.profile(w.preset()).isEmpty())FirearmProfiles.register(w.PROFILE,new FirearmProfiles.Profile(w.PROFILE,w.CATALOG,w.ROOT,w.DEFINITIONS,w.requiredPaths,w::definition));}
     }
     private static NativeAssemblyGunModel model(AssembledWeapon w,boolean low){
         var gson=new GsonBuilder().registerTypeAdapter(CubesItem.class,new CubesItem.Deserializer()).create();
@@ -40,12 +40,12 @@ class NativeRemainingStateTest {
         assertEquals(15,AssembledWeapons.all().stream().filter(w->w.nativeRig).count());
         var types=new HashSet<String>();
         for(String name:GUNS){var w=weapon(name);var gun=w.preset();assertTrue(types.add(w.modelType));AssemblyTrees.validate(gun,AssembledWeapon.identity(gun));
-            assertEquals(w.caliber,dev.tacticaltacz.GunAdoption.caliber(gun));assertTrue(WeaponCapabilities.firing(gun,w.PROFILE).ready(),name);assertTrue(w.hasFeedContainer(gun),name);
+            assertEquals(w.caliber,dev.tacticaltacz.GunAdoption.caliber(gun));assertTrue(FirearmProfiles.firing(gun,w.PROFILE).ready(),name);assertTrue(w.hasFeedContainer(gun),name);
             assertFalse(w.nativeAttachments.keySet().stream().anyMatch(k->k.contains("ammo_mod")),name);
             var access=net.minecraft.core.RegistryAccess.fromRegistryOfRegistries(BuiltInRegistries.REGISTRY);
             var ops=access.createSerializationContext(net.minecraft.nbt.NbtOps.INSTANCE);
             assertTrue(ItemStack.matches(gun,ItemStack.CODEC.parse(ops,ItemStack.CODEC.encodeStart(ops,gun).getOrThrow()).getOrThrow()),name);
-            for(var path:w.requiredPaths)assertFalse(WeaponCapabilities.firing(remove(gun,path),w.PROFILE).ready(),name+path);
+            for(var path:w.requiredPaths)assertFalse(FirearmProfiles.firing(remove(gun,path),w.PROFILE).ready(),name+path);
         }
     }
     @Test void allPhysicalRemovalsAndNativeCapacityVariantsAgreeAcrossHighAndLow(){

@@ -1,7 +1,7 @@
 package dev.tacticaltacz.assembled;
 
 import com.google.gson.JsonParser;
-import dev.weaponruntime.WeaponCapabilities;
+import dev.firearms.profile.FirearmProfiles;
 import java.util.*;
 import net.minecraft.core.registries.*;
 import net.minecraft.resources.ResourceLocation;
@@ -37,7 +37,7 @@ public final class AssembledWeapons {
     });}
     @SubscribeEvent public static void setup(net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent event){event.enqueueWork(()->{
         for(var weapon:all()){
-            WeaponCapabilities.register(weapon.PROFILE,new WeaponCapabilities.Profile(weapon.PROFILE,weapon.CATALOG,weapon.ROOT,weapon.DEFINITIONS,weapon.requiredPaths,weapon::definition));
+            FirearmProfiles.register(weapon.PROFILE,new FirearmProfiles.Profile(weapon.PROFILE,weapon.CATALOG,weapon.ROOT,weapon.DEFINITIONS,weapon.requiredPaths,weapon::definition));
             var item=BuiltInRegistries.ITEM.get(weapon.GUN);var provider=ResourceLocation.fromNamespaceAndPath(weapon.GUN.getNamespace(),weapon.GUN.getPath()+"_firearm");
             dev.itemfoundation.api.identity.ItemIdentities.server().register(item,provider,s->Set.of(ResourceLocation.parse("item_foundation:type/weapon/firearm")));
             dev.itemfoundation.api.equipment.WearableQualifications.register(item,provider,weapon.wearableSlots,s->weapon.wearableSlots);

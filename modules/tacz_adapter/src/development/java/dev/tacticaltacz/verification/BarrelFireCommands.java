@@ -20,7 +20,7 @@ public final class BarrelFireCommands {
             }))
             .then(Commands.literal("remove").executes(c->change(c.getSource().getPlayerOrException(),false)))
             .then(Commands.literal("install").executes(c->change(c.getSource().getPlayerOrException(),true)))
-            .then(Commands.literal("status").executes(c->{var p=c.getSource().getPlayerOrException();var s=p.getMainHandItem();var g=IGun.getIGunOrNull(s);var r=dev.weaponruntime.WeaponCapabilities.firing(s,g==null?"":g.getGunId(s).toString());c.getSource().sendSuccess(()->Component.literal(r.toString()),false);return 1;})));
+            .then(Commands.literal("status").executes(c->{var p=c.getSource().getPlayerOrException();var s=p.getMainHandItem();var g=IGun.getIGunOrNull(s);var r=dev.tacticaltacz.LegacyFirearmProfiles.firing(s,g==null?"":g.getGunId(s).toString());c.getSource().sendSuccess(()->Component.literal(r.toString()),false);return 1;})));
     }
     private static int change(net.minecraft.server.level.ServerPlayer p,boolean install){boolean ok=BarrelFireFixture.exchange(p,install);p.sendSystemMessage(Component.literal(ok?(install?"原枪管已装回，可以射击。":"枪管已返还库存，射击已被禁止。") : "操作未提交：请持测试枪并确认有零件/返还空间。"));return ok?1:0;}
 }

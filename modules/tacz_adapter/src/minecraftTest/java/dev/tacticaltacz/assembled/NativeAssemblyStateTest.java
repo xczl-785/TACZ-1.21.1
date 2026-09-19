@@ -92,7 +92,7 @@ class NativeAssemblyStateTest {
     private static void assertSingleAuthority(ItemStack gun){
         var root=gun.getOrDefault(net.minecraft.core.component.DataComponents.CUSTOM_DATA,net.minecraft.world.item.component.CustomData.EMPTY).copyTag();
         assertFalse(root.getAllKeys().stream().anyMatch(NativeAssemblyStateTest::isAttachmentShadow),"TaCZ attachment shadow state exists beside foundation assembly_state");
-        assertNotNull(gun.get(dev.weaponruntime.WeaponRuntime.PROFILE.get()),"weapon_runtime:profile remains a reference, not a physical tree");
+        assertNotNull(gun.get(dev.firearms.profile.FirearmComponents.PROFILE.get()),"firearms:profile remains a reference, not a physical tree");
         var identities=new HashSet<UUID>();identities.add(AssembledWeapon.identity(gun));
         for(var node:AssemblyTrees.flatten(gun)){
             assertEquals(node.instanceId(),AssembledWeapon.identity(node.stack()),"outer assembly identity must match the physical child");
