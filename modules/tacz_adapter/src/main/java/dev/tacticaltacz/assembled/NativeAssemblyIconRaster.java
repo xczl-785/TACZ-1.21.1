@@ -1,9 +1,9 @@
 package dev.tacticaltacz.assembled;
 
 import dev.firearms.assembly.AssemblyNode;
-import dev.weaponmodels.AssemblyMaterials;
-import dev.weaponmodels.ModelGeometry;
-import dev.weaponmodels.ModelGeometry.Point;
+import dev.firearms.presentation.AssemblyMaterials;
+import dev.firearms.presentation.ModelGeometry;
+import dev.firearms.presentation.ModelGeometry.Point;
 import java.util.*;
 import java.util.function.Function;
 

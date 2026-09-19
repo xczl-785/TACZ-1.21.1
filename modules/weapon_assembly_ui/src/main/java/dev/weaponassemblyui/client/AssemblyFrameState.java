@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.client;
 
-import dev.weaponmodels.ModelGeometry.Point;
+import dev.firearms.presentation.ModelGeometry.Point;
 
 /** Stable workbench framing: keep shorter builds steady and apply meaningful zoom-outs immediately. */
 final class AssemblyFrameState {

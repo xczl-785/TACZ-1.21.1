@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.client;
 
-import dev.weaponmodels.ModelGeometry.Point;
+import dev.firearms.presentation.ModelGeometry.Point;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

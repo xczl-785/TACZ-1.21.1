@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.client;
 
-import dev.weaponmodels.*;
+import dev.firearms.presentation.*;
 import com.lowdragmc.lowdraglib2.gui.holder.ModularUIScreen;
 import com.lowdragmc.lowdraglib2.gui.ui.*;
 import com.lowdragmc.lowdraglib2.gui.ui.event.UIEvents;

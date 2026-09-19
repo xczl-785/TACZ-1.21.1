@@ -1,11 +1,11 @@
 package dev.weaponassemblyui.client;
 
-import dev.weaponmodels.*;
+import dev.firearms.presentation.*;
 import dev.firearms.assembly.AssemblyNode;
 import org.junit.jupiter.api.Test;
 import java.io.*;
 import java.util.*;
-import static dev.weaponmodels.ModelGeometry.*;
+import static dev.firearms.presentation.ModelGeometry.*;
 
 /** Headless geometry checks; does not require a Minecraft instance. */
 public final class ModelGeometryTest {

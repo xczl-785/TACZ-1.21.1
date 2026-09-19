@@ -1,7 +1,7 @@
 package dev.weaponassemblyui.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
-import dev.weaponmodels.ModelGeometry.Point;
+import dev.firearms.presentation.ModelGeometry.Point;
 
 /** Canonical bridge from TaCZ's Java Bedrock frame into assembly art space. */
 public final class NativeWorkbenchTransform {

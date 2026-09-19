@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.client;
 
-import dev.weaponmodels.*;
+import dev.firearms.presentation.*;
 import dev.firearms.assembly.*;
 import dev.firearms.assembly.AssemblyJson;
 import dev.weaponassemblyui.session.AssemblySession;

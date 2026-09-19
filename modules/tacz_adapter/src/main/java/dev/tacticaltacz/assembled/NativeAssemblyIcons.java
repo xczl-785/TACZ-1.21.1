@@ -1,7 +1,7 @@
 package dev.tacticaltacz.assembled;
 
 import com.mojang.blaze3d.platform.NativeImage;
-import dev.weaponmodels.*;
+import dev.firearms.presentation.*;
 import java.io.IOException;
 import java.io.UncheckedIOException;
 import java.util.*;

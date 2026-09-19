@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.client;
 
-import dev.weaponmodels.ModelGeometry.Point;
+import dev.firearms.presentation.ModelGeometry.Point;
 
 /** One immutable camera frame shared by the rendered model and projected slot anchors. */
 public record WorkbenchViewportFrame(Point modelCenter,float screenCenterX,float screenCenterY,

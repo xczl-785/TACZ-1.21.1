@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.client;
 
-import dev.weaponmodels.*;
+import dev.firearms.presentation.*;
 import org.junit.jupiter.api.Test;
 import java.io.StringReader;
 import java.nio.file.*;

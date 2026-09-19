@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.client;
 
-import dev.weaponmodels.*;
+import dev.firearms.presentation.*;
 import com.lowdragmc.lowdraglib2.gui.ui.UIElement;
 import com.lowdragmc.lowdraglib2.gui.ui.rendering.GUIContext;
 import com.mojang.blaze3d.systems.RenderSystem;
@@ -9,7 +9,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import java.util.*;
 import java.util.function.Supplier;
-import static dev.weaponmodels.ModelGeometry.*;
+import static dev.firearms.presentation.ModelGeometry.*;
 
 /** Orthographic 3D mesh viewport. The host owns input arbitration and standard slot buttons. */
 public final class AssemblyViewport extends UIElement {

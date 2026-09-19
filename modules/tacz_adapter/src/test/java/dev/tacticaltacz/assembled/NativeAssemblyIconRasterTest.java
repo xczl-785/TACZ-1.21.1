@@ -1,7 +1,7 @@
 package dev.tacticaltacz.assembled;
 
 import dev.firearms.assembly.AssemblyNode;
-import dev.weaponmodels.*;
+import dev.firearms.presentation.*;
 import java.util.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

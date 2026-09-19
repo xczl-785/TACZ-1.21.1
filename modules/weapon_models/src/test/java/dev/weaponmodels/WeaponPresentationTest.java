@@ -1,9 +1,9 @@
-package dev.weaponmodels;
+package dev.firearms.presentation;
 
 import org.junit.jupiter.api.Test;
 import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
-import static dev.weaponmodels.WeaponPresentation.*;
+import static dev.firearms.presentation.WeaponPresentation.*;
 
 class WeaponPresentationTest {
     @Test void eyeFollowsNestedMountAndKeepsEyeRelief() {

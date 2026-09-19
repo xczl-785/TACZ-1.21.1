@@ -1,8 +1,8 @@
 package dev.tacticaltacz.assembled;
 
 import com.google.gson.*;
-import dev.weaponmodels.RecoilResponse;
-import dev.weaponmodels.WeaponPresentation.Vec;
+import dev.firearms.presentation.RecoilResponse;
+import dev.firearms.presentation.WeaponPresentation.Vec;
 import net.minecraft.world.item.ItemStack;
 
 /** Authored calibration, independent of the render frame and ammo state. */

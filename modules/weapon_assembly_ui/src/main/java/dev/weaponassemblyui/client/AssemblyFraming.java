@@ -1,8 +1,8 @@
 package dev.weaponassemblyui.client;
 
 import dev.firearms.assembly.AssemblyNode;
-import dev.weaponmodels.ModelGeometry;
-import dev.weaponmodels.ModelGeometry.Point;
+import dev.firearms.presentation.ModelGeometry;
+import dev.firearms.presentation.ModelGeometry.Point;
 import java.util.*;
 
 /** Computes the fixed-center automatic fit used by the Tarkov-style workbench camera. */

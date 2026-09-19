@@ -1,7 +1,7 @@
 package dev.tacticaltacz.assembled;
 
-import dev.weaponmodels.ModelGeometry;
-import dev.weaponmodels.AssemblyMaterials;
+import dev.firearms.presentation.ModelGeometry;
+import dev.firearms.presentation.AssemblyMaterials;
 import java.io.StringReader;
 import java.util.Map;
 

@@ -31,12 +31,12 @@ class NativeAssemblyStateTest {
         var materials=NativeAssemblyView.materials(weapon(),models);
         assertEquals(weapon().ITEMS.keySet(),models.keySet());
         for(var entry:models.entrySet()){
-            assertEquals(new dev.weaponmodels.ModelGeometry.Point(0,0,0),entry.getValue().attachmentOrigin());
+            assertEquals(new dev.firearms.presentation.ModelGeometry.Point(0,0,0),entry.getValue().attachmentOrigin());
             for(var mesh:entry.getValue().meshes())for(var triangle:mesh.triangles())
                 assertFalse(materials.resolve(entry.getKey(),triangle.region()).texture().isEmpty());
         }
-        var muzzle=dev.weaponmodels.ModelGeometry.origin(weapon().PRESET,models,List.of("upper","barrel_mount","barrel","muzzle")).orElseThrow();
-        var buffer=dev.weaponmodels.ModelGeometry.origin(weapon().PRESET,models,List.of("buffer")).orElseThrow();
+        var muzzle=dev.firearms.presentation.ModelGeometry.origin(weapon().PRESET,models,List.of("upper","barrel_mount","barrel","muzzle")).orElseThrow();
+        var buffer=dev.firearms.presentation.ModelGeometry.origin(weapon().PRESET,models,List.of("buffer")).orElseThrow();
         assertTrue(muzzle.z()>buffer.z(),"Radian workbench art frame points toward +Z");
     }
     @Test void itemEntryAndIconGeometryCoverTheCurrentAssembly(){

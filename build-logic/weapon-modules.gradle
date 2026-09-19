@@ -1,6 +1,6 @@
-// TaCZ keeps its renderer/runtime/UI sources; firearm rules come from the external public platform.
-def weaponModules = ['weapon_models', 'weapon_runtime', 'weapon_assembly_ui']
-def weaponTestModules = ['weapon_assembly'] + weaponModules
+// TaCZ keeps its legacy profile reader and renderer/UI adapters; firearm rules and pure presentation come from the public platform.
+def weaponModules = ['weapon_runtime', 'weapon_assembly_ui']
+def weaponTestModules = ['weapon_assembly', 'weapon_models'] + weaponModules
 weaponModules.each { name ->
     sourceSets.main.java.srcDir("modules/${name}/src/main/java")
     sourceSets.main.resources.srcDir("modules/${name}/src/main/resources")
@@ -62,6 +62,9 @@ tasks.register('compilePureJava') {
             def names = jar.entries().collect { it.name }
             ['AssemblyNode', 'AssemblyCatalog', 'AssemblyEngine', 'PartDefinition', 'WeaponStats', 'FiringReadiness'].each { type ->
                 assert names.contains("dev/firearms/assembly/${type}.class".toString())
+            }
+            ['AssemblyMaterials', 'HandPlacement', 'ModelGeometry', 'RecoilResponse', 'ShotSpring', 'WeaponPresentation'].each { type ->
+                assert names.contains("dev/firearms/presentation/${type}.class".toString())
             }
             assert !names.any { it.startsWith('com/tacz/') || it.startsWith('dev/tacticaltacz/') }
         }
