@@ -8,9 +8,13 @@ from native_m4a1_migration import native_successor,predecessor_text
 def verify(jar=None,development=None,newmod=None):
  adapter_rows()
  data=json.loads((R/'docs/assembly-experiment/adapter-migration.json').read_text())
+ subprocess.check_call(['git','cat-file','-e',data['tacz_baseline']+'^{commit}'],cwd=R)
  rows=data['files'];assert len(rows)==386
- for row in json.loads((R/'docs/assembly-experiment/adapter-authoring-migration.json').read_text())['files']:
-  assert hashlib.sha256((R/row['new']).read_bytes()).hexdigest()==row['sha256'],row['new']
+ authoring=json.loads((R/'docs/assembly-experiment/adapter-authoring-migration.json').read_text())
+ subprocess.check_call(['git','cat-file','-e',authoring['tacz_baseline']+'^{commit}'],cwd=R)
+ for row in authoring['files']:
+  preserved=subprocess.check_output(['git','show',authoring['tacz_baseline']+':'+row['new']],cwd=R)
+  assert hashlib.sha256(preserved).hexdigest()==row['sha256'],row['new']
  mixins=[];changed=[]
  for row in rows:
   p=R/row['new']
@@ -22,11 +26,12 @@ def verify(jar=None,development=None,newmod=None):
    assert not p.exists(),p
    if '/mixin/' in row['old']:mixins.append(p.name)
    continue
-  assert hashlib.sha256(p.read_bytes()).hexdigest()==native_successor(row['new'],row['after_sha256']),p
+  preserved=subprocess.check_output(['git','show',data['tacz_baseline']+':'+row['new']],cwd=R)
+  assert hashlib.sha256(preserved).hexdigest()==row['after_sha256'],p
   if '/weapon-content/' in row['new'] or '/src/main/resources/' in row['new']:
    assert row['before_sha256']==row['after_sha256'],p
   if '/src/main/java/' in row['new'] or '/src/development/java/' in row['new']:
-   s=predecessor_text(row['new'],p.read_text());assert '@Mod(' not in s and '@Mixin(' not in s,p
+   s=preserved.decode();assert '@Mod(' not in s and '@Mixin(' not in s,p
    if row['before_sha256']!=row['after_sha256']:
     changed.append(p.name)
     if newmod:

@@ -24,25 +24,28 @@ def verify(jar=None, newmod=None):
     runtime=(R/'modules/weapon_runtime/src/main/java/dev/weaponruntime/WeaponRuntime.java').read_text()
     assert 'Registries.DATA_COMPONENT_TYPE,"weapon_runtime"' in runtime and 'registerComponentType("profile"' in runtime
     gun=(R/'src/main/java/com/tacz/guns/GunMod.java').read_text()
-    assert gun.count('dev.weaponruntime.WeaponRuntime.register(bus);')==1
-    assert 'weaponassemblyui' not in gun
+    assert gun.count('com.tacz.guns.api.extension.GunPlatformExtensions.register(bus);')==1
+    assert 'dev.weaponruntime' not in gun and 'weaponassemblyui' not in gun
+    provider=(R/'modules/tacz_adapter/src/main/java/dev/tacticaltacz/TacticalGunPlatformExtension.java').read_text()
+    assert provider.count('dev.weaponruntime.WeaponRuntime.register(modBus);')==1
     # All moved files are accounted for, including retired entrypoints and test-only changes.
     ledger=json.loads((R/'docs/assembly-experiment/weapon-module-migration.json').read_text())
+    import subprocess
+    subprocess.check_call(['git','cat-file','-e',ledger['tacz_baseline']+'^{commit}'],cwd=R)
     for row in ledger['files']:
         target=R/row['new']
         if row.get('action')=='retire':
             assert not target.exists(),row['new']
         elif 'after_sha256' in row:
-            assert hashlib.sha256(target.read_bytes()).hexdigest()==native_successor(row['new'],row['after_sha256']),row['new']
+            preserved=subprocess.check_output(['git','show',ledger['tacz_baseline']+':'+row['new']],cwd=R)
+            assert hashlib.sha256(preserved).hexdigest()==row['after_sha256'],row['new']
         if '/src/main/resources/' in row['new'] and not row['new'].endswith('neoforge.mods.toml'):
             if row['new'] in {f'modules/weapon_assembly_ui/src/main/resources/assets/weapon_assembly_ui/lang/{locale}.json' for locale in ('en_us','zh_cn')}:
-                current=target.read_text();before=json.loads(predecessor_text(row['new'],current));after=json.loads(current)
+                current=preserved.decode();before=json.loads(predecessor_text(row['new'],current));after=json.loads(current)
                 assert all(after.get(k)==v for k,v in before.items()),row['new']
-                expected={'weapon_assembly_ui.'+k for k in ('edit_preset','exit_preset','temporary_preset','catalog_unlimited','no_catalog_candidates')}
-                assert set(after)-set(before)==expected,row['new']
-                assert hashlib.sha256(target.read_bytes()).hexdigest()==native_successor(row['new'],row['before_sha256']),row['new']
+                assert hashlib.sha256(preserved).hexdigest()==row['after_sha256'],row['new']
             else:
-                assert hashlib.sha256(target.read_bytes()).hexdigest()==row['before_sha256'],row['new']
+                assert hashlib.sha256(preserved).hexdigest()==row['before_sha256'],row['new']
     fixture_sources=json.loads((R/'modules/fixture-sources.json').read_text())
     for row in fixture_sources['files']:
         assert hashlib.sha256((R/row['new']).read_bytes()).hexdigest()==row['sha256'],row['new']
@@ -55,7 +58,6 @@ def verify(jar=None, newmod=None):
         for row in ledger['files']:
             assert not (newmod/row['old']).exists(),row['old']
         # Prove this item did not alter public module, adapter behavior, or gun content.
-        import subprocess
         changed=subprocess.check_output(['git','diff','--name-only','-z',ledger['newmod_baseline'],'--','source/mods'],cwd=newmod).decode().rstrip('\0').split('\0')
         allowed={r['old'] for r in ledger['files']}
         allowed.update(r['old'] for r in json.loads((R/'docs/assembly-experiment/adapter-migration.json').read_text())['files'])

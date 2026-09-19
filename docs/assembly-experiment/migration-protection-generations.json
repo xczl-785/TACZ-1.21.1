@@ -1,0 +1,34 @@
+{
+  "schema": 1,
+  "protected_roots": ["src", "modules", "build-logic", "tools", "vendor"],
+  "generations": [
+    {
+      "id": "final-audit-2026-09-19",
+      "baseline": "bf102b11c94eab93c2b84440a27684d4ca29af7f",
+      "files": [
+        {"path":"build-logic/adapter-integration.gradle","before_sha256":"b32cbe4bf409e7e02eafafa2ac06eb9f93a7d0ece1f5ffd29e0d6114057d0dd8","after_sha256":"50b480cb2f41ce1629c7ce682f54423375f8d2f4b10fa2cd48a0eb76f644526d"},
+        {"path":"modules/public-dependency-lock.json","before_sha256":"00fb7f4b0afcdf3efdf5e7fb4b6dca01544f53e7ce82fb5853e958fc27b4caeb","after_sha256":"81eb57146f898040fc804272a8cd6f04bee5663be12bb2bfb78a03ab4c4b0627"},
+        {"path":"modules/tacz_adapter/public-dependency-lock.json","before_sha256":"e95692dbca77c3aedd76e17342186bba1748703b83e83d0f4d5f0855e8200fd5","after_sha256":"abf37c02919c6d045e122a90eaa8d01531e36df69c8e14b76266deb9a2dbbd4d"},
+        {"path":"tools/native_m4a1_migration.py","before_sha256":"810a56b52c0194bfd00618b92b01185c88db91c0fcd50b7f64d11c4c119e616c","after_sha256":"0e657ab0c61083ea820a338ff7e002e2a749dada58b2a74d0eb5fab6c0546dc0"},
+        {"path":"tools/verify_adapter_integration.py","before_sha256":"3b3970da982d7aa7f123dd2d0a292f9853b0064972d55546c7323a0683419fba","after_sha256":"09c7ce84ab7762e48e62178ea117866eef452d4f938b3514b3ab45a143dd5bd9"},
+        {"path":"tools/verify_weapon_modules.py","before_sha256":"aef3297f1ed29b6decd4f691a372204e8cfd26255aeeef7e0dcba7def9e4e86c","after_sha256":"cc4e519ca546905d606ce82d0f5dddcb6a3baa3d1e3e0353a02fd5a658e30f64"},
+        {"path":"vendor/newmod/firearms-2fcd64a1.jar","before_sha256":"5a9a22127290ad22a31c6a4d4829697a60876916c9fdef8d5bd18f6741d2ac29","after_sha256":null},
+        {"path":"vendor/newmod/firearms-50eb84c7.jar","before_sha256":null,"after_sha256":"5a9a22127290ad22a31c6a4d4829697a60876916c9fdef8d5bd18f6741d2ac29"},
+        {"path":"vendor/newmod/item_foundation-50eb84c7.jar","before_sha256":null,"after_sha256":"7d35560df25ef4968188afc209b7134bd11ed2c4aca41ad4ee4a9761567ce6aa"},
+        {"path":"vendor/newmod/item_foundation-94c31d59.jar","before_sha256":"7d35560df25ef4968188afc209b7134bd11ed2c4aca41ad4ee4a9761567ce6aa","after_sha256":null},
+        {"path":"vendor/newmod/tactical-development-3ef90e9.jar","before_sha256":"eb5f71e4be5e9b1e05f439ad727772a3d7c926a81791f20a9b783f23b94794cf","after_sha256":null},
+        {"path":"vendor/newmod/tactical-development-50eb84c7.jar","before_sha256":null,"after_sha256":"ea0dec75e2dd7d0a83c518cf339696c9bf1d2f9a1f0f17cafd228056ab81e07b"},
+        {"path":"vendor/newmod/tactical_character-3ef90e9.jar","before_sha256":"42463a368e10ef4f30a93572b1b4a1cc13bb175b0106ae339be27ab64f4e06b3","after_sha256":null},
+        {"path":"vendor/newmod/tactical_character-50eb84c7.jar","before_sha256":null,"after_sha256":"42463a368e10ef4f30a93572b1b4a1cc13bb175b0106ae339be27ab64f4e06b3"},
+        {"path":"vendor/newmod/tactical_combat-2fcd64a1.jar","before_sha256":"530b669275779f775fd3e9f839f9e5c767f7573b58dfd2b4d0d1f107b6052ca9","after_sha256":null},
+        {"path":"vendor/newmod/tactical_combat-50eb84c7.jar","before_sha256":null,"after_sha256":"530b669275779f775fd3e9f839f9e5c767f7573b58dfd2b4d0d1f107b6052ca9"},
+        {"path":"vendor/newmod/tactical_inventory-2fcd64a1.jar","before_sha256":"1e1acb2e68525752e2228ae9a0913c1b8a7cb4b0435a59125e417d52dd1feb4f","after_sha256":null},
+        {"path":"vendor/newmod/tactical_inventory-50eb84c7.jar","before_sha256":null,"after_sha256":"1e1acb2e68525752e2228ae9a0913c1b8a7cb4b0435a59125e417d52dd1feb4f"},
+        {"path":"vendor/newmod/tarkov_content-3ef90e9.jar","before_sha256":"274778498d4b41fe1411649aff13408cbcf48013a5302906672943aeaf282af4","after_sha256":null},
+        {"path":"vendor/newmod/tarkov_content-50eb84c7.jar","before_sha256":null,"after_sha256":"274778498d4b41fe1411649aff13408cbcf48013a5302906672943aeaf282af4"},
+        {"path":"vendor/newmod/tarkov_content-development-3ef90e9.jar","before_sha256":"969e5314404dbffc81749f7971df5e81488b1489658c85b3fb71b78856a080fd","after_sha256":null},
+        {"path":"vendor/newmod/tarkov_content-development-50eb84c7.jar","before_sha256":null,"after_sha256":"09280d65d37f741c9264c26476356169aa804749b1e339fb7cffac8846371522"}
+      ]
+    }
+  ]
+}

@@ -1,42 +1,42 @@
 {
   "source_repository": "NewMod",
-  "source_commit": "2fcd64a1892af94f8186ac8cd98aeb5f0d17ec86",
+  "source_commit": "50eb84c7985236adb0369c95ba601a289aaaa4c1",
   "scope": "External compilation dependencies, never bundled in TaCZ; development artifacts only support compilation of opt-in acceptance tools",
   "artifacts": [
     {
       "module": "tactical",
-      "artifact": "vendor/newmod/tactical_inventory-2fcd64a1.jar",
+      "artifact": "vendor/newmod/tactical_inventory-50eb84c7.jar",
       "sha512": "04dffe7b937cb90a857eaf11d0ff3050998aa17d4da4072c58a5702826b35fcf7e5cfbc456ef48cf14385685c1e6903e382c48a9e085c485a8ec6f7c53868e1b",
       "scope": "main"
     },
     {
       "module": "character",
-      "artifact": "vendor/newmod/tactical_character-3ef90e9.jar",
+      "artifact": "vendor/newmod/tactical_character-50eb84c7.jar",
       "sha512": "077338761db67fa9e607b7554e2e12e6c7cca03e7865e1b116691bb279ba62f45520fd51a396a0c5be0c819a69d06b5df5ceb53d6ad372785d2d20f9fb047cc5",
       "scope": "main"
     },
     {
       "module": "combat",
-      "artifact": "vendor/newmod/tactical_combat-2fcd64a1.jar",
+      "artifact": "vendor/newmod/tactical_combat-50eb84c7.jar",
       "sha512": "658015e5ddaf635adf8dad0fc3a81dc6a3f68b5d1962ae500f1e4fd91ddc1a4696bc34dc7ec85fe409c09add6f49a60d204c7464b055e64637b34e6d4eda7cdf",
       "scope": "main"
     },
     {
       "module": "tarkov_content",
-      "artifact": "vendor/newmod/tarkov_content-3ef90e9.jar",
+      "artifact": "vendor/newmod/tarkov_content-50eb84c7.jar",
       "sha512": "f61ca330d8483ddc16047fb3bd0d35e912a834d365baf09f76a926d03dd98d3228081e78ec1d8b0f2ab98752946fc2ef6ffbaa11990430b9c212f5392e8948ec",
       "scope": "development"
     },
     {
       "module": "tactical development API",
-      "artifact": "vendor/newmod/tactical-development-3ef90e9.jar",
-      "sha512": "aec8ab11288bd08f11bde7fe9c6a9813a696f9487c76d37dbd53b61a2d7a345cae4a03b1cc63b43240720d53aafb3e805f3dfb52474d350ea1292a55a2c93d8f",
+      "artifact": "vendor/newmod/tactical-development-50eb84c7.jar",
+      "sha512": "83f4b1cccc7eb4f55043afc2eb8df6b8945513f6227f0dfe2a18dfba4dcec56eb1389e013e44663bd6f24510a23b7c23f60964c31f5f1f548af978730f75e7de",
       "scope": "development"
     },
     {
       "module": "tarkov_content development API",
-      "artifact": "vendor/newmod/tarkov_content-development-3ef90e9.jar",
-      "sha512": "0f05cb6bdb578749d3001390f016173e21f2c60152d7349a4b6172e2cd738f1cf2df48db2122cddc012e7ebacd25e28320eb846a7418eb8c8ae1dc558938117c",
+      "artifact": "vendor/newmod/tarkov_content-development-50eb84c7.jar",
+      "sha512": "8bb0e87f6ec6daa5ac64104f23a875a02dc1bbddd72dad13eca71d8df0f1985fbcd23ef452ff3e16a92f33f25ad1c9aca364558b198dbaed0099059e2e9c73cc",
       "scope": "development"
     }
   ]
