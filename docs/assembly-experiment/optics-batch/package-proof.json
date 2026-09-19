@@ -1,0 +1,56 @@
+{
+  "sourceCommit": "a3bc3d4ee8d89ca386e9a7de0e5cd660482536c2",
+  "version": "1.1.8-hotfix-r6-newmod.a3bc3d4e",
+  "artifacts": [
+    {
+      "artifact": "tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.a3bc3d4e.jar",
+      "sha512": "2cda383a98f6629a59ba28f58b267872710577aa566aaa0a917ed07febd5b9fcf4d91af5c580e9f6e81c1c247b65e055e130df8f4071b01064f958bfcf778cab",
+      "bytes": 61510984,
+      "assemblyResourcesMatched": 2970,
+      "pngDecoded": 2680,
+      "originalOpticsUnchanged": true
+    },
+    {
+      "artifact": "tacz-neoforge-1.21.1-1.1.8-hotfix-r6-newmod.a3bc3d4e-development.jar",
+      "sha512": "734acf56fabdfaff9c8cdeba1cc484971e96fd4808c4798e9d665f404ba560f1d7d9e5e8c7966a91bb67abe3b3e96f77d7356b9fe9f92b0d05d10fc52e43789c",
+      "bytes": 61743085,
+      "assemblyResourcesMatched": 2970,
+      "pngDecoded": 2680,
+      "originalOpticsUnchanged": true
+    }
+  ],
+  "javaTests": {
+    "registryBacked": 47,
+    "adapter": 35,
+    "failures": 0
+  },
+  "pythonChecks": {
+    "optics": 6,
+    "nativeGuns": 28,
+    "m4Authoring": 6,
+    "m4Editable": 3,
+    "m4EditableBatch": 9,
+    "attachmentLibrary": 9,
+    "weaponPipeline": 3
+  },
+  "compatiblePairs": 222,
+  "modeCombinations": 282,
+  "fullCheck": "Existing verifyAdapterIntegration migration ledger mismatch remains; focused checks and assemble passed",
+  "minecraftStarted": false,
+  "ownerVisualAcceptance": "New 26 and expanded gun coverage pending; original two accepted only on M4",
+  "newmodRuntime": {
+    "formal": {
+      "verifyRuntime": "passed",
+      "classes": 944,
+      "prepareClientRun": "passed"
+    },
+    "development": {
+      "verifyRuntime": "passed",
+      "classes": 982,
+      "prepareClientRun": "passed"
+    },
+    "defaultMode": "development",
+    "rollbackVersion": "1.1.8-hotfix-r6-newmod.3e395c77",
+    "artifactDirectory": "current and one rollback, formal/development pairs only"
+  }
+}
