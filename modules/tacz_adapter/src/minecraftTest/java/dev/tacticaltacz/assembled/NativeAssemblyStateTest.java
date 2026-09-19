@@ -64,8 +64,40 @@ class NativeAssemblyStateTest {
         item.setAttachmentTag(installed,AttachmentType.SCOPE,tag);
         var child=NativeAttachmentProjection.get(installed,AttachmentType.SCOPE);
         assertEquals(original,AssembledWeapon.identity(child));assertEquals("tacz:scope_acog_ta31",item.getAttachmentId(installed,AttachmentType.SCOPE).toString());assertEquals(2,item.getAttachmentTag(installed,AttachmentType.SCOPE).getInt("ZoomNumber"));
-        assertFalse(installed.getOrDefault(net.minecraft.core.component.DataComponents.CUSTOM_DATA,net.minecraft.world.item.component.CustomData.EMPTY).copyTag().getAllKeys().stream().anyMatch(k->k.startsWith("GunAttachment")));
+        assertFalse(installed.getOrDefault(net.minecraft.core.component.DataComponents.CUSTOM_DATA,net.minecraft.world.item.component.CustomData.EMPTY).copyTag().getAllKeys().stream().anyMatch(NativeAssemblyStateTest::isAttachmentShadow));
         assertEquals(0,((com.tacz.guns.api.item.IAttachment)scope.getItem()).getZoomNumber(scope));
+    }
+
+    @Test void allNativePresetsUseOnePhysicalAssemblyAuthority(){
+        var nativeWeapons=AssembledWeapons.all().stream().filter(w->w.nativeRig).toList();assertEquals(15,nativeWeapons.size());
+        nativeWeapons.forEach(w->assertSingleAuthority(w.preset()));
+    }
+
+    @Test void authorityGateRejectsRealAttachmentShadowAndIdentityDrift(){
+        var shadowed=weapon().preset();
+        shadowed.update(net.minecraft.core.component.DataComponents.CUSTOM_DATA,net.minecraft.world.item.component.CustomData.EMPTY,
+                data->data.update(tag->tag.put("AttachmentSCOPE",new net.minecraft.nbt.CompoundTag())));
+        assertThrows(AssertionError.class,()->assertSingleAuthority(shadowed));
+
+        var drifted=weapon().preset();var state=AssemblyTrees.state(drifted);var children=new ArrayList<>(state.installed());var first=children.getFirst();
+        children.set(0,new AssemblyState.Installed(first.slotId(),UUID.randomUUID(),first.stack(),first.enabled()));
+        drifted.set(AssemblyComponents.STATE.get(),state.updated(children));
+        assertThrows(AssertionError.class,()->assertSingleAuthority(drifted));
+    }
+
+    private static boolean isAttachmentShadow(String key){
+        return Arrays.stream(AttachmentType.values()).filter(type->type!=AttachmentType.NONE).anyMatch(type->key.equals("Attachment"+type.name()));
+    }
+
+    private static void assertSingleAuthority(ItemStack gun){
+        var root=gun.getOrDefault(net.minecraft.core.component.DataComponents.CUSTOM_DATA,net.minecraft.world.item.component.CustomData.EMPTY).copyTag();
+        assertFalse(root.getAllKeys().stream().anyMatch(NativeAssemblyStateTest::isAttachmentShadow),"TaCZ attachment shadow state exists beside foundation assembly_state");
+        assertNotNull(gun.get(dev.weaponruntime.WeaponRuntime.PROFILE.get()),"weapon_runtime:profile remains a reference, not a physical tree");
+        var identities=new HashSet<UUID>();identities.add(AssembledWeapon.identity(gun));
+        for(var node:AssemblyTrees.flatten(gun)){
+            assertEquals(node.instanceId(),AssembledWeapon.identity(node.stack()),"outer assembly identity must match the physical child");
+            assertTrue(identities.add(node.instanceId()),"physical assembly identities must be unique");
+        }
     }
 
     @Test void serverProposalIsSingleUseAndExpiresAcrossBothInterfaces(){
