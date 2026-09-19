@@ -8,7 +8,6 @@
 | Z 改装的库存事务 | [改装库存合同](refit-inventory.md)，保留玩家规则；旧独立模块命令已由实验室构建接替 |
 | 正式/开发包与公共依赖 | [运行依赖](self-built-runtime.md)，当前机制 |
 | 开发目录 | [开发物品目录](devitems-catalog.md)，历史修复说明；实际枪械分类以当前 authoringSource/developmentCategory 和开发代码为准 |
-| 网页检查工具 | [外置工作台](外置枪械检查工作台.md)，仅中性几何诊断，不替代 Minecraft 光学验收 |
 | 旧开发弹退出 | [测试弹退役](test-ammo-retirement.md)，已执行边界与证据 |
 | 旧三枪制作与表现 | [旧导入流程](枪械导入流程.md)、[旧表现方案](握持瞄准与射击反馈方案.md)、[制作整理](三枪制作整理结果.md)、[资源归属](三枪资源归属补充结果.md)，退役生产链的追溯资料，禁止照其旧命令重建正式内容 |
 | 旧桥接和验证 | `evidence/`、本目录各 verification JSON/HTML/截图，原始批次证据，不重写历史验收 |

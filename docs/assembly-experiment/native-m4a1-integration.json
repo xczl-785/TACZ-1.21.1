@@ -262,12 +262,6 @@
       "reason": "Native M4A1 sample and required internal integration; original gun resources retained"
     },
     {
-      "path": "modules/tacz_adapter/src/workbench/java/dev/tacticaltacz/workbench/TaczWorkbenchWorker.java",
-      "before_sha256": null,
-      "after_sha256": "daf20c05f399aff6df62e60a032655529eafb5243aa9c079c531ea5f10d5f1ac",
-      "reason": "2026-09-18 M4 authored assembly/mount inputs and workbench candidate identity; existing native rig and item identities retained"
-    },
-    {
       "path": "modules/tacz_adapter/tools/render_part_icon.py",
       "before_sha256": "6f05a11b7cd8ad6c7e98b2d4dcb23c962792e520f8c934dee90d33a9ef54561b",
       "after_sha256": "9b00f0651997f97812e763dc8b0577beaa33efe4967048c594d231e74965a2de",

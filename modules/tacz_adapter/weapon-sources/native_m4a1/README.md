@@ -15,7 +15,7 @@
 
 `mounts.json` 使用 +Z 枪口、原模型单位；`frameOrigin` 是零件局部坐标基准在装配空间中的位置，`slots` 和 `attachmentOrigin` 均为零件局部坐标。初值沿用已有位置，但之后不再由包围盒或第一个候选重新推导。坐标基准不是物理铰链，也不是动画 pivot；调整界面坐标基准时应同步保持父槽位与子安装点重合。想改变实际几何安装姿态，应编辑零件及原生绑定并验证，不能只移动浏览器槽位就视为改好了原生模型。
 
-生成的 `authoring-contract.json` 记录这些作者输入的 SHA-256；资源校验会拒绝作者资料与生成结果不一致的状态。验证命令：`python3 tools/native_m4a1/validate.py`、`python3 -m unittest discover -s tools/native_m4a1 -p 'test_*.py'`。外部工作台全候选检查：先 `bash gradlew prepareTaczWorkbench --offline`，再 `python3 tools/native_m4a1/verify_workbench_runtime.py`。这些都不替代 Minecraft 实机验收。
+生成的 `authoring-contract.json` 记录这些作者输入的 SHA-256；资源校验会拒绝作者资料与生成结果不一致的状态。验证命令：`python3 tools/native_m4a1/validate.py`、`python3 -m unittest discover -s tools/native_m4a1 -p 'test_*.py'`。这些都不替代 Minecraft 实机验收。
 
 15 件默认配件的正式编辑入口为 [editable/README.md](editable/README.md)。它们生成工作台、图标和原生持枪高低模；下面的三角网格说明主要描述旧导出与其余候选。不要编辑默认件的 source-pack 生成物。
 
