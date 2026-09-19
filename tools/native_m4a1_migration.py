@@ -15,7 +15,7 @@ def generation_rows():
  data=json.loads(GENERATION_LEDGER.read_text());generation=data['generations'][-1]
  baseline=generation['baseline'];rows={r['path']:r for r in generation['files']}
  subprocess.check_call(['git','cat-file','-e',baseline+'^{commit}'],cwd=ROOT)
- actual=set(subprocess.check_output(['git','diff','--name-only','-z',baseline,'--',*PROTECTED_ROOTS],cwd=ROOT).decode().strip('\0').split('\0'))
+ actual=set(subprocess.check_output(['git','diff','--no-renames','--name-only','-z',baseline,'--',*PROTECTED_ROOTS],cwd=ROOT).decode().strip('\0').split('\0'))
  actual.update(subprocess.check_output(['git','ls-files','--others','--exclude-standard','-z','--',*PROTECTED_ROOTS],cwd=ROOT).decode().strip('\0').split('\0'))
  actual.discard('')
  assert actual==set(rows),('Unrecorded current-generation change',actual^set(rows))
