@@ -7,7 +7,7 @@ import com.lowdragmc.lowdraglib2.gui.ui.event.UIEvents;
 import com.lowdragmc.lowdraglib2.math.Size;
 import dev.itemfoundation.client.api.*;
 import dev.vfyjxf.taffy.style.TaffyPosition;
-import dev.weaponassembly.api.*;
+import dev.firearms.assembly.*;
 import dev.weaponassemblyui.session.*;
 import net.minecraft.resources.ResourceLocation;
 import com.lowdragmc.lowdraglib2.gui.ui.rendering.GUIContext;

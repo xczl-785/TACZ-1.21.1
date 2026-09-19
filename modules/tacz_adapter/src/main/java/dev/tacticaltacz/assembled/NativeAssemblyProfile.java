@@ -1,7 +1,7 @@
 package dev.tacticaltacz.assembled;
 
 import com.google.gson.*;
-import dev.weaponassembly.api.*;
+import dev.firearms.assembly.*;
 import java.util.*;
 import java.util.function.Predicate;
 

@@ -4,8 +4,8 @@ import com.google.gson.*;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.gun.FireMode;
 import dev.itemfoundation.api.assembly.*;
-import dev.weaponassembly.api.*;
-import dev.weaponassembly.io.AssemblyJson;
+import dev.firearms.assembly.*;
+import dev.firearms.assembly.AssemblyJson;
 import dev.weaponruntime.WeaponRuntime;
 import java.util.*;
 import net.minecraft.core.component.DataComponents;
@@ -118,18 +118,16 @@ public final class AssembledWeapon {
         var children=new ArrayList<AssemblyState.Installed>();node.children().forEach((slot,n)->{var part=materialize(n);children.add(new AssemblyState.Installed(slot,identity(part),part,true));});
         if(!children.isEmpty())s.set(AssemblyComponents.STATE.get(),AssemblyState.empty().updated(children));return s;
     }
-    public AssemblyNode project(ItemStack stack){return project(stack,identity(stack),0);}
-    private AssemblyNode project(ItemStack stack,UUID identity,int depth){
-        if(depth>AssemblyEngine.MAX_DEPTH)throw new IllegalArgumentException("Too deep");var children=new TreeMap<String,AssemblyNode>();
-        for(var part:AssemblyTrees.state(stack).installed())children.put(part.slotId(),project(part.stack(),part.instanceId(),depth+1));
-        return new AssemblyNode(identity,definition(stack),children);
+    public AssemblyNode project(ItemStack stack){
+        return AssemblyViews.project(stack,identity(stack),part->{
+            try{return Optional.of(definition(part));}catch(IllegalArgumentException unknown){return Optional.empty();}
+        }).root();
     }
-    public AssemblyNode projectEnabled(ItemStack stack){return enabled(stack,identity(stack),0);}
-    private AssemblyNode enabled(ItemStack stack,UUID id,int depth){
-        if(depth>AssemblyEngine.MAX_DEPTH)throw new IllegalArgumentException("Too deep");
+    public AssemblyNode projectEnabled(ItemStack stack){return enabled(project(stack));}
+    private static AssemblyNode enabled(AssemblyNode node){
         var children=new TreeMap<String,AssemblyNode>();
-        for(var part:AssemblyTrees.state(stack).installed())if(part.enabled())children.put(part.slotId(),enabled(part.stack(),part.instanceId(),depth+1));
-        return new AssemblyNode(id,definition(stack),children);
+        node.children().forEach((slot,child)->{if(child.enabled())children.put(slot,enabled(child));});
+        return new AssemblyNode(node.instanceId(),node.definitionId(),children);
     }
     public boolean hasMagazine(ItemStack stack){return feed.kind()==NativeAssemblyFeed.Kind.DETACHABLE_MAGAZINE&&hasFeedContainer(stack);}
     public boolean hasFeedContainer(ItemStack stack){

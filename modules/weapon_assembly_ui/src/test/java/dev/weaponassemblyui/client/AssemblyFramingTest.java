@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.client;
 
-import dev.weaponassembly.api.AssemblyNode;
+import dev.firearms.assembly.AssemblyNode;
 import dev.weaponmodels.ModelGeometry;
 import java.util.*;
 import org.junit.jupiter.api.Test;

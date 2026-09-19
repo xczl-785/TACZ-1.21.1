@@ -125,7 +125,7 @@ class NativeGunBatchStateTest {
             assertTrue(lo.batchCubeCounts().values().stream().mapToInt(Integer::intValue).sum()<hi.batchCubeCounts().values().stream().mapToInt(Integer::intValue).sum(),name+" real reduction");
         }
     }
-    private static void collect(dev.weaponassembly.api.AssemblyNode node,Set<String> out){out.add(node.definitionId());node.children().values().forEach(c->collect(c,out));}
+    private static void collect(dev.firearms.assembly.AssemblyNode node,Set<String> out){out.add(node.definitionId());node.children().values().forEach(c->collect(c,out));}
     private static BedrockPart find(BedrockPart part,String name){if(name.equals(part.name))return part;for(var child:part.children){var found=find(child,name);if(found!=null)return found;}return null;}
     @Test void chamberRoundRetainsNativeAmmoGateAndRequiresBothBarrelAndBolt() throws Exception {
         var current=BedrockGunModel.class.getDeclaredField("currentGunItem");current.setAccessible(true);

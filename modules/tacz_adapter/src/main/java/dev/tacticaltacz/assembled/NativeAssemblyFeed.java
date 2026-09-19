@@ -2,8 +2,8 @@ package dev.tacticaltacz.assembled;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
-import dev.weaponassembly.api.AssemblyEngine;
-import dev.weaponassembly.api.AssemblyCatalog;
+import dev.firearms.assembly.AssemblyEngine;
+import dev.firearms.assembly.AssemblyCatalog;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.ArrayList;

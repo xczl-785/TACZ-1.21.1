@@ -1,5 +1,5 @@
 package dev.weaponassembly;
-import dev.weaponassembly.api.*;
+import dev.firearms.assembly.*;
 import java.util.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

@@ -1,6 +1,6 @@
 package dev.tacticaltacz.assembled;
 
-import dev.weaponassembly.api.AssemblyNode;
+import dev.firearms.assembly.AssemblyNode;
 import dev.weaponmodels.*;
 import java.util.*;
 import org.junit.jupiter.api.Test;
@@ -51,8 +51,8 @@ class NativeAssemblyIconRasterTest {
     @Test void productionPresetRemovedStockAndBareReceiver() throws Exception {
         var base=java.nio.file.Path.of("weapon-content/resources");
         var data=base.resolve("data/tacz_fork_tarkov/m4a1");
-        var engine=new dev.weaponassembly.api.AssemblyEngine(dev.weaponassembly.io.AssemblyJson.readCatalog(java.nio.file.Files.readString(data.resolve("catalog.json"))));
-        var full=dev.weaponassembly.io.AssemblyJson.readSnapshot(java.nio.file.Files.readString(data.resolve("scene.json")),engine);
+        var engine=new dev.firearms.assembly.AssemblyEngine(dev.firearms.assembly.AssemblyJson.readCatalog(java.nio.file.Files.readString(data.resolve("catalog.json"))));
+        var full=dev.firearms.assembly.AssemblyJson.readSnapshot(java.nio.file.Files.readString(data.resolve("scene.json")),engine);
         Map<String,ModelGeometry> models;AssemblyMaterials materials;
         try(var geometry=java.nio.file.Files.newBufferedReader(data.resolve("preview.json"));var library=java.nio.file.Files.newBufferedReader(data.resolve("library.json"));var bindings=java.nio.file.Files.newBufferedReader(data.resolve("materials.json"))){models=ModelGeometry.load(geometry);materials=AssemblyMaterials.load(library,bindings,models);}
         var textures=new HashMap<String,NativeAssemblyIconRaster.Texture>();

@@ -1,5 +1,6 @@
-// Internal source modules share the TaCZ artifact; no extra Mod entrypoints or nested Mod Jars.
-def weaponModules = ['weapon_assembly', 'weapon_models', 'weapon_runtime', 'weapon_assembly_ui']
+// TaCZ keeps its renderer/runtime/UI sources; firearm rules come from the external public platform.
+def weaponModules = ['weapon_models', 'weapon_runtime', 'weapon_assembly_ui']
+def weaponTestModules = ['weapon_assembly'] + weaponModules
 weaponModules.each { name ->
     sourceSets.main.java.srcDir("modules/${name}/src/main/java")
     sourceSets.main.resources.srcDir("modules/${name}/src/main/resources")
@@ -31,12 +32,12 @@ tasks.register('verifyPublicDependency') {
     }
 }
 tasks.named('compileJava') { dependsOn 'verifyPublicDependency' }
-weaponModules.each { name ->
+weaponTestModules.each { name ->
     def tests = sourceSets.create("${name}Test") {
         java.srcDir("modules/${name}/src/test/java")
         resources.srcDir("modules/${name}/src/test/resources")
-        compileClasspath = sourceSets.main.output + configurations.weaponTestLibraries
-        runtimeClasspath = output + sourceSets.main.output + configurations.weaponTestLibraries
+        compileClasspath = sourceSets.main.output + files(firearmsArtifact) + configurations.weaponTestLibraries
+        runtimeClasspath = output + sourceSets.main.output + files(firearmsArtifact) + configurations.weaponTestLibraries
     }
     if (name == 'weapon_assembly') tasks.named(tests.processResourcesTaskName, ProcessResources) {
         from('modules/weapon_assembly/model-fixtures') {
@@ -53,12 +54,18 @@ weaponModules.each { name ->
     }
     tasks.named('check') { dependsOn verify }
 }
-tasks.register('compilePureJava', JavaCompile) {
-    source = fileTree('modules/weapon_assembly/src/main/java/dev/weaponassembly/api') { include '**/*.java' }
-    classpath = files()
-    destinationDirectory = layout.buildDirectory.dir('verification/pure-java')
-    javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(21) }
-    options.release = 21
+tasks.register('compilePureJava') {
+    dependsOn 'verifyPublicDependency'
+    inputs.file(firearmsArtifact)
+    doLast {
+        new java.util.zip.ZipFile(firearmsArtifact).withCloseable { jar ->
+            def names = jar.entries().collect { it.name }
+            ['AssemblyNode', 'AssemblyCatalog', 'AssemblyEngine', 'PartDefinition', 'WeaponStats', 'FiringReadiness'].each { type ->
+                assert names.contains("dev/firearms/assembly/${type}.class".toString())
+            }
+            assert !names.any { it.startsWith('com/tacz/') || it.startsWith('dev/tacticaltacz/') }
+        }
+    }
 }
 neoForge {
     mods {

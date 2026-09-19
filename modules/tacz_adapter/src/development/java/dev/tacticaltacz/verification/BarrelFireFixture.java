@@ -2,7 +2,7 @@ package dev.tacticaltacz.verification;
 
 import dev.itemfoundation.api.assembly.*;
 import dev.weaponruntime.*;
-import dev.weaponassembly.io.AssemblyJson;
+import dev.firearms.assembly.AssemblyJson;
 import dev.tacticalinventory.api.*;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.*;

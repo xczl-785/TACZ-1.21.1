@@ -1,8 +1,8 @@
 package dev.weaponassemblyui.client;
 
 import dev.weaponmodels.*;
-import dev.weaponassembly.api.*;
-import dev.weaponassembly.io.AssemblyJson;
+import dev.firearms.assembly.*;
+import dev.firearms.assembly.AssemblyJson;
 import dev.weaponassemblyui.session.AssemblySession;
 import org.junit.jupiter.api.Test;
 import java.nio.file.*;

@@ -1,6 +1,6 @@
 package dev.weaponruntime;
 import dev.itemfoundation.api.assembly.*;
-import dev.weaponassembly.api.*;
+import dev.firearms.assembly.*;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.ItemStack;
 import java.util.*;

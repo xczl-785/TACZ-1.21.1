@@ -5,7 +5,7 @@ import com.tacz.guns.client.model.BedrockGunModel;
 import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.item.IAttachment;
 import com.tacz.guns.api.item.attachment.AttachmentType;
-import dev.weaponassembly.api.AssemblyNode;
+import dev.firearms.assembly.AssemblyNode;
 import dev.weaponassemblyui.client.NativeWorkbenchTransform;
 import dev.weaponassemblyui.client.AssemblyTextureQuality;
 import dev.weaponassemblyui.client.WorkbenchModelBackend;

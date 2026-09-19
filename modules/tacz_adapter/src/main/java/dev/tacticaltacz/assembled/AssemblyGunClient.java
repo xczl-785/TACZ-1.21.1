@@ -1,5 +1,5 @@
 package dev.tacticaltacz.assembled;
-import dev.weaponassembly.api.*;
+import dev.firearms.assembly.*;
 import dev.weaponassemblyui.session.*;
 import dev.weaponassemblyui.client.WorkbenchScreen;
 import java.util.*;

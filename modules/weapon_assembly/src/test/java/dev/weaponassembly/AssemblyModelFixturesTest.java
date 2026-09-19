@@ -1,8 +1,8 @@
 package dev.weaponassembly;
 
 import com.google.gson.*;
-import dev.weaponassembly.api.*;
-import dev.weaponassembly.io.AssemblyJson;
+import dev.firearms.assembly.*;
+import dev.firearms.assembly.AssemblyJson;
 import org.junit.jupiter.api.*;
 import java.util.*;
 import java.util.stream.Stream;

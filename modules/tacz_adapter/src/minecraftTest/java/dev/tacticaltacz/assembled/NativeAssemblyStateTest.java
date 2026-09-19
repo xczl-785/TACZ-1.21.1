@@ -160,7 +160,7 @@ class NativeAssemblyStateTest {
 
     @Test void temporaryPresetEditsHaveNoPhysicalInventoryAuthority(){
         var actual=weapon().preset();var before=actual.copy();
-        var draft=dev.weaponassemblyui.session.AssemblySession.preset(weapon().CATALOG,weapon().project(actual),new dev.weaponassembly.api.WeaponStats.Context(0,0),Optional.of("native stats"));
+        var draft=dev.weaponassemblyui.session.AssemblySession.preset(weapon().CATALOG,weapon().project(actual),new dev.firearms.assembly.WeaponStats.Context(0,0),Optional.of("native stats"));
         assertTrue(draft.temporaryPreset());assertEquals(Optional.of("native stats"),draft.statsExplanation());
         draft.select(List.of("upper","barrel_mount","handguard"));
         var rail=draft.candidates().stream().filter(n->n.definitionId().equals("handguard_tactical")).findFirst().orElseThrow();
@@ -170,7 +170,7 @@ class NativeAssemblyStateTest {
         assertTrue(draft.install(grip.instanceId()).success());assertTrue(draft.remove().success());
         assertTrue(draft.install(grip.instanceId()).success());
         assertTrue(draft.detached().isEmpty());assertTrue(ItemStack.matches(before,actual));
-        var reopened=dev.weaponassemblyui.session.AssemblySession.preset(weapon().CATALOG,weapon().project(actual),new dev.weaponassembly.api.WeaponStats.Context(0,0),Optional.empty());
+        var reopened=dev.weaponassemblyui.session.AssemblySession.preset(weapon().CATALOG,weapon().project(actual),new dev.firearms.assembly.WeaponStats.Context(0,0),Optional.empty());
         assertEquals("handguard_default",reopened.nodeAt(List.of("upper","barrel_mount","handguard")).orElseThrow().definitionId());
         assertTrue(ItemStack.matches(before,actual));
     }

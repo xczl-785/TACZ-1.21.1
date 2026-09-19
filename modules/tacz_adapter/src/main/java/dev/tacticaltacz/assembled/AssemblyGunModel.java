@@ -4,7 +4,7 @@ import com.mojang.blaze3d.vertex.PoseStack;
 import com.tacz.guns.client.model.BedrockGunModel;
 import com.tacz.guns.client.resource.pojo.model.*;
 import dev.weaponmodels.*;
-import dev.weaponassembly.api.AssemblyNode;
+import dev.firearms.assembly.AssemblyNode;
 import dev.itemfoundation.api.assembly.AssemblyTrees;
 import java.util.*;
 import net.minecraft.client.Minecraft;

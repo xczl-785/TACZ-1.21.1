@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.session;
 
-import dev.weaponassembly.api.*;
+import dev.firearms.assembly.*;
 import java.util.*;
 
 /** UI-facing host boundary. A real inventory host must authorize and atomically commit its own exchanges. */

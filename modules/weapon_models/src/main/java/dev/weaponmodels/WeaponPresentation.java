@@ -79,11 +79,11 @@ public record WeaponPresentation(Map<String, Part> parts) {
         aims.sort(Comparator.comparingInt(Aim::priority).reversed().thenComparing(Aim::id));
         return new Result(aims,contactPoints);
     }
-    public static List<Occurrence> occurrences(dev.weaponassembly.api.AssemblyNode root,Map<String,ModelGeometry> models){
+    public static List<Occurrence> occurrences(dev.firearms.assembly.AssemblyNode root,Map<String,ModelGeometry> models){
         var result=new ArrayList<Occurrence>(); collect(root,root,models,List.of(),result);return List.copyOf(result);
     }
-    private static void collect(dev.weaponassembly.api.AssemblyNode root,dev.weaponassembly.api.AssemblyNode node,Map<String,ModelGeometry> models,List<String> path,List<Occurrence> out){
-        if(path.size()>dev.weaponassembly.api.AssemblyEngine.MAX_DEPTH||out.size()>=dev.weaponassembly.api.AssemblyEngine.MAX_NODES)throw new IllegalArgumentException("Presentation assembly limit");
+    private static void collect(dev.firearms.assembly.AssemblyNode root,dev.firearms.assembly.AssemblyNode node,Map<String,ModelGeometry> models,List<String> path,List<Occurrence> out){
+        if(path.size()>dev.firearms.assembly.AssemblyEngine.MAX_DEPTH||out.size()>=dev.firearms.assembly.AssemblyEngine.MAX_NODES)throw new IllegalArgumentException("Presentation assembly limit");
         var p=ModelGeometry.origin(root,models,path).orElseThrow(()->new IllegalArgumentException("Missing geometry path: "+path));
         out.add(new Occurrence(String.join("/",path),node.definitionId(),Frame.at(new Vec(p.x(),p.y(),p.z()),Vec.ZERO)));
         node.children().forEach((slot,child)->{var next=new ArrayList<>(path);next.add(slot);collect(root,child,models,next,out);});

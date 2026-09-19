@@ -25,7 +25,7 @@ public record WeaponHandling(Vec idleView, Vec fallbackView, Hand leftHand, Hand
         return new Factors(RecoilResponse.factor(base.recoilVertical(),fraction,recoil.referenceVertical,recoil.pitchScale),
                 RecoilResponse.factor(base.recoilHorizontal(),fraction,recoil.referenceHorizontal,recoil.yawScale));
     }
-    private static double fraction(AssembledWeapon weapon,dev.weaponassembly.api.AssemblyNode node){return weapon.CATALOG.require(node.definitionId()).modifiers().recoilFraction()+node.children().values().stream().mapToDouble(child->fraction(weapon,child)).sum();}
+    private static double fraction(AssembledWeapon weapon,dev.firearms.assembly.AssemblyNode node){return weapon.CATALOG.require(node.definitionId()).modifiers().recoilFraction()+node.children().values().stream().mapToDouble(child->fraction(weapon,child)).sum();}
     public static WeaponHandling load(String json) {
         var o=JsonParser.parseString(json).getAsJsonObject();
         if(o.get("schemaVersion").getAsInt()!=1)throw new IllegalArgumentException("Unsupported handling");

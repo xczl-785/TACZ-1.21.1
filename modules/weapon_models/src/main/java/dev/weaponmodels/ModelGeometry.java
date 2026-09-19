@@ -1,7 +1,7 @@
 package dev.weaponmodels;
 
 import com.google.gson.*;
-import dev.weaponassembly.api.AssemblyNode;
+import dev.firearms.assembly.AssemblyNode;
 import java.io.Reader;
 import java.util.*;
 

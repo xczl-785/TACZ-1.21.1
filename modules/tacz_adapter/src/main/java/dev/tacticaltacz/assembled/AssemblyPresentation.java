@@ -2,7 +2,7 @@ package dev.tacticaltacz.assembled;
 
 import com.tacz.guns.client.model.bedrock.BedrockPart;
 import dev.itemfoundation.api.assembly.AssemblyTrees;
-import dev.weaponassembly.api.AssemblyEngine;
+import dev.firearms.assembly.AssemblyEngine;
 import dev.weaponmodels.*;
 import static dev.weaponmodels.WeaponPresentation.*;
 import net.minecraft.world.item.ItemStack;

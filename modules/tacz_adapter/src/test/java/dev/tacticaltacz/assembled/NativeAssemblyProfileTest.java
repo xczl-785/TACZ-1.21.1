@@ -1,8 +1,8 @@
 package dev.tacticaltacz.assembled;
 
 import com.google.gson.*;
-import dev.weaponassembly.api.*;
-import dev.weaponassembly.io.AssemblyJson;
+import dev.firearms.assembly.*;
+import dev.firearms.assembly.AssemblyJson;
 import java.nio.file.*;
 import java.util.*;
 import org.junit.jupiter.api.Test;

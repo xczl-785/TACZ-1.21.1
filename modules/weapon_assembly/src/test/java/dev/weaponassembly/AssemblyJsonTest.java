@@ -1,7 +1,7 @@
 package dev.weaponassembly;
 
-import dev.weaponassembly.api.*;
-import dev.weaponassembly.io.AssemblyJson;
+import dev.firearms.assembly.*;
+import dev.firearms.assembly.AssemblyJson;
 import org.junit.jupiter.api.Test;
 import java.nio.charset.StandardCharsets;
 import java.util.*;

@@ -30,9 +30,9 @@ class NativeWorkbenchStackTest {
         var weapon=AssembledWeapons.byId(net.minecraft.resources.ResourceLocation.parse("tacz_fork_tarkov:m4a1"));
         var held=weapon.preset();var before=held.copy();
         var target=weapon.ENGINE.replace(weapon.project(held),List.of("upper","barrel_mount","handguard"),
-                dev.weaponassembly.api.AssemblyNode.leaf(java.util.UUID.randomUUID(),"handguard_tactical")).after();
+                dev.firearms.assembly.AssemblyNode.leaf(java.util.UUID.randomUUID(),"handguard_tactical")).after();
         target=weapon.ENGINE.install(target,List.of("upper","barrel_mount","handguard","grip"),
-                dev.weaponassembly.api.AssemblyNode.leaf(java.util.UUID.randomUUID(),"tacz_grip_rk1_b25u")).after();
+                dev.firearms.assembly.AssemblyNode.leaf(java.util.UUID.randomUUID(),"tacz_grip_rk1_b25u")).after();
 
         var rendered=NativeWorkbenchStack.materialize(weapon,held,target);
 
@@ -57,7 +57,7 @@ class NativeWorkbenchStackTest {
         tag.putString("workbench_test_payload","preserved");candidate.set(DataComponents.CUSTOM_DATA,CustomData.of(tag));
         var node=weapon.project(candidate);
         var target=weapon.ENGINE.replace(weapon.project(held),List.of("upper","barrel_mount","handguard"),
-                dev.weaponassembly.api.AssemblyNode.leaf(java.util.UUID.randomUUID(),"handguard_tactical")).after();
+                dev.firearms.assembly.AssemblyNode.leaf(java.util.UUID.randomUUID(),"handguard_tactical")).after();
         target=weapon.ENGINE.install(target,List.of("upper","barrel_mount","handguard","grip"),node).after();
 
         var rendered=NativeWorkbenchStack.materialize(weapon,held,target,Map.of(node.instanceId(),candidate));

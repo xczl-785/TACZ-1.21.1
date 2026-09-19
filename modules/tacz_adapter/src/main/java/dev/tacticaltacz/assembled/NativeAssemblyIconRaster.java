@@ -1,6 +1,6 @@
 package dev.tacticaltacz.assembled;
 
-import dev.weaponassembly.api.AssemblyNode;
+import dev.firearms.assembly.AssemblyNode;
 import dev.weaponmodels.AssemblyMaterials;
 import dev.weaponmodels.ModelGeometry;
 import dev.weaponmodels.ModelGeometry.Point;

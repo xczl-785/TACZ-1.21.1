@@ -1,7 +1,7 @@
 package dev.weaponassembly;
 
-import dev.weaponassembly.api.*;
-import dev.weaponassembly.api.PartDefinition.*;
+import dev.firearms.assembly.*;
+import dev.firearms.assembly.PartDefinition.*;
 import org.junit.jupiter.api.Test;
 import java.util.*;
 import static dev.weaponassembly.AssemblyEngineTest.*;

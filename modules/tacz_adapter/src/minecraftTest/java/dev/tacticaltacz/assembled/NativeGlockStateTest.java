@@ -95,7 +95,7 @@ class NativeGlockStateTest {
             assertNotNull(model.getIronSightPath());assertNotNull(model.getRootNode());
         }
     }
-    private static void collect(dev.weaponassembly.api.AssemblyNode node,Set<String> ids){ids.add(node.definitionId());node.children().values().forEach(child->collect(child,ids));}
+    private static void collect(dev.firearms.assembly.AssemblyNode node,Set<String> ids){ids.add(node.definitionId());node.children().values().forEach(child->collect(child,ids));}
 
     @Test void completeIconBakesWithAllInstalledParts() throws Exception {
         var models=NativeAssemblyView.geometry(weapon());var materials=NativeAssemblyView.materials(weapon(),models);

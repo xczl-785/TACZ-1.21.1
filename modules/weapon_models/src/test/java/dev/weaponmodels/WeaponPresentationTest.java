@@ -53,9 +53,9 @@ class WeaponPresentationTest {
             var resources=java.nio.file.Path.of("src/test/fixtures");
             var assets=resources.resolve("assets/newmod_"+gun+"/"+gun);
             var data=resources.resolve("data/newmod_"+gun+"/"+gun);
-            var catalog=dev.weaponassembly.io.AssemblyJson.readCatalog(java.nio.file.Files.readString(data.resolve("catalog.json")));
-            var engine=new dev.weaponassembly.api.AssemblyEngine(catalog);
-            var tree=dev.weaponassembly.io.AssemblyJson.readSnapshot(java.nio.file.Files.readString(data.resolve("scene.json")),engine);
+            var catalog=dev.firearms.assembly.AssemblyJson.readCatalog(java.nio.file.Files.readString(data.resolve("catalog.json")));
+            var engine=new dev.firearms.assembly.AssemblyEngine(catalog);
+            var tree=dev.firearms.assembly.AssemblyJson.readSnapshot(java.nio.file.Files.readString(data.resolve("scene.json")),engine);
             try(var g=java.nio.file.Files.newBufferedReader(assets.resolve("manifest.json"));var m=java.nio.file.Files.newBufferedReader(assets.resolve("markers.json"))) {
                 var geometry=ModelGeometry.load(g);var spec=WeaponPresentation.load(m);
                 var occurrences=WeaponPresentation.occurrences(tree,geometry);var result=spec.resolve(occurrences);
@@ -68,9 +68,9 @@ class WeaponPresentationTest {
         }
     }
     @Test void assembledTranslationsUseAttachmentOriginsExactlyOnce() {
-        var child=new dev.weaponassembly.api.AssemblyNode(UUID.randomUUID(),"optic",Map.of());
-        var mount=new dev.weaponassembly.api.AssemblyNode(UUID.randomUUID(),"mount",Map.of("scope",child));
-        var root=new dev.weaponassembly.api.AssemblyNode(UUID.randomUUID(),"gun",Map.of("rail",mount));
+        var child=new dev.firearms.assembly.AssemblyNode(UUID.randomUUID(),"optic",Map.of());
+        var mount=new dev.firearms.assembly.AssemblyNode(UUID.randomUUID(),"mount",Map.of("scope",child));
+        var root=new dev.firearms.assembly.AssemblyNode(UUID.randomUUID(),"gun",Map.of("rail",mount));
         var zero=new ModelGeometry.Point(0,0,0);
         var models=Map.of("gun",new ModelGeometry(zero,Map.of("rail",new ModelGeometry.Point(0,4,8)),List.of()),
             "mount",new ModelGeometry(new ModelGeometry.Point(0,1,0),Map.of("scope",new ModelGeometry.Point(0,3,5)),List.of()),

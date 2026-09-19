@@ -30,7 +30,7 @@ class NativeRemainingStateTest {
         catch(RuntimeException failure){throw new AssertionError(w.GUN+" low="+low,failure);}
     }
     private static ItemStack remove(ItemStack gun,List<String> path){return AssemblyGunExchange.plan(gun,ItemStack.EMPTY,path).orElseThrow().held();}
-    private static List<List<String>> installedPaths(dev.weaponassembly.api.AssemblyNode node,List<String> path){
+    private static List<List<String>> installedPaths(dev.firearms.assembly.AssemblyNode node,List<String> path){
         var out=new ArrayList<List<String>>();node.children().forEach((slot,child)->{var next=new ArrayList<>(path);next.add(slot);out.add(List.copyOf(next));out.addAll(installedPaths(child,next));});return out;
     }
     private static Set<String> definitions(NativeAssemblyGunModel model,JsonObject batches){

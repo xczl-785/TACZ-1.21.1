@@ -3,7 +3,7 @@ package dev.tacticaltacz.assembled;
 import dev.itemfoundation.api.assembly.AssemblyComponents;
 import dev.itemfoundation.api.assembly.AssemblyState;
 import dev.itemfoundation.api.assembly.AssemblyTrees;
-import dev.weaponassembly.api.AssemblyNode;
+import dev.firearms.assembly.AssemblyNode;
 import java.util.*;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.world.item.ItemStack;

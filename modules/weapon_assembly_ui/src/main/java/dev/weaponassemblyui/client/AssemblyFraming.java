@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.client;
 
-import dev.weaponassembly.api.AssemblyNode;
+import dev.firearms.assembly.AssemblyNode;
 import dev.weaponmodels.ModelGeometry;
 import dev.weaponmodels.ModelGeometry.Point;
 import java.util.*;

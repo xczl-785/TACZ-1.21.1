@@ -1,6 +1,6 @@
 package dev.weaponassemblyui.session;
 
-import dev.weaponassembly.api.*;
+import dev.firearms.assembly.*;
 import java.util.*;
 import java.nio.charset.StandardCharsets;
 

@@ -4,7 +4,7 @@ import dev.weaponmodels.*;
 import com.lowdragmc.lowdraglib2.gui.ui.UIElement;
 import com.lowdragmc.lowdraglib2.gui.ui.rendering.GUIContext;
 import com.mojang.blaze3d.systems.RenderSystem;
-import dev.weaponassembly.api.AssemblyNode;
+import dev.firearms.assembly.AssemblyNode;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.RenderType;
 import java.util.*;

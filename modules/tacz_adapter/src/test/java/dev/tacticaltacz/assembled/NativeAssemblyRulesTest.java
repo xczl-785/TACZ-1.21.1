@@ -1,7 +1,7 @@
 package dev.tacticaltacz.assembled;
 
-import dev.weaponassembly.api.*;
-import dev.weaponassembly.io.AssemblyJson;
+import dev.firearms.assembly.*;
+import dev.firearms.assembly.AssemblyJson;
 import com.google.gson.JsonParser;
 import java.nio.file.*;
 import java.util.*;

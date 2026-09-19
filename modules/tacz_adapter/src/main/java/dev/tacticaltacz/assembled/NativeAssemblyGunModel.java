@@ -7,7 +7,7 @@ import com.tacz.guns.api.item.IAttachment;
 import com.tacz.guns.client.model.BedrockGunModel;
 import com.tacz.guns.client.model.bedrock.BedrockPart;
 import com.tacz.guns.client.resource.pojo.model.*;
-import dev.weaponassembly.api.AssemblyNode;
+import dev.firearms.assembly.AssemblyNode;
 import java.util.*;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.item.ItemDisplayContext;
