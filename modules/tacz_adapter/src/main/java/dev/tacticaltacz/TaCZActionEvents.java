@@ -35,6 +35,7 @@ public final class TaCZActionEvents {
     @SubscribeEvent(priority = EventPriority.LOWEST, receiveCanceled = false)
     public static void shot(GunFireEvent event) {
         publish(event.getShooter(), event.getGunItemStack(), Source.SHOT, event.getLogicalSide());
+        if(event.getShooter() instanceof net.minecraft.server.level.ServerPlayer player){var snapshot=AmmoBridge.snapshot(event.getGunItemStack());if(snapshot!=null)NeoForge.EVENT_BUS.post(new dev.firearms.api.FirearmShotEvent(player,event.getGunItemStack(),Math.max(0L,System.nanoTime()),snapshot));}
     }
 
     @SubscribeEvent(priority = EventPriority.LOWEST, receiveCanceled = false)

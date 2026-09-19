@@ -192,7 +192,7 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
             int amount = Math.min(ammo.getDefaultMaxStackSize(), count);
             var returned = new ItemStack(ammo, amount);
             if (!(player instanceof net.minecraft.server.level.ServerPlayer server)
-                    || !dev.tacticalinventory.api.TacticalContent.tryGrant(server, java.util.List.of(returned)))
+                    || !AmmoBridge.refund(server, java.util.List.of(returned)))
                 player.drop(returned, false);
             count -= amount;
         }

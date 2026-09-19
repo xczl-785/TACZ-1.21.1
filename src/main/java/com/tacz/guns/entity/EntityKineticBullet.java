@@ -230,7 +230,8 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         this.startPos = this.position();
         this.isTracerAmmo = isTracerAmmo;
         this.gunDisplayId = gunDisplayId;
-        adapter$ammo = AmmoBridge.snapshot(gunItem);
+        var firearmSnapshot=AmmoBridge.snapshot(gunItem);
+        adapter$ammo = firearmSnapshot==null?null:dev.tacticalcombat.api.FirearmBallistics.profile(firearmSnapshot);
     }
 
     @ApiStatus.Internal
