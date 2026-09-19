@@ -5,7 +5,7 @@ import numpy as np
 from PIL import Image,ImageDraw,ImageFont
 OUT=Path(__file__).resolve().parent;ROOT=OUT.parents[2]
 PACK=ROOT/'src/main/resources/assets/tacz/custom/tacz_default_gun';A=PACK/'assets/tacz';D=PACK/'data/tacz'
-PILOT=ROOT.parent/'NewMod/docs/参考资料/tacz-m4a1-assembly-pilot/output'
+PILOT=ROOT.parent/'docs/参考资料/tacz-m4a1-assembly-pilot/output'
 read_hashes={}
 def read(p):
  read_hashes[str(p.resolve())]=hashlib.sha256(p.read_bytes()).hexdigest()

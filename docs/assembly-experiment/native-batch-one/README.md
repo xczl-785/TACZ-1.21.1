@@ -27,6 +27,6 @@
 
 最终源码检查：`check assemble --offline`通过；136项Java、48项Python，零失败。原枪包未修改，Glock高模/纹理不变；新三枪实机接受待所有者。
 
-交付制品`1.1.8-hotfix-r6-newmod.394d7c7c`，源码`394d7c7c66952672029f9c59cbe46ebb7d5749f5`，NewMod提交`4a9c4453beba8c3b6766cca740e6b9a0afb6463d`。正式/开发依赖与启动准备、配置缓存复用通过，最后准备开发模式。[最终证据](evidence/delivery.json)。所有者领取及抽查见[NewMod入口](../../../../NewMod/docs/进行中/原生枪首批批量接入.md)。
+交付制品`1.1.8-hotfix-r6-newmod.394d7c7c`，源码`394d7c7c66952672029f9c59cbe46ebb7d5749f5`，NewMod提交`4a9c4453beba8c3b6766cca740e6b9a0afb6463d`。正式/开发依赖与启动准备、配置缓存复用通过，最后准备开发模式。[最终证据](evidence/delivery.json)。所有者领取及抽查见[NewMod入口](../../../../docs/进行中/原生枪首批批量接入.md)。
 
 2026-09-17所有者反馈：“我验证没啥问题，你可以继续推进了”。首批已接受；后续见[十枪全量接入](../native-remaining/README.md)。

@@ -4,7 +4,7 @@ Source equivalence complements unit tests; it is not a Minecraft runtime test.
 """
 import json,re,subprocess,unittest
 from pathlib import Path
-R=Path(__file__).resolve().parents[1];N=R.parent/'NewMod'
+R=Path(__file__).resolve().parents[1];N=R.parent
 ledger=json.loads((R/'docs/assembly-experiment/adapter-migration.json').read_text())
 def old_mixin(name):return subprocess.check_output(['git','show',ledger['newmod_baseline']+':source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/'+name+'.java'],cwd=N).decode()
 def body(s,sig):

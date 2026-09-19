@@ -11,7 +11,7 @@ import sys
 import uuid
 
 MODULE = Path(__file__).resolve().parents[1]
-ROOT = Path(os.environ.get("NEWMOD_ROOT", str(MODULE.parents[1].parent / "NewMod")))
+ROOT = Path(os.environ.get("NEWMOD_ROOT", str(MODULE.parents[1].parent)))
 DATA = ROOT / 'docs/参考资料/adar-20260913-data'
 OUT = MODULE / 'src/development/resources'
 PACK = Path(os.environ.get('ADAR_MODEL_PACK', str(ROOT.parent / 'adar-20260913')))

@@ -2,6 +2,8 @@
 
 本页负责当前阅读顺序；实际交付状态见[实验室状态](../../status.md)，逐次操作见[改动记录](改动记录.md)。旧文档中的“当前”、旧版本和旧模块命令仅在其批次有效。
 
+正式工作目录：`NewMod/TACZ-1.21.1`，当前主线为 `dev`。2026-09-19 从原实验室迁入；原同级实验室路径不再使用。
+
 ## 当前阅读路径
 
 1. [任务盘点](任务盘点.md)：已接受范围、待执行的附件替换与保留边界。
@@ -13,9 +15,9 @@
 ## 权威与边界
 
 - 用户已确认的范围和验收约束实施；代码、作者输入、构建配置描述实际行为。交付报告只证明对应提交，不能覆盖当前源码。
-- 实验室只发布一个 `tacz` Mod；`weapon_*`、`tacz_adapter` 是内部源码目录。foundation、tactical、character、combat 继续归 NewMod 公共玩法。
+- 本仓只发布一个 `tacz` Mod；`weapon_*`、`tacz_adapter` 是内部源码目录。foundation、tactical、character、combat 继续归 NewMod 公共玩法。
 - 十五把正式枪及本地物理零件使用 `tacz_fork_tarkov`。原版附件与新瞄具目前仍并存；下一阶段才做原版配件/瞄具退役、替换和身份统一。
-- NewMod 实际运行选择以同级仓库 [dependency-lock.json](../../../NewMod/source/integration-tests/tacz-runtime/dependency-lock.json) 为准；本页不维护另一份版本锁。独立克隆时此链接可能不可用。
+- NewMod 实际运行选择以父级 NewMod 工程 [dependency-lock.json](../../../source/integration-tests/tacz-runtime/dependency-lock.json) 为准；本页不维护另一份版本锁。独立克隆时此链接可能不可用。
 - 保护原许可、署名、日常世界和共享动作/声音/弹药/效果。正式包与完整开发包只加载一个。
 
 ## 按主题深入
