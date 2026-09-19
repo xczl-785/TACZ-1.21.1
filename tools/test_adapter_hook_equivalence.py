@@ -1,36 +1,43 @@
 #!/usr/bin/env python3
-"""Compare moved combat method bodies and native event flow against pinned predecessors.
-Source equivalence complements unit tests; it is not a Minecraft runtime test.
-"""
-import json,re,subprocess,unittest
+"""V6 source boundary checks for the TaCZ-owned platform extension route."""
+import unittest
 from pathlib import Path
-R=Path(__file__).resolve().parents[1];N=R.parent
-ledger=json.loads((R/'docs/assembly-experiment/adapter-migration.json').read_text())
-def old_mixin(name):return subprocess.check_output(['git','show',ledger['newmod_baseline']+':source/mods/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/'+name+'.java'],cwd=N).decode()
-def body(s,sig):
- start=s.index('{',s.index(sig));masked=re.sub(r'"(?:\\.|[^"\\])*"|//[^\n]*|/\*[\s\S]*?\*/',lambda m:' '*len(m[0]),s)
- d=1;i=start+1
- while d:d+=(masked[i]=='{')-(masked[i]=='}');i+=1
- return s[start+1:i-1]
-def normalized(s):return re.sub(r'\s+','',re.sub(r'//[^\n]*|/\*[\s\S]*?\*/','',s))
-class HookEquivalence(unittest.TestCase):
- def test_combat_commit_and_continuation_bodies(self):
-  old=old_mixin('BulletMixin');new=(R/'src/main/java/com/tacz/guns/entity/EntityKineticBullet.java').read_text()
-  for method in ['private void adapter$apply(', 'public void tacticalInitializeContinuation(', 'private void adapter$continue(']:
-   self.assertEqual(normalized(body(old,method).replace('(EntityKineticBullet) (Object) this','this')),normalized(body(new,method)))
- def test_native_hit_order_preserved_except_redirect(self):
-  p='src/main/java/com/tacz/guns/entity/EntityKineticBullet.java'
-  old=subprocess.check_output(['git','show',ledger['experiment_baseline']+':'+p],cwd=R).decode();new=(R/p).read_text()
-  expected=body(old,'protected void onHitEntity(').replace('tacAttackEntity(parts, damage, sources);','adapter$apply(this, parts, damage, sources);')
-  self.assertEqual(normalized(expected),normalized(body(new,'private void onHitEntityNative(')))
-  self.assertEqual(normalized(body(new,'protected void onHitEntity(')),normalized('if (adapter$quote(result,startVec,endVec)) return; onHitEntityNative(result,startVec,endVec); adapter$impact=null;'))
- def test_precise_refund_and_reload_body(self):
-  old=old_mixin('ReloadMixin');new=(R/'src/main/java/com/tacz/guns/api/item/gun/AbstractGunItem.java').read_text()
-  expected=body(old,'private void adapter$returnRealVariant(').replace('        if (!AmmoBridge.managed(gun)) return;\n','').replace('        ci.cancel();\n','')
-  expected=re.sub(r'\bgun\b','gunItem',expected)
-  actual=body(body(new,'public void dropAllAmmo('),'if (AmmoBridge.managed(gunItem))')
-  self.assertEqual(normalized(expected+'return;'),normalized(actual))
- def test_ammo_identity_methods(self):
-  old=old_mixin('ContentAmmoMixin');new=(R/'src/main/java/com/tacz/guns/ammunition/TarkovAmmoItem.java').read_text()
-  for sig in ['public ResourceLocation getAmmoId(', 'public void setAmmoId(', 'public boolean isAmmoOfGun(']:self.assertEqual(normalized(body(old,sig)),normalized(body(new,sig)))
+
+R=Path(__file__).resolve().parents[1]
+
+class PlatformExtensionBoundary(unittest.TestCase):
+ def test_core_has_no_newmod_reverse_dependencies(self):
+  forbidden=('dev.tacticaltacz','dev.tacticalcombat','dev.tacticalinventory','dev.tacticalcharacter','dev.firearms','dev.weaponruntime')
+  violations=[]
+  for source in (R/'src/main/java').rglob('*.java'):
+   text=source.read_text()
+   violations += [(source.relative_to(R),prefix) for prefix in forbidden if prefix in text]
+  self.assertEqual([],violations)
+
+ def test_core_routes_through_tacz_owned_extensions(self):
+  gun=(R/'src/main/java/com/tacz/guns/GunMod.java').read_text()
+  bullet=(R/'src/main/java/com/tacz/guns/entity/EntityKineticBullet.java').read_text()
+  ammo=(R/'src/main/java/com/tacz/guns/ammunition/TarkovAmmoItem.java').read_text()
+  self.assertEqual(1,gun.count('GunPlatformExtensions.register(bus);'))
+  for method in ('initializeProjectile','quoteImpact','applyImpact','scaleDamage','initializeContinuation'):
+   self.assertIn('.'+method+'(',bullet)
+  self.assertIn('.matchesAmmunition(gun, ammo)',ammo)
+
+ def test_adapter_owns_platform_specific_behavior(self):
+  provider=(R/'modules/tacz_adapter/src/main/java/dev/tacticaltacz/TacticalGunPlatformExtension.java').read_text()
+  client=(R/'modules/tacz_adapter/src/main/java/dev/tacticaltacz/TacticalGunClientExtension.java').read_text()
+  for marker in ('AmmoBridge.','AssemblyFireGate.','BulletImpactEvent','BulletTraceEvent','FirearmBallistics.profile','PlayerResources.canAim'):
+   self.assertIn(marker,provider)
+  for marker in ('AssemblyPresentationClient.','NativeAssemblyIcons.','ClientCharacterDisplay.resources()'):
+   self.assertIn(marker,client)
+
+ def test_single_service_provider_and_retired_bridges(self):
+  services=R/'modules/tacz_adapter/src/main/resources/META-INF/services'
+  self.assertEqual(['dev.tacticaltacz.TacticalGunPlatformExtension'],
+   (services/'com.tacz.guns.api.extension.GunPlatformExtension').read_text().splitlines())
+  self.assertEqual(['dev.tacticaltacz.TacticalGunClientExtension'],
+   (services/'com.tacz.guns.api.extension.GunClientExtension').read_text().splitlines())
+  for retired in ('ImpactCarrier.java','ContinuationState.java'):
+   self.assertFalse((R/'modules/tacz_adapter/src/main/java/dev/tacticaltacz'/retired).exists())
+
 if __name__=='__main__':unittest.main()

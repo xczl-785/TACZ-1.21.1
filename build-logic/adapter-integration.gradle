@@ -41,6 +41,10 @@ tasks.register('verifyCorePlatformBoundary') {
         assert violations.empty : "TaCZ core has platform reverse dependencies:\n${violations.join('\n')}"
     }
 }
+tasks.register('verifyPlatformExtensionBoundary', Exec) {
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', 'tools/test_adapter_hook_equivalence.py'
+}
 tasks.named('compileJava') { dependsOn 'verifyGameplayDependencies' }
 tasks.register('adapterTest', Test) {
     testClassesDirs = sourceSets.adapterTest.output.classesDirs
@@ -86,7 +90,7 @@ tasks.register('verifyWeaponPipeline', Exec) {
     commandLine 'python3', '-m', 'unittest', 'discover', '-p', 'test_*.py'
 }
 tasks.named('processResources') { dependsOn 'verifyConfiguredWeapons' }
-tasks.named('check') { dependsOn 'adapterTest', 'adapterDevelopmentClasses', 'verifyWeaponPipeline', 'verifyGameplayDependencies', 'verifyCorePlatformBoundary' }
+tasks.named('check') { dependsOn 'adapterTest', 'adapterDevelopmentClasses', 'verifyWeaponPipeline', 'verifyGameplayDependencies', 'verifyCorePlatformBoundary', 'verifyPlatformExtensionBoundary' }
 
 tasks.named('assemble') { dependsOn 'developmentJar' }
 tasks.register('verifyAdapterIntegration', Exec) {
