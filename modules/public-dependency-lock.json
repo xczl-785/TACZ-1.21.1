@@ -3,11 +3,11 @@
   "source_commit": "94c31d5921a1a94edc79212e50bf397f53737dd0",
   "artifact": "vendor/newmod/item_foundation-94c31d59.jar",
   "sha512": "ca5b6ca39aee3f9b8335bfdf3e918dd6488cb5b6ddb84e2013ba88229e08e68d3a332c5fe1d7270409d08265ff4356f5fd7c04d0c1ccd7ee9eb5a5287294dc08",
-  "firearms_source_commit": "bf677616732d1c9ab1a86c23e081134ff659f544",
-  "firearms_artifact": "vendor/newmod/firearms-bf677616.jar",
-  "firearms_sha512": "05b500d3aec5aa7104990cf6daec73fdb9673175a6ca41d6d374633a5e3fe02b2d4cb5d11269130c0401b3fcc9ae95e6ded8d28e0fee5de254d22f344003d109",
+  "firearms_source_commit": "a5a1850017d4ffc0fdcdce6bf54375f60e7d0b00",
+  "firearms_artifact": "vendor/newmod/firearms-a5a18500.jar",
+  "firearms_sha512": "b8aeb012d774fa6cea8be633a6fb10b03223f8523f142fe563cfeda569c9e241abde3cc7b7e6eaab362cb64f458896f4f401fdb9836c83de31d967253d9d132e",
   "version": "0.0.0-dev",
   "ldlib2": "2.2.37",
-  "build_command": "JAVA_HOME=<JDK21> ./source/gradlew -p source :foundation:jar --offline",
+  "build_command": "JAVA_HOME=<JDK21> ./source/gradlew -p source :foundation:jar :firearms:check --offline",
   "role": "External public dependency; not bundled in TaCZ"
 }
