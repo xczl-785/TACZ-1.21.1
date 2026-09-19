@@ -1,49 +1,31 @@
-# NewMod TaCZ fork 改造入口
+# TaCZ fork 工程入口
 
-当前实验整合路线见[整合与组装路线](../assembly-experiment/整合与组装路线.md)；第三项原生 M4A1 接入见[交付与验收入口](../assembly-experiment/native-m4a1-delivery/README.md)。本轮全量扩面见[剩余十枪接入](../assembly-experiment/native-remaining/README.md)。下文保留早期 fork 历史。
+本页负责当前阅读顺序；实际交付状态见[实验室状态](../../status.md)，逐次操作见[改动记录](改动记录.md)。旧文档中的“当前”、旧版本和旧模块命令仅在其批次有效。
 
-实验分支当前弹药结果见[弹药链路与清理](../assembly-experiment/弹药链路与清理.md)：原生子弹物品链已退役，86 弹保留，默认退弹由临时固定口径接口承接。下文为原 fork 改造历史，不替代本实验当前结论。
+## 当前阅读路径
 
-状态：15枪与85配件清理已实施，构建及静态验证通过；B1/B2弹药制作与运行归属已迁入，15枪供弹及NewMod依赖已切换；描述重量、所有者实机接受仍待完成。更新：2026-09-13。
+1. [任务盘点](任务盘点.md)：已接受范围、待执行的附件替换与保留边界。
+2. [内部模块](../../modules/README.md)与[战术接入](../../modules/tacz_adapter/README.md)：单一 TaCZ 包和公共玩法依赖。
+3. [枪械生产来源](../../modules/tacz_adapter/weapon-sources/README.md)：十五把正式枪；M4 专用生成器、其他十四枪公共生成器。
+4. [全量瞄具交付](../assembly-experiment/optics-batch/README.md)：28 件独立源、222 组兼容关系，所有者已整体接受。
+5. [文档治理台账](文档治理.md)：全仓文档角色、历史证据、仍被检查器读取的台账及后续条件。
 
-目标：沿用 TaCZ 枪械引擎和现有模型、动画等资源，筛选所需枪械，把选定弹药内容归入 fork，统一描述与重量，再交付 NewMod 验证。不是另写一个枪械引擎。
+## 权威与边界
 
-当前跨仓库接手先读[TaCZ扩展接手](../../../docs/进行中/TaCZ扩展接手.md)，Z规则读[改装库存合同](../../../source/mods/tacz_adapter/docs/refit-inventory.md)；独立clone时配套链接可能不可用，fork流水账保留必要范围与证据。
+- 用户已确认的范围和验收约束实施；代码、作者输入、构建配置描述实际行为。交付报告只证明对应提交，不能覆盖当前源码。
+- 实验室只发布一个 `tacz` Mod；`weapon_*`、`tacz_adapter` 是内部源码目录。foundation、tactical、character、combat 继续归 NewMod 公共玩法。
+- 十五把正式枪及本地物理零件使用 `tacz_fork_tarkov`。原版附件与新瞄具目前仍并存；下一阶段才做原版配件/瞄具退役、替换和身份统一。
+- NewMod 实际运行选择以同级仓库 [dependency-lock.json](../../../NewMod/source/integration-tests/tacz-runtime/dependency-lock.json) 为准；本页不维护另一份版本锁。独立克隆时此链接可能不可用。
+- 保护原许可、署名、日常世界和共享动作/声音/弹药/效果。正式包与完整开发包只加载一个。
 
-## 渐进式阅读
+## 按主题深入
 
-1. [本轮清理结果](cleanup/README.md)：最终裁决、逐文件删除记录与验证。
-2. [本轮盘点结果](inventory/README.md)：54枪、资源引用、86弹药迁移与自研留证。
-3. [任务盘点](任务盘点.md)：范围、顺序、待决定问题和验收。
-4. [改动记录](改动记录.md)：只记录实际发生的改动，作为唯一 fork 改造流水账。
-5. [既有隔离](../content-isolation/README.md)：首批清单、资源依赖和现状；其中 JSON 是本次开始时的基线，不代表最终删枪结果。
-
-其他内容：[工作台、靶子、装饰与效果盘点](extra-content/README.md)，已移除工作台/弹药箱/装饰画，保留靶标、展示雕像及抛壳等效果。
-
-弹药当前入口：[制作链与B2切换边界](../../ammunition/README.md)。
-
-## 工程地图
-
-| 位置 | 职责 |
+| 主题 | 入口 |
 | --- | --- |
-| `src/main/java/com/tacz/guns/` | 现有枪械程序；resource 管加载，item 管物品，client 管显示，api 管扩展接口 |
-| `src/main/resources/assets/tacz/custom/tacz_default_gun/` | 默认枪包，包含枪械数据、展示和美术等资源；先查引用再删除 |
-| `src/main/resources/` | Mod 元数据、语言和其他资源，保留原许可标记 |
-| `docs/content-isolation/` | 已有选择、文件哈希及隔离验证证据 |
-| `tools/` | 现有审计/验证脚本，后续按批次扩展 |
-| `docs/newmod/` | 本 fork 的当前任务和改动记录 |
-| `build.gradle.kts`、`gradle/` | 原有构建入口，继续沿用 |
+| 实验批次与交付证据 | [融合与组装索引](../assembly-experiment/README.md) |
+| 编辑原生枪 | [M4 作者合同](../../modules/tacz_adapter/weapon-sources/native_m4a1/README.md)、[其余枪生成流程](../../tools/native_guns/README.md) |
+| 非瞄具与光学源 | [非瞄具源](../../modules/tacz_adapter/weapon-sources/native_attachments/README.md)、[光学源](../../modules/tacz_adapter/weapon-sources/optics/README.md) |
+| 弹药 | [制作与运行归属](../../ammunition/README.md)、[物品链退役与保留边界](../assembly-experiment/弹药链路与清理.md) |
+| 早期清理与来源证据 | [清理](cleanup/README.md)、[清理前盘点](inventory/README.md)、[额外内容](extra-content/README.md)、[首轮隔离](../content-isolation/README.md) |
 
-弹药输入和运行资源在`ammunition/`，注册在`com/tacz/guns/ammunition/`；迁移路径由对账表记录。
-
-## 基线与外部接入
-
-本地独立仓库 `TACZ-1.21.1`，分支 `dev`；origin `xczl-785/TACZ-1.21.1`，upstream `MUKSC/TACZ-1.21.1`。本次开始基线 `01e24c1e4ea4ba63428f0e564ce5af3d47f3969d`；上游参考 `ff715d80176f9ca61f5b2e6f029864f5adf209c2`。
-
-NewMod 当前运行锁指向Z库存扩展源码提交`8497fd29`（额外清理基线20de7921，B2来源a920e6ce）。工作区配套资料（独立克隆本 fork 时可能不可用）：
-
-- [运行锁](../../../source/mods/tacz_adapter/dependency-lock.json)与[运行接入记录](../../../source/mods/tacz_adapter/docs/self-built-runtime.md)。
-- [许可证核对](../../../docs/进行中/TaCZ改造许可证核对.md)：代码 GPLv3，资源 CC BY-NC-ND 4.0；本地推进不等于许可公开修改资源。
-- [86种弹药现状](../../../source/mods/tarkov_content/docs/保留口径弹药接入.md)。
-
-RouteLedger 已核对绑定为 NewMod 主项目，当前插入区块为 `203f4032-4182-453b-8cb8-f92fb00268cf`（TaCZ fork清理与弹药归入）。历史闭合节点不允许插入，故在路线尾部追加后切为当前，不改变其他暂缓区块。
+历史 RouteLedger 区块号和早期运行锁保留在各批次记录中；它们不表示当前绑定或当前授权。本次文档治理未写 RouteLedger。

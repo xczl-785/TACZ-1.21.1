@@ -20,4 +20,4 @@ PYTHONDONTWRITEBYTECODE=1 python3 tools/native_guns/test_produce.py
 
 默认六件：枪身、套筒、枪管、前准星、后照门、17发弹匣。枪管保留两个不同原动画骨；装填弹药不是可拆物品。弹匣移除仍保留真实膛内弹状态，显示层只隐藏失去所属实体的展示几何。
 
-57个原骨和动画引用保持不变；当前高低模均为完整264 cubes，低模减面未完成，替换条件与用户验收见[交付入口](../../../../docs/assembly-experiment/native-glock17-delivery/README.md)。
+57个原骨和动画引用保持不变；后继三枪批次已交付 Glock 高/低模264/165 cubes，见[低模后继证据](../../../../docs/assembly-experiment/native-batch-one/README.md)；最初264/264仅是首批快照。

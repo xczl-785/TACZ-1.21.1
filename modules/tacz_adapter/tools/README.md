@@ -1,26 +1,13 @@
-# 枪械制作工具
+# TaCZ 制作工具入口
 
-统一入口：`weapon_pipeline.py`。完整输入要求、目录职责、新枪操作及实机检查见 [枪械导入流程](../docs/枪械导入流程.md)。Python 需要 Pillow、NumPy。
+在实验室根目录运行。旧三枪 `weapon_pipeline.py`、`build_adar.py`、`build_weapon.py` 已随生产源退役；历史命令不再可执行。
 
-在 NewMod 根目录生成并检查全部三把枪：
+| 内容 | 当前入口 |
+| --- | --- |
+| M4 关系、安装点、可编辑模型及预览 | `python3 tools/native_m4a1/generate.py`；[作者合同](../weapon-sources/native_m4a1/README.md) |
+| 其他十四枪 | [公共生产流程](../../../tools/native_guns/README.md)，使用其 produce/batch/validate 命令 |
+| 公共非瞄具 | [源说明](../weapon-sources/native_attachments/README.md)、[转换工具](../../../tools/native_attachments/README.md) |
+| 28 件瞄具与枪械接入 | [全量光学流程](../../../docs/assembly-experiment/optics-batch/README.md)；`python3 tools/native_optics/batch.py --check-only` 只检查现有输出 |
+| 中性几何检查与校准 | [外置检查工作台](../docs/外置枪械检查工作台.md)；不证明镜片、原生动画或游戏验收 |
 
-```sh
-python3 source/mods/tacz_adapter/tools/weapon_pipeline.py all \
-  --output /tmp/newmod-weapons-review/resources \
-  --reports /tmp/newmod-weapons-review/reports \
-  --compare source/mods/tacz_adapter/weapon-content/resources
-```
-
-输出必须为空，报告与资源必须分开；不会覆盖生产目录。`all` 可换成 `adar`、`radian`、`m4a1`，单枪输出只注册该枪，不能整目录覆盖生产三枪包。对比有语义差异会以非零退出码退出，详情在 `comparison.json`；仅空白/JSON 排版或 PNG 编码差异另列。
-
-- `build_adar.py`：旧 ADAR 来源兼容转换器，命令同样要求 `--output`、`--reports`。
-- `build_weapon.py`：通用矩阵组件转换器；旧的作者目录参数仍可用，须增加上述输出参数。
-- `build_presentation.py`：共同握持/定位生成阶段；正常操作由统一入口调用。
-- `render_part_icon.py`：共同几何、UV、材质图标生成。
-- `validate_weapon_resources.py --resources <资源根>`：独立验证；不传参数检查生产内容。材质必须在该资源根内存在，不从其他模块补缺。
-- `audit_weapon_references.py --resources <资源根> --report <报告.json>`：列出所有资源 ID 的使用处和归属；核对同包材质及锁定 TaCZ 的声音/效果/默认动画/弹药索引文件，只读锁定包。统一生成入口自动产出 `references.json`。
-- `preview_weapon.py`、`calibrate_weapon.py`：读取生产内容的离线预览与定位报告，不是游戏验收。
-
-ADAR 第一人称制作配置在 `weapon-authoring/adar/presentation.json`，最终握持与定位还由 `handling.json`、`markers.json` 共同生成；分类声明在 `identities.json`，旧界面文案在 `lang/`。禁止手改生成资源。
-
-对比覆盖枪械 namespace 以及材质库引用到的共享 namespace（例如 `firearm_materials`）。完整三枪当前为 183 文件；历史 175 文件统计漏计了 4 张同包共享材质，最新证据见 [资源归属补充结果](../docs/三枪资源归属补充结果.md)。
+编辑作者源后重建并检查生成差异，再构建与更新锁。不要把生成资源或历史报告反过来当作者输入；辅助工具的参数以现存脚本为准。

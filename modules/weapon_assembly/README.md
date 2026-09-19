@@ -1,5 +1,8 @@
 # Weapon Assembly
 
+> 当前是单一 `tacz` 包的内部模块；本文的“独立 Mod”、旧 `:weapon_*` 命令及未连接实枪状态属于迁入前历史。可执行命令与加载边界以[内部模块入口](../README.md)为准；机制说明仍须与当前源码核对。
+
+
 独立 Mod：`weapon_assembly`。用途：让宿主用同一套纯 Java 规则预览、验证和计算枪械装配；本批由所有者明确选定算法，复杂模型夹具已提供，伴随 [界面模块](../weapon_assembly_ui/README.md) 已实现隔离组装入口。任务归 RouteLedger Todo `c493a990-e354-4983-9c0a-9ff8cd6b9eba`；本页是技术接手入口，不代替任务状态。
 
 ## 本批能力

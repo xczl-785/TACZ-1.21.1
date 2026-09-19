@@ -5,7 +5,7 @@
 - `production.json` 是默认树、模型所有权、兼容槽位、显示规则及注册片段的输入。
 - `source-audit.json` 记录原始资源哈希、全部 69 骨骼、473 cube 归属、动画、挂点和源附件兼容标签。
 - `editable/components/*/model.bbmodel` 与同目录 `texture.png` 为 8 件独立编辑源；只转换副本，不改原始资产。
-- 3 个扩容弹匣直接复用公共 UMP45 专属编辑源，容量 32/40/48；其他非瞄具附件复用公共库。16 个既有光学候选只引用原模型，没有新增光学编辑源。
+- 3 个扩容弹匣直接复用公共 UMP45 专属编辑源，容量 32/40/48；其他非瞄具附件复用公共库。原16个光学来源已在后继批次增加独立源候选；以 `production.json.authoredOptics` 和[全量光学](../../../../docs/assembly-experiment/optics-batch/README.md)为准，原候选仍保留。
 
 默认编辑源共 423 cubes，公共扩容变体 33 cubes，手部/弹药展示 17 cubes；合计覆盖全部 473 cubes，无重复所有权。原模型 UV 为 128×128，沿用原纹理。初次提取逐 cube 验证编辑源往返后的顶点与原资源相符，纹理哈希一致。
 

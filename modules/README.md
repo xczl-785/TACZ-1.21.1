@@ -15,13 +15,13 @@
 
 `public-dependency-lock.json` 固定 NewMod foundation 的来源提交、制品和 SHA-512。它以普通外部依赖参与编译和本仓库开发运行，**不嵌入 TaCZ**。LDLib 仍是独立依赖。NewMod 主线使用自己的 foundation 工程输出，TaCZ Jar 不带其副本。后续公共 API 变化必须先构建对应 foundation，再更新这个锁并进行联合验证，不能依靠任意本机 build 目录。
 
-三枪及原子库存交换、供弹、命中、Z 改装接入仍归 NewMod adapter；这里不持有第二套真实物品状态。`weapon_models/src/test/fixtures` 是 NewMod 上述提交的三枪 `manifest/markers/catalog/scene` 快照，只用于不启动游戏的数学回归，生产内容未迁入。
+原子库存交换、供弹、命中、Z 改装接入已归本仓库内部 `tacz_adapter`；NewMod 不再加载独立 adapter。这里不持有第二套真实物品状态。`weapon_models/src/test/fixtures` 是 NewMod 上述提交的三枪 `manifest/markers/catalog/scene` 快照，只用于不启动游戏的数学回归，旧三枪生产内容已退出；夹具经 V3 收敛为标记/层级数据，见[状态](../status.md)。
 
 ## 开发入口与制作资料
 
 - 完整验收使用 NewMod `启动开发客户端.command`；本轮不自动启动它。
 - 保留独立演示：`bash gradlew runAssemblyClient --offline`。它在 `run/weapon-assembly-client` 打开开发组装页面，开发类不进入正式 Jar。`prepareAssemblyClientRun` 只准备运行配置。
-- UI 离线导入器默认读取同级 NewMod 的旧制作资料，可用 `NEWMOD_ROOT` 指定资料目录、`ADAR_MODEL_PACK` 指定原白模输入包。本机白模已移到 `/Volumes/新加盘/BlockBenchAndTa rkov/blockbench-tarkov-test/assets/history/像素资产/production-components/adar-20260913`，三项材质往返测试以该环境变量输入并按旧 mapping 的 SHA-256 核验通过。输入模型仍为只读资料，制作工具不会在构建中自动执行。
+- 旧 ADAR/Radian/导入 M4 作者链已退役，历史材质导入说明仅保留来源依据；当前生产从[十五枪作者源](tacz_adapter/weapon-sources/README.md)进入。
 - 下级历史 README、审计报告的旧路径是原始来源，当前可执行入口以本文为准。
 
 来源、逐文件迁移和验收记录见 [第一项交付](../docs/assembly-experiment/weapon合并交付.md) 与 [迁移清单](../docs/assembly-experiment/weapon-module-migration.json)。
