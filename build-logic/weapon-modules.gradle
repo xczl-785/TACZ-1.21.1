@@ -6,6 +6,7 @@ weaponModules.each { name ->
 }
 def publicLock = new groovy.json.JsonSlurper().parse(file('modules/public-dependency-lock.json'))
 def foundationArtifact = file(publicLock.artifact)
+def firearmsArtifact = file(publicLock.firearms_artifact)
 repositories { maven { url = 'https://maven.firstdark.dev/snapshots' } }
 configurations { weaponTestLibraries }
 dependencies {
@@ -15,18 +16,18 @@ dependencies {
     weaponTestLibraries 'com.google.code.gson:gson:2.10.1'
     weaponTestLibraries 'org.joml:joml:1.10.5'
     weaponTestLibraries 'org.apiguardian:apiguardian-api:1.1.2'
-    implementation files(foundationArtifact)
+    implementation files(foundationArtifact, firearmsArtifact)
     implementation "com.lowdragmc.ldlib2:ldlib2-neoforge-1.21.1:${publicLock.ldlib2}:all"
     testImplementation platform('org.junit:junit-bom:5.11.4')
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 tasks.register('verifyPublicDependency') {
-    inputs.file(foundationArtifact)
+    inputs.files(foundationArtifact, firearmsArtifact)
     inputs.file('modules/public-dependency-lock.json')
-    def expected = publicLock.sha512
     doLast {
-        assert java.security.MessageDigest.getInstance('SHA-512').digest(foundationArtifact.bytes).encodeHex().toString() == expected
+        assert java.security.MessageDigest.getInstance('SHA-512').digest(foundationArtifact.bytes).encodeHex().toString() == publicLock.sha512
+        assert java.security.MessageDigest.getInstance('SHA-512').digest(firearmsArtifact.bytes).encodeHex().toString() == publicLock.firearms_sha512
     }
 }
 tasks.named('compileJava') { dependsOn 'verifyPublicDependency' }
