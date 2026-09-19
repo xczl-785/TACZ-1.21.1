@@ -328,7 +328,7 @@ public final class AdapterVerification {
         require(dev.tacticalinventory.platform.PlayerInventoryService.stow(player, UUID.randomUUID()), "gun returns from hand lease");
         var state = player.getData(dev.tacticalinventory.registry.ModRegistries.PLAYER_GEAR);
         var returned = state.fixedSlots().get(slot.ordinal()).entry().orElseThrow().stack();
-        require(AmmoBridge.snapshot(returned).id().equals(selected.definition().id()), "stowed gun retains selected ammo");
+        require(AmmoBridge.snapshot(returned).identity().id().equals(selected.definition().id()), "stowed gun retains selected ammo");
     }
     private static void cleanup(ServerLevel level) {
         var targets = new ArrayList<Entity>();
