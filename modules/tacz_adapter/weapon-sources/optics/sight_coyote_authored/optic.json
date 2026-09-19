@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_coyote_authored",
+  "sourceAttachment": "tacz:sight_coyote",
+  "names": {
+    "zh_cn": "Coyote 红点瞄准镜 · 光学制作",
+    "en_us": "Coyote Sight · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_coyote.json": "02747d4ac2ee3228ff8f1bb4e1d9a7541862d8c19f8b534c9a978dee6993c87d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_coyote_display.json": "30258e0cf1bc5b97b4c53d1bbc943c83cd6512e8ad9cc2b652f8cb9fa4d036da",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_coyote_geo.json": "90960e40a0a20aa20293e4425ff8ba6fc028855854235885d1369be36b0405f2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_coyote.png": "c8edad853e229f348e7a2157db61140de694d95c74c330e49a8b536d12e43519",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_coyote_data.json": "405a59c9e4f8d6e8aee8ac643d02e9b6938056a4123a3a7711e6474e8f55e121",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_coyote.json": "33edf349be74a6383519b5414468ed280e6facb2c9ff0e07815229054291f7c4",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_coyote.png": "3af97a51b431545c23508de8f29eb418660e9cbe5120afde5e21930edcd27213",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_coyote.png": "36d1198c2d2a62c2f0e7389dcf7866b586dba87ae133d69ec0e0cc9cc58e7069",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_coyote_n.png": "61087199563b6ced1b147af6b516067d56d7866b211af28b6bd25653cbe50651",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_coyote_s.png": "8fc42a1a27136a347db69764b7904e59cde56b6c569c0707feed86b880560eb3"
+  }
+}

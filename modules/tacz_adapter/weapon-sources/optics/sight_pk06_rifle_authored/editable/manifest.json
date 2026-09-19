@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "sight_pk06_rifle_authored",
+      "group": "sight_pk06_rifle_authored",
+      "prefix": "native_attachment_sight_pk06_rifle_authored",
+      "cubes": 76,
+      "sourceCubeIndices": {
+        "scope_body": [],
+        "scope": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43
+        ],
+        "base": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "ocular": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "division": [],
+        "division_illuminated": [
+          0,
+          1
+        ],
+        "scope_view": []
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.08839,
+        1.07527,
+        -15.8449
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "model": "components/sight_pk06_rifle_authored/model.bbmodel",
+      "texture": "components/sight_pk06_rifle_authored/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_pk06_rifle_geo.json",
+      "sourceSha256": "3138af623128b73bfa23636396345eb297998fcf1c8e814531bcef74deb14ae9",
+      "sourceTextureSha256": "0fb51fcc633b7bed635e7f83eb49c3d35c4abf879f55ae88d5eaa62cde607bee"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_fastfire_pistol_authored",
+  "sourceAttachment": "tacz:sight_fastfire_pistol",
+  "names": {
+    "zh_cn": "FastFire 反射式瞄具 · 光学制作",
+    "en_us": "FastFire Sight · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_fastfire_pistol.json": "90a4b276738d4b99598d7e9b23de7f99fe19e1327554306152cd6b33bf417f0b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_fastfire_pistol_display.json": "5971e2cf4e0a9498bdfe681c27e07b84f7c0e52d311019a2fd19f991a3575458",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_fastfire_pistol_geo.json": "43af8d431eae65de32c8290963ed74d11a19a5e62ec7e58070d6674a9bd36300",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_fastfire_pistol.png": "e812fa9deb0d0434efdf13dfcf18a62d97790e5366cf6c6ba3d259db96a332b6",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_fastfire_pistol_data.json": "bf3c09dca76d5c7ee32cc0aecf3bf4db472dc5e5fc9457f4010898062a789475",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_fastfire_pistol.json": "b1fab59bcc84b6f569e80c5a8960048a8e5dd2159a6bec5315577edb4d147801",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_fastfire_pistol.png": "223cd56ef31f4396ec8d41514e143d71f443d9fe1a0aaa5ab0055f51ae2b7ff3",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_fastfire_pistol.png": "c14a908c115aea3b6ac84d1fbd1f19e0e8d7655ffd3bb8237e449611d404a68d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_fastfire_pistol_s.png": "6ab0dcc8cba5070e150997d291c9d1fb4283dcdfeef5f4db520adb3e9820f979"
+  }
+}

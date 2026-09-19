@@ -1,0 +1,23 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/scope_qmk152_authored",
+  "model": "tacz_fork_tarkov:attachment/scope_qmk152_authored",
+  "texture": "tacz_fork_tarkov:attachment/scope_qmk152_authored",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/scope_qmk152_authored",
+    "texture": "tacz_fork_tarkov:attachment/lod/scope_qmk152_authored"
+  },
+  "zoom": [
+    3
+  ],
+  "views": [
+    2
+  ],
+  "views_fov": [
+    50
+  ],
+  "scope": true,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_b",
+    "uninstall": "tacz:attachments/scope_general_b"
+  }
+}

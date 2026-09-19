@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_mk5hd_authored",
+  "sourceAttachment": "tacz:scope_mk5hd",
+  "names": {
+    "zh_cn": "§6Mark 5 HD 5-25x 组合式光学瞄具 · 光学制作",
+    "en_us": "§6Mark 5 HD 5-25x Scope · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body",
+    "ocular_ring"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/scope_mk5hd.json": "7db2c57dc07cdc2f08fe249832dbd0718b7578042639bbe515eb31beb73bc575",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/scope_mk5hd_display.json": "c70ed69e7411ab02a4aade844b34346eb5e941f8b5d3da28735ce6c144da20e6",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_mk5hd_geo.json": "d0ea7a9541654595a598e7d7480f290451b9a8f65c67fe0d8a3d099b40f3733c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_mk5hd.png": "4fffd607334b13c44e43ba1ccdc88ac63e76edc3434028c4e37872f8f56874a7",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/scope_mk5hd_data.json": "bdd488fcd758b6301e45962824096ab0fc37bdb36b53c887978e47a9825f4f0b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/scope_mk5hd.json": "a27b7ffa9152939f11d63d2928f45cf2af3837e25ff72813345c52f3bc2ed1f5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/scope_mk5hd.png": "1340978b45446e9cb170e07b01dd94a3d8fa54c0db82346ca5c97a819f8c3671",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/scope_mk5hd_slot.png": "4b57384a804dadccf26e48be1d8b4ff77ff3237b83fcee2e8f09367e6f1ab1a2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_mk5hd_n.png": "13c40d8fc3fa59e5aa55ffb7d4fec01540d0c2be59577d5944003b746bdbc829",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_mk5hd_s.png": "2bcdf05b8bda920381faede83a5eff7552a25c2416b39c7773e697d178d6e309"
+  }
+}

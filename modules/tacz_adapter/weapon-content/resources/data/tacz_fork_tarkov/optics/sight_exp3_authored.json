@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_exp3_authored",
+  "cubes": 112,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/data.json": "b1012b359b79443748301bea6a4c40240508f52da9bf3fd6c401f34dc5d316fe",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/display.json": "90fe97a7d4640462dd7911a3eb344077fb02147f0cd5125d57cea52ef473d262",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/editable/components/sight_exp3_authored/model.bbmodel": "8ab8e1504f5080e1257bb5d5bd1e1e22dd07c97329265a5e44db600ae4d7573a",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/editable/components/sight_exp3_authored/texture.png": "e34478cf550338a7ec5f8e6d2030a262255683a18d9f2ffba60721fbc21aea8a",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/editable/components/sight_exp3_authored/texture_n.png": "f38ef5e513e3b6b39ce32714af81d5e12549180a0f45f8680f21f1aaad5fd5d2",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/editable/components/sight_exp3_authored/texture_s.png": "a5f898677faabc5cd95a3517f2ae2ba876614cb4bc85b32b2df62417ce38dcfa",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/editable/manifest.json": "abef70267c5e224d80379623e1279cd3723dcc78e65b6d66c75bd809f05e1d35",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/lod/model.json": "d5b34382f8d31de993267d331c879a12aee77ebc7644ddf71a865c8d75644db0",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/lod/texture.png": "65714c52c5232692efbf67f2f5f29720f3d6f7fc6107cac86236bea33e0cedbe",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/optic.json": "20988c67faf06a6e0d50f7d90ac799a931f2f39ed2e1b4c24f7c43fb9ed32b0c",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored/slot.png": "5eea9f5e41ad147d202bcc44ed17255b35915bc66cb4dfb7dbb72eb348275b2b"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

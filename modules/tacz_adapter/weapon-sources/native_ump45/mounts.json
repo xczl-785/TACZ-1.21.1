@@ -736,6 +736,214 @@
         0
       ],
       "slots": {}
+    },
+    "tacz_fork_tarkov_scope_acog_ta31_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_scope_contender_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_scope_elcan_sample": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_scope_hamr_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_scope_qmk152_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_552_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_acro_rifle_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_coyote_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_deltapoint_rifle_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_exp3_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_fastfire_rifle_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_okp7_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_pk06_rifle_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_srs_02_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_t2_sample": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_uh1_authored": {
+      "frameOrigin": [
+        0.10827495087476757,
+        14.54313535370001,
+        -4.7875
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
     }
   }
 }

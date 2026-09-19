@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_fastfire_pistol_authored",
+  "cubes": 36,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored/data.json": "3025117bf44fbeaef3e7a6810803e5ba38233ce0fb10789340acfb999946017b",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored/display.json": "c781b98c542afd1c28db7d3a125ca1ceb169f5a94950fd7d8ae2f12532bf3a1b",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored/editable/components/sight_fastfire_pistol_authored/model.bbmodel": "7d2c87c5a2ea4684f0fb90d256f57c7e88ceb29438f8dcebe484e86a6f573d32",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored/editable/components/sight_fastfire_pistol_authored/texture.png": "e812fa9deb0d0434efdf13dfcf18a62d97790e5366cf6c6ba3d259db96a332b6",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored/editable/components/sight_fastfire_pistol_authored/texture_s.png": "6ab0dcc8cba5070e150997d291c9d1fb4283dcdfeef5f4db520adb3e9820f979",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored/editable/manifest.json": "582e074747df77f0cf2e10eaba416396adf4dd5d0cab1171ca0fb50a80cc9edf",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored/lod/model.json": "e943128a7b55378a7da142d7ff7c421c386b7635fe526a378680cb82dcc61311",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored/lod/texture.png": "223cd56ef31f4396ec8d41514e143d71f443d9fe1a0aaa5ab0055f51ae2b7ff3",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored/optic.json": "5f1546c7d5fe2f632e92c85d17f5d7e71db4b3ea4f734a1a46e3487fa5961396",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored/slot.png": "c14a908c115aea3b6ac84d1fbd1f19e0e8d7655ffd3bb8237e449611d404a68d"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

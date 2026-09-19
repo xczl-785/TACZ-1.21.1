@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_pk06_pistol_authored",
+  "sourceAttachment": "tacz:sight_pk06_pistol",
+  "names": {
+    "zh_cn": "§9PK06 反射式瞄具 · 光学制作",
+    "en_us": "§9PK06 Sight · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_pk06_pistol.json": "d68a2c2cf8679c0f1e81a0ed8fcb071b890d0116e9254912321aa32fb713dd03",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_pk06_pistol_display.json": "348ef43faf09ee6fc953f3370c9d080930ecda1f29c92850fb674e58d38ce872",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_pk06_pistol_geo.json": "9b7d38f3e1e266914e52e1d451b279f7079c14eb7e08a01a84211f08291da7b5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_pk06_pistol.png": "d275fe34f682ccaacdeaad1cc7f2d05eec3a8d732244d3c8d0b7849dedd08d6e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_pk06_pistol_data.json": "bf3c09dca76d5c7ee32cc0aecf3bf4db472dc5e5fc9457f4010898062a789475",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_pk06_pistol.json": "bf4f86da9176595fe0daa99be44a5588e11de80cbad88adde9692292dd31e95d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_pk06_pistol.png": "755ec92f1cb576cf9f029c1eb5545b2009c838af40614a092a9ad824de6f9676",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_pk06_pistol.png": "fdf177edada16d21f89ed9522af559fa8a23f2e1bc9fd5b4b8bbb7be6d016205",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_pk06_pistol_s.png": "8a3b6cd3d1506d97a731dba4b6658495047007e79e0c9efb4bfef51558de5556"
+  }
+}

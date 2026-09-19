@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_sro_dot_authored",
+  "sourceAttachment": "tacz:sight_sro_dot",
+  "names": {
+    "zh_cn": "SRO 微型红点瞄具 · 光学制作",
+    "en_us": "SRO Mini Red Dot · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_sro_dot.json": "86efb7914ed17aa6ccff270fa0c424372121dc50e708f71a96827f36e746177a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_sro_dot_display.json": "744de404c6ee91851f77369613a4b4b917552398c3424e103427d1768c603df6",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_sro_dot_geo.json": "dc1ecf2eb03ca4b06236637b6dfb59f97a96591047550ea0af310e55538199ed",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_sro_dot.png": "11981cc23c04245ecfddc84b26cb329ab1ea06b7873524fe47e97c9b43803299",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_sro_dot_data.json": "fe605145d0fd5bbf6d31dcff33ae2950129a2c3f2f3eac0f088101ed2bc6814e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_sro_dot.json": "c01e635937e695a234420e8d923ead6bcd9386c5c41979b167c1227ddbc836ce",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_sro_dot.png": "3d533c9b8ba247bc809a2dae9780c8ed8482dad2e96b6cf8f9bda686977a8fc8",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_sro_dot.png": "29b066e564a73e0fbaad9b8c67baa620c00efead91d880ecaa8d366bc3f8ce2e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_sro_dot_n.png": "0467115ad69598f043cd3f5a49bf9b8a5fa09e80f38661fdf71bba58c963632f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_sro_dot_s.png": "ffaad70657282afebd3e4098ae604a08c895980772fe93ee52ac415439de7906"
+  }
+}

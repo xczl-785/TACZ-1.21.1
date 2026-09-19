@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_acog_ta31_authored",
+  "sourceAttachment": "tacz:scope_acog_ta31",
+  "names": {
+    "zh_cn": "§9TA31 2x 先进战斗光学瞄具 · 光学制作",
+    "en_us": "§9TA31 2x ACOG · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body",
+    "ocular_ring"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/scope_acog_ta31.json": "f3ab5db79e7f39d28ec7c9592c361d888f06ab8bc4bb585265e467bcefcb26fc",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/scope_acog_ta31_display.json": "8705563c3b7572d6cf2abf54a8c4a2cbe8733e98427d3294505cbe17740561ca",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_acog_ta31_geo.json": "9755e8bf3379cfdbffbfe485c3e8d780e48a3b2e86d9ea10e8cd07469268a7c5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_acog_ta31.png": "234bece5a23badcb1f406bd338870a2efce8e68de3941ab808a51af9f82d8819",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/scope_acog_ta31_data.json": "3339e423dd0e78d65ab288c980b2785473a245419fcd80b6c8bacf1b7496a806",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/scope_acog_ta31.json": "2a1678b23a9a69fabe4daf6ee6b398ab30c82ac64fbfce677d590c4c60c66123",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/scope_acog_ta31.png": "0b2210380aa3c372eed701bc57c640eb8b46089ec4ff16000d49de0b334b969a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/scope_acog_ta31.png": "1f4c036bf9b4ee8fb3dde8d4a9f324df934d95e63e83859d6e9180a91fc7a1f2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_acog_ta31_n.png": "ccbd42122afe0212cd7fd86f8cfab1dda9ce3c9235c870b2e752e5f6af809d08",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_acog_ta31_s.png": "05087861e9ee81d79936d1dd36e4be8327a5a2935ae5aa23743d5dcb43d5597f"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_deltapoint_pistol_authored",
+  "cubes": 36,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored/data.json": "3025117bf44fbeaef3e7a6810803e5ba38233ce0fb10789340acfb999946017b",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored/display.json": "653e4d4aef02e33ff9d2af3d134056aa356d64d5fa7a14540656b2fbaa30def7",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored/editable/components/sight_deltapoint_pistol_authored/model.bbmodel": "47fd87ada7af071c59da1ed64a401c2245ec98af9d0f9041a548c6e561a9ac24",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored/editable/components/sight_deltapoint_pistol_authored/texture.png": "ac2bacd5c819ce4456584f6f7f5ae8f6e384f2518625922187040792e370c26f",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored/editable/components/sight_deltapoint_pistol_authored/texture_s.png": "ab269cef4b7853215cb8b2e1ca9fd59d540583892dfaed0eb2e2c92993fd3603",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored/editable/manifest.json": "15e7806ef5a113b388ab446024835bf50d6ef7a0be53e57b1fca86d0784b2405",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored/lod/model.json": "bb7bdbaedfca2f48401a5d3883b2f58f24a8ac4b2ab0fc2cb7188fde3e01bd90",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored/lod/texture.png": "08ebeaf2f99b4596c5be70bfd16698be00999fe4a94703c6c529d1914aa9ec42",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored/optic.json": "2fd3f545a59d5d6b6407500473f09deec28282a8e0b506b44d43c26b8f7f1586",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored/slot.png": "835ea8c4f86dbb50dbcf110ee8048cb02432d13ccec614a48b09f1bdf83a932e"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

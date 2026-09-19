@@ -9,6 +9,8 @@ import copy
 import json
 from pathlib import Path
 import sys
+import re
+import math
 
 import numpy as np
 
@@ -26,6 +28,37 @@ def write(path, value):
     path.write_text(json.dumps(value, ensure_ascii=False, indent=2) + '\n')
 
 
+def validate_optics(bones, display, config):
+    # Match BedrockAttachmentModel's numbered view/division and typed ocular nodes.
+    for root in ('scope_view', 'division'):
+        names={name for name in bones if re.fullmatch(root+r'(_(?:[2-9]|[1-9][0-9]+))?',name)}
+        expected={root}|{root+'_'+str(i) for i in range(2,len(names)+1)}
+        if not names or names!=expected:raise ValueError('Missing/non-contiguous optical nodes: '+root)
+    ocular={}
+    for name in bones:
+        match=re.fullmatch(r'(ocular|ocular_sight|ocular_scope)(?:_([0-9]+))?',name)
+        if match:
+            index=int(match[2] or 1)
+            if index<1 or index in ocular:raise ValueError('Ambiguous ocular index')
+            ocular[index]=name
+    if not ocular or set(ocular)!=set(range(1,len(ocular)+1)):raise ValueError('Missing/non-contiguous ocular nodes')
+    if display.get('scope') and display.get('sight'):
+        if not any(n.startswith('ocular_scope') for n in ocular.values()) or not any(n.startswith('ocular_sight') for n in ocular.values()):
+            raise ValueError('Hybrid optic needs scope and sight apertures')
+    for name in [n for n in bones if re.fullmatch(r'division(_(?:[2-9]|[1-9][0-9]+))?',n)]+list(ocular.values()):
+        if not any(b.get('cubes') and name in ex.ancestors(b['name'],bones) for b in bones.values()):raise ValueError('Empty optical surface: '+name)
+    roots=config.get('exteriorRoots',[n for n in ('scope_body','ocular_ring') if n in bones])
+    if not roots or not set(roots)<=bones.keys():raise ValueError('Missing optical exterior roots')
+    zoom=display.get('zoom',[])
+    if not zoom or any(type(z) not in (int,float) or not math.isfinite(z) or z<1 for z in zoom):raise ValueError('Invalid optic zoom')
+    if not (display.get('scope') or display.get('sight')):raise ValueError('Missing optic type')
+    views=display.get('views',[1]*len(zoom))
+    if len(views)!=len(zoom) or any(type(v) is not int or v<1 for v in views):raise ValueError('Invalid view mode mapping')
+    # Native renderer intentionally falls back to scope_view when a view is out of range.
+    count=sum(bool(re.fullmatch(r'scope_view(_(?:[2-9]|[1-9][0-9]+))?',n)) for n in bones)
+    return {'views':[('scope_view' if v==1 or v>count else 'scope_view_'+str(v)) for v in views], 'oculars':list(ocular.values()),'exteriorRoots':roots}
+
+
 def compile_optic(source, output=OUT):
     source, output = Path(source), Path(output)
     config = ex.read(source / 'optic.json')
@@ -34,8 +67,8 @@ def compile_optic(source, output=OUT):
         raise ValueError('Authored optics must have their own fork identity')
     row = ex.read(source / 'editable/manifest.json')['parts'][0]
     _, bones, uv, _, count = shared.load_part(row, source / 'editable')
-    if not {'scope_body', 'scope_view', 'division', 'ocular'} <= bones.keys():
-        raise ValueError('Missing optical functional bones')
+    display = ex.read(source / 'display.json')
+    validate_optics(bones, display, config)
     geometry = copy.deepcopy(ex.read(R / row['sourceGeometry']))
     geo = geometry['minecraft:geometry'][0]
     geo['description'].update(identifier='geometry.' + key, texture_width=uv[0], texture_height=uv[1])
@@ -103,8 +136,9 @@ def build_for_gun(author, output=OUT):
         # Exterior preview only. Reticle and stencil geometry remain intact in
         # the runtime model, but must never inflate workbench fitting or icons.
         vertices, faces = {}, {}
+        roots=validate_optics(bones,display,config)['exteriorRoots']
         for bone in bones.values():
-            if 'scope_body' not in ex.ancestors(bone['name'], bones) and 'ocular_ring' not in ex.ancestors(bone['name'], bones):
+            if not set(roots).intersection(ex.ancestors(bone['name'], bones)):
                 continue
             for cube in bone.get('cubes', []):
                 points, triangles = ex.cube_geometry(bone, cube, bones, native_mount)

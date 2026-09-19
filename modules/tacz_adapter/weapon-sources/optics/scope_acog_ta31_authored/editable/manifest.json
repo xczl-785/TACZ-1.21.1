@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "scope_acog_ta31_authored",
+      "group": "scope_acog_ta31_authored",
+      "prefix": "native_attachment_scope_acog_ta31_authored",
+      "cubes": 190,
+      "sourceCubeIndices": {
+        "bb_main": [],
+        "scope_body": [
+          0
+        ],
+        "scope": [],
+        "octagon9": [],
+        "octagon11": [],
+        "octagon12": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28
+        ],
+        "bone7": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "red_illuminated": [
+          0,
+          1
+        ],
+        "bone": [],
+        "bone2": [
+          0,
+          1
+        ],
+        "bone6": [
+          0,
+          1
+        ],
+        "bone10": [
+          0,
+          1
+        ],
+        "bone14": [
+          0,
+          1
+        ],
+        "bone18": [
+          0,
+          1
+        ],
+        "bone22": [
+          0,
+          1
+        ],
+        "bone26": [
+          0,
+          1
+        ],
+        "bone30": [
+          0,
+          1
+        ],
+        "hexadecagon": [],
+        "screw": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "back": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "part": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "group4": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "octagon6": [],
+        "octagon7": [],
+        "octagon8": [],
+        "knob": [],
+        "bone5": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "group2": [],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon3": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group3": [],
+        "octagon5": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "bone4": [],
+        "bone3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "base": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "lens": [
+          0,
+          1,
+          2
+        ],
+        "ocular": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "ocular_ring": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "division": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "division_illuminated": [
+          0
+        ],
+        "scope_view": []
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.15625,
+        1.0875,
+        -49.0125
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "model": "components/scope_acog_ta31_authored/model.bbmodel",
+      "texture": "components/scope_acog_ta31_authored/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_acog_ta31_geo.json",
+      "sourceSha256": "9755e8bf3379cfdbffbfe485c3e8d780e48a3b2e86d9ea10e8cd07469268a7c5",
+      "sourceTextureSha256": "234bece5a23badcb1f406bd338870a2efce8e68de3941ab808a51af9f82d8819"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_vudu_authored",
+  "sourceAttachment": "tacz:scope_vudu",
+  "names": {
+    "zh_cn": "§6巫毒 1-6x 组合式精确瞄具 · 光学制作",
+    "en_us": "§6Vudu 1-6x Scope · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body",
+    "ocular_ring"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/scope_vudu.json": "9b0d17574097914b11792b13ee9f3a5995513e1461f388dc913ef3180584e932",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/scope_vudu_display.json": "4e259016e8e03c4398aeb2c37aff29cad3e2f3f74e2faabf8f624ea350205c84",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_vudu_geo.json": "5eb3d76d12a15f666bf65797be5ee6ec9aea6ef94a682802fdea73f375d7949b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_vudu.png": "1b44475d79e8110737b7fd4046107a0aa932ef17e12dff811ede0d62f018f7e5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/scope_vudu_data.json": "ab216e1d549f9e288645e2f48267f8c90a3b3cad75664e2f774eddc1e97bec1a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/scope_vudu.json": "d1e2b580d0587827bbf47d2e12d89eaa2390fa321ced360aa355efe396c5c591",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/scope_vudu.png": "66a05f6f29007b2153d4e59ee58dfe588ab57f0d4bd8c943f24f3452d928eff6",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/scope_vudu.png": "77ad66acf3910ef2b2c73041e0e7da51934b42ed01a5f9234cfc90c5c5467853",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_vudu_s.png": "a40542cdd188d65bec4b26a9b2ee3cde7e571e9f7cf66b4a9770205fbdc0622b"
+  }
+}

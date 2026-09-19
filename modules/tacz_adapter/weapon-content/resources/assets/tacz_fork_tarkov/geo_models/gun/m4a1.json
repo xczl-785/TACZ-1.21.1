@@ -3593,7 +3593,7 @@
           "name": "fore_sight",
           "parent": "fore_sights",
           "pivot": [
-            -0.00001,
+            -1e-05,
             11.2396,
             -18.55112
           ]
@@ -3689,7 +3689,7 @@
           "name": "fore_sight2",
           "parent": "fore_sights2",
           "pivot": [
-            -0.00001,
+            -1e-05,
             11.2396,
             -18.55112
           ],
@@ -4412,7 +4412,7 @@
           "name": "assembly_fore_sight2",
           "parent": "fore_sight2",
           "pivot": [
-            -0.00001,
+            -1e-05,
             11.2396,
             -18.55112
           ],
@@ -4769,7 +4769,7 @@
                 0.16919
               ],
               "pivot": [
-                -0.00001,
+                -1e-05,
                 11.11265,
                 -18.7723
               ],
@@ -20761,7 +20761,7 @@
                 0
               ],
               "pivot": [
-                -0.00001,
+                -1e-05,
                 11.25,
                 -18.54687
               ]
@@ -21117,7 +21117,7 @@
           "name": "assembly_editable_front_sight_fore_sight",
           "parent": "fore_sight",
           "pivot": [
-            -0.00001,
+            -1e-05,
             11.2396,
             -18.55112
           ],
@@ -21453,7 +21453,7 @@
                 0
               ],
               "pivot": [
-                -0.00001,
+                -1e-05,
                 11.11265,
                 -18.7723
               ]
@@ -27283,7 +27283,7 @@
                 179.9955
               ],
               "pivot": [
-                0.00001,
+                1e-05,
                 10.86119,
                 -16.33038
               ]
@@ -27546,7 +27546,7 @@
                 -179.9955
               ],
               "pivot": [
-                0.00001,
+                1e-05,
                 8.26388,
                 -16.33038
               ]
@@ -72024,7 +72024,7 @@
         {
           "name": "editable_tacz_stock_carbon_bone_c5_carbon_bone_c5",
           "pivot": [
-            -0.00001,
+            -1e-05,
             7.95248,
             5.89896
           ],
@@ -72043,7 +72043,7 @@
           "name": "assembly_editable_tacz_stock_carbon_bone_c5_carbon_bone_c5",
           "parent": "editable_tacz_stock_carbon_bone_c5_carbon_bone_c5",
           "pivot": [
-            -0.00001,
+            -1e-05,
             7.95248,
             5.89896
           ],

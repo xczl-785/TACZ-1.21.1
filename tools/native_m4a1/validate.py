@@ -11,7 +11,7 @@ def validate(resources=DEFAULT):
  contract=read(base/'authoring-contract.json');assert contract['schemaVersion']==1 and contract['gunId']==config['gunId']
  for name,digest in contract['sources'].items():
   assert hashlib.sha256((R/'modules/tacz_adapter/weapon-sources/native_m4a1'/name).read_bytes()).hexdigest()==digest,('Stale M4 author source',name)
- assert len(nodes)==15 and len(external)==54 and len(catalog)==69
+ assert len(nodes)==15 and len(external)==52+len(read(R/'modules/tacz_adapter/weapon-sources/native_m4a1/optics.json')['optics']) and len(catalog)==15+len(external)
  assert not {'tacz:ammo_mod_fmj','tacz:ammo_mod_hp','tacz:ammo_mod_i'}&external.keys()
  assert set(mapping)==set(catalog)=={m['definitionId'] for m in read(base/'preview.json')['models']}
  assert set(external.values())<=catalog.keys()
@@ -74,5 +74,5 @@ def validate(resources=DEFAULT):
   assert (out/f'data/tacz_fork_tarkov/item_foundation/items/{id.split(":")[1]}.json').is_file()
   assert (a/f'models/item/{id.split(":")[1]}.json').is_file()
  evidence=read(base/'geometry-evidence.json');assert evidence['editableParts']==len(edited) and evidence['reusedLowCubes']==0 and evidence['maximumNeutralMatrixError']<1e-10 and evidence['lowCubes']<evidence['highCubes']
- print('Native M4A1 contract PASS: 15 default nodes, 54 attachments, 140 preserved rig nodes; high/low',evidence['highCubes'],evidence['lowCubes'])
+ print('Native M4A1 contract PASS: 15 default nodes, authored optical attachments, 140 preserved rig nodes; high/low',evidence['highCubes'],evidence['lowCubes'])
 if __name__=='__main__':validate()

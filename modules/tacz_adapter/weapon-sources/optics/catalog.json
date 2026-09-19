@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "policy": "Additive; inherit compatibility from original ID; originals and presets unchanged",
+  "optics": [
+    {
+      "sourceAttachment": "tacz:scope_acog_ta31",
+      "attachmentId": "tacz_fork_tarkov:scope_acog_ta31_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored",
+      "kind": "scope"
+    },
+    {
+      "sourceAttachment": "tacz:scope_contender",
+      "attachmentId": "tacz_fork_tarkov:scope_contender_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_contender_authored",
+      "kind": "scope"
+    },
+    {
+      "sourceAttachment": "tacz:scope_elcan_4x",
+      "attachmentId": "tacz_fork_tarkov:scope_elcan_sample",
+      "source": "modules/tacz_adapter/weapon-sources/optics/elcan_sample",
+      "kind": "scope"
+    },
+    {
+      "sourceAttachment": "tacz:scope_hamr",
+      "attachmentId": "tacz_fork_tarkov:scope_hamr_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_hamr_authored",
+      "kind": "hybrid"
+    },
+    {
+      "sourceAttachment": "tacz:scope_lpvo_1_6",
+      "attachmentId": "tacz_fork_tarkov:scope_lpvo_1_6_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_lpvo_1_6_authored",
+      "kind": "scope"
+    },
+    {
+      "sourceAttachment": "tacz:scope_mk5hd",
+      "attachmentId": "tacz_fork_tarkov:scope_mk5hd_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_mk5hd_authored",
+      "kind": "hybrid"
+    },
+    {
+      "sourceAttachment": "tacz:scope_qmk152",
+      "attachmentId": "tacz_fork_tarkov:scope_qmk152_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_qmk152_authored",
+      "kind": "scope"
+    },
+    {
+      "sourceAttachment": "tacz:scope_retro_2x",
+      "attachmentId": "tacz_fork_tarkov:scope_retro_2x_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored",
+      "kind": "scope"
+    },
+    {
+      "sourceAttachment": "tacz:scope_standard_8x",
+      "attachmentId": "tacz_fork_tarkov:scope_standard_8x_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_standard_8x_authored",
+      "kind": "scope"
+    },
+    {
+      "sourceAttachment": "tacz:scope_vudu",
+      "attachmentId": "tacz_fork_tarkov:scope_vudu_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored",
+      "kind": "hybrid"
+    },
+    {
+      "sourceAttachment": "tacz:sight_552",
+      "attachmentId": "tacz_fork_tarkov:sight_552_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_552_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_acro_pistol",
+      "attachmentId": "tacz_fork_tarkov:sight_acro_pistol_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_acro_rifle",
+      "attachmentId": "tacz_fork_tarkov:sight_acro_rifle_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_acro_rifle_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_coyote",
+      "attachmentId": "tacz_fork_tarkov:sight_coyote_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_coyote_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_deltapoint_pistol",
+      "attachmentId": "tacz_fork_tarkov:sight_deltapoint_pistol_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_deltapoint_rifle",
+      "attachmentId": "tacz_fork_tarkov:sight_deltapoint_rifle_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_exp3",
+      "attachmentId": "tacz_fork_tarkov:sight_exp3_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_fastfire_pistol",
+      "attachmentId": "tacz_fork_tarkov:sight_fastfire_pistol_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_fastfire_rifle",
+      "attachmentId": "tacz_fork_tarkov:sight_fastfire_rifle_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_okp7",
+      "attachmentId": "tacz_fork_tarkov:sight_okp7_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_okp7_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_p90",
+      "attachmentId": "tacz_fork_tarkov:sight_p90_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_pk06_pistol",
+      "attachmentId": "tacz_fork_tarkov:sight_pk06_pistol_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_pk06_rifle",
+      "attachmentId": "tacz_fork_tarkov:sight_pk06_rifle_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_pk06_rifle_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_rmr_dot",
+      "attachmentId": "tacz_fork_tarkov:sight_rmr_dot_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_rmr_dot_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_sro_dot",
+      "attachmentId": "tacz_fork_tarkov:sight_sro_dot_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_sro_dot_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_srs_02",
+      "attachmentId": "tacz_fork_tarkov:sight_srs_02_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_srs_02_authored",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_t2",
+      "attachmentId": "tacz_fork_tarkov:sight_t2_sample",
+      "source": "modules/tacz_adapter/weapon-sources/optics/t2_sample",
+      "kind": "sight"
+    },
+    {
+      "sourceAttachment": "tacz:sight_uh1",
+      "attachmentId": "tacz_fork_tarkov:sight_uh1_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_uh1_authored",
+      "kind": "sight"
+    }
+  ]
+}

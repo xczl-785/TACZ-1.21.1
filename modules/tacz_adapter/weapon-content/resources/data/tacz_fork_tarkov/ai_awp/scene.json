@@ -2,43 +2,43 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "instanceId": "fab45e4c-1c71-5805-b604-2fccc82f4263",
       "definitionId": "awp_receiver"
     },
     {
-      "instanceId": "ca23f798-adad-50c4-b986-0456c66655a6",
+      "instanceId": "aa879395-2261-5702-9e42-388b09935936",
       "definitionId": "awp_barrel",
-      "parentId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "parentId": "fab45e4c-1c71-5805-b604-2fccc82f4263",
       "slot": "barrel"
     },
     {
-      "instanceId": "d2868636-baf0-5a1c-b5c9-900016010b01",
+      "instanceId": "faa1e332-d4ef-5dad-ad31-adb233c0a576",
       "definitionId": "awp_bipod",
-      "parentId": "ca23f798-adad-50c4-b986-0456c66655a6",
+      "parentId": "aa879395-2261-5702-9e42-388b09935936",
       "slot": "bipod"
     },
     {
-      "instanceId": "7a4da2dc-d860-583f-ad73-fd3f612b59d0",
+      "instanceId": "b5d3986b-d3b5-5271-9b4b-91544444d851",
       "definitionId": "awp_bolt",
-      "parentId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "parentId": "fab45e4c-1c71-5805-b604-2fccc82f4263",
       "slot": "bolt"
     },
     {
-      "instanceId": "f4307b88-aaf1-5186-84a1-0883655cee3e",
+      "instanceId": "44a6a18c-cdfc-5bdf-877e-396c5de72122",
       "definitionId": "awp_stock",
-      "parentId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "parentId": "fab45e4c-1c71-5805-b604-2fccc82f4263",
       "slot": "stock"
     },
     {
-      "instanceId": "f37781f6-8042-5758-933b-2d404d7a0c50",
+      "instanceId": "0332e912-261e-552a-bc82-70513579f60a",
       "definitionId": "awp_iron_sights",
-      "parentId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "parentId": "fab45e4c-1c71-5805-b604-2fccc82f4263",
       "slot": "iron_sights"
     },
     {
-      "instanceId": "82e55695-6710-57e2-8607-a28a08f6d179",
+      "instanceId": "16409a35-618f-5ba2-8f07-45c6cf3627d2",
       "definitionId": "awp_magazine_standard",
-      "parentId": "ea0b9361-4035-52bf-9cdc-8b6888d39953",
+      "parentId": "fab45e4c-1c71-5805-b604-2fccc82f4263",
       "slot": "magazine"
     }
   ]

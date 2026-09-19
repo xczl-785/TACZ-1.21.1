@@ -2,61 +2,61 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "instanceId": "c08e0cad-60bf-56f4-bd18-0a5b5983865e",
       "definitionId": "uzi_receiver"
     },
     {
-      "instanceId": "8d5a1645-e9d3-5654-aa4d-a64a4565f096",
+      "instanceId": "d6670aa2-1d1d-538d-a30b-ab6ae4945f7d",
       "definitionId": "uzi_iron_sights",
-      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "parentId": "c08e0cad-60bf-56f4-bd18-0a5b5983865e",
       "slot": "iron_sights"
     },
     {
-      "instanceId": "fdc4e385-db80-5ca3-8ff3-1294f6740cb1",
+      "instanceId": "014ab153-9558-5f86-9778-fc54c1ad5988",
       "definitionId": "uzi_stock",
-      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "parentId": "c08e0cad-60bf-56f4-bd18-0a5b5983865e",
       "slot": "stock"
     },
     {
-      "instanceId": "2b28413b-be8c-5b62-8c79-65f96e3a0ba1",
+      "instanceId": "e3f9a49d-a16c-5b3d-9703-1d395fc3f484",
       "definitionId": "uzi_barrel",
-      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "parentId": "c08e0cad-60bf-56f4-bd18-0a5b5983865e",
       "slot": "barrel"
     },
     {
-      "instanceId": "67bf8da2-9af6-5c69-882f-64c55545c03c",
+      "instanceId": "421a5d42-230c-5f98-91a3-a6fe950a0818",
       "definitionId": "uzi_handguard",
-      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "parentId": "c08e0cad-60bf-56f4-bd18-0a5b5983865e",
       "slot": "handguard"
     },
     {
-      "instanceId": "c1690b60-4ba0-5a8a-a0ff-fa9981c7f155",
+      "instanceId": "a0b8460e-3754-5e2d-9040-f9c8584906c3",
       "definitionId": "uzi_grip",
-      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "parentId": "c08e0cad-60bf-56f4-bd18-0a5b5983865e",
       "slot": "grip"
     },
     {
-      "instanceId": "5ad4354d-cc41-581d-bc27-a5a66268b52b",
+      "instanceId": "d80e3d2a-c002-5394-8521-64e0659870ca",
       "definitionId": "uzi_magazine_standard",
-      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "parentId": "c08e0cad-60bf-56f4-bd18-0a5b5983865e",
       "slot": "magazine"
     },
     {
-      "instanceId": "82d26245-5a7c-5096-846a-a84ccdc7fd2e",
+      "instanceId": "b4f0b341-c548-57dd-8a5e-a32b057108ae",
       "definitionId": "uzi_mag_release",
-      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "parentId": "c08e0cad-60bf-56f4-bd18-0a5b5983865e",
       "slot": "mag_release"
     },
     {
-      "instanceId": "3b95b564-fb5e-511a-b265-bb1f279b59aa",
+      "instanceId": "54ce462f-fdb4-5289-a0eb-600192370514",
       "definitionId": "uzi_charging_handle",
-      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "parentId": "c08e0cad-60bf-56f4-bd18-0a5b5983865e",
       "slot": "charging_handle"
     },
     {
-      "instanceId": "2cc85694-4e4d-5789-b86d-cb696bc34326",
+      "instanceId": "b49cd76c-877b-5dbb-98b9-38ca6fed38f6",
       "definitionId": "uzi_bolt",
-      "parentId": "dcbc261e-c987-5ab0-94f5-ecaf3e44cdf6",
+      "parentId": "c08e0cad-60bf-56f4-bd18-0a5b5983865e",
       "slot": "bolt"
     }
   ]

@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "sight_acro_pistol_authored",
+      "group": "sight_acro_pistol_authored",
+      "prefix": "native_attachment_sight_acro_pistol_authored",
+      "cubes": 74,
+      "sourceCubeIndices": {
+        "bb_main": [
+          0
+        ],
+        "scope_body": [],
+        "main": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69
+        ],
+        "ocular": [
+          0
+        ],
+        "division": [],
+        "division_illuminated": [
+          0,
+          1
+        ],
+        "scope_view": []
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.01562,
+        0.756,
+        -12.06812
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "model": "components/sight_acro_pistol_authored/model.bbmodel",
+      "texture": "components/sight_acro_pistol_authored/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_acro_pistol_geo.json",
+      "sourceSha256": "e7e15aea38b9fdab4d7ed77a70231a5df40f8bb3284986873979eea37d9aa6c5",
+      "sourceTextureSha256": "7004666ece401ee622e572f66e140b5ccff361c42a8a92eea62f18c9d56ec24b"
+    }
+  ]
+}

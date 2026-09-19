@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_pk06_pistol_authored",
+  "cubes": 54,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored/data.json": "3025117bf44fbeaef3e7a6810803e5ba38233ce0fb10789340acfb999946017b",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored/display.json": "025eec0fb67a9952ebf764e81cd8d0d8c624be2a88f89231f3d422965d5d51bc",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored/editable/components/sight_pk06_pistol_authored/model.bbmodel": "6f1459ec6c302d7fb5a58477a4e85f9b356f4033c17aea2fba18296969de4782",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored/editable/components/sight_pk06_pistol_authored/texture.png": "d275fe34f682ccaacdeaad1cc7f2d05eec3a8d732244d3c8d0b7849dedd08d6e",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored/editable/components/sight_pk06_pistol_authored/texture_s.png": "8a3b6cd3d1506d97a731dba4b6658495047007e79e0c9efb4bfef51558de5556",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored/editable/manifest.json": "d2b25b7059e5c5bf0e17bd3529cbefbe69c9c5cca820ad78cbcb712e31e45f54",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored/lod/model.json": "0d2977e74dd43b011c8c201a3e61d542a2700146939e75e626a65ae68913086d",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored/lod/texture.png": "755ec92f1cb576cf9f029c1eb5545b2009c838af40614a092a9ad824de6f9676",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored/optic.json": "3242feef59a92ea4326ff1495e9e3d040ccfab84c08fbeca788d424df1579582",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored/slot.png": "fdf177edada16d21f89ed9522af559fa8a23f2e1bc9fd5b4b8bbb7be6d016205"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

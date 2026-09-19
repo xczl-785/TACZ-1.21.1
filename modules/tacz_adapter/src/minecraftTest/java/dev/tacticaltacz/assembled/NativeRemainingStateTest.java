@@ -83,8 +83,9 @@ class NativeRemainingStateTest {
     @Test void everyNonOpticalExternalCandidateUsesAnEditedAssetAndBothModelsAcceptIt(){
         for(String name:GUNS){var w=weapon(name);var assets=new NativeAttachmentModels(w);var hi=model(w,false);var low=model(w,true);
             for(var entry:w.nativeAttachments.entrySet()){
-                String id=entry.getKey().split(":")[1];
-                var index=JsonParser.parseString(AssembledWeapon.resource("assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/"+id+".json")).getAsJsonObject();
+                var id=ResourceLocation.parse(entry.getKey());
+                String root=id.getNamespace().equals("tacz")?"assets/tacz/custom/tacz_default_gun/":"";
+                var index=JsonParser.parseString(AssembledWeapon.resource(root+"data/"+id.getNamespace()+"/index/attachments/"+id.getPath()+".json")).getAsJsonObject();
                 String type=index.get("type").getAsString();if(type.equals("scope")||type.equals("extended_mag"))continue;
                 var part=w.createPart(entry.getValue());assertNotNull(assets.resolve(part),name+entry.getKey());
                 var base=w.preset();var path=NativeAttachmentProjection.path(base,AttachmentType.valueOf(type.toUpperCase(Locale.ROOT)),part);

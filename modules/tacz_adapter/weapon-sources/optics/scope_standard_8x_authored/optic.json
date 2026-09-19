@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_standard_8x_authored",
+  "sourceAttachment": "tacz:scope_standard_8x",
+  "names": {
+    "zh_cn": "§6斥候 4-10x 光学瞄具 · 光学制作",
+    "en_us": "§6Scout 4-10x Scope · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body",
+    "ocular_ring"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/scope_standard_8x.json": "28dff7773fd196a4f9f0022826a6d9cf4753426659f45e3a208606f46b0ad20a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/scope_scout_display.json": "08ac399b9ff49746ffa8ef7155f69a95bf013b4768c7287cde817990bc8bfe0a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_scout_geo.json": "05316777ba86bcf5049169519bfcf76512deb44f08b98414abdcdbc47bbe6429",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_scout.png": "108c79c73d7b87a7f4787bc1ea5f61521d0b467d70edb7b22eb6c1bad2939c5d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/scope_scout_data.json": "51ce1065a6c8fd362f8a92883822f54db1df3eecd87b713288db6bb739c57c75",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/scope_scout.json": "6786b0cfef395ddcd9ec90739e7e38d3d6caae65b088def29ee75f8205b3fce9",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/scope_scout.png": "3ed1bcc236ac718ba1149879220adefadfe2d4e3cbf35de6b05accacfaa65006",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/scope_scout_slot.png": "1e5db548be2ba0725a4a4c50956baeca37e27b8194d2b62a97b288e4132fc15a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_scout_n.png": "29587a1597bb0a81ad67c61969332738eb0cf06b1f9edf1ebee931e441392160",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_scout_s.png": "6908efce5396798315e4d9265209528ad1249093281a5b6f8bdfe1d6be14690c"
+  }
+}

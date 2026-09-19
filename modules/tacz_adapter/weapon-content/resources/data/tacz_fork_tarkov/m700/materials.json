@@ -149,6 +149,86 @@
     "tacz_m700_sniper_extended_mag_3": {
       "defaultMaterial": "tacz_m700_sniper_extended_mag_3",
       "regions": {}
+    },
+    "tacz_fork_tarkov_scope_acog_ta31_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_acog_ta31_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_contender_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_contender_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_elcan_sample": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_elcan_sample",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_hamr_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_hamr_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_lpvo_1_6_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_lpvo_1_6_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_mk5hd_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_mk5hd_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_qmk152_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_qmk152_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_standard_8x_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_standard_8x_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_vudu_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_vudu_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_552_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_552_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_acro_rifle_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_acro_rifle_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_coyote_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_coyote_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_deltapoint_rifle_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_deltapoint_rifle_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_exp3_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_exp3_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_fastfire_rifle_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_fastfire_rifle_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_okp7_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_okp7_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_pk06_rifle_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_pk06_rifle_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_srs_02_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_srs_02_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_t2_sample": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_t2_sample",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_uh1_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_uh1_authored",
+      "regions": {}
     }
   }
 }

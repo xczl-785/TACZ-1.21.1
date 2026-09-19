@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_p90_authored",
+  "cubes": 25,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/data.json": "b1012b359b79443748301bea6a4c40240508f52da9bf3fd6c401f34dc5d316fe",
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/display.json": "8227af51c8b4c7616859adf30e7c5d7526ded21f5c8efc7510536da173f7a971",
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/editable/components/sight_p90_authored/model.bbmodel": "747c6f9a2ed334a65b22620ebf8e809cc625fd8f5cd17a8ee5a7a8feb2fbac8e",
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/editable/components/sight_p90_authored/texture.png": "02975b3078d2c766ac97bef00828c13599c2fe04b5733930b359b21729f73903",
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/editable/components/sight_p90_authored/texture_n.png": "33148d89f6cd7792675b786c85d27838a1432e250de6c2ab1c6373268e0c0d81",
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/editable/components/sight_p90_authored/texture_s.png": "322a2cb130f7e4914ae59136b3438a1e2d014264025b1b335bca150a032eb220",
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/editable/manifest.json": "c5334a39ff504d57f774cee5908b59e6e090ee03b4a1b4b3e8c2fb9ea0282141",
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/lod/model.json": "7036bbfd1263d77f2db3941e89ce36688b749886d49e36238144d0fb824dac06",
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/lod/texture.png": "02975b3078d2c766ac97bef00828c13599c2fe04b5733930b359b21729f73903",
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/optic.json": "9ace8268febdc52f2139bcddfb0cc31d3607136d91ffd04f72629bf5ecaaa373",
+    "modules/tacz_adapter/weapon-sources/optics/sight_p90_authored/slot.png": "0ca6cc997f9738ec3c36ce992d4e654246e0462bd9a80df5b681c6c7ad6ba519"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

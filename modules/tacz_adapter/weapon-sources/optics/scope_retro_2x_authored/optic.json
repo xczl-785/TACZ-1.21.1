@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_retro_2x_authored",
+  "sourceAttachment": "tacz:scope_retro_2x",
+  "names": {
+    "zh_cn": "§93x 光学瞄具\"复古\" · 光学制作",
+    "en_us": "§9Retro 3x Scope · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body",
+    "ocular_ring"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/scope_retro_2x.json": "49ff1f79946ff2c52eac034e4d955d40c0141f2d8a5a26f69d195644c64a933d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/scope_retro_2x_display.json": "693774a6ab66dbce400a7cadf933d115e0e08a9705f3c1949c4fa7f5576aaa07",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_retro_2x_geo.json": "884e1219e9c6138cbc8db2b6f79c4a1ba652d890731e7f4566b4476b9a018746",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_retro_2x.png": "65e0acf7f75a40b44340f6c29ee5b266bc0a990206238610552eab8d4eb50f2c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/scope_retro_2x_data.json": "936a5a4174cff2939aa6fd7b7d04454a10dcc13951630f145216cfc7e538dd3b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/scope_retro_2x.json": "b82bbffc98887ee7b6e29a310d330411dbab2aa760f5c0b53b50f0736a8216b5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/scope_retro_2x.png": "3b44b694766014abeddb63a3424db3170992d7465e542912fcf4a2d969ee4800",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/scope_retro_2x.png": "5351b9cb6a7f767e60afb74d5df0a2ffda9e6fdd96f5d3432bca5eeff30f2fb2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_retro_2x_n.png": "0b41d064584a827bb57854d813ea8dd68b3139d563fafd7469c063244cb88aae",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_retro_2x_s.png": "9c99d63c224dbe71b101218c42eeecf4c433d378fb8c12010f7e6293a709ac08"
+  }
+}

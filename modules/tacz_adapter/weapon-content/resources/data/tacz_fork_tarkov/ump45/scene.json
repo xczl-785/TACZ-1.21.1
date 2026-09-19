@@ -2,49 +2,49 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "0a0f09fd-227c-5790-be26-124c534b4ef7",
+      "instanceId": "8ce21473-84d4-5bde-99b7-ef01168908c2",
       "definitionId": "ump_lower"
     },
     {
-      "instanceId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "instanceId": "59bb601e-bff5-56d3-9f7f-c8020ac19162",
       "definitionId": "ump_upper",
-      "parentId": "0a0f09fd-227c-5790-be26-124c534b4ef7",
+      "parentId": "8ce21473-84d4-5bde-99b7-ef01168908c2",
       "slot": "upper"
     },
     {
-      "instanceId": "0eda7cee-5190-5fd9-beda-064482870ec8",
+      "instanceId": "00be3d1d-d6cc-5e4b-b407-dbca2d38db84",
       "definitionId": "ump_barrel",
-      "parentId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "parentId": "59bb601e-bff5-56d3-9f7f-c8020ac19162",
       "slot": "barrel"
     },
     {
-      "instanceId": "9584fc23-6f28-556b-ad96-aa2a6d191622",
+      "instanceId": "681f5272-a585-566e-8bb9-485a21e72d94",
       "definitionId": "ump_bolt",
-      "parentId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "parentId": "59bb601e-bff5-56d3-9f7f-c8020ac19162",
       "slot": "bolt"
     },
     {
-      "instanceId": "ac1b7949-f8d4-5a64-bb57-2df836a5f0f3",
+      "instanceId": "dc4b0d2f-9361-593d-aff4-4f01f14fa902",
       "definitionId": "ump_charging_handle",
-      "parentId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "parentId": "59bb601e-bff5-56d3-9f7f-c8020ac19162",
       "slot": "charging_handle"
     },
     {
-      "instanceId": "5e76d64f-00d4-53e2-9c1f-3b626cb44d87",
+      "instanceId": "7c0a71c4-c3f7-5285-939a-4fd85437bc61",
       "definitionId": "ump_stock",
-      "parentId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "parentId": "59bb601e-bff5-56d3-9f7f-c8020ac19162",
       "slot": "stock"
     },
     {
-      "instanceId": "ce4206c9-d6d2-58ad-a500-60f627d9e2f0",
+      "instanceId": "3c3125c6-8008-56ac-90e2-7bc74e7e06dd",
       "definitionId": "ump_rails",
-      "parentId": "d316789f-cb12-5017-a3fc-c795afa3c0e2",
+      "parentId": "59bb601e-bff5-56d3-9f7f-c8020ac19162",
       "slot": "rails"
     },
     {
-      "instanceId": "aa49be0f-3c89-5c7a-847b-7050974ce259",
+      "instanceId": "78477887-1faa-52df-82b8-73a1738f4229",
       "definitionId": "ump_magazine_standard",
-      "parentId": "0a0f09fd-227c-5790-be26-124c534b4ef7",
+      "parentId": "8ce21473-84d4-5bde-99b7-ef01168908c2",
       "slot": "magazine"
     }
   ]

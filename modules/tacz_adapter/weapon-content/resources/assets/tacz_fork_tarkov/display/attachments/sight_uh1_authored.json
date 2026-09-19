@@ -1,0 +1,19 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/sight_uh1_authored",
+  "model": "tacz_fork_tarkov:attachment/sight_uh1_authored",
+  "texture": "tacz_fork_tarkov:attachment/sight_uh1_authored",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/sight_uh1_authored",
+    "texture": "tacz_fork_tarkov:attachment/lod/sight_uh1_authored"
+  },
+  "zoom": [
+    2.5
+  ],
+  "scope": false,
+  "sight": true,
+  "fov": 32.0,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_c",
+    "uninstall": "tacz:attachments/scope_general_c"
+  }
+}

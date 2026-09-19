@@ -105,6 +105,10 @@
     "tacz_scope_retro_2x": {
       "defaultMaterial": "tacz_scope_retro_2x",
       "regions": {}
+    },
+    "tacz_fork_tarkov_scope_retro_2x_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_retro_2x_authored",
+      "regions": {}
     }
   }
 }

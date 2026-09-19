@@ -102,14 +102,18 @@ class NativeGunProductionTest(unittest.TestCase):
                     before,uv=p.ex.cube_geometry(lookup[name],lookup[name]['cubes'][index],lookup,np.eye(4));after,actual_uv=p.ex.cube_geometry(bones[name],bones[name]['cubes'][j],bones,np.eye(4))
                     self.assertLess(float(np.max(np.abs(before-after))),1e-8);self.assertEqual(uv,actual_uv)
 
-    def test_shared_magazines_are_gun_specific_and_optics_are_not_new_sources(self):
+    def test_shared_magazines_are_gun_specific_and_optics_have_independent_sources(self):
         config=p.ex.read(p.DEFAULT);records,_=p.attachment_records(config)
         magazines=[r for r in records if r['native']];self.assertEqual(len(magazines),3)
         for r in magazines:
             self.assertEqual(r['row']['gunId'],'tacz:glock_17')
             self.assertIn('glock_17_geo',r['row']['sourceGeometry']);self.assertNotIn('m4a1',r['row']['sourceGeometry'])
-        optics=[r for r in records if r['type']=='scope'];self.assertEqual(len(optics),6)
-        self.assertTrue(all('row' not in r for r in optics))
+        optics=[r for r in records if r['type']=='scope'];self.assertEqual(len(optics),12)
+        originals=[r for r in optics if r['attachmentId'].startswith('tacz:')]
+        authored=[r for r in optics if r['attachmentId'].startswith('tacz_fork_tarkov:')]
+        self.assertEqual(len(originals),6);self.assertEqual(len(authored),6)
+        self.assertTrue(all('row' not in r for r in originals))
+        self.assertTrue(all('row' in r and '/optics/' in str(r['root']) for r in authored))
         editable=p.ex.read(p.DEFAULT.parent/'editable/manifest.json')['parts']
         self.assertEqual(len(editable),6);self.assertFalse(any('scope' in r['definitionId'] for r in editable))
 

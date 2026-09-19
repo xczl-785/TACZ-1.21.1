@@ -259,6 +259,146 @@
       "roughness": 0.8,
       "specular": 0.12,
       "textureScale": 1
+    },
+    "tacz_fork_tarkov_scope_acog_ta31_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_scope_acog_ta31_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_scope_contender_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_scope_contender_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_scope_elcan_sample": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_scope_elcan_sample.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_scope_hamr_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_scope_hamr_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_scope_lpvo_1_6_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_scope_lpvo_1_6_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_scope_mk5hd_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_scope_mk5hd_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_scope_qmk152_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_scope_qmk152_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_scope_standard_8x_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_scope_standard_8x_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_scope_vudu_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_scope_vudu_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_552_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_552_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_acro_rifle_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_acro_rifle_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_coyote_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_coyote_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_deltapoint_rifle_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_deltapoint_rifle_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_exp3_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_exp3_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_fastfire_rifle_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_fastfire_rifle_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_okp7_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_okp7_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_pk06_rifle_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_pk06_rifle_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_srs_02_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_srs_02_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_t2_sample": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_t2_sample.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
+    },
+    "tacz_fork_tarkov_sight_uh1_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m700/tacz_fork_tarkov_sight_uh1_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
     }
   }
 }

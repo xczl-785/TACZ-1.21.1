@@ -79,7 +79,13 @@
             "tacz_sight_fastfire_pistol",
             "tacz_sight_pk06_pistol",
             "tacz_sight_rmr_dot",
-            "tacz_sight_sro_dot"
+            "tacz_sight_sro_dot",
+            "tacz_fork_tarkov_sight_acro_pistol_authored",
+            "tacz_fork_tarkov_sight_deltapoint_pistol_authored",
+            "tacz_fork_tarkov_sight_fastfire_pistol_authored",
+            "tacz_fork_tarkov_sight_pk06_pistol_authored",
+            "tacz_fork_tarkov_sight_rmr_dot_authored",
+            "tacz_fork_tarkov_sight_sro_dot_authored"
           ]
         }
       ],
@@ -250,6 +256,60 @@
     },
     {
       "id": "tacz_sight_sro_dot",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_acro_pistol_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_deltapoint_pistol_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_fastfire_pistol_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_pk06_pistol_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_rmr_dot_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_sro_dot_authored",
       "stats": {
         "weightKg": 0,
         "ergonomics": 0

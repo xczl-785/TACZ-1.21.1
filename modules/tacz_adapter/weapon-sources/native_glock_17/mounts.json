@@ -304,6 +304,84 @@
         0
       ],
       "slots": {}
+    },
+    "tacz_fork_tarkov_sight_acro_pistol_authored": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_deltapoint_pistol_authored": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_fastfire_pistol_authored": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_pk06_pistol_authored": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_rmr_dot_authored": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
+    },
+    "tacz_fork_tarkov_sight_sro_dot_authored": {
+      "frameOrigin": [
+        0.015625,
+        6.5560039535222465,
+        -2.235355
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
     }
   }
 }

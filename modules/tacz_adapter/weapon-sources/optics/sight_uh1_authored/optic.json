@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_uh1_authored",
+  "sourceAttachment": "tacz:sight_uh1",
+  "names": {
+    "zh_cn": "§9UH-1全息瞄具  · 光学制作",
+    "en_us": "§9UH-1 HCOG · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_uh1.json": "a13850fde2a3c92d155829cf7f1b115772c8c813559def484808aec90e192940",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_uh1_display.json": "83a96c57b8f37ae92786b2912913fabcb64b48ec6cd52ab27f7ddc68a5a6a51f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_uh1_geo.json": "b013ac1205086eb7cb2ceff293cef78f5c378ac0829de95bdbd6ebd1d1140aa0",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_uh1.png": "75cff0a5399d8d2e6b0bf87b7ce09872ea3bb4090080b2bd9d2e8a77763c5e55",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_uh1_data.json": "aba77913b958d78149e501a45254a7699aacf1c3dc8f3639770226e5f7072305",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_uh1.json": "baeb5c0c43ed9ee6f85b0c9d63d143bb41b310e0de9002a7453433ab62c632b2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_uh1.png": "ab139a98c1647c8721ea156687927c93e72d277f62f28f27e02a8b721368e1c5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_uh1.png": "707aeb756b4033d1b2d427446c25c7ba2f344d1523e15548f4aa9b653b5151cb",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_uh1_n.png": "f38ef5e513e3b6b39ce32714af81d5e12549180a0f45f8680f21f1aaad5fd5d2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_uh1_s.png": "955e6d1d0b72f70b42aefbf04ff4add9efc11df1c1b57913c9b293368ba22bf4"
+  }
+}

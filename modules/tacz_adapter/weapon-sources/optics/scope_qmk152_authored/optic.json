@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_qmk152_authored",
+  "sourceAttachment": "tacz:scope_qmk152",
+  "names": {
+    "zh_cn": "§5QMK-152 3x 白光瞄准镜 · 光学制作",
+    "en_us": "§5QMK-152 3x White Light Sight · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body",
+    "ocular_ring"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Source LOD incomplete: explicit full model and matching texture fallback"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/scope_qmk152.json": "4559ce95f2a88d7509b54efbdebb0360e0a4c6837dd2bff1a64725dd813aaad3",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/scope_qmk152_display.json": "26ffa95a9f2bb2df9fdc85d5812a9c61113d5240f48e3faf09f7da06ab587f61",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_qmk152_geo.json": "e2c319e59a8abf3acb306dde8458a053eadfa60c80bc106998e9faf5c99798dc",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_qmk152.png": "391f2247e3735820bf06458cda3b5ad87c3c2edd931aa57477d76669e14ac0e4",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/scope_qmk152_data.json": "ad876e94b6830a47da8c9d80205f7622fc9dac0de64c090fce6dc7fb2631298e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/scope_qmk152.png": "c55fc57d9a7e47da24445ad6d2be98aca56322c7929460bdf19cfb84319eea8a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_qmk152_n.png": "b7d1da6efdbe0773d52a5fb36f42f977b8c9977b95e18d1dcde1791137d0caef",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_qmk152_s.png": "fb1e047b55f1d02b0c07d0862d0085c29ec27ee6eb9f41cdca4d970327bae4f3"
+  }
+}

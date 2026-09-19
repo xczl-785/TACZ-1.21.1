@@ -409,6 +409,19 @@
         0
       ],
       "slots": {}
+    },
+    "tacz_fork_tarkov_scope_retro_2x_authored": {
+      "frameOrigin": [
+        0.34375,
+        13.84375,
+        -5.031146633811714
+      ],
+      "attachmentOrigin": [
+        0,
+        0,
+        0
+      ],
+      "slots": {}
     }
   }
 }

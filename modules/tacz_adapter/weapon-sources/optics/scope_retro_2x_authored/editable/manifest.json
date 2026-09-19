@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "scope_retro_2x_authored",
+      "group": "scope_retro_2x_authored",
+      "prefix": "native_attachment_scope_retro_2x_authored",
+      "cubes": 86,
+      "sourceCubeIndices": {
+        "scope_body": [
+          0
+        ],
+        "bone": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50
+        ],
+        "ocular_ring": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "ocular": [
+          0,
+          1,
+          2
+        ],
+        "division": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "scope_view": []
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        1.75,
+        -11.09375
+      ],
+      "uvSize": [
+        256,
+        256
+      ],
+      "model": "components/scope_retro_2x_authored/model.bbmodel",
+      "texture": "components/scope_retro_2x_authored/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_retro_2x_geo.json",
+      "sourceSha256": "884e1219e9c6138cbc8db2b6f79c4a1ba652d890731e7f4566b4476b9a018746",
+      "sourceTextureSha256": "65e0acf7f75a40b44340f6c29ee5b266bc0a990206238610552eab8d4eb50f2c"
+    }
+  ]
+}

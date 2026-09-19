@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_exp3_authored",
+  "sourceAttachment": "tacz:sight_exp3",
+  "names": {
+    "zh_cn": "§9EXP3全息瞄具  · 光学制作",
+    "en_us": "§9EXP3 HCOG · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_exp3.json": "e91058dc2186782457bde0b1446d6b0a22f3094ab8e4ab93ff858b658557f862",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_exp3_display.json": "950547af2ca053521162f65a47212f0271affbad8fca1b476b6c1a8ee5e54a7f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_exp3_geo.json": "caa19ed7f21e3f1fc524808b067841fffaf8ea60ae0fe438f79d7c4d0353aa98",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_exp3.png": "e34478cf550338a7ec5f8e6d2030a262255683a18d9f2ffba60721fbc21aea8a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_exp3_data.json": "c9a431dd9e82ddecd7edce0e19da774d6f0c03ef371fa37d7243c6e0a736cd22",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_exp3.json": "6be2b069714523293781f27f71c1fa34f74a6b864f09c325fe0b7b69eccffd4a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_exp3.png": "65714c52c5232692efbf67f2f5f29720f3d6f7fc6107cac86236bea33e0cedbe",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_exp3.png": "5eea9f5e41ad147d202bcc44ed17255b35915bc66cb4dfb7dbb72eb348275b2b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_exp3_n.png": "f38ef5e513e3b6b39ce32714af81d5e12549180a0f45f8680f21f1aaad5fd5d2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_exp3_s.png": "a5f898677faabc5cd95a3517f2ae2ba876614cb4bc85b32b2df62417ce38dcfa"
+  }
+}

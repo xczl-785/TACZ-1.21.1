@@ -10,6 +10,71 @@
       "definitionId": "fork_scope_elcan_sample",
       "source": "modules/tacz_adapter/weapon-sources/optics/elcan_sample",
       "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_scope_acog_ta31_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_scope_hamr_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_hamr_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_scope_qmk152_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/scope_qmk152_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_sight_552_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_552_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_sight_acro_rifle_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_acro_rifle_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_sight_coyote_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_coyote_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_sight_deltapoint_rifle_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_sight_exp3_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_sight_fastfire_rifle_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_sight_okp7_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_okp7_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_sight_pk06_rifle_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_pk06_rifle_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_sight_srs_02_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_srs_02_authored",
+      "nativeMount": "scope_pos"
+    },
+    {
+      "definitionId": "tacz_fork_tarkov_sight_uh1_authored",
+      "source": "modules/tacz_adapter/weapon-sources/optics/sight_uh1_authored",
+      "nativeMount": "scope_pos"
     }
   ],
   "nativeGunModel": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/gun/m4a1_geo.json"

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_lpvo_1_6_authored",
+  "sourceAttachment": "tacz:scope_lpvo_1_6",
+  "names": {
+    "zh_cn": "§5LPVO 1-6倍瞄具  · 光学制作",
+    "en_us": "§5LPVO 1-6x Scope  · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body",
+    "ocular_ring"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/scope_lpvo_1_6.json": "e869fb5f766b266956333586faccce0cda31813205b88cca6b2c7f14388fad9a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/scope_lpvo_1_6_display.json": "5ed9d578b5bad99acd1f8b87a6debfb1f56505cdba5a496ce08ba1bfbd3402cf",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_lpvo_1_6_geo.json": "73ce730fc7dc1dcfb4976524c43720f4f45afea5de1739ebf91d4a648bc6b00f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_lpvo_1_6.png": "8f29080bf1d7a6ff716b0498e16a88ddf3186db9a2b9259021e74f0f9336411f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/scope_lpvo_1_6_data.json": "bf78f36910a047d7e63166c70a81a4e6fda5576cfe0ab595650e820004aa1a3a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/scope_lpvo_1_6.json": "035891525b389cf643805b63cbf8378e76273c760df7c478c866ab1f1c3728f7",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/scope_lpvo_1_6.png": "d5945ace8cff49254c23f3bae517edf2cc700e2426d719de1f2baa2ca9a2ebc5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/scope_lpvo_1_6.png": "d3b581d5ae4978a9abe0a019751480a115b9c1d6efae1660ea90c1d9d51d1e9e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_lpvo_1_6_n.png": "29958313d688329f9f1c643e44f368b036380828f848fb712a58fee6f4fb8822",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_lpvo_1_6_s.png": "1ef19e7fc11399996617b55b02950ab316982b70696674a6771114bccad137d7"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "sight_552_authored",
+      "group": "sight_552_authored",
+      "prefix": "native_attachment_sight_552_authored",
+      "cubes": 106,
+      "sourceCubeIndices": {
+        "scope_body": [],
+        "knobs": [],
+        "octagon3": [],
+        "octagon": [],
+        "screws": [],
+        "pattern": [],
+        "552": [
+          0
+        ],
+        "group": [],
+        "group9": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "group8": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "group7": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "group6": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "body": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "group5": [],
+        "octagon5": [],
+        "group4": [
+          0,
+          1,
+          2
+        ],
+        "group3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "screw": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon4": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "base": [],
+        "pattern2": [
+          0,
+          1
+        ],
+        "division": [],
+        "division_illuminated": [
+          0
+        ],
+        "ocular": [
+          0
+        ],
+        "scope_view": []
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        1.22508,
+        -24.25505
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/sight_552_authored/model.bbmodel",
+      "texture": "components/sight_552_authored/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_552_geo.json",
+      "sourceSha256": "77655e5eae6fa0def369eeddf94ce4bf2c0892e390189c60f5f881effc338c22",
+      "sourceTextureSha256": "a53fdd976864443fc6218b9088119afbd074308714a1807f4eb6399527cd6e3d"
+    }
+  ]
+}

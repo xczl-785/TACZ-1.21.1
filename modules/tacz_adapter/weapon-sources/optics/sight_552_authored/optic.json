@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_552_authored",
+  "sourceAttachment": "tacz:sight_552",
+  "names": {
+    "zh_cn": "§9EOTECH 552全息瞄具  · 光学制作",
+    "en_us": "§9Militech 552 HCOG · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_552.json": "05af5023a94f2113e4129ddf03abd2b82f158e347f4eb6352ae3d02ea4cd776e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_552_display.json": "ec1b2c44de328cafb35a43f763fe4ba8cf1bd1a393909fa91da4d754bd353a43",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_552_geo.json": "77655e5eae6fa0def369eeddf94ce4bf2c0892e390189c60f5f881effc338c22",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_552.png": "a53fdd976864443fc6218b9088119afbd074308714a1807f4eb6399527cd6e3d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_552_data.json": "97543af2f1370b0675d199120331454c3329071fbe8c6d7787b3942367da32fb",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_552.json": "9f8e736e56777dc9ae035d1d73cf55e6091b0e76a574ef0c233e2c15de3f9d86",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_552.png": "0e3c91e3c1b34d3e956af060357d27353b4ebf468e02ee61afefa81a05c5eaaa",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_552.png": "26f5aeeff84c7a86f91775afd8fab66cb498a7652ed5f8eeeac3a41aa3ab6f71",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_552_n.png": "f38ef5e513e3b6b39ce32714af81d5e12549180a0f45f8680f21f1aaad5fd5d2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_552_s.png": "ef79c238c2cdaa101f1350551a8e91fbe80511160edbc355b4abe9be080b2ecd"
+  }
+}

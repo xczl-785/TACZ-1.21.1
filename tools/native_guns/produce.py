@@ -1,5 +1,5 @@
 """Config-driven native gun assembly producer; source pack and other guns stay read-only."""
-import argparse,copy,json,math,re,sys,uuid
+import argparse,copy,json,math,re,sys,uuid,importlib.util
 from pathlib import Path
 import numpy as np
 from PIL import Image
@@ -16,6 +16,8 @@ DEFAULT=R/'modules/tacz_adapter/weapon-sources/native_glock_17/production.json'
 sys.path.insert(0,str(R/'modules/tacz_adapter/tools'))
 from render_part_icon import render_part_icon
 import lod
+_optic_spec=importlib.util.spec_from_file_location('native_optical_producer',TOOLS/'native_optics/produce.py')
+optics=importlib.util.module_from_spec(_optic_spec);_optic_spec.loader.exec_module(optics)
 
 def write(p,value):
     # Preserve established JSON formatting when the generated content is unchanged.
@@ -115,6 +117,14 @@ def attachment_records(config):
             if found:rec.update(row=found[0],root=found[1])
             else:rec.update(source=ex.asset(dp['model'],'geo_models','.json'),texture=ex.asset(dp['texture'],'textures','.png'))
             records.append(rec)
+    originals={r['attachmentId']:r for r in records}
+    for relative in config.get('authoredOptics',[]):
+        source=R/relative;optic=ex.read(source/'optic.json');old=originals.get(optic['sourceAttachment'])
+        if old is None or old['type']!='scope':raise ValueError('Authored optic cannot widen native compatibility: '+relative)
+        aid=optic['attachmentId'];row=ex.read(source/'editable/manifest.json')['parts'][0]
+        provenance=[f for f in source.rglob('*') if f.is_file() and f.suffix in ('.json','.bbmodel','.png')]
+        records.append({'definitionId':aid.replace(':','_'),'attachmentId':aid,'type':'scope','display':ex.read(source/'display.json'),
+                        'native':False,'index':source/'optic.json','provenance':provenance,'row':row,'root':source/'editable','source':R/row['sourceGeometry']})
     return records,tags
 
 def exterior_scope_geometry(bones,exterior_roots=None):
@@ -205,6 +215,7 @@ def preflight(config_path):
 def build(config_path=DEFAULT,resources=RES,append_sources=False):
     config_path=Path(config_path).resolve();source_root=config_path.parent;resources=Path(resources)
     config,attachments,tags,external,slots,catalog,mounts=preflight(config_path)
+    for relative in config.get('authoredOptics',[]):optics.compile_optic(R/relative,resources)
     if append_sources:append(config,source_root)
     editable=ex.read(source_root/'editable/manifest.json')['parts']
     if [r['definitionId'] for r in editable]!=[r['definitionId'] for r in config['parts']]:
@@ -311,13 +322,13 @@ def build(config_path=DEFAULT,resources=RES,append_sources=False):
     for model in models:
         d=model['definitionId'];icon=assets/config['weapon']['partIconDirectory']/f'{d}.png';icon.parent.mkdir(parents=True,exist_ok=True)
         render_part_icon(model,library,bindings,lambda ref:resources/'assets'/ref.replace(':','/'),muzzle_left=True,alpha_cutout=True).save(icon)
-        if not mapping[d].startswith('tacz:'):write(assets/f'models/item/{mapping[d].split(":")[1]}.json',{'parent':'builtin/entity','gui_light':'front'} if d==config['rootDefinition'] else {'parent':'minecraft:item/generated','textures':{'layer0':f"{ns}:{config['weapon']['partIconDirectory'].removeprefix('textures/')}/{d}"}})
+        if mapping[d] not in external:write(assets/f'models/item/{mapping[d].split(":")[1]}.json',{'parent':'builtin/entity','gui_light':'front'} if d==config['rootDefinition'] else {'parent':'minecraft:item/generated','textures':{'layer0':f"{ns}:{config['weapon']['partIconDirectory'].removeprefix('textures/')}/{d}"}})
     overrides={};available_overrides={}
     for catalog_path in config['attachmentOverrideCatalogs']:
         path=resources/catalog_path;entries=ex.read(path);source_paths.add(path)
         available_overrides.update(entries.get('attachments',entries))
     for rec in attachments:
-        if rec['native'] or 'row' not in rec:continue
+        if rec['native'] or rec['type']=='scope' or 'row' not in rec:continue
         candidate=available_overrides[rec['attachmentId']]
         overrides[rec['attachmentId']]={k:candidate[k] for k in ('model','texture','lodModel','lodTexture') if k in candidate}
     for name,value in [('weapon.json',config['weapon']),('catalog.json',{'schemaVersion':1,'parts':catalog}),('mapping.json',mapping),('scene.json',{'schemaVersion':1,'nodes':nodes}),('native_attachments.json',external),('native-profile.json',config['nativeProfile']),('native-visual-rules.json',config['visualRules']),('batches.json',batches),('inline_attachments.json',{}),('native_attachment_overrides.json',overrides)]:write(base/name,value)

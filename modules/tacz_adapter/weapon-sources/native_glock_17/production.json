@@ -359,7 +359,7 @@
     "nativeRig": true,
     "assemblyIcons": true,
     "authoringSource": "native_glock_17",
-  "developmentCategory": "tacz_fork_tarkov",
+    "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:sidearm"
     ],
@@ -527,5 +527,13 @@
     "maxSilhouetteLoss": 0.01,
     "maxTextureMeanError": 0.02,
     "maxTextureChangedFraction": 0.05
-  }
+  },
+  "authoredOptics": [
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_pistol_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_pistol_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_pistol_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_rmr_dot_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_sro_dot_authored"
+  ]
 }

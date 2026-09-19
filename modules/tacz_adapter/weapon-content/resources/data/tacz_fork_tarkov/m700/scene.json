@@ -2,37 +2,37 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "instanceId": "ebb9fc14-58a3-563a-9b8d-19d9a97bc1b5",
       "definitionId": "m700_receiver"
     },
     {
-      "instanceId": "842e973c-21dc-555b-82ef-ee75bfd4101d",
+      "instanceId": "28ef76cc-9bde-5a1d-a28d-44f8e31087e9",
       "definitionId": "m700_barrel",
-      "parentId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "parentId": "ebb9fc14-58a3-563a-9b8d-19d9a97bc1b5",
       "slot": "barrel"
     },
     {
-      "instanceId": "3df5fada-ed52-5c36-a96e-87b354485b6b",
+      "instanceId": "e4037468-c49a-5ce8-ac3c-ac16f0e46298",
       "definitionId": "m700_stock",
-      "parentId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "parentId": "ebb9fc14-58a3-563a-9b8d-19d9a97bc1b5",
       "slot": "stock"
     },
     {
-      "instanceId": "e900ce25-d8e3-55a9-8164-73ea95cc2033",
+      "instanceId": "bb532643-8c28-5f45-a037-feaab4778c6a",
       "definitionId": "m700_bolt",
-      "parentId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "parentId": "ebb9fc14-58a3-563a-9b8d-19d9a97bc1b5",
       "slot": "bolt"
     },
     {
-      "instanceId": "48ad6ee5-3e14-55b2-bd84-6ff03ae21d05",
+      "instanceId": "6737dcff-9e92-5e36-a128-1d5e5bc74801",
       "definitionId": "m700_iron_sights",
-      "parentId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "parentId": "ebb9fc14-58a3-563a-9b8d-19d9a97bc1b5",
       "slot": "iron_sights"
     },
     {
-      "instanceId": "25364e02-a59d-517c-8d3a-6c6b9e8d53c3",
+      "instanceId": "91edb4a4-a3a6-5f3b-919e-faaa09cac601",
       "definitionId": "m700_magazine_standard",
-      "parentId": "ed0b763d-51a0-5d23-9402-cf10fa70c773",
+      "parentId": "ebb9fc14-58a3-563a-9b8d-19d9a97bc1b5",
       "slot": "magazine"
     }
   ]

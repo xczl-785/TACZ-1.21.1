@@ -2,55 +2,55 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "e92e8f22-58bb-5c18-a011-d651b4a6f007",
+      "instanceId": "d1b14da6-7865-5345-bd6c-6fdec849ea9b",
       "definitionId": "sks_tactical_lower"
     },
     {
-      "instanceId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "instanceId": "78cb7a0c-06c5-5425-873d-aacfc3ab6169",
       "definitionId": "sks_tactical_handguard",
-      "parentId": "e92e8f22-58bb-5c18-a011-d651b4a6f007",
+      "parentId": "d1b14da6-7865-5345-bd6c-6fdec849ea9b",
       "slot": "handguard"
     },
     {
-      "instanceId": "47673aaa-8931-50dd-9132-946dcdc68ec3",
+      "instanceId": "54e4b842-f3c2-55a9-abe6-5f0849b31351",
       "definitionId": "sks_tactical_barrel",
-      "parentId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "parentId": "78cb7a0c-06c5-5425-873d-aacfc3ab6169",
       "slot": "barrel"
     },
     {
-      "instanceId": "f1b066b0-ca4a-51e8-9435-ebbce892a60b",
+      "instanceId": "f2b6c193-0740-5756-8f0b-f6b73456cde1",
       "definitionId": "sks_tactical_bolt",
-      "parentId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "parentId": "78cb7a0c-06c5-5425-873d-aacfc3ab6169",
       "slot": "bolt"
     },
     {
-      "instanceId": "f4f5e381-8c97-5c62-b4c3-89935f553700",
+      "instanceId": "d9cf93cc-08db-5d5e-b105-3922f5e4d229",
       "definitionId": "sks_tactical_front_sight",
-      "parentId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "parentId": "78cb7a0c-06c5-5425-873d-aacfc3ab6169",
       "slot": "front_sight"
     },
     {
-      "instanceId": "37d0e0fd-0661-5a41-a45f-c4745f3d6c7e",
+      "instanceId": "535cf3d2-207f-5cd9-8d37-15925151b3e5",
       "definitionId": "sks_tactical_rear_sight",
-      "parentId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "parentId": "78cb7a0c-06c5-5425-873d-aacfc3ab6169",
       "slot": "rear_sight"
     },
     {
-      "instanceId": "c7157ae7-75ab-545d-ada0-e627ffd05315",
+      "instanceId": "5462ab20-396b-50c7-a440-6ac40c19dd55",
       "definitionId": "sks_tactical_mount",
-      "parentId": "493cf4b5-6117-5694-b4fc-f9d0b944534b",
+      "parentId": "78cb7a0c-06c5-5425-873d-aacfc3ab6169",
       "slot": "mount"
     },
     {
-      "instanceId": "1bfc003e-d9fb-56e1-8cee-2f514b313b51",
+      "instanceId": "9c0171a2-6de0-5050-b236-820e57ebb0d3",
       "definitionId": "sks_tactical_stock",
-      "parentId": "e92e8f22-58bb-5c18-a011-d651b4a6f007",
+      "parentId": "d1b14da6-7865-5345-bd6c-6fdec849ea9b",
       "slot": "stock"
     },
     {
-      "instanceId": "22191179-974f-5215-a231-f909e26226d8",
+      "instanceId": "d51d8fe2-f517-522e-ad90-92a11aa60587",
       "definitionId": "sks_tactical_magazine_standard",
-      "parentId": "e92e8f22-58bb-5c18-a011-d651b4a6f007",
+      "parentId": "d1b14da6-7865-5345-bd6c-6fdec849ea9b",
       "slot": "magazine"
     }
   ]

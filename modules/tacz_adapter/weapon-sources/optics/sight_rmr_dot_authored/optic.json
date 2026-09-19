@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_rmr_dot_authored",
+  "sourceAttachment": "tacz:sight_rmr_dot",
+  "names": {
+    "zh_cn": "RMR迷你红点瞄具  · 光学制作",
+    "en_us": "RMR Mini Red Dot · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_rmr_dot.json": "bf01921d7cf7bfb2f43dd59829aad2d6b34c8eaf957bd37a292a156484ea896a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_rmr_dot_display.json": "6dfa97b81b609775f939d6122999ee21b3b81e3f126833b6ad29e76d2ccc6ce9",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_rmr_dot_geo.json": "992fc0b7fbbe490678863bee1a00797a42d0421d12d1d3fee897449093bd1588",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_rmr_dot.png": "df4e5af92be29cc9b4c9162faefd2b1e7e0cb6aa04f59e517a5f144858b9e5e9",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_rmr_dot_data.json": "699afc13163b8353bbbd0e5cbe37f6028e4995ec704c34a780d3a03b7647a997",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_rmr_dot.json": "dfa31443e6de941469dd8161df0ad85986594486190d537e844bc8ae3c7ec26b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_rmr_dot.png": "8d548fcbe17f999cb82b3c1b4341d0c17ef7a84535640c1fe6f6d7c5ed2e3d88",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_rmr_dot.png": "1038e00d4cea15b602e91823ea995942ef6c49564a6834d478a34473a9562f92",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_rmr_dot_n.png": "2b3784f104fa4e55b91ba44696091e2dbaf33c46f2cd831e25c928750860c028",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_rmr_dot_s.png": "1c400ea276cca511ada68bf9c1bcd7725deaa57d4290099501ed32027c43d1f2"
+  }
+}

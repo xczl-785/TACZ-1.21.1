@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_acro_pistol_authored",
+  "sourceAttachment": "tacz:sight_acro_pistol",
+  "names": {
+    "zh_cn": "§9ACRO P-1 反射式瞄具 · 光学制作",
+    "en_us": "§9Aimpoint ACRO P-1 Sight · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_acro_pistol.json": "3b71d4ba0473a18ac45446766606c5137efc9f4024e8933f6348183d11e2c75b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_acro_pistol_display.json": "1f85b38c19b171494f0dc2cfe235354f590d62a2dfeadd3f9454cf027699523d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_acro_pistol_geo.json": "e7e15aea38b9fdab4d7ed77a70231a5df40f8bb3284986873979eea37d9aa6c5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_acro_pistol.png": "7004666ece401ee622e572f66e140b5ccff361c42a8a92eea62f18c9d56ec24b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_acro_pistol_data.json": "bf3c09dca76d5c7ee32cc0aecf3bf4db472dc5e5fc9457f4010898062a789475",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_acro_pistol.json": "4e27f0f876cf7da8a07d7458dd34b2db5eefcabe9bd358586b2589c5f5ec36b8",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_acro_pistol.png": "8312e888f313c0ecf90730555e05971c5a807ff9ac5481fa3602e4fa48d4cd1f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_acro_pistol.png": "6e78fc2f6b6e21ce832169d9601677faec140982febb50b77a2a6c250fc99e77",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_acro_pistol_s.png": "63d7d784cae755a01e375388e0c47049179419608f3aca964bbf283b12b864c3"
+  }
+}

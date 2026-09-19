@@ -1,0 +1,27 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/scope_hamr_authored",
+  "model": "tacz_fork_tarkov:attachment/scope_hamr_authored",
+  "texture": "tacz_fork_tarkov:attachment/scope_hamr_authored",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/scope_hamr_authored",
+    "texture": "tacz_fork_tarkov:attachment/lod/scope_hamr_authored"
+  },
+  "zoom": [
+    3.25,
+    1.25
+  ],
+  "views": [
+    2,
+    1
+  ],
+  "views_fov": [
+    50.0,
+    60.0
+  ],
+  "scope": true,
+  "sight": true,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_c",
+    "uninstall": "tacz:attachments/scope_general_c"
+  }
+}

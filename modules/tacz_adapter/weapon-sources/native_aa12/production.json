@@ -678,7 +678,7 @@
     "nativeRig": true,
     "assemblyIcons": true,
     "authoringSource": "native_aa12",
-  "developmentCategory": "tacz_fork_tarkov",
+    "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:primary_weapon_1",
       "tactical_inventory:primary_weapon_2"
@@ -840,5 +840,22 @@
       "source": "modules/tacz_adapter/weapon-sources/native_attachments/supplemental",
       "catalog": "data/tacz_fork_tarkov/native_attachments/supplemental.json"
     }
+  ],
+  "authoredOptics": [
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored",
+    "modules/tacz_adapter/weapon-sources/optics/elcan_sample",
+    "modules/tacz_adapter/weapon-sources/optics/scope_hamr_authored",
+    "modules/tacz_adapter/weapon-sources/optics/scope_qmk152_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_552_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_rifle_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_coyote_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_exp3_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_okp7_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_pk06_rifle_authored",
+    "modules/tacz_adapter/weapon-sources/optics/sight_srs_02_authored",
+    "modules/tacz_adapter/weapon-sources/optics/t2_sample",
+    "modules/tacz_adapter/weapon-sources/optics/sight_uh1_authored"
   ]
 }

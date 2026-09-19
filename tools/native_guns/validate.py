@@ -110,7 +110,7 @@ def validate(resources=p.RES,weapon=None):
         assert set(model['slots'])=={s['id'] for s in catalog[d]['slots']}
         texture=library[bindings[d]['defaultMaterial']]['texture'];assert (resources/'assets'/texture.replace(':','/')).is_file()
         assert (assets/weapon['partIconDirectory']/f'{d}.png').is_file()
-        if not mapping[d].startswith('tacz:'):
+        if mapping[d] not in external:
             item=mapping[d].split(':')[1];assert (resources/f'data/{ns}/item_foundation/items/{item}.json').is_file();assert (assets/f'models/item/{item}.json').is_file()
     assert p.ex.read(assets/f'models/item/{gun}.json')['parent']=='builtin/entity'
     overrides=p.ex.read(base/'native_attachment_overrides.json')

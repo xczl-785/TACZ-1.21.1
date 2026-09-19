@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_p90_authored",
+  "sourceAttachment": "tacz:sight_p90",
+  "names": {
+    "zh_cn": "sight_p90 · 光学制作",
+    "en_us": "sight_p90 · Authored optic"
+  },
+  "exteriorRoots": [
+    "default_sight"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Source LOD incomplete: explicit full model and matching texture fallback"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_p90.json": "363455b0c3c976a100cb908c8c85209a39a67205949f586a89e8c975ed709e37",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_p90_display.json": "b4f3531fb2b62ebf95ed9d79f676bf28c13beecda2f7e58d491b9fc586753027",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_p90_geo.json": "a491fa13afe078490c979391e586059eed548a564267422c75159e5655678c4e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_p90.png": "02975b3078d2c766ac97bef00828c13599c2fe04b5733930b359b21729f73903",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_p90_data.json": "c9a431dd9e82ddecd7edce0e19da774d6f0c03ef371fa37d7243c6e0a736cd22",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_p90.png": "0ca6cc997f9738ec3c36ce992d4e654246e0462bd9a80df5b681c6c7ad6ba519",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_p90_n.png": "33148d89f6cd7792675b786c85d27838a1432e250de6c2ab1c6373268e0c0d81",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_p90_s.png": "322a2cb130f7e4914ae59136b3438a1e2d014264025b1b335bca150a032eb220"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/scope_retro_2x_authored",
+  "model": "tacz_fork_tarkov:attachment/scope_retro_2x_authored",
+  "texture": "tacz_fork_tarkov:attachment/scope_retro_2x_authored",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/scope_retro_2x_authored",
+    "texture": "tacz_fork_tarkov:attachment/lod/scope_retro_2x_authored"
+  },
+  "zoom": [
+    3.25
+  ],
+  "scope": true,
+  "fov": 45.0,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_d",
+    "uninstall": "tacz:attachments/scope_general_d"
+  }
+}

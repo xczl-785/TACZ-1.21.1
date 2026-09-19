@@ -745,7 +745,7 @@
     "nativeRig": true,
     "assemblyIcons": true,
     "authoringSource": "native_m16a1",
-  "developmentCategory": "tacz_fork_tarkov",
+    "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:primary_weapon_1",
       "tactical_inventory:primary_weapon_2"
@@ -966,5 +966,8 @@
     "maxSilhouetteLoss": 0.01,
     "maxTextureMeanError": 0.02,
     "maxTextureChangedFraction": 0.05
-  }
+  },
+  "authoredOptics": [
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored"
+  ]
 }

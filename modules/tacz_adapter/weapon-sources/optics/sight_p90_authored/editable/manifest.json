@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "sight_p90_authored",
+      "group": "sight_p90_authored",
+      "prefix": "native_attachment_sight_p90_authored",
+      "cubes": 25,
+      "sourceCubeIndices": {
+        "default_sight": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "division": [],
+        "division_illuminated": [
+          0,
+          1
+        ],
+        "ocular": [
+          0
+        ],
+        "scope_view": []
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        -0.0625,
+        0.65728,
+        -12.06135
+      ],
+      "uvSize": [
+        32,
+        32
+      ],
+      "model": "components/sight_p90_authored/model.bbmodel",
+      "texture": "components/sight_p90_authored/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_p90_geo.json",
+      "sourceSha256": "a491fa13afe078490c979391e586059eed548a564267422c75159e5655678c4e",
+      "sourceTextureSha256": "02975b3078d2c766ac97bef00828c13599c2fe04b5733930b359b21729f73903"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "slot": "tacz:attachment/slot/sight_coyote",
+  "model": "tacz:attachment/sight_coyote_geo",
+  "texture": "tacz:attachment/uv/sight_coyote",
+  "lod": {
+    "model": "tacz:attachment/lod/sight_coyote",
+    "texture": "tacz:attachment/lod/sight_coyote"
+  },
+  "zoom": [
+    1.5
+  ],
+  "scope": false,
+  "sight": true,
+  "fov": 40.0,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_c",
+    "uninstall": "tacz:attachments/scope_general_c"
+  }
+}

@@ -37,5 +37,20 @@
   "tacz_sight_pk06_rifle": "tacz:sight_pk06_rifle",
   "tacz_sight_srs_02": "tacz:sight_srs_02",
   "tacz_sight_t2": "tacz:sight_t2",
-  "tacz_sight_uh1": "tacz:sight_uh1"
+  "tacz_sight_uh1": "tacz:sight_uh1",
+  "tacz_fork_tarkov_scope_acog_ta31_authored": "tacz_fork_tarkov:scope_acog_ta31_authored",
+  "tacz_fork_tarkov_scope_elcan_sample": "tacz_fork_tarkov:scope_elcan_sample",
+  "tacz_fork_tarkov_scope_hamr_authored": "tacz_fork_tarkov:scope_hamr_authored",
+  "tacz_fork_tarkov_scope_qmk152_authored": "tacz_fork_tarkov:scope_qmk152_authored",
+  "tacz_fork_tarkov_sight_552_authored": "tacz_fork_tarkov:sight_552_authored",
+  "tacz_fork_tarkov_sight_acro_rifle_authored": "tacz_fork_tarkov:sight_acro_rifle_authored",
+  "tacz_fork_tarkov_sight_coyote_authored": "tacz_fork_tarkov:sight_coyote_authored",
+  "tacz_fork_tarkov_sight_deltapoint_rifle_authored": "tacz_fork_tarkov:sight_deltapoint_rifle_authored",
+  "tacz_fork_tarkov_sight_exp3_authored": "tacz_fork_tarkov:sight_exp3_authored",
+  "tacz_fork_tarkov_sight_fastfire_rifle_authored": "tacz_fork_tarkov:sight_fastfire_rifle_authored",
+  "tacz_fork_tarkov_sight_okp7_authored": "tacz_fork_tarkov:sight_okp7_authored",
+  "tacz_fork_tarkov_sight_pk06_rifle_authored": "tacz_fork_tarkov:sight_pk06_rifle_authored",
+  "tacz_fork_tarkov_sight_srs_02_authored": "tacz_fork_tarkov:sight_srs_02_authored",
+  "tacz_fork_tarkov_sight_t2_sample": "tacz_fork_tarkov:sight_t2_sample",
+  "tacz_fork_tarkov_sight_uh1_authored": "tacz_fork_tarkov:sight_uh1_authored"
 }

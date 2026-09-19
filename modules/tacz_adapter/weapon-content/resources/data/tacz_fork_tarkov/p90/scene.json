@@ -2,43 +2,43 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "instanceId": "321dc7e8-3a1b-5ef7-9f2a-49cca2664086",
       "definitionId": "p90_body"
     },
     {
-      "instanceId": "d37d1fb6-2643-5257-b44f-77a3c6fc0121",
+      "instanceId": "05c14ff6-b1ca-58a3-90b3-ab2d33503b19",
       "definitionId": "p90_builtin_sight",
-      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "parentId": "321dc7e8-3a1b-5ef7-9f2a-49cca2664086",
       "slot": "iron_sights"
     },
     {
-      "instanceId": "86aa7346-49b7-59db-8f12-c612ba19fc78",
+      "instanceId": "6ec4252a-5f26-5871-a57e-7ad717a3d17c",
       "definitionId": "p90_barrel",
-      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "parentId": "321dc7e8-3a1b-5ef7-9f2a-49cca2664086",
       "slot": "barrel"
     },
     {
-      "instanceId": "16002676-775e-593c-a12d-05675ce722d8",
+      "instanceId": "82cea94f-51c7-5cb5-b7f3-c170e52ed236",
       "definitionId": "p90_muzzle",
-      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "parentId": "321dc7e8-3a1b-5ef7-9f2a-49cca2664086",
       "slot": "muzzle"
     },
     {
-      "instanceId": "d3d28f75-3c12-51ff-9f18-c58f44236ffc",
+      "instanceId": "b1c051c0-458a-53b7-9467-da68ccb00f9c",
       "definitionId": "p90_magazine_standard",
-      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "parentId": "321dc7e8-3a1b-5ef7-9f2a-49cca2664086",
       "slot": "magazine"
     },
     {
-      "instanceId": "769267e1-94be-5fee-8815-519fb23857a0",
+      "instanceId": "3648888a-a374-5b54-a1bd-8e704ccc9cfc",
       "definitionId": "p90_mag_release",
-      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "parentId": "321dc7e8-3a1b-5ef7-9f2a-49cca2664086",
       "slot": "mag_release"
     },
     {
-      "instanceId": "b9cbbdce-7064-5345-a9e2-8b8f04ac5bcf",
+      "instanceId": "22497b31-9118-5ba6-8f6e-239750b2c479",
       "definitionId": "p90_charging_handle",
-      "parentId": "53489058-0798-5d91-8e8a-f489d4e66924",
+      "parentId": "321dc7e8-3a1b-5ef7-9f2a-49cca2664086",
       "slot": "charging_handle"
     }
   ]

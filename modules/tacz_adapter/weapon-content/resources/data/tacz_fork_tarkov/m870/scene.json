@@ -2,43 +2,43 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "instanceId": "0ed74df3-e88c-5465-8ba2-4349c6db2cfd",
       "definitionId": "m870_receiver"
     },
     {
-      "instanceId": "986ea64c-f750-5c76-bb78-65543cdaa93f",
+      "instanceId": "dc70723b-c293-513c-9aed-1ff7220b7929",
       "definitionId": "m870_barrel",
-      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "parentId": "0ed74df3-e88c-5465-8ba2-4349c6db2cfd",
       "slot": "barrel"
     },
     {
-      "instanceId": "7e773c2b-dd0e-5ec1-90d4-02cd3f29c4e3",
+      "instanceId": "f3027718-2180-5644-ae37-b5add0621561",
       "definitionId": "m870_tube",
-      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "parentId": "0ed74df3-e88c-5465-8ba2-4349c6db2cfd",
       "slot": "tube"
     },
     {
-      "instanceId": "6a18bc64-a29e-5a99-a5f5-dc8f75e333ae",
+      "instanceId": "c00798fb-cbb3-50eb-ab2e-565b92382907",
       "definitionId": "m870_iron_sights",
-      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "parentId": "0ed74df3-e88c-5465-8ba2-4349c6db2cfd",
       "slot": "iron_sights"
     },
     {
-      "instanceId": "656ab609-06f0-5e9a-bd12-7d230a80a47f",
+      "instanceId": "cd388695-2b79-541d-93e3-ebbeeda5dd6a",
       "definitionId": "m870_pump",
-      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "parentId": "0ed74df3-e88c-5465-8ba2-4349c6db2cfd",
       "slot": "pump"
     },
     {
-      "instanceId": "e7ea7582-d5e4-597f-a46e-26097be76ad1",
+      "instanceId": "5eb99659-2b2b-5be1-8248-6fffa4870f04",
       "definitionId": "m870_bolt",
-      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "parentId": "0ed74df3-e88c-5465-8ba2-4349c6db2cfd",
       "slot": "bolt"
     },
     {
-      "instanceId": "1c4217ed-53be-5b1c-ade5-869ddd7ecbbf",
+      "instanceId": "5931c75e-7b8c-571a-a19e-09a0e4861917",
       "definitionId": "m870_stock",
-      "parentId": "dec6d8bf-4465-5b71-8dff-9ff7536eac59",
+      "parentId": "0ed74df3-e88c-5465-8ba2-4349c6db2cfd",
       "slot": "stock"
     }
   ]

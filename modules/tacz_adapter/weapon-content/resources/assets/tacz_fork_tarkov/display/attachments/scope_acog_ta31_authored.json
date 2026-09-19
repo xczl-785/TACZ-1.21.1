@@ -1,0 +1,18 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/scope_acog_ta31_authored",
+  "model": "tacz_fork_tarkov:attachment/scope_acog_ta31_authored",
+  "texture": "tacz_fork_tarkov:attachment/scope_acog_ta31_authored",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/scope_acog_ta31_authored",
+    "texture": "tacz_fork_tarkov:attachment/lod/scope_acog_ta31_authored"
+  },
+  "zoom": [
+    2.5
+  ],
+  "scope": true,
+  "fov": 45.0,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_b",
+    "uninstall": "tacz:attachments/scope_general_b"
+  }
+}

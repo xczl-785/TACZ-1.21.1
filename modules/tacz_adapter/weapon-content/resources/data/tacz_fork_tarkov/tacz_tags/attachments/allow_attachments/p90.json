@@ -28,5 +28,22 @@
   "tacz:sight_rmr_dot",
   "tacz:sight_sro_dot",
   "tacz:sight_t2",
-  "tacz:sight_uh1"
+  "tacz:sight_uh1",
+  "tacz_fork_tarkov:scope_acog_ta31_authored",
+  "tacz_fork_tarkov:scope_contender_authored",
+  "tacz_fork_tarkov:scope_elcan_sample",
+  "tacz_fork_tarkov:scope_lpvo_1_6_authored",
+  "tacz_fork_tarkov:scope_standard_8x_authored",
+  "tacz_fork_tarkov:sight_552_authored",
+  "tacz_fork_tarkov:sight_acro_pistol_authored",
+  "tacz_fork_tarkov:sight_coyote_authored",
+  "tacz_fork_tarkov:sight_deltapoint_pistol_authored",
+  "tacz_fork_tarkov:sight_exp3_authored",
+  "tacz_fork_tarkov:sight_fastfire_pistol_authored",
+  "tacz_fork_tarkov:sight_p90_authored",
+  "tacz_fork_tarkov:sight_pk06_pistol_authored",
+  "tacz_fork_tarkov:sight_rmr_dot_authored",
+  "tacz_fork_tarkov:sight_sro_dot_authored",
+  "tacz_fork_tarkov:sight_t2_sample",
+  "tacz_fork_tarkov:sight_uh1_authored"
 ]

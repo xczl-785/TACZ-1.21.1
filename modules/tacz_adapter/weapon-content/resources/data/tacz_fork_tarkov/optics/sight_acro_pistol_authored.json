@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_acro_pistol_authored",
+  "cubes": 74,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored/data.json": "3025117bf44fbeaef3e7a6810803e5ba38233ce0fb10789340acfb999946017b",
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored/display.json": "b1c950943028eb19088a918e21b8111c651058366ede841b869e6f6b71312864",
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored/editable/components/sight_acro_pistol_authored/model.bbmodel": "6f2fa214377fae655d5f836eba4e62ce542291e15e3fe00c29a6d383a6044c87",
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored/editable/components/sight_acro_pistol_authored/texture.png": "7004666ece401ee622e572f66e140b5ccff361c42a8a92eea62f18c9d56ec24b",
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored/editable/components/sight_acro_pistol_authored/texture_s.png": "63d7d784cae755a01e375388e0c47049179419608f3aca964bbf283b12b864c3",
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored/editable/manifest.json": "cf25cdbc8b673ed233b931d523bbd6c4d9ca9588ebd2556a0d88c5206c5fe446",
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored/lod/model.json": "13a7e6cbb871e260e4cebebfed78bd36364e30ef8e43fa44ecf34674128cdcfb",
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored/lod/texture.png": "8312e888f313c0ecf90730555e05971c5a807ff9ac5481fa3602e4fa48d4cd1f",
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored/optic.json": "df0e16a1818a279f3b978966447b8cdc478861e053cd102546f357a24f71a163",
+    "modules/tacz_adapter/weapon-sources/optics/sight_acro_pistol_authored/slot.png": "6e78fc2f6b6e21ce832169d9601677faec140982febb50b77a2a6c250fc99e77"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

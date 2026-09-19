@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_contender_authored",
+  "sourceAttachment": "tacz:scope_contender",
+  "names": {
+    "zh_cn": "§9竞技者 4x 光学瞄具 · 光学制作",
+    "en_us": "§9Contender 4x Scope · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body",
+    "ocular_ring"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Source LOD incomplete: explicit full model and matching texture fallback"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/scope_contender.json": "b49760707e15dba00b9eae1ad42ca6ceeb4b835fc2f0672b259102089a8b24c0",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/scope_contender_display.json": "7e7c62d5a7c4fd80a521de6933e5d86d0d22d4b040b135dad59889251bd49453",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_contender_geo.json": "97a17f03ff3fa61aacd5dd142a1557a691d60642f07c9c82a979ba2c72699b0d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_contender.png": "d2ba121af9c3b09397314412530c442dc10121ce433dda0b437c740dc806e5ef",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/scope_contender_data.json": "0d96959d1ebf963f694ff6703a931400dd773a24a9ed69b45e10f026db1fd0d4",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/scope_contender_slot.png": "8d9ba1e7ce2ac9a4eb7b2479cbfaaeab1b8e819e8cda79c27513a78a1410256a",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_contender_n.png": "95779cbdd04ddaf0973d7e0436d928730c3a4cd2b5a3e876262feed835f32d9e",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_contender_s.png": "86a0bca7b770e1ae4c3eb4f551ad7cb01184fb919a80a5f085d2e8857f37d35b"
+  }
+}

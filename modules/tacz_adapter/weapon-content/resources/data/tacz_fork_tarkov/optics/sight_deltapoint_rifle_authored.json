@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_deltapoint_rifle_authored",
+  "cubes": 59,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored/data.json": "17764329f4cef71572539bbdcead72858393d25169fd71395d755bd83138cd8d",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored/display.json": "9681afaa037afc0657c7506b71fa2070c84b2d6a2d24754ae020785dcb2cb74f",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored/editable/components/sight_deltapoint_rifle_authored/model.bbmodel": "3770527ed17cae9655d69237a25b4d9916b346a1b09240f7673d128bf57d39c0",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored/editable/components/sight_deltapoint_rifle_authored/texture.png": "0ca23e09b61f08a5496ecf524e6e61c64bca29288010c27c746d83e52e7fc836",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored/editable/components/sight_deltapoint_rifle_authored/texture_s.png": "bfcea3a40d29911d71bc039e8365c174c436c73762e4724e9edacc18844897f7",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored/editable/manifest.json": "0ce3c880c852c633b7eb064483a6d12b6f114408b5f6990bfeb2770a87855619",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored/lod/model.json": "a87555b82806745a2f5e210eca094eab03abd9ce0d2b24780d18263605d6fc78",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored/lod/texture.png": "84d9c4dae605da8bd87e1dcf23a1cc8335347ecd4bdeaa210e02c8631f019d5f",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored/optic.json": "0c54d8f2406c00dfa8b8b616f96797ff3f184e676f7cf226616ae7d1eeec4a1c",
+    "modules/tacz_adapter/weapon-sources/optics/sight_deltapoint_rifle_authored/slot.png": "39b59572e81a963ea5b786cebe848bcb1826e8b9bdb23c1ace9f7584baf29eab"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

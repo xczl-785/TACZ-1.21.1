@@ -1,0 +1,48 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/scope_mk5hd_authored",
+  "model": "tacz_fork_tarkov:attachment/scope_mk5hd_authored",
+  "texture": "tacz_fork_tarkov:attachment/scope_mk5hd_authored",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/scope_mk5hd_authored",
+    "texture": "tacz_fork_tarkov:attachment/lod/scope_mk5hd_authored"
+  },
+  "zoom": [
+    5,
+    25,
+    1.25
+  ],
+  "views": [
+    2,
+    2,
+    1
+  ],
+  "views_fov": [
+    27.0,
+    10.0,
+    60.0
+  ],
+  "text_show": {
+    "ammo_count_text": {
+      "scale": 0.09375,
+      "align": "left",
+      "shadow": false,
+      "color": "#00ffff",
+      "light": 15,
+      "text": "%ammo_count%"
+    },
+    "custom_text_ammo": {
+      "scale": 0.0625,
+      "align": "center",
+      "shadow": false,
+      "color": "#ffffff",
+      "light": 15,
+      "text": "AMMO"
+    }
+  },
+  "scope": true,
+  "sight": true,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_c",
+    "uninstall": "tacz:attachments/scope_general_c"
+  }
+}

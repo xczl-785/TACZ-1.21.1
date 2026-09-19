@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_vudu_authored",
+  "cubes": 259,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored/data.json": "abdadd7e3ec3d08c4d256ec76eb61866662e1245bc0d9cdf08a24383cdd1dcd0",
+    "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored/display.json": "4ee1bfcd1f960879a11dfbd4bb081a8b9c35b85013d73ffc563c2358c10b38a9",
+    "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored/editable/components/scope_vudu_authored/model.bbmodel": "f2929cf630d497ffd47f8db70d5f73f9fb373b783b6fc34f8ed64ec901e5c6d4",
+    "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored/editable/components/scope_vudu_authored/texture.png": "1b44475d79e8110737b7fd4046107a0aa932ef17e12dff811ede0d62f018f7e5",
+    "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored/editable/components/scope_vudu_authored/texture_s.png": "a40542cdd188d65bec4b26a9b2ee3cde7e571e9f7cf66b4a9770205fbdc0622b",
+    "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored/editable/manifest.json": "01b6d358032e0b1f03c5364819ba049d917bd9dd65e8baf8847fcc65b0c7daf2",
+    "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored/lod/model.json": "3f27a6006b3c171320cff68a189f665f26bbc9d814b6fa30c85b44d616aa2bfd",
+    "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored/lod/texture.png": "66a05f6f29007b2153d4e59ee58dfe588ab57f0d4bd8c943f24f3452d928eff6",
+    "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored/optic.json": "3c4eac31151fb890c45672fe9b9c854d906fb171ef71596b41b36484db3c1fad",
+    "modules/tacz_adapter/weapon-sources/optics/scope_vudu_authored/slot.png": "77ad66acf3910ef2b2c73041e0e7da51934b42ed01a5f9234cfc90c5c5467853"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

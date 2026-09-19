@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_deltapoint_rifle_authored",
+  "sourceAttachment": "tacz:sight_deltapoint_rifle",
+  "names": {
+    "zh_cn": "DeltaPoint 增高 反射式瞄具 · 光学制作",
+    "en_us": "DeltaPoint Sight Rised · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_deltapoint_rifle.json": "f998ab4ada327591a53fc940d93dd62fca66229d29741f2b9c1fe84768c4b438",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_deltapoint_rifle_display.json": "78a25fb6b713dd32b075d572d317639f96487addd773c67c07ed3b63b0f14471",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_deltapoint_rifle_geo.json": "83c9c90e9a7e46e8d859ac6c35b7fd4e9e5ea934a9748aeea8ad59ccdbebcd83",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_deltapoint_rifle.png": "0ca23e09b61f08a5496ecf524e6e61c64bca29288010c27c746d83e52e7fc836",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_deltapoint_rifle_data.json": "eb2a3cad140872c18071d98a94f829a741c44a247bde75a331ba0413459ddb10",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_deltapoint_rifle.json": "f57f116d499a0307c5b8173d075a3b7e10123664d13fb0f260a4d6aa8523dc3c",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_deltapoint_rifle.png": "84d9c4dae605da8bd87e1dcf23a1cc8335347ecd4bdeaa210e02c8631f019d5f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_deltapoint_rifle.png": "39b59572e81a963ea5b786cebe848bcb1826e8b9bdb23c1ace9f7584baf29eab",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_deltapoint_rifle_s.png": "bfcea3a40d29911d71bc039e8365c174c436c73762e4724e9edacc18844897f7"
+  }
+}

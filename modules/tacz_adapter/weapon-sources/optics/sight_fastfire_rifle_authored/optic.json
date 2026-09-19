@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_fastfire_rifle_authored",
+  "sourceAttachment": "tacz:sight_fastfire_rifle",
+  "names": {
+    "zh_cn": "FastFire 增高 射式瞄具 · 光学制作",
+    "en_us": "FastFire Sight Rised · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_fastfire_rifle.json": "6d630b44edc5575503c83745d2f1de579420853046902a21bdf3e7e378a12316",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_fastfire_rifle_display.json": "821cd0aac0305ad66fa3b241f4dfb4f27f1d2439936572242cd1dc8583b4e000",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_fastfire_rifle_geo.json": "6347a5edad397bff3a23d5abfebc55a7dfcd8a1922033be5a0abd996db60dd0d",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_fastfire_rifle.png": "8996d1912309a28da3ca6aee8665585ae1bd5c1c7af4ae4e772106c6453f101b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_fastfire_rifle_data.json": "eb2a3cad140872c18071d98a94f829a741c44a247bde75a331ba0413459ddb10",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_fastfire_rifle.json": "b4b1613bd73eac3f5866003816e177e081a85139d1269906f26d7871d71745a8",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_fastfire_rifle.png": "535d6291fd3db117a226544b601eb0790eca5d4709db583d1bcfcd3387d46241",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_fastfire_rifle.png": "6a1a38b55806459c60946a2995cb2c33de1a590f83cea1518fef1d41b8a171aa",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_fastfire_rifle_s.png": "b717653926bee44a9c706cff429e88b717c4d2b521fe62824b4cde58e3d0da79"
+  }
+}

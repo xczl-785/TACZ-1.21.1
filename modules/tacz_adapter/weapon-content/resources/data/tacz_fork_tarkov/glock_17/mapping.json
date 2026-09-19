@@ -18,5 +18,11 @@
   "tacz_sight_fastfire_pistol": "tacz:sight_fastfire_pistol",
   "tacz_sight_pk06_pistol": "tacz:sight_pk06_pistol",
   "tacz_sight_rmr_dot": "tacz:sight_rmr_dot",
-  "tacz_sight_sro_dot": "tacz:sight_sro_dot"
+  "tacz_sight_sro_dot": "tacz:sight_sro_dot",
+  "tacz_fork_tarkov_sight_acro_pistol_authored": "tacz_fork_tarkov:sight_acro_pistol_authored",
+  "tacz_fork_tarkov_sight_deltapoint_pistol_authored": "tacz_fork_tarkov:sight_deltapoint_pistol_authored",
+  "tacz_fork_tarkov_sight_fastfire_pistol_authored": "tacz_fork_tarkov:sight_fastfire_pistol_authored",
+  "tacz_fork_tarkov_sight_pk06_pistol_authored": "tacz_fork_tarkov:sight_pk06_pistol_authored",
+  "tacz_fork_tarkov_sight_rmr_dot_authored": "tacz_fork_tarkov:sight_rmr_dot_authored",
+  "tacz_fork_tarkov_sight_sro_dot_authored": "tacz_fork_tarkov:sight_sro_dot_authored"
 }

@@ -2,37 +2,37 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "f52c9ec8-ed4d-5e5c-b3ba-fd9854994a1d",
+      "instanceId": "4588f1dd-66ee-5878-a56d-d206ceeca3dc",
       "definitionId": "glock_frame"
     },
     {
-      "instanceId": "d5c9a3f6-ce2c-553a-aa95-8652b7022641",
+      "instanceId": "6e011b4d-1432-58c0-b024-6cdf48ff174d",
       "definitionId": "glock_slide",
-      "parentId": "f52c9ec8-ed4d-5e5c-b3ba-fd9854994a1d",
+      "parentId": "4588f1dd-66ee-5878-a56d-d206ceeca3dc",
       "slot": "slide"
     },
     {
-      "instanceId": "20c8f4cc-bef4-54e8-beb5-f4c65cd47c8a",
+      "instanceId": "4829132b-f361-5bde-8081-6b1a28415e47",
       "definitionId": "glock_front_sight",
-      "parentId": "d5c9a3f6-ce2c-553a-aa95-8652b7022641",
+      "parentId": "6e011b4d-1432-58c0-b024-6cdf48ff174d",
       "slot": "front_sight"
     },
     {
-      "instanceId": "4a68d94e-c00b-5116-9e68-a54987ea6aac",
+      "instanceId": "18ea4fd5-f70b-5787-a587-20fcbdc00c9e",
       "definitionId": "glock_rear_sight",
-      "parentId": "d5c9a3f6-ce2c-553a-aa95-8652b7022641",
+      "parentId": "6e011b4d-1432-58c0-b024-6cdf48ff174d",
       "slot": "rear_sight"
     },
     {
-      "instanceId": "9806ec23-c273-5ad1-933a-858b83207491",
+      "instanceId": "fa1a1386-5afb-5f60-94aa-a9becda9a1fc",
       "definitionId": "glock_barrel",
-      "parentId": "f52c9ec8-ed4d-5e5c-b3ba-fd9854994a1d",
+      "parentId": "4588f1dd-66ee-5878-a56d-d206ceeca3dc",
       "slot": "barrel"
     },
     {
-      "instanceId": "95fcb69d-15c0-5f55-b819-5c604f7535e6",
+      "instanceId": "4c807b7e-b840-56bd-aad4-ab7ce3f3c84b",
       "definitionId": "glock_magazine_standard",
-      "parentId": "f52c9ec8-ed4d-5e5c-b3ba-fd9854994a1d",
+      "parentId": "4588f1dd-66ee-5878-a56d-d206ceeca3dc",
       "slot": "magazine"
     }
   ]

@@ -1,0 +1,19 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/sight_exp3_authored",
+  "model": "tacz_fork_tarkov:attachment/sight_exp3_authored",
+  "texture": "tacz_fork_tarkov:attachment/sight_exp3_authored",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/sight_exp3_authored",
+    "texture": "tacz_fork_tarkov:attachment/lod/sight_exp3_authored"
+  },
+  "zoom": [
+    2
+  ],
+  "scope": false,
+  "sight": true,
+  "fov": 35.0,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_c",
+    "uninstall": "tacz:attachments/scope_general_c"
+  }
+}

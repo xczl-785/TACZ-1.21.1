@@ -985,7 +985,7 @@
           "name": "fore_sight",
           "parent": "fore_sights",
           "pivot": [
-            -0.00001,
+            -1e-05,
             11.2396,
             -18.55112
           ]
@@ -1081,7 +1081,7 @@
           "name": "fore_sight2",
           "parent": "fore_sights2",
           "pivot": [
-            -0.00001,
+            -1e-05,
             11.2396,
             -18.55112
           ],
@@ -1728,7 +1728,7 @@
           "name": "assembly_lod_derived_fore_sight2",
           "parent": "fore_sight2",
           "pivot": [
-            -0.00001,
+            -1e-05,
             11.2396,
             -18.55112
           ],
@@ -5669,7 +5669,7 @@
           "name": "assembly_editable_front_sight_fore_sight_lod",
           "parent": "fore_sight",
           "pivot": [
-            -0.00001,
+            -1e-05,
             11.2396,
             -18.55112
           ],
@@ -7259,7 +7259,7 @@
                 -179.9955
               ],
               "pivot": [
-                0.00001,
+                1e-05,
                 8.26388,
                 -16.33038
               ]
@@ -11574,7 +11574,7 @@
         {
           "name": "editable_tacz_stock_carbon_bone_c5_carbon_bone_c5",
           "pivot": [
-            -0.00001,
+            -1e-05,
             7.95248,
             5.89896
           ],
@@ -11593,7 +11593,7 @@
           "name": "assembly_editable_tacz_stock_carbon_bone_c5_carbon_bone_c5_lod",
           "parent": "editable_tacz_stock_carbon_bone_c5_carbon_bone_c5",
           "pivot": [
-            -0.00001,
+            -1e-05,
             7.95248,
             5.89896
           ],

@@ -114,7 +114,26 @@
             "tacz_sight_pk06_rifle",
             "tacz_sight_srs_02",
             "tacz_sight_t2",
-            "tacz_sight_uh1"
+            "tacz_sight_uh1",
+            "tacz_fork_tarkov_scope_acog_ta31_authored",
+            "tacz_fork_tarkov_scope_elcan_sample",
+            "tacz_fork_tarkov_scope_hamr_authored",
+            "tacz_fork_tarkov_scope_lpvo_1_6_authored",
+            "tacz_fork_tarkov_scope_mk5hd_authored",
+            "tacz_fork_tarkov_scope_qmk152_authored",
+            "tacz_fork_tarkov_scope_standard_8x_authored",
+            "tacz_fork_tarkov_scope_vudu_authored",
+            "tacz_fork_tarkov_sight_552_authored",
+            "tacz_fork_tarkov_sight_acro_rifle_authored",
+            "tacz_fork_tarkov_sight_coyote_authored",
+            "tacz_fork_tarkov_sight_deltapoint_rifle_authored",
+            "tacz_fork_tarkov_sight_exp3_authored",
+            "tacz_fork_tarkov_sight_fastfire_rifle_authored",
+            "tacz_fork_tarkov_sight_okp7_authored",
+            "tacz_fork_tarkov_sight_pk06_rifle_authored",
+            "tacz_fork_tarkov_sight_srs_02_authored",
+            "tacz_fork_tarkov_sight_t2_sample",
+            "tacz_fork_tarkov_sight_uh1_authored"
           ]
         },
         {
@@ -740,6 +759,177 @@
     },
     {
       "id": "tacz_stock_tactical_ar",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_scope_acog_ta31_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_scope_elcan_sample",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_scope_hamr_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_scope_lpvo_1_6_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_scope_mk5hd_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_scope_qmk152_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_scope_standard_8x_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_scope_vudu_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_552_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_acro_rifle_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_coyote_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_deltapoint_rifle_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_exp3_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_fastfire_rifle_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_okp7_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_pk06_rifle_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_srs_02_authored",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_t2_sample",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_sight_uh1_authored",
       "stats": {
         "weightKg": 0,
         "ergonomics": 0

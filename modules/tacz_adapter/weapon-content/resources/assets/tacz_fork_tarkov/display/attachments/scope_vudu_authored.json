@@ -1,0 +1,27 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/scope_vudu_authored",
+  "model": "tacz_fork_tarkov:attachment/scope_vudu_authored",
+  "texture": "tacz_fork_tarkov:attachment/scope_vudu_authored",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/scope_vudu_authored",
+    "texture": "tacz_fork_tarkov:attachment/lod/scope_vudu_authored"
+  },
+  "zoom": [
+    6.5,
+    1.35
+  ],
+  "views": [
+    2,
+    1
+  ],
+  "views_fov": [
+    30.0,
+    60.0
+  ],
+  "scope": true,
+  "sight": true,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_c",
+    "uninstall": "tacz:attachments/scope_general_c"
+  }
+}

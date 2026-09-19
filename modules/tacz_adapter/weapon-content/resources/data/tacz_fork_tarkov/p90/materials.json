@@ -149,6 +149,74 @@
     "tacz_sight_uh1": {
       "defaultMaterial": "tacz_sight_uh1",
       "regions": {}
+    },
+    "tacz_fork_tarkov_scope_acog_ta31_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_acog_ta31_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_contender_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_contender_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_elcan_sample": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_elcan_sample",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_lpvo_1_6_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_lpvo_1_6_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_scope_standard_8x_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_scope_standard_8x_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_552_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_552_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_acro_pistol_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_acro_pistol_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_coyote_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_coyote_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_deltapoint_pistol_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_deltapoint_pistol_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_exp3_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_exp3_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_fastfire_pistol_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_fastfire_pistol_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_p90_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_p90_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_pk06_pistol_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_pk06_pistol_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_rmr_dot_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_rmr_dot_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_sro_dot_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_sro_dot_authored",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_t2_sample": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_t2_sample",
+      "regions": {}
+    },
+    "tacz_fork_tarkov_sight_uh1_authored": {
+      "defaultMaterial": "tacz_fork_tarkov_sight_uh1_authored",
+      "regions": {}
     }
   }
 }

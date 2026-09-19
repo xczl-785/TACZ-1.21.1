@@ -182,6 +182,13 @@
       "roughness": 0.8,
       "specular": 0.12,
       "textureScale": 1
+    },
+    "tacz_fork_tarkov_scope_retro_2x_authored": {
+      "baseColor": "#ffffff",
+      "texture": "tacz_fork_tarkov:textures/parts/m16a1/tacz_fork_tarkov_scope_retro_2x_authored.png",
+      "roughness": 0.8,
+      "specular": 0.12,
+      "textureScale": 1
     }
   }
 }

@@ -380,7 +380,7 @@
     "nativeRig": true,
     "assemblyIcons": true,
     "authoringSource": "native_m870",
-  "developmentCategory": "tacz_fork_tarkov",
+    "developmentCategory": "tacz_fork_tarkov",
     "wearableSlots": [
       "tactical_inventory:primary_weapon_1",
       "tactical_inventory:primary_weapon_2"
@@ -632,5 +632,6 @@
   ],
   "nativeMagazineCatalogs": [
     "modules/tacz_adapter/weapon-sources/native_m870/tube_extensions/manifest.json"
-  ]
+  ],
+  "authoredOptics": []
 }

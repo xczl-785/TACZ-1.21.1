@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_fastfire_rifle_authored",
+  "cubes": 58,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored/data.json": "17764329f4cef71572539bbdcead72858393d25169fd71395d755bd83138cd8d",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored/display.json": "d6dbd41abd4725c68642df42f01720ff4f9144af45b4e91d20939610441600e5",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored/editable/components/sight_fastfire_rifle_authored/model.bbmodel": "dd34a405459031a81013cd3d050702f83208050599f065ffc21ddc67238232a0",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored/editable/components/sight_fastfire_rifle_authored/texture.png": "8996d1912309a28da3ca6aee8665585ae1bd5c1c7af4ae4e772106c6453f101b",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored/editable/components/sight_fastfire_rifle_authored/texture_s.png": "b717653926bee44a9c706cff429e88b717c4d2b521fe62824b4cde58e3d0da79",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored/editable/manifest.json": "374c4f84d9816a9b99ac099bbc029ac2c5629fc5277d00382f0275656ef3f1d2",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored/lod/model.json": "31ae306753e5f75561eb1530d9ec36a33be8406012899264dec44b40a3d3f4ec",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored/lod/texture.png": "535d6291fd3db117a226544b601eb0790eca5d4709db583d1bcfcd3387d46241",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored/optic.json": "9967e8b9787f16e5016a5948e98341b6364492c1f6bff49cc96f89a35c34f84b",
+    "modules/tacz_adapter/weapon-sources/optics/sight_fastfire_rifle_authored/slot.png": "6a1a38b55806459c60946a2995cb2c33de1a590f83cea1518fef1d41b8a171aa"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

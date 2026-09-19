@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_hamr_authored",
+  "sourceAttachment": "tacz:scope_hamr",
+  "names": {
+    "zh_cn": "§5HAMR 3x 组合式光学瞄具 · 光学制作",
+    "en_us": "§5HAMR 3x Scope · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body",
+    "ocular_ring"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/scope_hamr.json": "8a9aa5de7ecac9e4a85ed48e67cf487f5208188ff93d73d4bfd22be5537ffa51",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/scope_hamr_display.json": "bf759f6f0804f46641d5e2deaf26e7a9938cdfddc36e8096e73e72678fc1a21f",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/scope_hamr_geo.json": "c76ba509813fd846087960c2212bb95a236549a4e4cd962e9913cbf624a137d2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_hamr.png": "9e64686ea2a054f73ff4da228b73d3547ea649663a4009d32ae1c6554cde3b0b",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/scope_hamr_data.json": "9b4752858168f2d661ab9b101bc5b682a5102da0f88d063dfa02ed1e1c3d52ca",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/scope_hamr.json": "db1a40320304fc9fab4e3c224df1a0eb0bb88a96ec449edcdfebe8f2f159d4ba",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/scope_hamr.png": "29b0115564a1ef394d288b2809fcdfcdee4021a8211ae06ff89a884366678270",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/scope_hamr_slot.png": "0f6b6db0980df077c31e967339271de82e7d4073144cab19388bdb5ac5245a64",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_hamr_n.png": "04e545f9f936b5231a1fdf0dae849ecc6438a2f8a6cd705c3d74cd7f55437d73",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/scope_hamr_s.png": "25cd23a47df7cdae33287f9ab5c2cb0ca1198e582504745c40f91b3c75d55f54"
+  }
+}

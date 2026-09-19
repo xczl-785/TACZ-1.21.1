@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_retro_2x_authored",
+  "cubes": 86,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/data.json": "344740f2a7f212528b7aee57e2f9521c1aa659705c106f605c40531ea0d91be7",
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/display.json": "3ec9cd08ef9db97f7856932ed0e8d20285b48029a0a5d7c8efc288821d1342ef",
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/editable/components/scope_retro_2x_authored/model.bbmodel": "735719ae7c47f78084872453816a2588c8af6f90f16d4c42c321b8db4463cb73",
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/editable/components/scope_retro_2x_authored/texture.png": "65e0acf7f75a40b44340f6c29ee5b266bc0a990206238610552eab8d4eb50f2c",
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/editable/components/scope_retro_2x_authored/texture_n.png": "0b41d064584a827bb57854d813ea8dd68b3139d563fafd7469c063244cb88aae",
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/editable/components/scope_retro_2x_authored/texture_s.png": "9c99d63c224dbe71b101218c42eeecf4c433d378fb8c12010f7e6293a709ac08",
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/editable/manifest.json": "2841f007198003d4058cb081c88739d6618c29e56c98ee1b5fc4a928d783b753",
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/lod/model.json": "831d21c2438970dffe04baec242513dc18b8b76713a6851620f3c120738f42c0",
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/lod/texture.png": "3b44b694766014abeddb63a3424db3170992d7465e542912fcf4a2d969ee4800",
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/optic.json": "52f63c787334272de27ab3045c6c7c09324210b00ffcfd92a309cd83c8ffe91e",
+    "modules/tacz_adapter/weapon-sources/optics/scope_retro_2x_authored/slot.png": "5351b9cb6a7f767e60afb74d5df0a2ffda9e6fdd96f5d3432bca5eeff30f2fb2"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "gunId": "tacz_fork_tarkov:m4a1",
   "sources": {
-    "assembly.json": "54c7f87127ff280a640ac6f91a45eac120642523f84ab9b1e0df7a895fe5bc8e",
-    "mounts.json": "833a66f4196df568b392025c7337dfbf85d4e4c771398215ffd36b7a51b1f682",
+    "assembly.json": "119a5f82f7197e44039193823de08f98a4e07703fb396f3ddd19a01c3107998d",
+    "mounts.json": "af9cddcd50155c6b781a31c73367633d32ce841ad31570c0f15945825da320ce",
     "native-reference.json": "6a702227bc07fb19e7aba1298a4ba42fecf3110c62144b621b7ca7a909771688",
     "native-profile.json": "65e5f1d232852d736232382f35c9cc91fd35e2f37282c797efd89dd627089b43",
     "native-visual-rules.json": "ac29174c69b09871b12d4741306c7cb32b2a3a959da3d0c721ac980df945170e",
     "editable/manifest.json": "22a7e2a3cd5792c07eacd661b05ba9e0d82d08ee110877fa2c82b2dcfecf5b80",
-    "optics.json": "ff19f56f2d9f1a5c20c34012128fa94f9f08b5741868541590e61934b571ff04"
+    "optics.json": "d77d3a067cd21acf7af240f521661370eb0fcf78ec688bc516fb8c971d245e30"
   },
   "policy": "Explicit local frames and assembly relations; native animation rig preserved; existing gun and part identities retained"
 }

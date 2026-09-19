@@ -2,67 +2,67 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "3596171c-a89d-5b8f-b501-de63b615e3c9",
+      "instanceId": "19eba770-8b0d-5645-aaa4-be3460eb0c4a",
       "definitionId": "scar_l_lower"
     },
     {
-      "instanceId": "a10233da-1f47-5f0b-8095-83cf7155de8d",
+      "instanceId": "3c938308-4cd1-513f-a285-a8f97b8b9280",
       "definitionId": "scar_l_upper",
-      "parentId": "3596171c-a89d-5b8f-b501-de63b615e3c9",
+      "parentId": "19eba770-8b0d-5645-aaa4-be3460eb0c4a",
       "slot": "upper"
     },
     {
-      "instanceId": "1627f3b8-e4e3-5b72-97fb-4388841dc3ee",
+      "instanceId": "95734c59-fd9a-53af-a2f8-05b666ab9327",
       "definitionId": "scar_l_barrel",
-      "parentId": "a10233da-1f47-5f0b-8095-83cf7155de8d",
+      "parentId": "3c938308-4cd1-513f-a285-a8f97b8b9280",
       "slot": "barrel"
     },
     {
-      "instanceId": "2ee6f50c-b4c8-500d-8e36-037a93a9d582",
+      "instanceId": "4570927a-5e2d-55a6-a319-6b536585e336",
       "definitionId": "scar_l_gas_system",
-      "parentId": "1627f3b8-e4e3-5b72-97fb-4388841dc3ee",
+      "parentId": "95734c59-fd9a-53af-a2f8-05b666ab9327",
       "slot": "gas_system"
     },
     {
-      "instanceId": "a5a4ab64-0241-5632-8233-5d0561e4fddf",
+      "instanceId": "58146105-eb33-556e-9c58-bf7fbef358f7",
       "definitionId": "scar_l_muzzle",
-      "parentId": "1627f3b8-e4e3-5b72-97fb-4388841dc3ee",
+      "parentId": "95734c59-fd9a-53af-a2f8-05b666ab9327",
       "slot": "muzzle"
     },
     {
-      "instanceId": "cd9bdf26-cd47-5ad9-bccd-3967a441b5a2",
+      "instanceId": "49e40f5e-e95b-5dfd-923b-cb90c61911e7",
       "definitionId": "scar_l_bolt",
-      "parentId": "a10233da-1f47-5f0b-8095-83cf7155de8d",
+      "parentId": "3c938308-4cd1-513f-a285-a8f97b8b9280",
       "slot": "bolt"
     },
     {
-      "instanceId": "48451c41-de5b-5c91-8117-6054c15384ce",
+      "instanceId": "61e2c9e5-a44e-5df5-ad14-8e4457b2da02",
       "definitionId": "scar_l_front_sight",
-      "parentId": "a10233da-1f47-5f0b-8095-83cf7155de8d",
+      "parentId": "3c938308-4cd1-513f-a285-a8f97b8b9280",
       "slot": "front_sight"
     },
     {
-      "instanceId": "b088a945-e851-598e-a798-06d8abc04951",
+      "instanceId": "11d6f68a-11b5-54de-9f3d-68d36f5112db",
       "definitionId": "scar_l_rear_sight",
-      "parentId": "a10233da-1f47-5f0b-8095-83cf7155de8d",
+      "parentId": "3c938308-4cd1-513f-a285-a8f97b8b9280",
       "slot": "rear_sight"
     },
     {
-      "instanceId": "f4b8a1fa-bdcd-5d07-91b1-38596cc8485d",
+      "instanceId": "f0c6a0ca-535e-5923-90bd-b414e594041e",
       "definitionId": "scar_l_pistol_grip",
-      "parentId": "3596171c-a89d-5b8f-b501-de63b615e3c9",
+      "parentId": "19eba770-8b0d-5645-aaa4-be3460eb0c4a",
       "slot": "pistol_grip"
     },
     {
-      "instanceId": "ae60acf6-8374-563b-b732-bebc7f8fdf2b",
+      "instanceId": "0a2cac25-c201-55c2-b830-3dedd4720c0c",
       "definitionId": "scar_l_stock",
-      "parentId": "3596171c-a89d-5b8f-b501-de63b615e3c9",
+      "parentId": "19eba770-8b0d-5645-aaa4-be3460eb0c4a",
       "slot": "stock"
     },
     {
-      "instanceId": "a00c0a94-cd49-5f3b-9dcc-55689f9937ef",
+      "instanceId": "306ecbe4-f9d6-5b4a-93e7-49868e5f06d4",
       "definitionId": "scar_l_magazine_standard",
-      "parentId": "3596171c-a89d-5b8f-b501-de63b615e3c9",
+      "parentId": "19eba770-8b0d-5645-aaa4-be3460eb0c4a",
       "slot": "magazine"
     }
   ]

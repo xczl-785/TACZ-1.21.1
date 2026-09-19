@@ -52,6 +52,6 @@ class NativeAssemblyRulesTest {
         for(int i=1;i<=3;i++){var changed=ENGINE.replace(PRESET,path("magazine"),part("tacz_extended_mag_"+i));assertTrue(changed.success());assertEquals("magazine_standard",changed.detached().orElseThrow().definitionId());assertEquals(15,count(changed.after()));}
     }
     @Test void definitionLoadsWithoutLegacyPresentationCalibration(){
-        var weapon=new AssembledWeapon("data/tacz_fork_tarkov/m4a1/weapon.json");assertTrue(weapon.nativeRig);assertEquals(54,weapon.nativeAttachments.size());assertNull(weapon.handling);assertEquals(PRESET,weapon.PRESET);
+        var weapon=new AssembledWeapon("data/tacz_fork_tarkov/m4a1/weapon.json");assertTrue(weapon.nativeRig);assertEquals(67,weapon.nativeAttachments.size());assertNull(weapon.handling);assertEquals(PRESET,weapon.PRESET);
     }
 }

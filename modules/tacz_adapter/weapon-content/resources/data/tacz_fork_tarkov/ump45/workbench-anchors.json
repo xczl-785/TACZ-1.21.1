@@ -41,21 +41,6 @@
       5.561351754762228,
       0.6281377810512005
     ],
-    "tacz_ump45_light_extended_mag_1": [
-      0.0,
-      5.561351754762228,
-      0.6281377810512005
-    ],
-    "tacz_ump45_light_extended_mag_2": [
-      0.0,
-      5.561351754762228,
-      0.6281377810512005
-    ],
-    "tacz_ump45_light_extended_mag_3": [
-      0.0,
-      5.561351754762228,
-      0.6281377810512005
-    ],
     "tacz_grip_cobra": [
       0.0,
       8.210674629390454,
@@ -125,6 +110,21 @@
       -1.7491440129335982,
       10.3,
       7.010371947596989
+    ],
+    "tacz_ump45_light_extended_mag_1": [
+      0.0,
+      5.561351754762228,
+      0.6281377810512005
+    ],
+    "tacz_ump45_light_extended_mag_2": [
+      0.0,
+      5.561351754762228,
+      0.6281377810512005
+    ],
+    "tacz_ump45_light_extended_mag_3": [
+      0.0,
+      5.561351754762228,
+      0.6281377810512005
     ],
     "tacz_muzzle_brake_cthulhu": [
       0.0,
@@ -257,6 +257,86 @@
       -4.7875
     ],
     "tacz_sight_uh1": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_scope_acog_ta31_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_scope_contender_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_scope_elcan_sample": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_scope_hamr_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_scope_qmk152_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_552_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_acro_rifle_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_coyote_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_deltapoint_rifle_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_exp3_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_fastfire_rifle_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_okp7_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_pk06_rifle_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_srs_02_authored": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_t2_sample": [
+      0.10827495087476757,
+      14.54313535370001,
+      -4.7875
+    ],
+    "tacz_fork_tarkov_sight_uh1_authored": [
       0.10827495087476757,
       14.54313535370001,
       -4.7875

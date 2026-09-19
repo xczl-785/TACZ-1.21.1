@@ -175,7 +175,8 @@
           "id": "scope",
           "required": false,
           "allowedParts": [
-            "tacz_scope_retro_2x"
+            "tacz_scope_retro_2x",
+            "tacz_fork_tarkov_scope_retro_2x_authored"
           ]
         }
       ],
@@ -342,6 +343,15 @@
     },
     {
       "id": "tacz_scope_retro_2x",
+      "stats": {
+        "weightKg": 0,
+        "ergonomics": 0
+      },
+      "slots": [],
+      "conflictingParts": []
+    },
+    {
+      "id": "tacz_fork_tarkov_scope_retro_2x_authored",
       "stats": {
         "weightKg": 0,
         "ergonomics": 0

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:sight_okp7_authored",
+  "sourceAttachment": "tacz:sight_okp7",
+  "names": {
+    "zh_cn": "OKP-7 反射式瞄具 · 光学制作",
+    "en_us": "OKP-7 Sight · Authored optic"
+  },
+  "exteriorRoots": [
+    "scope_body"
+  ],
+  "lod": {
+    "model": "lod/model.json",
+    "texture": "lod/texture.png",
+    "policy": "Preserve original LOD; full functional model in first person"
+  },
+  "sourceHashes": {
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/attachments/sight_okp7.json": "4d6134016332134b8c7e5240b7e6689cfb035bf8b91e1c8f603b52a919344fd7",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/display/attachments/sight_okp7_display.json": "f18560659088168106f8e0bb391cd5194b765b113d995828c8da6cd51e38ff86",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_okp7_geo.json": "0d83596713c598ce6ecf1ea10f22ae30416a5be52c8ff74e105bd3324d13c7a2",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_okp7.png": "ae208cb880d86d7f050e47f41b02f57a6d4521dfd83ed80c25ac1cb46457d8f5",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/sight_okp7_data.json": "538871ae6a1311888fdb164d7246c00df10e13df87c83a6d145d9efceb10d135",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/lod/sight_okp7.json": "13d839596129454e167c3b611c1a4210938734d9df9cbc23b126b904df66fad4",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/lod/sight_okp7.png": "71f93e2c3ee1c7ce4fefc946b60b6bb90da4807bb910b68a0ba033fb9e7cc998",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/slot/sight_okp7.png": "ebf23bbf5e0aed5c23e9339448b02e0fff02d8683042e719eb6a263eaf994920",
+    "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/textures/attachment/uv/sight_okp7_s.png": "7250742375858e075933e1b2dd33440ec3d7406acbf37f423b487d417d28f7ee"
+  }
+}

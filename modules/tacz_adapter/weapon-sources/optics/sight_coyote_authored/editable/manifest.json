@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "parts": [
+    {
+      "definitionId": "sight_coyote_authored",
+      "group": "sight_coyote_authored",
+      "prefix": "native_attachment_sight_coyote_authored",
+      "cubes": 88,
+      "sourceCubeIndices": {
+        "scope_body": [
+          0,
+          1
+        ],
+        "body": [],
+        "group2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "bone": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "bone2": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "octagon2": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "base": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "group": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "knobs": [],
+        "octagon3": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "octagon": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "screws": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "division": [],
+        "division_illuminated": [
+          0
+        ],
+        "ocular": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "scope_view": []
+      },
+      "translation": [
+        0,
+        0,
+        0
+      ],
+      "editorCenter": [
+        0.0,
+        0.97734,
+        -12.10713
+      ],
+      "uvSize": [
+        128,
+        128
+      ],
+      "model": "components/sight_coyote_authored/model.bbmodel",
+      "texture": "components/sight_coyote_authored/texture.png",
+      "sourceGeometry": "src/main/resources/assets/tacz/custom/tacz_default_gun/assets/tacz/geo_models/attachment/sight_coyote_geo.json",
+      "sourceSha256": "90960e40a0a20aa20293e4425ff8ba6fc028855854235885d1369be36b0405f2",
+      "sourceTextureSha256": "c8edad853e229f348e7a2157db61140de694d95c74c330e49a8b536d12e43519"
+    }
+  ]
+}

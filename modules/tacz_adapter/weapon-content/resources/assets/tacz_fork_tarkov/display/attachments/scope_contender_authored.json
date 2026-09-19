@@ -1,0 +1,23 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/scope_contender_authored",
+  "model": "tacz_fork_tarkov:attachment/scope_contender_authored",
+  "texture": "tacz_fork_tarkov:attachment/scope_contender_authored",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/scope_contender_authored",
+    "texture": "tacz_fork_tarkov:attachment/lod/scope_contender_authored"
+  },
+  "zoom": [
+    4.25
+  ],
+  "views": [
+    2
+  ],
+  "views_fov": [
+    35
+  ],
+  "scope": true,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_d",
+    "uninstall": "tacz:attachments/scope_general_d"
+  }
+}

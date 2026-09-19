@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "attachmentId": "tacz_fork_tarkov:scope_acog_ta31_authored",
+  "cubes": 190,
+  "sources": {
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/data.json": "f449d648f70b92ba7869bf7f1986055b6203fe6a22769baa48d75bc1b875a674",
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/display.json": "5def95c1bdbf451bca59315cebb50cd6ba0f73ff18be73392401feedf217b168",
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/editable/components/scope_acog_ta31_authored/model.bbmodel": "46c697edcda8fe6ded43ffac2752cccfdfe736ac21b7994382f4ceb87358adcc",
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/editable/components/scope_acog_ta31_authored/texture.png": "234bece5a23badcb1f406bd338870a2efce8e68de3941ab808a51af9f82d8819",
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/editable/components/scope_acog_ta31_authored/texture_n.png": "ccbd42122afe0212cd7fd86f8cfab1dda9ce3c9235c870b2e752e5f6af809d08",
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/editable/components/scope_acog_ta31_authored/texture_s.png": "05087861e9ee81d79936d1dd36e4be8327a5a2935ae5aa23743d5dcb43d5597f",
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/editable/manifest.json": "917f82c1557f9ae36fc1053ea2639524ca4fd5222a3e9a411d1441cf4faa74f9",
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/lod/model.json": "0f1e8e27ac5ecfd9b34ede93a6be9509c61363449d96a10924c4575af432d505",
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/lod/texture.png": "0b2210380aa3c372eed701bc57c640eb8b46089ec4ff16000d49de0b334b969a",
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/optic.json": "6aaa951e9123960e0534347a6f1e0e63e8dfc3e849e622d7915819bc9dd6bd35",
+    "modules/tacz_adapter/weapon-sources/optics/scope_acog_ta31_authored/slot.png": "1f4c036bf9b4ee8fb3dde8d4a9f324df934d95e63e83859d6e9180a91fc7a1f2"
+  },
+  "policy": "Complete optical model compiled from editable cubes; native index owns ADS and rendering; originals preserved"
+}

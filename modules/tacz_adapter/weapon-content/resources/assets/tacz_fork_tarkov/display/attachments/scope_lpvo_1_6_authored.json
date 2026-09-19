@@ -1,0 +1,27 @@
+{
+  "slot": "tacz_fork_tarkov:attachment/slot/scope_lpvo_1_6_authored",
+  "model": "tacz_fork_tarkov:attachment/scope_lpvo_1_6_authored",
+  "texture": "tacz_fork_tarkov:attachment/scope_lpvo_1_6_authored",
+  "lod": {
+    "model": "tacz_fork_tarkov:attachment/lod/scope_lpvo_1_6_authored",
+    "texture": "tacz_fork_tarkov:attachment/lod/scope_lpvo_1_6_authored"
+  },
+  "zoom": [
+    6.25,
+    1.25
+  ],
+  "views": [
+    2,
+    2
+  ],
+  "views_fov": [
+    30.0,
+    60.0
+  ],
+  "scope": true,
+  "sight": false,
+  "sounds": {
+    "install": "tacz:attachments/scope_general_c",
+    "uninstall": "tacz:attachments/scope_general_c"
+  }
+}

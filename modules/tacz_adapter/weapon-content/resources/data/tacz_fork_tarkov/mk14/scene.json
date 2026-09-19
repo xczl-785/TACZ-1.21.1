@@ -2,79 +2,79 @@
   "schemaVersion": 1,
   "nodes": [
     {
-      "instanceId": "990e3d80-274d-5aaf-9599-55341047a816",
+      "instanceId": "55f6cedf-b08e-539b-8244-d333b834f0a1",
       "definitionId": "mk14_lower"
     },
     {
-      "instanceId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "instanceId": "e0d2fa59-894d-5496-875b-e3ead70826a0",
       "definitionId": "mk14_upper",
-      "parentId": "990e3d80-274d-5aaf-9599-55341047a816",
+      "parentId": "55f6cedf-b08e-539b-8244-d333b834f0a1",
       "slot": "upper"
     },
     {
-      "instanceId": "164e7154-a3f0-56bf-b263-be00f5efbfc1",
+      "instanceId": "eb65d1b8-ab71-55af-b1e2-73919f0fa2dd",
       "definitionId": "mk14_handguard",
-      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "parentId": "e0d2fa59-894d-5496-875b-e3ead70826a0",
       "slot": "handguard"
     },
     {
-      "instanceId": "095a5c53-0e09-56ae-a8d6-9a1e6ce9271e",
+      "instanceId": "a5674585-7b2b-5fd5-9a1a-a2eede0f32d0",
       "definitionId": "mk14_barrel",
-      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "parentId": "e0d2fa59-894d-5496-875b-e3ead70826a0",
       "slot": "barrel"
     },
     {
-      "instanceId": "b1febbcc-124a-54ac-8f95-298f1d420b99",
+      "instanceId": "146eee6a-f1e7-5dc5-a057-ab9bd100a3c8",
       "definitionId": "mk14_muzzle",
-      "parentId": "095a5c53-0e09-56ae-a8d6-9a1e6ce9271e",
+      "parentId": "a5674585-7b2b-5fd5-9a1a-a2eede0f32d0",
       "slot": "muzzle"
     },
     {
-      "instanceId": "b8b004f4-aab4-5ba5-aa78-347c060bd97f",
+      "instanceId": "29bd96a8-a256-5ec7-ae31-5d5744b415cd",
       "definitionId": "mk14_rear_sight",
-      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "parentId": "e0d2fa59-894d-5496-875b-e3ead70826a0",
       "slot": "rear_sight"
     },
     {
-      "instanceId": "fe316e4a-a67e-5b18-8672-32460ada4b36",
+      "instanceId": "d1d16af5-d61b-55bf-ada3-6ce7fc869639",
       "definitionId": "mk14_mount",
-      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "parentId": "e0d2fa59-894d-5496-875b-e3ead70826a0",
       "slot": "mount"
     },
     {
-      "instanceId": "a762cf46-2e5c-5fb6-9512-9598fb1f86f8",
+      "instanceId": "71a0f8c9-4f99-549d-afab-9204ceb48a5f",
       "definitionId": "mk14_bolt",
-      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "parentId": "e0d2fa59-894d-5496-875b-e3ead70826a0",
       "slot": "bolt"
     },
     {
-      "instanceId": "b59dc2e4-d8e9-55d5-8420-a1bbe4ab83b4",
+      "instanceId": "04afdc0a-2c07-5f89-be7b-85d7865bcbb6",
       "definitionId": "mk14_charging_handle",
-      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "parentId": "e0d2fa59-894d-5496-875b-e3ead70826a0",
       "slot": "charging_handle"
     },
     {
-      "instanceId": "7c62916a-8d63-510e-825f-4b87a7df3f69",
+      "instanceId": "7187a5ca-ad28-5d3c-8396-4671f96014f4",
       "definitionId": "mk14_bipod",
-      "parentId": "e64e1cf5-8706-5cdb-99b0-1eb9fe75b125",
+      "parentId": "e0d2fa59-894d-5496-875b-e3ead70826a0",
       "slot": "bipod"
     },
     {
-      "instanceId": "40263f74-f3be-5c59-8916-94eda501247d",
+      "instanceId": "41c8b422-9f7a-5988-8cd2-adbfecbcfe7b",
       "definitionId": "mk14_pistol_grip",
-      "parentId": "990e3d80-274d-5aaf-9599-55341047a816",
+      "parentId": "55f6cedf-b08e-539b-8244-d333b834f0a1",
       "slot": "pistol_grip"
     },
     {
-      "instanceId": "1b8a7a36-894c-5bf9-9034-6ebea203e534",
+      "instanceId": "f2489247-9dda-5005-beaf-75d820da04a2",
       "definitionId": "mk14_stock",
-      "parentId": "990e3d80-274d-5aaf-9599-55341047a816",
+      "parentId": "55f6cedf-b08e-539b-8244-d333b834f0a1",
       "slot": "stock"
     },
     {
-      "instanceId": "ed305ecc-7251-56b7-86a6-65ed95196565",
+      "instanceId": "6435d36a-53f9-5029-9acf-3139e9402376",
       "definitionId": "mk14_magazine_standard",
-      "parentId": "990e3d80-274d-5aaf-9599-55341047a816",
+      "parentId": "55f6cedf-b08e-539b-8244-d333b834f0a1",
       "slot": "magazine"
     }
   ]
