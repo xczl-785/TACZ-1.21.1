@@ -4,7 +4,7 @@ import dev.itemfoundation.api.assembly.*;
 import dev.firearms.profile.FirearmProfiles;
 import dev.weaponruntime.WeaponRuntime;
 import dev.firearms.assembly.AssemblyJson;
-import dev.tacticalinventory.api.*;
+import dev.firearms.workbench.*;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.*;
 import net.minecraft.resources.ResourceLocation;
@@ -41,20 +41,21 @@ public final class BarrelFireFixture {
         result.set(AssemblyComponents.STATE.get(),state.updated(children));return result;
     }
     public static boolean exchange(ServerPlayer player,boolean install){
-        var view=TacticalHeldExchange.inspect(player,s->BuiltInRegistries.ITEM.getKey(s.getItem()).equals(BARREL));
+        var inventory=WorkbenchInventoryHosts.current().orElse(null);if(inventory==null)return false;
+        var view=inventory.inspect(player,s->BuiltInRegistries.ITEM.getKey(s.getItem()).equals(BARREL));
         if(view.isEmpty()||!PROFILE.equals(view.get().held().get(WeaponRuntime.PROFILE.get())))return false;
-        var source=install?view.get().sources().stream().findFirst().map(TacticalHeldExchange.Source::id):Optional.<UUID>empty();
+        var source=install?view.get().sources().stream().findFirst().map(WorkbenchInventoryHost.Source::id):Optional.<UUID>empty();
         if(install&&source.isEmpty())return false;
-        return TacticalHeldExchange.exchange(player,view.get(),source,(held,payment)->{
+        return inventory.exchange(player,view.get(),source,(held,payment)->{
             var state=AssemblyTrees.state(held);var existing=state.in("mod_barrel");
             if(install){
                 if(existing.isPresent()||!BuiltInRegistries.ITEM.getKey(payment.getItem()).equals(BARREL))return Optional.empty();
-                try{var result=attach(held,payment);if(!dev.tacticaltacz.LegacyFirearmProfiles.firing(result,"tacz:glock_17").ready())return Optional.empty();return Optional.of(new TacticalHeldExchange.Change(result,List.of()));}
+                try{var result=attach(held,payment);if(!dev.tacticaltacz.LegacyFirearmProfiles.firing(result,"tacz:glock_17").ready())return Optional.empty();return Optional.of(new WorkbenchInventoryHost.Change(result,List.of()));}
                 catch(IllegalArgumentException e){return Optional.empty();}
             }
             if(existing.isEmpty())return Optional.empty();
             var result=held.copy();result.set(AssemblyComponents.STATE.get(),state.updated(state.installed().stream().filter(n->!n.slotId().equals("mod_barrel")).toList()));
-            return Optional.of(new TacticalHeldExchange.Change(result,List.of(existing.get().stack())));
+            return Optional.of(new WorkbenchInventoryHost.Change(result,List.of(existing.get().stack())));
         });
     }
 }

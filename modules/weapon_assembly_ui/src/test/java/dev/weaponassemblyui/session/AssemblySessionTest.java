@@ -1,4 +1,4 @@
-package dev.weaponassemblyui.session;
+package dev.firearms.workbench;
 
 import dev.firearms.assembly.*;
 import org.junit.jupiter.api.Test;

@@ -1,6 +1,6 @@
 package dev.tacticaltacz.assembled;
 import dev.firearms.assembly.*;
-import dev.weaponassemblyui.session.*;
+import dev.firearms.workbench.*;
 import dev.weaponassemblyui.client.WorkbenchScreen;
 import java.util.*;
 import net.minecraft.client.Minecraft;

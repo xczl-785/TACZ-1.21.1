@@ -3,7 +3,7 @@ package dev.weaponassemblyui.client;
 import dev.firearms.presentation.*;
 import dev.firearms.assembly.*;
 import dev.firearms.assembly.AssemblyJson;
-import dev.weaponassemblyui.session.AssemblySession;
+import dev.firearms.workbench.AssemblySession;
 import org.junit.jupiter.api.Test;
 import java.nio.file.*;
 import java.util.*;

@@ -3,7 +3,7 @@ package dev.tacticaltacz.assembled;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.entity.IGunOperator;
 import dev.itemfoundation.api.assembly.*;
-import dev.tacticalinventory.api.TacticalHeldExchange;
+import dev.firearms.workbench.WorkbenchInventoryHost;
 import dev.tacticaltacz.AmmoBridge;
 import java.util.*;
 import net.minecraft.server.level.ServerPlayer;
@@ -16,7 +16,7 @@ public final class AssemblyGunExchange {
         var op=IGunOperator.fromLivingEntity(p);
         return !((IGun)p.getMainHandItem().getItem()).hasAttachmentLock(p.getMainHandItem())&&!p.isUsingItem()&&!op.getSynIsBolting()&&op.getSynReloadState().getCountDown()<0&&op.getSynShootCoolDown()<=0&&op.getSynDrawCoolDown()<=0;
     }
-    public static Optional<TacticalHeldExchange.Change> plan(ItemStack held,ItemStack payment,List<String> path){
+    public static Optional<WorkbenchInventoryHost.Change> plan(ItemStack held,ItemStack payment,List<String> path){
         if(!AssembledWeapons.isGun(held)||path.isEmpty()||path.size()>AssemblyTrees.MAX_DEPTH)return Optional.empty();
         var weapon=AssembledWeapons.from(held);
         try{
@@ -35,7 +35,7 @@ public final class AssemblyGunExchange {
                 if(count>0){var ammo=AmmoBridge.ammunition(changed);if(ammo==null)return Optional.empty();refunds.add(new ItemStack(ammo,count));gun.setCurrentAmmoCount(changed,0);}
                 // A chambered round remains usable; no physical loaded-magazine claim is made.
             }
-            return Optional.of(new TacticalHeldExchange.Change(changed,refunds));
+            return Optional.of(new WorkbenchInventoryHost.Change(changed,refunds));
         }catch(IllegalArgumentException invalid){return Optional.empty();}
     }
     private AssemblyGunExchange(){}

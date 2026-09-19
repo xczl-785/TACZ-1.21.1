@@ -101,14 +101,14 @@ class NativeAssemblyStateTest {
     }
 
     @Test void serverProposalIsSingleUseAndExpiresAcrossBothInterfaces(){
-        var store=new AssemblyProposalSessions();var player=UUID.randomUUID();
-        var view=new dev.tacticalinventory.api.TacticalHeldExchange.View(player,3,UUID.randomUUID(),weapon().preset(),List.of());
-        var first=store.issue(player,view,10);assertSame(first,store.peek(player));
-        assertSame(first,store.take(player,first.token(),11));assertNull(store.take(player,first.token(),12));
-        var second=store.issue(player,view,20);assertNull(store.take(player,second.token(),1221));
-        var third=store.issue(player,view,30);assertNull(store.take(player,UUID.randomUUID(),31));assertNull(store.take(player,third.token(),32));
+        var store=new dev.firearms.workbench.WorkbenchProposalSessions<dev.firearms.workbench.WorkbenchInventoryHost.Quote>();var player=UUID.randomUUID();
+        var view=new dev.firearms.workbench.WorkbenchInventoryHost.Quote(player,3,UUID.randomUUID(),weapon().preset(),List.of());
+        var first=store.issue(player,view,10);assertSame(view,store.peek(player).orElseThrow());
+        assertSame(view,store.take(player,first.token(),11).orElseThrow());assertTrue(store.take(player,first.token(),12).isEmpty());
+        var second=store.issue(player,view,20);assertTrue(store.take(player,second.token(),1221).isEmpty());
+        var third=store.issue(player,view,30);assertTrue(store.take(player,UUID.randomUUID(),31).isEmpty());assertTrue(store.take(player,third.token(),32).isEmpty());
         var old=store.issue(player,view,40);var fresh=store.issue(player,view,41);assertNotEquals(old.token(),fresh.token());
-        assertNull(store.take(player,old.token(),42)); // stale UI cannot commit the new proposal
+        assertTrue(store.take(player,old.token(),42).isEmpty()); // stale UI cannot commit the new proposal
     }
     @Test void subtreeRefundAndIndependentInstancesSurviveCodecRoundtrip(){
         var first=weapon().preset();var second=weapon().preset();assertNotEquals(AssembledWeapon.identity(first),AssembledWeapon.identity(second));
@@ -160,7 +160,7 @@ class NativeAssemblyStateTest {
 
     @Test void temporaryPresetEditsHaveNoPhysicalInventoryAuthority(){
         var actual=weapon().preset();var before=actual.copy();
-        var draft=dev.weaponassemblyui.session.AssemblySession.preset(weapon().CATALOG,weapon().project(actual),new dev.firearms.assembly.WeaponStats.Context(0,0),Optional.of("native stats"));
+        var draft=dev.firearms.workbench.AssemblySession.preset(weapon().CATALOG,weapon().project(actual),new dev.firearms.assembly.WeaponStats.Context(0,0),Optional.of("native stats"));
         assertTrue(draft.temporaryPreset());assertEquals(Optional.of("native stats"),draft.statsExplanation());
         draft.select(List.of("upper","barrel_mount","handguard"));
         var rail=draft.candidates().stream().filter(n->n.definitionId().equals("handguard_tactical")).findFirst().orElseThrow();
@@ -170,7 +170,7 @@ class NativeAssemblyStateTest {
         assertTrue(draft.install(grip.instanceId()).success());assertTrue(draft.remove().success());
         assertTrue(draft.install(grip.instanceId()).success());
         assertTrue(draft.detached().isEmpty());assertTrue(ItemStack.matches(before,actual));
-        var reopened=dev.weaponassemblyui.session.AssemblySession.preset(weapon().CATALOG,weapon().project(actual),new dev.firearms.assembly.WeaponStats.Context(0,0),Optional.empty());
+        var reopened=dev.firearms.workbench.AssemblySession.preset(weapon().CATALOG,weapon().project(actual),new dev.firearms.assembly.WeaponStats.Context(0,0),Optional.empty());
         assertEquals("handguard_default",reopened.nodeAt(List.of("upper","barrel_mount","handguard")).orElseThrow().definitionId());
         assertTrue(ItemStack.matches(before,actual));
     }
