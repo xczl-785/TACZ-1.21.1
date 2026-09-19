@@ -1,5 +1,4 @@
 package com.tacz.guns.api.item.gun;
-import dev.tacticaltacz.AmmoBridge;
 
 
 import com.tacz.guns.api.DefaultAssets;
@@ -122,16 +121,8 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
      * @return 是否满足换弹条件
      */
     public boolean canReload(LivingEntity shooter, ItemStack gunItem) {
-        if (AmmoBridge.managed(gunItem)) {
-
-        var g = (IGun) gunItem.getItem();
-        var assembled=dev.tacticaltacz.assembled.AssembledWeapons.from(gunItem);
-        if(assembled!=null&&!assembled.hasFeedContainer(gunItem)){return false;}
-        boolean room = TimelessAPI.getCommonGunIndex(g.getGunId(gunItem)).map(index ->
-                g.getCurrentAmmoCount(gunItem) < AttachmentDataUtils.getAmmoCountWithAttachment(gunItem, index.getGunData())).orElse(false);
-        return (room && !g.useInventoryAmmo(gunItem) && !g.useDummyAmmo(gunItem)
-                && shooter instanceof Player player && AmmoBridge.hasAmmo(player, gunItem));
-            }
+        var extensionReload = com.tacz.guns.api.extension.GunPlatformExtensions.current().canReload(shooter, gunItem);
+        if (extensionReload.isPresent()) return extensionReload.get();
 
         ResourceLocation gunId = this.getGunId(gunItem);
         CommonGunIndex gunIndex = TimelessAPI.getCommonGunIndex(gunId).orElse(null);
@@ -180,25 +171,7 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
      */
     @Override
     public void dropAllAmmo(Player player, ItemStack gunItem) {
-        if (AmmoBridge.managed(gunItem)) {
-
-        if (player.level().isClientSide) return;
-        var ammo = AmmoBridge.ammunition(gunItem);
-        if (ammo == null) return;
-        var g = (IGun) gunItem.getItem();
-        int count = g.getCurrentAmmoCount(gunItem);
-        g.setCurrentAmmoCount(gunItem, 0);
-        while (count > 0) {
-            int amount = Math.min(ammo.getDefaultMaxStackSize(), count);
-            var returned = new ItemStack(ammo, amount);
-            if (!(player instanceof net.minecraft.server.level.ServerPlayer server)
-                    || !AmmoBridge.refund(server, java.util.List.of(returned)))
-                player.drop(returned, false);
-            count -= amount;
-        }
-        // TaCZ leaves the chamber loaded; its identity remains the selected variant.
-                return;
-        }
+        if (com.tacz.guns.api.extension.GunPlatformExtensions.current().dropAllAmmo(player, gunItem)) return;
 
         if (player.level().isClientSide) return;
         // 背包直读时不调用退弹
@@ -372,8 +345,7 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
                         .setHeatData(gunData.hasHeatData())
                         .setAmmoInBarrel(true)
                         .build(null);
-                var assembled = dev.tacticaltacz.assembled.AssembledWeapons.byId(entry.getKey());
-                stacks.add(assembled != null && assembled.nativeRig ? assembled.preset() : itemStack);
+                stacks.add(com.tacz.guns.api.extension.GunPlatformExtensions.current().creativeStack(entry.getKey(), itemStack));
             }
         });
         return stacks;

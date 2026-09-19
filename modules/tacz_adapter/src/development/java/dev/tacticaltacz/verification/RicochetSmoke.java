@@ -9,10 +9,10 @@ import dev.tacticalcombat.api.*;
 import dev.tacticalcombat.core.*;
 import dev.tacticalcombat.player.*;
 import dev.tacticalcombat.protection.*;
+import dev.tacticaltacz.TacticalGunPlatformExtension;
 import dev.tacticalinventory.api.TacticalEquipment;
 import dev.tacticalinventory.core.GearSlot;
 import dev.tacticalinventory.registry.ModRegistries;
-import dev.tacticaltacz.ImpactCarrier;
 import java.lang.reflect.Field;
 import java.util.*;
 import java.util.function.Supplier;
@@ -140,13 +140,13 @@ final class RicochetSmoke {
             var spawned=bullets(level,p).stream().filter(b->!beforeIds.contains(b.getUUID())).toList();
             require(spawned.size()==1,"one continuation enters real level");var child=spawned.getFirst();created.add(child);
             require(child.getOwner()==bullet.getOwner(),"continuation retains shooter ownership");
-            require(field("adapter$ricochetCount").getInt(child)==1,"first continuation inherits incremented ricochet count");
+            require(TacticalGunPlatformExtension.installed().ricochetCount(child)==1,"first continuation inherits incremented ricochet count");
             verifySpawnProtocol(child,level,true);
             verifySpawnProtocol(bullet,level,false);
             near(child.getDeltaMovement().x,4.2,"reflected x velocity");near(child.getDeltaMovement().z,.7,"reflected z velocity");
             near(field("life").getInt(child),32,"remaining lifetime copied without reset");
-            near(((ImpactCarrier)child).tacticalAmmo().fleshDamage(),((ImpactCarrier)bullet).tacticalAmmo().fleshDamage()*.5,"domain flesh damage attenuates");
-            near(((ImpactCarrier)child).tacticalAmmo().penetrationPower(),((ImpactCarrier)bullet).tacticalAmmo().penetrationPower()*.5,"domain penetration attenuates");
+            near(TacticalGunPlatformExtension.installed().ammunition(child).fleshDamage(),TacticalGunPlatformExtension.installed().ammunition(bullet).fleshDamage()*.5,"domain flesh damage attenuates");
+            near(TacticalGunPlatformExtension.installed().ammunition(child).penetrationPower(),TacticalGunPlatformExtension.installed().ammunition(bullet).penetrationPower()*.5,"domain penetration attenuates");
             near(child.getDamage(reflected.position()),bullet.getDamage(reflected.position())*.5,"native Minecraft damage curve scales rather than adopting domain units");
             near(field("headShot").getFloat(child),field("headShot").getFloat(bullet),"native headshot multiplier retained");
             near(field("armorIgnore").getFloat(child),field("armorIgnore").getFloat(bullet),"native armor ignore retained");
@@ -179,7 +179,7 @@ final class RicochetSmoke {
                 }
                 var body=p.getData(PlayerBody.STATE);var gear=p.getData(ModRegistries.PLAYER_GEAR);
                 var trial=fire.get();created.add(trial);trial.setPos(start);trial.setDeltaMovement(velocity);
-                if(mode.equals("cap"))field("adapter$ricochetCount").setInt(trial,2);
+                if(mode.equals("cap"))TacticalGunPlatformExtension.installed().setRicochetCount(trial,2);
                 int before=bullets(level,p).size();if(mode.equals("pre_cancel"))cancelPre.run();
                 if(mode.equals("incoming_cancel")) {
                     var flag=PlayerArmorSmoke.class.getDeclaredField("cancelIncoming");flag.setAccessible(true);flag.set(null,p);

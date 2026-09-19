@@ -1,6 +1,5 @@
 package com.tacz.guns.ammunition;
 import com.tacz.guns.api.item.IAmmo;
-import dev.tacticaltacz.AmmoBridge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 
@@ -26,5 +25,7 @@ public final class TarkovAmmoItem extends Item implements IAmmo {
     public void setAmmoId(ItemStack ammo, ResourceLocation id) {
         if (!getAmmoId(ammo).equals(id)) throw new IllegalArgumentException("Registered ammunition identity is immutable");
     }
-    public boolean isAmmoOfGun(ItemStack gun, ItemStack ammo) { return AmmoBridge.matches(gun, ammo); }
+    public boolean isAmmoOfGun(ItemStack gun, ItemStack ammo) {
+        return com.tacz.guns.api.extension.GunPlatformExtensions.current().matchesAmmunition(gun, ammo);
+    }
 }

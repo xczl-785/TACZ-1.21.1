@@ -36,8 +36,9 @@ def verify(jar=None,development=None,newmod=None):
      assert s==expected,p
  assert len(mixins)==12,mixins
  gun=(R/'src/main/java/com/tacz/guns/GunMod.java').read_text()
- assert gun.count('dev.tacticaltacz.TacticalTaczAdapter.register(bus);')==1
- assert gun.index('AttachmentPropertyManager.registerModifier();')<gun.index('dev.tacticaltacz.TacticalTaczAdapter.register(bus);')
+ extension='com.tacz.guns.api.extension.GunPlatformExtensions.register(bus);'
+ assert gun.count(extension)==1
+ assert gun.index('AttachmentPropertyManager.registerModifier();')<gun.index(extension)
  for row in json.loads((R/'modules/tacz_adapter/development-commands.json').read_text())['registrars']:
   s=(R/row['source']).read_text()
   for literal in row['literals']:assert '"'+literal+'"' in s,(row['source'],literal)

@@ -1,5 +1,4 @@
 package dev.tacticaltacz;
-import com.tacz.guns.api.event.common.EntityHurtByGunEvent;
 import com.tacz.guns.entity.EntityKineticBullet;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.*;
@@ -12,13 +11,12 @@ public final class TacticalTaczAdapter {
     public static final ResourceKey<DamageType> RESOLVED = ResourceKey.create(Registries.DAMAGE_TYPE,
             ResourceLocation.fromNamespaceAndPath(MOD_ID, "resolved_bullet"));
     private TacticalTaczAdapter() {}
-    public static void register(net.neoforged.bus.api.IEventBus bus) {
+    public static void registerInfrastructure(net.neoforged.bus.api.IEventBus bus) {
         NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST,AssemblyFireGate::fire);
         bus.addListener(dev.tacticaltacz.refit.RefitProtocol::register);
         bus.addListener(dev.tacticaltacz.assembled.AssemblyGunProtocol::register);
         dev.tacticaltacz.refit.RefitBridge.register();
         dev.itemfoundation.api.inspection.InspectionProviders.register(MOD_ID+":ammunition",AmmunitionInspection::inspect);
-        NeoForge.EVENT_BUS.addListener(EventPriority.LOWEST, TacticalTaczAdapter::prepareFeedback);
         NeoForge.EVENT_BUS.addListener(TacticalTaczAdapter::playerPose);
         NeoForge.EVENT_BUS.addListener((dev.tacticalcharacter.resource.ResourceActionEvent event) -> {
             if (com.tacz.guns.api.item.IGun.getIGunOrNull(event.player.getMainHandItem()) != null
@@ -32,15 +30,6 @@ public final class TacticalTaczAdapter {
         if(gun==null)return;
         event.unsupported=!GunAdoption.contains(event.player.getMainHandItem());
         event.holding=true;event.aiming=com.tacz.guns.api.entity.IGunOperator.fromLivingEntity(event.player).getSynAimingProgress();
-    }
-    private static void prepareFeedback(EntityHurtByGunEvent.Pre event) {
-        if (event.getBullet() instanceof ImpactCarrier carrier) {
-            var quote = carrier.tacticalImpact();
-            if (quote != null && quote.claimed() && quote.impact().target() == event.getHurtEntity()) {
-                event.setBaseAmount(quote.damage());
-                event.setHeadshotMultiplier(1);
-            }
-        }
     }
     public static DamageSource resolvedSource(EntityKineticBullet bullet) {
         return new DamageSource(bullet.level().registryAccess().registryOrThrow(Registries.DAMAGE_TYPE)

@@ -77,9 +77,9 @@ public class EntityUtil {
 
     @Nullable
     protected static EntityKineticBullet.EntityResult getHitResult(Projectile bulletEntity, Entity entity, Vec3 startVec, Vec3 endVec) {
-        if (!bulletEntity.level().isClientSide && bulletEntity instanceof dev.tacticaltacz.ImpactCarrier carrier && carrier.tacticalAmmo() != null) {
-            var event = net.neoforged.neoforge.common.NeoForge.EVENT_BUS.post(new dev.tacticalcombat.api.BulletTraceEvent(bulletEntity, entity, startVec, endVec));
-            if (event.claimed()) return event.result().map(point -> new EntityKineticBullet.EntityResult(entity, point, false)).orElse(null);
+        if (bulletEntity instanceof EntityKineticBullet kinetic) {
+            var trace = com.tacz.guns.api.extension.GunPlatformExtensions.current().trace(kinetic, entity, startVec, endVec);
+            if (trace.isPresent()) return trace.get().point().map(point -> new EntityKineticBullet.EntityResult(entity, point, false)).orElse(null);
         }
 
         AABB boundingBox = HitboxHelper.getFixedBoundingBox(entity, bulletEntity.getOwner());

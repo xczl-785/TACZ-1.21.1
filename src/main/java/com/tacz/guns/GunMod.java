@@ -38,7 +38,6 @@ public class GunMod {
         Dist side = FMLLoader.getDist();
         GunPackLoader.INSTANCE.packType = side.isClient() ? PackType.CLIENT_RESOURCES : PackType.SERVER_DATA;
 
-        dev.weaponruntime.WeaponRuntime.register(bus);
         CapabilityRegistry.ATTACHMENT_TYPES.register(bus);
         ModBlocks.BLOCKS.register(bus);
         ModBlocks.TILE_ENTITIES.register(bus);
@@ -56,7 +55,7 @@ public class GunMod {
 
         registerDefaultExtraGunPack();
         AttachmentPropertyManager.registerModifier();
-        dev.tacticaltacz.TacticalTaczAdapter.register(bus);
+        com.tacz.guns.api.extension.GunPlatformExtensions.register(bus);
     }
 
     private static void registerDefaultExtraGunPack() {

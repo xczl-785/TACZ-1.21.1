@@ -22,8 +22,7 @@ public class LocalPlayerAim {
     }
 
     public void aim(boolean isAim) {
-        if (isAim && dev.tacticaltacz.assembled.NativeAttachmentProjection.blocksAim(player.getMainHandItem())) return;
-        if (isAim && dev.tacticaltacz.GunAdoption.contains(player.getMainHandItem()) && dev.tacticalinventory.api.ClientCharacterDisplay.resources().map(r -> !r.canAim()).orElse(false)) return;
+        if (isAim && com.tacz.guns.api.extension.GunClientExtensions.current().blockAim(player, player.getMainHandItem())) return;
 
         // 暂定为主手
         ItemStack mainHandItem = player.getMainHandItem();

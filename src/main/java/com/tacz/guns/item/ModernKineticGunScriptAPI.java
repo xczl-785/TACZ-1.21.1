@@ -1,5 +1,4 @@
 package com.tacz.guns.item;
-import dev.tacticaltacz.AmmoBridge;
 
 
 import com.tacz.guns.api.DefaultAssets;
@@ -207,16 +206,14 @@ public class ModernKineticGunScriptAPI {
 
     private <T> T modifyProperty(GunProperty<?> property, Class<T> type, T value) {
         T result = abstractGunItem.modifyProperty(dataHolder, itemStack, shooter, property, type, value);
-        var entry = AmmoBridge.definition(itemStack);
-        if (entry != null && property == GunProperties.AMMO_SPEED) return (T) (Object) entry.initialSpeed();
-        return result;
+        return com.tacz.guns.api.extension.GunPlatformExtensions.current()
+                .modifyAmmunitionProperty(itemStack, property, type, result);
     }
 
     private <T> T modifyProperty(String id, Class<T> type, T value) {
         T result = abstractGunItem.modifyProperty(dataHolder, itemStack, shooter, id, type, value);
-        var entry = AmmoBridge.definition(itemStack);
-        if (entry != null && id.equals(GunProperties.RuntimeOnly.BULLET_AMOUNT)) return (T) (Object) entry.projectileCount();
-        return result;
+        return com.tacz.guns.api.extension.GunPlatformExtensions.current()
+                .modifyAmmunitionProperty(itemStack, id, type, result);
     }
 
     /**
@@ -240,7 +237,8 @@ public class ModernKineticGunScriptAPI {
      * @return 是否成功减少子弹。
      */
     public boolean reduceAmmoOnce() {
-        if (AmmoBridge.managed(itemStack) && AmmoBridge.ammunition(itemStack) == null) return false;
+        var platform = com.tacz.guns.api.extension.GunPlatformExtensions.current();
+        if (platform.managesAmmunition(itemStack) && !platform.hasSelectedAmmunition(itemStack)) return false;
 
         Bolt boltType = TimelessAPI.getCommonGunIndex(abstractGunItem.getGunId(itemStack))
                 .map(index -> index.getGunData().getBolt())
@@ -502,7 +500,7 @@ public class ModernKineticGunScriptAPI {
      * @return 换弹是否需要消耗弹药
      */
     public boolean isReloadingNeedConsumeAmmo() {
-        if (AmmoBridge.managed(itemStack)) return true;
+        if (com.tacz.guns.api.extension.GunPlatformExtensions.current().managesAmmunition(itemStack)) return true;
 
         return IGunOperator.fromLivingEntity(shooter).needCheckAmmo();
     }
@@ -552,7 +550,8 @@ public class ModernKineticGunScriptAPI {
      * @return 实际消耗的弹药数量
      */
     public int consumeAmmoFromPlayer(int neededAmount) {
-        if (AmmoBridge.managed(itemStack)) return shooter instanceof net.minecraft.server.level.ServerPlayer p ? AmmoBridge.consume(p, itemStack, neededAmount) : 0;
+        var platform = com.tacz.guns.api.extension.GunPlatformExtensions.current();
+        if (platform.managesAmmunition(itemStack)) return shooter instanceof net.minecraft.server.level.ServerPlayer p ? platform.consumeAmmunition(p, itemStack, neededAmount) : 0;
 
         // 如果处于背包直读并且创造模式不消耗的情况
         if (useInventoryAmmo() && !isReloadingNeedConsumeAmmo()) {
@@ -573,7 +572,8 @@ public class ModernKineticGunScriptAPI {
      * @return 玩家身上（或者虚拟备弹）是否有弹药可以消耗
      */
     public boolean hasAmmoToConsume(){
-        if (AmmoBridge.managed(itemStack)) return shooter instanceof net.minecraft.world.entity.player.Player p && AmmoBridge.hasAmmo(p, itemStack);
+        var platform = com.tacz.guns.api.extension.GunPlatformExtensions.current();
+        if (platform.managesAmmunition(itemStack)) return shooter instanceof net.minecraft.world.entity.player.Player p && platform.hasAmmunition(p, itemStack);
 
         if (!isReloadingNeedConsumeAmmo()) {
             return true;

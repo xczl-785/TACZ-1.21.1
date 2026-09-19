@@ -111,7 +111,7 @@ public class LocalPlayerShoot {
     }
 
     public ShootResult shoot() {
-        if (dev.tacticaltacz.AssemblyFireGate.blocked(player.getMainHandItem())) {
+        if (com.tacz.guns.api.extension.GunPlatformExtensions.current().blockFire(player.getMainHandItem())) {
             player.displayClientMessage(net.minecraft.network.chat.Component.translatable("tactical_tacz_adapter.assembly.cannot_fire"), true);
             return ShootResult.FORGE_EVENT_CANCEL;
         }

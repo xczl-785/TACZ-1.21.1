@@ -203,8 +203,9 @@ public class GunHudOverlay implements LayeredDraw.Layer {
     }
 
     private static void handleInventoryAmmo(ItemStack stack, Inventory inventory) {
-        if (dev.tacticaltacz.AmmoBridge.managed(stack)) {
-            cacheInventoryAmmoCount = dev.tacticaltacz.AmmoBridge.reserveCount(inventory.player, stack);
+        var platform = com.tacz.guns.api.extension.GunPlatformExtensions.current();
+        if (platform.managesAmmunition(stack)) {
+            cacheInventoryAmmoCount = platform.reserveAmmunition(inventory.player, stack);
             return;
         }
 

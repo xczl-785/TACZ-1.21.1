@@ -1,7 +1,4 @@
 package com.tacz.guns.client.event;
-import dev.tacticaltacz.assembled.AssemblyPresentationClient;
-
-
 import com.github.exopandora.shouldersurfing.api.client.IShoulderSurfingCamera;
 import com.github.exopandora.shouldersurfing.api.client.ShoulderSurfing;
 import com.tacz.guns.GunMod;
@@ -106,7 +103,7 @@ public class CameraSetupEvent {
                 event.setFOV(fov);
                 return;
             }
-            float zoom = AssemblyPresentationClient.zoom(stack, iGun.getAimingZoom(stack));
+            float zoom = com.tacz.guns.api.extension.GunClientExtensions.current().zoom(stack, iGun.getAimingZoom(stack));
             if (livingEntity instanceof LocalPlayer localPlayer) {
                 IClientPlayerGunOperator gunOperator = IClientPlayerGunOperator.fromLocalPlayer(localPlayer);
                 float aimingProgress = gunOperator.getClientAimingProgress((float) event.getPartialTick());
@@ -193,14 +190,15 @@ public class CameraSetupEvent {
             IClientPlayerGunOperator clientPlayerGunOperator = IClientPlayerGunOperator.fromLocalPlayer(player);
             float partialTicks = Minecraft.getInstance().getTimer().getGameTimeDeltaPartialTick(false);
             float aimingProgress = clientPlayerGunOperator.getClientAimingProgress(partialTicks);
-            float zoom = AssemblyPresentationClient.zoom(mainHandItem, iGun.getAimingZoom(mainHandItem));
+            float zoom = com.tacz.guns.api.extension.GunClientExtensions.current().zoom(mainHandItem, iGun.getAimingZoom(mainHandItem));
             float aimingRecoilModifier = 1 - aimingProgress + aimingProgress / (float) Math.min(Math.sqrt(zoom), 1.5);
             // 如果是趴下，那么后坐力按 data 设计减少（默认为降低一半）
             if (!player.isSwimming() && player.getPose() == Pose.SWIMMING) {
                 aimingRecoilModifier = aimingRecoilModifier * gunData.getCrawlRecoilMultiplier();
             }
-            pitchSplineFunction = gunData.getRecoil().genPitchSplineFunction((float) attachmentRecoilModifier.left().eval(aimingRecoilModifier) * AssemblyPresentationClient.factors().pitch());
-            yawSplineFunction = gunData.getRecoil().genYawSplineFunction((float) attachmentRecoilModifier.right().eval(aimingRecoilModifier) * AssemblyPresentationClient.factors().yaw());
+            var recoilFactors = com.tacz.guns.api.extension.GunClientExtensions.current().recoilFactors();
+            pitchSplineFunction = gunData.getRecoil().genPitchSplineFunction((float) attachmentRecoilModifier.left().eval(aimingRecoilModifier) * recoilFactors.pitch());
+            yawSplineFunction = gunData.getRecoil().genYawSplineFunction((float) attachmentRecoilModifier.right().eval(aimingRecoilModifier) * recoilFactors.yaw());
             shootTimeStamp = System.currentTimeMillis();
             xRotO = 0;
             yRotO = 0;
@@ -253,6 +251,6 @@ public class CameraSetupEvent {
     }
     private static float assemblyModelFov(float original) {
         var stack = com.tacz.guns.api.client.other.KeepingItemRenderer.getRenderer().getCurrentItem();
-        return AssemblyPresentationClient.model(stack).map(m -> m.presentation.aim(stack).map(a -> (float) a.modelFov()).orElse(original)).orElse(original);
+        return com.tacz.guns.api.extension.GunClientExtensions.current().modelFov(stack, original);
     }
 }

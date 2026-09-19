@@ -1,6 +1,4 @@
 package com.tacz.guns.entity;
-import dev.tacticalcombat.api.*;
-import dev.tacticaltacz.*;
 
 
 import com.google.common.collect.Lists;
@@ -86,14 +84,7 @@ import static com.tacz.guns.api.event.common.GunDamageSourcePart.NON_ARMOR_PIERC
 /**
  * 动能武器打出的子弹实体。
  */
-public class EntityKineticBullet extends Projectile implements IEntityWithComplexSpawn, dev.tacticaltacz.ImpactCarrier {
-    private static final org.slf4j.Logger adapter$log = com.mojang.logging.LogUtils.getLogger();
-    private boolean adapter$continued;
-    private double adapter$nativeScale = 1;
-    private int adapter$ricochetCount;
-    private BallisticProfile adapter$ammo;
-    private BulletImpactEvent adapter$impact;
-    private final java.util.Set<java.util.UUID> adapter$resolved = new java.util.HashSet<>();
+public class EntityKineticBullet extends Projectile implements IEntityWithComplexSpawn {
 
     public static final EntityType<EntityKineticBullet> TYPE = EntityType.Builder.<EntityKineticBullet>of(EntityKineticBullet::new, MobCategory.MISC).noSummon().noSave().fireImmune().sized(0.0625F, 0.0625F).clientTrackingRange(5).updateInterval(5).setShouldReceiveVelocityUpdates(false).build("bullet");
     public static final TagKey<EntityType<?>> USE_MAGIC_DAMAGE_ON = TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("tacz:use_magic_damage_on"));
@@ -230,8 +221,7 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         this.startPos = this.position();
         this.isTracerAmmo = isTracerAmmo;
         this.gunDisplayId = gunDisplayId;
-        var firearmSnapshot=AmmoBridge.snapshot(gunItem);
-        adapter$ammo = firearmSnapshot==null?null:dev.tacticalcombat.api.FirearmBallistics.profile(firearmSnapshot);
+        com.tacz.guns.api.extension.GunPlatformExtensions.current().initializeProjectile(this, gunItem);
     }
 
     @ApiStatus.Internal
@@ -257,7 +247,7 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         super.tick();
         // 调用 TaC 子弹服务器事件
         this.onBulletTick();
-        if (adapter$continued) return;
+        if (com.tacz.guns.api.extension.GunPlatformExtensions.current().continued(this)) return;
         // 粒子效果
         if (this.level().isClientSide && FMLEnvironment.dist == Dist.CLIENT) {
             AmmoParticleSpawner.addParticle(this);
@@ -406,9 +396,8 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
     }
 
     protected void onHitEntity(TacHitResult result, Vec3 startVec, Vec3 endVec) {
-        if (adapter$quote(result, startVec, endVec)) return;
+        if (com.tacz.guns.api.extension.GunPlatformExtensions.current().quoteImpact(this, result, startVec, endVec)) return;
         onHitEntityNative(result, startVec, endVec);
-        adapter$impact = null;
     }
 
     private void onHitEntityNative(TacHitResult result, Vec3 startVec, Vec3 endVec) {
@@ -465,12 +454,12 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
             KnockBackModifier modifier = KnockBackModifier.fromLivingEntity(livingCore);
             modifier.setKnockBackStrength(this.knockback);
             // 创建伤害
-            adapter$apply(this, parts, damage, sources);
+            applyPlatformImpact(parts, damage, sources);
             // 恢复原位
             modifier.resetKnockBackStrength();
         } else {
             // 创建伤害
-            adapter$apply(this, parts, damage, sources);
+            applyPlatformImpact(parts, damage, sources);
         }
         // 爆炸逻辑
         if (this.explosion) {
@@ -550,7 +539,7 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         // 让脚本修改枪械伤害
         float modifiedDamage = modifyProperty(GunProperties.DAMAGE, Float.class, base);
         float nativeDamage = Math.max(modifiedDamage * this.shotDamageMultiplier, 0F);
-        return adapter$nativeScale == 1 ? nativeDamage : (float) (nativeDamage * adapter$nativeScale);
+        return com.tacz.guns.api.extension.GunPlatformExtensions.current().scaleDamage(this, nativeDamage);
     }
 
     /**
@@ -633,7 +622,7 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         buffer.writeBoolean(this.isTracerAmmo);
         buffer.writeResourceLocation(this.gunId != null ? this.gunId : ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "invalid"));
         buffer.writeResourceLocation(this.gunDisplayId != null ? this.gunDisplayId : ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "invalid"));
-        buffer.writeBoolean(adapter$ricochetCount > 0);
+        buffer.writeBoolean(com.tacz.guns.api.extension.GunPlatformExtensions.current().hasContinuation(this));
     }
 
     @Override
@@ -783,94 +772,59 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         }
     }
 
-    public BallisticProfile tacticalAmmo() { return adapter$ammo; }
-    public BulletImpactEvent tacticalImpact() { return adapter$impact; }
-    private boolean adapter$quote(TacHitResult hit, Vec3 start, Vec3 end) {
-        adapter$impact = null;
-        var bullet = this;
-        if (adapter$ammo == null || bullet.level().isClientSide || !(hit.getEntity() instanceof LivingEntity)
-                || hit.getEntity() instanceof com.tacz.guns.api.entity.ITargetEntity) return false;
-        if (adapter$resolved.contains(hit.getEntity().getUUID())) { return true; }
-        adapter$impact = NeoForge.EVENT_BUS.post(new BulletImpactEvent(new BulletImpact(adapter$ammo, bullet,
-                hit.getEntity(), hit.getLocation(), start, end, adapter$ricochetCount)));
-        return false;
+    private void applyPlatformImpact(MaybeMultipartEntity parts, float nativeDamage, Pair<DamageSource, DamageSource> sources) {
+        com.tacz.guns.api.extension.GunPlatformExtensions.current().applyImpact(this, parts, nativeDamage, sources,
+                () -> tacAttackEntity(parts, nativeDamage, sources));
     }
 
-    private void adapter$apply(EntityKineticBullet bullet, MaybeMultipartEntity parts, float nativeDamage, Pair<DamageSource, DamageSource> sources) {
-        if (adapter$impact == null || !adapter$impact.claimed() || adapter$impact.impact().target() != parts.hitPart()) {
-            tacAttackEntity(parts, nativeDamage, sources); return;
-        }
-        if (!adapter$resolved.add(parts.hitPart().getUUID())) return;
-        // Apply once after Pre. The combat owner may commit body and armor instead of legacy MC hurt.
-        var source = TacticalTaczAdapter.resolvedSource(bullet);
-        parts.core().invulnerableTime = 0;
-        if (adapter$impact.apply(source)) adapter$impact.takeContinuation().ifPresent(this::adapter$continue);
-    }
-
-    public void tacticalInitializeContinuation(ContinuationState state, ProjectileContinuation continuation) {
-        this.life = state.life();
-        this.speed = state.speed();
-        this.gravity = state.gravity();
-        this.friction = state.friction();
-        this.damageAmount = state.damageAmount();
-        this.distanceAmount = state.distanceAmount();
-        this.knockback = state.knockback();
-        this.explosion = state.explosion();
-        this.igniteEntity = state.igniteEntity();
-        this.igniteBlock = state.igniteBlock();
-        this.igniteEntityTime = state.igniteEntityTime();
-        this.explosionDamage = state.explosionDamage();
-        this.explosionRadius = state.explosionRadius();
-        this.explosionDelayCount = state.explosionDelayCount();
-        this.explosionKnockback = state.explosionKnockback();
-        this.explosionDestroyBlock = state.explosionDestroyBlock();
-        this.damageModifier = state.damageModifier();
-        this.pierce = state.pierce();
-        this.startPos = state.startPos();
-        this.isTracerAmmo = state.isTracerAmmo();
-        this.cameraXRot = state.cameraXRot();
-        this.cameraYRot = state.cameraYRot();
-        this.firstPersonRenderOffset = state.firstPersonRenderOffset();
-        this.ammoId = state.ammoId();
-        this.gunId = state.gunId();
-        this.gunDisplayId = state.gunDisplayId();
-        this.armorIgnore = state.armorIgnore();
-        this.headShot = state.headShot();
-        this.shotDamageMultiplier = state.shotDamageMultiplier();
-        adapter$nativeScale = state.damageScale();
-        adapter$ammo = continuation.ammunition();
-        adapter$ricochetCount = continuation.ricochetCount();
-    }
-
-    private void adapter$continue(ProjectileContinuation continuation) {
+    /** Spawns a continuation while TaCZ remains the sole owner of projectile physics state. */
+    public void spawnExtensionContinuation(Vec3 position, Vec3 velocity, double damageScale, Object payload) {
         var original = this;
-        // This executes only after the quoted armor/body commit succeeds and Pre did not cancel it.
-        // The outer upstream loop decrements pierce immediately after onHitEntity returns.
         int remainingLife = life - original.tickCount;
         int originalPierce = pierce;
         pierce = 1;
-        adapter$continued = true;
         original.discard();
         if (remainingLife <= 1) return;
-        float oldDamage = adapter$ammo.fleshDamage();
-        if (!(oldDamage > 0)) {
-            adapter$log.error("Rejected zero-damage ricochet continuation projectile={} target={}", original.getUUID(), adapter$impact.impact().target().getUUID());
-            return;
-        }
         var child = new EntityKineticBullet(EntityKineticBullet.TYPE, original.level());
-        var state = new ContinuationState(
-            remainingLife, speed, gravity, friction, new java.util.LinkedList<>(damageAmount), distanceAmount, knockback, explosion, igniteEntity, igniteBlock, igniteEntityTime, explosionDamage, explosionRadius, explosionDelayCount, explosionKnockback, explosionDestroyBlock, damageModifier, originalPierce, startPos, isTracerAmmo, cameraXRot, cameraYRot, new org.joml.Vector3f(), ammoId, gunId, gunDisplayId, armorIgnore, headShot, shotDamageMultiplier,
-            adapter$nativeScale * continuation.ammunition().fleshDamage() / oldDamage);
-        ((ImpactCarrier) child).tacticalInitializeContinuation(state, continuation);
+        child.life = remainingLife;
+        child.speed = speed;
+        child.gravity = gravity;
+        child.friction = friction;
+        child.damageAmount = new java.util.LinkedList<>(damageAmount);
+        child.distanceAmount = distanceAmount;
+        child.knockback = knockback;
+        child.explosion = explosion;
+        child.igniteEntity = igniteEntity;
+        child.igniteBlock = igniteBlock;
+        child.igniteEntityTime = igniteEntityTime;
+        child.explosionDamage = explosionDamage;
+        child.explosionRadius = explosionRadius;
+        child.explosionDelayCount = explosionDelayCount;
+        child.explosionKnockback = explosionKnockback;
+        child.explosionDestroyBlock = explosionDestroyBlock;
+        child.damageModifier = damageModifier;
+        child.pierce = originalPierce;
+        child.startPos = startPos;
+        child.isTracerAmmo = isTracerAmmo;
+        child.cameraXRot = cameraXRot;
+        child.cameraYRot = cameraYRot;
+        child.firstPersonRenderOffset = new org.joml.Vector3f();
+        child.ammoId = ammoId;
+        child.gunId = gunId;
+        child.gunDisplayId = gunDisplayId;
+        child.armorIgnore = armorIgnore;
+        child.headShot = headShot;
+        child.shotDamageMultiplier = shotDamageMultiplier;
+        com.tacz.guns.api.extension.GunPlatformExtensions.current().initializeContinuation(child, payload);
         child.setOwner(original.getOwner());
         child.getPersistentData().merge(original.getPersistentData().copy());
-        child.setPos(continuation.position());
-        child.setDeltaMovement(continuation.velocity());
-        var movement = continuation.velocity();
+        child.setPos(position);
+        child.setDeltaMovement(velocity);
+        var movement = velocity;
         child.setYRot((float) Math.toDegrees(Math.atan2(movement.x, movement.z)));
         child.setXRot((float) Math.toDegrees(Math.atan2(movement.y, movement.horizontalDistance())));
         child.yRotO = child.getYRot(); child.xRotO = child.getXRot();
         if (!original.level().addFreshEntity(child))
-            adapter$log.error("Committed ricochet spawn failed projectile={} target={}", original.getUUID(), adapter$impact.impact().target().getUUID());
+            GunMod.LOGGER.error("Committed extension continuation spawn failed projectile={}", original.getUUID());
     }
 }

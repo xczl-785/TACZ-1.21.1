@@ -185,9 +185,9 @@ public final class AdapterVerification {
         require(FIRED.size() == before + 1, "real TaCZ shootOnce creates exactly one projectile");
         var fired = FIRED.getLast();
         require(!g.hasBulletInBarrel(weapon) && g.getCurrentAmmoCount(weapon) == 0, "shot consumes final chamber round");
-        require(((ImpactCarrier) fired).tacticalAmmo().fleshDamage() == 70, "real projectile carries fired variant");
+        require(TacticalGunPlatformExtension.installed().ammunition(fired).fleshDamage() == 70, "real projectile carries fired variant");
         AmmoBridge.select(weapon, dev.tacticaltacz.development.VerificationRounds.ap());
-        require(((ImpactCarrier) fired).tacticalAmmo().fleshDamage() == 70, "in-flight identity unaffected by changing empty gun");
+        require(TacticalGunPlatformExtension.installed().ammunition(fired).fleshDamage() == 70, "in-flight identity unaffected by changing empty gun");
         var target = target(level, shooter.position().add(0, 0, 4));
         level.addFreshEntity(target);
         // Invoke the real protected collision method, preserving Pre/Post and the production mixin.
@@ -234,11 +234,9 @@ public final class AdapterVerification {
      * The all-gun suite above verifies real source profiles; this isolated suite retains its formula oracle. */
     private static EntityKineticBullet armorFixture(EntityKineticBullet bullet) {
         if (!Boolean.getBoolean("tacticaltacz.smoke")) throw new IllegalStateException("Smoke only");
-        try {
-            var field=EntityKineticBullet.class.getDeclaredField("adapter$ammo");field.setAccessible(true);
-            field.set(bullet,new dev.tacticalcombat.api.BallisticProfile("verification:armor_numeric", "9x19",30,40,50));
-            return bullet;
-        } catch (ReflectiveOperationException e) {throw new IllegalStateException(e);}
+        TacticalGunPlatformExtension.installed().setAmmunition(bullet,
+                new dev.tacticalcombat.api.BallisticProfile("verification:armor_numeric", "9x19",30,40,50));
+        return bullet;
     }
     private static TarkovAmmoItem otherRound(TarkovAmmoItem selected) {
         return selected==dev.tacticaltacz.development.VerificationRounds.ap()
@@ -262,10 +260,10 @@ public final class AdapterVerification {
         require(rejected,"adopted chamber prevents changing variant");
         int before=FIRED.size();api.shootOnce(true);require(FIRED.size()==before+AmmoBridge.definition(weapon).projectileCount(),"adopted real shot projectile count "+gunId+" "+ammo.definition().id());
         require(g.getCurrentAmmoCount(weapon)==0&&!g.hasBulletInBarrel(weapon),"shot consumes exactly one cartridge "+gunId);
-        var fired=FIRED.getLast();var snapshot=((ImpactCarrier)fired).tacticalAmmo();
-        require(snapshot.equals(AmmoBridge.snapshot(weapon)),"adopted projectile exact parameters");
+        var fired=FIRED.getLast();var snapshot=TacticalGunPlatformExtension.installed().ammunition(fired);
+        require(snapshot.equals(dev.tacticalcombat.api.FirearmBallistics.profile(AmmoBridge.snapshot(weapon))),"adopted projectile exact parameters");
         AmmoBridge.select(weapon,alternate);
-        require(snapshot.equals(((ImpactCarrier)fired).tacticalAmmo()),"adopted in-flight snapshot immutable");
+        require(snapshot.equals(TacticalGunPlatformExtension.installed().ammunition(fired)),"adopted in-flight snapshot immutable");
         var target=target(level,new Vec3(0,250,4));level.addFreshEntity(target);
         var hit=EntityKineticBullet.class.getDeclaredMethod("onHitEntity",TacHitResult.class,Vec3.class,Vec3.class);hit.setAccessible(true);
         hit.invoke(fired,new TacHitResult(new EntityKineticBullet.EntityResult(target,target.position(),false)),shooter.position(),target.position());

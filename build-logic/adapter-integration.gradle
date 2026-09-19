@@ -29,6 +29,18 @@ tasks.register('verifyGameplayDependencies') {
         }
     }
 }
+tasks.register('verifyCorePlatformBoundary') {
+    inputs.files(fileTree('src/main/java') { include '**/*.java' })
+    doLast {
+        def forbidden = ['dev.tacticaltacz', 'dev.tacticalcombat', 'dev.tacticalinventory', 'dev.tacticalcharacter', 'dev.firearms', 'dev.weaponruntime']
+        def violations = []
+        fileTree('src/main/java') { include '**/*.java' }.each { source ->
+            def text = source.getText('UTF-8')
+            forbidden.each { prefix -> if (text.contains(prefix)) violations.add("${source}: ${prefix}") }
+        }
+        assert violations.empty : "TaCZ core has platform reverse dependencies:\n${violations.join('\n')}"
+    }
+}
 tasks.named('compileJava') { dependsOn 'verifyGameplayDependencies' }
 tasks.register('adapterTest', Test) {
     testClassesDirs = sourceSets.adapterTest.output.classesDirs
@@ -74,7 +86,7 @@ tasks.register('verifyWeaponPipeline', Exec) {
     commandLine 'python3', '-m', 'unittest', 'discover', '-p', 'test_*.py'
 }
 tasks.named('processResources') { dependsOn 'verifyConfiguredWeapons' }
-tasks.named('check') { dependsOn 'adapterTest', 'adapterDevelopmentClasses', 'verifyWeaponPipeline', 'verifyGameplayDependencies' }
+tasks.named('check') { dependsOn 'adapterTest', 'adapterDevelopmentClasses', 'verifyWeaponPipeline', 'verifyGameplayDependencies', 'verifyCorePlatformBoundary' }
 
 tasks.named('assemble') { dependsOn 'developmentJar' }
 tasks.register('verifyAdapterIntegration', Exec) {

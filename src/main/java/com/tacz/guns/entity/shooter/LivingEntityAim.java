@@ -27,8 +27,7 @@ public class LivingEntityAim {
     }
 
     public void aim(boolean isAim) {
-        if (isAim && dev.tacticaltacz.assembled.NativeAttachmentProjection.blocksAim(shooter.getMainHandItem())) return;
-        if (isAim && shooter instanceof net.minecraft.server.level.ServerPlayer p && dev.tacticaltacz.GunAdoption.contains(p.getMainHandItem()) && !dev.tacticalcharacter.resource.PlayerResources.canAim(p)) return;
+        if (isAim && com.tacz.guns.api.extension.GunPlatformExtensions.current().blockAim(shooter, shooter.getMainHandItem())) return;
 
         data.isAiming = isAim;
     }

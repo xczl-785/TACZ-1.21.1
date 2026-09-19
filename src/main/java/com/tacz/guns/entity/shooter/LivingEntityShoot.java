@@ -49,7 +49,7 @@ public class LivingEntityShoot {
     }
 
     private ShootResult shoot(Supplier<Float> pitch, Supplier<Float> yaw, long timestamp, float chargeProgress, boolean hasChargeContext) {
-        if (dev.tacticaltacz.AssemblyFireGate.blocked(data.currentGunItem == null ? shooter.getMainHandItem() : data.currentGunItem.get())) return ShootResult.FORGE_EVENT_CANCEL;
+        if (com.tacz.guns.api.extension.GunPlatformExtensions.current().blockFire(data.currentGunItem == null ? shooter.getMainHandItem() : data.currentGunItem.get())) return ShootResult.FORGE_EVENT_CANCEL;
 
         if (data.currentGunItem == null) {
             return ShootResult.NOT_DRAW;
