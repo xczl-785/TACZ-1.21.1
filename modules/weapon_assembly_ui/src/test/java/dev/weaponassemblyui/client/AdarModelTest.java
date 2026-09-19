@@ -10,7 +10,7 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 final class AdarModelTest {
-    private static final Path RES=Path.of("src/development/resources/assembly-adar");
+    private static final Path RES=Path.of("src/test/resources/adar-regression");
     @Test void importedAssemblyPreservesPositionsAndSubtrees() throws Exception {
         var catalog=AssemblyJson.readCatalog(Files.readString(RES.resolve("catalog.json")));
         var engine=new AssemblyEngine(catalog);

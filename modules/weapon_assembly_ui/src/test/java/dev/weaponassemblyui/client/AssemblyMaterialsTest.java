@@ -9,11 +9,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 final class AssemblyMaterialsTest {
     private static final Path ASSETS=Path.of("src/main/resources/assets/weapon_assembly_ui");
-    private static final Path DEV=Path.of("src/development/resources");
+    private static final Path TEST=Path.of("src/test/resources/adar-regression");
     private Map<String,ModelGeometry> models() throws Exception {
-        try(var reader=Files.newBufferedReader(DEV.resolve("assembly-adar/manifest.json"))){return ModelGeometry.load(reader);}
+        try(var reader=Files.newBufferedReader(TEST.resolve("manifest.json"))){return ModelGeometry.load(reader);}
     }
-    private String bindings() throws Exception { return Files.readString(DEV.resolve("assets/weapon_assembly_ui/materials/adar.json")); }
+    private String bindings() throws Exception { return Files.readString(TEST.resolve("materials.json")); }
     private AssemblyMaterials load(String bindings,Map<String,ModelGeometry> models) throws Exception {
         try(var reader=Files.newBufferedReader(ASSETS.resolve("materials/basic.json"))){return AssemblyMaterials.load(reader,new StringReader(bindings),models);}
     }

@@ -48,7 +48,7 @@ weaponModules.each { name ->
         classpath = tests.runtimeClasspath
         useJUnitPlatform()
         workingDir file("modules/${name}")
-        inputs.files(fileTree("modules/${name}/src/test/fixtures"), fileTree("modules/${name}/src/development/resources"), fileTree('modules/weapon_assembly/model-fixtures'))
+        inputs.files(fileTree("modules/${name}/src/test/fixtures"), fileTree("modules/${name}/src/test/resources"), fileTree('modules/weapon_assembly/model-fixtures'))
     }
     tasks.named('check') { dependsOn verify }
 }
@@ -59,38 +59,16 @@ tasks.register('compilePureJava', JavaCompile) {
     javaCompiler = javaToolchains.compilerFor { languageVersion = JavaLanguageVersion.of(21) }
     options.release = 21
 }
-sourceSets {
-    uiDevelopment {
-        java.srcDir('modules/weapon_assembly_ui/src/development/java')
-        resources.srcDir('modules/weapon_assembly_ui/src/development/resources')
-        compileClasspath += main.output + main.compileClasspath
-        runtimeClasspath += main.output + main.runtimeClasspath
-    }
-}
-tasks.named('processUiDevelopmentResources', ProcessResources) {
-    from('modules/weapon_assembly/model-fixtures') {
-        include 'catalog.json', 'manifest.json', 'scenes/*.json'
-        into 'assembly-fixtures'
-    }
-}
-// Local source runs include the opt-in client demo. Player Jar and NewMod daily runtime exclude it.
 neoForge {
     mods {
-        tacz { sourceSet sourceSets.uiDevelopment }
+        tacz { }
     }
     runs {
         configureEach { loadedMods = [mods.tacz] }
-        assemblyClient {
-            client()
-            loadedMods = [mods.tacz]
-            gameDirectory = file('run/weapon-assembly-client')
-            systemProperty 'weaponassembly.demo', 'true'
-            programArguments.addAll('--width', '1600', '--height', '1000')
-        }
     }
 }
 tasks.register('verifyWeaponModules', Exec) {
     environment 'PYTHONDONTWRITEBYTECODE', '1'
     commandLine 'python3', 'tools/verify_weapon_modules.py'
 }
-tasks.named('check') { dependsOn 'compilePureJava', 'uiDevelopmentClasses', 'verifyWeaponModules' }
+tasks.named('check') { dependsOn 'compilePureJava', 'verifyWeaponModules' }

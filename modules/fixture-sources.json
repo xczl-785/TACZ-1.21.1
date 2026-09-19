@@ -75,66 +75,6 @@
       "new": "modules/weapon_models/src/test/fixtures/data/newmod_adar/adar/catalog.json",
       "sha256": "e4a8fa114c494a98b5d2acc2bbcbe0fcabda633a4969ab6442206a1328c1e690",
       "role": "regression/development fixture only; original production content stays in adapter"
-    },
-    {
-      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2f26d174af02a9625114.png",
-      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/textures/demo-parts/part_5c0e2f26d174af02a9625114.png",
-      "sha256": "14969f5dc7b504d718404a0b97ce7868e0e42aebbd33cf10568c05bc6ef7aaa2",
-      "role": "regression/development fixture only; original production content stays in adapter"
-    },
-    {
-      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5aaa5e60e5b5b000140293d6.png",
-      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/textures/demo-parts/part_5aaa5e60e5b5b000140293d6.png",
-      "sha256": "c79f99bba6dde7e86f270b39a16292d88a6c99479ccd6dd2b7e5d53a1f628731",
-      "role": "regression/development fixture only; original production content stays in adapter"
-    },
-    {
-      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0fafb6d174af02a96260ba.png",
-      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/textures/demo-parts/part_5c0fafb6d174af02a96260ba.png",
-      "sha256": "bd76effa22cf0a78aa47e7963484656e1b4b831beea2fffb62663d6dce42d559",
-      "role": "regression/development fixture only; original production content stays in adapter"
-    },
-    {
-      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2f5cd174af02a012cfc9.png",
-      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/textures/demo-parts/part_5c0e2f5cd174af02a012cfc9.png",
-      "sha256": "628ba2115995987b19a86a91bf8a7072eb4e42787a1ea9be7c7ba574da098f9e",
-      "role": "regression/development fixture only; original production content stays in adapter"
-    },
-    {
-      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2f94d174af029f650d56.png",
-      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/textures/demo-parts/part_5c0e2f94d174af029f650d56.png",
-      "sha256": "f02a1e0f0895f37a64ff3fd36eb1e5ef33aae8463044027a80778573fd5de3b9",
-      "role": "regression/development fixture only; original production content stays in adapter"
-    },
-    {
-      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0faeddd174af02a962601f.png",
-      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/textures/demo-parts/part_5c0faeddd174af02a962601f.png",
-      "sha256": "f33f74d5fb9a3043e585a56358ab1f982635621684133e86a1a61d2823bfd105",
-      "role": "regression/development fixture only; original production content stays in adapter"
-    },
-    {
-      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0e2ff6d174af02a1659d4a.png",
-      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/textures/demo-parts/part_5c0e2ff6d174af02a1659d4a.png",
-      "sha256": "daf9c8911c12ac2b6f8fd256f24d31ef6cbcc2a76b255894856065889aad7925",
-      "role": "regression/development fixture only; original production content stays in adapter"
-    },
-    {
-      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5ae30e795acfc408fb139a0b.png",
-      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/textures/demo-parts/part_5ae30e795acfc408fb139a0b.png",
-      "sha256": "3efbe3e67a011c1de1fd6c579aee0950189e4f992a46fccb970677007b852870",
-      "role": "regression/development fixture only; original production content stays in adapter"
-    },
-    {
-      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_5c0faf68d174af02a96260b8.png",
-      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/textures/demo-parts/part_5c0faf68d174af02a96260b8.png",
-      "sha256": "a624b236acf929a759033eeca4bbf00f0164dd555fbcd1accb3d9826b476a61d",
-      "role": "regression/development fixture only; original production content stays in adapter"
-    },
-    {
-      "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/textures/item/part_558022b54bdc2dac148b458d.png",
-      "new": "modules/weapon_assembly_ui/src/development/resources/assets/weapon_assembly_ui/textures/demo-parts/part_558022b54bdc2dac148b458d.png",
-      "sha256": "0f3ee13abcc61c5bb0284aa76115ef3bebe6c25cf0ed61a3040df958750b4fb7",
-      "role": "regression/development fixture only; original production content stays in adapter"
     }
   ]
 }

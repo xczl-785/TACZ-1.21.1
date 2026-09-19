@@ -7,9 +7,9 @@
 | weapon_assembly | 纯 Java 组装规则与 JSON 读写；不依赖 Minecraft、TaCZ、foundation | `bash gradlew compilePureJava weapon_assemblyTest --offline` |
 | weapon_models | 几何、定位、材质和呈现数学；不依赖 TaCZ 或 Minecraft 渲染器 | `bash gradlew weapon_modelsTest --offline` |
 | weapon_runtime | 通过 foundation 公共 API 读取实体组装状态，计算枪械能力；TaCZ 唯一入口注册 `weapon_runtime:profile` | `python3 tools/verify_weapon_modules.py` |
-| weapon_assembly_ui | 通用工作台视图与会话；客户端类由 adapter 的客户端入口使用，公共初始化不加载 UI | `bash gradlew weapon_assembly_uiTest uiDevelopmentClasses --offline` |
+| weapon_assembly_ui | 通用工作台视图与会话；客户端类由 adapter 的客户端入口使用，公共初始化不加载 UI | `bash gradlew weapon_assembly_uiTest --offline` |
 
-`build-logic/weapon-modules.gradle` 将四目录编译进同一个 tacz Jar。没有四个独立 Mod、没有四个嵌套 Jar。保留原 Java 包名、组件 ID、资源命名空间以及 `META-INF/licenses/EFTForge-MIT.txt` 署名。`src/test`、`model-fixtures`、`src/development` 不进入正式包。
+`build-logic/weapon-modules.gradle` 将四目录编译进同一个 tacz Jar。没有四个独立 Mod、没有四个嵌套 Jar。保留原 Java 包名、组件 ID、资源命名空间以及 `META-INF/licenses/EFTForge-MIT.txt` 署名。`src/test` 与 `model-fixtures` 不进入正式包。
 
 ## 外部依赖
 
@@ -20,8 +20,8 @@
 ## 开发入口与制作资料
 
 - 完整验收使用 NewMod `启动开发客户端.command`；本轮不自动启动它。
-- 保留独立演示：`bash gradlew runAssemblyClient --offline`。它在 `run/weapon-assembly-client` 打开开发组装页面，开发类不进入正式 Jar。`prepareAssemblyClientRun` 只准备运行配置。
-- 旧 ADAR/Radian/导入 M4 作者链已退役，历史材质导入说明仅保留来源依据；当前生产从[十五枪作者源](tacz_adapter/weapon-sources/README.md)进入。
+- 旧独立 ADAR 组装演示客户端及其作者链已移除；组装界面由正式 `tacz_adapter` 宿主调用。
+- 当前生产从[十五枪作者源](tacz_adapter/weapon-sources/README.md)进入。
 - 下级历史 README、审计报告的旧路径是原始来源，当前可执行入口以本文为准。
 
 来源、逐文件迁移和验收记录见 [第一项交付](../docs/assembly-experiment/weapon合并交付.md) 与 [迁移清单](../docs/assembly-experiment/weapon-module-migration.json)。
