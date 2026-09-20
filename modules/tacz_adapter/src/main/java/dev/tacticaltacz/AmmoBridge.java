@@ -1,8 +1,8 @@
 package dev.tacticaltacz;
-import com.tacz.guns.ammunition.*;
+import dev.tarkovcontent.ammunition.*;
 import com.tacz.guns.api.item.IGun;
 import dev.firearms.ammunition.*;
-import com.tacz.guns.ammunition.TarkovAmmoItem;
+import dev.tarkovcontent.ammunition.TarkovAmmunitionItem;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.resources.ResourceLocation;
@@ -17,18 +17,18 @@ public final class AmmoBridge {
     public static final String KEY = "tactical_tacz_adapter:ammunition_v1";
     public static final ResourceLocation GUN = ResourceLocation.parse("tacz_fork_tarkov:glock_17");
     public static final ResourceLocation CALIBER = ResourceLocation.parse("tacz:9mm");
-    private static final java.util.Map<String,AmmunitionContent.Entry> ENTRIES=AmmunitionContent.load().stream().collect(java.util.stream.Collectors.toUnmodifiableMap(AmmunitionContent.Entry::id,java.util.function.Function.identity()));
-    public static AmmunitionContent.Entry definition(ItemStack gun){var ammo=ammunition(gun);return ammo==null?null:ENTRIES.get(ammo.definition().id());}
+    private static final java.util.Map<String,AmmunitionDefinition> ENTRIES=AmmunitionCatalog.load().stream().collect(java.util.stream.Collectors.toUnmodifiableMap(AmmunitionDefinition::id,java.util.function.Function.identity()));
+    public static AmmunitionDefinition definition(ItemStack gun){var ammo=ammunition(gun);return ammo==null?null:ENTRIES.get(ammo.definition().id());}
     private AmmoBridge() {}
     public static boolean managed(ItemStack gun) {
         return GunAdoption.contains(gun);
     }
-    public static TarkovAmmoItem ammunition(ItemStack gun) {
+    public static TarkovAmmunitionItem ammunition(ItemStack gun) {
         if (!managed(gun)) return null;
         var id = ResourceLocation.tryParse(gun.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag().getString(KEY));
-        return id != null && BuiltInRegistries.ITEM.get(id) instanceof TarkovAmmoItem ammo && ammo.definition().caliber().equals(GunAdoption.caliber(gun)) ? ammo : null;
+        return id != null && BuiltInRegistries.ITEM.get(id) instanceof TarkovAmmunitionItem ammo && ammo.definition().caliber().equals(GunAdoption.caliber(gun)) ? ammo : null;
     }
-    public static void select(ItemStack gun, TarkovAmmoItem ammo) {
+    public static void select(ItemStack gun, TarkovAmmunitionItem ammo) {
         if (!GunAdoption.contains(gun)) throw new IllegalArgumentException("Unsupported gun");
         var g=(IGun)gun.getItem();
         var current=ammunition(gun);var feed=new FeedState(java.util.Optional.ofNullable(current).map(a->new AmmunitionIdentity(a.definition().id(),a.definition().caliber())),g.getCurrentAmmoCount(gun),g.hasBulletInBarrel(gun),Math.max(g.getCurrentAmmoCount(gun),0));
@@ -48,13 +48,13 @@ public final class AmmoBridge {
         if (d == null) return null;
         return new BallisticSnapshot(new AmmunitionIdentity(d.id(),d.caliber()),d.fleshDamage(),d.penetrationPower(),d.armorDamage(),d.initialSpeed(),d.projectileCount());
     }
-    public static TarkovAmmoItem candidate(Player player,ItemStack gun) {
+    public static TarkovAmmunitionItem candidate(Player player,ItemStack gun) {
         if(!managed(gun))return null;
         var g=(IGun)gun.getItem();
         if(g.getCurrentAmmoCount(gun)>0||g.hasBulletInBarrel(gun))return ammunition(gun);
         var supply=AmmunitionSupplies.current().orElse(null);if(supply==null)return null;
-        var found=supply.find(player,stack->stack.getItem() instanceof TarkovAmmoItem ammo && ammo.definition().caliber().equals(GunAdoption.caliber(gun)));
-        return found.getItem() instanceof TarkovAmmoItem ammo?ammo:null;
+        var found=supply.find(player,stack->stack.getItem() instanceof TarkovAmmunitionItem ammo && ammo.definition().caliber().equals(GunAdoption.caliber(gun)));
+        return found.getItem() instanceof TarkovAmmunitionItem ammo?ammo:null;
     }
     public static boolean hasAmmo(Player player, ItemStack gun) {
         var ammo=candidate(player,gun);

@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:item/generated",
-  "textures": {
-    "layer0": "tarkov_content:item/ammo_66a0d1f88486c69fce00fdf6"
-  }
-}

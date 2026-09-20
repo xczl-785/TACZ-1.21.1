@@ -53,7 +53,7 @@ final class RefitInventorySmoke {
         // Native extended-mag return is part of the same plan; chamber is retained.
         var ext=all.stream().filter(s->((IAttachment)s.getItem()).getType(s)==AttachmentType.EXTENDED_MAG&&g.allowAttachment(gun,s)).findFirst().orElseThrow();
         equipped=gun.copy();g.installAttachment(level.registryAccess(),equipped,ext);
-        var ammo=net.minecraft.core.registries.BuiltInRegistries.ITEM.stream().filter(i->i instanceof com.tacz.guns.ammunition.TarkovAmmoItem a&&a.definition().caliber().equals("556x45")).map(i->(com.tacz.guns.ammunition.TarkovAmmoItem)i).findFirst().orElseThrow();
+        var ammo=net.minecraft.core.registries.BuiltInRegistries.ITEM.stream().filter(i->i instanceof dev.tarkovcontent.ammunition.TarkovAmmunitionItem a&&a.definition().caliber().equals("556x45")).map(i->(dev.tarkovcontent.ammunition.TarkovAmmunitionItem)i).findFirst().orElseThrow();
         AmmoBridge.select(equipped,ammo);g.setCurrentAmmoCount(equipped,12);g.setBulletInBarrel(equipped,true);
         p=player(level,equipped,List.of(ext,new ItemStack(Items.BEDROCK,192)));view=query(p);before=p.getMainHandItem().copy();state=p.getData(ModRegistries.PLAYER_GEAR);
         check(RefitBridge.handle(p,installRequest(view,view.choices().getFirst().id())).result().equals("rejected"),"ammo refund cannot fit: entire swap rejected");

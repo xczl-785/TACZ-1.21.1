@@ -7,7 +7,7 @@ R=Path(__file__).resolve().parents[1]
 
 class PlatformExtensionBoundary(unittest.TestCase):
  def test_core_has_no_newmod_reverse_dependencies(self):
-  forbidden=('dev.tacticaltacz','dev.tacticalcombat','dev.tacticalinventory','dev.tacticalcharacter','dev.firearms','dev.weaponruntime')
+  forbidden=('dev.tacticaltacz','dev.tacticalcombat','dev.tacticalinventory','dev.tacticalcharacter','dev.firearms','dev.weaponruntime','dev.tarkovcontent')
   violations=[]
   for source in (R/'src/main/java').rglob('*.java'):
    text=source.read_text()
@@ -17,11 +17,12 @@ class PlatformExtensionBoundary(unittest.TestCase):
  def test_core_routes_through_tacz_owned_extensions(self):
   gun=(R/'src/main/java/com/tacz/guns/GunMod.java').read_text()
   bullet=(R/'src/main/java/com/tacz/guns/entity/EntityKineticBullet.java').read_text()
-  ammo=(R/'src/main/java/com/tacz/guns/ammunition/TarkovAmmoItem.java').read_text()
+  ammo=(R/'modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ContentAmmoMixin.java').read_text()
   self.assertEqual(1,gun.count('GunPlatformExtensions.register(bus);'))
   for method in ('initializeProjectile','quoteImpact','applyImpact','scaleDamage','initializeContinuation'):
    self.assertIn('.'+method+'(',bullet)
   self.assertIn('.matchesAmmunition(gun, ammo)',ammo)
+  self.assertIn('@Mixin(TarkovAmmunitionItem.class)',ammo)
 
  def test_adapter_owns_platform_specific_behavior(self):
   provider=(R/'modules/tacz_adapter/src/main/java/dev/tacticaltacz/TacticalGunPlatformExtension.java').read_text()

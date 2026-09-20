@@ -6,7 +6,6 @@ import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.entity.ReloadState;
 import com.tacz.guns.api.item.*;
 import com.tacz.guns.api.item.attachment.AttachmentType;
-import com.tacz.guns.ammunition.TemporaryAmmoRefund;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.client.renderer.item.GunItemRendererWrapper;
 import com.tacz.guns.client.resource.index.ClientGunIndex;
@@ -208,12 +207,8 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
                 setCurrentAmmoCount(gunItem, 0);
                 return;
             }
-            // TEMPORARY: fixed Tarkov variant per caliber; no native tacz:ammo fallback.
-            // Resolve the entire refund before clearing anything. Unknown calibers retain ammo.
-            TemporaryAmmoRefund.plan(ammoId, ammoCount).ifPresent(refund -> {
-                setCurrentAmmoCount(gunItem, 0);
-                refund.forEach(stack -> ItemHandlerHelper.giveItemToPlayer(player, stack));
-            });
+            // Physical ammunition ownership is supplied by an optional platform extension.
+            // Standalone TaCZ has no concrete physical round to fabricate here.
         });
     }
 

@@ -1,33 +1,273 @@
 {
   "schema": 1,
-  "protected_roots": ["src", "modules", "build-logic", "tools", "vendor"],
+  "protected_roots": [
+    "src",
+    "modules",
+    "build-logic",
+    "tools",
+    "vendor"
+  ],
   "generations": [
     {
       "id": "final-audit-2026-09-19",
       "baseline": "bf102b11c94eab93c2b84440a27684d4ca29af7f",
       "files": [
-        {"path":"build-logic/adapter-integration.gradle","before_sha256":"b32cbe4bf409e7e02eafafa2ac06eb9f93a7d0ece1f5ffd29e0d6114057d0dd8","after_sha256":"50b480cb2f41ce1629c7ce682f54423375f8d2f4b10fa2cd48a0eb76f644526d"},
-        {"path":"modules/public-dependency-lock.json","before_sha256":"00fb7f4b0afcdf3efdf5e7fb4b6dca01544f53e7ce82fb5853e958fc27b4caeb","after_sha256":"81eb57146f898040fc804272a8cd6f04bee5663be12bb2bfb78a03ab4c4b0627"},
-        {"path":"modules/tacz_adapter/public-dependency-lock.json","before_sha256":"e95692dbca77c3aedd76e17342186bba1748703b83e83d0f4d5f0855e8200fd5","after_sha256":"abf37c02919c6d045e122a90eaa8d01531e36df69c8e14b76266deb9a2dbbd4d"},
-        {"path":"tools/native_m4a1_migration.py","before_sha256":"810a56b52c0194bfd00618b92b01185c88db91c0fcd50b7f64d11c4c119e616c","after_sha256":"a5be53fdb40bf8d09a39113eae03af66de89f88900e13bf591926519b0852170"},
-        {"path":"tools/verify_adapter_integration.py","before_sha256":"3b3970da982d7aa7f123dd2d0a292f9853b0064972d55546c7323a0683419fba","after_sha256":"09c7ce84ab7762e48e62178ea117866eef452d4f938b3514b3ab45a143dd5bd9"},
-        {"path":"tools/verify_weapon_modules.py","before_sha256":"aef3297f1ed29b6decd4f691a372204e8cfd26255aeeef7e0dcba7def9e4e86c","after_sha256":"cc4e519ca546905d606ce82d0f5dddcb6a3baa3d1e3e0353a02fd5a658e30f64"},
-        {"path":"vendor/newmod/firearms-2fcd64a1.jar","before_sha256":"5a9a22127290ad22a31c6a4d4829697a60876916c9fdef8d5bd18f6741d2ac29","after_sha256":null},
-        {"path":"vendor/newmod/firearms-50eb84c7.jar","before_sha256":null,"after_sha256":"5a9a22127290ad22a31c6a4d4829697a60876916c9fdef8d5bd18f6741d2ac29"},
-        {"path":"vendor/newmod/item_foundation-50eb84c7.jar","before_sha256":null,"after_sha256":"7d35560df25ef4968188afc209b7134bd11ed2c4aca41ad4ee4a9761567ce6aa"},
-        {"path":"vendor/newmod/item_foundation-94c31d59.jar","before_sha256":"7d35560df25ef4968188afc209b7134bd11ed2c4aca41ad4ee4a9761567ce6aa","after_sha256":null},
-        {"path":"vendor/newmod/tactical-development-3ef90e9.jar","before_sha256":"eb5f71e4be5e9b1e05f439ad727772a3d7c926a81791f20a9b783f23b94794cf","after_sha256":null},
-        {"path":"vendor/newmod/tactical-development-50eb84c7.jar","before_sha256":null,"after_sha256":"ea0dec75e2dd7d0a83c518cf339696c9bf1d2f9a1f0f17cafd228056ab81e07b"},
-        {"path":"vendor/newmod/tactical_character-3ef90e9.jar","before_sha256":"42463a368e10ef4f30a93572b1b4a1cc13bb175b0106ae339be27ab64f4e06b3","after_sha256":null},
-        {"path":"vendor/newmod/tactical_character-50eb84c7.jar","before_sha256":null,"after_sha256":"42463a368e10ef4f30a93572b1b4a1cc13bb175b0106ae339be27ab64f4e06b3"},
-        {"path":"vendor/newmod/tactical_combat-2fcd64a1.jar","before_sha256":"530b669275779f775fd3e9f839f9e5c767f7573b58dfd2b4d0d1f107b6052ca9","after_sha256":null},
-        {"path":"vendor/newmod/tactical_combat-50eb84c7.jar","before_sha256":null,"after_sha256":"530b669275779f775fd3e9f839f9e5c767f7573b58dfd2b4d0d1f107b6052ca9"},
-        {"path":"vendor/newmod/tactical_inventory-2fcd64a1.jar","before_sha256":"1e1acb2e68525752e2228ae9a0913c1b8a7cb4b0435a59125e417d52dd1feb4f","after_sha256":null},
-        {"path":"vendor/newmod/tactical_inventory-50eb84c7.jar","before_sha256":null,"after_sha256":"1e1acb2e68525752e2228ae9a0913c1b8a7cb4b0435a59125e417d52dd1feb4f"},
-        {"path":"vendor/newmod/tarkov_content-3ef90e9.jar","before_sha256":"274778498d4b41fe1411649aff13408cbcf48013a5302906672943aeaf282af4","after_sha256":null},
-        {"path":"vendor/newmod/tarkov_content-50eb84c7.jar","before_sha256":null,"after_sha256":"274778498d4b41fe1411649aff13408cbcf48013a5302906672943aeaf282af4"},
-        {"path":"vendor/newmod/tarkov_content-development-3ef90e9.jar","before_sha256":"969e5314404dbffc81749f7971df5e81488b1489658c85b3fb71b78856a080fd","after_sha256":null},
-        {"path":"vendor/newmod/tarkov_content-development-50eb84c7.jar","before_sha256":null,"after_sha256":"09280d65d37f741c9264c26476356169aa804749b1e339fb7cffac8846371522"}
+        {
+          "path": "build-logic/adapter-integration.gradle",
+          "before_sha256": "b32cbe4bf409e7e02eafafa2ac06eb9f93a7d0ece1f5ffd29e0d6114057d0dd8",
+          "after_sha256": "50b480cb2f41ce1629c7ce682f54423375f8d2f4b10fa2cd48a0eb76f644526d"
+        },
+        {
+          "path": "modules/public-dependency-lock.json",
+          "before_sha256": "00fb7f4b0afcdf3efdf5e7fb4b6dca01544f53e7ce82fb5853e958fc27b4caeb",
+          "after_sha256": "81eb57146f898040fc804272a8cd6f04bee5663be12bb2bfb78a03ab4c4b0627"
+        },
+        {
+          "path": "modules/tacz_adapter/public-dependency-lock.json",
+          "before_sha256": "e95692dbca77c3aedd76e17342186bba1748703b83e83d0f4d5f0855e8200fd5",
+          "after_sha256": "abf37c02919c6d045e122a90eaa8d01531e36df69c8e14b76266deb9a2dbbd4d"
+        },
+        {
+          "path": "tools/native_m4a1_migration.py",
+          "before_sha256": "810a56b52c0194bfd00618b92b01185c88db91c0fcd50b7f64d11c4c119e616c",
+          "after_sha256": "a5be53fdb40bf8d09a39113eae03af66de89f88900e13bf591926519b0852170"
+        },
+        {
+          "path": "tools/verify_adapter_integration.py",
+          "before_sha256": "3b3970da982d7aa7f123dd2d0a292f9853b0064972d55546c7323a0683419fba",
+          "after_sha256": "09c7ce84ab7762e48e62178ea117866eef452d4f938b3514b3ab45a143dd5bd9"
+        },
+        {
+          "path": "tools/verify_weapon_modules.py",
+          "before_sha256": "aef3297f1ed29b6decd4f691a372204e8cfd26255aeeef7e0dcba7def9e4e86c",
+          "after_sha256": "cc4e519ca546905d606ce82d0f5dddcb6a3baa3d1e3e0353a02fd5a658e30f64"
+        },
+        {
+          "path": "vendor/newmod/firearms-2fcd64a1.jar",
+          "before_sha256": "5a9a22127290ad22a31c6a4d4829697a60876916c9fdef8d5bd18f6741d2ac29",
+          "after_sha256": null
+        },
+        {
+          "path": "vendor/newmod/firearms-50eb84c7.jar",
+          "before_sha256": null,
+          "after_sha256": "5a9a22127290ad22a31c6a4d4829697a60876916c9fdef8d5bd18f6741d2ac29"
+        },
+        {
+          "path": "vendor/newmod/item_foundation-50eb84c7.jar",
+          "before_sha256": null,
+          "after_sha256": "7d35560df25ef4968188afc209b7134bd11ed2c4aca41ad4ee4a9761567ce6aa"
+        },
+        {
+          "path": "vendor/newmod/item_foundation-94c31d59.jar",
+          "before_sha256": "7d35560df25ef4968188afc209b7134bd11ed2c4aca41ad4ee4a9761567ce6aa",
+          "after_sha256": null
+        },
+        {
+          "path": "vendor/newmod/tactical-development-3ef90e9.jar",
+          "before_sha256": "eb5f71e4be5e9b1e05f439ad727772a3d7c926a81791f20a9b783f23b94794cf",
+          "after_sha256": null
+        },
+        {
+          "path": "vendor/newmod/tactical-development-50eb84c7.jar",
+          "before_sha256": null,
+          "after_sha256": "ea0dec75e2dd7d0a83c518cf339696c9bf1d2f9a1f0f17cafd228056ab81e07b"
+        },
+        {
+          "path": "vendor/newmod/tactical_character-3ef90e9.jar",
+          "before_sha256": "42463a368e10ef4f30a93572b1b4a1cc13bb175b0106ae339be27ab64f4e06b3",
+          "after_sha256": null
+        },
+        {
+          "path": "vendor/newmod/tactical_character-50eb84c7.jar",
+          "before_sha256": null,
+          "after_sha256": "42463a368e10ef4f30a93572b1b4a1cc13bb175b0106ae339be27ab64f4e06b3"
+        },
+        {
+          "path": "vendor/newmod/tactical_combat-2fcd64a1.jar",
+          "before_sha256": "530b669275779f775fd3e9f839f9e5c767f7573b58dfd2b4d0d1f107b6052ca9",
+          "after_sha256": null
+        },
+        {
+          "path": "vendor/newmod/tactical_combat-50eb84c7.jar",
+          "before_sha256": null,
+          "after_sha256": "530b669275779f775fd3e9f839f9e5c767f7573b58dfd2b4d0d1f107b6052ca9"
+        },
+        {
+          "path": "vendor/newmod/tactical_inventory-2fcd64a1.jar",
+          "before_sha256": "1e1acb2e68525752e2228ae9a0913c1b8a7cb4b0435a59125e417d52dd1feb4f",
+          "after_sha256": null
+        },
+        {
+          "path": "vendor/newmod/tactical_inventory-50eb84c7.jar",
+          "before_sha256": null,
+          "after_sha256": "1e1acb2e68525752e2228ae9a0913c1b8a7cb4b0435a59125e417d52dd1feb4f"
+        },
+        {
+          "path": "vendor/newmod/tarkov_content-3ef90e9.jar",
+          "before_sha256": "274778498d4b41fe1411649aff13408cbcf48013a5302906672943aeaf282af4",
+          "after_sha256": null
+        },
+        {
+          "path": "vendor/newmod/tarkov_content-50eb84c7.jar",
+          "before_sha256": null,
+          "after_sha256": "274778498d4b41fe1411649aff13408cbcf48013a5302906672943aeaf282af4"
+        },
+        {
+          "path": "vendor/newmod/tarkov_content-development-3ef90e9.jar",
+          "before_sha256": "969e5314404dbffc81749f7971df5e81488b1489658c85b3fb71b78856a080fd",
+          "after_sha256": null
+        },
+        {
+          "path": "vendor/newmod/tarkov_content-development-50eb84c7.jar",
+          "before_sha256": null,
+          "after_sha256": "09280d65d37f741c9264c26476356169aa804749b1e339fb7cffac8846371522"
+        }
+      ]
+    },
+    {
+      "id": "tarkov-ammunition-ownership-2026-09-20",
+      "baseline": "1213e25354805ead67cca120eddd4f85ad2c1e7e",
+      "files": [
+        {
+          "path": "build-logic/adapter-integration.gradle",
+          "before_sha256": "50b480cb2f41ce1629c7ce682f54423375f8d2f4b10fa2cd48a0eb76f644526d",
+          "after_sha256": "2ca78f7ccd8cf756823c8a7f049a36f0b5a32242bc69a9cf63b4388e57969794"
+        },
+        {
+          "path": "modules/tacz_adapter/public-dependency-lock.json",
+          "before_sha256": "abf37c02919c6d045e122a90eaa8d01531e36df69c8e14b76266deb9a2dbbd4d",
+          "after_sha256": "610ce8dff5aa03ef8a7012e0563d22c37609d7c9afa2a6c8b42f2279b3f934f5"
+        },
+        {
+          "path": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/development/TaczDevelopmentCatalog.java",
+          "before_sha256": "af9110502b0c2c9a52cfbd8f9b31160a73bf22839e81074fc6141c9b64501e30",
+          "after_sha256": "1d880949dde6e10a3d526179a3cbff0302be090086ed9be66ce423cdc71159a5"
+        },
+        {
+          "path": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/development/VerificationRounds.java",
+          "before_sha256": "7fb0ef2df7f5c720ae2d84a948fbc94eb57951fd0a2b5692552506577d062b60",
+          "after_sha256": "fba6c4d76035a2a1d19f287dafafe9226405a95ea3f33e7bbd3f7d56e45ed586"
+        },
+        {
+          "path": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AdapterVerification.java",
+          "before_sha256": "1698c86869e9d2348a3633899184d09aa2635f22bc68b4e2fee7c560bc8a60c6",
+          "after_sha256": "6827dbf273f47afcb00b64dcdb9f1db20cf2e50bca0277fd9fc83e5b16c15a3a"
+        },
+        {
+          "path": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/AutomaticAmmoSmoke.java",
+          "before_sha256": "717517f02dcaa10d3b4d792bba06d713bf0fd223cdfcf087cf5f1b702c438236",
+          "after_sha256": "42b07b07e81f98f1915f9a70ee11602ca792c51597a66777e00a3d75f426b616"
+        },
+        {
+          "path": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/InspectionLanguageSmoke.java",
+          "before_sha256": "866c32c7e01f288c05364f8be620b73dbacb3b6a7b6b660f5bbe119a9fc52a4e",
+          "after_sha256": "f901d4a0a4d9d4a7151a3ab8ef372c73c4ec7d62dfa9fb4d1775e6391a058e14"
+        },
+        {
+          "path": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/PlayerArmorSmoke.java",
+          "before_sha256": "b5e397b9ebbce9bfa65006ab472b877bc53a48511f6ec86433b484dbdbb04478",
+          "after_sha256": "4e31d216af4a25f6ff14ca13ec50ecda29923793337addeacebbe1423c76d993"
+        },
+        {
+          "path": "modules/tacz_adapter/src/development/java/dev/tacticaltacz/verification/RefitInventorySmoke.java",
+          "before_sha256": "4599dbfd277f4f72f00ba901bf83319aa064762094e53ce4e19384f22553736e",
+          "after_sha256": "87d6f0a93dd820fb577d1eddc9eebd145dab8df58d7373eaa4c447374fd55b0b"
+        },
+        {
+          "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/AmmoBridge.java",
+          "before_sha256": "81d250a70bfc86557d6ace57cdb0a4fb1784085d5a220c5107cf550a33b4bdcf",
+          "after_sha256": "92895478499d820adddc27a888982f90cdf9702326838e1ed65a5d8207df6775"
+        },
+        {
+          "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/AmmunitionInspection.java",
+          "before_sha256": "cb9f221b2f6c1f4711a0f30513609d995bc8b429223c2afa8e69f2a1e7e206c8",
+          "after_sha256": "9908dbefc9c0d015879367b508221c21aa37d614e1ca21a8de5310fc3dffb623"
+        },
+        {
+          "path": "modules/tacz_adapter/src/main/java/dev/tacticaltacz/mixin/ContentAmmoMixin.java",
+          "before_sha256": null,
+          "after_sha256": "1fd8a8a6eb03261ade7008cbff5c4caec3ee55323f30008a4a270221da5dec74"
+        },
+        {
+          "path": "modules/tacz_adapter/src/main/resources/tactical_tacz_adapter.mixins.json",
+          "before_sha256": null,
+          "after_sha256": "9239a859bcd042c2ad37658b6ec84eaaad3728b2c791ab90d8b5490a19f4377c"
+        },
+        {
+          "path": "modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/assembled/NativeRemainingStateTest.java",
+          "before_sha256": "7a6d1c62238b211bbc3972cbfd4a9c39ce98f069eb57fb0d17e39c39f63d7ef5",
+          "after_sha256": "f56dbbb7198b28d8b74a56833b06fa700e4f6a56d4b84b2fb69136ac7eb9cfa9"
+        },
+        {
+          "path": "modules/tacz_adapter/src/test/java/dev/tacticaltacz/AdoptedAmmunitionTest.java",
+          "before_sha256": "bb7de10954fee10c23cb6f5167f63c8097de52e51e9039d7fc5b2b26e6d137ac",
+          "after_sha256": "8a6b39fb010363a9bb27ff1f03702e96ae40cdee46dab0f1fa63f6cec632d23d"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/GunMod.java",
+          "before_sha256": "40778f5b1628b8e24418b9ee91b79be5fcff320176a2db9a0c1b698de72f9d06",
+          "after_sha256": "a37a109b2a52e4e1e105d72babfc7948ae41ba75ebd676230225d57375c8a97f"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/ammunition/AmmunitionContent.java",
+          "before_sha256": "9580146b87bd928a2eb0a4089d124180924bf3c22bb459362f8781be33a426a9",
+          "after_sha256": null
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/ammunition/AmmunitionRegistry.java",
+          "before_sha256": "f73043b90c040aff36105f10b09c42986881e4b7fd54e8727fece6dd4d1d83df",
+          "after_sha256": null
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/ammunition/TarkovAmmoItem.java",
+          "before_sha256": "ce44f86b80fc6b45f6a8b44090e2dbcb91180439b0f3cc330b5b2543fe27d678",
+          "after_sha256": null
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/ammunition/TemporaryAmmoRefund.java",
+          "before_sha256": "241fc0f8be37e2a6c6840bd2482d6ae8c8dabbf3f1795b9222c80b2ea7364802",
+          "after_sha256": null
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/ammunition/TemporaryAmmoRefundPolicy.java",
+          "before_sha256": "ee055e12be497f1d860ac1e2c0d3b3c39dedf84829583b0d08dcc948a00c38de",
+          "after_sha256": null
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/api/item/gun/AbstractGunItem.java",
+          "before_sha256": "33d9b67726a1d769c2dcae5dba4e3bb61da99c5e041b0742e2a420fff0654940",
+          "after_sha256": "878dde67eb5219f4448575669eb8d0726dbce978a15d908b13946a020a705811"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/init/ModCreativeTabs.java",
+          "before_sha256": "e7b9e53bbd8d381eb6765d595fac5b6d6f7c244cf54e68ca3af0929233187059",
+          "after_sha256": "e51f349f25eda23c0e4f322a06ba6418dd19d5f5aa23d60104e734401ba37201"
+        },
+        {
+          "path": "src/main/resources/META-INF/neoforge.mods.toml",
+          "before_sha256": "56b364a26b7a85022ffe791a8659cd56a41b1d2ce839645e7b8a907685bac3fd",
+          "after_sha256": "6f9bdeeaaf48bdf61eece2bb9185a40dac8a4045e552ecdc055b0bbcc9b58a68"
+        },
+        {
+          "path": "tools/adapter_migration.py",
+          "before_sha256": "19024b0de024ccbcdf7d2514f140c6cefdf28398e2b3fa9ed437a2de707d045d",
+          "after_sha256": "7017717415b6a10a5ffeff6b64ed01b18fdd4a83b9a3126bed237f8a70d04b64"
+        },
+        {
+          "path": "tools/test_adapter_hook_equivalence.py",
+          "before_sha256": "efaf752158a8b88558a65762cb99bf7fd13b6da49ac84647ad0bd503709e4653",
+          "after_sha256": "dd5075d3a1ca83299f3c0df6e6948acaa556076c6e363642f8624ef1997e8b9f"
+        },
+        {
+          "path": "tools/verify_adapter_integration.py",
+          "before_sha256": "09c7ce84ab7762e48e62178ea117866eef452d4f938b3514b3ab45a143dd5bd9",
+          "after_sha256": "8da48e87ea3fd5574b2576bb8196ae912f155a4d44b400712948215eb69dc982"
+        },
+        {
+          "path": "vendor/newmod/tarkov_content-50eb84c7.jar",
+          "before_sha256": "274778498d4b41fe1411649aff13408cbcf48013a5302906672943aeaf282af4",
+          "after_sha256": "489e92c81ef3281477ec8fdfb562ee5b7b4aa738f3d9f5fce3d78ed6604ee176"
+        }
       ]
     }
   ]

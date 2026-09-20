@@ -1,6 +1,6 @@
 package dev.tacticaltacz.verification;
 
-import com.tacz.guns.ammunition.*;
+import dev.tarkovcontent.ammunition.*;
 import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.entity.IGunOperator;
 import com.tacz.guns.api.item.IGun;
@@ -63,8 +63,8 @@ public final class AdapterVerification {
     }
     static int firedCount(){return FIRED.size();}
     static EntityKineticBullet lastFired(){return FIRED.getLast();}
-    public static ItemStack gun(TarkovAmmoItem ammo, ServerLevel level) { return gun(ammo,level,AmmoBridge.GUN); }
-    private static ItemStack gun(TarkovAmmoItem ammo, ServerLevel level,net.minecraft.resources.ResourceLocation gunId) {
+    public static ItemStack gun(TarkovAmmunitionItem ammo, ServerLevel level) { return gun(ammo,level,AmmoBridge.GUN); }
+    private static ItemStack gun(TarkovAmmunitionItem ammo, ServerLevel level,net.minecraft.resources.ResourceLocation gunId) {
         var stack = GunItemBuilder.create().setId(gunId).setFireMode(FireMode.SEMI).build(level.registryAccess());
         var assembled=dev.tacticaltacz.assembled.AssembledWeapons.byId(gunId);
         if(assembled!=null)stack=assembled.preset();
@@ -99,7 +99,7 @@ public final class AdapterVerification {
                     var stack=GunItemBuilder.create().setId(id).setFireMode(FireMode.SEMI).build(player.registryAccess());
                     if(!dev.tacticalinventory.api.TacticalContent.tryGrant(player,List.of(stack)))player.drop(stack,false);
                 }
-                for(var item:AmmunitionRegistry.AMMUNITION.values()) {
+                for(var item:dev.tarkovcontent.TarkovContent.AMMUNITION.values()) {
                     if(!item.get().definition().caliber().equals("9x19"))continue;
                     var stack=new ItemStack(item.get(),item.get().getDefaultMaxStackSize());
                     if(!dev.tacticalinventory.api.TacticalContent.tryGrant(player,List.of(stack)))player.drop(stack,false);
@@ -109,7 +109,7 @@ public final class AdapterVerification {
             .then(Commands.literal("select_flesh").executes(ctx -> select(ctx.getSource().getPlayerOrException(), dev.tacticaltacz.development.VerificationRounds.flesh())))
             .then(Commands.literal("select_ap").executes(ctx -> select(ctx.getSource().getPlayerOrException(), dev.tacticaltacz.development.VerificationRounds.ap()))));
     }
-    private static int select(net.minecraft.server.level.ServerPlayer player, TarkovAmmoItem ammo) {
+    private static int select(net.minecraft.server.level.ServerPlayer player, TarkovAmmunitionItem ammo) {
         try { AmmoBridge.select(player.getMainHandItem(), ammo); player.sendSystemMessage(DevelopmentText.text("ammo.selected", ammo.getDescription())); return 1; }
         catch (IllegalArgumentException | IllegalStateException e) { com.mojang.logging.LogUtils.getLogger().debug("Test ammunition selection rejected", e); player.sendSystemMessage(DevelopmentText.text("ammo.rejected")); return 0; }
     }
@@ -140,7 +140,7 @@ public final class AdapterVerification {
         RefitInventorySmoke.verify(level);
         BarrelFireSmoke.verify(level);
         AutomaticAmmoSmoke.run(level);
-        for(var item:AmmunitionRegistry.AMMUNITION.values()) {
+        for(var item:dev.tarkovcontent.TarkovContent.AMMUNITION.values()) {
             var stack=item.get().getDefaultInstance();
             var sections=dev.itemfoundation.api.inspection.InspectionProviders.inspect(stack);
             require(sections.stream().anyMatch(section->section.id().equals("tarkov_content:ammunition")&&section.rows().size()==5),"adopted ammunition supplies five inspection attributes");
@@ -154,12 +154,12 @@ public final class AdapterVerification {
         }
 
         verifyReloadFromTacticalStorage(level,dev.tacticaltacz.development.VerificationRounds.flesh(),AmmoBridge.GUN);
-        for(var gunId:dev.tacticaltacz.GunAdoption.CALIBERS.keySet()) for(var item:AmmunitionRegistry.AMMUNITION.values()) {
+        for(var gunId:dev.tacticaltacz.GunAdoption.CALIBERS.keySet()) for(var item:dev.tarkovcontent.TarkovContent.AMMUNITION.values()) {
             if(!item.get().definition().caliber().equals(dev.tacticaltacz.GunAdoption.CALIBERS.get(gunId)))continue;
             verifyReloadFromTacticalStorage(level,item.get(),gunId);
             verifyAdoptedShot(level,item.get(),gunId);
         }
-        require(AmmunitionRegistry.AMMUNITION.values().stream().filter(i->i.get().definition().caliber().equals("9x19")).count()==9,"all nine adopted rounds exercised");
+        require(dev.tarkovcontent.TarkovContent.AMMUNITION.values().stream().filter(i->i.get().definition().caliber().equals("9x19")).count()==9,"all nine adopted rounds exercised");
         System.out.println("ADOPTED_GUN_SMOKE PASS: all adopted guns x every matching approved round reload/unload/serialize/shoot/impact; native bolt and source projectile counts");
         var origin = level.getSharedSpawnPos();
         var shooter = new Zombie(level); shooter.setPos(origin.getX() + 0.5, 250, origin.getZ() + 0.5); shooter.setNoAi(true);
@@ -238,11 +238,11 @@ public final class AdapterVerification {
                 new dev.tacticalcombat.api.BallisticProfile("verification:armor_numeric", "9x19",30,40,50));
         return bullet;
     }
-    private static TarkovAmmoItem otherRound(TarkovAmmoItem selected) {
+    private static TarkovAmmunitionItem otherRound(TarkovAmmunitionItem selected) {
         return selected==dev.tacticaltacz.development.VerificationRounds.ap()
                 ?dev.tacticaltacz.development.VerificationRounds.flesh():dev.tacticaltacz.development.VerificationRounds.ap();
     }
-    private static void verifyAdoptedShot(ServerLevel level,TarkovAmmoItem ammo,net.minecraft.resources.ResourceLocation gunId) throws Exception {
+    private static void verifyAdoptedShot(ServerLevel level,TarkovAmmunitionItem ammo,net.minecraft.resources.ResourceLocation gunId) throws Exception {
         var shooter=new Zombie(level);shooter.setPos(0,250,0);shooter.setNoAi(true);
         var weapon=gun(ammo,level,gunId);var g=(IGun)weapon.getItem();
         var encoded=weapon.save(level.registryAccess());
@@ -252,7 +252,7 @@ public final class AdapterVerification {
         IGunOperator.fromLivingEntity(shooter).draw(shooter::getMainHandItem);
         var api=new ModernKineticGunScriptAPI();api.setShooter(shooter);api.setItemStack(weapon);
         api.setDataHolder(new ShooterDataHolder());api.setPitchSupplier(()->0f);api.setYawSupplier(()->0f);
-        var alternate=AmmunitionRegistry.AMMUNITION.values().stream().map(java.util.function.Supplier::get).filter(i->i!=ammo && i.definition().caliber().equals(ammo.definition().caliber())).findFirst().orElseThrow();
+        var alternate=dev.tarkovcontent.TarkovContent.AMMUNITION.values().stream().map(java.util.function.Supplier::get).filter(i->i!=ammo && i.definition().caliber().equals(ammo.definition().caliber())).findFirst().orElseThrow();
         boolean openBolt=TimelessAPI.getCommonGunIndex(gunId).orElseThrow().getGunData().getBolt()==com.tacz.guns.resource.pojo.data.gun.Bolt.OPEN_BOLT;
         g.setBulletInBarrel(weapon,!openBolt);g.setCurrentAmmoCount(weapon,openBolt?1:0);
         boolean rejected=false;
@@ -270,7 +270,7 @@ public final class AdapterVerification {
         require(Math.abs(target.getHealth()-(200-ammo.definition().fleshDamage()/10))<0.001,"adopted exact damage at test receiver");
         target.discard();fired.discard();shooter.discard();
     }
-    private static void verifyReloadFromTacticalStorage(ServerLevel level, TarkovAmmoItem selected,net.minecraft.resources.ResourceLocation gunId) {
+    private static void verifyReloadFromTacticalStorage(ServerLevel level, TarkovAmmunitionItem selected,net.minecraft.resources.ResourceLocation gunId) {
         var player = net.neoforged.neoforge.common.util.FakePlayerFactory.get(level,
                 new com.mojang.authlib.GameProfile(UUID.fromString("c5948a9f-6bd8-4092-8a1e-f5b646061031"), "[TaCZSmoke]"));
         player.setGameMode(net.minecraft.world.level.GameType.SURVIVAL);
@@ -317,7 +317,7 @@ public final class AdapterVerification {
         require(!dev.tacticalinventory.api.TacticalAmmunition.find(player, a -> a.is(otherRound(selected))).isEmpty(), "other variant preserved");
         require(!g.canReload(player, held), "other variant cannot top up selected magazine");
         for (var stack : player.getInventory().items)
-            require(!(stack.getItem() instanceof TarkovAmmoItem), "no native hidden inventory rounds");
+            require(!(stack.getItem() instanceof TarkovAmmunitionItem), "no native hidden inventory rounds");
         int chamber = g.hasBulletInBarrel(held) ? 1 : 0;
         g.dropAllAmmo(player, held);
         require(g.getCurrentAmmoCount(held) == 0 && (g.hasBulletInBarrel(held) ? 1 : 0) == chamber,

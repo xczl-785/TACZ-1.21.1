@@ -146,7 +146,7 @@ final class InspectionLanguageSmoke {
         require(!gunName.getString().contains("item.tarkov_content."),"nested gun label resolves in client language");
     }
     private static JsonObject resource(String path) throws IOException {
-        try (var stream = (path.contains("/items/ammo_")?com.tacz.guns.ammunition.AmmunitionContent.class:dev.tarkovcontent.TarkovContent.class).getResourceAsStream(path)) {
+        try (var stream = (path.contains("/items/ammo_")?dev.tarkovcontent.ammunition.AmmunitionCatalog.class:dev.tarkovcontent.TarkovContent.class).getResourceAsStream(path)) {
             if (stream == null) throw new IOException("Missing resource " + path);
             return JsonParser.parseReader(new InputStreamReader(stream, StandardCharsets.UTF_8)).getAsJsonObject();
         }

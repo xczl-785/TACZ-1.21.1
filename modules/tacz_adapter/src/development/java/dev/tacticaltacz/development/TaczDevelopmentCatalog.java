@@ -3,7 +3,7 @@ package dev.tacticaltacz.development;
 import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.api.item.builder.AttachmentItemBuilder;
-import com.tacz.guns.ammunition.AmmunitionRegistry;
+import dev.tarkovcontent.TarkovContent;
 import dev.tacticalinventory.verification.DevelopmentItemCatalog;
 import dev.tacticaltacz.GunAdoption;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -32,7 +32,7 @@ public final class TaczDevelopmentCatalog {
             var id=entry.getKey();
             event.put(ResourceLocation.fromNamespaceAndPath(id.getNamespace(),"attachment/"+id.getPath()),"tacz",AttachmentItemBuilder.create().setId(id).build());
         }
-        for(var holder:AmmunitionRegistry.AMMUNITION.values()){
+        for(var holder:TarkovContent.AMMUNITION.values()){
             var item=holder.get();event.put(BuiltInRegistries.ITEM.getKey(item),"tacz",item.getDefaultInstance());
         }
     }

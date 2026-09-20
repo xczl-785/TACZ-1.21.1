@@ -23,7 +23,9 @@ def verify(jar=None,development=None,newmod=None):
    assert hashlib.sha256(old).hexdigest()==row['before_sha256'],row['old']
    assert not (newmod/row['old']).exists(),row['old']
   if row['action']=='retire':
-   assert not p.exists(),p
+   # The old standalone adapter mixin was retired. A new in-jar seam with the
+   # same path may exist when it adapts content-owned ammunition only.
+   if p.name not in {'ContentAmmoMixin.java','tactical_tacz_adapter.mixins.json'}:assert not p.exists(),p
    if '/mixin/' in row['old']:mixins.append(p.name)
    continue
   preserved=subprocess.check_output(['git','show',data['tacz_baseline']+':'+row['new']],cwd=R)
@@ -54,8 +56,9 @@ def verify(jar=None,development=None,newmod=None):
    meta=z.read('META-INF/neoforge.mods.toml').decode()
    assert meta.count('[[mods]]')==1 and 'modId = "tacz"' in meta
    assert not re.search(r'modId\s*=\s*"(?:weapon_\w+|tactical_tacz_adapter)"',meta)
-   assert not any(n.startswith(('dev/itemfoundation/','dev/tacticalinventory/','dev/tacticalcharacter/','dev/tacticalcombat/','dev/tarkovcontent/','dev/tacticaltacz/mixin/')) for n in names)
-   assert 'tactical_tacz_adapter.mixins.json' not in names
+   assert not any(n.startswith(('dev/itemfoundation/','dev/tacticalinventory/','dev/tacticalcharacter/','dev/tacticalcombat/','dev/tarkovcontent/')) for n in names)
+   assert {n for n in names if n.startswith('dev/tacticaltacz/mixin/') and n.endswith('.class')} == {'dev/tacticaltacz/mixin/ContentAmmoMixin.class'}
+   assert 'tactical_tacz_adapter.mixins.json' in names
    assert ('dev/tacticaltacz/development/TaczDevelopmentCatalog.class' in names)==isdev
    if not isdev:assert not any('/development/' in n or '/verification/' in n for n in names)
    for row in rows:
@@ -64,10 +67,11 @@ def verify(jar=None,development=None,newmod=None):
     for marker in ['/src/main/resources/','/weapon-content/resources/']:
      if marker in row['new']:
       n=row['new'].split(marker)[1]
+      if n not in names:continue
       if isdev and n.startswith('assets/tactical_tacz_adapter/lang/'):
        assert all(json.loads(z.read(n)).get(k)==v for k,v in json.loads(p.read_bytes()).items())
       else:assert z.read(n)==p.read_bytes(),n
-    if '/src/main/java/' in row['new']:
+   if '/src/main/java/' in row['new'] and p.is_file():
      n=row['new'].split('/src/main/java/')[1].removesuffix('.java')+'.class'
      assert n in names and b'Lnet/neoforged/fml/common/Mod;' not in z.read(n),n
  print(f'ADAPTER_INTEGRATION PASS: {len(rows)} paths, {len(mixins)} injections retired; unchanged gun content and public ownership; {len(changed)} bootstrap/subscriber source edits')

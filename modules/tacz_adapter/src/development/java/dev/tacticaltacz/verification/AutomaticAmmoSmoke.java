@@ -1,6 +1,6 @@
 package dev.tacticaltacz.verification;
 
-import com.tacz.guns.ammunition.*;
+import dev.tarkovcontent.ammunition.*;
 import com.mojang.authlib.GameProfile;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
@@ -39,7 +39,7 @@ final class AutomaticAmmoSmoke {
         System.out.println("EXTRA_CONTENT_RUNTIME PASS: workstations/ammo_box/painting/menu absent; target/statue/target_minecart retained");
         System.out.println("SELF_BUILT_TACZ_SMOKE PASS: 15 retained guns, retired indexes, 24 caliber definitions");
         var player=net.neoforged.neoforge.common.util.FakePlayerFactory.get(level,new GameProfile(UUID.fromString("31477654-56bb-4943-a210-124490ffe312"),"AmmoPolicy"));
-        var rounds=AmmunitionRegistry.AMMUNITION.values().stream().map(v->v.get()).filter(a->a.definition().caliber().equals("9x19")).toList();
+        var rounds=dev.tarkovcontent.TarkovContent.AMMUNITION.values().stream().map(v->v.get()).filter(a->a.definition().caliber().equals("9x19")).toList();
         var a=rounds.get(0);var b=rounds.get(1);
         var rig=ArmorVerification.armor();
         var backpackEntry=TarkovContent.CATALOG.stream().filter(e->e.category().equals("backpack")).findFirst().orElseThrow();

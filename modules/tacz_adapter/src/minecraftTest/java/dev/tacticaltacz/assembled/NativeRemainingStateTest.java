@@ -4,7 +4,7 @@ import com.google.gson.*;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.client.resource.pojo.model.*;
-import com.tacz.guns.ammunition.TarkovAmmoItem;
+import dev.tarkovcontent.ammunition.TarkovAmmunitionItem;
 import dev.itemfoundation.api.assembly.*;
 import dev.tacticaltacz.AmmoBridge;
 import dev.firearms.profile.FirearmProfiles;
@@ -98,7 +98,8 @@ class NativeRemainingStateTest {
     @Test void loadedFeedChangesRefundPreciselyWithoutMutatingInputsOrChamber(){
         for(String name:GUNS){var w=weapon(name);var paths=new ArrayList<>(w.feed.capacityPaths());paths.add(w.feed.containerPath());
             for(var path:paths){var gun=w.preset();
-                var ammo=BuiltInRegistries.ITEM.stream().filter(i->i instanceof TarkovAmmoItem a&&a.definition().caliber().equals(w.caliber)).map(i->(TarkovAmmoItem)i).findFirst().orElseThrow();
+                var ammo=BuiltInRegistries.ITEM.stream().filter(i->i instanceof TarkovAmmunitionItem a&&a.definition().caliber().equals(w.caliber)).map(i->(TarkovAmmunitionItem)i).findFirst().orElseThrow();
+                assertInstanceOf(com.tacz.guns.api.item.IAmmo.class,ammo,"content ammunition receives TaCZ behavior only through the adapter");
                 AmmoBridge.select(gun,ammo);var item=(IGun)gun.getItem();item.setCurrentAmmoCount(gun,3);item.setBulletInBarrel(gun,true);
                 ItemStack payment=ItemStack.EMPTY;
                 if(AssemblyTrees.state(AssemblyTrees.at(gun,path.subList(0,path.size()-1))).in(path.getLast()).isEmpty()){

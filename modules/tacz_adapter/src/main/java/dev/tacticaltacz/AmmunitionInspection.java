@@ -1,6 +1,6 @@
 package dev.tacticaltacz;
-import com.tacz.guns.ammunition.*;
-import com.tacz.guns.ammunition.*;
+import dev.tarkovcontent.ammunition.*;
+import dev.tarkovcontent.ammunition.*;
 
 import dev.itemfoundation.api.inspection.InspectionSection;
 import dev.itemfoundation.api.inspection.InspectionSection.*;
@@ -13,15 +13,15 @@ import java.util.stream.Collectors;
 
 /** Source statistics for adopted ammunition; presentation does not alter firing behavior. */
 public final class AmmunitionInspection {
-    private static final Map<String,AmmunitionContent.Entry> ENTRIES=AmmunitionContent.load().stream()
-            .collect(Collectors.toUnmodifiableMap(AmmunitionContent.Entry::id, Function.identity()));
+    private static final Map<String,AmmunitionDefinition> ENTRIES=AmmunitionCatalog.load().stream()
+            .collect(Collectors.toUnmodifiableMap(AmmunitionDefinition::id, Function.identity()));
     private AmmunitionInspection() {}
     public static List<InspectionSection> inspect(ItemStack stack) {
-        if(stack.isEmpty() || !(stack.getItem() instanceof TarkovAmmoItem ammo))return List.of();
+        if(stack.isEmpty() || !(stack.getItem() instanceof TarkovAmmunitionItem ammo))return List.of();
         var entry=ENTRIES.get(ammo.definition().id());
         return entry==null ? List.of() : List.of(section(entry));
     }
-    public static InspectionSection section(AmmunitionContent.Entry entry) {
+    public static InspectionSection section(AmmunitionDefinition entry) {
         String recoil=new BigDecimal(Float.toString(entry.recoilModifier())).stripTrailingZeros().toPlainString();
         if(entry.recoilModifier()>0)recoil="+"+recoil;
         return new InspectionSection("tarkov_content:ammunition",Component.empty(),List.of(

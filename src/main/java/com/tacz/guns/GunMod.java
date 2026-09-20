@@ -43,7 +43,6 @@ public class GunMod {
         ModBlocks.TILE_ENTITIES.register(bus);
         ModCreativeTabs.TABS.register(bus);
         ModItems.ITEMS.register(bus);
-        com.tacz.guns.ammunition.AmmunitionRegistry.register(bus);
         ModEntities.ENTITY_TYPES.register(bus);
         ModIngredientTypes.INGREDIENT_TYPES.register(bus);
         ModRecipe.RECIPE_SERIALIZERS.register(bus);

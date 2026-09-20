@@ -1,5 +1,5 @@
 package dev.tacticaltacz.verification;
-import com.tacz.guns.ammunition.*;
+import dev.tarkovcontent.ammunition.*;
 import dev.tacticalcharacter.core.*;
 import dev.tacticalcharacter.player.PlayerBody;
 
@@ -277,8 +277,8 @@ public final class PlayerArmorSmoke {
             }
             var spaces=worn.get(dev.itemfoundation.api.storage.ContainerComponents.STATE.get()).areas();
             var inventory=InventoryStateAdapter.combine(p.getData(ModRegistries.PLAYER_GEAR));
-            var intakeRounds=new java.util.ArrayList<com.tacz.guns.ammunition.TarkovAmmoItem>();
-            com.tacz.guns.ammunition.AmmunitionRegistry.AMMUNITION.values().forEach(item->intakeRounds.add(item.get()));
+            var intakeRounds=new java.util.ArrayList<dev.tarkovcontent.ammunition.TarkovAmmunitionItem>();
+            dev.tarkovcontent.TarkovContent.AMMUNITION.values().forEach(item->intakeRounds.add(item.get()));
             for(var ammo:intakeRounds)for(var space:spaces) {
                 var placed=TacticalGrantPlanner.plan(inventory,dev.tacticalinventory.definition.InventoryDefinitions.CURRENT,
                         List.of(space.storage().storageId()),List.of(new ItemStack(ammo,5)));

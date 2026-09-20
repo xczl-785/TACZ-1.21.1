@@ -17,6 +17,9 @@ config = "tacz.mixins.json"
 [[mixins]]
 config = "tacz.compat.acceleratedrendering.mixins.json"
 
+[[mixins]]
+config = "tactical_tacz_adapter.mixins.json"
+
 [[dependencies."${id}"]]
 modId = "neoforge"
 type = "REQUIRED"

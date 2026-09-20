@@ -3,7 +3,6 @@ package com.tacz.guns.init;
 import com.tacz.guns.GunMod;
 import com.tacz.guns.api.item.GunTabType;
 import com.tacz.guns.api.item.attachment.AttachmentType;
-import com.tacz.guns.ammunition.AmmunitionRegistry;
 import com.tacz.guns.api.item.builder.AttachmentItemBuilder;
 import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.api.item.gun.AbstractGunItem;
@@ -28,14 +27,8 @@ public class ModCreativeTabs {
                 output.accept(ModItems.TARGET_MINECART.get());
             }).build());
 
-    public static DeferredHolder<CreativeModeTab, CreativeModeTab> AMMO_TAB = TABS.register("ammo", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.tab.tacz.ammo")).withTabsBefore(OTHER_TAB.getId())
-            .icon(() -> AmmunitionRegistry.AMMUNITION.get("54527a984bdc2d4e668b4567").get().getDefaultInstance())
-            .displayItems((parameters, output) -> AmmunitionRegistry.AMMUNITION.values()
-                    .forEach(round -> output.accept(round.get()))).build());
-
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> ATTACHMENT_SCOPE_TAB = TABS.register("scope", () -> CreativeModeTab.builder()
-            .title(Component.translatable("tacz.type.scope.name")).withTabsBefore(AMMO_TAB.getId())
+            .title(Component.translatable("tacz.type.scope.name")).withTabsBefore(OTHER_TAB.getId())
             .icon(() -> AttachmentItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "scope_acog_ta31")).build())
             .displayItems((parameters, output) -> output.acceptAll(AttachmentItem.fillItemCategory(AttachmentType.SCOPE))).build());
 

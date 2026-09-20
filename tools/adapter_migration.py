@@ -17,7 +17,9 @@ def adapter_rows():
  for p,r in rows.items():
   old=subprocess.check_output(['git','show',data['baseline']+':'+p],cwd=ROOT)
   assert hashlib.sha256(old).hexdigest()==r['before_sha256'],p
-  assert hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==native_successor(p,r['after_sha256']),p
+  current=ROOT/p
+  actual=hashlib.sha256(current.read_bytes()).hexdigest() if current.is_file() else None
+  assert actual==native_successor(p,r['after_sha256']),p
  return rows
 
 def adapter_successor(path,expected):

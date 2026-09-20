@@ -24,8 +24,8 @@
     {
       "module": "tarkov_content",
       "artifact": "vendor/newmod/tarkov_content-50eb84c7.jar",
-      "sha512": "f61ca330d8483ddc16047fb3bd0d35e912a834d365baf09f76a926d03dd98d3228081e78ec1d8b0f2ab98752946fc2ef6ffbaa11990430b9c212f5392e8948ec",
-      "scope": "development"
+      "sha512": "4bab8cd2018876ce5a97218347c84313d795981ebd37b3964168827c421026aba495a1da6724cfa56e0131f1c0175cacb02c742c64c1862120c23be6f5c5f436",
+      "scope": "main"
     },
     {
       "module": "tactical development API",

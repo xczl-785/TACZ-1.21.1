@@ -32,7 +32,7 @@ tasks.register('verifyGameplayDependencies') {
 tasks.register('verifyCorePlatformBoundary') {
     inputs.files(fileTree('src/main/java') { include '**/*.java' })
     doLast {
-        def forbidden = ['dev.tacticaltacz', 'dev.tacticalcombat', 'dev.tacticalinventory', 'dev.tacticalcharacter', 'dev.firearms', 'dev.weaponruntime']
+        def forbidden = ['dev.tacticaltacz', 'dev.tacticalcombat', 'dev.tacticalinventory', 'dev.tacticalcharacter', 'dev.firearms', 'dev.weaponruntime', 'dev.tarkovcontent']
         def violations = []
         fileTree('src/main/java') { include '**/*.java' }.each { source ->
             def text = source.getText('UTF-8')
