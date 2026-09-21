@@ -7,6 +7,7 @@ import com.tacz.guns.client.model.FunctionalBedrockPart;
 import com.tacz.guns.client.model.bedrock.BedrockPart;
 import com.tacz.guns.client.resource.pojo.model.*;
 import dev.itemfoundation.api.assembly.*;
+import dev.firearms.presentation.AssemblyIconRaster;
 import dev.firearms.profile.FirearmProfiles;
 import java.util.*;
 import net.minecraft.resources.ResourceLocation;
@@ -39,16 +40,16 @@ class NativeGunBatchStateTest {
     @Test void fullIconsUseTexturedAssemblyAndChangeWhenUpperIsRemoved() throws Exception {
         for(String name:GUNS){
             var w=weapon(name);var models=NativeAssemblyView.geometry(w);var materials=NativeAssemblyView.materials(w,models);
-            var textures=new HashMap<String,NativeAssemblyIconRaster.Texture>();
-            java.util.function.Function<String,NativeAssemblyIconRaster.Texture> load=id->textures.computeIfAbsent(id,key->{
+            var textures=new HashMap<String,AssemblyIconRaster.Texture>();
+            java.util.function.Function<String,AssemblyIconRaster.Texture> load=id->textures.computeIfAbsent(id,key->{
                 try(var input=AssembledWeapon.class.getResourceAsStream("/assets/"+key.replace(':','/'))){
                     var image=javax.imageio.ImageIO.read(Objects.requireNonNull(input,key));
-                    return new NativeAssemblyIconRaster.Texture(image.getWidth(),image.getHeight(),image.getRGB(0,0,image.getWidth(),image.getHeight(),null,0,image.getWidth()));
+                    return new AssemblyIconRaster.Texture(image.getWidth(),image.getHeight(),image.getRGB(0,0,image.getWidth(),image.getHeight(),null,0,image.getWidth()));
                 }catch(java.io.IOException e){throw new java.io.UncheckedIOException(e);}
             });
-            var pixels=NativeAssemblyIconRaster.bake(w.PRESET,models,materials,load,256);
+            var pixels=AssemblyIconRaster.bake(w.PRESET,models,materials,load,256);
             assertTrue(Arrays.stream(pixels).filter(p->(p>>>24)>0).count()>1000,name);
-            assertFalse(Arrays.equals(pixels,NativeAssemblyIconRaster.bake(w.projectEnabled(remove(w.preset(),List.of("upper"))),models,materials,load,256)),name);
+            assertFalse(Arrays.equals(pixels,AssemblyIconRaster.bake(w.projectEnabled(remove(w.preset(),List.of("upper"))),models,materials,load,256)),name);
             var image=new java.awt.image.BufferedImage(256,256,java.awt.image.BufferedImage.TYPE_INT_ARGB);
             image.setRGB(0,0,256,256,pixels,0,256);
             javax.imageio.ImageIO.write(image,"png",java.nio.file.Path.of(System.getProperty("java.io.tmpdir"),name+"-native-assembled-icon.png").toFile());

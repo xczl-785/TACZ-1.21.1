@@ -3,6 +3,7 @@ package dev.tacticaltacz.assembled;
 import com.google.gson.*;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import dev.itemfoundation.api.assembly.*;
+import dev.firearms.presentation.AssemblyIconRaster;
 import java.util.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
@@ -99,17 +100,17 @@ class NativeGlockStateTest {
 
     @Test void completeIconBakesWithAllInstalledParts() throws Exception {
         var models=NativeAssemblyView.geometry(weapon());var materials=NativeAssemblyView.materials(weapon(),models);
-        var textures=new HashMap<String,NativeAssemblyIconRaster.Texture>();
-        java.util.function.Function<String,NativeAssemblyIconRaster.Texture> load=id->textures.computeIfAbsent(id,key->{
+        var textures=new HashMap<String,AssemblyIconRaster.Texture>();
+        java.util.function.Function<String,AssemblyIconRaster.Texture> load=id->textures.computeIfAbsent(id,key->{
             try(var input=AssembledWeapon.class.getResourceAsStream("/assets/"+key.replace(':','/'))){
                 var image=javax.imageio.ImageIO.read(java.util.Objects.requireNonNull(input));
-                return new NativeAssemblyIconRaster.Texture(image.getWidth(),image.getHeight(),image.getRGB(0,0,image.getWidth(),image.getHeight(),null,0,image.getWidth()));
+                return new AssemblyIconRaster.Texture(image.getWidth(),image.getHeight(),image.getRGB(0,0,image.getWidth(),image.getHeight(),null,0,image.getWidth()));
             }catch(java.io.IOException e){throw new java.io.UncheckedIOException(e);}
         });
-        var pixels=NativeAssemblyIconRaster.bake(weapon().PRESET,models,materials,load,256);
+        var pixels=AssemblyIconRaster.bake(weapon().PRESET,models,materials,load,256);
         assertTrue(Arrays.stream(pixels).filter(p->(p>>>24)>0).count()>1000);
         var incomplete=weapon().projectEnabled(remove(weapon().preset(),"slide"));
-        assertFalse(Arrays.equals(pixels,NativeAssemblyIconRaster.bake(incomplete,models,materials,load,256)));
+        assertFalse(Arrays.equals(pixels,AssemblyIconRaster.bake(incomplete,models,materials,load,256)));
         var image=new java.awt.image.BufferedImage(256,256,java.awt.image.BufferedImage.TYPE_INT_ARGB);
         image.setRGB(0,0,256,256,pixels,0,256);
         javax.imageio.ImageIO.write(image,"png",java.nio.file.Path.of(System.getProperty("java.io.tmpdir"),"glock-native-assembled-icon.png").toFile());

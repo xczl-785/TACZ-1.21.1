@@ -123,12 +123,7 @@ public final class AssembledWeapon {
             try{return Optional.of(definition(part));}catch(IllegalArgumentException unknown){return Optional.empty();}
         }).root();
     }
-    public AssemblyNode projectEnabled(ItemStack stack){return enabled(project(stack));}
-    private static AssemblyNode enabled(AssemblyNode node){
-        var children=new TreeMap<String,AssemblyNode>();
-        node.children().forEach((slot,child)->{if(child.enabled())children.put(slot,enabled(child));});
-        return new AssemblyNode(node.instanceId(),node.definitionId(),children);
-    }
+    public AssemblyNode projectEnabled(ItemStack stack){return AssemblyViews.onlyEnabled(project(stack));}
     public boolean hasMagazine(ItemStack stack){return feed.kind()==NativeAssemblyFeed.Kind.DETACHABLE_MAGAZINE&&hasFeedContainer(stack);}
     public boolean hasFeedContainer(ItemStack stack){
         try {var owner=stack;for(var slot:feed.containerPath()){var part=AssemblyTrees.state(owner).in(slot).filter(AssemblyState.Installed::enabled);if(part.isEmpty())return false;owner=part.get().stack();}return true;}

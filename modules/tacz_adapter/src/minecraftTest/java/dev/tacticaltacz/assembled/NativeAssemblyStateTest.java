@@ -3,6 +3,7 @@ package dev.tacticaltacz.assembled;
 import com.google.gson.JsonParser;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import dev.itemfoundation.api.assembly.*;
+import dev.firearms.presentation.AssemblyIconRaster;
 import java.nio.file.*;
 import java.util.*;
 import net.minecraft.server.Bootstrap;
@@ -43,11 +44,11 @@ class NativeAssemblyStateTest {
         var entry=JsonParser.parseString(AssembledWeapon.resource("assets/tacz_fork_tarkov/models/item/m4a1.json")).getAsJsonObject();
         assertEquals("builtin/entity",entry.get("parent").getAsString());
         var a=weapon().preset();var b=weapon().preset();
-        assertEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(b)));
+        assertEquals(AssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),AssemblyIconRaster.appearanceKey(weapon().projectEnabled(b)));
         ((AssemblyGunItem)a.getItem()).setCurrentAmmoCount(a,10);
-        assertEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(b)));
+        assertEquals(AssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),AssemblyIconRaster.appearanceKey(weapon().projectEnabled(b)));
         var noStock=AssemblyGunExchange.plan(a,ItemStack.EMPTY,List.of("buffer","stock")).orElseThrow().held();
-        assertNotEquals(NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),NativeAssemblyIconRaster.appearanceKey(weapon().projectEnabled(noStock)));
+        assertNotEquals(AssemblyIconRaster.appearanceKey(weapon().projectEnabled(a)),AssemblyIconRaster.appearanceKey(weapon().projectEnabled(noStock)));
         assertThrows(IllegalStateException.class,()->AssembledWeapon.resource("assets/tacz_fork_tarkov/m4a1/icon_geometry.json"));
     }
     @Test void presetIsOnePhysicalTreeAndCanDetachMagazine(){

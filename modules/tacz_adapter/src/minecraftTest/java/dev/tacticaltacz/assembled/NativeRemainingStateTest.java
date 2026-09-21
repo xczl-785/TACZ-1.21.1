@@ -6,6 +6,7 @@ import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.client.resource.pojo.model.*;
 import dev.tarkovcontent.ammunition.TarkovAmmunitionItem;
 import dev.itemfoundation.api.assembly.*;
+import dev.firearms.presentation.AssemblyIconRaster;
 import dev.tacticaltacz.AmmoBridge;
 import dev.firearms.profile.FirearmProfiles;
 import java.util.*;
@@ -65,17 +66,17 @@ class NativeRemainingStateTest {
     @Test void fullTexturedIconsChangeWithActualAssemblyAndEveryCardResolves() throws Exception {
         for(String name:GUNS){var w=weapon(name);var geometry=NativeAssemblyView.geometry(w);var materials=NativeAssemblyView.materials(w,geometry);
             assertEquals(w.ITEMS.keySet(),geometry.keySet());
-            var cache=new HashMap<String,NativeAssemblyIconRaster.Texture>();
-            java.util.function.Function<String,NativeAssemblyIconRaster.Texture> load=id->cache.computeIfAbsent(id,key->{
-                try(var in=AssembledWeapon.class.getResourceAsStream("/assets/"+key.replace(':','/'))){var image=javax.imageio.ImageIO.read(Objects.requireNonNull(in,key));return new NativeAssemblyIconRaster.Texture(image.getWidth(),image.getHeight(),image.getRGB(0,0,image.getWidth(),image.getHeight(),null,0,image.getWidth()));}
+            var cache=new HashMap<String,AssemblyIconRaster.Texture>();
+            java.util.function.Function<String,AssemblyIconRaster.Texture> load=id->cache.computeIfAbsent(id,key->{
+                try(var in=AssembledWeapon.class.getResourceAsStream("/assets/"+key.replace(':','/'))){var image=javax.imageio.ImageIO.read(Objects.requireNonNull(in,key));return new AssemblyIconRaster.Texture(image.getWidth(),image.getHeight(),image.getRGB(0,0,image.getWidth(),image.getHeight(),null,0,image.getWidth()));}
                 catch(java.io.IOException e){throw new java.io.UncheckedIOException(e);}
             });
             for(String definition:w.ITEMS.keySet()){
                 var icon=w.partIcon(definition);try(var in=AssembledWeapon.class.getResourceAsStream("/assets/"+icon.getNamespace()+"/"+icon.getPath())){assertNotNull(in,name+definition);assertNotNull(javax.imageio.ImageIO.read(in));}
             }
-            var pixels=NativeAssemblyIconRaster.bake(w.PRESET,geometry,materials,load,256);
+            var pixels=AssemblyIconRaster.bake(w.PRESET,geometry,materials,load,256);
             assertTrue(Arrays.stream(pixels).filter(x->(x>>>24)>0).count()>500,name);
-            assertFalse(Arrays.equals(pixels,NativeAssemblyIconRaster.bake(w.projectEnabled(remove(w.preset(),w.feed.containerPath())),geometry,materials,load,256)),name);
+            assertFalse(Arrays.equals(pixels,AssemblyIconRaster.bake(w.projectEnabled(remove(w.preset(),w.feed.containerPath())),geometry,materials,load,256)),name);
             var image=new java.awt.image.BufferedImage(256,256,java.awt.image.BufferedImage.TYPE_INT_ARGB);image.setRGB(0,0,256,256,pixels,0,256);
             javax.imageio.ImageIO.write(image,"png",java.nio.file.Path.of(System.getProperty("java.io.tmpdir"),name+"-native-assembled-icon.png").toFile());
         }
