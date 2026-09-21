@@ -1,28 +1,23 @@
-# Weapon Assembly UI
+# weapon_assembly_ui（已归位到 firearms）
 
-`weapon_assembly_ui` 是 TaCZ 内部的通用枪械组装界面模块。它提供 `WorkbenchScreen`、视口与内存会话，但不拥有真实库存和生产枪械资源。
+2026-09-21：本模块的**源码、资源与测试已全部迁出**到 NewMod 的 firearms Mod，TaCZ Jar 不再包含这些类与资源。本目录现在只保留设计与验证文档。
 
-正式入口由 `tacz_adapter` 的客户端宿主调用：
+## 现在的归属
 
-```text
-AssemblyGunClient -> WorkbenchScreen
-```
+| 内容 | 新位置 |
+| --- | --- |
+| 屏幕、相机、槽位/候选布局、网格视口、材质质量、后端接口 | `source/mods/firearms/src/main/java/dev/firearms/client/workbench` |
+| 外观缓存、纹理寿命、失败抑制 | `source/mods/firearms/src/main/java/dev/firearms/client/presentation`（`AssemblyIconCache`、`AssemblyIconFailures`） |
+| 纯栅格算法 | `source/mods/firearms/src/main/java/dev/firearms/presentation/AssemblyIconRaster` |
+| 资源（语言、材质库、材质贴图） | `source/mods/firearms/src/main/resources/assets/weapon_assembly_ui`（namespace 未变） |
+| 测试 | `source/mods/firearms/src/test` |
 
-旧 ADAR 独立演示客户端、自动打开宿主、演示贴图及旧作者工具已经移除。当前枪械模型、材质和装配数据从 [`tacz_adapter/weapon-sources`](../tacz_adapter/weapon-sources/README.md) 进入生产链。
+TaCZ 只在 `modules/tacz_adapter` 保留宿主与原生后端：`AssemblyGunClient`（屏幕入口与协议）、`NativeWorkbenchScene`（实现公共 `WorkbenchModelBackend`）、`NativeAssemblyIcons`（内容查找与动态纹理 namespace）、`AssemblyGunWorkbench`（服务端授权）、`NativeWorkbenchStack`（预览物品构造宿主）。
 
-## 边界
+## 保留在这里的文档
 
-- `WorkbenchScreen` 只通过 `WorkbenchAccess` 读取状态并提交用户操作。
-- `AssemblySession` 是内存会话实现，不写入 `ItemStack`、背包或磁盘。
-- `AssemblyViewport` 消费宿主传入的几何、材质与模型后端。
-- `src/test/resources/adar-regression` 只保留 JVM 回归所需的最小 ADAR 几何与材质夹具，不进入正式 Jar。
+- [组装台完整方案](docs/组装台完整方案.md)：组装台的完整产品边界与版本路线，仍然有效。
+- [材质使用说明](材质使用说明.md)：材质库与贴图约定，仍然有效。
+- [verification.json](docs/verification.json)：迁移当时的历史验证记录，只证明当时状态。
 
-## 验证
-
-在 TaCZ 仓库根目录运行：
-
-```sh
-bash gradlew weapon_assembly_uiTest verifyWeaponModules --offline
-```
-
-完整客户端验收使用 NewMod 的正式开发客户端入口，由所有者执行；本模块不再提供独立 Minecraft 客户端入口。
+可执行入口以 [modules/README.md](../README.md) 为准。

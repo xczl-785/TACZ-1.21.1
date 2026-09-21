@@ -5,9 +5,13 @@ from pathlib import Path
 from weapon_migration import source_rows
 from native_m4a1_migration import native_successor, predecessor_text
 R=Path(__file__).resolve().parents[1]
-MODULES=['weapon_assembly','weapon_models','weapon_runtime','weapon_assembly_ui']
+MODULES=['weapon_assembly','weapon_models','weapon_runtime']
+# The workbench UI now lives in the firearms Mod; the TaCZ side must keep no source for it.
+EXTRACTED_MODULES=['weapon_assembly_ui']
 def verify(jar=None, newmod=None):
     source_rows()
+    for module in EXTRACTED_MODULES:
+        assert not list((R/'modules'/module/'src').rglob('*')),f'Extracted module still has sources: {module}'
     count=0
     for module in MODULES:
         root=R/'modules'/module
@@ -81,6 +85,6 @@ def verify(jar=None, newmod=None):
                     # Annotation descriptor must not survive in class files.
                     assert b'Lnet/neoforged/fml/common/Mod;' not in z.read(name),name
             assert 'META-INF/licenses/EFTForge-MIT.txt' in names
-    print(f'WEAPON_MODULES PASS: {count} production sources, four internal boundaries, persistent profile identity, original resources preserved with audited additive preset labels'+(', single Mod Jar' if jar else ''))
+    print(f'WEAPON_MODULES PASS: {count} production sources, three internal boundaries, one extracted workbench UI, persistent profile identity, original resources preserved with audited additive preset labels'+(', single Mod Jar' if jar else ''))
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--jar',type=Path);p.add_argument('--newmod',type=Path);a=p.parse_args();verify(a.jar,a.newmod)

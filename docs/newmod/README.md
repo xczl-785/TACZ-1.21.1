@@ -27,7 +27,7 @@
 | 实验批次与交付证据 | [融合与组装索引](../assembly-experiment/README.md) |
 | 编辑原生枪 | [M4 作者合同](../../modules/tacz_adapter/weapon-sources/native_m4a1/README.md)、[其余枪生成流程](../../tools/native_guns/README.md) |
 | 非瞄具与光学源 | [非瞄具源](../../modules/tacz_adapter/weapon-sources/native_attachments/README.md)、[光学源](../../modules/tacz_adapter/weapon-sources/optics/README.md) |
-| 弹药 | [制作与运行归属](../../ammunition/README.md)、[物品链退役与保留边界](../assembly-experiment/弹药链路与清理.md) |
+| 弹药 | [物品链退役与保留边界](../assembly-experiment/弹药链路与清理.md)；具体弹药定义、注册与详情展示归 NewMod `tarkov_content`，本仓库不再持有 `ammunition/` 目录 |
 | 早期清理与来源证据 | [清理](cleanup/README.md)、[清理前盘点](inventory/README.md)、[额外内容](extra-content/README.md)、[首轮隔离](../content-isolation/README.md) |
 
 历史 RouteLedger 区块号和早期运行锁保留在各批次记录中；它们不表示当前绑定或当前授权。本次文档治理未写 RouteLedger。
