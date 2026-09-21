@@ -1,43 +1,49 @@
 {
   "source_repository": "NewMod",
-  "source_commit": "50eb84c7985236adb0369c95ba601a289aaaa4c1",
   "scope": "External compilation dependencies, never bundled in TaCZ; development artifacts only support compilation of opt-in acceptance tools",
   "artifacts": [
     {
       "module": "tactical",
-      "artifact": "vendor/newmod/tactical_inventory-50eb84c7.jar",
-      "sha512": "04dffe7b937cb90a857eaf11d0ff3050998aa17d4da4072c58a5702826b35fcf7e5cfbc456ef48cf14385685c1e6903e382c48a9e085c485a8ec6f7c53868e1b",
-      "scope": "main"
+      "artifact": "vendor/newmod/tactical_inventory-04f458be.jar",
+      "scope": "main",
+      "source_commit": "04f458bebb4bd74d1b8f0f1f790b8d01210d340a",
+      "sha512": "04dffe7b937cb90a857eaf11d0ff3050998aa17d4da4072c58a5702826b35fcf7e5cfbc456ef48cf14385685c1e6903e382c48a9e085c485a8ec6f7c53868e1b"
     },
     {
       "module": "character",
-      "artifact": "vendor/newmod/tactical_character-50eb84c7.jar",
-      "sha512": "077338761db67fa9e607b7554e2e12e6c7cca03e7865e1b116691bb279ba62f45520fd51a396a0c5be0c819a69d06b5df5ceb53d6ad372785d2d20f9fb047cc5",
-      "scope": "main"
+      "artifact": "vendor/newmod/tactical_character-04f458be.jar",
+      "scope": "main",
+      "source_commit": "04f458bebb4bd74d1b8f0f1f790b8d01210d340a",
+      "sha512": "077338761db67fa9e607b7554e2e12e6c7cca03e7865e1b116691bb279ba62f45520fd51a396a0c5be0c819a69d06b5df5ceb53d6ad372785d2d20f9fb047cc5"
     },
     {
       "module": "combat",
-      "artifact": "vendor/newmod/tactical_combat-50eb84c7.jar",
-      "sha512": "658015e5ddaf635adf8dad0fc3a81dc6a3f68b5d1962ae500f1e4fd91ddc1a4696bc34dc7ec85fe409c09add6f49a60d204c7464b055e64637b34e6d4eda7cdf",
-      "scope": "main"
+      "artifact": "vendor/newmod/tactical_combat-04f458be.jar",
+      "scope": "main",
+      "source_commit": "04f458bebb4bd74d1b8f0f1f790b8d01210d340a",
+      "sha512": "658015e5ddaf635adf8dad0fc3a81dc6a3f68b5d1962ae500f1e4fd91ddc1a4696bc34dc7ec85fe409c09add6f49a60d204c7464b055e64637b34e6d4eda7cdf"
     },
     {
       "module": "tarkov_content",
-      "artifact": "vendor/newmod/tarkov_content-50eb84c7.jar",
-      "sha512": "4bab8cd2018876ce5a97218347c84313d795981ebd37b3964168827c421026aba495a1da6724cfa56e0131f1c0175cacb02c742c64c1862120c23be6f5c5f436",
-      "scope": "main"
+      "artifact": "vendor/newmod/tarkov_content-04f458be.jar",
+      "scope": "main",
+      "source_commit": "04f458bebb4bd74d1b8f0f1f790b8d01210d340a",
+      "sha512": "da6d88a0327d5a7bcff29138e566b5dcda1fb28e848d38da831ab164bd1db458816446d190c3a7e0397d6f9f4b9d9ea40e58fdae71d09ff92459e139ed016ce6"
     },
     {
-      "module": "tactical development API",
-      "artifact": "vendor/newmod/tactical-development-50eb84c7.jar",
-      "sha512": "83f4b1cccc7eb4f55043afc2eb8df6b8945513f6227f0dfe2a18dfba4dcec56eb1389e013e44663bd6f24510a23b7c23f60964c31f5f1f548af978730f75e7de",
-      "scope": "development"
+      "module": "tactical",
+      "artifact": "vendor/newmod/tactical_inventory-development-04f458be.jar",
+      "scope": "development",
+      "source_commit": "04f458bebb4bd74d1b8f0f1f790b8d01210d340a",
+      "sha512": "09d9e7ce5e30de5fd1153ec46fd28b221e1a80da0881b0a6fa27811d2092b006fc008ef089bba7777f8a626e1d478cbfd84116e7f27dc856ee79f15e274605b7"
     },
     {
-      "module": "tarkov_content development API",
-      "artifact": "vendor/newmod/tarkov_content-development-50eb84c7.jar",
-      "sha512": "8bb0e87f6ec6daa5ac64104f23a875a02dc1bbddd72dad13eca71d8df0f1985fbcd23ef452ff3e16a92f33f25ad1c9aca364558b198dbaed0099059e2e9c73cc",
-      "scope": "development"
+      "module": "tarkov_content",
+      "artifact": "vendor/newmod/tarkov_content-development-04f458be.jar",
+      "scope": "development",
+      "source_commit": "04f458bebb4bd74d1b8f0f1f790b8d01210d340a",
+      "sha512": "f91b6db137b27c6dfacd77f208024c9ed663c146786cbe75890baf9795342f4f158038823a6583280777a461903469572ec8141286bf29679f3e88fa1805b898"
     }
-  ]
+  ],
+  "build_command": "JAVA_HOME=<JDK21> ./source/gradlew -p source :character:jar :combat:jar :firearms:jar :foundation:jar :tactical:developmentJar :tactical:jar :tarkov_content:developmentJar :tarkov_content:jar --offline"
 }

@@ -6,8 +6,9 @@ weaponModules.each { name ->
     sourceSets.main.resources.srcDir("modules/${name}/src/main/resources")
 }
 def publicLock = new groovy.json.JsonSlurper().parse(file('modules/public-dependency-lock.json'))
-def foundationArtifact = file(publicLock.artifact)
-def firearmsArtifact = file(publicLock.firearms_artifact)
+def pinnedRow = { module -> publicLock.artifacts.find { it.module == module && it.scope == 'main' } }
+def foundationArtifact = file(pinnedRow('foundation').artifact)
+def firearmsArtifact = file(pinnedRow('firearms').artifact)
 repositories { maven { url = 'https://maven.firstdark.dev/snapshots' } }
 configurations { weaponTestLibraries }
 dependencies {
@@ -27,9 +28,13 @@ tasks.register('verifyPublicDependency') {
     inputs.files(foundationArtifact, firearmsArtifact)
     inputs.file('modules/public-dependency-lock.json')
     doLast {
-        assert java.security.MessageDigest.getInstance('SHA-512').digest(foundationArtifact.bytes).encodeHex().toString() == publicLock.sha512
-        assert java.security.MessageDigest.getInstance('SHA-512').digest(firearmsArtifact.bytes).encodeHex().toString() == publicLock.firearms_sha512
+        assert java.security.MessageDigest.getInstance('SHA-512').digest(foundationArtifact.bytes).encodeHex().toString() == pinnedRow('foundation').sha512
+        assert java.security.MessageDigest.getInstance('SHA-512').digest(firearmsArtifact.bytes).encodeHex().toString() == pinnedRow('firearms').sha512
     }
+}
+tasks.register('verifyVendoredProvenance', Exec) {
+    environment 'PYTHONDONTWRITEBYTECODE', '1'
+    commandLine 'python3', 'tools/verify_vendored_provenance.py'
 }
 tasks.named('compileJava') { dependsOn 'verifyPublicDependency' }
 weaponTestModules.each { name ->
@@ -88,4 +93,4 @@ tasks.register('verifyWeaponModules', Exec) {
     environment 'PYTHONDONTWRITEBYTECODE', '1'
     commandLine 'python3', 'tools/verify_weapon_modules.py'
 }
-tasks.named('check') { dependsOn 'compilePureJava', 'verifyWeaponModules' }
+tasks.named('check') { dependsOn 'compilePureJava', 'verifyWeaponModules', 'verifyVendoredProvenance' }

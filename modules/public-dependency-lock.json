@@ -1,13 +1,23 @@
 {
   "source_repository": "NewMod",
-  "source_commit": "50eb84c7985236adb0369c95ba601a289aaaa4c1",
-  "artifact": "vendor/newmod/item_foundation-50eb84c7.jar",
-  "sha512": "ca5b6ca39aee3f9b8335bfdf3e918dd6488cb5b6ddb84e2013ba88229e08e68d3a332c5fe1d7270409d08265ff4356f5fd7c04d0c1ccd7ee9eb5a5287294dc08",
-  "firearms_source_commit": "b2464d84d9b87c96244a1671f89d1194dbd2d809",
-  "firearms_artifact": "vendor/newmod/firearms-b2464d84.jar",
-  "firearms_sha512": "22a64d3b5cb1c201a2d7f3643590df692709ad70b380520043e82e0aa6c1bfc971848eae54665f7a22ae53c4dafab13649efa1109d68422faeddfc20d0cfb891",
   "version": "0.0.0-dev",
   "ldlib2": "2.2.37",
-  "build_command": "JAVA_HOME=<JDK21> ./source/gradlew -p source :foundation:jar :firearms:check --offline",
-  "role": "External public dependency; not bundled in TaCZ"
+  "build_command": "JAVA_HOME=<JDK21> ./source/gradlew -p source :character:jar :combat:jar :firearms:jar :foundation:jar :tactical:developmentJar :tactical:jar :tarkov_content:developmentJar :tarkov_content:jar --offline",
+  "role": "External public dependency; not bundled in TaCZ",
+  "artifacts": [
+    {
+      "module": "foundation",
+      "artifact": "vendor/newmod/item_foundation-04f458be.jar",
+      "scope": "main",
+      "source_commit": "04f458bebb4bd74d1b8f0f1f790b8d01210d340a",
+      "sha512": "ca5b6ca39aee3f9b8335bfdf3e918dd6488cb5b6ddb84e2013ba88229e08e68d3a332c5fe1d7270409d08265ff4356f5fd7c04d0c1ccd7ee9eb5a5287294dc08"
+    },
+    {
+      "module": "firearms",
+      "artifact": "vendor/newmod/firearms-04f458be.jar",
+      "scope": "main",
+      "source_commit": "04f458bebb4bd74d1b8f0f1f790b8d01210d340a",
+      "sha512": "22a64d3b5cb1c201a2d7f3643590df692709ad70b380520043e82e0aa6c1bfc971848eae54665f7a22ae53c4dafab13649efa1109d68422faeddfc20d0cfb891"
+    }
+  ]
 }

@@ -14,8 +14,9 @@ def validate(resources=RESOURCES):
     RESOURCES = Path(resources)
     root = MODULE.parents[1]
     lock = read(root/'modules/public-dependency-lock.json')
-    artifact = root/lock['artifact']
-    assert hashlib.sha512(artifact.read_bytes()).hexdigest() == lock['sha512'], 'Foundation artifact mismatch'
+    pinned = next(row for row in lock['artifacts'] if row['module'] == 'foundation' and row['scope'] == 'main')
+    artifact = root/pinned['artifact']
+    assert hashlib.sha512(artifact.read_bytes()).hexdigest() == pinned['sha512'], 'Foundation artifact mismatch'
     with zipfile.ZipFile(artifact) as jar:
         tags = {tag['id'] for name in jar.namelist() if name.startswith('data/item_foundation/item_foundation/identities/catalog/') and name.endswith('.json') for tag in json.loads(jar.read(name))['tags']}
     index = read(RESOURCES/'data/tactical_tacz_adapter/assembled_weapons.json')
