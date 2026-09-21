@@ -1,32 +1,28 @@
 package dev.tacticaltacz.assembled;
 
 import com.google.gson.JsonParser;
+import dev.firearms.ammunition.AssemblyFeed;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
+/** Legacy TaCZ weapon.json feed keys; the path rules themselves live with the public value object. */
 class NativeAssemblyFeedTest {
-    @Test void legacyDetachablePathStillRefundsOnlyContainerOrAncestors(){
+    @Test void legacyDetachableKeyStillLoadsThePublicPolicy(){
         var policy=NativeAssemblyFeed.load(JsonParser.parseString("""
             {"feed":"detachable_magazine","magazinePath":["receiver","magazine"]}
             """).getAsJsonObject());
-        assertEquals(NativeAssemblyFeed.Kind.DETACHABLE_MAGAZINE,policy.kind());
-        assertTrue(policy.affectedBy(List.of("receiver")));
-        assertTrue(policy.affectedBy(List.of("receiver","magazine")));
-        assertFalse(policy.affectedBy(List.of("stock")));
-        assertFalse(policy.affectedBy(List.of("receiver","magazine","cosmetic")));
+        assertEquals(AssemblyFeed.Kind.DETACHABLE_MAGAZINE,policy.kind());
+        assertEquals(List.of("receiver","magazine"),policy.containerPath());
+        assertTrue(policy.capacityPaths().isEmpty());
     }
-    @Test void internalTubeSeparatesContainerFromCapacityExtension(){
+    @Test void internalTubeReadsContainerAndCapacityKeys(){
         var policy=NativeAssemblyFeed.load(JsonParser.parseString("""
             {"feed":"internal_tube","feedPath":["body","tube"],"capacityPaths":[["body","tube","extension"]]}
             """).getAsJsonObject());
-        assertEquals(NativeAssemblyFeed.Kind.INTERNAL_TUBE,policy.kind());
-        assertTrue(policy.affectedBy(List.of("body")));
-        assertTrue(policy.affectedBy(List.of("body","tube")));
-        assertTrue(policy.affectedBy(List.of("body","tube","extension")));
-        assertFalse(policy.affectedBy(List.of("body","barrel")));
-        assertFalse(policy.affectedBy(List.of()));
-        assertThrows(UnsupportedOperationException.class,()->policy.containerPath().add("other"));
+        assertEquals(AssemblyFeed.Kind.INTERNAL_TUBE,policy.kind());
+        assertEquals(List.of("body","tube"),policy.containerPath());
+        assertEquals(List.of(List.of("body","tube","extension")),policy.capacityPaths());
     }
     @Test void unknownAndEmptyContainerPoliciesFailAtLoad(){
         for(String config:List.of("{\"feed\":\"invented\",\"feedPath\":[\"tube\"]}","{\"feed\":\"internal_tube\",\"feedPath\":[]}","{\"feed\":\"internal_tube\"}"))

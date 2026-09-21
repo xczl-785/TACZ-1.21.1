@@ -6,6 +6,7 @@ import com.tacz.guns.api.item.gun.FireMode;
 import dev.itemfoundation.api.assembly.*;
 import dev.firearms.assembly.*;
 import dev.firearms.assembly.AssemblyJson;
+import dev.firearms.ammunition.AssemblyFeed;
 import dev.firearms.profile.FirearmProfiles;
 import java.util.*;
 import net.minecraft.core.component.DataComponents;
@@ -26,7 +27,7 @@ public final class AssembledWeapon {
     public final Map<String,String> nativeAttachments;
     public final boolean nativeRig, assemblyIcons;
     public final NativeAssemblyProfile nativeProfile;
-    public final NativeAssemblyFeed feed;
+    public final AssemblyFeed feed;
     public final List<String> magazinePath; // Compatibility accessor for existing detachable-magazine clients.
     public final Set<String> wearableSlots;
     public final List<List<String>> requiredPaths;
@@ -124,7 +125,7 @@ public final class AssembledWeapon {
         }).root();
     }
     public AssemblyNode projectEnabled(ItemStack stack){return AssemblyViews.onlyEnabled(project(stack));}
-    public boolean hasMagazine(ItemStack stack){return feed.kind()==NativeAssemblyFeed.Kind.DETACHABLE_MAGAZINE&&hasFeedContainer(stack);}
+    public boolean hasMagazine(ItemStack stack){return feed.kind()==AssemblyFeed.Kind.DETACHABLE_MAGAZINE&&hasFeedContainer(stack);}
     public boolean hasFeedContainer(ItemStack stack){
         try {var owner=stack;for(var slot:feed.containerPath()){var part=AssemblyTrees.state(owner).in(slot).filter(AssemblyState.Installed::enabled);if(part.isEmpty())return false;owner=part.get().stack();}return true;}
         catch(IllegalArgumentException invalid){return false;}

@@ -8,6 +8,7 @@ import dev.tarkovcontent.ammunition.TarkovAmmunitionItem;
 import dev.itemfoundation.api.assembly.*;
 import dev.firearms.presentation.AssemblyIconRaster;
 import dev.tacticaltacz.AmmoBridge;
+import dev.firearms.ammunition.AssemblyFeed;
 import dev.firearms.profile.FirearmProfiles;
 import java.util.*;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -139,7 +140,7 @@ class NativeRemainingStateTest {
         }
     }
     @Test void internalTubeIsNotDetachableAndCannotReloadWithoutContainer(){
-        var w=weapon("m870");var gun=w.preset();assertEquals(NativeAssemblyFeed.Kind.INTERNAL_TUBE,w.feed.kind());assertFalse(w.hasMagazine(gun));assertTrue(w.hasFeedContainer(gun));
+        var w=weapon("m870");var gun=w.preset();assertEquals(AssemblyFeed.Kind.INTERNAL_TUBE,w.feed.kind());assertFalse(w.hasMagazine(gun));assertTrue(w.hasFeedContainer(gun));
         var without=remove(gun,w.feed.containerPath());assertFalse(w.hasFeedContainer(without));assertFalse(((AssemblyGunItem)without.getItem()).canReload(null,without));
         assertFalse(w.feed.affectedBy(List.of("stock")));assertTrue(w.feed.affectedBy(w.feed.capacityPaths().getFirst()));
     }
