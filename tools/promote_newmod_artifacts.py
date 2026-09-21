@@ -46,8 +46,8 @@ def mod_id(project):
 def main():
     if not GRADLE.is_file():
         raise SystemExit(f'Not a NewMod workspace: {NEWMOD}')
-    if git('status', '--porcelain'):
-        raise SystemExit('NewMod worktree is dirty; commit or stash before promoting')
+    if git('status', '--porcelain', '--', 'source'):
+        raise SystemExit('NewMod source tree is dirty; commit or stash before promoting')
     commit = git('rev-parse', 'HEAD')
     short = commit[:8]
     version = MOD_VERSION.search((NEWMOD / 'source/gradle.properties').read_text()).group(1)
