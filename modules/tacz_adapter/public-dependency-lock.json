@@ -4,44 +4,44 @@
   "artifacts": [
     {
       "module": "tactical",
-      "artifact": "vendor/newmod/tactical_inventory-5f8e65c9.jar",
+      "artifact": "vendor/newmod/tactical_inventory-28dc1eae.jar",
       "scope": "main",
-      "source_commit": "5f8e65c91330feb0b6f6bd94300ff4021909bce5",
+      "source_commit": "28dc1eae61e6af6f9882a9b7205b2dc0f67caf61",
       "sha512": "04dffe7b937cb90a857eaf11d0ff3050998aa17d4da4072c58a5702826b35fcf7e5cfbc456ef48cf14385685c1e6903e382c48a9e085c485a8ec6f7c53868e1b"
     },
     {
       "module": "character",
-      "artifact": "vendor/newmod/tactical_character-5f8e65c9.jar",
+      "artifact": "vendor/newmod/tactical_character-28dc1eae.jar",
       "scope": "main",
-      "source_commit": "5f8e65c91330feb0b6f6bd94300ff4021909bce5",
+      "source_commit": "28dc1eae61e6af6f9882a9b7205b2dc0f67caf61",
       "sha512": "077338761db67fa9e607b7554e2e12e6c7cca03e7865e1b116691bb279ba62f45520fd51a396a0c5be0c819a69d06b5df5ceb53d6ad372785d2d20f9fb047cc5"
     },
     {
       "module": "combat",
-      "artifact": "vendor/newmod/tactical_combat-5f8e65c9.jar",
+      "artifact": "vendor/newmod/tactical_combat-28dc1eae.jar",
       "scope": "main",
-      "source_commit": "5f8e65c91330feb0b6f6bd94300ff4021909bce5",
+      "source_commit": "28dc1eae61e6af6f9882a9b7205b2dc0f67caf61",
       "sha512": "658015e5ddaf635adf8dad0fc3a81dc6a3f68b5d1962ae500f1e4fd91ddc1a4696bc34dc7ec85fe409c09add6f49a60d204c7464b055e64637b34e6d4eda7cdf"
     },
     {
       "module": "tarkov_content",
-      "artifact": "vendor/newmod/tarkov_content-5f8e65c9.jar",
+      "artifact": "vendor/newmod/tarkov_content-28dc1eae.jar",
       "scope": "main",
-      "source_commit": "5f8e65c91330feb0b6f6bd94300ff4021909bce5",
+      "source_commit": "28dc1eae61e6af6f9882a9b7205b2dc0f67caf61",
       "sha512": "da6d88a0327d5a7bcff29138e566b5dcda1fb28e848d38da831ab164bd1db458816446d190c3a7e0397d6f9f4b9d9ea40e58fdae71d09ff92459e139ed016ce6"
     },
     {
       "module": "tactical",
-      "artifact": "vendor/newmod/tactical_inventory-development-5f8e65c9.jar",
+      "artifact": "vendor/newmod/tactical_inventory-development-28dc1eae.jar",
       "scope": "development",
-      "source_commit": "5f8e65c91330feb0b6f6bd94300ff4021909bce5",
+      "source_commit": "28dc1eae61e6af6f9882a9b7205b2dc0f67caf61",
       "sha512": "09d9e7ce5e30de5fd1153ec46fd28b221e1a80da0881b0a6fa27811d2092b006fc008ef089bba7777f8a626e1d478cbfd84116e7f27dc856ee79f15e274605b7"
     },
     {
       "module": "tarkov_content",
-      "artifact": "vendor/newmod/tarkov_content-development-5f8e65c9.jar",
+      "artifact": "vendor/newmod/tarkov_content-development-28dc1eae.jar",
       "scope": "development",
-      "source_commit": "5f8e65c91330feb0b6f6bd94300ff4021909bce5",
+      "source_commit": "28dc1eae61e6af6f9882a9b7205b2dc0f67caf61",
       "sha512": "f91b6db137b27c6dfacd77f208024c9ed663c146786cbe75890baf9795342f4f158038823a6583280777a461903469572ec8141286bf29679f3e88fa1805b898"
     }
   ],
