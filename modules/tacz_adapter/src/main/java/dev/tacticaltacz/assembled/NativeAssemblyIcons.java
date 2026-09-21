@@ -64,7 +64,7 @@ public final class NativeAssemblyIcons {
                 for(int y=0;y<HEIGHT;y++)for(int x=0;x<WIDTH;x++){int c=pixels[y*WIDTH+x];image.setPixelRGBA(x,y,(c&0xff00ff00)|((c>>>16)&255)|((c&255)<<16));}
                 texture=new DynamicTexture(image);
                 manager.register(location,texture);
-                dev.weaponassemblyui.client.AssemblyTextureQuality.prepare(location);
+                dev.firearms.client.workbench.AssemblyTextureQuality.prepare(location);
                 var icon=new Icon(location,new dev.itemfoundation.client.api.ItemModelBounds.Bounds(bounds[0],bounds[1],bounds[2],bounds[3]));
                 icons.put(key,icon);return icon;
             }catch(RuntimeException failure){

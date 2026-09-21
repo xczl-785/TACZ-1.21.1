@@ -1,5 +1,5 @@
 // TaCZ keeps its legacy profile reader and renderer/UI adapters; firearm rules and pure presentation come from the public platform.
-def weaponModules = ['weapon_runtime', 'weapon_assembly_ui']
+def weaponModules = ['weapon_runtime']
 def weaponTestModules = ['weapon_assembly', 'weapon_models'] + weaponModules
 weaponModules.each { name ->
     sourceSets.main.java.srcDir("modules/${name}/src/main/java")

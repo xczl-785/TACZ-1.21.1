@@ -1,7 +1,8 @@
 package dev.tacticaltacz.assembled;
 import dev.firearms.assembly.*;
 import dev.firearms.workbench.*;
-import dev.weaponassemblyui.client.WorkbenchScreen;
+import dev.firearms.client.workbench.AssemblyWorkbenchLifecycle;
+import dev.firearms.client.workbench.WorkbenchScreen;
 import java.util.*;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;

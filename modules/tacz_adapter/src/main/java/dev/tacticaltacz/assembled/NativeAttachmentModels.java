@@ -65,7 +65,7 @@ final class NativeAttachmentModels {
                 restored.translate(0,-1.5,0);
                 boolean low=asset.lodModel!=null&&!context.firstPerson()&&!com.tacz.guns.util.RenderDistance.inRenderHighPolyModelDistance(restored);
                 var texture=low?asset.lodTexture:asset.texture;
-                if(context==ItemDisplayContext.NONE)dev.weaponassemblyui.client.AssemblyTextureQuality.prepare(texture);
+                if(context==ItemDisplayContext.NONE)dev.firearms.client.workbench.AssemblyTextureQuality.prepare(texture);
                 var renderType=context==ItemDisplayContext.NONE?RenderType.entityCutoutNoCull(texture):RenderType.entityCutout(texture);
                 (low?asset.lodModel:asset.model).render(stack,gun.getCurrentGunItem(),restored,context,renderType,light,overlay);
             });
