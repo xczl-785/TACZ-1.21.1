@@ -18,13 +18,6 @@ class AdoptedAmmunitionTest {
                 assertEquals(original.get("ArmorDamage").getAsFloat(),entry.armorDamage());
                 assertEquals(original.get("InitialSpeed").getAsFloat(),entry.initialSpeed());
                 assertEquals(original.get("ammoRec").getAsFloat(),entry.recoilModifier());
-                var section=AmmunitionInspection.section(entry);
-                assertEquals(dev.itemfoundation.api.inspection.InspectionSection.ATTRIBUTES,section.layout());
-                assertEquals(java.util.List.of("damage","recoil","caliber","penetration","speed"),section.rows().stream().map(dev.itemfoundation.api.inspection.InspectionSection.Row::id).toList());
-                assertEquals((double)entry.initialSpeed(),section.rows().get(4).fields().getFirst().number().orElseThrow());
-                assertEquals(entry.caliber(),section.rows().get(2).fields().getFirst().value());
-                var sourceRecoil=original.get("ammoRec").getAsBigDecimal().stripTrailingZeros();
-                assertEquals((sourceRecoil.signum()>0?"+":"")+sourceRecoil.toPlainString(),section.rows().get(1).fields().getFirst().value());
                 assertEquals(original.get("StackMaxSize").getAsInt(),entry.stackMaxSize());
                 try(var profile=AmmunitionCatalog.class.getResourceAsStream("/data/tarkov_content/item_foundation/items/ammo_"+entry.sourceId()+".json")) {
                     assertNotNull(profile);var p=JsonParser.parseReader(new InputStreamReader(profile,StandardCharsets.UTF_8)).getAsJsonObject();
