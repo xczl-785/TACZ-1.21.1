@@ -5,9 +5,10 @@ from pathlib import Path
 from weapon_migration import source_rows
 from native_m4a1_migration import native_successor, predecessor_text
 R=Path(__file__).resolve().parents[1]
-MODULES=['weapon_assembly','weapon_models','weapon_runtime']
-# The workbench UI now lives in the firearms Mod; the TaCZ side must keep no source for it.
-EXTRACTED_MODULES=['weapon_assembly_ui']
+MODULES=['weapon_runtime']
+# The workbench UI, the rule engine, the model maths and their tests now live in the firearms Mod;
+# the TaCZ side must keep no source for them.
+EXTRACTED_MODULES=['weapon_assembly_ui','weapon_assembly','weapon_models']
 def verify(jar=None, newmod=None):
     source_rows()
     for module in EXTRACTED_MODULES:
@@ -51,8 +52,10 @@ def verify(jar=None, newmod=None):
             else:
                 assert hashlib.sha256(preserved).hexdigest()==row['before_sha256'],row['new']
     fixture_sources=json.loads((R/'modules/fixture-sources.json').read_text())
+    # The migrated fixtures live with the firearms tests that consume them, inside the NewMod workspace.
+    fixture_workspace=newmod or R.parent
     for row in fixture_sources['files']:
-        assert hashlib.sha256((R/row['new']).read_bytes()).hexdigest()==row['sha256'],row['new']
+        assert hashlib.sha256((fixture_workspace/row['new']).read_bytes()).hexdigest()==row['sha256'],row['new']
         if newmod:
             origin=newmod/row['old']
             if not origin.exists() and row['old'].startswith('source/mods/tacz_adapter/'):
@@ -84,7 +87,8 @@ def verify(jar=None, newmod=None):
                     assert name in names,name
                     # Annotation descriptor must not survive in class files.
                     assert b'Lnet/neoforged/fml/common/Mod;' not in z.read(name),name
-            assert 'META-INF/licenses/EFTForge-MIT.txt' in names
-    print(f'WEAPON_MODULES PASS: {count} production sources, three internal boundaries, one extracted workbench UI, persistent profile identity, original resources preserved with audited additive preset labels'+(', single Mod Jar' if jar else ''))
+            # The assembly-rule notice moved to the firearms Mod with WeaponStats, so this Jar no longer ships it.
+            assert 'META-INF/licenses/EFTForge-MIT.txt' not in names
+    print(f'WEAPON_MODULES PASS: {count} production sources, three internal boundaries, one extracted workbench UI plus the rule and presentation tests, persistent profile identity, original resources preserved with audited additive preset labels'+(', single Mod Jar' if jar else ''))
 if __name__=='__main__':
     p=argparse.ArgumentParser();p.add_argument('--jar',type=Path);p.add_argument('--newmod',type=Path);a=p.parse_args();verify(a.jar,a.newmod)

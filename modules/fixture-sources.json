@@ -3,76 +3,76 @@
   "files": [
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/manifest.json",
-      "new": "modules/weapon_models/src/test/fixtures/assets/newmod_m4a1/m4a1/manifest.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/assets/newmod_m4a1/m4a1/manifest.json",
       "source_sha256": "fd03eb234db0a46e95393906f2f031fb65447ee1abd4834e1b8f5a6f6c776ba6",
       "sha256": "dd59ecf23610cd38e43ed9b458890006266c1fac8ace0b69cda764b23bc09175",
       "role": "structural presentation fixture; render geometry intentionally projected out"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_m4a1/m4a1/markers.json",
-      "new": "modules/weapon_models/src/test/fixtures/assets/newmod_m4a1/m4a1/markers.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/assets/newmod_m4a1/m4a1/markers.json",
       "sha256": "e1f5d37ffb068d4afec0a73dd89d9109cfadca1dbdc98a9209a3c0857a75a3d6",
       "role": "regression/development fixture only; original production content stays in adapter"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/manifest.json",
-      "new": "modules/weapon_models/src/test/fixtures/assets/newmod_radian/radian/manifest.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/assets/newmod_radian/radian/manifest.json",
       "source_sha256": "d246134c67439b354de11e2bfbc15512dbe5071f310a21711308d8892901d78f",
       "sha256": "3c644e7eaa057f3562883558a8ac7ec2d90a9177ab7d4ff4c73eade8a5ee8fa5",
       "role": "structural presentation fixture; render geometry intentionally projected out"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_radian/radian/markers.json",
-      "new": "modules/weapon_models/src/test/fixtures/assets/newmod_radian/radian/markers.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/assets/newmod_radian/radian/markers.json",
       "sha256": "5e9de263103ef8c1b5d90af58667f5d6d677c74196ffd5c1fc0575297f809403",
       "role": "regression/development fixture only; original production content stays in adapter"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/manifest.json",
-      "new": "modules/weapon_models/src/test/fixtures/assets/newmod_adar/adar/manifest.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/assets/newmod_adar/adar/manifest.json",
       "source_sha256": "5694a66f67481a7eef50359546761b36cb256a7ca0eaba6370a338c85e91254d",
       "sha256": "26bd6ab7f9fd56cae2466ba233a172b363e3b69022b611d38042b0a7d0b908e5",
       "role": "structural presentation fixture; render geometry intentionally projected out"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/assets/newmod_adar/adar/markers.json",
-      "new": "modules/weapon_models/src/test/fixtures/assets/newmod_adar/adar/markers.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/assets/newmod_adar/adar/markers.json",
       "sha256": "de9b093033b6e9d717dc005f8623a00930426f70f3d4bb7d81dae383d85d2496",
       "role": "regression/development fixture only; original production content stays in adapter"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/scene.json",
-      "new": "modules/weapon_models/src/test/fixtures/data/newmod_m4a1/m4a1/scene.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/data/newmod_m4a1/m4a1/scene.json",
       "sha256": "8ab68fb75d5f489436658fd0696e47e1861ac020f552270e2ea79cd4145d1f5d",
       "role": "regression/development fixture only; original production content stays in adapter"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_m4a1/m4a1/catalog.json",
-      "new": "modules/weapon_models/src/test/fixtures/data/newmod_m4a1/m4a1/catalog.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/data/newmod_m4a1/m4a1/catalog.json",
       "sha256": "59d1701cd54f0523e3343168890dae2460a373fc1676ebd2576ea6f0e678591a",
       "role": "regression/development fixture only; original production content stays in adapter"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/scene.json",
-      "new": "modules/weapon_models/src/test/fixtures/data/newmod_radian/radian/scene.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/data/newmod_radian/radian/scene.json",
       "sha256": "71da4515f543338c092a5ecc060feeb2eec144bcbee442088f60ef99de40a86b",
       "role": "regression/development fixture only; original production content stays in adapter"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_radian/radian/catalog.json",
-      "new": "modules/weapon_models/src/test/fixtures/data/newmod_radian/radian/catalog.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/data/newmod_radian/radian/catalog.json",
       "sha256": "4790ded4b5bf10c86ca9196288be4fc575f63164d6b37c9d2f2dbab399022efb",
       "role": "regression/development fixture only; original production content stays in adapter"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/scene.json",
-      "new": "modules/weapon_models/src/test/fixtures/data/newmod_adar/adar/scene.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/data/newmod_adar/adar/scene.json",
       "sha256": "8c3e0581219ec9bb2358455d8d381598a4a37b68a4679269a135e858622dc560",
       "role": "regression/development fixture only; original production content stays in adapter"
     },
     {
       "old": "source/mods/tacz_adapter/weapon-content/resources/data/newmod_adar/adar/catalog.json",
-      "new": "modules/weapon_models/src/test/fixtures/data/newmod_adar/adar/catalog.json",
+      "new": "source/mods/firearms/src/test/resources/packaged-presets/data/newmod_adar/adar/catalog.json",
       "sha256": "e4a8fa114c494a98b5d2acc2bbcbe0fcabda633a4969ab6442206a1328c1e690",
       "role": "regression/development fixture only; original production content stays in adapter"
     }

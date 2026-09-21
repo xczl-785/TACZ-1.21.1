@@ -1,6 +1,7 @@
 // TaCZ keeps its legacy profile reader and renderer/UI adapters; firearm rules and pure presentation come from the public platform.
+// The rule, presentation and workbench tests now ship with the firearms Mod that owns those classes.
 def weaponModules = ['weapon_runtime']
-def weaponTestModules = ['weapon_assembly', 'weapon_models'] + weaponModules
+def weaponTestModules = weaponModules
 weaponModules.each { name ->
     sourceSets.main.java.srcDir("modules/${name}/src/main/java")
     sourceSets.main.resources.srcDir("modules/${name}/src/main/resources")
@@ -44,18 +45,12 @@ weaponTestModules.each { name ->
         compileClasspath = sourceSets.main.output + files(firearmsArtifact) + configurations.weaponTestLibraries
         runtimeClasspath = output + sourceSets.main.output + files(firearmsArtifact) + configurations.weaponTestLibraries
     }
-    if (name == 'weapon_assembly') tasks.named(tests.processResourcesTaskName, ProcessResources) {
-        from('modules/weapon_assembly/model-fixtures') {
-            include 'catalog.json', 'scenarios.json', 'scenes/*.json'
-            into 'model-fixtures'
-        }
-    }
     def verify = tasks.register("${name}Test", Test) {
         testClassesDirs = tests.output.classesDirs
         classpath = tests.runtimeClasspath
         useJUnitPlatform()
         workingDir file("modules/${name}")
-        inputs.files(fileTree("modules/${name}/src/test/fixtures"), fileTree("modules/${name}/src/test/resources"), fileTree('modules/weapon_assembly/model-fixtures'))
+        inputs.files(fileTree("modules/${name}/src/test/fixtures"), fileTree("modules/${name}/src/test/resources"))
     }
     tasks.named('check') { dependsOn verify }
 }
