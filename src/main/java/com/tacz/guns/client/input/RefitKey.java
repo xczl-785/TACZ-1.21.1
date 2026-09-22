@@ -33,6 +33,11 @@ public class RefitKey {
                 return;
             }
             if (isInGame()) {
+                // An external assembly entry owns this item: never build our own screen for it.
+                if (com.tacz.guns.api.extension.AssemblyEntryExtensions.current()
+                        .ownsAssemblyEntry(player, player.getMainHandItem())) {
+                    return;
+                }
                 if (IGun.mainHandHoldGun(player) && Minecraft.getInstance().screen == null) {
                     IGun iGun = IGun.getIGunOrNull(player.getMainHandItem());
                     if (iGun != null && iGun.hasAttachmentLock(player.getMainHandItem())) {

@@ -219,7 +219,10 @@ public class ClientGunTooltip implements ClientTooltipComponent {
 
 
         if (shouldShow(GunTooltipPart.UPGRADES_TIP)) {
-            String keyName = Component.keybind(RefitKey.REFIT_KEY.getName()).getString().toUpperCase(Locale.ENGLISH);
+            // A gun owned by an external assembly entry advertises that entry's key, not ours.
+            String externalKey = com.tacz.guns.api.extension.AssemblyEntryExtensions.current().assemblyKeyName(gun);
+            String keyName = Component.keybind(externalKey.isEmpty() ? RefitKey.REFIT_KEY.getName() : externalKey)
+                    .getString().toUpperCase(Locale.ENGLISH);
             this.tips = Component.translatable("tooltip.tacz.gun.tips", keyName).withStyle(ChatFormatting.YELLOW).withStyle(ChatFormatting.ITALIC);
             this.maxWidth = Math.max(font.width(this.tips), this.maxWidth);
         }
