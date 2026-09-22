@@ -33,9 +33,15 @@ public class RefitKey {
                 return;
             }
             if (isInGame()) {
-                // An external assembly entry owns this item: never build our own screen for it.
-                if (com.tacz.guns.api.extension.AssemblyEntryExtensions.current()
-                        .ownsAssemblyEntry(player, player.getMainHandItem())) {
+                // An external assembly entry may own this item: never build our own screen for it, and
+                // forward the press when the owner kept a different binding than the public entry.
+                var extension = com.tacz.guns.api.extension.AssemblyEntryExtensions.current();
+                var route = extension.route(player, player.getMainHandItem());
+                if (route == com.tacz.guns.api.extension.AssemblyEntryExtension.Route.FORWARD) {
+                    extension.openExternalEntry(player);
+                    return;
+                }
+                if (route == com.tacz.guns.api.extension.AssemblyEntryExtension.Route.IGNORE) {
                     return;
                 }
                 if (IGun.mainHandHoldGun(player) && Minecraft.getInstance().screen == null) {
