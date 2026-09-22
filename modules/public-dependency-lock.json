@@ -7,17 +7,17 @@
   "artifacts": [
     {
       "module": "foundation",
-      "artifact": "vendor/newmod/item_foundation-41a18cb5.jar",
+      "artifact": "vendor/newmod/item_foundation-036be938.jar",
       "scope": "main",
-      "source_commit": "41a18cb574c712d8f4769d30deb81de5bdf3824d",
+      "source_commit": "036be938c6c77991bcc25067694a6f18d9314f9e",
       "sha512": "ca5b6ca39aee3f9b8335bfdf3e918dd6488cb5b6ddb84e2013ba88229e08e68d3a332c5fe1d7270409d08265ff4356f5fd7c04d0c1ccd7ee9eb5a5287294dc08"
     },
     {
       "module": "firearms",
-      "artifact": "vendor/newmod/firearms-41a18cb5.jar",
+      "artifact": "vendor/newmod/firearms-036be938.jar",
       "scope": "main",
-      "source_commit": "41a18cb574c712d8f4769d30deb81de5bdf3824d",
-      "sha512": "4d2df55010d8945d679b9345683f863d62601ab91003db002259ff718f46a06486ae92538c3ba3483599d5a2687e5dba7913936e518e589c7eceb935dee4f8d6"
+      "source_commit": "036be938c6c77991bcc25067694a6f18d9314f9e",
+      "sha512": "bdb3e1ae9a7fa85d07c1d2f9adedea05370dc919fd6a1b107cbb7507ece9a550ebd8bae2bc6d55f4aa0e2d557051e69a4cd50332c361e030bc37ceb2b6ddd151"
     }
   ]
 }
