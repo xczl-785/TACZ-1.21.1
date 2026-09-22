@@ -14,7 +14,7 @@ import net.minecraft.world.item.ItemStack;
 
 /** Optional gun-specific adapter: the inventory module owns every physical commit. */
 public final class RefitBridge {
-    private static final WorkbenchProposalSessions<WorkbenchInventoryHost.Quote> SESSIONS=new WorkbenchProposalSessions<>();
+    private static final WorkbenchOwner OWNER=new WorkbenchOwner(){};
     private RefitBridge(){}
     public static void register(){
         RefitInventoryExtension.register(new RefitInventoryExtension.Handler(){
@@ -36,7 +36,7 @@ public final class RefitBridge {
         if(assembled!=null&&assembled.nativeRig)return dev.tacticaltacz.assembled.AssemblyGunWorkbench.handleRefit(player,request);
         String result="";
         if(request.action()!=0){
-            var quote=SESSIONS.take(player.getUUID(),request.token(),player.level().getGameTime()).orElse(null);
+            var quote=WorkbenchService.take(player,OWNER,request.token()).orElse(null);
             if(quote==null)result="stale";
             else {
                 boolean accepted=false;
@@ -57,8 +57,8 @@ public final class RefitBridge {
         // Every response carries a fresh server-owned catalog, including after a rejected action.
         var inventory=WorkbenchInventoryHosts.current().orElse(null);
         var view=ready(player)&&inventory!=null?inventory.inspect(player,s->IAttachment.getIAttachmentOrNull(s)!=null):Optional.<WorkbenchInventoryHost.Quote>empty();
-        if(view.isEmpty()||view.get().sources().size()>4096){SESSIONS.remove(player.getUUID());return new RefitProtocol.View(request.requestId(),RefitProtocol.EMPTY,player.getMainHandItem(),List.of(),result.isEmpty()?"unavailable":result);}
-        var token=SESSIONS.issue(player.getUUID(),view.get(),player.level().getGameTime()).token();
+        if(view.isEmpty()||view.get().sources().size()>4096){WorkbenchService.remove(player);return new RefitProtocol.View(request.requestId(),RefitProtocol.EMPTY,player.getMainHandItem(),List.of(),result.isEmpty()?"unavailable":result);}
+        var token=WorkbenchService.issue(player,OWNER,view.get());
         var choices=view.get().sources().stream().map(s->new RefitInventoryExtension.Choice(s.id().toString(),s.stack())).toList();
         return new RefitProtocol.View(request.requestId(),token,view.get().held(),choices,result);
     }

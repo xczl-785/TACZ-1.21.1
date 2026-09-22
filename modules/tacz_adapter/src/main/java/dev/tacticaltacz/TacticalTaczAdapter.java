@@ -16,6 +16,7 @@ public final class TacticalTaczAdapter {
         bus.addListener(dev.tacticaltacz.refit.RefitProtocol::register);
         bus.addListener(dev.tacticaltacz.assembled.AssemblyGunProtocol::register);
         dev.tacticaltacz.refit.RefitBridge.register();
+        dev.tacticaltacz.assembled.AssemblyGunWorkbench.register();
         NeoForge.EVENT_BUS.addListener(TacticalTaczAdapter::playerPose);
         NeoForge.EVENT_BUS.addListener((dev.tacticalcharacter.resource.ResourceActionEvent event) -> {
             if (com.tacz.guns.api.item.IGun.getIGunOrNull(event.player.getMainHandItem()) != null
