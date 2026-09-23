@@ -22,7 +22,7 @@ public class FireSelectKey {
             KeyConflictContext.IN_GAME,
             KeyModifier.NONE,
             InputConstants.Type.KEYSYM,
-            GLFW.GLFW_KEY_G,
+            GLFW.GLFW_KEY_B,
             "key.category.tacz");
 
     @SubscribeEvent
