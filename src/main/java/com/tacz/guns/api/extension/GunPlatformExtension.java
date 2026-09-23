@@ -27,6 +27,8 @@ public interface GunPlatformExtension {
     default ItemStack createGunStack(Item item, int count) { return new ItemStack(item, count); }
     default boolean keepPresetFireMode(ItemStack stack) { return false; }
     default ItemStack creativeStack(ResourceLocation gunId, ItemStack fallback) { return fallback; }
+    /** Scope of gun content exposed by this platform; standalone TaCZ keeps all loaded packs. */
+    default boolean allowsGun(ResourceLocation gunId) { return true; }
 
     default boolean managesAmmunition(ItemStack gun) { return false; }
     default Optional<Boolean> canReload(LivingEntity shooter, ItemStack gun) { return Optional.empty(); }

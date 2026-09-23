@@ -24,6 +24,7 @@ final class AutomaticAmmoSmoke {
         require(com.tacz.guns.api.TimelessAPI.getAllCommonGunIndex().stream().filter(e->e.getKey().getNamespace().equals("tacz")).count()==15,"self-built runtime contains 15 retained guns");
         for(var id:List.of("kar98","lonetrail","m320","minigun","rpg7","springfield1873","taurus500","taurus943"))
             require(com.tacz.guns.api.TimelessAPI.getCommonGunIndex(ResourceLocation.parse("tacz:"+id)).isEmpty(),"excluded gun index: "+id);
+        require(GunItemBuilder.create().setId(ResourceLocation.parse("tacz:m4a1")).build(level.registryAccess()).isEmpty(),"old native gun cannot be built");
         require(com.tacz.guns.api.TimelessAPI.getAllCommonAmmoIndex().size()==24,"retain 24 caliber rendering definitions");
         for(var name:List.of("gun_smith_table","workbench_a","workbench_b","workbench_c","ammo_box")) {
             var id=ResourceLocation.parse("tacz:"+name);
@@ -69,7 +70,7 @@ final class AutomaticAmmoSmoke {
         require(AmmoBridge.candidate(player,gun)==b&&AmmoBridge.consume(player,gun,2)==2,"fully empty gun automatically changes type");
         require(AmmoBridge.ammunition(gun)==b&&TacticalAmmunition.count(player,s->s.is(b))==3,"new identity and exact remaining quantity");
         for(var id:List.of("p90","uzi")) {
-            var smg=GunItemBuilder.create().setId(ResourceLocation.parse("tacz:"+id)).setFireMode(FireMode.SEMI).build(level.registryAccess());
+            var smg=GunItemBuilder.create().setId(ResourceLocation.parse("tacz_fork_tarkov:"+id)).setFireMode(FireMode.SEMI).build(level.registryAccess());
             require(!smg.isEmpty(),"known SMG fixture");
             require(!InventoryDefinitions.CURRENT.compatibleGearSlots(smg).contains(GearSlot.SIDEARM),"SMG not a sidearm");
         }

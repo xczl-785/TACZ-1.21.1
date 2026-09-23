@@ -3,7 +3,14 @@ import com.tacz.guns.api.item.IGun;
 import net.minecraft.world.item.ItemStack;
 /** TaCZ execution bridge; the independent runtime owns all component prerequisites. */
 public final class AssemblyFireGate {
+    public static boolean outOfScope(ItemStack stack) {
+        var gun=IGun.getIGunOrNull(stack);
+        if (gun==null) return false;
+        var weapon=dev.tacticaltacz.assembled.AssembledWeapons.byId(gun.getGunId(stack));
+        return weapon==null||!weapon.isGun(stack);
+    }
     public static boolean blocked(ItemStack stack){
+        if(outOfScope(stack))return true;
         var gun=IGun.getIGunOrNull(stack);
         var weapon=gun==null?null:dev.tacticaltacz.assembled.AssembledWeapons.byId(gun.getGunId(stack));
         var physical=dev.tacticaltacz.assembled.AssembledWeapons.from(stack);

@@ -4,18 +4,23 @@ import com.tacz.guns.GunMod;
 import com.tacz.guns.api.item.GunTabType;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.api.item.builder.AttachmentItemBuilder;
-import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.api.item.gun.AbstractGunItem;
 import com.tacz.guns.item.AttachmentItem;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 @SuppressWarnings("all")
 public class ModCreativeTabs {
+    private static ItemStack gunIcon(GunTabType type) {
+        var guns = AbstractGunItem.fillItemCategory(type);
+        return guns.isEmpty() ? Items.CROSSBOW.getDefaultInstance() : guns.getFirst();
+    }
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GunMod.MOD_ID);
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> OTHER_TAB = TABS.register("other", () -> CreativeModeTab.builder()
@@ -59,36 +64,36 @@ public class ModCreativeTabs {
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> GUN_PISTOL_TAB = TABS.register("pistol", () -> CreativeModeTab.builder()
             .title(Component.translatable("tacz.type.pistol.name")).withTabsBefore(ATTACHMENT_LASER_TAB.getId())
-            .icon(() -> GunItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "glock_17")).build(null))
+            .icon(() -> gunIcon(GunTabType.PISTOL))
             .displayItems((parameters, output) -> output.acceptAll(AbstractGunItem.fillItemCategory(GunTabType.PISTOL))).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> GUN_SNIPER_TAB = TABS.register("sniper", () -> CreativeModeTab.builder()
             .title(Component.translatable("tacz.type.sniper.name")).withTabsBefore(GUN_PISTOL_TAB.getId())
-            .icon(() -> GunItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "ai_awp")).build(null))
+            .icon(() -> gunIcon(GunTabType.SNIPER))
             .displayItems((parameters, output) -> output.acceptAll(AbstractGunItem.fillItemCategory(GunTabType.SNIPER))).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> GUN_RIFLE_TAB = TABS.register("rifle", () -> CreativeModeTab.builder()
             .title(Component.translatable("tacz.type.rifle.name")).withTabsBefore(GUN_SNIPER_TAB.getId())
-            .icon(() -> GunItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "m4a1")).build(null))
+            .icon(() -> gunIcon(GunTabType.RIFLE))
             .displayItems((parameters, output) -> output.acceptAll(AbstractGunItem.fillItemCategory(GunTabType.RIFLE))).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> GUN_SHOTGUN_TAB = TABS.register("shotgun", () -> CreativeModeTab.builder()
             .title(Component.translatable("tacz.type.shotgun.name")).withTabsBefore(GUN_RIFLE_TAB.getId())
-            .icon(() -> GunItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "m870")).build(null))
+            .icon(() -> gunIcon(GunTabType.SHOTGUN))
             .displayItems((parameters, output) -> output.acceptAll(AbstractGunItem.fillItemCategory(GunTabType.SHOTGUN))).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> GUN_SMG_TAB = TABS.register("smg", () -> CreativeModeTab.builder()
             .title(Component.translatable("tacz.type.smg.name")).withTabsBefore(GUN_SHOTGUN_TAB.getId())
-            .icon(() -> GunItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "uzi")).build(null))
+            .icon(() -> gunIcon(GunTabType.SMG))
             .displayItems((parameters, output) -> output.acceptAll(AbstractGunItem.fillItemCategory(GunTabType.SMG))).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> GUN_RPG_TAB = TABS.register("rpg", () -> CreativeModeTab.builder()
             .title(Component.translatable("tacz.type.rpg.name")).withTabsBefore(GUN_SMG_TAB.getId())
-            .icon(() -> GunItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "glock_17")).build(null))
+            .icon(() -> gunIcon(GunTabType.RPG))
             .displayItems((parameters, output) -> output.acceptAll(AbstractGunItem.fillItemCategory(GunTabType.RPG))).build());
 
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> GUN_MG_TAB = TABS.register("mg", () -> CreativeModeTab.builder()
             .title(Component.translatable("tacz.type.mg.name")).withTabsBefore(GUN_RPG_TAB.getId())
-            .icon(() -> GunItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "mk14")).build(null))
+            .icon(() -> gunIcon(GunTabType.MG))
             .displayItems((parameters, output) -> output.acceptAll(AbstractGunItem.fillItemCategory(GunTabType.MG))).build());
 }

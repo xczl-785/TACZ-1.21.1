@@ -11,6 +11,13 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 class PlatformExtensionContractTest {
+    @Test void gunScopeUsesOnlyTheManagedIndex() {
+        var extension = new TacticalGunPlatformExtension();
+        assertEquals(15, dev.tacticaltacz.assembled.AssembledWeapons.all().size());
+        for (var weapon : dev.tacticaltacz.assembled.AssembledWeapons.all()) assertTrue(extension.allowsGun(weapon.GUN));
+        assertFalse(extension.allowsGun(net.minecraft.resources.ResourceLocation.parse("tacz:m4a1")));
+        assertFalse(extension.allowsGun(net.minecraft.resources.ResourceLocation.parse("outside:imported_gun")));
+    }
     @Test void discoversExactlyOneCommonAndClientOwner() {
         var common = ServiceLoader.load(GunPlatformExtension.class, GunPlatformExtension.class.getClassLoader())
                 .stream().map(ServiceLoader.Provider::get).toList();

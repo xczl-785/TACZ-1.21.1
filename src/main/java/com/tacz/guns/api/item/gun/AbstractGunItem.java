@@ -328,6 +328,7 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
     public static NonNullList<ItemStack> fillItemCategory(GunTabType type) {
         NonNullList<ItemStack> stacks = NonNullList.create();
         TimelessAPI.getAllCommonGunIndex().stream().sorted(idNameSort()).forEach(entry -> {
+            if (!com.tacz.guns.api.extension.GunPlatformExtensions.current().allowsGun(entry.getKey())) return;
             CommonGunIndex index = entry.getValue();
             GunData gunData = index.getGunData();
             String key = type.name().toLowerCase(Locale.US);
@@ -340,7 +341,8 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
                         .setHeatData(gunData.hasHeatData())
                         .setAmmoInBarrel(true)
                         .build(null);
-                stacks.add(com.tacz.guns.api.extension.GunPlatformExtensions.current().creativeStack(entry.getKey(), itemStack));
+                ItemStack display = com.tacz.guns.api.extension.GunPlatformExtensions.current().creativeStack(entry.getKey(), itemStack);
+                if (!display.isEmpty()) stacks.add(display);
             }
         });
         return stacks;

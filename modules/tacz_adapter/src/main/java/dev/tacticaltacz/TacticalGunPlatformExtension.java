@@ -80,9 +80,13 @@ public final class TacticalGunPlatformExtension implements GunPlatformExtension 
         var assembled = dev.tacticaltacz.assembled.AssembledWeapons.byId(gunId);
         return assembled != null && assembled.nativeRig ? assembled.preset() : fallback;
     }
+    @Override public boolean allowsGun(ResourceLocation gunId) {
+        return gunId != null && dev.tacticaltacz.assembled.AssembledWeapons.byId(gunId) != null;
+    }
 
     @Override public boolean managesAmmunition(ItemStack gun) { return AmmoBridge.managed(gun); }
     @Override public Optional<Boolean> canReload(LivingEntity shooter, ItemStack gun) {
+        if (AssemblyFireGate.outOfScope(gun)) return Optional.of(false);
         if (!AmmoBridge.managed(gun)) return Optional.empty();
         var item = (IGun) gun.getItem();
         var assembled = dev.tacticaltacz.assembled.AssembledWeapons.from(gun);
@@ -125,6 +129,7 @@ public final class TacticalGunPlatformExtension implements GunPlatformExtension 
 
     @Override public boolean blockFire(ItemStack gun) { return AssemblyFireGate.blocked(gun); }
     @Override public boolean blockAim(LivingEntity shooter, ItemStack gun) {
+        if (AssemblyFireGate.outOfScope(gun)) return true;
         if (dev.tacticaltacz.assembled.NativeAttachmentProjection.blocksAim(gun)) return true;
         return shooter instanceof ServerPlayer player && GunAdoption.contains(gun)
                 && !dev.tacticalcharacter.resource.PlayerResources.canAim(player);

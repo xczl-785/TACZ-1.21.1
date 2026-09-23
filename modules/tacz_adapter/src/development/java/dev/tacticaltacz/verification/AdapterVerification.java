@@ -106,6 +106,18 @@ public final class AdapterVerification {
                 }
                 return 1;
             }))
+            .then(Commands.literal("scope_kit").executes(ctx -> {
+                var player=ctx.getSource().getPlayerOrException();
+                var old=new ItemStack(com.tacz.guns.init.ModItems.MODERN_KINETIC_GUN.get());
+                var gun=(IGun)old.getItem();
+                gun.setGunId(old,net.minecraft.resources.ResourceLocation.parse("tacz:m4a1"));
+                gun.setFireMode(old,FireMode.AUTO);
+                gun.setCurrentAmmoCount(old,30);
+                gun.setBulletInBarrel(old,true);
+                if(!dev.tacticalinventory.api.TacticalContent.tryGrant(player,List.of(old)))player.drop(old,false);
+                ctx.getSource().sendSuccess(() -> Component.literal("Legacy TaCZ M4A1 fixture supplied; it must not aim, reload or fire."),false);
+                return 1;
+            }))
             .then(Commands.literal("select_flesh").executes(ctx -> select(ctx.getSource().getPlayerOrException(), dev.tacticaltacz.development.VerificationRounds.flesh())))
             .then(Commands.literal("select_ap").executes(ctx -> select(ctx.getSource().getPlayerOrException(), dev.tacticaltacz.development.VerificationRounds.ap()))));
     }

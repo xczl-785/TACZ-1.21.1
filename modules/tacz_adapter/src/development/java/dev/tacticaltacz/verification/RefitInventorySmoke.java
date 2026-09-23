@@ -19,7 +19,7 @@ import net.minecraft.resources.ResourceLocation;
 final class RefitInventorySmoke {
     private static void check(boolean condition,String message){if(!condition)throw new AssertionError("Refit: "+message);}
     static void verify(ServerLevel level)throws Exception {
-        var gun=GunItemBuilder.create().setId(ResourceLocation.parse("tacz:m4a1")).build(level.registryAccess());
+        var gun=GunItemBuilder.create().setId(ResourceLocation.parse("tacz_fork_tarkov:m4a1")).build(level.registryAccess());
         var g=(IGun)gun.getItem();g.setCurrentAmmoCount(gun,0);g.setBulletInBarrel(gun,false);
         var all=TimelessAPI.getAllCommonAttachmentIndex().stream().map(e->AttachmentItemBuilder.create().setId(e.getKey()).build()).toList();
         var scopes=all.stream().filter(s->((IAttachment)s.getItem()).getType(s)==AttachmentType.SCOPE&&g.allowAttachment(gun,s)).toList();

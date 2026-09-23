@@ -76,6 +76,7 @@ public final class GunItemBuilder {
      * 可能会返回功能不完整的物品
      */
     public ItemStack forceBuild(HolderLookup.Provider provider) {
+        if (this.gunId == null || !com.tacz.guns.api.extension.GunPlatformExtensions.current().allowsGun(this.gunId)) return ItemStack.EMPTY;
         if (!this.attachments.isEmpty() && provider == null) throw new IllegalArgumentException("'provider' must not be null if attachments are present");
         ItemStack gun = new ItemStack(ModItems.MODERN_KINETIC_GUN.get(), this.count);
         if (gun.getItem() instanceof IGun iGun) {
@@ -94,6 +95,7 @@ public final class GunItemBuilder {
     }
 
     public ItemStack build(HolderLookup.Provider provider) {
+        if (this.gunId == null || !com.tacz.guns.api.extension.GunPlatformExtensions.current().allowsGun(this.gunId)) return ItemStack.EMPTY;
         if (!this.attachments.isEmpty() && provider == null) throw new IllegalArgumentException("'provider' must not be null if attachments are present");
         String itemType = TimelessAPI.getCommonGunIndex(gunId).map(index -> index.getPojo().getItemType()).orElse(null);
         if (itemType == null) {
