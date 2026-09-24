@@ -477,7 +477,8 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
             return;
         }
         // 弹孔特效
-        if (this.level() instanceof ServerLevel serverLevel) {
+        if (this.level() instanceof ServerLevel serverLevel
+                && !com.tacz.guns.api.extension.GunPlatformExtensions.current().ordinaryBlockImpact(this, result)) {
             BulletHoleOption bulletHoleOption = new BulletHoleOption(result.getDirection(), result.getBlockPos(), this.ammoId.toString(), this.gunId.toString(), this.gunDisplayId.toString());
             serverLevel.sendParticles(bulletHoleOption, hitVec.x, hitVec.y, hitVec.z, 1, 0, 0, 0, 0);
 
