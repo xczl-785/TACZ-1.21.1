@@ -13,10 +13,13 @@ import net.minecraft.world.item.ItemStack;
 
 /** Pure proposal over one server inventory quote. Native stored ammunition is refunded atomically with feed-container/capacity changes. */
 public final class AssemblyGunExchange {
-    public static boolean ready(ServerPlayer p){
-        if(!AssembledWeapons.isGun(p.getMainHandItem()))return false;
+    public static boolean ready(ServerPlayer p, ItemStack target){
+        if(!AssembledWeapons.isGun(target))return false;
+        var gun=(IGun)target.getItem();
+        if(gun.hasAttachmentLock(target))return false;
+        if(!ItemStack.matches(target,p.getMainHandItem()))return true;
         var op=IGunOperator.fromLivingEntity(p);
-        return !((IGun)p.getMainHandItem().getItem()).hasAttachmentLock(p.getMainHandItem())&&!p.isUsingItem()&&!op.getSynIsBolting()&&op.getSynReloadState().getCountDown()<0&&op.getSynShootCoolDown()<=0&&op.getSynDrawCoolDown()<=0;
+        return !p.isUsingItem()&&!op.getSynIsBolting()&&op.getSynReloadState().getCountDown()<0&&op.getSynShootCoolDown()<=0&&op.getSynDrawCoolDown()<=0;
     }
     public static Optional<WorkbenchInventoryHost.Change> plan(ItemStack held,ItemStack payment,List<String> path){
         var planned=WorkbenchSwapPlan.plan(new Host(held),held,payment,path);

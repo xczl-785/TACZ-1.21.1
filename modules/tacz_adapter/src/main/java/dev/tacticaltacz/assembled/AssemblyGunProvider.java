@@ -15,7 +15,7 @@ import net.minecraft.world.item.ItemStack;
 public final class AssemblyGunProvider implements WorkbenchProvider {
     @Override public boolean handles(ItemStack held) { return AssembledWeapons.isGun(held); }
 
-    @Override public boolean ready(ServerPlayer player, ItemStack held) { return AssemblyGunExchange.ready(player); }
+    @Override public boolean ready(ServerPlayer player, ItemStack held) { return AssemblyGunExchange.ready(player, held); }
 
     @Override public Predicate<ItemStack> stock(ItemStack held) {
         var weapon = AssembledWeapons.from(held);
@@ -43,8 +43,9 @@ public final class AssemblyGunProvider implements WorkbenchProvider {
         return AssemblyGunExchange.plan(held, payment, path);
     }
 
-    @Override public void committed(ServerPlayer player, ItemStack held) {
-        AttachmentPropertyManager.postChangeEvent(player, held);
+    @Override public void committed(ServerPlayer player, WorkbenchInventoryHost.Target target, ItemStack changed) {
+        if (WorkbenchInventoryHosts.current().filter(host -> host.holdsTarget(player, target)).isPresent())
+            AttachmentPropertyManager.postChangeEvent(player, changed);
     }
 
     @Override public String resultText(WorkbenchOutcome outcome, int action) {
