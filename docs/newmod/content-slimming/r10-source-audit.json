@@ -1,0 +1,229 @@
+{
+  "date": "2026-09-24",
+  "baseline": "70cf3f0072f505e38bc32a8bc9512242df18b8ad",
+  "reason": "Owner approved r10 retirement; shared gun behavior and public assembly preserved",
+  "files": [
+    {
+      "path": "modules/tacz_adapter/src/minecraftTest/java/dev/tacticaltacz/BuiltinPackRegistryTest.java",
+      "before_sha256": null,
+      "after_sha256": "4be2af5430b60f6c99dfd216a4039a006076cfd837b77eefa4d0984a6bc990e7",
+      "deleted_lines": 0
+    },
+    {
+      "path": "modules/tacz_adapter/src/test/java/dev/tacticaltacz/BuiltinGunPackTest.java",
+      "before_sha256": null,
+      "after_sha256": "a4cb75f4e65b3d30b646911ab327521f2562a01a0ea4ba1af1ef31c08dd14097",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/GunMod.java",
+      "before_sha256": "e5889fadec08bdff3d2085ea79fc9bc939c0f01576427efe30e1d58bdb4af76b",
+      "after_sha256": "b37132790f5e5e9d05fa9dc883515df0c37495ce759249e2df2a7c75afbfebd7",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/api/resource/ResourceManager.java",
+      "before_sha256": "da8822147711b585c03f7ec861e9e9e89618d3c0dbef2e022e7de6c413c7da87",
+      "after_sha256": null,
+      "deleted_lines": 40
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/event/PlayerEnterWorld.java",
+      "before_sha256": "a443753ed7d145956ad22b4f61f3184eb663e8f648c3693f95a0f0f8f2d3212a",
+      "after_sha256": null,
+      "deleted_lines": 41
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/command/RootCommand.java",
+      "before_sha256": "70fb668ea7277c8b59db57367f3b9c9677c3f1ee4c2860c0789cf335f9fec24d",
+      "after_sha256": "e227341fb4bdfe5c9fff28dc93a6fb52e014e6919d4086c3d9e9c1506822ce44",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/command/sub/ConvertCommand.java",
+      "before_sha256": "f339133999239b042cc56c27ae7ddcf644242ffc18d3d9745fe88c21169409ff",
+      "after_sha256": null,
+      "deleted_lines": 25
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/command/sub/OverwriteCommand.java",
+      "before_sha256": "56b457d876fbb4511d026c988d2cb0c7b8973fda2781fea0537281fa45a91150",
+      "after_sha256": null,
+      "deleted_lines": 38
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/command/sub/ReloadCommand.java",
+      "before_sha256": "ffed2bec71bfafea6f28c493a32b422c89f6699beee0808c5c505112df5f9566",
+      "after_sha256": "cd844155adec0a65766cb4128be22afac68e742520339801869a3f63194b13fd",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/config/PreLoadConfig.java",
+      "before_sha256": "0211d9c30581e2dc86f7a0292c9e8fafae15201b09789628105b175cac366cd6",
+      "after_sha256": null,
+      "deleted_lines": 18
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/config/common/OtherConfig.java",
+      "before_sha256": "07d7ef75f0041d204b2a5e3fc838242e69bf16a0d6fb03999ad79e57ce22b613",
+      "after_sha256": "9a55c021cca9b919c6536e2c347f9e28611c97398c7632924325cb405899e7b9",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/CommonRegistry.java",
+      "before_sha256": "a07b7130d6bebee1ce72d208e4ed997dc64dcd0ab3ec8336a4ef6821f841c1dd",
+      "after_sha256": "3f6f88d439fdcab5cbb6447e81106d51693ec06fe9be55c8f28d5470f1f9aabc",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/BuiltinGunPack.java",
+      "before_sha256": null,
+      "after_sha256": "66b5f5661123078dbc9885ef8a220a6585b84fb1e60722184b6b248499e659ab",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/GunPackLoader.java",
+      "before_sha256": "ca92ff4711ba0480c705f36a8886dd9128855330d7b39a1d01526ca8ad33831e",
+      "after_sha256": "8e67e1cc27ae7c2572f09d4f3cad8f3214efacc6e246542a34d5ac1066614224",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/PackConvertor.java",
+      "before_sha256": "a612346bc0a7af8dd707d7ff638233a6eae56d5844bab7d99ced6a0393ded2f6",
+      "after_sha256": null,
+      "deleted_lines": 329
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/PackMeta.java",
+      "before_sha256": "5ea2a20ad8dcf0b4e72b4865daefb8203776f57e2a721654e5cc0f977667d860",
+      "after_sha256": null,
+      "deleted_lines": 27
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/util/GetJarResources.java",
+      "before_sha256": "034169cc3af8164bdb01ea06ebf688270b070e84cbbf90ded944465b60089789",
+      "after_sha256": null,
+      "deleted_lines": 387
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ca_es.json",
+      "before_sha256": "165fd288852f63b51a9a48fb4d56fb52162da371f2ebb91335c18685d5c64fcb",
+      "after_sha256": "c80ff51fcc4279357f64a431a745d781d0b2c665e297a646791a68aea95c7068",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/da_dk.json",
+      "before_sha256": "7dcceb596cf03109e2b3fa75fc9947bbd5c2b26233b96a775dc17adb1d700854",
+      "after_sha256": "8dbc1bfb2d5b878505577609e9df1e3e0a10afc807e44b0528a991a57119d507",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/de_de.json",
+      "before_sha256": "dbc0cda3fcfdcaa478e9f2d46f0418e2fbb5eadfc90bbb8024db86f7699eabdd",
+      "after_sha256": "ef3c19c2d96d72da5f1a98f2b9706fbd7c43f8ec33d9f2b92228bba97fd5a418",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/en_us.json",
+      "before_sha256": "df06232af1a2092598b0683b271e6b7e89d4073ca6ec20ceb027fdca57c27f9c",
+      "after_sha256": "44ada7a700ef98d0fc64bc405209a1acceb65d1debb1d382d13a006573f69a69",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/es_es.json",
+      "before_sha256": "1d5db649c0bc93b2f54e25dbe829cacf97a869368776ad70ba21daf3d8b01646",
+      "after_sha256": "1296480fee902794dd6d01a9797e3cf07f9ec4f7af33e1e228223f02dfdd275c",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/eu_es.json",
+      "before_sha256": "b712aa524b415fedb0d01fae784531da9fd6353477481744ee508460d097d37e",
+      "after_sha256": "ae84841b019047de1bca60426063644535d809be9e65cf02ada1e7a9bceb0858",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/fr_fr.json",
+      "before_sha256": "1b498993c6da6a28677f09222356dc55f0a78371206029ab5275eeb56be83bbc",
+      "after_sha256": "6b1652f2685ae679c1c8f2d93c5b69691c1f66e8c1e762f11e479cd5eaa8ccfd",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/id_id.json",
+      "before_sha256": "9c9385d8b6cd42fd7812ed6ed0584e210b3322908284f8700e27ba1a547c3c43",
+      "after_sha256": "d176146cd39508ac0374835b25749136aa8fccc23096f0db86036fd630fad1e0",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/it_it.json",
+      "before_sha256": "96bd1658b8ff77974f542694a8d50c510ff5cf2e02df3659fd01e48a2e5c0f4d",
+      "after_sha256": "8eba00acd20920a0255f59a98533d101664cc865bade66f7f2f250ee915ede3c",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ja_jp.json",
+      "before_sha256": "52278cec11ce102eaab0512e60517752b54a122aa19fb6187086116bddd26cc4",
+      "after_sha256": "472f822d49b093bbcf9ed9713de6ab9d456d08a8de04bdef0f69650fc330d16f",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ko_kr.json",
+      "before_sha256": "dd9b7d161a73e59cae61aac61147a190811fcb0360df4eb6ff241aa5c5801728",
+      "after_sha256": "ad28acba8350f53e0d561629dab5d80e0b24097668bc2840b09300b3ffed74d3",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/pl_pl.json",
+      "before_sha256": "153a766d5fb806dbe7d48c82fb216350beededd1eac53a37f6d0b3372a698406",
+      "after_sha256": "b4461854e83a55972fe01091412cde7b177a66e91275ab644ce86d8377a7d078",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/pt_br.json",
+      "before_sha256": "39273466c2bec67a41699230e5c50069cc00377a29c108c2bd7a27afb45befe7",
+      "after_sha256": "44dbc5f46a911f3b2b6ed67bca3a564145caa44fb44ca8719fc3f318d20c1208",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ru_ru.json",
+      "before_sha256": "42c4370d0148cea9186a70feb18c7310c3f61ae2cba13879cd8330aaa806e127",
+      "after_sha256": "856ac79a541770da531346c7c96d388ec80441a0fa238529062ebe0733a8f598",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/th_th.json",
+      "before_sha256": "1a196a287de6a17a6fd17e5a01f82e8db7529788a88c91ac24990fc081d19aa3",
+      "after_sha256": "d9e27330532a5119ee041587138eb5b739c464279644c5249de2ea8b47960227",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/tr_tr.json",
+      "before_sha256": "0753458f963e6a17d32b0d6008d9074a98b3ab0eedc8676c4ff627eb568f4f5a",
+      "after_sha256": "271822306d666b8d7714ee3005ed6485149d0f28e662652a31255595238da4f6",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/uk_ua.json",
+      "before_sha256": "f1e68fe354b46a295ec5135c8fddd5580dd54d564adbd6e9d75ad88b7020605a",
+      "after_sha256": "b9d52be00f2d3412342e228f1f263d18e54f943de6953dc59cf3fed3fb5249d8",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/vi_vn.json",
+      "before_sha256": "a2f939b40275bd4f3fc4a1148a6be179ccbf9dde16e1ef203e438bf7123958de",
+      "after_sha256": "ab0eefb8da816a6b80ce8133b1ea78d00d2b7a70e8b9733e8e73efab62cb8113",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/zh_cn.json",
+      "before_sha256": "9c335d58f48272b9cf38dc6cc4dee34a2aad2f0013758499e102139b337ff7c2",
+      "after_sha256": "7cf5307a9492bfabc1c435301085cea64fdd0da326a3bbc3a058176902a26eb5",
+      "deleted_lines": 0
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/zh_tw.json",
+      "before_sha256": "4d880b806207266a88a744674ea1ec15988847dc338c9253a99cd72f68b3bc80",
+      "after_sha256": "a1b5b12c25943a6a6262fc322f9a1c512ff8be3c4a6f7ee1f1ebb8e3069489e4",
+      "deleted_lines": 0
+    }
+  ]
+}

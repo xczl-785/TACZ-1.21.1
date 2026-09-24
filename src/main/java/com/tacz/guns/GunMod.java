@@ -1,19 +1,13 @@
 package com.tacz.guns;
 
-import com.tacz.guns.api.resource.ResourceManager;
 import com.tacz.guns.config.ClientConfig;
 import com.tacz.guns.config.CommonConfig;
-import com.tacz.guns.config.PreLoadConfig;
 import com.tacz.guns.config.ServerConfig;
 import com.tacz.guns.init.*;
-import com.tacz.guns.resource.GunPackLoader;
 import com.tacz.guns.resource.modifier.AttachmentPropertyManager;
-import net.minecraft.server.packs.PackType;
-import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.loading.FMLLoader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,22 +15,15 @@ import org.apache.logging.log4j.Logger;
 public class GunMod {
     public static final String MOD_ID = "tacz";
     public static final Logger LOGGER = LogManager.getLogger(MOD_ID);
-    /**
-     * 默认模型包文件夹
-     */
-    public static final String DEFAULT_GUN_PACK_NAME = "tacz_default_gun";
 
     public static net.neoforged.fml.ModContainer container;
 
     public GunMod(IEventBus bus, net.neoforged.fml.ModContainer container) {
         GunMod.container = container;
-        container.registerConfig(ModConfig.Type.STARTUP, PreLoadConfig.spec, "tacz-pre.toml");
         container.registerConfig(ModConfig.Type.COMMON, CommonConfig.spec);
         container.registerConfig(ModConfig.Type.SERVER, ServerConfig.spec);
         container.registerConfig(ModConfig.Type.CLIENT, ClientConfig.spec);
 
-        Dist side = FMLLoader.getDist();
-        GunPackLoader.INSTANCE.packType = side.isClient() ? PackType.CLIENT_RESOURCES : PackType.SERVER_DATA;
 
         CapabilityRegistry.ATTACHMENT_TYPES.register(bus);
         ModCreativeTabs.TABS.register(bus);
@@ -47,13 +34,8 @@ public class GunMod {
         ModParticles.PARTICLE_TYPES.register(bus);
         ModAttributes.ATTRIBUTES.register(bus);
 
-        registerDefaultExtraGunPack();
         AttachmentPropertyManager.registerModifier();
         com.tacz.guns.api.extension.GunPlatformExtensions.register(bus);
     }
 
-    private static void registerDefaultExtraGunPack() {
-        String jarDefaultPackPath = String.format("/assets/%s/custom/%s", GunMod.MOD_ID, DEFAULT_GUN_PACK_NAME);
-        ResourceManager.registerExportResource(GunMod.class, jarDefaultPackPath);
-    }
 }

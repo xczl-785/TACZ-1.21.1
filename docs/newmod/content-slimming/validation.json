@@ -1,0 +1,29 @@
+{
+  "adapterTest": {
+    "tests": 33,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "test": {
+    "tests": 2,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "date": "2026-09-24",
+  "configured_weapons": 15,
+  "physical_items": 146,
+  "platform_extension_tests": 4,
+  "checks": [
+    "compileJava compileStandaloneCore adapterTest",
+    "test --tests dev.tacticaltacz.BuiltinPackRegistryTest --tests dev.tacticaltacz.RetiredSmithRegistryTest",
+    "verifyPlatformExtensionBoundary verifyCorePlatformBoundary verifyWeaponModules verifyAdapterIntegration verifyConfiguredWeapons"
+  ],
+  "results": "All listed checks passed offline",
+  "not_run": [
+    "Full check (historical missing main-repo baseline 3ef90e9f)",
+    "Minecraft client/server and owner gameplay acceptance"
+  ],
+  "public_dependency_lock": "unchanged 963361c285f4bd681c483105eef617b4c8518457"
+}

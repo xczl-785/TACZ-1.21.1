@@ -3,18 +3,12 @@ package com.tacz.guns.config.common;
 import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class OtherConfig {
-    public static ModConfigSpec.BooleanValue DEFAULT_PACK_DEBUG;
     public static ModConfigSpec.DoubleValue SERVER_HITBOX_OFFSET;
     public static ModConfigSpec.BooleanValue SERVER_HITBOX_LATENCY_FIX;
     public static ModConfigSpec.DoubleValue SERVER_HITBOX_LATENCY_MAX_SAVE_MS;
 
     public static void init(ModConfigSpec.Builder builder) {
         builder.push("other");
-
-        builder.comment("Deprecated: now move to .minecraft/config/tacz-pre.toml or <your version>/config/tacz-pre.toml");
-        builder.comment("When enabled, the reload command will not overwrite the default model file under config");
-        DEFAULT_PACK_DEBUG = builder.define("DefaultPackDebug", false);
-
 
         serverConfig(builder);
 

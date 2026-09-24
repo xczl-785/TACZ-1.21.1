@@ -15,10 +15,8 @@ public class RootCommand {
         root.then(AttachmentLockCommand.get());
         root.then(DebugCommand.get());
         root.then(DummyAmmoCommand.get());
-        root.then(OverwriteCommand.get());
         root.then(ReloadCommand.get());
         root.then(HideTooltipPartCommand.get());
-        root.then(ConvertCommand.get());
         root.then(ConfigCommand.get());
         dispatcher.register(root);
     }

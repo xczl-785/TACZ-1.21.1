@@ -36,6 +36,6 @@ public final class CommonRegistry {
 
     @SubscribeEvent
     public static void onAddPackFinders(AddPackFindersEvent event) {
-        event.addRepositorySource(GunPackLoader.INSTANCE);
+        event.addRepositorySource(new GunPackLoader(event.getPackType()));
     }
 }
