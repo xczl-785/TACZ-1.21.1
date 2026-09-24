@@ -35,7 +35,6 @@ import java.util.function.Predicate;
 import static com.tacz.guns.client.model.GunModelConstant.*;
 
 public class BedrockGunModel extends BedrockAnimatedModel {
-    protected final EnumMap<AttachmentType, List<BedrockPart>> refitAttachmentViewPath = Maps.newEnumMap(AttachmentType.class);
     private final EnumMap<AttachmentType, ItemStack> currentAttachmentItem = Maps.newEnumMap(AttachmentType.class);
     private final Set<String> adapterToRender = Sets.newHashSet();
     private final ArrayList<ShellRender> shellRenderList = new ArrayList<>();
@@ -110,7 +109,6 @@ public class BedrockGunModel extends BedrockAnimatedModel {
         // 缓存其他定位组
         this.cacheOtherPath();
         // 缓存改装 UI 下各个配件的特写视角定位组
-        this.cacheRefitAttachmentViewPath();
         // 缓存抛壳窗
         this.cacheShellOriginNodes();
         // 准备各个配件的渲染
@@ -129,17 +127,6 @@ public class BedrockGunModel extends BedrockAnimatedModel {
         scopePosPath = getPath(modelMap.get(AttachmentType.SCOPE.name().toLowerCase() + ATTACHMENT_POS_SUFFIX));
         laserBeamPaths = getPath(modelMap.get("laser_beam"));
         root = Optional.ofNullable(modelMap.get(ROOT_NODE)).map(ModelRendererWrapper::getModelRenderer).orElse(null);
-    }
-
-    private void cacheRefitAttachmentViewPath() {
-        for (AttachmentType type : AttachmentType.values()) {
-            if (type == AttachmentType.NONE) {
-                refitAttachmentViewPath.put(type, getPath(modelMap.get(REFIT_VIEW_NODE)));
-                continue;
-            }
-            String nodeName = REFIT_VIEW_PREFIX + type.name().toLowerCase() + REFIT_VIEW_SUFFIX;
-            refitAttachmentViewPath.put(type, getPath(modelMap.get(nodeName)));
-        }
     }
 
     private void cacheShellOriginNodes() {
@@ -478,11 +465,6 @@ public class BedrockGunModel extends BedrockAnimatedModel {
     @Nullable
     public List<BedrockPart> getScopePosPath() {
         return scopePosPath;
-    }
-
-    @Nullable
-    public List<BedrockPart> getRefitAttachmentViewPath(AttachmentType type) {
-        return refitAttachmentViewPath.get(type);
     }
 
     @Nullable

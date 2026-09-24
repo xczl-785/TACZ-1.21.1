@@ -13,8 +13,6 @@ public final class TacticalTaczAdapter {
     private TacticalTaczAdapter() {}
     public static void registerInfrastructure(net.neoforged.bus.api.IEventBus bus) {
         NeoForge.EVENT_BUS.addListener(EventPriority.HIGHEST,AssemblyFireGate::fire);
-        bus.addListener(dev.tacticaltacz.refit.RefitProtocol::register);
-        dev.tacticaltacz.refit.RefitBridge.register();
         dev.tacticaltacz.assembled.AssemblyGunWorkbench.register();
         NeoForge.EVENT_BUS.addListener(TacticalTaczAdapter::playerPose);
         NeoForge.EVENT_BUS.addListener((dev.tacticalcharacter.resource.ResourceActionEvent event) -> {

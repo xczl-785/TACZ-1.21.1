@@ -24,9 +24,6 @@ public class ModItems {
 
 
 
-    public static DeferredItem<Item> TARGET = ITEMS.register("target", () -> new BlockItem(ModBlocks.TARGET.get(), new Item.Properties()));
-    public static DeferredItem<Item> STATUE = ITEMS.register("statue", () -> new BlockItem(ModBlocks.STATUE.get(), new Item.Properties()));
-    public static DeferredItem<Item> TARGET_MINECART = ITEMS.register("target_minecart", TargetMinecartItem::new);
 
     @SubscribeEvent
     public static void onItemRegister(RegisterEvent event) {

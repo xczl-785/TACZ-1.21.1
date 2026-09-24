@@ -11,5 +11,4 @@ public class ModSounds {
     public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(BuiltInRegistries.SOUND_EVENT, GunMod.MOD_ID);
 
     public static final DeferredHolder<SoundEvent, SoundEvent> GUN = SOUNDS.register("gun", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "gun")));
-    public static final DeferredHolder<SoundEvent, SoundEvent> TARGET_HIT = SOUNDS.register("target_block_hit", () -> SoundEvent.createVariableRangeEvent(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "target_block_hit")));
 }

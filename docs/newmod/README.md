@@ -35,3 +35,5 @@
 | 早期清理与来源证据 | [清理](cleanup/README.md)、[清理前盘点](inventory/README.md)、[额外内容](extra-content/README.md)、[首轮隔离](../content-isolation/README.md) |
 
 历史 RouteLedger 区块号和早期运行锁保留在各批次记录中；它们不表示当前绑定或当前授权。本次文档治理未写 RouteLedger。
+
+第三批 R03/R06/R08/R10 的边界、删除清单和交付检查见[内容退出交付](content-slimming/README.md)。

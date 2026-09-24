@@ -47,7 +47,6 @@ public class ClientSetupEvent {
         event.register(FireSelectKey.FIRE_SELECT_KEY);
         event.register(AimKey.AIM_KEY);
         event.register(CrawlKey.CRAWL_KEY);
-        event.register(RefitKey.REFIT_KEY);
         event.register(ZoomKey.ZOOM_KEY);
         event.register(MeleeKey.MELEE_KEY);
     }

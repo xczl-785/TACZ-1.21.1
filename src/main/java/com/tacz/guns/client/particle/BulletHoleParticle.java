@@ -3,7 +3,6 @@ package com.tacz.guns.client.particle;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.config.client.RenderConfig;
-import com.tacz.guns.init.ModBlocks;
 import com.tacz.guns.particles.BulletHoleOption;
 import net.minecraft.client.Camera;
 import net.minecraft.client.Minecraft;
@@ -51,7 +50,7 @@ public class BulletHoleParticle extends TextureSheetParticle {
         this.quadSize = 0.05F;
 
         BlockState state = world.getBlockState(pos);
-        if (state.is(ModBlocks.TARGET.get()) || shouldRemove()) {
+        if (shouldRemove()) {
             this.remove();
         }
         TimelessAPI.getGunDisplay(ResourceLocation.parse(gunDisplayId), ResourceLocation.parse(gunId)).ifPresent(gunIndex -> {

@@ -4,14 +4,13 @@ import com.mojang.math.Axis;
 import com.tacz.guns.GunMod;
 import com.tacz.guns.api.DefaultAssets;
 import com.tacz.guns.api.TimelessAPI;
+import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.api.client.event.RenderItemInHandBobEvent;
 import com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator;
 import com.tacz.guns.api.client.other.KeepingItemRenderer;
 import com.tacz.guns.api.event.common.GunFireEvent;
 import com.tacz.guns.api.item.IGun;
-import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.api.item.nbt.AttachmentItemDataAccessor;
-import com.tacz.guns.client.animation.screen.RefitTransform;
 import com.tacz.guns.client.model.BedrockAttachmentModel;
 import com.tacz.guns.client.model.BedrockGunModel;
 import com.tacz.guns.client.model.bedrock.BedrockPart;
@@ -51,7 +50,6 @@ public class FirstPersonRenderGunEvent {
     private static final SecondOrderDynamics AIMING_DYNAMICS = new SecondOrderDynamics(1.2f, 1.2f, 0.5f, 0);
     private static SecondOrderDynamics SWITCH_VIEW_DYNAMICS;
     // 用于打开改装界面时枪械运动的平滑
-    private static final SecondOrderDynamics REFIT_OPENING_DYNAMICS = new SecondOrderDynamics(1f, 1.2f, 0.5f, 0);
     // 用于跳跃延滞动画的平滑
     private static final SecondOrderDynamics JUMPING_DYNAMICS = new SecondOrderDynamics(0.28f, 1f, 0.65f, 0);
     private static final float JUMPING_Y_SWAY = -2f;
@@ -120,16 +118,14 @@ public class FirstPersonRenderGunEvent {
         float extensionAiming = com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator.fromLocalPlayer(player).getClientAimingProgress(partialTicks);
         clientExtension.prepareFirstPerson(player, gunItemStack, poseStack, model, extensionAiming);
 
-        // 配合运动曲线，计算改装枪口的打开进度
-        float refitScreenOpeningProgress = REFIT_OPENING_DYNAMICS.update(RefitTransform.getOpeningProgress());
         // 配合运动曲线，计算瞄准进度
         float aimingProgress = AIMING_DYNAMICS.update(IClientPlayerGunOperator.fromLocalPlayer(player).getClientAimingProgress(partialTicks));
         // 应用枪械动态，如后坐力、持枪跳跃等
         applyGunMovements(model, aimingProgress, partialTicks);
-        // 应用各种摄像机定位组的变换（默认持枪、瞄准、改装界面等）
-        applyFirstPersonPositioningTransform(poseStack, model, gunItemStack, aimingProgress, refitScreenOpeningProgress);
+        // 应用各种摄像机定位组的变换（默认持枪、瞄准）
+        applyFirstPersonPositioningTransform(poseStack, model, gunItemStack, aimingProgress);
         // 应用动画约束变换
-        applyAnimationConstraintTransform(poseStack, model, aimingProgress * (1 - refitScreenOpeningProgress));
+        applyAnimationConstraintTransform(poseStack, model, aimingProgress);
         clientExtension.applyFirstPersonShot(player, gunItemStack, model, extensionAiming);
     }
 
@@ -141,7 +137,7 @@ public class FirstPersonRenderGunEvent {
     /**
      * 应用瞄具摄像机定位组、机瞄摄像机定位组和 Idle 摄像机定位组的变换。会在几个摄像机定位之间插值。
      */
-    private static void applyFirstPersonPositioningTransform(PoseStack poseStack, BedrockGunModel model, ItemStack stack, float aimingProgress, float refitScreenOpeningProgress) {
+    private static void applyFirstPersonPositioningTransform(PoseStack poseStack, BedrockGunModel model, ItemStack stack, float aimingProgress) {
         IGun iGun = IGun.getIGunOrNull(stack);
         if (iGun == null) {
             return;
@@ -198,16 +194,9 @@ public class FirstPersonRenderGunEvent {
             currentViewIndex = viewIndex;
         }
         // 应用瞄准变换
-        MathUtil.applyMatrixLerp(transformMatrix, getPositioningNodeInverse(idleNodePath), transformMatrix, (1 - refitScreenOpeningProgress));
-        MathUtil.applyMatrixLerp(transformMatrix, aimingViewMatrix, transformMatrix, (1 - refitScreenOpeningProgress) * aimingProgress);
-        // 应用改装界面开启时的定位
-        float refitTransformProgress = (float) Easing.easeOutCubic(RefitTransform.getTransformProgress());
-        AttachmentType oldType = RefitTransform.getOldTransformType();
-        AttachmentType currentType = RefitTransform.getCurrentTransformType();
-        List<BedrockPart> fromNode = model.getRefitAttachmentViewPath(oldType);
-        List<BedrockPart> toNode = model.getRefitAttachmentViewPath(currentType);
-        MathUtil.applyMatrixLerp(transformMatrix, getPositioningNodeInverse(fromNode), transformMatrix, refitScreenOpeningProgress);
-        MathUtil.applyMatrixLerp(transformMatrix, getPositioningNodeInverse(toNode), transformMatrix, refitScreenOpeningProgress * refitTransformProgress);
+        MathUtil.applyMatrixLerp(transformMatrix, getPositioningNodeInverse(idleNodePath), transformMatrix, 1);
+        MathUtil.applyMatrixLerp(transformMatrix, aimingViewMatrix, transformMatrix, aimingProgress);
+
         // 应用变换到 PoseStack
         poseStack.translate(0, 1.5f, 0);
         poseStack.mulPose(transformMatrix);

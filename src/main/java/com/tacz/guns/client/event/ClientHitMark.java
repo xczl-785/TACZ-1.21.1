@@ -5,11 +5,8 @@ import com.tacz.guns.api.event.common.EntityHurtByGunEvent;
 import com.tacz.guns.api.event.common.EntityKillByGunEvent;
 import com.tacz.guns.client.gui.overlay.KillAmountOverlay;
 import com.tacz.guns.client.sound.SoundPlayManager;
-import com.tacz.guns.config.client.RenderConfig;
-import com.tacz.guns.entity.TargetMinecart;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
@@ -20,8 +17,6 @@ import net.neoforged.fml.common.EventBusSubscriber;
 
 @EventBusSubscriber(value = Dist.CLIENT)
 public class ClientHitMark {
-    public static long lastHitTimestamp = 0;
-    public static float damageAmount = 0;
     @SubscribeEvent
     public static void onEntityHurt(EntityHurtByGunEvent.Post event) {
         LogicalSide logicalSide = event.getLogicalSide();
@@ -42,17 +37,7 @@ public class ClientHitMark {
                 TimelessAPI.getGunDisplay(gunDisplayId, gunId).ifPresent(index -> SoundPlayManager.playFleshHitSound(player, index));
             }
 
-            if(hurtEntity instanceof TargetMinecart){
-                if(System.currentTimeMillis() - lastHitTimestamp < RenderConfig.DAMAGE_COUNTER_RESET_TIME.get()) {
-                    damageAmount += event.getAmount();
-                } else {
-                    damageAmount = event.getAmount();
-                }
-                float distance = player.distanceTo(event.getHurtEntity());
-                player.displayClientMessage(Component.translatable("message.tacz.target_minecart.hit", String.format("%.1f", damageAmount), String.format("%.2f", distance)), true);
 
-                lastHitTimestamp = System.currentTimeMillis();
-            }
         }
     }
 

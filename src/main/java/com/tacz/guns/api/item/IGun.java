@@ -148,58 +148,6 @@ public interface IGun {
     void setGunDisplayId(ItemStack gun, @Nullable ResourceLocation displayId);
 
     /**
-     * 获取输入的经验值对应的等级。
-     *
-     * @param exp 经验值
-     * @return 对应的等级
-     */
-    int getLevel(int exp);
-
-    /**
-     * 获取输入的等级需要至少多少的经验值。
-     *
-     * @param level 等级
-     * @return 至少需要的经验值
-     */
-    int getExp(int level);
-
-    /**
-     * 返回允许的最大等级。
-     *
-     * @return 最大等级
-     */
-    int getMaxLevel();
-
-    /**
-     * 获取枪械当前等级
-     */
-    int getLevel(ItemStack gun);
-
-    /**
-     * 获取积累的全部经验值。
-     *
-     * @param gun 输入物品
-     * @return 全部经验值
-     */
-    int getExp(ItemStack gun);
-
-    /**
-     * 获取到下个等级需要的经验值。
-     *
-     * @param gun 输入物品
-     * @return 到下个等级需要的经验值。如果等级已经到达最大，则返回 0
-     */
-    int getExpToNextLevel(ItemStack gun);
-
-    /**
-     * 获取当前等级已经积累的经验值。
-     *
-     * @param gun 输入物品
-     * @return 当前等级已经积累的经验值
-     */
-    int getExpCurrentLevel(ItemStack gun);
-
-    /**
      * 获取开火模式
      *
      * @param gun 枪

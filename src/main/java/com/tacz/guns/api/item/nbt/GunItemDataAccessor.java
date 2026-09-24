@@ -31,7 +31,6 @@ public interface GunItemDataAccessor extends IGun {
     String GUN_HAS_BULLET_IN_BARREL = "HasBulletInBarrel";
     String GUN_CURRENT_AMMO_COUNT_TAG = "GunCurrentAmmoCount";
     String GUN_ATTACHMENT_BASE = "Attachment";
-    String GUN_EXP_TAG = "GunLevelExp";
     String GUN_DUMMY_AMMO = "DummyAmmo";
     String GUN_MAX_DUMMY_AMMO = "MaxDummyAmmo";
     String GUN_ATTACHMENT_LOCK = "AttachmentLock";
@@ -147,46 +146,6 @@ public interface GunItemDataAccessor extends IGun {
                 tag.putString(GUN_DISPLAY_ID_TAG, displayId.toString());
             }
         }));
-    }
-
-    @Override
-    default int getLevel(ItemStack gun) {
-        CompoundTag nbt = gun.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
-        if (nbt.contains(GUN_EXP_TAG, Tag.TAG_INT)) {
-            return getLevel(nbt.getInt(GUN_EXP_TAG));
-        }
-        return 0;
-    }
-
-    @Override
-    default int getExp(ItemStack gun) {
-        CompoundTag nbt = gun.getOrDefault(DataComponents.CUSTOM_DATA, CustomData.EMPTY).copyTag();
-        if (nbt.contains(GUN_EXP_TAG, Tag.TAG_INT)) {
-            return nbt.getInt(GUN_EXP_TAG);
-        }
-        return 0;
-    }
-
-    @Override
-    default int getExpToNextLevel(ItemStack gun) {
-        int exp = getExp(gun);
-        int level = getLevel(exp);
-        if (level >= getMaxLevel()) {
-            return 0;
-        }
-        int nextLevelExp = getExp(level + 1);
-        return nextLevelExp - exp;
-    }
-
-    @Override
-    default int getExpCurrentLevel(ItemStack gun) {
-        int exp = getExp(gun);
-        int level = getLevel(exp);
-        if (level <= 0) {
-            return exp;
-        } else {
-            return exp - getExp(level - 1);
-        }
     }
 
     @Override

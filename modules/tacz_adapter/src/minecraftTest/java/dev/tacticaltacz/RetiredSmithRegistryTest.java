@@ -25,15 +25,21 @@ class RetiredSmithRegistryTest {
         assertFalse(BuiltInRegistries.RECIPE_SERIALIZER.containsKey(retired));
         assertFalse(NeoForgeRegistries.INGREDIENT_TYPES.containsKey(ResourceLocation.parse("tacz:nbt")));
         var ops = RegistryOps.create(JsonOps.INSTANCE, RegistryAccess.fromRegistryOfRegistries(BuiltInRegistries.REGISTRY));
-        for (String name : new String[]{"target", "target_minecart", "statue", "gunpowder"}) {
+        for (String name : new String[]{"gunpowder"}) {
             try (var stream = com.tacz.guns.GunMod.class.getResourceAsStream("/data/tacz/recipe/" + name + ".json")) {
                 assertNotNull(stream, name);
                 var json = JsonParser.parseReader(new InputStreamReader(stream, StandardCharsets.UTF_8));
                 assertNotNull(Recipe.CODEC.parse(ops, json).getOrThrow(), name);
             }
         }
-        assertTrue(BuiltInRegistries.BLOCK.containsKey(ResourceLocation.parse("tacz:target")));
-        assertTrue(BuiltInRegistries.BLOCK.containsKey(ResourceLocation.parse("tacz:statue")));
-        assertTrue(BuiltInRegistries.ENTITY_TYPE.containsKey(ResourceLocation.parse("tacz:target_minecart")));
+        for (String name : new String[]{"target", "statue", "target_minecart"}) {
+            assertFalse(BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse("tacz:" + name)));
+            assertNull(com.tacz.guns.GunMod.class.getResourceAsStream("/data/tacz/recipe/" + name + ".json"));
+        }
+        assertTrue(BuiltInRegistries.ENTITY_TYPE.containsKey(ResourceLocation.parse("tacz:bullet")));
+        assertTrue(BuiltInRegistries.ITEM.containsKey(ResourceLocation.parse("tacz:modern_kinetic_gun")));
+        assertFalse(BuiltInRegistries.BLOCK.containsKey(ResourceLocation.parse("tacz:target")));
+        assertFalse(BuiltInRegistries.BLOCK.containsKey(ResourceLocation.parse("tacz:statue")));
+        assertFalse(BuiltInRegistries.ENTITY_TYPE.containsKey(ResourceLocation.parse("tacz:target_minecart")));
     }
 }

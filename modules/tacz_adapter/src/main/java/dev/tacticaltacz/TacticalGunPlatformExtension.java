@@ -148,8 +148,7 @@ public final class TacticalGunPlatformExtension implements GunPlatformExtension 
     @Override public boolean quoteImpact(EntityKineticBullet bullet, TacHitResult hit, Vec3 start, Vec3 end) {
         var state = state(bullet);
         state.impact = null;
-        if (state.ammunition == null || bullet.level().isClientSide || !(hit.getEntity() instanceof LivingEntity)
-                || hit.getEntity() instanceof com.tacz.guns.api.entity.ITargetEntity) return false;
+        if (state.ammunition == null || bullet.level().isClientSide || !(hit.getEntity() instanceof LivingEntity)) return false;
         if (state.resolved.contains(hit.getEntity().getUUID())) return true;
         state.impact = NeoForge.EVENT_BUS.post(new BulletImpactEvent(new BulletImpact(state.ammunition, bullet,
                 hit.getEntity(), hit.getLocation(), start, end, state.ricochetCount)));

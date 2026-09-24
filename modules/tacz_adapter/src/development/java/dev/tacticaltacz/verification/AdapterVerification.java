@@ -149,7 +149,6 @@ public final class AdapterVerification {
         dev.tacticalinventory.verification.DevelopmentItemsSmoke.verify(level);
         DevelopmentTaczCatalogSmoke.verify(level);
         UnregisteredAttachmentSmoke.verify(level);
-        RefitInventorySmoke.verify(level);
         BarrelFireSmoke.verify(level);
         AutomaticAmmoSmoke.run(level);
         for(var item:dev.tarkovcontent.TarkovContent.AMMUNITION.values()) {

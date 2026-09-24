@@ -11,7 +11,6 @@ import com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator;
 import com.tacz.guns.api.entity.IGunOperator;
 import com.tacz.guns.api.entity.ReloadState;
 import com.tacz.guns.api.item.IGun;
-import com.tacz.guns.client.gui.GunRefitScreen;
 import com.tacz.guns.client.renderer.crosshair.CrosshairType;
 import com.tacz.guns.compat.shouldersurfing.ShoulderSurfingCompat;
 import com.tacz.guns.config.client.RenderConfig;
@@ -26,7 +25,6 @@ import net.minecraft.world.level.GameType;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.client.event.RenderFrameEvent;
 import net.neoforged.neoforge.client.event.RenderGuiLayerEvent;
 import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 
@@ -35,7 +33,6 @@ import net.neoforged.neoforge.client.gui.VanillaGuiLayers;
 public class RenderCrosshairEvent {
     private static final ResourceLocation HIT_ICON = ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "textures/crosshair/hit/hit_marker.png");
     private static final long KEEP_TIME = 300;
-    private static boolean isRefitScreen = false;
     private static long hitTimestamp = -1L;
     private static long killTimestamp = -1L;
     private static long headShotTimestamp = -1L;
@@ -63,10 +60,7 @@ public class RenderCrosshairEvent {
             if (reloadState.getStateType().isReloading()) {
                 return;
             }
-            // 打开枪械改装界面的时候，取消准心渲染
-            if (isRefitScreen) {
-                return;
-            }
+
             // 播放的动画需要隐藏准心时，取消准心渲染
             ItemStack stack = player.getMainHandItem();
             if (!(stack.getItem() instanceof IGun)) {
@@ -102,11 +96,7 @@ public class RenderCrosshairEvent {
         }
     }
 
-    @SubscribeEvent
-    public static void onRenderTick(RenderFrameEvent.Pre event) {
-        // 奇迹的是，RenderGameOverlayEvent.PreLayer 事件中，screen 还未被赋值...
-        isRefitScreen = Minecraft.getInstance().screen instanceof GunRefitScreen;
-    }
+
 
     private static void renderCrosshair(GuiGraphics graphics, Window window) {
         Options options = Minecraft.getInstance().options;

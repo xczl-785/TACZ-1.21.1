@@ -9,7 +9,6 @@ import com.tacz.guns.api.client.animation.statemachine.LuaAnimationStateMachine;
 import com.tacz.guns.api.client.event.BeforeRenderHandEvent;
 import com.tacz.guns.api.client.gameplay.IClientPlayerGunOperator;
 import com.tacz.guns.api.item.IGun;
-import com.tacz.guns.client.animation.screen.RefitTransform;
 import com.tacz.guns.client.animation.statemachine.GunAnimationConstant;
 import com.tacz.guns.client.animation.statemachine.GunAnimationStateContext;
 import com.tacz.guns.client.event.CameraSetupEvent;
@@ -210,11 +209,6 @@ public class GunItemRendererWrapper extends AnimateGeoItemRenderer<BedrockGunMod
             // 开启第一人称弹壳和火焰渲染
             MuzzleFlashRender.isSelf = true;
             ShellRender.isSelf = true;
-            // 如果正在打开改装界面，则取消手臂渲染
-            boolean renderHand = gunModel.getRenderHand();
-            if (RefitTransform.getOpeningProgress() != 0) {
-                gunModel.setRenderHand(false);
-            }
             // 调用枪械模型渲染
             RenderType renderType = display.enablesTransparency()
                     ? RenderType.entityTranslucent(display.getModelTexture())
@@ -222,8 +216,6 @@ public class GunItemRendererWrapper extends AnimateGeoItemRenderer<BedrockGunMod
             gunModel.render(poseStack, stack, ctx, renderType, light, OverlayTexture.NO_OVERLAY);
             // 缓存枪口位置，为第一人称曳光弹渲染作准备
             cacheMuzzlePosition(poseStack, gunModel);
-            // 恢复手臂渲染
-            gunModel.setRenderHand(renderHand);
             // 渲染完成后，将动画数据从模型中清除，不对其他视角下的模型渲染产生影响
             poseStack.popPose();
             gunModel.cleanAnimationTransform();

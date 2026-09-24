@@ -54,10 +54,6 @@ public final class GunModelConstant {
      */
     public static final String IDLE_VIEW_NODE = "idle_view";
     /**
-     * 默认的改装界面定位组
-     */
-    public static final String REFIT_VIEW_NODE = "refit_view";
-    /**
      * 第三人称枪械定位组
      */
     public static final String THIRD_PERSON_HAND_ORIGIN_NODE = "thirdperson_hand";
@@ -114,14 +110,6 @@ public final class GunModelConstant {
      * 默认配件组后缀，会在安装配件后隐藏，实际名称为配件名（小写）加上这个
      */
     public static final String DEFAULT_ATTACHMENT_SUFFIX = "_default";
-    /**
-     * 改装界面视角的定位组前缀，实际名称为：前缀 + 配件名（小写）+ 后缀
-     */
-    public static final String REFIT_VIEW_PREFIX = "refit_";
-    /**
-     * 改装界面视角的定位组后缀，实际名称为：前缀 + 配件名（小写）+ 后缀
-     */
-    public static final String REFIT_VIEW_SUFFIX = "_view";
     /**
      * 根组
      */

@@ -39,8 +39,6 @@ public class GunMod {
         GunPackLoader.INSTANCE.packType = side.isClient() ? PackType.CLIENT_RESOURCES : PackType.SERVER_DATA;
 
         CapabilityRegistry.ATTACHMENT_TYPES.register(bus);
-        ModBlocks.BLOCKS.register(bus);
-        ModBlocks.TILE_ENTITIES.register(bus);
         ModCreativeTabs.TABS.register(bus);
         ModItems.ITEMS.register(bus);
         ModEntities.ENTITY_TYPES.register(bus);

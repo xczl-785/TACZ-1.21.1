@@ -41,12 +41,8 @@ public class NetworkHandler {
         registrar.playToServer(ClientMessagePlayerDrawGun.TYPE, ClientMessagePlayerDrawGun.STREAM_CODEC, ClientMessagePlayerDrawGun::handle);
         registrar.playToClient(ServerMessageSound.TYPE, ServerMessageSound.STREAM_CODEC, ServerMessageSound::handle);
         registrar.playToServer(ClientMessagePlayerZoom.TYPE, ClientMessagePlayerZoom.STREAM_CODEC, ClientMessagePlayerZoom::handle);
-        registrar.playToServer(ClientMessageRefitGun.TYPE, ClientMessageRefitGun.STREAM_CODEC, ClientMessageRefitGun::handle);
-        registrar.playToClient(ServerMessageRefreshRefitScreen.TYPE, ServerMessageRefreshRefitScreen.STREAM_CODEC, ServerMessageRefreshRefitScreen::handle);
-        registrar.playToServer(ClientMessageUnloadAttachment.TYPE, ClientMessageUnloadAttachment.STREAM_CODEC, ClientMessageUnloadAttachment::handle);
         registrar.playToClient(ServerMessageSwapItem.TYPE, ServerMessageSwapItem.STREAM_CODEC, ServerMessageSwapItem::handle);
         registrar.playToServer(ClientMessagePlayerBoltGun.TYPE, ClientMessagePlayerBoltGun.STREAM_CODEC, ClientMessagePlayerBoltGun::handle);
-        registrar.playToClient(ServerMessageLevelUp.TYPE, ServerMessageLevelUp.STREAM_CODEC, ServerMessageLevelUp::handle);
         registrar.playToClient(ServerMessageGunHurt.TYPE, ServerMessageGunHurt.STREAM_CODEC, ServerMessageGunHurt::handle);
         registrar.playToClient(ServerMessageGunKill.TYPE, ServerMessageGunKill.STREAM_CODEC, ServerMessageGunKill::handle);
         registrar.playToClient(ServerMessageUpdateEntityData.TYPE, ServerMessageUpdateEntityData.STREAM_CODEC, ServerMessageUpdateEntityData::handle);
@@ -62,7 +58,6 @@ public class NetworkHandler {
         registrar.playToClient(ServerMessageSyncBaseTimestamp.TYPE, ServerMessageSyncBaseTimestamp.STREAM_CODEC, ServerMessageSyncBaseTimestamp::handle);
         registrar.playToServer(ClientMessageSyncBaseTimestamp.TYPE, ClientMessageSyncBaseTimestamp.STREAM_CODEC, ClientMessageSyncBaseTimestamp::handle);
 
-        registrar.playToServer(ClientMessageLaserColor.TYPE, ClientMessageLaserColor.STREAM_CODEC, ClientMessageLaserColor::handle);
 
         final PayloadRegistrar handshakeRegistrar = event.registrar(VERSION).executesOn(HandlerThread.NETWORK);
         handshakeRegistrar.configurationToServer(Acknowledge.TYPE, Acknowledge.STREAM_CODEC, Acknowledge::handle);

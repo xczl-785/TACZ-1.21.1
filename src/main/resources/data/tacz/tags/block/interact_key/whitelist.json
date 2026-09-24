@@ -27,7 +27,6 @@
     "minecraft:smoker",
     "minecraft:stonecutter",
     "minecraft:lever",
-    "minecraft:trapped_chest",
-    "tacz:statue"
+    "minecraft:trapped_chest"
   ]
 }

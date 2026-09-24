@@ -1,6 +1,5 @@
 package com.tacz.guns.util;
 
-import com.tacz.guns.api.entity.ITargetEntity;
 import com.tacz.guns.config.common.OtherConfig;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.util.Mth;
@@ -103,7 +102,7 @@ public final class HitboxHelper {
             boundingBox = boundingBox.move(velocity.multiply(playerHitboxOffset, playerHitboxOffset, playerHitboxOffset));
         }
         // 给所有实体统一应用的 Hitbox 偏移，其数值为实验得出的定值。
-        if (entity.getVehicle() != null || entity instanceof ITargetEntity) {
+        if (entity.getVehicle() != null) {
             boundingBox = boundingBox.move(velocity.multiply(-2.5, -2.5, -2.5));
         }
         boundingBox = boundingBox.move(velocity.multiply(-5, -5, -5));

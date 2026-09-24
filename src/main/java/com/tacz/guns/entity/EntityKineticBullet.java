@@ -7,7 +7,6 @@ import com.tacz.guns.api.DefaultAssets;
 import com.tacz.guns.api.GunProperties;
 import com.tacz.guns.api.GunProperty;
 import com.tacz.guns.api.entity.IGunOperator;
-import com.tacz.guns.api.entity.ITargetEntity;
 import com.tacz.guns.api.entity.KnockBackModifier;
 import com.tacz.guns.api.event.common.EntityHurtByGunEvent;
 import com.tacz.guns.api.event.common.EntityKillByGunEvent;
@@ -401,12 +400,7 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
     }
 
     private void onHitEntityNative(TacHitResult result, Vec3 startVec, Vec3 endVec) {
-        if (result.getEntity() instanceof ITargetEntity targetEntity) {
-            DamageSource source = this.damageSources().thrown(this, this.getOwner());
-            targetEntity.onProjectileHit(this, result, source, this.getDamage(result.getLocation()));
-            // 打靶直接返回
-            return;
-        }
+
         // 获取Pre事件必要的信息
         Entity entity = result.getEntity();
         @Nullable Entity owner = this.getOwner();

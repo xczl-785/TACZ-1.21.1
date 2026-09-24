@@ -4,7 +4,6 @@ import net.neoforged.neoforge.common.ModConfigSpec;
 
 public class OtherConfig {
     public static ModConfigSpec.BooleanValue DEFAULT_PACK_DEBUG;
-    public static ModConfigSpec.IntValue TARGET_SOUND_DISTANCE;
     public static ModConfigSpec.DoubleValue SERVER_HITBOX_OFFSET;
     public static ModConfigSpec.BooleanValue SERVER_HITBOX_LATENCY_FIX;
     public static ModConfigSpec.DoubleValue SERVER_HITBOX_LATENCY_MAX_SAVE_MS;
@@ -16,8 +15,6 @@ public class OtherConfig {
         builder.comment("When enabled, the reload command will not overwrite the default model file under config");
         DEFAULT_PACK_DEBUG = builder.define("DefaultPackDebug", false);
 
-        builder.comment("The farthest sound distance of the target, including minecarts type");
-        TARGET_SOUND_DISTANCE = builder.defineInRange("TargetSoundDistance", 128, 0, Integer.MAX_VALUE);
 
         serverConfig(builder);
 

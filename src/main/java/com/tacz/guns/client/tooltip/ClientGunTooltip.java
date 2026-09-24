@@ -3,7 +3,6 @@ package com.tacz.guns.client.tooltip;
 import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.attachment.AttachmentType;
-import com.tacz.guns.client.input.RefitKey;
 import com.tacz.guns.client.resource.ClientAssetsManager;
 import com.tacz.guns.client.resource.GunDisplayInstance;
 import com.tacz.guns.client.resource.pojo.PackInfo;
@@ -59,7 +58,6 @@ public class ClientGunTooltip implements ClientTooltipComponent {
     private MutableComponent headShotMultiplier;
     private MutableComponent weight;
     private MutableComponent tips;
-    private MutableComponent levelInfo;
     private @Nullable MutableComponent packInfo;
 
     private int maxWidth;
@@ -85,12 +83,12 @@ public class ClientGunTooltip implements ClientTooltipComponent {
             height += 24;
         }
         if (shouldShow(GunTooltipPart.BASE_INFO)) {
-            height += 34;
+            height += 24;
         }
         if (shouldShow(GunTooltipPart.EXTRA_DAMAGE_INFO)) {
             height += 34;
         }
-        if (shouldShow(GunTooltipPart.UPGRADES_TIP)) {
+        if (shouldShow(GunTooltipPart.UPGRADES_TIP) && this.tips != null) {
             height += 14;
         }
         if (shouldShow(GunTooltipPart.PACK_INFO)) {
@@ -160,18 +158,6 @@ public class ClientGunTooltip implements ClientTooltipComponent {
 
 
         if (shouldShow(GunTooltipPart.BASE_INFO)) {
-            int expToNextLevel = iGun.getExpToNextLevel(gun);
-            int expCurrentLevel = iGun.getExpCurrentLevel(gun);
-            int level = iGun.getLevel(gun);
-            if (level >= iGun.getMaxLevel()) {
-                String levelText = String.format("%d (MAX)", level);
-                this.levelInfo = Component.translatable("tooltip.tacz.gun.level").append(Component.literal(levelText).withStyle(ChatFormatting.DARK_PURPLE));
-            } else {
-                String levelText = String.format("%d (%.1f%%)", level, expCurrentLevel / (expToNextLevel + expCurrentLevel) * 100f);
-                this.levelInfo = Component.translatable("tooltip.tacz.gun.level").append(Component.literal(levelText).withStyle(ChatFormatting.YELLOW));
-            }
-            this.maxWidth = Math.max(font.width(this.levelInfo), this.maxWidth);
-
             String tabKey = "tacz.type." + gunIndex.getType() + ".name";
             this.gunType = Component.translatable("tooltip.tacz.gun.type").append(Component.translatable(tabKey).withStyle(ChatFormatting.AQUA));
             this.maxWidth = Math.max(font.width(this.gunType), this.maxWidth);
@@ -218,10 +204,10 @@ public class ClientGunTooltip implements ClientTooltipComponent {
         }
 
 
-        if (shouldShow(GunTooltipPart.UPGRADES_TIP)) {
+        if (shouldShow(GunTooltipPart.UPGRADES_TIP) && !com.tacz.guns.api.extension.AssemblyEntryExtensions.current().assemblyKeyName(gun).isEmpty()) {
             // A gun owned by an external assembly entry advertises that entry's key, not ours.
             String externalKey = com.tacz.guns.api.extension.AssemblyEntryExtensions.current().assemblyKeyName(gun);
-            String keyName = Component.keybind(externalKey.isEmpty() ? RefitKey.REFIT_KEY.getName() : externalKey)
+            String keyName = Component.keybind(externalKey)
                     .getString().toUpperCase(Locale.ENGLISH);
             this.tips = Component.translatable("tooltip.tacz.gun.tips", keyName).withStyle(ChatFormatting.YELLOW).withStyle(ChatFormatting.ITALIC);
             this.maxWidth = Math.max(font.width(this.tips), this.maxWidth);
@@ -267,10 +253,6 @@ public class ClientGunTooltip implements ClientTooltipComponent {
         if (shouldShow(GunTooltipPart.BASE_INFO)) {
             yOffset += 4;
 
-            // 等级信息
-            font.drawInBatch(this.levelInfo, pX, yOffset, 0x777777, false, matrix4f, bufferSource, Font.DisplayMode.NORMAL, 0, 0xF000F0);
-            yOffset += 10;
-
             // 枪械类型
             if (this.gunType != null) {
                 font.drawInBatch(this.gunType, pX, yOffset, 0x777777, false, matrix4f, bufferSource, Font.DisplayMode.NORMAL, 0, 0xF000F0);
@@ -299,7 +281,7 @@ public class ClientGunTooltip implements ClientTooltipComponent {
         }
 
 
-        if (shouldShow(GunTooltipPart.UPGRADES_TIP)) {
+        if (shouldShow(GunTooltipPart.UPGRADES_TIP) && this.tips != null) {
             yOffset += 4;
 
             // Z 键说明

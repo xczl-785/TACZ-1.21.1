@@ -23,17 +23,8 @@ public class ModCreativeTabs {
     }
     public static final DeferredRegister<CreativeModeTab> TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, GunMod.MOD_ID);
 
-    public static DeferredHolder<CreativeModeTab, CreativeModeTab> OTHER_TAB = TABS.register("other", () -> CreativeModeTab.builder()
-            .title(Component.translatable("itemGroup.tab.tacz.other"))
-            .icon(() -> ModItems.TARGET.get().getDefaultInstance())
-            .displayItems((parameters, output) -> {
-                output.accept(ModItems.TARGET.get());
-                output.accept(ModItems.STATUE.get());
-                output.accept(ModItems.TARGET_MINECART.get());
-            }).build());
-
     public static DeferredHolder<CreativeModeTab, CreativeModeTab> ATTACHMENT_SCOPE_TAB = TABS.register("scope", () -> CreativeModeTab.builder()
-            .title(Component.translatable("tacz.type.scope.name")).withTabsBefore(OTHER_TAB.getId())
+            .title(Component.translatable("tacz.type.scope.name"))
             .icon(() -> AttachmentItemBuilder.create().setId(ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "scope_acog_ta31")).build())
             .displayItems((parameters, output) -> output.acceptAll(AttachmentItem.fillItemCategory(AttachmentType.SCOPE))).build());
 

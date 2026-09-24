@@ -1,14 +1,7 @@
 package com.tacz.guns.client.init;
 
-import com.tacz.guns.block.entity.StatueBlockEntity;
-import com.tacz.guns.block.entity.TargetBlockEntity;
-import com.tacz.guns.client.renderer.block.StatueRenderer;
-import com.tacz.guns.client.renderer.block.TargetRenderer;
 import com.tacz.guns.client.renderer.entity.EntityBulletRenderer;
-import com.tacz.guns.client.renderer.entity.TargetMinecartRenderer;
 import com.tacz.guns.entity.EntityKineticBullet;
-import com.tacz.guns.entity.TargetMinecart;
-import net.minecraft.client.renderer.blockentity.BlockEntityRenderers;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -20,8 +13,5 @@ public class ModEntitiesRender {
     @SubscribeEvent
     public static void onEntityRenderers(EntityRenderersEvent.RegisterRenderers evt) {
         EntityRenderers.register(EntityKineticBullet.TYPE, EntityBulletRenderer::new);
-        EntityRenderers.register(TargetMinecart.TYPE, TargetMinecartRenderer::new);
-        BlockEntityRenderers.register(TargetBlockEntity.TYPE, TargetRenderer::new);
-        BlockEntityRenderers.register(StatueBlockEntity.TYPE, StatueRenderer::new);
     }
 }

@@ -31,7 +31,7 @@ class PlatformExtensionContractTest {
         assertInstanceOf(TacticalGunClientExtension.class, GunClientExtensions.current());
     }
 
-    /** The assembly entry owner keeps TaCZ's own refit key out of the way for claimed items. */
+    /** The tooltip discovers the public assembly entry; input belongs to the public module. */
     @Test void discoversExactlyOneAssemblyEntryOwner() {
         var entries = ServiceLoader.load(AssemblyEntryExtension.class, AssemblyEntryExtension.class.getClassLoader())
                 .stream().map(ServiceLoader.Provider::get).toList();

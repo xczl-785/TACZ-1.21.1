@@ -14,13 +14,10 @@ public class RenderConfig {
     public static ModConfigSpec.BooleanValue GUN_HUD_ENABLE;
     public static ModConfigSpec.BooleanValue KILL_AMOUNT_ENABLE;
     public static ModConfigSpec.DoubleValue KILL_AMOUNT_DURATION_SECOND;
-    public static ModConfigSpec.IntValue TARGET_RENDER_DISTANCE;
     public static ModConfigSpec.BooleanValue FIRST_PERSON_BULLET_TRACER_ENABLE;
     public static ModConfigSpec.BooleanValue DISABLE_INTERACT_HUD_TEXT;
-    public static ModConfigSpec.IntValue DAMAGE_COUNTER_RESET_TIME;
     public static ModConfigSpec.BooleanValue DISABLE_MOVEMENT_ATTRIBUTE_FOV;
     public static ModConfigSpec.BooleanValue ENABLE_TACZ_ID_IN_TOOLTIP;
-    public static ModConfigSpec.BooleanValue BLOCK_ENTITY_TRANSLUCENT;
 
     public static void init(ModConfigSpec.Builder builder) {
         builder.push("render");
@@ -55,8 +52,6 @@ public class RenderConfig {
         builder.comment("The duration of the kill amount, in second");
         KILL_AMOUNT_DURATION_SECOND = builder.defineInRange("KillAmountDurationSecond", 3, 0, Double.MAX_VALUE);
 
-        builder.comment("The farthest render distance of the target, including minecarts type");
-        TARGET_RENDER_DISTANCE = builder.defineInRange("TargetRenderDistance", 128, 0, Integer.MAX_VALUE);
 
         builder.comment("Whether or not to render first person bullet trail");
         FIRST_PERSON_BULLET_TRACER_ENABLE = builder.define("FirstPersonBulletTracerEnable", true);
@@ -65,8 +60,6 @@ public class RenderConfig {
         DISABLE_INTERACT_HUD_TEXT = builder.define("DisableInteractHudText", false);
 
 
-        builder.comment("Max time the damage counter will reset");
-        DAMAGE_COUNTER_RESET_TIME = builder.defineInRange("DamageCounterResetTime", 2000, 10, Integer.MAX_VALUE);
 
         builder.comment("Disable the fov effect from the movement speed attribute while holding a gun");
         DISABLE_MOVEMENT_ATTRIBUTE_FOV = builder.define("DisableMovementAttributeFov", true);
@@ -74,8 +67,6 @@ public class RenderConfig {
         builder.comment("Enable the display of the TACZ ID in the tooltip when Advanced Tooltip is enabled");
         ENABLE_TACZ_ID_IN_TOOLTIP = builder.define("EnableTaczIdInTooltip", true);
 
-        builder.comment("Enable translucent while render block entity or not. Enable this option will result in ADDITIONAL PERFORMANCE OVERHEAD.");
-        BLOCK_ENTITY_TRANSLUCENT = builder.define("EnableBlockEntityTranslucent", false);
 
         builder.pop();
     }
