@@ -71,9 +71,7 @@ repositories {
             includeGroup("com.github.FiguraMC.luaj")
         }
     }
-    maven("https://maven.shedaniel.me")
     maven("https://maven.kosmx.dev")
-    maven("https://maven.blamejared.com")
     maven {
         url = uri("https://maven.architectury.dev")
         content {
@@ -128,16 +126,11 @@ dependencies {
     implementation(libs.org.apache.bcel)
     jarJar(libs.org.apache.bcel)
 
-    compileOnly(libs.me.shedaniel.cloth.config.neoforge)
     compileOnly(libs.dev.kosmx.player.animation.lib.forge)
     implementation(libs.maven.modrinth.sodium)
     implementation(libs.maven.modrinth.iris)
     implementation(libs.curse.maven.acceleratedrendering)
-    compileOnly(libs.maven.modrinth.carry.on)
     compileOnly(libs.maven.modrinth.shoulder.surfing.reloaded)
-    compileOnly(libs.mezz.jei.common.api)
-    compileOnly(libs.mezz.jei.neoforge.api)
-    runtimeOnly(libs.mezz.jei.neoforge)
     compileOnly(libs.curse.maven.framework)
     compileOnly(libs.curse.maven.controllable)
     implementation(libs.dev.latvian.mods.kubejs.neoforge)

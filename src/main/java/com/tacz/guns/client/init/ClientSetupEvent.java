@@ -51,7 +51,6 @@ public class ClientSetupEvent {
         event.register(RefitKey.REFIT_KEY);
         event.register(ZoomKey.ZOOM_KEY);
         event.register(MeleeKey.MELEE_KEY);
-        event.register(ConfigKey.OPEN_CONFIG_KEY);
     }
 
     @SubscribeEvent
