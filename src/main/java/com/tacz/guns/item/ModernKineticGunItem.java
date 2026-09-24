@@ -11,8 +11,6 @@ import com.tacz.guns.api.item.attachment.AttachmentType;
 import com.tacz.guns.api.item.gun.AbstractGunItem;
 import com.tacz.guns.api.item.gun.FireMode;
 import com.tacz.guns.api.item.nbt.GunItemDataAccessor;
-import com.tacz.guns.command.sub.DebugCommand;
-import com.tacz.guns.debug.GunMeleeDebug;
 import com.tacz.guns.entity.EntityKineticBullet;
 import com.tacz.guns.entity.shooter.ShooterDataHolder;
 import com.tacz.guns.resource.index.CommonGunIndex;
@@ -176,7 +174,6 @@ public class ModernKineticGunItem extends AbstractGunItem implements GunItemData
                 .map(script -> checkFunction(script.get("interrupt_reload")))
                 .ifPresent(func -> func.call(CoerceJavaToLua.coerce(api)));
     }
-
 
     @Override
     public void melee(ShooterDataHolder dataHolder, LivingEntity user, ItemStack gunItem) {
@@ -499,15 +496,14 @@ public class ModernKineticGunItem extends AbstractGunItem implements GunItemData
             }
         }
 
+        net.neoforged.neoforge.common.NeoForge.EVENT_BUS.post(
+                new com.tacz.guns.api.event.common.GunMeleeRangeEvent(user, (int) Math.round(distance), centrePos, eyeVec, rangeAngle));
+
         // 玩家扣饱食度
         if (user instanceof Player player) {
             player.causeFoodExhaustion(0.1F);
         }
 
-        // Debug 模式
-        if (DebugCommand.DEBUG) {
-            GunMeleeDebug.showRange(user, (int) Math.round(distance), centrePos, eyeVec, rangeAngle);
-        }
     }
 
     private static void doPerLivingHurt(LivingEntity user, LivingEntity target, float knockback, float damage, List<EffectData> effects) {

@@ -37,3 +37,5 @@
 历史 RouteLedger 区块号和早期运行锁保留在各批次记录中；它们不表示当前绑定或当前授权。本次文档治理未写 RouteLedger。
 
 第三批 R03/R06/R08/R10 的边界、删除清单和交付检查见[内容退出交付](content-slimming/README.md)。
+
+slim3 已由所有者验收。随后授权的 R07/R09、退休尾项与开发调试隔离见[slim4 交付](presentation-slimming/README.md)。

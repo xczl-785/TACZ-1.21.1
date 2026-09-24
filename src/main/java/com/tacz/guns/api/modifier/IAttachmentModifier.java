@@ -1,13 +1,9 @@
 package com.tacz.guns.api.modifier;
 
-import com.tacz.guns.resource.modifier.AttachmentCacheProperty;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.Collections;
 import java.util.List;
 
 /**
@@ -58,38 +54,4 @@ public interface IAttachmentModifier<T, K> {
      */
     void eval(List<T> modifiedValues, CacheValue<K> cache);
 
-    /**
-     * 获取改装界面的配置属性条相关数据
-     */
-    @OnlyIn(Dist.CLIENT)
-    default List<DiagramsData> getPropertyDiagramsData(ItemStack gunItem, GunData gunData, AttachmentCacheProperty cacheProperty) {
-        return Collections.emptyList();
-    }
-
-    /**
-     * 用于获取改装界面的配置属性条个数，用于按钮的偏移
-     */
-    @OnlyIn(Dist.CLIENT)
-    default int getDiagramsDataSize() {
-        return 0;
-    }
-
-    /**
-     * 属性条数据
-     *
-     * @param defaultPercent   默认枪械值百分比
-     * @param modifierPercent  修改值百分比
-     * @param modifier         修改值，用于与默认值做对比判断
-     * @param titleKey         属性名称语言文件 key
-     * @param positivelyString 大于默认数值时，显示的文本
-     * @param negativeString   小于默认数值时，显示的文本
-     * @param defaultString    等于默认数值时，显示的文本
-     * @param positivelyBetter true 时，大于默认数值显示为绿色，否则显示红色
-     */
-    @OnlyIn(Dist.CLIENT)
-    record DiagramsData(double defaultPercent, double modifierPercent, Number modifier,
-                        String titleKey, String positivelyString,
-                        String negativeString, String defaultString,
-                        boolean positivelyBetter) {
-    }
 }

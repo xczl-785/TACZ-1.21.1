@@ -104,13 +104,6 @@ public class GunProperties {
     @ValueModifiableAtRuntime(Float.class)
     public static final GunProperty<Float>                                      HEADSHOT_MULTIPLIER = GunProperty.of("head_shot", Float.class);
 
-    /**
-     * @see RuntimeOnly#IGNITE_ENTITY
-     * @see RuntimeOnly#IGNITE_ENTITY_TIME
-     * @see RuntimeOnly#IGNITE_BLOCK
-     */
-    public static final GunProperty<Ignite>                                     IGNITE              = GunProperty.of("ignite", Ignite.class);
-
     @ValueModifiableAtRuntime(Float.class)
     public static final GunProperty<Map<InaccuracyType, Float>>                 INACCURACY          = GunProperty.of("inaccuracy", new TypeToken<>() {});
 
@@ -191,24 +184,6 @@ public class GunProperties {
          */
         @ValueModifiableAtRuntime(Integer.class)
         public static final String SOUND_DISTANCE = "sound_distance";
-
-        /**
-         * 是否点燃实体
-         */
-        @ValueModifiableAtRuntime(Boolean.class)
-        public static final String IGNITE_ENTITY = "ignite_entity";
-
-        /**
-         * 点燃实体的时间，单位 tick
-         */
-        @ValueModifiableAtRuntime(Integer.class)
-        public static final String IGNITE_ENTITY_TIME = "ignite_entity_time";
-
-        /**
-         * 是否点燃方块
-         */
-        @ValueModifiableAtRuntime(Boolean.class)
-        public static final String IGNITE_BLOCK = "ignite_block";
 
         /**
          * 子弹是否爆炸，

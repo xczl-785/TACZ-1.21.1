@@ -31,12 +31,6 @@ public class BulletData {
     @SerializedName("pierce")
     private int pierce = 1;
 
-    @SerializedName("ignite")
-    private Ignite ignite = new Ignite(false);
-
-    @SerializedName("ignite_entity_time")
-    private int igniteEntityTime = 2;
-
     @SerializedName("tracer_count_interval")
     private int tracerCountInterval = -1;
 
@@ -78,14 +72,6 @@ public class BulletData {
 
     public int getPierce() {
         return pierce;
-    }
-
-    public Ignite getIgnite() {
-        return ignite;
-    }
-
-    public int getIgniteEntityTime() {
-        return igniteEntityTime;
     }
 
     public boolean hasTracerAmmo() {

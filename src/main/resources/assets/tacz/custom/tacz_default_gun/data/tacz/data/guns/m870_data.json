@@ -26,7 +26,6 @@
     "gravity": 0.15,
     "knockback": 0.15,
     "friction": 0.05,
-    "ignite": false,
     "pierce": 1,
     "explosion": {
       "explode": false,

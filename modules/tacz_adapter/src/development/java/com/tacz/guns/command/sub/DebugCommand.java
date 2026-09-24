@@ -10,7 +10,14 @@ import net.minecraft.commands.Commands;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 
+@net.neoforged.fml.common.EventBusSubscriber(modid = "tacz")
 public class DebugCommand {
+    @net.neoforged.bus.api.SubscribeEvent
+    public static void commands(net.neoforged.neoforge.event.RegisterCommandsEvent event) {
+        event.getDispatcher().register(Commands.literal("tacz")
+                .requires(source -> source.hasPermission(2)).then(get()));
+    }
+
     public static boolean DEBUG = false;
     private static final String DEBUG_NAME = "debug";
     private static final String ENABLE = "enable";

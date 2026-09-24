@@ -9,9 +9,7 @@ import com.tacz.guns.api.vmlib.LuaGunAnimationConstant;
 import com.tacz.guns.api.vmlib.LuaLibrary;
 import com.tacz.guns.client.resource.manager.DisplayManager;
 import com.tacz.guns.client.resource.manager.GltfManager;
-import com.tacz.guns.client.resource.manager.PackInfoManager;
 import com.tacz.guns.client.resource.pojo.CommonTransformObject;
-import com.tacz.guns.client.resource.pojo.PackInfo;
 import com.tacz.guns.client.resource.pojo.animation.bedrock.AnimationKeyframes;
 import com.tacz.guns.client.resource.pojo.animation.bedrock.BedrockAnimationFile;
 import com.tacz.guns.client.resource.pojo.animation.bedrock.SoundEffectKeyframes;
@@ -85,7 +83,6 @@ public enum ClientAssetsManager {
     private ScriptManager scriptManager;
     // 音效
     // 枪包元数据
-    private PackInfoManager packInfo;
 
     private List<PreparableReloadListener> listeners;
 
@@ -103,7 +100,6 @@ public enum ClientAssetsManager {
                     "BedrockAnimationLoader", id -> GunMod.MOD_ID.equals(id.getNamespace())));
             gltfAnimation = register(new GltfManager());
             scriptManager = register(new ScriptManager(new FileToIdConverter("scripts", ".lua"), libList));
-            packInfo = register(new PackInfoManager());
             register((barrier, resourceManager, preparationProfiler, reloadProfiler, backgroundExecutor, gameExecutor) ->
                     barrier.wait(Void.TYPE).thenRunAsync(ClientIndexManager::reload, gameExecutor));
         }
@@ -161,19 +157,6 @@ public enum ClientAssetsManager {
     @Nullable
     public AnimationStructure getGltfAnimation(ResourceLocation id) {
         return gltfAnimation.getGltfAnimation(id);
-    }
-
-    @Nullable
-    public PackInfo getPackInfo(String namespace) {
-        return packInfo.getData(namespace);
-    }
-
-    @Nullable
-    public PackInfo getPackInfo(@Nullable ResourceLocation namespace) {
-        if (namespace == null) {
-            return null;
-        }
-        return packInfo.getData(namespace.getNamespace());
     }
 
     @OnlyIn(Dist.CLIENT)

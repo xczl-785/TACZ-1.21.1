@@ -174,12 +174,10 @@ public enum CommonNetworkCache implements ICommonResourceProvider {
                 JsonObject jsonObject = element.getAsJsonObject();
                 if (jsonObject.has(key)) {
                     JsonProperty<?> property = value.readJson(json);
-                    property.initComponents();
                     data.addModifier(key, property);
                 } else if (jsonObject.has(value.getOptionalFields())) {
                     // 为了兼容旧版本，读取可选字段名
                     JsonProperty<?> property = value.readJson(json);
-                    property.initComponents();
                     data.addModifier(key, property);
                 }
             });
@@ -198,7 +196,6 @@ public enum CommonNetworkCache implements ICommonResourceProvider {
             }
         }
     }
-
 
     private void fromNetwork(DataType type, Map<ResourceLocation, String> data) {
         for (Map.Entry<ResourceLocation, String> entry : data.entrySet()) {

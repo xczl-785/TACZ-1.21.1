@@ -6,13 +6,10 @@ import com.tacz.guns.api.GunProperties;
 import com.tacz.guns.api.modifier.CacheValue;
 import com.tacz.guns.api.modifier.IAttachmentModifier;
 import com.tacz.guns.api.modifier.JsonProperty;
-import com.tacz.guns.resource.modifier.AttachmentCacheProperty;
 import com.tacz.guns.resource.pojo.data.attachment.Modifier;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import com.tacz.guns.resource.pojo.data.gun.InaccuracyType;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -36,7 +33,7 @@ public class AimInaccuracyModifier implements IAttachmentModifier<Map<Inaccuracy
     @Override
     public JsonProperty<Map<InaccuracyType, Modifier>> readJson(String json) {
         Map<InaccuracyType, Modifier> jsonProperties = Maps.newHashMap();
-        return new AimInaccuracyJsonProperty(jsonProperties);
+        return new JsonProperty<>(jsonProperties);
     }
 
     @Override
@@ -47,28 +44,6 @@ public class AimInaccuracyModifier implements IAttachmentModifier<Map<Inaccuracy
 
     @Override
     public void eval(List<Map<InaccuracyType, Modifier>> modifiedValues, CacheValue<Map<InaccuracyType, Float>> cache) {
-    }
-
-    @Override
-    @OnlyIn(Dist.CLIENT)
-    public List<DiagramsData> getPropertyDiagramsData(ItemStack gunItem, GunData gunData, AttachmentCacheProperty cacheProperty) {
-        return List.of();
-    }
-
-    @Override
-    @OnlyIn(Dist.CLIENT)
-    public int getDiagramsDataSize() {
-        return 0;
-    }
-
-    public static class AimInaccuracyJsonProperty extends JsonProperty<Map<InaccuracyType, Modifier>> {
-        public AimInaccuracyJsonProperty(Map<InaccuracyType, Modifier> value) {
-            super(value);
-        }
-
-        @Override
-        public void initComponents() {
-        }
     }
 
     public static class Data {

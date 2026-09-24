@@ -16,7 +16,6 @@ public class ClientBlockIndex {
     private ResourceLocation texture;
     private String name;
     private ItemTransforms transforms;
-    private String tooltipKey;
 
     public static ClientBlockIndex getInstance(BlockIndexPOJO pojo) {
         ClientBlockIndex index = new ClientBlockIndex();
@@ -30,7 +29,6 @@ public class ClientBlockIndex {
 
     private static void checkIndex(BlockIndexPOJO blockIndexPOJO, ClientBlockIndex index) {
         Preconditions.checkArgument(blockIndexPOJO != null, "index object file is empty");
-        index.tooltipKey = blockIndexPOJO.getTooltip();
     }
 
     private static void checkName(BlockIndexPOJO blockIndexPOJO, ClientBlockIndex index) {
@@ -90,7 +88,4 @@ public class ClientBlockIndex {
         return transforms;
     }
 
-    public String getTooltipKey() {
-        return tooltipKey;
-    }
 }

@@ -34,7 +34,6 @@ public class ClientAmmoIndex {
     private @Nullable ResourceLocation shellTextureLocation;
     private @Nullable AmmoParticle particle;
     private float[] tracerColor = new float[]{1f, 1f, 1f};
-    private @Nullable String tooltipKey;
     private volatile boolean modelsLoaded = false;
     private volatile boolean modelsLoadFailed = false;
     private volatile CompletableFuture<Void> warmUpTask = null;
@@ -57,7 +56,6 @@ public class ClientAmmoIndex {
 
     private static void checkIndex(AmmoIndexPOJO ammoIndexPOJO, ClientAmmoIndex index) {
         Preconditions.checkArgument(ammoIndexPOJO != null, "index object file is empty");
-        index.tooltipKey = ammoIndexPOJO.getTooltip();
     }
 
     private static void checkName(AmmoIndexPOJO ammoIndexPOJO, ClientAmmoIndex index) {
@@ -213,11 +211,6 @@ public class ClientAmmoIndex {
 
     public String getName() {
         return name;
-    }
-
-    @Nullable
-    public String getTooltipKey() {
-        return tooltipKey;
     }
 
     @Nullable

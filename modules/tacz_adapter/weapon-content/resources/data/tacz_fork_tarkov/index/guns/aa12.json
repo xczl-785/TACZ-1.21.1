@@ -2,7 +2,6 @@
   "name": "gun.tacz_fork_tarkov.aa12",
   "display": "tacz_fork_tarkov:aa12",
   "data": "tacz_fork_tarkov:aa12",
-  "tooltip": "tacz.gun.aa12.desc",
   "type": "shotgun",
   "sort": 103,
   "item_type": "tacz_fork_tarkov:aa12"

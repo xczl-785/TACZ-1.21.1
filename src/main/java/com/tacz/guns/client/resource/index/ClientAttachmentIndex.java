@@ -47,7 +47,6 @@ public class ClientAttachmentIndex {
     private boolean showMuzzle;
     private boolean showMount;
     private @Nullable String adapterNodeName;
-    private @Nullable String tooltipKey;
     private Map<String, ResourceLocation> sounds;
     private @Nullable LaserConfig laserConfig;
     private volatile boolean modelsLoaded = false;
@@ -74,7 +73,6 @@ public class ClientAttachmentIndex {
 
     private static void checkIndex(AttachmentIndexPOJO attachmentIndexPOJO, ClientAttachmentIndex index) {
         Preconditions.checkArgument(attachmentIndexPOJO != null, "index object file is empty");
-        index.tooltipKey = attachmentIndexPOJO.getTooltip();
     }
 
     @Nonnull
@@ -287,7 +285,6 @@ public class ClientAttachmentIndex {
         }
     }
 
-
     private static void checkSounds(AttachmentDisplay display, ClientAttachmentIndex index) {
         Map<String, ResourceLocation> displaySounds = display.getSounds();
         if (displaySounds == null) {
@@ -299,11 +296,6 @@ public class ClientAttachmentIndex {
 
     public String getName() {
         return name;
-    }
-
-    @Nullable
-    public String getTooltipKey() {
-        return tooltipKey;
     }
 
     @Nullable

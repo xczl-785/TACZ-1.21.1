@@ -12,12 +12,9 @@ public class RenderConfig {
     public static ModConfigSpec.DoubleValue HIT_MARKET_START_POSITION;
     public static ModConfigSpec.BooleanValue HEAD_SHOT_DEBUG_HITBOX;
     public static ModConfigSpec.BooleanValue GUN_HUD_ENABLE;
-    public static ModConfigSpec.BooleanValue KILL_AMOUNT_ENABLE;
-    public static ModConfigSpec.DoubleValue KILL_AMOUNT_DURATION_SECOND;
     public static ModConfigSpec.BooleanValue FIRST_PERSON_BULLET_TRACER_ENABLE;
     public static ModConfigSpec.BooleanValue DISABLE_INTERACT_HUD_TEXT;
     public static ModConfigSpec.BooleanValue DISABLE_MOVEMENT_ATTRIBUTE_FOV;
-    public static ModConfigSpec.BooleanValue ENABLE_TACZ_ID_IN_TOOLTIP;
 
     public static void init(ModConfigSpec.Builder builder) {
         builder.push("render");
@@ -46,27 +43,14 @@ public class RenderConfig {
         builder.comment("Whether or not to display the gun's HUD");
         GUN_HUD_ENABLE = builder.define("GunHUDEnable", true);
 
-        builder.comment("Whether or not to display the kill amount");
-        KILL_AMOUNT_ENABLE = builder.define("KillAmountEnable", true);
-
-        builder.comment("The duration of the kill amount, in second");
-        KILL_AMOUNT_DURATION_SECOND = builder.defineInRange("KillAmountDurationSecond", 3, 0, Double.MAX_VALUE);
-
-
         builder.comment("Whether or not to render first person bullet trail");
         FIRST_PERSON_BULLET_TRACER_ENABLE = builder.define("FirstPersonBulletTracerEnable", true);
 
         builder.comment("Disable the interact hud text in center of the screen");
         DISABLE_INTERACT_HUD_TEXT = builder.define("DisableInteractHudText", false);
 
-
-
         builder.comment("Disable the fov effect from the movement speed attribute while holding a gun");
         DISABLE_MOVEMENT_ATTRIBUTE_FOV = builder.define("DisableMovementAttributeFov", true);
-
-        builder.comment("Enable the display of the TACZ ID in the tooltip when Advanced Tooltip is enabled");
-        ENABLE_TACZ_ID_IN_TOOLTIP = builder.define("EnableTaczIdInTooltip", true);
-
 
         builder.pop();
     }

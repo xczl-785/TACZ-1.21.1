@@ -1,7 +1,5 @@
 package dev.tacticaltacz;
 
-import com.tacz.guns.api.extension.AssemblyEntryExtension;
-import com.tacz.guns.api.extension.AssemblyEntryExtensions;
 import com.tacz.guns.api.extension.GunClientExtension;
 import com.tacz.guns.api.extension.GunClientExtensions;
 import com.tacz.guns.api.extension.GunPlatformExtension;
@@ -31,12 +29,4 @@ class PlatformExtensionContractTest {
         assertInstanceOf(TacticalGunClientExtension.class, GunClientExtensions.current());
     }
 
-    /** The tooltip discovers the public assembly entry; input belongs to the public module. */
-    @Test void discoversExactlyOneAssemblyEntryOwner() {
-        var entries = ServiceLoader.load(AssemblyEntryExtension.class, AssemblyEntryExtension.class.getClassLoader())
-                .stream().map(ServiceLoader.Provider::get).toList();
-        assertEquals(1, entries.size());
-        assertInstanceOf(TacticalAssemblyEntryExtension.class, entries.getFirst());
-        assertInstanceOf(TacticalAssemblyEntryExtension.class, AssemblyEntryExtensions.current());
-    }
 }

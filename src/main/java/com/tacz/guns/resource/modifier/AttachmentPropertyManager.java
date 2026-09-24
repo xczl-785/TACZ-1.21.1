@@ -35,7 +35,6 @@ public class AttachmentPropertyManager {
         MODIFIERS.put(EffectiveRangeModifier.ID, new EffectiveRangeModifier());
         MODIFIERS.put(ExplosionModifier.ID, new ExplosionModifier());
         MODIFIERS.put(HeadShotModifier.ID, new HeadShotModifier());
-        MODIFIERS.put(IgniteModifier.ID, new IgniteModifier());
         MODIFIERS.put(InaccuracyModifier.ID, new InaccuracyModifier());
         MODIFIERS.put(KnockbackModifier.ID, new KnockbackModifier());
         MODIFIERS.put(PierceModifier.ID, new PierceModifier());

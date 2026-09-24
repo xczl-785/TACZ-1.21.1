@@ -2,7 +2,6 @@
   "name": "gun.tacz_fork_tarkov.p90",
   "display": "tacz_fork_tarkov:p90",
   "data": "tacz_fork_tarkov:p90",
-  "tooltip": "tacz.gun.p90.desc",
   "type": "smg",
   "sort": 103,
   "item_type": "tacz_fork_tarkov:p90"

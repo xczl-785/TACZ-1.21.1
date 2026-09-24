@@ -28,7 +28,6 @@
     "gravity": 0.15,
     "knockback": 0.1,
     "friction": 0.02,
-    "ignite": false,
     "pierce": 1
   },
   "ammo_amount": 25,

@@ -54,11 +54,6 @@
   // },
   // 扩容弹匣等级（1，2，3，分别对应调用枪械 data 中的三种弹匣容量）
   // "extended_mag_level": 1,
-  // 是否点燃目标（一但为 true，那么强行开启点燃）
-  // "ignite": {
-  //   "entity": true,
-  //   "block": true
-  // },
   // "explosion": {
   // 一但为 true，那么强行开启爆炸，默认为 false
   // "explode": false,

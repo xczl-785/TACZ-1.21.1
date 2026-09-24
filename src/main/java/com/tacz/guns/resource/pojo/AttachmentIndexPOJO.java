@@ -4,15 +4,9 @@ import com.google.gson.annotations.SerializedName;
 import com.tacz.guns.api.item.attachment.AttachmentType;
 import net.minecraft.resources.ResourceLocation;
 
-import javax.annotation.Nullable;
-
 public class AttachmentIndexPOJO {
     @SerializedName("name")
     private String name;
-
-    @SerializedName("tooltip")
-    @Nullable
-    private String tooltip;
 
     @SerializedName("display")
     private ResourceLocation display;
@@ -31,11 +25,6 @@ public class AttachmentIndexPOJO {
 
     public String getName() {
         return name;
-    }
-
-    @Nullable
-    public String getTooltip() {
-        return tooltip;
     }
 
     public ResourceLocation getDisplay() {

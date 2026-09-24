@@ -8,8 +8,6 @@ import com.tacz.guns.api.modifier.JsonProperty;
 import com.tacz.guns.resource.CommonAssetsManager;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import com.tacz.guns.resource.pojo.data.gun.MoveSpeed;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 import org.jetbrains.annotations.Nullable;
 
@@ -31,7 +29,7 @@ public class ExtraMovementModifier implements IAttachmentModifier<MoveSpeed, Mov
     public JsonProperty<MoveSpeed> readJson(String json) {
         ExtraMovementModifier.Data data = CommonAssetsManager.GSON.fromJson(json, ExtraMovementModifier.Data.class);
         MoveSpeed moveSpeed = data.getMoveSpeed();
-        return  new ExtraSpeedJsonProperty(moveSpeed);
+        return  new JsonProperty<>(moveSpeed);
     }
 
     @Override
@@ -42,29 +40,6 @@ public class ExtraMovementModifier implements IAttachmentModifier<MoveSpeed, Mov
     @Override
     public void eval(List<MoveSpeed> modifiers, CacheValue<MoveSpeed> cache) {
         cache.setValue(MoveSpeed.of(cache.getValue(), modifiers));
-    }
-
-    public static class ExtraSpeedJsonProperty extends JsonProperty<MoveSpeed> {
-        public ExtraSpeedJsonProperty(MoveSpeed value) {
-            super(value);
-        }
-
-        @Override
-        public void initComponents() {
-            MoveSpeed speed = getValue();
-            if(speed == null)return;
-            resolveComponent(speed.getBaseMultiplier(), "movement_speed");
-            resolveComponent(speed.getAimMultiplier(), "aim_speed");
-            resolveComponent(speed.getReloadMultiplier(), "reload_speed");
-        }
-
-        private void resolveComponent(float amount, String key) {
-            if (amount > 0) {
-                components.add(Component.translatable(String.format("tooltip.tacz.attachment.%s.increase", key)).withStyle(ChatFormatting.GREEN));
-            } else if (amount < 0) {
-                components.add(Component.translatable(String.format("tooltip.tacz.attachment.%s.decrease", key)).withStyle(ChatFormatting.RED));
-            }
-        }
     }
 
     public static class Data {

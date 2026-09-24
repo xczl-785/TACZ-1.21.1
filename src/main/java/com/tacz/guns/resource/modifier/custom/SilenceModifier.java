@@ -12,8 +12,6 @@ import com.tacz.guns.resource.modifier.AttachmentPropertyManager;
 import com.tacz.guns.resource.pojo.data.attachment.Modifier;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import it.unimi.dsi.fastutil.Pair;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 
 import javax.annotation.Nullable;
@@ -29,11 +27,11 @@ public class SilenceModifier implements IAttachmentModifier<Pair<Modifier, Boole
 
     @Override
     @SuppressWarnings("deprecation")
-    public SilenceJsonProperty readJson(String json) {
+    public JsonProperty<Pair<Modifier, Boolean>> readJson(String json) {
         SilenceModifier.Data data = CommonAssetsManager.GSON.fromJson(json, SilenceModifier.Data.class);
         Silence silence = data.getSilence();
         if (silence == null) {
-            return new SilenceJsonProperty(Pair.of(new Modifier(), false));
+            return new JsonProperty<>(Pair.of(new Modifier(), false));
         }
         Modifier distance = silence.getDistance();
         // 兼容旧版本
@@ -41,7 +39,7 @@ public class SilenceModifier implements IAttachmentModifier<Pair<Modifier, Boole
             distance = new Modifier();
             distance.setAddend(silence.getDistanceAddend());
         }
-        return new SilenceJsonProperty(Pair.of(distance, silence.isUseSilenceSound()));
+        return new JsonProperty<>(Pair.of(distance, silence.isUseSilenceSound()));
     }
 
     @Override
@@ -62,30 +60,6 @@ public class SilenceModifier implements IAttachmentModifier<Pair<Modifier, Boole
         double evalDistance = AttachmentPropertyManager.eval(distanceModifiers, cacheValue.left());
         boolean useSilenceSound = AttachmentPropertyManager.eval(useSilenceSoundModifiers, cacheValue.right());
         cache.setValue(Pair.of((int) Math.round(evalDistance), useSilenceSound));
-    }
-
-    public static class SilenceJsonProperty extends JsonProperty<Pair<Modifier, Boolean>> {
-        public SilenceJsonProperty(Pair<Modifier, Boolean> value) {
-            super(value);
-        }
-
-        @Override
-        public void initComponents() {
-            Pair<Modifier, Boolean> value = this.getValue();
-            if (value != null) {
-                int defaultDistance = GunConfig.DEFAULT_GUN_FIRE_SOUND_DISTANCE.get();
-                double eval = AttachmentPropertyManager.eval(value.left(), defaultDistance);
-                int distance = (int) Math.round(eval);
-                if (distance > defaultDistance) {
-                    components.add(Component.translatable("tooltip.tacz.attachment.sound_distance.increase").withStyle(ChatFormatting.RED));
-                } else if (distance < defaultDistance) {
-                    components.add(Component.translatable("tooltip.tacz.attachment.sound_distance.increase").withStyle(ChatFormatting.GREEN));
-                }
-                if (value.right()) {
-                    components.add(Component.translatable("tooltip.tacz.attachment.silence").withStyle(ChatFormatting.GREEN));
-                }
-            }
-        }
     }
 
     private static class Data {

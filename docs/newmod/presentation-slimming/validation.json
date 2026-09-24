@@ -1,0 +1,32 @@
+{
+  "adapterTest": {
+    "tests": 34,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "test": {
+    "tests": 4,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "date": "2026-09-24",
+  "platform_extension_tests": 4,
+  "checks": [
+    "compileJava compileStandaloneCore adapterTest adapterDevelopmentClasses",
+    "test --tests dev.tacticaltacz.BuiltinPackRegistryTest --tests dev.tacticaltacz.RetiredSmithRegistryTest --tests dev.tacticaltacz.NativePresentationRetirementTest"
+  ],
+  "not_run": [
+    "Full check",
+    "Minecraft client/server",
+    "Owner acceptance for slim4"
+  ],
+  "public_dependency_commit": "963361c285f4bd681c483105eef617b4c8518457",
+  "configured_weapons": 15,
+  "physical_items": 146,
+  "source_guards": "verifyPlatformExtensionBoundary verifyCorePlatformBoundary verifyWeaponModules verifyAdapterIntegration verifyConfiguredWeapons: PASS",
+  "modifier_methods_unchanged": 32,
+  "runtime_data_files_compared": 61,
+  "author_reports_refreshed": 28
+}

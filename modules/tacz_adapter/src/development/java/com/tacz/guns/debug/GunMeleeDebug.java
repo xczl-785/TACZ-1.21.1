@@ -5,7 +5,15 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.phys.Vec3;
 
+@net.neoforged.fml.common.EventBusSubscriber(modid = "tacz")
 public class GunMeleeDebug {
+    @net.neoforged.bus.api.SubscribeEvent
+    public static void onMeleeRange(com.tacz.guns.api.event.common.GunMeleeRangeEvent event) {
+        if (com.tacz.guns.command.sub.DebugCommand.DEBUG) {
+            showRange(event.shooter(), event.distance(), event.centre(), event.direction(), event.angle());
+        }
+    }
+
     public static void showRange(LivingEntity user, int distance, Vec3 centrePos, Vec3 eyeVec, float rangeAngle) {
         if (!(user.level() instanceof ServerLevel serverLevel)) {
             return;

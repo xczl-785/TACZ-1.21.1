@@ -8,18 +8,12 @@ import com.tacz.guns.api.modifier.IAttachmentModifier;
 import com.tacz.guns.api.modifier.JsonProperty;
 import com.tacz.guns.api.modifier.ParameterizedCachePair;
 import com.tacz.guns.resource.CommonAssetsManager;
-import com.tacz.guns.resource.modifier.AttachmentCacheProperty;
-import com.tacz.guns.resource.modifier.AttachmentPropertyManager;
 import com.tacz.guns.resource.pojo.data.attachment.Modifier;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import com.tacz.guns.resource.pojo.data.gun.GunRecoil;
 import com.tacz.guns.resource.pojo.data.gun.GunRecoilKeyFrame;
 import it.unimi.dsi.fastutil.Pair;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -53,10 +47,10 @@ public class RecoilModifier implements IAttachmentModifier<Pair<Modifier, Modifi
             Modifier yaw = new Modifier();
             pitch.setPercent(oldRecoilData.getPitch());
             yaw.setPercent(oldRecoilData.getYaw());
-            return new RecoilModifier.RecoilJsonProperty(Pair.of(pitch, yaw));
+            return new JsonProperty<>(Pair.of(pitch, yaw));
         }
         assert newRecoilData != null;
-        return new RecoilModifier.RecoilJsonProperty(Pair.of(newRecoilData.getPitch(), newRecoilData.getYaw()));
+        return new JsonProperty<>(Pair.of(newRecoilData.getPitch(), newRecoilData.getYaw()));
     }
 
     @Override
@@ -83,45 +77,6 @@ public class RecoilModifier implements IAttachmentModifier<Pair<Modifier, Modifi
         cache.setValue(newCache);
     }
 
-    @Override
-    @OnlyIn(Dist.CLIENT)
-    public List<DiagramsData> getPropertyDiagramsData(ItemStack gunItem, GunData gunData, AttachmentCacheProperty cacheProperty) {
-        ParameterizedCachePair<Float, Float> propertyCache = cacheProperty.getCache(RecoilModifier.ID);
-        GunRecoil recoil = gunData.getRecoil();
-
-        double pitch = propertyCache.left().getDefaultValue();
-        double modifiedPitch = propertyCache.left().eval(getMaxInGunRecoilKeyFrame(recoil.getPitch()));
-        double pitchModifier = modifiedPitch - pitch;
-        double pitchPercent = Math.min(pitch / 5.0, 1);
-        double pitchModifierPercent = Math.min(pitchModifier / 5.0, 1);
-        String pitchTitleKey = "gui.tacz.gun_refit.property_diagrams.pitch";
-        String pitchPositivelyString = String.format("%.2f §c(+%.2f)", modifiedPitch, pitchModifier);
-        String pitchNegativelyString = String.format("%.2f §a(%.2f)", modifiedPitch, pitchModifier);
-        String pitchDefaultString = String.format("%.2f", modifiedPitch);
-
-        double yaw = propertyCache.right().getDefaultValue();
-        double modifiedYaw = propertyCache.right().eval(getMaxInGunRecoilKeyFrame(recoil.getYaw()));
-        double yawModifier = modifiedYaw - yaw;
-        double yawPercent = Math.min(yaw / 5.0, 1);
-        double yawModifierPercent = Math.min(yawModifier / 5.0, 1);
-        String yawTitleKey = "gui.tacz.gun_refit.property_diagrams.yaw";
-        String yawPositivelyString = String.format("%.2f §c(+%.2f)", modifiedYaw, yawModifier);
-        String yawNegativelyString = String.format("%.2f §a(%.2f)", modifiedYaw, yawModifier);
-        String yawDefaultString = String.format("%.2f", modifiedYaw);
-
-        boolean positivelyBetter = false;
-
-        DiagramsData pitchData = new DiagramsData(pitchPercent, pitchModifierPercent, pitchModifier, pitchTitleKey, pitchPositivelyString, pitchNegativelyString, pitchDefaultString, positivelyBetter);
-        DiagramsData yawData = new DiagramsData(yawPercent, yawModifierPercent, yawModifier, yawTitleKey, yawPositivelyString, yawNegativelyString, yawDefaultString, positivelyBetter);
-        return List.of(pitchData, yawData);
-    }
-
-    @Override
-    @OnlyIn(Dist.CLIENT)
-    public int getDiagramsDataSize() {
-        return 2;
-    }
-
     private static float getMaxInGunRecoilKeyFrame(GunRecoilKeyFrame[] frames) {
         if (frames.length == 0) {
             return 0;
@@ -130,35 +85,6 @@ public class RecoilModifier implements IAttachmentModifier<Pair<Modifier, Modifi
         float leftValue = Math.abs(value[0]);
         float rightValue = Math.abs(value[1]);
         return Math.max(leftValue, rightValue);
-    }
-
-    public static class RecoilJsonProperty extends JsonProperty<Pair<Modifier, Modifier>> {
-        public RecoilJsonProperty(Pair<Modifier, Modifier> value) {
-            super(value);
-        }
-
-        @Override
-        public void initComponents() {
-            Pair<Modifier, Modifier> modified = this.getValue();
-            float pitch = 1;
-            float yaw = 1;
-
-            if (modified != null) {
-                pitch = (float) AttachmentPropertyManager.eval(modified.left(), 1);
-                yaw = (float) AttachmentPropertyManager.eval(modified.right(), 1);
-            }
-
-            if (pitch > 1) {
-                components.add(Component.translatable("tooltip.tacz.attachment.pitch.increase").withStyle(ChatFormatting.RED));
-            } else if (pitch < 1) {
-                components.add(Component.translatable("tooltip.tacz.attachment.pitch.decrease").withStyle(ChatFormatting.GREEN));
-            }
-            if (yaw > 1) {
-                components.add(Component.translatable("tooltip.tacz.attachment.yaw.increase").withStyle(ChatFormatting.RED));
-            } else if (yaw < 1) {
-                components.add(Component.translatable("tooltip.tacz.attachment.yaw.decrease").withStyle(ChatFormatting.GREEN));
-            }
-        }
     }
 
     public static class Data {

@@ -2,7 +2,6 @@
   "name": "gun.tacz_fork_tarkov.uzi",
   "display": "tacz_fork_tarkov:uzi",
   "data": "tacz_fork_tarkov:uzi",
-  "tooltip": "tacz.gun.uzi.desc",
   "type": "smg",
   "sort": 103,
   "item_type": "tacz_fork_tarkov:uzi"

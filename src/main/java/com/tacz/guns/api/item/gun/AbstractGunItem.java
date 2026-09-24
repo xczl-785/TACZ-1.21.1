@@ -1,6 +1,5 @@
 package com.tacz.guns.api.item.gun;
 
-
 import com.tacz.guns.api.DefaultAssets;
 import com.tacz.guns.api.TimelessAPI;
 import com.tacz.guns.api.entity.ReloadState;
@@ -10,7 +9,6 @@ import com.tacz.guns.api.item.builder.GunItemBuilder;
 import com.tacz.guns.client.renderer.item.GunItemRendererWrapper;
 import com.tacz.guns.client.resource.index.ClientGunIndex;
 import com.tacz.guns.entity.shooter.ShooterDataHolder;
-import com.tacz.guns.inventory.tooltip.GunTooltip;
 import com.tacz.guns.resource.index.CommonGunIndex;
 import com.tacz.guns.resource.pojo.data.gun.FeedType;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
@@ -23,7 +21,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.projectile.Projectile;
-import net.minecraft.world.inventory.tooltip.TooltipComponent;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.api.distmarker.Dist;
@@ -31,7 +28,6 @@ import net.neoforged.api.distmarker.OnlyIn;
 import net.neoforged.neoforge.capabilities.Capabilities;
 import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
 import net.neoforged.neoforge.items.IItemHandler;
-import net.neoforged.neoforge.items.ItemHandlerHelper;
 
 import javax.annotation.Nonnull;
 import java.util.*;
@@ -366,23 +362,6 @@ public abstract class AbstractGunItem extends Item implements IGun, IAnimationIt
                 return GunItemRendererWrapper.INSTANCE;
             }
         });
-    }
-
-    /**
-     * 获取在 Tooltip 中渲染的图片
-     */
-    @Override
-    @Nonnull
-    public Optional<TooltipComponent> getTooltipImage(ItemStack stack) {
-        if (stack.getItem() instanceof IGun iGun) {
-            Optional<CommonGunIndex> optional = TimelessAPI.getCommonGunIndex(this.getGunId(stack));
-            if (optional.isPresent()) {
-                CommonGunIndex gunIndex = optional.get();
-                ResourceLocation ammoId = gunIndex.getGunData().getAmmoId();
-                return Optional.of(new GunTooltip(stack, iGun, ammoId, gunIndex));
-            }
-        }
-        return Optional.empty();
     }
 
     /**

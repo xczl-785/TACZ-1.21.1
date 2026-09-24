@@ -10,19 +10,12 @@ import com.tacz.guns.api.modifier.CacheValue;
 import com.tacz.guns.api.modifier.IAttachmentModifier;
 import com.tacz.guns.api.modifier.JsonProperty;
 import com.tacz.guns.resource.CommonAssetsManager;
-import com.tacz.guns.resource.modifier.AttachmentCacheProperty;
 import com.tacz.guns.resource.modifier.AttachmentPropertyManager;
 import com.tacz.guns.resource.pojo.data.attachment.Modifier;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
 import com.tacz.guns.resource.pojo.data.gun.GunFireModeAdjustData;
 import com.tacz.guns.resource.pojo.data.gun.InaccuracyType;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
-import net.minecraft.util.Mth;
 import net.minecraft.world.item.ItemStack;
-import net.neoforged.api.distmarker.Dist;
-import net.neoforged.api.distmarker.OnlyIn;
-import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -73,7 +66,7 @@ public class InaccuracyModifier implements IAttachmentModifier<Map<InaccuracyTyp
                 default -> jsonProperties.put(type, inaccuracy);
             }
         }
-        return new InaccuracyJsonProperty(jsonProperties);
+        return new JsonProperty<>(jsonProperties);
     }
 
     @Override
@@ -119,109 +112,6 @@ public class InaccuracyModifier implements IAttachmentModifier<Map<InaccuracyTyp
         });
         // 写入缓存
         cache.setValue(result);
-    }
-
-    @Override
-    @OnlyIn(Dist.CLIENT)
-    public List<DiagramsData> getPropertyDiagramsData(ItemStack gunItem, GunData gunData, AttachmentCacheProperty cacheProperty) {
-        IGun iGun = Objects.requireNonNull(IGun.getIGunOrNull(gunItem));
-        FireMode fireMode = iGun.getFireMode(gunItem);
-        GunFireModeAdjustData fireModeAdjustData = gunData.getFireModeAdjustData(fireMode);
-
-        return List.of(
-                buildNormal(gunData, cacheProperty, fireModeAdjustData, InaccuracyType.STAND, "gui.tacz.gun_refit.property_diagrams.hipfire_inaccuracy", 10.0),
-                buildNormal(gunData, cacheProperty, fireModeAdjustData, InaccuracyType.SNEAK, "gui.tacz.gun_refit.property_diagrams.sneak_inaccuracy", 5.0),
-                buildNormal(gunData, cacheProperty, fireModeAdjustData, InaccuracyType.LIE, "gui.tacz.gun_refit.property_diagrams.lie_inaccuracy", 5.0),
-                buildAim(gunData, cacheProperty, fireModeAdjustData)
-        );
-    }
-
-    private @NotNull DiagramsData buildNormal(GunData gunData, AttachmentCacheProperty cacheProperty, GunFireModeAdjustData fireModeAdjustData,
-                                              InaccuracyType type, String titleKey, double referenceValue) {
-        // 腰射扩散
-        float inaccuracy = gunData.getInaccuracy(type);
-        if (fireModeAdjustData != null) {
-            inaccuracy += fireModeAdjustData.getOtherInaccuracy();
-        }
-
-        float modifiedValue = cacheProperty.<Map<InaccuracyType, Float>>getCache(InaccuracyModifier.ID).get(type);
-        // 差值
-        float inaccuracyModifier = modifiedValue - inaccuracy;
-        // 默认值百分比
-        double standInaccuracyPercent = Math.min(inaccuracy / referenceValue, 1);
-        // 差值百分比
-        double inaccuracyModifierPercent = Math.min(inaccuracyModifier / referenceValue, 1);
-
-        String positivelyString = String.format("%.2f §c(+%.2f)", modifiedValue, inaccuracyModifier);
-        String negativelyString = String.format("%.2f §a(%.2f)", modifiedValue, inaccuracyModifier);
-        String defaultString = String.format("%.2f", modifiedValue);
-        boolean positivelyBetter = false;
-
-        return new DiagramsData(standInaccuracyPercent, inaccuracyModifierPercent, inaccuracyModifier,
-                titleKey, positivelyString, negativelyString, defaultString, positivelyBetter);
-    }
-
-    private @NotNull DiagramsData buildAim(GunData gunData, AttachmentCacheProperty cacheProperty, GunFireModeAdjustData fireModeAdjustData) {
-        float aimInaccuracy = gunData.getInaccuracy(InaccuracyType.AIM);
-        if (fireModeAdjustData != null) {
-            aimInaccuracy += fireModeAdjustData.getAimInaccuracy();
-        }
-
-        aimInaccuracy = 1f - aimInaccuracy;
-        float modifiedValue = 1 - cacheProperty.<Map<InaccuracyType, Float>>getCache(InaccuracyModifier.ID).get(InaccuracyType.AIM);
-
-        aimInaccuracy = Mth.clamp(aimInaccuracy, 0f, 1f);
-        modifiedValue = Mth.clamp(modifiedValue, 0f, 1f);
-
-        float inaccuracyModifier = modifiedValue - aimInaccuracy;
-
-        double aimInaccuracyPercent = Mth.clamp(aimInaccuracy, 0f, 1f);
-        double inaccuracyModifierPercent = Mth.clamp(inaccuracyModifier, 0f, 1f);
-
-        String titleKey = "gui.tacz.gun_refit.property_diagrams.aim_inaccuracy";
-        String positivelyString = String.format("%.1f%% §a(+%.1f%%)", modifiedValue * 100, inaccuracyModifier * 100);
-        String negativelyString = String.format("%.1f%% §c(%.1f%%)", modifiedValue * 100, inaccuracyModifier * 100);
-        String defaultString = String.format("%.1f%%", modifiedValue * 100);
-        boolean positivelyBetter = true;
-
-        return new DiagramsData(aimInaccuracyPercent, inaccuracyModifierPercent, inaccuracyModifier,
-                titleKey, positivelyString, negativelyString, defaultString, positivelyBetter);
-    }
-
-    @Override
-    @OnlyIn(Dist.CLIENT)
-    public int getDiagramsDataSize() {
-        return 3;
-    }
-
-    public static class InaccuracyJsonProperty extends JsonProperty<Map<InaccuracyType, Modifier>> {
-        public InaccuracyJsonProperty(Map<InaccuracyType, Modifier> value) {
-            super(value);
-        }
-
-        @Override
-        public void initComponents() {
-            createEntry(InaccuracyType.STAND, "tooltip.tacz.attachment.inaccuracy.decrease", "tooltip.tacz.attachment.inaccuracy.increase");
-            createEntry(InaccuracyType.AIM, "tooltip.tacz.attachment.aim_inaccuracy.decrease", "tooltip.tacz.attachment.aim_inaccuracy.increase");
-            createEntry(InaccuracyType.SNEAK, "tooltip.tacz.attachment.sneak_inaccuracy.decrease", "tooltip.tacz.attachment.sneak_inaccuracy.increase");
-            createEntry(InaccuracyType.LIE, "tooltip.tacz.attachment.lie_inaccuracy.decrease", "tooltip.tacz.attachment.lie_inaccuracy.increase");
-        }
-
-        private void createEntry(InaccuracyType type, String decreaseKey, String increaseKey) {
-            var value = this.getValue();
-            float inaccuracyAddend = 0;
-            if (value != null && value.containsKey(type)) {
-                // 随便传入个默认值进行测试，看看最终结果差值
-                double eval = AttachmentPropertyManager.eval(value.get(type), 5);
-                inaccuracyAddend = (float) (eval - 5);
-            }
-            // 添加文本提示
-            if (inaccuracyAddend > 0) {
-                components.add(Component.translatable(decreaseKey).withStyle(ChatFormatting.RED));
-            } else if (inaccuracyAddend < 0) {
-                components.add(Component.translatable(increaseKey).withStyle(ChatFormatting.GREEN));
-            }
-        }
     }
 
     public static class Data {

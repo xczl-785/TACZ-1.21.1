@@ -8,7 +8,6 @@ import com.tacz.guns.resource.modifier.AttachmentPropertyManager;
 import com.tacz.guns.resource.network.DataType;
 import com.tacz.guns.resource.pojo.data.attachment.AttachmentData;
 
-
 public class AttachmentDataManager extends CommonDataManager<AttachmentData> {
 
     public AttachmentDataManager() {
@@ -28,12 +27,10 @@ public class AttachmentDataManager extends CommonDataManager<AttachmentData> {
                 JsonObject jsonObject = element.getAsJsonObject();
                 if (jsonObject.has(key)) {
                     JsonProperty<?> property = value.readJson(json);
-                    property.initComponents();
                     data.addModifier(key, property);
                 } else if (jsonObject.has(value.getOptionalFields())) {
                     // 为了兼容旧版本，读取可选字段名
                     JsonProperty<?> property = value.readJson(json);
-                    property.initComponents();
                     data.addModifier(key, property);
                 }
             });

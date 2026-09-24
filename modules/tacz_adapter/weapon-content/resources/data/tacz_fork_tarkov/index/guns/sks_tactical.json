@@ -2,7 +2,6 @@
   "name": "gun.tacz_fork_tarkov.sks_tactical",
   "display": "tacz_fork_tarkov:sks_tactical",
   "data": "tacz_fork_tarkov:sks_tactical",
-  "tooltip": "tacz.gun.sks_tactical.desc",
   "type": "rifle",
   "sort": 103,
   "item_type": "tacz_fork_tarkov:sks_tactical"

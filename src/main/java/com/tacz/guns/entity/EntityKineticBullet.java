@@ -1,6 +1,5 @@
 package com.tacz.guns.entity;
 
-
 import com.google.common.collect.Lists;
 import com.tacz.guns.GunMod;
 import com.tacz.guns.api.DefaultAssets;
@@ -24,12 +23,10 @@ import com.tacz.guns.particles.BulletHoleOption;
 import com.tacz.guns.resource.modifier.AttachmentCacheProperty;
 import com.tacz.guns.resource.modifier.custom.DamageModifier;
 import com.tacz.guns.resource.modifier.custom.ExplosionModifier;
-import com.tacz.guns.resource.modifier.custom.IgniteModifier;
 import com.tacz.guns.resource.pojo.data.gun.BulletData;
 import com.tacz.guns.resource.pojo.data.gun.ExplosionData;
 import com.tacz.guns.resource.pojo.data.gun.ExtraDamage.DistanceDamagePair;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
-import com.tacz.guns.resource.pojo.data.gun.Ignite;
 import com.tacz.guns.util.EntityUtil;
 import com.tacz.guns.util.ExplodeUtil;
 import com.tacz.guns.util.TacHitResult;
@@ -38,7 +35,6 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.nbt.Tag;
-import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.syncher.SynchedEntityData;
 import net.minecraft.resources.ResourceLocation;
@@ -55,9 +51,7 @@ import net.minecraft.world.entity.projectile.Projectile;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.BaseFireBlock;
 import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
@@ -121,9 +115,6 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
     private float distanceAmount = 0;
     private float knockback = 0;
     private boolean explosion = false;
-    private boolean igniteEntity = false;
-    private boolean igniteBlock = false;
-    private int igniteEntityTime = 2;
     private float explosionDamage = 3;
     private float explosionRadius = 3;
     private int explosionDelayCount = Integer.MAX_VALUE;
@@ -186,11 +177,6 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         // speed 字段是无效的，实际生效的速度是 shootOnce 里传给 doBulletSpread 的速度
         this.gravity = Mth.clamp(modifyProperty(BULLET_GRAVITY, Float.class, bulletData.getGravity()), 0f, Float.MAX_VALUE);
         this.friction = Mth.clamp(modifyProperty(BULLET_FRICTION, Float.class, bulletData.getFriction()), 0f, Float.MAX_VALUE);
-        // 点燃
-        Ignite ignite = cacheProperty.getCache(IgniteModifier.ID);
-        this.igniteEntity = modifyProperty(IGNITE_ENTITY, Boolean.class, bulletData.getIgnite().isIgniteEntity() || ignite.isIgniteEntity());
-        this.igniteEntityTime = Math.max(modifyProperty(IGNITE_ENTITY_TIME, Integer.class, bulletData.getIgniteEntityTime()), 0);
-        this.igniteBlock = modifyProperty(IGNITE_BLOCK, Boolean.class, bulletData.getIgnite().isIgniteBlock() || ignite.isIgniteBlock());
         this.damageAmount = cacheProperty.getCache(DamageModifier.ID);
         this.distanceAmount = modifyProperty(GunProperties.EFFECTIVE_RANGE, Float.class, cacheProperty.getCache(GunProperties.EFFECTIVE_RANGE));
         int pierce = modifyProperty(GunProperties.PIERCE, Integer.class, cacheProperty.getCache(GunProperties.PIERCE));
@@ -429,14 +415,7 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         if (entity == null) {
             return;
         }
-        // 点燃
-        if (this.igniteEntity && AmmoConfig.IGNITE_ENTITY.get()) {
-            entity.setRemainingFireTicks(this.igniteEntityTime);
-            // 给予粒子效果
-            if (this.level() instanceof ServerLevel serverLevel) {
-                serverLevel.sendParticles(ParticleTypes.LAVA, entity.getX(), entity.getY() + entity.getEyeHeight(), entity.getZ(), 1, 0, 0, 0, 0);
-            }
-        }
+
         // TODO 暴击判定（不是爆头）暴击判定内部逻辑，需要输出一个是否暴击的 flag
         if (headshot) {
             // 默认爆头伤害是 1x
@@ -497,22 +476,13 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
             this.discard();
             return;
         }
-        // 弹孔与点燃特效
+        // 弹孔特效
         if (this.level() instanceof ServerLevel serverLevel) {
             BulletHoleOption bulletHoleOption = new BulletHoleOption(result.getDirection(), result.getBlockPos(), this.ammoId.toString(), this.gunId.toString(), this.gunDisplayId.toString());
             serverLevel.sendParticles(bulletHoleOption, hitVec.x, hitVec.y, hitVec.z, 1, 0, 0, 0, 0);
-            if (this.igniteBlock) {
-                serverLevel.sendParticles(ParticleTypes.LAVA, hitVec.x, hitVec.y, hitVec.z, 1, 0, 0, 0, 0);
-            }
+
         }
-        if (this.igniteBlock && AmmoConfig.IGNITE_BLOCK.get()) {
-            BlockPos offsetPos = pos.relative(result.getDirection());
-            if (BaseFireBlock.canBePlacedAt(this.level(), offsetPos, result.getDirection())) {
-                BlockState fireState = BaseFireBlock.getState(this.level(), offsetPos);
-                this.level().setBlock(offsetPos, fireState, Block.UPDATE_ALL_IMMEDIATE);
-                ((ServerLevel) this.level()).sendParticles(ParticleTypes.LAVA, hitVec.x - 1.0 + this.random.nextDouble() * 2.0, hitVec.y, hitVec.z - 1.0 + this.random.nextDouble() * 2.0, 4, 0, 0, 0, 0);
-            }
-        }
+
         this.discard();
     }
 
@@ -605,8 +575,6 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         buffer.writeResourceLocation(ammoId != null ? ammoId : ResourceLocation.fromNamespaceAndPath(GunMod.MOD_ID, "invalid"));
         buffer.writeFloat(this.gravity);
         buffer.writeBoolean(this.explosion);
-        buffer.writeBoolean(this.igniteEntity);
-        buffer.writeBoolean(this.igniteBlock);
         buffer.writeFloat(this.explosionRadius);
         buffer.writeFloat(this.explosionDamage);
         buffer.writeInt(this.life);
@@ -631,8 +599,6 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         this.ammoId = additionalData.readResourceLocation();
         this.gravity = additionalData.readFloat();
         this.explosion = additionalData.readBoolean();
-        this.igniteEntity = additionalData.readBoolean();
-        this.igniteBlock = additionalData.readBoolean();
         this.explosionRadius = additionalData.readFloat();
         this.explosionDamage = additionalData.readFloat();
         this.life = additionalData.readInt();
@@ -788,9 +754,6 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         child.distanceAmount = distanceAmount;
         child.knockback = knockback;
         child.explosion = explosion;
-        child.igniteEntity = igniteEntity;
-        child.igniteBlock = igniteBlock;
-        child.igniteEntityTime = igniteEntityTime;
         child.explosionDamage = explosionDamage;
         child.explosionRadius = explosionRadius;
         child.explosionDelayCount = explosionDelayCount;

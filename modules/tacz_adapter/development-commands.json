@@ -59,6 +59,15 @@
         "status"
       ],
       "purpose": "独立武器能力枪管禁射验证"
+    },
+    {
+      "source": "modules/tacz_adapter/src/development/java/com/tacz/guns/command/sub/DebugCommand.java",
+      "registration_method": "commands",
+      "literals": [
+        "tacz",
+        "debug"
+      ],
+      "purpose": "TaCZ近战范围调试，仅开发制品注册"
     }
   ]
 }

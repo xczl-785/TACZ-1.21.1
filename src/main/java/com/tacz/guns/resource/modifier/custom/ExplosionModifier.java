@@ -11,8 +11,6 @@ import com.tacz.guns.resource.modifier.AttachmentPropertyManager;
 import com.tacz.guns.resource.pojo.data.attachment.Modifier;
 import com.tacz.guns.resource.pojo.data.gun.ExplosionData;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
-import net.minecraft.ChatFormatting;
-import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.ItemStack;
 
 import javax.annotation.Nullable;
@@ -29,7 +27,7 @@ public class ExplosionModifier implements IAttachmentModifier<ExplosionModifier.
     @Override
     public JsonProperty<ExplosionModifierValue> readJson(String json) {
         ExplosionModifier.Data data = CommonAssetsManager.GSON.fromJson(json, ExplosionModifier.Data.class);
-        return new ExplosionModifier.ExplosionJsonProperty(data.getExplosion());
+        return new JsonProperty<>(data.getExplosion());
     }
 
     @Override
@@ -76,20 +74,6 @@ public class ExplosionModifier implements IAttachmentModifier<ExplosionModifier.
         float delay = (float) AttachmentPropertyManager.eval(delayValues, cacheValue.getDelay());
         ExplosionData explosionData = new ExplosionData(true, radius, damage, knockback, delay, destroyBlock);
         cache.setValue(explosionData);
-    }
-
-    public static class ExplosionJsonProperty extends JsonProperty<ExplosionModifierValue> {
-        public ExplosionJsonProperty(ExplosionModifier.ExplosionModifierValue value) {
-            super(value);
-        }
-
-        @Override
-        public void initComponents() {
-            ExplosionModifierValue modifierValue = getValue();
-            if (modifierValue != null && modifierValue.explode) {
-                components.add(Component.translatable("tooltip.tacz.attachment.explosion").withStyle(ChatFormatting.GOLD));
-            }
-        }
     }
 
     private static class Data {

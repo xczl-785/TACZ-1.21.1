@@ -1,0 +1,203 @@
+{
+  "reason": "Retired tooltip/ignite source fields only; model geometry unchanged and revalidated using existing contracts",
+  "reports": [
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_p90/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/p90_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/p90.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_m700/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m700_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m700.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_ump45/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/ump45_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/ump45.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_scar_l/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/scar_l_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/scar_l.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_qbz_191/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/qbz_191_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/qbz_191.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_m16a1/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/bayonet_m9_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m16a1_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m16a1.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_aa12/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/aa12_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/aa12.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_ai_awp/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/ai_awp_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/ai_awp.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_m870/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m870_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m870.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_scar_h/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/scar_h_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/scar_h.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_glock_17/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/glock_17_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/glock_17.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_uzi/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/uzi_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/uzi.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_sks_tactical/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/sks_tactical_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/sks_tactical.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-sources/native_mk14/build-report.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/mk14_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/mk14.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m870/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m870_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m870.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/ump45/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/ump45_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/ump45.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/uzi/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/uzi_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/uzi.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/qbz_191/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/qbz_191_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/qbz_191.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/ai_awp/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/ai_awp_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/ai_awp.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m16a1/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/attachments/bayonet_m9_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m16a1_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m16a1.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/scar_l/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/scar_l_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/scar_l.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/mk14/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/mk14_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/mk14.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/sks_tactical/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/sks_tactical_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/sks_tactical.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m700/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/m700_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/m700.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/p90/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/p90_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/p90.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/scar_h/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/scar_h_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/scar_h.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/glock_17/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/glock_17_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/glock_17.json"
+      ]
+    },
+    {
+      "report": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/aa12/geometry-evidence.json",
+      "updated_inputs": [
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/data/guns/aa12_data.json",
+        "src/main/resources/assets/tacz/custom/tacz_default_gun/data/tacz/index/guns/aa12.json"
+      ]
+    }
+  ]
+}

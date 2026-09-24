@@ -20,7 +20,6 @@ import com.tacz.guns.resource.pojo.data.block.BlockData;
 import com.tacz.guns.resource.pojo.data.block.TabConfig;
 import com.tacz.guns.resource.pojo.data.gun.ExtraDamage;
 import com.tacz.guns.resource.pojo.data.gun.GunData;
-import com.tacz.guns.resource.pojo.data.gun.Ignite;
 import com.tacz.guns.resource.pojo.data.loot.LootTableInjection;
 import com.tacz.guns.resource.serialize.*;
 import com.tacz.guns.util.AllowAttachmentTagMatcher;
@@ -51,7 +50,6 @@ public class CommonAssetsManager implements ICommonResourceProvider {
             .registerTypeAdapter(Pair.class, new PairSerializer())
             .registerTypeAdapter(ExtraDamage.DistanceDamagePair.class, new DistanceDamagePairSerializer())
             .registerTypeAdapter(Vec3.class, new Vec3Serializer())
-            .registerTypeAdapter(Ignite.class, new IgniteSerializer())
             .registerTypeAdapter(RecipeFilter.class, new RecipeFilter.Deserializer())
             .registerTypeAdapter(CommonGunIndex.class, new CommonGunIndexSerializer())
             .registerTypeAdapter(CommonAmmoIndex.class, new CommonAmmoIndexSerializer())
@@ -264,5 +262,4 @@ public class CommonAssetsManager implements ICommonResourceProvider {
         server.reloadResources(collection);
     }
 }
-
 

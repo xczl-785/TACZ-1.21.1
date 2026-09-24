@@ -12,8 +12,6 @@ public class AmmoConfig {
     public static ModConfigSpec.IntValue EXPLOSIVE_AMMO_VISIBLE_DISTANCE;
     public static ModConfigSpec.ConfigValue<List<String>> PASS_THROUGH_BLOCKS;
     public static ModConfigSpec.BooleanValue DESTROY_GLASS;
-    public static ModConfigSpec.BooleanValue IGNITE_BLOCK;
-    public static ModConfigSpec.BooleanValue IGNITE_ENTITY;
     public static ModConfigSpec.DoubleValue GLOBAL_BULLET_SPEED_MODIFIER;
 
     public static void init(ModConfigSpec.Builder builder) {
@@ -36,12 +34,6 @@ public class AmmoConfig {
 
         builder.comment("Whether a ammo can break the glass");
         DESTROY_GLASS = builder.define("DestroyGlass", true);
-
-        builder.comment("Whether a ammo can ignite the block");
-        IGNITE_BLOCK = builder.define("IgniteBlock", true);
-
-        builder.comment("Whether a ammo can ignite the entity");
-        IGNITE_ENTITY = builder.define("IgniteEntity", true);
 
         builder.comment("Global bullet speed modifier, the init speed of the bullet will be multiplied by this value, default is 2.0");
         builder.comment("This is to compensate the side effects introduced while fixing the shooter variable input issue");
