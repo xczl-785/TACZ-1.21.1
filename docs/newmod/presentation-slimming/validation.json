@@ -28,5 +28,13 @@
   "source_guards": "verifyPlatformExtensionBoundary verifyCorePlatformBoundary verifyWeaponModules verifyAdapterIntegration verifyConfiguredWeapons: PASS",
   "modifier_methods_unchanged": 32,
   "runtime_data_files_compared": 61,
-  "author_reports_refreshed": 28
+  "author_reports_refreshed": 28,
+  "source_commit": "b48a24014787746ab9ce26db4310f246829fec0b",
+  "build_command": "bash gradlew jar developmentJar -Pmod_version=1.1.8-hotfix-r6-slim4-newmod.963361c2 --offline --console=plain",
+  "artifact_audit": "artifact-audit.json; both PASS; debug absent in production and present in development",
+  "main_runtime_check": {
+    "command": ":tacz_runtime:check :tacz_runtime:prepareClientRun --offline --console=plain",
+    "result": "PASS; 718 TaCZ and 297 firearms classes, unique artifacts; default development",
+    "rollback": "Owner-accepted slim3 pair"
+  }
 }
