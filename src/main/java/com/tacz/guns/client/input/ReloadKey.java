@@ -47,20 +47,6 @@ public class ReloadKey {
         }
     }
 
-    public static boolean onReloadControllerPress(boolean isPress) {
-        if (isInGame() && isPress) {
-            LocalPlayer player = Minecraft.getInstance().player;
-            if (player == null || player.isSpectator()) {
-                return false;
-            }
-            if (IGun.mainHandHoldGun(player)) {
-                IClientPlayerGunOperator.fromLocalPlayer(player).reload();
-                return true;
-            }
-        }
-        return false;
-    }
-
     @SubscribeEvent
     public static void autoReload(PlayerTickEvent.Pre event) {
         if (!(event.getEntity() instanceof LocalPlayer)) {

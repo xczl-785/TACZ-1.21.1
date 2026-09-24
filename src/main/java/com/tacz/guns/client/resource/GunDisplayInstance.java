@@ -13,7 +13,6 @@ import com.tacz.guns.api.client.animation.gltf.AnimationStructure;
 import com.tacz.guns.api.client.animation.statemachine.LuaAnimationStateMachine;
 import com.tacz.guns.api.client.animation.statemachine.LuaStateMachineFactory;
 import com.tacz.guns.api.client.other.GunModelTypeManager;
-import com.tacz.guns.api.item.gun.FireMode;
 import com.tacz.guns.client.animation.statemachine.GunAnimationStateContext;
 import com.tacz.guns.client.model.BedrockGunModel;
 import com.tacz.guns.client.resource.pojo.animation.bedrock.BedrockAnimationFile;
@@ -98,7 +97,6 @@ public class GunDisplayInstance {
     private boolean showCrosshair = false;
     private @Nullable AmmoParticle particle;
     private float @Nullable [] tracerColor = null;
-    private EnumMap<FireMode, ControllableData> controllableData = new EnumMap<>(FireMode.class);
     private AmmoCountStyle ammoCountStyle = AmmoCountStyle.NORMAL;
     private DamageStyle damageStyle = DamageStyle.PER_PROJECTILE;
     private @Nullable LaserConfig laserConfig;
@@ -373,7 +371,6 @@ public class GunDisplayInstance {
             is3rdFixedHand = display.is3rdFixedHand();
         }
         showCrosshair = display.isShowCrosshair();
-        controllableData = display.getControllableData();
         ammoCountStyle = display.getAmmoCountStyle();
         damageStyle = display.getDamageStyle();
         laserConfig = display.getLaserConfig();
@@ -762,10 +759,6 @@ public class GunDisplayInstance {
 
     public boolean is3rdFixedHand() {
         return is3rdFixedHand;
-    }
-
-    public EnumMap<FireMode, ControllableData> getControllableData() {
-        return controllableData;
     }
 
     public AmmoCountStyle getAmmoCountStyle() {

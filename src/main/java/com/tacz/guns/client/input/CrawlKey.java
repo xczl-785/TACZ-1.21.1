@@ -60,35 +60,4 @@ public class CrawlKey {
         }
     }
 
-    public static boolean onCrawlControllerPress(boolean isPress) {
-        if (!isInGame()) {
-            return false;
-        }
-        if (!SyncConfig.ENABLE_CRAWL.get()) {
-            return false;
-        }
-        LocalPlayer player = Minecraft.getInstance().player;
-        if (player == null || player.isSpectator() || player.isPassenger()) {
-            return false;
-        }
-        if (!(player instanceof IClientPlayerGunOperator operator)) {
-            return false;
-        }
-        if (!IGun.mainHandHoldGun(player)) {
-            return false;
-        }
-        boolean action = true;
-        if (!KeyConfig.HOLD_TO_CRAWL.get()) {
-            action = !operator.isCrawl();
-        }
-        if (isPress) {
-            IClientPlayerGunOperator.fromLocalPlayer(player).crawl(action);
-            return true;
-        }
-        if (KeyConfig.HOLD_TO_CRAWL.get()) {
-            IClientPlayerGunOperator.fromLocalPlayer(player).crawl(false);
-            return true;
-        }
-        return false;
-    }
 }

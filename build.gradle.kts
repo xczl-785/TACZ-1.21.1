@@ -131,8 +131,6 @@ dependencies {
     implementation(libs.maven.modrinth.iris)
     implementation(libs.curse.maven.acceleratedrendering)
     compileOnly(libs.maven.modrinth.shoulder.surfing.reloaded)
-    compileOnly(libs.curse.maven.framework)
-    compileOnly(libs.curse.maven.controllable)
     implementation(libs.dev.latvian.mods.kubejs.neoforge)
     compileOnly(libs.dev.latvian.mods.rhino)
     runtimeOnly(libs.dev.latvian.mods.rhino)

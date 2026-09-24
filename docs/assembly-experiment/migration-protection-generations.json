@@ -9470,6 +9470,11 @@
           "after_sha256": "e173fa4f79f09be9d6c7730ddb174ef40e58b0525fa078798af84101efa59c97"
         },
         {
+          "path": "modules/tacz_adapter/src/test/java/dev/tacticaltacz/LegacyDisplayMetadataTest.java",
+          "before_sha256": null,
+          "after_sha256": "96cab1e861402e24388537f58d0d973652020fc1311a7633b02e73e9772e74d3"
+        },
+        {
           "path": "modules/tacz_adapter/src/test/java/dev/tacticaltacz/PlatformExtensionContractTest.java",
           "before_sha256": "ec8005446ca3416a074670f83bef7258ee950a5a5e000f353568b38dd844e105",
           "after_sha256": "de6e3cf3006b481c7b28976dcb80fbfcb09cfee4af0b791b6df4e2b4a1b13333"
@@ -9887,7 +9892,12 @@
         {
           "path": "src/main/java/com/tacz/guns/client/init/ClientSetupEvent.java",
           "before_sha256": "7f02a6fc458006956bcd42ae174cb2050175e27c3101d78fabc9c073671e1790",
-          "after_sha256": "99401c6d34c642b017c3e4f7290a2558e29caa9cee9d567819ec1e6682ce2b5e"
+          "after_sha256": "cc73a81f302ecab62e409e69553cf06407c84644078fa7dba7ddc3cb1fe1cf96"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/client/input/AimKey.java",
+          "before_sha256": "2fbc99cd096fa94ba50b4ae97048d277fbfc4353f4e7b6094dc1390de4309582",
+          "after_sha256": "ae6983172b3eca6c48f5a3893d215fe7602cd4290931166aa3102adfedbbf338"
         },
         {
           "path": "src/main/java/com/tacz/guns/client/input/ConfigKey.java",
@@ -9895,14 +9905,64 @@
           "after_sha256": null
         },
         {
+          "path": "src/main/java/com/tacz/guns/client/input/CrawlKey.java",
+          "before_sha256": "b659ba7579948a619a5bb8f45bbe9f7ebcf19e4384f9ea83ff49c936ee6231fc",
+          "after_sha256": "6b7e308c8dddf0b32d66561bd4be6c7900563e5b0b2a4c0fd25fae832e641bc6"
+        },
+        {
           "path": "src/main/java/com/tacz/guns/client/input/FireSelectKey.java",
           "before_sha256": "8d7e2459e22cf1f5a45b2bfb58e3ff094b3820571adfe413b6645699578196ee",
-          "after_sha256": "8bc99ad233264580fb6c27b505c99c456ceefc3f8fb2c2a01a34d296a5a59ea2"
+          "after_sha256": "bed4f04fa769c33d4cabfd0a67185a2209464f99ad617782c195a4578481645f"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/client/input/InspectKey.java",
+          "before_sha256": "e709a9209cd5b327f09a07e80ade637170fb176014efc8afc90c39e3d3aeee7d",
+          "after_sha256": "af1d44b7502179535133ce4b1ae35246bbfd769bf0d3bb15742a786ee01f2408"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/client/input/InteractKey.java",
+          "before_sha256": "f32827be44e664b17343983ab0ffc44aaa838d781f408d53afcb4bc7cf170a07",
+          "after_sha256": "ebc8727a0f3bfb2611d92b55f79d090afcca4f1ebc7b3e6e59c24f4d9e04a73e"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/client/input/MeleeKey.java",
+          "before_sha256": "e3a3eedf9663d7710276417fe0f84c1153280d64b3b6a85d4d134141ca77127e",
+          "after_sha256": "84bbeff59e02b2ef3e6eaf78ff9164e433c902ea78e87f7e6b788e70b176aeb5"
         },
         {
           "path": "src/main/java/com/tacz/guns/client/input/RefitKey.java",
           "before_sha256": "a39e60281cef1a4bc45b43d12eded5ca57b6e7505effe4b76d1013e25ff7342c",
           "after_sha256": "930815b66d973969268345523ffed6b21e46b91f82369d82f6729e51faea4c20"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/client/input/ReloadKey.java",
+          "before_sha256": "cc49a699c1f83879d57cf89c2b4faac26ac6d42a1c68a3f9515fd6dbbc20a029",
+          "after_sha256": "ce6eb061ee3431050d8ec5abe138e66e3a3382b33e75931bd18672630d146211"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/client/input/ShootKey.java",
+          "before_sha256": "6dcea87eb1bf746bfd6ad80441676998081e3163d5f04c94c7ecdc8d6a8d06e4",
+          "after_sha256": "2338c66cf68076dd49b0a96b437a9697d6abc548ed14bc595659b3a458af2304"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/client/input/ZoomKey.java",
+          "before_sha256": "c21ba1b9d115025d5f86d75ab66dc8a03987db47ef6c7ced832576a939e249e8",
+          "after_sha256": "04a4ffa8aa06a301be5907113bf9a536503723bbb966c7b595389fd8c759272d"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/client/resource/GunDisplayInstance.java",
+          "before_sha256": "a7a4ff2e94e19614f5b6b2db5061d982319e68ebfb984144759fd10dfbdd6afe",
+          "after_sha256": "2165fc4a064237c28bf9284c1346c2a454814f11a0f6b680fe2ccf32e5b83a80"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/client/resource/pojo/display/gun/ControllableData.java",
+          "before_sha256": "8a245375257073d56d3fbc721fa670e95f39af704c01dcfe90bc1a9399628e2b",
+          "after_sha256": null
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/client/resource/pojo/display/gun/GunDisplay.java",
+          "before_sha256": "f403370167bad210e02b5079be4aadf546d1f8bc439c2f28b60485bdac1be89f",
+          "after_sha256": "dd7e6e2363bea174cbabc2ffb180dc5db2fe2cbf7d18893578b6086e059ccaee"
         },
         {
           "path": "src/main/java/com/tacz/guns/client/tooltip/ClientGunTooltip.java",
@@ -9970,6 +10030,16 @@
           "after_sha256": null
         },
         {
+          "path": "src/main/java/com/tacz/guns/compat/controllable/ControllableCompat.java",
+          "before_sha256": "f0a2e86df4b3a39eaf28d69b42279940ad87f04d0050eb31dfa0cc23ae5d830a",
+          "after_sha256": null
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/compat/controllable/ControllableInner.java",
+          "before_sha256": "1e8c0f6f207ab5d034d3db294bd5b8170df74e31600b71479268fa34713aa7e4",
+          "after_sha256": null
+        },
+        {
           "path": "src/main/java/com/tacz/guns/compat/jei/GunModPlugin.java",
           "before_sha256": "5bf8cb9da1d8082042cb624144e1ae9b67e3bc1a546bf216f57fee4255cd545c",
           "after_sha256": null
@@ -10003,6 +10073,11 @@
           "path": "src/main/java/com/tacz/guns/init/ModCreativeTabs.java",
           "before_sha256": "e7b9e53bbd8d381eb6765d595fac5b6d6f7c244cf54e68ca3af0929233187059",
           "after_sha256": "7c5524991907b516457147de7984d5391fea80d373c1d3c40c8bfe6b1e680509"
+        },
+        {
+          "path": "src/main/java/com/tacz/guns/mixin/common/BindingContextMixin.java",
+          "before_sha256": "61c5a5289d2225b409c70c11a0bfe8833425d1b115e45cdb7610b29ed2157792",
+          "after_sha256": null
         },
         {
           "path": "src/main/resources/META-INF/neoforge.mods.toml",
@@ -10113,6 +10188,11 @@
           "path": "src/main/resources/assets/tacz/lang/zh_tw.json",
           "before_sha256": "3c37374f2077c31375789abd149feae5c7fa24f6c928fe9daf7a0eec8086b470",
           "after_sha256": "41db73444ef902a34936f9e55c56861c223090c4ea0ee4c83e1a8f4cd5d4209f"
+        },
+        {
+          "path": "src/main/resources/tacz.mixins.json",
+          "before_sha256": "eda8ffbf35520078d2417cee9253658cc164dc85ea1c20411ed819582ea62004",
+          "after_sha256": "9eaa6e0c74612fb13bdc8999042bdc01720b23e61d564e89f2fd47bb4254486f"
         },
         {
           "path": "tools/adapter_migration.py",

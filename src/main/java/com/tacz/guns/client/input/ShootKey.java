@@ -8,7 +8,6 @@ import com.tacz.guns.api.item.IGun;
 import com.tacz.guns.api.item.gun.FireMode;
 import com.tacz.guns.client.gameplay.LocalPlayerSprint;
 import com.tacz.guns.client.sound.SoundPlayManager;
-import com.tacz.guns.compat.controllable.ControllableCompat;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
@@ -33,7 +32,6 @@ public class ShootKey {
             GLFW.GLFW_MOUSE_BUTTON_LEFT,
             "key.category.tacz");
     private static boolean lastTimeShootSuccess = false;
-    private static boolean controllerShootDown = false;
 
     @SubscribeEvent
     public static void autoShoot(ClientTickEvent.Post event) {
@@ -54,7 +52,7 @@ public class ShootKey {
                     .map(index -> index.getGunData().getBurstData().isContinuousShoot())
                     .orElse(false);
             IClientPlayerGunOperator operator = IClientPlayerGunOperator.fromLocalPlayer(player);
-            boolean isShootDown = SHOOT_KEY.isDown() || controllerShootDown;
+            boolean isShootDown = SHOOT_KEY.isDown();
             boolean canContinuouslyShoot = fireMode == FireMode.AUTO || isBurstAuto;
             boolean shouldCharge = isShootDown && (canContinuouslyShoot || !lastTimeShootSuccess);
             if (operator.chargeShoot(shouldCharge)) {
@@ -65,7 +63,6 @@ public class ShootKey {
                 }
                 if (operator.shoot() == ShootResult.SUCCESS) {
                     lastTimeShootSuccess = true;
-                    ControllableCompat.onGunShoot(mainHandItem, fireMode);
                 }
             }
             if (isShootDown) {
@@ -75,11 +72,6 @@ public class ShootKey {
                 SoundPlayManager.resetDryFireSound();
             }
         }
-    }
-
-    public static boolean shootControllerTick(boolean isShootDown) {
-        controllerShootDown = isShootDown;
-        return false;
     }
 
 }

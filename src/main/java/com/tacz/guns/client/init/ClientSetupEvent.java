@@ -15,7 +15,6 @@ import com.tacz.guns.client.tooltip.ClientAttachmentItemTooltip;
 import com.tacz.guns.client.tooltip.ClientBlockItemTooltip;
 import com.tacz.guns.client.tooltip.ClientGunTooltip;
 import com.tacz.guns.compat.ar.ARCompat;
-import com.tacz.guns.compat.controllable.ControllableCompat;
 import com.tacz.guns.compat.playeranimator.PlayerAnimatorCompat;
 import com.tacz.guns.compat.shouldersurfing.ShoulderSurfingCompat;
 import com.tacz.guns.init.ModItems;
@@ -80,8 +79,6 @@ public class ClientSetupEvent {
         // 与 Shoulder Surfing Reloaded 的兼容
         event.enqueueWork(ShoulderSurfingCompat::init);
 
-        // 与 Controllable 的兼容
-        event.enqueueWork(ControllableCompat::init);
 
         // 与 Accelerated Rendering 的兼容
 		event.enqueueWork(ARCompat::init);

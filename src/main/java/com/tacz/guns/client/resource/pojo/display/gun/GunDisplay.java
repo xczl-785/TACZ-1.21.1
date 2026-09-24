@@ -2,14 +2,12 @@ package com.tacz.guns.client.resource.pojo.display.gun;
 
 import com.google.common.collect.Maps;
 import com.google.gson.annotations.SerializedName;
-import com.tacz.guns.api.item.gun.FireMode;
 import com.tacz.guns.client.resource.pojo.display.IDisplay;
 import com.tacz.guns.client.resource.pojo.display.LaserConfig;
 import net.minecraft.resources.ResourceLocation;
 import org.jetbrains.annotations.NotNull;
 
 import javax.annotation.Nullable;
-import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
 
@@ -94,8 +92,6 @@ public class GunDisplay implements IDisplay {
     private Map<String, TextShow> textShows = Maps.newHashMap();
     @SerializedName("show_crosshair")
     private boolean showCrosshair = false;
-    @SerializedName("controllable")
-    private EnumMap<FireMode, ControllableData> controllableData = Maps.newEnumMap(FireMode.class);
     @SerializedName("laser")
     private LaserConfig laserConfig;
 
@@ -225,10 +221,6 @@ public class GunDisplay implements IDisplay {
 
     public boolean isShowCrosshair() {
         return showCrosshair;
-    }
-
-    public EnumMap<FireMode, ControllableData> getControllableData() {
-        return controllableData;
     }
 
     public @NotNull AmmoCountStyle getAmmoCountStyle() {

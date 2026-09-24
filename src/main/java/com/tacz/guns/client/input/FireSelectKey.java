@@ -39,20 +39,6 @@ public class FireSelectKey {
         }
     }
 
-    public static boolean onFireSelectControllerPress(boolean isPress) {
-        if (isInGame() && isPress) {
-            LocalPlayer player = Minecraft.getInstance().player;
-            if (player == null || player.isSpectator()) {
-                return false;
-            }
-            if (IGun.mainHandHoldGun(player)) {
-                IClientPlayerGunOperator.fromLocalPlayer(player).fireSelect();
-                return true;
-            }
-        }
-        return false;
-    }
-
     private static void doFireSelectLogic() {
         LocalPlayer player = Minecraft.getInstance().player;
         if (player == null || player.isSpectator()) {

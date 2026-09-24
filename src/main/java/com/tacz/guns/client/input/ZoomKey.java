@@ -40,21 +40,6 @@ public class ZoomKey {
         }
     }
 
-    public static boolean onZoomControllerPress(boolean isPress) {
-        if (isInGame() && isPress) {
-            LocalPlayer player = Minecraft.getInstance().player;
-            if (player == null || player.isSpectator()) {
-                return false;
-            }
-            IClientPlayerGunOperator operator = IClientPlayerGunOperator.fromLocalPlayer(player);
-            if (operator.isAim()) {
-                PacketDistributor.sendToServer(ClientMessagePlayerZoom.INSTANCE);
-                return true;
-            }
-        }
-        return false;
-    }
-
     private static void doZoomLogic() {
         LocalPlayer player = Minecraft.getInstance().player;
         if (player == null || player.isSpectator()) {
