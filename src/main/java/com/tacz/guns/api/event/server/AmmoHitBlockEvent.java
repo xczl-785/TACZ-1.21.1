@@ -1,6 +1,5 @@
 package com.tacz.guns.api.event.server;
 
-import com.tacz.guns.api.event.common.KubeJSGunEventPoster;
 import com.tacz.guns.entity.EntityKineticBullet;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
@@ -11,7 +10,7 @@ import net.neoforged.bus.api.ICancellableEvent;
 /**
  * 子弹击中方块时触发的事件，目前仅在服务端触发
  */
-public class AmmoHitBlockEvent extends Event implements KubeJSGunEventPoster<AmmoHitBlockEvent>, ICancellableEvent {
+public class AmmoHitBlockEvent extends Event implements ICancellableEvent {
     private final Level level;
     private final BlockHitResult hitResult;
     private final BlockState state;
@@ -22,7 +21,6 @@ public class AmmoHitBlockEvent extends Event implements KubeJSGunEventPoster<Amm
         this.hitResult = hitResult;
         this.state = state;
         this.ammo = ammo;
-        postServerEventToKubeJS(this);
     }
 
     public Level getLevel() {

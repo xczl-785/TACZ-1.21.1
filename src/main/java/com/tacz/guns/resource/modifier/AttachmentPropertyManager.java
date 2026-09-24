@@ -60,7 +60,6 @@ public class AttachmentPropertyManager {
             // 发布事件
             AttachmentPropertyEvent event = new AttachmentPropertyEvent(shooter, gunItem, cacheProperty);
             ChangeGunPropertyEvent.internalOnAttachmentPropertyEvent(event);
-            event.postEventToKubeJS(event);
             NeoForge.EVENT_BUS.post(event);
             // 让脚本更新缓存
             IGunOperator operator = IGunOperator.fromLivingEntity(shooter);

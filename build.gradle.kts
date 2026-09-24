@@ -78,13 +78,6 @@ repositories {
             includeGroup("dev.architectury")
         }
     }
-    maven {
-        url = uri("https://maven.latvian.dev/releases")
-        content {
-            includeGroup("dev.latvian.mods")
-            includeGroup("dev.latvian.apps")
-        }
-    }
     exclusiveContent {
         forRepository {
             maven {
@@ -131,9 +124,6 @@ dependencies {
     implementation(libs.maven.modrinth.iris)
     implementation(libs.curse.maven.acceleratedrendering)
     compileOnly(libs.maven.modrinth.shoulder.surfing.reloaded)
-    implementation(libs.dev.latvian.mods.kubejs.neoforge)
-    compileOnly(libs.dev.latvian.mods.rhino)
-    runtimeOnly(libs.dev.latvian.mods.rhino)
 }
 
 java {

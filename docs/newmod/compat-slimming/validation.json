@@ -1,0 +1,114 @@
+{
+  "date": "2026-09-24",
+  "build_command": "bash gradlew compileJava compileStandaloneCore verifyPlatformExtensionBoundary adapterTest jar developmentJar --offline --console=plain",
+  "build_result": "BUILD SUCCESSFUL in 1m 41s; 16 tasks: 15 executed / 1 up-to-date",
+  "platform_boundary_tests": 4,
+  "adapter_test_totals": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "adapter_test_suites": [
+    {
+      "name": "dev.tacticaltacz.assembled.NativeAssemblyRulesTest",
+      "tests": "5",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.AdoptedAmmunitionTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.refit.NativeGunRefitProviderTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.assembled.NativeAssemblyVisualRulesTest",
+      "tests": "7",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.TaCZActionEventsTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.AmmoProfileContractTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.NativeEventAndLuaTest",
+      "tests": "2",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.assembled.NativeAssemblyFeedTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.assembled.NativeAssemblyProfileTest",
+      "tests": "4",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.PlatformExtensionContractTest",
+      "tests": "3",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.assembled.NativeAssemblyIconImageTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    },
+    {
+      "name": "dev.tacticaltacz.LegacyDisplayMetadataTest",
+      "tests": "1",
+      "failures": "0",
+      "errors": "0",
+      "skipped": "0"
+    }
+  ],
+  "packaging_command": "bash gradlew verifyCorePlatformBoundary verifyWeaponModules verifyAdapterIntegration jar developmentJar -Pmod_version=1.1.8-hotfix-r6-compat-slimming.20260924 -x verifyConfiguredWeapons --offline --console=plain",
+  "packaging_result": "BUILD SUCCESSFUL in 37s; 14 tasks: 9 executed / 5 up-to-date",
+  "configured_weapons": 15,
+  "physical_items": 146,
+  "not_run": [
+    "full check",
+    "registry-backed test",
+    "Minecraft client/server",
+    "with retired optional mods",
+    "without TaCZ full gameplay plus raid"
+  ],
+  "main_repository_start_and_finish": "751468fb",
+  "lock_and_vendor_status": "unchanged SHA-256; see artifact-audit.json",
+  "initial_parse_test_note": "M870 production deserialization passed; initial extra serialization assertion hit existing Vector3fSerializer defect. Final test compares parsed resource/action/sound fields, deferred serializer issue is documented.",
+  "test_compile_command": "bash gradlew compileTestJava --offline --console=plain",
+  "test_compile_result": "BUILD SUCCESSFUL in 1m 10s; 7 tasks: 5 executed / 2 up-to-date"
+}

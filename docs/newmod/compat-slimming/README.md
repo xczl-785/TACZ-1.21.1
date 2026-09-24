@@ -6,6 +6,25 @@
 
 来源与逐文件裁决见主仓[调查](../../../../docs/进行中/TaCZ轻量化调查与无依赖评测.md)和[候选清单](../../../../implementation-evidence/tacz-slimming-compat-candidates-20260924.json)。原路径直接退役，没有替代 Mod ID、物品 ID 或空兼容壳；原许可证和署名保留。完整 diff 与本目录结果清单供后续追溯。
 
+## 已完成的离线交付
+
+实际删除 31 个 Java 文件、2,124 物理行，另删两个 KubeJS 文本入口；清调用、依赖、版本别名、测试依赖、Mixin 和 21 份语言文件。其中生产 Java 净减 2,347 行；生产源码/资源/构建范围共 87 文件，新增 35 行、删除 4,509 行，净减 4,474 行；此数字不含新增测试和审计文档，不是性能收益。详见[逐文件来源、删除理由与哈希](source-audit.json)。
+
+- `29502d3e`：JEI / Cloth / Carry On 退出。
+- `5a6a1c1c`：Controllable 退出与 M870 解析回归。
+- KubeJS 退出及本批证据随本页后继提交记录；无推送。
+
+执行 `bash gradlew compileJava compileStandaloneCore verifyPlatformExtensionBoundary adapterTest jar developmentJar --offline --console=plain`：通过（1m 41s，16 tasks，15 executed / 1 up-to-date）。4 项平台扩展测试与 32 项 adapter 测试通过；包括实际 NeoForge 总线取消开火/换弹、LuaJ 配件公式、M870 display 加载。15 枪 / 146 物理物品资源检查实际通过。编译仍有既有 API 弃用及 unchecked 警告。
+
+额外执行 `verifyCorePlatformBoundary verifyWeaponModules verifyAdapterIntegration` 和带独立版本号的 `jar developmentJar`：通过（37s，14 tasks，9 executed / 5 up-to-date）。第二次打包仅改版本元数据，沿用前一次已通过的内容验证，显式 `-x verifyConfiguredWeapons`；不称为全新干净构建。移除 Rhino 后的 `compileTestJava --offline --console=plain` 也通过（1m 10s）。本批没有跑全量 `check`，也没有 registry-backed `test` 或 Minecraft 启动验收。
+
+候选都留在 fork `build/libs/`（正式/开发仅选一个）：
+
+- [正式 Jar](../../../build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-compat-slimming.20260924.jar)，60,597,461 bytes。
+- [开发 Jar](../../../build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-compat-slimming.20260924-development.jar)，60,830,255 bytes。
+
+[制品审计与 SHA-256](artifact-audit.json)：两包均无 31 个退役类（含内部类）、KubeJS 文本入口、手柄 Mixin 或退役外部 API 字节码引用；保留平台服务、四类配置、配置命令、渲染/动画兼容、15 枪索引、20 份 Lua、LuaJ 内嵌依赖及靶子/靶车/展示架。M870 JSON 与源文件逐字节一致。双方锁和主仓 vendor 制品哈希与起点相同。可在 fork 运行 `python3 docs/newmod/compat-slimming/verify_artifacts.py` 重验上述两包。
+
 ## 行为边界
 
 - JEI 不再展示 TaCZ 配件查询；公共组装与配件计算保留。

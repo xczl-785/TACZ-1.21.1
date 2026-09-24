@@ -19,8 +19,6 @@ sodium-modrinth = "mc1.21.1-0.6.13-neoforge"
 iris-modrinth = "1.8.12+1.21.1-neoforge"
 acceleratedrendering-curseforge = "8448200"
 shoulder-surfing-reloaded-modrinth = "1.21.1-4.7.0+neoforge"
-kubejs = "2101.7.1-build.181"
-rhino = "2101.2.7-build.74"
 
 [libraries]
 com-github-mcmodderanchor-simplebedrockmodel = { module = "com.github.mcmodderanchor:simplebedrockmodel", version.ref = "simplebedrockmodel" }
@@ -35,8 +33,6 @@ maven-modrinth-sodium = { module = "maven.modrinth:sodium", version.ref = "sodiu
 maven-modrinth-iris = { module = "maven.modrinth:iris", version.ref = "iris-modrinth" }
 curse-maven-acceleratedrendering = { module = "curse.maven:accelerated-rendering-1314021", version.ref = "acceleratedrendering-curseforge" }
 maven-modrinth-shoulder-surfing-reloaded = { module = "maven.modrinth:shoulder-surfing-reloaded", version.ref = "shoulder-surfing-reloaded-modrinth" }
-dev-latvian-mods-kubejs-neoforge = { module = "dev.latvian.mods:kubejs-neoforge", version.ref = "kubejs" }
-dev-latvian-mods-rhino = { module = "dev.latvian.mods:rhino", version.ref = "rhino" }
 
 [plugins]
 dotenv = { id = "co.uzzu.dotenv.gradle", version.ref = "dotenv" }

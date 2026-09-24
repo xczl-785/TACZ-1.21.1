@@ -139,14 +139,6 @@ tasks.named('test', Test) {
     useJUnitPlatform()
     workingDir projectDir
 }
-// Match the production Rhino version for KubeJS' transitive compile edge.
-dependencies { testImplementation(libs.dev.latvian.mods.rhino) }
-// Optional recipe/scripting UI is outside registry-backed assembly tests.
-configurations.testRuntimeClasspath {
-    exclude group: 'mezz.jei'
-    exclude group: 'dev.latvian.mods', module: 'kubejs-neoforge'
-}
-
 // Cross-gun authoring assets stay opt-in until each assembled weapon is integrated.
 tasks.register('verifyNativeAttachmentLibrary', Exec) {
     environment 'PYTHONDONTWRITEBYTECODE', '1'

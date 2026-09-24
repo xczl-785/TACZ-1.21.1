@@ -1,0 +1,95 @@
+{
+  "date": "2026-09-24",
+  "scope": "Offline artifact inspection only; no Minecraft acceptance",
+  "source_audit_sha256": "3464662a7244911ad3a65cdc3c1c50dd2267264c4581d3c479c9921d289ebdc4",
+  "artifacts": [
+    {
+      "path": "build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-compat-slimming.20260924-development.jar",
+      "bytes": 60830255,
+      "sha256": "e00214d16e678194c1a4d82e9ef01a5ed6ff1e8873ea4fc865ebd2439d4ea9a9",
+      "managed_gun_indices": 15,
+      "lua_files": 20,
+      "required_entries": [
+        "com/tacz/guns/compat/iris/IrisCompat.class",
+        "com/tacz/guns/compat/ar/ARCompat.class",
+        "com/tacz/guns/compat/playeranimator/PlayerAnimatorCompat.class",
+        "com/tacz/guns/compat/shouldersurfing/ShoulderSurfingCompat.class",
+        "com/tacz/guns/compat/optifine/OptifineCompat.class",
+        "com/tacz/guns/config/PreLoadConfig.class",
+        "com/tacz/guns/config/CommonConfig.class",
+        "com/tacz/guns/config/ServerConfig.class",
+        "com/tacz/guns/config/ClientConfig.class",
+        "com/tacz/guns/command/sub/ConfigCommand.class",
+        "com/tacz/guns/command/sub/ConfigCommand$ConfigKey.class",
+        "com/tacz/guns/client/input/ShootKey.class",
+        "com/tacz/guns/client/input/AimKey.class",
+        "com/tacz/guns/api/event/common/GunFireEvent.class",
+        "com/tacz/guns/resource/modifier/AttachmentPropertyManager.class",
+        "shouldersurfing_plugin.json",
+        "META-INF/services/com.tacz.guns.api.extension.GunPlatformExtension",
+        "META-INF/services/com.tacz.guns.api.extension.GunClientExtension",
+        "META-INF/services/com.tacz.guns.api.extension.AssemblyEntryExtension",
+        "com/tacz/guns/entity/TargetMinecart.class",
+        "com/tacz/guns/block/TargetBlock.class",
+        "com/tacz/guns/block/StatueBlock.class"
+      ],
+      "nested_jars": [
+        "META-INF/jarjar/bcel-6.6.1.jar",
+        "META-INF/jarjar/commons-math3-3.6.1.jar",
+        "META-INF/jarjar/luaj-core-3.0.8-figura.jar",
+        "META-INF/jarjar/luaj-jse-3.0.8-figura.jar",
+        "META-INF/jarjar/simplebedrockmodel-2.2.1-neoforge+mc1.21.1.jar"
+      ],
+      "retired_entries_absent": true,
+      "retired_bytecode_references_absent": true
+    },
+    {
+      "path": "build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-compat-slimming.20260924.jar",
+      "bytes": 60597461,
+      "sha256": "0775c6d6eb70296a88ddce19531ed233ba4cd1c0efb1181ef971632a8127d408",
+      "managed_gun_indices": 15,
+      "lua_files": 20,
+      "required_entries": [
+        "com/tacz/guns/compat/iris/IrisCompat.class",
+        "com/tacz/guns/compat/ar/ARCompat.class",
+        "com/tacz/guns/compat/playeranimator/PlayerAnimatorCompat.class",
+        "com/tacz/guns/compat/shouldersurfing/ShoulderSurfingCompat.class",
+        "com/tacz/guns/compat/optifine/OptifineCompat.class",
+        "com/tacz/guns/config/PreLoadConfig.class",
+        "com/tacz/guns/config/CommonConfig.class",
+        "com/tacz/guns/config/ServerConfig.class",
+        "com/tacz/guns/config/ClientConfig.class",
+        "com/tacz/guns/command/sub/ConfigCommand.class",
+        "com/tacz/guns/command/sub/ConfigCommand$ConfigKey.class",
+        "com/tacz/guns/client/input/ShootKey.class",
+        "com/tacz/guns/client/input/AimKey.class",
+        "com/tacz/guns/api/event/common/GunFireEvent.class",
+        "com/tacz/guns/resource/modifier/AttachmentPropertyManager.class",
+        "shouldersurfing_plugin.json",
+        "META-INF/services/com.tacz.guns.api.extension.GunPlatformExtension",
+        "META-INF/services/com.tacz.guns.api.extension.GunClientExtension",
+        "META-INF/services/com.tacz.guns.api.extension.AssemblyEntryExtension",
+        "com/tacz/guns/entity/TargetMinecart.class",
+        "com/tacz/guns/block/TargetBlock.class",
+        "com/tacz/guns/block/StatueBlock.class"
+      ],
+      "nested_jars": [
+        "META-INF/jarjar/luaj-core-3.0.8-figura.jar",
+        "META-INF/jarjar/simplebedrockmodel-2.2.1-neoforge+mc1.21.1.jar",
+        "META-INF/jarjar/bcel-6.6.1.jar",
+        "META-INF/jarjar/commons-math3-3.6.1.jar",
+        "META-INF/jarjar/luaj-jse-3.0.8-figura.jar"
+      ],
+      "retired_entries_absent": true,
+      "retired_bytecode_references_absent": true
+    }
+  ],
+  "protected_locks_and_vendor_sha256": {
+    "/Users/zhengpanpan/Downloads/tempProgram/NewMod/TACZ-1.21.1/modules/tacz_adapter/public-dependency-lock.json": "021ff797911cc7bbe32224327f6b8033bc1330c478d06a3e6c6186739b46caea",
+    "/Users/zhengpanpan/Downloads/tempProgram/NewMod/source/integration-tests/tacz-runtime/dependency-lock.json": "308b7a651a223246cd5cf4c35f2f051e4ed935aa67ea451606a42401f71e9ae6",
+    "/Users/zhengpanpan/Downloads/tempProgram/NewMod/source/vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-keybind-b-newmod.963361c2-development.jar": "588d2fe06fb589e6ff814917fe358dd3f0b59d982a26731ba3e784b429a80a6d",
+    "/Users/zhengpanpan/Downloads/tempProgram/NewMod/source/vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-keybind-b-newmod.963361c2.jar": "29972882e73836b0405362137e4c03ffac508bf5f3fce51088647c6e17b859a8",
+    "/Users/zhengpanpan/Downloads/tempProgram/NewMod/source/vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-scope15-newmod.963361c2-development.jar": "6c8e677014e9a3f9aed1e200cd8c2c0d0074e38407ff920fb602f5ca96336e22",
+    "/Users/zhengpanpan/Downloads/tempProgram/NewMod/source/vendor/tacz/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-scope15-newmod.963361c2.jar": "9c210fdd1411f3f5a2f55deeb0096f56351db4b7d77db0a846605aef8bdaecc0"
+  }
+}

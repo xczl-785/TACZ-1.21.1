@@ -10,7 +10,7 @@ import net.neoforged.bus.api.Event;
  * <p>
  * 如果有其他模组想要添加自定义的配件属性修改值，可以捕获此事件
  */
-public class AttachmentPropertyEvent extends Event implements KubeJSGunEventPoster<AttachmentPropertyEvent> {
+public class AttachmentPropertyEvent extends Event {
     private final LivingEntity shooter;
     private final ItemStack gunItem;
     private final AttachmentCacheProperty cacheProperty;

@@ -17,7 +17,7 @@ import java.util.Optional;
 /**
  * 生物被枪械子弹伤害时触发的事件
  */
-public class EntityHurtByGunEvent extends Event implements KubeJSGunEventPoster<EntityHurtByGunEvent>, ICancellableEvent {
+public class EntityHurtByGunEvent extends Event implements ICancellableEvent {
     protected final Entity bullet;
     protected @Nullable Entity hurtEntity;
     protected @Nullable LivingEntity attacker;
@@ -58,7 +58,6 @@ public class EntityHurtByGunEvent extends Event implements KubeJSGunEventPoster<
                    boolean isHeadShot, float headshotMultiplier, LogicalSide logicalSide) {
             super(bullet, hurtEntity, attacker, gunId, gunDisplayId, amount, sources, isHeadShot, headshotMultiplier, logicalSide);
             this.headshotMultiplier = headshotMultiplier;
-            postEventToKubeJS(this);
         }
 
         public final void setHurtEntity(@Nullable Entity hurtEntity) {
@@ -108,7 +107,6 @@ public class EntityHurtByGunEvent extends Event implements KubeJSGunEventPoster<
                     float amount, @Nullable Pair<DamageSource, DamageSource> sources,
                     boolean isHeadShot, float headshotMultiplier, LogicalSide logicalSide) {
             super(bullet, hurtEntity, attacker, gunId, gunDisplayId, amount, sources, isHeadShot, headshotMultiplier, logicalSide);
-            postEventToKubeJS(this);
         }
     }
 
