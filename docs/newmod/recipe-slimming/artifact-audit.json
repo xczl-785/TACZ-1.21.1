@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-24",
+  "version": "1.1.8-hotfix-r6-slim2-newmod.963361c2",
+  "source_audit_sha256": "e5bd4e279d940db2f014bb7f61340a623671f9e0900cdba552110d018505780d",
+  "artifacts": [
+    {
+      "path": "build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-slim2-newmod.963361c2.jar",
+      "bytes": 60195188,
+      "sha512": "9dc2258a5b911a80bee06461764ec3aa43368cbfd26c562cef388fb35f8f3444d91bd18ffdaecf31edeae781d4736abbf191e40d44a93fd0dfc2f0f3572d86b0",
+      "excluded_evidence_files": 31,
+      "excluded_compressed_bytes": 363738,
+      "retained_content_files": 2939,
+      "retired_classes_absent": true,
+      "vanilla_recipes_decoded_by_registry_test": [
+        "data/tacz/recipe/statue.json",
+        "data/tacz/recipe/gunpowder.json",
+        "data/tacz/recipe/target.json",
+        "data/tacz/recipe/target_minecart.json"
+      ],
+      "preserved_services": [
+        "com.tacz.guns.api.extension.GunPlatformExtension",
+        "com.tacz.guns.api.extension.GunClientExtension",
+        "com.tacz.guns.api.extension.AssemblyEntryExtension"
+      ]
+    },
+    {
+      "path": "build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-slim2-newmod.963361c2-development.jar",
+      "bytes": 60427982,
+      "sha512": "957ea9324aee32d936e76960802eb1621b2f6ec4bdbdc9bedecc1afecfc18dad406b8c50e5d0b0fab1960fe15fa5a3e9f083794e2067ddcedc3e1b0af4552ddb",
+      "excluded_evidence_files": 31,
+      "excluded_compressed_bytes": 363738,
+      "retained_content_files": 2939,
+      "retired_classes_absent": true,
+      "vanilla_recipes_decoded_by_registry_test": [
+        "data/tacz/recipe/statue.json",
+        "data/tacz/recipe/gunpowder.json",
+        "data/tacz/recipe/target.json",
+        "data/tacz/recipe/target_minecart.json"
+      ],
+      "preserved_services": [
+        "com.tacz.guns.api.extension.GunPlatformExtension",
+        "com.tacz.guns.api.extension.GunClientExtension",
+        "com.tacz.guns.api.extension.AssemblyEntryExtension"
+      ]
+    }
+  ],
+  "minecraft_acceptance": "not run"
+}

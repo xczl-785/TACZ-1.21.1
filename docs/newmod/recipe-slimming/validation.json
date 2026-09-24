@@ -1,0 +1,41 @@
+{
+  "date": "2026-09-24",
+  "source_commit": "2ea4a767b6f5282ebf8b69c93e6df2b21bf66174",
+  "adapter_tests": {
+    "tests": 33,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "registry_tests": 1,
+  "configured_weapons": 15,
+  "physical_items": 146,
+  "platform_extension_tests": 4,
+  "checks": [
+    {
+      "command": "bash gradlew compileJava compileStandaloneCore verifyPlatformExtensionBoundary adapterTest --offline --console=plain",
+      "result": "Compilation, platform and 15-gun source validation passed; first new adapter test caught missing direct lookup filter; fixed before subsequent successful regression."
+    },
+    {
+      "command": "bash gradlew adapterTest test --tests dev.tacticaltacz.RetiredSmithRegistryTest -x verifyConfiguredWeapons --offline --console=plain",
+      "result": "BUILD SUCCESSFUL in 15s; 12 tasks: 6 executed / 6 up-to-date. 33 adapter tests and one registry test pass; resources unchanged since validated."
+    },
+    {
+      "command": "bash gradlew compileStandaloneCore verifyCorePlatformBoundary verifyWeaponModules verifyAdapterIntegration --offline --console=plain",
+      "result": "BUILD SUCCESSFUL in 30s; 5 tasks: 4 executed / 1 up-to-date"
+    },
+    {
+      "command": "bash gradlew jar developmentJar -Pmod_version=1.1.8-hotfix-r6-slim2-newmod.963361c2 --offline --console=plain",
+      "result": "BUILD SUCCESSFUL in 1m 24s; 12 tasks: 8 executed / 4 up-to-date; verifyConfiguredWeapons executed."
+    }
+  ],
+  "no_tacz_host": "Seven public modules plus vanilla adapter and development examples; :no_tacz_runtime:check :no_tacz_runtime:prepareClientRun :no_tacz_runtime:prepareServerRun --offline --console=plain passed. No client/server launch. See main repo integration-tests/no-tacz-runtime README.",
+  "not_run": [
+    "Full check",
+    "Minecraft client",
+    "Minecraft server",
+    "with slim TaCZ gameplay",
+    "without TaCZ gameplay plus raid"
+  ],
+  "gate": "Stop for owner acceptance after daily artifact replacement; no full content inventory before acceptance."
+}

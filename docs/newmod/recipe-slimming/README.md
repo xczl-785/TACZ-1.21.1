@@ -15,6 +15,14 @@
 
 逐文件路径、旧新哈希、旧 ID 和理由见 [源码审计](source-audit.json)。正式/开发两包的精确排除和保留校验见 [包审计](artifact-audit.json)，可运行 `python3 docs/newmod/recipe-slimming/verify_artifacts.py` 重验（依赖 build/libs 本批包和主仓保留的上一版包）。
 
+## 可测试制品
+
+版本 `1.1.8-hotfix-r6-slim2-newmod.963361c2`，构建源码 `2ea4a767b6f5282ebf8b69c93e6df2b21bf66174`，公共制品锁仍为 `963361c2`。正式包 60,195,188 bytes，开发包 60,427,982 bytes，均在 fork build/libs 并交主仓 vendor 作为日常版本；主仓锁记录来源与 SHA-512。上一版 compat-slimming 双包保留为回退，更早 scope15 从 vendor 移出但可从 Git 历史恢复。
+
+两包各排除 31 个指定条目，共 363,738 压缩字节；证据源 SHA-256 均未变化。逐文件核验剩余 weapon-content、preview/library/materials、贴图、声音、Lua、保留 compat 类和平台服务无差异。上述排除量不是 FPS 提升证据。
+
+构建通过（1m 24s；12 tasks，8 executed / 4 up-to-date）。命令、测试范围和未验项目见 [验证记录](validation.json)。本批未启动 Minecraft/服务器、未访问日常世界；带精简版与无 TaCZ 场景仍分别等待所有者验收。
+
 ## 实机交接与停止点
 
 完成推送、打包、替换后，从 NewMod 原 `启动开发客户端.command` 启动，完全退出旧客户端后再测。检查资源重载无旧 recipe/ingredient 类型错误；15 枪图标、查看/组装预览、换件与 Lua 动作；靶子、靶车、展示架及其原版合成；保存重进。可在单独临时枪包目录测试旧配方过滤，不修改日常枪包或世界。注册单元测试、资源枚举测试和编译均不代替实际客户端验收。
