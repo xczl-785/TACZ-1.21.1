@@ -25,5 +25,16 @@
     "Full check (historical missing main-repo baseline 3ef90e9f)",
     "Minecraft client/server and owner gameplay acceptance"
   ],
-  "public_dependency_lock": "unchanged 963361c285f4bd681c483105eef617b4c8518457"
+  "public_dependency_lock": "unchanged 963361c285f4bd681c483105eef617b4c8518457",
+  "source_commit": "9da13b1674b80797302089cd0b63bb2caf537f0c",
+  "build_command": "bash gradlew jar developmentJar -Pmod_version=1.1.8-hotfix-r6-slim3-newmod.963361c2 --offline --console=plain",
+  "artifact_audit": "artifact-audit.json; both passed",
+  "main_runtime_check": {
+    "command": ":tacz_runtime:check :tacz_runtime:prepareClientRun --offline --console=plain",
+    "result": "PASS; 759 TaCZ classes and 297 firearms classes, each from one selected artifact; development=true",
+    "rollback": "slim2 production/development pair"
+  },
+  "deleted_java_files": 44,
+  "deleted_java_file_lines": 3994,
+  "deleted_source_files": 83
 }

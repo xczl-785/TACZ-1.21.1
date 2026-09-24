@@ -1,0 +1,31 @@
+{
+  "date": "2026-09-24",
+  "source_commit": "9da13b1674b80797302089cd0b63bb2caf537f0c",
+  "baseline": "deb3fb91a9e4853f9a15a80da536e7530d38c22c",
+  "version": "1.1.8-hotfix-r6-slim3-newmod.963361c2",
+  "artifacts": [
+    {
+      "path": "build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-slim3-newmod.963361c2.jar",
+      "bytes": 59884965,
+      "sha512": "6981e4cecbfec9e153c9b1218769b78bbfde276ac7398823fa45b6afbfb96bceca3107fd8a1e01fc3573b5d0aa21ce7b60f26804ecfbfc2ad60f082f69daa054",
+      "bytes_removed": 310223,
+      "retained_resource_files": 4554,
+      "managed_gun_indexes": 15,
+      "physical_definitions": 146,
+      "retired_class_roots": 44,
+      "retired_resource_files": 39
+    },
+    {
+      "path": "build/libs/tacz-neoforge-1.21.1-1.1.8-hotfix-r6-slim3-newmod.963361c2-development.jar",
+      "bytes": 60107977,
+      "sha512": "6943271cbda8e2feda33b54bab3cae293237fd4be76925d8b19a967989087428817532b030a45382ca4a99c1ddda6d016087d9abb07b4e04b6cabaac4399c9c8",
+      "bytes_removed": 320005,
+      "retained_resource_files": 4554,
+      "managed_gun_indexes": 15,
+      "physical_definitions": 146,
+      "retired_class_roots": 44,
+      "retired_resource_files": 39
+    }
+  ],
+  "minecraft_acceptance": "not run"
+}

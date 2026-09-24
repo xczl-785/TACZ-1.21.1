@@ -40,13 +40,16 @@ for suffix in ('','-development'):
     kept+=1
   indexes=[n for n in names if n.startswith('data/tacz_fork_tarkov/index/guns/') and n.endswith('.json')]
   assert len(indexes)==15,len(indexes)
+  physical=[n for n in names if n.startswith('data/tacz_fork_tarkov/item_foundation/items/') and n.endswith('.json')]
+  assert len(physical)==146,len(physical)
+  assert not any(n.endswith(('/geometry-evidence.json','/workbench-anchors.json','/authoring-contract.json')) and n.startswith('data/tacz_fork_tarkov/') for n in names)
   assert not any(n.startswith('dev/firearms/') for n in names)
   recipes=sorted(n for n in names if n.startswith('data/tacz/recipe/') and n.endswith('.json'))
   assert recipes==['data/tacz/recipe/gunpowder.json'],recipes
   for n in names:
    if n.startswith('assets/tacz/lang/') and n.endswith('.json'):
     keys=json.loads(z.read(n));assert not any(k.startswith(('message.tacz.converter.','message.tacz.convert_from_legacy','toast.tacz.','commands.tacz.reload.overwrite')) for k in keys)
-  rows.append(dict(path=str(path.relative_to(ROOT)),bytes=path.stat().st_size,sha512=hashlib.sha512(path.read_bytes()).hexdigest(),bytes_removed=oldpath.stat().st_size-path.stat().st_size,retained_resource_files=kept,managed_gun_indexes=len(indexes),retired_class_roots=len(classes),retired_resource_files=len(resources)))
+  rows.append(dict(path=str(path.relative_to(ROOT)),bytes=path.stat().st_size,sha512=hashlib.sha512(path.read_bytes()).hexdigest(),bytes_removed=oldpath.stat().st_size-path.stat().st_size,retained_resource_files=kept,managed_gun_indexes=len(indexes),physical_definitions=len(physical),retired_class_roots=len(classes),retired_resource_files=len(resources)))
 report=dict(date='2026-09-24',source_commit=git('rev-parse','HEAD').strip(),baseline=BASE,version=VERSION,artifacts=rows,minecraft_acceptance='not run')
 (OUT/'artifact-audit.json').write_text(json.dumps(report,indent=2)+'\n')
 for row in rows:print(row)
