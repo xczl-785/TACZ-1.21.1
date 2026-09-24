@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r Puedes encontrar los archivos sobreescritos en §c§nconfig/tacz/backup",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r Ahora puedes usar el comando §c§n/tacz overwrite false§r para desactivar la opción de sobrescritura.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r Ahora puedes usar el comando §c§n/tacz overwrite true§r para activar la opción de sobrescritura.",
-  "commands.tacz.config.default_table_limit.enabled": "Xd777.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r Default gunsmith table recipe limit is disabled.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Server-side shoot network check is enabled.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Server-side shoot network check is disabled.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Server-side shoot cooldown check is enabled.",

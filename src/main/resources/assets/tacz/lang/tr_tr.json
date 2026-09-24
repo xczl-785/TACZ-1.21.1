@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "Üzerine yazılmış dosyaları §c§nconfig/tacz/backup§r kısmında bulabilirsin",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r Üzerine yazma ayarını kapatmak için §c§n/tacz overwrite false§r komutunu kullanın.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r Üzerine yazma ayarını açmak için §c§n/tacz overwrite true§r komutunu kullanın.",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r Varsayılan silah ustası masa tarifi sınırı etkinleştirilmiştir.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r Varsayılan silah ustası masası tarif sınırı devre dışı bırakılmıştır.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Sunucu tarafında ağ kontrolü etkinleştirilmiştir.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Sunucu tarafında ağ kontrolü devre dışı bırakılmıştır.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Sunucu tarafında ateşleme bekleme süresi kontrolü etkinleştirildi.",

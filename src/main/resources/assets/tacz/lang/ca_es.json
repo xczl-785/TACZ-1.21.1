@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r pots trobar els fitxers sobreescrits a §c§nconfig/tacz/backup§r folder",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r Pots utilitzar el comandament §c§n/tacz overwrite false§r per deshabilitar la propietat de sobreescriptura.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r Pots utilitzar el comandament §c§n/tacz overwrite true§r per habilitar la propietat de sobreescriptura.",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r Límit estàndard de receptes de la taula d'armes està habilitat.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r Límit estàndard de receptes de la taula d'armes està deshabilitat.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Server-side shoot network check is enabled.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Server-side shoot network check is disabled.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Server-side shoot cooldown check is enabled.",

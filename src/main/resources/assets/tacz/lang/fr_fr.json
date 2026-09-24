@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": " §a§l●§r Vous pouvez trouver les fichiers écrasés dans le dossier §c§nconfig/tacz/backup§r",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r Vous pouvez utiliser la commande §c§n/tacz overwrite false§r pour désactiver la fonction d'écrasage.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r Vous pouvez utiliser la commande §c§n/tacz overwrite true§r pour activer la fonction d'écrasage.",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r La limite de recettes par défaut de la table d'armurier est activée.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r La limite de recettes par défaut de la table d'armurier est désactivée.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r La vérification réseau des tirs par le serveur est activée.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r La vérification réseau des tirs par le serveur est désactivée.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r La vérification de l'intervalle de tir par le serveur est activée.",

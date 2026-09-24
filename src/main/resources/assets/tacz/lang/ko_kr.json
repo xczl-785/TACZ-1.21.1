@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r 덮어씌워진 파일은 §c§nconfig/tacz/backup§r 에 있습니다.",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r 명령어 §c§n/tacz overwrite false§r를 사용해 덮어쓰기 기능을 비활성화 할 수 있습니다.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r 명령어 §c§n/tacz overwrite true§r를 사용해 덮어쓰기 기능을 활성화 할 수 있습니다.",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r 기본 총기 작업대 레시피 제한 활성화.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r 기본 총기 작업대 레시피 제한 비활성화.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r 서버 사이드 발사 네트워크 체크가 활성화되었습니다.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r 서버 사이드 발사 네트워크 체크가 비활성화되었습니다.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r 서버 사이드 발사 쿨타임 체크가 활성화되었습니다.",

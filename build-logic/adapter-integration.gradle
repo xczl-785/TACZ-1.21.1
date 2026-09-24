@@ -105,7 +105,14 @@ tasks.register('verifyWeaponPipeline', Exec) {
     environment 'PYTHONDONTWRITEBYTECODE', '1'
     commandLine 'python3', '-m', 'unittest', 'discover', '-p', 'test_*.py'
 }
-tasks.named('processResources') { dependsOn 'verifyConfiguredWeapons' }
+// Authoring checks read the source tree; these audit-only files are not runtime resources.
+// Match only the managed gun data namespace, never preview/library/material payloads.
+tasks.named('processResources') {
+    dependsOn 'verifyConfiguredWeapons'
+    exclude 'data/tacz_fork_tarkov/*/geometry-evidence.json'
+    exclude 'data/tacz_fork_tarkov/*/workbench-anchors.json'
+    exclude 'data/tacz_fork_tarkov/m4a1/authoring-contract.json'
+}
 tasks.named('check') { dependsOn 'adapterTest', 'adapterDevelopmentClasses', 'verifyWeaponPipeline', 'verifyGameplayDependencies', 'verifyCorePlatformBoundary', 'compileStandaloneCore', 'verifyPlatformExtensionBoundary' }
 
 tasks.named('assemble') { dependsOn 'developmentJar' }

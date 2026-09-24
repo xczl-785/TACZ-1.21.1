@@ -52,7 +52,8 @@ public class DelegatingPackResources extends AbstractPackResources implements Pa
     public void listResources(PackType type, String resourceNamespace, String paths, ResourceOutput resourceOutput) {
         for (PackResources delegate : this.delegates)
             delegate.listResources(type, resourceNamespace, paths, (id, supplier) -> {
-                if (type != PackType.SERVER_DATA || !SelectedContentPolicy.excludesResource(id.getNamespace(), id.getPath())) {
+                if (type != PackType.SERVER_DATA || (!SelectedContentPolicy.excludesResource(id.getNamespace(), id.getPath())
+                        && !RetiredRecipePolicy.excludes(id, supplier))) {
                     resourceOutput.accept(id, supplier);
                 }
             });
@@ -84,8 +85,10 @@ public class DelegatingPackResources extends AbstractPackResources implements Pa
         }
         for (PackResources pack : getCandidatePacks(type, location)) {
             IoSupplier<InputStream> ioSupplier = pack.getResource(type, location);
-            if (ioSupplier != null)
+            if (ioSupplier != null && (type != PackType.SERVER_DATA
+                    || !RetiredRecipePolicy.excludes(location, ioSupplier))) {
                 return ioSupplier;
+            }
         }
 
         return null;

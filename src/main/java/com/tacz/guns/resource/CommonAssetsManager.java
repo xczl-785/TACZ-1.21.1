@@ -5,10 +5,6 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.tacz.guns.api.vmlib.LuaGunLogicConstant;
 import com.tacz.guns.api.vmlib.LuaLibrary;
-import com.tacz.guns.crafting.GunSmithTableIngredient;
-import com.tacz.guns.crafting.GunSmithTableRecipe;
-import com.tacz.guns.crafting.result.GunSmithTableResult;
-import com.tacz.guns.init.ModRecipe;
 import com.tacz.guns.network.NetworkHandler;
 import com.tacz.guns.network.message.ServerMessageSyncGunPack;
 import com.tacz.guns.resource.filter.RecipeFilter;
@@ -33,14 +29,11 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.packs.repository.PackRepository;
 import net.minecraft.server.packs.resources.PreparableReloadListener;
-import net.minecraft.world.item.crafting.RecipeHolder;
-import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.phys.Vec3;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.event.AddReloadListenerEvent;
 import net.neoforged.neoforge.event.OnDatapackSyncEvent;
-import net.neoforged.neoforge.event.TagsUpdatedEvent;
 import net.neoforged.neoforge.event.server.ServerStoppedEvent;
 import net.neoforged.neoforge.server.ServerLifecycleHooks;
 import org.apache.commons.lang3.tuple.Pair;
@@ -56,8 +49,6 @@ public class CommonAssetsManager implements ICommonResourceProvider {
     public static final Gson GSON = new GsonBuilder()
             .registerTypeAdapter(ResourceLocation.class, new ResourceLocation.Serializer())
             .registerTypeAdapter(Pair.class, new PairSerializer())
-            .registerTypeAdapter(GunSmithTableIngredient.class, new GunSmithTableIngredientSerializer())
-            .registerTypeAdapter(GunSmithTableResult.class, new GunSmithTableResultSerializer())
             .registerTypeAdapter(ExtraDamage.DistanceDamagePair.class, new DistanceDamagePairSerializer())
             .registerTypeAdapter(Vec3.class, new Vec3Serializer())
             .registerTypeAdapter(Ignite.class, new IgniteSerializer())
@@ -241,28 +232,7 @@ public class CommonAssetsManager implements ICommonResourceProvider {
         var commonAssetsManager = new CommonAssetsManager();
         commonAssetsManager.reloadAndRegister(event::addListener);
         INSTANCE = commonAssetsManager;
-        INSTANCE.recipeManager = event.getServerResources().getRecipeManager();
     }
-
-    public RecipeManager recipeManager;
-
-    /**
-     * 这个事件理论上会在server resource已经完成重载和传输到客户端之前触发<br/>
-     * 尝试根据common data初始化延迟加载的配方
-     * @param event
-     */
-    @SubscribeEvent
-    public static void onReload(TagsUpdatedEvent event) {
-        if (event.getUpdateCause() == TagsUpdatedEvent.UpdateCause.SERVER_DATA_LOAD){
-            if (getInstance() !=null && getInstance().recipeManager != null) {
-                List<GunSmithTableRecipe> recipes = getInstance().recipeManager.getAllRecipesFor(ModRecipe.GUN_SMITH_TABLE_CRAFTING.get()).stream().map(RecipeHolder::value).toList();
-                for (GunSmithTableRecipe recipe : recipes) {
-                    recipe.init(event.getRegistryAccess());
-                }
-            }
-        }
-    }
-
 
     @SubscribeEvent
     public static void onServerStopped(ServerStoppedEvent event) {

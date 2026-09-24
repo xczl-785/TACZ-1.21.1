@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r 你可以在§c§nconfig/tacz/backup§r 資料夾中找到被覆蓋的檔案",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r 你可以使用指令 §c§n/tacz overwrite false§r 來關閉覆蓋功能",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r 你可以使用指令 §c§n/tacz overwrite true§r 來開啟覆蓋功能",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r已啟用預設槍械工作台配方限制",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r已停用預設槍械工作台配方限制",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r已啟用伺服器端連線射擊檢測",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r已停用伺服器端連線射擊檢測",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r已啟用伺服器端射擊冷卻檢測",

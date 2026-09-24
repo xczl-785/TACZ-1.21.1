@@ -133,7 +133,6 @@ public class PackConvertor {
         private static final Pattern SOUND_PATTERN = Pattern.compile("^(\\w+)/sounds/([\\w/.]+)$");
         private static final Pattern PLAYER_ANIMATOR_PATTERN = Pattern.compile("^(\\w+)/player_animator/([\\w/.]+)$");
         private static final Pattern TAGS_PATTERN = Pattern.compile("^(\\w+)/tags/([\\w/.]+)$");
-        private static final Pattern RECIPE_PATTERN = Pattern.compile("^(\\w+)/recipes/([\\w/.]+)$");
         private static final Pattern PACK_INFO = Pattern.compile("^(\\w+)/pack\\.json$");
 
         private boolean parsePackInfo(ZipOutputStream newZip, ZipEntry entry, ZipFile oldPack) throws IOException {
@@ -142,29 +141,6 @@ public class PackConvertor {
                 String namespace = matcher.group(1);
                 String newPath = "assets/" + namespace + "/gunpack_info.json";
                 writeEntry(newZip, entry, oldPack, newPath);
-                return true;
-            }
-            return false;
-        }
-
-        private boolean parseRecipe(ZipOutputStream newZip, ZipEntry entry, ZipFile oldPack) throws IOException {
-            Matcher matcher = RECIPE_PATTERN.matcher(entry.getName());
-            if (matcher.find()) {
-                String namespace = matcher.group(1);
-                String path = matcher.group(2);
-                String newPath = "data/" + namespace + "/recipes/" + path;
-
-                try (InputStream stream = oldPack.getInputStream(entry)) {
-                    JsonObject object = GSON.fromJson(new InputStreamReader(stream, StandardCharsets.UTF_8), JsonObject.class);
-                    if (object != null) {
-                        object.addProperty("type", "tacz:gun_smith_table_crafting");
-                        newZip.putNextEntry(new ZipEntry(newPath));
-                        newZip.write(GSON.toJson(object).getBytes());
-                        newZip.closeEntry();
-                    }
-                } catch (JsonParseException e) {
-                    GunMod.LOGGER.warn("Failed to parse recipe to new style: {}", entry.getName());
-                }
                 return true;
             }
             return false;
@@ -343,7 +319,6 @@ public class PackConvertor {
                     if (parseSound(newZip, entry, oldPack)) continue;
                     if (parsePlayerAnimator(newZip, entry, oldPack)) continue;
                     if (parseTags(newZip, entry, oldPack)) continue;
-                    if (parseRecipe(newZip, entry, oldPack)) continue;
                     if (parsePackInfo(newZip, entry, oldPack)) continue;
                 }
             } catch (IOException e) {

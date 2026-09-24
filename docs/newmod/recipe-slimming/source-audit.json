@@ -1,0 +1,665 @@
+{
+  "date": "2026-09-24",
+  "baseline": "3259a4417d61c49ccf2b5054b94a1386aef6666f",
+  "whole_java_files_deleted": 16,
+  "whole_java_physical_lines_deleted": 857,
+  "production_diff": {
+    "files": 47,
+    "added_lines": 62,
+    "deleted_lines": 992
+  },
+  "retirements": [
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/GunSmithTableRecipe.java",
+      "sha256": "254fcc27fbb35ae80aa1e201d5b50bd911d749f1748e2043a0e949bca4b52f5c",
+      "physical_lines": 93,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/GunSmithTableSerializer.java",
+      "sha256": "a668152bd146554fa24c8a1901fc04117b9e2a6cb3fc49feed3f0301b6f2c8ea",
+      "physical_lines": 21,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/NBTIngredient.java",
+      "sha256": "bfc615b16179948e1d44deca0bdb63d23e9b150b50625ce5cd8f6b9017a6d686",
+      "physical_lines": 91,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/GunSmithTableIngredient.java",
+      "sha256": "2b8e3f17e06444d92910aa480b4c940bbc7fcdf79225721b9f854565407c55b6",
+      "physical_lines": 36,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/package-info.java",
+      "sha256": "5cb04adee401d3ed69820921f1e3cff20d94b46c7063895471aa87de24bfccaf",
+      "physical_lines": 9,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/result/GunSmithTableResult.java",
+      "sha256": "71d02e683ee64ef9c9a7da935e0a1814a95ecc999285e089ec2227471a58ca72",
+      "physical_lines": 119,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/result/RawGunTableResult.java",
+      "sha256": "7610c93f6031e5e9b33cc4f0f2c592bb1d5deb6e5e17d6fc428d2abfd924f4ae",
+      "physical_lines": 109,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/pojo/data/recipe/TableRecipe.java",
+      "sha256": "93dccbc1cef2c862e57970269fdd6abd20df51489ce298ccd38607cc0f7a866e",
+      "physical_lines": 49,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/pojo/data/recipe/GunResult.java",
+      "sha256": "1afc5ba3a660bacb65cb34ae127a0a94b9f680b5dbd1c032bc72adfaf284ac89",
+      "physical_lines": 42,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gui/components/smith/ResultButton.java",
+      "sha256": "77aaad4a5ede812da2eb4848d82028f18c93fe71b7214e088bc7a125d93dc810",
+      "physical_lines": 64,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gui/components/smith/TypeButton.java",
+      "sha256": "ccbb5b78eeca970dc86354b880383c90a112fb7c5adb360edf8cb07cc8dc4955",
+      "physical_lines": 45,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gui/components/smith/ImageButton.java",
+      "sha256": "0065cb41326b3f161511decc69a546f3c7603f43df07c7ab7e59aa7d2235a4ce",
+      "physical_lines": 40,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModRecipe.java",
+      "sha256": "e2249b2d0411926300e5d4e19c1fd18326077d196dbbdd3e3f98ad5c698c31f1",
+      "physical_lines": 20,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModIngredientTypes.java",
+      "sha256": "3c0d80f794b9fd8cdfabe8a0c536b8c0e129b5a9b026ff89028539cc860a912c",
+      "physical_lines": 14,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/serialize/GunSmithTableIngredientSerializer.java",
+      "sha256": "8f0a89fef76c8e4cf6f4096a1f62f2289c96729cad527430aa3cac5fdf3007f4",
+      "physical_lines": 29,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/serialize/GunSmithTableResultSerializer.java",
+      "sha256": "8d15c30a7886c685ee42a1c33e8331f324a8a063c8e945a1255867fd119c56f9",
+      "physical_lines": 76,
+      "reason": "Retired gunsmith-only crafting/serializer/widget; no remaining consumer outside removed group",
+      "replacement_id": null
+    }
+  ],
+  "changes": [
+    {
+      "path": "build-logic/adapter-integration.gradle",
+      "added_lines": 8,
+      "deleted_lines": 1,
+      "before_sha256": "a8bdf43dbac390e69c9bb581b19fb15abcf1805312f58373a406c30cb5f3a771",
+      "after_sha256": "bf25cb29e21dcf850dfcf8f90b756d65a113ec7dc41ccf9c19357c0b4232bc77"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/GunMod.java",
+      "added_lines": 0,
+      "deleted_lines": 3,
+      "before_sha256": "a37a109b2a52e4e1e105d72babfc7948ae41ba75ebd676230225d57375c8a97f",
+      "after_sha256": "15c8541b13c8d4976ca23d5fccbcf4576c3093a7345090b7f7348af8bb552323"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/api/TimelessAPI.java",
+      "added_lines": 0,
+      "deleted_lines": 22,
+      "before_sha256": "f714a04c01bc2e3459b1e70107a2141aaeac6d7e94b6358055196b5d5a1da241",
+      "after_sha256": "3025419779acd1e0b3566dde4d5fcdd94d06cfa5d1f9a32416257b7eb11f51e2"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gui/components/smith/ImageButton.java",
+      "added_lines": 0,
+      "deleted_lines": 40,
+      "before_sha256": "0065cb41326b3f161511decc69a546f3c7603f43df07c7ab7e59aa7d2235a4ce",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gui/components/smith/ResultButton.java",
+      "added_lines": 0,
+      "deleted_lines": 64,
+      "before_sha256": "77aaad4a5ede812da2eb4848d82028f18c93fe71b7214e088bc7a125d93dc810",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/client/gui/components/smith/TypeButton.java",
+      "added_lines": 0,
+      "deleted_lines": 45,
+      "before_sha256": "ccbb5b78eeca970dc86354b880383c90a112fb7c5adb360edf8cb07cc8dc4955",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/command/sub/ConfigCommand.java",
+      "added_lines": 0,
+      "deleted_lines": 5,
+      "before_sha256": "4d9ec41650bf99c606bceb1b392768acbf81952ebd175d31ad211366875258f4",
+      "after_sha256": "7d23717d30978aac3b30d70d63c45b89f69a22ad8d96b1b15cdc8c13d6b6ab5c"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/config/client/RenderConfig.java",
+      "added_lines": 0,
+      "deleted_lines": 3,
+      "before_sha256": "497891c390a62b4322c411df89d0671567e24c451def643f7aea45446353b69e",
+      "after_sha256": "5c715d119466a8fdc5081fb7176749f06dd914ce29abfa4647cd259195c542b6"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/config/sync/SyncConfig.java",
+      "added_lines": 0,
+      "deleted_lines": 3,
+      "before_sha256": "12972133145801e4e9a1aea7ccdc29ea5975f2b593d8615bbeeaed403a10cd6b",
+      "after_sha256": "b04359357f47a18187e639b6d41f3ddf041e75b7cadfa3d49cd64af702fb0df0"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/GunSmithTableIngredient.java",
+      "added_lines": 0,
+      "deleted_lines": 36,
+      "before_sha256": "2b8e3f17e06444d92910aa480b4c940bbc7fcdf79225721b9f854565407c55b6",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/GunSmithTableRecipe.java",
+      "added_lines": 0,
+      "deleted_lines": 93,
+      "before_sha256": "254fcc27fbb35ae80aa1e201d5b50bd911d749f1748e2043a0e949bca4b52f5c",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/GunSmithTableSerializer.java",
+      "added_lines": 0,
+      "deleted_lines": 21,
+      "before_sha256": "a668152bd146554fa24c8a1901fc04117b9e2a6cb3fc49feed3f0301b6f2c8ea",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/NBTIngredient.java",
+      "added_lines": 0,
+      "deleted_lines": 91,
+      "before_sha256": "bfc615b16179948e1d44deca0bdb63d23e9b150b50625ce5cd8f6b9017a6d686",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/package-info.java",
+      "added_lines": 0,
+      "deleted_lines": 9,
+      "before_sha256": "5cb04adee401d3ed69820921f1e3cff20d94b46c7063895471aa87de24bfccaf",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/result/GunSmithTableResult.java",
+      "added_lines": 0,
+      "deleted_lines": 119,
+      "before_sha256": "71d02e683ee64ef9c9a7da935e0a1814a95ecc999285e089ec2227471a58ca72",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/crafting/result/RawGunTableResult.java",
+      "added_lines": 0,
+      "deleted_lines": 109,
+      "before_sha256": "7610c93f6031e5e9b33cc4f0f2c592bb1d5deb6e5e17d6fc428d2abfd924f4ae",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModIngredientTypes.java",
+      "added_lines": 0,
+      "deleted_lines": 14,
+      "before_sha256": "3c0d80f794b9fd8cdfabe8a0c536b8c0e129b5a9b026ff89028539cc860a912c",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/init/ModRecipe.java",
+      "added_lines": 0,
+      "deleted_lines": 20,
+      "before_sha256": "e2249b2d0411926300e5d4e19c1fd18326077d196dbbdd3e3f98ad5c698c31f1",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/CommonAssetsManager.java",
+      "added_lines": 0,
+      "deleted_lines": 30,
+      "before_sha256": "ae8e34bb6afbecf3d9d852b1a1b280d70a16b6b6d77dd83c73c0d83366eb298d",
+      "after_sha256": "a6b69a3b42463a21ddf006a6362f391c390a6849d54753f13593618ee2914929"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/DelegatingPackResources.java",
+      "added_lines": 5,
+      "deleted_lines": 2,
+      "before_sha256": "d872ff81f92929288cff48d7fc142187f22503124ad625f0beca7eaa86e8db93",
+      "after_sha256": "630d161e7f054424973c169618f89f3270dbee1e259bc56883ff4d767df83229"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/PackConvertor.java",
+      "added_lines": 0,
+      "deleted_lines": 25,
+      "before_sha256": "38b87148d7875329614ad59d6cdd5bbea111c9103c99b953be9e7e48e5612393",
+      "after_sha256": "a612346bc0a7af8dd707d7ff638233a6eae56d5844bab7d99ced6a0393ded2f6"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/network/DataType.java",
+      "added_lines": 0,
+      "deleted_lines": 1,
+      "before_sha256": "f0f8fb426b4a6762077b90228878cfc60063eb05cfd940f3ac7b6f400eb18fad",
+      "after_sha256": "c73b62a65cb0d4861111adaad0af1709cc28c969ca2c999baa929a3c44469d9c"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/pojo/data/recipe/GunResult.java",
+      "added_lines": 0,
+      "deleted_lines": 42,
+      "before_sha256": "1afc5ba3a660bacb65cb34ae127a0a94b9f680b5dbd1c032bc72adfaf284ac89",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/pojo/data/recipe/TableRecipe.java",
+      "added_lines": 0,
+      "deleted_lines": 49,
+      "before_sha256": "93dccbc1cef2c862e57970269fdd6abd20df51489ce298ccd38607cc0f7a866e",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/serialize/GunSmithTableIngredientSerializer.java",
+      "added_lines": 0,
+      "deleted_lines": 29,
+      "before_sha256": "8f0a89fef76c8e4cf6f4096a1f62f2289c96729cad527430aa3cac5fdf3007f4",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/serialize/GunSmithTableResultSerializer.java",
+      "added_lines": 0,
+      "deleted_lines": 76,
+      "before_sha256": "8d15c30a7886c685ee42a1c33e8331f324a8a063c8e945a1255867fd119c56f9",
+      "after_sha256": null
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ca_es.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "a78790b9cb6df42d7dce69ee69342874d0e8b2d9fcb0ae93e63cba368f9d53f1",
+      "after_sha256": "ba3b3db45ca2f19b8d268599626440abc8adcabe7c9657cec13f618e0a533244"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/da_dk.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "166c74998fdaf4e45848bd159480d1c2428d2002770c5289ab075ae24259e4e0",
+      "after_sha256": "5c9c2778a4153381dc596636c32b9927a1d69548d3ad1a68926f943368b8441b"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/de_de.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "bbc5f3bc85e776d42509da404934151ac0a4b689f3aa554ecd122c4cf8f1c453",
+      "after_sha256": "6d1dad0ea790086e321229834ee4d8646dca9fb364daa7308c7dc4d21ea7fe90"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/en_us.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "7c7dc70e5e7177dfabee8ea29880394988324270b06b49c638af529dd6c5de11",
+      "after_sha256": "3eeb46777521c7b1412d0dc63f75bf3e4a48cea2343be6c8a78ed0a0bf94764d"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/es_es.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "3a9319d78e925e17f2cf407757495729e854021912b69357bb6147d349839405",
+      "after_sha256": "dccedf9449fd27d8af3e15aa27f505c6124ce98c0b4faff672492d4b78b44d96"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/eu_es.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "e64d46a8229f0a715979dac4a270528092239cb6381579252a27e64c5518f5da",
+      "after_sha256": "ff8c6df030c5f2ef17640ff0eb6d6b6446f88f16a2455fdba9576c755b575e50"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/fr_fr.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "3c5731b1640efbbd2e09bf84c7d9bdf0559d931ea039d3b6ceb5840f584661e5",
+      "after_sha256": "46b7a616698e9751274904032f6245553dd5812e5f2775d9f692f93cf4a6c32e"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/id_id.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "8a8c4204e781626826d010ad77c2623810d71b09f2d099a1dad036383f4b0f0d",
+      "after_sha256": "687223cec5c918b0931b1bf5b5b29e708872224df3f4b53f41d6ed869671d15d"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/it_it.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "17d3892ce61d7725d8b41a132f4f2583b9ddb63bce2ea3589b94dcb6bd44ae68",
+      "after_sha256": "6c45e4bb16f5bcdb79854603eb2113c55b02158e460755847cd27d950dab2a97"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ja_jp.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "f12d8f11f1d2970d90b2feb980592fda48a0b63d6aed294c97396c22f15c159c",
+      "after_sha256": "372996e09f128a615ecea2fb681e1367326507685817c6d588447dd446db42fd"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ko_kr.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "d41d529d92fd530912d803d8d24107e861fc459fca44d271d4472e65e5d6e56e",
+      "after_sha256": "9382c3ddfee08cc19d62de61836ea9424de1b1d1f6b3aac0315e413f5074fb1c"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/pl_pl.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "2a90d8632ef7c456709aa02c2a42a51730bf8660e092c10f0b0fcf6a6ac09ee8",
+      "after_sha256": "64a45a7bcf60a262c28f4b0224e3597a6995d3ae680ba0a8d7c895e05ab560da"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/pt_br.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "9293336ab1ccdec039aa77e92b61bd3d9d52c4c04ea809cbd93bf67bb158eb53",
+      "after_sha256": "f89959b5223865cffd93f421475175c73ec7aabb055cddccf4acdc54e49b202f"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/ru_ru.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "f1e93be0ba378dab1c367de6060520eee79ef9d883df1ec3a93cb16c161bc392",
+      "after_sha256": "eefb4ed4f0480eed0cba5f6030e3c50d6beaf5128e595534f6196a7a81327cba"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/th_th.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "e6c1bc0d3da61f3a66c0ee3aed892ad3c98726fb1f35b90322761f4954b1e1c0",
+      "after_sha256": "fb8ec1115395d1563f6c6d4106bbb26f48c08a1cc290442c0255e7353cd96a7a"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/tr_tr.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "21107d053482605cc33a555418e217a378870d5857fcb47d71b4a3aa15a86b4c",
+      "after_sha256": "a1c9d19a975de72aca7bc18affb6d941857b2ae7ae27ef71189eda91b2749eb0"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/uk_ua.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "52380c3c7aaac5a3f81c24c52d481e7a13e05d4ec3cc966b38113d59b91f412e",
+      "after_sha256": "7a4ac13425e17fc25898196ca04223c67ac41f7441b8c79fe68e256ba0103731"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/vi_vn.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "975a594eda22854bdfe3d8efd669522a39238861ff031403179272cd22896ba1",
+      "after_sha256": "f517b8508f523cb53349915d56db59cf486d42eaa26b7a92a0c1b0b8d791183d"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/zh_cn.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "053900e5e77a73891d3e20b1fc9e727863a47ad5d6395e4091cd5290911ad1ae",
+      "after_sha256": "f4ad63dd5c0a31fcfa07bec766eabfdd020d63bfa149a8dd0c4a1d69a28e8bcd"
+    },
+    {
+      "path": "src/main/resources/assets/tacz/lang/zh_tw.json",
+      "added_lines": 0,
+      "deleted_lines": 2,
+      "before_sha256": "41db73444ef902a34936f9e55c56861c223090c4ea0ee4c83e1a8f4cd5d4209f",
+      "after_sha256": "3cba6b7042df20ba9ab7118171c7a929a3b6e80c24bedcc8d82c1683709a072b"
+    },
+    {
+      "path": "src/main/java/com/tacz/guns/resource/RetiredRecipePolicy.java",
+      "added_lines": 49,
+      "deleted_lines": 0,
+      "before_sha256": null,
+      "after_sha256": "5b8a99a1278b851bc745a4df5ad1e7c4dd6f2631c7af843a2b8d51f0d313f3d5"
+    }
+  ],
+  "evidence_exclusions": [
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m870/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/m870/geometry-evidence.json",
+      "sha256": "5aea782def2b1af5c394783d2304bbddca03601ff943426edece2fbd880e52f5",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m870/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/m870/workbench-anchors.json",
+      "sha256": "a4499db3ed20d416b7d8ce0d9852681f49197e284101f879385aa9b8fe8e0bb9",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/ump45/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/ump45/geometry-evidence.json",
+      "sha256": "7d31f527464f209c5732367e5a578d545a8063c71482a1f5632e03b9cba33e36",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/ump45/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/ump45/workbench-anchors.json",
+      "sha256": "3bbb0852c91eef54ab973938b930fe8541bb122f38fb91b6e047a82b04d1fea3",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/uzi/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/uzi/geometry-evidence.json",
+      "sha256": "38aca210949390d1c2bb81f1b0341422bec2d90efb3452b349ba76838601e7e3",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/uzi/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/uzi/workbench-anchors.json",
+      "sha256": "42e6f12723f0c05a8ed2ecc9825f8b3d0423820ae3145e533c95141bf4182eab",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/qbz_191/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/qbz_191/geometry-evidence.json",
+      "sha256": "cdf4f3d7f1f6dda59543c8d103cae72ca54542acab02fb516156c637f86cd5ea",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/qbz_191/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/qbz_191/workbench-anchors.json",
+      "sha256": "b2ec2a173b8be92edf8f376203dc7fa353f2f361997c3cc10efee034ac3d9409",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/ai_awp/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/ai_awp/geometry-evidence.json",
+      "sha256": "338a011d0709523f2c82913f4dd1b7b6aa7e26eb883364d9855b060399092905",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/ai_awp/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/ai_awp/workbench-anchors.json",
+      "sha256": "015eb210e9ef8f32ceb70b2a5ccf8d5fa13079bb44c8821e095dfac7a5bf3342",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m16a1/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/m16a1/geometry-evidence.json",
+      "sha256": "a5f89f504416fc22b743c8ad086856f4f2b283fcc65bd1f466bce481d5da79aa",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m16a1/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/m16a1/workbench-anchors.json",
+      "sha256": "3097302bdee99a2a14500b6c5eca67677253213c2b54743730b82d7226139a2c",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/scar_l/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/scar_l/geometry-evidence.json",
+      "sha256": "87124c91e00250bb62879a96df1510872003e7e6d815771b5528a2d497ff95e9",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/scar_l/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/scar_l/workbench-anchors.json",
+      "sha256": "5206f4c36ee7619faa8837bc9cd8a85aee473a6707caa59f14e2e64a122ad543",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/mk14/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/mk14/geometry-evidence.json",
+      "sha256": "469f69ae491374c01953d3173a120a113d6dd135afa42262ffce49e3249b8633",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/mk14/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/mk14/workbench-anchors.json",
+      "sha256": "00c85967d0ac73db58c4fbc87e920b345d2c8b04cb37d77f0fa5f3d28b468e03",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/sks_tactical/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/sks_tactical/geometry-evidence.json",
+      "sha256": "d2cc6f8999dc3399c64404b230672022f779d14534cf07842c287863065e651e",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/sks_tactical/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/sks_tactical/workbench-anchors.json",
+      "sha256": "9447cdcd404af2f9b4654577967610103831d61ebcb2227aeff3e57101d1bf8a",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m700/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/m700/geometry-evidence.json",
+      "sha256": "2468e5d167c2d000e478494a87277c5ca4a3495807dfc90f58dff3f49220fd36",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m700/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/m700/workbench-anchors.json",
+      "sha256": "1978dd80e0b198adf38767a7ecc41dc81b8bb4d1c88cddab07a2585b52e4e2c3",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/p90/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/p90/geometry-evidence.json",
+      "sha256": "6893b3e63f146e8e95f9944512cf29e11f513d60437479beb469b042cbb435e0",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/p90/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/p90/workbench-anchors.json",
+      "sha256": "345663d2a52a7b72ce2a2f950ed81a4624a96c2f5a90f683ec399b8628ce6fdc",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/m4a1/geometry-evidence.json",
+      "sha256": "f236a66be63f868d93ada8b8c7c0091c2fa5ee76b38ff093d0cc607985b1a3d8",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/m4a1/workbench-anchors.json",
+      "sha256": "cbb56fa57b128e640a290a197182c60c6a47ecd40be6e0c8a8a1070593386463",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/m4a1/authoring-contract.json",
+      "jar_entry": "data/tacz_fork_tarkov/m4a1/authoring-contract.json",
+      "sha256": "8de448a2d258c0a64b4ad8032067c5936454773ecc2850886ba9d33138f2e644",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/scar_h/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/scar_h/geometry-evidence.json",
+      "sha256": "88a0c74766f95e97df8743d075c4474fe3d30604006a007e6f88411e47c78987",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/scar_h/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/scar_h/workbench-anchors.json",
+      "sha256": "3a9026332de73ad75b23b96e0ffa95a7f4e0229f63d4d9dc675db196cbe62c2b",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/glock_17/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/glock_17/geometry-evidence.json",
+      "sha256": "22fbead326e2f95e89398b5451cdf0105fd79cef341bfdd454e6f8fc339c8727",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/glock_17/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/glock_17/workbench-anchors.json",
+      "sha256": "6ae413d9c54574119012dadfb066c4a5f4bad7da5564ebfdb5d778c7a7d95355",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/aa12/geometry-evidence.json",
+      "jar_entry": "data/tacz_fork_tarkov/aa12/geometry-evidence.json",
+      "sha256": "93519aef358d2118bbbb57cb3be1027053f4448c0c6d7c65e73dee044b693cad",
+      "action": "exclude from runtime resources only; retain authoring input"
+    },
+    {
+      "source": "modules/tacz_adapter/weapon-content/resources/data/tacz_fork_tarkov/aa12/workbench-anchors.json",
+      "jar_entry": "data/tacz_fork_tarkov/aa12/workbench-anchors.json",
+      "sha256": "cf80c22dbca8110dd365808494911250ab3dd60cc845e431b2ee70d9e615f3e4",
+      "action": "exclude from runtime resources only; retain authoring input"
+    }
+  ],
+  "preserved_paths": [
+    "modules/tacz_adapter/weapon-content",
+    "modules/tacz_adapter/weapon-sources",
+    "modules/tacz_adapter/public-dependency-lock.json",
+    "src/main/java/com/tacz/guns/resource/index/CommonBlockIndex.java",
+    "src/main/java/com/tacz/guns/resource/pojo/data/block",
+    "src/main/java/com/tacz/guns/resource/manager/RecipeFilterManager.java",
+    "src/main/java/com/tacz/guns/resource/filter",
+    "src/main/resources/data/tacz/recipe",
+    "src/main/resources/assets/tacz/custom"
+  ],
+  "retired_ids": [
+    "tacz:gun_smith_table_crafting",
+    "tacz:nbt"
+  ],
+  "retired_command": "/tacz config key defaultTableLimit",
+  "retired_config_keys": [
+    "EnableDefaultGunSmithTableFilter",
+    "AutoSelectGunSmithTableFilter"
+  ],
+  "shared_chain_deferred": "CommonBlockIndex still validates RecipeFilter using BlockData/TabConfig; preserved with resource filter loading and network synchronization. No public assembly changes."
+}

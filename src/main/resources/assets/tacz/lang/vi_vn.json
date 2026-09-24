@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r Tập tin được ghi đè có thể được tìm thấy trong §c§nconfig/tacz/backup§r",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r Bạn có thể sử dụng lệnh §c§n/tacz overwrite false§r để tắt tính năng ghi đè.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r Bạn có thể sử dụng lệnh §c§n/tacz overwrite true§r để bật tính năng ghi đè.",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r Giới hạn công thức mặc định của bàn tạo súng đang bật.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r Giới hạn công thức mặc định của bàn tạo súng đang tắt.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Kiểm tra mạng bắn súng phía máy chủ đang bật.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Kiểm tra mạng bắn súng phía máy chủ đang tắt.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Kiểm tra thời gian giữa phát bắn ở phía máy chủ đang bật.",

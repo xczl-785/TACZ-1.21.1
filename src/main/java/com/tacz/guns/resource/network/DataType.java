@@ -13,7 +13,6 @@ public enum DataType implements StringRepresentable {
     AMMO_INDEX,
     GUN_INDEX,
     ATTACHMENT_INDEX,
-    RECIPES,
     RECIPE_FILTER,
     ATTACHMENT_TAGS,
     ALLOW_ATTACHMENT_TAGS,

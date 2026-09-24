@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r Gainidatzitako fitxategiak §c§nconfig/tacz/backup§r karpetan aurki ditzakezu",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r §c§n/tacz overwrite false§r komandoa erabil dezakezu idatzi gainean funtzioa desaktibatzeko.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r §c§n/tacz overwrite true§r komandoa erabil dezakezu idatzi gainean funtzioa eragintzeko.",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r Default gunsmith table recipe limit is enabled.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r Default gunsmith table recipe limit is disabled.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Server-side shoot network check is enabled.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Server-side shoot network check is disabled.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Server-side shoot cooldown check is enabled.",

@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r Du findest die überschriebenen Dateien im Ordner §c§nconfig/tacz/backup§r",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r Du kannst den Befehl §c§n/tacz overwrite false§r benutzen, um Überschreiben zu deaktivieren.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r Du kannst den Befehl §c§n/tacz overwrite true§r benutzen, um Überschreiben zu aktivieren.",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r Standard Schussschmiedetischrezept Limit ist aktiviert.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r Standard Schussschmiedetischrezept Limit ist deaktiviert.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Serverseitige Netzwerküberprüfung ist aktiviert.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Serverseitige Schießnetzwerkprüfung ist deaktiviert.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Serverseitiger Schuss Abklingzeit ist aktiviert.",

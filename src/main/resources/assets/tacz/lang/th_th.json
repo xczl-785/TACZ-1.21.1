@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r คุณสามารถหาไฟล์ที่ถูกเขียนทับได้ในโฟลเดอร์ §c§nconfig/tacz/backup§r",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r คุณสามารถใช้คำสั่ง §c§n/tacz overwrite false§r เพื่อปิดการใช้งานคุณสมบัติการเขียนทับ",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r คุณสามารถใช้คำสั่ง §c§n/tacz overwrite true§r เพื่อเปิดการใช้งานคุณสมบัติการเขียนทับ",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r เปิดการจำกัดสูตรของโต๊ะช่างปืนแบบเริ่มต้นแล้ว",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r ปิดการจำกัดสูตรของโต๊ะช่างปืนแบบเริ่มต้นแล้ว",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r เปิดการตรวจสอบเครือข่ายการยิงฝั่งเซิร์ฟเวอร์แล้ว",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r ปิดการตรวจสอบเครือข่ายการยิงฝั่งเซิร์ฟเวอร์แล้ว",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r เปิดการตรวจสอบคูลดาวน์การยิงฝั่งเซิร์ฟเวอร์แล้ว",

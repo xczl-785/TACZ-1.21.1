@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r Du kan finde de overskrevne filer i §c§nconfig/tacz/backup§r mappen",
   "commands.tacz.reload.overwrite_command.on": "§a§l● §r Du kan bruge kommandoen §c§n/tacz overwrite false§r for at deaktivere overskrivnings funktionen.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r Du kan bruge kommandoen §c§n/tacz overwrite true§r for at aktivere overwrite funktionen.",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r Standard Våbenbord opskrifts grænse er aktiveret.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r Standard Våbenbord opskrifts grænse er deaktiveret.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Server-side skud netværks check er aktiveret.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Server-side skud netværks check er deaktiveret.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Server-side skud cooldown check er aktiveret.",

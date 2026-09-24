@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r Kamu dapat menemukan berkas yang ditimpa di folder §c§nconfig/tacz/backup§r",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r Kamu dapat menggunakan perintah §c§n/tacz overwrite false§r untuk menonaktifkan fitur penimpaan.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r Kamu dapat menggunakan perintah §c§n/tacz overwrite true§r untuk menyalakan fitur penimpaan.",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r Batas resep meja senjata standar di hidupkan.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r Batas resep meja senjata standar di matikan.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Pemeriksaan jaringan tembakan server di hidupkan.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Pemeriksaan jaringan tembakan di sisi server di matikan.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Pemeriksaan cooldown tembakan di server diaktifkan.",

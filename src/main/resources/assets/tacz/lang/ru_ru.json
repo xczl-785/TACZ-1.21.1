@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r Перезаписанные файлы находятся в папке §c§nconfig/tacz/backup",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r Вы можете использовать команду §c§n/tacz overwrite false§r для отключения перезаписи конфигурации.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r Вы можете использовать команду §c§n/tacz overwrite true§r для включения перезаписи конфигурации.",
-  "commands.tacz.config.default_table_limit.enabled": "§a§l[TACZ]§r Ограничение рецептов оружейного стола по умолчанию включено",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r Ограничение рецептов оружейного стола по умолчанию отключено",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Серверная проверка стрельбы включена.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Серверная проверка стрельбы отключена.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Серверная проверка перезарядки включена.",

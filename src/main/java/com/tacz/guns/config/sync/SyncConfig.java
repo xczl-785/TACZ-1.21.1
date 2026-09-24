@@ -11,7 +11,6 @@ public class SyncConfig {
     public static ModConfigSpec.ConfigValue<List<String>> INTERACT_KEY_WHITELIST_ENTITIES;
     public static ModConfigSpec.ConfigValue<List<String>> INTERACT_KEY_BLACKLIST_BLOCKS;
     public static ModConfigSpec.ConfigValue<List<String>> INTERACT_KEY_BLACKLIST_ENTITIES;
-    public static ModConfigSpec.BooleanValue ENABLE_TABLE_FILTER;
     public static ModConfigSpec.BooleanValue SERVER_SHOOT_NETWORK_V;
     public static ModConfigSpec.BooleanValue SERVER_SHOOT_COOLDOWN_V;
 
@@ -88,8 +87,6 @@ public class SyncConfig {
         builder.comment("Whether or not players are allowed to use the crawl feature");
         ENABLE_CRAWL = builder.define("EnableCrawl", true);
 
-        builder.comment("Enable the recipe limit of default gunsmith table or not");
-        ENABLE_TABLE_FILTER = builder.define("EnableDefaultGunSmithTableFilter", true);
 
         builder.comment("[Debug Option] Do server-side network check while shooting or not");
         SERVER_SHOOT_NETWORK_V = builder.define("ServerShootNetworkCheck", true);

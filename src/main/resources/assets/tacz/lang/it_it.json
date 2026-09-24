@@ -12,8 +12,6 @@
   "commands.tacz.reload.backup": "§a§l●§r Puoi trovare i file sovrascritti nella cartella §c§nconfig/tacz/backup§r",
   "commands.tacz.reload.overwrite_command.on": "§a§l●§r Puoi usare il comando §c§n/tacz overwrite false§r per disattivare la modalità di sovrascrittura.",
   "commands.tacz.reload.overwrite_command.off": "§a§l●§r Puoi usare il comando §c§n/tacz overwrite true§r per attivare la modalità di sovrascrittura.",
-  "commands.tacz.config.default_table_limit.enabled": "a§l[TACZ]§r Il limite predefinito delle ricette del banco da armaiolo è disabilitato.",
-  "commands.tacz.config.default_table_limit.disabled": "§a§l[TACZ]§r Il limite predefinito per le ricette dei pistoleri è disabilitato.",
   "commands.tacz.config.server_shoot_network_check.enabled": "§a§l[TACZ]§r Controllo di sparo lato server è abilitato.",
   "commands.tacz.config.server_shoot_network_check.disabled": "§a§l[TACZ]§r Controllo della rete di sparo lato server è disabilitato.",
   "commands.tacz.config.server_shoot_cooldown_check.enabled": "§a§l[TACZ]§r Controllo ricarica lato server.",
