@@ -23481,26 +23481,6 @@
           "after_sha256": "7017717415b6a10a5ffeff6b64ed01b18fdd4a83b9a3126bed237f8a70d04b64"
         },
         {
-          "path": "tools/native_attachments/__pycache__/extract.cpython-314.pyc",
-          "before_sha256": null,
-          "after_sha256": "4595806c5532c61d14e20f11ee3a61ef8f7624a3b97b685a9055aba0c758ee58"
-        },
-        {
-          "path": "tools/native_attachments/__pycache__/magazines.cpython-314.pyc",
-          "before_sha256": null,
-          "after_sha256": "680fe740cf8fbcd5fcf9f05d69591036bc79f66f5641e782360e067839ec8dfd"
-        },
-        {
-          "path": "tools/native_m4a1/__pycache__/editable_import.cpython-314.pyc",
-          "before_sha256": null,
-          "after_sha256": "42b6fecee3a77894ec51bc5c77b840cd1e4aaf69f1a304072594fc6048f9770a"
-        },
-        {
-          "path": "tools/native_m4a1/__pycache__/export_parts.cpython-314.pyc",
-          "before_sha256": null,
-          "after_sha256": "fc216dc8f04b306e5886e1d9c1fd8acde2a2ccfdb081ab884b8c663e0aa007a7"
-        },
-        {
           "path": "tools/promote_newmod_artifacts.py",
           "before_sha256": null,
           "after_sha256": "564cc665ec82a000c0a81c04d10ebda33332042f1c48d5c585f01afa0e79c6fb"
