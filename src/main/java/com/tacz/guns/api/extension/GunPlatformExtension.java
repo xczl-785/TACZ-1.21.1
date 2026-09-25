@@ -14,7 +14,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.BlockHitResult;
 import net.neoforged.bus.api.IEventBus;
 import org.apache.commons.lang3.tuple.Pair;
 
@@ -57,6 +56,4 @@ public interface GunPlatformExtension {
     default boolean hasContinuation(EntityKineticBullet bullet) { return false; }
     default void initializeContinuation(EntityKineticBullet bullet, Object payload) {}
     default void prepareFeedback(EntityHurtByGunEvent.Pre event) {}
-    /** True only when a platform has emitted the ordinary block-hit display. */
-    default boolean ordinaryBlockImpact(EntityKineticBullet bullet, BlockHitResult hit) { return false; }
 }

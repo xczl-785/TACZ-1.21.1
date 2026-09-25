@@ -30,8 +30,6 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
-import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.server.level.ServerLevel;
 import net.neoforged.bus.api.EventPriority;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.common.NeoForge;
@@ -49,7 +47,6 @@ public final class TacticalGunPlatformExtension implements GunPlatformExtension 
         boolean continued;
         double nativeScale = 1;
         int ricochetCount;
-        final dev.firearms.presentation.BlockImpactReceipt blockFeedback = new dev.firearms.presentation.BlockImpactReceipt();
         final Set<UUID> resolved = new java.util.HashSet<>();
     }
     private record ContinuationPayload(ProjectileContinuation continuation, double nativeScale) {}
@@ -156,12 +153,6 @@ public final class TacticalGunPlatformExtension implements GunPlatformExtension 
         state.impact = NeoForge.EVENT_BUS.post(new BulletImpactEvent(new BulletImpact(state.ammunition, bullet,
                 hit.getEntity(), hit.getLocation(), start, end, state.ricochetCount)));
         return false;
-    }
-    @Override public boolean ordinaryBlockImpact(EntityKineticBullet bullet, BlockHitResult hit) {
-        return bullet.level() instanceof ServerLevel server
-                && state(bullet).blockFeedback.publish(false, false,
-                        () -> dev.firearms.presentation.BlockImpactFeedback.publish(server, hit,
-                                dev.firearms.presentation.BlockImpactFeedback.ORDINARY_BULLET));
     }
     @Override public void applyImpact(EntityKineticBullet bullet, EntityKineticBullet.MaybeMultipartEntity parts,
                                       float nativeDamage, Pair<DamageSource, DamageSource> sources, Runnable nativeAttack) {
