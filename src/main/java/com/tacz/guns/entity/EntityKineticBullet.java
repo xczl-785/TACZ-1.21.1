@@ -79,6 +79,16 @@ import static com.tacz.guns.api.event.common.GunDamageSourcePart.NON_ARMOR_PIERC
  */
 public class EntityKineticBullet extends Projectile implements IEntityWithComplexSpawn {
 
+    private static final java.util.concurrent.atomic.AtomicInteger BLOCK_IMPACT_TRACE_COUNT = new java.util.concurrent.atomic.AtomicInteger();
+
+    private void traceBlockImpact(String stage, BlockHitResult hit) {
+        if (this.gunId != null && "m4a1".equals(this.gunId.getPath())
+                && BLOCK_IMPACT_TRACE_COUNT.getAndIncrement() < 48) {
+            GunMod.LOGGER.info("[B5-07 trace] TaCZ M4 block stage={} projectile={} gun={} ammo={} pos={} face={} point={} explosion={}",
+                    stage, this.getUUID(), this.gunId, this.ammoId, hit.getBlockPos(), hit.getDirection(), hit.getLocation(), this.explosion);
+        }
+    }
+
     public static final EntityType<EntityKineticBullet> TYPE = EntityType.Builder.<EntityKineticBullet>of(EntityKineticBullet::new, MobCategory.MISC).noSummon().noSave().fireImmune().sized(0.0625F, 0.0625F).clientTrackingRange(5).updateInterval(5).setShouldReceiveVelocityUpdates(false).build("bullet");
     public static final TagKey<EntityType<?>> USE_MAGIC_DAMAGE_ON = TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("tacz:use_magic_damage_on"));
     public static final TagKey<EntityType<?>> USE_VOID_DAMAGE_ON = TagKey.create(Registries.ENTITY_TYPE, ResourceLocation.parse("tacz:use_void_damage_on"));
@@ -461,27 +471,32 @@ public class EntityKineticBullet extends Projectile implements IEntityWithComple
         if (result.getType() == HitResult.Type.MISS) {
             return;
         }
+        traceBlockImpact("hit", result);
         BlockPos pos = result.getBlockPos();
         Vec3 hitVec = result.getLocation();
         // 触发事件
         // 提前触发事件以让事件可以取消原版的命中行为（例如敲钟，打倒靶子等）
         if (NeoForge.EVENT_BUS.post(new AmmoHitBlockEvent(this.level(), result, this.level().getBlockState(pos), this)).isCanceled()) {
+            traceBlockImpact("cancelled", result);
             return;
         }
         super.onHitBlock(result);
         // 爆炸
         if (this.explosion) {
+            traceBlockImpact("explosive", result);
             ExplodeUtil.createExplosion(this.getOwner(), this, this.explosionDamage, this.explosionRadius, this.explosionKnockback, this.explosionDestroyBlock, hitVec);
             // 爆炸直接结束不留弹孔，不处理之后的逻辑
             this.discard();
             return;
         }
         // 弹孔特效
-        if (this.level() instanceof ServerLevel serverLevel
-                && !com.tacz.guns.api.extension.GunPlatformExtensions.current().ordinaryBlockImpact(this, result)) {
+        if (this.level() instanceof ServerLevel serverLevel) {
+            boolean accepted = com.tacz.guns.api.extension.GunPlatformExtensions.current().ordinaryBlockImpact(this, result);
+            traceBlockImpact(accepted ? "public-accepted" : "native-fallback", result);
+            if (!accepted) {
             BulletHoleOption bulletHoleOption = new BulletHoleOption(result.getDirection(), result.getBlockPos(), this.ammoId.toString(), this.gunId.toString(), this.gunDisplayId.toString());
             serverLevel.sendParticles(bulletHoleOption, hitVec.x, hitVec.y, hitVec.z, 1, 0, 0, 0, 0);
-
+            }
         }
 
         this.discard();
